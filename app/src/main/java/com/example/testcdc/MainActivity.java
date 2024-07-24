@@ -6,25 +6,22 @@ import android.hardware.usb.UsbManager;
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
 import android.util.Log;
-import android.util.Pair;
 import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.hoho.android.usbserial.driver.UsbSerialDriver;
 import com.hoho.android.usbserial.driver.UsbSerialPort;
 import com.hoho.android.usbserial.driver.UsbSerialProber;
 import com.hoho.android.usbserial.util.HexDump;
-import com.hoho.android.usbserial.util.SerialInputOutputManager;
 
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.LinkedBlockingQueue;
 import java.util.zip.CRC32;
+import android.os.Process;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -106,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-
     class ParsePackage implements Runnable
     {
 
@@ -120,10 +116,12 @@ public class MainActivity extends AppCompatActivity {
         private COMMAND_TYPE m_curCmdType = COMMAND_TYPE.NOT_VALID;
 
 
+        private long m_usbPackageIndex = 0;
+
         private void waitForData()
         {
             try {
-                Thread.sleep(10);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -137,6 +135,11 @@ public class MainActivity extends AppCompatActivity {
         private long convert_u32(byte[] data)
         {
             return ((long)(data[3] & 0xff) << 24) | ( (data[2] & 0xff) << 16) | ((data[1] & 0xff) << 8) | (data[0] & 0xff);
+        }
+
+        private long convert_u64(byte[] data)
+        {
+            return ((long)(data[7] & 0xff) << 56) | ((long)(data[6] & 0xff) << 48) | ((long)(data[5] & 0xff) << 40) | ((long)(data[4] & 0xff) << 32) | ((long)(data[3] & 0xff) << 24) | ( (data[2] & 0xff) << 16) | ((data[1] & 0xff) << 8) | (data[0] & 0xff);
         }
 
         private long myCrc32(byte[] data)
@@ -174,6 +177,58 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 remainNum = num-4;
+
+                int currentIndex = 0;
+                int CAN_num  = 0;
+
+                /// 先取出4个字节,代表usb包的index
+                long currentUsbPackageIndex = convert_u32(data);
+                currentIndex += 4;
+                /// 代表还未收到usb包
+                if(m_usbPackageIndex == 0)
+                {
+                    m_usbPackageIndex = currentUsbPackageIndex;
+                }else{
+                    if(currentUsbPackageIndex != (m_usbPackageIndex +1))
+                    {
+                        Log.e(PARSE_TAG,"last: " + m_usbPackageIndex + "\t current: " + currentUsbPackageIndex + "\t fatal error usb dismiss!" + "\n");
+                        return;
+                    }
+                    m_usbPackageIndex = currentUsbPackageIndex;
+                }
+
+
+
+                while(currentIndex < remainNum )
+                {
+                    CanMessage msg = new CanMessage();
+                    int CAN_ID = (data[currentIndex] & 0xff) | ( (data[currentIndex +1 ]  & 0xff) << 8);
+                    currentIndex += 2;
+                    byte direct = (byte) (data[currentIndex] & 0x01);
+                    byte is_can = (byte) (data[currentIndex] & 0x02);
+                    currentIndex += 2;
+                    long timestamp = convert_u64(Arrays.copyOfRange(data, currentIndex, currentIndex + 8));
+                    currentIndex += 8;
+                    byte busid = data[currentIndex];
+                    currentIndex += 1;
+                    byte datalength = data[currentIndex];
+                    currentIndex += 1;
+                    byte[] can_data =  Arrays.copyOfRange(data, currentIndex, currentIndex + datalength);
+                    currentIndex += datalength;
+                    msg.setCAN_ID(CAN_ID);
+                    msg.setDirect(direct);
+                    msg.setCAN_TYPE(is_can);
+                    msg.setTimestamp(timestamp);
+                    msg.setBUS_ID(busid);
+                    msg.setDataLength(datalength);
+                    msg.setData(can_data);
+                    CAN_num ++;
+                    // 这边会抛出异常
+                    g_queue.add(msg);
+                    g_totalRecvMsgNum += 1;
+//                    Log.i(PARSE_TAG,msg.toString());
+                }
+//                Log.i(PARSE_TAG,"当前usb包包含 " + CAN_num);
             }
 
         }
@@ -284,12 +339,13 @@ public class MainActivity extends AppCompatActivity {
     class ReadPort implements Runnable
     {
 
+
         @Override
         public void run() {
+            Process.setThreadPriority(Process.THREAD_PRIORITY_URGENT_AUDIO);
             byte[] buffer = new byte[1024*1024];
             while (true)
             {
-
                 try {
                     if(m_port == null)
                     {
@@ -301,7 +357,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                         continue;
                     }
-                    int len = m_port.read(buffer,10);
+                    int len = m_port.read(buffer,100);
                     if(len >0)
                     {
                         m_serialBuffer.writeBuffer(buffer,len);
@@ -313,7 +369,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
 
     class HeartBeat implements Runnable
     {
@@ -342,19 +397,24 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private long g_totalRecvMsgNum = 0;
+    private final LinkedBlockingQueue<CanMessage> g_queue = new LinkedBlockingQueue<>(1024*1024);
+
     private static final String TAG = "CDC_";
 
     private static final String PARSE_TAG = "CDC_PARSE";
-
 
     private UsbSerialPort m_port = null;
 
     private Thread m_readThread = null;
 
-
     private Thread m_parseThread = null;
 
     private Thread m_heartBeatThread = null;
+
+    private Thread m_monitorThread = null;
+
+    private Thread m_costMsgThread = null;
 
     private final NoLockBuffer m_serialBuffer = new NoLockBuffer(1024*1024*200);
 
@@ -363,10 +423,7 @@ public class MainActivity extends AppCompatActivity {
         spn.append("receive " + data.length + " bytes\n");
         spn.append(HexDump.dumpHexString(data)).append("\n");
         Log.i(TAG,spn.toString());
-
     }
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -401,7 +458,7 @@ public class MainActivity extends AppCompatActivity {
                             m_port = driver.getPorts().get(0); // Most devices have just one port (port 0)
                             try {
                                 m_port.open(connection);
-                                m_port.setParameters(115200, 8, UsbSerialPort.STOPBITS_1, UsbSerialPort.PARITY_NONE);
+                                m_port.setParameters(1382400, 8, UsbSerialPort.STOPBITS_1, UsbSerialPort.PARITY_NONE);
                                 Log.i(TAG,"open port successful~~~~~");
                             } catch (IOException e) {
                                 throw new RuntimeException(e);
@@ -420,23 +477,66 @@ public class MainActivity extends AppCompatActivity {
                 // 开始一个线程进行读取串口数据
                 if(m_readThread == null)
                 {
-                    m_readThread = new Thread(new ReadPort());
+                    m_readThread = new Thread(new ReadPort(),"readSerial");
+//                    m_readThread.setPriority(Thread.MAX_PRIORITY); // 设置为最高优先级?
                     m_readThread.start();
                 }
 
                 if(m_parseThread == null)
                 {
-                    m_parseThread = new Thread(new ParsePackage());
+                    m_parseThread = new Thread(new ParsePackage(),"parseSerial");
                     m_parseThread.start();
                 }
 
-//                if(m_heartBeatThread == null)
-//                {
-//                    m_heartBeatThread = new Thread(new HeartBeat());
-//                    m_heartBeatThread.start();
-//                }
+                if(m_heartBeatThread == null)
+                {
+                    m_heartBeatThread = new Thread(new HeartBeat());
+                    m_heartBeatThread.start();
+                }
 
+                if(m_monitorThread == null)
+                {
+                    m_monitorThread = new Thread(
+                            new Runnable() {
+                        @Override
+                        public void run() {
+                            while (true)
+                            {
+                                Log.d(PARSE_TAG,"RecvNum: " + g_totalRecvMsgNum + "\t CanMessage Queue " + g_queue.size() + "\t m_serialBuffer: " + m_serialBuffer.size());
+                                try {
+                                    Thread.sleep(3000);
+                                } catch (InterruptedException e) {
+                                    throw new RuntimeException(e);
+                                }
+                            }
+                        }
+                    },"monitor");
+                    m_monitorThread.start();
+                }
 
+                if(m_costMsgThread == null)
+                {
+                    m_costMsgThread = new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            while (true)
+                            {
+                                CanMessage poll = g_queue.poll();
+                                if(poll == null)
+                                {
+                                    try {
+                                        Thread.sleep(10);
+                                    } catch (InterruptedException e) {
+                                        throw new RuntimeException(e);
+                                    }
+                                    continue;
+                                }
+//                                Log.d(PARSE_TAG,poll.toString());
+                            }
+                        }
+                    },"costMsg");
+                    m_costMsgThread.start();
+                }
             }
         });
 

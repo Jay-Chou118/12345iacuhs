@@ -9,7 +9,7 @@ public class NoLockBuffer {
 
     public NoLockBuffer(int size) {
         capacity = size;
-        buffer = new byte[capacity];
+        buffer = new byte[size];
     }
 
     public boolean writeBuffer(byte[] values) {
@@ -68,7 +68,7 @@ public class NoLockBuffer {
         return writeIndex == readIndex;
     }
 
-    private int size()
+    public int size()
     {
         if(isEmpty()) return 0;
         if(writeIndex > readIndex) {
