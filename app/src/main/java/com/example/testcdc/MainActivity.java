@@ -22,8 +22,13 @@ import java.util.List;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.zip.CRC32;
 import android.os.Process;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    static {
+        System.loadLibrary("MyLibrary");
+    }
 
     public enum PARSE_SER_BUFFER_STATE {
         PARSE_HEAD_PHASE1,                    ///<解析函数接收帧头HEAD_FLAG_1状态
@@ -431,6 +436,8 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+
+
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -576,9 +583,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView textView = findViewById(R.id.textView);
+        textView.setText(stringFromJNI());
+
 
 
     }
+
+    public native String stringFromJNI();
 
 
 }
