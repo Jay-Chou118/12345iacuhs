@@ -1,28 +1,46 @@
 package com.example.testcdc;
 
+import android.Manifest;
+import android.content.ContentResolver;
+import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.hardware.usb.UsbDeviceConnection;
 import android.hardware.usb.UsbManager;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.provider.Settings;
 import android.text.SpannableStringBuilder;
 import android.util.Log;
 import android.view.View;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.hoho.android.usbserial.driver.UsbSerialDriver;
 import com.hoho.android.usbserial.driver.UsbSerialPort;
 import com.hoho.android.usbserial.driver.UsbSerialProber;
 import com.hoho.android.usbserial.util.HexDump;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.zip.CRC32;
 import android.os.Process;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -586,11 +604,138 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.textView);
         textView.setText(stringFromJNI());
 
+        findViewById(R.id.button5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 设置文件管理权限
+                boolean externalStorageManager = Environment.isExternalStorageManager();
+                Log.e(TAG,"externalStorageManager: " +externalStorageManager );
+                if(!externalStorageManager)
+                {
+                    Intent intent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);
+                    intent.setData(Uri.parse("package:" + getPackageName()) );
+                    startActivity(intent);
+                }
+
+                // 检查权限
+//                if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+//                    // 权限未被授予，请求权限
+//                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+//                        Log.e(TAG,"ready permission");
+//                        ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+//                    }
+//                    Log.e(TAG,"not permission");
+//                }else {
+//                    Log.e(TAG,"is permission");
+//                }
+
+//                File externalStorageDirectory = Environment.getExternalStorageDirectory();
+//                Log.e(TAG,externalStorageDirectory.getAbsolutePath());
+//                Environment.getExternalStoragePublicDirectory("test");
+//                createTxtFile();
+
+                if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+                    Log.e(TAG,"is mount");
+                    File dir = new File(Environment.getExternalStorageDirectory(), "MICAN");
+                    if (!dir.exists()) {
+                        Log.e(TAG,"is not exists");
+                        boolean ret = dir.mkdirs();
+                        if(ret)
+                        {
+                            Log.e(TAG,"创建成功");
+                        }else {
+                            Log.e(TAG,"创建失败");
+                        }
+                    }else {
+                        Log.e(TAG,"文件夹已经存在");
+                    }
+                }
+
+
+                writeFile();
+
+            }
+        });
+
 
 
     }
 
     public native String stringFromJNI();
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode) {
+            case 1:
+                if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    //创建文件夹
+                    if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+                        createFolder();
+                    }
+                    break;
+                }
+        }
+    }
+
+    // 创建文件夹的方法
+    private void createFolder() {
+        File folder = new File(getExternalFilesDir(null), "my_folder");
+        if (!folder.exists()) {
+            if (folder.mkdirs()) {
+                Toast.makeText(this, "文件夹创建成功", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, "文件夹创建失败", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            Toast.makeText(this, "文件夹已存在", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void createTxtFile()
+    {
+        ContentResolver resolver = getContentResolver();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(MediaStore.MediaColumns.DISPLAY_NAME, "test.txt");
+        contentValues.put(MediaStore.MediaColumns.MIME_TYPE, "text/plain");
+        contentValues.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DOCUMENTS);
+
+        Uri uri = resolver.insert(MediaStore.Files.getContentUri("external"), contentValues);
+        OutputStream outputStream = null;
+        try {
+            outputStream = resolver.openOutputStream(uri);
+            outputStream.write("Hello, World!".getBytes());
+            outputStream.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public void writeFile()
+    {
+        File file = new File(Environment.getExternalStorageDirectory()+"/MICAN/"+ "2.txt");
+//        Log.e(TAG,file.getAbsolutePath());
+//        if(!file.exists())
+//        {
+//            try {
+//                file.createNewFile();
+//            } catch (IOException e) {
+//                throw new RuntimeException(e);
+//            }
+//        }
+        Log.e(TAG,file.getAbsolutePath());
+        try {
+            FileOutputStream f = new FileOutputStream(file);
+            f.write("hello yulai\n".getBytes());
+            f.close();
+        } catch (IOException e) {
+            Log.e(TAG,e.toString());
+            throw new RuntimeException(e);
+        }
+    }
+
 
 
 }

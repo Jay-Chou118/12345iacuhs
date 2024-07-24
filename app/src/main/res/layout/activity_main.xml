@@ -45,5 +45,11 @@
             android:layout_height="wrap_content"
             android:text="打开CAN设备" />
 
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取外部存储" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
