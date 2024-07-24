@@ -656,12 +656,21 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        
+        findViewById(R.id.button6).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                testCreateFile(getWorkHomeDir());
+            }
+        });
 
 
 
     }
 
     public native String stringFromJNI();
+
+    public native void testCreateFile(String dir);
 
 
     @Override
@@ -734,6 +743,11 @@ public class MainActivity extends AppCompatActivity {
             Log.e(TAG,e.toString());
             throw new RuntimeException(e);
         }
+    }
+
+    public String getWorkHomeDir()
+    {
+        return Environment.getExternalStorageDirectory()+"/MICAN/";
     }
 
 

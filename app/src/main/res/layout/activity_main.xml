@@ -51,5 +51,11 @@
             android:layout_height="wrap_content"
             android:text="获取外部存储" />
 
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="创建文件" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
