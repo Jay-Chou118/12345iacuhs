@@ -57,5 +57,23 @@
             android:layout_height="wrap_content"
             android:text="创建文件" />
 
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开始录制" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="结束录制" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开文件管理器" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

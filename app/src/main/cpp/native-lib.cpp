@@ -7,6 +7,8 @@
 #include <fstream>
 #include <android/log.h>
 
+#include "blfwriter.h"
+
 #define LOG_TAG "CDC_CPP" //定义TAG
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
@@ -59,4 +61,58 @@ std::string formatTime()
     std::stringstream ss;
     ss << std::put_time(now_tm, "%Y-%m-%d_%H_%M_%S");
     return ss.str();
+}
+
+static BLFHANDLE recordFile = NULL;
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_example_testcdc_MainActivity_startRecord(JNIEnv *env, jobject obj,jstring dirPath)
+{
+    LOGI("========startRecord=========");
+    const char *str = env->GetStringUTFChars(dirPath, nullptr);
+    if(recordFile)
+    {
+        LOGW("is recording, please stop first");
+        return;
+    }
+    auto currentTime = time(nullptr);
+    std::string filePath = std::string(str)  + "record_" + formatTime() + ".blf";
+    LOGI("%s",filePath.c_str());
+    recordFile = Initiate(filePath.c_str());
+    // 处理字符串
+    env->ReleaseStringUTFChars(dirPath, str);
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_example_testcdc_MainActivity_stopRecord(JNIEnv *env, jobject obj)
+{
+    LOGI("========stopRecord=========");
+    if(recordFile == NULL)
+    {
+        LOGW("please start first");
+        return;
+    }
+    Finish(recordFile);
+    recordFile = NULL;
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_example_testcdc_MainActivity_record(JNIEnv *env, jobject obj, jlong timestamp,
+                                             jshort can_channel,jshort can_dlc,jint can_id,
+                                             jint can_type,jbyteArray data ) {
+//    LOGI("========record=========");
+    if(recordFile)
+    {
+        jbyte *bytes = env->GetByteArrayElements(data, NULL);
+        jsize length = env->GetArrayLength(data);
+        CANFrameRaw canFrameRaw = {0};
+        canFrameRaw.time_stamp = timestamp *1000;
+        canFrameRaw.can_channel = can_channel;
+        canFrameRaw.can_dlc = can_dlc;
+        canFrameRaw.can_id = can_id;
+        canFrameRaw.can_type = can_type;
+        memcpy(canFrameRaw.data,bytes,length);
+        auto ret = WriteCanFrame(recordFile,&canFrameRaw);
+//        LOGI("WriteCanFrame is %d",ret );
+    }
 }

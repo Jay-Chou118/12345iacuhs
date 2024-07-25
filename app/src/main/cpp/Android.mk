@@ -4,11 +4,21 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := MyLibrary
 
+# 添加头文件查找路径
+LOCAL_C_INCLUDES += \
+    $(LOCAL_PATH)/include \
+    $(LOCAL_PATH)/include/CAN
+
 # 定义源代码文件路径
 LOCAL_SRC_FILES := \
-    native-lib.cpp
+    native-lib.cpp \
+    src/CAN/blfapi.c \
+    src/CAN/blfwriter.c \
+    src/CAN/blfparser.c \
+    src/CAN/blfstream.c
 
-LOCAL_LDFLAGS := -llog -lc++ -std=c++17
+LOCAL_LDFLAGS := -llog -lc++ -std=c++17 -lz
+
 
 
 

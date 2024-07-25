@@ -1,6 +1,7 @@
 package com.example.testcdc;
 
 import android.Manifest;
+import android.content.ClipData;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
@@ -12,6 +13,10 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.text.SpannableStringBuilder;
@@ -23,6 +28,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.content.FileProvider;
 
 import com.hoho.android.usbserial.driver.UsbSerialDriver;
 import com.hoho.android.usbserial.driver.UsbSerialPort;
@@ -47,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
     static {
         System.loadLibrary("MyLibrary");
     }
+
+    private static final int SHOW_NUM_MSG = 1;
 
     public enum PARSE_SER_BUFFER_STATE {
         PARSE_HEAD_PHASE1,                    ///<解析函数接收帧头HEAD_FLAG_1状态
@@ -439,7 +447,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Thread m_costMsgThread = null;
 
-    private final NoLockBuffer m_serialBuffer = new NoLockBuffer(1024*1024*200);
+    private final NoLockBuffer m_serialBuffer = new NoLockBuffer(1024*1024*20);
 
     private void receive(byte[] data) {
         SpannableStringBuilder spn = new SpannableStringBuilder();
@@ -459,109 +467,19 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(m_port !=null)
-                {
-                    return;
-                }
+                findCDCDevice();
 
-                UsbManager manager = (UsbManager) getSystemService(Context.USB_SERVICE);
-                List<UsbSerialDriver> availableDrivers = UsbSerialProber.getDefaultProber().findAllDrivers(manager);
-                if (availableDrivers.isEmpty()) {
-                    Log.e("CDC","USB devices is empty");
-                }else {
-                    for(UsbSerialDriver driver:availableDrivers)
-                    {
-                        Log.i(TAG,driver.getDevice().toString());
-                        if(driver.getDevice().getVendorId() == 1155)
-                        {
-                            UsbDeviceConnection connection = manager.openDevice(driver.getDevice());
-                            if (connection == null) {
-                                Log.e("CDC","connection failed!!");
-                                return;
-                            }
+                createWorkThread();
 
-                            m_port = driver.getPorts().get(0); // Most devices have just one port (port 0)
-                            try {
-                                m_port.open(connection);
-                                m_port.setParameters(1382400, 8, UsbSerialPort.STOPBITS_1, UsbSerialPort.PARITY_NONE);
-                                Log.i(TAG,"open port successful~~~~~");
-                            } catch (IOException e) {
-                                throw new RuntimeException(e);
-                            }
-
-
-                        }
-                    }
-                }
+                startCAN();
+                startRecord(getWorkHomeDir());
             }
         });
 
         findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 开始一个线程进行读取串口数据
-                if(m_readThread == null)
-                {
-                    m_readThread = new Thread(new ReadPort(),"readSerial");
-//                    m_readThread.setPriority(Thread.MAX_PRIORITY); // 设置为最高优先级?
-                    m_readThread.start();
-                }
-
-                if(m_parseThread == null)
-                {
-                    m_parseThread = new Thread(new ParsePackage(),"parseSerial");
-                    m_parseThread.start();
-                }
-
-                if(m_heartBeatThread == null)
-                {
-                    m_heartBeatThread = new Thread(new HeartBeat());
-                    m_heartBeatThread.start();
-                }
-
-                if(m_monitorThread == null)
-                {
-                    m_monitorThread = new Thread(
-                            new Runnable() {
-                        @Override
-                        public void run() {
-                            while (true)
-                            {
-                                Log.d(PARSE_TAG,"RecvNum: " + g_totalRecvMsgNum + "\t CanMessage Queue " + g_queue.size() + "\t m_serialBuffer: " + m_serialBuffer.size());
-                                try {
-                                    Thread.sleep(3000);
-                                } catch (InterruptedException e) {
-                                    throw new RuntimeException(e);
-                                }
-                            }
-                        }
-                    },"monitor");
-                    m_monitorThread.start();
-                }
-
-                if(m_costMsgThread == null)
-                {
-                    m_costMsgThread = new Thread(new Runnable() {
-                        @Override
-                        public void run() {
-                            while (true)
-                            {
-                                CanMessage poll = g_queue.poll();
-                                if(poll == null)
-                                {
-                                    try {
-                                        Thread.sleep(10);
-                                    } catch (InterruptedException e) {
-                                        throw new RuntimeException(e);
-                                    }
-                                    continue;
-                                }
-//                                Log.d(PARSE_TAG,poll.toString());
-                            }
-                        }
-                    },"costMsg");
-                    m_costMsgThread.start();
-                }
+                createWorkThread();
             }
         });
 
@@ -586,18 +504,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(m_port == null)
-                {
-                    Log.i(TAG,"未打开设备");
-                    return;
-                }
-                byte[] data = {0x5a,0x5a,0x5a,0x5a,0x02,0x10,0x00,0x00};
-                try {
-                    m_port.write(data,2000);
-                    Log.i(TAG,"打开CAN设备");
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
+                startCAN();
+
             }
         });
 
@@ -664,13 +572,87 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.button7).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startRecord(getWorkHomeDir());
+            }
+        });
 
+        findViewById(R.id.button8).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                stopRecord();
+            }
+        });
+
+        findViewById(R.id.button9).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                String absolutePath = getWorkHomeDir();
+//                String path;
+//                String externalStorageDir = "/storage/emulated/0";
+//                if (absolutePath.startsWith(externalStorageDir)) {
+//                    path = absolutePath
+//                            .substring(externalStorageDir.length())
+//                            .replace("/", "%2f");
+//                } else {
+//                    path = absolutePath.replace("/", "%2f");
+//                }
+//                Uri uri = Uri.parse("content://com.android.externalstorage.documents/document/primary:"
+//                        + path);
+//                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+//                intent.setType("*/*");
+//                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                intent.putExtra(DocumentsContract.EXTRA_INITIAL_URI, uri);
+//                intent.addCategory(Intent.CATEGORY_OPENABLE); //表示可以打开的文件
+//                intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true); // 只显示本地文件
+//                startActivity(intent);
+
+//                Intent sendIntent = new Intent();
+//                sendIntent.setAction(Intent.ACTION_SEND);
+//                sendIntent.putExtra(Intent.EXTRA_TEXT, "要分享的文本");
+//
+//// Android 10 开始，可以通过 Intent.EXTRA_TITLE 添加描述信息，ClipData 添加缩略图
+//                sendIntent.putExtra(Intent.EXTRA_TITLE, "我是标题");
+//                sendIntent.setClipData(ClipData.newUri(MyApp.getApp().getContentResolver(), "我是缩略图", uri));
+//
+//// 设置分享的类型
+//                sendIntent.setType("text/plain");
+//
+//                Intent shareIntent = Intent.createChooser(sendIntent, null);
+//                startActivity(shareIntent);
+
+
+                // 获取要分享的文件
+                File file = new File(getWorkHomeDir()+"record_2024-07-23_20_42_57.blf");
+                Uri uri = FileProvider.getUriForFile(MainActivity.this,"fileprovider",file);
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.putExtra(Intent.EXTRA_STREAM, uri);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+//                intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
+
+                intent.setType("*/*");
+//                intent.setDataAndType(uri, "*/*");
+//                startActivity(intent);
+                startActivity(Intent.createChooser(intent, "分享文件"));
+            }
+        });
 
     }
 
     public native String stringFromJNI();
 
     public native void testCreateFile(String dir);
+
+    public native void startRecord(String dir);
+
+    public native void stopRecord();
+
+    public native void record(long timestamp,short can_channel,short can_dlc,int can_id,
+                              int can_type,byte[] data);
 
 
     @Override
@@ -745,9 +727,149 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public String getWorkHomeDir()
+    private String getWorkHomeDir()
     {
         return Environment.getExternalStorageDirectory()+"/MICAN/";
+    }
+
+    private Handler mHandler = new Handler(Looper.getMainLooper()) {
+        @Override
+        public void handleMessage(Message msg) {
+            if (msg.what == SHOW_NUM_MSG) {
+                Toast.makeText(MainActivity.this, String.format("已录制 %d 报文",g_totalRecvMsgNum), Toast.LENGTH_SHORT).show();
+            }
+        }
+    };
+
+    private void createWorkThread()
+    {
+        // 开始一个线程进行读取串口数据
+        if(m_readThread == null)
+        {
+            m_readThread = new Thread(new ReadPort(),"readSerial");
+//                    m_readThread.setPriority(Thread.MAX_PRIORITY); // 设置为最高优先级?
+            m_readThread.start();
+        }
+
+        if(m_parseThread == null)
+        {
+            m_parseThread = new Thread(new ParsePackage(),"parseSerial");
+            m_parseThread.start();
+        }
+
+        if(m_heartBeatThread == null)
+        {
+            m_heartBeatThread = new Thread(new HeartBeat());
+            m_heartBeatThread.start();
+        }
+
+        if(m_monitorThread == null)
+        {
+            m_monitorThread = new Thread(
+                    new Runnable() {
+                        @Override
+                        public void run() {
+                            while (true)
+                            {
+                                Message msg = Message.obtain();
+                                msg.what = SHOW_NUM_MSG;
+                                mHandler.sendMessage(msg);
+                                Log.d(PARSE_TAG,"RecvNum: " + g_totalRecvMsgNum + "\t CanMessage Queue " + g_queue.size() + "\t m_serialBuffer: " + m_serialBuffer.size());
+                                try {
+                                    Thread.sleep(3000);
+                                } catch (InterruptedException e) {
+                                    throw new RuntimeException(e);
+                                }
+                            }
+                        }
+                    },"monitor");
+            m_monitorThread.start();
+        }
+
+        if(m_costMsgThread == null)
+        {
+            m_costMsgThread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    while (true)
+                    {
+                        CanMessage poll = g_queue.poll();
+                        if(poll == null)
+                        {
+                            try {
+                                Thread.sleep(10);
+                            } catch (InterruptedException e) {
+                                throw new RuntimeException(e);
+                            }
+                            continue;
+                        }
+                        record(poll.timestamp,poll.BUS_ID,poll.dataLength,poll.CAN_ID,poll.CAN_TYPE,
+                                poll.data);
+//                                Log.d(PARSE_TAG,poll.toString());
+                    }
+                }
+            },"costMsg");
+            m_costMsgThread.start();
+        }
+    }
+
+    private void findCDCDevice()
+    {
+        if(m_port !=null)
+        {
+            return;
+        }
+
+        UsbManager manager = (UsbManager) getSystemService(Context.USB_SERVICE);
+        List<UsbSerialDriver> availableDrivers = UsbSerialProber.getDefaultProber().findAllDrivers(manager);
+        if (availableDrivers.isEmpty()) {
+            Log.e("CDC","USB devices is empty");
+        }else {
+            for(UsbSerialDriver driver:availableDrivers)
+            {
+                Log.i(TAG,driver.getDevice().toString());
+                if(driver.getDevice().getVendorId() == 1155)
+                {
+                    UsbDeviceConnection connection = manager.openDevice(driver.getDevice());
+                    if (connection == null) {
+                        Log.e("CDC","connection failed!!");
+                        return;
+                    }
+
+                    m_port = driver.getPorts().get(0); // Most devices have just one port (port 0)
+                    try {
+                        m_port.open(connection);
+                        m_port.setParameters(1382400, 8, UsbSerialPort.STOPBITS_1, UsbSerialPort.PARITY_NONE);
+                        Log.i(TAG,"open port successful~~~~~");
+                        byte[] buffer = new byte[1024];
+                        while(m_port.read(buffer,100) > 0)
+                        {
+                            Log.i(TAG,"clear history buffer before start");
+                        }
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    private void startCAN()
+    {
+        if(m_port == null)
+        {
+            Log.i(TAG,"未打开设备");
+            return;
+        }
+        byte[] data = {0x5a,0x5a,0x5a,0x5a,0x02,0x10,0x00,0x00};
+        try {
+            m_port.write(data,2000);
+            Log.i(TAG,"打开CAN设备");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 
