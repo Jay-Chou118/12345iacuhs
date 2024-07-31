@@ -1,5 +1,6 @@
 package com.example.testcdc;
 
+
 import java.util.Arrays;
 
 public class CanMessage {
@@ -14,6 +15,8 @@ public class CanMessage {
 
     public CanMessage() {
     }
+
+
 
     public long getIndex() {
         return index;

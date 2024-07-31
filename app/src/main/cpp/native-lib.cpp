@@ -8,8 +8,9 @@
 #include <android/log.h>
 
 #include "blfwriter.h"
+#include "minilzo.h"
 
-#define LOG_TAG "CDC_CPP" //定义TAG
+#define LOG_TAG "MICAN_CPP" //定义TAG
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
 #define LOGW(...) __android_log_print(ANDROID_LOG_WARN, LOG_TAG, __VA_ARGS__)
@@ -20,7 +21,7 @@ static std::string formatTime();
 extern "C" JNIEXPORT jstring
 
 JNICALL
-Java_com_example_testcdc_MainActivity_stringFromJNI(
+Java_com_example_testcdc_MyService_stringFromJNI(
         JNIEnv *env,
         jobject /* this */) {
     std::string hello = "Hello from C++";
@@ -28,7 +29,7 @@ Java_com_example_testcdc_MainActivity_stringFromJNI(
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_testcdc_MainActivity_testCreateFile(JNIEnv *env, jobject obj, jstring dirPath) {
+Java_com_example_testcdc_MyService_testCreateFile(JNIEnv *env, jobject obj, jstring dirPath) {
     const char *str = env->GetStringUTFChars(dirPath, nullptr);
     std::string filePath = std::string(str) + "/" + formatTime() + ".blf";
     std::ofstream file(filePath);
@@ -66,25 +67,23 @@ std::string formatTime()
 static BLFHANDLE recordFile = NULL;
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_testcdc_MainActivity_startRecord(JNIEnv *env, jobject obj,jstring dirPath)
+Java_com_example_testcdc_MyService_startRecord(JNIEnv *env, jobject obj,jstring filePath)
 {
     LOGI("========startRecord=========");
-    const char *str = env->GetStringUTFChars(dirPath, nullptr);
+    const char *path = env->GetStringUTFChars(filePath, nullptr);
     if(recordFile)
     {
         LOGW("is recording, please stop first");
         return;
     }
-    auto currentTime = time(nullptr);
-    std::string filePath = std::string(str)  + "record_" + formatTime() + ".blf";
-    LOGI("%s",filePath.c_str());
-    recordFile = Initiate(filePath.c_str());
+    LOGI("%s",path);
+    recordFile = Initiate(path);
     // 处理字符串
-    env->ReleaseStringUTFChars(dirPath, str);
+    env->ReleaseStringUTFChars(filePath, path);
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_testcdc_MainActivity_stopRecord(JNIEnv *env, jobject obj)
+Java_com_example_testcdc_MyService_stopRecord(JNIEnv *env, jobject obj)
 {
     LOGI("========stopRecord=========");
     if(recordFile == NULL)
@@ -97,7 +96,7 @@ Java_com_example_testcdc_MainActivity_stopRecord(JNIEnv *env, jobject obj)
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_testcdc_MainActivity_record(JNIEnv *env, jobject obj, jlong timestamp,
+Java_com_example_testcdc_MyService_record(JNIEnv *env, jobject obj, jlong timestamp,
                                              jshort can_channel,jshort can_dlc,jint can_id,
                                              jint can_type,jbyteArray data ) {
 //    LOGI("========record=========");
@@ -115,4 +114,30 @@ Java_com_example_testcdc_MainActivity_record(JNIEnv *env, jobject obj, jlong tim
         auto ret = WriteCanFrame(recordFile,&canFrameRaw);
 //        LOGI("WriteCanFrame is %d",ret );
     }
+}
+
+extern "C" JNIEXPORT jint JNICALL
+Java_com_example_testcdc_MyService_decompress(JNIEnv *env, jclass obj,
+                                              jbyteArray compressDataBuffer, jbyteArray unCompressDataBuffer) {
+
+    jbyte *source = env->GetByteArrayElements(compressDataBuffer, JNI_FALSE);
+    lzo_uint length = (lzo_uint)env->GetArrayLength(compressDataBuffer);
+    jbyte * dest = env->GetByteArrayElements(unCompressDataBuffer, JNI_FALSE);
+    lzo_uint destNum = (lzo_uint) env->GetArrayLength(unCompressDataBuffer);
+//    LOGW("length %lu destNum: %lu",length,destNum);
+    auto ret = lzo1x_decompress_safe((const unsigned char*) source,length,(unsigned char*)dest,&destNum, nullptr);
+
+
+    env->ReleaseByteArrayElements(compressDataBuffer, source, JNI_FALSE);
+    env->ReleaseByteArrayElements(unCompressDataBuffer, dest, JNI_FALSE);
+    if (ret != LZO_E_OK)
+    {
+        LOGW("ret is %d",ret);
+        return -1;
+    }
+//    for(int i = 0;i< destNum;i++)
+//    {
+//        LOGW(" %d",dest[i]);
+//    }
+    return 0;
 }

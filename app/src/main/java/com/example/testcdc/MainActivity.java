@@ -25,6 +25,7 @@ import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -559,9 +560,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
 
-
                 writeFile();
-
             }
         });
         
@@ -589,57 +588,17 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button9).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                String absolutePath = getWorkHomeDir();
-//                String path;
-//                String externalStorageDir = "/storage/emulated/0";
-//                if (absolutePath.startsWith(externalStorageDir)) {
-//                    path = absolutePath
-//                            .substring(externalStorageDir.length())
-//                            .replace("/", "%2f");
-//                } else {
-//                    path = absolutePath.replace("/", "%2f");
-//                }
-//                Uri uri = Uri.parse("content://com.android.externalstorage.documents/document/primary:"
-//                        + path);
-//                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-//                intent.setType("*/*");
-//                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                intent.putExtra(DocumentsContract.EXTRA_INITIAL_URI, uri);
-//                intent.addCategory(Intent.CATEGORY_OPENABLE); //表示可以打开的文件
-//                intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true); // 只显示本地文件
-//                startActivity(intent);
-
-//                Intent sendIntent = new Intent();
-//                sendIntent.setAction(Intent.ACTION_SEND);
-//                sendIntent.putExtra(Intent.EXTRA_TEXT, "要分享的文本");
-//
-//// Android 10 开始，可以通过 Intent.EXTRA_TITLE 添加描述信息，ClipData 添加缩略图
-//                sendIntent.putExtra(Intent.EXTRA_TITLE, "我是标题");
-//                sendIntent.setClipData(ClipData.newUri(MyApp.getApp().getContentResolver(), "我是缩略图", uri));
-//
-//// 设置分享的类型
-//                sendIntent.setType("text/plain");
-//
-//                Intent shareIntent = Intent.createChooser(sendIntent, null);
-//                startActivity(shareIntent);
-
-
-                // 获取要分享的文件
-                File file = new File(getWorkHomeDir()+"record_2024-07-23_20_42_57.blf");
-                Uri uri = FileProvider.getUriForFile(MainActivity.this,"fileprovider",file);
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_SEND);
-                intent.putExtra(Intent.EXTRA_STREAM, uri);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-
-//                intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
-
-                intent.setType("*/*");
-//                intent.setDataAndType(uri, "*/*");
-//                startActivity(intent);
-                startActivity(Intent.createChooser(intent, "分享文件"));
+                openFileManager();
             }
         });
+
+        findViewById(R.id.button10).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sharedFile();
+            }
+        });
+
 
     }
 
@@ -872,6 +831,51 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private void sharedFile()
+    {
+        // 获取要分享的文件
+        File file = new File(getWorkHomeDir()+"record_2024-07-23_20_42_57.blf");
+        Uri uri = FileProvider.getUriForFile(MainActivity.this,"fileprovider",file);
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_STREAM, uri);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+//                intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
+
+        intent.setType("*/*");
+//                intent.setDataAndType(uri, "*/*");
+//                startActivity(intent);
+        startActivity(Intent.createChooser(intent, "分享文件"));
+    }
+
+    private void openFileManager()
+    {
+        String absolutePath = getWorkHomeDir();
+        String path;
+        String externalStorageDir = "/storage/emulated/0";
+        if (absolutePath.startsWith(externalStorageDir)) {
+            path = absolutePath
+                    .substring(externalStorageDir.length())
+                    .replace("/", "%2f");
+        } else {
+            path = absolutePath.replace("/", "%2f");
+        }
+        Uri uri = Uri.parse("content://com.android.externalstorage.documents/document/primary:"
+                + path);
+        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+        intent.setType("*/*");
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.putExtra(DocumentsContract.EXTRA_INITIAL_URI, uri);
+        intent.addCategory(Intent.CATEGORY_OPENABLE); //表示可以打开的文件
+        intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true); // 只显示本地文件
+        startActivity(intent);
 
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+    }
 }

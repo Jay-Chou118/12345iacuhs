@@ -1,0 +1,413 @@
+package com.example.testcdc;
+
+import static com.example.testcdc.Utils.Utils.formatTime;
+import static com.example.testcdc.Utils.Utils.getCurTime;
+import static com.example.testcdc.Utils.Utils.wait1000ms;
+import static com.example.testcdc.Utils.Utils.wait100ms;
+
+import android.annotation.SuppressLint;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.Service;
+import android.content.Context;
+import android.content.Intent;
+import android.hardware.usb.UsbDeviceConnection;
+import android.hardware.usb.UsbManager;
+import android.os.Binder;
+import android.os.Environment;
+import android.os.IBinder;
+import android.util.Log;
+
+import androidx.core.app.NotificationCompat;
+
+import com.example.testcdc.MiCAN.DataWrapper;
+import com.example.testcdc.MiCAN.DeviceInfo;
+import com.example.testcdc.MiCAN.ShowCANMsg;
+import com.hoho.android.usbserial.driver.UsbSerialDriver;
+import com.hoho.android.usbserial.driver.UsbSerialPort;
+import com.hoho.android.usbserial.driver.UsbSerialProber;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicLong;
+
+public class MyService extends Service {
+
+    static {
+        System.loadLibrary("MyLibrary");
+    }
+
+    private static final String TAG = "MICAN_SERVICE";
+
+    private static final String PARSE_TAG = "MICAN_PARSE";
+    private static final int NOTIFICATION_ID = 1;
+
+
+    public MyService() {
+    }
+
+
+    public static final LinkedBlockingQueue<CanMessage> gCanQueue = new LinkedBlockingQueue<>(1024*1024*10);
+
+    public static final NoLockObjBuffer<ShowCANMsg> gDealQueue = new NoLockObjBuffer<>(1024*1024*10);
+
+    public static AtomicLong gRecvMsgNum = new AtomicLong(0);
+
+    public static AtomicBoolean g_notExitFlag = new AtomicBoolean(true);
+    private final IBinder m_binder = new MiCANBinder();
+    public class MiCANBinder extends Binder {
+
+        private Thread mReadPortThread = null;
+
+        private Thread mHeartBeatThread = null;
+
+        private Thread mParseThread = null;
+
+        private Thread mCostMsgThread = null;
+
+        private String filePath;
+
+        private long startCANTime;
+
+        private CanMessage message;
+
+        public String getFilePath() {
+            return filePath;
+        }
+
+        private void resetModuleMem()
+        {
+            gRecvMsgNum.set(0);
+            gCanQueue.clear();
+
+            // 让线程退出
+            g_notExitFlag.set(false);
+            wait1000ms();
+
+            for(MCUHelper mcuHelper : mMcuHelperList)
+            {
+                mcuHelper.close();
+            }
+            mMcuHelperList.clear();
+            System.gc();
+
+
+            g_notExitFlag.set(true);
+        }
+
+        private List<MCUHelper> mMcuHelperList = new ArrayList<>();
+
+
+        public void sayHello() {
+            Log.i(TAG, "sayHello");
+        }
+
+        public boolean InitModule()
+        {
+            resetModuleMem();
+            UsbManager manager = (UsbManager) getSystemService(Context.USB_SERVICE);
+            List<UsbSerialDriver> availableDrivers = UsbSerialProber.getDefaultProber().findAllDrivers(manager);
+            if (availableDrivers.isEmpty()) {
+                Log.e(TAG,"USB devices is empty");
+            }else {
+                for (UsbSerialDriver driver : availableDrivers) {
+                    Log.i(TAG, driver.getDevice().toString());
+                    if (driver.getDevice().getVendorId() == 1155) {
+                        UsbDeviceConnection connection = manager.openDevice(driver.getDevice());
+                        if (connection == null) {
+                            Log.e(TAG, "connection failed!!");
+                            return false;
+                        }
+
+                        UsbSerialPort port = driver.getPorts().get(0); // Most devices have just one port (port 0)
+
+                        try {
+                            port.open(connection);
+                            port.setParameters(1382400, 8, UsbSerialPort.STOPBITS_1, UsbSerialPort.PARITY_NONE);
+                            Log.i(TAG,"open port successful~~~~~");
+                            byte[] buffer = new byte[1024];
+                            while(port.read(buffer,100) > 0)
+                            {
+                                Log.i(TAG,"clear history buffer before start");
+                            }
+                            mMcuHelperList.add(new MCUHelper(port));
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
+                }
+            }
+            if(mMcuHelperList.isEmpty())
+            {
+                return false;
+            }
+
+            mParseThread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    boolean ret = false;
+                    while (g_notExitFlag.get())
+                    {
+                        ret = false;
+                        for(MCUHelper mcuHelper : mMcuHelperList)
+                        {
+                            ret = mcuHelper.parseSerial() || ret;
+                        }
+                        if(!ret)
+                        {
+                            wait100ms();
+                        }
+                    }
+                    Log.w(TAG,"ParseSerial thread is exit");
+                }
+            },"ParseSerial");
+            mParseThread.start();
+            mHeartBeatThread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    while (g_notExitFlag.get())
+                    {
+                        for(MCUHelper mcuHelper : mMcuHelperList)
+                        {
+                            mcuHelper.sendHeartBeat();
+                        }
+                        wait1000ms();
+                    }
+                    Log.w(TAG,"HeartBeat thread is exit");
+                }
+            },"HeartBeat");
+            mHeartBeatThread.start();
+
+            mCostMsgThread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    while (g_notExitFlag.get())
+                    {
+                        CanMessage poll = gCanQueue.poll();
+                        if(poll == null)
+                        {
+                            wait100ms();
+                            continue;
+                        }
+                        ShowCANMsg showCANMsg = new ShowCANMsg();
+                        showCANMsg.setTimestamp((double) (poll.timestamp + startCANTime) /1000000);
+                        showCANMsg.setSqlId(poll.getIndex());
+                        showCANMsg.setChannel(poll.getBUS_ID());
+                        showCANMsg.setArbitrationId(poll.getCAN_ID());
+                        showCANMsg.setName("");
+                        showCANMsg.setCanType("CANFD");
+                        showCANMsg.setDir("rx");
+                        showCANMsg.setDlc(String.valueOf(poll.getDataLength()));
+                        showCANMsg.setData(Arrays.copyOf(poll.getData(),poll.getDataLength()));
+
+                        gDealQueue.write(showCANMsg);
+                        message = poll;
+                        record(poll.timestamp,poll.BUS_ID,poll.dataLength,poll.CAN_ID,poll.CAN_TYPE,
+                                poll.data);
+                    }
+                }
+            },"CostMsg");
+            mCostMsgThread.start();
+
+            for(MCUHelper mcuHelper: mMcuHelperList)
+            {
+                mcuHelper.init();
+                wait100ms();
+            }
+
+            String firstSn = mMcuHelperList.get(0).getmSN();
+            // 判断后续几个mcu是否为一个产品
+            Log.d(TAG,"firstsn " +firstSn);
+            // 如果是CR开头的，就是单设备
+
+            if(firstSn.startsWith("CR"))
+            {
+                if(mMcuHelperList.size() != 1)
+                {
+                    Log.e(TAG, "当前为CR设备，但个数不为1");
+                    return false;
+                }
+            }else if(firstSn.startsWith("DR4"))
+            {
+                if(mMcuHelperList.size() != 4)
+                {
+                    Log.e(TAG, "当前为DR4设备，但个数不为4");
+                    return false;
+                }
+            }else if(firstSn.startsWith("DR2"))
+            {
+                if(mMcuHelperList.size() != 2)
+                {
+                    Log.e(TAG, "当前为DR4设备，但个数不为2");
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public String getAppVersion()
+        {
+            if(mMcuHelperList.isEmpty())
+            {
+                return "";
+            }else{
+                return mMcuHelperList.get(0).getmAppVersion();
+            }
+        }
+
+        public String getSN()
+        {
+            if(mMcuHelperList.isEmpty())
+            {
+                return "";
+            }else{
+                return mMcuHelperList.get(0).getmSN();
+            }
+        }
+
+
+        public boolean CANOnBus()
+        {
+            if(mMcuHelperList.isEmpty())
+            {
+                return false;
+            }
+            startCANTime = getCurTime();
+            Log.d(TAG,"startCANTime " + startCANTime);
+            for(MCUHelper mcuHelper: mMcuHelperList)
+            {
+                mcuHelper.startCANFD();
+            }
+
+            return true;
+        }
+
+
+        public void printInfo()
+        {
+            for(MCUHelper mcuHelper: mMcuHelperList)
+            {
+                mcuHelper.monitor();
+            }
+        }
+
+        public void startSaveBlf()
+        {
+            filePath = getWorkHomeDir() + "MiCAN_record_" + formatTime() +".blf";
+            startRecord(filePath);
+        }
+
+        public void stopSaveBlf()
+        {
+            stopRecord();
+        }
+
+        public CanMessage getMessage() {
+            return message;
+        }
+
+        public List<ShowCANMsg> getMessages() {
+            List<ShowCANMsg> showCANMsgs = gDealQueue.readAll();
+            return showCANMsgs;
+        }
+
+        /**
+         * @brief 获取最后的100条数据
+         * @return 封装的数据包
+         */
+        public DataWrapper getCurrentMsgs()
+        {
+            // 获取最新的100条数据
+            List<ShowCANMsg> showCANMsgs = gDealQueue.readAll();
+            int num = showCANMsgs.size();
+            if(num > 100)
+            {
+                showCANMsgs = showCANMsgs.subList(num-100,num);
+            }
+            DataWrapper dataWrapper = new DataWrapper();
+            dataWrapper.setStart_time((double) startCANTime /1000000);
+            dataWrapper.setFrame_data(showCANMsgs);
+            return dataWrapper;
+        }
+
+        public DeviceInfo getDeviceInfo()
+        {
+            DeviceInfo deviceInfo = new DeviceInfo();
+            if(!mMcuHelperList.isEmpty())
+            {
+                deviceInfo.setSn(mMcuHelperList.get(0).getmSN());
+                deviceInfo.setVersion(mMcuHelperList.get(0).getmAppVersion());
+            }
+            Log.d(TAG,deviceInfo.toString());
+            return deviceInfo;
+        }
+
+    }
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        Log.i(TAG, "onBind");
+        return m_binder;
+    }
+
+
+
+    @Override
+    public void onCreate() {
+        Log.i(TAG,"onCreate");
+        super.onCreate();
+
+//        findCDCDevice();
+//        createWorkThread();
+//        startCAN();
+//        startRecord(getWorkHomeDir());
+    }
+
+    @SuppressLint("ForegroundServiceType")
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        Log.i(TAG,"onStartCommand");
+        NotificationManager manager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+        NotificationChannel channel = new NotificationChannel("channel_id", "前台 Service 通知", NotificationManager.IMPORTANCE_DEFAULT);
+        manager.createNotificationChannel(channel);
+
+        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this, "channel_id")
+                .setContentTitle("前台服务")
+                .setContentText("服务正在运行")
+                .setSmallIcon(R.drawable.ic_launcher_foreground) // 设置通知的小图标
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        startForeground(NOTIFICATION_ID, notificationBuilder.build());
+
+        return START_STICKY;
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.i(TAG,"onDestroy");
+    }
+
+    public native String stringFromJNI();
+
+    public native void testCreateFile(String dir);
+
+    public native void startRecord(String dir);
+
+    public native void stopRecord();
+
+    public native void record(long timestamp,short can_channel,short can_dlc,int can_id,
+                              int can_type,byte[] data);
+
+    public static native int decompress(byte[] compressDataBuffer,byte[] unCompressDataBuffer);
+
+    private String getWorkHomeDir()
+    {
+        return Environment.getExternalStorageDirectory()+"/MICAN/";
+    }
+
+
+}
