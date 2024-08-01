@@ -52,6 +52,15 @@ public class Utils {
         }
     }
 
+    static public void wait200ms()
+    {
+        try {
+            Thread.sleep(200);
+        } catch (InterruptedException e) {
+            Log.e(TAG,"sleep error");
+        }
+    }
+
     static public void wait1000ms()
     {
         try {

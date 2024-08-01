@@ -1,0 +1,1 @@
+const m=e=>{var r,t,l;let p=((r=e.remark)==null?void 0:r.split("::").pop())||"",a=((t=e.comment)==null?void 0:t.replace(/null/g,"").replace(/\\\\n/g,"<br/>"))||"",c=((l=e.remark)==null?void 0:l.replace(/::/,">>",1).replace(/::/,"|",1).split("::").slice(0)[0].toString())||"";return"<b>".concat(e.text,"</b> (").concat(p,")<br/>").concat(a,"<br/><hr/>").concat(c)};export{m as t};

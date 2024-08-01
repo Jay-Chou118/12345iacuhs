@@ -324,10 +324,10 @@ public class MainActivity2 extends AppCompatActivity {
             if (msg.what == 1) {
 //                Log.d("YULAI","============handleMessage==============");
 //                MainActivity2.this.webView.loadUrl("javascript:showAndroidToast('ddd')");
-                Log.d(TAG,String.format("已录制 %d 报文",gRecvMsgNum.get()));
-//                if(mMiCANBinder !=null)
-//                {
-//                    mMiCANBinder.printInfo();
+
+                if(mMiCANBinder !=null)
+                {
+                    mMiCANBinder.printInfo();
 //                    List<CanMessage> messages = mMiCANBinder.getMessages();
 //                    Log.d(TAG,"read num " + messages.size());
 //                    dataList.clear();
@@ -336,15 +336,15 @@ public class MainActivity2 extends AppCompatActivity {
 //                        dataList.add(canMessage.toString());
 //                    }
 //                    adapter.notifyDataSetChanged(); // 通知ListView刷新显示
-//
-////                    CanMessage canMessage = mMiCANBinder.getMessage();
-////                    if( canMessage != null)
-////                    {
-////                        Log.d(TAG,"read " + canMessage.toString());
-////                        dataList.add(canMessage.toString()); // 添加新项到数据集合中
-////                        adapter.notifyDataSetChanged(); // 通知ListView刷新显示
-////                    }
-//                }
+
+//                    CanMessage canMessage = mMiCANBinder.getMessage();
+//                    if( canMessage != null)
+//                    {
+//                        Log.d(TAG,"read " + canMessage.toString());
+//                        dataList.add(canMessage.toString()); // 添加新项到数据集合中
+//                        adapter.notifyDataSetChanged(); // 通知ListView刷新显示
+//                    }
+                }
 
 
 //                Toast.makeText(MainActivity2.this, String.format("已录制 %d 报文",gRecvMsgNum.get()), Toast.LENGTH_SHORT).show();

@@ -1,9 +1,9 @@
 package com.example.testcdc;
 
-
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class CanMessage {
+public class CanMessage implements Cloneable, Serializable {
     long index;
     int CAN_ID;
     byte direct;
@@ -94,5 +94,20 @@ public class CanMessage {
                 ", timestamp=" + timestamp +
                 ", data=" + Arrays.toString(data) +
                 '}';
+    }
+
+    @Override
+    public CanMessage clone() throws CloneNotSupportedException {
+
+        CanMessage clone = (CanMessage) super.clone();
+//        clone.CAN_ID = this.CAN_ID;
+//        clone.index = this.index;
+//        clone.CAN_TYPE = this.CAN_TYPE;
+//        clone.BUS_ID = this.BUS_ID;
+//        clone.data = this.data;
+//        clone.dataLength = this.dataLength;
+//        clone.direct = this.direct;
+//        clone.timestamp = this.timestamp;
+        return clone;
     }
 }

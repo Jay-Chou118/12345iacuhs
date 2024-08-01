@@ -2,6 +2,7 @@ package com.example.testcdc;
 
 import static com.example.testcdc.MyService.decompress;
 import static com.example.testcdc.MyService.gCanQueue;
+import static com.example.testcdc.MyService.gCanQueue1;
 import static com.example.testcdc.MyService.gRecvMsgNum;
 import static com.example.testcdc.MyService.g_notExitFlag;
 import static com.example.testcdc.Utils.Utils.convert_u16;
@@ -433,6 +434,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                         parseUsbPackage_v3(mParseBuffer,mUsbPackageSize);
                     }else
                     {
+//                        Log.d(TAG,"parseUsbPackage_v2");
                         parseUsbPackage_v2(mParseBuffer,mUsbPackageSize,true);
                     }
                 }else if(m_curCmdType.code == 0x3000)
@@ -464,8 +466,9 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
     public void init()
     {
         getAppLevel();
-        getAppVersion();
         getMCUIndex();
+        getAppVersion();
+
     }
 
     public void sendHeartBeat()
@@ -480,7 +483,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
     public void monitor()
     {
-        Log.d(TAG,String.format("mMcuIndex: %d, mSerialBuffer: %d mErrorNum: %d",mMcuIndex,mSerialBuffer.size(),mErrorNum));
+        Log.i(TAG,String.format("mMcuIndex: %d, mSerialBuffer: %d mErrorNum: %d",mMcuIndex,mSerialBuffer.size(),mErrorNum));
     }
 
     private void getAppVersion() {
@@ -596,10 +599,9 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         }
 
 
-
+        CanMessage msg = new CanMessage();
         while(currentIndex < remainNum )
         {
-            CanMessage msg = new CanMessage();
             int CAN_ID = (data[currentIndex] & 0xff) | ( (data[currentIndex +1 ]  & 0xff) << 8);
             currentIndex += 2;
             byte direct = (byte) (data[currentIndex] & 0x01);
@@ -613,17 +615,25 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             currentIndex += 1;
             byte[] can_data =  Arrays.copyOfRange(data, currentIndex, currentIndex + datalength);
             currentIndex += datalength;
-            msg.setIndex(gRecvMsgNum.get());
-            msg.setCAN_ID(CAN_ID);
-            msg.setDirect(direct);
-            msg.setCAN_TYPE(is_can);
-            msg.setTimestamp(timestamp);
-            msg.setBUS_ID( (byte) (busid +3*mMcuIndex));
-            msg.setDataLength(datalength);
-            msg.setData(can_data);
+            if(msg == null)
+            {
+                Log.d(TAG,"gCanQueue1 is full");
+            }else {
+                msg.setIndex(gRecvMsgNum.get());
+                msg.setCAN_ID(CAN_ID);
+                msg.setDirect(direct);
+                msg.setCAN_TYPE(is_can);
+                msg.setTimestamp(timestamp);
+                msg.setBUS_ID( (byte) (busid +3*mMcuIndex));
+                msg.setDataLength(datalength);
+                msg.setData(can_data);
+            }
+
             CAN_num ++;
             // 这边会抛出异常
-            gCanQueue.add(msg);
+//            gCanQueue.add(msg);
+            gCanQueue1.write_deepcopy(msg);
+
             gRecvMsgNum.incrementAndGet();
 //            Log.i(TAG,msg.toString());
         }

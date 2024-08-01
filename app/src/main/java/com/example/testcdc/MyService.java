@@ -4,6 +4,7 @@ import static com.example.testcdc.Utils.Utils.formatTime;
 import static com.example.testcdc.Utils.Utils.getCurTime;
 import static com.example.testcdc.Utils.Utils.wait1000ms;
 import static com.example.testcdc.Utils.Utils.wait100ms;
+import static com.example.testcdc.Utils.Utils.wait200ms;
 
 import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
@@ -53,7 +54,9 @@ public class MyService extends Service {
 
     public static final LinkedBlockingQueue<CanMessage> gCanQueue = new LinkedBlockingQueue<>(1024*1024*10);
 
-    public static final NoLockObjBuffer<ShowCANMsg> gDealQueue = new NoLockObjBuffer<>(1024*1024*10);
+    public static final NoLockCANBuffer gCanQueue1 = new NoLockCANBuffer(100000);
+
+    public static final NoLockShowCANBuffer gDealQueue = new NoLockShowCANBuffer(100000);
 
     public static AtomicLong gRecvMsgNum = new AtomicLong(0);
 
@@ -73,7 +76,6 @@ public class MyService extends Service {
 
         private long startCANTime;
 
-        private CanMessage message;
 
         public String getFilePath() {
             return filePath;
@@ -82,11 +84,13 @@ public class MyService extends Service {
         private void resetModuleMem()
         {
             gRecvMsgNum.set(0);
-            gCanQueue.clear();
+            gCanQueue1.clear();
+            gDealQueue.clear();
+
 
             // 让线程退出
             g_notExitFlag.set(false);
-            wait1000ms();
+            wait100ms();
 
             for(MCUHelper mcuHelper : mMcuHelperList)
             {
@@ -185,15 +189,19 @@ public class MyService extends Service {
             mCostMsgThread = new Thread(new Runnable() {
                 @Override
                 public void run() {
+                    boolean ret;
+                    ShowCANMsg showCANMsg = new ShowCANMsg();
                     while (g_notExitFlag.get())
                     {
-                        CanMessage poll = gCanQueue.poll();
+//                        CanMessage poll = gCanQueue.poll();
+                        CanMessage poll = gCanQueue1.read();
+
                         if(poll == null)
                         {
+//                            Log.d(TAG,"poll is null");
                             wait100ms();
                             continue;
                         }
-                        ShowCANMsg showCANMsg = new ShowCANMsg();
                         showCANMsg.setTimestamp((double) (poll.timestamp + startCANTime) /1000000);
                         showCANMsg.setSqlId(poll.getIndex());
                         showCANMsg.setChannel(poll.getBUS_ID());
@@ -203,9 +211,11 @@ public class MyService extends Service {
                         showCANMsg.setDir("rx");
                         showCANMsg.setDlc(String.valueOf(poll.getDataLength()));
                         showCANMsg.setData(Arrays.copyOf(poll.getData(),poll.getDataLength()));
-
-                        gDealQueue.write(showCANMsg);
-                        message = poll;
+                        ret = gDealQueue.write_deepcopy(showCANMsg);
+//                        if(!ret)
+//                        {
+//                            Log.d(TAG,"gDealQueue is full,write failed");
+//                        }
                         record(poll.timestamp,poll.BUS_ID,poll.dataLength,poll.CAN_ID,poll.CAN_TYPE,
                                 poll.data);
                     }
@@ -216,13 +226,17 @@ public class MyService extends Service {
             for(MCUHelper mcuHelper: mMcuHelperList)
             {
                 mcuHelper.init();
-                wait100ms();
-            }
 
+            }
+            wait200ms();
             String firstSn = mMcuHelperList.get(0).getmSN();
             // 判断后续几个mcu是否为一个产品
             Log.d(TAG,"firstsn " +firstSn);
             // 如果是CR开头的，就是单设备
+            if(firstSn == null)
+            {
+                return false;
+            }
 
             if(firstSn.startsWith("CR"))
             {
@@ -293,6 +307,10 @@ public class MyService extends Service {
             {
                 mcuHelper.monitor();
             }
+            Log.i(TAG,String.format("已录制 %d 报文 gCanQueue1 %d gDealQueue %d",gRecvMsgNum.get(),
+                    gCanQueue1.size(),gDealQueue.size()
+                    ));
+
         }
 
         public void startSaveBlf()
@@ -307,7 +325,7 @@ public class MyService extends Service {
         }
 
         public CanMessage getMessage() {
-            return message;
+            return new CanMessage();
         }
 
         public List<ShowCANMsg> getMessages() {
@@ -360,6 +378,7 @@ public class MyService extends Service {
     public void onCreate() {
         Log.i(TAG,"onCreate");
         super.onCreate();
+
 
 //        findCDCDevice();
 //        createWorkThread();

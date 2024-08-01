@@ -2,10 +2,11 @@ package com.example.testcdc;
 
 import android.util.Log;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NoLockObjBuffer<T> {
+public class NoLockObjBuffer<T > {
 
     private final int capacity;
     private final Object[] buffer;
@@ -18,9 +19,25 @@ public class NoLockObjBuffer<T> {
         buffer = new Object[size];
     }
 
+    public void write(T value,int index) {
+        buffer[index] = value;
+    }
+
     public boolean write(T value) {
         if(isFull()) return false;
         buffer[writeIndex] = value;
+        writeIndex = (writeIndex + 1) % capacity;
+        return true;
+    }
+    // 会有bug,导致还没写完,writeIndex 就+1
+    public boolean write_copy(T value) {
+        if(isFull()) return false;
+        try {
+            buffer[writeIndex] = value.getClass().getMethod("clone").invoke(value);
+        } catch (Exception e) {
+            Log.e("=========", e.toString());
+            return false;
+        }
         writeIndex = (writeIndex + 1) % capacity;
         return true;
     }
@@ -34,6 +51,13 @@ public class NoLockObjBuffer<T> {
             readIndex = (readIndex + 1) % capacity;
         }
         return readNum;
+    }
+
+    public T read() {
+        if(isEmpty()) return null;
+        T t =  (T) buffer[readIndex];
+        readIndex = (readIndex + 1) % capacity;
+        return t;
     }
 
     public List<T> readAll() {
@@ -74,5 +98,9 @@ public class NoLockObjBuffer<T> {
 
     private int nextIndex(int current) {
         return (current + 1) % capacity;
+    }
+
+    public int getCapacity() {
+        return capacity;
     }
 }

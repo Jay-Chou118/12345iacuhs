@@ -5,6 +5,9 @@ plugins {
 android {
     namespace 'com.example.testcdc'
     compileSdk 34
+//    dexOptions{
+//        javaMaxHeapSize "4g"
+//    }
 
     defaultConfig {
         applicationId "com.example.testcdc"
@@ -12,6 +15,7 @@ android {
         targetSdk 34
         versionCode 1
         versionName "1.0"
+
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 

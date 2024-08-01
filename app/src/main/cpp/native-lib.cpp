@@ -102,7 +102,7 @@ Java_com_example_testcdc_MyService_record(JNIEnv *env, jobject obj, jlong timest
 //    LOGI("========record=========");
     if(recordFile)
     {
-        jbyte *bytes = env->GetByteArrayElements(data, NULL);
+        jbyte *bytes = env->GetByteArrayElements(data, JNI_FALSE);
         jsize length = env->GetArrayLength(data);
         CANFrameRaw canFrameRaw = {0};
         canFrameRaw.time_stamp = timestamp *1000;
@@ -113,7 +113,11 @@ Java_com_example_testcdc_MyService_record(JNIEnv *env, jobject obj, jlong timest
         memcpy(canFrameRaw.data,bytes,length);
         auto ret = WriteCanFrame(recordFile,&canFrameRaw);
 //        LOGI("WriteCanFrame is %d",ret );
+        env->ReleaseByteArrayElements(data, bytes, JNI_FALSE);
+
     }
+
+
 }
 
 extern "C" JNIEXPORT jint JNICALL

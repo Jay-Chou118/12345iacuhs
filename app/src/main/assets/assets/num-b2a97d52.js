@@ -1,0 +1,1 @@
+function o(t){t=BigInt(t),t<0&&(t=e(t));var i=t.toString(16);return i.length%2&&(i="0"+i),""+i}function e(t){t=-t;for(var i=t.toString(2),n="";i.length%8;)i="0"+i;return i[0]==="1"&&i.slice(1).indexOf("1")!==-1&&(n="11111111"),i=i.split("").map(function(r){return r==="0"?"1":"0"}).join(""),BigInt("0b"+n+i)+BigInt(1)}export{o as b};
