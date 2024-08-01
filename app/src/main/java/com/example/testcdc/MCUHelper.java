@@ -481,6 +481,11 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         sendCmd(COMMAND_TYPE.START_CAN_ALL);
     }
 
+    public void stopCANFD()
+    {
+        sendCmd(COMMAND_TYPE.STOP_CAN_ALL);
+    }
+
     public void monitor()
     {
         Log.i(TAG,String.format("mMcuIndex: %d, mSerialBuffer: %d mErrorNum: %d",mMcuIndex,mSerialBuffer.size(),mErrorNum));
@@ -505,6 +510,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         Log.d(TAG,cmd.toString());
         switch (cmd){
             case START_CAN_ALL:
+            case STOP_CAN_ALL:
             case GET_APP_VERSION:
             case GET_APP_LEVEL:
             case GET_APP_BUILD_TIME:

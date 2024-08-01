@@ -175,11 +175,12 @@ public class MyService extends Service {
                 public void run() {
                     while (g_notExitFlag.get())
                     {
+                        wait1000ms();
                         for(MCUHelper mcuHelper : mMcuHelperList)
                         {
                             mcuHelper.sendHeartBeat();
                         }
-                        wait1000ms();
+
                     }
                     Log.w(TAG,"HeartBeat thread is exit");
                 }
@@ -295,6 +296,20 @@ public class MyService extends Service {
             for(MCUHelper mcuHelper: mMcuHelperList)
             {
                 mcuHelper.startCANFD();
+            }
+
+            return true;
+        }
+
+        public boolean CANOffBus()
+        {
+            if(mMcuHelperList.isEmpty())
+            {
+                return false;
+            }
+            for(MCUHelper mcuHelper: mMcuHelperList)
+            {
+                mcuHelper.stopCANFD();
             }
 
             return true;

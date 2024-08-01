@@ -6,9 +6,12 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.IBinder;
 import android.os.Message;
+import android.provider.Settings;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
@@ -16,6 +19,7 @@ import android.webkit.WebView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.FileProvider;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -27,6 +31,7 @@ import com.example.testcdc.Utils.Result;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -92,6 +97,7 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
         m.start();
+        checkPermission();
     }
 
     private void initWebView()
@@ -109,7 +115,6 @@ public class MainActivity3 extends AppCompatActivity {
         webView.loadUrl("file:///android_asset/index.html");
 
         bindService(new Intent(this, MyService.class),mSC, Context.BIND_AUTO_CREATE);
-
 
         messageHandlers.put("initDevice", new BridgeHandler() {
             @Override
@@ -130,6 +135,7 @@ public class MainActivity3 extends AppCompatActivity {
                     });
                     // 打开CANFD设备
                     mMiCANBinder.CANOnBus();
+                    mMiCANBinder.startSaveBlf();
                 }
             }
         });
@@ -151,6 +157,31 @@ public class MainActivity3 extends AppCompatActivity {
                             webView.loadUrl(callbackJs);
                         }
                     });
+                }
+            }
+        });
+
+        messageHandlers.put("stopDevice", new BridgeHandler() {
+            @Override
+            public void handle(JsonObject data, String callback) {
+                Log.d(TAG,"stopDevice ");
+                if(mMiCANBinder != null)
+                {
+                    Log.d(TAG,"i am called");
+
+                    mMiCANBinder.CANOffBus();
+                    mMiCANBinder.stopSaveBlf();
+                    sharedFile(mMiCANBinder.getFilePath());
+
+//                    JsCallResult<Result<String>> jsCallResult = new JsCallResult<>(callback);
+//                    final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
+//
+//                    webView.post(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            webView.loadUrl(callbackJs);
+//                        }
+//                    });
                 }
             }
         });
@@ -192,6 +223,31 @@ public class MainActivity3 extends AppCompatActivity {
 
     public interface BridgeHandler {
         void handle(JsonObject data,String callback);
+    }
+
+    private void sharedFile(String filePath)
+    {
+        // 获取要分享的文件
+        File file = new File(filePath);
+        Uri uri = FileProvider.getUriForFile(this,"fileprovider",file);
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_STREAM, uri);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.setType("*/*");
+        startActivity(Intent.createChooser(intent, "分享录制文件"));
+    }
+
+    private void checkPermission()
+    {
+        boolean externalStorageManager = Environment.isExternalStorageManager();
+        Log.e(TAG,"externalStorageManager: " +externalStorageManager );
+        if(!externalStorageManager)
+        {
+            Intent intent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);
+            intent.setData(Uri.parse("package:" + getPackageName()) );
+            startActivity(intent);
+        }
     }
 
 
