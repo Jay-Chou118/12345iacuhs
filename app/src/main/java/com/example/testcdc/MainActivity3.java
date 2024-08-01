@@ -20,6 +20,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
@@ -132,6 +133,28 @@ public class MainActivity3 extends AppCompatActivity {
                 }
             }
         });
+
+        messageHandlers.put("showLoggingMessage", new BridgeHandler() {
+            @Override
+            public void handle(JsonObject data, String callback) {
+                Log.d(TAG,"showLoggingMessage ");
+                if(mMiCANBinder != null)
+                {
+                    JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
+                    Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
+                    jsCallResult.setData(result);
+                    final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
+                    Log.d(TAG,"callbackJs "+ callbackJs );
+                    webView.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            webView.loadUrl(callbackJs);
+                        }
+                    });
+                }
+            }
+        });
+
 
     }
 

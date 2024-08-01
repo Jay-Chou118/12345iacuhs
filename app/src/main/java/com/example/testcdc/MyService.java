@@ -342,9 +342,10 @@ public class MyService extends Service {
             // 获取最新的100条数据
             List<ShowCANMsg> showCANMsgs = gDealQueue.readAll();
             int num = showCANMsgs.size();
-            if(num > 100)
+            Log.d(TAG,"showCANMsgs is " + num);
+            if(num > 500)
             {
-                showCANMsgs = showCANMsgs.subList(num-100,num);
+                showCANMsgs = showCANMsgs.subList(num-500,num);
             }
             DataWrapper dataWrapper = new DataWrapper();
             dataWrapper.setStart_time((double) startCANTime /1000000);
