@@ -14,7 +14,6 @@ public class NoLockCANBuffer {
     private volatile int writeIndex = 0;
 
     public NoLockCANBuffer(int size) {
-        Log.e("MICAN_BUFFER","============");
         capacity = size;
         buffer = new CanMessage[size];
     }

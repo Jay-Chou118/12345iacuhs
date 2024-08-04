@@ -1,0 +1,1 @@
+System.register([],(function(e,r){"use strict";return{execute:function(){e("t",(e=>{let r=e.remark?.split("::").pop()||"",t=e.comment?.replace(/null/g,"").replace(/\\\\n/g,"<br/>")||"",c=e.remark?.replace(/::/,">>",1).replace(/::/,"|",1).split("::").slice(0)[0].toString()||"";return`<b>${e.text}</b> (${r})<br/>${t}<br/><hr/>${c}`}))}}}));

@@ -2,15 +2,19 @@ package com.example.testcdc;
 
 import static com.google.gson.JsonParser.parseString;
 
+import android.annotation.SuppressLint;
 import android.content.ComponentName;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
 import android.os.Message;
+import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
@@ -23,6 +27,7 @@ import androidx.core.content.FileProvider;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.documentfile.provider.DocumentFile;
 
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
@@ -31,7 +36,12 @@ import com.example.testcdc.Utils.Result;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -98,6 +108,14 @@ public class MainActivity3 extends AppCompatActivity {
         });
         m.start();
         checkPermission();
+
+        Intent intent = getIntent();
+        String action = intent.getAction();
+        Uri data = intent.getData();
+        if (Intent.ACTION_VIEW.equals(action) && data != null) {
+            // 处理文件
+            handleFile(data);
+        }
     }
 
     private void initWebView()
@@ -250,6 +268,92 @@ public class MainActivity3 extends AppCompatActivity {
         }
     }
 
+    private void handleFile(Uri fileUri) {
+        Log.i(TAG,"uri getAuthority: " + fileUri.getAuthority());
+        Log.i(TAG,"uri schema: " + fileUri.getScheme());
+        Log.i(TAG,"Uri: " + fileUri + "\t path: " + fileUri.getPath());
+        Log.i(TAG,"Uri: " + fileUri + "\t path: " + getRealPathFromURI(fileUri));
+//        readFileFromUri(this,fileUri);
+        // 在此处处理BLF文件，例如读取文件内容或进行解析
+
+//        // 进行文件读取
+//        Intent intent = new Intent(Intent.ACTION_VIEW);
+//        intent.setDataAndType(fileUri, "*/*");
+//        startActivity(intent);
+    }
+    public String getFilePathFromUri(Uri uri) {
+        Cursor cursor = this.getContentResolver().query(uri, null, null, null, null);
+
+        cursor.moveToFirst();
+//        String filePath = cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA));
+        cursor.close();
+        return "";
+    }
+    private String getRealPathFromURI(Uri uri) {
+        String[] proj = {MediaStore.Images.Media.DATA};
+        Cursor cursor = getContentResolver().query(uri, null, null, null, null);
+
+        if (cursor.moveToFirst()) {
+            // 获取你需要的列信息，例如文件的MIME类型
+            @SuppressLint("Range") String mimeType = cursor.getString(cursor.getColumnIndex(MediaStore.Files.FileColumns.MIME_TYPE));
+            Log.e(TAG,"mimeType: " +mimeType );
+            // 处理你的文件信息
+            // ...
+        }
 
 
-}
+        Log.e(TAG,"cursor " + cursor.toString());
+        int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+        cursor.moveToFirst();
+        return cursor.getString(column_index);
+    }
+
+    public String getPathFromUri(Context context, Uri uri) {
+        DocumentFile documentFile = DocumentFile.fromSingleUri(context, uri);
+        String path = documentFile.getUri().getPath();
+        return path;
+    }
+
+    public String readFileFromUri(Context context, Uri fileUri) {
+        String fileContent = "";
+        InputStream inputStream = null;
+        BufferedReader reader = null;
+        try {
+            inputStream = context.getContentResolver().openInputStream(fileUri);
+            Log.d(TAG,"inputStream " + inputStream.toString());
+            reader = new BufferedReader(new InputStreamReader(inputStream));
+            StringBuilder stringBuilder = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                stringBuilder.append(line).append('\n');
+            }
+            fileContent = stringBuilder.toString();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return fileContent;
+    }
+
+
+
+
+
+
+    }
