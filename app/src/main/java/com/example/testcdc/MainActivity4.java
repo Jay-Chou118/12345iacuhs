@@ -14,7 +14,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.testcdc.Utils.ToastUtil;
+import com.example.testcdc.database.MX11E4Database;
 import com.example.testcdc.database.UserDBHelper;
+import com.example.testcdc.entity.SignalInfo;
 import com.example.testcdc.entity.User;
 
 import java.util.List;
@@ -51,6 +53,19 @@ public class MainActivity4 extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onStart() {
         super.onStart();
+        SignalInfo signalInfo = new SignalInfo();
+        signalInfo.setName("LonAccr");
+        signalInfo.setBUSId(6);
+        signalInfo.setCANId(0x1a9);
+        signalInfo.setByteOrder(false);
+        signalInfo.setSigned(false);
+        signalInfo.setBitStart(23);
+        signalInfo.setBitLength(16);
+        signalInfo.setScale(0.0002);
+        signalInfo.setOffset(-5.0);
+        signalInfo.setComment("Longititude Acceleration\n纵向加速度");
+//        insert into signal_info values(null,'LonAccr',6,0x1a9,0,0,23,16,0.0002,-5.0,'Longititude Acceleration\n纵向加速度');
+        MX11E4Database.getInstance(this).signalInfoDao().insert(signalInfo);
         userDBHelper = UserDBHelper.getInstance(this);
         userDBHelper.openReadLink();
         userDBHelper.openWriteLink();
