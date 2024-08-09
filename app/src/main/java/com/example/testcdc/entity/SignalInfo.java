@@ -2,7 +2,11 @@ package com.example.testcdc.entity;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity(tableName = "signal_info")
 public class SignalInfo {
@@ -29,6 +33,11 @@ public class SignalInfo {
     public double offset;
     @ColumnInfo(name="comment")
     public String comment;
+
+    @Ignore
+    public List<Double> times = new ArrayList<>();
+    @Ignore
+    public List<Double> values = new ArrayList<>();
 
 
     public long getId() {
@@ -117,5 +126,38 @@ public class SignalInfo {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    public SignalInfo(String name, int BUSId, int CANId, boolean byteOrder, boolean isSigned, int bitStart, int bitLength, double scale, double offset, String comment) {
+        this.name = name;
+        this.BUSId = BUSId;
+        this.CANId = CANId;
+        this.byteOrder = byteOrder;
+        this.isSigned = isSigned;
+        this.bitStart = bitStart;
+        this.bitLength = bitLength;
+        this.scale = scale;
+        this.offset = offset;
+        this.comment = comment;
+    }
+
+    public SignalInfo() {
+    }
+
+    @Override
+    public String toString() {
+        return "SignalInfo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", BUSId=" + BUSId +
+                ", CANId=" + CANId +
+                ", byteOrder=" + byteOrder +
+                ", isSigned=" + isSigned +
+                ", bitStart=" + bitStart +
+                ", bitLength=" + bitLength +
+                ", scale=" + scale +
+                ", offset=" + offset +
+                ", comment='" + comment + '\'' +
+                '}';
     }
 }

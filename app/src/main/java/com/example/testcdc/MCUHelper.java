@@ -488,7 +488,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
     public void monitor()
     {
-        Log.i(TAG,String.format("mMcuIndex: %d, mSerialBuffer: %d mErrorNum: %d",mMcuIndex,mSerialBuffer.size(),mErrorNum));
+        Log.d(TAG,String.format("mMcuIndex: %d, mSerialBuffer: %d mErrorNum: %d",mMcuIndex,mSerialBuffer.size(),mErrorNum));
     }
 
     private void getAppVersion() {

@@ -34,11 +34,29 @@ android {
             path 'src/main/cpp/Android.mk'
         }
     }
+    signingConfigs {
+        release {
+            storeFile file("testcdc.jks")
+            storePassword "11111111"
+            keyAlias "testcdc"
+            keyPassword "11111111"
+        }
+        debug {
+            storeFile file("testcdc.jks")
+            storePassword "11111111"
+            keyAlias "testcdc"
+            keyPassword "11111111"
+        }
+    }
 
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
         }
     }
     compileOptions {
@@ -54,6 +72,7 @@ android {
 }
 
 dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
     implementation 'androidx.room:room-runtime:2.6.1'
     annotationProcessor 'androidx.room:room-compiler:2.6.1'
     implementation 'com.google.code.gson:gson:2.11.0'

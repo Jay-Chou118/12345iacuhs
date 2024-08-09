@@ -274,22 +274,6 @@ public class MainActivity2 extends AppCompatActivity {
         messageHandlers.put("getCurrentCANMsg", new BridgeHandler() {
             @Override
             public void handle(JsonObject data, String callback) {
-                if(mMiCANBinder != null)
-                {
-                    JsCallResult<Result<List<ShowCANMsg>>> jsCallResult = new JsCallResult<>(callback);
-                    List<ShowCANMsg> msgs= mMiCANBinder.getMessages();
-                    Log.d(TAG,"getMessages num is " + msgs.size());
-                    Result<List<ShowCANMsg>> result = ResponseData.success(msgs);
-                    jsCallResult.setData(result);
-                    final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                    Log.d(TAG,"callbackJs "+ callbackJs );
-                    webView.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            webView.loadUrl(callbackJs);
-                        }
-                    });
-                }
             }
         });
 
