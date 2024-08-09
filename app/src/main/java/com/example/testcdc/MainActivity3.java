@@ -31,9 +31,16 @@ import androidx.documentfile.provider.DocumentFile;
 
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
+import com.example.testcdc.Utils.DataBaseUtil;
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
+import com.example.testcdc.Utils.ToastUtil;
+import com.example.testcdc.database.MX11E4Database;
+import com.example.testcdc.entity.MsgInfoEntity;
+import com.example.testcdc.entity.SignalInfo;
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 import java.io.BufferedReader;
@@ -42,7 +49,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class MainActivity3 extends AppCompatActivity {
@@ -54,6 +64,7 @@ public class MainActivity3 extends AppCompatActivity {
     private final Map<String, BridgeHandler> messageHandlers = new HashMap<>();
 
     private MyService.MiCANBinder mMiCANBinder;
+
 
     private ServiceConnection mSC = new ServiceConnection() {
         @Override
@@ -71,6 +82,8 @@ public class MainActivity3 extends AppCompatActivity {
         }
     };
     private WebView webView;
+
+    MyApplication instance = MyApplication.getInstance();;
 
     private static final String CALLBACK_JS_FORMAT = "javascript:JSBridge.handleNativeResponse('%s')";
     @Override
@@ -116,6 +129,13 @@ public class MainActivity3 extends AppCompatActivity {
             // 处理文件
             handleFile(data);
         }
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        database = MyApplication.getInstance().getMx11E4Database();
     }
 
     private void initWebView()
@@ -136,11 +156,17 @@ public class MainActivity3 extends AppCompatActivity {
 
         messageHandlers.put("initDevice", new BridgeHandler() {
             @Override
-            public void handle(JsonObject data, String callback) {
+            public void handle(JsonElement data, String callback) {
                 if(mMiCANBinder != null)
                 {
                     JsCallResult<Result<DeviceInfo>> jsCallResult = new JsCallResult<>(callback);
                     boolean ret = mMiCANBinder.InitModule();
+                    if(ret)
+                    {
+                        instance.say("恭喜,初始化设备成功拉");
+                    }else{
+                        instance.say("抱歉,未能找到MiCAN设备,请重新插拔下设备试试看");
+                    }
                     Result<DeviceInfo> result = ResponseData.ret(mMiCANBinder.getDeviceInfo(),ret);
                     jsCallResult.setData(result);
                     final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
@@ -160,8 +186,7 @@ public class MainActivity3 extends AppCompatActivity {
 
         messageHandlers.put("showLoggingMessage", new BridgeHandler() {
             @Override
-            public void handle(JsonObject data, String callback) {
-                Log.d(TAG,"showLoggingMessage ");
+            public void handle(JsonElement data, String callback) {
                 if(mMiCANBinder != null)
                 {
                     JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
@@ -181,7 +206,7 @@ public class MainActivity3 extends AppCompatActivity {
 
         messageHandlers.put("stopDevice", new BridgeHandler() {
             @Override
-            public void handle(JsonObject data, String callback) {
+            public void handle(JsonElement data, String callback) {
                 Log.d(TAG,"stopDevice ");
                 if(mMiCANBinder != null)
                 {
@@ -204,6 +229,104 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
+        messageHandlers.put("getDBC", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+                Log.d(TAG,"getDBC ");
+                if(mMiCANBinder != null)
+                {
+                    Log.d(TAG,"i am called");
+                    // 进行报文查询
+                    Map<Integer,Map<String,List<List<Object>>>> maps = new HashMap<>();
+                    Map<String,List<List<Object>>> subMap = new HashMap<>();
+                    List<MsgInfoEntity> msgs = database.msgInfoDao().getMsg(2);
+                    msgs.stream().forEach(msg->{
+                        List<List<Object>> subList = new ArrayList<>();
+                        // 根据busid 和 canid查询
+                        List<SignalInfo> signalInfos = database.signalInfoDao().getSignal(2, msg.CANId);
+                        signalInfos.stream().forEach(signalInfo -> {
+                            List<Object> subList_ = new ArrayList<>();
+
+                            /**
+                             *                          "CANFD" if each.is_fd else "CAN",
+                             *                          each.cycle_time,
+                             *                          frame_is_e2e[dbcFile[1]][frameID]
+                             *                          )
+                             */
+
+
+                            subList_.add(signalInfo.name);
+                            subList_.add("信号comment");
+                            subList_.add("信号remark");
+                            subList_.add(signalInfo.id);
+                            subList_.add(0);    // 初始值
+                            subList_.add(0);    // 最大
+                            subList_.add(0);    // 最小值
+                            subList_.add(0);    // max
+                            subList_.add(0);    // min
+                            subList_.add(0);    // values
+                            subList_.add("m");    // values
+                            subList_.add(27);    // startBit
+                            subList_.add(12);    // bitLength
+                            subList_.add(1);    // factory
+                            subList_.add(32);    // factory
+                            subList_.add("CANFD");    // factory
+                            subList_.add(0);    // factory
+                            subList_.add(false);    // factory
+                            subList_.add(signalInfo.id);    // factory
+                            subList.add(subList_);
+                        });
+                        subMap.put(msg.name,subList);
+                    });
+                    maps.put(2,subMap);
+//                    Log.i(TAG,new Gson().toJson(maps));
+
+                    JsCallResult<Result<Map<Integer,Map<String,List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
+                    Result<Map<Integer,Map<String,List<List<Object>>>>> result = ResponseData.success(maps);
+                    jsCallResult.setData(result);
+                    final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
+                    Log.d(TAG,"callbackJs "+ callbackJs );
+                    webView.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            webView.loadUrl(callbackJs);
+                        }
+                    });
+
+
+
+                }
+            }
+        });
+
+        messageHandlers.put("selectShowSignals", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+
+                List<Long> ids = new ArrayList<>();
+
+                JsonArray array = data.getAsJsonArray();
+                array.forEach(item->{
+                    String name = item.getAsJsonObject().get("name").getAsString();
+                    SignalInfo signalInfo = database.signalInfoDao().getSignal(name);
+                    ids.add(signalInfo.id);
+                });
+                mMiCANBinder.monitorSignal(ids);
+
+                JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
+                Result<Object> success = ResponseData.success();
+                jsCallResult.setData(success);
+
+                final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
+                Log.d(TAG,"callbackJs "+ callbackJs );
+                webView.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        webView.loadUrl(callbackJs);
+                    }
+                });
+            }
+        });
 
     }
 
@@ -211,20 +334,24 @@ public class MainActivity3 extends AppCompatActivity {
         @JavascriptInterface
         public void send(String message) {
             Log.d(TAG,"i am recv "+ message);
+
+            instance.test7();
             handleNativeResponse(message);
         }
     }
+
+    private MX11E4Database database;
 
     private void handleNativeResponse(String responseData) {
         try {
             JsonObject jsonObject = parseString(responseData).getAsJsonObject();
             String method = jsonObject.get("method").getAsString();
             String callback = jsonObject.get("callback").getAsString();
-            JsonObject data = jsonObject.get("data").getAsJsonObject();
+            JsonElement data = jsonObject.get("data");
             BridgeHandler handler = messageHandlers.get(method);
-            Log.d(TAG,"method is : " + method );
-            Log.d(TAG,"callback is : " + callback );
-            Log.d(TAG,"data is : " + data );
+            Log.i(TAG,"method is : " + method );
+            Log.i(TAG,"callback is : " + callback );
+            Log.i(TAG,"data is : " + data );
             if(handler!=null)
             {
                 handler.handle(data,callback);
@@ -240,7 +367,7 @@ public class MainActivity3 extends AppCompatActivity {
     }
 
     public interface BridgeHandler {
-        void handle(JsonObject data,String callback);
+        void handle(JsonElement data,String callback);
     }
 
     private void sharedFile(String filePath)

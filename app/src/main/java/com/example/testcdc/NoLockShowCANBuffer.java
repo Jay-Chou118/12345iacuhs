@@ -50,6 +50,8 @@ public class NoLockShowCANBuffer {
         buffer[writeIndex].setDir(value.getDir());
         buffer[writeIndex].setDlc(value.getDlc());
         buffer[writeIndex].setData(Arrays.copyOf(value.getData(),value.getData().length));
+        buffer[writeIndex].setParsedData(value.getParsedData());
+
         writeIndex = (writeIndex + 1) % capacity;
         return true;
     }

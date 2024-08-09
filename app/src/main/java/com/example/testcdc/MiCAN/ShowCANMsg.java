@@ -14,6 +14,8 @@ public class ShowCANMsg {
 
     short[] data;
 
+    ShowSignal[] parsedData;
+
 
     public long getSqlId() {
         return sqlId;
@@ -94,5 +96,13 @@ public class ShowCANMsg {
         {
             this.data[i] = (short) (data[i] & 0xff);
         }
+    }
+
+    public ShowSignal[] getParsedData() {
+        return parsedData;
+    }
+
+    public void setParsedData(ShowSignal[] parsedData) {
+        this.parsedData = parsedData;
     }
 }

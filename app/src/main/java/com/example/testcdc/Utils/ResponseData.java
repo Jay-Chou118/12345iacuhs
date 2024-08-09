@@ -1,5 +1,7 @@
 package com.example.testcdc.Utils;
 
+import java.util.HashMap;
+
 public class ResponseData {
 
     public static <T> Result<T> ret(T data,boolean result) {
@@ -15,8 +17,8 @@ public class ResponseData {
         return new Result<T>().setCode(ResultsCode.SUCCESS.code).setMsg(ResultsCode.SUCCESS.message).setData(data);
     }
 
-    public static Result success() {
-        return new Result().setCode(ResultsCode.SUCCESS.code).setMsg(ResultsCode.SUCCESS.message);
+    public static Result<Object> success() {
+        return new Result<Object>().setCode(ResultsCode.SUCCESS.code).setMsg(ResultsCode.SUCCESS.message).setData(new HashMap<>());
     }
 
     public static Result fail() {

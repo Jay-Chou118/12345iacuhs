@@ -2,6 +2,8 @@ package com.example.testcdc;
 
 import static com.example.testcdc.Utils.Utils.formatTime;
 import static com.example.testcdc.Utils.Utils.getCurTime;
+import static com.example.testcdc.Utils.Utils.getKey;
+import static com.example.testcdc.Utils.Utils.getSignal;
 import static com.example.testcdc.Utils.Utils.wait1000ms;
 import static com.example.testcdc.Utils.Utils.wait100ms;
 import static com.example.testcdc.Utils.Utils.wait200ms;
@@ -24,6 +26,9 @@ import androidx.core.app.NotificationCompat;
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
 import com.example.testcdc.MiCAN.ShowCANMsg;
+import com.example.testcdc.MiCAN.ShowSignal;
+import com.example.testcdc.database.MX11E4Database;
+import com.example.testcdc.entity.SignalInfo;
 import com.hoho.android.usbserial.driver.UsbSerialDriver;
 import com.hoho.android.usbserial.driver.UsbSerialPort;
 import com.hoho.android.usbserial.driver.UsbSerialProber;
@@ -31,7 +36,9 @@ import com.hoho.android.usbserial.driver.UsbSerialProber;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicLong;
@@ -62,6 +69,8 @@ public class MyService extends Service {
 
     public static AtomicBoolean g_notExitFlag = new AtomicBoolean(true);
     private final IBinder m_binder = new MiCANBinder();
+
+    private MX11E4Database database;
     public class MiCANBinder extends Binder {
 
         private Thread mReadPortThread = null;
@@ -75,6 +84,11 @@ public class MyService extends Service {
         private String filePath;
 
         private long startCANTime;
+
+
+        private Map<Long,List<SignalInfo>> monitorSignalMap = new HashMap<>();
+
+
 
 
         public String getFilePath() {
@@ -203,20 +217,27 @@ public class MyService extends Service {
                             wait100ms();
                             continue;
                         }
+                        ShowSignal[] tmp = new ShowSignal[1];
+                        tmp[0] = new ShowSignal();
+                        tmp[0].setName("111");
                         showCANMsg.setTimestamp((double) (poll.timestamp + startCANTime) /1000000);
                         showCANMsg.setSqlId(poll.getIndex());
                         showCANMsg.setChannel(poll.getBUS_ID());
                         showCANMsg.setArbitrationId(poll.getCAN_ID());
-                        showCANMsg.setName("");
+                        showCANMsg.setName("1111");
                         showCANMsg.setCanType("CANFD");
                         showCANMsg.setDir("rx");
                         showCANMsg.setDlc(String.valueOf(poll.getDataLength()));
                         showCANMsg.setData(Arrays.copyOf(poll.getData(),poll.getDataLength()));
+                        showCANMsg.setParsedData(tmp);
                         ret = gDealQueue.write_deepcopy(showCANMsg);
-//                        if(!ret)
-//                        {
-//                            Log.d(TAG,"gDealQueue is full,write failed");
-//                        }
+
+                        /***************************************************************************************/
+                        synchronized (MiCANBinder.this)
+                        {
+                            checkIfMonitor(poll);
+                        }
+                        /**************************************************************************************/
                         record(poll.timestamp,poll.BUS_ID,poll.dataLength,poll.CAN_ID,poll.CAN_TYPE,
                                 poll.data);
                     }
@@ -262,6 +283,33 @@ public class MyService extends Service {
                 }
             }
             return true;
+        }
+
+        private void checkIfMonitor(CanMessage canMessage)
+        {
+
+            int BUSId = canMessage.getBUS_ID();
+            int CANId = canMessage.getCAN_ID();
+            double timestamp = (double) (canMessage.timestamp + startCANTime) /1000000 ;
+            long uniqueKey = getKey(BUSId,CANId);
+            byte[] data = canMessage.getData();
+            // 看该报文是否存在要解析的信号
+            if(monitorSignalMap.containsKey(uniqueKey))
+            {
+                List<SignalInfo> signalInfos = monitorSignalMap.get(uniqueKey);
+                if(signalInfos != null)
+                {
+                    signalInfos.forEach(signalInfo -> {
+                        int startBit = signalInfo.bitStart;
+                        int bitLength = signalInfo.bitLength;
+                        signalInfo.times.add(timestamp);
+                        signalInfo.values.add((double) getSignal(startBit,bitLength,data));
+                    });
+                    Log.d(TAG,"该信号已成功解析");
+                }else {
+                    Log.w(TAG,"uniqueKey in msgSignalMap is null");
+                }
+            }
         }
 
         public String getAppVersion()
@@ -322,9 +370,10 @@ public class MyService extends Service {
             {
                 mcuHelper.monitor();
             }
-            Log.i(TAG,String.format("已录制 %d 报文 gCanQueue1 %d gDealQueue %d",gRecvMsgNum.get(),
+            Log.d(TAG,String.format("已录制 %d 报文 gCanQueue1 %d gDealQueue %d",gRecvMsgNum.get(),
                     gCanQueue1.size(),gDealQueue.size()
                     ));
+//            Log.i(TAG,msgSignalMap.toString());
 
         }
 
@@ -343,11 +392,6 @@ public class MyService extends Service {
             return new CanMessage();
         }
 
-        public List<ShowCANMsg> getMessages() {
-            List<ShowCANMsg> showCANMsgs = gDealQueue.readAll();
-            return showCANMsgs;
-        }
-
         /**
          * @brief 获取最后的100条数据
          * @return 封装的数据包
@@ -362,9 +406,32 @@ public class MyService extends Service {
             {
                 showCANMsgs = showCANMsgs.subList(num-500,num);
             }
+            // 将 monitorSignal 里面的数据都返回出来，这里要设计为线程安全
+            List<ShowSignal> showSignals = new ArrayList<>();
+            synchronized (MiCANBinder.this)
+            {
+                monitorSignalMap.values().forEach(value->{
+                    value.forEach(signalInfo -> {
+                        ShowSignal showSignal = new ShowSignal();
+                        showSignal.setName(signalInfo.name);
+                        showSignal.setBusId(signalInfo.BUSId);
+                        showSignal.setCanId(signalInfo.CANId);
+                        showSignal.setValues(signalInfo.values);
+                        showSignal.setTimes(signalInfo.times);
+                        showSignals.add(showSignal);
+                        // 将观察表中的数据复位
+                        signalInfo.values = new ArrayList<>();
+                        signalInfo.times = new ArrayList<>();
+                    });
+                });
+            }
+
+
+
             DataWrapper dataWrapper = new DataWrapper();
             dataWrapper.setStart_time((double) startCANTime /1000000);
             dataWrapper.setFrame_data(showCANMsgs);
+            dataWrapper.setSignal_data(showSignals);
             return dataWrapper;
         }
 
@@ -380,11 +447,42 @@ public class MyService extends Service {
             return deviceInfo;
         }
 
+
+        /**
+         * @param ids 用于监控信号
+         */
+        public void monitorSignal(List<Long> ids)
+        {
+            // 初始化监控
+            monitorSignalMap = new HashMap<>();
+            ids.forEach(id->{
+                SignalInfo signalInfo = database.signalInfoDao().getSignalById(id);
+                long key = getKey(signalInfo.BUSId, signalInfo.CANId);
+                if(monitorSignalMap.containsKey(key))
+                {
+                    List<SignalInfo> signalInfos = monitorSignalMap.get(key);
+                    if(signalInfos == null)
+                    {
+                        signalInfos = new ArrayList<>();
+                    }
+                    signalInfos.add(signalInfo);
+                }else {
+                    List<SignalInfo> signalInfos = new ArrayList<>();
+                    signalInfos.add(signalInfo);
+                    monitorSignalMap.put(key,signalInfos);
+                }
+                Log.e(TAG,"添加 " + signalInfo.name + " 成功");
+            });
+        }
+
+
+
     }
 
     @Override
     public IBinder onBind(Intent intent) {
         Log.i(TAG, "onBind");
+        database = MyApplication.getInstance().getMx11E4Database();
         return m_binder;
     }
 
