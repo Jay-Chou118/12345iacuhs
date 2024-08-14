@@ -6,6 +6,7 @@ import static com.example.testcdc.Utils.Utils.getKey;
 import static com.example.testcdc.Utils.Utils.getSignal;
 import static com.example.testcdc.Utils.Utils.wait1000ms;
 import static com.example.testcdc.Utils.Utils.wait100ms;
+import static com.example.testcdc.Utils.Utils.wait10ms;
 import static com.example.testcdc.Utils.Utils.wait200ms;
 
 import android.annotation.SuppressLint;
@@ -58,9 +59,6 @@ public class MyService extends Service {
     public MyService() {
     }
 
-
-    public static final LinkedBlockingQueue<CanMessage> gCanQueue = new LinkedBlockingQueue<>(1024*1024*10);
-
     public static final NoLockCANBuffer gCanQueue1 = new NoLockCANBuffer(100000);
 
     public static final NoLockShowCANBuffer gDealQueue = new NoLockShowCANBuffer(100000);
@@ -104,7 +102,7 @@ public class MyService extends Service {
 
             // 让线程退出
             g_notExitFlag.set(false);
-            wait100ms();
+            wait200ms();
 
             for(MCUHelper mcuHelper : mMcuHelperList)
             {
@@ -164,6 +162,11 @@ public class MyService extends Service {
                 return false;
             }
 
+            for(MCUHelper mcuHelper: mMcuHelperList)
+            {
+                mcuHelper.init();
+
+            }
             mParseThread = new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -177,7 +180,7 @@ public class MyService extends Service {
                         }
                         if(!ret)
                         {
-                            wait100ms();
+                            wait10ms();
                         }
                     }
                     Log.w(TAG,"ParseSerial thread is exit");
@@ -187,14 +190,18 @@ public class MyService extends Service {
             mHeartBeatThread = new Thread(new Runnable() {
                 @Override
                 public void run() {
+                    long index = 0;
                     while (g_notExitFlag.get())
                     {
-                        wait1000ms();
-                        for(MCUHelper mcuHelper : mMcuHelperList)
+                        if(index % 100 == 0)
                         {
-                            mcuHelper.sendHeartBeat();
+                            for(MCUHelper mcuHelper : mMcuHelperList)
+                            {
+                                mcuHelper.sendHeartBeat();
+                            }
                         }
-
+                        index += 1;
+                        wait10ms();
                     }
                     Log.w(TAG,"HeartBeat thread is exit");
                 }
@@ -245,11 +252,6 @@ public class MyService extends Service {
             },"CostMsg");
             mCostMsgThread.start();
 
-            for(MCUHelper mcuHelper: mMcuHelperList)
-            {
-                mcuHelper.init();
-
-            }
             wait200ms();
             String firstSn = mMcuHelperList.get(0).getmSN();
             // 判断后续几个mcu是否为一个产品
@@ -305,7 +307,7 @@ public class MyService extends Service {
                         signalInfo.times.add(timestamp);
                         signalInfo.values.add((double) getSignal(startBit,bitLength,data));
                     });
-                    Log.d(TAG,"该信号已成功解析");
+//                    Log.d(TAG,"该信号已成功解析");
                 }else {
                     Log.w(TAG,"uniqueKey in msgSignalMap is null");
                 }
@@ -418,6 +420,7 @@ public class MyService extends Service {
                         showSignal.setCanId(signalInfo.CANId);
                         showSignal.setValues(signalInfo.values);
                         showSignal.setTimes(signalInfo.times);
+                        showSignal.setRaw_values(signalInfo.values);
                         showSignals.add(showSignal);
                         // 将观察表中的数据复位
                         signalInfo.values = new ArrayList<>();

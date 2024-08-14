@@ -24,4 +24,6 @@ public interface SignalInfoDao {
 
     @Query("select * from signal_info where name=:name limit 1")
     SignalInfo getSignal(String name);
+
+
 }

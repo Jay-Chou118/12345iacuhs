@@ -14,6 +14,8 @@ public class ShowSignal {
 
     List<Double> values;
 
+    List<Double> raw_values;
+
     public ShowSignal(String name, int busId, int canId, List<Double> times, List<Double> values) {
         this.name = name;
         this.busId = busId;
@@ -43,5 +45,13 @@ public class ShowSignal {
 
     public void setValues(List<Double> values) {
         this.values = values;
+    }
+
+    public List<Double> getRaw_values() {
+        return raw_values;
+    }
+
+    public void setRaw_values(List<Double> raw_values) {
+        this.raw_values = raw_values;
     }
 }

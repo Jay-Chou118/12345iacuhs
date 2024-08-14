@@ -1,7 +1,6 @@
 package com.example.testcdc;
 
 import static com.example.testcdc.MyService.decompress;
-import static com.example.testcdc.MyService.gCanQueue;
 import static com.example.testcdc.MyService.gCanQueue1;
 import static com.example.testcdc.MyService.gRecvMsgNum;
 import static com.example.testcdc.MyService.g_notExitFlag;

@@ -1,0 +1,1731 @@
+AMPADASRMSPrsnt,4,725,false,false,7,2,1,0,1,0.0,0.0,0.0
+AMPANCRMSPrsnt,4,725,false,false,5,2,1,0,1,0.0,0.0,0.0
+AMPAVASRMSPrsnt,4,725,false,false,3,2,1,0,1,0.0,0.0,0.0
+AMPChimeRMSPrsnt,4,725,false,false,1,2,1,0,1,0.0,0.0,0.0
+AMPDSPHeartbeat,4,725,false,false,15,16,1,0,1,0.0,0.0,0.0
+AMPHeadrestRMSPrsnt,4,725,false,false,31,2,1,0,1,0.0,0.0,0.0
+AMPMediaRMSPrsnt,4,725,false,false,29,2,1,0,1,0.0,0.0,0.0
+AMPNaviRMSPrsnt,4,725,false,false,27,2,1,0,1,0.0,0.0,0.0
+AMPOutAVASChRMS,4,725,false,false,25,2,1,0,1,0.0,0.0,0.0
+AMPInpVoltageVal,4,725,false,false,39,16,1,0,1,0.0,0.0,0.0
+AMPOutCFLChRMS,4,725,false,false,55,2,1,0,1,0.0,0.0,0.0
+AMPOutCFRChRMS,4,725,false,false,53,2,1,0,1,0.0,0.0,0.0
+AMPOutCNTMChRMS,4,725,false,false,51,2,1,0,1,0.0,0.0,0.0
+AMPOutCRLChRMS,4,725,false,false,49,2,1,0,1,0.0,0.0,0.0
+AMPOutCRRChRMS,4,725,false,false,63,2,1,0,1,0.0,0.0,0.0
+AMPOutFLMChRMS,4,725,false,false,61,2,1,0,1,0.0,0.0,0.0
+AMPOutFLWTChRMS,4,725,false,false,59,2,1,0,1,0.0,0.0,0.0
+AMPOutFRMChRMS,4,725,false,false,57,2,1,0,1,0.0,0.0,0.0
+AMPOutFRWTChRMS,4,725,false,false,71,2,1,0,1,0.0,0.0,0.0
+AMPOutLHRChRMS,4,725,false,false,69,2,1,0,1,0.0,0.0,0.0
+AMPOutRHRChRMS,4,725,false,false,67,2,1,0,1,0.0,0.0,0.0
+AMPOutRLMChRMS,4,725,false,false,65,2,1,0,1,0.0,0.0,0.0
+AMPOutRLSURChRMS,4,725,false,false,79,2,1,0,1,0.0,0.0,0.0
+AMPOutRLWTChRMS,4,725,false,false,77,2,1,0,1,0.0,0.0,0.0
+AMPOutRRMChRMS,4,725,false,false,75,2,1,0,1,0.0,0.0,0.0
+AMPOutRRSURChRMS,4,725,false,false,73,2,1,0,1,0.0,0.0,0.0
+AMPOutRRWTChRMS,4,725,false,false,87,2,1,0,1,0.0,0.0,0.0
+AMPOutSUB1ChRMS,4,725,false,false,85,2,1,0,1,0.0,0.0,0.0
+AMPOutSUB2ChRMS,4,725,false,false,83,2,1,0,1,0.0,0.0,0.0
+AMPPhoneRMSPrsnt,4,725,false,false,81,2,1,0,1,0.0,0.0,0.0
+AMPPowerICInitSts,4,725,false,false,95,1,1,0,1,0.0,0.0,0.0
+AMPPwrModSts,4,725,false,false,94,4,1,0,1,0.0,0.0,0.0
+AMPSysRMSPrsnt,4,725,false,false,90,2,1,0,1,0.0,0.0,0.0
+AMPTDMSts,4,725,false,false,88,1,1,0,1,0.0,0.0,0.0
+AMPTDMLostCnt,4,725,false,false,103,7,1,0,1,0.0,0.0,0.0
+AMPUSBMicRMSPrsnt,4,725,false,false,111,2,1,0,1,0.0,0.0,0.0
+AMPVRRMSPrsnt,4,725,false,false,109,2,1,0,2,0.0,0.0,0.0
+AMPAutoHVacVolSetResp,4,734,false,false,7,3,1,0,音量自适应空调风量开关反馈信号,0.0,0.0,0.0
+AMPAutoSpeedVolSetResp,4,734,false,false,4,3,1,0,音量随速调节开关反馈信,0.0,0.0,0.0
+AMPAVASdBVolResp,4,734,false,false,1,10,0.1,-100.0,AVAS音量 dB 反馈信号,0.0,0.0,0.0
+AMPAVASMutSetResp,4,734,false,false,23,1,1,0,AVASmute反馈信号,0.0,0.0,0.0
+AMPAVASVolResp,4,734,false,false,22,7,1,0,AVAS音量反馈信号,0.0,0.0,0.0
+AMPSoundStgRoomSizeSetResp,4,734,false,false,30,5,1.0,0.0,声场房间大小调节设置反馈,0.0,0.0,0.0
+AMPCalldBVolResp,4,734,false,false,25,10,0.1,-100.0,通讯类音量 dB 反馈信号,0.0,0.0,0.0
+AMPCallMutSetResp,4,734,false,false,47,1,1,0,通讯类mute反馈信号,0.0,0.0,0.0
+AMPCallVolResp,4,734,false,false,46,7,1,0,通讯类音量反馈信号,0.0,0.0,0.0
+AMPESSdBVolResp,4,734,false,false,55,10,0.1,-100.0,模拟声浪音量 dB 反馈信号,0.0,0.0,0.0
+AMPSoundEffSetResp,4,734,false,false,61,4,1,0,音效设置反馈,0.0,0.0,0.0
+AMPIninSts,4,734,false,false,57,1,1,0,AMP初始化状态,0.0,0.0,0.0
+AMPESSMutSetResp,4,734,false,false,71,1,1,0,模拟声浪mute反馈信号,0.0,0.0,0.0
+AMPESSVolResp,4,734,false,false,70,7,1,0,模拟声浪音量反馈信号,0.0,0.0,0.0
+AMPTTSVolResp,4,734,false,false,79,7,1,0,TTS混音音量反馈信号,0.0,0.0,0.0
+AMPVRVolResp,4,734,false,false,87,7,1,0,语音类音量反馈信号,0.0,0.0,0.0
+AMPMediadBVolResp,4,734,false,false,95,10,0.1,-100.0,多媒体音量 dB 反馈信号,0.0,0.0,0.0
+AMPmediaPahNrResp,4,734,false,false,101,3,1,0,媒体通道数反馈,0.0,0.0,0.0
+AMPSoundFieSetResp,4,734,false,false,98,3,1,0,声场设置反馈,0.0,0.0,0.0
+AMPMediaMutSetResp,4,734,false,false,111,1,1,0,多媒体mute反馈信号,0.0,0.0,0.0
+AMPMediaVolResp,4,734,false,false,110,7,1,0,多媒体音量反馈信号,0.0,0.0,0.0
+AMPFrntReBalSetResp,4,734,false,false,119,5,1.0,-11.0,前后平衡调节设置反馈,0.0,0.0,0.0
+AMPPASMutSetResp,4,734,false,false,113,1,1,0,雷达报警音mute反馈信号,0.0,0.0,0.0
+AMPSysMutSetResp,4,734,false,false,112,1,1,0,系统mute反馈信号,0.0,0.0,0.0
+AMPSysWarnMutSetResp,4,734,false,false,121,1,1,0,系统提示音类mute反馈信号,0.0,0.0,0.0
+AMPVRMutSetResp,4,734,false,false,120,1,1,0,语音类mute反馈信号,0.0,0.0,0.0
+AMPHdrestdBVolResp,4,734,false,false,135,10,0.1,-100.0,头枕音量dB反馈信号,0.0,0.0,0.0
+AMPNavidBVolResp,4,734,false,false,137,10,0.1,-100.0,导航类音量 dB 反馈信号,0.0,0.0,0.0
+AMPNaviMutSetResp,4,734,false,false,159,1,1,0,导航类mute反馈信号,0.0,0.0,0.0
+AMPNaviVolResp,4,734,false,false,158,7,1,0,导航类音量反馈信号,0.0,0.0,0.0
+AMPPASdBVolResp,4,734,false,false,167,10,0.1,-100.0,雷达报警音音量 dB 反馈信号,0.0,0.0,0.0
+AMPPASVolResp,4,734,false,false,182,7,1,0,雷达报警音音量反馈信号,0.0,0.0,0.0
+AMPSysWarndBVolResp,4,734,false,false,191,10,0.1,-100.0,系统提示音类音量 dB 反馈信号,0.0,0.0,0.0
+AMPHdrestModSetResp,4,734,false,false,197,3,1,0,头枕设置反馈,0.0,0.0,0.0
+AMPANCPahChgResp,4,734,false,false,194,2,1,0,ANC channel switching feedback\nANC通道切换反馈,0.0,0.0,0.0
+AMPSysWarnVolResp,4,734,false,false,207,7,1,0,系统提示音类音量反馈信号,0.0,0.0,0.0
+AMPTTSdBVolResp,4,734,false,false,215,10,0.1,-100.0,TTS混音音量 dB 反馈信号,0.0,0.0,0.0
+AMPVehWarndBVolResp,4,734,false,false,217,10,0.1,-100.0,车辆报警音音量 dB 反馈信号,0.0,0.0,0.0
+AMPVehWarnMutSetResp,4,734,false,false,239,1,1,0,车辆报警音mute反馈信号,0.0,0.0,0.0
+AMPVehWarnVolResp,4,734,false,false,238,7,1,0,车辆报警音音量反馈信号,0.0,0.0,0.0
+AMPVRdBVolResp,4,734,false,false,247,10,0.1,-100.0,语音类音量 dB 反馈信号,0.0,0.0,0.0
+AMPLeRiBalSetResp,4,734,false,false,253,5,1.0,-11.0,左右平衡调节设置反馈,0.0,0.0,0.0
+AMPEQ1SetResp,4,734,false,false,263,6,0.5,-12.5,EQ1设置反馈,0.0,0.0,0.0
+AMPEQ2SetResp,4,734,false,false,271,6,0.5,-12.5,EQ2设置反馈,0.0,0.0,0.0
+AMPEQ3SetResp,4,734,false,false,279,6,0.5,-12.5,EQ3设置反馈,0.0,0.0,0.0
+AMPEQ4SetResp,4,734,false,false,287,6,0.5,-12.5,EQ4设置反馈,0.0,0.0,0.0
+AMPEQ5SetResp,4,734,false,false,295,6,0.5,-12.5,EQ5设置反馈,0.0,0.0,0.0
+AMPEQ6SetResp,4,734,false,false,303,6,0.5,-12.5,EQ6设置反馈,0.0,0.0,0.0
+AMPHdrestVolResp,4,734,false,false,311,7,1,0,头枕音量反馈信号,0.0,0.0,0.0
+AMPHdrestMutSetResp,4,734,false,false,304,1,1,0,头枕mute反馈信号,0.0,0.0,0.0
+AMPSoundStgHeiSetResp,4,734,false,false,319,5,1.0,0.0,声场高度调节设置反馈,0.0,0.0,0.0
+AMPSoundStgWidthSetResp,4,734,false,false,327,5,1.0,0.0,声场宽度调节设置反馈,0.0,0.0,0.0
+AMPSoundStgWetDrySetResp,4,734,false,false,335,7,1.0,0.0,声场干湿比调节设置反馈,0.0,0.0,0.0
+AMPEcoSetReqResp,4,734,false,false,328,1,1,0,AMP低功耗模式反馈,0.0,0.0,0.0
+AMPUsbMicMutSetResp,4,734,false,false,343,1,1,0,USBMICmute反馈信号,0.0,0.0,0.0
+AMPUsbMicVolResp,4,734,false,false,342,7,1,0,USBMIC音量反馈信号,0.0,0.0,0.0
+AMPUsbMicdBVolResp,4,734,false,false,351,10,0.1,-100.0,USBMIC音量(dB)反馈信号,0.0,0.0,0.0
+AMPAVASCircFltSts,4,735,false,false,7,1,1,0,amplifier External circuit fault status\n功放外设故障状态,0.0,0.0,0.0
+AMPTFltSts,4,735,false,false,6,2,1,0,amplifier temperature fault status\n功放温度故障状态,0.0,0.0,0.0
+AMPUFltSts,4,735,false,false,4,2,1,0,amplifier voltage fault status\n功放电压故障状态,0.0,0.0,0.0
+AMPFaultInfoFlag,4,735,false,false,2,1,1,0,AMP Fault Information Flag,0.0,0.0,0.0
+AMPTTSMutSetResp,4,735,false,false,1,1,1,0,报警类TTS mute反馈信号,0.0,0.0,0.0
+AMPNodeAddress,4,1368,false,false,7,8,1,0,Node source address,0.0,0.0,0.0
+AMPActiveWakeup,4,1368,false,false,12,1,1,0,Active Wakeup Bit,0.0,0.0,0.0
+AMPRepeatMsgReq,4,1368,false,false,8,1,1,0,Repeat Message Request Bit,0.0,0.0,0.0
+AMPRepeatMsgSt,4,1368,false,false,16,1,1,0,Repeat Message State indication,0.0,0.0,0.0
+NMKeepAwkRsnAMP,4,1368,false,false,48,9,1,0,,0.0,0.0,0.0
+AMPToVCCDDiagResp,4,1697,false,false,7,512,1,0,,0.0,0.0,0.0
+WhlStsSigGrpChks,4,179,false,false,7,8,1,0,,0.0,0.0,0.0
+WhlSpdFrntLeVld,4,179,false,false,15,1,1,0,Status of wheel speed front left,0.0,0.0,0.0
+WhlSpdFrntRiVld,4,179,false,false,14,1,1,0,Status of wheel speed front right,0.0,0.0,0.0
+WhlSpdReLeVld,4,179,false,false,13,1,1,0,Status of wheel speed rear left,0.0,0.0,0.0
+WhlSpdReRiVld,4,179,false,false,12,1,1,0,Status of wheel speed rear right,0.0,0.0,0.0
+WhlStsSigGrpCntr,4,179,false,false,11,4,1,0,,0.0,0.0,0.0
+WhlSpdFrntLe,4,179,false,false,23,16,0.05625,0.0,Wheel speed front left,0.0,0.0,0.0
+WhlSpdFrntRi,4,179,false,false,39,16,0.05625,0.0,Wheel speed front right,0.0,0.0,0.0
+WhlSpdReLe,4,179,false,false,55,16,0.05625,0.0,Wheel speed rear left,0.0,0.0,0.0
+WhlSpdReRi,4,179,false,false,71,16,0.05625,0.0,Wheel speed rear right,0.0,0.0,0.0
+VehSpd,4,179,false,false,87,16,0.05625,0.0,Vehicle speed,0.0,0.0,0.0
+VehSpdVld,4,179,false,false,103,1,1,0,Qualifier for vehicle speed signal,0.0,0.0,0.0
+WhlDirFrntLeVld,4,179,false,false,102,1,1,0,Qualifier for wheel moving direction front left,0.0,0.0,0.0
+WhlDirFrntLe,4,179,false,false,101,2,1,0,Wheel moving direction front left,0.0,0.0,0.0
+WhlSpdEdgeFrntLeVld,4,179,false,false,99,1,1,0,Qualifier for wheel speed Edges front left,0.0,0.0,0.0
+WhlDirFrntRiVld,4,179,false,false,98,1,1,0,Qualifier for wheel moving direction front right,0.0,0.0,0.0
+WhlDirFrntRi,4,179,false,false,97,2,1,0,Wheel moving direction front right,0.0,0.0,0.0
+WhlSpdEdgeFrntLe,4,179,false,false,111,8,1,0,Wheel speed Edges front left,0.0,0.0,0.0
+WhlSpdEdgeFrntRiVld,4,179,false,false,119,1,1,0,Qualifier for wheel speed Edges front right,0.0,0.0,0.0
+WhlDirReLeVld,4,179,false,false,118,1,1,0,Qualifier for wheel moving direction rear left,0.0,0.0,0.0
+WhlDirReLe,4,179,false,false,117,2,1,0,Wheel moving direction rear left,0.0,0.0,0.0
+WhlSpdEdgeReLeVld,4,179,false,false,115,1,1,0,Qualifier for wheel speed Edges rear left,0.0,0.0,0.0
+WhlDirReRiVld,4,179,false,false,114,1,1,0,Qualifier for wheel moving direction rear right,0.0,0.0,0.0
+WhlDirReRi,4,179,false,false,113,2,1,0,Wheel moving direction rear right,0.0,0.0,0.0
+WhlSpdEdgeFrntRi,4,179,false,false,127,8,1,0,Wheel speed Edges front right,0.0,0.0,0.0
+WhlSpdEdgeReLe,4,179,false,false,135,8,1,0,Wheel speed Edges rear left,0.0,0.0,0.0
+WhlSpdEdgeReRiVld,4,179,false,false,143,1,1,0,Qualifier for wheel speed Edges rear right,0.0,0.0,0.0
+WhlSpdEdgeReRi,4,179,false,false,151,8,1,0,Wheel speed Edges rear right,0.0,0.0,0.0
+WhlDstTiStampFrntLe,4,179,false,false,159,16,1,0,Wheel distance time stamp for front left,0.0,0.0,0.0
+WhlDstTiStampFrntRi,4,179,false,false,175,16,1,0,Wheel distance time stamp for front right,0.0,0.0,0.0
+WhlDstTiStampReLe,4,179,false,false,191,16,1,0,Wheel distance time stamp for rear left,0.0,0.0,0.0
+WhlDstTiStampReRi,4,179,false,false,207,16,1,0,Wheel distance time stamp for rear left,0.0,0.0,0.0
+AdcFcnSigGrpChks,4,179,false,false,223,8,1,0,,0.0,0.0,0.0
+BCSActrActvForADC,4,179,false,false,231,2,1,0,BCS actuator active for ADC,0.0,0.0,0.0
+BCSActrRampOffStsForADC,4,179,false,false,229,2,1,0,BCS actuator ramp off status for ADC,0.0,0.0,0.0
+AdcFcnSigGrpCntr,4,179,false,false,227,4,1,0,,0.0,0.0,0.0
+BCSActrAvlStsForADC,4,179,false,false,239,3,1,0,BCS actuator available status for ADC,0.0,0.0,0.0
+BCSActrAvlStsForADCL3,4,179,false,false,236,3,1,0,BCS available status for ADC L3,0.0,0.0,0.0
+BCSActrVldForADC,4,179,false,false,233,1,1,0,BCS actuator valid for ADC,0.0,0.0,0.0
+BattURawSigGrpChks,4,579,false,false,7,8,1,0,,0.0,0.0,0.0
+BattURawSigGrpCntr,4,579,false,false,11,4,1,0,,0.0,0.0,0.0
+BattURaw,4,579,false,false,23,15,0.001,0.0,Battery Voltage raw\n电池电压,0.0,0.0,0.0
+BattSocRawSigGrpChks,4,579,false,false,39,8,1,0,,0.0,0.0,0.0
+BattSocRawSigGrpCntr,4,579,false,false,43,4,1,0,,0.0,0.0,0.0
+BattSocRaw,4,579,false,false,49,10,0.1,0.0,Battery State of charge raw\n电池SOC,0.0,0.0,0.0
+WiprSpdModSts,4,277,false,false,7,6,1,0,雨刮速度状态反馈,0.0,0.0,0.0
+MechWiprInPrkgPosn,4,277,false,false,1,1,1,0,机械雨刮回位开关是否使能,0.0,0.0,0.0
+WashReq,4,277,false,false,0,1,1,0,清洗开关\nWash request,0.0,0.0,0.0
+RemStrtAvlStsToSoa,4,277,false,false,15,2,1,0,the available status for Remote start to SOA,0.0,0.0,0.0
+DmsVMMDrvOnSeatCnfmReqSoa,4,277,false,false,13,1,1,0,DMS Driver Seated status confirm requested from VMM,0.0,0.0,0.0
+TurnLgtWrkRsn,4,277,false,false,23,8,1,0,Turn Light Work Reason,0.0,0.0,0.0
+WashMotErr,4,436,false,false,10,1,1,0,Wash Motor Error\n洗涤电机故障发生,0.0,0.0,0.0
+ExtrLghtMusModStsToSoa,4,436,false,false,9,1,1.0,0.0,ExtrLight status for Music Show\n灯光秀外灯是否可用,0.0,0.0,0.0
+WlcmFrwlModOfFrntLghtReq2Soa,4,436,false,false,23,8,1.0,0.0,A front light welcome/Send-off animation mode request sent to Soa\n外灯子系统发送给Soa的前灯欢迎/欢送动画模式请求,0.0,0.0,0.0
+WlcmFrwlModOfTailLghtReq2Soa,4,436,false,false,31,8,1.0,0.0,A tail light welcome/Send-off animation mode request sent to Soa\n外灯子系统发送给Soa的尾灯欢迎/欢送动画模式请求,0.0,0.0,0.0
+ShowCarModInhWinScrWsh,4,551,false,false,23,1,1,0,Show CarMode Inhibit Window Screen Wash Warning,0.0,0.0,0.0
+WiprWashActvSts,4,551,false,false,22,1,1,0,Window Screen Wash Active Status,0.0,0.0,0.0
+WiprWashAvlSts,4,551,false,false,21,1,1,0,Wiper Wash Avaliable Status,0.0,0.0,0.0
+HornSts,4,551,false,false,20,1,1,0,Horn Activation Status\n喇叭激活状态,0.0,0.0,0.0
+WshrLvrPosn,4,551,false,false,19,1,1,0,洗涤液液位过低提醒,0.0,0.0,0.0
+StsOfIndcr,4,551,false,false,18,3,1,0,转向状态指示,0.0,0.0,0.0
+RlsTrsm550nm,4,551,false,false,31,8,1.0,0.0,550nm波长玻璃透光率,0.0,0.0,0.0
+RlsTrsm880nm,4,551,false,false,39,8,1.0,0.0,880nm波长玻璃透光率,0.0,0.0,0.0
+LampSigGrpChks,4,600,false,false,7,8,1,0,,0.0,0.0,0.0
+LampSigGrpCntr,4,600,false,false,11,4,1,0,,0.0,0.0,0.0
+ActnOfLedRePosnLamp,4,600,false,false,23,1,1,0,后位置灯激活命令,0.0,0.0,0.0
+ActnOfLoBeam,4,600,false,false,22,1,1,0,近光灯激活,0.0,0.0,0.0
+ActnOfStopLamp,4,600,false,false,21,1,1,0,刹车灯激活命令,0.0,0.0,0.0
+ActvnOfIndcr,4,600,false,false,20,3,1,0,转向灯激活命令,0.0,0.0,0.0
+SeqTurnEnable,4,600,false,false,17,1,1,0,Sequential turn enable,0.0,0.0,0.0
+ActnOfRvsgLamp,4,600,false,false,46,1,1,0,倒车灯激活命令,0.0,0.0,0.0
+AllowedofADB,4,600,false,false,45,1,1,0,Allowed of ADB function,0.0,0.0,0.0
+LBLghtPatnSet,4,600,false,false,44,3,1,0,Low Beam Light Pattern Setting 近光模式设置,0.0,0.0,0.0
+ActnOfFrntCornrgLampLe,4,600,false,false,41,1,1,0,激活左角灯命令,0.0,0.0,0.0
+ActnOfFrntCornrgLampRi,4,600,false,false,40,1,1,0,激活右角灯命令,0.0,0.0,0.0
+WlcmFrwlLghtModSet,4,600,false,false,51,4,1,0,Wellcome and Farewell light mode setting,0.0,0.0,0.0
+IndcrDisp,4,600,false,false,63,2,1,0,双闪仪表反馈信号,0.0,0.0,0.0
+SBLPatnSet,4,600,false,false,61,2,1,0,Static bending light Pattern setting,0.0,0.0,0.0
+CtrlAHLAglRi,4,600,false,true,71,10,0.01,0.0,Control Right AHL  Angle,0.0,0.0,0.0
+AHLDirtCtrlRq,4,600,false,false,77,2,1,0,Auto Headlamp Leveling Direct control request,0.0,0.0,0.0
+AHLMotrRefRunReq,4,600,false,false,75,1,1,0,Auto Headlamp Leveling Motor Reference RUN Request,0.0,0.0,0.0
+AuxlForRvsPatnSet,4,600,false,false,73,1,1,0,Auxiliary Light for Reversed Pattern setting,0.0,0.0,0.0
+ExtrLghtPwrOff,4,600,false,false,72,1,1,0,Extrior Light Power Off,0.0,0.0,0.0
+LampSigGrp2Chks,4,600,false,false,95,8,1,0,,0.0,0.0,0.0
+ActnOfParkLampRi,4,600,false,false,101,1,1,0,Activation Of  Right Parking Lamp,0.0,0.0,0.0
+ActnOfParkLampLe,4,600,false,false,100,1,1,0,Activation Of  Left Parking Lamp,0.0,0.0,0.0
+LampSigGrp2Cntr,4,600,false,false,99,4,1,0,,0.0,0.0,0.0
+ActiveOfADB,4,600,false,false,111,1,1,0,Active of ADB Function  激活ADB 功能,0.0,0.0,0.0
+ActnOfDayRunngLampLe,4,600,false,false,110,1,1,0,Activation of Left DRL,0.0,0.0,0.0
+ActnOfLedFrntPosnLamp,4,600,false,false,109,1,1,0,Activation Of Front Position Lamp前位置灯激活命令,0.0,0.0,0.0
+ActnOfLedHiBeam,4,600,false,false,108,1,1,0,Activation Of High Beam远光激活命令,0.0,0.0,0.0
+SegmtDirCtrlSet,4,600,false,false,107,4,1,0,Segment  direct control setting,0.0,0.0,0.0
+SBLDmValSetLe,4,600,false,false,119,7,1,0,Left Static bending Light Dimming Value setting,0.0,0.0,0.0
+FarewellFuncSet,4,600,false,false,112,1,1,0,Farewell function setting,0.0,0.0,0.0
+SBLDmValSetRi,4,600,false,false,127,7,1,0,Left Static bending Light Dimming Value setting,0.0,0.0,0.0
+ActnOfDayRunngLampRi,4,600,false,false,120,1,1,0,Activation Of Right DRL 右日行灯激活命令,0.0,0.0,0.0
+WelcomeFuncSet,4,600,false,false,134,1,1,0,Welcome function setting,0.0,0.0,0.0
+CtrlAHLAglLe,4,600,false,true,143,10,0.01,0.0,Control Left AHL  Angle,0.0,0.0,0.0
+LeGFACntrHrztlAng1,4,605,false,true,7,10,0.1,0.0,horizontal angle of the center of  left headlamp glare free area,0.0,0.0,0.0
+LeGFADimDwnTime1,4,605,false,false,13,6,0.05,0.0,dimming down time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrHrztlAng2,4,605,false,true,23,10,0.1,0.0,horizontal angle of the center of  left headlamp glare free area,0.0,0.0,0.0
+LeGFADimDwnTime2,4,605,false,false,29,6,0.05,0.0,dimming down time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrHrztlAng3,4,605,false,true,39,10,0.1,0.0,horizontal angle of the center of  left headlamp glare free area,0.0,0.0,0.0
+LeGFADimDwnTime3,4,605,false,false,45,6,0.05,0.0,dimming down time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrHrztlAng4,4,605,false,true,55,10,0.1,0.0,horizontal angle of the center of  left headlamp glare free area,0.0,0.0,0.0
+LeGFADimDwnTime4,4,605,false,false,61,6,0.05,0.0,dimming down time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrHrztlAng5,4,605,false,true,71,10,0.1,0.0,horizontal angle of the center of  left headlamp glare free area,0.0,0.0,0.0
+LeGFADimDwnTime5,4,605,false,false,77,6,0.05,0.0,dimming down time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrHrztlAng6,4,605,false,true,87,10,0.1,0.0,horizontal angle of the center of  left headlamp glare free area,0.0,0.0,0.0
+LeGFADimDwnTime6,4,605,false,false,93,6,0.05,0.0,dimming down time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrHrztlAng7,4,605,false,true,103,10,0.1,0.0,horizontal angle of the center of  left headlamp glare free area,0.0,0.0,0.0
+LeGFADimDwnTime7,4,605,false,false,109,6,0.05,0.0,dimming down time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrHrztlAng8,4,605,false,true,119,10,0.1,0.0,horizontal angle of the center of  left headlamp glare free area,0.0,0.0,0.0
+LeGFADimDwnTime8,4,605,false,false,125,6,0.05,0.0,dimming down time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAHrztlHlfWidt1,4,605,false,false,135,9,0.1,0.0,horizontal half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrVrtclAng1,4,605,false,true,142,7,0.1,0.0,vertical angle of the center of left headlamp glare free area,0.0,0.0,0.0
+LeGFAHrztlHlfWidt2,4,605,false,false,151,9,0.1,0.0,horizontal half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrVrtclAng2,4,605,false,true,158,7,0.1,0.0,vertical angle of the center of left headlamp glare free area,0.0,0.0,0.0
+LeGFAHrztlHlfWidt3,4,605,false,false,167,9,0.1,0.0,horizontal half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrVrtclAng3,4,605,false,true,174,7,0.1,0.0,vertical angle of the center of left headlamp glare free area,0.0,0.0,0.0
+LeGFAHrztlHlfWidt4,4,605,false,false,183,9,0.1,0.0,horizontal half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrVrtclAng4,4,605,false,true,190,7,0.1,0.0,vertical angle of the center of left headlamp glare free area,0.0,0.0,0.0
+LeGFAHrztlHlfWidt5,4,605,false,false,199,9,0.1,0.0,horizontal half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrVrtclAng5,4,605,false,true,206,7,0.1,0.0,vertical angle of the center of left headlamp glare free area,0.0,0.0,0.0
+LeGFAHrztlHlfWidt6,4,605,false,false,215,9,0.1,0.0,horizontal half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrVrtclAng6,4,605,false,true,222,7,0.1,0.0,vertical angle of the center of left headlamp glare free area,0.0,0.0,0.0
+LeGFAHrztlHlfWidt7,4,605,false,false,231,9,0.1,0.0,horizontal half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrVrtclAng7,4,605,false,true,238,7,0.1,0.0,vertical angle of the center of left headlamp glare free area,0.0,0.0,0.0
+LeGFAHrztlHlfWidt8,4,605,false,false,247,9,0.1,0.0,horizontal half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFACntrVrtclAng8,4,605,false,true,254,7,0.1,0.0,vertical angle of the center of left headlamp glare free area,0.0,0.0,0.0
+LeGFADimUpTime1,4,605,false,false,263,6,0.05,0.0,dimming up time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAValidFlag1,4,605,false,false,257,1,1,0,valid flag of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimUpTime2,4,605,false,false,271,6,0.05,0.0,dimming up time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAValidFlag2,4,605,false,false,265,1,1,0,valid flag of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimUpTime3,4,605,false,false,279,6,0.05,0.0,dimming up time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAValidFlag3,4,605,false,false,273,1,1,0,valid flag of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimUpTime4,4,605,false,false,287,6,0.05,0.0,dimming up time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAValidFlag4,4,605,false,false,281,1,1,0,valid flag of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimUpTime5,4,605,false,false,295,6,0.05,0.0,dimming up time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAValidFlag5,4,605,false,false,289,1,1,0,valid flag of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimUpTime6,4,605,false,false,303,6,0.05,0.0,dimming up time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAValidFlag6,4,605,false,false,297,1,1,0,valid flag of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimUpTime7,4,605,false,false,311,6,0.05,0.0,dimming up time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAValidFlag7,4,605,false,false,305,1,1,0,valid flag of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimUpTime8,4,605,false,false,319,6,0.05,0.0,dimming up time of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAValidFlag8,4,605,false,false,313,1,1,0,valid flag of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimVal1,4,605,false,false,327,7,1,0,dimming value of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimVal2,4,605,false,false,335,7,1,0,dimming value of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimVal3,4,605,false,false,343,7,1,0,dimming value of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimVal4,4,605,false,false,351,7,1,0,dimming value of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimVal5,4,605,false,false,359,7,1,0,dimming value of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimVal6,4,605,false,false,367,7,1,0,dimming value of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimVal7,4,605,false,false,375,7,1,0,dimming value of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFADimVal8,4,605,false,false,383,7,1,0,dimming value of the light source of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAVrtclHlfWidt1,4,605,false,false,391,6,0.1,0.0,vertical half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAVrtclHlfWidt2,4,605,false,false,399,6,0.1,0.0,vertical half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAVrtclHlfWidt3,4,605,false,false,407,6,0.1,0.0,vertical half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAVrtclHlfWidt4,4,605,false,false,415,6,0.1,0.0,vertical half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAVrtclHlfWidt5,4,605,false,false,423,6,0.1,0.0,vertical half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAVrtclHlfWidt6,4,605,false,false,431,6,0.1,0.0,vertical half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAVrtclHlfWidt7,4,605,false,false,439,6,0.1,0.0,vertical half width of the left headlamp glare free area,0.0,0.0,0.0
+LeGFAVrtclHlfWidt8,4,605,false,false,447,6,0.1,0.0,vertical half width of the left headlamp glare free area,0.0,0.0,0.0
+RiGFACntrHrztlAng1,4,606,false,true,7,10,0.1,0.0,horizontal angle of the center of  right headlamp glare free area,0.0,0.0,0.0
+RiGFADimDwnTime1,4,606,false,false,13,6,0.05,0.0,dimming down time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrHrztlAng2,4,606,false,true,23,10,0.1,0.0,horizontal angle of the center of  right headlamp glare free area,0.0,0.0,0.0
+RiGFADimDwnTime2,4,606,false,false,29,6,0.05,0.0,dimming down time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrHrztlAng3,4,606,false,true,39,10,0.1,0.0,horizontal angle of the center of  right headlamp glare free area,0.0,0.0,0.0
+RiGFADimDwnTime3,4,606,false,false,45,6,0.05,0.0,dimming down time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrHrztlAng4,4,606,false,true,55,10,0.1,0.0,horizontal angle of the center of  right headlamp glare free area,0.0,0.0,0.0
+RiGFADimDwnTime4,4,606,false,false,61,6,0.05,0.0,dimming down time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrHrztlAng5,4,606,false,true,71,10,0.1,0.0,horizontal angle of the center of  right headlamp glare free area,0.0,0.0,0.0
+RiGFADimDwnTime5,4,606,false,false,77,6,0.05,0.0,dimming down time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrHrztlAng6,4,606,false,true,87,10,0.1,0.0,horizontal angle of the center of  right headlamp glare free area,0.0,0.0,0.0
+RiGFADimDwnTime6,4,606,false,false,93,6,0.05,0.0,dimming down time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrHrztlAng7,4,606,false,true,103,10,0.1,0.0,horizontal angle of the center of  right headlamp glare free area,0.0,0.0,0.0
+RiGFADimDwnTime7,4,606,false,false,109,6,0.05,0.0,dimming down time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrHrztlAng8,4,606,false,true,119,10,0.1,0.0,horizontal angle of the center of  right headlamp glare free area,0.0,0.0,0.0
+RiGFADimDwnTime8,4,606,false,false,125,6,0.05,0.0,dimming down time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAHrztlHlfWidt1,4,606,false,false,135,9,0.1,0.0,horizontal half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrVrtclAng1,4,606,false,true,142,7,0.1,0.0,vertical angle of the center of right headlamp glare free area,0.0,0.0,0.0
+RiGFAHrztlHlfWidt2,4,606,false,false,151,9,0.1,0.0,horizontal half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrVrtclAng2,4,606,false,true,158,7,0.1,0.0,vertical angle of the center of right headlamp glare free area,0.0,0.0,0.0
+RiGFAHrztlHlfWidt3,4,606,false,false,167,9,0.1,0.0,horizontal half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrVrtclAng3,4,606,false,true,174,7,0.1,0.0,vertical angle of the center of right headlamp glare free area,0.0,0.0,0.0
+RiGFAHrztlHlfWidt4,4,606,false,false,183,9,0.1,0.0,horizontal half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrVrtclAng4,4,606,false,true,190,7,0.1,0.0,vertical angle of the center of right headlamp glare free area,0.0,0.0,0.0
+RiGFAHrztlHlfWidt5,4,606,false,false,199,9,0.1,0.0,horizontal half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrVrtclAng5,4,606,false,true,206,7,0.1,0.0,vertical angle of the center of right headlamp glare free area,0.0,0.0,0.0
+RiGFAHrztlHlfWidt6,4,606,false,false,215,9,0.1,0.0,horizontal half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrVrtclAng6,4,606,false,true,222,7,0.1,0.0,vertical angle of the center of right headlamp glare free area,0.0,0.0,0.0
+RiGFAHrztlHlfWidt7,4,606,false,false,231,9,0.1,0.0,horizontal half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrVrtclAng7,4,606,false,true,238,7,0.1,0.0,vertical angle of the center of right headlamp glare free area,0.0,0.0,0.0
+RiGFAHrztlHlfWidt8,4,606,false,false,247,9,0.1,0.0,horizontal half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFACntrVrtclAng8,4,606,false,true,254,7,0.1,0.0,vertical angle of the center of right headlamp glare free area,0.0,0.0,0.0
+RiGFADimUpTime1,4,606,false,false,263,6,0.05,0.0,dimming up time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimUpTime2,4,606,false,false,271,6,0.05,0.0,dimming up time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimUpTime3,4,606,false,false,279,6,0.05,0.0,dimming up time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimUpTime4,4,606,false,false,287,6,0.05,0.0,dimming up time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimUpTime5,4,606,false,false,295,6,0.05,0.0,dimming up time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimUpTime6,4,606,false,false,303,6,0.05,0.0,dimming up time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimUpTime7,4,606,false,false,311,6,0.05,0.0,dimming up time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimUpTime8,4,606,false,false,319,6,0.05,0.0,dimming up time of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimVal1,4,606,false,false,327,7,1,0,dimming value of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimVal2,4,606,false,false,335,7,1,0,dimming value of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimVal3,4,606,false,false,343,7,1,0,dimming value of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimVal4,4,606,false,false,351,7,1,0,dimming value of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimVal5,4,606,false,false,359,7,1,0,dimming value of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimVal6,4,606,false,false,367,7,1,0,dimming value of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimVal7,4,606,false,false,375,7,1,0,dimming value of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFADimVal8,4,606,false,false,383,7,1,0,dimming value of the light source of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAVrtclHlfWidt1,4,606,false,false,391,6,0.1,0.0,vertical half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAValidFlag1,4,606,false,false,385,1,1,0,valid flag of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAVrtclHlfWidt2,4,606,false,false,399,6,0.1,0.0,vertical half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAValidFlag2,4,606,false,false,393,1,1,0,valid flag of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAVrtclHlfWidt3,4,606,false,false,407,6,0.1,0.0,vertical half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAValidFlag3,4,606,false,false,401,1,1,0,valid flag of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAVrtclHlfWidt4,4,606,false,false,415,6,0.1,0.0,vertical half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAValidFlag4,4,606,false,false,409,1,1,0,valid flag of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAVrtclHlfWidt5,4,606,false,false,423,6,0.1,0.0,vertical half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAValidFlag5,4,606,false,false,417,1,1,0,valid flag of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAVrtclHlfWidt6,4,606,false,false,431,6,0.1,0.0,vertical half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAValidFlag6,4,606,false,false,425,1,1,0,valid flag of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAVrtclHlfWidt7,4,606,false,false,439,6,0.1,0.0,vertical half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAValidFlag7,4,606,false,false,433,1,1,0,valid flag of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAVrtclHlfWidt8,4,606,false,false,447,6,0.1,0.0,vertical half width of the right headlamp glare free area,0.0,0.0,0.0
+RiGFAValidFlag8,4,606,false,false,441,1,1,0,valid flag of the right headlamp glare free area,0.0,0.0,0.0
+WiprWashNotAvlRsn,4,707,false,false,7,8,1,0,Wiper Wash Not Avaliable Reason,0.0,0.0,0.0
+RainSnsrSnvtySts,4,707,false,false,15,3,1,0,VCCD雨量传感器灵敏度状态,0.0,0.0,0.0
+WiprHoodOpenInde,4,707,false,false,12,1,1,0,雨刮运行时前舱盖未关闭提醒,0.0,0.0,0.0
+VCCDOdoEgyCnsBacReq,4,707,false,false,31,3,1,0,VCCD total odo and energy consumption back up request,0.0,0.0,0.0
+RainSnsrSnvtyOut,4,707,false,false,26,3,1,0,1,0.0,0.0,0.0
+VehSysFltWarnSigGrpChks,4,708,false,false,7,8,1,0,,0.0,0.0,0.0
+VCUHVSysFltWarnSts,4,708,false,false,15,4,1,0,高压系统故障 分等级,0.0,0.0,0.0
+VehSysFltWarnSigGrpCntr,4,708,false,false,11,4,1,0,,0.0,0.0,0.0
+VCUGearChgFailInde,4,708,false,false,23,4,1,0,换挡失败提醒,0.0,0.0,0.0
+VCULoSocWarngMsg,4,708,false,false,19,2,1.0,0.0,高压电池低电量报警\nHV Battery low SOC warnning,0.0,0.0,0.0
+VCUBattOverHeatWarn,4,708,false,false,17,1,1,0,电池过温时 仪表点亮电池过温报警灯,0.0,0.0,0.0
+VCUDrvMotFltWarn,4,708,false,false,16,1,1,0,当驱动电机发生故障时 仪表点亮驱动电机故障灯,0.0,0.0,0.0
+VCUDrvMotOverHeatWarn,4,708,false,false,31,1,1,0,驱动电机过热报警,0.0,0.0,0.0
+VCUDrvSysLimdWarn,4,708,false,false,30,1,1,0,VCU发送点亮跛行故障灯信号 仪表点灯,0.0,0.0,0.0
+VCUHvBattSysFltIndcr,4,708,false,false,29,1,1,0,动力电池故障报警灯 低级,0.0,0.0,0.0
+VCUHvBattSysFltWarn,4,708,false,false,28,1,1,0,动力电池故障报警灯 严重,0.0,0.0,0.0
+VCUHvPwrSysCutOff,4,708,false,false,27,1,1,0,VCU发送动力系统切断故障telltale,0.0,0.0,0.0
+VCUPrpsnPwrDrt,4,708,false,false,26,1,1,0,VCU发送动力性能降级故障 仪表进行文字显示和声音提醒,0.0,0.0,0.0
+VCUThermRunawayErrAlrm,4,708,false,false,25,1,1,0,热失控报警,0.0,0.0,0.0
+VCUVehSysFltWarn,4,708,false,false,24,1,1,0,VCU发送点亮整车系统故障灯信号 仪表点灯,0.0,0.0,0.0
+AmbTRaw,4,708,false,false,47,16,0.01,-80.0,Raw ambient temperature,0.0,0.0,0.0
+AmbTRawVld,4,708,false,false,63,1,1,0,Raw ambient temperature valid value,0.0,0.0,0.0
+F01OutpU_ADD,4,1264,false,false,7,8,0.1,0.0,,0.0,0.0,0.0
+F02OutpU_VCCD,4,1264,false,false,15,8,0.1,0.0,,0.0,0.0,0.0
+F03OutpU_EPS2,4,1264,false,false,23,8,0.1,0.0,,0.0,0.0,0.0
+F04OutpU_EPS1,4,1264,false,false,31,8,0.1,0.0,,0.0,0.0,0.0
+F05OutpU_BCSUBMR,4,1264,false,false,39,8,0.1,0.0,,0.0,0.0,0.0
+F06OutpU_BCSUBVR,4,1264,false,false,47,8,0.1,0.0,,0.0,0.0,0.0
+F07OutpU_RZCUMAIN,4,1264,false,false,55,8,0.1,0.0,,0.0,0.0,0.0
+F08OutpU_LZCUMAIN,4,1264,false,false,63,8,0.1,0.0,,0.0,0.0,0.0
+F09OutpU_DCD,4,1264,false,false,71,8,0.1,0.0,,0.0,0.0,0.0
+F10OutpU_FAN,4,1264,false,false,79,8,0.1,0.0,,0.0,0.0,0.0
+F11OutpU_HBMF,4,1264,false,false,87,8,0.1,0.0,,0.0,0.0,0.0
+F12OutpU_BCP,4,1264,false,false,95,8,0.1,0.0,,0.0,0.0,0.0
+F13OutpU_RZCUBACKUP,4,1264,false,false,103,8,0.1,0.0,,0.0,0.0,0.0
+F14OutpU_LZCUBACKUP,4,1264,false,false,111,8,0.1,0.0,,0.0,0.0,0.0
+F15OutpU_REDS,4,1264,false,false,119,8,0.1,0.0,,0.0,0.0,0.0
+F16OutpU_BMSACTR_FEDS,4,1264,false,false,127,8,0.1,0.0,,0.0,0.0,0.0
+F17OutpU_BMSCTRL,4,1264,false,false,135,8,0.1,0.0,,0.0,0.0,0.0
+F18OutpU_FLRL_IMU,4,1264,false,false,143,8,0.1,0.0,,0.0,0.0,0.0
+F19OutpU_FLSR_FRSR_LRR,4,1264,false,false,151,8,0.1,0.0,,0.0,0.0,0.0
+F20OutpU_HCWP_BCTV_ECMV,4,1264,false,false,159,8,0.1,0.0,,0.0,0.0,0.0
+F21OutpU_LSL,4,1264,false,false,167,8,0.1,0.0,,0.0,0.0,0.0
+F22OutpU_AQS,4,1264,false,false,175,8,0.1,0.0,,0.0,0.0,0.0
+F23OutpU_AGS,4,1264,false,false,183,8,0.1,0.0,,0.0,0.0,0.0
+F24OutpU_RSL,4,1264,false,false,191,8,0.1,0.0,,0.0,0.0,0.0
+F25OutpU_LIGHT_LEFT,4,1264,false,false,199,8,0.1,0.0,,0.0,0.0,0.0
+F26OutpU_RLEDS_EOP,4,1264,false,false,207,8,0.1,0.0,,0.0,0.0,0.0
+F27OutpU_LIGHT_RIGHT,4,1264,false,false,215,8,0.1,0.0,,0.0,0.0,0.0
+F28OutpU_BCWP1,4,1264,false,false,223,8,0.1,0.0,,0.0,0.0,0.0
+F29OutpU_ECWP1,4,1264,false,false,231,8,0.1,0.0,,0.0,0.0,0.0
+F30OutpU_FEDS_EOP,4,1264,false,false,239,8,0.1,0.0,,0.0,0.0,0.0
+F31OutpU_BLET,4,1264,false,false,247,8,0.1,0.0,,0.0,0.0,0.0
+F32OutpU_TBOX,4,1264,false,false,255,8,0.1,0.0,,0.0,0.0,0.0
+F33OutpU_NEM,4,1264,false,false,263,8,0.1,0.0,,0.0,0.0,0.0
+F34OutpU_Reserved,4,1264,false,false,271,8,0.1,0.0,,0.0,0.0,0.0
+F35OutpU_ECWP2,4,1264,false,false,279,8,0.1,0.0,,0.0,0.0,0.0
+F36OutpU_BCWP2,4,1264,false,false,287,8,0.1,0.0,,0.0,0.0,0.0
+F37OutpU_REEDS_EOP,4,1264,false,false,295,8,0.1,0.0,,0.0,0.0,0.0
+F38OutpU_UBVR,4,1264,false,false,303,8,0.1,0.0,,0.0,0.0,0.0
+N1_BD4LD650_Init_Cnt,4,1265,false,false,7,16,1,0,,0.0,0.0,0.0
+N2_BTS7002_Init_Cnt,4,1265,false,false,23,16,1,0,,0.0,0.0,0.0
+N3_DRV8705_Init_Cnt,4,1265,false,false,39,16,1,0,,0.0,0.0,0.0
+N4_DRV871x_Init_Cnt,4,1265,false,false,55,16,1,0,,0.0,0.0,0.0
+N5_FS2620_Init_Cnt,4,1265,false,false,71,16,1,0,,0.0,0.0,0.0
+N6_TCA9539_Init_Cnt,4,1265,false,false,87,16,1,0,,0.0,0.0,0.0
+N7_TIC12400_Init_Cnt,4,1265,false,false,103,16,1,0,,0.0,0.0,0.0
+N8_TPSXHXXX_Init_Cnt,4,1265,false,false,119,16,1,0,,0.0,0.0,0.0
+N9_VN9DXX_Init_Cnt,4,1265,false,false,135,16,1,0,,0.0,0.0,0.0
+N10_VNF1048_Init_Cnt,4,1265,false,false,151,16,1,0,,0.0,0.0,0.0
+OutpCurMonrFrtHatchCoverMotor,4,1265,false,false,167,13,0.1,0.0,Current Monitor Front Hatch Cover Motor,0.0,0.0,0.0
+OutpCurMonrFrtWiperMotorHiSpd,4,1265,false,false,183,13,0.1,0.0,Current Monitor Front Wiper Motor High Speed,0.0,0.0,0.0
+OutpCurMonrFrtWiperMotorLoSpd,4,1265,false,false,199,13,0.1,0.0,Current Monitor Front Wiper Motor Low Speed,0.0,0.0,0.0
+OutpCurMonrHiHorn,4,1265,false,false,215,13,0.1,0.0,Current Monitor High Horn,0.0,0.0,0.0
+OutpCurMonrLoHorn,4,1265,false,false,231,13,0.1,0.0,Current Monitor Low Horn,0.0,0.0,0.0
+OutpCurMonrRRWindHeat,4,1265,false,false,247,13,0.1,0.0,Current Monitor Rear Wind Heating,0.0,0.0,0.0
+OutpCurMonrWashPump,4,1265,false,false,263,13,0.1,0.0,Current Monitor Wash Pump,0.0,0.0,0.0
+PwrModSigGrpChks,4,144,false,false,7,8,1,0,,0.0,0.0,0.0
+PwrModSigGrpCntr,4,144,false,false,11,4,1,0,,0.0,0.0,0.0
+PwrModSts,4,144,false,false,23,3,1,0,PowerMode Status,0.0,0.0,0.0
+PwrModVld,4,144,false,false,20,1,1,0,PowerMode Validty,0.0,0.0,0.0
+VCUActGearSigGrpChks,4,144,false,false,47,8,1,0,,0.0,0.0,0.0
+VCUActGearLvr,4,144,false,false,55,3,1,0,Actual gear level 车辆实际档位\nP R N D挡位,0.0,0.0,0.0
+VCUActGearLvrVld,4,144,false,false,52,1,1,0,车辆实际档位有效位,0.0,0.0,0.0
+VCUActGearSigGrpCntr,4,144,false,false,51,4,1,0,,0.0,0.0,0.0
+VcuInpSigGrpChks,4,144,false,false,63,8,1,0,,0.0,0.0,0.0
+VCURgnTqCorrnFac,4,144,false,false,71,4,0.1,0.0,Regeneration Torque Correction Factor,0.0,0.0,0.0
+VcuInpSigGrpCntr,4,144,false,false,67,4,1,0,,0.0,0.0,0.0
+VCUStsModCst,4,144,false,false,79,8,1,0,energy recuperation end mode.\n能量回收状态模式,0.0,0.0,0.0
+VCUAccrPedlRat,4,144,false,false,87,15,0.004,0.0,加速油门踏板开度,0.0,0.0,0.0
+VCUPrkgBtnPsd,4,144,false,false,88,1,1,0,驾驶员按下P档,0.0,0.0,0.0
+VCUVirtAccrPedl,4,144,false,false,103,7,1,0,虚拟油门开度 当前模式的pedal map反算,0.0,0.0,0.0
+VCUTarGearLvrVld,4,144,false,false,96,1,1,0,目标档位有效位,0.0,0.0,0.0
+VCUAccrPedlRatVld,4,144,false,false,111,1,1,0,加速踏板有效性,0.0,0.0,0.0
+VCUFrntEmTqRdy,4,144,false,false,110,1,1,0,The Front Motor  can be ready to response chassis torque request.\n前电机可以响应扭矩请求.,0.0,0.0,0.0
+VCUReEmTqRdy,4,144,false,false,109,1,1,0,Rear EM is ready to response chassis Torque Request\n后电机是否处于Ready状态,0.0,0.0,0.0
+VCUTarGearLvr,4,144,false,false,108,3,1,0,目标档位  P R N D挡位,0.0,0.0,0.0
+VCUVirtAccrPedlVld,4,144,false,false,105,1,1,0,虚拟油门开度有效位,0.0,0.0,0.0
+VCUShifterMoveFlg,4,144,false,false,104,1,1,0,驾驶员拨动了换挡杆的标志位,0.0,0.0,0.0
+VCUDrvOffFcnLim,4,144,false,false,119,1,1,0,VCU send to BCS to identify whether vehcile can drive off or not as powertrain has fault and power limited.\nVCU发送给BCS系统，用于判断整车动力系统是否存在故障动力受限不能起步的判断,0.0,0.0,0.0
+VCUPtRdyFlg,4,144,false,false,127,1,1,0,驾驶使能,0.0,0.0,0.0
+CarModSts,4,144,false,false,126,3,1,0,CarMode状态信号,0.0,0.0,0.0
+VCUActDrvMod,4,144,false,false,123,4,1,0,VCU actual drive mode \nVCU实际驾驶模式,0.0,0.0,0.0
+UDB23FZCU,4,1404,false,false,23,1,1,0,,0.0,0.0,0.0
+UDB22FZCU,4,1404,false,false,22,1,1,0,,0.0,0.0,0.0
+UDB21FZCU,4,1404,false,false,21,1,1,0,,0.0,0.0,0.0
+UDB20FZCU,4,1404,false,false,20,1,1,0,,0.0,0.0,0.0
+UDB19FZCU,4,1404,false,false,19,1,1,0,,0.0,0.0,0.0
+UDB18FZCU,4,1404,false,false,18,1,1,0,,0.0,0.0,0.0
+UDB17FZCU,4,1404,false,false,17,1,1,0,,0.0,0.0,0.0
+UDB31FZCU,4,1404,false,false,31,1,1,0,,0.0,0.0,0.0
+UDB30FZCU,4,1404,false,false,30,1,1,0,,0.0,0.0,0.0
+UDB29FZCU,4,1404,false,false,29,1,1,0,,0.0,0.0,0.0
+UDB28FZCU,4,1404,false,false,28,1,1,0,,0.0,0.0,0.0
+UDB27FZCU,4,1404,false,false,27,1,1,0,,0.0,0.0,0.0
+UDB26FZCU,4,1404,false,false,26,1,1,0,,0.0,0.0,0.0
+UDB25FZCU,4,1404,false,false,25,1,1,0,,0.0,0.0,0.0
+UDB24FZCU,4,1404,false,false,24,1,1,0,,0.0,0.0,0.0
+UDB39FZCU,4,1404,false,false,39,1,1,0,,0.0,0.0,0.0
+UDB38FZCU,4,1404,false,false,38,1,1,0,,0.0,0.0,0.0
+UDB37FZCU,4,1404,false,false,37,1,1,0,,0.0,0.0,0.0
+UDB36FZCU,4,1404,false,false,36,1,1,0,,0.0,0.0,0.0
+UDB35FZCU,4,1404,false,false,35,1,1,0,,0.0,0.0,0.0
+UDB34FZCU,4,1404,false,false,34,1,1,0,,0.0,0.0,0.0
+UDB33FZCU,4,1404,false,false,33,1,1,0,,0.0,0.0,0.0
+UDB32FZCU,4,1404,false,false,32,1,1,0,,0.0,0.0,0.0
+UDB47FZCU,4,1404,false,false,47,1,1,0,,0.0,0.0,0.0
+UDB46FZCU,4,1404,false,false,46,1,1,0,,0.0,0.0,0.0
+UDB45FZCU,4,1404,false,false,45,1,1,0,,0.0,0.0,0.0
+UDB44FZCU,4,1404,false,false,44,1,1,0,,0.0,0.0,0.0
+UDB43FZCU,4,1404,false,false,43,1,1,0,,0.0,0.0,0.0
+UDB42FZCU,4,1404,false,false,42,1,1,0,,0.0,0.0,0.0
+UDB41FZCU,4,1404,false,false,41,1,1,0,,0.0,0.0,0.0
+UDB40FZCU,4,1404,false,false,40,1,1,0,,0.0,0.0,0.0
+NMKeepAwkRsnFZCU,4,1404,false,false,48,9,1,0,,0.0,0.0,0.0
+StsOfDayRunngLampLe,4,790,false,false,7,2,1,0,左日行灯状态,0.0,0.0,0.0
+StsOfFrntCornrgLampLe,4,790,false,false,5,2,1,0,左角灯状态,0.0,0.0,0.0
+StsOfFrntTurnIndcrLe,4,790,false,false,3,2,1,0,左前转向灯状态反馈,0.0,0.0,0.0
+StsOfLedFrntPosnLampLe,4,790,false,false,1,2,1,0,左前位置灯LED状态,0.0,0.0,0.0
+AHLRefLernedFlagLe,4,790,false,false,15,1,1,0,Left AHL motor Reference learned flag,0.0,0.0,0.0
+HCMLFaultInfoFlag,4,790,false,false,14,1,1,0,HCML Fault Information Flag,0.0,0.0,0.0
+StsOfADBLe,4,790,false,false,13,2,1,0,Left Status Of ADB,0.0,0.0,0.0
+StsOfLedHiBeamLe,4,790,false,false,11,2,1,0,左远光状态,0.0,0.0,0.0
+StsOfLedLoBeamLe,4,790,false,false,9,2,1,0,左近光状态,0.0,0.0,0.0
+MotorCurPosLe,4,790,false,true,23,10,0.01,0.0,left motor Current position,0.0,0.0,0.0
+MotorFltStsLe,4,790,false,false,29,1,1,0,left motor fault status,0.0,0.0,0.0
+StsofSBLLe,4,790,false,false,28,2,1,0,Status of  Left Static Bending Light,0.0,0.0,0.0
+HCMLNodeAddress,4,1363,false,false,7,8,1,0,Node source address,0.0,0.0,0.0
+HCMLActiveWakeup,4,1363,false,false,12,1,1,0,Active Wakeup Bit,0.0,0.0,0.0
+HCMLRepeatMsgReq,4,1363,false,false,8,1,1,0,Repeat Message Request Bit,0.0,0.0,0.0
+HCMLRepeatMsgSt,4,1363,false,false,16,1,1,0,Repeat Message State indication,0.0,0.0,0.0
+NMKeepAwkRsnHCML,4,1363,false,false,48,9,1,0,,0.0,0.0,0.0
+HCMLToVCCDDiagResp,4,1634,false,false,7,512,1,0,HCMLToVCCDLampCanfdDiagRespNpdu,0.0,0.0,0.0
+StsOfDayRunngLampRi,4,806,false,false,7,2,1,0,State of day running lamp right,0.0,0.0,0.0
+StsOfFrntCornrgLampRi,4,806,false,false,5,2,1,0,State of corner lamp right,0.0,0.0,0.0
+StsOfFrntTurnIndcrRi,4,806,false,false,3,2,1,0,State of front turning lamp right,0.0,0.0,0.0
+StsOfLedFrntPosnLampRi,4,806,false,false,1,2,1,0,State of front position lamp right,0.0,0.0,0.0
+AHLRefLernedFlagRi,4,806,false,false,15,1,1,0,Right AHL motor Reference learned flag,0.0,0.0,0.0
+HCMRFaultInfoFlag,4,806,false,false,14,1,1,0,HCMR Fault Information Flag,0.0,0.0,0.0
+StsOfADBRi,4,806,false,false,13,2,1,0,Right Status Of ADB,0.0,0.0,0.0
+StsOfLedHiBeamRi,4,806,false,false,11,2,1,0,State of high beam right,0.0,0.0,0.0
+StsOfLedLoBeamRi,4,806,false,false,9,2,1,0,State of low beam right,0.0,0.0,0.0
+MotorCurPosRi,4,806,false,true,23,10,0.01,0.0,Right motor current position,0.0,0.0,0.0
+MotorFltStsRi,4,806,false,false,29,1,1,0,right motor fault status,0.0,0.0,0.0
+StsofSBLRi,4,806,false,false,28,2,1,0,Status of  Right Static Bending light,0.0,0.0,0.0
+HCMRNodeAddress,4,1362,false,false,7,8,1,0,Node source address,0.0,0.0,0.0
+HCMRActiveWakeup,4,1362,false,false,12,1,1,0,Active Wakeup Bit,0.0,0.0,0.0
+HCMRRepeatMsgReq,4,1362,false,false,8,1,1,0,Repeat Message Request Bit,0.0,0.0,0.0
+HCMRRepeatMsgSt,4,1362,false,false,16,1,1,0,Repeat Message State indication,0.0,0.0,0.0
+NMKeepAwkRsnHCMR,4,1362,false,false,48,9,1,0,,0.0,0.0,0.0
+HCMRToVCCDDiagResp,4,1635,false,false,7,512,1,0,HCMRToVCCDLampCanfdDiagRespNpdu,0.0,0.0,0.0
+PassMassgHmiCtrNotAvlRsn,4,435,false,false,7,4,1,0,1,0.0,0.0,0.0
+PassMassgIntenSts,4,435,false,false,3,4,1,0,1,0.0,0.0,0.0
+DrvrSeatMotPosnSts,4,435,false,false,15,1,1,0,Driver Seat Motor Position Status\n车设座椅电机位置状态,0.0,0.0,0.0
+DrvrHozlAdjSts,4,435,false,false,14,2,1,0,主驾水平电机状态信号,0.0,0.0,0.0
+DrvrHeiAdjSts,4,435,false,false,12,2,1,0,主驾抬高电机状态信号,0.0,0.0,0.0
+DrvrSeatLumAdjHwSwtSts,4,435,false,false,10,3,1,0,Driver Seat Lumbar Adjustment Switch Status\n主驾座椅腰托硬线开关调节状态,0.0,0.0,0.0
+DrvrSeatBackMotPosn,4,435,false,false,23,8,1.0,0.0,Driver Seat Back Motor Position\n主驾靠背电机位置,0.0,0.0,0.0
+PassMassgModSts,4,435,false,false,31,4,1,0,1,0.0,0.0,0.0
+PassMassgSts,4,435,false,false,27,1,1,0,1,0.0,0.0,0.0
+ReLeBackFoldSts,4,435,false,false,26,3,1,0,1,0.0,0.0,0.0
+DrvrSeatHeiMotPosn,4,435,false,false,39,8,1.0,0.0,Driver Seat Height Motor Position\n主驾抬高电机位置,0.0,0.0,0.0
+ReLeSeatBackMotPosn,4,435,false,false,47,8,1,0,1,0.0,0.0,0.0
+ReLeSeatHeatgTSts,4,435,false,false,55,8,0.5,-40.0,Rear Left Seat Heating Temperature Status 后排左侧座椅加热温度状态,0.0,0.0,0.0
+DrvrSeatHozlMotPosn,4,435,false,false,63,8,1.0,0.0,Driver Seat Horizontal Motor Position\n主驾水平电机位置,0.0,0.0,0.0
+SeatHeatgReRowLeFlt,4,435,false,false,71,8,1,0,Rear Row  Left Seat Heating Fault at Passenger side\n后排左侧副驾座椅加热故障\nBit0 HeaterOutputOverCurrent\nBit1 HeaterOutputUnderCurrent\nBit2 NTCSensorSTB\nBit3 NTCSensorSTG\nBit4 HeaterReturnFlt,0.0,0.0,0.0
+DrvrTiltAdjSts,4,435,false,false,119,2,1,0,主驾坐垫倾角电机状态信号,0.0,0.0,0.0
+DrvrSeatMovModSts,4,435,false,false,117,2,1,0,Driver Seat Moving Mode Status\n主驾座椅移动模式状态,0.0,0.0,0.0
+HornSwtSts,4,435,false,false,115,1,1,0,Horn switch status,0.0,0.0,0.0
+LeReBackAdjSts,4,435,false,false,114,2,1,0,1,0.0,0.0,0.0
+PassMassgEnaSts,4,435,false,false,112,1,1,0,1,0.0,0.0,0.0
+RiReSeatBackFoldSwtSts,4,435,false,false,123,2,1,0,Right Rear Seat Back Fold Switch Status,0.0,0.0,0.0
+DrvrBackAdjSts,4,435,false,false,121,2,1,0,主驾靠背电机状态信号,0.0,0.0,0.0
+DrvrSeatTiltMotPosn,4,435,false,false,167,8,1.0,0.0,Driver Seat Tilt Motor Position 主驾调角电机位置,0.0,0.0,0.0
+DrvrSeatMotSysSigGroupChks,4,435,false,false,175,8,1,0,,0.0,0.0,0.0
+DrvrSeatMotSysSigGroupCntr,4,435,false,false,179,4,1,0,,0.0,0.0,0.0
+DrvrBackTiltHwSwtSts,4,435,false,false,191,3,1,0,Driver Back and Tilt Switch Status \n主驾座垫倾角电机靠背电机硬线按键状态,0.0,0.0,0.0
+DrvrHozlHeiHwSwtSts,4,435,false,false,188,3,1,0,Driver Horizontal and Height Switch Status\n主驾水平和抬高电机硬线按键状态,0.0,0.0,0.0
+DrvrBackPosnSetNotAvlRsn,4,435,false,false,263,4,1,0,1,0.0,0.0,0.0
+DrvrHeiPosnSetNotAvlRsn,4,435,false,false,259,4,1,0,1,0.0,0.0,0.0
+DrvrHozlPosnSetNotAvlRsn,4,435,false,false,271,4,1,0,1,0.0,0.0,0.0
+DrvrLegRestHeiPosnSetNotAvlRsn,4,435,false,false,267,4,1,0,1,0.0,0.0,0.0
+DrvrMassgHmiCtrNotAvlRsn,4,435,false,false,279,4,1,0,1,0.0,0.0,0.0
+DrvrMassgIntenSts,4,435,false,false,275,4,1,0,1,0.0,0.0,0.0
+DrvrBackPosnSetEnaSts,4,435,false,false,295,1,1,0,1,0.0,0.0,0.0
+DrvrHeiPosnSetEnaSts,4,435,false,false,294,1,1,0,1,0.0,0.0,0.0
+DrvrHozlPosnSetEnaSts,4,435,false,false,293,1,1,0,2,0.0,0.0,0.0
+DrvrLegRestHeiAdjSts,4,435,false,false,292,2,1,0,1,0.0,0.0,0.0
+DrvrMassgEnaSts,4,435,false,false,290,1,1,0,1,0.0,0.0,0.0
+DrvrLegRestHeiPosnSetEnaSts,4,435,false,false,289,1,1,0,1,0.0,0.0,0.0
+DrvrMassgSts,4,435,false,false,288,1,1,0,1,0.0,0.0,0.0
+DrvrMassgModSts,4,435,false,false,303,4,1,0,1,0.0,0.0,0.0
+DrvrSeatZeroGPosnReq,4,435,false,false,299,2,1,0,1,0.0,0.0,0.0
+DrvrTiltPosnSetEnaSts,4,435,false,false,297,1,1,0,1,0.0,0.0,0.0
+DrvrSeatLegRestHeiMotPosn,4,435,false,false,311,8,1.0,0.0,1,0.0,0.0,0.0
+DrvrTiltPosnSetNotAvlRsn,4,435,false,false,319,4,1,0,1,0.0,0.0,0.0
+DrvrZeroGModCurCmd,4,435,false,false,315,4,1,0,1,0.0,0.0,0.0
+DrvrZeroGSeatEntryLstCmdFailRsn,4,435,false,false,327,4,1,0,1,0.0,0.0,0.0
+DrvrZeroGSeatQuitLstCmdFailRsn,4,435,false,false,323,4,1,0,1,0.0,0.0,0.0
+DrvrZeroGSeatQuitNotAvlRsn,4,435,false,false,335,4,1,0,1,0.0,0.0,0.0
+DrvrZeroGSeatEntryNotAvlRsn,4,435,false,false,331,4,1,0,2,0.0,0.0,0.0
+DrvrZeroGSeatEntryEnaSts,4,435,false,false,343,1,1,0,1,0.0,0.0,0.0
+DrvrZeroGSeatQuitEnaSts,4,435,false,false,342,1,1,0,1,0.0,0.0,0.0
+DrvrZeroGSeatRstEnaSts,4,435,false,false,341,1,1,0,1,0.0,0.0,0.0
+DrvrZeroGSeatRstNotAvlRsn,4,435,false,false,340,2,1,0,1,0.0,0.0,0.0
+DrvrZeroGSeatSts,4,435,false,false,338,3,1,0,1,0.0,0.0,0.0
+AdasSwtSigGrpChks,4,435,false,false,367,8,1,0,,0.0,0.0,0.0
+AdasSwtSigGrpLinErr,4,435,false,false,375,2,1,0,AdasSwtSigGrp LIN communication Error,0.0,0.0,0.0
+AdasSwt,4,435,false,false,373,2,1,0,一键智驾开关,0.0,0.0,0.0
+AdasSwtSigGrpCntr,4,435,false,false,371,4,1,0,,0.0,0.0,0.0
+OutDoorLgtStsLe,4,594,false,false,7,2,1,0,Left OutDoor handle light status\n左门把手灯状态,0.0,0.0,0.0
+SwtLiHzrdWarn,4,594,false,false,5,1,1,0,双闪开关,0.0,0.0,0.0
+FenderLgtStsLe,4,594,false,false,4,2,1,0,Left Fender light status\n左翼子板灯状态,0.0,0.0,0.0
+ReLeSeatHeatgSts,4,594,false,false,2,1,1,0,Rear Row Left Seat Heating Status\n后排左侧座椅加热状态,0.0,0.0,0.0
+StsOfMidTurnIndcrLe,4,594,false,false,1,2,1,0,左后视镜转向灯状态反馈,0.0,0.0,0.0
+LeDoorLogoLgtStsFrt,4,594,false,false,15,2,1,0,Leftfront side door Logo light  status\n左前侧门照地灯状态,0.0,0.0,0.0
+LeDoorLogoLgtStsRear,4,594,false,false,13,2,1,0,Leftrear side door Logo light  status\n左后侧门照地灯状态,0.0,0.0,0.0
+CLMLINcomFltSts,4,594,false,false,11,1,1,0,CLM LIN node communication Fault Status,0.0,0.0,0.0
+SwtLiHzrdFlt,4,594,false,false,10,1,1,0,Switch harzard fault\n双闪按键故障,0.0,0.0,0.0
+CANChrgnlghtSts,4,594,false,false,9,2,1,0,CAN charge light status,0.0,0.0,0.0
+PrivacyBtnSig,4,594,false,false,23,2,1,0,Privacy button signal,0.0,0.0,0.0
+PassSeatInin,4,594,false,false,31,4,1,0,1,0.0,0.0,0.0
+DrvrBackCurCmd,4,803,false,false,7,8,1.0,-1.0,Driver Seat Back Motor Current Command\n主驾靠背电机当前操作指令,0.0,0.0,0.0
+DrvrBackHmiCtrNotAvlRsn,4,803,false,false,15,4,1,0,Driver Back Hmi Control Not Available Reason\n主驾靠背电机控制不可用原因,0.0,0.0,0.0
+DrvrBackLstCmdFaildRsn,4,803,false,false,11,4,1,0,Driver Seat Back  Motor Last Command Failed Reason\n主驾靠背电机最后操作失败原因,0.0,0.0,0.0
+ReadLampFRBtnSig,4,803,false,false,23,2,1,0,ReadLamp Front Right button signal,0.0,0.0,0.0
+ReadLampFLBtnSig,4,803,false,false,21,2,1,0,ReadLamp Front left button signal,0.0,0.0,0.0
+ReadLampFLSts,4,803,false,false,19,4,1,0,ReadLamp Front left Status,0.0,0.0,0.0
+ReadLampFRSts,4,803,false,false,31,4,1,0,ReadLamp Front Right Status,0.0,0.0,0.0
+ReadLampRRBtnSig,4,803,false,false,27,2,1,0,ReadLamp Rear Right button signal,0.0,0.0,0.0
+ReadLampRLBtnSig,4,803,false,false,25,2,1,0,ReadLamp Rear left button signal,0.0,0.0,0.0
+ReadLampRLSts,4,803,false,false,39,4,1,0,ReadLamp Rear left Status,0.0,0.0,0.0
+ReadLampRRSts,4,803,false,false,35,4,1,0,ReadLamp Rear Right Status,0.0,0.0,0.0
+DrvrHeiCurCmd,4,803,false,false,47,8,1.0,-1.0,Driver  Seat Height Motor Current Command\n主驾抬高电机当前操作指令,0.0,0.0,0.0
+DrvrHeiHmiCtrNotAvlRsn,4,803,false,false,55,4,1,0,Driver  Height  Hmi Control Not Available Reason\n主驾抬高电机控制不可用原因,0.0,0.0,0.0
+DrvrHeiLstCmdFaildRsn,4,803,false,false,51,4,1,0,Driver  Seat Height Motor Last Command Failed Reason\n主驾抬高电机最后操作失败原因,0.0,0.0,0.0
+DrvrHozlCurCmd,4,803,false,false,63,8,1.0,-1.0,Driver Seat Horizontal Motor Current Command\n主驾水平电机当前操作指令,0.0,0.0,0.0
+DrvrHozlHmiCtrNotAvlRsn,4,803,false,false,71,4,1,0,Driver Horizontal Hmi Control Not Available Reason\n主驾水平电机控制不可用原因,0.0,0.0,0.0
+DrvrHozlLstCmdFaildRsn,4,803,false,false,67,4,1,0,Driver Seat Horizontal Motor Last Command Failed Reason\n主驾水平电机最后操作失败原因,0.0,0.0,0.0
+DrvrBackAdjSwtEnaSts,4,803,false,false,79,1,1,0,Driver Back Adjustment Switch Enable Status\n主驾靠背电机调节按键使能状态,0.0,0.0,0.0
+DrvrHeiAdjSwtEnaSts,4,803,false,false,78,1,1,0,Driver Height Adjustment Switch Enable Status\n主驾抬高电机调节按键使能状态,0.0,0.0,0.0
+DrvrHozlAdjSwtEnaSts,4,803,false,false,77,1,1,0,Driver Horizontal Adjustment Switch Enable Status\n主驾水平电机调节按键使能状态,0.0,0.0,0.0
+DrvrLegRestHeiAdjSwtEnaSts,4,803,false,false,76,1,1,0,1,0.0,0.0,0.0
+DrvrLegRestHeiCurCmd,4,803,false,false,87,8,1.0,-1.0,1,0.0,0.0,0.0
+DrvrLegRestHeiHmiCtrNotAvlRsn,4,803,false,false,95,4,1,0,1,0.0,0.0,0.0
+DrvrLegRestHeiLstCmdFaildRsn,4,803,false,false,91,4,1,0,1,0.0,0.0,0.0
+DrvrLumCurCmd,4,803,false,false,103,4,1,0,Driver Lumbar Current Command\n主驾座椅腰托当前操作指令,0.0,0.0,0.0
+DrvrLumHmiCtrNotAvlRsn,4,803,false,false,99,4,1,0,Driver Lumbar HMI Control Not Available Reason\n主驾座椅腰托HMI控制不可用原因,0.0,0.0,0.0
+DrvrLumLstCmdFaildRsn,4,803,false,false,111,4,1,0,Driver Lumbar Last Failed Reason\n主驾腰托最后失败原因,0.0,0.0,0.0
+DrvrSeatHeatgCurCmd,4,803,false,false,107,3,1,0,Driver Seat Heating Current Command \n主驾座椅加热当前操作指令,0.0,0.0,0.0
+SeatHeatgFirstRowEnaStsAtDrvr,4,803,false,false,104,1,1,0,主驾座椅加热使能,0.0,0.0,0.0
+DrvrSeatHeatgHmiCtrNotAvlRsn,4,803,false,false,119,4,1,0,Driver Seat Heating HMI Control Not Available Reason\n主驾座椅加热HMI控制不可操作原因,0.0,0.0,0.0
+DrvrSeatHeatgLstCmdFaildRsn,4,803,false,false,115,4,1,0,Driver Seat Heating Last Command Failed Reason\n主驾座椅加热最后指令失败原因,0.0,0.0,0.0
+DrvrSeatLumAdjSts,4,803,false,false,127,3,1,0,Driver Seat Lumbar Adjustment Status\n主驾腰托调节状态信号,0.0,0.0,0.0
+DrvrSeatLumAdjSwtEnaSts,4,803,false,false,124,1,1,0,Driver Seat Lumbar Adjustment Enable \n主驾腰托调节使能状态,0.0,0.0,0.0
+DrvrSeatVentnHmiCtrNotAvlRsn,4,803,false,false,123,4,1,0,Driver Seat Ventilation HMI Control Not Available Reason\n主驾座椅通风HMI控制不可用原因,0.0,0.0,0.0
+DrvrSeatPosnSetMgrLoadSts,4,803,false,false,135,3,1,0,Driver Seat Position Set Management Load Status \n主驾座椅位置设置载入状态,0.0,0.0,0.0
+DrvrSeatVentnCurCmd,4,803,false,false,132,3,1,0,Driver Seat Ventilation Current Command\n主驾座椅通风当前操作指令,0.0,0.0,0.0
+DrvrTiltAdjSwtEnaSts,4,803,false,false,129,1,1,0,Driver Tilt Adjustment Switch Enable Status 主驾倾角电机调节按键使能状态,0.0,0.0,0.0
+SeatVentnFirstRowEnaStsAtDrvr,4,803,false,false,128,1,1,0,Driver Seat Ventilation First Row Enable Status\n主驾座椅通风使能状态,0.0,0.0,0.0
+DrvrTiltCurCmd,4,803,false,false,143,8,1.0,-1.0,Driver Seat Tilt Motor Current Command 主驾倾角电机当前操作指令,0.0,0.0,0.0
+DrvrTiltHmiCtrNotAvlRsn,4,803,false,false,151,4,1,0,Driver Tilt Hmi Control Not Available Reason 主驾调角电机控制不可用原因,0.0,0.0,0.0
+DrvrTiltLstCmdFaildRsn,4,803,false,false,147,4,1,0,Driver Seat Tilt Motor Last Command Failed Reason 主驾倾角电机最后操作失败原因,0.0,0.0,0.0
+DrvrSeatVentnLstCmdFaildRsn,4,803,false,false,159,3,1,0,Driver Seat Ventilation Last  Command Failed Reason\n主驾座椅通风最后指令失效原因,0.0,0.0,0.0
+ReLeBackFoldCtrlNotAvlRsn,4,803,false,false,156,4,1,0,1,0.0,0.0,0.0
+ReLeBackFoldCurCmd,4,803,false,false,167,8,1.0,-1.0,1,0.0,0.0,0.0
+ReLeBackFoldLstCmdFaildRsn,4,803,false,false,175,4,1,0,1,0.0,0.0,0.0
+ReLeBackHmiAdjNotAvlRsn,4,803,false,false,171,4,1,0,1,0.0,0.0,0.0
+ReLeBackPosnSetCurCmd,4,803,false,false,183,8,1.0,-1.0,1,0.0,0.0,0.0
+ReLeBackPosnSetLstCmdFaildRsn,4,803,false,false,191,4,1,0,1,0.0,0.0,0.0
+ReLeBackPosnSetNotAvlRsn,4,803,false,false,187,4,1,0,1,0.0,0.0,0.0
+ReLeBackUnfoldCtrlNotAvlRsn,4,803,false,false,199,4,1,0,1,0.0,0.0,0.0
+ReLeBackUnfoldLstCmdFaildRsn,4,803,false,false,195,4,1,0,1,0.0,0.0,0.0
+ReLeBackFoldEnaSts,4,803,false,false,207,1,1,0,1,0.0,0.0,0.0
+ReLeBackHmiAdjEnaSts,4,803,false,false,206,1,1,0,1,0.0,0.0,0.0
+ReLeBackPosnSetEnaSts,4,803,false,false,205,1,1,0,1,0.0,0.0,0.0
+ReLeBackUnfoldEnaSts,4,803,false,false,204,1,1,0,1,0.0,0.0,0.0
+SeatHeatgFirstRowStsAtDrvr,4,803,false,false,203,2,1,0,主驾座椅加热状态,0.0,0.0,0.0
+SeatVentnFirstRowStsAtDrvr,4,803,false,false,201,2,1,0,Driver Seat Ventilation First Row Status\n主驾座椅通风状态,0.0,0.0,0.0
+L02OutpU_CIDM,4,1266,false,false,7,8,0.1,0.0,,0.0,0.0,0.0
+L03OutpU_DLC,4,1266,false,false,15,8,0.1,0.0,,0.0,0.0,0.0
+L11OutpU_RLCMLA,4,1266,false,false,23,8,0.1,0.0,,0.0,0.0,0.0
+N1_DRV871x_Init_Cnt,4,1266,false,false,31,16,1,0,,0.0,0.0,0.0
+N2_DZ300_Init_Cnt,4,1266,false,false,47,16,1,0,,0.0,0.0,0.0
+N3_FS2620_Init_Cnt,4,1266,false,false,63,16,1,0,,0.0,0.0,0.0
+N4_TCA9539_Init_Cnt,4,1266,false,false,79,16,1,0,,0.0,0.0,0.0
+N5_TIC12400_Init_Cnt,4,1266,false,false,95,16,1,0,,0.0,0.0,0.0
+N6_TPSXHXXX_Init_Cnt,4,1266,false,false,111,16,1,0,,0.0,0.0,0.0
+N7_VN9DXX_Init_Cnt,4,1266,false,false,127,16,1,0,,0.0,0.0,0.0
+N8_VNF1048_Init_Cnt,4,1266,false,false,143,16,1,0,,0.0,0.0,0.0
+OutpCurMonrFLDoorPwrRelseMotor,4,1266,false,false,159,13,0.1,0.0,Current Monitor Front Left Door Latch Motor,0.0,0.0,0.0
+OutpCurMonrRLChildLockMotor,4,1266,false,false,175,13,0.1,0.0,Current Monitor Rear Left Child Lock Motor,0.0,0.0,0.0
+OutpCurMonrRLDoorPwrRelseMotor,4,1266,false,false,191,13,0.1,0.0,Current Monitor Rear Left Door Latch Motor,0.0,0.0,0.0
+OutpCurMonrRRWiperMotor,4,1266,false,false,207,13,0.1,0.0,Current Monitor Rear Wiper Motor,0.0,0.0,0.0
+OutpCurMonrTrunkMotor,4,1266,false,false,223,13,0.1,0.0,Current Monitor Trunk Motor,0.0,0.0,0.0
+OutpCurMonrDrvSeatBackrestAdjust,4,1267,false,false,7,13,0.1,0.0,Current Monitor Driver Seat Backrest Adjust Motor,0.0,0.0,0.0
+OutpCurMonrDrvSeatCushionAdjust,4,1267,false,false,23,13,0.1,0.0,Current Monitor Driver Seat Cushion Adjust Motor,0.0,0.0,0.0
+OutpCurMonrDrvSeatForeAftAdjust,4,1267,false,false,39,13,0.1,0.0,Current Monitor Driver Seat Hight Fore After Adjust Motor,0.0,0.0,0.0
+OutpCurMonrDrvSeatHeat,4,1267,false,false,55,13,0.1,0.0,Current Monitor Driver Seat Heating,0.0,0.0,0.0
+OutpCurMonrDrvSeatHightAdjust,4,1267,false,false,71,13,0.1,0.0,Current Monitor Driver Seat Hight Adjust Motor,0.0,0.0,0.0
+OutpCurMonrFLDoorCinchMotor,4,1267,false,false,87,13,0.1,0.0,Current Monitor Front Left Door Cinch Motor,0.0,0.0,0.0
+OutpCurMonrFLDoorHandleMotor,4,1267,false,false,103,13,0.1,0.0,Current Monitor Front Left Door Handle Motor,0.0,0.0,0.0
+OutpCurMonrFLWindowMotor,4,1267,false,false,135,13,0.1,0.0,Current Monitor Front Left Window Motor,0.0,0.0,0.0
+OutpCurMonrRLDoorCinchMotor,4,1267,false,false,167,13,0.1,0.0,Current Monitor Rear Left Door Cinch Motor,0.0,0.0,0.0
+OutpCurMonrRLDoorHandleMotor,4,1267,false,false,183,13,0.1,0.0,Current Monitor Rear Left Door Handle Motor,0.0,0.0,0.0
+OutpCurMonrRLWindowMotor,4,1267,false,false,215,13,0.1,0.0,Current Monitor Rear Left Window Motor,0.0,0.0,0.0
+OutpCurMonrSpeakerUpDnMotor,4,1267,false,false,247,13,0.1,0.0,Current Monitor Driver Speaker Height Adjust Motor,0.0,0.0,0.0
+OutpCurMonrSteerWheelHeat,4,1267,false,false,263,13,0.1,0.0,Current Monitor Steering Wheel Heating,0.0,0.0,0.0
+OutpCurMonrSteerWheelInOutMotor,4,1267,false,false,279,13,0.1,0.0,Current Monitor Steering Wheel Adjust Motor-in/out,0.0,0.0,0.0
+OutpCurMonrSteerWheelUpDnMotor,4,1267,false,false,295,13,0.1,0.0,Current Monitor Steering Wheel Adjust Motor-up/down,0.0,0.0,0.0
+UDB23LZCU,4,1387,false,false,23,1,1,0,,0.0,0.0,0.0
+UDB22LZCU,4,1387,false,false,22,1,1,0,,0.0,0.0,0.0
+UDB21LZCU,4,1387,false,false,21,1,1,0,,0.0,0.0,0.0
+UDB20LZCU,4,1387,false,false,20,1,1,0,,0.0,0.0,0.0
+UDB19LZCU,4,1387,false,false,19,1,1,0,,0.0,0.0,0.0
+UDB18LZCU,4,1387,false,false,18,1,1,0,,0.0,0.0,0.0
+UDB17LZCU,4,1387,false,false,17,1,1,0,,0.0,0.0,0.0
+UDB31LZCU,4,1387,false,false,31,1,1,0,,0.0,0.0,0.0
+UDB30LZCU,4,1387,false,false,30,1,1,0,,0.0,0.0,0.0
+UDB29LZCU,4,1387,false,false,29,1,1,0,,0.0,0.0,0.0
+UDB28LZCU,4,1387,false,false,28,1,1,0,,0.0,0.0,0.0
+UDB27LZCU,4,1387,false,false,27,1,1,0,,0.0,0.0,0.0
+UDB26LZCU,4,1387,false,false,26,1,1,0,,0.0,0.0,0.0
+UDB25LZCU,4,1387,false,false,25,1,1,0,,0.0,0.0,0.0
+UDB24LZCU,4,1387,false,false,24,1,1,0,,0.0,0.0,0.0
+UDB39LZCU,4,1387,false,false,39,1,1,0,,0.0,0.0,0.0
+UDB38LZCU,4,1387,false,false,38,1,1,0,,0.0,0.0,0.0
+UDB37LZCU,4,1387,false,false,37,1,1,0,,0.0,0.0,0.0
+UDB36LZCU,4,1387,false,false,36,1,1,0,,0.0,0.0,0.0
+UDB35LZCU,4,1387,false,false,35,1,1,0,,0.0,0.0,0.0
+UDB34LZCU,4,1387,false,false,34,1,1,0,,0.0,0.0,0.0
+UDB33LZCU,4,1387,false,false,33,1,1,0,,0.0,0.0,0.0
+UDB32LZCU,4,1387,false,false,32,1,1,0,,0.0,0.0,0.0
+UDB47LZCU,4,1387,false,false,47,1,1,0,,0.0,0.0,0.0
+UDB46LZCU,4,1387,false,false,46,1,1,0,,0.0,0.0,0.0
+UDB45LZCU,4,1387,false,false,45,1,1,0,,0.0,0.0,0.0
+UDB44LZCU,4,1387,false,false,44,1,1,0,,0.0,0.0,0.0
+UDB43LZCU,4,1387,false,false,43,1,1,0,,0.0,0.0,0.0
+UDB42LZCU,4,1387,false,false,42,1,1,0,,0.0,0.0,0.0
+UDB41LZCU,4,1387,false,false,41,1,1,0,,0.0,0.0,0.0
+UDB40LZCU,4,1387,false,false,40,1,1,0,,0.0,0.0,0.0
+UDB49LZCU,4,1387,false,false,49,1,1,0,,0.0,0.0,0.0
+NMKeepAwkRsnLZCU,4,1387,false,false,48,9,1,0,,0.0,0.0,0.0
+StsOfReTurnIndcrLe,4,804,false,false,7,2,1,0,State of rear turning lamp left,0.0,0.0,0.0
+StsOfLedRePosnLampRi,4,804,false,false,5,2,1,0,State of rear position lamp right,0.0,0.0,0.0
+StsOfLedRePosnLampLe,4,804,false,false,3,2,1,0,State of rear position lamp left,0.0,0.0,0.0
+RLCMFaultInfoFlag,4,804,false,false,1,1,1,0,RLCM Fault Information Flag,0.0,0.0,0.0
+StsOfLedStopLampLe,4,804,false,false,15,2,1,0,State of stop lamp left,0.0,0.0,0.0
+StsOfRvsgLampLe,4,804,false,false,13,2,1,0,State of reverse lamp left,0.0,0.0,0.0
+StsOfRvsgLampRi,4,804,false,false,11,2,1,0,State of reverse lamp right,0.0,0.0,0.0
+StsOfReTurnIndcrRi,4,804,false,false,9,2,1,0,State of rear turning lamp right,0.0,0.0,0.0
+StsOfLedStopLampRi,4,804,false,false,17,2,1,0,State of stop lamp right,0.0,0.0,0.0
+RLCMNodeAddress,4,1364,false,false,7,8,1,0,Node source address,0.0,0.0,0.0
+RLCMActiveWakeup,4,1364,false,false,12,1,1,0,Active Wakeup Bit,0.0,0.0,0.0
+RLCMRepeatMsgReq,4,1364,false,false,8,1,1,0,Repeat Message Request Bit,0.0,0.0,0.0
+RLCMRepeatMsgSt,4,1364,false,false,16,1,1,0,Repeat Message State indication,0.0,0.0,0.0
+NMKeepAwkRsnRLCM,4,1364,false,false,48,9,1,0,,0.0,0.0,0.0
+RLCMToVCCDDiagResp,4,1636,false,false,7,512,1,0,,0.0,0.0,0.0
+DoorPassLockSts,4,403,false,false,7,2,1,0,副驾门锁状态,0.0,0.0,0.0
+DoorPassPwrRelsDlyActv,4,403,false,false,5,2,1,0,副驾电释放延迟激活反馈,0.0,0.0,0.0
+DoorPassSts,4,403,false,false,3,2,1,0,副驾侧门状态,0.0,0.0,0.0
+DoorRiReLockSts,4,403,false,false,1,2,1,0,右后门锁状态,0.0,0.0,0.0
+DoorRiRePwrRelsDlyActv,4,403,false,false,15,2,1,0,右后电释放延迟激活反馈,0.0,0.0,0.0
+DoorRiReSts,4,403,false,false,13,2,1,0,右后侧门状态,0.0,0.0,0.0
+PassWinCtrlCmd,4,403,false,false,11,3,1,0,Passenger Window Control Command,0.0,0.0,0.0
+PassWinSOAPerctAvl,4,403,false,false,8,1,1,0,Passenger Window SOA Percentage Available,0.0,0.0,0.0
+PassWinSOAPerctReqNotAvlRsn,4,403,false,false,23,4,1,0,Passengers WindowSOAPercent Request Not Available Reason,0.0,0.0,0.0
+PassWinIniSts,4,403,false,false,19,3,1,0,Passanger Window Initial Status,0.0,0.0,0.0
+ReRiWinSOAPerctAvl,4,403,false,false,16,1,1,0,Rear Right Window SOA Percentage Available,0.0,0.0,0.0
+ReRiWinCtrlCmd,4,403,false,false,31,3,1,0,Rear Right Window Control Command,0.0,0.0,0.0
+ReRiWinIniSts,4,403,false,false,28,3,1,0,RearRight Window Initial Status,0.0,0.0,0.0
+RiMirrFoldCmd,4,403,false,false,25,2,1,0,右侧外后视镜折叠请求,0.0,0.0,0.0
+ReRiWinSOAPerctReqNotAvlRsn,4,403,false,false,39,4,1,0,Rear Right Window SOA Percent Request Not Available Reason,0.0,0.0,0.0
+RiExtrMirrAdjEnaFailr,4,403,false,false,35,4,1,0,右外后视镜调节故障,0.0,0.0,0.0
+RiExtrMirrAdjSts,4,403,false,false,47,3,1,0,右外后视镜调节状态,0.0,0.0,0.0
+RiExtrMirrAdjEnaSts,4,403,false,false,44,1,1,0,右外后视镜调节使能,0.0,0.0,0.0
+RiExtrMirrFoldSts,4,403,false,false,43,3,1,0,右外后视镜折叠状态,0.0,0.0,0.0
+RiExtrMirrFoldEnaSts,4,403,false,false,40,1,1,0,右外后视镜折叠使能状态,0.0,0.0,0.0
+RiMirrDrvPosnY,4,403,false,true,55,16,0.1,-15.0,右后视镜驾驶位置垂直角度,0.0,0.0,0.0
+RiMirrHozlPerc,4,403,false,false,79,8,1,0,右外后视镜水平百分比,0.0,0.0,0.0
+RiMirrVertPerc,4,403,false,false,87,8,1,0,右外后视镜垂直百分比,0.0,0.0,0.0
+RiMirrVertAg,4,403,false,false,95,10,0.1,-15.0,右外后视镜垂直角度,0.0,0.0,0.0
+PassOcupcyCalcSts,4,403,false,false,101,2,1.0,0.0,Passenger Occupancy Sensor Calcuate Status \n副驾座椅占位传感器计算状态,0.0,0.0,0.0
+ReRiWinAutoClsWinSetSts,4,403,false,false,99,2,1.0,0.0,Rear Right Auto Lock Close Window Set Status,0.0,0.0,0.0
+PassWinAutoClsWinSetSts,4,403,false,false,97,2,1.0,0.0,PassWin Auto Lock Close Window Set Status,0.0,0.0,0.0
+RiExtrMirrFoldEnaFailr,4,403,false,false,111,4,1.0,0.0,右外后视镜折叠使能故障,0.0,0.0,0.0
+RiExtrMirrTiltEnaFailr,4,403,false,false,107,4,1.0,0.0,右外后视镜下翻故障,0.0,0.0,0.0
+RiMirrAdjTrigSrc,4,403,false,false,119,4,1.0,0.0,RiMirrAdjTrigSrc,0.0,0.0,0.0
+RiMirrFoldTrigSrc,4,403,false,false,115,4,1.0,0.0,RiMirrFoldTrigSrc,0.0,0.0,0.0
+RiMirrManMovSts,4,403,false,false,127,2,1.0,0.0,RiMirrManMovSts,0.0,0.0,0.0
+RiMirrPosnSetMgrLoadSts,4,403,false,false,125,2,1.0,0.0,RiMirrPosnSetMgrLoadSts,0.0,0.0,0.0
+RiMirrTiltPosnLoadStoreReq,4,403,false,false,123,2,1.0,0.0,RiMirrTiltPosnLoadStoreReq,0.0,0.0,0.0
+SecRowMidOcupcyCalcSts,4,403,false,false,121,2,1.0,0.0,Second Row Middle Ocupcy Sensor Calcuate Status \n二排中间座椅占位传感器计算状态,0.0,0.0,0.0
+SecRowRiOcupcyCalcSts,4,403,false,false,135,2,1.0,0.0,Second Row Right Ocupcy Sensor Calcuate Status \n二排右侧座椅占位传感器计算状态,0.0,0.0,0.0
+RiExtrMirrTiltEnaSts,4,403,false,false,133,1,1.0,0.0,右外后视镜下翻使能,0.0,0.0,0.0
+RiExtrMirrTiltSts,4,403,false,false,132,3,1,0,右外后视镜下翻状态,0.0,0.0,0.0
+DoorCmdGrpChks,4,403,false,false,143,8,1,0,,0.0,0.0,0.0
+DoorDrvrPwrRelsCmd,4,403,false,false,151,2,1,0,主驾侧电释放电吸合指令,0.0,0.0,0.0
+DoorLeRePwrRelsCmd,4,403,false,false,149,2,1,0,左后侧电释放电吸合指令,0.0,0.0,0.0
+DoorCmdGrpCntr,4,403,false,false,147,4,1,0,,0.0,0.0,0.0
+DoorPassPwrRelsCmd,4,403,false,false,155,2,1,0,副驾侧电释放电吸合指令,0.0,0.0,0.0
+DoorRiRePwrRelsCmd,4,403,false,false,153,2,1,0,右后侧电释放电吸合指令,0.0,0.0,0.0
+RiMirrHozlAg,4,403,false,false,167,10,0.1,-15.0,右外后视镜水平角度,0.0,0.0,0.0
+ReRiSeatBackMotPosn,4,437,false,false,7,8,1,0,1,0.0,0.0,0.0
+PassZeroGSeatEntryEnaSts,4,437,false,false,47,1,1,0,1,0.0,0.0,0.0
+PassHeiAdjSts,4,437,false,false,46,2,1,0,副驾抬高电机状态信号,0.0,0.0,0.0
+PassBackTiltHwSwtSts,4,437,false,false,44,3,1,0,Passenger Back and Tilt Hardwire Switch Status  副驾座垫靠背调角座垫倾角电机硬线按键状态,0.0,0.0,0.0
+PassBackAdjSts,4,437,false,false,41,2,1,0,副驾靠背电机状态信号,0.0,0.0,0.0
+PassLegRestHeiAdjSts,4,437,false,false,55,2,1,0,1,0.0,0.0,0.0
+PassLegRestHeiPosnSetNotAvlRsn,4,437,false,false,53,4,1,0,1,0.0,0.0,0.0
+PassHozlAdjSts,4,437,false,false,49,2,1,0,副驾水平电机状态信号,0.0,0.0,0.0
+PassSeatLegRestHeiMotPosn,4,437,false,false,63,8,1,0,1,0.0,0.0,0.0
+PassZeroGModCurCmd,4,437,false,false,71,4,1,0,1,0.0,0.0,0.0
+PassZeroGSeatEntryLstCmdFailRsn,4,437,false,false,67,4,1,0,1,0.0,0.0,0.0
+PassZeroGSeatEntryNotAvlRsn,4,437,false,false,79,4,1,0,1,0.0,0.0,0.0
+PassZeroGSeatQuitNotAvlRsn,4,437,false,false,75,4,1,0,1,0.0,0.0,0.0
+PassSeatBackMotPosn,4,437,false,false,87,8,1.0,0.0,Passenger Seat Back Motor Position\n副驾靠背电机位置,0.0,0.0,0.0
+PassBackPosnSetEnaSts,4,437,false,false,95,1,1,0,1,0.0,0.0,0.0
+ReRiBackFoldSts,4,437,false,false,94,3,1,0,1,0.0,0.0,0.0
+PassBackPosnSetNotAvlRsn,4,437,false,false,91,4,1,0,1,0.0,0.0,0.0
+PassHozlHeiHwSwtSts,4,437,false,false,100,3,1,0,Passenger Horizontal and Height Hardwire Switch Status\n副驾水平和抬高电机硬线按键状态,0.0,0.0,0.0
+RiReBackAdjSts,4,437,false,false,97,2,1,0,1,0.0,0.0,0.0
+PassZeroGSeatQuitEnaSts,4,437,false,false,111,1,1,0,1,0.0,0.0,0.0
+PassZeroGSeatRstEnaSts,4,437,false,false,110,1,1,0,1,0.0,0.0,0.0
+PassZeroGSeatRstNotAvlRsn,4,437,false,false,109,2,1,0,1,0.0,0.0,0.0
+PassZeroGSeatSts,4,437,false,false,107,3,1,0,1,0.0,0.0,0.0
+PassSeatHeiMotPosn,4,437,false,false,119,8,1.0,0.0,Passenger Seat Height Motor Position\n副驾抬高电机位置,0.0,0.0,0.0
+PassSeatHozlMotPosn,4,437,false,false,135,8,1.0,0.0,Passenger Seat Horizontal Motor Position\n副驾水平电机位置,0.0,0.0,0.0
+PassHeiPosnSetNotAvlRsn,4,437,false,false,151,4,1,0,1,0.0,0.0,0.0
+PassZeroGSeatQuitLstCmdFailRsn,4,437,false,false,147,4,1,0,1,0.0,0.0,0.0
+PassHeiPosnSetEnaSts,4,437,false,false,175,1,1,0,1,0.0,0.0,0.0
+PassHozlPosnSetEnaSts,4,437,false,false,174,1,1,0,1,0.0,0.0,0.0
+PassHozlPosnSetNotAvlRsn,4,437,false,false,173,4,1,0,1,0.0,0.0,0.0
+PassLegRestHeiPosnSetEnaSts,4,437,false,false,169,1,1,0,1,0.0,0.0,0.0
+DisbleRRWinSts,4,485,false,false,7,2,1,0,1,0.0,0.0,0.0
+DoorPassNotPwrRelsRsn,4,485,false,false,5,4,1,0,Door Pass not Power Release Reason,0.0,0.0,0.0
+DoorPassVcSts,4,485,false,false,1,2,1,0,Door Pass Status for Voice,0.0,0.0,0.0
+DoorPassPwrRelsDcdDiRsn,4,485,false,false,15,4,1,0,Door Pass Power Release DCD Disable Reason,0.0,0.0,0.0
+DoorRiReNotPwrRelsRsn,4,485,false,false,11,4,1,0,Door RiRe not Power Release Reason,0.0,0.0,0.0
+DoorRiRePwrRelsDcdDiRsn,4,485,false,false,23,4,1,0,Door RiRe Power Release DCD Disable Reason,0.0,0.0,0.0
+DoorRiReVcSts,4,485,false,false,19,2,1,0,Door RiRe Status for Voice,0.0,0.0,0.0
+PassWinClsWarning,4,485,false,false,17,2,1.0,0.0,副驾车窗未关提醒,0.0,0.0,0.0
+PassWinCurCmd,4,485,false,false,31,8,1.0,-1.0,Passenger Windows Current Command,0.0,0.0,0.0
+PassWinCurSts,4,485,false,false,39,8,1,0,Passenger Windows Current Status,0.0,0.0,0.0
+PassWinHmiPerctReqNotAvlRsn,4,485,false,false,47,4,1,0,Passengers Window HMI Percent Request Not Available Reason,0.0,0.0,0.0
+PassWinHmiSwtNotAvlRsn,4,485,false,false,43,4,1,0,Passenger Window HMI Switch Not Available Reason,0.0,0.0,0.0
+ReRiWinCurCmd,4,485,false,false,55,8,1.0,-1.0,Rear Right Windows Current Command,0.0,0.0,0.0
+ReRiWinCurSts,4,485,false,false,63,8,1,0,Rear Right Windows Current Status,0.0,0.0,0.0
+PassWinLstCmdFaildRsn,4,485,false,false,71,4,1,0,Passenger Windows Last Command Failed Reason,0.0,0.0,0.0
+PassWinRpRfSts,4,485,false,false,67,2,1,0,Passenger Windows RpRf Status,0.0,0.0,0.0
+ReRiWinClsWarning,4,485,false,false,65,2,1.0,0.0,右后车车窗未关提醒,0.0,0.0,0.0
+ReRiWinHmiPerctReqNotAvlRsn,4,485,false,false,79,4,1,0,Rear Right Window HMI Percent Request Not Available Reason,0.0,0.0,0.0
+ReRiWinHmiSwtNotAvlRsn,4,485,false,false,75,4,1,0,Rear Right Window HMI Switch Not Available Reason,0.0,0.0,0.0
+ReRiWinLstCmdFaildRsn,4,485,false,false,87,4,1,0,Rear Right Windows Last Command Failed Reason,0.0,0.0,0.0
+ReRiWinRpRfSts,4,485,false,false,83,2,1,0,Rear Right Windows RpRf Status,0.0,0.0,0.0
+PassWinHmiPerctAvl,4,485,false,false,81,1,1,0,Passenger Window HMI Percentage Available,0.0,0.0,0.0
+PassWinHmiSwtAvl,4,485,false,false,80,1,1,0,Passenger Window HMI Switch Available,0.0,0.0,0.0
+ReRiWinHmiPerctAvl,4,485,false,false,95,1,1,0,Rear Right Window HMI Percentage Available,0.0,0.0,0.0
+ReRiWinHmiSwtAvl,4,485,false,false,94,1,1,0,Rear Right Window HMI Switch Available,0.0,0.0,0.0
+PassSeatPosnLoadLstCmdFaildRsn,4,601,false,false,7,4,1,0,1,0.0,0.0,0.0
+PassSeatPosnLoadNotAvlRsn,4,601,false,false,3,4,1,0,1,0.0,0.0,0.0
+PassSeatPosnLoadSts,4,601,false,false,15,4,1,0,1,0.0,0.0,0.0
+PassSeatPosnSecPopUpEnaFlg,4,601,false,false,11,4,1,0,1,0.0,0.0,0.0
+FenderLgtStsRi,4,601,false,false,23,2,1,0,Right Fender light status\n右翼子板灯状态,0.0,0.0,0.0
+OutDoorLgtStsRi,4,601,false,false,21,2,1,0,Right OutDoor handle light status\n右门把手灯状态,0.0,0.0,0.0
+PassSeatPosnMemrPopUpReq,4,601,false,false,19,1,1,0,1,0.0,0.0,0.0
+ReLeSeatHeatgEnaSts,4,601,false,false,18,1,1,0,Rear Left Seat Heating Enable Status\n后排左侧座椅加热使能,0.0,0.0,0.0
+StsOfReFogLampRi,4,601,false,false,17,2,1,0,State of rear fog lamp left,0.0,0.0,0.0
+StsOfCenHiMntdStopLamp,4,601,false,false,31,2,1,0,高位刹车状态反馈,0.0,0.0,0.0
+StsOfMidTurnIndcrRi,4,601,false,false,29,2,1,0,右后视镜转向灯状态反馈,0.0,0.0,0.0
+StsOfReFogLampLe,4,601,false,false,27,2,1,0,State of rear fog lamp left,0.0,0.0,0.0
+StsOfReRegPlateLamp,4,601,false,false,25,2,1,0,status of rear region plate lamp,0.0,0.0,0.0
+RiDoorLogoLgtStsFrt,4,601,false,false,49,2,1,0,Rightfront side door Logo light  status\n后前侧门照地灯状态,0.0,0.0,0.0
+RlsLinComFltSts,4,601,false,false,60,1,1,0,Rls LIN node communication fault status.,0.0,0.0,0.0
+RiDoorLogoLgtStsRear,4,601,false,false,59,2,1,0,Rightrear side door Logo light  status\n右后侧门照地灯状态,0.0,0.0,0.0
+ReLeSeatHeatgSet,4,601,false,false,95,8,1,0,Rear Left Seat Heating Setting\n后排左侧驾座椅加热设置,0.0,0.0,0.0
+RlsAutWinWipgSpdCmdSigGrpChks,4,616,false,false,7,8,1,0,,0.0,0.0,0.0
+RlsAutWinWipgSpdCmdSigGrpCntr,4,616,false,false,11,4,1,0,,0.0,0.0,0.0
+RlsAutWinWipgSpdCmd,4,616,false,false,23,3,1,0,雨刮速度请求,0.0,0.0,0.0
+RlsLiSig1GrpChks,4,616,false,false,31,8,1,0,,0.0,0.0,0.0
+RlsLiSig1GrpCntr,4,616,false,false,35,4,1,0,,0.0,0.0,0.0
+RlsFwdLiSnsrVal,4,616,false,false,47,15,6.0,0.0,前向光线亮度,0.0,0.0,0.0
+RlsHudSnsrVal,4,616,false,false,63,15,6.0,0.0,Hud亮度,0.0,0.0,0.0
+RlsIRVal,4,616,false,false,79,8,400,0,红外光值输出,0.0,0.0,0.0
+RlsFwdLiSnsrValUnit,4,616,false,false,87,2,1,0,前向光线亮度单位,0.0,0.0,0.0
+RlsHudSnsrValUnit,4,616,false,false,85,2,1,0,Hud亮度单位,0.0,0.0,0.0
+RlsLiSnsrFwdFlt,4,616,false,false,83,1,1,0,RLS光线传感器 前向 故障,0.0,0.0,0.0
+RlsLiSnsrIRFlt,4,616,false,false,82,1,1,0,RLS光线传感器 IR红外 故障,0.0,0.0,0.0
+RlsLiSnsrTopFlt,4,616,false,false,81,1,1,0,RLS光线传感器 顶向 故障,0.0,0.0,0.0
+RlsLiSig2GrpChks,4,616,false,false,95,8,1,0,,0.0,0.0,0.0
+RlsLiSig2GrpCntr,4,616,false,false,99,4,1,0,,0.0,0.0,0.0
+RlsLiSigGrpLinErr,4,616,false,false,111,2,1,0,RlsLiSigGrp LIN communication Error,0.0,0.0,0.0
+RlsLiSwtReq,4,616,false,false,109,2,1,0,,0.0,0.0,0.0
+RlsOutdBriSts,4,616,false,false,107,3,1,0,白天 黑夜 隧道检测,0.0,0.0,0.0
+RlsTopLiSnsrVal,4,616,false,false,119,15,20.0,0.0,Top Light Value\n顶向光线亮度,0.0,0.0,0.0
+RlsSts,4,616,false,false,135,3,1,0,雨量阳光传感器状态,0.0,0.0,0.0
+RlsTopLiSnsrValUnit,4,616,false,false,132,2,1,0,顶部光线亮度单位,0.0,0.0,0.0
+DoorPassLockFltWarn2DCD,4,742,false,false,7,3,1,0,Door Pass Lock Fault Warning To DCD,0.0,0.0,0.0
+DoorPassManRelsWarn,4,742,false,false,4,1,1,0,副驾侧门手动释放提醒,0.0,0.0,0.0
+DoorPassNoRespReasonToDCD,4,742,false,false,3,4,1,0,副驾不响应内电释放的原因To DCD,0.0,0.0,0.0
+DoorPassPwrRelsDcdFcnAvl,4,742,false,false,15,1,1,0,副驾电释放DCD功能可用,0.0,0.0,0.0
+DoorRiReChdLockSts,4,742,false,false,14,2,1,0,右后侧门儿童锁状态,0.0,0.0,0.0
+DoorRiReLockFltWarn2DCD,4,742,false,false,12,3,1,0,Door RiRe Lock Fault Warning To DCD,0.0,0.0,0.0
+DoorRiReManRelsWarn,4,742,false,false,9,1,1,0,右后侧门手动释放提醒,0.0,0.0,0.0
+DoorRiRePwrRelsDcdFcnAvl,4,742,false,false,8,1,1,0,右后电释放DCD功能可用,0.0,0.0,0.0
+DoorRiReNoRespReasonToDCD,4,742,false,false,23,4,1,0,右后不响应内电释放的原因To DCD,0.0,0.0,0.0
+VFCWinMgrRZCUNetReq,4,742,false,false,19,2,1.0,0.0,VCCD内部信号;车窗请求保持VCCD和RZCU之间网络,0.0,0.0,0.0
+ReRiBackPosnSetEnaSts,4,789,false,false,5,1,1,0,1,0.0,0.0,0.0
+ReRiBackUnfoldEnaSts,4,789,false,false,4,1,1,0,1,0.0,0.0,0.0
+PassSeatVentnHmiCtrNotAvlRsn,4,789,false,false,3,4,1,0,Passenger Seat Ventilation HMI Control Not Available Reason\n副驾座椅通风HMI控制不可用原因,0.0,0.0,0.0
+PassSeatVentnCurCmd,4,789,false,false,15,3,1,0,Passenger Seat Ventilation Current Command\n副驾座椅通风当前操作指令,0.0,0.0,0.0
+PassSeatVentnLstCmdFaildRsn,4,789,false,false,12,3,1,0,Passenger Seat Ventilation Last  Command Failed Reason\n副驾座椅通风最后指令失效原因,0.0,0.0,0.0
+PassLegRestHeiAdjSwtEnaSts,4,789,false,false,9,1,1,0,1,0.0,0.0,0.0
+SeatHeatgReRowStsMid,4,789,false,false,31,2,1,0,Rear Row Seat Heating at Left Side\n后排中间座椅加热状态,0.0,0.0,0.0
+SeatHeatgReRowStsRi,4,789,false,false,29,2,1,0,后排右侧座椅加热状态,0.0,0.0,0.0
+SeatVentnFirstRowEnaStsAtPass,4,789,false,false,27,1,1,0,Passenger Seat Ventilation First Row Enable Status\n副驾座椅通风使能状态,0.0,0.0,0.0
+SeatVentnFirstRowStsAtPass,4,789,false,false,26,2,1,0,Passenger Seat Ventilation First Row Status\n副驾座椅通风状态,0.0,0.0,0.0
+PassLegRestHeiCurCmd,4,789,false,false,39,8,1.0,-1.0,1,0.0,0.0,0.0
+PassLegRestHeiHmiCtrNotAvlRsn,4,789,false,false,47,4,1,0,1,0.0,0.0,0.0
+PassLegRestHeiLstCmdFaildRsn,4,789,false,false,43,4,1,0,1,0.0,0.0,0.0
+SeatHeatgFirstRowStsAtPass,4,789,false,false,54,2,1,0,副驾座椅加热状态,0.0,0.0,0.0
+SeatHeatgReRowEnaStsLe,4,789,false,false,52,1,1,0,后排左侧座椅加热使能,0.0,0.0,0.0
+SeatHeatgReRowEnaStsMid,4,789,false,false,51,1,1,0,Rear Row Seat Heating Enable Status at Left Side\n后排中间座椅加热使能,0.0,0.0,0.0
+SeatHeatgReRowEnaStsRi,4,789,false,false,50,1,1,0,后排右侧座椅加热使能,0.0,0.0,0.0
+SeatHeatgReRowStsLe,4,789,false,false,49,2,1,0,后排左侧座椅加热状,0.0,0.0,0.0
+PassSeatMotSetSts,4,789,false,false,101,3,1,0,Passenger Seat Motor Set Status\n副驾座椅电机设置状态,0.0,0.0,0.0
+ReLeSeatHeatgCurCmd,4,789,false,false,98,3,1,0,Rear Row Left Seat Heating Current Command\n后排左侧座椅加热当前操作指令,0.0,0.0,0.0
+ReLeSeatHeatgHmiCtrNotAvlRsn,4,789,false,false,111,4,1,0,Rear Row Left Seat Heating HMI Control Not Available Reason\n后排左侧座椅加热HMI控制不可操作原因,0.0,0.0,0.0
+ReLeSeatHeatgLstCmdFaildRsn,4,789,false,false,107,4,1,0,Rear Row Left Seat Heating Last Command Failed Reason\n后排左侧驾座椅加热最后指令失败原因,0.0,0.0,0.0
+ReMidSeatHeatgHmiCtrNotAvlRsn,4,789,false,false,119,4,1,0,Rear Row Middle Seat Heating HMI Control Not Available Reason\n后排中部座椅加热HMI控制不可操作原因,0.0,0.0,0.0
+ReMidSeatHeatgLstCmdFaildRsn,4,789,false,false,115,4,1,0,Rear  Row  Middle Seat Heating Last Command Failed Reason\n后排中间座椅加热最后指令失败原因,0.0,0.0,0.0
+ReRiBackFoldCtrlNotAvlRsn,4,789,false,false,127,4,1,0,1,0.0,0.0,0.0
+ReRiBackFoldCurCmd,4,789,false,false,135,16,1.0,0.0,1,0.0,0.0,0.0
+ReMidSeatHeatgCurCmd,4,789,false,false,151,3,1,0,Rear Row Middle Seat Heating Current Command\n后排中部座椅加热当前操作指令,0.0,0.0,0.0
+ReRiBackFoldEnaSts,4,789,false,false,148,1,1,0,1,0.0,0.0,0.0
+ReRiBackFoldLstCmdFaildRsn,4,789,false,false,147,4,1,0,1,0.0,0.0,0.0
+ReRiBackHmiAdjEnaSts,4,789,false,false,159,1,1,0,1,0.0,0.0,0.0
+ReRiBackHmiAdjNotAvlRsn,4,789,false,false,158,4,1,0,1,0.0,0.0,0.0
+PassSeatHeatgCurCmd,4,789,false,false,154,3,1,0,Passenger Seat Heating Current Command\n副驾座椅加热当前操作指令,0.0,0.0,0.0
+ReRiBackPosnSetCurCmd,4,789,false,false,167,8,1.0,-1.0,1,0.0,0.0,0.0
+ReRiBackPosnSetLstCmdFaildRsn,4,789,false,false,175,4,1,0,1,0.0,0.0,0.0
+ReRiBackPosnSetNotAvlRsn,4,789,false,false,171,4,1,0,1,0.0,0.0,0.0
+ReRiBackUnfoldLstCmdFaildRsn,4,789,false,false,183,4,1,0,1,0.0,0.0,0.0
+ReRiBackUnfoldCtrlNotAvlRsn,4,789,false,false,179,4,1,0,1,0.0,0.0,0.0
+ReRiSeatHeatgCurCmd,4,789,false,false,191,3,1,0,Rear Row Right Seat Heating Current Command\n后排右侧座椅加热当前操作指令,0.0,0.0,0.0
+ReRiSeatHeatgHmiCtrNotAvlRsn,4,789,false,false,188,4,1,0,Rear Row Right Seat Heating HMI Control Not Available Reason\n后排右侧座椅加热HMI控制不可操作原因,0.0,0.0,0.0
+SeatHeatgFirstRowEnaStsAtPass,4,789,false,false,184,1,1,0,副驾座椅加热使能,0.0,0.0,0.0
+ReRiSeatHeatgLstCmdFaildRsn,4,789,false,false,199,4,1,0,Rear Row Left Seat Heating Last Command Failed Reason\n后排右侧座椅加热最后指令失败原因,0.0,0.0,0.0
+PassBackAdjSwtEnaSts,4,789,false,false,195,1,1,0,Passenger Back Adjustment Switch Enable Status\n副驾靠背电机调节按键使能状态,0.0,0.0,0.0
+PassHeiAdjSwtEnaSts,4,789,false,false,194,1,1,0,Passenger Height Adjustment Switch Enable Status\n副驾抬高电机调节按键使能状态,0.0,0.0,0.0
+PassHozlAdjSwtEnaSts,4,789,false,false,193,1,1,0,Passenger Horizontal Adjustment Switch Enable Status\n副驾水平电机调节按键使能状态,0.0,0.0,0.0
+PassBackCurCmd,4,789,false,false,207,8,1.0,-1.0,Passenger Seat Back Motor Current Command\n副驾靠背电机当前操作指令,0.0,0.0,0.0
+PassBackHmiCtrNotAvlRsn,4,789,false,false,215,4,1,0,Passenger Back Hmi Control Not Available Reason\n副驾靠背电机控制不可用原因,0.0,0.0,0.0
+PassBackLstCmdFaildRsn,4,789,false,false,211,4,1,0,Passenger Seat Back  Motor Last Command Failed Reason\n副驾靠背电机最后操作失败原因,0.0,0.0,0.0
+PassHeiCurCmd,4,789,false,false,223,8,1.0,-1.0,Passenger  Seat Height Motor Current Command\n副驾抬高电机当前操作指令,0.0,0.0,0.0
+PassHeiHmiCtrNotAvlRsn,4,789,false,false,231,4,1,0,Passenger  Height  Hmi Control Not Available Reason\n副驾抬高电机控制不可用原因,0.0,0.0,0.0
+PassHeiLstCmdFaildRsn,4,789,false,false,227,4,1,0,Passenger Seat Height Motor Last Command Failed Reason\n副驾抬高电机最后操作失败原因,0.0,0.0,0.0
+PassHozlCurCmd,4,789,false,false,239,8,1.0,-1.0,Passenger Seat Horizontal Motor Current Command\n副驾水平电机当前操作指令,0.0,0.0,0.0
+PassHozlHmiCtrNotAvlRsn,4,789,false,false,247,4,1,0,Passenger Horizontal Hmi Control Not Available Reason\n副驾水平电机控制不可用原因,0.0,0.0,0.0
+PassHozlLstCmdFaildRsn,4,789,false,false,243,4,1,0,Passenger Seat Horizontal Motor Last Command Failed Reason\n副驾水平电机最后操作失败原因,0.0,0.0,0.0
+PassSeatHeatgHmiCtrNotAvlRsn,4,789,false,false,255,4,1,0,Passenger Seat Heating HMI Control Not Available Reason\n副驾座椅加热HMI控制不可操作原因,0.0,0.0,0.0
+PassSeatHeatgLstCmdFaildRsn,4,789,false,false,251,4,1,0,Passenger Seat Heating Last Command Failed Reason\n副驾座椅加热最后指令失败原因,0.0,0.0,0.0
+PassOcupcySts,4,893,false,false,1,2,1,0,Passenger Occupancy Sensor  Status\n副驾座椅占位传感器检测状态,0.0,0.0,0.0
+SecRowRiOcupcySts,4,893,false,false,13,2,1,0,Second Row Right Ocupcy Sensor Status\n二排右侧座椅占位传感器检测状态,0.0,0.0,0.0
+SecRowMidOcupcySts,4,893,false,false,11,2,1,0,Second Row Middle Ocupcy Sensor Status\n二排中间座椅占位传感器检测状态,0.0,0.0,0.0
+R01OutpU_BLEA,4,1268,false,false,7,8,0.1,0.0,,0.0,0.0,0.0
+R02OutpU_ADD,4,1268,false,false,15,8,0.1,0.0,,0.0,0.0,0.0
+R03OutpU_VCCD,4,1268,false,false,23,8,0.1,0.0,,0.0,0.0,0.0
+R04OutpU_ACU,4,1268,false,false,31,8,0.1,0.0,,0.0,0.0,0.0
+R12OutpU_RLCMRA,4,1268,false,false,39,8,0.1,0.0,,0.0,0.0,0.0
+R13OutpU_RLCMLB,4,1268,false,false,47,8,0.1,0.0,,0.0,0.0,0.0
+N1_DRV871x_Init_Cnt_RZCU,4,1268,false,false,55,16,1,0,,0.0,0.0,0.0
+N2_DZ300_Init_Cnt_RZCU,4,1268,false,false,71,16,1,0,,0.0,0.0,0.0
+N3_FS2620_Init_Cnt_RZCU,4,1268,false,false,87,16,1,0,,0.0,0.0,0.0
+N4_TCA9539_Init_Cnt_RZCU,4,1268,false,false,103,16,1,0,,0.0,0.0,0.0
+N5_TIC12400_Init_Cnt_RZCU,4,1268,false,false,119,16,1,0,,0.0,0.0,0.0
+N6_TPSXHXXX_Init_Cnt_RZCU,4,1268,false,false,135,16,1,0,,0.0,0.0,0.0
+N7_VN9DXX_Init_Cnt_RZCU,4,1268,false,false,151,16,1,0,,0.0,0.0,0.0
+N8_VNF1048_Init_Cnt_RZCU,4,1268,false,false,167,16,1,0,,0.0,0.0,0.0
+OutpCurMonrFRDoorPwrRelseMotor,4,1268,false,false,183,13,0.1,0.0,Current Monitor Front Right Door Latch Motor,0.0,0.0,0.0
+OutpCurMonrRRChildLockMotor,4,1268,false,false,199,13,0.1,0.0,Current Monitor Rear Right Child Lock Motor,0.0,0.0,0.0
+OutpCurMonrRRDoorPwrRelseMotor,4,1268,false,false,215,13,0.1,0.0,Current Monitor Rear Right Door Latch Motor,0.0,0.0,0.0
+OutpCurMonrFRDoorCinchMotor,4,1269,false,false,7,13,0.1,0.0,Current Monitor Front Right Door Cinch Motor,0.0,0.0,0.0
+OutpCurMonrFRDoorHandleMotor,4,1269,false,false,23,13,0.1,0.0,Current Monitor Front Right Door Handle Motor,0.0,0.0,0.0
+OutpCurMonrFrtCameraHeat,4,1269,false,false,55,13,0.1,0.0,Current Monitor Front Camera Heating,0.0,0.0,0.0
+OutpCurMonrFRWindowMotor,4,1269,false,false,71,13,0.1,0.0,Current Monitor Front Right Window Motor,0.0,0.0,0.0
+OutpCurMonrLegSuptExtenMotor,4,1269,false,false,87,13,0.1,0.0,Current Monitor Leg Support Extension Motor,0.0,0.0,0.0
+OutpCurMonrLegSuptRotaMotor,4,1269,false,false,103,13,0.1,0.0,Current Monitor Leg Support Rotation Motor,0.0,0.0,0.0
+OutpCurMonrFRSeatBackrestAdj,4,1269,false,false,119,13,0.1,0.0,Current Monitor Passenger Seat Backrest Adjust Motor,0.0,0.0,0.0
+OutpCurMonrPassSeatCushionAdjust,4,1269,false,false,135,13,0.1,0.0,Current Monitor Passenger Seat Cushion Adjust Motor,0.0,0.0,0.0
+OutpCurMonrPassSeatForeAftAdjust,4,1269,false,false,151,13,0.1,0.0,Current Monitor Passenger Seat Fore After Adjust Motor,0.0,0.0,0.0
+OutpCurMonrPassSeatHeat,4,1269,false,false,167,13,0.1,0.0,Current Monitor Passenger Seat Heating,0.0,0.0,0.0
+OutpCurMonrPassSeatHightAdjust,4,1269,false,false,183,13,0.1,0.0,Current Monitor Passenger Seat Height Adjust Motor,0.0,0.0,0.0
+OutpCurMonrPassSpeakerUpDnMotor,4,1269,false,false,199,13,0.1,0.0,Current Monitor Passenger Speaker Height Adjust Motor,0.0,0.0,0.0
+OutpCurMonrRiOSRVMUpDnAdjust,4,1269,false,false,215,13,0.1,0.0,Current Monitor Right OSRVM Up/Down Adjust Motor,0.0,0.0,0.0
+OutpCurMonrRLSeatCushionHeat,4,1269,false,false,231,13,0.1,0.0,Current Monitor Rear Left Seat Cushion Heating,0.0,0.0,0.0
+OutpCurMonrRRDoorCinchMotor,4,1269,false,false,263,13,0.1,0.0,Current Monitor Rear Right Door Cinch Motor,0.0,0.0,0.0
+OutpCurMonrRRDoorHandleMotor,4,1269,false,false,279,13,0.1,0.0,Current Monitor Rear Right Door Handle Motor,0.0,0.0,0.0
+OutpCurMonrrRMSeatCushionHeat,4,1269,false,false,311,13,0.1,0.0,Current Monitor Rear Middle Seat Cushion Heating,0.0,0.0,0.0
+OutpCurMonrRRSeatCushionHeat,4,1269,false,false,327,13,0.1,0.0,Current Monitor Rear Right Seat Cushion Heat,0.0,0.0,0.0
+OutpCurMonrRRWindowMotor,4,1269,false,false,343,13,0.1,0.0,Current MonitorRear Right Window Motor,0.0,0.0,0.0
+UDB23RZCU,4,1389,false,false,23,1,1,0,,0.0,0.0,0.0
+UDB22RZCU,4,1389,false,false,22,1,1,0,,0.0,0.0,0.0
+UDB21RZCU,4,1389,false,false,21,1,1,0,,0.0,0.0,0.0
+UDB20RZCU,4,1389,false,false,20,1,1,0,,0.0,0.0,0.0
+UDB19RZCU,4,1389,false,false,19,1,1,0,,0.0,0.0,0.0
+UDB18RZCU,4,1389,false,false,18,1,1,0,,0.0,0.0,0.0
+UDB17RZCU,4,1389,false,false,17,1,1,0,,0.0,0.0,0.0
+UDB31RZCU,4,1389,false,false,31,1,1,0,,0.0,0.0,0.0
+UDB30RZCU,4,1389,false,false,30,1,1,0,,0.0,0.0,0.0
+UDB29RZCU,4,1389,false,false,29,1,1,0,,0.0,0.0,0.0
+UDB28RZCU,4,1389,false,false,28,1,1,0,,0.0,0.0,0.0
+UDB27RZCU,4,1389,false,false,27,1,1,0,,0.0,0.0,0.0
+UDB26RZCU,4,1389,false,false,26,1,1,0,,0.0,0.0,0.0
+UDB25RZCU,4,1389,false,false,25,1,1,0,,0.0,0.0,0.0
+UDB24RZCU,4,1389,false,false,24,1,1,0,,0.0,0.0,0.0
+UDB39RZCU,4,1389,false,false,39,1,1,0,,0.0,0.0,0.0
+UDB38RZCU,4,1389,false,false,38,1,1,0,,0.0,0.0,0.0
+UDB37RZCU,4,1389,false,false,37,1,1,0,,0.0,0.0,0.0
+UDB36RZCU,4,1389,false,false,36,1,1,0,,0.0,0.0,0.0
+UDB35RZCU,4,1389,false,false,35,1,1,0,,0.0,0.0,0.0
+UDB34RZCU,4,1389,false,false,34,1,1,0,,0.0,0.0,0.0
+UDB33RZCU,4,1389,false,false,33,1,1,0,,0.0,0.0,0.0
+UDB32RZCU,4,1389,false,false,32,1,1,0,,0.0,0.0,0.0
+UDB47RZCU,4,1389,false,false,47,1,1,0,,0.0,0.0,0.0
+UDB46RZCU,4,1389,false,false,46,1,1,0,,0.0,0.0,0.0
+UDB45RZCU,4,1389,false,false,45,1,1,0,,0.0,0.0,0.0
+UDB44RZCU,4,1389,false,false,44,1,1,0,,0.0,0.0,0.0
+UDB43RZCU,4,1389,false,false,43,1,1,0,,0.0,0.0,0.0
+UDB42RZCU,4,1389,false,false,42,1,1,0,,0.0,0.0,0.0
+UDB41RZCU,4,1389,false,false,41,1,1,0,,0.0,0.0,0.0
+UDB40RZCU,4,1389,false,false,40,1,1,0,,0.0,0.0,0.0
+NMKeepAwkRsnRZCU,4,1389,false,false,48,9,1,0,,0.0,0.0,0.0
+TiDomn,4,263,false,false,4,5,1,0,time domain,0.0,0.0,0.0
+DateTiYr,4,263,false,false,15,8,1.0,2000.0,date time year,0.0,0.0,0.0
+DateTiMth,4,263,false,false,19,4,1.0,0.0,date time month,0.0,0.0,0.0
+DateTiDay,4,263,false,false,28,5,1,0,date time day,0.0,0.0,0.0
+DateTiHr,4,263,false,false,36,5,1.0,0.0,date time hour,0.0,0.0,0.0
+DateTiMins,4,263,false,false,45,6,1.0,0.0,date time minute,0.0,0.0,0.0
+DateTiSec,4,263,false,false,55,6,1.0,0.0,date time second,0.0,0.0,0.0
+DateTiMilsec,4,263,false,false,49,10,1.0,0.0,date time millisecond,0.0,0.0,0.0
+AdjLeMirrHozlDirSoa,4,443,false,false,7,2,1,0,Adjust the left mirror left/right by direction,0.0,0.0,0.0
+AdjLeMirrVertDirSoa,4,443,false,false,5,2,1,0,Adjust the left mirror up/down  by direction,0.0,0.0,0.0
+AdjMirrFoldSoa,4,443,false,false,3,2,1,0,Adjust the mirror fold in/out,0.0,0.0,0.0
+AdjRiMirrHozlDirSoa,4,443,false,false,1,2,1,0,Adjust the right mirror left/right by direction,0.0,0.0,0.0
+AdjLeMirrHozlSoa,4,443,false,false,15,8,1,0,Adjust the left mirror left/right by percentage,0.0,0.0,0.0
+AdjLeMirrVertSoa,4,443,false,false,23,8,1,0,Adjust the left mirror up/down by percentage,0.0,0.0,0.0
+AdjRiMirrHozlSoa,4,443,false,false,31,8,1,0,Adjust the right mirror left/right by percentage,0.0,0.0,0.0
+AdjRiMirrVertSoa,4,443,false,false,39,8,1,0,Adjust the right mirror up/down by percentage,0.0,0.0,0.0
+AdjRiMirrVertDirSoa,4,443,false,false,47,2,1,0,Adjust the right mirror up/down by direction,0.0,0.0,0.0
+DrvrLumAdjReqSoa,4,443,false,false,45,3,1.0,0.0,Request from Soa to adjust the lumber support of the main driver's seat\n Soa的主驾驶位座椅腰托调节请求,0.0,0.0,0.0
+OpenCloseChrgLidReqSoa,4,443,false,false,42,2,1,0,Request from Soa to open or close the Charge Lid\n Soa的充电口盖开启 或关闭请求,0.0,0.0,0.0
+DrvrSeatBackAdjReqSoa,4,443,false,false,55,8,1.0,0.0,Request from Soa to adjust the backrest angle of the driver seat\n Soa的主驾驶位座椅靠背角度调节请求,0.0,0.0,0.0
+DrvrSeatHorizontalAdjReqSoa,4,443,false,false,63,8,1.0,0.0,Request from Soa to adjust the horizontal position of the driver seat\n Soa的主驾驶位座椅前后调节请求,0.0,0.0,0.0
+DrvrSeatVerticalAdjReqSoa,4,443,false,false,71,8,1.0,0.0,Request from Soa to adjust the vertical position of the driver seat\n Soa的主驾驶位座椅高度调节请求,0.0,0.0,0.0
+DrvrSeatHeatingReqSoa,4,443,false,false,79,3,1.0,0.0,Request from Soa to heating of the main drivers seat\n Soa的主驾驶位座椅加热请求,0.0,0.0,0.0
+DrvrSeatVentilationReqSoa,4,443,false,false,76,3,1.0,0.0,Request from Soa to ventilation of the main drivers seat\n Soa的主驾驶位座椅通风请求,0.0,0.0,0.0
+OpenCloseDrvrDoorReqSoa,4,443,false,false,73,2,1,0,Request from Soa to open or close the driver's door\n Soa的主驾驶位车门开启 或关闭请求,0.0,0.0,0.0
+OpenCloseLeReDoorReqSoa,4,443,false,false,87,2,1,0,Request from Soa to open or close the rear left door\n Soa的左后车门开启 或关闭 请求,0.0,0.0,0.0
+OpenClosePassDoorReqSoa,4,443,false,false,85,2,1,0,Request from Soa to open or close the passenger side door\n Soa的副驾驶位车门开启 或关闭 请求,0.0,0.0,0.0
+OpenCloseRiReDoorReqSoa,4,443,false,false,83,2,1,0,Request from Soa to open or close the rear right door\n Soa的右后车门开启 或关闭 请求,0.0,0.0,0.0
+PassWinStopReqSoa,4,443,false,false,81,1,1,0,Passenger Window  stop move,0.0,0.0,0.0
+PassSeatHorizontaAdjlReqSoa,4,443,false,false,95,8,1.0,0.0,Request from Soa to adjust the horizontal position of the passenger seat\n Soa的副驾驶位座椅前后调节请求,0.0,0.0,0.0
+PassSeatBackAdjReqSoa,4,443,false,false,103,8,1.0,0.0,Request from Soa to adjust the backrest angle of the passenger seat\n Soa的副驾驶位座椅靠背角度调节请求,0.0,0.0,0.0
+PassSeatVerticalAdjReqSoa,4,443,false,false,111,8,1.0,0.0,Request from Soa to adjust the vertical position of the passenger seat\n Soa的副驾驶位座椅高度调节请求,0.0,0.0,0.0
+PassWinPerctReqSoa,4,443,false,false,119,8,1,0,Passenger Window Percentage Position,0.0,0.0,0.0
+ReLeWinPerctReqSoa,4,443,false,false,127,8,1,0,Rear Left Window Percentage Position,0.0,0.0,0.0
+PassSeatHeatingReqSoa,4,443,false,false,135,3,1.0,0.0,Request from Soa to heating of the passenger seat\n Soa的副驾驶位座椅加热请求,0.0,0.0,0.0
+PassSeatVentilationReqSoa,4,443,false,false,132,3,1.0,0.0,Request from Soa to ventilation of the passenger seat\n Soa的副驾驶位座椅通风请求,0.0,0.0,0.0
+ReLeWinStopReqSoa,4,443,false,false,129,1,1,0,Rear Left Window  stop move,0.0,0.0,0.0
+ReMidSeatHeatingReqSoa,4,443,false,false,143,3,1.0,0.0,Request from Soa to heating of the rear middle seat\n Soa的后排中间座椅加热请求,0.0,0.0,0.0
+RemStrtVehicleReqSoa,4,443,false,false,140,1,1,0,Remote Start Vehicle Request From Soa,0.0,0.0,0.0
+ReRiSeatHeatingReqSoa,4,443,false,false,139,3,1.0,0.0,Request from Soa to heating of the rear right seat\n Soa的后排右侧座椅加热请求,0.0,0.0,0.0
+ReRiWinPerctReqSoa,4,443,false,false,151,8,1,0,Rear Right Window Percentage Position,0.0,0.0,0.0
+ReRiWinStopReqSoa,4,443,false,false,159,1,1,0,Rear Right Window Percentage Position,0.0,0.0,0.0
+VCCDOdoEgyCnsBacReqResultSoa,4,443,false,false,158,2,1,0,Result of VCCD Mileage  and energy consumption backup request,0.0,0.0,0.0
+SetHornModeSoa,4,443,false,false,156,3,1,0,SOA喇叭报警模式请求,0.0,0.0,0.0
+DayRunngLampOnOffSoa,4,443,false,false,153,2,1.0,0.0,Day running lamp on/off request from Soa\n Soa的日行灯开关请求,0.0,0.0,0.0
+VCCDOdoBacDataFromTspSoa,4,443,false,false,167,24,0.1,0.0,VCCD ODO Backup data download from TSP,0.0,0.0,0.0
+VCCDStatEgyCnsBacDataFromTspSoa,4,443,false,false,191,32,0.001,0.0,VCCD total static energy consumption backup data from TSP,0.0,0.0,0.0
+VCCDDynEgyCnsBacDataFromTspSoa,4,443,false,false,223,32,0.001,0.0,VCCD total dynamic energy consumption backup data from TSP,0.0,0.0,0.0
+DisbleReWinCtrlSoa,4,443,false,false,255,2,1,0,Disable rear window lock control,0.0,0.0,0.0
+DmsDrvOnSeatStatusSoa,4,443,false,false,253,2,1,0,Driver seated status from DMS,0.0,0.0,0.0
+SetMirrDfrstSoa,4,443,false,false,251,2,1,0,Adjust the mirror defroster,0.0,0.0,0.0
+SetMirrDimCfgSoa,4,443,false,false,249,2,1,0,Interior mirror dimming configuration set,0.0,0.0,0.0
+DrvrWinPerctReqSoa,4,443,false,false,263,8,1,0,Driver Window Percentage Position,0.0,0.0,0.0
+IVFTarTSetSoa,4,443,false,false,271,6,1.0,0.0,IVF Target Temperature Set from SOA\n来自SOA的车载冰箱工作温度设置信号,0.0,0.0,0.0
+SetMirrFoldCfgSoa,4,443,false,false,265,2,1,0,Set the mirror fold in/out config,0.0,0.0,0.0
+IVFWalAwayFcnKeepTiSoa,4,443,false,false,279,5,1.0,0.0,IVF Walk Away Function Keep Time Set from SOA\n来自SOA的车载冰箱离车工作时长设置信号,0.0,0.0,0.0
+DrvrWinStopReqSoa,4,443,false,false,274,1,1,0,Driver Window stop move,0.0,0.0,0.0
+CldCtrlCmdSoa,4,443,false,false,273,2,1.0,0.0,Cloud ctrl cmd Info from SOA \nSOA远控指令通知信号,0.0,0.0,0.0
+IVFWalAwayFcnOnOffSetSoa,4,443,false,false,287,2,1,0,IVF Walk Away Function OnOff Set from SOA\n来自SOA的车载冰箱离车工作开关设置信号,0.0,0.0,0.0
+IVFWalAwayWTimesSoa,4,443,false,false,285,2,1,0,IVF WalkAway Work Times from SOA\n来自SOA的车载冰箱离车工作次数设置信号,0.0,0.0,0.0
+IVFWModSetSoa,4,443,false,false,283,2,1,0,IVF Work Mode Set from SOA\n来自SOA的车载冰箱工作模式设置信号,0.0,0.0,0.0
+IVFWOnOffSetSoa,4,443,false,false,281,2,1,0,IVF Work OnOff Set From SOA\n来自SOA的车载冰箱工作开关设置信号,0.0,0.0,0.0
+SetMirrTiltCfgSoa,4,443,false,false,295,3,1.0,0.0,Exterior Mirror Reversing Assit Function configuration set,0.0,0.0,0.0
+SetSteerWhlHeatLvlSoa,4,443,false,false,292,3,1,0,Set steering wheel heating level,0.0,0.0,0.0
+ExtLampAutoModOnOffSoa,4,443,false,false,289,2,1.0,0.0,External lamp auto mode on/off request from Soa\n Soa的外车灯自动模式开关请求,0.0,0.0,0.0
+IVFPfmncSetSoa,4,443,false,false,303,8,1,0,SOA的冰箱性能模式设置内部信号,0.0,0.0,0.0
+LeCornrLampOnOffSoa,4,443,false,false,311,2,1.0,0.0,Left corner lamp on/off request from Soa\n Soa的左角灯开关请求,0.0,0.0,0.0
+LoBeamLampOnOffSoa,4,443,false,false,309,2,1.0,0.0,Low beam lamp on/off request from Soa\n Soa的近光灯开关请求,0.0,0.0,0.0
+LoctCarLampReqSoa,4,443,false,false,307,2,1.0,0.0,Activate/Deactivate lamp for locating car request from Soa\n Soa的寻车灯激活/关闭请求,0.0,0.0,0.0
+RePlateLampOnOffSoa,4,443,false,false,305,2,1.0,0.0,Rear plate lamp on/off request from Soa\n Soa的牌照灯开关请求,0.0,0.0,0.0
+ExtrLghtCtrlSrcFromSoa,4,443,false,false,319,4,1,0,SOA Control ExtrLight Source\nSOA控制外灯的请求源,0.0,0.0,0.0
+FrntPosnLampOnOffSoa,4,443,false,false,315,2,1.0,0.0,Front position lamp on/off request from Soa\n Soa的前位置灯开关请求,0.0,0.0,0.0
+HiBeamLampOnOffSoa,4,443,false,false,313,2,1.0,0.0,High beam lamp on/off request from Soa\n Soa的远光灯开关请求,0.0,0.0,0.0
+RePosnLampOnOffSoa,4,443,false,false,327,2,1.0,0.0,Rear position lamp on/off request from Soa\n Soa的后位置灯开关请求,0.0,0.0,0.0
+ReRvsLampOnOffSoa,4,443,false,false,325,2,1.0,0.0,Rear reverse lamp on/off request from Soa\n Soa的倒车灯开关请求,0.0,0.0,0.0
+ReStopLampOnOffSoa,4,443,false,false,323,2,1.0,0.0,Stop lamp on/off request from Soa\n Soa的刹车灯开关请求,0.0,0.0,0.0
+RiCornrLampOnOffSoa,4,443,false,false,321,2,1.0,0.0,Right corner lamp on/off request from Soa\n Soa的右角灯开关请求,0.0,0.0,0.0
+ReFogLampOnOffSoa,4,443,false,false,335,2,1.0,0.0,Rear fog lamp on/off request from Soa\n Soa的后雾灯开关请求,0.0,0.0,0.0
+ReHiStopLampOnOffSoa,4,443,false,false,333,2,1.0,0.0,High Stop lamp on/off request from Soa\n Soa的高位刹车灯开关请求,0.0,0.0,0.0
+TurnLeLampOnOffSoa,4,443,false,false,331,2,1.0,0.0,Turn left lamp on/off request from Soa\n Soa的左转向灯开关请求,0.0,0.0,0.0
+TurnRiLampOnOffSoa,4,443,false,false,329,2,1.0,0.0,Turn rigfht lamp on/off request from Soa\n Soa的右转向灯开关请求,0.0,0.0,0.0
+FrtLftSegmt1,4,445,false,false,7,8,1,0,Front Left Segment1,0.0,0.0,0.0
+FrtLftSegmt10,4,445,false,false,15,8,1,0,Front Left Segment10,0.0,0.0,0.0
+FrtLftSegmt100,4,445,false,false,23,8,1,0,Front Left Segment100,0.0,0.0,0.0
+FrtLftSegmt101,4,445,false,false,31,8,1,0,Front Left Segment101,0.0,0.0,0.0
+FrtLftSegmt102,4,445,false,false,39,8,1,0,Front Left Segment102,0.0,0.0,0.0
+FrtLftSegmt103,4,445,false,false,47,8,1,0,Front Left Segment103,0.0,0.0,0.0
+FrtLftSegmt104,4,445,false,false,55,8,1,0,Front Left Segment104,0.0,0.0,0.0
+FrtLftSegmt105,4,445,false,false,63,8,1,0,Front Left Segment105,0.0,0.0,0.0
+FrtLftSegmt106,4,445,false,false,71,8,1,0,Front Left Segment106,0.0,0.0,0.0
+FrtLftSegmt107,4,445,false,false,79,8,1,0,Front Left Segment107,0.0,0.0,0.0
+FrtLftSegmt108,4,445,false,false,87,8,1,0,Front Left Segment108,0.0,0.0,0.0
+FrtLftSegmt109,4,445,false,false,95,8,1,0,Front Left Segment109,0.0,0.0,0.0
+FrtLftSegmt11,4,445,false,false,103,8,1,0,Front Left Segment11,0.0,0.0,0.0
+FrtLftSegmt110,4,445,false,false,111,8,1,0,Front Left Segment110,0.0,0.0,0.0
+FrtLftSegmt111,4,445,false,false,119,8,1,0,Front Left Segment111,0.0,0.0,0.0
+FrtLftSegmt112,4,445,false,false,127,8,1,0,Front Left Segment112,0.0,0.0,0.0
+FrtLftSegmt113,4,445,false,false,135,8,1,0,Front Left Segment113,0.0,0.0,0.0
+FrtLftSegmt114,4,445,false,false,143,8,1,0,Front Left Segment114,0.0,0.0,0.0
+FrtLftSegmt115,4,445,false,false,151,8,1,0,Front Left Segment115,0.0,0.0,0.0
+FrtLftSegmt116,4,445,false,false,159,8,1,0,Front Left Segment116,0.0,0.0,0.0
+FrtLftSegmt117,4,445,false,false,167,8,1,0,Front Left Segment117,0.0,0.0,0.0
+FrtLftSegmt118,4,445,false,false,175,8,1,0,Front Left Segment118,0.0,0.0,0.0
+FrtLftSegmt119,4,445,false,false,183,8,1,0,Front Left Segment119,0.0,0.0,0.0
+FrtLftSegmt12,4,445,false,false,191,8,1,0,Front Left Segment12,0.0,0.0,0.0
+FrtLftSegmt120,4,445,false,false,199,8,1,0,Front Left Segment120,0.0,0.0,0.0
+FrtLftSegmt121,4,445,false,false,207,8,1,0,Front Left Segment121,0.0,0.0,0.0
+FrtLftSegmt122,4,445,false,false,215,8,1,0,Front Left Segment122,0.0,0.0,0.0
+FrtLftSegmt123,4,445,false,false,223,8,1,0,Front Left Segment123,0.0,0.0,0.0
+FrtLftSegmt124,4,445,false,false,231,8,1,0,Front Left Segment124,0.0,0.0,0.0
+FrtLftSegmt125,4,445,false,false,239,8,1,0,Front Left Segment125,0.0,0.0,0.0
+FrtLftSegmt126,4,445,false,false,247,8,1,0,Front Left Segment126,0.0,0.0,0.0
+FrtLftSegmt127,4,445,false,false,255,8,1,0,Front Left Segment127,0.0,0.0,0.0
+FrtLftSegmt128,4,445,false,false,263,8,1,0,Front Left Segment128,0.0,0.0,0.0
+FrtLftSegmt13,4,445,false,false,271,8,1,0,Front Left Segment13,0.0,0.0,0.0
+FrtLftSegmt14,4,445,false,false,279,8,1,0,Front Left Segment14,0.0,0.0,0.0
+FrtLftSegmt15,4,445,false,false,287,8,1,0,Front Left Segment15,0.0,0.0,0.0
+FrtLftSegmt16,4,445,false,false,295,8,1,0,Front Left Segment16,0.0,0.0,0.0
+FrtLftSegmt17,4,445,false,false,303,8,1,0,Front Left Segment17,0.0,0.0,0.0
+FrtLftSegmt18,4,445,false,false,311,8,1,0,Front Left Segment18,0.0,0.0,0.0
+FrtLftSegmt19,4,445,false,false,319,8,1,0,Front Left Segment19,0.0,0.0,0.0
+FrtLftSegmt2,4,445,false,false,327,8,1,0,Front Left Segment2,0.0,0.0,0.0
+FrtLftSegmt20,4,445,false,false,335,8,1,0,Front Left Segment20,0.0,0.0,0.0
+FrtLftSegmt21,4,445,false,false,343,8,1,0,Front Left Segment21,0.0,0.0,0.0
+FrtLftSegmt22,4,445,false,false,351,8,1,0,Front Left Segment22,0.0,0.0,0.0
+FrtLftSegmt23,4,445,false,false,359,8,1,0,Front Left Segment23,0.0,0.0,0.0
+FrtLftSegmt24,4,445,false,false,367,8,1,0,Front Left Segment24,0.0,0.0,0.0
+FrtLftSegmt25,4,445,false,false,375,8,1,0,Front Left Segment25,0.0,0.0,0.0
+FrtLftSegmt26,4,445,false,false,383,8,1,0,Front Left Segment26,0.0,0.0,0.0
+FrtLftSegmt27,4,445,false,false,391,8,1,0,Front Left Segment27,0.0,0.0,0.0
+FrtLftSegmt28,4,445,false,false,399,8,1,0,Front Left Segment28,0.0,0.0,0.0
+FrtLftSegmt29,4,445,false,false,407,8,1,0,Front Left Segment29,0.0,0.0,0.0
+FrtLftSegmt3,4,445,false,false,415,8,1,0,Front Left Segment3,0.0,0.0,0.0
+FrtLftSegmt30,4,445,false,false,423,8,1,0,Front Left Segment30,0.0,0.0,0.0
+FrtLftSegmt31,4,445,false,false,431,8,1,0,Front Left Segment31,0.0,0.0,0.0
+FrtLftSegmt32,4,445,false,false,439,8,1,0,Front Left Segment32,0.0,0.0,0.0
+FrtLftSegmt33,4,445,false,false,447,8,1,0,Front Left Segment33,0.0,0.0,0.0
+FrtLftSegmt34,4,445,false,false,455,8,1,0,Front Left Segment34,0.0,0.0,0.0
+FrtLftSegmt35,4,445,false,false,463,8,1,0,Front Left Segment35,0.0,0.0,0.0
+FrtLftSegmt36,4,445,false,false,471,8,1,0,Front Left Segment36,0.0,0.0,0.0
+FrtLftSegmt37,4,445,false,false,479,8,1,0,Front Left Segment37,0.0,0.0,0.0
+FrtLftSegmt38,4,445,false,false,487,8,1,0,Front Left Segment38,0.0,0.0,0.0
+FrtLftSegmt39,4,445,false,false,495,8,1,0,Front Left Segment39,0.0,0.0,0.0
+FrtLftSegmt4,4,445,false,false,503,8,1,0,Front Left Segment4,0.0,0.0,0.0
+FrtLftSegmt40,4,445,false,false,511,8,1,0,Front Left Segment40,0.0,0.0,0.0
+FrtLftSegmt41,4,446,false,false,7,8,1,0,Front Left Segment41,0.0,0.0,0.0
+FrtLftSegmt42,4,446,false,false,15,8,1,0,Front Left Segment42,0.0,0.0,0.0
+FrtLftSegmt43,4,446,false,false,23,8,1,0,Front Left Segment43,0.0,0.0,0.0
+FrtLftSegmt44,4,446,false,false,31,8,1,0,Front Left Segment44,0.0,0.0,0.0
+FrtLftSegmt45,4,446,false,false,39,8,1,0,Front Left Segment45,0.0,0.0,0.0
+FrtLftSegmt46,4,446,false,false,47,8,1,0,Front Left Segment46,0.0,0.0,0.0
+FrtLftSegmt47,4,446,false,false,55,8,1,0,Front Left Segment47,0.0,0.0,0.0
+FrtLftSegmt48,4,446,false,false,63,8,1,0,Front Left Segment48,0.0,0.0,0.0
+FrtLftSegmt49,4,446,false,false,71,8,1,0,Front Left Segment49,0.0,0.0,0.0
+FrtLftSegmt5,4,446,false,false,79,8,1,0,Front Left Segment5,0.0,0.0,0.0
+FrtLftSegmt50,4,446,false,false,87,8,1,0,Front Left Segment50,0.0,0.0,0.0
+FrtLftSegmt51,4,446,false,false,95,8,1,0,Front Left Segment51,0.0,0.0,0.0
+FrtLftSegmt52,4,446,false,false,103,8,1,0,Front Left Segment52,0.0,0.0,0.0
+FrtLftSegmt53,4,446,false,false,111,8,1,0,Front Left Segment53,0.0,0.0,0.0
+FrtLftSegmt54,4,446,false,false,119,8,1,0,Front Left Segment54,0.0,0.0,0.0
+FrtLftSegmt55,4,446,false,false,127,8,1,0,Front Left Segment55,0.0,0.0,0.0
+FrtLftSegmt56,4,446,false,false,135,8,1,0,Front Left Segment56,0.0,0.0,0.0
+FrtLftSegmt57,4,446,false,false,143,8,1,0,Front Left Segment57,0.0,0.0,0.0
+FrtLftSegmt58,4,446,false,false,151,8,1,0,Front Left Segment58,0.0,0.0,0.0
+FrtLftSegmt59,4,446,false,false,159,8,1,0,Front Left Segment59,0.0,0.0,0.0
+FrtLftSegmt6,4,446,false,false,167,8,1,0,Front Left Segment6,0.0,0.0,0.0
+FrtLftSegmt60,4,446,false,false,175,8,1,0,Front Left Segment60,0.0,0.0,0.0
+FrtLftSegmt61,4,446,false,false,183,8,1,0,Front Left Segment61,0.0,0.0,0.0
+FrtLftSegmt62,4,446,false,false,191,8,1,0,Front Left Segment62,0.0,0.0,0.0
+FrtLftSegmt63,4,446,false,false,199,8,1,0,Front Left Segment63,0.0,0.0,0.0
+FrtLftSegmt64,4,446,false,false,207,8,1,0,Front Left Segment64,0.0,0.0,0.0
+FrtLftSegmt65,4,446,false,false,215,8,1,0,Front Left Segment65,0.0,0.0,0.0
+FrtLftSegmt66,4,446,false,false,223,8,1,0,Front Left Segment66,0.0,0.0,0.0
+FrtLftSegmt67,4,446,false,false,231,8,1,0,Front Left Segment67,0.0,0.0,0.0
+FrtLftSegmt68,4,446,false,false,239,8,1,0,Front Left Segment68,0.0,0.0,0.0
+FrtLftSegmt69,4,446,false,false,247,8,1,0,Front Left Segment69,0.0,0.0,0.0
+FrtLftSegmt7,4,446,false,false,255,8,1,0,Front Left Segment7,0.0,0.0,0.0
+FrtLftSegmt70,4,446,false,false,263,8,1,0,Front Left Segment70,0.0,0.0,0.0
+FrtLftSegmt71,4,446,false,false,271,8,1,0,Front Left Segment71,0.0,0.0,0.0
+FrtLftSegmt72,4,446,false,false,279,8,1,0,Front Left Segment72,0.0,0.0,0.0
+FrtLftSegmt73,4,446,false,false,287,8,1,0,Front Left Segment73,0.0,0.0,0.0
+FrtLftSegmt74,4,446,false,false,295,8,1,0,Front Left Segment74,0.0,0.0,0.0
+FrtLftSegmt75,4,446,false,false,303,8,1,0,Front Left Segment75,0.0,0.0,0.0
+FrtLftSegmt76,4,446,false,false,311,8,1,0,Front Left Segment76,0.0,0.0,0.0
+FrtLftSegmt77,4,446,false,false,319,8,1,0,Front Left Segment77,0.0,0.0,0.0
+FrtLftSegmt78,4,446,false,false,327,8,1,0,Front Left Segment78,0.0,0.0,0.0
+FrtLftSegmt79,4,446,false,false,335,8,1,0,Front Left Segment79,0.0,0.0,0.0
+FrtLftSegmt8,4,446,false,false,343,8,1,0,Front Left Segment8,0.0,0.0,0.0
+FrtLftSegmt80,4,446,false,false,351,8,1,0,Front Left Segment80,0.0,0.0,0.0
+FrtLftSegmt81,4,446,false,false,359,8,1,0,Front Left Segment81,0.0,0.0,0.0
+FrtLftSegmt82,4,446,false,false,367,8,1,0,Front Left Segment82,0.0,0.0,0.0
+FrtLftSegmt83,4,446,false,false,375,8,1,0,Front Left Segment83,0.0,0.0,0.0
+FrtLftSegmt84,4,446,false,false,383,8,1,0,Front Left Segment84,0.0,0.0,0.0
+FrtLftSegmt85,4,446,false,false,391,8,1,0,Front Left Segment85,0.0,0.0,0.0
+FrtLftSegmt86,4,446,false,false,399,8,1,0,Front Left Segment86,0.0,0.0,0.0
+FrtLftSegmt87,4,446,false,false,407,8,1,0,Front Left Segment87,0.0,0.0,0.0
+FrtLftSegmt88,4,446,false,false,415,8,1,0,Front Left Segment88,0.0,0.0,0.0
+FrtLftSegmt89,4,446,false,false,423,8,1,0,Front Left Segment89,0.0,0.0,0.0
+FrtLftSegmt9,4,446,false,false,431,8,1,0,Front Left Segment9,0.0,0.0,0.0
+FrtLftSegmt90,4,446,false,false,439,8,1,0,Front Left Segment90,0.0,0.0,0.0
+FrtLftSegmt91,4,446,false,false,447,8,1,0,Front Left Segment91,0.0,0.0,0.0
+FrtLftSegmt92,4,446,false,false,455,8,1,0,Front Left Segment92,0.0,0.0,0.0
+FrtLftSegmt93,4,446,false,false,463,8,1,0,Front Left Segment93,0.0,0.0,0.0
+FrtLftSegmt94,4,446,false,false,471,8,1,0,Front Left Segment94,0.0,0.0,0.0
+FrtLftSegmt95,4,446,false,false,479,8,1,0,Front Left Segment95,0.0,0.0,0.0
+FrtLftSegmt96,4,446,false,false,487,8,1,0,Front Left Segment96,0.0,0.0,0.0
+FrtLftSegmt97,4,446,false,false,495,8,1,0,Front Left Segment97,0.0,0.0,0.0
+FrtLftSegmt98,4,446,false,false,503,8,1,0,Front Left Segment98,0.0,0.0,0.0
+FrtLftSegmt99,4,446,false,false,511,8,1,0,Front Left Segment99,0.0,0.0,0.0
+FrtRghtSegmt1,4,447,false,false,7,8,1,0,Front Right Segment1,0.0,0.0,0.0
+FrtRghtSegmt10,4,447,false,false,15,8,1,0,Front Right Segment10,0.0,0.0,0.0
+FrtRghtSegmt100,4,447,false,false,23,8,1,0,Front Right Segment100,0.0,0.0,0.0
+FrtRghtSegmt101,4,447,false,false,31,8,1,0,Front Right Segment101,0.0,0.0,0.0
+FrtRghtSegmt102,4,447,false,false,39,8,1,0,Front Right Segment102,0.0,0.0,0.0
+FrtRghtSegmt103,4,447,false,false,47,8,1,0,Front Right Segment103,0.0,0.0,0.0
+FrtRghtSegmt104,4,447,false,false,55,8,1,0,Front Right Segment104,0.0,0.0,0.0
+FrtRghtSegmt105,4,447,false,false,63,8,1,0,Front Right Segment105,0.0,0.0,0.0
+FrtRghtSegmt106,4,447,false,false,71,8,1,0,Front Right Segment106,0.0,0.0,0.0
+FrtRghtSegmt107,4,447,false,false,79,8,1,0,Front Right Segment107,0.0,0.0,0.0
+FrtRghtSegmt108,4,447,false,false,87,8,1,0,Front Right Segment108,0.0,0.0,0.0
+FrtRghtSegmt109,4,447,false,false,95,8,1,0,Front Right Segment109,0.0,0.0,0.0
+FrtRghtSegmt11,4,447,false,false,103,8,1,0,Front Right Segment11,0.0,0.0,0.0
+FrtRghtSegmt110,4,447,false,false,111,8,1,0,Front Right Segment110,0.0,0.0,0.0
+FrtRghtSegmt111,4,447,false,false,119,8,1,0,Front Right Segment111,0.0,0.0,0.0
+FrtRghtSegmt112,4,447,false,false,127,8,1,0,Front Right Segment112,0.0,0.0,0.0
+FrtRghtSegmt113,4,447,false,false,135,8,1,0,Front Right Segment113,0.0,0.0,0.0
+FrtRghtSegmt114,4,447,false,false,143,8,1,0,Front Right Segment114,0.0,0.0,0.0
+FrtRghtSegmt115,4,447,false,false,151,8,1,0,Front Right Segment115,0.0,0.0,0.0
+FrtRghtSegmt116,4,447,false,false,159,8,1,0,Front Right Segment116,0.0,0.0,0.0
+FrtRghtSegmt117,4,447,false,false,167,8,1,0,Front Right Segment117,0.0,0.0,0.0
+FrtRghtSegmt118,4,447,false,false,175,8,1,0,Front Right Segment118,0.0,0.0,0.0
+FrtRghtSegmt119,4,447,false,false,183,8,1,0,Front Right Segment119,0.0,0.0,0.0
+FrtRghtSegmt12,4,447,false,false,191,8,1,0,Front Right Segment12,0.0,0.0,0.0
+FrtRghtSegmt120,4,447,false,false,199,8,1,0,Front Right Segment120,0.0,0.0,0.0
+FrtRghtSegmt121,4,447,false,false,207,8,1,0,Front Right Segment121,0.0,0.0,0.0
+FrtRghtSegmt122,4,447,false,false,215,8,1,0,Front Right Segment122,0.0,0.0,0.0
+FrtRghtSegmt123,4,447,false,false,223,8,1,0,Front Right Segment123,0.0,0.0,0.0
+FrtRghtSegmt124,4,447,false,false,231,8,1,0,Front Right Segment124,0.0,0.0,0.0
+FrtRghtSegmt125,4,447,false,false,239,8,1,0,Front Right Segment125,0.0,0.0,0.0
+FrtRghtSegmt126,4,447,false,false,247,8,1,0,Front Right Segment126,0.0,0.0,0.0
+FrtRghtSegmt127,4,447,false,false,255,8,1,0,Front Right Segment127,0.0,0.0,0.0
+FrtRghtSegmt128,4,447,false,false,263,8,1,0,Front Right Segment128,0.0,0.0,0.0
+FrtRghtSegmt13,4,447,false,false,271,8,1,0,Front Right Segment13,0.0,0.0,0.0
+FrtRghtSegmt14,4,447,false,false,279,8,1,0,Front Right Segment14,0.0,0.0,0.0
+FrtRghtSegmt15,4,447,false,false,287,8,1,0,Front Right Segment15,0.0,0.0,0.0
+FrtRghtSegmt16,4,447,false,false,295,8,1,0,Front Right Segment16,0.0,0.0,0.0
+FrtRghtSegmt17,4,447,false,false,303,8,1,0,Front Right Segment17,0.0,0.0,0.0
+FrtRghtSegmt18,4,447,false,false,311,8,1,0,Front Right Segment18,0.0,0.0,0.0
+FrtRghtSegmt19,4,447,false,false,319,8,1,0,Front Right Segment19,0.0,0.0,0.0
+FrtRghtSegmt2,4,447,false,false,327,8,1,0,Front Right Segment2,0.0,0.0,0.0
+FrtRghtSegmt20,4,447,false,false,335,8,1,0,Front Right Segment20,0.0,0.0,0.0
+FrtRghtSegmt21,4,447,false,false,343,8,1,0,Front Right Segment21,0.0,0.0,0.0
+FrtRghtSegmt22,4,447,false,false,351,8,1,0,Front Right Segment22,0.0,0.0,0.0
+FrtRghtSegmt23,4,447,false,false,359,8,1,0,Front Right Segment23,0.0,0.0,0.0
+FrtRghtSegmt24,4,447,false,false,367,8,1,0,Front Right Segment24,0.0,0.0,0.0
+FrtRghtSegmt25,4,447,false,false,375,8,1,0,Front Right Segment25,0.0,0.0,0.0
+FrtRghtSegmt26,4,447,false,false,383,8,1,0,Front Right Segment26,0.0,0.0,0.0
+FrtRghtSegmt27,4,447,false,false,391,8,1,0,Front Right Segment27,0.0,0.0,0.0
+FrtRghtSegmt28,4,447,false,false,399,8,1,0,Front Right Segment28,0.0,0.0,0.0
+FrtRghtSegmt29,4,447,false,false,407,8,1,0,Front Right Segment29,0.0,0.0,0.0
+FrtRghtSegmt3,4,447,false,false,415,8,1,0,Front Right Segment3,0.0,0.0,0.0
+FrtRghtSegmt30,4,447,false,false,423,8,1,0,Front Right Segment30,0.0,0.0,0.0
+FrtRghtSegmt31,4,447,false,false,431,8,1,0,Front Right Segment31,0.0,0.0,0.0
+FrtRghtSegmt32,4,447,false,false,439,8,1,0,Front Right Segment32,0.0,0.0,0.0
+FrtRghtSegmt33,4,447,false,false,447,8,1,0,Front Right Segment33,0.0,0.0,0.0
+FrtRghtSegmt34,4,447,false,false,455,8,1,0,Front Right Segment34,0.0,0.0,0.0
+FrtRghtSegmt35,4,447,false,false,463,8,1,0,Front Right Segment35,0.0,0.0,0.0
+FrtRghtSegmt36,4,447,false,false,471,8,1,0,Front Right Segment36,0.0,0.0,0.0
+FrtRghtSegmt37,4,447,false,false,479,8,1,0,Front Right Segment37,0.0,0.0,0.0
+FrtRghtSegmt38,4,447,false,false,487,8,1,0,Front Right Segment38,0.0,0.0,0.0
+FrtRghtSegmt39,4,447,false,false,495,8,1,0,Front Right Segment39,0.0,0.0,0.0
+FrtRghtSegmt4,4,447,false,false,503,8,1,0,Front Right Segment4,0.0,0.0,0.0
+FrtRghtSegmt40,4,447,false,false,511,8,1,0,Front Right Segment40,0.0,0.0,0.0
+RearSegmt214,4,458,false,false,7,8,1,0,Rear Segment214,0.0,0.0,0.0
+RearSegmt215,4,458,false,false,15,8,1,0,Rear Segment215,0.0,0.0,0.0
+RearSegmt216,4,458,false,false,23,8,1,0,Rear Segment216,0.0,0.0,0.0
+RearSegmt217,4,458,false,false,31,8,1,0,Rear Segment217,0.0,0.0,0.0
+RearSegmt218,4,458,false,false,39,8,1,0,Rear Segment218,0.0,0.0,0.0
+RearSegmt219,4,458,false,false,47,8,1,0,Rear Segment219,0.0,0.0,0.0
+RearSegmt22,4,458,false,false,55,8,1,0,Rear Segment22,0.0,0.0,0.0
+RearSegmt220,4,458,false,false,63,8,1,0,Rear Segment220,0.0,0.0,0.0
+RearSegmt221,4,458,false,false,71,8,1,0,Rear Segment221,0.0,0.0,0.0
+RearSegmt222,4,458,false,false,79,8,1,0,Rear Segment222,0.0,0.0,0.0
+RearSegmt223,4,458,false,false,87,8,1,0,Rear Segment223,0.0,0.0,0.0
+RearSegmt224,4,458,false,false,95,8,1,0,Rear Segment224,0.0,0.0,0.0
+RearSegmt225,4,458,false,false,103,8,1,0,Rear Segment225,0.0,0.0,0.0
+RearSegmt226,4,458,false,false,111,8,1,0,Rear Segment226,0.0,0.0,0.0
+RearSegmt227,4,458,false,false,119,8,1,0,Rear Segment227,0.0,0.0,0.0
+RearSegmt228,4,458,false,false,127,8,1,0,Rear Segment228,0.0,0.0,0.0
+RearSegmt229,4,458,false,false,135,8,1,0,Rear Segment229,0.0,0.0,0.0
+RearSegmt23,4,458,false,false,143,8,1,0,Rear Segment23,0.0,0.0,0.0
+RearSegmt230,4,458,false,false,151,8,1,0,Rear Segment230,0.0,0.0,0.0
+RearSegmt231,4,458,false,false,159,8,1,0,Rear Segment231,0.0,0.0,0.0
+RearSegmt232,4,458,false,false,167,8,1,0,Rear Segment232,0.0,0.0,0.0
+RearSegmt233,4,458,false,false,175,8,1,0,Rear Segment233,0.0,0.0,0.0
+RearSegmt234,4,458,false,false,183,8,1,0,Rear Segment234,0.0,0.0,0.0
+RearSegmt235,4,458,false,false,191,8,1,0,Rear Segment235,0.0,0.0,0.0
+RearSegmt236,4,458,false,false,199,8,1,0,Rear Segment236,0.0,0.0,0.0
+RearSegmt237,4,458,false,false,207,8,1,0,Rear Segment237,0.0,0.0,0.0
+RearSegmt238,4,458,false,false,215,8,1,0,Rear Segment238,0.0,0.0,0.0
+RearSegmt239,4,458,false,false,223,8,1,0,Rear Segment239,0.0,0.0,0.0
+RearSegmt24,4,458,false,false,231,8,1,0,Rear Segment24,0.0,0.0,0.0
+RearSegmt240,4,458,false,false,239,8,1,0,Rear Segment240,0.0,0.0,0.0
+RearSegmt241,4,458,false,false,247,8,1,0,Rear Segment241,0.0,0.0,0.0
+RearSegmt242,4,458,false,false,255,8,1,0,Rear Segment242,0.0,0.0,0.0
+RearSegmt243,4,458,false,false,263,8,1,0,Rear Segment243,0.0,0.0,0.0
+RearSegmt244,4,458,false,false,271,8,1,0,Rear Segment244,0.0,0.0,0.0
+RearSegmt245,4,458,false,false,279,8,1,0,Rear Segment245,0.0,0.0,0.0
+RearSegmt246,4,458,false,false,287,8,1,0,Rear Segment246,0.0,0.0,0.0
+RearSegmt247,4,458,false,false,295,8,1,0,Rear Segment247,0.0,0.0,0.0
+RearSegmt248,4,458,false,false,303,8,1,0,Rear Segment248,0.0,0.0,0.0
+RearSegmt249,4,458,false,false,311,8,1,0,Rear Segment249,0.0,0.0,0.0
+RearSegmt25,4,458,false,false,319,8,1,0,Rear Segment25,0.0,0.0,0.0
+RearSegmt250,4,458,false,false,327,8,1,0,Rear Segment250,0.0,0.0,0.0
+RearSegmt251,4,458,false,false,335,8,1,0,Rear Segment251,0.0,0.0,0.0
+RearSegmt252,4,458,false,false,343,8,1,0,Rear Segment252,0.0,0.0,0.0
+RearSegmt253,4,458,false,false,351,8,1,0,Rear Segment253,0.0,0.0,0.0
+RearSegmt254,4,458,false,false,359,8,1,0,Rear Segment254,0.0,0.0,0.0
+RearSegmt255,4,458,false,false,367,8,1,0,Rear Segment255,0.0,0.0,0.0
+RearSegmt256,4,458,false,false,375,8,1,0,Rear Segment256,0.0,0.0,0.0
+RearSegmt257,4,458,false,false,383,8,1,0,Rear Segment257,0.0,0.0,0.0
+RearSegmt258,4,458,false,false,391,8,1,0,Rear Segment258,0.0,0.0,0.0
+RearSegmt259,4,458,false,false,399,8,1,0,Rear Segment259,0.0,0.0,0.0
+RearSegmt26,4,458,false,false,407,8,1,0,Rear Segment26,0.0,0.0,0.0
+RearSegmt260,4,458,false,false,415,8,1,0,Rear Segment260,0.0,0.0,0.0
+RearSegmt261,4,458,false,false,423,8,1,0,Rear Segment261,0.0,0.0,0.0
+RearSegmt262,4,458,false,false,431,8,1,0,Rear Segment262,0.0,0.0,0.0
+RearSegmt263,4,458,false,false,439,8,1,0,Rear Segment263,0.0,0.0,0.0
+RearSegmt264,4,458,false,false,447,8,1,0,Rear Segment264,0.0,0.0,0.0
+RearSegmt265,4,458,false,false,455,8,1,0,Rear Segment265,0.0,0.0,0.0
+RearSegmt266,4,458,false,false,463,8,1,0,Rear Segment266,0.0,0.0,0.0
+RearSegmt267,4,458,false,false,471,8,1,0,Rear Segment267,0.0,0.0,0.0
+RearSegmt268,4,458,false,false,479,8,1,0,Rear Segment268,0.0,0.0,0.0
+RearSegmt269,4,458,false,false,487,8,1,0,Rear Segment269,0.0,0.0,0.0
+RearSegmt27,4,458,false,false,495,8,1,0,Rear Segment27,0.0,0.0,0.0
+RearSegmt270,4,458,false,false,503,8,1,0,Rear Segment270,0.0,0.0,0.0
+RearSegmt271,4,458,false,false,511,8,1,0,Rear Segment271,0.0,0.0,0.0
+RearSegmt157,4,459,false,false,7,8,1,0,Rear Segment157,0.0,0.0,0.0
+RearSegmt158,4,459,false,false,15,8,1,0,Rear Segment158,0.0,0.0,0.0
+RearSegmt159,4,459,false,false,23,8,1,0,Rear Segment159,0.0,0.0,0.0
+RearSegmt16,4,459,false,false,31,8,1,0,Rear Segment16,0.0,0.0,0.0
+RearSegmt160,4,459,false,false,39,8,1,0,Rear Segment160,0.0,0.0,0.0
+RearSegmt161,4,459,false,false,47,8,1,0,Rear Segment161,0.0,0.0,0.0
+RearSegmt162,4,459,false,false,55,8,1,0,Rear Segment162,0.0,0.0,0.0
+RearSegmt163,4,459,false,false,63,8,1,0,Rear Segment163,0.0,0.0,0.0
+RearSegmt164,4,459,false,false,71,8,1,0,Rear Segment164,0.0,0.0,0.0
+RearSegmt165,4,459,false,false,79,8,1,0,Rear Segment165,0.0,0.0,0.0
+RearSegmt166,4,459,false,false,87,8,1,0,Rear Segment166,0.0,0.0,0.0
+RearSegmt167,4,459,false,false,95,8,1,0,Rear Segment167,0.0,0.0,0.0
+RearSegmt168,4,459,false,false,103,8,1,0,Rear Segment168,0.0,0.0,0.0
+RearSegmt169,4,459,false,false,111,8,1,0,Rear Segment169,0.0,0.0,0.0
+RearSegmt17,4,459,false,false,119,8,1,0,Rear Segment17,0.0,0.0,0.0
+RearSegmt170,4,459,false,false,127,8,1,0,Rear Segment170,0.0,0.0,0.0
+RearSegmt171,4,459,false,false,135,8,1,0,Rear Segment171,0.0,0.0,0.0
+RearSegmt172,4,459,false,false,143,8,1,0,Rear Segment172,0.0,0.0,0.0
+RearSegmt173,4,459,false,false,151,8,1,0,Rear Segment173,0.0,0.0,0.0
+RearSegmt174,4,459,false,false,159,8,1,0,Rear Segment174,0.0,0.0,0.0
+RearSegmt175,4,459,false,false,167,8,1,0,Rear Segment175,0.0,0.0,0.0
+RearSegmt176,4,459,false,false,175,8,1,0,Rear Segment176,0.0,0.0,0.0
+RearSegmt177,4,459,false,false,183,8,1,0,Rear Segment177,0.0,0.0,0.0
+RearSegmt178,4,459,false,false,191,8,1,0,Rear Segment178,0.0,0.0,0.0
+RearSegmt179,4,459,false,false,199,8,1,0,Rear Segment179,0.0,0.0,0.0
+RearSegmt18,4,459,false,false,207,8,1,0,Rear Segment18,0.0,0.0,0.0
+RearSegmt180,4,459,false,false,215,8,1,0,Rear Segment180,0.0,0.0,0.0
+RearSegmt181,4,459,false,false,223,8,1,0,Rear Segment181,0.0,0.0,0.0
+RearSegmt182,4,459,false,false,231,8,1,0,Rear Segment182,0.0,0.0,0.0
+RearSegmt183,4,459,false,false,239,8,1,0,Rear Segment183,0.0,0.0,0.0
+RearSegmt184,4,459,false,false,247,8,1,0,Rear Segment184,0.0,0.0,0.0
+RearSegmt185,4,459,false,false,255,8,1,0,Rear Segment185,0.0,0.0,0.0
+RearSegmt186,4,459,false,false,263,8,1,0,Rear Segment186,0.0,0.0,0.0
+RearSegmt187,4,459,false,false,271,8,1,0,Rear Segment187,0.0,0.0,0.0
+RearSegmt188,4,459,false,false,279,8,1,0,Rear Segment188,0.0,0.0,0.0
+RearSegmt189,4,459,false,false,287,8,1,0,Rear Segment189,0.0,0.0,0.0
+RearSegmt19,4,459,false,false,295,8,1,0,Rear Segment19,0.0,0.0,0.0
+RearSegmt190,4,459,false,false,303,8,1,0,Rear Segment190,0.0,0.0,0.0
+RearSegmt191,4,459,false,false,311,8,1,0,Rear Segment191,0.0,0.0,0.0
+RearSegmt192,4,459,false,false,319,8,1,0,Rear Segment192,0.0,0.0,0.0
+RearSegmt193,4,459,false,false,327,8,1,0,Rear Segment193,0.0,0.0,0.0
+RearSegmt194,4,459,false,false,335,8,1,0,Rear Segment194,0.0,0.0,0.0
+RearSegmt195,4,459,false,false,343,8,1,0,Rear Segment195,0.0,0.0,0.0
+RearSegmt196,4,459,false,false,351,8,1,0,Rear Segment196,0.0,0.0,0.0
+RearSegmt197,4,459,false,false,359,8,1,0,Rear Segment197,0.0,0.0,0.0
+RearSegmt198,4,459,false,false,367,8,1,0,Rear Segment198,0.0,0.0,0.0
+RearSegmt199,4,459,false,false,375,8,1,0,Rear Segment199,0.0,0.0,0.0
+RearSegmt2,4,459,false,false,383,8,1,0,Rear Segment2,0.0,0.0,0.0
+RearSegmt20,4,459,false,false,391,8,1,0,Rear Segment20,0.0,0.0,0.0
+RearSegmt200,4,459,false,false,399,8,1,0,Rear Segment200,0.0,0.0,0.0
+RearSegmt201,4,459,false,false,407,8,1,0,Rear Segment201,0.0,0.0,0.0
+RearSegmt202,4,459,false,false,415,8,1,0,Rear Segment202,0.0,0.0,0.0
+RearSegmt203,4,459,false,false,423,8,1,0,Rear Segment203,0.0,0.0,0.0
+RearSegmt204,4,459,false,false,431,8,1,0,Rear Segment204,0.0,0.0,0.0
+RearSegmt205,4,459,false,false,439,8,1,0,Rear Segment205,0.0,0.0,0.0
+RearSegmt206,4,459,false,false,447,8,1,0,Rear Segment206,0.0,0.0,0.0
+RearSegmt207,4,459,false,false,455,8,1,0,Rear Segment207,0.0,0.0,0.0
+RearSegmt208,4,459,false,false,463,8,1,0,Rear Segment208,0.0,0.0,0.0
+RearSegmt209,4,459,false,false,471,8,1,0,Rear Segment209,0.0,0.0,0.0
+RearSegmt21,4,459,false,false,479,8,1,0,Rear Segment21,0.0,0.0,0.0
+RearSegmt210,4,459,false,false,487,8,1,0,Rear Segment210,0.0,0.0,0.0
+RearSegmt211,4,459,false,false,495,8,1,0,Rear Segment211,0.0,0.0,0.0
+RearSegmt212,4,459,false,false,503,8,1,0,Rear Segment212,0.0,0.0,0.0
+RearSegmt213,4,459,false,false,511,8,1,0,Rear Segment213,0.0,0.0,0.0
+RearSegmt6,4,460,false,false,7,8,1,0,Rear Segment6,0.0,0.0,0.0
+RearSegmt60,4,460,false,false,15,8,1,0,Rear Segment60,0.0,0.0,0.0
+RearSegmt61,4,460,false,false,23,8,1,0,Rear Segment61,0.0,0.0,0.0
+RearSegmt62,4,460,false,false,31,8,1,0,Rear Segment62,0.0,0.0,0.0
+RearSegmt63,4,460,false,false,39,8,1,0,Rear Segment63,0.0,0.0,0.0
+RearSegmt64,4,460,false,false,47,8,1,0,Rear Segment64,0.0,0.0,0.0
+RearSegmt65,4,460,false,false,55,8,1,0,Rear Segment65,0.0,0.0,0.0
+RearSegmt66,4,460,false,false,63,8,1,0,Rear Segment66,0.0,0.0,0.0
+RearSegmt67,4,460,false,false,71,8,1,0,Rear Segment67,0.0,0.0,0.0
+RearSegmt68,4,460,false,false,79,8,1,0,Rear Segment68,0.0,0.0,0.0
+RearSegmt69,4,460,false,false,87,8,1,0,Rear Segment69,0.0,0.0,0.0
+RearSegmt7,4,460,false,false,95,8,1,0,Rear Segment7,0.0,0.0,0.0
+RearSegmt70,4,460,false,false,103,8,1,0,Rear Segment70,0.0,0.0,0.0
+RearSegmt71,4,460,false,false,111,8,1,0,Rear Segment71,0.0,0.0,0.0
+RearSegmt72,4,460,false,false,119,8,1,0,Rear Segment72,0.0,0.0,0.0
+RearSegmt73,4,460,false,false,127,8,1,0,Rear Segment73,0.0,0.0,0.0
+RearSegmt74,4,460,false,false,135,8,1,0,Rear Segment74,0.0,0.0,0.0
+RearSegmt75,4,460,false,false,143,8,1,0,Rear Segment75,0.0,0.0,0.0
+RearSegmt76,4,460,false,false,151,8,1,0,Rear Segment76,0.0,0.0,0.0
+RearSegmt77,4,460,false,false,159,8,1,0,Rear Segment77,0.0,0.0,0.0
+RearSegmt78,4,460,false,false,167,8,1,0,Rear Segment78,0.0,0.0,0.0
+RearSegmt79,4,460,false,false,175,8,1,0,Rear Segment79,0.0,0.0,0.0
+RearSegmt8,4,460,false,false,183,8,1,0,Rear Segment8,0.0,0.0,0.0
+RearSegmt80,4,460,false,false,191,8,1,0,Rear Segment80,0.0,0.0,0.0
+RearSegmt81,4,460,false,false,199,8,1,0,Rear Segment81,0.0,0.0,0.0
+RearSegmt82,4,460,false,false,207,8,1,0,Rear Segment82,0.0,0.0,0.0
+RearSegmt83,4,460,false,false,215,8,1,0,Rear Segment83,0.0,0.0,0.0
+RearSegmt84,4,460,false,false,223,8,1,0,Rear Segment84,0.0,0.0,0.0
+RearSegmt85,4,460,false,false,231,8,1,0,Rear Segment85,0.0,0.0,0.0
+RearSegmt86,4,460,false,false,239,8,1,0,Rear Segment86,0.0,0.0,0.0
+RearSegmt87,4,460,false,false,247,8,1,0,Rear Segment87,0.0,0.0,0.0
+RearSegmt88,4,460,false,false,255,8,1,0,Rear Segment88,0.0,0.0,0.0
+RearSegmt89,4,460,false,false,263,8,1,0,Rear Segment89,0.0,0.0,0.0
+RearSegmt9,4,460,false,false,271,8,1,0,Rear Segment9,0.0,0.0,0.0
+RearSegmt90,4,460,false,false,279,8,1,0,Rear Segment90,0.0,0.0,0.0
+RearSegmt91,4,460,false,false,287,8,1,0,Rear Segment91,0.0,0.0,0.0
+RearSegmt92,4,460,false,false,295,8,1,0,Rear Segment92,0.0,0.0,0.0
+RearSegmt93,4,460,false,false,303,8,1,0,Rear Segment93,0.0,0.0,0.0
+RearSegmt94,4,460,false,false,311,8,1,0,Rear Segment94,0.0,0.0,0.0
+RearSegmt95,4,460,false,false,319,8,1,0,Rear Segment95,0.0,0.0,0.0
+RearSegmt96,4,460,false,false,327,8,1,0,Rear Segment96,0.0,0.0,0.0
+RearSegmt97,4,460,false,false,335,8,1,0,Rear Segment97,0.0,0.0,0.0
+RearSegmt98,4,460,false,false,343,8,1,0,Rear Segment98,0.0,0.0,0.0
+RearSegmt99,4,460,false,false,351,8,1,0,Rear Segment99,0.0,0.0,0.0
+FrtRghtSegmt41,4,461,false,false,7,8,1,0,Front Right Segment41,0.0,0.0,0.0
+FrtRghtSegmt42,4,461,false,false,15,8,1,0,Front Right Segment42,0.0,0.0,0.0
+FrtRghtSegmt43,4,461,false,false,23,8,1,0,Front Right Segment43,0.0,0.0,0.0
+FrtRghtSegmt44,4,461,false,false,31,8,1,0,Front Right Segment44,0.0,0.0,0.0
+FrtRghtSegmt45,4,461,false,false,39,8,1,0,Front Right Segment45,0.0,0.0,0.0
+FrtRghtSegmt46,4,461,false,false,47,8,1,0,Front Right Segment46,0.0,0.0,0.0
+FrtRghtSegmt47,4,461,false,false,55,8,1,0,Front Right Segment47,0.0,0.0,0.0
+FrtRghtSegmt48,4,461,false,false,63,8,1,0,Front Right Segment48,0.0,0.0,0.0
+FrtRghtSegmt49,4,461,false,false,71,8,1,0,Front Right Segment49,0.0,0.0,0.0
+FrtRghtSegmt5,4,461,false,false,79,8,1,0,Front Right Segment5,0.0,0.0,0.0
+FrtRghtSegmt50,4,461,false,false,87,8,1,0,Front Right Segment50,0.0,0.0,0.0
+FrtRghtSegmt51,4,461,false,false,95,8,1,0,Front Right Segment51,0.0,0.0,0.0
+FrtRghtSegmt52,4,461,false,false,103,8,1,0,Front Right Segment52,0.0,0.0,0.0
+FrtRghtSegmt53,4,461,false,false,111,8,1,0,Front Right Segment53,0.0,0.0,0.0
+FrtRghtSegmt54,4,461,false,false,119,8,1,0,Front Right Segment54,0.0,0.0,0.0
+FrtRghtSegmt55,4,461,false,false,127,8,1,0,Front Right Segment55,0.0,0.0,0.0
+FrtRghtSegmt56,4,461,false,false,135,8,1,0,Front Right Segment56,0.0,0.0,0.0
+FrtRghtSegmt57,4,461,false,false,143,8,1,0,Front Right Segment57,0.0,0.0,0.0
+FrtRghtSegmt58,4,461,false,false,151,8,1,0,Front Right Segment58,0.0,0.0,0.0
+FrtRghtSegmt59,4,461,false,false,159,8,1,0,Front Right Segment59,0.0,0.0,0.0
+FrtRghtSegmt6,4,461,false,false,167,8,1,0,Front Right Segment6,0.0,0.0,0.0
+FrtRghtSegmt60,4,461,false,false,175,8,1,0,Front Right Segment60,0.0,0.0,0.0
+FrtRghtSegmt61,4,461,false,false,183,8,1,0,Front Right Segment61,0.0,0.0,0.0
+FrtRghtSegmt62,4,461,false,false,191,8,1,0,Front Right Segment62,0.0,0.0,0.0
+FrtRghtSegmt63,4,461,false,false,199,8,1,0,Front Right Segment63,0.0,0.0,0.0
+FrtRghtSegmt64,4,461,false,false,207,8,1,0,Front Right Segment64,0.0,0.0,0.0
+FrtRghtSegmt65,4,461,false,false,215,8,1,0,Front Right Segment65,0.0,0.0,0.0
+FrtRghtSegmt66,4,461,false,false,223,8,1,0,Front Right Segment66,0.0,0.0,0.0
+FrtRghtSegmt67,4,461,false,false,231,8,1,0,Front Right Segment67,0.0,0.0,0.0
+FrtRghtSegmt68,4,461,false,false,239,8,1,0,Front Right Segment68,0.0,0.0,0.0
+FrtRghtSegmt69,4,461,false,false,247,8,1,0,Front Right Segment69,0.0,0.0,0.0
+FrtRghtSegmt7,4,461,false,false,255,8,1,0,Front Right Segment7,0.0,0.0,0.0
+FrtRghtSegmt70,4,461,false,false,263,8,1,0,Front Right Segment70,0.0,0.0,0.0
+FrtRghtSegmt71,4,461,false,false,271,8,1,0,Front Right Segment71,0.0,0.0,0.0
+FrtRghtSegmt72,4,461,false,false,279,8,1,0,Front Right Segment72,0.0,0.0,0.0
+FrtRghtSegmt73,4,461,false,false,287,8,1,0,Front Right Segment73,0.0,0.0,0.0
+FrtRghtSegmt74,4,461,false,false,295,8,1,0,Front Right Segment74,0.0,0.0,0.0
+FrtRghtSegmt75,4,461,false,false,303,8,1,0,Front Right Segment75,0.0,0.0,0.0
+FrtRghtSegmt76,4,461,false,false,311,8,1,0,Front Right Segment76,0.0,0.0,0.0
+FrtRghtSegmt77,4,461,false,false,319,8,1,0,Front Right Segment77,0.0,0.0,0.0
+FrtRghtSegmt78,4,461,false,false,327,8,1,0,Front Right Segment78,0.0,0.0,0.0
+FrtRghtSegmt79,4,461,false,false,335,8,1,0,Front Right Segment79,0.0,0.0,0.0
+FrtRghtSegmt8,4,461,false,false,343,8,1,0,Front Right Segment8,0.0,0.0,0.0
+FrtRghtSegmt80,4,461,false,false,351,8,1,0,Front Right Segment80,0.0,0.0,0.0
+FrtRghtSegmt81,4,461,false,false,359,8,1,0,Front Right Segment81,0.0,0.0,0.0
+FrtRghtSegmt82,4,461,false,false,367,8,1,0,Front Right Segment82,0.0,0.0,0.0
+FrtRghtSegmt83,4,461,false,false,375,8,1,0,Front Right Segment83,0.0,0.0,0.0
+FrtRghtSegmt84,4,461,false,false,383,8,1,0,Front Right Segment84,0.0,0.0,0.0
+FrtRghtSegmt85,4,461,false,false,391,8,1,0,Front Right Segment85,0.0,0.0,0.0
+FrtRghtSegmt86,4,461,false,false,399,8,1,0,Front Right Segment86,0.0,0.0,0.0
+FrtRghtSegmt87,4,461,false,false,407,8,1,0,Front Right Segment87,0.0,0.0,0.0
+FrtRghtSegmt88,4,461,false,false,415,8,1,0,Front Right Segment88,0.0,0.0,0.0
+FrtRghtSegmt89,4,461,false,false,423,8,1,0,Front Right Segment89,0.0,0.0,0.0
+FrtRghtSegmt9,4,461,false,false,431,8,1,0,Front Right Segment9,0.0,0.0,0.0
+FrtRghtSegmt90,4,461,false,false,439,8,1,0,Front Right Segment90,0.0,0.0,0.0
+FrtRghtSegmt91,4,461,false,false,447,8,1,0,Front Right Segment91,0.0,0.0,0.0
+FrtRghtSegmt92,4,461,false,false,455,8,1,0,Front Right Segment92,0.0,0.0,0.0
+FrtRghtSegmt93,4,461,false,false,463,8,1,0,Front Right Segment93,0.0,0.0,0.0
+FrtRghtSegmt94,4,461,false,false,471,8,1,0,Front Right Segment94,0.0,0.0,0.0
+FrtRghtSegmt95,4,461,false,false,479,8,1,0,Front Right Segment95,0.0,0.0,0.0
+FrtRghtSegmt96,4,461,false,false,487,8,1,0,Front Right Segment96,0.0,0.0,0.0
+FrtRghtSegmt97,4,461,false,false,495,8,1,0,Front Right Segment97,0.0,0.0,0.0
+FrtRghtSegmt98,4,461,false,false,503,8,1,0,Front Right Segment98,0.0,0.0,0.0
+FrtRghtSegmt99,4,461,false,false,511,8,1,0,Front Right Segment99,0.0,0.0,0.0
+RearSegmt1,4,462,false,false,7,8,1,0,Rear Segment1,0.0,0.0,0.0
+RearSegmt10,4,462,false,false,15,8,1,0,Rear Segment10,0.0,0.0,0.0
+RearSegmt100,4,462,false,false,23,8,1,0,Rear Segment100,0.0,0.0,0.0
+RearSegmt101,4,462,false,false,31,8,1,0,Rear Segment101,0.0,0.0,0.0
+RearSegmt102,4,462,false,false,39,8,1,0,Rear Segment102,0.0,0.0,0.0
+RearSegmt103,4,462,false,false,47,8,1,0,Rear Segment103,0.0,0.0,0.0
+RearSegmt104,4,462,false,false,55,8,1,0,Rear Segment104,0.0,0.0,0.0
+RearSegmt105,4,462,false,false,63,8,1,0,Rear Segment105,0.0,0.0,0.0
+RearSegmt106,4,462,false,false,71,8,1,0,Rear Segment106,0.0,0.0,0.0
+RearSegmt107,4,462,false,false,79,8,1,0,Rear Segment107,0.0,0.0,0.0
+RearSegmt108,4,462,false,false,87,8,1,0,Rear Segment108,0.0,0.0,0.0
+RearSegmt109,4,462,false,false,95,8,1,0,Rear Segment109,0.0,0.0,0.0
+RearSegmt11,4,462,false,false,103,8,1,0,Rear Segment11,0.0,0.0,0.0
+RearSegmt110,4,462,false,false,111,8,1,0,Rear Segment110,0.0,0.0,0.0
+RearSegmt111,4,462,false,false,119,8,1,0,Rear Segment111,0.0,0.0,0.0
+RearSegmt112,4,462,false,false,127,8,1,0,Rear Segment112,0.0,0.0,0.0
+RearSegmt113,4,462,false,false,135,8,1,0,Rear Segment113,0.0,0.0,0.0
+RearSegmt114,4,462,false,false,143,8,1,0,Rear Segment114,0.0,0.0,0.0
+RearSegmt115,4,462,false,false,151,8,1,0,Rear Segment115,0.0,0.0,0.0
+RearSegmt116,4,462,false,false,159,8,1,0,Rear Segment116,0.0,0.0,0.0
+RearSegmt117,4,462,false,false,167,8,1,0,Rear Segment117,0.0,0.0,0.0
+RearSegmt118,4,462,false,false,175,8,1,0,Rear Segment118,0.0,0.0,0.0
+RearSegmt119,4,462,false,false,183,8,1,0,Rear Segment119,0.0,0.0,0.0
+RearSegmt12,4,462,false,false,191,8,1,0,Rear Segment12,0.0,0.0,0.0
+RearSegmt120,4,462,false,false,199,8,1,0,Rear Segment120,0.0,0.0,0.0
+RearSegmt121,4,462,false,false,207,8,1,0,Rear Segment121,0.0,0.0,0.0
+RearSegmt122,4,462,false,false,215,8,1,0,Rear Segment122,0.0,0.0,0.0
+RearSegmt123,4,462,false,false,223,8,1,0,Rear Segment123,0.0,0.0,0.0
+RearSegmt124,4,462,false,false,231,8,1,0,Rear Segment124,0.0,0.0,0.0
+RearSegmt125,4,462,false,false,239,8,1,0,Rear Segment125,0.0,0.0,0.0
+RearSegmt126,4,462,false,false,247,8,1,0,Rear Segment126,0.0,0.0,0.0
+RearSegmt127,4,462,false,false,255,8,1,0,Rear Segment127,0.0,0.0,0.0
+RearSegmt128,4,462,false,false,263,8,1,0,Rear Segment128,0.0,0.0,0.0
+RearSegmt129,4,462,false,false,271,8,1,0,Rear Segment129,0.0,0.0,0.0
+RearSegmt13,4,462,false,false,279,8,1,0,Rear Segment13,0.0,0.0,0.0
+RearSegmt130,4,462,false,false,287,8,1,0,Rear Segment130,0.0,0.0,0.0
+RearSegmt131,4,462,false,false,295,8,1,0,Rear Segment131,0.0,0.0,0.0
+RearSegmt132,4,462,false,false,303,8,1,0,Rear Segment132,0.0,0.0,0.0
+RearSegmt133,4,462,false,false,311,8,1,0,Rear Segment133,0.0,0.0,0.0
+RearSegmt134,4,462,false,false,319,8,1,0,Rear Segment134,0.0,0.0,0.0
+RearSegmt135,4,462,false,false,327,8,1,0,Rear Segment135,0.0,0.0,0.0
+RearSegmt136,4,462,false,false,335,8,1,0,Rear Segment136,0.0,0.0,0.0
+RearSegmt137,4,462,false,false,343,8,1,0,Rear Segment137,0.0,0.0,0.0
+RearSegmt138,4,462,false,false,351,8,1,0,Rear Segment138,0.0,0.0,0.0
+RearSegmt139,4,462,false,false,359,8,1,0,Rear Segment139,0.0,0.0,0.0
+RearSegmt14,4,462,false,false,367,8,1,0,Rear Segment14,0.0,0.0,0.0
+RearSegmt140,4,462,false,false,375,8,1,0,Rear Segment140,0.0,0.0,0.0
+RearSegmt141,4,462,false,false,383,8,1,0,Rear Segment141,0.0,0.0,0.0
+RearSegmt142,4,462,false,false,391,8,1,0,Rear Segment142,0.0,0.0,0.0
+RearSegmt143,4,462,false,false,399,8,1,0,Rear Segment143,0.0,0.0,0.0
+RearSegmt144,4,462,false,false,407,8,1,0,Rear Segment144,0.0,0.0,0.0
+RearSegmt145,4,462,false,false,415,8,1,0,Rear Segment145,0.0,0.0,0.0
+RearSegmt146,4,462,false,false,423,8,1,0,Rear Segment146,0.0,0.0,0.0
+RearSegmt147,4,462,false,false,431,8,1,0,Rear Segment147,0.0,0.0,0.0
+RearSegmt148,4,462,false,false,439,8,1,0,Rear Segment148,0.0,0.0,0.0
+RearSegmt149,4,462,false,false,447,8,1,0,Rear Segment149,0.0,0.0,0.0
+RearSegmt15,4,462,false,false,455,8,1,0,Rear Segment15,0.0,0.0,0.0
+RearSegmt150,4,462,false,false,463,8,1,0,Rear Segment150,0.0,0.0,0.0
+RearSegmt151,4,462,false,false,471,8,1,0,Rear Segment151,0.0,0.0,0.0
+RearSegmt152,4,462,false,false,479,8,1,0,Rear Segment152,0.0,0.0,0.0
+RearSegmt153,4,462,false,false,487,8,1,0,Rear Segment153,0.0,0.0,0.0
+RearSegmt154,4,462,false,false,495,8,1,0,Rear Segment154,0.0,0.0,0.0
+RearSegmt155,4,462,false,false,503,8,1,0,Rear Segment155,0.0,0.0,0.0
+RearSegmt156,4,462,false,false,511,8,1,0,Rear Segment156,0.0,0.0,0.0
+RearSegmt272,4,463,false,false,7,8,1,0,Rear Segment272,0.0,0.0,0.0
+RearSegmt273,4,463,false,false,15,8,1,0,Rear Segment273,0.0,0.0,0.0
+RearSegmt274,4,463,false,false,23,8,1,0,Rear Segment274,0.0,0.0,0.0
+RearSegmt275,4,463,false,false,31,8,1,0,Rear Segment275,0.0,0.0,0.0
+RearSegmt276,4,463,false,false,39,8,1,0,Rear Segment276,0.0,0.0,0.0
+RearSegmt277,4,463,false,false,47,8,1,0,Rear Segment277,0.0,0.0,0.0
+RearSegmt278,4,463,false,false,55,8,1,0,Rear Segment278,0.0,0.0,0.0
+RearSegmt279,4,463,false,false,63,8,1,0,Rear Segment279,0.0,0.0,0.0
+RearSegmt28,4,463,false,false,71,8,1,0,Rear Segment28,0.0,0.0,0.0
+RearSegmt280,4,463,false,false,79,8,1,0,Rear Segment280,0.0,0.0,0.0
+RearSegmt281,4,463,false,false,87,8,1,0,Rear Segment281,0.0,0.0,0.0
+RearSegmt282,4,463,false,false,95,8,1,0,Rear Segment282,0.0,0.0,0.0
+RearSegmt283,4,463,false,false,103,8,1,0,Rear Segment283,0.0,0.0,0.0
+RearSegmt284,4,463,false,false,111,8,1,0,Rear Segment284,0.0,0.0,0.0
+RearSegmt285,4,463,false,false,119,8,1,0,Rear Segment285,0.0,0.0,0.0
+RearSegmt286,4,463,false,false,127,8,1,0,Rear Segment286,0.0,0.0,0.0
+RearSegmt287,4,463,false,false,135,8,1,0,Rear Segment287,0.0,0.0,0.0
+RearSegmt288,4,463,false,false,143,8,1,0,Rear Segment288,0.0,0.0,0.0
+RearSegmt289,4,463,false,false,151,8,1,0,Rear Segment289,0.0,0.0,0.0
+RearSegmt29,4,463,false,false,159,8,1,0,Rear Segment29,0.0,0.0,0.0
+RearSegmt290,4,463,false,false,167,8,1,0,Rear Segment290,0.0,0.0,0.0
+RearSegmt291,4,463,false,false,175,8,1,0,Rear Segment291,0.0,0.0,0.0
+RearSegmt292,4,463,false,false,183,8,1,0,Rear Segment292,0.0,0.0,0.0
+RearSegmt293,4,463,false,false,191,8,1,0,Rear Segment293,0.0,0.0,0.0
+RearSegmt294,4,463,false,false,199,8,1,0,Rear Segment294,0.0,0.0,0.0
+RearSegmt295,4,463,false,false,207,8,1,0,Rear Segment295,0.0,0.0,0.0
+RearSegmt296,4,463,false,false,215,8,1,0,Rear Segment296,0.0,0.0,0.0
+RearSegmt297,4,463,false,false,223,8,1,0,Rear Segment297,0.0,0.0,0.0
+RearSegmt298,4,463,false,false,231,8,1,0,Rear Segment298,0.0,0.0,0.0
+RearSegmt299,4,463,false,false,239,8,1,0,Rear Segment299,0.0,0.0,0.0
+RearSegmt3,4,463,false,false,247,8,1,0,Rear Segment3,0.0,0.0,0.0
+RearSegmt30,4,463,false,false,255,8,1,0,Rear Segment30,0.0,0.0,0.0
+RearSegmt300,4,463,false,false,263,8,1,0,Rear Segment300,0.0,0.0,0.0
+RearSegmt31,4,463,false,false,271,8,1,0,Rear Segment31,0.0,0.0,0.0
+RearSegmt32,4,463,false,false,279,8,1,0,Rear Segment32,0.0,0.0,0.0
+RearSegmt33,4,463,false,false,287,8,1,0,Rear Segment33,0.0,0.0,0.0
+RearSegmt34,4,463,false,false,295,8,1,0,Rear Segment34,0.0,0.0,0.0
+RearSegmt35,4,463,false,false,303,8,1,0,Rear Segment35,0.0,0.0,0.0
+RearSegmt36,4,463,false,false,311,8,1,0,Rear Segment36,0.0,0.0,0.0
+RearSegmt37,4,463,false,false,319,8,1,0,Rear Segment37,0.0,0.0,0.0
+RearSegmt38,4,463,false,false,327,8,1,0,Rear Segment38,0.0,0.0,0.0
+RearSegmt39,4,463,false,false,335,8,1,0,Rear Segment39,0.0,0.0,0.0
+RearSegmt4,4,463,false,false,343,8,1,0,Rear Segment4,0.0,0.0,0.0
+RearSegmt40,4,463,false,false,351,8,1,0,Rear Segment40,0.0,0.0,0.0
+RearSegmt41,4,463,false,false,359,8,1,0,Rear Segment41,0.0,0.0,0.0
+RearSegmt42,4,463,false,false,367,8,1,0,Rear Segment42,0.0,0.0,0.0
+RearSegmt43,4,463,false,false,375,8,1,0,Rear Segment43,0.0,0.0,0.0
+RearSegmt44,4,463,false,false,383,8,1,0,Rear Segment44,0.0,0.0,0.0
+RearSegmt45,4,463,false,false,391,8,1,0,Rear Segment45,0.0,0.0,0.0
+RearSegmt46,4,463,false,false,399,8,1,0,Rear Segment46,0.0,0.0,0.0
+RearSegmt47,4,463,false,false,407,8,1,0,Rear Segment47,0.0,0.0,0.0
+RearSegmt48,4,463,false,false,415,8,1,0,Rear Segment48,0.0,0.0,0.0
+RearSegmt49,4,463,false,false,423,8,1,0,Rear Segment49,0.0,0.0,0.0
+RearSegmt5,4,463,false,false,431,8,1,0,Rear Segment5,0.0,0.0,0.0
+RearSegmt50,4,463,false,false,439,8,1,0,Rear Segment50,0.0,0.0,0.0
+RearSegmt51,4,463,false,false,447,8,1,0,Rear Segment51,0.0,0.0,0.0
+RearSegmt52,4,463,false,false,455,8,1,0,Rear Segment52,0.0,0.0,0.0
+RearSegmt53,4,463,false,false,463,8,1,0,Rear Segment53,0.0,0.0,0.0
+RearSegmt54,4,463,false,false,471,8,1,0,Rear Segment54,0.0,0.0,0.0
+RearSegmt55,4,463,false,false,479,8,1,0,Rear Segment55,0.0,0.0,0.0
+RearSegmt56,4,463,false,false,487,8,1,0,Rear Segment56,0.0,0.0,0.0
+RearSegmt57,4,463,false,false,495,8,1,0,Rear Segment57,0.0,0.0,0.0
+RearSegmt58,4,463,false,false,503,8,1,0,Rear Segment58,0.0,0.0,0.0
+RearSegmt59,4,463,false,false,511,8,1,0,Rear Segment59,0.0,0.0,0.0
+HvacFrntFanSpdSt,4,619,false,false,7,4,1,0,HVAC front wind speed select state.,0.0,0.0,0.0
+TotOdoAcrt,4,914,false,false,7,24,0.1,0.0,ODO,0.0,0.0,0.0
+TotOdoAcrtLvlMVld,4,914,false,false,27,1,1,0,Total odometer accurate for meter level valid\n米级精确总里程有效性,0.0,0.0,0.0
+TotOdoAcrtVld,4,914,false,false,25,1,1,0,The valid signal of TotOdoAcrt,0.0,0.0,0.0
+XCDbkdHvBattStrtAllwd,4,914,false,false,24,1,1,0,Arriving HV batter book heating time flag\n到达电池预热时间使能标志位,0.0,0.0,0.0
+TotOdoAcrtLvlM,4,914,false,false,39,32,1.0,0.0,Total odometer accurate for meter level\n米级精确总里程\n其中，有效范围：0x0~0x?3B9AC9FF?，表示0~999，999，999,0.0,0.0,0.0
+DCDANCPahChg,4,936,false,false,7,2,1,0,ANC Channel Switching\nANC通道切换,0.0,0.0,0.0
+DCDHdrestMutSet,4,936,false,false,5,1,1,0,头枕mute信号,0.0,0.0,0.0
+DCDAVASMutSet,4,936,false,false,2,1,1,0,AVASmute信号,0.0,0.0,0.0
+DCDAVASdBVol,4,936,false,false,1,10,0.1,-100.0,AVAS音量 dB 信号,0.0,0.0,0.0
+DCDTTSMutSet,4,936,false,false,23,1,1,0,报警类TTS mute信号,0.0,0.0,0.0
+DCDAVASVol,4,936,false,false,22,7,1,0,AVAS音量信号,0.0,0.0,0.0
+DCDCallMutSet,4,936,false,false,26,1,1,0,通讯类mute信号,0.0,0.0,0.0
+DCDCalldBVol,4,936,false,false,25,10,0.1,-100.0,通讯类音量 dB 信号,0.0,0.0,0.0
+DCDCallVol,4,936,false,false,46,7,1,0,通讯类音量信号,0.0,0.0,0.0
+DCDESSMutSet,4,936,false,false,50,1,1,0,模拟声浪mute信号,0.0,0.0,0.0
+DCDESSdBVol,4,936,false,false,49,10,0.1,-100.0,模拟声浪音量 dB 信号,0.0,0.0,0.0
+DCDESSVol,4,936,false,false,70,7,1,0,模拟声浪音量信号,0.0,0.0,0.0
+DCDmediaPahNr,4,936,false,false,77,3,1,0,媒体通道数,0.0,0.0,0.0
+DCDMediaMutSet,4,936,false,false,74,1,1,0,多媒体mute信号,0.0,0.0,0.0
+DCDMediadBVol,4,936,false,false,73,10,0.1,-100.0,多媒体音量 dB 信号,0.0,0.0,0.0
+DCDMediaVol,4,936,false,false,94,7,1,0,多媒体音量信号,0.0,0.0,0.0
+DCDNaviMutSet,4,936,false,false,98,1,1,0,导航类mute信号,0.0,0.0,0.0
+DCDNavidBVol,4,936,false,false,97,10,0.1,-100.0,导航类音量 dB 信号,0.0,0.0,0.0
+DCDNaviVol,4,936,false,false,118,7,1,0,导航类音量信号,0.0,0.0,0.0
+DCDPASMutSet,4,936,false,false,122,1,1,0,雷达报警音mute信号,0.0,0.0,0.0
+DCDPASdBVol,4,936,false,false,121,10,0.1,-100.0,雷达报警音音量 dB 信号,0.0,0.0,0.0
+DCDSysMutSet,4,936,false,false,143,1,1,0,系统mute信号,0.0,0.0,0.0
+DCDPASVol,4,936,false,false,142,7,1,0,雷达报警音音量信号,0.0,0.0,0.0
+DCDSysWarnMutSet,4,936,false,false,146,1,1,0,系统提示音类mute信号,0.0,0.0,0.0
+DCDSysWarndBVol,4,936,false,false,145,10,0.1,-100.0,系统提示音类音量 dB 信号,0.0,0.0,0.0
+DCDSysWarnVol,4,936,false,false,166,7,1,0,系统提示音类音量信号,0.0,0.0,0.0
+DCDTTSdBVol,4,936,false,false,175,10,0.1,-100.0,TTS混音音量 dB 信号,0.0,0.0,0.0
+DCDVehWarnMutSet,4,936,false,false,186,1,1,0,车辆报警音mute信号,0.0,0.0,0.0
+DCDVehWarndBVol,4,936,false,false,185,10,0.1,-100.0,车辆报警音音量 dB 信号,0.0,0.0,0.0
+DCDVehWarnVol,4,936,false,false,206,7,1,0,车辆报警音音量信号,0.0,0.0,0.0
+DCDVRMutSet,4,936,false,false,210,1,1,0,语音类mute信号,0.0,0.0,0.0
+DCDVRdBVol,4,936,false,false,209,10,0.1,-100.0,语音类音量 dB 信号,0.0,0.0,0.0
+DCDVRVol,4,936,false,false,230,7,1,0,语音类音量信号,0.0,0.0,0.0
+DCDHdrestdBVol,4,936,false,false,239,10,0.1,-100.0,头枕音量 dB 信号,0.0,0.0,0.0
+DCDHdrestVol,4,936,false,false,255,7,1,0,头枕音量信号,0.0,0.0,0.0
+DCDEcoSetReq,4,936,false,false,248,1,1,0,DCD Amplifier Eco Set Request\nDCD 对AMP低功耗模式请求指令,0.0,0.0,0.0
+DCDUsbMicaMutSet,4,936,false,false,263,1,1,0,USBMICmute信号,0.0,0.0,0.0
+DCDUsbMicVol,4,936,false,false,262,7,1,0,USBMIC音量信号,0.0,0.0,0.0
+DCDUsbMicdBVol,4,936,false,false,271,10,0.1,-100.0,USBMIC音量(dB)信号,0.0,0.0,0.0
+DCDTTSVol,4,936,false,false,287,7,1,0,TTS混音音量信号,0.0,0.0,0.0
+DCDAutoSpeedVolSet,4,937,false,false,5,3,1,0,音量随速调节开关信号,0.0,0.0,0.0
+DCDAutoHVacVolSet,4,937,false,false,2,3,1,0,音量自适应空调风量开关信号,0.0,0.0,0.0
+DCDEQReSet,4,937,false,false,14,1,1,0,EQ调节Reset设置,0.0,0.0,0.0
+DCDEQ2Set,4,937,false,false,13,6,0.5,-12.5,EQ2设置,0.0,0.0,0.0
+DCDHdrestModSet,4,937,false,false,23,3,1,0,头枕设置,0.0,0.0,0.0
+DCDFrntReBalSet,4,937,false,false,20,5,1.0,-11.0,前后平衡调节设置,0.0,0.0,0.0
+DCDLeRiBalSet,4,937,false,false,28,5,1.0,-11.0,左右平衡调节设置,0.0,0.0,0.0
+DCDEQ3Set,4,937,false,false,45,6,0.5,-12.5,EQ3设置,0.0,0.0,0.0
+DCDSoundStgHeiSet,4,937,false,false,63,5,1.0,0.0,声场高度调节设置,0.0,0.0,0.0
+DCDSoundEffSet,4,937,false,false,67,4,1,0,音效设置,0.0,0.0,0.0
+DCDSoundStgWidthSet,4,937,false,false,79,5,1.0,0.0,声场宽度调节设置,0.0,0.0,0.0
+DCDSoundFieSet,4,937,false,false,74,3,1,0,声场设置,0.0,0.0,0.0
+DCDSoundStgRoomSizeSet,4,937,false,false,87,5,1.0,0.0,声场房间大小调节设置,0.0,0.0,0.0
+DCDEQ1Set,4,937,false,false,95,6,0.5,-12.5,EQ1设置,0.0,0.0,0.0
+DCDSoundStgWetDrySet,4,937,false,false,103,7,1.0,0.0,声场干湿比调节设置,0.0,0.0,0.0
+DCDEQ6Set,4,937,false,false,111,6,0.5,-12.5,EQ6设置,0.0,0.0,0.0
+DCDEQ4Set,4,937,false,false,119,6,0.5,-12.5,EQ4设置,0.0,0.0,0.0
+DCDEQ5Set,4,937,false,false,127,6,0.5,-12.5,EQ5设置,0.0,0.0,0.0
+TrOpenClsSts,4,471,false,false,7,2,1,0,Trunk Open Close Status,0.0,0.0,0.0
+VCCDLampNodeAddress,4,1360,false,false,7,8,1,0,Node source address,0.0,0.0,0.0
+VCCDLampActiveWakeup,4,1360,false,false,12,1,1,0,Active Wakeup Bit,0.0,0.0,0.0
+VCCDLampRepeatMsgReq,4,1360,false,false,8,1,1,0,Repeat Message Request Bit,0.0,0.0,0.0
+UDB23VCCD,4,1360,false,false,23,1,1,0,,0.0,0.0,0.0
+UDB22VCCD,4,1360,false,false,22,1,1,0,,0.0,0.0,0.0
+UDB21VCCD,4,1360,false,false,21,1,1,0,,0.0,0.0,0.0
+UDB20VCCD,4,1360,false,false,20,1,1,0,,0.0,0.0,0.0
+UDB19VCCD,4,1360,false,false,19,1,1,0,,0.0,0.0,0.0
+UDB18VCCD,4,1360,false,false,18,1,1,0,,0.0,0.0,0.0
+UDB17VCCD,4,1360,false,false,17,1,1,0,,0.0,0.0,0.0
+VCCDLampRepeatMsgSt,4,1360,false,false,16,1,1,0,Repeat Message State indication,0.0,0.0,0.0
+UDB31VCCD,4,1360,false,false,31,1,1,0,,0.0,0.0,0.0
+UDB30VCCD,4,1360,false,false,30,1,1,0,,0.0,0.0,0.0
+UDB29VCCD,4,1360,false,false,29,1,1,0,,0.0,0.0,0.0
+UDB28VCCD,4,1360,false,false,28,1,1,0,,0.0,0.0,0.0
+UDB27VCCD,4,1360,false,false,27,1,1,0,,0.0,0.0,0.0
+UDB26VCCD,4,1360,false,false,26,1,1,0,,0.0,0.0,0.0
+UDB25VCCD,4,1360,false,false,25,1,1,0,,0.0,0.0,0.0
+UDB24VCCD,4,1360,false,false,24,1,1,0,,0.0,0.0,0.0
+UDB39VCCD,4,1360,false,false,39,1,1,0,,0.0,0.0,0.0
+UDB38VCCD,4,1360,false,false,38,1,1,0,,0.0,0.0,0.0
+UDB37VCCD,4,1360,false,false,37,1,1,0,,0.0,0.0,0.0
+UDB36VCCD,4,1360,false,false,36,1,1,0,,0.0,0.0,0.0
+UDB35VCCD,4,1360,false,false,35,1,1,0,,0.0,0.0,0.0
+UDB34VCCD,4,1360,false,false,34,1,1,0,,0.0,0.0,0.0
+UDB33VCCD,4,1360,false,false,33,1,1,0,,0.0,0.0,0.0
+UDB32VCCD,4,1360,false,false,32,1,1,0,,0.0,0.0,0.0
+UDB47VCCD,4,1360,false,false,47,1,1,0,,0.0,0.0,0.0
+UDB46VCCD,4,1360,false,false,46,1,1,0,,0.0,0.0,0.0
+UDB45VCCD,4,1360,false,false,45,1,1,0,,0.0,0.0,0.0
+UDB44VCCD,4,1360,false,false,44,1,1,0,,0.0,0.0,0.0
+UDB43VCCD,4,1360,false,false,43,1,1,0,,0.0,0.0,0.0
+UDB42VCCD,4,1360,false,false,42,1,1,0,,0.0,0.0,0.0
+UDB41VCCD,4,1360,false,false,41,1,1,0,,0.0,0.0,0.0
+UDB40VCCD,4,1360,false,false,40,1,1,0,,0.0,0.0,0.0
+UDB53VCCD,4,1360,false,false,53,1,1,0,,0.0,0.0,0.0
+UDB52VCCD,4,1360,false,false,52,1,1,0,,0.0,0.0,0.0
+UDB51VCCD,4,1360,false,false,51,1,1,0,,0.0,0.0,0.0
+UDB50VCCD,4,1360,false,false,50,1,1,0,,0.0,0.0,0.0
+UDB49VCCD,4,1360,false,false,49,1,1,0,,0.0,0.0,0.0
+NMKeepAwkRsnVCCD,4,1360,false,false,48,9,1,0,,0.0,0.0,0.0
+VCCDToAMPDiagReq,4,1953,false,false,7,512,1,0,,0.0,0.0,0.0
+VCCDToHCMLDiagReq,4,1890,false,false,7,512,1,0,,0.0,0.0,0.0
+VCCDToHCMRDiagReq,4,1891,false,false,7,512,1,0,,0.0,0.0,0.0
+VCCDToRLCMDiagReq,4,1892,false,false,7,512,1,0,,0.0,0.0,0.0

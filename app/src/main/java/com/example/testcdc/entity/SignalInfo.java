@@ -34,6 +34,22 @@ public class SignalInfo {
     @ColumnInfo(name="comment")
     public String comment;
 
+    @ColumnInfo(name="minimum")
+    public Double minimum;
+
+    @ColumnInfo(name="maximum")
+    public Double maximum;
+
+    @ColumnInfo(name="initial")
+    public Double initial;
+
+
+
+
+
+
+
+
     @Ignore
     public List<Double> times = new ArrayList<>();
     @Ignore
@@ -128,7 +144,31 @@ public class SignalInfo {
         this.comment = comment;
     }
 
-    public SignalInfo(String name, int BUSId, int CANId, boolean byteOrder, boolean isSigned, int bitStart, int bitLength, double scale, double offset, String comment) {
+    public Double getMinimum() {
+        return minimum;
+    }
+
+    public void setMinimum(Double minimum) {
+        this.minimum = minimum;
+    }
+
+    public Double getMaximum() {
+        return maximum;
+    }
+
+    public void setMaximum(Double maximum) {
+        this.maximum = maximum;
+    }
+
+    public Double getInitial() {
+        return initial;
+    }
+
+    public void setInitial(Double initial) {
+        this.initial = initial;
+    }
+
+    public SignalInfo(String name, int BUSId, int CANId, boolean byteOrder, boolean isSigned, int bitStart, int bitLength, double scale, double offset, String comment, Double minimum, Double maximum, Double initial) {
         this.name = name;
         this.BUSId = BUSId;
         this.CANId = CANId;
@@ -139,6 +179,9 @@ public class SignalInfo {
         this.scale = scale;
         this.offset = offset;
         this.comment = comment;
+        this.minimum = minimum;
+        this.maximum = maximum;
+        this.initial = initial;
     }
 
     public SignalInfo() {

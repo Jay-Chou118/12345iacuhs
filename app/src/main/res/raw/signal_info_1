@@ -1,0 +1,1738 @@
+LonAccrSigGrpChks,1,425,false,false,7,8,1,0,,0.0,0.0,0.0
+LonAccrSigGrpCntr,1,425,false,false,11,4,1,0,,0.0,0.0,0.0
+LonAccr,1,425,false,false,23,16,0.0002,-5.0,Longititude Acceleration\n纵向加速度,0.0,0.0,0.0
+LonSnsrSt,1,425,false,false,33,2,1,0,Longititude Sensor State\n纵向加速度有效性,0.0,0.0,0.0
+IMUCalSt,1,425,false,false,63,1,1,0,IMUCalibrationSt\nIMU标定状态,0.0,0.0,0.0
+LatAccrYawRateSigGrpChks,1,426,false,false,7,8,1,0,,0.0,0.0,0.0
+LatAccrYawRateSigGrpCntr,1,426,false,false,11,4,1,0,,0.0,0.0,0.0
+LatAccr,1,426,false,false,23,16,0.0002,-5.0,Lateral Acceleration\n横向加速度,0.0,0.0,0.0
+YawRate,1,426,false,false,39,16,0.01,-300.0,Yaw Rate\n横摆角速度,0.0,0.0,0.0
+YawRateSnsrSt,1,426,false,false,51,2,1,0,Yaw Rate Sensor State\n横摆角速度有效性,0.0,0.0,0.0
+LatAccrSt,1,426,false,false,49,2,1,0,Lateral Sensor State\n横向加速度有效性,0.0,0.0,0.0
+ACUWarnLampStsSigGrpChks,1,848,false,false,7,8,1,0,,0.0,0.0,0.0
+ACUWarnLampStsSigGrpCntr,1,848,false,false,11,4,1,0,,0.0,0.0,0.0
+ACUWarnLampSts,1,848,false,false,17,2,1,0,Airbag Warning Lamp Status \nACU故障灯信号,0.0,0.0,0.0
+SecRowMidBucSts,1,848,false,false,39,2,1,0,Second Row Middle Buckle Status\n第二排中安全带状态,0.0,0.0,0.0
+SecRowLeBucSts,1,848,false,false,37,2,1,0,Second Row Left Buckle Status\n第二排左安全带状态,0.0,0.0,0.0
+PassBucSts,1,848,false,false,35,2,1,0,Passenger Buckle Status\n副驾安全带状态,0.0,0.0,0.0
+DrvrBucSts,1,848,false,false,33,2,1,0,Driver Buckle Status \n主驾驶安全带扣状态,0.0,0.0,0.0
+PassAirbDiIndcr,1,848,false,false,42,1,1,0,Passenger airbag disable indicator\n副驾安全气囊禁用状态指示,0.0,0.0,0.0
+SecRowRiBucSts,1,848,false,false,41,2,1,0,Second Row Right Buckle Status\n第二排右安全带状态,0.0,0.0,0.0
+ParkGearReqSigGrpChks,1,379,false,false,7,8,1,0,,0.0,0.0,0.0
+ParkGearReqSigGrpCntr,1,379,false,false,11,4,1,0,,0.0,0.0,0.0
+RPAPrkinRecdFrmADD,1,379,false,false,23,2,1,0,RPA Park in Record\nRPA 记录上次是遥控泊入还是人为泊入,0.0,0.0,0.0
+RPAHVOnReqFrmADD,1,379,false,false,21,1,1,0,Request HV ON,0.0,0.0,0.0
+ParkGearReqEnaFrmADD,1,379,false,false,20,2,1,0,Parking system Gear request Enable,0.0,0.0,0.0
+ParkGearReqFrmADD,1,379,false,false,18,3,1,0,Parking system Gear request,0.0,0.0,0.0
+ADDKeepAwakeReq,1,379,false,false,39,1,1,0,请求整车电源状态,0.0,0.0,0.0
+ParkGearReqSigGrpFV,1,379,false,false,87,16,1,0,,0.0,0.0,0.0
+ParkGearReqSigGrpMAC,1,379,false,false,103,32,1,0,,0.0,0.0,0.0
+HPPAVPSteerReqBkpSigGrpChks,1,399,false,false,7,8,1,0,,0.0,0.0,0.0
+HPPAVPSteerReqBkpSigGrpCntr,1,399,false,false,11,4,1,0,,0.0,0.0,0.0
+HPPAVPSteerWhlAglReqValBkp,1,399,false,true,23,15,0.0625,0.0,HPP AVP  Steering Wheel Angle Request Value Backup,0.0,0.0,0.0
+HPPAVPSteerWhlCtrlReqStsBkp,1,399,false,false,39,2,1,0,HPP AVP Steering Wheel Control Request Status Backup,0.0,0.0,0.0
+HPPAVPRecoverIndCtrlBkp,1,399,false,false,36,2,1,0,HPP AVP recovery interrupt indication Backup,0.0,0.0,0.0
+ParkCtrlAirSuspSigGrpChks,1,493,false,false,7,8,1,0,,0.0,0.0,0.0
+ParkCtrlAirSuspSigGrpCntr,1,493,false,false,11,4,1,0,,0.0,0.0,0.0
+ParkAirSuspReqFrmADD,1,493,false,false,23,2,1,0,Parking Control Air Suspension Request,0.0,0.0,0.0
+DrvAirSuspReqFrmADD,1,493,false,false,31,2,1,0,driving air suspension request,0.0,0.0,0.0
+ADSWarnSigGrpChks,1,512,false,false,7,8,1,0,,0.0,0.0,0.0
+ADSDOWWarnReqFrRiFrmADD,1,512,false,false,15,2,1,0,DOW warning request - front right,0.0,0.0,0.0
+ADSDOWWarnReqReLeFrmADD,1,512,false,false,13,2,1,0,DOW warning request - rear left,0.0,0.0,0.0
+ADSWarnSigGrpCntr,1,512,false,false,11,4,1,0,,0.0,0.0,0.0
+ADSFCWReqFrmADD,1,512,false,false,23,2,1,0,FCW request,0.0,0.0,0.0
+ADSLDPWarnReqLeFrmADD,1,512,false,false,21,1,1,0,LDP warning request - left,0.0,0.0,0.0
+ADSLDPWarnReqRiFrmADD,1,512,false,false,20,1,1,0,LDP warning request - right,0.0,0.0,0.0
+ADSLDWWarnLeReqFrmADD,1,512,false,false,19,1,1,0,ADS LDW Warning LEFT Request,0.0,0.0,0.0
+ADSLDWWarnRiReqFrmADD,1,512,false,false,18,1,1,0,ADS LDW Warning right Request,0.0,0.0,0.0
+ADSRCTAWarnReqLeFrmADD,1,512,false,false,17,2,1,0,RCTA warning request,0.0,0.0,0.0
+ADSRCTAWarnReqRiFrmADD,1,512,false,false,31,2,1,0,RCTA warning request,0.0,0.0,0.0
+ADSRCTBWarnReqLeFrmADD,1,512,false,false,29,2,1,0,RCTB warning request,0.0,0.0,0.0
+ADSRCTBWarnReqRiFrmADD,1,512,false,false,27,2,1,0,RCTB warning request,0.0,0.0,0.0
+ADSRCWWarnReqFrmADD,1,512,false,false,25,2,1,0,RCW warning rcw_warninguest,0.0,0.0,0.0
+ADSVcCtrlArbFrmADD,1,512,false,false,39,2,1,0,Voice_Control_Arbitration_Feedback,0.0,0.0,0.0
+ADSAEBWarnReqFrmADD,1,512,false,false,37,2,1,0,AEB warning request,0.0,0.0,0.0
+ADSBSDLCAWarnReqLeFrmADD,1,512,false,false,35,2,1,0,BSD_LCA warning request,0.0,0.0,0.0
+TSASpdLimitUnitFrmADD,1,512,false,false,33,2,1,0,TSR Traffic Sign Recognition  speed limit unit,0.0,0.0,0.0
+ADSBSDLCAWarnReqRiFrmADD,1,512,false,false,47,2,1,0,BSD warning request,0.0,0.0,0.0
+ADSDOWWarnReqFrLeFrmADD,1,512,false,false,45,2,1,0,DOW warning request - front left,0.0,0.0,0.0
+ADSDOWWarnReqReRiFrmADD,1,512,false,false,43,2,1,0,DOW warning request - rear right,0.0,0.0,0.0
+ADSESSWarnReqFrmADD,1,512,false,false,41,1,1,0,ESS warning request,0.0,0.0,0.0
+DrvAtmLiReqFrmADD,1,512,false,false,40,1,1,0,Atmosphere light request,0.0,0.0,0.0
+DrvSysWarnFrmADD,1,512,false,false,55,3,1,0,Driving system warning request,0.0,0.0,0.0
+TSASpdLimitFrmADD,1,512,false,false,52,5,1,0,TSR Traffic Sign Recognition Speed limit values,0.0,0.0,0.0
+TSASignQlyFrmADD,1,512,false,false,63,7,1.0,0.0,Quality/Confidence of the detected road sign,0.0,0.0,0.0
+ADSLDPHandOffExitFrmADD,1,512,false,false,56,1,1,0,LDP脱手超时退出,0.0,0.0,0.0
+TSASignTypeFrmADD,1,512,false,false,71,6,1,0,Detected road sign type,0.0,0.0,0.0
+ADSLDPHandOffWarningFrmADD,1,512,false,false,65,2,1,0,LDP脱手报警提示,0.0,0.0,0.0
+ADSBSDLCAAudioWarnReqFrmADD,1,512,false,false,79,2,1.0,0.0,用于表征 BSDLCA 声音报警需求,0.0,0.0,0.0
+AutoDrvLaneChgStsFrmADD,1,512,false,false,103,4,1,0,Autonomous Lane Change Status,0.0,0.0,0.0
+DrvHUDDspFrmADD,1,512,false,false,99,4,1,0,HUD display msg,0.0,0.0,0.0
+DrvLaneChgStsFrmADD,1,512,false,false,111,4,1,0,Lane Change Status,0.0,0.0,0.0
+NOASysStsFrmADD,1,512,false,false,107,4,1,0,NOA System Status\nNOA激活状态 NormalActive  NOAOverride_Long StandActive StandWait Overlay  Takeover MRM,0.0,0.0,0.0
+DrvNOAExtLgtDstFrmADD,1,512,false,false,119,9,1,0,Noa Exit Longitudinal Relative Distance,0.0,0.0,0.0
+DrvPltSysStsFrmADD,1,512,false,false,126,4,1,0,Pilot System Status\n激活状态为 PilotNormalActive PilotOverride_Long PilotOverride_Lat pilotActiveOnlylgt Pilotoverlay StandActive StandWait Takeover MRM,0.0,0.0,0.0
+DrvrSeldDstLvlFrmADD,1,512,false,false,122,3,1,0,Pilot Driver Selected Distance Level,0.0,0.0,0.0
+DrvNOAQutLgtDstFrmADD,1,512,false,false,135,9,1,0,Noa Quit Longitudinal Relative Distance,0.0,0.0,0.0
+ADSLiReqFrmADD,1,512,false,false,142,2,1,0,ADS light request,0.0,0.0,0.0
+DrvTurnLiReqFrmADD,1,512,false,false,140,2,1,0,ADS turn light request,0.0,0.0,0.0
+IndcrCancelReqFrmADD,1,512,false,false,138,2,1,0,变道完成后取消长拨杆信号,0.0,0.0,0.0
+UserFbReqFrmADD,1,512,false,false,151,2,1,0,user feedback request,0.0,0.0,0.0
+ADSGearReqSigGrpChks,1,512,false,false,175,8,1,0,,0.0,0.0,0.0
+ADSGearReqSigGrpCntr,1,512,false,false,179,4,1,0,,0.0,0.0,0.0
+DrvGearReqFrmADD,1,512,false,false,191,3,1,0,Driving Gear request,0.0,0.0,0.0
+DrvGearReqVldFrmADD,1,512,false,false,188,1,1,0,智驾行车档位请求有效位\n0x0 无效\n0x1 有效,0.0,0.0,0.0
+AEBtoIDPFrmADDChks,1,512,false,false,215,8,1,0,,0.0,0.0,0.0
+AEBTarObjClassFrmADD,1,512,false,false,223,2,1,0,AEB target object classification,0.0,0.0,0.0
+AEBtoIDPFrmADDCntr,1,512,false,false,219,4,1,0,,0.0,0.0,0.0
+AEBTarObjTTIFrmADD,1,512,false,false,231,8,0.02,0.0,AEB  target object time to impact,0.0,0.0,0.0
+ADSFctStsSigGrpChks,1,512,false,false,263,8,1,0,,0.0,0.0,0.0
+ADDBSDLCAStsFrmADD,1,512,false,false,271,2,1,0,BSD LCA function status,0.0,0.0,0.0
+ADSDOWStsFrmADD,1,512,false,false,269,2,1,0,DOW function status,0.0,0.0,0.0
+ADSFctStsSigGrpCntr,1,512,false,false,267,4,1,0,,0.0,0.0,0.0
+ADSAEBStsFrmADD,1,512,false,false,279,3,1,0,AEB function status,0.0,0.0,0.0
+ADSELKStsFrmADD,1,512,false,false,276,3,1,0,ELK function status,0.0,0.0,0.0
+ADSRCTAStsFrmADD,1,512,false,false,273,2,1,0,RCTA function status,0.0,0.0,0.0
+ADSESSStsFrmADD,1,512,false,false,287,3,1,0,ESS function status,0.0,0.0,0.0
+ADSFCWStsFrmADD,1,512,false,false,284,3,1,0,FCW function status,0.0,0.0,0.0
+ADSRCTBStsFrmADD,1,512,false,false,281,2,1,0,RCTB function status,0.0,0.0,0.0
+ADSLDPStsFrmADD,1,512,false,false,295,3,1,0,LDP function status,0.0,0.0,0.0
+ADSLDWStsFrmADD,1,512,false,false,292,3,1,0,LDW function status,0.0,0.0,0.0
+ADSRCWStsFrmADD,1,512,false,false,289,2,1,0,RCW function status,0.0,0.0,0.0
+ADSAEBTarDirFrmADD,1,512,false,false,303,3,1.0,0.0,AEB目标方向显示标志,0.0,0.0,0.0
+ADSSysErrorStsFrmADD,1,512,false,false,311,2,1,0,智驾系统故障状态,0.0,0.0,0.0
+ADSTakeoverRmdFrmADD,1,512,false,false,309,2,1,0,智驾紧急请求用户接管,0.0,0.0,0.0
+DrvMdlStsFrmADD,1,512,false,false,317,3,1,0,Pilot Driver Model Status,0.0,0.0,0.0
+ADSSysErrorRmdFrmADD,1,512,false,false,314,2,1,0,智驾系统故障提示,0.0,0.0,0.0
+DrvNOARemdFrmADD,1,512,false,false,327,6,1,0,NOA text msg,0.0,0.0,0.0
+LidarCleanReqFrmADD,1,512,false,false,321,2,1,0,激光雷达清洗请求,0.0,0.0,0.0
+ADSTLAStsFrmADD,1,512,false,false,335,3,1,0,TLA功能状态机信号,0.0,0.0,0.0
+ADSwtStsSigGrp2Chks,1,512,false,false,343,8,1,0,,0.0,0.0,0.0
+ADSwtStsSigGrp2Cntr,1,512,false,false,347,4,1,0,,0.0,0.0,0.0
+AdsVehDetourSwtStsFrmADD,1,512,false,false,357,2,1,0,Adas vehicle detour switch status,0.0,0.0,0.0
+AdsNOAOddSwtStsFrmADD,1,512,false,false,355,4,1,0,Adas-NOA odd switch status,0.0,0.0,0.0
+AdsModSwtStsFrmADD,1,512,false,false,367,4,1,0,Adas mode switch status,0.0,0.0,0.0
+AdsLearnSwtUnavlRsnFrmADD,1,512,false,false,363,4,1,0,Adas learned switch unavailable reason,0.0,0.0,0.0
+AdsTrfcLiCtrlSwtStsFrmADD,1,512,false,false,375,2,1,0,Adas traffic light control switch status,0.0,0.0,0.0
+AdsNOAOddSwtUnavlRsnFrmADD,1,512,false,false,373,3,1,0,Adas-NOA odd switch unavailable reason,0.0,0.0,0.0
+AdsLearnSwtStsFrmADD,1,512,false,false,370,3,1,0,Adas learned switch status,0.0,0.0,0.0
+ARiCamStsFrmADD,1,513,false,false,7,3,1,0,AVM Right camera Status,0.0,0.0,0.0
+F30CamStsFrmADD,1,513,false,false,4,3,1,0,F30 camera Status,0.0,0.0,0.0
+F120DVRStsFrmADD,1,513,false,false,15,3,1,0,DVR F120 camera channel status,0.0,0.0,0.0
+SLFDVRStsFrmADD,1,513,false,false,23,3,1,0,DVR Side Left Front camera channel status,0.0,0.0,0.0
+SLRDVRStsFrmADD,1,513,false,false,20,3,1,0,DVR Side Left Rear camera channel status,0.0,0.0,0.0
+SRFDVRStsFrmADD,1,513,false,false,31,3,1,0,DVR Side Right Front camera channel status,0.0,0.0,0.0
+SRRDVRStsFrmADD,1,513,false,false,28,3,1,0,DVR Side Rear Rear camera channel status,0.0,0.0,0.0
+ADSLRRSnsrStsFrmADD,1,513,false,false,39,4,1,0,front radar working status,0.0,0.0,0.0
+F120CamStsFrmADD,1,513,false,false,35,3,1,0,F120 camera Status,0.0,0.0,0.0
+FLidarStsFrmADD,1,513,false,false,47,4,1,0,front lidar working status,0.0,0.0,0.0
+FUSSStsFrmADD,1,513,false,false,43,4,1,0,front USS working status,0.0,0.0,0.0
+IMUStsFrmADD,1,513,false,false,55,4,1,0,IMU working status,0.0,0.0,0.0
+RUSSStsFrmADD,1,513,false,false,51,4,1,0,rear USS working status,0.0,0.0,0.0
+SLLidarStsFrmADD,1,513,false,false,63,4,1,0,side left working status,0.0,0.0,0.0
+SRLidarStsFrmADD,1,513,false,false,59,4,1,0,side right working status,0.0,0.0,0.0
+ADSRLSRSnsrStsFrmADD,1,513,false,false,71,4,1,0,rear left radar working status,0.0,0.0,0.0
+ADSRRSRSnsrStsFrmADD,1,513,false,false,67,4,1,0,rear right radar working status,0.0,0.0,0.0
+SRRCamStsFrmADD,1,513,false,false,79,3,1,0,Side Right Rear camera Status,0.0,0.0,0.0
+AVPHPPStatusSigGrpChks,1,513,false,false,87,8,1,0,,0.0,0.0,0.0
+ADSHPPStsFrmADD,1,513,false,false,95,4,1,0,HPP State Machine Status\nHPP 状态机信号,0.0,0.0,0.0
+AVPHPPStatusSigGrpCntr,1,513,false,false,91,4,1,0,,0.0,0.0,0.0
+HPPInfotipFrmADD,1,513,false,false,103,6,1,0,HPP过程中信息提示,0.0,0.0,0.0
+HPPDriverOperateDialogFrmADD,1,513,false,false,111,4,1,0,HPPDriverOperateDialog\nHPP驾驶员操作提醒询问类,0.0,0.0,0.0
+HPPRouteInd2FrmADD,1,513,false,false,107,4,1,0,HPP Route Management Succeed Indicator\nHPP 路线管理成功类信息提示,0.0,0.0,0.0
+HPPDriverOperateInd2FrmADD,1,513,false,false,119,5,1,0,HPP Driver Operation Indicator2\nHPP 驾驶员操作提示 动态文字类,0.0,0.0,0.0
+HPPActiveSubStsFrmADD,1,513,false,false,114,3,1,0,HPP Active Sub-State Machine Status\nHPP 激活子状态机信号,0.0,0.0,0.0
+ADSAVPStsFrmADD,1,513,false,false,127,4,1,0,AVP State Machine Status\nAVP 状态机信号,0.0,0.0,0.0
+HPPLearnSubStsFrmADD,1,513,false,false,123,4,1,0,HPP Learning Sub-State Machine Status\nHPP 学习子状态机信号,0.0,0.0,0.0
+HPPUnableToActiveIndFrmADD,1,513,false,false,135,7,1,0,HPP Unable to Active Indicator\nHPP功能开启失败提示,0.0,0.0,0.0
+HPPDriverOperateIndFrmADD,1,513,false,false,143,5,1,0,HPP Driver Operation Indicator\nHPP 驾驶员操作提示,0.0,0.0,0.0
+HPPAlrtWarnFrmADD,1,513,false,false,151,3,1,0,HPP接管提醒,0.0,0.0,0.0
+HPPRouteIndFrmADD,1,513,false,false,148,5,1,0,HPP Route Management Indicator\nHPP 路线管理提示,0.0,0.0,0.0
+HPPQuitIndFrmADD,1,513,false,false,159,7,1,0,HPP Quit Indicator\nHPP 功能退出提示,0.0,0.0,0.0
+HPPRecoverIndFrmADD,1,513,false,false,167,5,1,0,HPP Recover Indicator\nHPP 回放中断提示,0.0,0.0,0.0
+ADSAPPUnableOpenRsnFrmADD,1,513,false,false,162,3,1,0,智驾中心APP无法打开原因提示,0.0,0.0,0.0
+SnmDetInfoFrmADD,1,513,false,false,175,16,1,0,Sentry Detection Information,0.0,0.0,0.0
+SnmSLFCamDetResFrmADD,1,513,false,false,191,2,1,0,Sentry Mode Side Left Front camera detection result,0.0,0.0,0.0
+SnmReCamDetResFrmADD,1,513,false,false,189,2,1,0,Sentry Mode Rear camera detection result,0.0,0.0,0.0
+SnmF120CamDetResFrmADD,1,513,false,false,187,2,1,0,Sentry Mode F120 camera detection result,0.0,0.0,0.0
+SnmDetResFrmADD,1,513,false,false,185,2,1,0,Sentry Mode Detection result,0.0,0.0,0.0
+SnmSRRCamDetResFrmADD,1,513,false,false,197,2,1,0,Sentry Mode Side Right Rear camera detection result,0.0,0.0,0.0
+SnmSRFCamDetResFrmADD,1,513,false,false,195,2,1,0,Sentry Mode Side Right Front detection result,0.0,0.0,0.0
+SnmSLRCamDetResFrmADD,1,513,false,false,193,2,1,0,Sentry Mode Side Left Rear camera detection result,0.0,0.0,0.0
+ParkVCstatusSigGrpChks,1,513,false,false,207,8,1,0,,0.0,0.0,0.0
+ParkVicShdFrmADD,1,513,false,false,215,3,1,0,泊车语音屏蔽请求,0.0,0.0,0.0
+ParkVCstatusSigGrpCntr,1,513,false,false,211,4,1,0,,0.0,0.0,0.0
+AVMOpnReqFrmADD,1,513,false,false,223,3,1,0,AVM Open Request\nAVM 开启请求,0.0,0.0,0.0
+APAVcQuitAvlFrmADD,1,513,false,false,220,1,1,0,APA Quit Availability\nAPA 退出可用信号,0.0,0.0,0.0
+APAVcStsFrmADD,1,513,false,false,219,1,1,0,APA Voice Control Status for Voice Contrl\nAPA 功能状态to 语控,0.0,0.0,0.0
+HPPLrnVcFbFrmADD,1,513,false,false,218,1,1,0,HPP Learning Voice Control Feedback\nHPP 学习语控反馈,0.0,0.0,0.0
+APAVcFbFrmADD,1,513,false,false,231,7,1,0,APA Voice Control Feedback\nAPA 语控开启反馈,0.0,0.0,0.0
+SLRCamStsFrmADD,1,513,false,false,237,3,1,0,Side Left Rear camera Status,0.0,0.0,0.0
+SLFCamStsFrmADD,1,513,false,false,234,3,1,0,Side Left Front camera Status,0.0,0.0,0.0
+AFrCamStsFrmADD,1,513,false,false,245,3,1,0,AVM Front camera Status,0.0,0.0,0.0
+SRFCamStsFrmADD,1,513,false,false,242,3,1,0,Side Right Front camera Status,0.0,0.0,0.0
+AReCamStsFrmADD,1,513,false,false,253,3,1,0,AVM Rear camera Status,0.0,0.0,0.0
+ALeCamStsFrmADD,1,513,false,false,250,3,1,0,AVM Left camera Status,0.0,0.0,0.0
+ISPLigtSnsrVFrmADD,1,513,false,false,263,16,1,0,ISP Light sensor value,0.0,0.0,0.0
+CameraStsforADBFrmADD,1,513,false,false,279,2,1,0,Camera Status for ADB,0.0,0.0,0.0
+CameraStsFrmADD,1,513,false,false,277,2,1,0,camera Status\n摄像头状态,0.0,0.0,0.0
+LidarStsFrmADD,1,513,false,false,275,2,1,0,Lidar Status,0.0,0.0,0.0
+ReCamStsFrmADD,1,513,false,false,287,3,1,0,Rear camera Status,0.0,0.0,0.0
+HPPToSRSigGrpChks,1,513,false,false,295,8,1,0,,0.0,0.0,0.0
+HPPToSRSigGrpCntr,1,513,false,false,299,4,1,0,,0.0,0.0,0.0
+HPPBakMapDfltParkSlotDispFrmADD,1,513,false,false,311,1,1,0,后台静默图回放 使用默认车位确认,0.0,0.0,0.0
+HPPPlayBackPushFrmADD,1,513,false,false,310,1,1,0,HPP路线回放推荐,0.0,0.0,0.0
+HPPRouteManageStsFrmADD,1,513,false,false,309,1,1,0,HPP 路线管理状态,0.0,0.0,0.0
+HPPVehInParkSlotFrmADD,1,513,false,false,308,1,1,0,车辆是否处于车位内,0.0,0.0,0.0
+HPPRecoverButtonStsFrmADD,1,513,false,false,307,2,1,0,继续寻位泊车可用性,0.0,0.0,0.0
+ParkIcnStsSigGrpChks,1,513,false,false,319,8,1,0,,0.0,0.0,0.0
+ParkIcnStsSigGrpCntr,1,513,false,false,323,4,1,0,,0.0,0.0,0.0
+APAIcnDispStsFrmADD,1,513,false,false,335,3,1,0,APA Icon Display Status\nAPA 状态灯显示信号,0.0,0.0,0.0
+AVPIcnDispStsFrmADD,1,513,false,false,332,3,1,0,AVP Icon Display Status\nAVP状态灯显示信号,0.0,0.0,0.0
+PrkSteerWhlBtnLi,1,513,false,false,329,2,1,0,一键智驾泊车背光灯,0.0,0.0,0.0
+HPPIcnDispStsFrmADD,1,513,false,false,343,3,1,0,HPP Icon Display Status\nHPP状态灯显示信号,0.0,0.0,0.0
+ParkLightReqSigGrpChks,1,516,false,false,7,8,1,0,,0.0,0.0,0.0
+AVPCharLidCtrlFrmADD,1,516,false,false,15,2,1,0,AVP Charging Lid Control Request\nAVP 充电盖控制请求,0.0,0.0,0.0
+ParkAtmLiReqFrmADD,1,516,false,false,13,2,1,0,Parking system Atmosphere light Request,0.0,0.0,0.0
+ParkLightReqSigGrpCntr,1,516,false,false,11,4,1,0,,0.0,0.0,0.0
+ParkBackMirrorUnfoldReqFrmADD,1,516,false,false,23,2,1,0,Parking system Back Mirroe Fold or Unfold Request,0.0,0.0,0.0
+ParkDoorLockReqFrmADD,1,516,false,false,21,2,1,0,Parking system Door Lock or unlock Request,0.0,0.0,0.0
+ParkLoBeamReqFrmADD,1,516,false,false,19,1,1,0,Parking Low Beam Request\n泊车近光灯请求,0.0,0.0,0.0
+ParkTurnLiReqFrmADD,1,516,false,false,18,2,1,0,Parking system turn light request,0.0,0.0,0.0
+ParkWindowReqFrmADD,1,516,false,false,16,1,1,0,Parking system Window Closed Request,0.0,0.0,0.0
+PrkgHornReqFrmADD,1,516,false,false,31,1,1,0,parking horn request,0.0,0.0,0.0
+RPAAvailableFrmADD,1,516,false,false,30,1,1,0,RPA Available Signal\nRPA 可用信号,0.0,0.0,0.0
+ParkMdlStsFrmADD,1,516,false,false,63,3,1,0,Parking Driver Model Status,0.0,0.0,0.0
+WeatherStsFrmADD,1,516,false,false,60,3,1,0,Weather Status,0.0,0.0,0.0
+PASBuzzerWarnMuteIndFrmADD,1,516,false,false,57,1,1,0,PAS静音提示,0.0,0.0,0.0
+ParkingPushFrmADD,1,516,false,false,71,3,1,0,泊车手机端push提示信号,0.0,0.0,0.0
+APARPAstatusSigGrpChks,1,516,false,false,87,8,1,0,,0.0,0.0,0.0
+APARPAstatusSigGrpCntr,1,516,false,false,91,4,1,0,,0.0,0.0,0.0
+PRAMoveSigReDistFrmADD,1,516,false,false,103,8,1,0,RPA Move single remain distance indication遥控移车单步剩余距离,0.0,0.0,0.0
+ParkProgressSigReDistFrmADD,1,516,false,false,111,9,1,0,Parking progress single remain distance indication\n泊车单步剩余距离,0.0,0.0,0.0
+APARPAstatusFrmADD,1,516,false,false,118,4,1,0,APA RPA status,0.0,0.0,0.0
+APARPAActiveSubFunFrmADD,1,516,false,false,114,3,1,0,APA RPA Activated function\nAPA RPA 被激活的功能,0.0,0.0,0.0
+APARPADriverOperateIndFrmADD,1,516,false,false,127,6,1,0,APA RPA Driver operating indication\nAPA RPA 驾驶员操作提示,0.0,0.0,0.0
+APAAlrtWarnFrmADD,1,516,false,false,121,2,1,0,APAAlrtWarnFrmADD\nAPA Alert紧急接管提示,0.0,0.0,0.0
+APARPAQuitReasonIndFrmADD,1,516,false,false,135,6,1,0,APA RPA quit reason indication\nAPA RPA完全退出原因提示,0.0,0.0,0.0
+APARPARecoverIndFrmADD,1,516,false,false,143,5,1,0,APA RPA recovery interrupt indication\n可恢复中断提示,0.0,0.0,0.0
+APARPAUnableToActiveIndFrmADD,1,516,false,false,151,6,1,0,APA RPA Unable To Active indication\nAPA RPA无法激活原因提示,0.0,0.0,0.0
+APARPADriverOperateInd2FrmADD,1,516,false,false,159,6,1,0,APA RPA Driver operating indication\nAPA RPA 驾驶员操作提示2,0.0,0.0,0.0
+ParkCornrLiReqFrmADD,1,516,false,false,207,2,1,0,泊车对角灯的控制请求,0.0,0.0,0.0
+RPAAvailableFrmADDFV,1,516,false,false,215,16,1,0,,0.0,0.0,0.0
+RPAAvailableFrmADDMAC,1,516,false,false,231,32,1,0,,0.0,0.0,0.0
+VehObjDist1FrmADD,1,518,false,false,7,10,1,0,Vehicle1 Object Distance,0.0,0.0,0.0
+VehObjDist2FrmADD,1,518,false,false,9,10,1,0,Vehicle2 Object Distance,0.0,0.0,0.0
+VehObjDist3FrmADD,1,518,false,false,31,10,1,0,Vehicle3 Object Distance,0.0,0.0,0.0
+VehObjDist4FrmADD,1,518,false,false,33,10,1,0,Vehicle4 Object Distance,0.0,0.0,0.0
+VehObjDist5FrmADD,1,518,false,false,55,10,1,0,Vehicle5 Object Distance,0.0,0.0,0.0
+VehObjDist6FrmADD,1,518,false,false,57,10,1,0,Vehicle6 Object Distance,0.0,0.0,0.0
+VehObjDist7FrmADD,1,518,false,false,79,10,1,0,Vehicle7 Object Distance,0.0,0.0,0.0
+VehObjDist8FrmADD,1,518,false,false,81,10,1,0,Vehicle8 Object Distance,0.0,0.0,0.0
+VehObjHorzCtrAng1FrmADD,1,518,false,true,103,11,0.05,0.0,Vehicle1 Object horizontal center angle,0.0,0.0,0.0
+VehObjHorzCtrAng2FrmADD,1,518,false,true,106,11,0.05,0.0,Vehicle2 Object horizontal center angle,0.0,0.0,0.0
+VehObjHorzCtrAng3FrmADD,1,518,false,true,127,11,0.05,0.0,Vehicle3 Object horizontal center angle,0.0,0.0,0.0
+VehObjHorzCtrAng4FrmADD,1,518,false,true,130,11,0.05,0.0,Vehicle4 Object horizontal center angle,0.0,0.0,0.0
+VehObjHorzCtrAng5FrmADD,1,518,false,true,151,11,0.05,0.0,Vehicle5 Object horizontal center angle,0.0,0.0,0.0
+VehObjHorzCtrAng6FrmADD,1,518,false,true,154,11,0.05,0.0,Vehicle6 Object horizontal center angle,0.0,0.0,0.0
+VehObjHorzCtrAng7FrmADD,1,518,false,true,175,11,0.05,0.0,Vehicle7 Object horizontal center angle,0.0,0.0,0.0
+VehObjHorzCtrAng8FrmADD,1,518,false,true,178,11,0.05,0.0,Vehicle8 Object horizontal center angle,0.0,0.0,0.0
+VehObjHorzWidthAng1FrmADD,1,518,false,false,199,7,0.1,0.0,Vehicle1 Object horizontal width angle,0.0,0.0,0.0
+VehObjHorzWidthAng2FrmADD,1,518,false,false,207,7,0.1,0.0,Vehicle2 Object horizontal width angle,0.0,0.0,0.0
+VehObjHorzWidthAng3FrmADD,1,518,false,false,215,7,0.1,0.0,Vehicle3 Object horizontal width angle,0.0,0.0,0.0
+VehObjHorzWidthAng4FrmADD,1,518,false,false,223,7,0.1,0.0,Vehicle4 Object horizontal width angle,0.0,0.0,0.0
+VehObjHorzWidthAng5FrmADD,1,518,false,false,231,7,0.1,0.0,Vehicle5 Object horizontal width angle,0.0,0.0,0.0
+VehObjHorzWidthAng7FrmADD,1,518,false,false,239,7,0.1,0.0,Vehicle7 Object horizontal width angle,0.0,0.0,0.0
+VehObjHorzWidthAng6FrmADD,1,518,false,false,247,7,0.1,0.0,Vehicle6 Object horizontal width angle,0.0,0.0,0.0
+VehObjHorzWidthAng8FrmADD,1,518,false,false,255,7,0.1,0.0,Vehicle8 Object horizontal width angle,0.0,0.0,0.0
+BndryLeftAng1FrmADD,1,518,false,true,263,13,0.01,0.0,Boundary1 Left Angle,0.0,0.0,0.0
+BndryLeftDist1FrmADD,1,518,false,false,265,10,1,0,Boundary1 Left Distance,0.0,0.0,0.0
+BndryLeftAng2FrmADD,1,518,false,true,287,13,0.01,0.0,Boundary2 Left Angle,0.0,0.0,0.0
+BndryLeftDist2FrmADD,1,518,false,false,289,10,1,0,Boundary2 Left Distance,0.0,0.0,0.0
+BndryLeftAng3FrmADD,1,518,false,true,311,13,0.01,0.0,Boundary3 Left Angle,0.0,0.0,0.0
+BndryLeftDist3FrmADD,1,518,false,false,313,10,1,0,Boundary3 Left Distance,0.0,0.0,0.0
+BndryLeftAng4FrmADD,1,518,false,true,335,13,0.01,0.0,Boundary4 Left Angle,0.0,0.0,0.0
+BndryLeftDist4FrmADD,1,518,false,false,337,10,1,0,Boundary4 Left Distance,0.0,0.0,0.0
+BndryLeftAng5FrmADD,1,518,false,true,359,13,0.01,0.0,Boundary5 Left Angle,0.0,0.0,0.0
+BndryLeftDist5FrmADD,1,518,false,false,361,10,1,0,Boundary5 Left Distance,0.0,0.0,0.0
+BndryLowerAng1FrmADD,1,518,false,true,383,13,0.01,0.0,Boundary1 Lower Angle,0.0,0.0,0.0
+BndryLowerDist1FrmADD,1,518,false,false,385,10,1,0,Boundary1 Lower Distance,0.0,0.0,0.0
+BndryLowerAng2FrmADD,1,518,false,true,407,13,0.01,0.0,Boundary2 Lower Angle,0.0,0.0,0.0
+BndryLowerDist2FrmADD,1,518,false,false,409,10,1,0,Boundary2 Lower Distance,0.0,0.0,0.0
+BndryLowerAng3FrmADD,1,518,false,true,431,13,0.01,0.0,Boundary3 Lower Angle,0.0,0.0,0.0
+BndryLowerDist3FrmADD,1,518,false,false,433,10,1,0,Boundary3 Lower Distance,0.0,0.0,0.0
+BndryLowerAng4FrmADD,1,518,false,true,455,13,0.01,0.0,Boundary3 Lower Angle,0.0,0.0,0.0
+BndryLowerDist4FrmADD,1,518,false,false,457,10,1,0,Boundary3 Lower Distance,0.0,0.0,0.0
+BndryLowerAng5FrmADD,1,518,false,true,479,13,0.01,0.0,Boundary5 Lower Angle,0.0,0.0,0.0
+BndryLowerDist5FrmADD,1,518,false,false,481,10,1,0,Boundary5 Lower Distance,0.0,0.0,0.0
+BndryRightAng1FrmADD,1,519,false,true,7,13,0.01,0.0,Boundary1 Right Angle,0.0,0.0,0.0
+BndryValidity1FrmADD,1,519,false,false,10,1,1,0,Boundary1 Validity,0.0,0.0,0.0
+BndryRightDist1FrmADD,1,519,false,false,9,10,1,0,Boundary1 Right Distance,0.0,0.0,0.0
+BndryRightAng2FrmADD,1,519,false,true,31,13,0.01,0.0,Boundary2 Right Angle,0.0,0.0,0.0
+BndryValidity2FrmADD,1,519,false,false,34,1,1,0,Boundary2 Validity,0.0,0.0,0.0
+BndryRightDist2FrmADD,1,519,false,false,33,10,1,0,Boundary2 Right Distance,0.0,0.0,0.0
+BndryRightAng3FrmADD,1,519,false,true,55,13,0.01,0.0,Boundary3 Right Angle,0.0,0.0,0.0
+BndryValidity3FrmADD,1,519,false,false,58,1,1,0,Boundary3 Validity,0.0,0.0,0.0
+BndryRightDist3FrmADD,1,519,false,false,57,10,1,0,Boundary3 Right Distance,0.0,0.0,0.0
+BndryRightAng4FrmADD,1,519,false,true,79,13,0.01,0.0,Boundary4 Right Angle,0.0,0.0,0.0
+BndryValidity4FrmADD,1,519,false,false,82,1,1,0,Boundary4 Validity,0.0,0.0,0.0
+BndryRightDist4FrmADD,1,519,false,false,81,10,1,0,Boundary3 Right Distance,0.0,0.0,0.0
+BndryRightAng5FrmADD,1,519,false,true,103,13,0.01,0.0,Boundary5 Right Angle,0.0,0.0,0.0
+BndryValidity5FrmADD,1,519,false,false,106,1,1,0,Boundary5 Validity,0.0,0.0,0.0
+BndryRightDist5FrmADD,1,519,false,false,105,10,1,0,Boundary5 Right Distance,0.0,0.0,0.0
+TrafSignDist1FrmADD,1,519,false,false,127,10,1,0,Traffic sign1 Object Distance,0.0,0.0,0.0
+TooManyBndryFlagFrmADD,1,519,false,false,133,1,1,0,Too Many Boundary Flag,0.0,0.0,0.0
+TooManyVehFlagFrmADD,1,519,false,false,132,1,1,0,Too Many vehice Flag,0.0,0.0,0.0
+TrafSignValidity1FrmADD,1,519,false,false,131,1,1,0,Traffic sign1 Object validity,0.0,0.0,0.0
+TrafSignValidity2FrmADD,1,519,false,false,130,1,1,0,Traffic sign2 Object validity,0.0,0.0,0.0
+VehObjDir1FrmADD,1,519,false,false,129,1,1,0,Vehicle1 Object Direciton,0.0,0.0,0.0
+VehObjDir2FrmADD,1,519,false,false,128,1,1,0,Vehicle2 Object Direciton,0.0,0.0,0.0
+TrafSignDist2FrmADD,1,519,false,false,143,10,1,0,Traffic sign2 Object Distance,0.0,0.0,0.0
+VehObjDir3FrmADD,1,519,false,false,149,1,1,0,Vehicle3 Object Direciton,0.0,0.0,0.0
+VehObjDir4FrmADD,1,519,false,false,148,1,1,0,Vehicle4 Object Direciton,0.0,0.0,0.0
+VehObjDir5FrmADD,1,519,false,false,147,1,1,0,Vehicle5 ObjectDireciton,0.0,0.0,0.0
+VehObjDir6FrmADD,1,519,false,false,146,1,1,0,Vehicle6 Object Direciton,0.0,0.0,0.0
+VehObjDir7FrmADD,1,519,false,false,145,1,1,0,Vehicle7 Object Direciton,0.0,0.0,0.0
+VehObjDir8FrmADD,1,519,false,false,144,1,1,0,Vehicle8 Object Direciton,0.0,0.0,0.0
+TrafSignHorzCtrAng1FrmADD,1,519,false,true,159,11,0.05,0.0,Traffic sign1 Object horizontal center angle,0.0,0.0,0.0
+VehObjValidity1FrmADD,1,519,false,false,164,1,1,0,Vehicle1 Object validity,0.0,0.0,0.0
+VehObjValidity2FrmADD,1,519,false,false,163,1,1,0,Vehicle2 Object validity,0.0,0.0,0.0
+VehObjValidity3FrmADD,1,519,false,false,162,1,1,0,Vehicle3 Object validity,0.0,0.0,0.0
+VehObjValidity4FrmADD,1,519,false,false,161,1,1,0,Vehicle4 Object validity,0.0,0.0,0.0
+VehObjValidity5FrmADD,1,519,false,false,160,1,1,0,Vehicle5 Object validity,0.0,0.0,0.0
+VehObjID1FrmADD,1,519,false,false,175,16,1,0,Vehicle1 Object ID,0.0,0.0,0.0
+VehObjID2FrmADD,1,519,false,false,191,16,1,0,Vehicle2 Object ID,0.0,0.0,0.0
+VehObjID3FrmADD,1,519,false,false,207,16,1,0,Vehicle3 Object ID,0.0,0.0,0.0
+VehObjID4FrmADD,1,519,false,false,223,16,1,0,Vehicle4 Object ID,0.0,0.0,0.0
+VehObjID5FrmADD,1,519,false,false,239,16,1,0,Vehicle5 Object ID,0.0,0.0,0.0
+TrafSignHorzCtrAng2FrmADD,1,519,false,true,255,11,0.05,0.0,Traffic sign2 Object horizontal center angle,0.0,0.0,0.0
+VehObjValidity6FrmADD,1,519,false,false,260,1,1,0,Vehicle6 Object validity,0.0,0.0,0.0
+VehObjValidity7FrmADD,1,519,false,false,259,1,1,0,Vehicle7 Object validity,0.0,0.0,0.0
+VehObjID6FrmADD,1,519,false,false,271,16,1,0,Vehicle6 Object ID,0.0,0.0,0.0
+VehObjID7FrmADD,1,519,false,false,287,16,1,0,Vehicle7 Object ID,0.0,0.0,0.0
+VehObjID8FrmADD,1,519,false,false,303,16,1,0,Vehicle8 Object ID,0.0,0.0,0.0
+VehObjType1FrmADD,1,519,false,false,319,4,1,0,Vehicle1 Object type,0.0,0.0,0.0
+VehObjType2FrmADD,1,519,false,false,315,4,1,0,Vehicle2 Object type,0.0,0.0,0.0
+VehObjType3FrmADD,1,519,false,false,327,4,1,0,Vehicle3 Object type,0.0,0.0,0.0
+VehObjType4FrmADD,1,519,false,false,323,4,1,0,Vehicle4 Object type,0.0,0.0,0.0
+VehObjType5FrmADD,1,519,false,false,335,4,1,0,Vehicle5 Object type,0.0,0.0,0.0
+VehObjType6FrmADD,1,519,false,false,331,4,1,0,Vehicle6 Object type,0.0,0.0,0.0
+VehObjType7FrmADD,1,519,false,false,343,4,1,0,Vehicle7 Object type,0.0,0.0,0.0
+VehObjType8FrmADD,1,519,false,false,339,4,1,0,Vehicle8 Object type,0.0,0.0,0.0
+VehObjValidity8FrmADD,1,519,false,false,351,1,1,0,Vehicle8 Object validity,0.0,0.0,0.0
+TrafSignHorzWidthAng1FrmADD,1,519,false,false,350,7,0.1,0.0,Traffic sign1 Object horizontal width angle,0.0,0.0,0.0
+TrafSignID1FrmADD,1,519,false,false,359,10,1,0,Traffic sign1 Object ID,0.0,0.0,0.0
+TrafSignID2FrmADD,1,519,false,false,361,10,1,0,Traffic sign2 Object ID,0.0,0.0,0.0
+TrafSignHorzWidthAng2FrmADD,1,519,false,false,383,7,0.1,0.0,Traffic sign2 Object horizontal width angle,0.0,0.0,0.0
+ADDSyncFVReq,1,528,false,false,7,32,1,0,ADD同步请求,0.0,0.0,0.0
+ADSRCTBBrkSigGrpChks,1,661,false,false,7,8,1,0,,0.0,0.0,0.0
+ADSRCTBBrkSigGrpCntr,1,661,false,false,11,4,1,0,,0.0,0.0,0.0
+ADSRCTBTarDecelFrmADD,1,661,false,false,23,8,0.05,-10.0,ADD发出的RCTB减速度请求,0.0,0.0,0.0
+ADSRCTBBrkReqFrmADD,1,661,false,false,31,1,1,0,ADD发出的RCTB制动请求状态,0.0,0.0,0.0
+Road1EndPotXRiFrmADD,1,661,false,false,39,16,0.1,-3276.8,减速带1右侧终止点 X坐标\nRoad1 End PointX Right,0.0,0.0,0.0
+Road1StrtPotXLeFrmADD,1,661,false,false,55,16,0.1,-3276.8,减速带1 左侧起始点 X坐标\nRoad1 Start PointX left,0.0,0.0,0.0
+Road2EndPotXRiFrmADD,1,661,false,false,71,16,0.1,-3276.8,减速带2右侧终止点 X坐标\nRoad1 End PointX Right,0.0,0.0,0.0
+Road2StrtPotXLeFrmADD,1,661,false,false,87,16,0.1,-3276.8,减速带2 左侧起始点 X坐标\nRoad1 Start PointX left,0.0,0.0,0.0
+Road1EndPotYRiFrmADD,1,661,false,false,103,16,0.1,-3276.8,Road1 End PointY right,0.0,0.0,0.0
+Road1StrtPotYLeFrmADD,1,661,false,false,119,16,0.1,-3276.8,Road1 Start PointY left,0.0,0.0,0.0
+Road2EndPotYRiFrmADD,1,661,false,false,135,16,0.1,-3276.8,Road2 End PointY right,0.0,0.0,0.0
+Road2StrtPotYLeFrmADD,1,661,false,false,151,16,0.1,-3276.8,Road2 Start PointY left,0.0,0.0,0.0
+BmpTrk2HeiFrmADD,1,661,false,false,167,16,0.05,-1638.4,减速带2高度\nBumpy Track Height,0.0,0.0,0.0
+BmpTrk2ConfFrmADD,1,661,false,false,183,7,1,0,减速带2置信度\nBumpy Track Confidence level,0.0,0.0,0.0
+BmpTrk2TypFrmADD,1,661,false,false,191,5,1,0,Bumpy Track Type\n减速带类型,0.0,0.0,0.0
+BmpTrk1ConfFrmADD,1,661,false,false,199,7,1.0,0.0,Bumpy Track Type conf,0.0,0.0,0.0
+BmpTrk1TypFrmADD,1,661,false,false,207,5,1,0,Bumpy Track Type,0.0,0.0,0.0
+BmpTrk1HeiFrmADD,1,661,false,false,231,16,0.05,-1638.4,Bumpy Track Height,0.0,0.0,0.0
+ADDFaultInfoFlag,1,688,false,false,7,1,1,0,ADD Fault Information Flag,0.0,0.0,0.0
+ADSLrnUnavlRsnFrmADD,1,688,false,false,6,3,1.0,0.0,1,0.0,0.0,0.0
+ParkSwtStsSigGrpChks,1,688,false,false,15,8,1,0,,0.0,0.0,0.0
+APASwtStsFrmADD,1,688,false,false,23,3,1,0,APA Switch Status,0.0,0.0,0.0
+ParkSwtStsSigGrpCntr,1,688,false,false,19,4,1,0,,0.0,0.0,0.0
+AVPSwtStsFrmADD,1,688,false,false,31,3,1,0,AVP Switch Status\nAVP 泊车设置项开关,0.0,0.0,0.0
+HPPBckGrLearFrmADD,1,688,false,false,28,3,1,0,HPP Background learning Switch Status\nHPP后台自学习设置项开关,0.0,0.0,0.0
+HPPSwtStsFrmADD,1,688,false,false,39,3,1,0,HPP Switch Status\nHPP主设置项开关,0.0,0.0,0.0
+APASwtUnavlRsnFrmADD,1,688,false,false,47,4,1,0,APA Switch Unavailable Reason\nAPA 开关不可点击原因反馈信号,0.0,0.0,0.0
+AVPSwtUnavlRsnFrmADD,1,688,false,false,43,4,1,0,AVP Switch Unavailable Reason\nAVP开关不可点击原因反馈信号,0.0,0.0,0.0
+HPPBckGrLearUnavlRsnFrmADD,1,688,false,false,55,4,1,0,HPP BackGround Learning Unavailable Reason\nHPP后台自学习开关不可点原因,0.0,0.0,0.0
+HPPSwtUnavlRsnFrmADD,1,688,false,false,51,4,1,0,HPP Switch Unavailable Reason\nHPP开关不可点击原因反馈信号,0.0,0.0,0.0
+ADDTValFrmADD,1,688,false,false,71,8,1,-40,ADD Temperature Value,0.0,0.0,0.0
+ADDCooltFlowReqFrmADD,1,688,false,false,79,6,0.25,0.0,ADD coolant flowrate Request,0.0,0.0,0.0
+AutoVehSrvAuthntStsRsnFrmADD,1,688,false,false,73,2,1,0,智能驾驶服务授权不可用原因,0.0,0.0,0.0
+AutoVehCustEIPSwtFrmADD,1,688,false,false,87,3,1.0,0.0,智能驾驶用户体验改进计划开关  Autonomous Vehicle Customer Experience Improvement Program Switch,0.0,0.0,0.0
+AutoVehCustEIPSwtRsnFrmADD,1,688,false,false,84,2,1,0,智能驾驶用户体验改进计划开关不可用原因,0.0,0.0,0.0
+AutoVehSrvAuthntStsFrmADD,1,688,false,false,82,3,1.0,0.0,智能驾驶服务授权状态\nAutonomous Vehicle Service Authorization Status,0.0,0.0,0.0
+PASDistanceLevSigGrpChks,1,693,false,false,7,8,1,0,,0.0,0.0,0.0
+PASDistanceLevSigGrpCntr,1,693,false,false,11,4,1,0,,0.0,0.0,0.0
+PASFLDistanceLevFrmADD,1,693,false,false,23,3,1,0,Front Left area distance  Level \n倒车雷达左前区距离显示等级,0.0,0.0,0.0
+PASFMLDistanceLevFrmADD,1,693,false,false,20,3,1,0,Front middle Left area distance Level\n倒车雷达左中前区距离显示等级,0.0,0.0,0.0
+PASFMRDistanceLevFrmADD,1,693,false,false,31,3,1,0,Front Middle Right area distance Level\n倒车雷达右中前区距离显示等级,0.0,0.0,0.0
+PASFRDistanceLevFrmADD,1,693,false,false,28,3,1,0,Front Right area distance Level\n倒车雷达右前区距离显示等级,0.0,0.0,0.0
+PASRLDistanceLevFrmADD,1,693,false,false,39,3,1,0,Rear Left area distance Level\n倒车雷达左后区距离显示等级,0.0,0.0,0.0
+PASRMLDistanceLevFrmADD,1,693,false,false,36,3,1,0,Rear Middle Left area distance Level\n倒车雷达左中后区距离显示等级,0.0,0.0,0.0
+PASRMRDistanceLevFrmADD,1,693,false,false,47,3,1,0,Rear Middle Right area distance Level \n倒车雷达右中后区距离显示等级,0.0,0.0,0.0
+PASRRDistanceLevFrmADD,1,693,false,false,44,3,1,0,Rear Right area distance Level\n倒车雷达右后区距离显示等级,0.0,0.0,0.0
+PASSDWFLSideDistanceLevFrmADD,1,693,false,false,55,3,1,0,Front Left side area distance Level\n左前侧边障碍物距离显示等级,0.0,0.0,0.0
+PASSDWFMLSideDistanceLevFrmADD,1,693,false,false,52,3,1,0,Front Middle Left side area distance Level\n左中前障碍物距离显示等级,0.0,0.0,0.0
+PASSDWFMRSideDistanceLevFrmADD,1,693,false,false,63,3,1,0,Front Middle Right side area distance Level\n右中前障碍物距离显示等级,0.0,0.0,0.0
+PASSDWFRSideDistanceLevFrmADD,1,693,false,false,60,3,1,0,Front Right side area distance Level\n右前侧边障碍物距离显示等级,0.0,0.0,0.0
+PASSDWRLSideDistanceLevFrmADD,1,693,false,false,71,3,1,0,Rear Left side area distance Level\n左后侧边障碍物距离显示等级,0.0,0.0,0.0
+PASSDWRMLSideDistanceLevFrmADD,1,693,false,false,68,3,1,0,Rear Middle Left side area distance display\n左中后障碍物距离显示等级,0.0,0.0,0.0
+PASSDWRMRSideDistanceLevFrmADD,1,693,false,false,79,3,1,0,Rear Middle Right side area distance Level\n右中后障碍物距离显示等级,0.0,0.0,0.0
+PASSDWRRSideDistanceLevFrmADD,1,693,false,false,76,3,1,0,Rear Right side area distance Level\n右后侧边障碍物距离显示等级,0.0,0.0,0.0
+PASFLBuzzerSigGrpChks,1,693,false,false,95,8,1,0,,0.0,0.0,0.0
+PASFLBuzzerSigGrpCntr,1,693,false,false,99,4,1,0,,0.0,0.0,0.0
+PASFRBuzzerWarnFrmADD,1,693,false,false,111,3,1,0,PAS Front Right Buzzer alarm level\nPAS前右区声音报警信号,0.0,0.0,0.0
+PASRLBuzzerWarnFrmADD,1,693,false,false,108,3,1,0,PAS Rear Left Buzzer alarm level\nPAS后左区声音报警信号,0.0,0.0,0.0
+PASBuzzerWarnMuteReqFrmADD,1,693,false,false,119,1,1,0,Mute PAS Buzzer alarm Request\n静音PAS声音报警请求,0.0,0.0,0.0
+PASFCBuzzerWarnFrmADD,1,693,false,false,118,3,1,0,PAS Front Center Buzzer alarm level\nPAS前中区声音报警信号,0.0,0.0,0.0
+PASFLBuzzerWarnFrmADD,1,693,false,false,115,3,1,0,PAS Front Left Buzzer alarm level\nPAS前左区声音报警信号,0.0,0.0,0.0
+PASRRBuzzerWarnFrmADD,1,693,false,false,127,3,1,0,PAS Rear Right Buzzer alarm level\nPAS后右区声音报警信号,0.0,0.0,0.0
+ParkTarPosnSigGrpChks,1,693,false,false,135,8,1,0,,0.0,0.0,0.0
+ParkOutTarDirFrmADD,1,693,false,false,143,2,1,0,Park Out Target Direction\n目标泊出方向,0.0,0.0,0.0
+ParkTarPosnSigGrpCntr,1,693,false,false,139,4,1,0,,0.0,0.0,0.0
+ParkSlotTarFrmADD,1,693,false,false,151,5,1,0,Target Park Slot\n目标车位,0.0,0.0,0.0
+PASDistanceSystemGrpChks,1,693,false,false,159,8,1,0,,0.0,0.0,0.0
+PASDistanceSystemGrpCntr,1,693,false,false,163,4,1,0,,0.0,0.0,0.0
+PASFLDistanceFrmADD,1,693,false,false,175,10,1,0,Front Left area distance display\n倒车雷达左前区距离显示,0.0,0.0,0.0
+PASFMLDistanceFrmADD,1,693,false,false,177,10,1,0,Front middle Left area distance display\n倒车雷达左中前区距离显示,0.0,0.0,0.0
+PASFMRDistanceFrmADD,1,693,false,false,199,10,1,0,Front Middle Right area distance display\n倒车雷达右中前区距离显示,0.0,0.0,0.0
+PASFRDistanceFrmADD,1,693,false,false,201,10,1,0,Front Right area distance display\n倒车雷达右前区距离显示,0.0,0.0,0.0
+PASRLDistanceFrmADD,1,693,false,false,223,10,1,0,Rear Left area distance display\n倒车雷达左后区距离显示,0.0,0.0,0.0
+PASRMLDistanceFrmADD,1,693,false,false,225,10,1,0,Rear Middle Left area distance display\n倒车雷达左中后区距离显示,0.0,0.0,0.0
+PASRMRDistanceFrmADD,1,693,false,false,247,10,1,0,Rear Middle Right area distance display \n倒车雷达右中后区距离显示,0.0,0.0,0.0
+PASRRDistanceFrmADD,1,693,false,false,249,10,1,0,Rear Right area distance display\n倒车雷达右后区距离显示,0.0,0.0,0.0
+PASSDWFLSideDistanceFrmADD,1,693,false,false,271,10,1,0,Front Left side area distance display\n左前侧边障碍物距离,0.0,0.0,0.0
+PASSDWFMLSideDistanceFrmADD,1,693,false,false,273,10,1,0,Front Middle Left side area distance display\n左中前障碍物距离,0.0,0.0,0.0
+PASSDWFMRSideDistanceFrmADD,1,693,false,false,295,10,1,0,Front Middle Right side area distance display\n右中前障碍物距离,0.0,0.0,0.0
+PASSDWFRSideDistanceFrmADD,1,693,false,false,297,10,1,0,Front Right side area distance display\n右前侧边障碍物距离,0.0,0.0,0.0
+PASSDWRLSideDistanceFrmADD,1,693,false,false,319,10,1,0,Rear Left side area distance display\n左后侧边障碍物距离,0.0,0.0,0.0
+PASSDWRMLSideDistanceFrmADD,1,693,false,false,321,10,1,0,Rear Middle Left side area distance display\n左中后障碍物距离,0.0,0.0,0.0
+PASSDWRMRSideDistanceFrmADD,1,693,false,false,343,10,1,0,Rear Middle Right side area distance display\n右中后障碍物距离,0.0,0.0,0.0
+PASSDWRRSideDistanceFrmADD,1,693,false,false,345,10,1,0,Rear Right side area distance display\n右后侧边障碍物距离,0.0,0.0,0.0
+PASProgressSigGrpChks,1,693,false,false,367,8,1,0,,0.0,0.0,0.0
+PASProgressSigGrpCntr,1,693,false,false,371,4,1,0,,0.0,0.0,0.0
+ParkProgressSigLFPosYFrmADD,1,693,false,false,383,16,0.01,-327.67,Parking Progress Left Front Position Y\n预期单步泊车位置左前角点纵坐标,0.0,0.0,0.0
+ParkProgressSigLRPosXFrmADD,1,693,false,false,399,16,0.01,-327.67,Parking Progress Left Rear Position X\n预期单步泊车位置左后角点横坐标,0.0,0.0,0.0
+ParkProgressSigLRPosYFrmADD,1,693,false,false,415,16,0.01,-327.67,Parking Progress Left Rear Position Y\n预期单步泊车位置左后角点纵坐标,0.0,0.0,0.0
+ParkProgressSigRFPosXFrmADD,1,693,false,false,431,16,0.01,-327.67,Parking Progress Right Front Position X\n预期单步泊车位置右前角点横坐标,0.0,0.0,0.0
+ParkProgressSigRFPosYFrmADD,1,693,false,false,447,16,0.01,-327.67,Parking Progress Right Front Position Y\n预期单步泊车位置右前角点纵坐标,0.0,0.0,0.0
+ParkProgressSigRRPosXFrmADD,1,693,false,false,463,16,0.01,-327.67,Parking Progress Right Rear Position X\n预期单步泊车位置右后角点横坐标,0.0,0.0,0.0
+ParkProgressSigRRPosYFrmADD,1,693,false,false,479,16,0.01,-327.67,Parking Progress Right Rear Position Y\n预期单步泊车位置右后角点纵坐标,0.0,0.0,0.0
+ParkProgressSigLFPosXFrmADD,1,693,false,false,495,16,0.01,-327.67,Parking Progress Left Front Position X\n预期单步泊车位置左前角点横坐标,0.0,0.0,0.0
+PASWorkingModeSigGrpChks,1,775,false,false,7,8,1,0,,0.0,0.0,0.0
+PASSubFunAvaiFrmADD,1,775,false,false,15,3,1,0,PAS Subsystem Function Available \nPAS子系统状态,0.0,0.0,0.0
+PASWorkingModeSigGrpCntr,1,775,false,false,11,4,1,0,,0.0,0.0,0.0
+PASWorkingModeFrmADD,1,775,false,false,23,3,1,0,PAS Working mode of reversing radar\n倒车雷达的工作模式,0.0,0.0,0.0
+LowPwrReqFrLdrFrmADD,1,873,false,false,23,2,1.0,0.0,ADD发送的管理激光雷达供电的请求信号,0.0,0.0,0.0
+LowPwrReqFrRdrFrmADD,1,873,false,false,21,2,1.0,0.0,ADD发送的管理毫米波雷达供电的请求信号,0.0,0.0,0.0
+ADD2BLEMForRPA00,1,238,false,false,7,64,1,0,RPA路由功能,0.0,0.0,0.0
+ADD2BLEMForRPA01,1,238,false,false,71,64,1,0,RPA路由功能,0.0,0.0,0.0
+ADD2BLEMForRPA02,1,238,false,false,135,64,1,0,RPA路由功能,0.0,0.0,0.0
+ADD2BLEMForRPA03,1,238,false,false,199,16,1,0,RPA路由功能,0.0,0.0,0.0
+ADD2BLEMForRPA00FV,1,238,false,false,215,16,1,0,,0.0,0.0,0.0
+ADD2BLEMForRPA00MAC,1,238,false,false,231,32,1,0,,0.0,0.0,0.0
+ADDIMUSigGrpChks,1,239,false,false,7,8,1,0,,0.0,0.0,0.0
+ADDIMUSigGrpCntr,1,239,false,false,11,4,1,0,,0.0,0.0,0.0
+XAccelValFrmADD,1,239,false,false,23,20,0.001,-98.1,IMUx轴加速度，m/s^2\n[-10g，10g]， g:9.81,0.0,0.0,0.0
+XAccelStaFrmADD,1,239,false,false,33,2,1,0,IMUx轴加速度状态位 0正常 1功能安全异常 2超量程 3无效数值,0.0,0.0,0.0
+XAngRateValFrmADD,1,239,false,false,47,22,1e-05,-8.72665,'IMUx轴角速率，rad/s\n[-500°/s，500°/s]，pi:3.1415926'\n\n,0.0,0.0,0.0
+YAccelValFrmADD,1,239,false,false,71,20,0.001,-98.1,IMUy轴加速度 m s^2\n  10g 10g  g 9.81,0.0,0.0,0.0
+YAngRateValFrmADD,1,239,false,false,95,22,1e-05,-8.72665,IMUy轴角速率 rad s\n  500 s 500 s  pi 3.1415926,0.0,0.0,0.0
+ZAccelValFrmADD,1,239,false,false,119,20,0.001,-98.1,IMUz轴加速度 m s^2\n  10g 10g  g 9.81,0.0,0.0,0.0
+ZAngRateValFrmADD,1,239,false,false,143,22,1e-05,-8.72665,IMUz轴角速率 rad s\n  500 s 500 s  pi 3.1415926,0.0,0.0,0.0
+YAngRateStaFrmADD,1,239,false,false,163,2,1,0,IMUy轴角速度状态位 0正常 1功能安全异常 2超量程 3无效数值,0.0,0.0,0.0
+YAccelStaFrmADD,1,239,false,false,161,2,1,0,IMUy轴加速度状态位 0正常 1功能安全异常 2超量程 3无效数值,0.0,0.0,0.0
+ZAccelStaFrmADD,1,239,false,false,171,2,1,0,IMUz轴加速度状态位 0正常 1功能安全异常 2超量程 3无效数值,0.0,0.0,0.0
+ZAngRateStaFrmADD,1,239,false,false,169,2,1,0,IMUz轴角速度状态位 0正常 1功能安全异常 2超量程 3无效数值,0.0,0.0,0.0
+XAngRateStaFrmADD,1,239,false,false,177,2,1,0,IMUx轴角速度状态位 0正常 1功能安全异常 2超量程 3无效数值,0.0,0.0,0.0
+ADDChassisBkpNodeAddress,1,1331,false,false,7,8,1,0,Node source address,0.0,0.0,0.0
+ADDChassisBkpActiveWakeup,1,1331,false,false,12,1,1,0,Active Wakeup Bit,0.0,0.0,0.0
+ADDChassisBkpRepeatMsgReq,1,1331,false,false,8,1,1,0,Repeat Message Request Bit,0.0,0.0,0.0
+UDB23ADD,1,1331,false,false,23,1,1,0,,0.0,0.0,0.0
+UDB22ADD,1,1331,false,false,22,1,1,0,,0.0,0.0,0.0
+UDB21ADD,1,1331,false,false,21,1,1,0,,0.0,0.0,0.0
+UDB20ADD,1,1331,false,false,20,1,1,0,,0.0,0.0,0.0
+UDB19ADD,1,1331,false,false,19,1,1,0,,0.0,0.0,0.0
+UDB18ADD,1,1331,false,false,18,1,1,0,,0.0,0.0,0.0
+UDB17ADD,1,1331,false,false,17,1,1,0,,0.0,0.0,0.0
+ADDChassisBkpRepeatMsgSt,1,1331,false,false,16,1,1,0,Repeat Message State indication,0.0,0.0,0.0
+UDB31ADD,1,1331,false,false,31,1,1,0,,0.0,0.0,0.0
+UDB30ADD,1,1331,false,false,30,1,1,0,,0.0,0.0,0.0
+UDB29ADD,1,1331,false,false,29,1,1,0,,0.0,0.0,0.0
+UDB28ADD,1,1331,false,false,28,1,1,0,,0.0,0.0,0.0
+UDB27ADD,1,1331,false,false,27,1,1,0,,0.0,0.0,0.0
+UDB26ADD,1,1331,false,false,26,1,1,0,,0.0,0.0,0.0
+UDB25ADD,1,1331,false,false,25,1,1,0,,0.0,0.0,0.0
+UDB24ADD,1,1331,false,false,24,1,1,0,,0.0,0.0,0.0
+UDB39ADD,1,1331,false,false,39,1,1,0,,0.0,0.0,0.0
+UDB38ADD,1,1331,false,false,38,1,1,0,,0.0,0.0,0.0
+UDB37ADD,1,1331,false,false,37,1,1,0,,0.0,0.0,0.0
+UDB36ADD,1,1331,false,false,36,1,1,0,,0.0,0.0,0.0
+UDB35ADD,1,1331,false,false,35,1,1,0,,0.0,0.0,0.0
+UDB34ADD,1,1331,false,false,34,1,1,0,,0.0,0.0,0.0
+UDB33ADD,1,1331,false,false,33,1,1,0,,0.0,0.0,0.0
+UDB32ADD,1,1331,false,false,32,1,1,0,,0.0,0.0,0.0
+UDB47ADD,1,1331,false,false,47,1,1,0,,0.0,0.0,0.0
+UDB46ADD,1,1331,false,false,46,1,1,0,,0.0,0.0,0.0
+UDB45ADD,1,1331,false,false,45,1,1,0,,0.0,0.0,0.0
+UDB44ADD,1,1331,false,false,44,1,1,0,,0.0,0.0,0.0
+UDB43ADD,1,1331,false,false,43,1,1,0,,0.0,0.0,0.0
+UDB42ADD,1,1331,false,false,42,1,1,0,,0.0,0.0,0.0
+UDB41ADD,1,1331,false,false,41,1,1,0,,0.0,0.0,0.0
+UDB40ADD,1,1331,false,false,40,1,1,0,,0.0,0.0,0.0
+NMKeepAwkRsnADD,1,1331,false,false,48,9,1,0,,0.0,0.0,0.0
+ADDChassisBkpNodeAddress1,1,1326,false,false,7,8,1,0,Node source address,0.0,0.0,0.0
+ADDChassisBkpActiveWakeup1,1,1326,false,false,12,1,1,0,Active Wakeup Bit,0.0,0.0,0.0
+ADDChassisBkpRepeatMsgReq1,1,1326,false,false,8,1,1,0,Repeat Message Request Bit,0.0,0.0,0.0
+UDB23ADD,1,1326,false,false,23,1,1,0,,0.0,0.0,0.0
+UDB22ADD,1,1326,false,false,22,1,1,0,,0.0,0.0,0.0
+UDB21ADD,1,1326,false,false,21,1,1,0,,0.0,0.0,0.0
+UDB20ADD,1,1326,false,false,20,1,1,0,,0.0,0.0,0.0
+UDB19ADD,1,1326,false,false,19,1,1,0,,0.0,0.0,0.0
+UDB18ADD,1,1326,false,false,18,1,1,0,,0.0,0.0,0.0
+UDB17ADD,1,1326,false,false,17,1,1,0,,0.0,0.0,0.0
+ADDChassisBkpRepeatMsgSt1,1,1326,false,false,16,1,1,0,Repeat Message State indication,0.0,0.0,0.0
+UDB31ADD,1,1326,false,false,31,1,1,0,,0.0,0.0,0.0
+UDB30ADD,1,1326,false,false,30,1,1,0,,0.0,0.0,0.0
+UDB29ADD,1,1326,false,false,29,1,1,0,,0.0,0.0,0.0
+UDB28ADD,1,1326,false,false,28,1,1,0,,0.0,0.0,0.0
+UDB27ADD,1,1326,false,false,27,1,1,0,,0.0,0.0,0.0
+UDB26ADD,1,1326,false,false,26,1,1,0,,0.0,0.0,0.0
+UDB25ADD,1,1326,false,false,25,1,1,0,,0.0,0.0,0.0
+UDB24ADD,1,1326,false,false,24,1,1,0,,0.0,0.0,0.0
+UDB39ADD,1,1326,false,false,39,1,1,0,,0.0,0.0,0.0
+UDB38ADD,1,1326,false,false,38,1,1,0,,0.0,0.0,0.0
+UDB37ADD,1,1326,false,false,37,1,1,0,,0.0,0.0,0.0
+UDB36ADD,1,1326,false,false,36,1,1,0,,0.0,0.0,0.0
+UDB35ADD,1,1326,false,false,35,1,1,0,,0.0,0.0,0.0
+UDB34ADD,1,1326,false,false,34,1,1,0,,0.0,0.0,0.0
+UDB33ADD,1,1326,false,false,33,1,1,0,,0.0,0.0,0.0
+UDB32ADD,1,1326,false,false,32,1,1,0,,0.0,0.0,0.0
+UDB47ADD,1,1326,false,false,47,1,1,0,,0.0,0.0,0.0
+UDB46ADD,1,1326,false,false,46,1,1,0,,0.0,0.0,0.0
+UDB45ADD,1,1326,false,false,45,1,1,0,,0.0,0.0,0.0
+UDB44ADD,1,1326,false,false,44,1,1,0,,0.0,0.0,0.0
+UDB43ADD,1,1326,false,false,43,1,1,0,,0.0,0.0,0.0
+UDB42ADD,1,1326,false,false,42,1,1,0,,0.0,0.0,0.0
+UDB41ADD,1,1326,false,false,41,1,1,0,,0.0,0.0,0.0
+UDB40ADD,1,1326,false,false,40,1,1,0,,0.0,0.0,0.0
+NMKeepAwkRsnADD,1,1326,false,false,48,9,1,0,,0.0,0.0,0.0
+BcpSysStsSigGrpChks,1,336,false,false,7,8,1,0,,0.0,0.0,0.0
+BCPMstCylPVld,1,336,false,false,15,2,1.0,0.0,QualifierforBCPmastercyclinder'spressuresignal,0.0,0.0,0.0
+BcpSysStsSigGrpCntr,1,336,false,false,11,4,1,0,,0.0,0.0,0.0
+BrkFldWarn,1,336,false,false,23,1,1,0,Brake Fluid Warning,0.0,0.0,0.0
+BrkPedlAppld,1,336,false,false,22,1,1,0,Indicates whether the driver operates the\n brake pedal. Only active when the driver brakes,0.0,0.0,0.0
+BrkPedlAppldVld,1,336,false,false,21,2,1,0,Qualifier for brake pedal applied signal,0.0,0.0,0.0
+BCPBrkLiIllmnReq,1,336,false,false,19,1,1,0,Request to illuminate brake light from BCP,0.0,0.0,0.0
+InpRodStkVld,1,336,false,false,18,1,1,0,Qualifier for Input Rod Stroke signal,0.0,0.0,0.0
+InpRodStk,1,336,false,false,17,10,0.05,-5.0,Input Rod Stroke,0.0,0.0,0.0
+BrkPedlPerctVld,1,336,false,false,39,1,1,0,Qualifier for Brake Pedal Percentage signal,0.0,0.0,0.0
+BrkPedlPerct,1,336,false,false,38,7,1,0,Brake Pedal Percentage,0.0,0.0,0.0
+BCPSysSts,1,336,false,false,47,2,1,0,BCP System Status,0.0,0.0,0.0
+BCPBrkSysWarnText,1,336,false,false,45,3,1,0,BCP Brake System Warning Text,0.0,0.0,0.0
+BrkFldWarnVld,1,336,false,false,42,1,1,0,Qualifier for Brake Fluid Warning Signal,0.0,0.0,0.0
+BCPSimulatorP,1,336,false,false,41,10,0.3,-30.0,Pressure in the BCP Plunger,0.0,0.0,0.0
+BCPSimulatorPVld,1,336,false,false,63,2,1.0,0.0,Qualifier for BCP Plunger's pressure signal,0.0,0.0,0.0
+APBAplAvlBCP,1,336,false,false,61,2,1.0,0.0,APB Apply Avalible from BCP\nBCP侧卡钳是否可以夹紧,0.0,0.0,0.0
+APBRelAvlBCP,1,336,false,false,59,2,1,0,APB Release Avalible from BCP\nBCP侧卡钳是否可以释放,0.0,0.0,0.0
+BCPMstCylP,1,336,false,false,57,10,0.3,-30.0,PressureintheBCPmastercylinder,0.0,0.0,0.0
+BrkAssSigGrpChks,1,336,false,false,79,8,1,0,,0.0,0.0,0.0
+BrkAssSigGrpCntr,1,336,false,false,83,4,1,0,,0.0,0.0,0.0
+ABAAvl,1,336,false,false,95,1,1,0,ABA available,0.0,0.0,0.0
+ABAActv,1,336,false,false,94,1,1,0,ABA active,0.0,0.0,0.0
+HBAAvl,1,336,false,false,93,1,1,0,HBA available,0.0,0.0,0.0
+HBAActv,1,336,false,false,92,1,1,0,HBA active,0.0,0.0,0.0
+APBStsBkp,1,336,false,false,91,3,1,0,BCP&BCS APB Status,0.0,0.0,0.0
+BCPKeepAwakeReq,1,336,false,false,111,1,1,0,BCP Keep Awake Request,0.0,0.0,0.0
+HBBActv,1,336,false,false,110,1,1,0,HBB active,0.0,0.0,0.0
+BCPSysCtrlSigGrpChks,1,340,false,false,7,8,1,0,,0.0,0.0,0.0
+BCPSysCtrlSigGrpCntr,1,340,false,false,11,4,1,0,,0.0,0.0,0.0
+ActCirNoPressureQ,1,340,false,false,23,2,1,0,Indicate whether the Pressure can be calculated,0.0,0.0,0.0
+BCPBrkSysFTarDrvr,1,340,false,false,21,14,8,-131008,Target brake force from driver,0.0,0.0,0.0
+BCPBrkSysActCircNoP,1,340,false,false,39,1,1,0,BCP Information about ventingandapply,0.0,0.0,0.0
+BCPBrkSysFTarDrvrVld,1,340,false,false,38,2,1,0,Qualifier for Target brake force from driver signal,0.0,0.0,0.0
+InpRodStkBkpVld,1,340,false,false,36,1,1,0,Qualifier for Input Rod Stroke backup signal,0.0,0.0,0.0
+InpRodStkBkp,1,340,false,false,33,10,0.05,-5.0,Input Rod Stroke Backup,0.0,0.0,0.0
+BcpBrkSysCtrlBkpSigGrpChks,1,340,false,false,103,8,1,0,,0.0,0.0,0.0
+BcpBrkSysCtrlBkpSigGrpCntr,1,340,false,false,107,4,1,0,,0.0,0.0,0.0
+BrkSysCmptIdx,1,340,false,false,135,4,1,0,BCP is sending anstatic number which must\nfittothesamenumbermonitoredinBCPtoensurethe\ncompatibilityofthetwoECU,0.0,0.0,0.0
+APBStsBkpFusion,1,340,false,false,131,3,1.0,0.0,,0.0,0.0,0.0
+BrkSysPRnt,1,340,false,false,143,8,1,0,BCP Runouit Pressure,0.0,0.0,0.0
+BrkSysActCircNoP,1,340,false,false,151,1,1,0,BCP Information about ventingandapply,0.0,0.0,0.0
+BrkSysHBCReq,1,340,false,false,150,1,1,0,Enumeration for telling BCS which support \nis necessary,0.0,0.0,0.0
+BrkSysBCPDiagActv,1,340,false,false,149,1,1,0,BCP is in extended Diag Session,0.0,0.0,0.0
+BrkSysPRntVld,1,340,false,false,148,2,1,0,Qualifier for BCP_Runouit Pressure signal,0.0,0.0,0.0
+RpbBkpSigGrpChks,1,340,false,false,159,8,1,0,,0.0,0.0,0.0
+APBAplAvlBCPFusion,1,340,false,false,167,2,1.0,0.0,,0.0,0.0,0.0
+APBRelAvlBCPFusion,1,340,false,false,165,2,1,0,,0.0,0.0,0.0
+RpbBkpSigGrpCntr,1,340,false,false,163,4,1,0,,0.0,0.0,0.0
+RPBActrStSec,1,340,false,false,175,3,1,0,CurrentstateofAPBactuatorconnectedtoECU,0.0,0.0,0.0
+RPBRPBCoornSec,1,340,false,false,183,8,1,0,StatusofParkBrakeinSecondarySystem.\nbit position 0 - HostAvailabilityFull\nbit position 1 - HostAvailabilityRelOnly\nbit position 2 - DiagnosisModeActive\nbit position 3 - CommunicationAvailable,0.0,0.0,0.0
+BCPKeepAwakeReqBkp,1,344,false,false,63,1,1,0,BCP Keep Awake Request Backup,0.0,0.0,0.0
+BrkSysAPCBkpSigGrpChks,1,487,false,false,7,8,1,0,,0.0,0.0,0.0
+BrkSysAPBBkp2MainSafeLimCom2,1,487,false,false,15,2,1,0,APB Backup to main safe limit,0.0,0.0,0.0
+BrkSysAPCBkpSigGrpCntr,1,487,false,false,11,4,1,0,,0.0,0.0,0.0
+BrkSysAPBParkBrkReqBkp2MainCom2,1,487,false,false,22,3,1,0,APB Parking Brake Request Backup to Main,0.0,0.0,0.0
+BrkSysAPCBkp2MainStCom2,1,487,false,false,19,4,1,0,Parking function status from backup controller to main,0.0,0.0,0.0
+BcpBrkSysBkpSigGrpChks,1,487,false,false,31,8,1,0,,0.0,0.0,0.0
+BrkSysBCPLdmBrkActActr,1,487,false,false,39,2,1,0,IndicatetheactualLDMactuator,0.0,0.0,0.0
+BrkSysBCPLdmBrkActAxle,1,487,false,false,37,2,1,0,User earor front genetor to execute LDMforcerequest,0.0,0.0,0.0
+BcpBrkSysBkpSigGrpCntr,1,487,false,false,35,4,1,0,,0.0,0.0,0.0
+BrkSysLdmFTarBrkBCP,1,487,false,false,47,13,8,-65472,Fx request out of BCP LDM functions,0.0,0.0,0.0
+BrkSysBCPLdmBrkActTyp,1,487,false,false,61,3,1,0,LDM Brake Forcetype,0.0,0.0,0.0
+BrkSysBCPLdmSysModReq,1,487,false,false,58,3,1,0,System Mode Request from BCP,0.0,0.0,0.0
+BrkSysLdmFTarMaxPt,1,487,false,true,71,10,64,0,Allowed Max PT force from BCP LDM,0.0,0.0,0.0
+BrkSysBCPLdmBrkActGenr,1,487,false,false,77,2,1,0,If generator isused for LDM to decelerate,0.0,0.0,0.0
+BrkSysLdmFTarBrkBCPVld,1,487,false,false,75,2,1,0,Qualifier for Fxrequest out of BCP LDM functions signal,0.0,0.0,0.0
+BrkSysLdmFTarMinPt,1,487,false,true,73,10,64,0,Allowed Min PT force from BCP LDM,0.0,0.0,0.0
+BrkSysLdmGlbStsAct,1,487,false,false,95,2,1,0,LDM function status arbitration,0.0,0.0,0.0
+BrkSysParkBrkReq,1,487,false,false,93,3,1,0,BCP request APB,0.0,0.0,0.0
+BcpBrkSysIndcnBkpSigGrpChks,1,487,false,false,103,8,1,0,,0.0,0.0,0.0
+BrkSysBrkPedlAppld,1,487,false,false,111,1,1,0,Indicates whether the driver operates the\nbrakepedal.Only active when the driver brakes,0.0,0.0,0.0
+BrkSysBrkPedlAppldVld,1,487,false,false,110,2,1,0,Qualifier for brake system brake pedal applied signal,0.0,0.0,0.0
+BrkSysEnaActvCtrlByDrvr,1,487,false,false,108,1,1,0,Indicate if the BCP pressure control is dominated by driver,0.0,0.0,0.0
+BcpBrkSysIndcnBkpSigGrpCntr,1,487,false,false,107,4,1,0,,0.0,0.0,0.0
+BrkSysPRednPotnl,1,487,false,false,119,8,0.5,0.0,Indicates the pressure reduction potential from BCP to BCS  to limit the max CRB brakeregen.,0.0,0.0,0.0
+BrkSysFTarDrvr,1,487,false,false,127,11,64,-131008,Target brake force from driver,0.0,0.0,0.0
+BrkSysFTarDrvrVld,1,487,false,false,132,2,1,0,Qualifier for Target brake force from driver signal,0.0,0.0,0.0
+BrkSysPRednPotnlVld,1,487,false,false,130,2,1,0,Qualifier for pressure reduction potential signal,0.0,0.0,0.0
+BrkSysWarnLampReq,1,487,false,false,143,2,1,0,Indicatethewarninglampinfothatshouldbeset,0.0,0.0,0.0
+RPBHydPSpprtChks,1,487,false,false,151,8,1,0,E2E Checksum for 0xB7 at byte9 to byte10,0.0,0.0,0.0
+BCPDrvBrakeActType,1,487,false,false,159,3,1.0,0.0,Indicate if the BCP pressure control is dominated by driver,0.0,0.0,0.0
+RecuSuppressEna,1,487,false,false,156,1,1,0,CRB Relevant Signal,0.0,0.0,0.0
+RPBHydPSpprtCntr,1,487,false,false,155,4,1,0,E2E Counter for 0xB7 at byte9 to byte10,0.0,0.0,0.0
+RPBHydPSpprtP,1,487,false,false,167,8,1,0,Signalaccording to VDA305 100Pbc Out Hps Pressure,0.0,0.0,0.0
+FxTargetDriverMinFrict,1,487,false,false,175,14,8,-131008,This signal shall provide the minimal friction brake force request from DBR,0.0,0.0,0.0
+RPBHydPSpprtReq,1,487,false,false,177,2,1,0,Signal according to VDA305 100Pbc Out Hps Request,0.0,0.0,0.0
+BCPRecuStatusAct,1,487,false,false,185,2,1,0,Qualifier for pressure reduction potential signal,0.0,0.0,0.0
+BCPChassisBkpNodeAddress,1,1318,false,false,7,8,1,0,Node source address,0.0,0.0,0.0
+BCPChassisBkpActiveWakeup,1,1318,false,false,12,1,1,0,Active Wakeup Bit,0.0,0.0,0.0
+BCPChassisBkpRepeatMsgReq,1,1318,false,false,8,1,1,0,Repeat Message Request Bit,0.0,0.0,0.0
+UDB23BCP,1,1318,false,false,23,1,1,0,,0.0,0.0,0.0
+UDB22BCP,1,1318,false,false,22,1,1,0,,0.0,0.0,0.0
+UDB21BCP,1,1318,false,false,21,1,1,0,,0.0,0.0,0.0
+UDB20BCP,1,1318,false,false,20,1,1,0,,0.0,0.0,0.0
+UDB19BCP,1,1318,false,false,19,1,1,0,,0.0,0.0,0.0
+UDB18BCP,1,1318,false,false,18,1,1,0,,0.0,0.0,0.0
+UDB17BCP,1,1318,false,false,17,1,1,0,,0.0,0.0,0.0
+BCPChassisBkpRepeatMsgSt,1,1318,false,false,16,1,1,0,Repeat Message State indication,0.0,0.0,0.0
+UDB31BCP,1,1318,false,false,31,1,1,0,,0.0,0.0,0.0
+UDB30BCP,1,1318,false,false,30,1,1,0,,0.0,0.0,0.0
+UDB29BCP,1,1318,false,false,29,1,1,0,,0.0,0.0,0.0
+UDB28BCP,1,1318,false,false,28,1,1,0,,0.0,0.0,0.0
+UDB27BCP,1,1318,false,false,27,1,1,0,,0.0,0.0,0.0
+UDB26BCP,1,1318,false,false,26,1,1,0,,0.0,0.0,0.0
+UDB25BCP,1,1318,false,false,25,1,1,0,,0.0,0.0,0.0
+UDB24BCP,1,1318,false,false,24,1,1,0,,0.0,0.0,0.0
+UDB39BCP,1,1318,false,false,39,1,1,0,,0.0,0.0,0.0
+UDB38BCP,1,1318,false,false,38,1,1,0,,0.0,0.0,0.0
+UDB37BCP,1,1318,false,false,37,1,1,0,,0.0,0.0,0.0
+UDB36BCP,1,1318,false,false,36,1,1,0,,0.0,0.0,0.0
+UDB35BCP,1,1318,false,false,35,1,1,0,,0.0,0.0,0.0
+UDB34BCP,1,1318,false,false,34,1,1,0,,0.0,0.0,0.0
+UDB33BCP,1,1318,false,false,33,1,1,0,,0.0,0.0,0.0
+UDB32BCP,1,1318,false,false,32,1,1,0,,0.0,0.0,0.0
+UDB47BCP,1,1318,false,false,47,1,1,0,,0.0,0.0,0.0
+UDB46BCP,1,1318,false,false,46,1,1,0,,0.0,0.0,0.0
+UDB45BCP,1,1318,false,false,45,1,1,0,,0.0,0.0,0.0
+UDB44BCP,1,1318,false,false,44,1,1,0,,0.0,0.0,0.0
+UDB43BCP,1,1318,false,false,43,1,1,0,,0.0,0.0,0.0
+UDB42BCP,1,1318,false,false,42,1,1,0,,0.0,0.0,0.0
+UDB41BCP,1,1318,false,false,41,1,1,0,,0.0,0.0,0.0
+UDB40BCP,1,1318,false,false,40,1,1,0,,0.0,0.0,0.0
+NMKeepAwkRsnBCP,1,1318,false,false,48,9,1,0,,0.0,0.0,0.0
+BcsSysCtrSigGrpChks,1,337,false,false,7,8,1,0,,0.0,0.0,0.0
+BrkLiIllmnReq,1,337,false,false,15,1,1,0,Request to illuminate brake light,0.0,0.0,0.0
+HydBrkFExist,1,337,false,false,14,1,1,0,Hydraulic brake force exsit,0.0,0.0,0.0
+VehStandStillIndcr,1,337,false,false,13,1,1,0,Indicate whether the vehicle is standstill or not,0.0,0.0,0.0
+VehStandStillIndcrVld,1,337,false,false,12,1,1,0,Qualifier for vehicle standstill indicate signal,0.0,0.0,0.0
+BcsSysCtrSigGrpCntr,1,337,false,false,11,4,1,0,,0.0,0.0,0.0
+BrkSysWarnLamp,1,337,false,false,23,2,1,0,Brake System Warning Lamp,0.0,0.0,0.0
+ESCPataLamp,1,337,false,false,21,2,1,0,ESC diable status,0.0,0.0,0.0
+ESCIntvLamp,1,337,false,false,19,1,1,0,ESC Intervention Lamp,0.0,0.0,0.0
+VDCActv,1,337,false,false,18,1,1,0,VDC Controller Active,0.0,0.0,0.0
+TCSActv,1,337,false,false,17,1,1,0,TCS Controller Active,0.0,0.0,0.0
+ABSActv,1,337,false,false,16,1,1,0,ABS Control Active,0.0,0.0,0.0
+EBDActv,1,337,false,false,31,1,1,0,EBD Control Active,0.0,0.0,0.0
+ESCErrDetd,1,337,false,false,30,1,1,0,ESC error detected,0.0,0.0,0.0
+ABSErrDetd,1,337,false,false,29,1,1,0,ABS error detected,0.0,0.0,0.0
+EBDErrDetd,1,337,false,false,28,1,1,0,EBD error detected,0.0,0.0,0.0
+EmgyBrkLiReq,1,337,false,false,27,1,1,0,Emergency brake light request,0.0,0.0,0.0
+HRBAvl,1,337,false,false,26,1,1,0,HRB active,0.0,0.0,0.0
+HRBActv,1,337,false,false,25,1,1,0,HRB available,0.0,0.0,0.0
+MstCylPCmp,1,337,false,false,39,12,0.1,0.0,Pressure in the master cylinder  offset is included .,0.0,0.0,0.0
+APBTxtDip,1,337,false,false,43,4,1,0,APB Text Display,0.0,0.0,0.0
+ESCSwitchAvl,1,337,false,false,55,3,1,0,ESC Switch availability\nESC开关可用状态,0.0,0.0,0.0
+BCSBrkSysWarnText,1,337,false,false,52,3,1,0,BCS Brake System Warning Text,0.0,0.0,0.0
+MstCylPVld,1,337,false,false,48,1,1,0,Qualifier for the master cylinder pressure signal,0.0,0.0,0.0
+HBBSts,1,337,false,false,63,2,1,0,HBB function status,0.0,0.0,0.0
+HDCAvl,1,337,false,false,61,1,1,0,HDC function available,0.0,0.0,0.0
+HDCCtrlSts,1,337,false,false,60,2,1,0,HDC function control status,0.0,0.0,0.0
+CSTSts,1,337,false,false,58,2,1,0,CST function status,0.0,0.0,0.0
+HBCActv,1,337,false,false,56,1,1,0,HBC active,0.0,0.0,0.0
+EstimdSumOfVehHydBrkEachWhl,1,337,false,false,71,15,8,-250000,Estimated sum of vehicle hydraulic brake force acting on each wheel,0.0,0.0,0.0
+BcsBasicFcnSigGrpChks,1,337,false,false,87,8,1,0,,0.0,0.0,0.0
+BcsBasicFcnSigGrpCntr,1,337,false,false,91,4,1,0,,0.0,0.0,0.0
+DrvOffTqThd,1,337,false,false,103,15,1,0,Drive off torque threshold,0.0,0.0,0.0
+SCMActv,1,337,false,false,104,1,1,0,SCM active,0.0,0.0,0.0
+DSTActv,1,337,false,false,119,1,1,0,DST active,0.0,0.0,0.0
+APBSts,1,337,false,false,118,3,1,0,APB Status,0.0,0.0,0.0
+APBErrDetd,1,337,false,false,115,2,1,0,APB Error Status,0.0,0.0,0.0
+DSTSteerTqReq,1,337,false,true,112,9,0.1,0.0,Steering wheel torque requested from DST,0.0,0.0,0.0
+APBAplAvlBCS,1,337,false,false,135,2,1.0,0.0,APB Apply Avalible from BCS\nBCS侧卡钳是否可以夹紧,0.0,0.0,0.0
+APBRelAvlBCS,1,337,false,false,133,2,1,0,APB Release avalialbe from BCS\nBCS侧卡钳是否可以释放,0.0,0.0,0.0
+HHCActv,1,337,false,false,143,1,1,0,HHC active,0.0,0.0,0.0
+HHCAvl,1,337,false,false,142,1,1,0,HHC available,0.0,0.0,0.0
+AVHSts,1,337,false,false,141,2,1,0,AVH function status,0.0,0.0,0.0
+AVHAvl,1,337,false,false,139,1,1,0,AVH available,0.0,0.0,0.0
+SCMAvl,1,337,false,false,138,1,1,0,SCM Available,0.0,0.0,0.0
+CDPActv,1,337,false,false,137,1,1,0,CDP active,0.0,0.0,0.0
+CDPAvl,1,337,false,false,136,1,1,0,CDP available,0.0,0.0,0.0
+BCSKeepAwakeReq,1,337,false,false,151,1,1,0,BCS Keep Awake Request,0.0,0.0,0.0
+BcsExtdFcnSigGrpChks,1,337,false,false,175,8,1,0,,0.0,0.0,0.0
+BcsExtdFcnSigGrpCntr,1,337,false,false,179,4,1,0,,0.0,0.0,0.0
+ABPActv,1,337,false,false,191,1,1,0,ABP active,0.0,0.0,0.0
+AEBAvl,1,337,false,false,190,1,1,0,AEB available,0.0,0.0,0.0
+AEBActv,1,337,false,false,189,1,1,0,AEB active,0.0,0.0,0.0
+EBAActv,1,337,false,false,188,1,1,0,EBA active,0.0,0.0,0.0
+AWBAvl,1,337,false,false,199,1,1,0,AWB available,0.0,0.0,0.0
+AWBActv,1,337,false,false,198,1,1,0,AWB active,0.0,0.0,0.0
+ABPAvl,1,337,false,false,197,1,1,0,ABP available,0.0,0.0,0.0
+HDCUnAvlRsn,1,337,false,false,251,3,1,0,HDC function available,0.0,0.0,0.0
+HBBActive,1,337,false,false,248,1,1,0,BCS HBB Active,0.0,0.0,0.0
+BcsTqCtrlSigGrpChks,1,338,false,false,7,8,1,0,,0.0,0.0,0.0
+PtTqRednActvRA,1,338,false,false,15,1,1,0,Powertrain torque reduction active RA,0.0,0.0,0.0
+PtTqRednActvFA,1,338,false,false,14,1,1,0,Powertrain torque reduction active FA,0.0,0.0,0.0
+TarRecuTqReqSts,1,338,false,false,13,2,1,0,Status of Target Recuperation torque of Generator,0.0,0.0,0.0
+BcsTqCtrlSigGrpCntr,1,338,false,false,11,4,1,0,,0.0,0.0,0.0
+TarRecuTqReq,1,338,false,false,23,15,1,-32767,Target Recuperation Torque Request to Generator,0.0,0.0,0.0
+BCSLgtCtrlPtTarTqEna,1,338,false,false,24,1,1,0,BCS longitudinal powertrain torque request,0.0,0.0,0.0
+BCSLgtCtrlPtTarTq,1,338,false,true,39,16,1,0,BCS longitudinal powertrain target torque,0.0,0.0,0.0
+CstRgnBlendTqReqFA,1,338,false,true,55,16,1,0,Coast Regen Blending Torque Request FA,0.0,0.0,0.0
+CstRgnBlendTqReqRA,1,338,false,true,71,16,1,0,Coast Regen Blending Torque Request FA,0.0,0.0,0.0
+TarRdcdPtTqFA,1,338,false,true,87,16,1,0,Target reduced powertrain torque FA,0.0,0.0,0.0
+TarRdcdPtTqRA,1,338,false,true,103,16,1,0,Target reduced powertrain torque RA,0.0,0.0,0.0
+BiasMaxFrntAxle,1,338,false,false,119,7,1,0,The maxium percentage of Target Recuperation Torque executed on front axle,0.0,0.0,0.0
+DrgTqCtrlActvFA,1,338,false,false,112,1,1,0,Drag torque control active on front axle,0.0,0.0,0.0
+BiasMaxReAxle,1,338,false,false,127,7,1,0,The maxium percentage of Target Recuperation Torque executed on rear axle,0.0,0.0,0.0
+DrgTqCtrlActvRA,1,338,false,false,120,1,1,0,Drag torque control active on rear axle,0.0,0.0,0.0
+CstRgnBlendSts,1,338,false,false,135,2,1,0,Coast Regen Blending Status,0.0,0.0,0.0
+ApcFcnSigGrpChks,1,338,false,false,151,8,1,0,,0.0,0.0,0.0
+ApcFcnSigGrpCntr,1,338,false,false,155,4,1,0,,0.0,0.0,0.0
+APCFailrSts,1,338,false,false,167,4,1,0,detailed information why this APC maneuver failed,0.0,0.0,0.0
+APAActrAvl,1,338,false,false,163,1,1,0,Flag indicate APA availability for longitudinal control,0.0,0.0,0.0
+APCSts,1,338,false,false,162,3,1.0,0.0,Longitudinal controller status,0.0,0.0,0.0
+APCActvVehHld,1,338,false,false,175,1,1,0,Flag indicate that vehicle is activly hold by longitudinal actuator controller,0.0,0.0,0.0
+APCDrvrBrkOvrdFlg,1,338,false,false,174,1,1,0,Indicate driver brakes more than the system.,0.0,0.0,0.0
+RPAAVPActrAvl,1,338,false,false,173,2,1,0,Flag indicate RPA  AVP availability for longitudinal control,0.0,0.0,0.0
+WhlspdBkpFcnSigGrpChks,1,354,false,false,7,8,1,0,,0.0,0.0,0.0
+VehSpdBkpVld,1,354,false,false,15,1,1,0,Qualifierforvehiclespeedsignalbackup,0.0,0.0,0.0
+WhlspdBkpFcnSigGrpCntr,1,354,false,false,11,4,1,0,,0.0,0.0,0.0
+VehSpdBkp,1,354,false,false,23,16,0.05625,0.0,Vehiclespeedbackup,0.0,0.0,0.0
+BrkSysMonBkpSigGrpChks,1,354,false,false,47,8,1,0,,0.0,0.0,0.0
+BrkSysMonBkpSigGrpCntr,1,354,false,false,51,4,1,0,,0.0,0.0,0.0
+BrkSysMotPedlPosnDrvr,1,354,false,false,63,10,0.1,0.0,Accelerator pedal position requested by driver,0.0,0.0,0.0
+BrkSysAxRoadSlope,1,354,false,true,69,6,0.1,0.0,Road Slope used in brake system,0.0,0.0,0.0
+BrkSysBCSDiagActv,1,354,false,false,76,1,1,0,BCS is in extended Diag Session,0.0,0.0,0.0
+BrkSysSkidYawRate,1,354,false,false,75,1,1,0,Recognices the vehicle is skidding out\n of standstill,0.0,0.0,0.0
+BrkSysSkidDrv,1,354,false,false,74,1,1,0,Vehicle is drifting,0.0,0.0,0.0
+BrkSysAxRoadSlopeVld,1,354,false,false,73,2,1,0,Qualifier for Road Slope,0.0,0.0,0.0
+BrkSysShiftVol,1,354,false,false,87,8,0.04,0.0,Hydraulic volume is shifted for\n enabling correct plunger rest position,0.0,0.0,0.0
+BCSKeepAwakeReqBkp,1,354,false,false,120,1,1,0,BCS Keep Awake Request Backup,0.0,0.0,0.0
+RpbStsIndcnBkpSigGrpChks,1,354,false,false,135,8,1,0,,0.0,0.0,0.0
+APBAplAvlBCSFusion,1,354,false,false,143,2,1.0,0.0,,0.0,0.0,0.0
+APBRelAvlBCSFusion,1,354,false,false,141,2,1,0,,0.0,0.0,0.0
+RpbStsIndcnBkpSigGrpCntr,1,354,false,false,139,4,1,0,,0.0,0.0,0.0
+RPBPrkgBtnPsd,1,354,false,false,151,1,1,0,P button pressed,0.0,0.0,0.0
+RPBActrStPrim,1,354,false,false,150,3,1,0,Current state of APB actuator connected to ECU,0.0,0.0,0.0
+RPBIntReqPrim,1,354,false,false,147,4,1,0,Park Brake actuation request from Primary to Secondary System,0.0,0.0,0.0
+RPBPrkgBtnPsdVld,1,354,false,false,159,1,1,0,P button pressed valid,0.0,0.0,0.0
+RPBAxSt,1,354,false,false,158,2,1,0,Longititude Sensor State\n纵向加速度有效性,0.0,0.0,0.0
+APBStsFusion,1,354,false,false,156,3,1.0,0.0,,0.0,0.0,0.0
+PRBCoornPrim,1,354,false,false,167,8,1,0,Status of Park Brake in Primary System.\nbit position 0: HostAvailabilityFull\nbit position 1: HostAvailabilityRelOnly\nbit position 2: PrimarySystemAvailable \nbit position 3: ApplyFunctionalitiesAvailable\nbit position 4: DriveAwayIntention(VDA305_100)\nbit position 5: RollerTestBench(VDA305_100)\nbit position 6: DiagnosisModeActive\nbit position 7: TargetStatePMcForAbsMeasured,0.0,0.0,0.0
+RPBAx,1,354,false,false,175,16,0.0002,-5.0,Longititude Acceleration\n纵向加速度,0.0,0.0,0.0
+WhlStsSigGrpChks,1,179,false,false,7,8,1,0,,0.0,0.0,0.0
+WhlSpdFrntLeVld,1,179,false,false,15,1,1,0,Status of wheel speed front left,0.0,0.0,0.0
+WhlSpdFrntRiVld,1,179,false,false,14,1,1,0,Status of wheel speed front right,0.0,0.0,0.0
+WhlSpdReLeVld,1,179,false,false,13,1,1,0,Status of wheel speed rear left,0.0,0.0,0.0
+WhlSpdReRiVld,1,179,false,false,12,1,1,0,Status of wheel speed rear right,0.0,0.0,0.0
+WhlStsSigGrpCntr,1,179,false,false,11,4,1,0,,0.0,0.0,0.0
+WhlSpdFrntLe,1,179,false,false,23,16,0.05625,0.0,Wheel speed front left,0.0,0.0,0.0
+WhlSpdFrntRi,1,179,false,false,39,16,0.05625,0.0,Wheel speed front right,0.0,0.0,0.0
+WhlSpdReLe,1,179,false,false,55,16,0.05625,0.0,Wheel speed rear left,0.0,0.0,0.0
+WhlSpdReRi,1,179,false,false,71,16,0.05625,0.0,Wheel speed rear right,0.0,0.0,0.0
+VehSpd,1,179,false,false,87,16,0.05625,0.0,Vehicle speed,0.0,0.0,0.0
+VehSpdVld,1,179,false,false,103,1,1,0,Qualifier for vehicle speed signal,0.0,0.0,0.0
+WhlDirFrntLeVld,1,179,false,false,102,1,1,0,Qualifier for wheel moving direction front left,0.0,0.0,0.0
+WhlDirFrntLe,1,179,false,false,101,2,1,0,Wheel moving direction front left,0.0,0.0,0.0
+WhlSpdEdgeFrntLeVld,1,179,false,false,99,1,1,0,Qualifier for wheel speed Edges front left,0.0,0.0,0.0
+WhlDirFrntRiVld,1,179,false,false,98,1,1,0,Qualifier for wheel moving direction front right,0.0,0.0,0.0
+WhlDirFrntRi,1,179,false,false,97,2,1,0,Wheel moving direction front right,0.0,0.0,0.0
+WhlSpdEdgeFrntLe,1,179,false,false,111,8,1,0,Wheel speed Edges front left,0.0,0.0,0.0
+WhlSpdEdgeFrntRiVld,1,179,false,false,119,1,1,0,Qualifier for wheel speed Edges front right,0.0,0.0,0.0
+WhlDirReLeVld,1,179,false,false,118,1,1,0,Qualifier for wheel moving direction rear left,0.0,0.0,0.0
+WhlDirReLe,1,179,false,false,117,2,1,0,Wheel moving direction rear left,0.0,0.0,0.0
+WhlSpdEdgeReLeVld,1,179,false,false,115,1,1,0,Qualifier for wheel speed Edges rear left,0.0,0.0,0.0
+WhlDirReRiVld,1,179,false,false,114,1,1,0,Qualifier for wheel moving direction rear right,0.0,0.0,0.0
+WhlDirReRi,1,179,false,false,113,2,1,0,Wheel moving direction rear right,0.0,0.0,0.0
+WhlSpdEdgeFrntRi,1,179,false,false,127,8,1,0,Wheel speed Edges front right,0.0,0.0,0.0
+WhlSpdEdgeReLe,1,179,false,false,135,8,1,0,Wheel speed Edges rear left,0.0,0.0,0.0
+WhlSpdEdgeReRiVld,1,179,false,false,143,1,1,0,Qualifier for wheel speed Edges rear right,0.0,0.0,0.0
+WhlSpdEdgeReRi,1,179,false,false,151,8,1,0,Wheel speed Edges rear right,0.0,0.0,0.0
+WhlDstTiStampFrntLe,1,179,false,false,159,16,1,0,Wheel distance time stamp for front left,0.0,0.0,0.0
+WhlDstTiStampFrntRi,1,179,false,false,175,16,1,0,Wheel distance time stamp for front right,0.0,0.0,0.0
+WhlDstTiStampReLe,1,179,false,false,191,16,1,0,Wheel distance time stamp for rear left,0.0,0.0,0.0
+WhlDstTiStampReRi,1,179,false,false,207,16,1,0,Wheel distance time stamp for rear left,0.0,0.0,0.0
+AdcFcnSigGrpChks,1,179,false,false,223,8,1,0,,0.0,0.0,0.0
+BCSActrActvForADC,1,179,false,false,231,2,1,0,BCS actuator active for ADC,0.0,0.0,0.0
+BCSActrRampOffStsForADC,1,179,false,false,229,2,1,0,BCS actuator ramp off status for ADC,0.0,0.0,0.0
+AdcFcnSigGrpCntr,1,179,false,false,227,4,1,0,,0.0,0.0,0.0
+BCSActrAvlStsForADC,1,179,false,false,239,3,1,0,BCS actuator available status for ADC,0.0,0.0,0.0
+BCSActrAvlStsForADCL3,1,179,false,false,236,3,1,0,BCS available status for ADC L3,0.0,0.0,0.0
+BCSActrVldForADC,1,179,false,false,233,1,1,0,BCS actuator valid for ADC,0.0,0.0,0.0
+BrkSysCtrlBkpSigGrpChks,1,186,false,false,7,8,1,0,,0.0,0.0,0.0
+BrkSysMstCylPVld,1,186,false,false,15,3,1,0,Qualifier for Pressure of master cylinder in the BCS signal,0.0,0.0,0.0
+BrkSysPRedActv,1,186,false,false,12,1,1,0,CRB Pressure Reduction Active,0.0,0.0,0.0
+BrkSysCtrlBkpSigGrpCntr,1,186,false,false,11,4,1,0,,0.0,0.0,0.0
+BrkSysMstCylP,1,186,false,false,23,10,0.3,-30.0,Pressure of master cylinder in the BCS. (without offset\n compensation),0.0,0.0,0.0
+BrkSysVehDirInfo,1,186,false,false,29,2,1,0,Vehicle speed direction for brake system used,0.0,0.0,0.0
+BrkSysVehDirInfoVld,1,186,false,false,27,3,1,0,Qualifier for Vehicle speed direction for brake system used signal,0.0,0.0,0.0
+VehicleStandStill,1,186,false,false,24,1,1,0,the vehicle is not moving,0.0,0.0,0.0
+BrkSysVehSpd,1,186,false,false,39,8,0.4,0.0,Averaged wheel speed,0.0,0.0,0.0
+BrkSysVehSpdVld,1,186,false,false,47,3,1,0,Qualifier for BCS_BCP2_VehSpd signal,0.0,0.0,0.0
+BrkSysRntSpprtAvl,1,186,false,false,44,1,1,0,Whether BCS have runout support capacity,0.0,0.0,0.0
+BrkSysVolSuctnActv,1,186,false,false,43,1,1,0,BCS is doing an active pressure build up,0.0,0.0,0.0
+VehicleStandStillQ,1,186,false,false,42,2,1.0,0.0,input qualify,0.0,0.0,0.0
+BrkSysPSysTar,1,186,false,false,40,9,0.25,0.0,Target brake system pressure,0.0,0.0,0.0
+BrkSysIndcnBkpSigGrpChks,1,186,false,false,71,8,1,0,,0.0,0.0,0.0
+BrkSysIndcnBkpSigGrpCntr,1,186,false,false,75,4,1,0,,0.0,0.0,0.0
+BrkSysLdmGlbStsMod,1,186,false,false,87,2,1,0,status from BCS LDM,0.0,0.0,0.0
+BrkSysAbsActv,1,186,false,false,85,1,1,0,Indicates that at least one wheel ABS is in control.,0.0,0.0,0.0
+BrkSysDrvrPrsnt,1,186,false,false,84,1,1,0,Indicate whether driver is present,0.0,0.0,0.0
+BrkSysPEstimnMax,1,186,false,false,95,8,1,0,Maximum of the estimated wheel pressures,0.0,0.0,0.0
+BCSModBrakeActType,1,186,false,false,101,3,1.0,0.0,Actuation type of the final brake request is sent from Modulation to Actuation,0.0,0.0,0.0
+ABSAvailability,1,186,false,false,108,1,1,0,ABS is available or not,0.0,0.0,0.0
+BCSRecuStatusMod,1,186,false,false,105,2,1.0,0.0,This signal shall provide the status of CRB in the secondary actuator,0.0,0.0,0.0
+BCSRecuFxRedTarget,1,186,false,false,118,15,8,-131008,Target pressure reduction,0.0,0.0,0.0
+BCSFxTargetMod,1,186,false,false,135,14,8,-131008,Signal shall show arbitrated brake request which will dominate the brake request with recuperation,0.0,0.0,0.0
+MaxTarSpdBkpSigGrpChks,1,186,false,false,151,8,1,0,,0.0,0.0,0.0
+MaxTarSpdBkpSigGrpCntr,1,186,false,false,155,4,1,0,,0.0,0.0,0.0
+MaxTarSpdReAxleRels,1,186,false,false,167,2,1,0,Release state of rear axle speed control,0.0,0.0,0.0
+MaxTarSpdFrntAxleRels,1,186,false,false,165,2,1,0,Release state of front axle speed control,0.0,0.0,0.0
+MaxTarSpdFrntAxle,1,186,false,false,175,15,1,0,Max speed for front axle  an absolute value irrespective of forward or reverse driving direction,0.0,0.0,0.0
+MaxTarSpdReAxle,1,186,false,false,191,15,1,0,Max speed for rear axle  an absolute value irrespective of forward or reverse driving direction,0.0,0.0,0.0
+VehVrnt,1,186,false,false,207,8,1,0,BCS variant info  mainly used for handshake check.,0.0,0.0,0.0
+RpbCtrlBkpSigGrpChks,1,190,false,false,7,8,1,0,,0.0,0.0,0.0
+RPBWhlPFrntLeVld,1,190,false,false,15,1,1,0,Qualifier for estimated front left wheel pressure signals,0.0,0.0,0.0
+RPBWhlPFrntRiVld,1,190,false,false,14,1,1,0,Qualifier for estimated front right wheel pressure signals,0.0,0.0,0.0
+RPBWhlPReLeVld,1,190,false,false,13,1,1,0,Qualifier for estimated rear left wheel pressure signals,0.0,0.0,0.0
+RPBWhlPReRiVld,1,190,false,false,12,1,1,0,Qualifier for estimated rear right wheel pressure signals,0.0,0.0,0.0
+RpbCtrlBkpSigGrpCntr,1,190,false,false,11,4,1,0,,0.0,0.0,0.0
+RPBMstCylPVld,1,190,false,false,23,2,1,0,Qualifier for pressure of the master cylinder in the BCS,0.0,0.0,0.0
+RPBHpsAck,1,190,false,false,21,1,1,0,Confirmation that hydraulic pressure support  HPS  is achieved by the hydraulics,0.0,0.0,0.0
+RPBHpsAvl,1,190,false,false,20,1,1,0,Availability of hydraulic pressure support  HPS,0.0,0.0,0.0
+RPBMstCylP,1,190,false,false,17,10,0.3,-30.0,Current pressure of the master cylinder in the BCS for RPB used,0.0,0.0,0.0
+RPBWhlPFrntLe,1,190,false,false,39,8,1,0,Estimated or modeled wheel pressure of front left wheel brake for RPB used,0.0,0.0,0.0
+RPBWhlPFrntRi,1,190,false,false,47,8,1,0,Estimated or modeled wheel pressure of front right wheel brake for RPB used,0.0,0.0,0.0
+RPBWhlPReLe,1,190,false,false,55,8,1,0,Estimated or modeled wheel pressure of rear left wheel brake for RPB used,0.0,0.0,0.0
+RPBWhlPReRi,1,190,false,false,63,8,1,0,Estimated or modeled wheel pressure of rear right wheel brake for RPB used,0.0,0.0,0.0
+RPBWhlSpdSigGrpChks,1,190,false,false,79,8,1,0,,0.0,0.0,0.0
+RPBWhlSpdSigGrpCntr,1,190,false,false,83,4,1,0,,0.0,0.0,0.0
+RPBWhlSpdFrntLeVld,1,190,false,false,95,1,1,0,Statusofwheelspeedfrontleft,0.0,0.0,0.0
+RPBWhlSpdFrntRiVld,1,190,false,false,94,1,1,0,Statusofwheelspeedfrontright,0.0,0.0,0.0
+RPBWhlSpdReLeVld,1,190,false,false,93,1,1,0,Statusofwheelspeedrearleft,0.0,0.0,0.0
+RPBWhlSpdReRiVld,1,190,false,false,92,1,1,0,Statusofwheelspeedrearright,0.0,0.0,0.0
+RPBWhlSpdFrntLe,1,190,false,false,103,16,0.05625,0.0,Wheelspeedfrontleft,0.0,0.0,0.0
+RPBWhlSpdFrntRi,1,190,false,false,119,16,0.05625,0.0,Wheelspeedfrontright,0.0,0.0,0.0
+RPBWhlSpdReLe,1,190,false,false,135,16,0.05625,0.0,Wheelspeedrearleft,0.0,0.0,0.0
+RPBWhlSpdReRi,1,190,false,false,151,16,0.05625,0.0,Wheelspeedrearright,0.0,0.0,0.0
+WhlPulFrntLe,1,190,false,false,167,8,1,0,Wheelplusefrontleft,0.0,0.0,0.0
+WhlPulFrntRi,1,190,false,false,175,8,1,0,Wheelplusefrontright,0.0,0.0,0.0
+WhlPulReLe,1,190,false,false,183,8,1,0,Wheelpluserearleft,0.0,0.0,0.0
+WhlPulReRi,1,190,false,false,191,8,1,0,Wheelpluserearright,0.0,0.0,0.0
+BrkSysAPCMain2BkpStCom2SigGrpChks,1,190,false,false,207,8,1,0,,0.0,0.0,0.0
+BrkSysAPCMain2BkpStCom2SigGrpCntr,1,190,false,false,211,4,1,0,,0.0,0.0,0.0
+BrkSysAPCBkpStgyReqCom2,1,190,false,false,220,1,1,0,APC Backup Strategy Request from main actuator to backup actuator on Com2,0.0,0.0,0.0
+BrkSysAPCMain2BkpStCom2,1,190,false,false,219,4,1,0,Parking function status from Main controller to backup controller,0.0,0.0,0.0
+BCSChassisBkpNodeAddress,1,1315,false,false,7,8,1,0,Node source address,0.0,0.0,0.0
+BCSChassisBkpActiveWakeup,1,1315,false,false,12,1,1,0,Active Wakeup Bit,0.0,0.0,0.0
+BCSChassisBkpRepeatMsgReq,1,1315,false,false,8,1,1,0,Repeat Message Request Bit,0.0,0.0,0.0
+UDB23BCS,1,1315,false,false,23,1,1,0,,0.0,0.0,0.0
+UDB22BCS,1,1315,false,false,22,1,1,0,,0.0,0.0,0.0
+UDB21BCS,1,1315,false,false,21,1,1,0,,0.0,0.0,0.0
+UDB20BCS,1,1315,false,false,20,1,1,0,,0.0,0.0,0.0
+UDB19BCS,1,1315,false,false,19,1,1,0,,0.0,0.0,0.0
+UDB18BCS,1,1315,false,false,18,1,1,0,,0.0,0.0,0.0
+UDB17BCS,1,1315,false,false,17,1,1,0,,0.0,0.0,0.0
+BCSChassisBkpRepeatMsgSt,1,1315,false,false,16,1,1,0,Repeat Message State indication,0.0,0.0,0.0
+UDB31BCS,1,1315,false,false,31,1,1,0,,0.0,0.0,0.0
+UDB30BCS,1,1315,false,false,30,1,1,0,,0.0,0.0,0.0
+UDB29BCS,1,1315,false,false,29,1,1,0,,0.0,0.0,0.0
+UDB28BCS,1,1315,false,false,28,1,1,0,,0.0,0.0,0.0
+UDB27BCS,1,1315,false,false,27,1,1,0,,0.0,0.0,0.0
+UDB26BCS,1,1315,false,false,26,1,1,0,,0.0,0.0,0.0
+UDB25BCS,1,1315,false,false,25,1,1,0,,0.0,0.0,0.0
+UDB24BCS,1,1315,false,false,24,1,1,0,,0.0,0.0,0.0
+UDB39BCS,1,1315,false,false,39,1,1,0,,0.0,0.0,0.0
+UDB38BCS,1,1315,false,false,38,1,1,0,,0.0,0.0,0.0
+UDB37BCS,1,1315,false,false,37,1,1,0,,0.0,0.0,0.0
+UDB36BCS,1,1315,false,false,36,1,1,0,,0.0,0.0,0.0
+UDB35BCS,1,1315,false,false,35,1,1,0,,0.0,0.0,0.0
+UDB34BCS,1,1315,false,false,34,1,1,0,,0.0,0.0,0.0
+UDB33BCS,1,1315,false,false,33,1,1,0,,0.0,0.0,0.0
+UDB32BCS,1,1315,false,false,32,1,1,0,,0.0,0.0,0.0
+UDB47BCS,1,1315,false,false,47,1,1,0,,0.0,0.0,0.0
+UDB46BCS,1,1315,false,false,46,1,1,0,,0.0,0.0,0.0
+UDB45BCS,1,1315,false,false,45,1,1,0,,0.0,0.0,0.0
+UDB44BCS,1,1315,false,false,44,1,1,0,,0.0,0.0,0.0
+UDB43BCS,1,1315,false,false,43,1,1,0,,0.0,0.0,0.0
+UDB42BCS,1,1315,false,false,42,1,1,0,,0.0,0.0,0.0
+UDB41BCS,1,1315,false,false,41,1,1,0,,0.0,0.0,0.0
+UDB40BCS,1,1315,false,false,40,1,1,0,,0.0,0.0,0.0
+NMKeepAwkRsnBCS,1,1315,false,false,48,9,1,0,,0.0,0.0,0.0
+RCAvailable,1,444,false,false,7,1,1,0,远控设备可用,0.0,0.0,0.0
+RPARemReq,1,444,false,false,15,2,1,0,遥控泊车APP开关,0.0,0.0,0.0
+RPARemReqFV,1,444,false,false,23,16,1,0,,0.0,0.0,0.0
+RPARemReqMAC,1,444,false,false,39,32,1,0,,0.0,0.0,0.0
+BLEM2VCCDForLocn10,1,657,false,false,7,32,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn11,1,657,false,false,39,32,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn12,1,657,false,false,71,32,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn13,1,657,false,false,103,32,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn14,1,657,false,false,135,32,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn15,1,657,false,false,167,32,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn16,1,657,false,false,199,32,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn17,1,657,false,false,231,32,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn18,1,657,false,false,263,32,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn19,1,657,false,false,295,32,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn1A,1,657,false,false,327,32,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn1B,1,657,false,false,359,32,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn1C,1,657,false,false,391,32,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn1D,1,657,false,false,423,32,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn1F,1,657,false,false,455,16,1,0,BLEM to VCCD For Phone1 location,0.0,0.0,0.0
+BLEM2VCCDForLocn1FV,1,657,false,false,471,16,1,0,,0.0,0.0,0.0
+BLEM2VCCDForLocn1MAC,1,657,false,false,487,32,1,0,,0.0,0.0,0.0
+DltAllKeyFb,1,663,false,false,7,3,1,0,Delete all key feedback,0.0,0.0,0.0
+SndBLEKeyPosnToRPA,1,663,false,false,4,3,1,0,Send BLE key message to RPA module,0.0,0.0,0.0
+DltAllKeyFbFV,1,663,false,false,23,16,1,0,,0.0,0.0,0.0
+DltAllKeyFbMAC,1,663,false,false,39,32,1,0,,0.0,0.0,0.0
+BLEM2VCCDForLocn20,1,665,false,false,7,32,1,0,BLEM to VCCD For Phone2 location,0.0,0.0,0.0
+BLEM2VCCDForLocn21,1,665,false,false,39,32,1,0,BLEM to VCCD For Phone2 location,0.0,0.0,0.0
+BLEM2VCCDForLocn22,1,665,false,false,71,32,1,0,BLEM to VCCD For Phone2 location,0.0,0.0,0.0
+BLEM2VCCDForLocn23,1,665,false,false,103,32,1,0,BLEM to VCCD For Phone2  location,0.0,0.0,0.0
+BLEM2VCCDForLocn24,1,665,false,false,135,32,1,0,BLEM to VCCD For Phone2 location,0.0,0.0,0.0
+BLEM2VCCDForLocn25,1,665,false,false,167,32,1,0,BLEM to VCCD For Phone2 location,0.0,0.0,0.0
+BLEM2VCCDForLocn26,1,665,false,false,199,32,1,0,BLEM to VCCD For Phone2 location,0.0,0.0,0.0
+BLEM2VCCDForLocn27,1,665,false,false,231,32,1,0,BLEM to VCCD For Phone2 location,0.0,0.0,0.0
+BLEM2VCCDForLocn28,1,665,false,false,263,32,1,0,BLEM to VCCD For Phone2 location,0.0,0.0,0.0
+BLEM2VCCDForLocn29,1,665,false,false,295,32,1,0,BLEM to VCCD For Phone2 location,0.0,0.0,0.0
+BLEM2VCCDForLocn2A,1,665,false,false,327,32,1,0,BLEM to VCCD For Phone2 location,0.0,0.0,0.0
+BLEM2VCCDForLocn2B,1,665,false,false,359,32,1,0,BLEM to VCCD For Phone2 location,0.0,0.0,0.0
+BLEM2VCCDForLocn2C,1,665,false,false,391,32,1,0,BLEM to VCCD For Phone2 location,0.0,0.0,0.0
+BLEM2VCCDForLocn2D,1,665,false,false,423,32,1,0,BLEM to VCCD For Phone2 location,0.0,0.0,0.0
+BLEM2VCCDForLocn2F,1,665,false,false,455,16,1,0,BLEM to VCCD For Phone2 location,0.0,0.0,0.0
+BLEM2VCCDForLocn2FV,1,665,false,false,471,16,1,0,,0.0,0.0,0.0
+BLEM2VCCDForLocn2MAC,1,665,false,false,487,32,1,0,,0.0,0.0,0.0
+BLEM2VCCDForLocn44,1,817,false,false,7,32,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn45,1,817,false,false,39,32,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn46,1,817,false,false,71,32,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn47,1,817,false,false,103,32,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn40,1,817,false,false,135,32,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn41,1,817,false,false,167,32,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn42,1,817,false,false,199,32,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn43,1,817,false,false,231,32,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn48,1,817,false,false,263,32,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn49,1,817,false,false,295,32,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn4A,1,817,false,false,327,32,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn4B,1,817,false,false,359,32,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn4C,1,817,false,false,391,32,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn4D,1,817,false,false,423,32,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn4F,1,817,false,false,455,16,1,0,BLEM to VCCD For Phone4 location,0.0,0.0,0.0
+BLEM2VCCDForLocn4FV,1,817,false,false,471,16,1,0,,0.0,0.0,0.0
+BLEM2VCCDForLocn4MAC,1,817,false,false,487,32,1,0,,0.0,0.0,0.0
+BLEM2ADDForRPA00,1,825,false,false,7,64,1,0,RPA路由功能,0.0,0.0,0.0
+BLEM2ADDForRPA01,1,825,false,false,71,64,1,0,RPA路由功能,0.0,0.0,0.0
+BLEM2ADDForRPA02,1,825,false,false,135,64,1,0,RPA路由功能,0.0,0.0,0.0
+BLEM2ADDForRPA03,1,825,false,false,199,16,1,0,RPA路由功能,0.0,0.0,0.0
+BLEM2ADDForRPA00FV,1,825,false,false,215,16,1,0,,0.0,0.0,0.0
+BLEM2ADDForRPA00MAC,1,825,false,false,231,32,1,0,,0.0,0.0,0.0
+BLEM2VCCDForLocn30,1,826,false,false,7,32,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn31,1,826,false,false,39,32,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn32,1,826,false,false,71,32,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn33,1,826,false,false,103,32,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn34,1,826,false,false,135,32,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn35,1,826,false,false,167,32,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn36,1,826,false,false,199,32,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn37,1,826,false,false,231,32,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn38,1,826,false,false,263,32,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn39,1,826,false,false,295,32,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn3A,1,826,false,false,327,32,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn3B,1,826,false,false,359,32,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn3C,1,826,false,false,391,32,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn3D,1,826,false,false,423,32,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn3F,1,826,false,false,455,16,1,0,BLEM to VCCD For Phone3 location,0.0,0.0,0.0
+BLEM2VCCDForLocn3FV,1,826,false,false,471,16,1,0,,0.0,0.0,0.0
+BLEM2VCCDForLocn3MAC,1,826,false,false,487,32,1,0,,0.0,0.0,0.0
+BattURawSigGrpChks,1,579,false,false,7,8,1,0,,0.0,0.0,0.0
+BattURawSigGrpCntr,1,579,false,false,11,4,1,0,,0.0,0.0,0.0
+BattURaw,1,579,false,false,23,15,0.001,0.0,Battery Voltage raw\n电池电压,0.0,0.0,0.0
+BattSocRawSigGrpChks,1,579,false,false,39,8,1,0,,0.0,0.0,0.0
+BattSocRawSigGrpCntr,1,579,false,false,43,4,1,0,,0.0,0.0,0.0
+BattSocRaw,1,579,false,false,49,10,0.1,0.0,Battery State of charge raw\n电池SOC,0.0,0.0,0.0
+BattSohSigGrpChks,1,581,false,false,7,8,1,0,,0.0,0.0,0.0
+BattSohSigGrpCntr,1,581,false,false,11,4,1,0,,0.0,0.0,0.0
+BattSoh,1,581,false,false,23,10,0.1,0.0,Battery State of health\n电池SOH,0.0,0.0,0.0
+LVBattMosDrvFlt,1,581,false,false,39,4,1,0,Low Voltage Battery Mosfet Drive Fault \n低压电池Mos粘连故障,0.0,0.0,0.0
+LVBattMosStuckFlt,1,581,false,false,35,4,1,0,Low Voltage Battery Mosfet Stuck Fault \n低压电池Mos卡滞故障,0.0,0.0,0.0
+BMDMAcvDcnMosSt,1,581,false,false,47,2,1,0,BMDM active disconnect Mosfet State\nBMDM主动断电Mos状态,0.0,0.0,0.0
+HvBattSoCLimMax,1,912,false,false,7,11,0.05,0.0,HV battery state of charge limit max  用于说明DOD的上限,0.0,0.0,0.0
+HvBattSoCLimMin,1,912,false,false,23,11,0.05,0.0,HV battery state of charge limit min 用于说明DOD的下限,0.0,0.0,0.0
+HvBattEgyAvlForDchrgnToTarSoC,1,912,false,false,39,13,20,0,HV battery energy available for discharging to target SoC referring to a user defined discharging target SOC \n用于V2X场景 最小允许放电SoC在20%,0.0,0.0,0.0
+HvBattEgyAvlForChrgnToTarSoC,1,912,false,false,55,13,20,0,HV battery energy available for charging to target SoC referring to a user defined charging target SOC \n用于充电场景 最大允许充电SoC在100%,0.0,0.0,0.0
+HvBattPressureInsdPack,1,912,false,false,71,12,0.1,0.0,HV battery pressure inside the pack.,0.0,0.0,0.0
+CMU1ComErrTi,1,912,false,false,87,8,0.5,0.0,Accumulated duration of communication error of any AFE on CMU 1,0.0,0.0,0.0
+CMU2ComErrTi,1,912,false,false,95,8,0.5,0.0,Accumulated duration of communication error of any AFE on CMU 2,0.0,0.0,0.0
+CMU3ComErrTi,1,912,false,false,103,8,0.5,0.0,Accumulated duration of communication error of any AFE on CMU 3,0.0,0.0,0.0
+HvBattCellMaxSoc,1,912,false,false,114,11,0.05,0.0,单体最大SOC,0.0,0.0,0.0
+HvBattCellAvrgSocErr,1,912,false,false,135,11,0.05,0.0,单体平均SOC计算误差,0.0,0.0,0.0
+HvPrechargeTimer,1,912,false,false,140,13,1,0,最近一次预充时间,0.0,0.0,0.0
+HvBattCellMaxSocIdx,1,912,false,false,159,8,1,0,单体最大SOC index,0.0,0.0,0.0
+HvBattCellMinSocIdx,1,912,false,false,167,8,1,0,单体最小SOC index,0.0,0.0,0.0
+HvBattCellMaxSocErrIdx,1,912,false,false,175,8,1,0,单体最大SOC计算误差 index,0.0,0.0,0.0
+HvBattCellMaxSocErr,1,912,false,false,183,11,0.05,0.0,单体最大SOC计算误差,0.0,0.0,0.0
+HvBattCellMinSoc,1,912,false,false,186,11,0.05,0.0,单体最小SOC,0.0,0.0,0.0
+BalOnCellNumb,1,912,false,false,207,8,1,0,当前开启均衡单体数目,0.0,0.0,0.0
+FailrStsBkpSigGrpChks,1,355,false,false,31,8,1,0,,0.0,0.0,0.0
+FailrStsBkp,1,355,false,false,38,3,1,0,EPS 故障状态 备份CAN \nEPS Failure Status\n back up,0.0,0.0,0.0
+FailrStsBkpSigGrpCntr,1,355,false,false,35,4,1,0,,0.0,0.0,0.0
+EPSAVPHPPCtrlStsBkpSigGrpChks,1,355,false,false,47,8,1,0,,0.0,0.0,0.0
+EPSAVPHPPCtrlStsBkpSigGrpCntr,1,355,false,false,51,4,1,0,,0.0,0.0,0.0
+AVPHPPReqFltStsBkp,1,355,false,false,63,4,1,0,EPS fault status related to execution of AVP/HPP back up\nEPS反馈AVP/HPP当前的故障状态备份信号,0.0,0.0,0.0
+AVPHPPReqFbStsBkp,1,355,false,false,59,3,1,0,EPS feedback for AVP/HPP request back up\nEPS 对于AVP/HPP的请求反馈备份信号,0.0,0.0,0.0
+AVPHPPCtrStsBkp,1,355,false,false,56,1,1,0,What channel of the EPS is in control back up.\n表征EPS目前正在响应的通道备份信号,0.0,0.0,0.0
+AVPHPPCtrlAvlStsBkp,1,355,false,false,71,2,1,0,EPS AVP/HPP Feature Control Avaliable Status Back Up\nEPS对于 AVP/HPP 功能的控制可用状态备份信号,0.0,0.0,0.0
+CcwEOTValueBkp,1,994,false,false,7,14,0.0625,0.0,Bkp CANFD:Counter Clock wise End of Stop Value， Direction:Counter Clock wise is.逆时针软止点(末端)位置， 方向:逆时针为正,0.0,0.0,0.0
+CcwEOTDetBkp,1,994,false,false,9,1,1,0,Bkp CANFD:\nCounter Clock wise End of Stop Value Learned Flag. 逆时针软止点(末端)位置学习成功标志位,0.0,0.0,0.0
+CwEOTDetBkp,1,994,false,false,8,1,1,0,Bkp CANFD:\nClock wise End of Stop Value Learned Flag. 顺时针软止点(末端)位置学习成功标志位,0.0,0.0,0.0
+CwEOTValueBkp,1,994,false,false,23,14,0.0625,-780.0,BkpCANFD:Clock wise End of Stop Value， Direction: Clock wise is.顺时针软止点(末端)位置， 方向:顺时针为负,0.0,0.0,0.0
+EPSMotTqCmd,1,181,false,true,7,11,0.01,0.0,转向电机请求扭矩 EPS Motor Torque Command 方向：Clockwise: -; Anti-Clockwise: +；\n,0.0,0.0,0.0
+VehSpdEPSInUse,1,181,false,false,23,16,0.05625,0.0,Vehicle Speed EPS Internal Use 转向内部使用车速,0.0,0.0,0.0
+AdasReqCtrlADDSigGrpChks,1,181,false,false,39,8,1,0,,0.0,0.0,0.0
+AdasReqCtrlADDSigGrpCntr,1,181,false,false,43,4,1,0,,0.0,0.0,0.0
+DrvrSteerActvADD,1,181,false,false,55,1,1,0,Indicate if the driver override or not to ADD driving lateral control request,0.0,0.0,0.0
+SteerWhlVibStsADD,1,181,false,false,54,1,1,0,Indicate the steering wheel vibration active or not to ADD,0.0,0.0,0.0
+ADASReqFltStsADD,1,181,false,false,53,3,1,0,Feedback fault status to ADD driving lateral control request,0.0,0.0,0.0
+ADASReqFbStsADD,1,181,false,false,50,3,1,0,Feedback status to ADD driving lateral control request,0.0,0.0,0.0
+ADASReqOvlySteerWhlTqADD,1,181,false,true,63,11,0.01,0.0,Equivalent steering wheel torque from ADD driving lateral control request\n'+' as the equivalent torque generate Anti Clockwise of steering wheel\n' ' as the equivalent torque generate Clockwise of steering wheel,0.0,0.0,0.0
+ADASReqOvlyTqADD,1,181,false,true,79,14,0.00390625,0.0,Overlay Torque  Motor Torque  from ADD driving lateral control request\n方向 \n顺时针转动方向盘请求  \n逆时针转动方向盘请求,0.0,0.0,0.0
+PinionSteerSigGrpChks,1,181,false,false,135,8,1,0,,0.0,0.0,0.0
+PinionSteerSigGrpCntr,1,181,false,false,139,4,1,0,,0.0,0.0,0.0
+PinionSteerAgl,1,181,false,true,151,15,0.0625,0.0,方向盘转角\nSteering Wheel Angle\n方向 \nAnticlockwise direction of steering wheel increase angle output.\nClockwise direction of steering wheel decrease angle output.,0.0,0.0,0.0
+PinionSteerAglVld,1,181,false,false,152,1,1,0,方向盘转角有效位\nSteering Wheel Angle Valid Flag,0.0,0.0,0.0
+SteerWhlTq,1,181,false,true,167,11,0.01,0.0,方向盘扭矩\nSteering Wheel Torque\n方向  Clockwise     Anti Clockwise,0.0,0.0,0.0
+SteerWhlTqVld,1,181,false,false,172,1,1,0,方向盘扭矩有效位\nSteering Wheel torque Valid Flag,0.0,0.0,0.0
+PinionSteerAglSpd,1,181,false,true,183,12,1,0,方向盘转速\nSteering Wheel Velocity\n方向  Clockwise     Anti Clockwise,0.0,0.0,0.0
+PinionSteerAglSpdVld,1,181,false,false,187,1,1,0,方向盘转速有效位\nSteering Wheel Velocity Valid Flag,0.0,0.0,0.0
+PinionSteerAglSpdVldV2C,1,181,false,false,186,1,1,0,Pinion Velocity Valid Flag\n方向盘转速有效位,0.0,0.0,0.0
+PinionSteerAglVldV2C,1,181,false,false,185,1,1,0,PinionAngle Valid Flag\n方向盘转交有效位,0.0,0.0,0.0
+PinionAglSpdV2C,1,181,false,true,199,12,1,0,Convert VGR Pinion Velocity to CGR Velocity. Direction: Clockwise; Counter Clockwise.VGR方向盘转速转成CGR转速.顺时针为负，逆时针为正,0.0,0.0,0.0
+PinionSteerAglV2C,1,181,false,true,215,15,0.0625,0.0,Convert Variable Gear Ratio(VGR) PinionAngle to a Constant Gear Ratio(CGR) Pinion Angle.将VGR方向盘转角转成CGR 转角,0.0,0.0,0.0
+ElecPwrCns,1,181,false,false,231,11,0.1,0.0,EPS 电流\nEPS battery consumption,0.0,0.0,0.0
+EstimdRkFVld,1,181,false,false,236,1,1,0,EPS内部估算的齿条力有效位\nEPS internal estimated rack force valid flag,0.0,0.0,0.0
+EstimdRkF,1,181,false,true,247,16,1,0,EPS内部估算的齿条力\nEPS internal estimated rack force,0.0,0.0,0.0
+EPSBkpFaultInfoFlag,1,183,false,false,7,1,1,0,,0.0,0.0,0.0
+SteeringWhlSignalBkpSigGrpChks,1,200,false,false,7,8,1,0,,0.0,0.0,0.0
+SteeringWhlSignalBkpSigGrpCntr,1,200,false,false,11,4,1,0,,0.0,0.0,0.0
+PinionSteerAglVldBkp,1,200,false,false,23,1,1,0,方向盘转角有效位 备份CAN \nSteering Wheel Angle Valid Flag back up,0.0,0.0,0.0
+PinionSteerAglBkp,1,200,false,true,22,15,0.0625,0.0,方向盘转角 备份CAN \nSteering Wheel Angle back up\n方向  \nAnticlockwise direction of steering wheel increase angle output.\nClockwise direction of steering wheel decrease angle output.,0.0,0.0,0.0
+SteerWhlTqBkp,1,200,false,true,39,11,0.01,0.0,方向盘扭矩 备份CAN \nSteering Wheel Torque back up\n方向  Clockwise     Anti Clockwise,0.0,0.0,0.0
+SteerWhlTqVldBkp,1,200,false,false,44,1,1,0,方向盘扭矩有效位 备份CAN \nSteering Wheel torque Valid Flag back up,0.0,0.0,0.0
+PinionSteerAglSpdBkp,1,200,false,true,55,12,1,0,方向盘转速 备份CAN \nSteering Wheel Velocity back up\n方向  Clockwise     Anti Clockwise,0.0,0.0,0.0
+PinionSteerAglSpdVldBkp,1,200,false,false,59,1,1,0,方向盘转速有效位 备份CAN \nSteering Wheel Velocity Valid Flag back up,0.0,0.0,0.0
+PinionAglSpdBkpV2C,1,200,false,true,71,12,1,0,For BkpCAN: Convert VGR Pinion Velocity to CGR Pinion Velocity.用于备份CAN:将VGR方向盘转速转成CGR转速.方向:顺时针为负，逆时针为正,0.0,0.0,0.0
+PinionSteerAglSpdVldBkpV2C,1,200,false,false,75,1,1,0,BkpCAN:PinionVelocity Valid Flag.备份CAN:方向盘转速有效位,0.0,0.0,0.0
+PinionSteerAglVldBkpV2C,1,200,false,false,74,1,1,0,BkpCAN: PinionAngle Valid Flag\n备份CAN: 方向盘转交有效位,0.0,0.0,0.0
+PinionSteerAglBkpV2C,1,200,false,true,87,15,0.0625,0.0,For BkpCAN:Convert VGR pinion angle to CGR pinion angle.用于备份CAN:将VGR方向盘转角转成CGR转角,0.0,0.0,0.0
+EPSChassisBkpNodeAddress,1,1322,false,false,7,8,1,0,Node source address,0.0,0.0,0.0
+EPSChassisBkpActiveWakeup,1,1322,false,false,12,1,1,0,Active Wakeup Bit,0.0,0.0,0.0
+EPSChassisBkpRepeatMsgReq,1,1322,false,false,8,1,1,0,Repeat Message Request Bit,0.0,0.0,0.0
+UDB23EPS,1,1322,false,false,23,1,1,0,,0.0,0.0,0.0
+UDB22EPS,1,1322,false,false,22,1,1,0,,0.0,0.0,0.0
+UDB21EPS,1,1322,false,false,21,1,1,0,,0.0,0.0,0.0
+UDB20EPS,1,1322,false,false,20,1,1,0,,0.0,0.0,0.0
+UDB19EPS,1,1322,false,false,19,1,1,0,,0.0,0.0,0.0
+UDB18EPS,1,1322,false,false,18,1,1,0,,0.0,0.0,0.0
+UDB17EPS,1,1322,false,false,17,1,1,0,,0.0,0.0,0.0
+EPSChassisBkpRepeatMsgSt,1,1322,false,false,16,1,1,0,Repeat Message State indication,0.0,0.0,0.0
+UDB31EPS,1,1322,false,false,31,1,1,0,,0.0,0.0,0.0
+UDB30EPS,1,1322,false,false,30,1,1,0,,0.0,0.0,0.0
+UDB29EPS,1,1322,false,false,29,1,1,0,,0.0,0.0,0.0
+UDB28EPS,1,1322,false,false,28,1,1,0,,0.0,0.0,0.0
+UDB27EPS,1,1322,false,false,27,1,1,0,,0.0,0.0,0.0
+UDB26EPS,1,1322,false,false,26,1,1,0,,0.0,0.0,0.0
+UDB25EPS,1,1322,false,false,25,1,1,0,,0.0,0.0,0.0
+UDB24EPS,1,1322,false,false,24,1,1,0,,0.0,0.0,0.0
+UDB39EPS,1,1322,false,false,39,1,1,0,,0.0,0.0,0.0
+UDB38EPS,1,1322,false,false,38,1,1,0,,0.0,0.0,0.0
+UDB37EPS,1,1322,false,false,37,1,1,0,,0.0,0.0,0.0
+UDB36EPS,1,1322,false,false,36,1,1,0,,0.0,0.0,0.0
+UDB35EPS,1,1322,false,false,35,1,1,0,,0.0,0.0,0.0
+UDB34EPS,1,1322,false,false,34,1,1,0,,0.0,0.0,0.0
+UDB33EPS,1,1322,false,false,33,1,1,0,,0.0,0.0,0.0
+UDB32EPS,1,1322,false,false,32,1,1,0,,0.0,0.0,0.0
+UDB47EPS,1,1322,false,false,47,1,1,0,,0.0,0.0,0.0
+UDB46EPS,1,1322,false,false,46,1,1,0,,0.0,0.0,0.0
+UDB45EPS,1,1322,false,false,45,1,1,0,,0.0,0.0,0.0
+UDB44EPS,1,1322,false,false,44,1,1,0,,0.0,0.0,0.0
+UDB43EPS,1,1322,false,false,43,1,1,0,,0.0,0.0,0.0
+UDB42EPS,1,1322,false,false,42,1,1,0,,0.0,0.0,0.0
+UDB41EPS,1,1322,false,false,41,1,1,0,,0.0,0.0,0.0
+UDB40EPS,1,1322,false,false,40,1,1,0,,0.0,0.0,0.0
+NMKeepAwkRsnEPS,1,1322,false,false,48,9,1,0,,0.0,0.0,0.0
+EPSToVCCDChassisBkpDiagResp,1,1576,false,false,7,512,1,0,EPSToVCCDChassisBkpCanfdDiagRespNpdu,0.0,0.0,0.0
+HoodOpenClsSts,1,417,false,false,7,2,1,0,Hood Open Close Status\n前舱盖开启关闭状态,0.0,0.0,0.0
+VCUDrvModSteerAsstPrmSts,1,515,false,false,7,3,1,0,VCU Drive mode steering assistance parameter Status\n驾驶模式转向助力特性参数设置,0.0,0.0,0.0
+VCUDrvModSuspDampgPrmSts,1,515,false,false,4,2,1,0,VCU Drive mode suspension damping parameter Status\n驾驶模式悬架阻尼参数设置,0.0,0.0,0.0
+VCUDrvModSuspLvlgPrmSts,1,515,false,false,31,3,1.0,0.0,VCU Drive mode suspension level parameter Status\n驾驶模式悬架高度参数设置,0.0,0.0,0.0
+VCUExtmPfmncMod,1,515,false,false,28,1,1,0,VCU extreme performance mode\nVCU狂暴模式,0.0,0.0,0.0
+VCUWashModStSts,1,515,false,false,27,1,1,0,VCU wash mode setting status \nVCU洗车模式设定状态,0.0,0.0,0.0
+VCULnchPlusSts,1,515,false,false,26,2,1.0,0.0,VCU Launch plus status\nVCU弹射模式状态,0.0,0.0,0.0
+VCUTrlrModStSts,1,515,false,false,39,1,1,0,VCU Trailer Mode Setting Status\nVCU反馈拖车模式设置状态,0.0,0.0,0.0
+InsEgyCnsSigGrpChks,1,656,false,false,7,8,1,0,,0.0,0.0,0.0
+InsEgyCnsSigGrpCntr,1,656,false,false,11,4,1,0,,0.0,0.0,0.0
+VCUEgyCnsInCurDrvCyc,1,656,false,false,23,18,0.01,-200.0,显示本次行程的电耗量,0.0,0.0,0.0
+VCUInsEgyCnsDurgStsl,1,656,false,false,32,9,0.1,0.0,瞬时电耗 停车状态,0.0,0.0,0.0
+VCUInsEgyCnsDurgDrvg,1,656,false,false,55,11,0.1,-100.0,瞬时电耗 行车状态,0.0,0.0,0.0
+VCUInsEgyCnsFlg,1,656,false,false,60,1,1,0,瞬时电耗标志位,0.0,0.0,0.0
+VCUPwrFlowForDisp,1,656,false,false,59,2,1,0,驱动能量流指示,0.0,0.0,0.0
+VCUEstimdCrsRng,1,656,false,false,71,11,1.0,0.0,Estimated range\n续航里程值显示,0.0,0.0,0.0
+VCUEstimdCrsRngVld,1,656,false,false,76,1,1,0,Estimated range Validty\n续航里程有效性,0.0,0.0,0.0
+VCUEstimdCrsRngForCltc,1,656,false,false,74,11,1,0,Cltc公告续航预测值,0.0,0.0,0.0
+VCUChrgnModSts,1,656,false,false,95,4,1,0,Charging Mode Status,0.0,0.0,0.0
+AmbTEstimdVld,1,656,false,false,91,1,1,0,Estimated ambient temperature valid value.,0.0,0.0,0.0
+AmbTRawVld,1,656,false,false,90,1,1,0,Raw ambient temperature valid value,0.0,0.0,0.0
+EdsCircCooltTVld,1,656,false,false,89,1,1,0,Coolant temperature at EDS coolant circuit valid value,0.0,0.0,0.0
+LRRLoPwrSplySts,1,656,false,false,88,1,1,0,LRR low Power Supply Status\n前向毫米波雷达配电状态,0.0,0.0,0.0
+AmbTEstimd,1,656,false,false,103,16,0.01,-80.0,Estimated ambient temperature.,0.0,0.0,0.0
+ADDCooltCircFlowEstimd,1,656,false,false,119,10,0.05,0.0,Estimated coolant flowrate for ADD coolant circuit.,0.0,0.0,0.0
+AmbTRaw,1,656,false,false,135,16,0.01,-80.0,Raw ambient temperature,0.0,0.0,0.0
+EdsCircCooltT,1,656,false,false,151,16,0.01,-80.0,Coolant temperature at EDS coolant circuit,0.0,0.0,0.0
+EdsCircCooltTSnsrU,1,656,false,false,167,16,0.1,0.0,Coolant temperature sensor voltage at EDS coolant circuit,0.0,0.0,0.0
+VehSysFltWarnSigGrpChks,1,656,false,false,191,8,1,0,,0.0,0.0,0.0
+VCUHVSysFltWarnSts,1,656,false,false,199,4,1,0,高压系统故障 分等级,0.0,0.0,0.0
+VehSysFltWarnSigGrpCntr,1,656,false,false,195,4,1,0,,0.0,0.0,0.0
+VCUGearChgFailInde,1,656,false,false,207,4,1,0,换挡失败提醒,0.0,0.0,0.0
+VCULoSocWarngMsg,1,656,false,false,203,2,1.0,0.0,高压电池低电量报警\nHV Battery low SOC warnning,0.0,0.0,0.0
+VCUBattOverHeatWarn,1,656,false,false,201,1,1,0,电池过温时 仪表点亮电池过温报警灯,0.0,0.0,0.0
+VCUDrvMotFltWarn,1,656,false,false,200,1,1,0,当驱动电机发生故障时 仪表点亮驱动电机故障灯,0.0,0.0,0.0
+VCUDrvMotOverHeatWarn,1,656,false,false,215,1,1,0,驱动电机过热报警,0.0,0.0,0.0
+VCUDrvSysLimdWarn,1,656,false,false,214,1,1,0,VCU发送点亮跛行故障灯信号 仪表点灯,0.0,0.0,0.0
+VCUHvBattSysFltIndcr,1,656,false,false,213,1,1,0,动力电池故障报警灯 低级,0.0,0.0,0.0
+VCUHvBattSysFltWarn,1,656,false,false,212,1,1,0,动力电池故障报警灯 严重,0.0,0.0,0.0
+VCUHvPwrSysCutOff,1,656,false,false,211,1,1,0,VCU发送动力系统切断故障telltale,0.0,0.0,0.0
+VCUPrpsnPwrDrt,1,656,false,false,210,1,1,0,VCU发送动力性能降级故障 仪表进行文字显示和声音提醒,0.0,0.0,0.0
+VCUThermRunawayErrAlrm,1,656,false,false,209,1,1,0,热失控报警,0.0,0.0,0.0
+VCUVehSysFltWarn,1,656,false,false,208,1,1,0,VCU发送点亮整车系统故障灯信号 仪表点灯,0.0,0.0,0.0
+PwrModSigGrpChks,1,144,false,false,7,8,1,0,,0.0,0.0,0.0
+PwrModSigGrpCntr,1,144,false,false,11,4,1,0,,0.0,0.0,0.0
+PwrModSts,1,144,false,false,23,3,1,0,PowerMode Status,0.0,0.0,0.0
+PwrModVld,1,144,false,false,20,1,1,0,PowerMode Validty,0.0,0.0,0.0
+VCUActGearSigGrpChks,1,144,false,false,47,8,1,0,,0.0,0.0,0.0
+VCUActGearLvr,1,144,false,false,55,3,1,0,Actual gear level 车辆实际档位\nP R N D挡位,0.0,0.0,0.0
+VCUActGearLvrVld,1,144,false,false,52,1,1,0,车辆实际档位有效位,0.0,0.0,0.0
+VCUActGearSigGrpCntr,1,144,false,false,51,4,1,0,,0.0,0.0,0.0
+VcuInpSigGrpChks,1,144,false,false,63,8,1,0,,0.0,0.0,0.0
+VCURgnTqCorrnFac,1,144,false,false,71,4,0.1,0.0,Regeneration Torque Correction Factor,0.0,0.0,0.0
+VcuInpSigGrpCntr,1,144,false,false,67,4,1,0,,0.0,0.0,0.0
+VCUStsModCst,1,144,false,false,79,8,1,0,energy recuperation end mode.\n能量回收状态模式,0.0,0.0,0.0
+VCUAccrPedlRat,1,144,false,false,87,15,0.004,0.0,加速油门踏板开度,0.0,0.0,0.0
+VCUPrkgBtnPsd,1,144,false,false,88,1,1,0,驾驶员按下P档,0.0,0.0,0.0
+VCUVirtAccrPedl,1,144,false,false,103,7,1,0,虚拟油门开度 当前模式的pedal map反算,0.0,0.0,0.0
+VCUTarGearLvrVld,1,144,false,false,96,1,1,0,目标档位有效位,0.0,0.0,0.0
+VCUAccrPedlRatVld,1,144,false,false,111,1,1,0,加速踏板有效性,0.0,0.0,0.0
+VCUFrntEmTqRdy,1,144,false,false,110,1,1,0,The Front Motor  can be ready to response chassis torque request.\n前电机可以响应扭矩请求.,0.0,0.0,0.0
+VCUReEmTqRdy,1,144,false,false,109,1,1,0,Rear EM is ready to response chassis Torque Request\n后电机是否处于Ready状态,0.0,0.0,0.0
+VCUTarGearLvr,1,144,false,false,108,3,1,0,目标档位  P R N D挡位,0.0,0.0,0.0
+VCUVirtAccrPedlVld,1,144,false,false,105,1,1,0,虚拟油门开度有效位,0.0,0.0,0.0
+VCUShifterMoveFlg,1,144,false,false,104,1,1,0,驾驶员拨动了换挡杆的标志位,0.0,0.0,0.0
+VCUDrvOffFcnLim,1,144,false,false,119,1,1,0,VCU send to BCS to identify whether vehcile can drive off or not as powertrain has fault and power limited.\nVCU发送给BCS系统，用于判断整车动力系统是否存在故障动力受限不能起步的判断,0.0,0.0,0.0
+VCUPtRdyFlg,1,144,false,false,127,1,1,0,驾驶使能,0.0,0.0,0.0
+CarModSts,1,144,false,false,126,3,1,0,CarMode状态信号,0.0,0.0,0.0
+VCUActDrvMod,1,144,false,false,123,4,1,0,VCU actual drive mode \nVCU实际驾驶模式,0.0,0.0,0.0
+VCUPrkgBtnPsdVld,1,144,false,false,135,1,1,0,驾驶员长按P挡有效性,0.0,0.0,0.0
+VCUAccrPedlRatGrdt,1,188,false,true,6,15,0.0625,0.0,加速油门踏板开度变化率,0.0,0.0,0.0
+FrntMotCtrlSigGrpChks,1,188,false,false,23,8,1,0,,0.0,0.0,0.0
+FrntMotCtrlSigGrpCntr,1,188,false,false,27,4,1,0,,0.0,0.0,0.0
+VCUFrntDesTqWoIntv,1,188,false,false,39,15,1,-16383,前轴未干预需求扭矩,0.0,0.0,0.0
+VCUFrntDesTqWoIntvVld,1,188,false,false,40,1,1,0,前轴未干预需求扭矩有效性,0.0,0.0,0.0
+VCUFrntMotActSpd,1,188,false,false,55,16,1,-32767,前电机实际转速,0.0,0.0,0.0
+VCUFrntMotActTq,1,188,false,false,71,15,1,-16383,前电机实际扭矩 明确为轴端扭矩 非电机端扭矩,0.0,0.0,0.0
+VCUFrntMotActSpdVld,1,188,false,false,72,1,1,0,前电机实际转速有效位,0.0,0.0,0.0
+VCUFrntMotWhlTqReq,1,188,false,false,87,15,1,-16383,Front motor torque request,0.0,0.0,0.0
+VCUFrntMotActTqVld,1,188,false,false,88,1,1,0,前电机实际扭矩有效位,0.0,0.0,0.0
+VCUFrntWhlTqMaxAvl,1,188,false,false,103,14,1,0,前轮最大可用扭矩,0.0,0.0,0.0
+VCUFrntWhlTqMaxAvlVld,1,188,false,false,105,1,1,0,前轮最大可用扭矩有效位,0.0,0.0,0.0
+VCUFrntMotWhlTqReqVld,1,188,false,false,104,1,1,0,Front motor torque request Valid,0.0,0.0,0.0
+VCUFrntWhlTqMinAvl,1,188,false,false,119,14,1,-16383,前轮最小可用扭矩,0.0,0.0,0.0
+VCUFrntWhlTqMinAvlVld,1,188,false,false,121,1,1,0,前轮最小可用扭矩有效位,0.0,0.0,0.0
+ReMotCtrlSigGrpChks,1,188,false,false,135,8,1,0,,0.0,0.0,0.0
+ReMotCtrlSigGrpCntr,1,188,false,false,139,4,1,0,,0.0,0.0,0.0
+VCUReWhlTqMinAvl,1,188,false,false,151,14,1,-16383,后轮最小可用扭矩,0.0,0.0,0.0
+VCUReWhlTqMinAvlVld,1,188,false,false,153,1,1,0,后轮最小可用扭矩有效位,0.0,0.0,0.0
+VCUReDesTqWoIntv,1,188,false,false,167,15,1,-16383,后轴未干预需求扭矩,0.0,0.0,0.0
+VCUReDesTqWoIntvVld,1,188,false,false,168,1,1,0,后轴未干预需求扭矩有效性,0.0,0.0,0.0
+VCUReMotActSpd,1,188,false,false,183,16,1,-32767,后电机实际转速,0.0,0.0,0.0
+VCUReMotActTq,1,188,false,false,199,15,1,-16383,后电机实际扭矩 明确为轴端扭矩 非电机端扭矩,0.0,0.0,0.0
+VCUReMotActSpdVld,1,188,false,false,200,1,1,0,后电机实际转速有效位,0.0,0.0,0.0
+VCUReMotWhlTqReq,1,188,false,false,215,15,1,-16383,Rear motor torque request,0.0,0.0,0.0
+VCUReMotActTqVld,1,188,false,false,216,1,1,0,后电机实际扭矩有效位,0.0,0.0,0.0
+VCUReWhlTqMaxAvl,1,188,false,false,231,14,1,0,后轮最大可用扭矩,0.0,0.0,0.0
+VCUReMotWhlTqReqVld,1,188,false,false,233,1,1,0,Rear motor torque request Valid,0.0,0.0,0.0
+VCUReWhlTqMaxAvlVld,1,188,false,false,232,1,1,0,后轮最大可用扭矩有效位,0.0,0.0,0.0
+VCUWhlTqMaxAvl,1,188,false,false,311,15,1,0,Vehicle Total Axle Max ability of Wheel Torque.\n整车前后轴总的最大可用扭矩,0.0,0.0,0.0
+VCUWhlTqMaxAvlVld,1,188,false,false,312,1,1,0,The validation of Vehicle total axle max ability of Wheel Torque.\n整车前后轴总的可用回收扭矩的有效位,0.0,0.0,0.0
+DmcModMonSigGrpChks,1,188,false,false,327,8,1,0,,0.0,0.0,0.0
+DmcModMonSigGrpCntr,1,188,false,false,331,4,1,0,,0.0,0.0,0.0
+VCUOperModFAOfDMC,1,188,false,false,343,4,1,0,Indicates the status of the DMC.,0.0,0.0,0.0
+VCUOperModRAOfDMC,1,188,false,false,339,4,1,0,Indicates the status of the DMC.,0.0,0.0,0.0
+VCUSWVersOfDMC,1,188,false,false,351,16,1,0,DMC SWInfo including variant info  mainly used for handshake check.,0.0,0.0,0.0
+VCUTarTqFAAOfDMC,1,188,false,true,367,16,1,0,DMC torque target FA,0.0,0.0,0.0
+VCUTarTqRAOfDMC,1,188,false,true,383,16,1,0,DMC torque target RA,0.0,0.0,0.0
+VDMVehSpdEstmGrpChks,1,188,false,false,407,8,1,0,,0.0,0.0,0.0
+VDMVehSpdEstmGrpCntr,1,188,false,false,411,4,1,0,,0.0,0.0,0.0
+VehLgtSpdEstd,1,188,false,false,423,10,0.1,0.0,longitudinal vehicle speed estemsted\n纵向车速,0.0,0.0,0.0
+VehLgtSpdEstdVld,1,188,false,false,429,1,1,0,Vehicle longitudinal speed estimated valid\n纵向车速有效性,0.0,0.0,0.0
+VDMLgtWhlSpdFL,1,188,false,false,425,10,0.1,0.0,VDM longitudinal wheel speed front left\n左前轮纵向速度,0.0,0.0,0.0
+VDMLgtWhlSpdFR,1,188,false,false,447,10,0.1,0.0,VDM longitudinal wheel speed front right\n右前轮纵向速度,0.0,0.0,0.0
+VDMLgtWhlSpdRL,1,188,false,false,449,10,0.1,0.0,VDM longitudinal wheel speed real left\n左后轮纵向速度,0.0,0.0,0.0
+VDMLgtWhlSpdRR,1,188,false,false,471,10,0.1,0.0,VDM longitudinal wheel speed rear right\n右后轮纵向速度,0.0,0.0,0.0
+VehBodySideSlipAng,1,188,false,false,475,12,0.01,-6.0,vehicle body side slip angle,0.0,0.0,0.0
+VehLatSpdEstd,1,188,false,false,495,10,0.1,0.0,lateral vehicle speed estemsted\n横向车速,0.0,0.0,0.0
+VehLatSpdEstdVld,1,188,false,false,501,1,1,0,vehicle lateral speed estimated valid\n横向车速有效性,0.0,0.0,0.0
+PreDampgCtrlReqFL,1,188,false,false,511,1,1,0,Preview suspension damping control request front left\n左前悬架阻尼预判控制请求,0.0,0.0,0.0
+PreDampgCtrlReqFR,1,188,false,false,510,1,1,0,Preview suspension damping control request front right\n右前悬架阻尼预判控制请求,0.0,0.0,0.0
+PreDampgCtrlReqRL,1,188,false,false,509,1,1,0,Preview suspension damping control request rear left\n左后悬架阻尼预判控制请求,0.0,0.0,0.0
+PreDampgCtrlReqRR,1,188,false,false,508,1,1,0,Preview suspension damping control request rear right\n右后悬架阻尼预判控制请求,0.0,0.0,0.0
+RdRghnessLvl,1,188,false,false,507,3,1,0,Road roughness level\n路面粗糙度等级,0.0,0.0,0.0
+VCULnchPlusAcvFlg,1,188,false,false,504,1,1,0,Launch Plus function is active\n弹射起步功能激活标志位,0.0,0.0,0.0
+UDB23FZCU,1,1403,false,false,23,1,1,0,,0.0,0.0,0.0
+UDB22FZCU,1,1403,false,false,22,1,1,0,,0.0,0.0,0.0
+UDB21FZCU,1,1403,false,false,21,1,1,0,,0.0,0.0,0.0
+UDB20FZCU,1,1403,false,false,20,1,1,0,,0.0,0.0,0.0
+UDB19FZCU,1,1403,false,false,19,1,1,0,,0.0,0.0,0.0
+UDB18FZCU,1,1403,false,false,18,1,1,0,,0.0,0.0,0.0
+UDB17FZCU,1,1403,false,false,17,1,1,0,,0.0,0.0,0.0
+UDB31FZCU,1,1403,false,false,31,1,1,0,,0.0,0.0,0.0
+UDB30FZCU,1,1403,false,false,30,1,1,0,,0.0,0.0,0.0
+UDB29FZCU,1,1403,false,false,29,1,1,0,,0.0,0.0,0.0
+UDB28FZCU,1,1403,false,false,28,1,1,0,,0.0,0.0,0.0
+UDB27FZCU,1,1403,false,false,27,1,1,0,,0.0,0.0,0.0
+UDB26FZCU,1,1403,false,false,26,1,1,0,,0.0,0.0,0.0
+UDB25FZCU,1,1403,false,false,25,1,1,0,,0.0,0.0,0.0
+UDB24FZCU,1,1403,false,false,24,1,1,0,,0.0,0.0,0.0
+UDB39FZCU,1,1403,false,false,39,1,1,0,,0.0,0.0,0.0
+UDB38FZCU,1,1403,false,false,38,1,1,0,,0.0,0.0,0.0
+UDB37FZCU,1,1403,false,false,37,1,1,0,,0.0,0.0,0.0
+UDB36FZCU,1,1403,false,false,36,1,1,0,,0.0,0.0,0.0
+UDB35FZCU,1,1403,false,false,35,1,1,0,,0.0,0.0,0.0
+UDB34FZCU,1,1403,false,false,34,1,1,0,,0.0,0.0,0.0
+UDB33FZCU,1,1403,false,false,33,1,1,0,,0.0,0.0,0.0
+UDB32FZCU,1,1403,false,false,32,1,1,0,,0.0,0.0,0.0
+UDB47FZCU,1,1403,false,false,47,1,1,0,,0.0,0.0,0.0
+UDB46FZCU,1,1403,false,false,46,1,1,0,,0.0,0.0,0.0
+UDB45FZCU,1,1403,false,false,45,1,1,0,,0.0,0.0,0.0
+UDB44FZCU,1,1403,false,false,44,1,1,0,,0.0,0.0,0.0
+UDB43FZCU,1,1403,false,false,43,1,1,0,,0.0,0.0,0.0
+UDB42FZCU,1,1403,false,false,42,1,1,0,,0.0,0.0,0.0
+UDB41FZCU,1,1403,false,false,41,1,1,0,,0.0,0.0,0.0
+UDB40FZCU,1,1403,false,false,40,1,1,0,,0.0,0.0,0.0
+NMKeepAwkRsnFZCU,1,1403,false,false,48,9,1,0,,0.0,0.0,0.0
+HandOnDetnStsSigGrpChks,1,607,false,false,7,8,1,0,,0.0,0.0,0.0
+HandOnDetnStsSigGrpCntr,1,607,false,false,11,4,1,0,,0.0,0.0,0.0
+HandOnDetnStsSigGrpLinErr,1,607,false,false,23,2,1,0,HandOnDetnStsSigGrp LIN communication Error,0.0,0.0,0.0
+HandsOnDetectionErrorStatus,1,607,false,false,21,1,1,0,方向盘离手检测故障状态,0.0,0.0,0.0
+HandsOnDetectionStatus,1,607,false,false,20,1,1,0,方向盘离手检测状态,0.0,0.0,0.0
+AswmLinComFltSts,1,607,false,false,31,1,1,0,ASWM LIN node communication fault status.,0.0,0.0,0.0
+DrvrOcupcyStsGroupChks,1,892,false,false,7,8,1,0,,0.0,0.0,0.0
+DrvrOcupcyStsGroupCntr,1,892,false,false,11,4,1,0,,0.0,0.0,0.0
+DrvrOcupcySts,1,892,false,false,23,2,1,0,Driver Occupancy Sensor Status\n主驾座椅占位传感器检测状态,0.0,0.0,0.0
+SecRowLeOcupcySts,1,892,false,false,31,2,1,0,Second Row Left Ocupcy Sensor Status\n二排左侧座椅占位传感器检测状态,0.0,0.0,0.0
+RlsAutWinWipgSpdCmdSigGrpChks,1,616,false,false,7,8,1,0,,0.0,0.0,0.0
+RlsAutWinWipgSpdCmdSigGrpCntr,1,616,false,false,11,4,1,0,,0.0,0.0,0.0
+RlsAutWinWipgSpdCmd,1,616,false,false,23,3,1,0,雨刮速度请求,0.0,0.0,0.0
+RlsLiSig1GrpChks,1,616,false,false,31,8,1,0,,0.0,0.0,0.0
+RlsLiSig1GrpCntr,1,616,false,false,35,4,1,0,,0.0,0.0,0.0
+RlsFwdLiSnsrVal,1,616,false,false,47,15,6.0,0.0,前向光线亮度,0.0,0.0,0.0
+RlsHudSnsrVal,1,616,false,false,63,15,6.0,0.0,Hud亮度,0.0,0.0,0.0
+RlsIRVal,1,616,false,false,79,8,400,0,红外光值输出,0.0,0.0,0.0
+RlsFwdLiSnsrValUnit,1,616,false,false,87,2,1,0,前向光线亮度单位,0.0,0.0,0.0
+RlsHudSnsrValUnit,1,616,false,false,85,2,1,0,Hud亮度单位,0.0,0.0,0.0
+RlsLiSnsrFwdFlt,1,616,false,false,83,1,1,0,RLS光线传感器 前向 故障,0.0,0.0,0.0
+RlsLiSnsrIRFlt,1,616,false,false,82,1,1,0,RLS光线传感器 IR红外 故障,0.0,0.0,0.0
+RlsLiSnsrTopFlt,1,616,false,false,81,1,1,0,RLS光线传感器 顶向 故障,0.0,0.0,0.0
+RlsLiSig2GrpChks,1,616,false,false,95,8,1,0,,0.0,0.0,0.0
+RlsLiSig2GrpCntr,1,616,false,false,99,4,1,0,,0.0,0.0,0.0
+RlsLiSigGrpLinErr,1,616,false,false,111,2,1,0,RlsLiSigGrp LIN communication Error,0.0,0.0,0.0
+RlsLiSwtReq,1,616,false,false,109,2,1,0,,0.0,0.0,0.0
+RlsOutdBriSts,1,616,false,false,107,3,1,0,白天 黑夜 隧道检测,0.0,0.0,0.0
+RlsTopLiSnsrVal,1,616,false,false,119,15,20.0,0.0,Top Light Value\n顶向光线亮度,0.0,0.0,0.0
+RlsSts,1,616,false,false,135,3,1,0,雨量阳光传感器状态,0.0,0.0,0.0
+RlsTopLiSnsrValUnit,1,616,false,false,132,2,1,0,顶部光线亮度单位,0.0,0.0,0.0
+PassOcupcySts,1,893,false,false,1,2,1,0,Passenger Occupancy Sensor  Status\n副驾座椅占位传感器检测状态,0.0,0.0,0.0
+SecRowRiOcupcySts,1,893,false,false,13,2,1,0,Second Row Right Ocupcy Sensor Status\n二排右侧座椅占位传感器检测状态,0.0,0.0,0.0
+SecRowMidOcupcySts,1,893,false,false,11,2,1,0,Second Row Middle Ocupcy Sensor Status\n二排中间座椅占位传感器检测状态,0.0,0.0,0.0
+FrntLeAirSprgP,1,342,false,false,7,16,1,0,Front Left Air spring pressure,0.0,0.0,0.0
+FrntRiAirSprgP,1,342,false,false,23,16,1,0,Front Right Air spring pressure,0.0,0.0,0.0
+ReLeAirSprgP,1,342,false,false,39,16,1,0,Rear Left Air spring pressure,0.0,0.0,0.0
+ReRiAirSprgP,1,342,false,false,55,16,1,0,Rear Right Air spring pressure,0.0,0.0,0.0
+AirPResv,1,342,false,false,71,16,1,0,Air Pressure Reservoir,0.0,0.0,0.0
+BatDamprModAllwd,1,342,false,false,87,1,1,0,Battle Damping Mode Allowed,0.0,0.0,0.0
+HiLvlMod2Allwd,1,342,false,false,86,1,1,0,HL2 Level Mode Allowed,0.0,0.0,0.0
+HiLvlMod1Allwd,1,342,false,false,85,1,1,0,HL1 Level Mode Allowed,0.0,0.0,0.0
+NormLvlModAllwd,1,342,false,false,84,1,1,0,Normal Level Mode Allowed,0.0,0.0,0.0
+LoLvlMod1Allwd,1,342,false,false,83,1,1,0,LL1 Level Mode Allowed,0.0,0.0,0.0
+LoLvlMod2Allwd,1,342,false,false,82,1,1,0,LL2 Level Mode Allowed,0.0,0.0,0.0
+SprgRateSts,1,342,false,false,81,2,1,0,Spring Rate Status of Dual Chamber Air Spring,0.0,0.0,0.0
+TarLvlChg,1,342,false,false,95,3,1,0,New target level based on manual or automatic level change,0.0,0.0,0.0
+SCUSelfAwkLvlAdjmt,1,342,false,false,92,1,1,0,SCU Self Awakening Level Adjustment\nSCU 自唤醒高度调节,0.0,0.0,0.0
+LvlAdjmtSts,1,342,false,false,91,4,1,0,level control mode adjustment status  ie. Lowering from Normal to Low,0.0,0.0,0.0
+NormLvlModRestrcnRsn,1,342,false,false,103,4,1,0,NL Level Mode Restriction Reason,0.0,0.0,0.0
+SuspHeiAdjmtReqSrc,1,342,false,false,99,3,1,0,Suspension Height Adjustment Request Source\n悬架高度调节源,0.0,0.0,0.0
+SprgRateStsVld,1,342,false,false,96,1,1,0,Spring Rate Status Valid \n空簧刚度有效性,0.0,0.0,0.0
+AirPResvSts,1,342,false,false,104,1,1,0,Air Pressure Reservoir status,0.0,0.0,0.0
+ReRiAirSprgPSts,1,342,false,false,118,1,1,0,Rear Right Air spring pressure status,0.0,0.0,0.0
+ReLeAirSprgPSts,1,342,false,false,117,1,1,0,Rear Left Air spring pressure status,0.0,0.0,0.0
+FrntRiAirSprgPSts,1,342,false,false,116,1,1,0,Front Right Air spring pressure status,0.0,0.0,0.0
+FrntLeAirSprgPSts,1,342,false,false,115,1,1,0,Front Left Air spring pressure status,0.0,0.0,0.0
+JackModEnaSts,1,342,false,false,114,1,1,0,Level Control deactivation request Enable status  Jack Mode,0.0,0.0,0.0
+JackModSts,1,342,false,false,113,1,1,0,Level Control deactivation request status  Jack Mode,0.0,0.0,0.0
+EasyEntryHeiSetSts,1,342,false,false,127,3,1,0,Easy Entry Height Set Status,0.0,0.0,0.0
+CurDampgCtrlMod,1,342,false,false,124,2,1,0,Current active damping control mode,0.0,0.0,0.0
+LvlModAct,1,342,false,false,135,3,1,0,Height Level Mode Actual,0.0,0.0,0.0
+EasyEntryEnaSts,1,342,false,false,131,1,1,0,Easy entry Request Enable Status,0.0,0.0,0.0
+EasyEntrySts,1,342,false,false,130,1,1,0,Easy entry Request Status,0.0,0.0,0.0
+EasyLoadEnaSts,1,342,false,false,129,1,1,0,Easy load Request Enable Status,0.0,0.0,0.0
+EasyLoadSts,1,342,false,false,128,1,1,0,Easy loading Request Status,0.0,0.0,0.0
+EasyLoadgFuncCouplAct,1,342,false,false,143,1,1,0,Easy loading couple function actual status,0.0,0.0,0.0
+NormDamprModAllwd,1,342,false,false,142,1,1,0,Normal Damping Mode Allowed,0.0,0.0,0.0
+CmftDamprModAllwd,1,342,false,false,141,1,1,0,Comfort Damping Mode Allowed,0.0,0.0,0.0
+SptDamprModAllwd,1,342,false,false,140,1,1,0,Sport Damping Mode Allowed,0.0,0.0,0.0
+SuspHeiSetSts,1,342,false,false,139,3,1,0,Suspension Height Set Status\n悬架高度设定状态 (座舱高度设置反馈),0.0,0.0,0.0
+HiLvlMod1RestrcnRsn,1,342,false,false,151,4,1,0,HL1 Level Mode Restriction Reason,0.0,0.0,0.0
+HiLvlMod2RestrcnRsn,1,342,false,false,147,4,1,0,HL2 Level Mode Restriction Reason,0.0,0.0,0.0
+LoLvlMod1RestrcnRsn,1,342,false,false,159,4,1,0,LL1 Level Mode Restriction Reason,0.0,0.0,0.0
+LoLvlMod2RestrcnRsn,1,342,false,false,155,4,1,0,LL2 Level Mode Restriction Reason,0.0,0.0,0.0
+StdLvlSpdSwtVld,1,342,false,false,166,1,1,0,Standard Level Speed depending Switch available to select or not  随速调节功能是否可用,0.0,0.0,0.0
+StdLvlSpdSwtSts,1,342,false,false,165,1,1,0,Standard Level Speed depending Switch status\n随速调节功能开关状态,0.0,0.0,0.0
+LvlCtrlCalCompl,1,342,false,false,160,1,1,0,Level control  HeightSensor  calibration completed,0.0,0.0,0.0
+SCUWarnSigGrpChks,1,342,false,false,191,8,1,0,,0.0,0.0,0.0
+SCUWarnSigGrpCntr,1,342,false,false,195,4,1,0,,0.0,0.0,0.0
+ASCFltSts,1,342,false,false,207,2,1,0,Air spring control fault status,0.0,0.0,0.0
+CDCFltSts,1,342,false,false,205,2,1,0,Continuous Daming control fault status,0.0,0.0,0.0
+ESPEnaReq,1,342,false,false,203,1,1,0,ESC OFF NOT ALLOWED,0.0,0.0,0.0
+SCUExtmHeiSts,1,342,false,false,202,2,1,0,SCU Extreme Height Status\nSCU 悬架极高极低状态,0.0,0.0,0.0
+SCULimSpdTqReq,1,342,false,false,215,1,1,0,SCU 限速限扭请求\nSCU Limit Speed Torque Request,0.0,0.0,0.0
+SCUWarnLampReq,1,342,false,false,214,2,1,0,SCU Warning Lamp Request\nSCU 故障灯请求,0.0,0.0,0.0
+SCUWarnMsgASC,1,342,false,false,212,3,1,0,SCU Warning Message ASC\n空气悬架故障警示信号,0.0,0.0,0.0
+SCUWarnMsgCDC,1,342,false,false,209,2,1,0,SCU Warning Message CDC\n电控减震器故障警示信号,0.0,0.0,0.0
+BatDamprModAllwd2,1,359,false,false,87,1,1,0,Battle Damping Mode Allowed,0.0,0.0,0.0
+SprgRateSts2,1,359,false,false,81,2,1,0,Spring Rate Status of Dual Chamber Air Spring,0.0,0.0,0.0
+SprgRateStsVld2,1,359,false,false,96,1,1,0,Spring Rate Status Valid \n空簧刚度有效性,0.0,0.0,0.0
+SCUActvAwakeReq2,1,359,false,false,119,1,1,0,SCU active powermode awake request.\nSCU请求电源模式awake,0.0,0.0,0.0
+CurDampgCtrlMod2,1,359,false,false,124,2,1,0,Current active damping control mode,0.0,0.0,0.0
+LvlModAct2,1,359,false,false,135,3,1,0,Height Level Mode Actual,0.0,0.0,0.0
+NormDamprModAllwd2,1,359,false,false,142,1,1,0,Normal Damping Mode Allowed,0.0,0.0,0.0
+CmftDamprModAllwd2,1,359,false,false,141,1,1.0,0.0,Comfort Damping Mode Allowed,0.0,0.0,0.0
+SptDamprModAllwd2,1,359,false,false,140,1,1,0,Sport Damping Mode Allowed,0.0,0.0,0.0
+LvlCtrlCalCompl2,1,359,false,false,160,1,1,0,Level control (HeightSensor) calibration completed,0.0,0.0,0.0
+SCUWarnSigGrp2Chks,1,359,false,false,191,8,1,0,,0.0,0.0,0.0
+SCUWarnSigGrp2Cntr,1,359,false,false,195,4,1,0,,0.0,0.0,0.0
+ASCFltSts2,1,359,false,false,207,2,1,0,Air spring control fault status,0.0,0.0,0.0
+CDCFltSts2,1,359,false,false,205,2,1,0,Continuous Daming control fault status,0.0,0.0,0.0
+ESPEnaReq2,1,359,false,false,203,1,1,0,ESC OFF NOT ALLOWED,0.0,0.0,0.0
+SCUExtmHeiSts2,1,359,false,false,202,2,1,0,SCU Extreme Height Status\nSCU 悬架极高极低状态,0.0,0.0,0.0
+SCULimSpdTqReq2,1,359,false,false,215,1,1,0,SCU 限速限扭请求\nSCU Limit Speed Torque Request,0.0,0.0,0.0
+SCUWarnLampReq2,1,359,false,false,214,2,1,0,SCU Warning Lamp Request\nSCU 故障灯请求,0.0,0.0,0.0
+SCUWarnMsgASC2,1,359,false,false,212,3,1,0,SCU Warning Message ASC\n空气悬架故障警示信号,0.0,0.0,0.0
+SCUWarnMsgCDC2,1,359,false,false,209,2,1.0,0.0,SCU Warning Message CDC\n电控减震器故障警示信号,0.0,0.0,0.0
+SCUBFaultInfoFlag,1,699,false,false,15,1,1,0,SCUB Fault Information Flag,0.0,0.0,0.0
+AccumIntkAirM,1,1000,false,false,7,12,1,0,Accumulated intake airmass\n累计进入系统的气量,0.0,0.0,0.0
+PrsntLoadData,1,1000,false,false,11,12,1,0,Present load data\n当前车辆计算载荷,0.0,0.0,0.0
+AccumWtrIntkWght,1,1000,false,false,31,8,0.1,0.0,Accumulated water intake weight\n累计进入系统的水量,0.0,0.0,0.0
+AccumNrFillg,1,1000,false,false,39,10,1,0,Accumulated number of filling\n累计补气次数,0.0,0.0,0.0
+SuspAirMDataClctSts,1,1000,false,false,45,4,1,0,Suspension airmass data big data collect status\n空簧系统Airmass管理大数据采集状态,0.0,0.0,0.0
+PrsntAirMData,1,1000,false,false,41,11,0.1,0.0,Present airmass data\n当前空簧系统气量,0.0,0.0,0.0
+SuspClctCurAmbHum,1,1000,false,false,62,7,1,0,Suspension collected current ambient humidity\n悬架系统采集的当前环境湿度,0.0,0.0,0.0
+SuspClctCurAmbT,1,1000,false,false,71,8,1,-80,Suspension collected current ambient temperature\n悬架系统采集的当前环境温度,0.0,0.0,0.0
+SuspClctCurAmbPSOA,1,1000,false,false,79,7,1,0,Suspension collected current atmosphere pressure from SOA\n天气预报大气压,0.0,0.0,0.0
+SuspWthrFcstAuthnSts,1,1000,false,false,72,1,1,0,Suspension weather forecast authorization status\n悬架天气预报授权信号,0.0,0.0,0.0
+SuspClctCurAmbTSOA,1,1000,false,false,87,8,1,-80,Suspension collected current ambient temperature from SOA\n天气预报温度情况,0.0,0.0,0.0
+NrActvnAv1Vlv,1,1000,false,false,103,20,1,0,Number of activations of AV1 valve\nAV1 阀开启次数统计,0.0,0.0,0.0
+NrActvnAv2Vlv,1,1000,false,false,115,20,1,0,Number of activations of AV2 valve\nAV2 阀开启次数统计,0.0,0.0,0.0
+NrActvnAv3Vlv,1,1000,false,false,143,20,1,0,Number of activations of AV3 valve\nAV3 阀开启次数统计,0.0,0.0,0.0
+NrActvnAv4Vlv,1,1000,false,false,155,20,1,0,Number of activations of AV4 valve\nAV4 阀开启次数统计,0.0,0.0,0.0
+NrActvnEvVlv,1,1000,false,false,183,20,1,0,Number of activations of EV valve\nEV 阀开启次数统计,0.0,0.0,0.0
+NrActvnSv1Vlv,1,1000,false,false,195,20,1,0,Number of activations of SV1 valve\nSV1 阀开启次数统计,0.0,0.0,0.0
+NrActvnSv2Vlv,1,1000,false,false,223,20,1,0,Number of activations of SV2 valve\nSV3 阀开启次数统计,0.0,0.0,0.0
+NrActvnSv3Vlv,1,1000,false,false,235,20,1,0,Number of activations of SV3 valve\nSV3 阀开启次数统计,0.0,0.0,0.0
+NrActvnSv4Vlv,1,1000,false,false,263,20,1,0,Number of activations of SV4 valve\nSV4 阀开启次数统计,0.0,0.0,0.0
+CmpRtCntrDwnLvlg,1,1000,false,false,287,9,1,0,Compressor runtime counter of down leveling\n压缩机运行在悬架下降调节总时长,0.0,0.0,0.0
+CmpRtCntrTot,1,1000,false,false,289,10,1,0,Compressor runtime counter total\n压缩机运行总时长,0.0,0.0,0.0
+CmpRtCntrTotResvFillg,1,1000,false,false,311,9,1,0,Compressor runtime counter of reservoir filling\n压缩机运行在储气罐充气总时长,0.0,0.0,0.0
+CmpRtCntrUpLvlg,1,1000,false,false,312,9,1,0,Compressor runtime counter of up leveling\n压缩机运行在悬架上升调节总时长,0.0,0.0,0.0
+CmpOperModCntrDwnLvlg,1,1000,false,false,335,16,1,0,Compressor operating mode counter of down leveling\n压缩机运行在悬架下降调节模式中的次数,0.0,0.0,0.0
+CmpOperModCntrUpLvlg,1,1000,false,false,351,16,1,0,Compressor operating mode counter of up leveling\n压缩机运行在悬架上升调节模式中的次数,0.0,0.0,0.0
+CmpOperModCntrOvfDwnLvlg,1,1000,false,false,367,14,1,0,Compressor operating mode counter of down leveling\n压缩机运行在悬架Overflow下降调节模式中的次数,0.0,0.0,0.0
+CmpOperModCntrOvfUpLvlg,1,1000,false,false,383,14,1,0,Compressor operating mode counter of up leveling\n压缩机运行在悬架Overflow上升调节模式中的次数,0.0,0.0,0.0
+CmpOperModCntrResvFillg,1,1000,false,false,399,11,1,0,Compressor operating mode counter of reservoir filling\n压缩机运行在储气罐充气模式中的次数,0.0,0.0,0.0
+NrActvnCmp,1,1000,false,false,415,18,1,0,Number of activations of Compressor\n压缩机开启次数统计,0.0,0.0,0.0
+AsuCrtlDataClctSts,1,1000,false,false,439,3,1,0,ASU control big data collect status\nASU控制大数据采集状态,0.0,0.0,0.0
+CtrlActnFbAvFL,1,1000,false,false,436,1,1,0,Control Action Feedback of air valve FL \n左前空气阀动作反馈,0.0,0.0,0.0
+CtrlActnFbAvFR,1,1000,false,false,435,1,1,0,Control Action Feedback of air valve FR \n右前空气阀动作反馈,0.0,0.0,0.0
+CtrlActnFbAvRL,1,1000,false,false,434,1,1,0,Control Action Feedback of air valve RL \n左后空气阀动作反馈,0.0,0.0,0.0
+CtrlActnFbAvRR,1,1000,false,false,433,1,1,0,Control Action Feedback of air valve RR \n右后空气阀动作反馈,0.0,0.0,0.0
+CtrlActnFbEv,1,1000,false,false,432,1,1,0,Control Action Feedback of exhaust valve \nEV排气阀动作反馈,0.0,0.0,0.0
+ScuAcMode,1,1000,false,false,447,8,1,0,SCU Actuator Mode\nSCU执行器模式,0.0,0.0,0.0
+CtrlActnFbMot,1,1000,false,false,455,1,1,0,Control Action Feedback of motor \n电机控制动作反馈,0.0,0.0,0.0
+CtrlActnFbSv1,1,1000,false,false,454,1,1,0,Control Action Feedback of switch valve 1 \nSV1换向阀动作反馈,0.0,0.0,0.0
+CtrlActnFbSv2,1,1000,false,false,453,1,1,0,Control Action Feedback of switch valve 2 \nSV2换向阀动作反馈,0.0,0.0,0.0
+CtrlActnFbSv3,1,1000,false,false,452,1,1,0,Control Action Feedback of switch valve 3 \nSV3换向阀动作反馈,0.0,0.0,0.0
+CtrlActnFbSv4,1,1000,false,false,451,1,1,0,Control Action Feedback of switch valve 4 \nSV4换向阀动作反馈,0.0,0.0,0.0
+AsuCrtlDataClctReq,1,1000,false,false,463,1,1,0,ASU control data big data collect request\nASU控制大数据采集请求,0.0,0.0,0.0
+ASULftDataClctReq,1,1000,false,false,462,1,1,0,ASU Lifetime data collect request\nASU 关键零部件大数据采集请求,0.0,0.0,0.0
+SuspAirMDataClctReq,1,1000,false,false,461,1,1,0,Suspension air mass data big data collect request\n空簧系统气量大数据采集请求,0.0,0.0,0.0
+SCUEvntTrackFrame1Byte0to3,1,1446,false,false,7,32,1,0,SCU Event Tracking Frame 1 Byte 0 to 3,0.0,0.0,0.0
+SCUEvntTrackFrame1Byte4to7,1,1446,false,false,39,32,1,0,SCU Event Tracking Frame 1 Byte 4 to 7,0.0,0.0,0.0
+SCUEvntTrackFrame1Byte8to11,1,1446,false,false,71,32,1,0,SCU Event Tracking Frame 1 Byte 8 to 11,0.0,0.0,0.0
+SCUEvntTrackFrame1Byte12to15,1,1446,false,false,103,32,1,0,SCU Event Tracking Frame 1 Byte 12 to 15,0.0,0.0,0.0
+SCUEvntTrackFrame1Byte16to19,1,1446,false,false,135,32,1,0,SCU Event Tracking Frame 1 Byte 16 to 19,0.0,0.0,0.0
+SCUEvntTrackFrame1Byte20to23,1,1446,false,false,167,32,1,0,SCU Event Tracking Frame 1 Byte 20 to 23,0.0,0.0,0.0
+SCUEvntTrackFrame1Byte24to27,1,1446,false,false,199,32,1,0,SCU Event Tracking Frame 1 Byte 24 to 27,0.0,0.0,0.0
+SCUEvntTrackFrame1Byte28to31,1,1446,false,false,231,32,1,0,SCU Event Tracking Frame 1 Byte 28 to 31,0.0,0.0,0.0
+RtcWake1AjustStsRR,1,156,false,false,3,1,1,0,RTC第1次唤醒是否调节 RR,0.0,0.0,0.0
+RtcWake1AjustStsRL,1,156,false,false,2,1,1,0,RTC第1次唤醒是否调节 RL,0.0,0.0,0.0
+RtcWake1AjustStsFR,1,156,false,false,1,1,1,0,RTC第1次唤醒是否调节 FR,0.0,0.0,0.0
+RtcWake1AjustStsFL,1,156,false,false,0,1,1,0,RTC第1次唤醒是否调节 FL,0.0,0.0,0.0
+RtcWake1DateTimeDay,1,156,false,false,12,5,1,0,RTC第1次唤醒时间日,0.0,0.0,0.0
+RtcWake1DateTimeHr,1,156,false,false,20,5,1,0,RTC第1次唤醒时间小时,0.0,0.0,0.0
+RtcWake1DateTimeMins,1,156,false,false,29,6,1,0,RTC第1次唤醒时间分钟,0.0,0.0,0.0
+RtcWake2AjustStsFL,1,156,false,false,37,1,1,0,RTC第2次唤醒是否调节 FL,0.0,0.0,0.0
+RtcWake1Valid,1,156,false,false,36,1,1,0,RTC第1次唤醒有效位,0.0,0.0,0.0
+RtcWake1DateTimeMth,1,156,false,false,35,4,1.0,0.0,RTC第1次唤醒时间月,0.0,0.0,0.0
+RtcWake1DateTimeYr,1,156,false,false,47,8,1.0,2000.0,RTC第1次唤醒时间年,0.0,0.0,0.0
+RtcWake1HeightFL,1,156,false,false,55,8,1,-127,RTC第1次唤醒空簧高度FL,0.0,0.0,0.0
+RtcWake1HeightFR,1,156,false,false,63,8,1,-127,RTC第1次唤醒空簧高度FR,0.0,0.0,0.0
+RtcWake1HeightRL,1,156,false,false,71,8,1,-127,RTC第1次唤醒空簧高度RL,0.0,0.0,0.0
+RtcWake1HeightRR,1,156,false,false,79,8,1,-127,RTC第1次唤醒空簧高度RR,0.0,0.0,0.0
+RtcWake2DateTimeDay,1,156,false,false,87,5,1,0,RTC第2次唤醒时间日,0.0,0.0,0.0
+RtcWake2AjustStsRR,1,156,false,false,82,1,1,0,RTC第2次唤醒是否调节 RR,0.0,0.0,0.0
+RtcWake2AjustStsRL,1,156,false,false,81,1,1,0,RTC第2次唤醒是否调节 RL,0.0,0.0,0.0
+RtcWake2AjustStsFR,1,156,false,false,80,1,1,0,RTC第2次唤醒是否调节 FR,0.0,0.0,0.0
+RtcWake2DateTimeHr,1,156,false,false,92,5,1,0,RTC第2次唤醒时间小时,0.0,0.0,0.0
+RtcWake2DateTimeMins,1,156,false,false,101,6,1,0,RTC第2次唤醒时间分钟,0.0,0.0,0.0
+RtcWake2DateTimeMth,1,156,false,false,107,4,1.0,0.0,RTC第2次唤醒时间月,0.0,0.0,0.0
+RtcWake2DateTimeYr,1,156,false,false,119,8,1.0,2000.0,RTC第2次唤醒时间年,0.0,0.0,0.0
+RtcWake2HeightFL,1,156,false,false,127,8,1,-127,RTC第2次唤醒空簧高度FL,0.0,0.0,0.0
+RtcWake2HeightFR,1,156,false,false,135,8,1,-127,RTC第2次唤醒空簧高度FR,0.0,0.0,0.0
+RtcWake2HeightRL,1,156,false,false,143,8,1,-127,RTC第2次唤醒空簧高度RL,0.0,0.0,0.0
+RtcWake2HeightRR,1,156,false,false,151,8,1,-127,RTC第2次唤醒空簧高度RR,0.0,0.0,0.0
+RtcWake3DateTimeDay,1,156,false,false,159,5,1,0,RTC第3次唤醒时间日,0.0,0.0,0.0
+RtcWake3AjustStsFR,1,156,false,false,154,1,1,0,RTC第3次唤醒是否调节 FR,0.0,0.0,0.0
+RtcWake3AjustStsFL,1,156,false,false,153,1,1,0,RTC第3次唤醒是否调节 FL,0.0,0.0,0.0
+RtcWake2Valid,1,156,false,false,152,1,1,0,RTC第2次唤醒有效位,0.0,0.0,0.0
+RtcWake3DateTimeHr,1,156,false,false,167,5,1,0,RTC第3次唤醒时间小时,0.0,0.0,0.0
+RtcWake3Valid,1,156,false,false,162,1,1,0,RTC第3次唤醒有效位,0.0,0.0,0.0
+RtcWake3AjustStsRR,1,156,false,false,161,1,1,0,RTC第3次唤醒是否调节 RR,0.0,0.0,0.0
+RtcWake3AjustStsRL,1,156,false,false,160,1,1,0,RTC第3次唤醒是否调节 RL,0.0,0.0,0.0
+RtcWake3DateTimeYr,1,156,false,false,175,8,1.0,2000.0,RTC第3次唤醒时间年,0.0,0.0,0.0
+RtcWake3HeightFL,1,156,false,false,183,8,1,-127,RTC第3次唤醒空簧高度FL,0.0,0.0,0.0
+RtcWake3HeightFR,1,156,false,false,191,8,1,-127,RTC第3次唤醒空簧高度FR,0.0,0.0,0.0
+RtcWake3HeightRL,1,156,false,false,199,8,1,-127,RTC第3次唤醒空簧高度RL,0.0,0.0,0.0
+RtcWake3HeightRR,1,156,false,false,207,8,1,-127,RTC第3次唤醒空簧高度RR,0.0,0.0,0.0
+RtcWake3DateTimeMins,1,156,false,false,213,6,1,0,RTC第3次唤醒时间分钟,0.0,0.0,0.0
+RtcWake3DateTimeMth,1,156,false,false,219,4,1.0,0.0,RTC第3次唤醒时间月,0.0,0.0,0.0
+ScuIGOffDateTimeDay,1,157,false,false,4,5,1,0,SCU上次驾驶循环下电时间日,0.0,0.0,0.0
+ScuIGOffDateTimeHr,1,157,false,false,12,5,1,0,SCU上次驾驶循环下电时间小时,0.0,0.0,0.0
+ScuIGOffDateTimeMins,1,157,false,false,21,6,1,0,SCU上次驾驶循环下电时间分钟,0.0,0.0,0.0
+ScuIGOffDateTimeMth,1,157,false,false,28,4,1.0,0.0,SCU上次驾驶循环下电时间月,0.0,0.0,0.0
+ScuIGOffDateTimeYr,1,157,false,false,39,8,1.0,2000.0,SCU上次驾驶循环下电时间年,0.0,0.0,0.0
+ScuIGOffTargetFront,1,157,false,false,47,8,1,-127,SCU上驾驶循环下电空簧前轴目标高度,0.0,0.0,0.0
+ScuIGOffTargetRear,1,157,false,false,55,8,1,-127,SCU上驾驶循环下电空簧后轴目标高度,0.0,0.0,0.0
+ScuIGOffTime,1,157,false,false,63,18,0.125,0.0,SCU上次循环下电休眠总时间,0.0,0.0,0.0
+CurHeiSigGrpChks,1,182,false,false,7,8,1,0,,0.0,0.0,0.0
+FrntLeCurHeiSts,1,182,false,false,15,1,1,0,Front Left Current Height status,0.0,0.0,0.0
+ReLeCurHeiSts,1,182,false,false,14,1,1,0,Rear Left Current Height status,0.0,0.0,0.0
+FrntRiCurHeiSts,1,182,false,false,13,1,1,0,Front Right Current Height status,0.0,0.0,0.0
+ReRiCurHeiSts,1,182,false,false,12,1,1,0,Rear Right Current Height status,0.0,0.0,0.0
+CurHeiSigGrpCntr,1,182,false,false,11,4,1,0,,0.0,0.0,0.0
+FrntLeCurHei,1,182,false,false,23,8,1,-127,Front Left Current Height,0.0,0.0,0.0
+ReLeCurHei,1,182,false,false,31,8,1,-127,Rear Left Current Height,0.0,0.0,0.0
+FrntRiCurHei,1,182,false,false,39,8,1,-127,Front Right Current Height,0.0,0.0,0.0
+ReRiCurHei,1,182,false,false,47,8,1,-127,Rear Right Current Height,0.0,0.0,0.0
+SCUAccrSnsrChks,1,182,false,false,71,8,1,0,,0.0,0.0,0.0
+SCUAccrSnsrCntr,1,182,false,false,75,4,1,0,,0.0,0.0,0.0
+AccrSnsrAzFrntLe,1,182,false,false,87,10,0.01,-1.6,Front left sensor vertical acceleration,0.0,0.0,0.0
+AccrSnsrAzFrntRi,1,182,false,false,103,10,0.01,-1.6,Front right sensor vertical acceleration,0.0,0.0,0.0
+AccrSnsrAzRe,1,182,false,false,119,10,0.01,-1.6,Rear sensor vertical acceleration,0.0,0.0,0.0
+DamprCurFrntLe,1,182,false,false,135,8,0.01,0.0,Suspension damper current Front Left,0.0,0.0,0.0
+DamprCurFrntRi,1,182,false,false,143,8,0.01,0.0,Suspension damper current Front Right,0.0,0.0,0.0
+DamprCurReLe,1,182,false,false,151,8,0.01,0.0,Suspension damper current Rear Left,0.0,0.0,0.0
+DamprCurReqFL,1,182,false,false,159,8,0.01,0.0,Damper current request front left,0.0,0.0,0.0
+DamprCurReqFR,1,182,false,false,167,8,0.01,0.0,Damper current request front right,0.0,0.0,0.0
+BodyVertVFL,1,182,false,false,175,13,0.001,-4.0,Body vertical velocity front left corner\n左前车身垂向速度,0.0,0.0,0.0
+BodyVertVFR,1,182,false,false,191,13,0.001,-4.0,Body vertical velocity front right corner\n右前车身垂向速度,0.0,0.0,0.0
+BodyVertVRL,1,182,false,false,207,13,0.001,-4.0,Body vertical velocity rear left corner\n左后车身垂向速度,0.0,0.0,0.0
+BodyVertVRR,1,182,false,false,223,13,0.001,-4.0,Body vertical velocity rear right corner\n右后车身垂向速度,0.0,0.0,0.0
+DamprCurReqRL,1,182,false,false,239,8,0.01,0.0,Damper current request rear left,0.0,0.0,0.0
+DamprCurReqRR,1,182,false,false,247,8,0.01,0.0,Damper current request rear right,0.0,0.0,0.0
+DamprCurReRi,1,182,false,false,255,8,0.01,0.0,Suspension damper current Rear Right,0.0,0.0,0.0
+CurHeiSigGrp2Chks,1,192,false,false,7,8,1,0,,0.0,0.0,0.0
+FrntLeCurHeiSts2,1,192,false,false,15,1,1,0,Front Left Current Height status,0.0,0.0,0.0
+ReLeCurHeiSts2,1,192,false,false,14,1,1,0,Rear Left Current Height status,0.0,0.0,0.0
+FrntRiCurHeiSts2,1,192,false,false,13,1,1.0,0.0,Front Right Current Height status,0.0,0.0,0.0
+ReRiCurHeiSts2,1,192,false,false,12,1,1.0,0.0,Rear Right Current Height status,0.0,0.0,0.0
+CurHeiSigGrp2Cntr,1,192,false,false,11,4,1,0,,0.0,0.0,0.0
+FrntLeCurHei2,1,192,false,false,23,8,1,-127,Front Left Current Height,0.0,0.0,0.0
+ReLeCurHei2,1,192,false,false,31,8,1,-127,Rear Left Current Height,0.0,0.0,0.0
+FrntRiCurHei2,1,192,false,false,39,8,1,-127,Front Right Current Height,0.0,0.0,0.0
+ReRiCurHei2,1,192,false,false,47,8,1,-127,Rear Right Current Height,0.0,0.0,0.0
+BodyVertVFL2,1,192,false,false,175,13,0.001,-4.0,Body vertical velocity front left corner\n左前车身垂向速度,0.0,0.0,0.0
+BodyVertVFR2,1,192,false,false,191,13,0.001,-4.0,Body vertical velocity front right corner\n右前车身垂向速度,0.0,0.0,0.0
+BodyVertVRL2,1,192,false,false,207,13,0.001,-4.0,Body vertical velocity rear left corner\n左后车身垂向速度,0.0,0.0,0.0
+BodyVertVRR2,1,192,false,false,223,13,0.001,-4.0,Body vertical velocity rear right corner\n右后车身垂向速度,0.0,0.0,0.0
+SCUChassisCanfdNodeAddress,1,1323,false,false,7,8,1,0,Node source address,0.0,0.0,0.0
+SCUChassisCanfdActiveWakeup,1,1323,false,false,12,1,1,0,Active Wakeup Bit,0.0,0.0,0.0
+SCUChassisCanfdRepeatMsgReq,1,1323,false,false,8,1,1,0,Repeat Message Request Bit,0.0,0.0,0.0
+UDB23SCU,1,1323,false,false,23,1,1,0,,0.0,0.0,0.0
+UDB22SCU,1,1323,false,false,22,1,1,0,,0.0,0.0,0.0
+UDB21SCU,1,1323,false,false,21,1,1,0,,0.0,0.0,0.0
+UDB20SCU,1,1323,false,false,20,1,1,0,,0.0,0.0,0.0
+UDB19SCU,1,1323,false,false,19,1,1,0,,0.0,0.0,0.0
+UDB18SCU,1,1323,false,false,18,1,1,0,,0.0,0.0,0.0
+UDB17SCU,1,1323,false,false,17,1,1,0,,0.0,0.0,0.0
+SCUChassisCanfdRepeatMsgSt,1,1323,false,false,16,1,1,0,Repeat Message State indication,0.0,0.0,0.0
+UDB31SCU,1,1323,false,false,31,1,1,0,,0.0,0.0,0.0
+UDB30SCU,1,1323,false,false,30,1,1,0,,0.0,0.0,0.0
+UDB29SCU,1,1323,false,false,29,1,1,0,,0.0,0.0,0.0
+UDB28SCU,1,1323,false,false,28,1,1,0,,0.0,0.0,0.0
+UDB27SCU,1,1323,false,false,27,1,1,0,,0.0,0.0,0.0
+UDB26SCU,1,1323,false,false,26,1,1,0,,0.0,0.0,0.0
+UDB25SCU,1,1323,false,false,25,1,1,0,,0.0,0.0,0.0
+UDB24SCU,1,1323,false,false,24,1,1,0,,0.0,0.0,0.0
+UDB39SCU,1,1323,false,false,39,1,1,0,,0.0,0.0,0.0
+UDB38SCU,1,1323,false,false,38,1,1,0,,0.0,0.0,0.0
+UDB37SCU,1,1323,false,false,37,1,1,0,,0.0,0.0,0.0
+UDB36SCU,1,1323,false,false,36,1,1,0,,0.0,0.0,0.0
+UDB35SCU,1,1323,false,false,35,1,1,0,,0.0,0.0,0.0
+UDB34SCU,1,1323,false,false,34,1,1,0,,0.0,0.0,0.0
+UDB33SCU,1,1323,false,false,33,1,1,0,,0.0,0.0,0.0
+UDB32SCU,1,1323,false,false,32,1,1,0,,0.0,0.0,0.0
+UDB47SCU,1,1323,false,false,47,1,1,0,,0.0,0.0,0.0
+UDB46SCU,1,1323,false,false,46,1,1,0,,0.0,0.0,0.0
+UDB45SCU,1,1323,false,false,45,1,1,0,,0.0,0.0,0.0
+UDB44SCU,1,1323,false,false,44,1,1,0,,0.0,0.0,0.0
+UDB43SCU,1,1323,false,false,43,1,1,0,,0.0,0.0,0.0
+UDB42SCU,1,1323,false,false,42,1,1,0,,0.0,0.0,0.0
+UDB41SCU,1,1323,false,false,41,1,1,0,,0.0,0.0,0.0
+UDB40SCU,1,1323,false,false,40,1,1,0,,0.0,0.0,0.0
+NMKeepAwkRsnSCUB,1,1323,false,false,48,9,1,0,,0.0,0.0,0.0
+SCUToVCCDDiagResp,1,1572,false,false,7,512,1,0,,0.0,0.0,0.0
+SWMFaultInfoFlag,1,419,false,false,7,1,1,0,SWM Fault Information Flag,0.0,0.0,0.0
+SwtHiBeam,1,419,false,false,6,2,1,0,组合开关远光灯请求命令,0.0,0.0,0.0
+ColShiftLvrDiagc,1,419,false,false,2,3,1,0,组合开关档位有效性,0.0,0.0,0.0
+WiprPushSwt,1,419,false,false,9,2,1,0,组合开关雨刮Push按键,0.0,0.0,0.0
+SwtIndcrRawSigGrpChks,1,419,false,false,31,8,1,0,,0.0,0.0,0.0
+SwtIndcrRawSigGrpCntr,1,419,false,false,35,4,1,0,,0.0,0.0,0.0
+SwtIndcrRaw,1,419,false,false,42,3,1,0,组合开关转向灯请求命令,0.0,0.0,0.0
+GearShiftPosReqSigGrpChks,1,419,false,false,63,8,1,0,,0.0,0.0,0.0
+GearShiftPosReqSigGrpCntr,1,419,false,false,67,4,1,0,,0.0,0.0,0.0
+GearShiftPosReq,1,419,false,false,74,3,1,0,组合开关怀挡拨杆位置,0.0,0.0,0.0
+DrvrGearShiftParkReqSigGrpChks,1,419,false,false,95,8,1,0,,0.0,0.0,0.0
+DrvrGearShiftParkReqSigGrpCntr,1,419,false,false,99,4,1,0,,0.0,0.0,0.0
+DrvrGearShiftParkReq,1,419,false,false,105,2,1,0,组合开关P档Push请求,0.0,0.0,0.0
+SWMNodeAddress,1,1319,false,false,7,8,1,0,Node source address,0.0,0.0,0.0
+SWMActiveWakeup,1,1319,false,false,12,1,1,0,Active Wakeup Bit,0.0,0.0,0.0
+SWMRepeatMsgReq,1,1319,false,false,8,1,1,0,Repeat Message Request Bit,0.0,0.0,0.0
+UDB23SWM,1,1319,false,false,23,1,1,0,,0.0,0.0,0.0
+UDB22SWM,1,1319,false,false,22,1,1,0,,0.0,0.0,0.0
+UDB21SWM,1,1319,false,false,21,1,1,0,,0.0,0.0,0.0
+UDB20SWM,1,1319,false,false,20,1,1,0,,0.0,0.0,0.0
+UDB19SWM,1,1319,false,false,19,1,1,0,,0.0,0.0,0.0
+UDB18SWM,1,1319,false,false,18,1,1,0,,0.0,0.0,0.0
+UDB17SWM,1,1319,false,false,17,1,1,0,,0.0,0.0,0.0
+SWMRepeatMsgSt,1,1319,false,false,16,1,1,0,Repeat Message State indication,0.0,0.0,0.0
+UDB31SWM,1,1319,false,false,31,1,1,0,,0.0,0.0,0.0
+UDB30SWM,1,1319,false,false,30,1,1,0,,0.0,0.0,0.0
+UDB29SWM,1,1319,false,false,29,1,1,0,,0.0,0.0,0.0
+UDB28SWM,1,1319,false,false,28,1,1,0,,0.0,0.0,0.0
+UDB27SWM,1,1319,false,false,27,1,1,0,,0.0,0.0,0.0
+UDB26SWM,1,1319,false,false,26,1,1,0,,0.0,0.0,0.0
+UDB25SWM,1,1319,false,false,25,1,1,0,,0.0,0.0,0.0
+UDB24SWM,1,1319,false,false,24,1,1,0,,0.0,0.0,0.0
+UDB39SWM,1,1319,false,false,39,1,1,0,,0.0,0.0,0.0
+UDB38SWM,1,1319,false,false,38,1,1,0,,0.0,0.0,0.0
+UDB37SWM,1,1319,false,false,37,1,1,0,,0.0,0.0,0.0
+UDB36SWM,1,1319,false,false,36,1,1,0,,0.0,0.0,0.0
+UDB35SWM,1,1319,false,false,35,1,1,0,,0.0,0.0,0.0
+UDB34SWM,1,1319,false,false,34,1,1,0,,0.0,0.0,0.0
+UDB33SWM,1,1319,false,false,33,1,1,0,,0.0,0.0,0.0
+UDB32SWM,1,1319,false,false,32,1,1,0,,0.0,0.0,0.0
+UDB47SWM,1,1319,false,false,47,1,1,0,,0.0,0.0,0.0
+UDB46SWM,1,1319,false,false,46,1,1,0,,0.0,0.0,0.0
+UDB45SWM,1,1319,false,false,45,1,1,0,,0.0,0.0,0.0
+UDB44SWM,1,1319,false,false,44,1,1,0,,0.0,0.0,0.0
+UDB43SWM,1,1319,false,false,43,1,1,0,,0.0,0.0,0.0
+UDB42SWM,1,1319,false,false,42,1,1,0,,0.0,0.0,0.0
+UDB41SWM,1,1319,false,false,41,1,1,0,,0.0,0.0,0.0
+UDB40SWM,1,1319,false,false,40,1,1,0,,0.0,0.0,0.0
+NMKeepAwkRsnSWM,1,1319,false,false,48,9,1,0,,0.0,0.0,0.0
+SWMToVCCDDiagResp,1,1573,false,false,7,512,1,0,,0.0,0.0,0.0
+SWMToVCCDResp,1,1761,false,false,7,512,1,0,,0.0,0.0,0.0
+TiDomn,1,263,false,false,4,5,1,0,time domain,0.0,0.0,0.0
+DateTiYr,1,263,false,false,15,8,1.0,2000.0,date time year,0.0,0.0,0.0
+DateTiMth,1,263,false,false,19,4,1.0,0.0,date time month,0.0,0.0,0.0
+DateTiDay,1,263,false,false,28,5,1,0,date time day,0.0,0.0,0.0
+DateTiHr,1,263,false,false,36,5,1.0,0.0,date time hour,0.0,0.0,0.0
+DateTiMins,1,263,false,false,45,6,1.0,0.0,date time minute,0.0,0.0,0.0
+DateTiSec,1,263,false,false,55,6,1.0,0.0,date time second,0.0,0.0,0.0
+DateTiMilsec,1,263,false,false,49,10,1.0,0.0,date time millisecond,0.0,0.0,0.0
+profileRestoreFactoryReqSoa,1,345,false,false,7,1,1,0,Restore factory Settings signals from Soa\nSoa的恢复出厂设置信号,0.0,0.0,0.0
+DiagcExtActv,1,345,false,false,6,1,1,0,diagnostic external connection activation,0.0,0.0,0.0
+SecOCTripCnt,1,529,false,false,7,24,1,0,同步计数器,0.0,0.0,0.0
+SecOCResetCnt,1,529,false,false,31,16,1,0,重置计数器,0.0,0.0,0.0
+SecOCMAC1,1,529,false,false,47,32,1,0,消息认证码1,0.0,0.0,0.0
+SecOCMAC2,1,529,false,false,79,32,1,0,消息认证码2,0.0,0.0,0.0
+SecOCMAC3,1,529,false,false,111,24,1,0,消息认证码3,0.0,0.0,0.0
+ExtrLiFcnSetSigGrpChks,1,549,false,false,7,8,1,0,,0.0,0.0,0.0
+ExtrLiFcnSetSigGrpCntr,1,549,false,false,11,4,1,0,,0.0,0.0,0.0
+ExtrLiFcnSet,1,549,false,false,23,3,1.0,0.0,Exterior Light Function Set\n外灯功能设定,0.0,0.0,0.0
+WiprSpdAdjCfgSet,1,549,false,false,20,5,1,0,Wiper Control adjust configuration Set\n雨刮控制设定,0.0,0.0,0.0
+DCDDltAllKeyCmd,1,549,false,false,47,1,1,0,Delete all Mobile NFC or BLE key,0.0,0.0,0.0
+ADSELKSwtSet,1,549,false,false,46,2,1,0,紧急车道保持开关\nADS ELK switch set,0.0,0.0,0.0
+ADSFltQuitReqFrmDCD,1,549,false,false,44,2,1,0,路面感知系统 SR 监控上游模块失活，请求智驾功能降级,0.0,0.0,0.0
+DCDDisplayFailSts,1,549,false,false,42,3,1.0,0.0,Center Display Fail Status\n座舱中控显示失效状态,0.0,0.0,0.0
+DCDDltAllKeyCmdFV,1,549,false,false,87,16,1,0,,0.0,0.0,0.0
+DCDDltAllKeyCmdMAC,1,549,false,false,103,32,1,0,,0.0,0.0,0.0
+VehInsSpdDisp,1,864,false,false,7,9,1,0,Vehicle instantaneous speed display,0.0,0.0,0.0
+VehInsSpdDispVld,1,864,false,false,14,1,1,0,Vehicle instantaneous speed display Valid,0.0,0.0,0.0
+DCDICVehSrvAuthntSts,1,864,false,false,13,2,1,0,网联车系统服务授权状态\nIntelligent Connected Vehicle  Service Authorization status,0.0,0.0,0.0
+SuspHeiSetSoa,1,910,false,false,7,4,1,0,Suspension Height Set\n 悬架高度设定,0.0,0.0,0.0
+TotOdoAcrt,1,914,false,false,7,24,0.1,0.0,ODO,0.0,0.0,0.0
+TotOdoAcrtLvlMVld,1,914,false,false,27,1,1,0,Total odometer accurate for meter level valid\n米级精确总里程有效性,0.0,0.0,0.0
+TotOdoAcrtVld,1,914,false,false,25,1,1,0,The valid signal of TotOdoAcrt,0.0,0.0,0.0
+XCDbkdHvBattStrtAllwd,1,914,false,false,24,1,1,0,Arriving HV batter book heating time flag\n到达电池预热时间使能标志位,0.0,0.0,0.0
+TotOdoAcrtLvlM,1,914,false,false,39,32,1.0,0.0,Total odometer accurate for meter level\n米级精确总里程\n其中，有效范围：0x0~0x?3B9AC9FF?，表示0~999，999，999,0.0,0.0,0.0
+DCDBattHlthMngtFcnSwt,1,931,false,false,7,2,1,0,DCD Battery Health Management Function Switch,0.0,0.0,0.0
+AVHSet,1,931,false,false,5,2,1,0,AVH function set\nAVH功能设定,0.0,0.0,0.0
+AVHBtn,1,931,false,false,0,1,1,0,AVH Button\nAVH控制按键,0.0,0.0,0.0
+CSTOnOffSet,1,931,false,false,13,2,1,0,CST function set\n舒适制动功能设定,0.0,0.0,0.0
+CSTOnOffBtn,1,931,false,false,8,1,1,0,CST On Off Button\n舒适制动功能按键状态,0.0,0.0,0.0
+DCDStdLvlSpdSwt,1,931,false,false,22,2,1,0,Standard Level Speed depending switch.\n悬架高度随速调节功能开关.,0.0,0.0,0.0
+DCDEasyEntryHeiSet,1,931,false,false,20,3,1,0,Suspension height set for EasyEntry mode.\n轻松进入悬架高度设置.,0.0,0.0,0.0
+EPBSwtSet,1,931,false,false,17,2,1,0,EPB Switch set,0.0,0.0,0.0
+DCDHDCSet,1,931,false,false,31,2,1,0,HDC function set,0.0,0.0,0.0
+ESCOffSet,1,931,false,false,25,2,1,0,Set ESC Off\nESC功能关闭设定,0.0,0.0,0.0
+EasyLoadgModSet,1,931,false,false,37,2,1,0,Easy Loading Mode Set\n轻松载物模式设定,0.0,0.0,0.0
+EasyLoadgModReqBtn,1,931,false,false,32,1,1,0,Easy Loading Mode Request Button\n轻松载物模式按键,0.0,0.0,0.0
+EasyEntryModSet,1,931,false,false,45,2,1,0,Easy Entry Mode Set\n轻松进入模式设定,0.0,0.0,0.0
+EasyEntryModReqBtn,1,931,false,false,40,1,1,0,Easy Entry Mode Request Button\n轻松进入模式按键,0.0,0.0,0.0
+EasyLoadgFuncCouplSet,1,931,false,false,49,2,1,0,Easy Loading Function Coupling with back door set\n轻松载物与后背门功能联动设定,0.0,0.0,0.0
+DCDJackModSet,1,931,false,false,61,2,1,0,Level Control deactivation  Jack mode  set. \n千斤顶模式设置.,0.0,0.0,0.0
+SuspHeiSet,1,931,false,false,59,4,1,0,Suspension Height Set\n悬架高度设定,0.0,0.0,0.0
+CurAmbHumSoa,1,997,false,false,7,7,1,0,Current ambient humidity from internet based on vehicle location.\n根据车辆位置从云端获取的环境湿度,0.0,0.0,0.0
+CurAmbHumValSoa,1,997,false,false,0,1,1,0,Validity of Current ambient humidity from internet based on vehicle location.\n根据车辆位置从云端获取的环境湿度可用性,0.0,0.0,0.0
+CurAmbTSoa,1,997,false,false,15,8,1,-80,Current ambient temperature from internet based on vehicle location.\n根据车辆位置从云端获取的当前环境温度,0.0,0.0,0.0
+CurAmbTValSoa,1,997,false,false,16,1,1,0,Validity of Current ambient temperature from internet based on vehicle location.\n根据车辆位置从云端获取的当前环境温度可用性,0.0,0.0,0.0
+LowtAmbTTomwValSoa,1,997,false,false,30,1,1,0,Validity of Lowest ambient temperature from internet based on vehicle location  for tomorrow\n根据车辆位置从云端获取的明天环境最低温度值可用性,0.0,0.0,0.0
+LowtAmbTTomwSoa,1,997,false,false,39,8,1,-80,Lowest ambient temperature from internet based on vehicle location  for tomorrow\n根据车辆位置从云端获取的明天环境最低温度,0.0,0.0,0.0
+VinVINBlkID,1,1023,false,false,7,8,1,0,Block ID for VIN Signal sequence,0.0,0.0,0.0
+VinVINSignalPos1,1,1023,false,false,15,8,1,0,1st position in VIN Signal    Block ID dependant,0.0,0.0,0.0
+VinVINSignalPos2,1,1023,false,false,23,8,1,0,2nd position in VIN Signal   Block ID dependant,0.0,0.0,0.0
+VinVINSignalPos3,1,1023,false,false,31,8,1,0,3rd position in VIN Signal   Block ID dependant,0.0,0.0,0.0
+VinVINSignalPos4,1,1023,false,false,39,8,1,0,4th position in VIN Signal   Block ID dependant,0.0,0.0,0.0
+VinVINSignalPos5,1,1023,false,false,47,8,1,0,5th position in VIN Signal   Block ID dependant,0.0,0.0,0.0
+VinVINSignalPos6,1,1023,false,false,55,8,1,0,6th position in VIN Signal   Block ID dependant,0.0,0.0,0.0
+VinVINSignalPos7,1,1023,false,false,63,8,1,0,7th position in VIN Signal   Block ID dependant,0.0,0.0,0.0
+VidBlkId,1,1023,false,false,71,8,1,0,Block ID for VID Signal sequence,0.0,0.0,0.0
+VidSignalPos1,1,1023,false,false,79,8,1,0,1st position in VID Signal - Block ID dependant,0.0,0.0,0.0
+VidSignalPos2,1,1023,false,false,87,8,1,0,2st position in VID Signal - Block ID dependant,0.0,0.0,0.0
+VidSignalPos3,1,1023,false,false,95,8,1,0,3st position in VID Signal - Block ID dependant,0.0,0.0,0.0
+VidSignalPos4,1,1023,false,false,103,8,1,0,4st position in VID Signal - Block ID dependant,0.0,0.0,0.0
+VidSignalPos5,1,1023,false,false,111,8,1,0,5st position in VID Signal - Block ID dependant,0.0,0.0,0.0
+VidSignalPos6,1,1023,false,false,119,8,1,0,6st position in VID Signal - Block ID dependant,0.0,0.0,0.0
+VidSignalPos7,1,1023,false,false,127,8,1,0,7st position in VID Signal - Block ID dependant,0.0,0.0,0.0
+VehCfgPrmBlkIDBytePosn1,1,135,false,false,7,8,1,0,Block ID for specific Car Configuration parameter sequence,0.0,0.0,0.0
+VehCfgPrmCCPBytePosn2,1,135,false,false,15,8,1,0,1st position in specific CCP number sequence   Block ID dependant,0.0,0.0,0.0
+VehCfgPrmCCPBytePosn3,1,135,false,false,23,8,1,0,2nd position in specific CCP number sequence   Block ID dependant,0.0,0.0,0.0
+VehCfgPrmCCPBytePosn4,1,135,false,false,31,8,1,0,3rd position in specific CCP number sequence   Block ID dependant,0.0,0.0,0.0
+VehCfgPrmCCPBytePosn5,1,135,false,false,39,8,1,0,4th position in specific CCP number sequence   Block ID dependant,0.0,0.0,0.0
+VehCfgPrmCCPBytePosn6,1,135,false,false,47,8,1,0,5th position in specific CCP number sequence   Block ID dependant,0.0,0.0,0.0
+VehCfgPrmCCPBytePosn7,1,135,false,false,55,8,1,0,6th position in specific CCP number sequence   Block ID dependant,0.0,0.0,0.0
+VehCfgPrmCCPBytePosn8,1,135,false,false,63,8,1,0,7th position in specific CCP number sequence   Block ID dependant,0.0,0.0,0.0
+AdasSwtSigGrpChks,1,389,false,false,7,8,1,0,,0.0,0.0,0.0
+AdasSwtSigGrpCntr,1,389,false,false,11,4,1,0,,0.0,0.0,0.0
+AdasSwt,1,389,false,false,23,2,1,0,一键智驾开关,0.0,0.0,0.0
+AdasSwtSigGrpLinErr,1,389,false,false,21,2,1,0,AdasSwtSigGrp LIN communication Error,0.0,0.0,0.0
+LeKnobCounter,1,389,false,false,39,8,1.0,0.0,方向盘左滚轮滚动Counter值,0.0,0.0,0.0
+LeKnobRotDir,1,389,false,false,47,2,1,0,方向盘左侧滚轮滚动方向\n0x0 Idle\n0x1 Up\n0x2 Down,0.0,0.0,0.0
+LeMFctActSgCe,1,389,false,false,45,2,1,0,方向盘面板左侧开关滚轮松压状态,0.0,0.0,0.0
+LeMFctActSgLe,1,389,false,false,43,2,1,0,方向盘面板左侧开关区左侧按键状态,0.0,0.0,0.0
+LeMFctActSgRi,1,389,false,false,41,2,1,0,方向盘面板左侧开关区右侧按键状态,0.0,0.0,0.0
+RiMFctActSgCe,1,389,false,false,55,2,1,0,方向盘面板右侧开关滚轮松压状态,0.0,0.0,0.0
+ChrgLidSts,1,389,false,false,53,2,1,0,充电口盖打开状态显示,0.0,0.0,0.0
+DoorDrvrSts,1,389,false,false,63,2,1,0,驾驶侧门状态,0.0,0.0,0.0
+DoorLeReSts,1,389,false,false,61,2,1,0,左后侧门状态,0.0,0.0,0.0
+DoorPassSts,1,389,false,false,59,2,1,0,副驾侧门状态,0.0,0.0,0.0
+DoorRiReSts,1,389,false,false,57,2,1,0,右后侧门状态,0.0,0.0,0.0
+TrOpenClsSts,1,389,false,false,71,2,1,0,Trunk Open Close Status,0.0,0.0,0.0
+RlsLinComFltSts,1,520,false,false,37,1,1,0,Rls LIN node communication fault status.,0.0,0.0,0.0
+HvBattSoCDisp,1,520,false,false,34,11,0.05,0.0,HV battery State Of Energy for HMI Display / 高压电池剩余可用能量百分比状态信息用于HMI人机交互显示,0.0,0.0,0.0
+FLRLLoPwrSplySts,1,768,false,false,7,1,1,0,FLRL Low Power Supply Status\n长距激光雷达配电状态,0.0,0.0,0.0
+RSRLoPwrSplySts,1,768,false,false,6,1,1,0,RSR Low Power Supply Status\n后毫米波雷达配电状态,0.0,0.0,0.0
+IMULoPwrSplySts,1,768,false,false,5,1,1,0,IMU Low Power Supply Status\nIMU低压配电状态,0.0,0.0,0.0
+LockgCenLockSts,1,768,false,false,4,2,1,0,中控锁状态,0.0,0.0,0.0
+VCCDChassisBkpNodeAddress,1,1313,false,false,7,8,1,0,Node source address,0.0,0.0,0.0
+VCCDChassisBkpActiveWakeup,1,1313,false,false,12,1,1,0,Active Wakeup Bit,0.0,0.0,0.0
+VCCDChassisBkpRepeatMsgReq,1,1313,false,false,8,1,1,0,Repeat Message Request Bit,0.0,0.0,0.0
+UDB23VCCD,1,1313,false,false,23,1,1,0,,0.0,0.0,0.0
+UDB22VCCD,1,1313,false,false,22,1,1,0,,0.0,0.0,0.0
+UDB21VCCD,1,1313,false,false,21,1,1,0,,0.0,0.0,0.0
+UDB20VCCD,1,1313,false,false,20,1,1,0,,0.0,0.0,0.0
+UDB19VCCD,1,1313,false,false,19,1,1,0,,0.0,0.0,0.0
+UDB18VCCD,1,1313,false,false,18,1,1,0,,0.0,0.0,0.0
+UDB17VCCD,1,1313,false,false,17,1,1,0,,0.0,0.0,0.0
+VCCDChassisBkpRepeatMsgSt,1,1313,false,false,16,1,1,0,Repeat Message State indication,0.0,0.0,0.0
+UDB31VCCD,1,1313,false,false,31,1,1,0,,0.0,0.0,0.0
+UDB30VCCD,1,1313,false,false,30,1,1,0,,0.0,0.0,0.0
+UDB29VCCD,1,1313,false,false,29,1,1,0,,0.0,0.0,0.0
+UDB28VCCD,1,1313,false,false,28,1,1,0,,0.0,0.0,0.0
+UDB27VCCD,1,1313,false,false,27,1,1,0,,0.0,0.0,0.0
+UDB26VCCD,1,1313,false,false,26,1,1,0,,0.0,0.0,0.0
+UDB25VCCD,1,1313,false,false,25,1,1,0,,0.0,0.0,0.0
+UDB24VCCD,1,1313,false,false,24,1,1,0,,0.0,0.0,0.0
+UDB39VCCD,1,1313,false,false,39,1,1,0,,0.0,0.0,0.0
+UDB38VCCD,1,1313,false,false,38,1,1,0,,0.0,0.0,0.0
+UDB37VCCD,1,1313,false,false,37,1,1,0,,0.0,0.0,0.0
+UDB36VCCD,1,1313,false,false,36,1,1,0,,0.0,0.0,0.0
+UDB35VCCD,1,1313,false,false,35,1,1,0,,0.0,0.0,0.0
+UDB34VCCD,1,1313,false,false,34,1,1,0,,0.0,0.0,0.0
+UDB33VCCD,1,1313,false,false,33,1,1,0,,0.0,0.0,0.0
+UDB32VCCD,1,1313,false,false,32,1,1,0,,0.0,0.0,0.0
+UDB47VCCD,1,1313,false,false,47,1,1,0,,0.0,0.0,0.0
+UDB46VCCD,1,1313,false,false,46,1,1,0,,0.0,0.0,0.0
+UDB45VCCD,1,1313,false,false,45,1,1,0,,0.0,0.0,0.0
+UDB44VCCD,1,1313,false,false,44,1,1,0,,0.0,0.0,0.0
+UDB43VCCD,1,1313,false,false,43,1,1,0,,0.0,0.0,0.0
+UDB42VCCD,1,1313,false,false,42,1,1,0,,0.0,0.0,0.0
+UDB41VCCD,1,1313,false,false,41,1,1,0,,0.0,0.0,0.0
+UDB40VCCD,1,1313,false,false,40,1,1,0,,0.0,0.0,0.0
+UDB53VCCD,1,1313,false,false,53,1,1,0,,0.0,0.0,0.0
+UDB52VCCD,1,1313,false,false,52,1,1,0,,0.0,0.0,0.0
+UDB51VCCD,1,1313,false,false,51,1,1,0,,0.0,0.0,0.0
+UDB50VCCD,1,1313,false,false,50,1,1,0,,0.0,0.0,0.0
+UDB49VCCD,1,1313,false,false,49,1,1,0,,0.0,0.0,0.0
+NMKeepAwkRsnVCCD,1,1313,false,false,48,9,1,0,,0.0,0.0,0.0
+VCCDToChassisBkpFuncDiagReq,1,2047,false,false,7,64,1,0,VCCDToChassisBkpCanfdFuncDiagReqNpdu,0.0,0.0,0.0
+VCCDToEPSChassisBkpDiagReq,1,1832,false,false,7,512,1,0,,0.0,0.0,0.0
+VCCDToSCUDiagReq,1,1828,false,false,7,512,1,0,,0.0,0.0,0.0
+VCCDToSWMReq,1,1829,false,false,7,512,1,0,,0.0,0.0,0.0
+VCCDToSWMDiagReq,1,1760,false,false,7,512,1,0,,0.0,0.0,0.0

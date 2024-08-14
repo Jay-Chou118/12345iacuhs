@@ -22,6 +22,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.WorkerThread;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import androidx.core.graphics.Insets;
@@ -35,6 +36,7 @@ import com.example.testcdc.Utils.DataBaseUtil;
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
 import com.example.testcdc.Utils.ToastUtil;
+import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.MX11E4Database;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
@@ -54,12 +56,17 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity3 extends AppCompatActivity {
 
     private static final String TAG = "MICAN_MainActivity3";
 
     private static final String BRIDGE_NAME = "Android";
+
+
+    public static final LinkedBlockingQueue<String> showLoggingMessageQueue = new LinkedBlockingQueue<>(10);
 
     private final Map<String, BridgeHandler> messageHandlers = new HashMap<>();
 
@@ -120,6 +127,36 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
         m.start();
+        showLoggingMessage = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while(true)
+                {
+                    String callback = showLoggingMessageQueue.poll();
+                    if(callback==null)
+                    {
+                        Utils.wait10ms();
+                        continue;
+                    }
+                    if(mMiCANBinder != null)
+                    {
+                        JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
+                        Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
+                        jsCallResult.setData(result);
+                        final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
+                        Log.d(TAG,"callbackJs "+ callbackJs );
+                        webView.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                webView.loadUrl(callbackJs);
+                            }
+                        });
+                    }
+                }
+
+            }
+        });
+        showLoggingMessage.start();
         checkPermission();
 
         Intent intent = getIntent();
@@ -151,6 +188,8 @@ public class MainActivity3 extends AppCompatActivity {
 
         // 加载页面
         webView.loadUrl("file:///android_asset/index.html");
+//        webView.loadUrl("http://192.168.215.240:5173/#/");
+
 
         bindService(new Intent(this, MyService.class),mSC, Context.BIND_AUTO_CREATE);
 
@@ -184,9 +223,52 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
+        messageHandlers.put("checkHardware", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Log.e(TAG,"thread: " + Thread.currentThread().getId());
+                        if(mMiCANBinder != null)
+                        {
+                            JsCallResult<Result<DeviceInfo>> jsCallResult = new JsCallResult<>(callback);
+                            boolean ret = mMiCANBinder.InitModule();
+                            if(ret)
+                            {
+                                instance.say("恭喜,初始化设备成功拉");
+                            }else{
+                                instance.say("抱歉,未能找到MiCAN设备,请重新插拔下设备试试看");
+                            }
+                            Result<DeviceInfo> result = ResponseData.ret(mMiCANBinder.getDeviceInfo(),ret);
+                            jsCallResult.setData(result);
+                            final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
+                            Log.i(TAG,"callbackJs "+ callbackJs );
+                            // 打开CANFD设备
+                            mMiCANBinder.CANOnBus();
+                            mMiCANBinder.startSaveBlf();
+
+
+                            webView.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    webView.loadUrl(callbackJs);
+                                }
+                            });
+                        }
+
+                    }
+                }).start();
+            }
+        });
+
         messageHandlers.put("showLoggingMessage", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
+
+//                showLoggingMessageQueue.add(callback);
                 if(mMiCANBinder != null)
                 {
                     JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
@@ -232,70 +314,61 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("getDBC", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
-                Log.d(TAG,"getDBC ");
+                Log.i(TAG,"getDBC ");
                 if(mMiCANBinder != null)
                 {
                     Log.d(TAG,"i am called");
                     // 进行报文查询
                     Map<Integer,Map<String,List<List<Object>>>> maps = new HashMap<>();
-                    Map<String,List<List<Object>>> subMap = new HashMap<>();
-                    List<MsgInfoEntity> msgs = database.msgInfoDao().getMsg(2);
-                    msgs.stream().forEach(msg->{
-                        List<List<Object>> subList = new ArrayList<>();
-                        // 根据busid 和 canid查询
-                        List<SignalInfo> signalInfos = database.signalInfoDao().getSignal(2, msg.CANId);
-                        signalInfos.stream().forEach(signalInfo -> {
-                            List<Object> subList_ = new ArrayList<>();
 
-                            /**
-                             *                          "CANFD" if each.is_fd else "CAN",
-                             *                          each.cycle_time,
-                             *                          frame_is_e2e[dbcFile[1]][frameID]
-                             *                          )
-                             */
-
-
-                            subList_.add(signalInfo.name);
-                            subList_.add("信号comment");
-                            subList_.add("信号remark");
-                            subList_.add(signalInfo.id);
-                            subList_.add(0);    // 初始值
-                            subList_.add(0);    // 最大
-                            subList_.add(0);    // 最小值
-                            subList_.add(0);    // max
-                            subList_.add(0);    // min
-                            subList_.add(0);    // values
-                            subList_.add("m");    // values
-                            subList_.add(27);    // startBit
-                            subList_.add(12);    // bitLength
-                            subList_.add(1);    // factory
-                            subList_.add(32);    // factory
-                            subList_.add("CANFD");    // factory
-                            subList_.add(0);    // factory
-                            subList_.add(false);    // factory
-                            subList_.add(signalInfo.id);    // factory
-                            subList.add(subList_);
+                    ArrayList<Integer> BUSIdList = new ArrayList<>();
+                    BUSIdList.add(1);
+                    BUSIdList.add(2);
+                    BUSIdList.add(3);
+                    BUSIdList.add(4);
+                    BUSIdList.add(6);
+                    BUSIdList.add(7);
+                    BUSIdList.forEach(id->{
+                        Map<String,List<List<Object>>> subMap = new HashMap<>();
+                        List<MsgInfoEntity> msgs = database.msgInfoDao().getMsg(id);
+                        msgs.forEach(msg->{
+                            List<List<Object>> subList = new ArrayList<>();
+                            // 根据busid 和 canid查询
+                            List<SignalInfo> signalInfos = database.signalInfoDao().getSignal(id, msg.CANId);
+                            signalInfos.forEach(signalInfo -> {
+                                List<Object> subList_ = new ArrayList<>();
+                                subList_.add(signalInfo.name);
+                                subList_.add("信号comment");
+                                subList_.add("信号remark");
+                                subList_.add(signalInfo.id);
+                                subList_.add(0);    // 初始值
+                                subList_.add(0);    // 最大
+                                subList_.add(0);    // 最小值
+                                subList_.add(0);    // max
+                                subList_.add(0);    // min
+                                subList_.add(0);    // values
+                                subList_.add("m");    // values
+                                subList_.add(27);    // startBit
+                                subList_.add(12);    // bitLength
+                                subList_.add(1);    // factory
+                                subList_.add(32);    // factory
+                                subList_.add("CANFD");    // factory
+                                subList_.add(0);    // factory
+                                subList_.add(false);    // factory
+                                subList_.add(signalInfo.id);    // factory
+                                subList.add(subList_);
+                            });
+                            subMap.put(msg.name,subList);
                         });
-                        subMap.put(msg.name,subList);
+                        maps.put(id,subMap);
                     });
-                    maps.put(2,subMap);
-//                    Log.i(TAG,new Gson().toJson(maps));
 
                     JsCallResult<Result<Map<Integer,Map<String,List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
                     Result<Map<Integer,Map<String,List<List<Object>>>>> result = ResponseData.success(maps);
                     jsCallResult.setData(result);
-                    final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                    Log.d(TAG,"callbackJs "+ callbackJs );
-                    webView.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            webView.loadUrl(callbackJs);
-                        }
-                    });
-
-
-
+                    callJs(jsCallResult);
                 }
+                Log.i(TAG,"getDBC finish");
             }
         });
 
@@ -307,8 +380,8 @@ public class MainActivity3 extends AppCompatActivity {
 
                 JsonArray array = data.getAsJsonArray();
                 array.forEach(item->{
-                    String name = item.getAsJsonObject().get("name").getAsString();
-                    SignalInfo signalInfo = database.signalInfoDao().getSignal(name);
+                    int id = item.getAsJsonObject().get("id").getAsInt();
+                    SignalInfo signalInfo = database.signalInfoDao().getSignalById(id);
                     ids.add(signalInfo.id);
                 });
                 mMiCANBinder.monitorSignal(ids);
@@ -317,17 +390,22 @@ public class MainActivity3 extends AppCompatActivity {
                 Result<Object> success = ResponseData.success();
                 jsCallResult.setData(success);
 
-                final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                Log.d(TAG,"callbackJs "+ callbackJs );
-                webView.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        webView.loadUrl(callbackJs);
-                    }
-                });
+                callJs(jsCallResult);
             }
         });
+    }
 
+
+    private <T> void callJs(T result)
+    {
+        final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(result));
+        Log.d(TAG,"callbackJs "+ callbackJs );
+        webView.post(new Runnable() {
+            @Override
+            public void run() {
+                webView.loadUrl(callbackJs);
+            }
+        });
     }
 
     private class JsInterface {
@@ -335,12 +413,14 @@ public class MainActivity3 extends AppCompatActivity {
         public void send(String message) {
             Log.d(TAG,"i am recv "+ message);
 
-            instance.test7();
+//            instance.test7();
             handleNativeResponse(message);
         }
     }
 
     private MX11E4Database database;
+
+    private Thread showLoggingMessage;
 
     private void handleNativeResponse(String responseData) {
         try {
@@ -368,6 +448,10 @@ public class MainActivity3 extends AppCompatActivity {
 
     public interface BridgeHandler {
         void handle(JsonElement data,String callback);
+    }
+
+    public interface MyRunnable extends Runnable {
+        public MyRunnable setParam(String param);
     }
 
     private void sharedFile(String filePath)

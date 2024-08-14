@@ -28,6 +28,9 @@ import com.xiaomi.xms.wearable.tasks.OnFailureListener;
 import com.xiaomi.xms.wearable.tasks.OnSuccessListener;
 
 import org.jetbrains.annotations.NotNull;
+import org.zeromq.SocketType;
+import org.zeromq.ZContext;
+import org.zeromq.ZMQ;
 
 import java.util.List;
 import java.util.Locale;
@@ -82,6 +85,27 @@ public class MyApplication extends Application {
         serviceApi = Wearable.getServiceApi(this);
         notifyApi = Wearable.getNotifyApi(this);
         test();
+//        try (ZContext context = new ZContext()) {
+//            // Socket to talk to clients
+//            ZMQ.Socket socket = context.createSocket(SocketType.REP);
+//            socket.bind("tcp://*:5555");
+//
+//            while (!Thread.currentThread().isInterrupted()) {
+//                // Block until a message is received
+//                byte[] reply = socket.recv(0);
+//
+//                // Print the message
+//                System.out.println(
+//                        "Received: [" + new String(reply, ZMQ.CHARSET) + "]"
+//                );
+//
+//                // Send a response
+//                String response = "Hello, world!";
+//                socket.send(response.getBytes(ZMQ.CHARSET), 0);
+//            }
+//        }
+//
+
     }
 
     public MX11E4Database getMx11E4Database()
@@ -125,10 +149,12 @@ public class MyApplication extends Application {
             }
         }else{
             Log.i(TAG,"数据库不存在");
+            DataBaseUtil.initDataFromCsv(this);
+            DataBaseUtil.initMsgFromCsv(this);
 //            DataBaseUtil.copyDataBase(this,"mx11_e4");
             DataBaseUtil.init_database();
-            DataBaseUtil.initData_2();
-            DataBaseUtil.initData_2_msg();
+//            DataBaseUtil.initData_2();
+//            DataBaseUtil.initData_2_msg();
 //            DataBaseUtil.initData_6();
 
         }

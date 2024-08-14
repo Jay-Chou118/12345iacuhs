@@ -66,7 +66,8 @@ android {
     sourceSets
     {
         main{
-            assets.srcDirs = ['src/main/assets1']
+            assets.srcDirs = ['C:\\Users\\27810\\AndroidStudioProjects\\test\\tsp-assistant\\dist']
+//            assets.srcDirs = ['src/main/assets1/']
         }
     }
 }
@@ -77,6 +78,7 @@ dependencies {
     annotationProcessor 'androidx.room:room-compiler:2.6.1'
     implementation 'com.google.code.gson:gson:2.11.0'
     implementation 'com.github.mik3y:usb-serial-for-android:3.8.0'
+    implementation 'org.zeromq:jeromq:0.6.0'
     implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
