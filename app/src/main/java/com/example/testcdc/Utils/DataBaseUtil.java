@@ -8,7 +8,6 @@ import com.example.testcdc.MyApplication;
 import com.example.testcdc.R;
 import com.example.testcdc.entity.CarTypeEntity;
 import com.example.testcdc.entity.MsgInfoEntity;
-import com.example.testcdc.entity.SdbEntity;
 import com.example.testcdc.entity.SignalInfo;
 
 import java.io.BufferedReader;
@@ -17,6 +16,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class DataBaseUtil {
@@ -66,6 +66,7 @@ public class DataBaseUtil {
 
 
     public static void initDataFromCsv(Context context){
+        Log.e(TAG,"initDataFromCsv");
         ArrayList<Integer> files = new ArrayList<>();
         files.add(R.raw.signal_info_1);
         files.add(R.raw.signal_info_2);
@@ -81,7 +82,9 @@ public class DataBaseUtil {
                 String line;
                 while ((line =  reader.readLine()) !=null)
                 {
-                    String[] data = line.split(",");   // 使用逗号作为分隔符
+                    Log.e(TAG,line);
+                    String[] data = line.split("#");   // 使用逗号作为分隔符
+                    Log.e(TAG, Arrays.toString(data));
                     SignalInfo signalInfo = new SignalInfo();
                     signalInfo.setName(data[0]);
                     signalInfo.setBUSId(Integer.parseInt(data[1]));
@@ -96,6 +99,7 @@ public class DataBaseUtil {
                     signalInfo.setMinimum(Double.parseDouble(data[10]));
                     signalInfo.setMaximum(Double.parseDouble(data[11]));
                     signalInfo.setInitial(Double.parseDouble(data[12]));
+                    signalInfo.choices = data[13].equals("null") ? null : data[13];
                     MyApplication.getInstance().getMx11E4Database().signalInfoDao().insert(signalInfo);
                     Log.e(TAG,"插入signal成功");
                 }
@@ -155,22 +159,12 @@ public class DataBaseUtil {
         /**********************************************************************************************/
         // 初始化 车型数据库
         List<CarTypeEntity> carTypeEntities = new ArrayList<>();
-        carTypeEntities.add(new CarTypeEntity("MX11"));
+        carTypeEntities.add(new CarTypeEntity());
         carTypeEntities.forEach(carTypeEntity -> {
+            carTypeEntity.carTypeName = "MX11";
+            carTypeEntity.SDBName = "E4";
             MyApplication.getInstance().getMx11E4Database().carTypeDao().insert(carTypeEntity);
         });
-        /**********************************************************************************************/
-        // 初始化 sdb版本
-        List<SdbEntity> sdbEntities = new ArrayList<>();
-        // 查找MX11 对应的项目
-        CarTypeEntity carType = MyApplication.getInstance().getMx11E4Database().carTypeDao().getByName("MX11");
-
-        sdbEntities.add(new SdbEntity("E4U1",carType.id));
-        sdbEntities.forEach(sdbEntity -> {
-            MyApplication.getInstance().getMx11E4Database().sdbDao().insert(sdbEntity);
-        });
-        /**********************************************************************************************/
-
     }
 
 

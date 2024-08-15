@@ -9,12 +9,11 @@ public class CarTypeEntity {
 
     @PrimaryKey(autoGenerate = true)
     public long id;
-    @ColumnInfo(name = "name")
-    public String name;
+    @ColumnInfo(name = "car_type_name")
+    public String carTypeName;
 
-    public CarTypeEntity(String name) {
-        this.name = name;
-    }
+    @ColumnInfo(name="sdb_name")
+    public String SDBName;
 
     public CarTypeEntity() {
     }

@@ -34,20 +34,6 @@ public class MsgInfoEntity {
     @ColumnInfo(name="namespace")
     public int namespace;
 
-    public MsgInfoEntity(String name, int BUSId, int CANId, String sendType, int cycleTime, String comment, String BUSName, String senders, String receivers, String CANType, int namespace) {
-        this.name = name;
-        this.BUSId = BUSId;
-        this.CANId = CANId;
-        this.sendType = sendType;
-        this.cycleTime = cycleTime;
-        this.comment = comment;
-        this.BUSName = BUSName;
-        this.senders = senders;
-        this.receivers = receivers;
-        this.CANType = CANType;
-        this.namespace = namespace;
-    }
-
     public MsgInfoEntity() {
     }
 

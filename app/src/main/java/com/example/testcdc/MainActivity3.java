@@ -104,7 +104,7 @@ public class MainActivity3 extends AppCompatActivity {
             return insets;
         });
 
-        webView = findViewById(R.id.webView1);
+
         initWebView();
 
         Thread m = new Thread(new Runnable() {
@@ -175,8 +175,10 @@ public class MainActivity3 extends AppCompatActivity {
         database = MyApplication.getInstance().getMx11E4Database();
     }
 
+
     private void initWebView()
     {
+        webView = findViewById(R.id.webView1);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         WebView.setWebContentsDebuggingEnabled(true);
@@ -189,7 +191,6 @@ public class MainActivity3 extends AppCompatActivity {
         // 加载页面
         webView.loadUrl("file:///android_asset/index.html");
 //        webView.loadUrl("http://192.168.215.240:5173/#/");
-
 
         bindService(new Intent(this, MyService.class),mSC, Context.BIND_AUTO_CREATE);
 
@@ -314,6 +315,9 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("getDBC", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
+                String carType = data.getAsJsonObject().get("carType").getAsString();
+                String sdb = data.getAsJsonObject().get("sdb").getAsString();
+
                 Log.i(TAG,"getDBC ");
                 if(mMiCANBinder != null)
                 {
@@ -388,6 +392,42 @@ public class MainActivity3 extends AppCompatActivity {
 
                 JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
                 Result<Object> success = ResponseData.success();
+                jsCallResult.setData(success);
+
+                callJs(jsCallResult);
+            }
+        });
+
+        messageHandlers.put("parsedSignal", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+                int BUSId = data.getAsJsonObject().get("channel").getAsInt();
+                int CANId = data.getAsJsonObject().get("canId").getAsInt();
+                JsonArray dataArray = data.getAsJsonObject().get("canData").getAsJsonArray();
+                int length = dataArray.size();
+                byte[] CANData = new byte[length];
+
+                for(int i=0;i<length;i++)
+                {
+                    CANData[i] =  (byte) Integer.parseInt(dataArray.get(i).getAsString(),16);
+                }
+                Log.e(TAG,"CANData " + Arrays.toString(CANData));
+                Log.e(TAG,"BUSId " + BUSId + " CANId" +CANId);
+
+                List<Map<String, Object>> maps = new ArrayList<>();
+                Map<String,Object> titleMap = new HashMap<>();
+                titleMap.put("canId",String.valueOf(CANId));
+                titleMap.put("channel",BUSId);
+                titleMap.put("id","18028-");
+                titleMap.put("isChildTit",true);
+                titleMap.put("isExpand",true);
+                titleMap.put("isParent",false);
+                maps.add(titleMap);
+                maps.addAll(mMiCANBinder.parseMsgData(2, 0x90,CANData));
+                Log.e(TAG,maps.toString());
+
+                JsCallResult<Result<List<Map<String, Object>>>> jsCallResult = new JsCallResult<>(callback);
+                Result<List<Map<String, Object>>> success = ResponseData.success(maps);
                 jsCallResult.setData(success);
 
                 callJs(jsCallResult);

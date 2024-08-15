@@ -610,7 +610,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             int CAN_ID = (data[currentIndex] & 0xff) | ( (data[currentIndex +1 ]  & 0xff) << 8);
             currentIndex += 2;
             byte direct = (byte) (data[currentIndex] & 0x01);
-            byte is_can = (byte) (data[currentIndex] & 0x02);
+            byte is_can = (byte) ((data[currentIndex] & 0x02) >> 1);
             currentIndex += 2;
             long timestamp = convert_u64(Arrays.copyOfRange(data, currentIndex, currentIndex + 8));
             currentIndex += 8;

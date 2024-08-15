@@ -13,8 +13,8 @@ public interface CarTypeDao {
     @Query("select * from car_type")
     List<CarTypeEntity> getAll();
 
-    @Query("select * from car_type where name=:name limit 1")
-    CarTypeEntity getByName(String name);
+    @Query("select * from car_type where car_type_name=:cartTypeName and sdb_name=:SDBName limit 1")
+    CarTypeEntity getByName(String cartTypeName,String SDBName);
 
     @Insert
     void insert(CarTypeEntity carType);

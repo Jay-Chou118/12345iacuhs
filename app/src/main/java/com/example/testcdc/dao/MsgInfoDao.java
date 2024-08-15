@@ -17,4 +17,7 @@ public interface MsgInfoDao {
 
     @Query("select * from msg_info where bus_id=:BUSId")
     List<MsgInfoEntity> getMsg(int BUSId);
+
+    @Query("select * from msg_info where bus_id=:BUSId and can_id=:CANId limit 1")
+    MsgInfoEntity getMsg(int BUSId, int CANId);
 }

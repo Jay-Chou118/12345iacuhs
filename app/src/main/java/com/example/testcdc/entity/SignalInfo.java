@@ -43,6 +43,9 @@ public class SignalInfo {
     @ColumnInfo(name="initial")
     public Double initial;
 
+    @ColumnInfo(name="choices")
+    public String choices;
+
 
 
 
@@ -168,22 +171,6 @@ public class SignalInfo {
         this.initial = initial;
     }
 
-    public SignalInfo(String name, int BUSId, int CANId, boolean byteOrder, boolean isSigned, int bitStart, int bitLength, double scale, double offset, String comment, Double minimum, Double maximum, Double initial) {
-        this.name = name;
-        this.BUSId = BUSId;
-        this.CANId = CANId;
-        this.byteOrder = byteOrder;
-        this.isSigned = isSigned;
-        this.bitStart = bitStart;
-        this.bitLength = bitLength;
-        this.scale = scale;
-        this.offset = offset;
-        this.comment = comment;
-        this.minimum = minimum;
-        this.maximum = maximum;
-        this.initial = initial;
-    }
-
     public SignalInfo() {
     }
 
@@ -201,6 +188,12 @@ public class SignalInfo {
                 ", scale=" + scale +
                 ", offset=" + offset +
                 ", comment='" + comment + '\'' +
+                ", minimum=" + minimum +
+                ", maximum=" + maximum +
+                ", initial=" + initial +
+                ", choices='" + choices + '\'' +
+                ", times=" + times +
+                ", values=" + values +
                 '}';
     }
 }

@@ -8,6 +8,7 @@ import static com.example.testcdc.Utils.Utils.wait1000ms;
 import static com.example.testcdc.Utils.Utils.wait100ms;
 import static com.example.testcdc.Utils.Utils.wait10ms;
 import static com.example.testcdc.Utils.Utils.wait200ms;
+import static com.google.gson.JsonParser.parseString;
 
 import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
@@ -28,8 +29,11 @@ import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
 import com.example.testcdc.MiCAN.ShowCANMsg;
 import com.example.testcdc.MiCAN.ShowSignal;
+import com.example.testcdc.dao.MsgInfoDao;
 import com.example.testcdc.database.MX11E4Database;
+import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
+import com.google.gson.JsonObject;
 import com.hoho.android.usbserial.driver.UsbSerialDriver;
 import com.hoho.android.usbserial.driver.UsbSerialPort;
 import com.hoho.android.usbserial.driver.UsbSerialProber;
@@ -40,6 +44,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicLong;
@@ -209,10 +214,28 @@ public class MyService extends Service {
             mHeartBeatThread.start();
 
             mCostMsgThread = new Thread(new Runnable() {
+
+                private Map<Long,String> msgNameMap = new HashMap<>();
+
+
+                private String findName(int BUSId,int CANId)
+                {
+                    long key = getKey(BUSId, CANId);
+                    if(msgNameMap.containsKey(key))
+                    {
+                        return msgNameMap.get(key);
+                    }
+                    MsgInfoEntity msg = database.msgInfoDao().getMsg(BUSId, CANId);
+                    msgNameMap.put(key,msg.name);
+                    return msg.name;
+                }
                 @Override
                 public void run() {
-                    boolean ret;
+                    String[] directMap = {"rx","tx"};
+                    String[] CANTypeMap = {"CANFD","CAN"};
                     ShowCANMsg showCANMsg = new ShowCANMsg();
+
+                    boolean ret;
                     while (g_notExitFlag.get())
                     {
 //                        CanMessage poll = gCanQueue.poll();
@@ -231,9 +254,9 @@ public class MyService extends Service {
                         showCANMsg.setSqlId(poll.getIndex());
                         showCANMsg.setChannel(poll.getBUS_ID());
                         showCANMsg.setArbitrationId(poll.getCAN_ID());
-                        showCANMsg.setName("1111");
-                        showCANMsg.setCanType("CANFD");
-                        showCANMsg.setDir("rx");
+                        showCANMsg.setName(findName(poll.BUS_ID,poll.CAN_ID));
+                        showCANMsg.setCanType(CANTypeMap[poll.getCAN_TYPE()]);
+                        showCANMsg.setDir(directMap[poll.getDirect()]);
                         showCANMsg.setDlc(String.valueOf(poll.getDataLength()));
                         showCANMsg.setData(Arrays.copyOf(poll.getData(),poll.getDataLength()));
                         showCANMsg.setParsedData(tmp);
@@ -449,8 +472,6 @@ public class MyService extends Service {
             Log.d(TAG,deviceInfo.toString());
             return deviceInfo;
         }
-
-
         /**
          * @param ids 用于监控信号
          */
@@ -478,8 +499,36 @@ public class MyService extends Service {
             });
         }
 
-
-
+        public  List<Map<String, Object>> parseMsgData(int BUSId, int CANId,byte[] data)
+        {
+            // 根据BUSID 和CANID找到里面有多少个signal
+            List<SignalInfo> signalInfos = database.signalInfoDao().getSignal(BUSId, CANId);
+            List<Map<String, Object>> infos = new ArrayList<>();
+            signalInfos.forEach(signalInfo -> {
+                Map<String,Object> info = new HashMap<>();
+                info.put("canId",signalInfo.CANId);
+                info.put("channel",signalInfo.BUSId);
+                info.put("comment",signalInfo.comment);
+                long rawData = getSignal(signalInfo.bitStart,signalInfo.bitLength,data);
+                info.put("hex",rawData);
+                String choices = signalInfo.choices;
+                if(choices != null)
+                {
+                    JsonObject jsonObject = parseString(choices).getAsJsonObject();
+                    String enumStr = jsonObject.get(String.valueOf(rawData)).getAsString();
+                    info.put("value","0x" + Long.toHexString(rawData) +"-" +enumStr);
+                }else {
+                    info.put("value",String.valueOf(rawData));
+                }
+                info.put("id",String.valueOf(signalInfo.id));
+                info.put("isChildTit",false);
+                info.put("isExpand",true);
+                info.put("isParent",false);
+                info.put("name",signalInfo.getName());
+                infos.add(info);
+            });
+            return infos;
+        }
     }
 
     @Override
