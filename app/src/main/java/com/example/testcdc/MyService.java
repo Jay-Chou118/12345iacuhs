@@ -4,7 +4,6 @@ import static com.example.testcdc.Utils.Utils.formatTime;
 import static com.example.testcdc.Utils.Utils.getCurTime;
 import static com.example.testcdc.Utils.Utils.getKey;
 import static com.example.testcdc.Utils.Utils.getSignal;
-import static com.example.testcdc.Utils.Utils.wait1000ms;
 import static com.example.testcdc.Utils.Utils.wait100ms;
 import static com.example.testcdc.Utils.Utils.wait10ms;
 import static com.example.testcdc.Utils.Utils.wait200ms;
@@ -29,7 +28,6 @@ import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
 import com.example.testcdc.MiCAN.ShowCANMsg;
 import com.example.testcdc.MiCAN.ShowSignal;
-import com.example.testcdc.dao.MsgInfoDao;
 import com.example.testcdc.database.MX11E4Database;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
@@ -44,8 +42,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
-import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -226,6 +222,11 @@ public class MyService extends Service {
                         return msgNameMap.get(key);
                     }
                     MsgInfoEntity msg = database.msgInfoDao().getMsg(BUSId, CANId);
+                    if(msg == null)
+                    {
+                        return "";
+                    }
+
                     msgNameMap.put(key,msg.name);
                     return msg.name;
                 }
@@ -303,7 +304,7 @@ public class MyService extends Service {
             {
                 if(mMcuHelperList.size() != 2)
                 {
-                    Log.e(TAG, "当前为DR4设备，但个数不为2");
+                    Log.e(TAG, "当前为DR2设备，但个数不为2");
                     return false;
                 }
             }
@@ -503,6 +504,7 @@ public class MyService extends Service {
         {
             // 根据BUSID 和CANID找到里面有多少个signal
             List<SignalInfo> signalInfos = database.signalInfoDao().getSignal(BUSId, CANId);
+            Log.d(TAG,"signalInfos " + signalInfos);
             List<Map<String, Object>> infos = new ArrayList<>();
             signalInfos.forEach(signalInfo -> {
                 Map<String,Object> info = new HashMap<>();
@@ -511,11 +513,15 @@ public class MyService extends Service {
                 info.put("comment",signalInfo.comment);
                 long rawData = getSignal(signalInfo.bitStart,signalInfo.bitLength,data);
                 info.put("hex",rawData);
+                Log.d(TAG,"Info 11111111   " + info);
                 String choices = signalInfo.choices;
                 if(choices != null)
                 {
+                    Log.d(TAG,"rawDATA   222222    " + rawData);
                     JsonObject jsonObject = parseString(choices).getAsJsonObject();
+                    Log.d(TAG,"jsonObject    " + jsonObject);
                     String enumStr = jsonObject.get(String.valueOf(rawData)).getAsString();
+                    Log.d(TAG,"enumStr    " + enumStr);
                     info.put("value","0x" + Long.toHexString(rawData) +"-" +enumStr);
                 }else {
                     info.put("value",String.valueOf(rawData));
@@ -527,6 +533,7 @@ public class MyService extends Service {
                 info.put("name",signalInfo.getName());
                 infos.add(info);
             });
+            Log.d(TAG,"infos   " + infos);
             return infos;
         }
     }

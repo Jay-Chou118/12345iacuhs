@@ -1,0 +1,1627 @@
+AMPADASRMSPrsnt#4#725#false#false#7#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPANCRMSPrsnt#4#725#false#false#5#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPAVASRMSPrsnt#4#725#false#false#3#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPChimeRMSPrsnt#4#725#false#false#1#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPDSPHeartbeat#4#725#false#false#15#16#1#0#1#0.0#0.0#0.0#null#mx11#e4
+AMPHeadrestRMSPrsnt#4#725#false#false#31#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPMediaRMSPrsnt#4#725#false#false#29#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPNaviRMSPrsnt#4#725#false#false#27#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutAVASChRMS#4#725#false#false#25#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPInpVoltageVal#4#725#false#false#39#16#1#0#1#0.0#0.0#0.0#null#mx11#e4
+AMPOutCFLChRMS#4#725#false#false#55#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutCFRChRMS#4#725#false#false#53#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutCNTMChRMS#4#725#false#false#51#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutCRLChRMS#4#725#false#false#49#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutCRRChRMS#4#725#false#false#63#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutFLMChRMS#4#725#false#false#61#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutFLWTChRMS#4#725#false#false#59#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutFRMChRMS#4#725#false#false#57#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutFRWTChRMS#4#725#false#false#71#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutLHRChRMS#4#725#false#false#69#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutRHRChRMS#4#725#false#false#67#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutRLMChRMS#4#725#false#false#65#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutRLSURChRMS#4#725#false#false#79#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutRLWTChRMS#4#725#false#false#77#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutRRMChRMS#4#725#false#false#75#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutRRSURChRMS#4#725#false#false#73#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutRRWTChRMS#4#725#false#false#87#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutSUB1ChRMS#4#725#false#false#85#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPOutSUB2ChRMS#4#725#false#false#83#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPPhoneRMSPrsnt#4#725#false#false#81#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPPowerICInitSts#4#725#false#false#95#1#1#0#1#0.0#0.0#0.0#{"0": "PowerIC_Not_Init", "1": "PowerIC_Init_Over"}#mx11#e4
+AMPPwrModSts#4#725#false#false#94#4#1#0#1#0.0#0.0#0.0#{"0": "SAFEMODE_Normal", "1": "SAFEMODE_PreStandby", "2": "SAFEMODE_GotoStandby", "3": "SAFEMODE_Standby", "4": "SAFEMODE_PreSleep", "5": "SAFEMODE_GotoSleep", "6": "SAFEMODE_Sleep", "7": "SAFEMODE_SleepToStandby", "8": "SAFEMODE_StandbyToDiag", "9": "SAFEMODE_DiagToNormal"}#mx11#e4
+AMPSysRMSPrsnt#4#725#false#false#90#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPTDMSts#4#725#false#false#88#1#1#0#1#0.0#0.0#0.0#{"0": "TDM_Linked", "1": "TDM_Lost"}#mx11#e4
+AMPTDMLostCnt#4#725#false#false#103#7#1#0#1#0.0#0.0#0.0#null#mx11#e4
+AMPUSBMicRMSPrsnt#4#725#false#false#111#2#1#0#1#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPVRRMSPrsnt#4#725#false#false#109#2#1#0#2#0.0#0.0#0.0#{"0": "No_Sound", "1": "\u53ef\u95fb\u58f0\u97f3\u7684\u503c", "2": "\u6b63\u5e38\u503c", "3": "\u8d85\u8fc7limiter\u7684\u9608\u503c"}#mx11#e4
+AMPAutoHVacVolSetResp#4#734#false#false#7#3#1#0#音量自适应空调风量开关反馈信号#0.0#0.0#0.0#{"0": "Not_used", "1": "Off", "2": "Low", "3": "Mid", "4": "High", "5": "Reserve", "6": "Reserve", "7": "Reserve"}#mx11#e4
+AMPAutoSpeedVolSetResp#4#734#false#false#4#3#1#0#音量随速调节开关反馈信#0.0#0.0#0.0#{"0": "Not_used", "1": "Off", "2": "Low", "3": "Mid", "4": "High", "5": "Reserve", "6": "Reserve", "7": "Reserve"}#mx11#e4
+AMPAVASdBVolResp#4#734#false#false#1#10#0.1#-100.0#AVAS音量 dB 反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPAVASMutSetResp#4#734#false#false#23#1#1#0#AVASmute反馈信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+AMPAVASVolResp#4#734#false#false#22#7#1#0#AVAS音量反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPSoundStgRoomSizeSetResp#4#734#false#false#30#5#1.0#0.0#声场房间大小调节设置反馈#0.0#0.0#0.0#{"0": "Not_used"}#mx11#e4
+AMPCalldBVolResp#4#734#false#false#25#10#0.1#-100.0#通讯类音量 dB 反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPCallMutSetResp#4#734#false#false#47#1#1#0#通讯类mute反馈信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+AMPCallVolResp#4#734#false#false#46#7#1#0#通讯类音量反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPESSdBVolResp#4#734#false#false#55#10#0.1#-100.0#模拟声浪音量 dB 反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPSoundEffSetResp#4#734#false#false#61#4#1#0#音效设置反馈#0.0#0.0#0.0#{"0": "Not_used", "1": "Normal", "2": "Theatre", "3": "Concert_Hall", "4": "Customize", "5": "Exclusive", "6": "Reserve", "7": "Reserve"}#mx11#e4
+AMPIninSts#4#734#false#false#57#1#1#0#AMP初始化状态#0.0#0.0#0.0#{"0": "Not_ready", "1": "Ready"}#mx11#e4
+AMPESSMutSetResp#4#734#false#false#71#1#1#0#模拟声浪mute反馈信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+AMPESSVolResp#4#734#false#false#70#7#1#0#模拟声浪音量反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPTTSVolResp#4#734#false#false#79#7#1#0#TTS混音音量反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPVRVolResp#4#734#false#false#87#7#1#0#语音类音量反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPMediadBVolResp#4#734#false#false#95#10#0.1#-100.0#多媒体音量 dB 反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPmediaPahNrResp#4#734#false#false#101#3#1#0#媒体通道数反馈#0.0#0.0#0.0#{"0": "Not_used", "1": "2.0", "2": "5.1", "3": "5.1.2", "4": "7.1", "5": "7.1.2", "6": "7.1.4", "7": "reserve"}#mx11#e4
+AMPSoundFieSetResp#4#734#false#false#98#3#1#0#声场设置反馈#0.0#0.0#0.0#{"0": "Not_used", "1": "All", "2": "Front", "3": "Rear", "4": "Driver", "5": "Boss", "6": "Reserve", "7": "Reserve"}#mx11#e4
+AMPMediaMutSetResp#4#734#false#false#111#1#1#0#多媒体mute反馈信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+AMPMediaVolResp#4#734#false#false#110#7#1#0#多媒体音量反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPFrntReBalSetResp#4#734#false#false#119#5#1.0#-11.0#前后平衡调节设置反馈#0.0#0.0#0.0#{"0": "Not_used"}#mx11#e4
+AMPPASMutSetResp#4#734#false#false#113#1#1#0#雷达报警音mute反馈信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+AMPSysMutSetResp#4#734#false#false#112#1#1#0#系统mute反馈信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+AMPSysWarnMutSetResp#4#734#false#false#121#1#1#0#系统提示音类mute反馈信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+AMPVRMutSetResp#4#734#false#false#120#1#1#0#语音类mute反馈信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+AMPHdrestdBVolResp#4#734#false#false#135#10#0.1#-100.0#头枕音量dB反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPNavidBVolResp#4#734#false#false#137#10#0.1#-100.0#导航类音量 dB 反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPNaviMutSetResp#4#734#false#false#159#1#1#0#导航类mute反馈信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+AMPNaviVolResp#4#734#false#false#158#7#1#0#导航类音量反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPPASdBVolResp#4#734#false#false#167#10#0.1#-100.0#雷达报警音音量 dB 反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPPASVolResp#4#734#false#false#182#7#1#0#雷达报警音音量反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPSysWarndBVolResp#4#734#false#false#191#10#0.1#-100.0#系统提示音类音量 dB 反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPHdrestModSetResp#4#734#false#false#197#3#1#0#头枕设置反馈#0.0#0.0#0.0#{"0": "Not_used", "1": "Off", "2": "HeadrestMode-part", "3": "HeadrestMode-all", "4": "Reserve", "5": "Reserve", "6": "Reserve", "7": "Reserve"}#mx11#e4
+AMPANCPahChgResp#4#734#false#false#194#2#1#0#ANC channel switching feedback\nANC通道切换反馈#0.0#0.0#0.0#{"0": "ANC", "1": "ESE", "2": "Reserve", "3": "Reserve"}#mx11#e4
+AMPSysWarnVolResp#4#734#false#false#207#7#1#0#系统提示音类音量反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPTTSdBVolResp#4#734#false#false#215#10#0.1#-100.0#TTS混音音量 dB 反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPVehWarndBVolResp#4#734#false#false#217#10#0.1#-100.0#车辆报警音音量 dB 反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPVehWarnMutSetResp#4#734#false#false#239#1#1#0#车辆报警音mute反馈信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+AMPVehWarnVolResp#4#734#false#false#238#7#1#0#车辆报警音音量反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPVRdBVolResp#4#734#false#false#247#10#0.1#-100.0#语音类音量 dB 反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPLeRiBalSetResp#4#734#false#false#253#5#1.0#-11.0#左右平衡调节设置反馈#0.0#0.0#0.0#{"0": "Not_used"}#mx11#e4
+AMPEQ1SetResp#4#734#false#false#263#6#0.5#-12.5#EQ1设置反馈#0.0#0.0#0.0#{"0": "Not_used"}#mx11#e4
+AMPEQ2SetResp#4#734#false#false#271#6#0.5#-12.5#EQ2设置反馈#0.0#0.0#0.0#{"0": "Not_used"}#mx11#e4
+AMPEQ3SetResp#4#734#false#false#279#6#0.5#-12.5#EQ3设置反馈#0.0#0.0#0.0#{"0": "Not_used"}#mx11#e4
+AMPEQ4SetResp#4#734#false#false#287#6#0.5#-12.5#EQ4设置反馈#0.0#0.0#0.0#{"0": "Not_used"}#mx11#e4
+AMPEQ5SetResp#4#734#false#false#295#6#0.5#-12.5#EQ5设置反馈#0.0#0.0#0.0#{"0": "Not_used"}#mx11#e4
+AMPEQ6SetResp#4#734#false#false#303#6#0.5#-12.5#EQ6设置反馈#0.0#0.0#0.0#{"0": "Not_used"}#mx11#e4
+AMPHdrestVolResp#4#734#false#false#311#7#1#0#头枕音量反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPHdrestMutSetResp#4#734#false#false#304#1#1#0#头枕mute反馈信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+AMPSoundStgHeiSetResp#4#734#false#false#319#5#1.0#0.0#声场高度调节设置反馈#0.0#0.0#0.0#{"0": "Not_used"}#mx11#e4
+AMPSoundStgWidthSetResp#4#734#false#false#327#5#1.0#0.0#声场宽度调节设置反馈#0.0#0.0#0.0#{"0": "Not_used"}#mx11#e4
+AMPSoundStgWetDrySetResp#4#734#false#false#335#7#1.0#0.0#声场干湿比调节设置反馈#0.0#0.0#0.0#{"0": "Not_used"}#mx11#e4
+AMPEcoSetReqResp#4#734#false#false#328#1#1#0#AMP低功耗模式反馈#0.0#0.0#0.0#{"0": "Normal", "1": "Eco"}#mx11#e4
+AMPUsbMicMutSetResp#4#734#false#false#343#1#1#0#USBMICmute反馈信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+AMPUsbMicVolResp#4#734#false#false#342#7#1#0#USBMIC音量反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPUsbMicdBVolResp#4#734#false#false#351#10#0.1#-100.0#USBMIC音量(dB)反馈信号#0.0#0.0#0.0#null#mx11#e4
+AMPAVASCircFltSts#4#735#false#false#7#1#1#0#amplifier External circuit fault status\n功放外设故障状态#0.0#0.0#0.0#{"0": "Normal", "1": "AMP_AVASCirc_fault"}#mx11#e4
+AMPTFltSts#4#735#false#false#6#2#1#0#amplifier temperature fault status\n功放温度故障状态#0.0#0.0#0.0#{"0": "Normal", "1": "AMP_Power_Limited", "2": "AMP_Over_Temperature"}#mx11#e4
+AMPUFltSts#4#735#false#false#4#2#1#0#amplifier voltage fault status\n功放电压故障状态#0.0#0.0#0.0#{"0": "Normal", "1": "AMP_Under_voltage", "2": "AMP_Over_voltage", "3": "Reserved"}#mx11#e4
+AMPFaultInfoFlag#4#735#false#false#2#1#1#0#AMP Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#mx11#e4
+AMPTTSMutSetResp#4#735#false#false#1#1#1#0#报警类TTS mute反馈信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+AMPNodeAddress#4#1368#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#mx11#e4
+AMPActiveWakeup#4#1368#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#mx11#e4
+AMPRepeatMsgReq#4#1368#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#mx11#e4
+AMPRepeatMsgSt#4#1368#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#mx11#e4
+NMKeepAwkRsnAMP#4#1368#false#false#48#9#1#0##0.0#0.0#0.0#null#mx11#e4
+AMPToVCCDDiagResp#4#1697#false#false#7#512#1#0##0.0#0.0#0.0#null#mx11#e4
+WhlStsSigGrpChks#4#179#false#false#7#8#1#0##0.0#0.0#0.0#null#mx11#e4
+WhlSpdFrntLeVld#4#179#false#false#15#1#1#0#Status of wheel speed front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+WhlSpdFrntRiVld#4#179#false#false#14#1#1#0#Status of wheel speed front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+WhlSpdReLeVld#4#179#false#false#13#1#1#0#Status of wheel speed rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+WhlSpdReRiVld#4#179#false#false#12#1#1#0#Status of wheel speed rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+WhlStsSigGrpCntr#4#179#false#false#11#4#1#0##0.0#0.0#0.0#null#mx11#e4
+WhlSpdFrntLe#4#179#false#false#23#16#0.05625#0.0#Wheel speed front left#0.0#0.0#0.0#null#mx11#e4
+WhlSpdFrntRi#4#179#false#false#39#16#0.05625#0.0#Wheel speed front right#0.0#0.0#0.0#null#mx11#e4
+WhlSpdReLe#4#179#false#false#55#16#0.05625#0.0#Wheel speed rear left#0.0#0.0#0.0#null#mx11#e4
+WhlSpdReRi#4#179#false#false#71#16#0.05625#0.0#Wheel speed rear right#0.0#0.0#0.0#null#mx11#e4
+VehSpd#4#179#false#false#87#16#0.05625#0.0#Vehicle speed#0.0#0.0#0.0#null#mx11#e4
+VehSpdVld#4#179#false#false#103#1#1#0#Qualifier for vehicle speed signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+WhlDirFrntLeVld#4#179#false#false#102#1#1#0#Qualifier for wheel moving direction front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+WhlDirFrntLe#4#179#false#false#101#2#1#0#Wheel moving direction front left#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#mx11#e4
+WhlSpdEdgeFrntLeVld#4#179#false#false#99#1#1#0#Qualifier for wheel speed Edges front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+WhlDirFrntRiVld#4#179#false#false#98#1#1#0#Qualifier for wheel moving direction front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+WhlDirFrntRi#4#179#false#false#97#2#1#0#Wheel moving direction front right#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#mx11#e4
+WhlSpdEdgeFrntLe#4#179#false#false#111#8#1#0#Wheel speed Edges front left#0.0#0.0#0.0#null#mx11#e4
+WhlSpdEdgeFrntRiVld#4#179#false#false#119#1#1#0#Qualifier for wheel speed Edges front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+WhlDirReLeVld#4#179#false#false#118#1#1#0#Qualifier for wheel moving direction rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+WhlDirReLe#4#179#false#false#117#2#1#0#Wheel moving direction rear left#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#mx11#e4
+WhlSpdEdgeReLeVld#4#179#false#false#115#1#1#0#Qualifier for wheel speed Edges rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+WhlDirReRiVld#4#179#false#false#114#1#1#0#Qualifier for wheel moving direction rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+WhlDirReRi#4#179#false#false#113#2#1#0#Wheel moving direction rear right#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#mx11#e4
+WhlSpdEdgeFrntRi#4#179#false#false#127#8#1#0#Wheel speed Edges front right#0.0#0.0#0.0#null#mx11#e4
+WhlSpdEdgeReLe#4#179#false#false#135#8#1#0#Wheel speed Edges rear left#0.0#0.0#0.0#null#mx11#e4
+WhlSpdEdgeReRiVld#4#179#false#false#143#1#1#0#Qualifier for wheel speed Edges rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+WhlSpdEdgeReRi#4#179#false#false#151#8#1#0#Wheel speed Edges rear right#0.0#0.0#0.0#null#mx11#e4
+WhlDstTiStampFrntLe#4#179#false#false#159#16#1#0#Wheel distance time stamp for front left#0.0#0.0#0.0#null#mx11#e4
+WhlDstTiStampFrntRi#4#179#false#false#175#16#1#0#Wheel distance time stamp for front right#0.0#0.0#0.0#null#mx11#e4
+WhlDstTiStampReLe#4#179#false#false#191#16#1#0#Wheel distance time stamp for rear left#0.0#0.0#0.0#null#mx11#e4
+WhlDstTiStampReRi#4#179#false#false#207#16#1#0#Wheel distance time stamp for rear left#0.0#0.0#0.0#null#mx11#e4
+AdcFcnSigGrpChks#4#179#false#false#223#8#1#0##0.0#0.0#0.0#null#mx11#e4
+BCSActrActvForADC#4#179#false#false#231#2#1#0#BCS actuator active for ADC#0.0#0.0#0.0#{"0": "ADC_Normal", "1": "ADC_Active_L12", "2": "ADC_Active_L123"}#mx11#e4
+BCSActrRampOffStsForADC#4#179#false#false#229#2#1#0#BCS actuator ramp off status for ADC#0.0#0.0#0.0#{"0": "ADC_Normal", "1": "ADC_SuspendByOtherBrake", "2": "ADC_SuspendByDriverPropulsion", "3": "ADC_RampOffByDriverBrake"}#mx11#e4
+AdcFcnSigGrpCntr#4#179#false#false#227#4#1#0##0.0#0.0#0.0#null#mx11#e4
+BCSActrAvlStsForADC#4#179#false#false#239#3#1#0#BCS actuator available status for ADC#0.0#0.0#0.0#{"0": "ADC_NotAvailable_L123", "1": "ADC_NotAvailableBySituation_L123", "2": "ADC_AvailableL12_NotAvailableL3", "3": "ADC_AvailableL12_NotAvailableBySituationL3", "4": "ADC_AvailableWithFault_L3", "5": "ADC_AvailableWithSituationIssue_L3", "6": "ADC_Available_L123"}#mx11#e4
+BCSActrAvlStsForADCL3#4#179#false#false#236#3#1#0#BCS available status for ADC L3#0.0#0.0#0.0#{"0": "ADC_NotAvailable_L3", "1": "ADC_NotAvailableBySituation_L3", "2": "ADC_AvailableWithFault_L3", "3": "ADC_AvailableWithSituationIssue_L3", "4": "ADC_Available_L3_No_failure"}#mx11#e4
+BCSActrVldForADC#4#179#false#false#233#1#1#0#BCS actuator valid for ADC#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+BattURawSigGrpChks#4#579#false#false#7#8#1#0##0.0#0.0#0.0#null#mx11#e4
+BattURawSigGrpCntr#4#579#false#false#11#4#1#0##0.0#0.0#0.0#null#mx11#e4
+BattURaw#4#579#false#false#23#15#0.001#0.0#Battery Voltage raw\n电池电压#0.0#0.0#0.0#null#mx11#e4
+BattSocRawSigGrpChks#4#579#false#false#39#8#1#0##0.0#0.0#0.0#null#mx11#e4
+BattSocRawSigGrpCntr#4#579#false#false#43#4#1#0##0.0#0.0#0.0#null#mx11#e4
+BattSocRaw#4#579#false#false#49#10#0.1#0.0#Battery State of charge raw\n电池SOC#0.0#0.0#0.0#{"800": "Invalid"}#mx11#e4
+WiprSpdModSts#4#277#false#false#7#6#1#0#雨刮速度状态反馈#0.0#0.0#0.0#{"0": "OFF", "1": "Intermittent_wiping_request_LowSpeed", "2": "Intermittent_wiping_request_HighSpeed", "3": "Low_speed_wiping_request", "4": "High_speed_wiping_request", "5": "Auto_wiping_Speed", "6": "Reserved"}#mx11#e4
+MechWiprInPrkgPosn#4#277#false#false#1#1#1#0#机械雨刮回位开关是否使能#0.0#0.0#0.0#{"0": "No", "1": "Yes"}#mx11#e4
+WashReq#4#277#false#false#0#1#1#0#清洗开关\nWash request#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#mx11#e4
+RemStrtAvlStsToSoa#4#277#false#false#15#2#1#0#the available status for Remote start to SOA#0.0#0.0#0.0#{"0": "Avl", "1": "NotAvl_CarMode", "2": "NotAvl_NotP", "3": "NotAvl_Imob"}#mx11#e4
+DmsVMMDrvOnSeatCnfmReqSoa#4#277#false#false#13#1#1#0#DMS Driver Seated status confirm requested from VMM#0.0#0.0#0.0#{"0": "NotReqd", "1": "Reqd"}#mx11#e4
+WashMotErr#4#436#false#false#10#1#1#0#Wash Motor Error\n洗涤电机故障发生#0.0#0.0#0.0#{"0": "NoError", "1": "Error"}#mx11#e4
+ShowCarModInhWinScrWsh#4#551#false#false#23#1#1#0#Show CarMode Inhibit Window Screen Wash Warning#0.0#0.0#0.0#{"0": "NoWarning", "1": "Warning"}#mx11#e4
+WiprWashActvSts#4#551#false#false#22#1#1#0#Window Screen Wash Active Status#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#mx11#e4
+WiprWashAvlSts#4#551#false#false#21#1#1#0#Wiper Wash Avaliable Status#0.0#0.0#0.0#{"0": "Avaliable", "1": "NotAvaliable"}#mx11#e4
+HornSts#4#551#false#false#20#1#1#0#Horn Activation Status\n喇叭激活状态#0.0#0.0#0.0#{"0": "Inactive", "1": "Active"}#mx11#e4
+WshrLvrPosn#4#551#false#false#19#1#1#0#洗涤液液位过低提醒#0.0#0.0#0.0#{"0": "Normal", "1": "Low"}#mx11#e4
+RlsTrsm550nm#4#551#false#false#31#8#1.0#0.0#550nm波长玻璃透光率#0.0#0.0#0.0#{"255": "Invalid"}#mx11#e4
+RlsTrsm880nm#4#551#false#false#39#8#1.0#0.0#880nm波长玻璃透光率#0.0#0.0#0.0#{"255": "Invalid"}#mx11#e4
+WiprWashNotAvlRsn#4#707#false#false#7#8#1#0#Wiper Wash Not Avaliable Reason#0.0#0.0#0.0#{"0": "Default", "1": "WashMotorError", "2": "HoodNotClosed"}#mx11#e4
+RainSnsrSnvtySts#4#707#false#false#15#3#1#0#VCCD雨量传感器灵敏度状态#0.0#0.0#0.0#{"0": "Sensitivity_1", "1": "Sensitivity_2", "2": "Sensitivity_3", "3": "Sensitivity_4", "4": "Sensitivity_5(Reserved)", "5": "Sensitivity_6(Reserved)", "6": "Sensitivity_7(Reserved)"}#mx11#e4
+WiprHoodOpenInde#4#707#false#false#12#1#1#0#雨刮运行时前舱盖未关闭提醒#0.0#0.0#0.0#{"0": "\u5173\u95ed\u63d0\u9192", "1": "\u89e6\u53d1\u63d0\u9192"}#mx11#e4
+VCCDOdoEgyCnsBacReq#4#707#false#false#31#3#1#0#VCCD total odo and energy consumption back up request#0.0#0.0#0.0#{"0": "No_Command", "1": "DownLoad_Request", "2": "Upload_Request"}#mx11#e4
+RainSnsrSnvtyOut#4#707#false#false#26#3#1#0#1#0.0#0.0#0.0#{"0": "No_Command", "1": "level1", "2": "level2", "3": "level3", "4": "level4", "5": "Reserve", "6": "Reserve", "7": "Reserve"}#mx11#e4
+VehSysFltWarnSigGrpChks#4#708#false#false#7#8#1#0##0.0#0.0#0.0#null#mx11#e4
+VCUHVSysFltWarnSts#4#708#false#false#15#4#1#0#高压系统故障 分等级#0.0#0.0#0.0#{"0": "no_warning", "1": "reserved", "2": "HV_System_Fault_warning_Level2", "3": "reserved", "4": "HV_System_Fault_warning_Level4", "5": "HV_System_Fault_warning_Level5", "6": "HV_System_Fault_warning_Level6", "7": "reserved", "8": "HV_System_Fault_warning_Level8", "9": "HV_System_Fault_warning_Level9", "10": "reserved", "11": "reserved", "12": "reserved", "13": "reserved", "14": "reserved", "15": "reserved"}#mx11#e4
+VehSysFltWarnSigGrpCntr#4#708#false#false#11#4#1#0##0.0#0.0#0.0#null#mx11#e4
+VCUGearChgFailInde#4#708#false#false#23#4#1#0#换挡失败提醒#0.0#0.0#0.0#{"0": "No_request", "1": "Please_brake", "2": "Vehicle_speed_high", "3": "Charging_plug_insertion", "4": "EPB_failure", "5": "E_motor_failure", "6": "Connect_the_key_and_press_SSB", "7": "Press_SSB", "8": "Show_Room_Keep_Park", "9": "LV_System_Failure", "10": "HV_System_Failure", "11": "Immobilizer_Not_Pass", "12": "Trailer_Mode_Not_Shift", "13": "Shifter_Failure"}#mx11#e4
+VCULoSocWarngMsg#4#708#false#false#19#2#1.0#0.0#高压电池低电量报警\nHV Battery low SOC warnning#0.0#0.0#0.0#{"0": "Not_active", "1": "Level1_warning", "2": "Level2_warning"}#mx11#e4
+VCUBattOverHeatWarn#4#708#false#false#17#1#1#0#电池过温时 仪表点亮电池过温报警灯#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#mx11#e4
+VCUDrvMotFltWarn#4#708#false#false#16#1#1#0#当驱动电机发生故障时 仪表点亮驱动电机故障灯#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#mx11#e4
+VCUDrvMotOverHeatWarn#4#708#false#false#31#1#1#0#驱动电机过热报警#0.0#0.0#0.0#{"0": "Not_active", "1": "Active"}#mx11#e4
+VCUDrvSysLimdWarn#4#708#false#false#30#1#1#0#VCU发送点亮跛行故障灯信号 仪表点灯#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#mx11#e4
+VCUHvBattSysFltIndcr#4#708#false#false#29#1#1#0#动力电池故障报警灯 低级#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#mx11#e4
+VCUHvBattSysFltWarn#4#708#false#false#28#1#1#0#动力电池故障报警灯 严重#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#mx11#e4
+VCUHvPwrSysCutOff#4#708#false#false#27#1#1#0#VCU发送动力系统切断故障telltale#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#mx11#e4
+VCUPrpsnPwrDrt#4#708#false#false#26#1#1#0#VCU发送动力性能降级故障 仪表进行文字显示和声音提醒#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#mx11#e4
+VCUThermRunawayErrAlrm#4#708#false#false#25#1#1#0#热失控报警#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#mx11#e4
+VCUVehSysFltWarn#4#708#false#false#24#1#1#0#VCU发送点亮整车系统故障灯信号 仪表点灯#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#mx11#e4
+AmbTRaw#4#708#false#false#47#16#0.01#-80.0#Raw ambient temperature#0.0#0.0#0.0#null#mx11#e4
+AmbTRawVld#4#708#false#false#63#1#1#0#Raw ambient temperature valid value#0.0#0.0#0.0#{"0": "Not_Valid", "1": "Valid"}#mx11#e4
+F01OutpU_ADD#4#1264#false#false#7#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F02OutpU_VCCD#4#1264#false#false#15#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F03OutpU_EPS2#4#1264#false#false#23#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F04OutpU_EPS1#4#1264#false#false#31#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F05OutpU_BCSUBMR#4#1264#false#false#39#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F06OutpU_BCSUBVR#4#1264#false#false#47#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F07OutpU_RZCUMAIN#4#1264#false#false#55#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F08OutpU_LZCUMAIN#4#1264#false#false#63#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F09OutpU_DCD#4#1264#false#false#71#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F10OutpU_FAN#4#1264#false#false#79#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F11OutpU_HBMF#4#1264#false#false#87#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F12OutpU_BCP#4#1264#false#false#95#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F13OutpU_RZCUBACKUP#4#1264#false#false#103#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F14OutpU_LZCUBACKUP#4#1264#false#false#111#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F15OutpU_REDS#4#1264#false#false#119#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F16OutpU_BMSACTR_FEDS#4#1264#false#false#127#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F17OutpU_BMSCTRL#4#1264#false#false#135#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F18OutpU_FLRL_IMU#4#1264#false#false#143#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F19OutpU_FLSR_FRSR_LRR#4#1264#false#false#151#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F20OutpU_HCWP_BCTV_ECMV#4#1264#false#false#159#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F21OutpU_LSL#4#1264#false#false#167#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F22OutpU_AQS#4#1264#false#false#175#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F23OutpU_AGS#4#1264#false#false#183#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F24OutpU_RSL#4#1264#false#false#191#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F25OutpU_LIGHT_LEFT#4#1264#false#false#199#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F26OutpU_RLEDS_EOP#4#1264#false#false#207#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F27OutpU_LIGHT_RIGHT#4#1264#false#false#215#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F28OutpU_BCWP1#4#1264#false#false#223#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F29OutpU_ECWP1#4#1264#false#false#231#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F30OutpU_FEDS_EOP#4#1264#false#false#239#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F31OutpU_BLET#4#1264#false#false#247#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F32OutpU_TBOX#4#1264#false#false#255#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F33OutpU_NEM#4#1264#false#false#263#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F34OutpU_Reserved#4#1264#false#false#271#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F35OutpU_ECWP2#4#1264#false#false#279#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F36OutpU_BCWP2#4#1264#false#false#287#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F37OutpU_REEDS_EOP#4#1264#false#false#295#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+F38OutpU_UBVR#4#1264#false#false#303#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+N1_BD4LD650_Init_Cnt#4#1265#false#false#7#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N2_BTS7002_Init_Cnt#4#1265#false#false#23#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N3_DRV8705_Init_Cnt#4#1265#false#false#39#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N4_DRV871x_Init_Cnt#4#1265#false#false#55#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N5_FS2620_Init_Cnt#4#1265#false#false#71#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N6_TCA9539_Init_Cnt#4#1265#false#false#87#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N7_TIC12400_Init_Cnt#4#1265#false#false#103#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N8_TPSXHXXX_Init_Cnt#4#1265#false#false#119#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N9_VN9DXX_Init_Cnt#4#1265#false#false#135#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N10_VNF1048_Init_Cnt#4#1265#false#false#151#16#1#0##0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrFrtHatchCoverMotor#4#1265#false#false#167#13#0.1#0.0#Current Monitor Front Hatch Cover Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrFrtWiperMotorHiSpd#4#1265#false#false#183#13#0.1#0.0#Current Monitor Front Wiper Motor High Speed#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrFrtWiperMotorLoSpd#4#1265#false#false#199#13#0.1#0.0#Current Monitor Front Wiper Motor Low Speed#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrHiHorn#4#1265#false#false#215#13#0.1#0.0#Current Monitor High Horn#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrLoHorn#4#1265#false#false#231#13#0.1#0.0#Current Monitor Low Horn#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRRWindHeat#4#1265#false#false#247#13#0.1#0.0#Current Monitor Rear Wind Heating#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrWashPump#4#1265#false#false#263#13#0.1#0.0#Current Monitor Wash Pump#0.0#0.0#0.0#null#mx11#e4
+PwrModSigGrpChks#4#144#false#false#7#8#1#0##0.0#0.0#0.0#null#mx11#e4
+PwrModSigGrpCntr#4#144#false#false#11#4#1#0##0.0#0.0#0.0#null#mx11#e4
+PwrModSts#4#144#false#false#23#3#1#0#PowerMode Status#0.0#0.0#0.0#{"0": "OFF", "1": "Awake", "2": "ACC", "3": "RUN"}#mx11#e4
+PwrModVld#4#144#false#false#20#1#1#0#PowerMode Validty#0.0#0.0#0.0#{"0": "Valid", "1": "NotValid"}#mx11#e4
+VCUActGearSigGrpChks#4#144#false#false#47#8#1#0##0.0#0.0#0.0#null#mx11#e4
+VCUActGearLvr#4#144#false#false#55#3#1#0#Actual gear level 车辆实际档位\nP R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#mx11#e4
+VCUActGearLvrVld#4#144#false#false#52#1#1#0#车辆实际档位有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+VCUActGearSigGrpCntr#4#144#false#false#51#4#1#0##0.0#0.0#0.0#null#mx11#e4
+VcuInpSigGrpChks#4#144#false#false#63#8#1#0##0.0#0.0#0.0#null#mx11#e4
+VCURgnTqCorrnFac#4#144#false#false#71#4#0.1#0.0#Regeneration Torque Correction Factor#0.0#0.0#0.0#null#mx11#e4
+VcuInpSigGrpCntr#4#144#false#false#67#4#1#0##0.0#0.0#0.0#null#mx11#e4
+VCUStsModCst#4#144#false#false#79#8#1#0#energy recuperation end mode.\n能量回收状态模式#0.0#0.0#0.0#{"0": "OPedl_No_RgL1", "1": "OPedl_No_RgL2", "2": "OPedl_No_RgL3", "3": "OPedl_No_RgL4", "4": "OPedl_No_RgL5", "5": "OPedl_No_ADASactive", "6": "OPedl_No_RoadGradientInhbit", "7": "OPedl_No_PowerDown", "16": "OPedl_Stop_RgL1", "17": "OPedl_Stop_RgL2", "18": "OPedl_Stop_RgL3", "19": "OPedl_Stop_RgL4", "20": "OPedl_Stop_RgL5", "21": "OPedl_Crp_RgL1", "22": "OPedl_Crp_RgL2", "23": "OPedl_Crp_RgL3", "24": "OPedl_Crp_RgL4", "25": "OPedl_Crp_RgL5", "26": "OPedl_FW_RgL1", "27": "OPedl_FW_RgL2", "28": "OPedl_FW_RgL3", "29": "OPedl_FW_RgL4", "30": "OPedl_FW_RgL5"}#mx11#e4
+VCUAccrPedlRat#4#144#false#false#87#15#0.004#0.0#加速油门踏板开度#0.0#0.0#0.0#null#mx11#e4
+VCUPrkgBtnPsd#4#144#false#false#88#1#1#0#驾驶员按下P档#0.0#0.0#0.0#{"0": "Not_Active", "1": "active"}#mx11#e4
+VCUVirtAccrPedl#4#144#false#false#103#7#1#0#虚拟油门开度 当前模式的pedal map反算#0.0#0.0#0.0#null#mx11#e4
+VCUTarGearLvrVld#4#144#false#false#96#1#1#0#目标档位有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+VCUAccrPedlRatVld#4#144#false#false#111#1#1#0#加速踏板有效性#0.0#0.0#0.0#{"0": "invalid", "1": "valid"}#mx11#e4
+VCUFrntEmTqRdy#4#144#false#false#110#1#1#0#The Front Motor  can be ready to response chassis torque request.\n前电机可以响应扭矩请求.#0.0#0.0#0.0#{"0": "Not_ready", "1": "Ready"}#mx11#e4
+VCUReEmTqRdy#4#144#false#false#109#1#1#0#Rear EM is ready to response chassis Torque Request\n后电机是否处于Ready状态#0.0#0.0#0.0#{"0": "Not_ready", "1": "Ready"}#mx11#e4
+VCUTarGearLvr#4#144#false#false#108#3#1#0#目标档位  P R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#mx11#e4
+VCUVirtAccrPedlVld#4#144#false#false#105#1#1#0#虚拟油门开度有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+VCUShifterMoveFlg#4#144#false#false#104#1#1#0#驾驶员拨动了换挡杆的标志位#0.0#0.0#0.0#null#mx11#e4
+VCUDrvOffFcnLim#4#144#false#false#119#1#1#0#VCU send to BCS to identify whether vehcile can drive off or not as powertrain has fault and power limited.\nVCU发送给BCS系统，用于判断整车动力系统是否存在故障动力受限不能起步的判断#0.0#0.0#0.0#{"0": "Normal;", "1": "PowerLimited_Fault."}#mx11#e4
+VCUPtRdyFlg#4#144#false#false#127#1#1#0#驾驶使能#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#mx11#e4
+CarModSts#4#144#false#false#126#3#1#0#CarMode状态信号#0.0#0.0#0.0#{"0": "Normal", "1": "Reserved1", "2": "Trsnp", "3": "Showroom", "4": "Dyno", "5": "TestDrv", "6": "Service", "7": "Reserved3"}#mx11#e4
+VCUActDrvMod#4#144#false#false#123#4#1#0#VCU actual drive mode \nVCU实际驾驶模式#0.0#0.0#0.0#{"0": "Comfort_Mode", "1": "Sport_Mode", "2": "Individual_Mode1", "3": "Individual_Mode2", "4": "Individual_Mode3", "5": "Snow_Mode", "6": "Mountain_Mode", "7": "Battle_Mode", "8": "Extreme_Eco_mode", "9": "Sport_plus_mode", "10": "Off_road_Mode"}#mx11#e4
+UDB23FZCU#4#1404#false#false#23#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB22FZCU#4#1404#false#false#22#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB21FZCU#4#1404#false#false#21#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB20FZCU#4#1404#false#false#20#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB19FZCU#4#1404#false#false#19#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB18FZCU#4#1404#false#false#18#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB17FZCU#4#1404#false#false#17#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB31FZCU#4#1404#false#false#31#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB30FZCU#4#1404#false#false#30#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB29FZCU#4#1404#false#false#29#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB28FZCU#4#1404#false#false#28#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB27FZCU#4#1404#false#false#27#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB26FZCU#4#1404#false#false#26#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB25FZCU#4#1404#false#false#25#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB24FZCU#4#1404#false#false#24#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB39FZCU#4#1404#false#false#39#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB38FZCU#4#1404#false#false#38#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB37FZCU#4#1404#false#false#37#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB36FZCU#4#1404#false#false#36#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB35FZCU#4#1404#false#false#35#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB34FZCU#4#1404#false#false#34#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB33FZCU#4#1404#false#false#33#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB32FZCU#4#1404#false#false#32#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB47FZCU#4#1404#false#false#47#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB46FZCU#4#1404#false#false#46#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB45FZCU#4#1404#false#false#45#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB44FZCU#4#1404#false#false#44#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB43FZCU#4#1404#false#false#43#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB42FZCU#4#1404#false#false#42#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB41FZCU#4#1404#false#false#41#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB40FZCU#4#1404#false#false#40#1#1#0##0.0#0.0#0.0#null#mx11#e4
+NMKeepAwkRsnFZCU#4#1404#false#false#48#9#1#0##0.0#0.0#0.0#null#mx11#e4
+StsOfDayRunngLampLe#4#790#false#false#7#2#1#0#左日行灯状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfFrntCornrgLampLe#4#790#false#false#5#2#1#0#左角灯状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfFrntTurnIndcrLe#4#790#false#false#3#2#1#0#左前转向灯状态反馈#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfLedFrntPosnLampLe#4#790#false#false#1#2#1#0#左前位置灯LED状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+AHLRefLernedFlagLe#4#790#false#false#15#1#1#0#Left AHL motor Reference learned flag#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#mx11#e4
+HCMLFaultInfoFlag#4#790#false#false#14#1#1#0#HCML Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#mx11#e4
+StsOfADBLe#4#790#false#false#13#2#1#0#Left Status Of ADB#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfLedHiBeamLe#4#790#false#false#11#2#1#0#左远光状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfLedLoBeamLe#4#790#false#false#9#2#1#0#左近光状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+MotorCurPosLe#4#790#false#true#23#10#0.01#0.0#left motor Current position#0.0#0.0#0.0#null#mx11#e4
+MotorFltStsLe#4#790#false#false#29#1#1#0#left motor fault status#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#mx11#e4
+StsofSBLLe#4#790#false#false#28#2#1#0#Status of  Left Static Bending Light#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+HCMLNodeAddress#4#1363#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#mx11#e4
+HCMLActiveWakeup#4#1363#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#mx11#e4
+HCMLRepeatMsgReq#4#1363#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#mx11#e4
+HCMLRepeatMsgSt#4#1363#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#mx11#e4
+NMKeepAwkRsnHCML#4#1363#false#false#48#9#1#0##0.0#0.0#0.0#null#mx11#e4
+HCMLToVCCDDiagResp#4#1634#false#false#7#512#1#0#HCMLToVCCDLampCanfdDiagRespNpdu#0.0#0.0#0.0#null#mx11#e4
+StsOfDayRunngLampRi#4#806#false#false#7#2#1#0#State of day running lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfFrntCornrgLampRi#4#806#false#false#5#2#1#0#State of corner lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfFrntTurnIndcrRi#4#806#false#false#3#2#1#0#State of front turning lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfLedFrntPosnLampRi#4#806#false#false#1#2#1#0#State of front position lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+MotorFltStsRi#4#806#false#false#13#1#1#0#right motor fault status#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#mx11#e4
+HCMRFaultInfoFlag#4#806#false#false#12#1#1#0#HCMR Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#mx11#e4
+StsOfLedHiBeamRi#4#806#false#false#11#2#1#0#State of high beam right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfLedLoBeamRi#4#806#false#false#9#2#1#0#State of low beam right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+MotorCurPosRi#4#806#false#true#23#10#0.01#0.0#Right motor current position#0.0#0.0#0.0#null#mx11#e4
+AHLRefLernedFlagRi#4#806#false#false#29#1#1#0#Right AHL motor Reference learned flag#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#mx11#e4
+StsOfADBRi#4#806#false#false#28#2#1#0#Right Status Of ADB#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsofSBLRi#4#806#false#false#26#2#1#0#Status of  Right Static Bending light#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+HCMRNodeAddress#4#1362#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#mx11#e4
+HCMRActiveWakeup#4#1362#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#mx11#e4
+HCMRRepeatMsgReq#4#1362#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#mx11#e4
+HCMRRepeatMsgSt#4#1362#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#mx11#e4
+NMKeepAwkRsnHCMR#4#1362#false#false#48#9#1#0##0.0#0.0#0.0#null#mx11#e4
+HCMRToVCCDDiagResp#4#1635#false#false#7#512#1#0#HCMRToVCCDLampCanfdDiagRespNpdu#0.0#0.0#0.0#null#mx11#e4
+PassMassgHmiCtrNotAvlRsn#4#435#false#false#7#4#1#0#1#0.0#0.0#0.0#{"0": "NoError", "1": "VehImpctP", "2": "ExtmEcoMod", "3": "LvEgyLim", "4": "PwrModLim"}#mx11#e4
+PassMassgIntenSts#4#435#false#false#3#4#1#0#1#0.0#0.0#0.0#{"0": "Low", "1": "Mid", "2": "High"}#mx11#e4
+DrvrSeatMotPosnSts#4#435#false#false#15#1#1#0#Driver Seat Motor Position Status\n车设座椅电机位置状态#0.0#0.0#0.0#{"0": "NoErr", "1": "PosnErr"}#mx11#e4
+DrvrHozlAdjSts#4#435#false#false#14#2#1#0#主驾水平电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Forward", "2": "Rearward"}#mx11#e4
+DrvrHeiAdjSts#4#435#false#false#12#2#1#0#主驾抬高电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down"}#mx11#e4
+DrvrSeatLumAdjHwSwtSts#4#435#false#false#10#3#1#0#Driver Seat Lumbar Adjustment Switch Status\n主驾座椅腰托硬线开关调节状态#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down", "3": "Fwd", "4": "Rwd", "5": "Invalid", "6": "Reserved", "7": "Reserved"}#mx11#e4
+DrvrSeatBackMotPosn#4#435#false#false#23#8#1.0#0.0#Driver Seat Back Motor Position\n主驾靠背电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#mx11#e4
+PassMassgModSts#4#435#false#false#31#4#1#0#1#0.0#0.0#0.0#{"0": "Mode1", "1": "Mode2", "2": "Mode3", "3": "Mode4"}#mx11#e4
+PassMassgSts#4#435#false#false#27#1#1#0#1#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#mx11#e4
+ReLeBackFoldSts#4#435#false#false#26#3#1#0#1#0.0#0.0#0.0#{"0": "Unknow", "1": "Folded", "2": "UnFolding", "3": "Suspend_of_UnFolding", "4": "Folding", "5": "Suspend_of_Folding", "6": "UnFolded", "7": "Reserved"}#mx11#e4
+DrvrSeatHeiMotPosn#4#435#false#false#39#8#1.0#0.0#Driver Seat Height Motor Position\n主驾抬高电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#mx11#e4
+ReLeSeatBackMotPosn#4#435#false#false#47#8#1.0#0.0#1#0.0#0.0#0.0#{"255": "PosnErr"}#mx11#e4
+ReLeSeatHeatgTSts#4#435#false#false#55#8#0.5#-40.0#Rear Left Seat Heating Temperature Status 后排左侧座椅加热温度状态#0.0#0.0#0.0#{"255": "Error"}#mx11#e4
+DrvrSeatHozlMotPosn#4#435#false#false#63#8#1.0#0.0#Driver Seat Horizontal Motor Position\n主驾水平电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#mx11#e4
+SeatHeatgReRowLeFlt#4#435#false#false#71#8#1#0#Rear Row  Left Seat Heating Fault at Passenger side\n后排左侧副驾座椅加热故障\nBit0 HeaterOutputOverCurrent\nBit1 HeaterOutputUnderCurrent\nBit2 NTCSensorSTB\nBit3 NTCSensorSTG\nBit4 HeaterReturnFlt#0.0#0.0#0.0#null#mx11#e4
+DrvrTiltAdjSts#4#435#false#false#119#2#1#0#主驾坐垫倾角电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down"}#mx11#e4
+DrvrSeatMovModSts#4#435#false#false#117#2#1#0#Driver Seat Moving Mode Status\n主驾座椅移动模式状态#0.0#0.0#0.0#{"0": "Idle", "1": "ManuMovg", "2": "AutoMovg", "3": "ManuMovg_PosnErr"}#mx11#e4
+HornSwtSts#4#435#false#false#115#1#1#0#Horn switch status#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#mx11#e4
+LeReBackAdjSts#4#435#false#false#114#2#1#0#1#0.0#0.0#0.0#{"0": "Idle", "1": "Forward", "2": "Rearward", "3": "Reserve"}#mx11#e4
+PassMassgEnaSts#4#435#false#false#112#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+RiReSeatBackFoldSwtSts#4#435#false#false#123#2#1#0#Right Rear Seat Back Fold Switch Status#0.0#0.0#0.0#{"0": "Idle", "1": "fold", "2": "unfold", "3": "invalid"}#mx11#e4
+DrvrBackAdjSts#4#435#false#false#121#2#1#0#主驾靠背电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Forward", "2": "Rearward"}#mx11#e4
+DrvrSeatTiltMotPosn#4#435#false#false#167#8#1.0#0.0#Driver Seat Tilt Motor Position 主驾调角电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#mx11#e4
+DrvrSeatMotSysSigGroupChks#4#435#false#false#175#8#1#0##0.0#0.0#0.0#null#mx11#e4
+DrvrSeatMotSysSigGroupCntr#4#435#false#false#179#4#1#0##0.0#0.0#0.0#null#mx11#e4
+DrvrBackTiltHwSwtSts#4#435#false#false#191#3#1#0#Driver Back and Tilt Switch Status \n主驾座垫倾角电机靠背电机硬线按键状态#0.0#0.0#0.0#{"0": "Idle", "1": "Tilt_Up", "2": "Tilt_Down", "3": "Back_Fwd", "4": "Back_Rwd", "5": "invalid", "6": "Reserved", "7": "Reserved"}#mx11#e4
+DrvrHozlHeiHwSwtSts#4#435#false#false#188#3#1#0#Driver Horizontal and Height Switch Status\n主驾水平和抬高电机硬线按键状态#0.0#0.0#0.0#{"0": "Idle", "1": "Hozl_Fwd", "2": "Hozl_Rwd", "3": "Hei_Up", "4": "Hei_Down", "5": "invalid", "6": "Reserved", "7": "Reserved"}#mx11#e4
+DrvrBackPosnSetNotAvlRsn#4#435#false#false#263#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit"}#mx11#e4
+DrvrHeiPosnSetNotAvlRsn#4#435#false#false#259#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit"}#mx11#e4
+DrvrHozlPosnSetNotAvlRsn#4#435#false#false#271#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit"}#mx11#e4
+DrvrLegRestHeiPosnSetNotAvlRsn#4#435#false#false#267#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit"}#mx11#e4
+DrvrMassgHmiCtrNotAvlRsn#4#435#false#false#279#4#1#0#1#0.0#0.0#0.0#{"0": "NoError", "1": "VehImpctP", "2": "ExtmEcoMod", "3": "LvEgyLim", "4": "PwrModLim"}#mx11#e4
+DrvrMassgIntenSts#4#435#false#false#275#4#1#0#1#0.0#0.0#0.0#{"0": "Low", "1": "Mid", "2": "High"}#mx11#e4
+DrvrBackPosnSetEnaSts#4#435#false#false#295#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrHeiPosnSetEnaSts#4#435#false#false#294#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrHozlPosnSetEnaSts#4#435#false#false#293#1#1#0#2#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrLegRestHeiAdjSts#4#435#false#false#292#2#1#0#1#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down"}#mx11#e4
+DrvrMassgEnaSts#4#435#false#false#290#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrLegRestHeiPosnSetEnaSts#4#435#false#false#289#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrMassgSts#4#435#false#false#288#1#1#0#1#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#mx11#e4
+DrvrMassgModSts#4#435#false#false#303#4#1#0#1#0.0#0.0#0.0#{"0": "Mode1", "1": "Mode2", "2": "Mode3", "3": "Mode4"}#mx11#e4
+DrvrSeatZeroGPosnReq#4#435#false#false#299#2#1#0#1#0.0#0.0#0.0#{"0": "NoReq", "1": "ZeroGPosn", "2": "UnZeroGPosn", "3": "Reserved"}#mx11#e4
+DrvrTiltPosnSetEnaSts#4#435#false#false#297#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrSeatLegRestHeiMotPosn#4#435#false#false#311#8#1.0#0.0#1#0.0#0.0#0.0#{"255": "PosnErr"}#mx11#e4
+DrvrTiltPosnSetNotAvlRsn#4#435#false#false#319#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit"}#mx11#e4
+DrvrZeroGModCurCmd#4#435#false#false#315#4#1#0#1#0.0#0.0#0.0#{"0": "Idle", "1": "HwSwtCtrlEntry", "2": "HwSwtCtrlQuit", "3": "HwSwtCtrlStop", "4": "HmiSwtCtrlEntry", "5": "HmiSwtCtrlQuit", "6": "HmiSwtCtrlStop", "7": "SOACtrlEntry", "8": "SOACtrlQuit", "9": "SOACtrlStop", "10": "OthrCtrlEntry", "11": "OthrCtrlQuit", "12": "OthrCtrlStop"}#mx11#e4
+DrvrZeroGSeatEntryLstCmdFailRsn#4#435#false#false#327#4#1#0#1#0.0#0.0#0.0#{"0": "No_error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "SSB_On", "6": "PGear_Quit", "7": "ComError", "8": "AntiPinchErrProtd", "9": "MotStallProtd", "10": "NotInit", "11": "RearSeat_Ocupcy", "12": "RearSeat_Fold", "13": "ChdSeat_Connctd", "14": "Intrpt", "15": "Othr_Rsn"}#mx11#e4
+DrvrZeroGSeatQuitLstCmdFailRsn#4#435#false#false#323#4#1#0#1#0.0#0.0#0.0#{"0": "No_error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "SSB_On", "6": "PGear_Quit", "7": "ComError", "8": "AntiPinchErrProtd", "9": "MotStallProtd", "10": "NotInit", "11": "RearSeat_Ocupcy", "12": "RearSeat_Fold", "13": "ChdSeat_Connctd", "14": "Intrpt", "15": "Othr_Rsn"}#mx11#e4
+DrvrZeroGSeatQuitNotAvlRsn#4#435#false#false#335#4#1#0#1#0.0#0.0#0.0#{"0": "No_error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "SSB_On(Driver_side_only)", "6": "NotIn_PGear", "7": "ComErrProtd(Driver_side_only)", "8": "AntiPinchErrProtd", "9": "MotStallProtd", "10": "RearSeat_Ocupcy", "11": "RearSeat_Fold", "12": "ChdSeat_Connctd", "13": "NotInit", "14": "Othr_Rsn"}#mx11#e4
+DrvrZeroGSeatEntryNotAvlRsn#4#435#false#false#331#4#1#0#2#0.0#0.0#0.0#{"0": "No_error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "SSB_On(Driver_side_only)", "6": "NotIn_PGear", "7": "ComErrProtd(Driver_side_only)", "8": "AntiPinchErrProtd", "9": "MotStallProtd", "10": "RearSeat_Ocupcy", "11": "RearSeat_Fold", "12": "ChdSeat_Connctd", "13": "NotInit", "14": "Othr_Rsn"}#mx11#e4
+DrvrZeroGSeatEntryEnaSts#4#435#false#false#343#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrZeroGSeatQuitEnaSts#4#435#false#false#342#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrZeroGSeatRstEnaSts#4#435#false#false#341#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrZeroGSeatRstNotAvlRsn#4#435#false#false#340#2#1#0#1#0.0#0.0#0.0#{"0": "No_error", "1": "ZeroGMod_NotQuit"}#mx11#e4
+DrvrZeroGSeatSts#4#435#false#false#338#3#1#0#1#0.0#0.0#0.0#{"0": "NotIn_ZeroGMode", "1": "Entering", "2": "Entr_Pau", "3": "In_ZeroGMode", "4": "Quiting", "5": "Quit_Pau"}#mx11#e4
+AdasSwtSigGrpChks#4#435#false#false#367#8#1#0##0.0#0.0#0.0#null#mx11#e4
+AdasSwtSigGrpLinErr#4#435#false#false#375#2#1#0#AdasSwtSigGrp LIN communication Error#0.0#0.0#0.0#{"0": "NoErr", "1": "CounterErr", "2": "CRCErr", "3": "CounterErr_CRCErr"}#mx11#e4
+AdasSwt#4#435#false#false#373#2#1#0#一键智驾开关#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#mx11#e4
+AdasSwtSigGrpCntr#4#435#false#false#371#4#1#0##0.0#0.0#0.0#null#mx11#e4
+OutDoorLgtStsLe#4#594#false#false#7#2#1#0#Left OutDoor handle light status\n左门把手灯状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+SwtLiHzrdWarn#4#594#false#false#5#1#1#0#双闪开关#0.0#0.0#0.0#{"0": "NotPsd", "1": "Psd"}#mx11#e4
+FenderLgtStsLe#4#594#false#false#4#2#1#0#Left Fender light status\n左翼子板灯状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+ReLeSeatHeatgSts#4#594#false#false#2#1#1#0#Rear Row Left Seat Heating Status\n后排左侧座椅加热状态#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#mx11#e4
+StsOfMidTurnIndcrLe#4#594#false#false#1#2#1#0#左后视镜转向灯状态反馈#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+LeDoorLogoLgtStsFrt#4#594#false#false#15#2#1#0#Leftfront side door Logo light  status\n左前侧门照地灯状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+LeDoorLogoLgtStsRear#4#594#false#false#13#2#1#0#Leftrear side door Logo light  status\n左后侧门照地灯状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+CLMLINcomFltSts#4#594#false#false#11#1#1#0#CLM LIN node communication Fault Status#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#mx11#e4
+SwtLiHzrdFlt#4#594#false#false#10#1#1#0#Switch harzard fault\n双闪按键故障#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#mx11#e4
+CANChrgnlghtSts#4#594#false#false#9#2#1#0#CAN charge light status#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+PrivacyBtnSig#4#594#false#false#23#2#1#0#Privacy button signal#0.0#0.0#0.0#{"0": "No_Command", "1": "Press", "2": "Reserve", "3": "Reserve"}#mx11#e4
+PassSeatInin#4#594#false#false#31#4#1#0#1#0.0#0.0#0.0#{"0": "NoCommand", "1": "Init_Both_Side", "2": "Init_Single_Side", "3": "InitStop"}#mx11#e4
+DrvrBackCurCmd#4#803#false#false#7#8#1.0#-1.0#Driver Seat Back Motor Current Command\n主驾靠背电机当前操作指令#0.0#0.0#0.0#{"0": "Idle", "171": "HwSwtBackFwdMovg", "172": "HwSwtBackRwdMovg", "173": "HmiSwtBackFwdMovg", "174": "HmiSwtBackRwdMovg", "175": "VehSetBackFwdMovg", "176": "VehSetBackRwdMovg", "177": "SOASetBackFwdMovg", "178": "SOASetBackRwdMovg", "179": "HMIStopping"}#mx11#e4
+DrvrBackHmiCtrNotAvlRsn#4#803#false#false#15#4#1#0#Driver Back Hmi Control Not Available Reason\n主驾靠背电机控制不可用原因#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd"}#mx11#e4
+DrvrBackLstCmdFaildRsn#4#803#false#false#11#4#1#0#Driver Seat Back  Motor Last Command Failed Reason\n主驾靠背电机最后操作失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim", "6": "ComError", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit", "10": "Intrpt"}#mx11#e4
+ReadLampFRBtnSig#4#803#false#false#23#2#1#0#ReadLamp Front Right button signal#0.0#0.0#0.0#{"0": "No_Command", "1": "Short_Press", "2": "Long_Press", "3": "Bonding_Error"}#mx11#e4
+ReadLampFLBtnSig#4#803#false#false#21#2#1#0#ReadLamp Front left button signal#0.0#0.0#0.0#{"0": "No_Command", "1": "Short_Press", "2": "Long_Press", "3": "Bonding_Error"}#mx11#e4
+ReadLampFLSts#4#803#false#false#19#4#1#0#ReadLamp Front left Status#0.0#0.0#0.0#{"0": "Off", "1": "Brightness1", "2": "Brightness2", "3": "Brightness3", "4": "Brightness4", "5": "Brightness5", "6": "Brightness6", "7": "Brightness7", "8": "Brightness8", "9": "Brightness9", "10": "Brightness10"}#mx11#e4
+ReadLampFRSts#4#803#false#false#31#4#1#0#ReadLamp Front Right Status#0.0#0.0#0.0#{"0": "Off", "1": "Brightness1", "2": "Brightness2", "3": "Brightness3", "4": "Brightness4", "5": "Brightness5", "6": "Brightness6", "7": "Brightness7", "8": "Brightness8", "9": "Brightness9", "10": "Brightness10"}#mx11#e4
+ReadLampRRBtnSig#4#803#false#false#27#2#1#0#ReadLamp Rear Right button signal#0.0#0.0#0.0#{"0": "No_Command", "1": "Short_Press", "2": "Long_Press", "3": "Bonding_Error"}#mx11#e4
+ReadLampRLBtnSig#4#803#false#false#25#2#1#0#ReadLamp Rear left button signal#0.0#0.0#0.0#{"0": "No_Command", "1": "Short_Press", "2": "Long_Press", "3": "Bonding_Error"}#mx11#e4
+ReadLampRLSts#4#803#false#false#39#4#1#0#ReadLamp Rear left Status#0.0#0.0#0.0#{"0": "Off", "1": "Brightness1", "2": "Brightness2", "3": "Brightness3", "4": "Brightness4", "5": "Brightness5", "6": "Brightness6", "7": "Brightness7", "8": "Brightness8", "9": "Brightness9", "10": "Brightness10"}#mx11#e4
+ReadLampRRSts#4#803#false#false#35#4#1#0#ReadLamp Rear Right Status#0.0#0.0#0.0#{"0": "Off", "1": "Brightness1", "2": "Brightness2", "3": "Brightness3", "4": "Brightness4", "5": "Brightness5", "6": "Brightness6", "7": "Brightness7", "8": "Brightness8", "9": "Brightness9", "10": "Brightness10"}#mx11#e4
+DrvrHeiCurCmd#4#803#false#false#47#8#1.0#-1.0#Driver  Seat Height Motor Current Command\n主驾抬高电机当前操作指令#0.0#0.0#0.0#{"0": "Idle", "171": "HwSwtHeiUpMovg", "172": "HwSwtHeiDwnMovg", "173": "HmiSwtHeiUpMovg", "174": "HmiSwtHeiDwnMovg", "175": "VehSetHeiUpMovg", "176": "VehSetHeiDwnMovg", "177": "SOASetHeiUpMovg", "178": "SOASetHeiDwnMovg", "179": "HMIStopping"}#mx11#e4
+DrvrHeiHmiCtrNotAvlRsn#4#803#false#false#55#4#1#0#Driver  Height  Hmi Control Not Available Reason\n主驾抬高电机控制不可用原因#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd"}#mx11#e4
+DrvrHeiLstCmdFaildRsn#4#803#false#false#51#4#1#0#Driver  Seat Height Motor Last Command Failed Reason\n主驾抬高电机最后操作失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim", "6": "ComError", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit", "10": "Intrpt"}#mx11#e4
+DrvrHozlCurCmd#4#803#false#false#63#8#1.0#-1.0#Driver Seat Horizontal Motor Current Command\n主驾水平电机当前操作指令#0.0#0.0#0.0#{"0": "Idle", "171": "HwSwtHozlFwdMovg", "172": "HwSwtHozlRwdMovg", "173": "HmiSwtHozlFwdMovg", "174": "HmiSwtHozlRwdMovg", "175": "VehSetHozlFwdMovg", "176": "VehSetHozlRwdMovg", "177": "SOASetHozlFwdMovg", "178": "SOASetHozlRwdMovg", "179": "HMIStopping"}#mx11#e4
+DrvrHozlHmiCtrNotAvlRsn#4#803#false#false#71#4#1#0#Driver Horizontal Hmi Control Not Available Reason\n主驾水平电机控制不可用原因#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd"}#mx11#e4
+DrvrHozlLstCmdFaildRsn#4#803#false#false#67#4#1#0#Driver Seat Horizontal Motor Last Command Failed Reason\n主驾水平电机最后操作失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim", "6": "ComError", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit", "10": "Intrpt"}#mx11#e4
+DrvrBackAdjSwtEnaSts#4#803#false#false#79#1#1#0#Driver Back Adjustment Switch Enable Status\n主驾靠背电机调节按键使能状态#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrHeiAdjSwtEnaSts#4#803#false#false#78#1#1#0#Driver Height Adjustment Switch Enable Status\n主驾抬高电机调节按键使能状态#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrHozlAdjSwtEnaSts#4#803#false#false#77#1#1#0#Driver Horizontal Adjustment Switch Enable Status\n主驾水平电机调节按键使能状态#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrLegRestHeiAdjSwtEnaSts#4#803#false#false#76#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrLegRestHeiCurCmd#4#803#false#false#87#8#1.0#-1.0#1#0.0#0.0#0.0#{"0": "Idle", "171": "HwSwtHeiUpMovg", "172": "HwSwtHeiDwnMovg", "173": "HmiSwtHeiUpMovg", "174": "HmiSwtHeiDwnMovg", "175": "VehSetHeiUpMovg", "176": "VehSetHeiDwnMovg", "177": "SOASetHeiUpMovg", "178": "SOASetHeiDwnMovg", "179": "HMIStopping", "180": "DrvingReturn"}#mx11#e4
+DrvrLegRestHeiHmiCtrNotAvlRsn#4#803#false#false#95#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "PGearLim(Driver_side_only)"}#mx11#e4
+DrvrLegRestHeiLstCmdFaildRsn#4#803#false#false#91#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim", "6": "ComError", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit", "10": "Intrpt"}#mx11#e4
+DrvrLumCurCmd#4#803#false#false#103#4#1#0#Driver Lumbar Current Command\n主驾座椅腰托当前操作指令#0.0#0.0#0.0#{"0": "Idle", "1": "HwSwtLumUpMovg", "2": "HwSwtLumDwnMovg", "3": "HwSwtLumFwdMovg", "4": "HwSwtLumRwdMovg", "5": "HmiSwtLumUpMovg", "6": "HmiSwtLumDwnMovg", "7": "HmiSwtLumFwdMovg", "8": "HmiSwtLumRwdMovg"}#mx11#e4
+DrvrLumHmiCtrNotAvlRsn#4#803#false#false#99#4#1#0#Driver Lumbar HMI Control Not Available Reason\n主驾座椅腰托HMI控制不可用原因#0.0#0.0#0.0#{"0": "No_Error", "1": "LumFltProtd(reserve)", "2": "VehImpctProtd", "3": "VoltProtd(reserve)", "4": "LvEgyLim", "5": "VehSpdLim(Driver_side_only)", "6": "ThermProtd(reserve)"}#mx11#e4
+DrvrLumLstCmdFaildRsn#4#803#false#false#111#4#1#0#Driver Lumbar Last Failed Reason\n主驾腰托最后失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "LumFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgylim", "5": "VehSpdLim(Driver_side_only)", "6": "Timeout", "7": "PosnErr", "8": "ThermProtd"}#mx11#e4
+DrvrSeatHeatgCurCmd#4#803#false#false#107#3#1#0#Driver Seat Heating Current Command \n主驾座椅加热当前操作指令#0.0#0.0#0.0#{"0": "Idle", "1": "HmiSwtSeatHeatg", "2": "HmiSetSeatHeatg", "3": "SoaSetSeatHeatg", "4": "ThermMngtSetSeatHeatg"}#mx11#e4
+SeatHeatgFirstRowEnaStsAtDrvr#4#803#false#false#104#1#1#0#主驾座椅加热使能#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrSeatHeatgHmiCtrNotAvlRsn#4#803#false#false#119#4#1#0#Driver Seat Heating HMI Control Not Available Reason\n主驾座椅加热HMI控制不可操作原因#0.0#0.0#0.0#{"0": "No_Error", "1": "HeatgFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgyLim", "5": "IncarTLim", "6": "CarModLim", "7": "OTAModLim"}#mx11#e4
+DrvrSeatHeatgLstCmdFaildRsn#4#803#false#false#115#4#1#0#Driver Seat Heating Last Command Failed Reason\n主驾座椅加热最后指令失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "HeatgFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgyLim", "5": "IncarTLim", "6": "OverTProtd", "7": "FullPwrHeatgTiOut", "8": "RemHeatgTiOut", "9": "CarModLim", "10": "OTAModLim"}#mx11#e4
+DrvrSeatLumAdjSts#4#803#false#false#127#3#1#0#Driver Seat Lumbar Adjustment Status\n主驾腰托调节状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down", "3": "Forward", "4": "Rearward", "5": "Setting"}#mx11#e4
+DrvrSeatLumAdjSwtEnaSts#4#803#false#false#124#1#1#0#Driver Seat Lumbar Adjustment Enable \n主驾腰托调节使能状态#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrSeatVentnHmiCtrNotAvlRsn#4#803#false#false#123#4#1#0#Driver Seat Ventilation HMI Control Not Available Reason\n主驾座椅通风HMI控制不可用原因#0.0#0.0#0.0#{"0": "No_Error", "1": "VentnFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgyLim", "5": "IncarTLim", "6": "CarModLim"}#mx11#e4
+DrvrSeatPosnSetMgrLoadSts#4#803#false#false#135#3#1#0#Driver Seat Position Set Management Load Status \n主驾座椅位置设置载入状态#0.0#0.0#0.0#{"0": "No_Command", "1": "Loading", "2": "Load_successful", "3": "Load_failed"}#mx11#e4
+DrvrSeatVentnCurCmd#4#803#false#false#132#3#1#0#Driver Seat Ventilation Current Command\n主驾座椅通风当前操作指令#0.0#0.0#0.0#{"0": "Idle", "1": "HmiSwtSeatVentn", "2": "HmiSetSeatVentn", "3": "SoaSetSeatVentn", "4": "ThermMngtSetSeatVentn"}#mx11#e4
+DrvrTiltAdjSwtEnaSts#4#803#false#false#129#1#1#0#Driver Tilt Adjustment Switch Enable Status 主驾倾角电机调节按键使能状态#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+SeatVentnFirstRowEnaStsAtDrvr#4#803#false#false#128#1#1#0#Driver Seat Ventilation First Row Enable Status\n主驾座椅通风使能状态#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+DrvrTiltCurCmd#4#803#false#false#143#8#1.0#-1.0#Driver Seat Tilt Motor Current Command 主驾倾角电机当前操作指令#0.0#0.0#0.0#{"0": "Idle", "171": "HwSwtHeiUpMovg", "172": "HwSwtHeiDwnMovg", "173": "HmiSwtHeiUpMovg", "174": "HmiSwtHeiDwnMovg", "175": "VehSetHeiUpMovg", "176": "VehSetHeiDwnMovg", "177": "SOASetHeiUpMovg", "178": "SOASetHeiDwnMovg", "179": "HMIStopping"}#mx11#e4
+DrvrTiltHmiCtrNotAvlRsn#4#803#false#false#151#4#1#0#Driver Tilt Hmi Control Not Available Reason 主驾调角电机控制不可用原因#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd"}#mx11#e4
+DrvrTiltLstCmdFaildRsn#4#803#false#false#147#4#1#0#Driver Seat Tilt Motor Last Command Failed Reason 主驾倾角电机最后操作失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim", "6": "ComError", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit", "10": "Intrpt"}#mx11#e4
+DrvrSeatVentnLstCmdFaildRsn#4#803#false#false#159#3#1#0#Driver Seat Ventilation Last  Command Failed Reason\n主驾座椅通风最后指令失效原因#0.0#0.0#0.0#{"0": "No_Error", "1": "VentnFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgylim", "5": "IncarTLim", "6": "RemVentnTiOut", "7": "CarModLim"}#mx11#e4
+ReLeBackFoldCtrlNotAvlRsn#4#803#false#false#156#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInit", "9": "FrontSeatIn0GPosn", "10": "SeatOccupied", "11": "GearNotInP", "12": "ChildSeatEquipped", "13": "SafetyBeltConnected", "14": "AlreadyInFoldState"}#mx11#e4
+ReLeBackFoldCurCmd#4#803#false#false#167#8#1.0#-1.0#1#0.0#0.0#0.0#{"0": "Idle", "171": "HwSwtBackFoldingMovg", "172": "HwSwtBackUnfoldingMovg", "173": "HmiSwtBackFoldingMovg", "174": "HmiSwtBackUnfoldingMovg", "175": "VehSetBackFoldingMovg", "176": "VehSetBackUnfoldingMovg", "177": "SOASetBackFoldingMovg", "178": "SOASetBackUnfoldingMovg", "179": "HMIStopping"}#mx11#e4
+ReLeBackFoldLstCmdFaildRsn#4#803#false#false#175#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInit", "9": "FrontSeatIn0GPosn", "10": "SeatOccupied", "11": "GearNotInP", "12": "ChildSeatEquipped", "13": "SafetyBeltConnected", "14": "Intrpt"}#mx11#e4
+ReLeBackHmiAdjNotAvlRsn#4#803#false#false#171#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInUnfoldState"}#mx11#e4
+ReLeBackPosnSetCurCmd#4#803#false#false#183#8#1.0#-1.0#1#0.0#0.0#0.0#{"0": "Idle", "171": "HwSwtBackFwdMovg", "172": "HwSwtBackRwdMovg", "173": "HmiSwtBackFwdMovg", "174": "HmiSwtBackRwdMovg", "175": "VehSetBackFwdMovg", "176": "VehSetBackRwdMovg", "177": "SOASetBackFwdMovg", "178": "SOASetBackRwdMovg", "179": "HMIStopping"}#mx11#e4
+ReLeBackPosnSetLstCmdFaildRsn#4#803#false#false#191#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInit", "9": "NotInUnfoldState", "10": "Intrpt"}#mx11#e4
+ReLeBackPosnSetNotAvlRsn#4#803#false#false#187#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInit", "9": "NotInUnfoldState"}#mx11#e4
+ReLeBackUnfoldCtrlNotAvlRsn#4#803#false#false#199#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInit", "9": "FrontSeatIn0GPosn", "10": "AlreadyInUnfoldState"}#mx11#e4
+ReLeBackUnfoldLstCmdFaildRsn#4#803#false#false#195#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInit", "9": "FrontSeatIn0GPosn", "10": "Intrpt"}#mx11#e4
+ReLeBackFoldEnaSts#4#803#false#false#207#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+ReLeBackHmiAdjEnaSts#4#803#false#false#206#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+ReLeBackPosnSetEnaSts#4#803#false#false#205#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+ReLeBackUnfoldEnaSts#4#803#false#false#204#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+SeatHeatgFirstRowStsAtDrvr#4#803#false#false#203#2#1#0#主驾座椅加热状态#0.0#0.0#0.0#{"0": "OFF", "1": "level_1", "2": "level_2", "3": "level_3"}#mx11#e4
+SeatVentnFirstRowStsAtDrvr#4#803#false#false#201#2#1#0#Driver Seat Ventilation First Row Status\n主驾座椅通风状态#0.0#0.0#0.0#{"0": "OFF", "1": "level_1", "2": "level_2", "3": "level_3"}#mx11#e4
+L02OutpU_CIDM#4#1266#false#false#7#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+L03OutpU_DLC#4#1266#false#false#15#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+L11OutpU_RLCMLA#4#1266#false#false#23#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+N1_DRV871x_Init_Cnt#4#1266#false#false#31#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N2_DZ300_Init_Cnt#4#1266#false#false#47#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N3_FS2620_Init_Cnt#4#1266#false#false#63#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N4_TCA9539_Init_Cnt#4#1266#false#false#79#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N5_TIC12400_Init_Cnt#4#1266#false#false#95#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N6_TPSXHXXX_Init_Cnt#4#1266#false#false#111#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N7_VN9DXX_Init_Cnt#4#1266#false#false#127#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N8_VNF1048_Init_Cnt#4#1266#false#false#143#16#1#0##0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrFLDoorPwrRelseMotor#4#1266#false#false#159#13#0.1#0.0#Current Monitor Front Left Door Latch Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRLChildLockMotor#4#1266#false#false#175#13#0.1#0.0#Current Monitor Rear Left Child Lock Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRLDoorPwrRelseMotor#4#1266#false#false#191#13#0.1#0.0#Current Monitor Rear Left Door Latch Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRRWiperMotor#4#1266#false#false#207#13#0.1#0.0#Current Monitor Rear Wiper Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrTrunkMotor#4#1266#false#false#223#13#0.1#0.0#Current Monitor Trunk Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrDrvSeatBackrestAdjust#4#1267#false#false#7#13#0.1#0.0#Current Monitor Driver Seat Backrest Adjust Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrDrvSeatCushionAdjust#4#1267#false#false#23#13#0.1#0.0#Current Monitor Driver Seat Cushion Adjust Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrDrvSeatForeAftAdjust#4#1267#false#false#39#13#0.1#0.0#Current Monitor Driver Seat Hight Fore After Adjust Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrDrvSeatHeat#4#1267#false#false#55#13#0.1#0.0#Current Monitor Driver Seat Heating#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrDrvSeatHightAdjust#4#1267#false#false#71#13#0.1#0.0#Current Monitor Driver Seat Hight Adjust Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrFLDoorCinchMotor#4#1267#false#false#87#13#0.1#0.0#Current Monitor Front Left Door Cinch Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrFLDoorHandleMotor#4#1267#false#false#103#13#0.1#0.0#Current Monitor Front Left Door Handle Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrFLWindowMotor#4#1267#false#false#135#13#0.1#0.0#Current Monitor Front Left Window Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRLDoorCinchMotor#4#1267#false#false#167#13#0.1#0.0#Current Monitor Rear Left Door Cinch Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRLDoorHandleMotor#4#1267#false#false#183#13#0.1#0.0#Current Monitor Rear Left Door Handle Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRLWindowMotor#4#1267#false#false#215#13#0.1#0.0#Current Monitor Rear Left Window Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrSpeakerUpDnMotor#4#1267#false#false#247#13#0.1#0.0#Current Monitor Driver Speaker Height Adjust Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrSteerWheelHeat#4#1267#false#false#263#13#0.1#0.0#Current Monitor Steering Wheel Heating#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrSteerWheelInOutMotor#4#1267#false#false#279#13#0.1#0.0#Current Monitor Steering Wheel Adjust Motor-in/out#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrSteerWheelUpDnMotor#4#1267#false#false#295#13#0.1#0.0#Current Monitor Steering Wheel Adjust Motor-up/down#0.0#0.0#0.0#null#mx11#e4
+UDB23LZCU#4#1387#false#false#23#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB22LZCU#4#1387#false#false#22#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB21LZCU#4#1387#false#false#21#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB20LZCU#4#1387#false#false#20#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB19LZCU#4#1387#false#false#19#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB18LZCU#4#1387#false#false#18#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB17LZCU#4#1387#false#false#17#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB31LZCU#4#1387#false#false#31#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB30LZCU#4#1387#false#false#30#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB29LZCU#4#1387#false#false#29#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB28LZCU#4#1387#false#false#28#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB27LZCU#4#1387#false#false#27#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB26LZCU#4#1387#false#false#26#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB25LZCU#4#1387#false#false#25#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB24LZCU#4#1387#false#false#24#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB39LZCU#4#1387#false#false#39#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB38LZCU#4#1387#false#false#38#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB37LZCU#4#1387#false#false#37#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB36LZCU#4#1387#false#false#36#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB35LZCU#4#1387#false#false#35#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB34LZCU#4#1387#false#false#34#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB33LZCU#4#1387#false#false#33#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB32LZCU#4#1387#false#false#32#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB47LZCU#4#1387#false#false#47#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB46LZCU#4#1387#false#false#46#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB45LZCU#4#1387#false#false#45#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB44LZCU#4#1387#false#false#44#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB43LZCU#4#1387#false#false#43#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB42LZCU#4#1387#false#false#42#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB41LZCU#4#1387#false#false#41#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB40LZCU#4#1387#false#false#40#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB49LZCU#4#1387#false#false#49#1#1#0##0.0#0.0#0.0#null#mx11#e4
+NMKeepAwkRsnLZCU#4#1387#false#false#48#9#1#0##0.0#0.0#0.0#null#mx11#e4
+StsOfReTurnIndcrLe#4#804#false#false#7#2#1#0#State of rear turning lamp left#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfLedRePosnLampRi#4#804#false#false#5#2#1#0#State of rear position lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfLedRePosnLampLe#4#804#false#false#3#2#1#0#State of rear position lamp left#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+RLCMFaultInfoFlag#4#804#false#false#1#1#1#0#RLCM Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#mx11#e4
+StsOfLedStopLampLe#4#804#false#false#15#2#1#0#State of stop lamp left#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfRvsgLampLe#4#804#false#false#13#2#1#0#State of reverse lamp left#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfRvsgLampRi#4#804#false#false#11#2#1#0#State of reverse lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfReTurnIndcrRi#4#804#false#false#9#2#1#0#State of rear turning lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfLedStopLampRi#4#804#false#false#17#2#1#0#State of stop lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+RLCMNodeAddress#4#1364#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#mx11#e4
+RLCMActiveWakeup#4#1364#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#mx11#e4
+RLCMRepeatMsgReq#4#1364#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#mx11#e4
+RLCMRepeatMsgSt#4#1364#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#mx11#e4
+NMKeepAwkRsnRLCM#4#1364#false#false#48#9#1#0##0.0#0.0#0.0#null#mx11#e4
+RLCMToVCCDDiagResp#4#1636#false#false#7#512#1#0##0.0#0.0#0.0#null#mx11#e4
+ReRiSeatBackMotPosn#4#437#false#false#7#8#1#0#1#0.0#0.0#0.0#{"255": "PosnErr"}#mx11#e4
+PassZeroGSeatEntryEnaSts#4#437#false#false#47#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+PassHeiAdjSts#4#437#false#false#46#2#1#0#副驾抬高电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down"}#mx11#e4
+PassBackTiltHwSwtSts#4#437#false#false#44#3#1#0#Passenger Back and Tilt Hardwire Switch Status  副驾座垫靠背调角座垫倾角电机硬线按键状态#0.0#0.0#0.0#{"0": "Idle", "1": "Tilt_Up", "2": "Tilt_Down", "3": "Back_Fwd", "4": "Back_Rwd", "5": "invalid"}#mx11#e4
+PassBackAdjSts#4#437#false#false#41#2#1#0#副驾靠背电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Forward", "2": "Rearward"}#mx11#e4
+PassLegRestHeiAdjSts#4#437#false#false#55#2#1#0#1#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down"}#mx11#e4
+PassLegRestHeiPosnSetNotAvlRsn#4#437#false#false#53#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit"}#mx11#e4
+PassHozlAdjSts#4#437#false#false#49#2#1#0#副驾水平电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Forward", "2": "Rearward"}#mx11#e4
+PassSeatLegRestHeiMotPosn#4#437#false#false#63#8#1.0#0.0#1#0.0#0.0#0.0#{"255": "PosnErr"}#mx11#e4
+PassZeroGModCurCmd#4#437#false#false#71#4#1#0#1#0.0#0.0#0.0#{"0": "Idle", "1": "HwSwtCtrlEntry", "2": "HwSwtCtrlQuit", "3": "HwSwtCtrlStop", "4": "HmiSwtCtrlEntry", "5": "HmiSwtCtrlQuit", "6": "HmiSwtCtrlStop", "7": "SOACtrlEntry", "8": "SOACtrlQuit", "9": "SOACtrlStop", "10": "OthrCtrlEntry", "11": "OthrCtrlQuit", "12": "OthrCtrlStop"}#mx11#e4
+PassZeroGSeatEntryLstCmdFailRsn#4#437#false#false#67#4#1#0#1#0.0#0.0#0.0#{"0": "No_error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "SSB_On", "6": "PGear_Quit", "7": "ComError", "8": "AntiPinchErrProtd", "9": "MotStallProtd", "10": "NotInit", "11": "RearSeat_Ocupcy", "12": "RearSeat_Fold", "13": "ChdSeat_Connctd", "14": "Intrpt", "15": "Othr_Rsn"}#mx11#e4
+PassZeroGSeatEntryNotAvlRsn#4#437#false#false#79#4#1#0#1#0.0#0.0#0.0#{"0": "No_error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "SSB_On(Driver_side_only)", "6": "NotIn_PGear", "7": "ComErrProtd(Driver_side_only)", "8": "AntiPinchErrProtd", "9": "MotStallProtd", "10": "RearSeat_Ocupcy", "11": "RearSeat_Fold", "12": "ChdSeat_Connctd", "13": "NotInit", "14": "Othr_Rsn"}#mx11#e4
+PassZeroGSeatQuitNotAvlRsn#4#437#false#false#75#4#1#0#1#0.0#0.0#0.0#{"0": "No_error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "SSB_On(Driver_side_only)", "6": "NotIn_PGear", "7": "ComErrProtd(Driver_side_only)", "8": "AntiPinchErrProtd", "9": "MotStallProtd", "10": "RearSeat_Ocupcy", "11": "RearSeat_Fold", "12": "ChdSeat_Connctd", "13": "NotInit", "14": "Othr_Rsn"}#mx11#e4
+PassSeatBackMotPosn#4#437#false#false#87#8#1.0#0.0#Passenger Seat Back Motor Position\n副驾靠背电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#mx11#e4
+PassBackPosnSetEnaSts#4#437#false#false#95#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+ReRiBackFoldSts#4#437#false#false#94#3#1#0#1#0.0#0.0#0.0#{"0": "Unknow", "1": "Folded", "2": "UnFolding", "3": "Suspend_of_UnFolding", "4": "Folding", "5": "Suspend_of_Folding", "6": "UnFolded", "7": "Reserved"}#mx11#e4
+PassBackPosnSetNotAvlRsn#4#437#false#false#91#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit"}#mx11#e4
+PassHozlHeiHwSwtSts#4#437#false#false#100#3#1#0#Passenger Horizontal and Height Hardwire Switch Status\n副驾水平和抬高电机硬线按键状态#0.0#0.0#0.0#{"0": "Idle", "1": "Hozl_Fwd", "2": "Hozl_Rwd", "3": "Hei_Up", "4": "Hei_Down", "5": "invalid", "6": "Reserved", "7": "Reserved"}#mx11#e4
+RiReBackAdjSts#4#437#false#false#97#2#1#0#1#0.0#0.0#0.0#{"0": "Idle", "1": "Forward", "2": "Rearward", "3": "Reserve"}#mx11#e4
+PassZeroGSeatQuitEnaSts#4#437#false#false#111#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+PassZeroGSeatRstEnaSts#4#437#false#false#110#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+PassZeroGSeatRstNotAvlRsn#4#437#false#false#109#2#1#0#1#0.0#0.0#0.0#{"0": "No_error", "1": "ZeroGMod_NotQuit"}#mx11#e4
+PassZeroGSeatSts#4#437#false#false#107#3#1#0#1#0.0#0.0#0.0#{"0": "NotIn_ZeroGMode", "1": "Entering", "2": "Entr_Pau", "3": "In_ZeroGMode", "4": "Quiting", "5": "Quit_Pau"}#mx11#e4
+PassSeatHeiMotPosn#4#437#false#false#119#8#1.0#0.0#Passenger Seat Height Motor Position\n副驾抬高电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#mx11#e4
+PassSeatHozlMotPosn#4#437#false#false#135#8#1.0#0.0#Passenger Seat Horizontal Motor Position\n副驾水平电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#mx11#e4
+PassHeiPosnSetNotAvlRsn#4#437#false#false#151#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit"}#mx11#e4
+PassZeroGSeatQuitLstCmdFailRsn#4#437#false#false#147#4#1#0#1#0.0#0.0#0.0#{"0": "No_error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "SSB_On", "6": "PGear_Quit", "7": "ComError", "8": "AntiPinchErrProtd", "9": "MotStallProtd", "10": "NotInit", "11": "RearSeat_Ocupcy", "12": "RearSeat_Fold", "13": "ChdSeat_Connctd", "14": "Intrpt", "15": "Othr_Rsn"}#mx11#e4
+PassHeiPosnSetEnaSts#4#437#false#false#175#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+PassHozlPosnSetEnaSts#4#437#false#false#174#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+PassHozlPosnSetNotAvlRsn#4#437#false#false#173#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit"}#mx11#e4
+PassLegRestHeiPosnSetEnaSts#4#437#false#false#169#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+PassSeatPosnLoadLstCmdFaildRsn#4#601#false#false#7#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInit", "9": "Intrpt"}#mx11#e4
+PassSeatPosnLoadNotAvlRsn#4#601#false#false#3#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInit"}#mx11#e4
+PassSeatPosnLoadSts#4#601#false#false#15#4#1#0#1#0.0#0.0#0.0#{"0": "Idle", "1": "Pos1_Loading", "2": "Pos2_Loading", "3": "Pos3_Loading", "4": "LoadSucceed", "5": "LoadFailed"}#mx11#e4
+PassSeatPosnSecPopUpEnaFlg#4#601#false#false#11#4#1#0#1#0.0#0.0#0.0#{"0": "NotEnableSecPopUp//000", "1": "Pos_1_PopUp//001", "2": "Pos_2_PopUp//010", "3": "Pos_1and2_PopUp//011", "4": "Pos_3_PopUp//100", "5": "Pos_1and3_PopUp//101", "6": "Pos_2and3_PopUp//110", "7": "Pos_1and2and3_PopUp//111"}#mx11#e4
+FenderLgtStsRi#4#601#false#false#23#2#1#0#Right Fender light status\n右翼子板灯状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+OutDoorLgtStsRi#4#601#false#false#21#2#1#0#Right OutDoor handle light status\n右门把手灯状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+PassSeatPosnMemrPopUpReq#4#601#false#false#19#1#1#0#1#0.0#0.0#0.0#{"0": "NoReq", "1": "PopUp"}#mx11#e4
+ReLeSeatHeatgEnaSts#4#601#false#false#18#1#1#0#Rear Left Seat Heating Enable Status\n后排左侧座椅加热使能#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+StsOfReFogLampRi#4#601#false#false#17#2#1#0#State of rear fog lamp left#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfCenHiMntdStopLamp#4#601#false#false#31#2#1#0#高位刹车状态反馈#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfMidTurnIndcrRi#4#601#false#false#29#2#1#0#右后视镜转向灯状态反馈#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfReFogLampLe#4#601#false#false#27#2#1#0#State of rear fog lamp left#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+StsOfReRegPlateLamp#4#601#false#false#25#2#1#0#status of rear region plate lamp#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+RiDoorLogoLgtStsFrt#4#601#false#false#49#2#1#0#Rightfront side door Logo light  status\n后前侧门照地灯状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+RlsLinComFltSts#4#601#false#false#60#1#1#0#Rls LIN node communication fault status.#0.0#0.0#0.0#{"0": "No_Fault", "1": "Node_Miss"}#mx11#e4
+RiDoorLogoLgtStsRear#4#601#false#false#59#2#1#0#Rightrear side door Logo light  status\n右后侧门照地灯状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#mx11#e4
+ReLeSeatHeatgSet#4#601#false#false#95#8#1#0#Rear Left Seat Heating Setting\n后排左侧驾座椅加热设置#0.0#0.0#0.0#null#mx11#e4
+RlsAutWinWipgSpdCmdSigGrpChks#4#616#false#false#7#8#1#0##0.0#0.0#0.0#null#mx11#e4
+RlsAutWinWipgSpdCmdSigGrpCntr#4#616#false#false#11#4#1#0##0.0#0.0#0.0#null#mx11#e4
+RlsAutWinWipgSpdCmd#4#616#false#false#23#3#1#0#雨刮速度请求#0.0#0.0#0.0#{"0": "Switch_wiper_off", "1": "40_times_per_minute", "2": "45_times_per_minute", "3": "48_times_per_minute", "4": "51_times_per_minute", "5": "54_times_per_minute", "6": "57_times_per_minute", "7": "60_times_per_minute"}#mx11#e4
+RlsLiSig1GrpChks#4#616#false#false#31#8#1#0##0.0#0.0#0.0#null#mx11#e4
+RlsLiSig1GrpCntr#4#616#false#false#35#4#1#0##0.0#0.0#0.0#null#mx11#e4
+RlsFwdLiSnsrVal#4#616#false#false#47#15#6.0#0.0#前向光线亮度#0.0#0.0#0.0#{"32767": "Invalid"}#mx11#e4
+RlsHudSnsrVal#4#616#false#false#63#15#6.0#0.0#Hud亮度#0.0#0.0#0.0#{"32767": "Invalid"}#mx11#e4
+RlsIRVal#4#616#false#false#79#8#400#0#红外光值输出#0.0#0.0#0.0#null#mx11#e4
+RlsFwdLiSnsrValUnit#4#616#false#false#87#2#1#0#前向光线亮度单位#0.0#0.0#0.0#{"0": "1lux", "1": "10lux", "2": "100lux", "3": "1000lux"}#mx11#e4
+RlsHudSnsrValUnit#4#616#false#false#85#2#1#0#Hud亮度单位#0.0#0.0#0.0#{"0": "1lux", "1": "10lux", "2": "100lux", "3": "1000lux"}#mx11#e4
+RlsLiSnsrFwdFlt#4#616#false#false#83#1#1#0#RLS光线传感器 前向 故障#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#mx11#e4
+RlsLiSnsrIRFlt#4#616#false#false#82#1#1#0#RLS光线传感器 IR红外 故障#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#mx11#e4
+RlsLiSnsrTopFlt#4#616#false#false#81#1#1#0#RLS光线传感器 顶向 故障#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#mx11#e4
+RlsLiSig2GrpChks#4#616#false#false#95#8#1#0##0.0#0.0#0.0#null#mx11#e4
+RlsLiSig2GrpCntr#4#616#false#false#99#4#1#0##0.0#0.0#0.0#null#mx11#e4
+RlsLiSigGrpLinErr#4#616#false#false#111#2#1#0#RlsLiSigGrp LIN communication Error#0.0#0.0#0.0#{"0": "NoErr", "1": "CounterErr", "2": "CRCErr", "3": "CounterErr_CRCErr"}#mx11#e4
+RlsLiSwtReq#4#616#false#false#109#2#1#0##0.0#0.0#0.0#{"0": "Switch_ligt_off", "1": "Switch_ligt_on", "2": "Reserved", "3": "Invalid"}#mx11#e4
+RlsOutdBriSts#4#616#false#false#107#3#1#0#白天 黑夜 隧道检测#0.0#0.0#0.0#{"0": "Day", "1": "Night", "2": "Tunnel", "3": "Darkstart", "4": "Invalid"}#mx11#e4
+RlsTopLiSnsrVal#4#616#false#false#119#15#20.0#0.0#Top Light Value\n顶向光线亮度#0.0#0.0#0.0#{"32767": "Invalid"}#mx11#e4
+RlsSts#4#616#false#false#135#3#1#0#雨量阳光传感器状态#0.0#0.0#0.0#{"0": "Rls_normal", "1": "Rls_Low_voltage", "2": "Rls_Over_voltage", "3": "Rls_Over_Temperature", "4": "Rls_communication_error", "5": "Rls_Hardware_fault", "6": "Not_determined", "7": "Invld"}#mx11#e4
+RlsTopLiSnsrValUnit#4#616#false#false#132#2#1#0#顶部光线亮度单位#0.0#0.0#0.0#{"0": "1lux", "1": "10lux", "2": "100lux", "3": "1000lux"}#mx11#e4
+ReRiBackPosnSetEnaSts#4#789#false#false#5#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+ReRiBackUnfoldEnaSts#4#789#false#false#4#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+PassSeatVentnHmiCtrNotAvlRsn#4#789#false#false#3#4#1#0#Passenger Seat Ventilation HMI Control Not Available Reason\n副驾座椅通风HMI控制不可用原因#0.0#0.0#0.0#{"0": "No_Error", "1": "VentnFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgyLim", "5": "IncarTLim", "6": "CarModLim"}#mx11#e4
+PassSeatVentnCurCmd#4#789#false#false#15#3#1#0#Passenger Seat Ventilation Current Command\n副驾座椅通风当前操作指令#0.0#0.0#0.0#{"0": "Idle", "1": "HmiSwtSeatVentn", "2": "HmiSetSeatVentn", "3": "SoaSetSeatVentn", "4": "ThermMngtSetSeatVentn"}#mx11#e4
+PassSeatVentnLstCmdFaildRsn#4#789#false#false#12#3#1#0#Passenger Seat Ventilation Last  Command Failed Reason\n副驾座椅通风最后指令失效原因#0.0#0.0#0.0#{"0": "No_Error", "1": "VentnFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgylim", "5": "IncarTLim", "6": "RemVentnTiOut", "7": "CarModLim"}#mx11#e4
+PassLegRestHeiAdjSwtEnaSts#4#789#false#false#9#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+SeatHeatgReRowStsMid#4#789#false#false#31#2#1#0#Rear Row Seat Heating at Left Side\n后排中间座椅加热状态#0.0#0.0#0.0#{"0": "OFF", "1": "level_1", "2": "level_2", "3": "level_3"}#mx11#e4
+SeatHeatgReRowStsRi#4#789#false#false#29#2#1#0#后排右侧座椅加热状态#0.0#0.0#0.0#{"0": "OFF", "1": "level_1", "2": "level_2", "3": "level_3"}#mx11#e4
+SeatVentnFirstRowEnaStsAtPass#4#789#false#false#27#1#1#0#Passenger Seat Ventilation First Row Enable Status\n副驾座椅通风使能状态#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+SeatVentnFirstRowStsAtPass#4#789#false#false#26#2#1#0#Passenger Seat Ventilation First Row Status\n副驾座椅通风状态#0.0#0.0#0.0#{"0": "OFF", "1": "level_1", "2": "level_2", "3": "level_3"}#mx11#e4
+PassLegRestHeiCurCmd#4#789#false#false#39#8#1.0#-1.0#1#0.0#0.0#0.0#{"0": "Idle", "171": "HwSwtHeiUpMovg", "172": "HwSwtHeiDwnMovg", "173": "HmiSwtHeiUpMovg", "174": "HmiSwtHeiDwnMovg", "175": "VehSetHeiUpMovg", "176": "VehSetHeiDwnMovg", "177": "SOASetHeiUpMovg", "178": "SOASetHeiDwnMovg", "179": "HMIStopping", "180": "DrvingReturn"}#mx11#e4
+PassLegRestHeiHmiCtrNotAvlRsn#4#789#false#false#47#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "PGearLim(Driver_side_only)"}#mx11#e4
+PassLegRestHeiLstCmdFaildRsn#4#789#false#false#43#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim", "6": "ComError", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit", "10": "Intrpt"}#mx11#e4
+SeatHeatgFirstRowStsAtPass#4#789#false#false#54#2#1#0#副驾座椅加热状态#0.0#0.0#0.0#{"0": "OFF", "1": "level_1", "2": "level_2", "3": "level_3"}#mx11#e4
+SeatHeatgReRowEnaStsLe#4#789#false#false#52#1#1#0#后排左侧座椅加热使能#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+SeatHeatgReRowEnaStsMid#4#789#false#false#51#1#1#0#Rear Row Seat Heating Enable Status at Left Side\n后排中间座椅加热使能#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+SeatHeatgReRowEnaStsRi#4#789#false#false#50#1#1#0#后排右侧座椅加热使能#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+SeatHeatgReRowStsLe#4#789#false#false#49#2#1#0#后排左侧座椅加热状#0.0#0.0#0.0#{"0": "OFF", "1": "level_1", "2": "level_2", "3": "level_3"}#mx11#e4
+PassSeatMotSetSts#4#789#false#false#101#3#1#0#Passenger Seat Motor Set Status\n副驾座椅电机设置状态#0.0#0.0#0.0#{"0": "No_SetReq", "1": "Setting", "2": "Intrpt", "3": "Set_Suc", "4": "Set_Faild", "5": "Reserve1", "6": "Reserve2", "7": "Reserve3"}#mx11#e4
+ReLeSeatHeatgCurCmd#4#789#false#false#98#3#1#0#Rear Row Left Seat Heating Current Command\n后排左侧座椅加热当前操作指令#0.0#0.0#0.0#{"0": "Idle", "1": "HmiSwtSeatHeatg", "2": "HmiSetSeatHeatg", "3": "SoaSetSeatHeatg", "4": "ThermMngtSetSeatHeatg"}#mx11#e4
+ReLeSeatHeatgHmiCtrNotAvlRsn#4#789#false#false#111#4#1#0#Rear Row Left Seat Heating HMI Control Not Available Reason\n后排左侧座椅加热HMI控制不可操作原因#0.0#0.0#0.0#{"0": "No_Error", "1": "HeatgFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgyLim", "5": "IncarTLim", "6": "CarModLim", "7": "OTAModLim"}#mx11#e4
+ReLeSeatHeatgLstCmdFaildRsn#4#789#false#false#107#4#1#0#Rear Row Left Seat Heating Last Command Failed Reason\n后排左侧驾座椅加热最后指令失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "HeatgFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgyLim", "5": "IncarTLim", "6": "OverTProtd", "7": "FullPwrHeatgTiOut", "8": "RemHeatgTiOut", "9": "CarModLim", "10": "OTAModLim"}#mx11#e4
+ReMidSeatHeatgHmiCtrNotAvlRsn#4#789#false#false#119#4#1#0#Rear Row Middle Seat Heating HMI Control Not Available Reason\n后排中部座椅加热HMI控制不可操作原因#0.0#0.0#0.0#{"0": "No_Error", "1": "HeatgFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgyLim", "5": "IncarTLim", "6": "CarModLim", "7": "OTAModLim"}#mx11#e4
+ReMidSeatHeatgLstCmdFaildRsn#4#789#false#false#115#4#1#0#Rear  Row  Middle Seat Heating Last Command Failed Reason\n后排中间座椅加热最后指令失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "HeatgFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgyLim", "5": "IncarTLim", "6": "OverTProtd", "7": "FullPwrHeatgTiOut", "8": "RemHeatgTiOut", "9": "CarModLim", "10": "OTAModLim"}#mx11#e4
+ReRiBackFoldCtrlNotAvlRsn#4#789#false#false#127#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInit", "9": "FrontSeatIn0GPosn", "10": "SeatOccupied", "11": "GearNotInP", "12": "ChildSeatEquipped", "13": "SafetyBeltConnected", "14": "AlreadyInFoldState"}#mx11#e4
+ReRiBackFoldCurCmd#4#789#false#false#135#16#1.0#0.0#1#0.0#0.0#0.0#{"0": "Idle", "171": "HwSwtBackFoldingMovg", "172": "HwSwtBackUnfoldingMovg", "173": "HmiSwtBackFoldingMovg", "174": "HmiSwtBackUnfoldingMovg", "175": "VehSetBackFoldingMovg", "176": "VehSetBackUnfoldingMovg", "177": "SOASetBackFoldingMovg", "178": "SOASetBackUnfoldingMovg", "179": "HMIStoppin"}#mx11#e4
+ReMidSeatHeatgCurCmd#4#789#false#false#151#3#1#0#Rear Row Middle Seat Heating Current Command\n后排中部座椅加热当前操作指令#0.0#0.0#0.0#{"0": "Idle", "1": "HmiSwtSeatHeatg", "2": "HmiSetSeatHeatg", "3": "SoaSetSeatHeatg", "4": "ThermMngtSetSeatHeatg"}#mx11#e4
+ReRiBackFoldEnaSts#4#789#false#false#148#1#1#0#1#0.0#0.0#0.0#null#mx11#e4
+ReRiBackFoldLstCmdFaildRsn#4#789#false#false#147#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInit", "9": "FrontSeatIn0GPosn", "10": "SeatOccupied", "11": "GearNotInP", "12": "ChildSeatEquipped", "13": "SafetyBeltConnected", "14": "Intrpt"}#mx11#e4
+ReRiBackHmiAdjEnaSts#4#789#false#false#159#1#1#0#1#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+ReRiBackHmiAdjNotAvlRsn#4#789#false#false#158#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInUnfoldState"}#mx11#e4
+PassSeatHeatgCurCmd#4#789#false#false#154#3#1#0#Passenger Seat Heating Current Command\n副驾座椅加热当前操作指令#0.0#0.0#0.0#{"0": "Idle", "1": "HmiSwtSeatHeatg", "2": "HmiSetSeatHeatg", "3": "SoaSetSeatHeatg", "4": "ThermMngtSetSeatHeatg"}#mx11#e4
+ReRiBackPosnSetCurCmd#4#789#false#false#167#8#1.0#-1.0#1#0.0#0.0#0.0#{"0": "Idle", "171": "HwSwtBackFwdMovg", "172": "HwSwtBackRwdMovg", "173": "HmiSwtBackFwdMovg", "174": "HmiSwtBackRwdMovg", "175": "VehSetBackFwdMovg", "176": "VehSetBackRwdMovg", "177": "SOASetBackFwdMovg", "178": "SOASetBackRwdMovg", "179": "HMIStopping"}#mx11#e4
+ReRiBackPosnSetLstCmdFaildRsn#4#789#false#false#175#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInit", "9": "NotInUnfoldState", "10": "Intrpt"}#mx11#e4
+ReRiBackPosnSetNotAvlRsn#4#789#false#false#171#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInit", "9": "NotInUnfoldState"}#mx11#e4
+ReRiBackUnfoldLstCmdFaildRsn#4#789#false#false#183#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInit", "9": "FrontSeatIn0GPosn", "10": "Intrpt"}#mx11#e4
+ReRiBackUnfoldCtrlNotAvlRsn#4#789#false#false#179#4#1#0#1#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "ComError", "6": "AntiPinchErrProtd", "7": "MotStallProtd", "8": "NotInit", "9": "FrontSeatIn0GPosn", "10": "AlreadyInUnfoldState"}#mx11#e4
+ReRiSeatHeatgCurCmd#4#789#false#false#191#3#1#0#Rear Row Right Seat Heating Current Command\n后排右侧座椅加热当前操作指令#0.0#0.0#0.0#{"0": "Idle", "1": "HmiSwtSeatHeatg", "2": "HmiSetSeatHeatg", "3": "SoaSetSeatHeatg", "4": "ThermMngtSetSeatHeatg"}#mx11#e4
+ReRiSeatHeatgHmiCtrNotAvlRsn#4#789#false#false#188#4#1#0#Rear Row Right Seat Heating HMI Control Not Available Reason\n后排右侧座椅加热HMI控制不可操作原因#0.0#0.0#0.0#{"0": "No_Error", "1": "HeatgFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgyLim", "5": "IncarTLim", "6": "CarModLim", "7": "OTAModLim"}#mx11#e4
+SeatHeatgFirstRowEnaStsAtPass#4#789#false#false#184#1#1#0#副驾座椅加热使能#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+ReRiSeatHeatgLstCmdFaildRsn#4#789#false#false#199#4#1#0#Rear Row Left Seat Heating Last Command Failed Reason\n后排右侧座椅加热最后指令失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "HeatgFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgyLim", "5": "IncarTLim", "6": "OverTProtd", "7": "FullPwrHeatgTiOut", "8": "RemHeatgTiOut", "9": "CarModLim", "10": "OTAModLim"}#mx11#e4
+PassBackAdjSwtEnaSts#4#789#false#false#195#1#1#0#Passenger Back Adjustment Switch Enable Status\n副驾靠背电机调节按键使能状态#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+PassHeiAdjSwtEnaSts#4#789#false#false#194#1#1#0#Passenger Height Adjustment Switch Enable Status\n副驾抬高电机调节按键使能状态#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+PassHozlAdjSwtEnaSts#4#789#false#false#193#1#1#0#Passenger Horizontal Adjustment Switch Enable Status\n副驾水平电机调节按键使能状态#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#mx11#e4
+PassBackCurCmd#4#789#false#false#207#8#1.0#-1.0#Passenger Seat Back Motor Current Command\n副驾靠背电机当前操作指令#0.0#0.0#0.0#{"0": "Idle", "171": "HwSwtBackFwdMovg", "172": "HwSwtBackRwdMovg", "173": "HmiSwtBackFwdMovg", "174": "HmiSwtBackRwdMovg", "175": "VehSetBackFwdMovg", "176": "VehSetBackRwdMovg", "177": "SOASetBackFwdMovg", "178": "SOASetBackRwdMovg", "179": "HMIStopping"}#mx11#e4
+PassBackHmiCtrNotAvlRsn#4#789#false#false#215#4#1#0#Passenger Back Hmi Control Not Available Reason\n副驾靠背电机控制不可用原因#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd"}#mx11#e4
+PassBackLstCmdFaildRsn#4#789#false#false#211#4#1#0#Passenger Seat Back  Motor Last Command Failed Reason\n副驾靠背电机最后操作失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim", "6": "ComError", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit", "10": "Intrpt"}#mx11#e4
+PassHeiCurCmd#4#789#false#false#223#8#1.0#-1.0#Passenger  Seat Height Motor Current Command\n副驾抬高电机当前操作指令#0.0#0.0#0.0#{"0": "Idle", "171": "HwSwtHeiUpMovg", "172": "HwSwtHeiDwnMovg", "173": "HmiSwtHeiUpMovg", "174": "HmiSwtHeiDwnMovg", "175": "VehSetHeiUpMovg", "176": "VehSetHeiDwnMovg", "177": "SOASetHeiUpMovg", "178": "SOASetHeiDwnMovg", "179": "HMIStopping"}#mx11#e4
+PassHeiHmiCtrNotAvlRsn#4#789#false#false#231#4#1#0#Passenger  Height  Hmi Control Not Available Reason\n副驾抬高电机控制不可用原因#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd"}#mx11#e4
+PassHeiLstCmdFaildRsn#4#789#false#false#227#4#1#0#Passenger Seat Height Motor Last Command Failed Reason\n副驾抬高电机最后操作失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim", "6": "ComError", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit", "10": "Intrpt"}#mx11#e4
+PassHozlCurCmd#4#789#false#false#239#8#1.0#-1.0#Passenger Seat Horizontal Motor Current Command\n副驾水平电机当前操作指令#0.0#0.0#0.0#{"0": "Idle", "171": "HwSwtHozlFwdMovg", "172": "HwSwtHozlRwdMovg", "173": "HmiSwtHozlFwdMovg", "174": "HmiSwtHozlRwdMovg", "175": "VehSetHozlFwdMovg", "176": "VehSetHozlRwdMovg", "177": "SOASetHozlFwdMovg", "178": "SOASetHozlRwdMovg", "179": "HMIStopping"}#mx11#e4
+PassHozlHmiCtrNotAvlRsn#4#789#false#false#247#4#1#0#Passenger Horizontal Hmi Control Not Available Reason\n副驾水平电机控制不可用原因#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim(Driver_side_only)", "6": "ComErrProtd(Driver_side_only)", "7": "AntiPinchErrProtd", "8": "MotStallProtd"}#mx11#e4
+PassHozlLstCmdFaildRsn#4#789#false#false#243#4#1#0#Passenger Seat Horizontal Motor Last Command Failed Reason\n副驾水平电机最后操作失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "MotoFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "ThermProtd", "5": "VehSpdLim", "6": "ComError", "7": "AntiPinchErrProtd", "8": "MotStallProtd", "9": "NotInit", "10": "Intrpt"}#mx11#e4
+PassSeatHeatgHmiCtrNotAvlRsn#4#789#false#false#255#4#1#0#Passenger Seat Heating HMI Control Not Available Reason\n副驾座椅加热HMI控制不可操作原因#0.0#0.0#0.0#{"0": "NoErr", "1": "HeatgFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgyLim", "5": "IncarTLim", "6": "CarModLim", "7": "OTAModLim"}#mx11#e4
+PassSeatHeatgLstCmdFaildRsn#4#789#false#false#251#4#1#0#Passenger Seat Heating Last Command Failed Reason\n副驾座椅加热最后指令失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "HeatgFltProtd", "2": "VehImpctProtd", "3": "VoltProtd", "4": "LvEgyLim", "5": "IncarTLim", "6": "OverTProtd", "7": "FullPwrHeatgTiOut", "8": "RemHeatgTiOut", "9": "CarModLim", "10": "OTAModLim"}#mx11#e4
+PassOcupcySts#4#893#false#false#1#2#1#0#Passenger Occupancy Sensor  Status\n副驾座椅占位传感器检测状态#0.0#0.0#0.0#{"0": "Empty", "1": "Occupied", "2": "Invaild_STG", "3": "Invaild_STB_OL"}#mx11#e4
+SecRowRiOcupcySts#4#893#false#false#13#2#1#0#Second Row Right Ocupcy Sensor Status\n二排右侧座椅占位传感器检测状态#0.0#0.0#0.0#{"0": "Empty", "1": "Occupied", "2": "Invaild_STG", "3": "Invaild_STB_OL"}#mx11#e4
+SecRowMidOcupcySts#4#893#false#false#11#2#1#0#Second Row Middle Ocupcy Sensor Status\n二排中间座椅占位传感器检测状态#0.0#0.0#0.0#{"0": "Empty", "1": "Occupied", "2": "Invaild_STG", "3": "Invaild_STB_OL"}#mx11#e4
+R01OutpU_BLEA#4#1268#false#false#7#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+R02OutpU_ADD#4#1268#false#false#15#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+R03OutpU_VCCD#4#1268#false#false#23#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+R04OutpU_ACU#4#1268#false#false#31#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+R12OutpU_RLCMRA#4#1268#false#false#39#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+R13OutpU_RLCMLB#4#1268#false#false#47#8#0.1#0.0##0.0#0.0#0.0#null#mx11#e4
+N1_DRV871x_Init_Cnt_RZCU#4#1268#false#false#55#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N2_DZ300_Init_Cnt_RZCU#4#1268#false#false#71#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N3_FS2620_Init_Cnt_RZCU#4#1268#false#false#87#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N4_TCA9539_Init_Cnt_RZCU#4#1268#false#false#103#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N5_TIC12400_Init_Cnt_RZCU#4#1268#false#false#119#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N6_TPSXHXXX_Init_Cnt_RZCU#4#1268#false#false#135#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N7_VN9DXX_Init_Cnt_RZCU#4#1268#false#false#151#16#1#0##0.0#0.0#0.0#null#mx11#e4
+N8_VNF1048_Init_Cnt_RZCU#4#1268#false#false#167#16#1#0##0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrFRDoorPwrRelseMotor#4#1268#false#false#183#13#0.1#0.0#Current Monitor Front Right Door Latch Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRRChildLockMotor#4#1268#false#false#199#13#0.1#0.0#Current Monitor Rear Right Child Lock Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRRDoorPwrRelseMotor#4#1268#false#false#215#13#0.1#0.0#Current Monitor Rear Right Door Latch Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrFRDoorCinchMotor#4#1269#false#false#7#13#0.1#0.0#Current Monitor Front Right Door Cinch Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrFRDoorHandleMotor#4#1269#false#false#23#13#0.1#0.0#Current Monitor Front Right Door Handle Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrFrtCameraHeat#4#1269#false#false#55#13#0.1#0.0#Current Monitor Front Camera Heating#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrFRWindowMotor#4#1269#false#false#71#13#0.1#0.0#Current Monitor Front Right Window Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrLegSuptExtenMotor#4#1269#false#false#87#13#0.1#0.0#Current Monitor Leg Support Extension Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrLegSuptRotaMotor#4#1269#false#false#103#13#0.1#0.0#Current Monitor Leg Support Rotation Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrFRSeatBackrestAdj#4#1269#false#false#119#13#0.1#0.0#Current Monitor Passenger Seat Backrest Adjust Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrPassSeatCushionAdjust#4#1269#false#false#135#13#0.1#0.0#Current Monitor Passenger Seat Cushion Adjust Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrPassSeatForeAftAdjust#4#1269#false#false#151#13#0.1#0.0#Current Monitor Passenger Seat Fore After Adjust Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrPassSeatHeat#4#1269#false#false#167#13#0.1#0.0#Current Monitor Passenger Seat Heating#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrPassSeatHightAdjust#4#1269#false#false#183#13#0.1#0.0#Current Monitor Passenger Seat Height Adjust Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrPassSpeakerUpDnMotor#4#1269#false#false#199#13#0.1#0.0#Current Monitor Passenger Speaker Height Adjust Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRiOSRVMUpDnAdjust#4#1269#false#false#215#13#0.1#0.0#Current Monitor Right OSRVM Up/Down Adjust Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRLSeatCushionHeat#4#1269#false#false#231#13#0.1#0.0#Current Monitor Rear Left Seat Cushion Heating#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRRDoorCinchMotor#4#1269#false#false#263#13#0.1#0.0#Current Monitor Rear Right Door Cinch Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRRDoorHandleMotor#4#1269#false#false#279#13#0.1#0.0#Current Monitor Rear Right Door Handle Motor#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrrRMSeatCushionHeat#4#1269#false#false#311#13#0.1#0.0#Current Monitor Rear Middle Seat Cushion Heating#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRRSeatCushionHeat#4#1269#false#false#327#13#0.1#0.0#Current Monitor Rear Right Seat Cushion Heat#0.0#0.0#0.0#null#mx11#e4
+OutpCurMonrRRWindowMotor#4#1269#false#false#343#13#0.1#0.0#Current MonitorRear Right Window Motor#0.0#0.0#0.0#null#mx11#e4
+UDB23RZCU#4#1389#false#false#23#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB22RZCU#4#1389#false#false#22#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB21RZCU#4#1389#false#false#21#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB20RZCU#4#1389#false#false#20#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB19RZCU#4#1389#false#false#19#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB18RZCU#4#1389#false#false#18#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB17RZCU#4#1389#false#false#17#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB31RZCU#4#1389#false#false#31#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB30RZCU#4#1389#false#false#30#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB29RZCU#4#1389#false#false#29#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB28RZCU#4#1389#false#false#28#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB27RZCU#4#1389#false#false#27#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB26RZCU#4#1389#false#false#26#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB25RZCU#4#1389#false#false#25#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB24RZCU#4#1389#false#false#24#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB39RZCU#4#1389#false#false#39#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB38RZCU#4#1389#false#false#38#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB37RZCU#4#1389#false#false#37#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB36RZCU#4#1389#false#false#36#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB35RZCU#4#1389#false#false#35#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB34RZCU#4#1389#false#false#34#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB33RZCU#4#1389#false#false#33#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB32RZCU#4#1389#false#false#32#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB47RZCU#4#1389#false#false#47#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB46RZCU#4#1389#false#false#46#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB45RZCU#4#1389#false#false#45#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB44RZCU#4#1389#false#false#44#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB43RZCU#4#1389#false#false#43#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB42RZCU#4#1389#false#false#42#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB41RZCU#4#1389#false#false#41#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB40RZCU#4#1389#false#false#40#1#1#0##0.0#0.0#0.0#null#mx11#e4
+NMKeepAwkRsnRZCU#4#1389#false#false#48#9#1#0##0.0#0.0#0.0#null#mx11#e4
+TiDomn#4#263#false#false#4#5#1#0#time domain#0.0#0.0#0.0#{"0": "UTC_plus_0", "1": "UTC_plus_1", "2": "UTC_plus_2", "3": "UTC_plus_3", "4": "UTC_plus_4", "5": "UTC_plus_5", "6": "UTC_plus_6", "7": "UTC_plus_7", "8": "UTC_plus_8", "9": "UTC_plus_9", "10": "UTC_plus_10", "11": "UTC_plus_11", "12": "UTC_plus_12", "13": "UTC_plus_13", "14": "UTC_plus_14", "15": "UTC_plus_15", "16": "UTC_plus_16", "17": "UTC_plus_17", "18": "UTC_plus_18", "19": "UTC_plus_19", "20": "UTC_plus_20", "21": "UTC_plus_21", "22": "UTC_plus_22", "23": "UTC_plus_23", "24": "Invalid"}#mx11#e4
+DateTiYr#4#263#false#false#15#8#1.0#2000.0#date time year#0.0#0.0#0.0#{"255": "Invalid"}#mx11#e4
+DateTiMth#4#263#false#false#19#4#1.0#0.0#date time month#0.0#0.0#0.0#{"0": "Invalid"}#mx11#e4
+DateTiDay#4#263#false#false#28#5#1#0#date time day#0.0#0.0#0.0#{"0": "init"}#mx11#e4
+DateTiHr#4#263#false#false#36#5#1.0#0.0#date time hour#0.0#0.0#0.0#{"24": "Invalid"}#mx11#e4
+DateTiMins#4#263#false#false#45#6#1.0#0.0#date time minute#0.0#0.0#0.0#{"60": "Invalid"}#mx11#e4
+DateTiSec#4#263#false#false#55#6#1.0#0.0#date time second#0.0#0.0#0.0#{"60": "Invalid"}#mx11#e4
+DateTiMilsec#4#263#false#false#49#10#1.0#0.0#date time millisecond#0.0#0.0#0.0#{"0": "0", "999": "999", "1000": "invalid"}#mx11#e4
+AdjLeMirrHozlDirSoa#4#443#false#false#7#2#1#0#Adjust the left mirror left/right by direction#0.0#0.0#0.0#{"0": "idle", "1": "Left", "2": "Right"}#mx11#e4
+AdjLeMirrVertDirSoa#4#443#false#false#5#2#1#0#Adjust the left mirror up/down  by direction#0.0#0.0#0.0#{"0": "idle", "1": "Up", "2": "Down"}#mx11#e4
+AdjMirrFoldSoa#4#443#false#false#3#2#1#0#Adjust the mirror fold in/out#0.0#0.0#0.0#{"0": "idle", "1": "fold_in", "2": "fold_out"}#mx11#e4
+AdjRiMirrHozlDirSoa#4#443#false#false#1#2#1#0#Adjust the right mirror left/right by direction#0.0#0.0#0.0#{"0": "idle", "1": "Left", "2": "Right"}#mx11#e4
+AdjLeMirrHozlSoa#4#443#false#false#15#8#1#0#Adjust the left mirror left/right by percentage#0.0#0.0#0.0#null#mx11#e4
+AdjLeMirrVertSoa#4#443#false#false#23#8#1#0#Adjust the left mirror up/down by percentage#0.0#0.0#0.0#null#mx11#e4
+AdjRiMirrHozlSoa#4#443#false#false#31#8#1#0#Adjust the right mirror left/right by percentage#0.0#0.0#0.0#null#mx11#e4
+AdjRiMirrVertSoa#4#443#false#false#39#8#1#0#Adjust the right mirror up/down by percentage#0.0#0.0#0.0#null#mx11#e4
+AdjRiMirrVertDirSoa#4#443#false#false#47#2#1#0#Adjust the right mirror up/down by direction#0.0#0.0#0.0#{"0": "idle", "1": "Up", "2": "Down"}#mx11#e4
+DrvrLumAdjReqSoa#4#443#false#false#45#3#1.0#0.0#Request from Soa to adjust the lumber support of the main driver's seat\n Soa的主驾驶位座椅腰托调节请求#0.0#0.0#0.0#{"0": "No_command", "1": "Up", "2": "Down", "3": "Fwd", "4": "Back"}#mx11#e4
+OpenCloseChrgLidReqSoa#4#443#false#false#42#2#1#0#Request from Soa to open or close the Charge Lid\n Soa的充电口盖开启 或关闭请求#0.0#0.0#0.0#{"0": "none", "1": "open", "2": "close", "3": "stop//\u9884\u7559\uff0c\u5f53\u524d\u8f66\u578b\u4e0d\u53ef\u7528"}#mx11#e4
+DrvrSeatBackAdjReqSoa#4#443#false#false#55#8#1.0#0.0#Request from Soa to adjust the backrest angle of the driver seat\n Soa的主驾驶位座椅靠背角度调节请求#0.0#0.0#0.0#{"112": "\u7535\u673aforward/up", "113": "\u7535\u673arearward/down", "128": "\u7535\u673a\u505c\u6b62", "255": "NoCmd"}#mx11#e4
+DrvrSeatHorizontalAdjReqSoa#4#443#false#false#63#8#1.0#0.0#Request from Soa to adjust the horizontal position of the driver seat\n Soa的主驾驶位座椅前后调节请求#0.0#0.0#0.0#{"112": "\u7535\u673aforward/up", "113": "\u7535\u673arearward/down", "128": "\u7535\u673a\u505c\u6b62", "255": "NoCmd"}#mx11#e4
+DrvrSeatVerticalAdjReqSoa#4#443#false#false#71#8#1.0#0.0#Request from Soa to adjust the vertical position of the driver seat\n Soa的主驾驶位座椅高度调节请求#0.0#0.0#0.0#{"112": "\u7535\u673aforward/up", "113": "\u7535\u673arearward/down", "128": "\u7535\u673a\u505c\u6b62", "255": "NoCmd"}#mx11#e4
+DrvrSeatHeatingReqSoa#4#443#false#false#79#3#1.0#0.0#Request from Soa to heating of the main drivers seat\n Soa的主驾驶位座椅加热请求#0.0#0.0#0.0#{"0": "none", "1": "off", "2": "level1", "3": "level2", "4": "level3"}#mx11#e4
+DrvrSeatVentilationReqSoa#4#443#false#false#76#3#1.0#0.0#Request from Soa to ventilation of the main drivers seat\n Soa的主驾驶位座椅通风请求#0.0#0.0#0.0#{"0": "none", "1": "off", "2": "level1", "3": "level2", "4": "level3"}#mx11#e4
+OpenCloseDrvrDoorReqSoa#4#443#false#false#73#2#1#0#Request from Soa to open or close the driver's door\n Soa的主驾驶位车门开启 或关闭请求#0.0#0.0#0.0#{"0": "none", "1": "open", "2": "close//\u9884\u7559\uff0c\u5f53\u524d\u8f66\u578b\u4e0d\u53ef\u7528", "3": "invalid"}#mx11#e4
+OpenCloseLeReDoorReqSoa#4#443#false#false#87#2#1#0#Request from Soa to open or close the rear left door\n Soa的左后车门开启 或关闭 请求#0.0#0.0#0.0#{"0": "none", "1": "open", "2": "close//\u9884\u7559\uff0c\u5f53\u524d\u8f66\u578b\u4e0d\u53ef\u7528", "3": "invalid"}#mx11#e4
+OpenClosePassDoorReqSoa#4#443#false#false#85#2#1#0#Request from Soa to open or close the passenger side door\n Soa的副驾驶位车门开启 或关闭 请求#0.0#0.0#0.0#{"0": "none", "1": "open", "2": "close//\u9884\u7559\uff0c\u5f53\u524d\u8f66\u578b\u4e0d\u53ef\u7528", "3": "invalid"}#mx11#e4
+OpenCloseRiReDoorReqSoa#4#443#false#false#83#2#1#0#Request from Soa to open or close the rear right door\n Soa的右后车门开启 或关闭 请求#0.0#0.0#0.0#{"0": "none", "1": "open", "2": "close//\u9884\u7559\uff0c\u5f53\u524d\u8f66\u578b\u4e0d\u53ef\u7528", "3": "invalid"}#mx11#e4
+PassWinStopReqSoa#4#443#false#false#81#1#1#0#Passenger Window  stop move#0.0#0.0#0.0#{"0": "Idle", "1": "Stop"}#mx11#e4
+PassSeatHorizontaAdjlReqSoa#4#443#false#false#95#8#1.0#0.0#Request from Soa to adjust the horizontal position of the passenger seat\n Soa的副驾驶位座椅前后调节请求#0.0#0.0#0.0#{"112": "\u7535\u673aforward/up", "113": "\u7535\u673arearward/down", "128": "\u7535\u673a\u505c\u6b62", "255": "NoCmd"}#mx11#e4
+PassSeatBackAdjReqSoa#4#443#false#false#103#8#1.0#0.0#Request from Soa to adjust the backrest angle of the passenger seat\n Soa的副驾驶位座椅靠背角度调节请求#0.0#0.0#0.0#{"112": "\u7535\u673aforward/up", "113": "\u7535\u673arearward/down", "128": "\u7535\u673a\u505c\u6b62", "255": "NoCmd"}#mx11#e4
+PassSeatVerticalAdjReqSoa#4#443#false#false#111#8#1.0#0.0#Request from Soa to adjust the vertical position of the passenger seat\n Soa的副驾驶位座椅高度调节请求#0.0#0.0#0.0#{"112": "\u7535\u673aforward/up", "113": "\u7535\u673arearward/down", "128": "\u7535\u673a\u505c\u6b62", "255": "NoCmd"}#mx11#e4
+PassWinPerctReqSoa#4#443#false#false#119#8#1#0#Passenger Window Percentage Position#0.0#0.0#0.0#null#mx11#e4
+ReLeWinPerctReqSoa#4#443#false#false#127#8#1#0#Rear Left Window Percentage Position#0.0#0.0#0.0#null#mx11#e4
+PassSeatHeatingReqSoa#4#443#false#false#135#3#1.0#0.0#Request from Soa to heating of the passenger seat\n Soa的副驾驶位座椅加热请求#0.0#0.0#0.0#{"0": "none", "1": "off", "2": "level1", "3": "level2", "4": "level3"}#mx11#e4
+PassSeatVentilationReqSoa#4#443#false#false#132#3#1.0#0.0#Request from Soa to ventilation of the passenger seat\n Soa的副驾驶位座椅通风请求#0.0#0.0#0.0#{"0": "none", "1": "off", "2": "level1", "3": "level2", "4": "level3"}#mx11#e4
+ReLeWinStopReqSoa#4#443#false#false#129#1#1#0#Rear Left Window  stop move#0.0#0.0#0.0#{"0": "Idle", "1": "Stop"}#mx11#e4
+ReMidSeatHeatingReqSoa#4#443#false#false#143#3#1.0#0.0#Request from Soa to heating of the rear middle seat\n Soa的后排中间座椅加热请求#0.0#0.0#0.0#{"0": "none", "1": "off", "2": "level1", "3": "level2", "4": "level3"}#mx11#e4
+RemStrtVehicleReqSoa#4#443#false#false#140#1#1#0#Remote Start Vehicle Request From Soa#0.0#0.0#0.0#{"0": "NoCmd", "1": "Start"}#mx11#e4
+ReRiSeatHeatingReqSoa#4#443#false#false#139#3#1.0#0.0#Request from Soa to heating of the rear right seat\n Soa的后排右侧座椅加热请求#0.0#0.0#0.0#{"0": "none", "1": "off", "2": "level1", "3": "level2", "4": "level3"}#mx11#e4
+ReRiWinPerctReqSoa#4#443#false#false#151#8#1#0#Rear Right Window Percentage Position#0.0#0.0#0.0#null#mx11#e4
+ReRiWinStopReqSoa#4#443#false#false#159#1#1#0#Rear Right Window Percentage Position#0.0#0.0#0.0#{"0": "Idle", "1": "Stop"}#mx11#e4
+VCCDOdoEgyCnsBacReqResultSoa#4#443#false#false#158#2#1#0#Result of VCCD Mileage  and energy consumption backup request#0.0#0.0#0.0#{"0": "Idle", "1": "Success", "2": "Failed", "3": "Reserve"}#mx11#e4
+SetHornModeSoa#4#443#false#false#156#3#1#0#SOA喇叭报警模式请求#0.0#0.0#0.0#{"0": "NoCmd", "1": "LckHornReq", "2": "UnlckHornReq", "3": "VehAlarmHornReq", "4": "CarLoctrHornReq", "5": "PrkFailrReq"}#mx11#e4
+VCCDOdoBacDataFromTspSoa#4#443#false#false#167#24#0.1#0.0#VCCD ODO Backup data download from TSP#0.0#0.0#0.0#null#mx11#e4
+VCCDStatEgyCnsBacDataFromTspSoa#4#443#false#false#191#32#0.001#0.0#VCCD total static energy consumption backup data from TSP#0.0#0.0#0.0#null#mx11#e4
+VCCDDynEgyCnsBacDataFromTspSoa#4#443#false#false#223#32#0.001#0.0#VCCD total dynamic energy consumption backup data from TSP#0.0#0.0#0.0#null#mx11#e4
+DisbleReWinCtrlSoa#4#443#false#false#255#2#1#0#Disable rear window lock control#0.0#0.0#0.0#{"0": "Idle", "1": "ON", "2": "OFF"}#mx11#e4
+DmsDrvOnSeatStatusSoa#4#443#false#false#253#2#1#0#Driver seated status from DMS#0.0#0.0#0.0#{"0": "Idle", "1": "Unseated", "2": "Seated", "3": "Reserved"}#mx11#e4
+SetMirrDfrstSoa#4#443#false#false#251#2#1#0#Adjust the mirror defroster#0.0#0.0#0.0#{"0": "idle", "1": "off", "2": "on"}#mx11#e4
+SetMirrDimCfgSoa#4#443#false#false#249#2#1#0#Interior mirror dimming configuration set#0.0#0.0#0.0#{"0": "Idle", "1": "Off", "2": "On"}#mx11#e4
+DrvrWinPerctReqSoa#4#443#false#false#263#8#1#0#Driver Window Percentage Position#0.0#0.0#0.0#null#mx11#e4
+IVFTarTSetSoa#4#443#false#false#271#6#1.0#0.0#IVF Target Temperature Set from SOA\n来自SOA的车载冰箱工作温度设置信号#0.0#0.0#0.0#{"0": "NoCommand"}#mx11#e4
+SetMirrFoldCfgSoa#4#443#false#false#265#2#1#0#Set the mirror fold in/out config#0.0#0.0#0.0#{"0": "Idle", "1": "manual", "2": "auto"}#mx11#e4
+IVFWalAwayFcnKeepTiSoa#4#443#false#false#279#5#1.0#0.0#IVF Walk Away Function Keep Time Set from SOA\n来自SOA的车载冰箱离车工作时长设置信号#0.0#0.0#0.0#{"0": "NoCommand"}#mx11#e4
+DrvrWinStopReqSoa#4#443#false#false#274#1#1#0#Driver Window stop move#0.0#0.0#0.0#{"0": "Idle", "1": "Stop"}#mx11#e4
+CldCtrlCmdSoa#4#443#false#false#273#2#1.0#0.0#Cloud ctrl cmd Info from SOA \nSOA远控指令通知信号#0.0#0.0#0.0#{"0": "NoReqd", "1": "Info_Reqd", "2": "Ctrl_Reqd"}#mx11#e4
+IVFWalAwayFcnOnOffSetSoa#4#443#false#false#287#2#1#0#IVF Walk Away Function OnOff Set from SOA\n来自SOA的车载冰箱离车工作开关设置信号#0.0#0.0#0.0#{"0": "NoCommand", "1": "Off", "2": "On", "3": "Reserved"}#mx11#e4
+IVFWalAwayWTimesSoa#4#443#false#false#285#2#1#0#IVF WalkAway Work Times from SOA\n来自SOA的车载冰箱离车工作次数设置信号#0.0#0.0#0.0#{"0": "NoCommand", "1": "OneTime", "2": "EveryTime", "3": "Reserved"}#mx11#e4
+IVFWModSetSoa#4#443#false#false#283#2#1#0#IVF Work Mode Set from SOA\n来自SOA的车载冰箱工作模式设置信号#0.0#0.0#0.0#{"0": "NoCommand", "1": "Cool", "2": "Heat", "3": "Reserved"}#mx11#e4
+IVFWOnOffSetSoa#4#443#false#false#281#2#1#0#IVF Work OnOff Set From SOA\n来自SOA的车载冰箱工作开关设置信号#0.0#0.0#0.0#{"0": "NoCommand", "1": "Off", "2": "On", "3": "Reserved"}#mx11#e4
+SetMirrTiltCfgSoa#4#443#false#false#295#3#1.0#0.0#Exterior Mirror Reversing Assit Function configuration set#0.0#0.0#0.0#{"0": "Idle", "1": "Off", "2": "onlyLeft", "3": "onlyRight", "4": "All"}#mx11#e4
+SetSteerWhlHeatLvlSoa#4#443#false#false#292#3#1#0#Set steering wheel heating level#0.0#0.0#0.0#{"0": "Idle", "1": "Off", "2": "Level1", "3": "Level2", "4": "Level3"}#mx11#e4
+IVFPfmncSetSoa#4#443#false#false#303#8#1#0#SOA的冰箱性能模式设置内部信号#0.0#0.0#0.0#{"0": "No_Command", "1": "Silence", "2": "Standard", "3": "Performance"}#mx11#e4
+FrtLftSegmt1#4#445#false#false#7#8#1#0#Front Left Segment1#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt10#4#445#false#false#15#8#1#0#Front Left Segment10#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt100#4#445#false#false#23#8#1#0#Front Left Segment100#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt101#4#445#false#false#31#8#1#0#Front Left Segment101#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt102#4#445#false#false#39#8#1#0#Front Left Segment102#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt103#4#445#false#false#47#8#1#0#Front Left Segment103#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt104#4#445#false#false#55#8#1#0#Front Left Segment104#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt105#4#445#false#false#63#8#1#0#Front Left Segment105#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt106#4#445#false#false#71#8#1#0#Front Left Segment106#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt107#4#445#false#false#79#8#1#0#Front Left Segment107#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt108#4#445#false#false#87#8#1#0#Front Left Segment108#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt109#4#445#false#false#95#8#1#0#Front Left Segment109#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt11#4#445#false#false#103#8#1#0#Front Left Segment11#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt110#4#445#false#false#111#8#1#0#Front Left Segment110#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt111#4#445#false#false#119#8#1#0#Front Left Segment111#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt112#4#445#false#false#127#8#1#0#Front Left Segment112#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt113#4#445#false#false#135#8#1#0#Front Left Segment113#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt114#4#445#false#false#143#8#1#0#Front Left Segment114#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt115#4#445#false#false#151#8#1#0#Front Left Segment115#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt116#4#445#false#false#159#8#1#0#Front Left Segment116#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt117#4#445#false#false#167#8#1#0#Front Left Segment117#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt118#4#445#false#false#175#8#1#0#Front Left Segment118#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt119#4#445#false#false#183#8#1#0#Front Left Segment119#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt12#4#445#false#false#191#8#1#0#Front Left Segment12#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt120#4#445#false#false#199#8#1#0#Front Left Segment120#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt121#4#445#false#false#207#8#1#0#Front Left Segment121#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt122#4#445#false#false#215#8#1#0#Front Left Segment122#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt123#4#445#false#false#223#8#1#0#Front Left Segment123#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt124#4#445#false#false#231#8#1#0#Front Left Segment124#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt125#4#445#false#false#239#8#1#0#Front Left Segment125#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt126#4#445#false#false#247#8#1#0#Front Left Segment126#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt127#4#445#false#false#255#8#1#0#Front Left Segment127#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt128#4#445#false#false#263#8#1#0#Front Left Segment128#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt13#4#445#false#false#271#8#1#0#Front Left Segment13#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt14#4#445#false#false#279#8#1#0#Front Left Segment14#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt15#4#445#false#false#287#8#1#0#Front Left Segment15#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt16#4#445#false#false#295#8#1#0#Front Left Segment16#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt17#4#445#false#false#303#8#1#0#Front Left Segment17#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt18#4#445#false#false#311#8#1#0#Front Left Segment18#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt19#4#445#false#false#319#8#1#0#Front Left Segment19#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt2#4#445#false#false#327#8#1#0#Front Left Segment2#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt20#4#445#false#false#335#8#1#0#Front Left Segment20#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt21#4#445#false#false#343#8#1#0#Front Left Segment21#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt22#4#445#false#false#351#8#1#0#Front Left Segment22#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt23#4#445#false#false#359#8#1#0#Front Left Segment23#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt24#4#445#false#false#367#8#1#0#Front Left Segment24#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt25#4#445#false#false#375#8#1#0#Front Left Segment25#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt26#4#445#false#false#383#8#1#0#Front Left Segment26#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt27#4#445#false#false#391#8#1#0#Front Left Segment27#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt28#4#445#false#false#399#8#1#0#Front Left Segment28#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt29#4#445#false#false#407#8#1#0#Front Left Segment29#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt3#4#445#false#false#415#8#1#0#Front Left Segment3#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt30#4#445#false#false#423#8#1#0#Front Left Segment30#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt31#4#445#false#false#431#8#1#0#Front Left Segment31#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt32#4#445#false#false#439#8#1#0#Front Left Segment32#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt33#4#445#false#false#447#8#1#0#Front Left Segment33#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt34#4#445#false#false#455#8#1#0#Front Left Segment34#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt35#4#445#false#false#463#8#1#0#Front Left Segment35#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt36#4#445#false#false#471#8#1#0#Front Left Segment36#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt37#4#445#false#false#479#8#1#0#Front Left Segment37#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt38#4#445#false#false#487#8#1#0#Front Left Segment38#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt39#4#445#false#false#495#8#1#0#Front Left Segment39#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt4#4#445#false#false#503#8#1#0#Front Left Segment4#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt40#4#445#false#false#511#8#1#0#Front Left Segment40#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt41#4#446#false#false#7#8#1#0#Front Left Segment41#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt42#4#446#false#false#15#8#1#0#Front Left Segment42#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt43#4#446#false#false#23#8#1#0#Front Left Segment43#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt44#4#446#false#false#31#8#1#0#Front Left Segment44#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt45#4#446#false#false#39#8#1#0#Front Left Segment45#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt46#4#446#false#false#47#8#1#0#Front Left Segment46#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt47#4#446#false#false#55#8#1#0#Front Left Segment47#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt48#4#446#false#false#63#8#1#0#Front Left Segment48#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt49#4#446#false#false#71#8#1#0#Front Left Segment49#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt5#4#446#false#false#79#8#1#0#Front Left Segment5#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt50#4#446#false#false#87#8#1#0#Front Left Segment50#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt51#4#446#false#false#95#8#1#0#Front Left Segment51#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt52#4#446#false#false#103#8#1#0#Front Left Segment52#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt53#4#446#false#false#111#8#1#0#Front Left Segment53#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt54#4#446#false#false#119#8#1#0#Front Left Segment54#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt55#4#446#false#false#127#8#1#0#Front Left Segment55#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt56#4#446#false#false#135#8#1#0#Front Left Segment56#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt57#4#446#false#false#143#8#1#0#Front Left Segment57#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt58#4#446#false#false#151#8#1#0#Front Left Segment58#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt59#4#446#false#false#159#8#1#0#Front Left Segment59#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt6#4#446#false#false#167#8#1#0#Front Left Segment6#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt60#4#446#false#false#175#8#1#0#Front Left Segment60#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt61#4#446#false#false#183#8#1#0#Front Left Segment61#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt62#4#446#false#false#191#8#1#0#Front Left Segment62#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt63#4#446#false#false#199#8#1#0#Front Left Segment63#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt64#4#446#false#false#207#8#1#0#Front Left Segment64#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt65#4#446#false#false#215#8#1#0#Front Left Segment65#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt66#4#446#false#false#223#8#1#0#Front Left Segment66#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt67#4#446#false#false#231#8#1#0#Front Left Segment67#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt68#4#446#false#false#239#8#1#0#Front Left Segment68#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt69#4#446#false#false#247#8#1#0#Front Left Segment69#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt7#4#446#false#false#255#8#1#0#Front Left Segment7#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt70#4#446#false#false#263#8#1#0#Front Left Segment70#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt71#4#446#false#false#271#8#1#0#Front Left Segment71#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt72#4#446#false#false#279#8#1#0#Front Left Segment72#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt73#4#446#false#false#287#8#1#0#Front Left Segment73#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt74#4#446#false#false#295#8#1#0#Front Left Segment74#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt75#4#446#false#false#303#8#1#0#Front Left Segment75#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt76#4#446#false#false#311#8#1#0#Front Left Segment76#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt77#4#446#false#false#319#8#1#0#Front Left Segment77#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt78#4#446#false#false#327#8#1#0#Front Left Segment78#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt79#4#446#false#false#335#8#1#0#Front Left Segment79#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt8#4#446#false#false#343#8#1#0#Front Left Segment8#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt80#4#446#false#false#351#8#1#0#Front Left Segment80#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt81#4#446#false#false#359#8#1#0#Front Left Segment81#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt82#4#446#false#false#367#8#1#0#Front Left Segment82#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt83#4#446#false#false#375#8#1#0#Front Left Segment83#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt84#4#446#false#false#383#8#1#0#Front Left Segment84#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt85#4#446#false#false#391#8#1#0#Front Left Segment85#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt86#4#446#false#false#399#8#1#0#Front Left Segment86#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt87#4#446#false#false#407#8#1#0#Front Left Segment87#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt88#4#446#false#false#415#8#1#0#Front Left Segment88#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt89#4#446#false#false#423#8#1#0#Front Left Segment89#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt9#4#446#false#false#431#8#1#0#Front Left Segment9#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt90#4#446#false#false#439#8#1#0#Front Left Segment90#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt91#4#446#false#false#447#8#1#0#Front Left Segment91#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt92#4#446#false#false#455#8#1#0#Front Left Segment92#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt93#4#446#false#false#463#8#1#0#Front Left Segment93#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt94#4#446#false#false#471#8#1#0#Front Left Segment94#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt95#4#446#false#false#479#8#1#0#Front Left Segment95#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt96#4#446#false#false#487#8#1#0#Front Left Segment96#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt97#4#446#false#false#495#8#1#0#Front Left Segment97#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt98#4#446#false#false#503#8#1#0#Front Left Segment98#0.0#0.0#0.0#null#mx11#e4
+FrtLftSegmt99#4#446#false#false#511#8#1#0#Front Left Segment99#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt1#4#447#false#false#7#8#1#0#Front Right Segment1#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt10#4#447#false#false#15#8#1#0#Front Right Segment10#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt100#4#447#false#false#23#8#1#0#Front Right Segment100#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt101#4#447#false#false#31#8#1#0#Front Right Segment101#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt102#4#447#false#false#39#8#1#0#Front Right Segment102#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt103#4#447#false#false#47#8#1#0#Front Right Segment103#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt104#4#447#false#false#55#8#1#0#Front Right Segment104#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt105#4#447#false#false#63#8#1#0#Front Right Segment105#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt106#4#447#false#false#71#8#1#0#Front Right Segment106#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt107#4#447#false#false#79#8#1#0#Front Right Segment107#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt108#4#447#false#false#87#8#1#0#Front Right Segment108#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt109#4#447#false#false#95#8#1#0#Front Right Segment109#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt11#4#447#false#false#103#8#1#0#Front Right Segment11#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt110#4#447#false#false#111#8#1#0#Front Right Segment110#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt111#4#447#false#false#119#8#1#0#Front Right Segment111#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt112#4#447#false#false#127#8#1#0#Front Right Segment112#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt113#4#447#false#false#135#8#1#0#Front Right Segment113#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt114#4#447#false#false#143#8#1#0#Front Right Segment114#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt115#4#447#false#false#151#8#1#0#Front Right Segment115#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt116#4#447#false#false#159#8#1#0#Front Right Segment116#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt117#4#447#false#false#167#8#1#0#Front Right Segment117#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt118#4#447#false#false#175#8#1#0#Front Right Segment118#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt119#4#447#false#false#183#8#1#0#Front Right Segment119#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt12#4#447#false#false#191#8#1#0#Front Right Segment12#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt120#4#447#false#false#199#8#1#0#Front Right Segment120#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt121#4#447#false#false#207#8#1#0#Front Right Segment121#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt122#4#447#false#false#215#8#1#0#Front Right Segment122#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt123#4#447#false#false#223#8#1#0#Front Right Segment123#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt124#4#447#false#false#231#8#1#0#Front Right Segment124#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt125#4#447#false#false#239#8#1#0#Front Right Segment125#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt126#4#447#false#false#247#8#1#0#Front Right Segment126#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt127#4#447#false#false#255#8#1#0#Front Right Segment127#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt128#4#447#false#false#263#8#1#0#Front Right Segment128#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt13#4#447#false#false#271#8#1#0#Front Right Segment13#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt14#4#447#false#false#279#8#1#0#Front Right Segment14#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt15#4#447#false#false#287#8#1#0#Front Right Segment15#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt16#4#447#false#false#295#8#1#0#Front Right Segment16#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt17#4#447#false#false#303#8#1#0#Front Right Segment17#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt18#4#447#false#false#311#8#1#0#Front Right Segment18#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt19#4#447#false#false#319#8#1#0#Front Right Segment19#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt2#4#447#false#false#327#8#1#0#Front Right Segment2#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt20#4#447#false#false#335#8#1#0#Front Right Segment20#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt21#4#447#false#false#343#8#1#0#Front Right Segment21#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt22#4#447#false#false#351#8#1#0#Front Right Segment22#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt23#4#447#false#false#359#8#1#0#Front Right Segment23#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt24#4#447#false#false#367#8#1#0#Front Right Segment24#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt25#4#447#false#false#375#8#1#0#Front Right Segment25#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt26#4#447#false#false#383#8#1#0#Front Right Segment26#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt27#4#447#false#false#391#8#1#0#Front Right Segment27#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt28#4#447#false#false#399#8#1#0#Front Right Segment28#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt29#4#447#false#false#407#8#1#0#Front Right Segment29#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt3#4#447#false#false#415#8#1#0#Front Right Segment3#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt30#4#447#false#false#423#8#1#0#Front Right Segment30#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt31#4#447#false#false#431#8#1#0#Front Right Segment31#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt32#4#447#false#false#439#8#1#0#Front Right Segment32#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt33#4#447#false#false#447#8#1#0#Front Right Segment33#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt34#4#447#false#false#455#8#1#0#Front Right Segment34#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt35#4#447#false#false#463#8#1#0#Front Right Segment35#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt36#4#447#false#false#471#8#1#0#Front Right Segment36#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt37#4#447#false#false#479#8#1#0#Front Right Segment37#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt38#4#447#false#false#487#8#1#0#Front Right Segment38#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt39#4#447#false#false#495#8#1#0#Front Right Segment39#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt4#4#447#false#false#503#8#1#0#Front Right Segment4#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt40#4#447#false#false#511#8#1#0#Front Right Segment40#0.0#0.0#0.0#null#mx11#e4
+RearSegmt214#4#458#false#false#7#8#1#0#Rear Segment214#0.0#0.0#0.0#null#mx11#e4
+RearSegmt215#4#458#false#false#15#8#1#0#Rear Segment215#0.0#0.0#0.0#null#mx11#e4
+RearSegmt216#4#458#false#false#23#8#1#0#Rear Segment216#0.0#0.0#0.0#null#mx11#e4
+RearSegmt217#4#458#false#false#31#8#1#0#Rear Segment217#0.0#0.0#0.0#null#mx11#e4
+RearSegmt218#4#458#false#false#39#8#1#0#Rear Segment218#0.0#0.0#0.0#null#mx11#e4
+RearSegmt219#4#458#false#false#47#8#1#0#Rear Segment219#0.0#0.0#0.0#null#mx11#e4
+RearSegmt22#4#458#false#false#55#8#1#0#Rear Segment22#0.0#0.0#0.0#null#mx11#e4
+RearSegmt220#4#458#false#false#63#8#1#0#Rear Segment220#0.0#0.0#0.0#null#mx11#e4
+RearSegmt221#4#458#false#false#71#8#1#0#Rear Segment221#0.0#0.0#0.0#null#mx11#e4
+RearSegmt222#4#458#false#false#79#8#1#0#Rear Segment222#0.0#0.0#0.0#null#mx11#e4
+RearSegmt223#4#458#false#false#87#8#1#0#Rear Segment223#0.0#0.0#0.0#null#mx11#e4
+RearSegmt224#4#458#false#false#95#8#1#0#Rear Segment224#0.0#0.0#0.0#null#mx11#e4
+RearSegmt225#4#458#false#false#103#8#1#0#Rear Segment225#0.0#0.0#0.0#null#mx11#e4
+RearSegmt226#4#458#false#false#111#8#1#0#Rear Segment226#0.0#0.0#0.0#null#mx11#e4
+RearSegmt227#4#458#false#false#119#8#1#0#Rear Segment227#0.0#0.0#0.0#null#mx11#e4
+RearSegmt228#4#458#false#false#127#8#1#0#Rear Segment228#0.0#0.0#0.0#null#mx11#e4
+RearSegmt229#4#458#false#false#135#8#1#0#Rear Segment229#0.0#0.0#0.0#null#mx11#e4
+RearSegmt23#4#458#false#false#143#8#1#0#Rear Segment23#0.0#0.0#0.0#null#mx11#e4
+RearSegmt230#4#458#false#false#151#8#1#0#Rear Segment230#0.0#0.0#0.0#null#mx11#e4
+RearSegmt231#4#458#false#false#159#8#1#0#Rear Segment231#0.0#0.0#0.0#null#mx11#e4
+RearSegmt232#4#458#false#false#167#8#1#0#Rear Segment232#0.0#0.0#0.0#null#mx11#e4
+RearSegmt233#4#458#false#false#175#8#1#0#Rear Segment233#0.0#0.0#0.0#null#mx11#e4
+RearSegmt234#4#458#false#false#183#8#1#0#Rear Segment234#0.0#0.0#0.0#null#mx11#e4
+RearSegmt235#4#458#false#false#191#8#1#0#Rear Segment235#0.0#0.0#0.0#null#mx11#e4
+RearSegmt236#4#458#false#false#199#8#1#0#Rear Segment236#0.0#0.0#0.0#null#mx11#e4
+RearSegmt237#4#458#false#false#207#8#1#0#Rear Segment237#0.0#0.0#0.0#null#mx11#e4
+RearSegmt238#4#458#false#false#215#8#1#0#Rear Segment238#0.0#0.0#0.0#null#mx11#e4
+RearSegmt239#4#458#false#false#223#8#1#0#Rear Segment239#0.0#0.0#0.0#null#mx11#e4
+RearSegmt24#4#458#false#false#231#8#1#0#Rear Segment24#0.0#0.0#0.0#null#mx11#e4
+RearSegmt240#4#458#false#false#239#8#1#0#Rear Segment240#0.0#0.0#0.0#null#mx11#e4
+RearSegmt241#4#458#false#false#247#8#1#0#Rear Segment241#0.0#0.0#0.0#null#mx11#e4
+RearSegmt242#4#458#false#false#255#8#1#0#Rear Segment242#0.0#0.0#0.0#null#mx11#e4
+RearSegmt243#4#458#false#false#263#8#1#0#Rear Segment243#0.0#0.0#0.0#null#mx11#e4
+RearSegmt244#4#458#false#false#271#8#1#0#Rear Segment244#0.0#0.0#0.0#null#mx11#e4
+RearSegmt245#4#458#false#false#279#8#1#0#Rear Segment245#0.0#0.0#0.0#null#mx11#e4
+RearSegmt246#4#458#false#false#287#8#1#0#Rear Segment246#0.0#0.0#0.0#null#mx11#e4
+RearSegmt247#4#458#false#false#295#8#1#0#Rear Segment247#0.0#0.0#0.0#null#mx11#e4
+RearSegmt248#4#458#false#false#303#8#1#0#Rear Segment248#0.0#0.0#0.0#null#mx11#e4
+RearSegmt249#4#458#false#false#311#8#1#0#Rear Segment249#0.0#0.0#0.0#null#mx11#e4
+RearSegmt25#4#458#false#false#319#8#1#0#Rear Segment25#0.0#0.0#0.0#null#mx11#e4
+RearSegmt250#4#458#false#false#327#8#1#0#Rear Segment250#0.0#0.0#0.0#null#mx11#e4
+RearSegmt251#4#458#false#false#335#8#1#0#Rear Segment251#0.0#0.0#0.0#null#mx11#e4
+RearSegmt252#4#458#false#false#343#8#1#0#Rear Segment252#0.0#0.0#0.0#null#mx11#e4
+RearSegmt253#4#458#false#false#351#8#1#0#Rear Segment253#0.0#0.0#0.0#null#mx11#e4
+RearSegmt254#4#458#false#false#359#8#1#0#Rear Segment254#0.0#0.0#0.0#null#mx11#e4
+RearSegmt255#4#458#false#false#367#8#1#0#Rear Segment255#0.0#0.0#0.0#null#mx11#e4
+RearSegmt256#4#458#false#false#375#8#1#0#Rear Segment256#0.0#0.0#0.0#null#mx11#e4
+RearSegmt257#4#458#false#false#383#8#1#0#Rear Segment257#0.0#0.0#0.0#null#mx11#e4
+RearSegmt258#4#458#false#false#391#8#1#0#Rear Segment258#0.0#0.0#0.0#null#mx11#e4
+RearSegmt259#4#458#false#false#399#8#1#0#Rear Segment259#0.0#0.0#0.0#null#mx11#e4
+RearSegmt26#4#458#false#false#407#8#1#0#Rear Segment26#0.0#0.0#0.0#null#mx11#e4
+RearSegmt260#4#458#false#false#415#8#1#0#Rear Segment260#0.0#0.0#0.0#null#mx11#e4
+RearSegmt261#4#458#false#false#423#8#1#0#Rear Segment261#0.0#0.0#0.0#null#mx11#e4
+RearSegmt262#4#458#false#false#431#8#1#0#Rear Segment262#0.0#0.0#0.0#null#mx11#e4
+RearSegmt263#4#458#false#false#439#8#1#0#Rear Segment263#0.0#0.0#0.0#null#mx11#e4
+RearSegmt264#4#458#false#false#447#8#1#0#Rear Segment264#0.0#0.0#0.0#null#mx11#e4
+RearSegmt265#4#458#false#false#455#8#1#0#Rear Segment265#0.0#0.0#0.0#null#mx11#e4
+RearSegmt266#4#458#false#false#463#8#1#0#Rear Segment266#0.0#0.0#0.0#null#mx11#e4
+RearSegmt267#4#458#false#false#471#8#1#0#Rear Segment267#0.0#0.0#0.0#null#mx11#e4
+RearSegmt268#4#458#false#false#479#8#1#0#Rear Segment268#0.0#0.0#0.0#null#mx11#e4
+RearSegmt269#4#458#false#false#487#8#1#0#Rear Segment269#0.0#0.0#0.0#null#mx11#e4
+RearSegmt27#4#458#false#false#495#8#1#0#Rear Segment27#0.0#0.0#0.0#null#mx11#e4
+RearSegmt270#4#458#false#false#503#8#1#0#Rear Segment270#0.0#0.0#0.0#null#mx11#e4
+RearSegmt271#4#458#false#false#511#8#1#0#Rear Segment271#0.0#0.0#0.0#null#mx11#e4
+RearSegmt157#4#459#false#false#7#8#1#0#Rear Segment157#0.0#0.0#0.0#null#mx11#e4
+RearSegmt158#4#459#false#false#15#8#1#0#Rear Segment158#0.0#0.0#0.0#null#mx11#e4
+RearSegmt159#4#459#false#false#23#8#1#0#Rear Segment159#0.0#0.0#0.0#null#mx11#e4
+RearSegmt16#4#459#false#false#31#8#1#0#Rear Segment16#0.0#0.0#0.0#null#mx11#e4
+RearSegmt160#4#459#false#false#39#8#1#0#Rear Segment160#0.0#0.0#0.0#null#mx11#e4
+RearSegmt161#4#459#false#false#47#8#1#0#Rear Segment161#0.0#0.0#0.0#null#mx11#e4
+RearSegmt162#4#459#false#false#55#8#1#0#Rear Segment162#0.0#0.0#0.0#null#mx11#e4
+RearSegmt163#4#459#false#false#63#8#1#0#Rear Segment163#0.0#0.0#0.0#null#mx11#e4
+RearSegmt164#4#459#false#false#71#8#1#0#Rear Segment164#0.0#0.0#0.0#null#mx11#e4
+RearSegmt165#4#459#false#false#79#8#1#0#Rear Segment165#0.0#0.0#0.0#null#mx11#e4
+RearSegmt166#4#459#false#false#87#8#1#0#Rear Segment166#0.0#0.0#0.0#null#mx11#e4
+RearSegmt167#4#459#false#false#95#8#1#0#Rear Segment167#0.0#0.0#0.0#null#mx11#e4
+RearSegmt168#4#459#false#false#103#8#1#0#Rear Segment168#0.0#0.0#0.0#null#mx11#e4
+RearSegmt169#4#459#false#false#111#8#1#0#Rear Segment169#0.0#0.0#0.0#null#mx11#e4
+RearSegmt17#4#459#false#false#119#8#1#0#Rear Segment17#0.0#0.0#0.0#null#mx11#e4
+RearSegmt170#4#459#false#false#127#8#1#0#Rear Segment170#0.0#0.0#0.0#null#mx11#e4
+RearSegmt171#4#459#false#false#135#8#1#0#Rear Segment171#0.0#0.0#0.0#null#mx11#e4
+RearSegmt172#4#459#false#false#143#8#1#0#Rear Segment172#0.0#0.0#0.0#null#mx11#e4
+RearSegmt173#4#459#false#false#151#8#1#0#Rear Segment173#0.0#0.0#0.0#null#mx11#e4
+RearSegmt174#4#459#false#false#159#8#1#0#Rear Segment174#0.0#0.0#0.0#null#mx11#e4
+RearSegmt175#4#459#false#false#167#8#1#0#Rear Segment175#0.0#0.0#0.0#null#mx11#e4
+RearSegmt176#4#459#false#false#175#8#1#0#Rear Segment176#0.0#0.0#0.0#null#mx11#e4
+RearSegmt177#4#459#false#false#183#8#1#0#Rear Segment177#0.0#0.0#0.0#null#mx11#e4
+RearSegmt178#4#459#false#false#191#8#1#0#Rear Segment178#0.0#0.0#0.0#null#mx11#e4
+RearSegmt179#4#459#false#false#199#8#1#0#Rear Segment179#0.0#0.0#0.0#null#mx11#e4
+RearSegmt18#4#459#false#false#207#8#1#0#Rear Segment18#0.0#0.0#0.0#null#mx11#e4
+RearSegmt180#4#459#false#false#215#8#1#0#Rear Segment180#0.0#0.0#0.0#null#mx11#e4
+RearSegmt181#4#459#false#false#223#8#1#0#Rear Segment181#0.0#0.0#0.0#null#mx11#e4
+RearSegmt182#4#459#false#false#231#8#1#0#Rear Segment182#0.0#0.0#0.0#null#mx11#e4
+RearSegmt183#4#459#false#false#239#8#1#0#Rear Segment183#0.0#0.0#0.0#null#mx11#e4
+RearSegmt184#4#459#false#false#247#8#1#0#Rear Segment184#0.0#0.0#0.0#null#mx11#e4
+RearSegmt185#4#459#false#false#255#8#1#0#Rear Segment185#0.0#0.0#0.0#null#mx11#e4
+RearSegmt186#4#459#false#false#263#8#1#0#Rear Segment186#0.0#0.0#0.0#null#mx11#e4
+RearSegmt187#4#459#false#false#271#8#1#0#Rear Segment187#0.0#0.0#0.0#null#mx11#e4
+RearSegmt188#4#459#false#false#279#8#1#0#Rear Segment188#0.0#0.0#0.0#null#mx11#e4
+RearSegmt189#4#459#false#false#287#8#1#0#Rear Segment189#0.0#0.0#0.0#null#mx11#e4
+RearSegmt19#4#459#false#false#295#8#1#0#Rear Segment19#0.0#0.0#0.0#null#mx11#e4
+RearSegmt190#4#459#false#false#303#8#1#0#Rear Segment190#0.0#0.0#0.0#null#mx11#e4
+RearSegmt191#4#459#false#false#311#8#1#0#Rear Segment191#0.0#0.0#0.0#null#mx11#e4
+RearSegmt192#4#459#false#false#319#8#1#0#Rear Segment192#0.0#0.0#0.0#null#mx11#e4
+RearSegmt193#4#459#false#false#327#8#1#0#Rear Segment193#0.0#0.0#0.0#null#mx11#e4
+RearSegmt194#4#459#false#false#335#8#1#0#Rear Segment194#0.0#0.0#0.0#null#mx11#e4
+RearSegmt195#4#459#false#false#343#8#1#0#Rear Segment195#0.0#0.0#0.0#null#mx11#e4
+RearSegmt196#4#459#false#false#351#8#1#0#Rear Segment196#0.0#0.0#0.0#null#mx11#e4
+RearSegmt197#4#459#false#false#359#8#1#0#Rear Segment197#0.0#0.0#0.0#null#mx11#e4
+RearSegmt198#4#459#false#false#367#8#1#0#Rear Segment198#0.0#0.0#0.0#null#mx11#e4
+RearSegmt199#4#459#false#false#375#8#1#0#Rear Segment199#0.0#0.0#0.0#null#mx11#e4
+RearSegmt2#4#459#false#false#383#8#1#0#Rear Segment2#0.0#0.0#0.0#null#mx11#e4
+RearSegmt20#4#459#false#false#391#8#1#0#Rear Segment20#0.0#0.0#0.0#null#mx11#e4
+RearSegmt200#4#459#false#false#399#8#1#0#Rear Segment200#0.0#0.0#0.0#null#mx11#e4
+RearSegmt201#4#459#false#false#407#8#1#0#Rear Segment201#0.0#0.0#0.0#null#mx11#e4
+RearSegmt202#4#459#false#false#415#8#1#0#Rear Segment202#0.0#0.0#0.0#null#mx11#e4
+RearSegmt203#4#459#false#false#423#8#1#0#Rear Segment203#0.0#0.0#0.0#null#mx11#e4
+RearSegmt204#4#459#false#false#431#8#1#0#Rear Segment204#0.0#0.0#0.0#null#mx11#e4
+RearSegmt205#4#459#false#false#439#8#1#0#Rear Segment205#0.0#0.0#0.0#null#mx11#e4
+RearSegmt206#4#459#false#false#447#8#1#0#Rear Segment206#0.0#0.0#0.0#null#mx11#e4
+RearSegmt207#4#459#false#false#455#8#1#0#Rear Segment207#0.0#0.0#0.0#null#mx11#e4
+RearSegmt208#4#459#false#false#463#8#1#0#Rear Segment208#0.0#0.0#0.0#null#mx11#e4
+RearSegmt209#4#459#false#false#471#8#1#0#Rear Segment209#0.0#0.0#0.0#null#mx11#e4
+RearSegmt21#4#459#false#false#479#8#1#0#Rear Segment21#0.0#0.0#0.0#null#mx11#e4
+RearSegmt210#4#459#false#false#487#8#1#0#Rear Segment210#0.0#0.0#0.0#null#mx11#e4
+RearSegmt211#4#459#false#false#495#8#1#0#Rear Segment211#0.0#0.0#0.0#null#mx11#e4
+RearSegmt212#4#459#false#false#503#8#1#0#Rear Segment212#0.0#0.0#0.0#null#mx11#e4
+RearSegmt213#4#459#false#false#511#8#1#0#Rear Segment213#0.0#0.0#0.0#null#mx11#e4
+RearSegmt6#4#460#false#false#7#8#1#0#Rear Segment6#0.0#0.0#0.0#null#mx11#e4
+RearSegmt60#4#460#false#false#15#8#1#0#Rear Segment60#0.0#0.0#0.0#null#mx11#e4
+RearSegmt61#4#460#false#false#23#8#1#0#Rear Segment61#0.0#0.0#0.0#null#mx11#e4
+RearSegmt62#4#460#false#false#31#8#1#0#Rear Segment62#0.0#0.0#0.0#null#mx11#e4
+RearSegmt63#4#460#false#false#39#8#1#0#Rear Segment63#0.0#0.0#0.0#null#mx11#e4
+RearSegmt64#4#460#false#false#47#8#1#0#Rear Segment64#0.0#0.0#0.0#null#mx11#e4
+RearSegmt65#4#460#false#false#55#8#1#0#Rear Segment65#0.0#0.0#0.0#null#mx11#e4
+RearSegmt66#4#460#false#false#63#8#1#0#Rear Segment66#0.0#0.0#0.0#null#mx11#e4
+RearSegmt67#4#460#false#false#71#8#1#0#Rear Segment67#0.0#0.0#0.0#null#mx11#e4
+RearSegmt68#4#460#false#false#79#8#1#0#Rear Segment68#0.0#0.0#0.0#null#mx11#e4
+RearSegmt69#4#460#false#false#87#8#1#0#Rear Segment69#0.0#0.0#0.0#null#mx11#e4
+RearSegmt7#4#460#false#false#95#8#1#0#Rear Segment7#0.0#0.0#0.0#null#mx11#e4
+RearSegmt70#4#460#false#false#103#8#1#0#Rear Segment70#0.0#0.0#0.0#null#mx11#e4
+RearSegmt71#4#460#false#false#111#8#1#0#Rear Segment71#0.0#0.0#0.0#null#mx11#e4
+RearSegmt72#4#460#false#false#119#8#1#0#Rear Segment72#0.0#0.0#0.0#null#mx11#e4
+RearSegmt73#4#460#false#false#127#8#1#0#Rear Segment73#0.0#0.0#0.0#null#mx11#e4
+RearSegmt74#4#460#false#false#135#8#1#0#Rear Segment74#0.0#0.0#0.0#null#mx11#e4
+RearSegmt75#4#460#false#false#143#8#1#0#Rear Segment75#0.0#0.0#0.0#null#mx11#e4
+RearSegmt76#4#460#false#false#151#8#1#0#Rear Segment76#0.0#0.0#0.0#null#mx11#e4
+RearSegmt77#4#460#false#false#159#8#1#0#Rear Segment77#0.0#0.0#0.0#null#mx11#e4
+RearSegmt78#4#460#false#false#167#8#1#0#Rear Segment78#0.0#0.0#0.0#null#mx11#e4
+RearSegmt79#4#460#false#false#175#8#1#0#Rear Segment79#0.0#0.0#0.0#null#mx11#e4
+RearSegmt8#4#460#false#false#183#8#1#0#Rear Segment8#0.0#0.0#0.0#null#mx11#e4
+RearSegmt80#4#460#false#false#191#8#1#0#Rear Segment80#0.0#0.0#0.0#null#mx11#e4
+RearSegmt81#4#460#false#false#199#8#1#0#Rear Segment81#0.0#0.0#0.0#null#mx11#e4
+RearSegmt82#4#460#false#false#207#8#1#0#Rear Segment82#0.0#0.0#0.0#null#mx11#e4
+RearSegmt83#4#460#false#false#215#8#1#0#Rear Segment83#0.0#0.0#0.0#null#mx11#e4
+RearSegmt84#4#460#false#false#223#8#1#0#Rear Segment84#0.0#0.0#0.0#null#mx11#e4
+RearSegmt85#4#460#false#false#231#8#1#0#Rear Segment85#0.0#0.0#0.0#null#mx11#e4
+RearSegmt86#4#460#false#false#239#8#1#0#Rear Segment86#0.0#0.0#0.0#null#mx11#e4
+RearSegmt87#4#460#false#false#247#8#1#0#Rear Segment87#0.0#0.0#0.0#null#mx11#e4
+RearSegmt88#4#460#false#false#255#8#1#0#Rear Segment88#0.0#0.0#0.0#null#mx11#e4
+RearSegmt89#4#460#false#false#263#8#1#0#Rear Segment89#0.0#0.0#0.0#null#mx11#e4
+RearSegmt9#4#460#false#false#271#8#1#0#Rear Segment9#0.0#0.0#0.0#null#mx11#e4
+RearSegmt90#4#460#false#false#279#8#1#0#Rear Segment90#0.0#0.0#0.0#null#mx11#e4
+RearSegmt91#4#460#false#false#287#8#1#0#Rear Segment91#0.0#0.0#0.0#null#mx11#e4
+RearSegmt92#4#460#false#false#295#8#1#0#Rear Segment92#0.0#0.0#0.0#null#mx11#e4
+RearSegmt93#4#460#false#false#303#8#1#0#Rear Segment93#0.0#0.0#0.0#null#mx11#e4
+RearSegmt94#4#460#false#false#311#8#1#0#Rear Segment94#0.0#0.0#0.0#null#mx11#e4
+RearSegmt95#4#460#false#false#319#8#1#0#Rear Segment95#0.0#0.0#0.0#null#mx11#e4
+RearSegmt96#4#460#false#false#327#8#1#0#Rear Segment96#0.0#0.0#0.0#null#mx11#e4
+RearSegmt97#4#460#false#false#335#8#1#0#Rear Segment97#0.0#0.0#0.0#null#mx11#e4
+RearSegmt98#4#460#false#false#343#8#1#0#Rear Segment98#0.0#0.0#0.0#null#mx11#e4
+RearSegmt99#4#460#false#false#351#8#1#0#Rear Segment99#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt41#4#461#false#false#7#8#1#0#Front Right Segment41#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt42#4#461#false#false#15#8#1#0#Front Right Segment42#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt43#4#461#false#false#23#8#1#0#Front Right Segment43#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt44#4#461#false#false#31#8#1#0#Front Right Segment44#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt45#4#461#false#false#39#8#1#0#Front Right Segment45#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt46#4#461#false#false#47#8#1#0#Front Right Segment46#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt47#4#461#false#false#55#8#1#0#Front Right Segment47#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt48#4#461#false#false#63#8#1#0#Front Right Segment48#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt49#4#461#false#false#71#8#1#0#Front Right Segment49#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt5#4#461#false#false#79#8#1#0#Front Right Segment5#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt50#4#461#false#false#87#8#1#0#Front Right Segment50#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt51#4#461#false#false#95#8#1#0#Front Right Segment51#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt52#4#461#false#false#103#8#1#0#Front Right Segment52#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt53#4#461#false#false#111#8#1#0#Front Right Segment53#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt54#4#461#false#false#119#8#1#0#Front Right Segment54#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt55#4#461#false#false#127#8#1#0#Front Right Segment55#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt56#4#461#false#false#135#8#1#0#Front Right Segment56#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt57#4#461#false#false#143#8#1#0#Front Right Segment57#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt58#4#461#false#false#151#8#1#0#Front Right Segment58#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt59#4#461#false#false#159#8#1#0#Front Right Segment59#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt6#4#461#false#false#167#8#1#0#Front Right Segment6#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt60#4#461#false#false#175#8#1#0#Front Right Segment60#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt61#4#461#false#false#183#8#1#0#Front Right Segment61#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt62#4#461#false#false#191#8#1#0#Front Right Segment62#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt63#4#461#false#false#199#8#1#0#Front Right Segment63#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt64#4#461#false#false#207#8#1#0#Front Right Segment64#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt65#4#461#false#false#215#8#1#0#Front Right Segment65#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt66#4#461#false#false#223#8#1#0#Front Right Segment66#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt67#4#461#false#false#231#8#1#0#Front Right Segment67#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt68#4#461#false#false#239#8#1#0#Front Right Segment68#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt69#4#461#false#false#247#8#1#0#Front Right Segment69#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt7#4#461#false#false#255#8#1#0#Front Right Segment7#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt70#4#461#false#false#263#8#1#0#Front Right Segment70#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt71#4#461#false#false#271#8#1#0#Front Right Segment71#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt72#4#461#false#false#279#8#1#0#Front Right Segment72#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt73#4#461#false#false#287#8#1#0#Front Right Segment73#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt74#4#461#false#false#295#8#1#0#Front Right Segment74#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt75#4#461#false#false#303#8#1#0#Front Right Segment75#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt76#4#461#false#false#311#8#1#0#Front Right Segment76#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt77#4#461#false#false#319#8#1#0#Front Right Segment77#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt78#4#461#false#false#327#8#1#0#Front Right Segment78#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt79#4#461#false#false#335#8#1#0#Front Right Segment79#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt8#4#461#false#false#343#8#1#0#Front Right Segment8#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt80#4#461#false#false#351#8#1#0#Front Right Segment80#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt81#4#461#false#false#359#8#1#0#Front Right Segment81#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt82#4#461#false#false#367#8#1#0#Front Right Segment82#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt83#4#461#false#false#375#8#1#0#Front Right Segment83#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt84#4#461#false#false#383#8#1#0#Front Right Segment84#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt85#4#461#false#false#391#8#1#0#Front Right Segment85#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt86#4#461#false#false#399#8#1#0#Front Right Segment86#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt87#4#461#false#false#407#8#1#0#Front Right Segment87#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt88#4#461#false#false#415#8#1#0#Front Right Segment88#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt89#4#461#false#false#423#8#1#0#Front Right Segment89#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt9#4#461#false#false#431#8#1#0#Front Right Segment9#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt90#4#461#false#false#439#8#1#0#Front Right Segment90#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt91#4#461#false#false#447#8#1#0#Front Right Segment91#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt92#4#461#false#false#455#8#1#0#Front Right Segment92#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt93#4#461#false#false#463#8#1#0#Front Right Segment93#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt94#4#461#false#false#471#8#1#0#Front Right Segment94#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt95#4#461#false#false#479#8#1#0#Front Right Segment95#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt96#4#461#false#false#487#8#1#0#Front Right Segment96#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt97#4#461#false#false#495#8#1#0#Front Right Segment97#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt98#4#461#false#false#503#8#1#0#Front Right Segment98#0.0#0.0#0.0#null#mx11#e4
+FrtRghtSegmt99#4#461#false#false#511#8#1#0#Front Right Segment99#0.0#0.0#0.0#null#mx11#e4
+RearSegmt1#4#462#false#false#7#8#1#0#Rear Segment1#0.0#0.0#0.0#null#mx11#e4
+RearSegmt10#4#462#false#false#15#8#1#0#Rear Segment10#0.0#0.0#0.0#null#mx11#e4
+RearSegmt100#4#462#false#false#23#8#1#0#Rear Segment100#0.0#0.0#0.0#null#mx11#e4
+RearSegmt101#4#462#false#false#31#8#1#0#Rear Segment101#0.0#0.0#0.0#null#mx11#e4
+RearSegmt102#4#462#false#false#39#8#1#0#Rear Segment102#0.0#0.0#0.0#null#mx11#e4
+RearSegmt103#4#462#false#false#47#8#1#0#Rear Segment103#0.0#0.0#0.0#null#mx11#e4
+RearSegmt104#4#462#false#false#55#8#1#0#Rear Segment104#0.0#0.0#0.0#null#mx11#e4
+RearSegmt105#4#462#false#false#63#8#1#0#Rear Segment105#0.0#0.0#0.0#null#mx11#e4
+RearSegmt106#4#462#false#false#71#8#1#0#Rear Segment106#0.0#0.0#0.0#null#mx11#e4
+RearSegmt107#4#462#false#false#79#8#1#0#Rear Segment107#0.0#0.0#0.0#null#mx11#e4
+RearSegmt108#4#462#false#false#87#8#1#0#Rear Segment108#0.0#0.0#0.0#null#mx11#e4
+RearSegmt109#4#462#false#false#95#8#1#0#Rear Segment109#0.0#0.0#0.0#null#mx11#e4
+RearSegmt11#4#462#false#false#103#8#1#0#Rear Segment11#0.0#0.0#0.0#null#mx11#e4
+RearSegmt110#4#462#false#false#111#8#1#0#Rear Segment110#0.0#0.0#0.0#null#mx11#e4
+RearSegmt111#4#462#false#false#119#8#1#0#Rear Segment111#0.0#0.0#0.0#null#mx11#e4
+RearSegmt112#4#462#false#false#127#8#1#0#Rear Segment112#0.0#0.0#0.0#null#mx11#e4
+RearSegmt113#4#462#false#false#135#8#1#0#Rear Segment113#0.0#0.0#0.0#null#mx11#e4
+RearSegmt114#4#462#false#false#143#8#1#0#Rear Segment114#0.0#0.0#0.0#null#mx11#e4
+RearSegmt115#4#462#false#false#151#8#1#0#Rear Segment115#0.0#0.0#0.0#null#mx11#e4
+RearSegmt116#4#462#false#false#159#8#1#0#Rear Segment116#0.0#0.0#0.0#null#mx11#e4
+RearSegmt117#4#462#false#false#167#8#1#0#Rear Segment117#0.0#0.0#0.0#null#mx11#e4
+RearSegmt118#4#462#false#false#175#8#1#0#Rear Segment118#0.0#0.0#0.0#null#mx11#e4
+RearSegmt119#4#462#false#false#183#8#1#0#Rear Segment119#0.0#0.0#0.0#null#mx11#e4
+RearSegmt12#4#462#false#false#191#8#1#0#Rear Segment12#0.0#0.0#0.0#null#mx11#e4
+RearSegmt120#4#462#false#false#199#8#1#0#Rear Segment120#0.0#0.0#0.0#null#mx11#e4
+RearSegmt121#4#462#false#false#207#8#1#0#Rear Segment121#0.0#0.0#0.0#null#mx11#e4
+RearSegmt122#4#462#false#false#215#8#1#0#Rear Segment122#0.0#0.0#0.0#null#mx11#e4
+RearSegmt123#4#462#false#false#223#8#1#0#Rear Segment123#0.0#0.0#0.0#null#mx11#e4
+RearSegmt124#4#462#false#false#231#8#1#0#Rear Segment124#0.0#0.0#0.0#null#mx11#e4
+RearSegmt125#4#462#false#false#239#8#1#0#Rear Segment125#0.0#0.0#0.0#null#mx11#e4
+RearSegmt126#4#462#false#false#247#8#1#0#Rear Segment126#0.0#0.0#0.0#null#mx11#e4
+RearSegmt127#4#462#false#false#255#8#1#0#Rear Segment127#0.0#0.0#0.0#null#mx11#e4
+RearSegmt128#4#462#false#false#263#8#1#0#Rear Segment128#0.0#0.0#0.0#null#mx11#e4
+RearSegmt129#4#462#false#false#271#8#1#0#Rear Segment129#0.0#0.0#0.0#null#mx11#e4
+RearSegmt13#4#462#false#false#279#8#1#0#Rear Segment13#0.0#0.0#0.0#null#mx11#e4
+RearSegmt130#4#462#false#false#287#8#1#0#Rear Segment130#0.0#0.0#0.0#null#mx11#e4
+RearSegmt131#4#462#false#false#295#8#1#0#Rear Segment131#0.0#0.0#0.0#null#mx11#e4
+RearSegmt132#4#462#false#false#303#8#1#0#Rear Segment132#0.0#0.0#0.0#null#mx11#e4
+RearSegmt133#4#462#false#false#311#8#1#0#Rear Segment133#0.0#0.0#0.0#null#mx11#e4
+RearSegmt134#4#462#false#false#319#8#1#0#Rear Segment134#0.0#0.0#0.0#null#mx11#e4
+RearSegmt135#4#462#false#false#327#8#1#0#Rear Segment135#0.0#0.0#0.0#null#mx11#e4
+RearSegmt136#4#462#false#false#335#8#1#0#Rear Segment136#0.0#0.0#0.0#null#mx11#e4
+RearSegmt137#4#462#false#false#343#8#1#0#Rear Segment137#0.0#0.0#0.0#null#mx11#e4
+RearSegmt138#4#462#false#false#351#8#1#0#Rear Segment138#0.0#0.0#0.0#null#mx11#e4
+RearSegmt139#4#462#false#false#359#8#1#0#Rear Segment139#0.0#0.0#0.0#null#mx11#e4
+RearSegmt14#4#462#false#false#367#8#1#0#Rear Segment14#0.0#0.0#0.0#null#mx11#e4
+RearSegmt140#4#462#false#false#375#8#1#0#Rear Segment140#0.0#0.0#0.0#null#mx11#e4
+RearSegmt141#4#462#false#false#383#8#1#0#Rear Segment141#0.0#0.0#0.0#null#mx11#e4
+RearSegmt142#4#462#false#false#391#8#1#0#Rear Segment142#0.0#0.0#0.0#null#mx11#e4
+RearSegmt143#4#462#false#false#399#8#1#0#Rear Segment143#0.0#0.0#0.0#null#mx11#e4
+RearSegmt144#4#462#false#false#407#8#1#0#Rear Segment144#0.0#0.0#0.0#null#mx11#e4
+RearSegmt145#4#462#false#false#415#8#1#0#Rear Segment145#0.0#0.0#0.0#null#mx11#e4
+RearSegmt146#4#462#false#false#423#8#1#0#Rear Segment146#0.0#0.0#0.0#null#mx11#e4
+RearSegmt147#4#462#false#false#431#8#1#0#Rear Segment147#0.0#0.0#0.0#null#mx11#e4
+RearSegmt148#4#462#false#false#439#8#1#0#Rear Segment148#0.0#0.0#0.0#null#mx11#e4
+RearSegmt149#4#462#false#false#447#8#1#0#Rear Segment149#0.0#0.0#0.0#null#mx11#e4
+RearSegmt15#4#462#false#false#455#8#1#0#Rear Segment15#0.0#0.0#0.0#null#mx11#e4
+RearSegmt150#4#462#false#false#463#8#1#0#Rear Segment150#0.0#0.0#0.0#null#mx11#e4
+RearSegmt151#4#462#false#false#471#8#1#0#Rear Segment151#0.0#0.0#0.0#null#mx11#e4
+RearSegmt152#4#462#false#false#479#8#1#0#Rear Segment152#0.0#0.0#0.0#null#mx11#e4
+RearSegmt153#4#462#false#false#487#8#1#0#Rear Segment153#0.0#0.0#0.0#null#mx11#e4
+RearSegmt154#4#462#false#false#495#8#1#0#Rear Segment154#0.0#0.0#0.0#null#mx11#e4
+RearSegmt155#4#462#false#false#503#8#1#0#Rear Segment155#0.0#0.0#0.0#null#mx11#e4
+RearSegmt156#4#462#false#false#511#8#1#0#Rear Segment156#0.0#0.0#0.0#null#mx11#e4
+RearSegmt272#4#463#false#false#7#8#1#0#Rear Segment272#0.0#0.0#0.0#null#mx11#e4
+RearSegmt273#4#463#false#false#15#8#1#0#Rear Segment273#0.0#0.0#0.0#null#mx11#e4
+RearSegmt274#4#463#false#false#23#8#1#0#Rear Segment274#0.0#0.0#0.0#null#mx11#e4
+RearSegmt275#4#463#false#false#31#8#1#0#Rear Segment275#0.0#0.0#0.0#null#mx11#e4
+RearSegmt276#4#463#false#false#39#8#1#0#Rear Segment276#0.0#0.0#0.0#null#mx11#e4
+RearSegmt277#4#463#false#false#47#8#1#0#Rear Segment277#0.0#0.0#0.0#null#mx11#e4
+RearSegmt278#4#463#false#false#55#8#1#0#Rear Segment278#0.0#0.0#0.0#null#mx11#e4
+RearSegmt279#4#463#false#false#63#8#1#0#Rear Segment279#0.0#0.0#0.0#null#mx11#e4
+RearSegmt28#4#463#false#false#71#8#1#0#Rear Segment28#0.0#0.0#0.0#null#mx11#e4
+RearSegmt280#4#463#false#false#79#8#1#0#Rear Segment280#0.0#0.0#0.0#null#mx11#e4
+RearSegmt281#4#463#false#false#87#8#1#0#Rear Segment281#0.0#0.0#0.0#null#mx11#e4
+RearSegmt282#4#463#false#false#95#8#1#0#Rear Segment282#0.0#0.0#0.0#null#mx11#e4
+RearSegmt283#4#463#false#false#103#8#1#0#Rear Segment283#0.0#0.0#0.0#null#mx11#e4
+RearSegmt284#4#463#false#false#111#8#1#0#Rear Segment284#0.0#0.0#0.0#null#mx11#e4
+RearSegmt285#4#463#false#false#119#8#1#0#Rear Segment285#0.0#0.0#0.0#null#mx11#e4
+RearSegmt286#4#463#false#false#127#8#1#0#Rear Segment286#0.0#0.0#0.0#null#mx11#e4
+RearSegmt287#4#463#false#false#135#8#1#0#Rear Segment287#0.0#0.0#0.0#null#mx11#e4
+RearSegmt288#4#463#false#false#143#8#1#0#Rear Segment288#0.0#0.0#0.0#null#mx11#e4
+RearSegmt289#4#463#false#false#151#8#1#0#Rear Segment289#0.0#0.0#0.0#null#mx11#e4
+RearSegmt29#4#463#false#false#159#8#1#0#Rear Segment29#0.0#0.0#0.0#null#mx11#e4
+RearSegmt290#4#463#false#false#167#8#1#0#Rear Segment290#0.0#0.0#0.0#null#mx11#e4
+RearSegmt291#4#463#false#false#175#8#1#0#Rear Segment291#0.0#0.0#0.0#null#mx11#e4
+RearSegmt292#4#463#false#false#183#8#1#0#Rear Segment292#0.0#0.0#0.0#null#mx11#e4
+RearSegmt293#4#463#false#false#191#8#1#0#Rear Segment293#0.0#0.0#0.0#null#mx11#e4
+RearSegmt294#4#463#false#false#199#8#1#0#Rear Segment294#0.0#0.0#0.0#null#mx11#e4
+RearSegmt295#4#463#false#false#207#8#1#0#Rear Segment295#0.0#0.0#0.0#null#mx11#e4
+RearSegmt296#4#463#false#false#215#8#1#0#Rear Segment296#0.0#0.0#0.0#null#mx11#e4
+RearSegmt297#4#463#false#false#223#8#1#0#Rear Segment297#0.0#0.0#0.0#null#mx11#e4
+RearSegmt298#4#463#false#false#231#8#1#0#Rear Segment298#0.0#0.0#0.0#null#mx11#e4
+RearSegmt299#4#463#false#false#239#8#1#0#Rear Segment299#0.0#0.0#0.0#null#mx11#e4
+RearSegmt3#4#463#false#false#247#8#1#0#Rear Segment3#0.0#0.0#0.0#null#mx11#e4
+RearSegmt30#4#463#false#false#255#8#1#0#Rear Segment30#0.0#0.0#0.0#null#mx11#e4
+RearSegmt300#4#463#false#false#263#8#1#0#Rear Segment300#0.0#0.0#0.0#null#mx11#e4
+RearSegmt31#4#463#false#false#271#8#1#0#Rear Segment31#0.0#0.0#0.0#null#mx11#e4
+RearSegmt32#4#463#false#false#279#8#1#0#Rear Segment32#0.0#0.0#0.0#null#mx11#e4
+RearSegmt33#4#463#false#false#287#8#1#0#Rear Segment33#0.0#0.0#0.0#null#mx11#e4
+RearSegmt34#4#463#false#false#295#8#1#0#Rear Segment34#0.0#0.0#0.0#null#mx11#e4
+RearSegmt35#4#463#false#false#303#8#1#0#Rear Segment35#0.0#0.0#0.0#null#mx11#e4
+RearSegmt36#4#463#false#false#311#8#1#0#Rear Segment36#0.0#0.0#0.0#null#mx11#e4
+RearSegmt37#4#463#false#false#319#8#1#0#Rear Segment37#0.0#0.0#0.0#null#mx11#e4
+RearSegmt38#4#463#false#false#327#8#1#0#Rear Segment38#0.0#0.0#0.0#null#mx11#e4
+RearSegmt39#4#463#false#false#335#8#1#0#Rear Segment39#0.0#0.0#0.0#null#mx11#e4
+RearSegmt4#4#463#false#false#343#8#1#0#Rear Segment4#0.0#0.0#0.0#null#mx11#e4
+RearSegmt40#4#463#false#false#351#8#1#0#Rear Segment40#0.0#0.0#0.0#null#mx11#e4
+RearSegmt41#4#463#false#false#359#8#1#0#Rear Segment41#0.0#0.0#0.0#null#mx11#e4
+RearSegmt42#4#463#false#false#367#8#1#0#Rear Segment42#0.0#0.0#0.0#null#mx11#e4
+RearSegmt43#4#463#false#false#375#8#1#0#Rear Segment43#0.0#0.0#0.0#null#mx11#e4
+RearSegmt44#4#463#false#false#383#8#1#0#Rear Segment44#0.0#0.0#0.0#null#mx11#e4
+RearSegmt45#4#463#false#false#391#8#1#0#Rear Segment45#0.0#0.0#0.0#null#mx11#e4
+RearSegmt46#4#463#false#false#399#8#1#0#Rear Segment46#0.0#0.0#0.0#null#mx11#e4
+RearSegmt47#4#463#false#false#407#8#1#0#Rear Segment47#0.0#0.0#0.0#null#mx11#e4
+RearSegmt48#4#463#false#false#415#8#1#0#Rear Segment48#0.0#0.0#0.0#null#mx11#e4
+RearSegmt49#4#463#false#false#423#8#1#0#Rear Segment49#0.0#0.0#0.0#null#mx11#e4
+RearSegmt5#4#463#false#false#431#8#1#0#Rear Segment5#0.0#0.0#0.0#null#mx11#e4
+RearSegmt50#4#463#false#false#439#8#1#0#Rear Segment50#0.0#0.0#0.0#null#mx11#e4
+RearSegmt51#4#463#false#false#447#8#1#0#Rear Segment51#0.0#0.0#0.0#null#mx11#e4
+RearSegmt52#4#463#false#false#455#8#1#0#Rear Segment52#0.0#0.0#0.0#null#mx11#e4
+RearSegmt53#4#463#false#false#463#8#1#0#Rear Segment53#0.0#0.0#0.0#null#mx11#e4
+RearSegmt54#4#463#false#false#471#8#1#0#Rear Segment54#0.0#0.0#0.0#null#mx11#e4
+RearSegmt55#4#463#false#false#479#8#1#0#Rear Segment55#0.0#0.0#0.0#null#mx11#e4
+RearSegmt56#4#463#false#false#487#8#1#0#Rear Segment56#0.0#0.0#0.0#null#mx11#e4
+RearSegmt57#4#463#false#false#495#8#1#0#Rear Segment57#0.0#0.0#0.0#null#mx11#e4
+RearSegmt58#4#463#false#false#503#8#1#0#Rear Segment58#0.0#0.0#0.0#null#mx11#e4
+RearSegmt59#4#463#false#false#511#8#1#0#Rear Segment59#0.0#0.0#0.0#null#mx11#e4
+LampSigGrpChks#4#600#false#false#7#8#1#0##0.0#0.0#0.0#null#mx11#e4
+LampSigGrpCntr#4#600#false#false#11#4#1#0##0.0#0.0#0.0#null#mx11#e4
+ActnOfLedRePosnLamp#4#600#false#false#23#1#1#0#后位置灯激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#mx11#e4
+ActnOfLoBeam#4#600#false#false#22#1#1#0#近光灯激活#0.0#0.0#0.0#{"0": "Off", "1": "On"}#mx11#e4
+ActnOfStopLamp#4#600#false#false#21#1#1#0#刹车灯激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#mx11#e4
+ActvnOfIndcr#4#600#false#false#20#3#1#0#转向灯激活命令#0.0#0.0#0.0#{"0": "NoReq", "1": "Off", "2": "LeOn", "3": "RiOn", "4": "LeRiOn"}#mx11#e4
+ActnOfRvsgLamp#4#600#false#false#46#1#1#0#倒车灯激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#mx11#e4
+AllowedofADB#4#600#false#false#45#1#1#0#Allowed of ADB function#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#mx11#e4
+LBLghtPatnSet#4#600#false#false#44#3#1#0#Low Beam Light Pattern Setting 近光模式设置#0.0#0.0#0.0#{"0": "Default", "1": "TownLight", "2": "CountryLight", "3": "MotorwayLight", "4": "AdverseWeatherLight", "5": "Reserved"}#mx11#e4
+ActnOfFrntCornrgLampLe#4#600#false#false#41#1#1#0#激活左角灯命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#mx11#e4
+ActnOfFrntCornrgLampRi#4#600#false#false#40#1#1#0#激活右角灯命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#mx11#e4
+HvacFrntFanSpdSt#4#600#false#false#55#4#1#0#HVAC front wind speed select state.#0.0#0.0#0.0#{"0": "Level0", "1": "Level1", "2": "Level2", "3": "Level3", "4": "Level4", "5": "Level5", "6": "Level6", "7": "Level7", "8": "Level8", "9": "Not_Available"}#mx11#e4
+WlcmFrwlLghtModSet#4#600#false#false#51#4#1#0#Wellcome and Farewell light mode setting#0.0#0.0#0.0#{"0": "Off", "1": "BriefDay", "2": "GraceDay", "3": "CrazyDay", "4": "BriefNight", "5": "GraceNight", "6": "CrazyNight"}#mx11#e4
+SBLPatnSet#4#600#false#false#61#2#1#0#Static bending light Pattern setting#0.0#0.0#0.0#{"0": "Off", "1": "LeftSBLOn", "2": "RightSBLOn", "3": "Resd"}#mx11#e4
+StsOfIndcr#4#600#false#false#59#3#1#0#转向状态指示#0.0#0.0#0.0#{"0": "Noflash", "1": "flashLeft", "2": "flashRight", "3": "Doubleflash"}#mx11#e4
+CtrlAHLAglRi#4#600#false#true#71#10#0.01#0.0#Control Right AHL  Angle#0.0#0.0#0.0#null#mx11#e4
+AHLDirtCtrlRq#4#600#false#false#77#2#1#0#Auto Headlamp Leveling Direct control request#0.0#0.0#0.0#{"0": "NoReq", "1": "DirCtrlAngle"}#mx11#e4
+AHLMotrRefRunReq#4#600#false#false#75#1#1#0#Auto Headlamp Leveling Motor Reference RUN Request#0.0#0.0#0.0#{"0": "NoReq", "1": "Req"}#mx11#e4
+AuxlForRvsPatnSet#4#600#false#false#73#1#1#0#Auxiliary Light for Reversed Pattern setting#0.0#0.0#0.0#{"0": "Off", "1": "On"}#mx11#e4
+ExtrLghtPwrOff#4#600#false#false#72#1#1#0#Extrior Light Power Off#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#mx11#e4
+LampSigGrp2Chks#4#600#false#false#95#8#1#0##0.0#0.0#0.0#null#mx11#e4
+LampSigGrp2Cntr#4#600#false#false#99#4#1#0##0.0#0.0#0.0#null#mx11#e4
+ActiveOfADB#4#600#false#false#111#1#1#0#Active of ADB Function  激活ADB 功能#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#mx11#e4
+ActnOfDayRunngLampLe#4#600#false#false#110#1#1#0#Activation of Left DRL#0.0#0.0#0.0#{"0": "Off", "1": "On"}#mx11#e4
+ActnOfLedFrntPosnLamp#4#600#false#false#109#1#1#0#Activation Of Front Position Lamp前位置灯激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#mx11#e4
+ActnOfLedHiBeam#4#600#false#false#108#1#1#0#Activation Of High Beam远光激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#mx11#e4
+SegmtDirCtrlSet#4#600#false#false#107#4#1#0#Segment  direct control setting#0.0#0.0#0.0#{"0": "NotActive", "1": "ActiveDay", "2": "ActiveNight", "3": "MusicShow"}#mx11#e4
+SBLDmValSetLe#4#600#false#false#119#7#1#0#Left Static bending Light Dimming Value setting#0.0#0.0#0.0#null#mx11#e4
+FarewellFuncSet#4#600#false#false#112#1#1#0#Farewell function setting#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#mx11#e4
+SBLDmValSetRi#4#600#false#false#127#7#1#0#Left Static bending Light Dimming Value setting#0.0#0.0#0.0#null#mx11#e4
+ActnOfDayRunngLampRi#4#600#false#false#120#1#1#0#Activation Of Right DRL 右日行灯激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#mx11#e4
+SeqTurnEnable#4#600#false#false#135#1#1#0#Sequential turn enable#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#mx11#e4
+WelcomeFuncSet#4#600#false#false#134#1#1#0#Welcome function setting#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#mx11#e4
+CtrlAHLAglLe#4#600#false#true#143#10#0.01#0.0#Control Left AHL  Angle#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrHrztlAng1#4#605#false#true#7#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimDwnTime1#4#605#false#false#13#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrHrztlAng2#4#605#false#true#23#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimDwnTime2#4#605#false#false#29#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrHrztlAng3#4#605#false#true#39#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimDwnTime3#4#605#false#false#45#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrHrztlAng4#4#605#false#true#55#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimDwnTime4#4#605#false#false#61#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrHrztlAng5#4#605#false#true#71#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimDwnTime5#4#605#false#false#77#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrHrztlAng6#4#605#false#true#87#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimDwnTime6#4#605#false#false#93#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrHrztlAng7#4#605#false#true#103#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimDwnTime7#4#605#false#false#109#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrHrztlAng8#4#605#false#true#119#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimDwnTime8#4#605#false#false#125#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAHrztlHlfWidt1#4#605#false#false#135#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrVrtclAng1#4#605#false#true#142#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAHrztlHlfWidt2#4#605#false#false#151#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrVrtclAng2#4#605#false#true#158#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAHrztlHlfWidt3#4#605#false#false#167#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrVrtclAng3#4#605#false#true#174#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAHrztlHlfWidt4#4#605#false#false#183#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrVrtclAng4#4#605#false#true#190#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAHrztlHlfWidt5#4#605#false#false#199#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrVrtclAng5#4#605#false#true#206#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAHrztlHlfWidt6#4#605#false#false#215#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrVrtclAng6#4#605#false#true#222#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAHrztlHlfWidt7#4#605#false#false#231#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrVrtclAng7#4#605#false#true#238#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAHrztlHlfWidt8#4#605#false#false#247#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFACntrVrtclAng8#4#605#false#true#254#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimUpTime1#4#605#false#false#263#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAValidFlag1#4#605#false#false#257#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+LeGFADimUpTime2#4#605#false#false#271#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAValidFlag2#4#605#false#false#265#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+LeGFADimUpTime3#4#605#false#false#279#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAValidFlag3#4#605#false#false#273#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+LeGFADimUpTime4#4#605#false#false#287#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAValidFlag4#4#605#false#false#281#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+LeGFADimUpTime5#4#605#false#false#295#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAValidFlag5#4#605#false#false#289#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+LeGFADimUpTime6#4#605#false#false#303#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAValidFlag6#4#605#false#false#297#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+LeGFADimUpTime7#4#605#false#false#311#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAValidFlag7#4#605#false#false#305#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+LeGFADimUpTime8#4#605#false#false#319#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAValidFlag8#4#605#false#false#313#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+LeGFADimVal1#4#605#false#false#327#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimVal2#4#605#false#false#335#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimVal3#4#605#false#false#343#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimVal4#4#605#false#false#351#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimVal5#4#605#false#false#359#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimVal6#4#605#false#false#367#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimVal7#4#605#false#false#375#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFADimVal8#4#605#false#false#383#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAVrtclHlfWidt1#4#605#false#false#391#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAVrtclHlfWidt2#4#605#false#false#399#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAVrtclHlfWidt3#4#605#false#false#407#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAVrtclHlfWidt4#4#605#false#false#415#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAVrtclHlfWidt5#4#605#false#false#423#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAVrtclHlfWidt6#4#605#false#false#431#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAVrtclHlfWidt7#4#605#false#false#439#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+LeGFAVrtclHlfWidt8#4#605#false#false#447#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrHrztlAng1#4#606#false#true#7#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimDwnTime1#4#606#false#false#13#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrHrztlAng2#4#606#false#true#23#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimDwnTime2#4#606#false#false#29#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrHrztlAng3#4#606#false#true#39#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimDwnTime3#4#606#false#false#45#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrHrztlAng4#4#606#false#true#55#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimDwnTime4#4#606#false#false#61#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrHrztlAng5#4#606#false#true#71#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimDwnTime5#4#606#false#false#77#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrHrztlAng6#4#606#false#true#87#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimDwnTime6#4#606#false#false#93#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrHrztlAng7#4#606#false#true#103#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimDwnTime7#4#606#false#false#109#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrHrztlAng8#4#606#false#true#119#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimDwnTime8#4#606#false#false#125#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAHrztlHlfWidt1#4#606#false#false#135#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrVrtclAng1#4#606#false#true#142#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAHrztlHlfWidt2#4#606#false#false#151#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrVrtclAng2#4#606#false#true#158#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAHrztlHlfWidt3#4#606#false#false#167#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrVrtclAng3#4#606#false#true#174#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAHrztlHlfWidt4#4#606#false#false#183#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrVrtclAng4#4#606#false#true#190#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAHrztlHlfWidt5#4#606#false#false#199#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrVrtclAng5#4#606#false#true#206#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAHrztlHlfWidt6#4#606#false#false#215#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrVrtclAng6#4#606#false#true#222#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAHrztlHlfWidt7#4#606#false#false#231#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrVrtclAng7#4#606#false#true#238#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAHrztlHlfWidt8#4#606#false#false#247#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFACntrVrtclAng8#4#606#false#true#254#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimUpTime1#4#606#false#false#263#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimUpTime2#4#606#false#false#271#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimUpTime3#4#606#false#false#279#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimUpTime4#4#606#false#false#287#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimUpTime5#4#606#false#false#295#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimUpTime6#4#606#false#false#303#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimUpTime7#4#606#false#false#311#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimUpTime8#4#606#false#false#319#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimVal1#4#606#false#false#327#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimVal2#4#606#false#false#335#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimVal3#4#606#false#false#343#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimVal4#4#606#false#false#351#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimVal5#4#606#false#false#359#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimVal6#4#606#false#false#367#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimVal7#4#606#false#false#375#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFADimVal8#4#606#false#false#383#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAVrtclHlfWidt1#4#606#false#false#391#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAValidFlag1#4#606#false#false#385#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+RiGFAVrtclHlfWidt2#4#606#false#false#399#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAValidFlag2#4#606#false#false#393#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+RiGFAVrtclHlfWidt3#4#606#false#false#407#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAValidFlag3#4#606#false#false#401#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+RiGFAVrtclHlfWidt4#4#606#false#false#415#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAValidFlag4#4#606#false#false#409#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+RiGFAVrtclHlfWidt5#4#606#false#false#423#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAValidFlag5#4#606#false#false#417#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+RiGFAVrtclHlfWidt6#4#606#false#false#431#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAValidFlag6#4#606#false#false#425#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+RiGFAVrtclHlfWidt7#4#606#false#false#439#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAValidFlag7#4#606#false#false#433#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+RiGFAVrtclHlfWidt8#4#606#false#false#447#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#mx11#e4
+RiGFAValidFlag8#4#606#false#false#441#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#mx11#e4
+TotOdoAcrt#4#914#false#false#7#24#0.1#0.0#ODO#0.0#0.0#0.0#{"16777215": "Invaild"}#mx11#e4
+TotOdoAcrtLvlMVld#4#914#false#false#27#1#1#0#Total odometer accurate for meter level valid\n米级精确总里程有效性#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#mx11#e4
+TotOdoAcrtVld#4#914#false#false#25#1#1#0#The valid signal of TotOdoAcrt#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#mx11#e4
+XCDbkdHvBattStrtAllwd#4#914#false#false#24#1#1#0#Arriving HV batter book heating time flag\n到达电池预热时间使能标志位#0.0#0.0#0.0#null#mx11#e4
+TotOdoAcrtLvlM#4#914#false#false#39#32#1.0#0.0#Total odometer accurate for meter level\n米级精确总里程\n其中，有效范围：0x0~0x?3B9AC9FF?，表示0~999，999，999#0.0#0.0#0.0#{"4294967295": "Invaild"}#mx11#e4
+DCDANCPahChg#4#936#false#false#7#2#1#0#ANC Channel Switching\nANC通道切换#0.0#0.0#0.0#{"0": "ANC", "1": "ESE", "2": "Reserve", "3": "Reserve"}#mx11#e4
+DCDHdrestMutSet#4#936#false#false#5#1#1#0#头枕mute信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+DCDAVASMutSet#4#936#false#false#2#1#1#0#AVASmute信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+DCDAVASdBVol#4#936#false#false#1#10#0.1#-100.0#AVAS音量 dB 信号#0.0#0.0#0.0#null#mx11#e4
+DCDTTSMutSet#4#936#false#false#23#1#1#0#报警类TTS mute信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+DCDAVASVol#4#936#false#false#22#7#1#0#AVAS音量信号#0.0#0.0#0.0#null#mx11#e4
+DCDCallMutSet#4#936#false#false#26#1#1#0#通讯类mute信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+DCDCalldBVol#4#936#false#false#25#10#0.1#-100.0#通讯类音量 dB 信号#0.0#0.0#0.0#null#mx11#e4
+DCDCallVol#4#936#false#false#46#7#1#0#通讯类音量信号#0.0#0.0#0.0#null#mx11#e4
+DCDESSMutSet#4#936#false#false#50#1#1#0#模拟声浪mute信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+DCDESSdBVol#4#936#false#false#49#10#0.1#-100.0#模拟声浪音量 dB 信号#0.0#0.0#0.0#null#mx11#e4
+DCDESSVol#4#936#false#false#70#7#1#0#模拟声浪音量信号#0.0#0.0#0.0#null#mx11#e4
+DCDmediaPahNr#4#936#false#false#77#3#1#0#媒体通道数#0.0#0.0#0.0#{"0": "No_command", "1": "2.0", "2": "5.1", "3": "5.1.2", "4": "7.1", "5": "7.1.2", "6": "7.1.4", "7": "reserve"}#mx11#e4
+DCDMediaMutSet#4#936#false#false#74#1#1#0#多媒体mute信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+DCDMediadBVol#4#936#false#false#73#10#0.1#-100.0#多媒体音量 dB 信号#0.0#0.0#0.0#null#mx11#e4
+DCDMediaVol#4#936#false#false#94#7#1#0#多媒体音量信号#0.0#0.0#0.0#null#mx11#e4
+DCDNaviMutSet#4#936#false#false#98#1#1#0#导航类mute信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+DCDNavidBVol#4#936#false#false#97#10#0.1#-100.0#导航类音量 dB 信号#0.0#0.0#0.0#null#mx11#e4
+DCDNaviVol#4#936#false#false#118#7#1#0#导航类音量信号#0.0#0.0#0.0#null#mx11#e4
+DCDPASMutSet#4#936#false#false#122#1#1#0#雷达报警音mute信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+DCDPASdBVol#4#936#false#false#121#10#0.1#-100.0#雷达报警音音量 dB 信号#0.0#0.0#0.0#null#mx11#e4
+DCDSysMutSet#4#936#false#false#143#1#1#0#系统mute信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+DCDPASVol#4#936#false#false#142#7#1#0#雷达报警音音量信号#0.0#0.0#0.0#null#mx11#e4
+DCDSysWarnMutSet#4#936#false#false#146#1#1#0#系统提示音类mute信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+DCDSysWarndBVol#4#936#false#false#145#10#0.1#-100.0#系统提示音类音量 dB 信号#0.0#0.0#0.0#null#mx11#e4
+DCDSysWarnVol#4#936#false#false#166#7#1#0#系统提示音类音量信号#0.0#0.0#0.0#null#mx11#e4
+DCDTTSdBVol#4#936#false#false#175#10#0.1#-100.0#TTS混音音量 dB 信号#0.0#0.0#0.0#null#mx11#e4
+DCDVehWarnMutSet#4#936#false#false#186#1#1#0#车辆报警音mute信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+DCDVehWarndBVol#4#936#false#false#185#10#0.1#-100.0#车辆报警音音量 dB 信号#0.0#0.0#0.0#null#mx11#e4
+DCDVehWarnVol#4#936#false#false#206#7#1#0#车辆报警音音量信号#0.0#0.0#0.0#null#mx11#e4
+DCDVRMutSet#4#936#false#false#210#1#1#0#语音类mute信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+DCDVRdBVol#4#936#false#false#209#10#0.1#-100.0#语音类音量 dB 信号#0.0#0.0#0.0#null#mx11#e4
+DCDVRVol#4#936#false#false#230#7#1#0#语音类音量信号#0.0#0.0#0.0#null#mx11#e4
+DCDHdrestdBVol#4#936#false#false#239#10#0.1#-100.0#头枕音量 dB 信号#0.0#0.0#0.0#null#mx11#e4
+DCDHdrestVol#4#936#false#false#255#7#1#0#头枕音量信号#0.0#0.0#0.0#null#mx11#e4
+DCDEcoSetReq#4#936#false#false#248#1#1#0#DCD Amplifier Eco Set Request\nDCD 对AMP低功耗模式请求指令#0.0#0.0#0.0#{"0": "Normal", "1": "Eco"}#mx11#e4
+DCDUsbMicaMutSet#4#936#false#false#263#1#1#0#USBMICmute信号#0.0#0.0#0.0#{"0": "Mute", "1": "Unmute"}#mx11#e4
+DCDUsbMicVol#4#936#false#false#262#7#1#0#USBMIC音量信号#0.0#0.0#0.0#null#mx11#e4
+DCDUsbMicdBVol#4#936#false#false#271#10#0.1#-100.0#USBMIC音量(dB)信号#0.0#0.0#0.0#null#mx11#e4
+DCDTTSVol#4#936#false#false#287#7#1#0#TTS混音音量信号#0.0#0.0#0.0#null#mx11#e4
+DCDAutoSpeedVolSet#4#937#false#false#5#3#1#0#音量随速调节开关信号#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "Low", "3": "Mid", "4": "High", "5": "Reserve", "6": "Reserve", "7": "Reserve"}#mx11#e4
+DCDAutoHVacVolSet#4#937#false#false#2#3#1#0#音量自适应空调风量开关信号#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "Low", "3": "Mid", "4": "High", "5": "Reserve", "6": "Reserve", "7": "Reserve"}#mx11#e4
+DCDEQReSet#4#937#false#false#14#1#1#0#EQ调节Reset设置#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#mx11#e4
+DCDEQ2Set#4#937#false#false#13#6#0.5#-12.5#EQ2设置#0.0#0.0#0.0#{"0": "No_Command"}#mx11#e4
+DCDHdrestModSet#4#937#false#false#23#3#1#0#头枕设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "HeadrestMode-part", "3": "HeadrestMode-all", "4": "Reserve", "5": "Reserve", "6": "Reserve", "7": "Reserve"}#mx11#e4
+DCDFrntReBalSet#4#937#false#false#20#5#1.0#-11.0#前后平衡调节设置#0.0#0.0#0.0#{"0": "No_Command"}#mx11#e4
+DCDLeRiBalSet#4#937#false#false#28#5#1.0#-11.0#左右平衡调节设置#0.0#0.0#0.0#{"0": "No_Command"}#mx11#e4
+DCDEQ3Set#4#937#false#false#45#6#0.5#-12.5#EQ3设置#0.0#0.0#0.0#{"0": "No_Command"}#mx11#e4
+DCDSoundStgHeiSet#4#937#false#false#63#5#1.0#0.0#声场高度调节设置#0.0#0.0#0.0#{"0": "No_Command"}#mx11#e4
+DCDSoundEffSet#4#937#false#false#67#4#1#0#音效设置#0.0#0.0#0.0#{"0": "No_command", "1": "Normal", "2": "Theatre", "3": "Concert_Hall", "4": "Customize", "5": "Exclusive", "6": "Reserve", "7": "Reserve1"}#mx11#e4
+DCDSoundStgWidthSet#4#937#false#false#79#5#1.0#0.0#声场宽度调节设置#0.0#0.0#0.0#{"0": "No_Command"}#mx11#e4
+DCDSoundFieSet#4#937#false#false#74#3#1#0#声场设置#0.0#0.0#0.0#{"0": "No_command", "1": "All", "2": "Front", "3": "Rear", "4": "Driver", "5": "Boss", "6": "Reserve", "7": "Reserve"}#mx11#e4
+DCDSoundStgRoomSizeSet#4#937#false#false#87#5#1.0#0.0#声场房间大小调节设置#0.0#0.0#0.0#{"0": "No_Command"}#mx11#e4
+DCDEQ1Set#4#937#false#false#95#6#0.5#-12.5#EQ1设置#0.0#0.0#0.0#{"0": "No_Command"}#mx11#e4
+DCDSoundStgWetDrySet#4#937#false#false#103#7#1.0#0.0#声场干湿比调节设置#0.0#0.0#0.0#{"0": "No_Command"}#mx11#e4
+DCDEQ6Set#4#937#false#false#111#6#0.5#-12.5#EQ6设置#0.0#0.0#0.0#{"0": "No_Command"}#mx11#e4
+DCDEQ4Set#4#937#false#false#119#6#0.5#-12.5#EQ4设置#0.0#0.0#0.0#{"0": "No_Command"}#mx11#e4
+DCDEQ5Set#4#937#false#false#127#6#0.5#-12.5#EQ5设置#0.0#0.0#0.0#{"0": "No_Command"}#mx11#e4
+TrOpenClsSts#4#471#false#false#7#2#1#0#Trunk Open Close Status#0.0#0.0#0.0#{"0": "Ukwn", "1": "Open", "2": "Clsd"}#mx11#e4
+VCCDLampNodeAddress#4#1360#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#mx11#e4
+VCCDLampActiveWakeup#4#1360#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#mx11#e4
+VCCDLampRepeatMsgReq#4#1360#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "not_requested", "1": "requested"}#mx11#e4
+UDB23VCCD#4#1360#false#false#23#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB22VCCD#4#1360#false#false#22#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB21VCCD#4#1360#false#false#21#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB20VCCD#4#1360#false#false#20#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB19VCCD#4#1360#false#false#19#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB18VCCD#4#1360#false#false#18#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB17VCCD#4#1360#false#false#17#1#1#0##0.0#0.0#0.0#null#mx11#e4
+VCCDLampRepeatMsgSt#4#1360#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#mx11#e4
+UDB31VCCD#4#1360#false#false#31#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB30VCCD#4#1360#false#false#30#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB29VCCD#4#1360#false#false#29#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB28VCCD#4#1360#false#false#28#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB27VCCD#4#1360#false#false#27#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB26VCCD#4#1360#false#false#26#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB25VCCD#4#1360#false#false#25#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB24VCCD#4#1360#false#false#24#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB39VCCD#4#1360#false#false#39#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB38VCCD#4#1360#false#false#38#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB37VCCD#4#1360#false#false#37#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB36VCCD#4#1360#false#false#36#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB35VCCD#4#1360#false#false#35#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB34VCCD#4#1360#false#false#34#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB33VCCD#4#1360#false#false#33#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB32VCCD#4#1360#false#false#32#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB47VCCD#4#1360#false#false#47#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB46VCCD#4#1360#false#false#46#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB45VCCD#4#1360#false#false#45#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB44VCCD#4#1360#false#false#44#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB43VCCD#4#1360#false#false#43#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB42VCCD#4#1360#false#false#42#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB41VCCD#4#1360#false#false#41#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB40VCCD#4#1360#false#false#40#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB53VCCD#4#1360#false#false#53#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB52VCCD#4#1360#false#false#52#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB51VCCD#4#1360#false#false#51#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB50VCCD#4#1360#false#false#50#1#1#0##0.0#0.0#0.0#null#mx11#e4
+UDB49VCCD#4#1360#false#false#49#1#1#0##0.0#0.0#0.0#null#mx11#e4
+NMKeepAwkRsnVCCD#4#1360#false#false#48#9#1#0##0.0#0.0#0.0#null#mx11#e4
+VCCDToAMPDiagReq#4#1953#false#false#7#512#1#0##0.0#0.0#0.0#null#mx11#e4
+VCCDToHCMLDiagReq#4#1890#false#false#7#512#1#0##0.0#0.0#0.0#null#mx11#e4
+VCCDToHCMRDiagReq#4#1891#false#false#7#512#1#0##0.0#0.0#0.0#null#mx11#e4
+VCCDToRLCMDiagReq#4#1892#false#false#7#512#1#0##0.0#0.0#0.0#null#mx11#e4

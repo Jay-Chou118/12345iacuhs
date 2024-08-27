@@ -47,6 +47,8 @@ public class SignalInfo {
     public String choices;
 
 
+    @ColumnInfo(name="cid")
+    public long cid;
 
 
 

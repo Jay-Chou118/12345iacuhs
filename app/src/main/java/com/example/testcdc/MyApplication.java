@@ -1,7 +1,6 @@
 package com.example.testcdc;
 
 import android.app.Application;
-import android.content.Context;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 
@@ -9,7 +8,6 @@ import androidx.annotation.NonNull;
 import androidx.room.Room;
 
 import com.example.testcdc.Utils.DataBaseUtil;
-import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.MX11E4Database;
 import com.example.testcdc.entity.SignalInfo;
 import com.xiaomi.xms.wearable.Wearable;
@@ -28,9 +26,6 @@ import com.xiaomi.xms.wearable.tasks.OnFailureListener;
 import com.xiaomi.xms.wearable.tasks.OnSuccessListener;
 
 import org.jetbrains.annotations.NotNull;
-import org.zeromq.SocketType;
-import org.zeromq.ZContext;
-import org.zeromq.ZMQ;
 
 import java.util.List;
 import java.util.Locale;
@@ -128,10 +123,10 @@ public class MyApplication extends Application {
 
     public void initDatabase()
     {
-        boolean ret = DataBaseUtil.checkDataBase(this,"mx11_e4");
+        boolean ret = DataBaseUtil.checkDataBase(this,"database");
         if(ret)
         {
-            Log.i(TAG,"数据库存在");
+            Log.i(TAG,"数据库不存在1");
             List<SignalInfo> all = MyApplication.getInstance().getMx11E4Database().signalInfoDao().getAll();
             Log.i(TAG,"num is " + all.size());
             List<SignalInfo> data = MyApplication.getInstance().getMx11E4Database().signalInfoDao().getSignal(6,0x1a9);
@@ -148,11 +143,12 @@ public class MyApplication extends Application {
                 Log.i(TAG,"database is not open");
             }
         }else{
-            Log.i(TAG,"数据库不存在");
+            DataBaseUtil.init_carType();
             DataBaseUtil.initDataFromCsv(this);
             DataBaseUtil.initMsgFromCsv(this);
+            Log.i(TAG,"数据库不存在2");
 //            DataBaseUtil.copyDataBase(this,"mx11_e4");
-            DataBaseUtil.init_database();
+
 //            DataBaseUtil.initData_2();
 //            DataBaseUtil.initData_2_msg();
 //            DataBaseUtil.initData_6();

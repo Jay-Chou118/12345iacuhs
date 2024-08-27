@@ -19,7 +19,7 @@ public class MsgInfoEntity {
     @ColumnInfo(name = "send_type")
     public String sendType;
     @ColumnInfo(name = "cycle_time")
-    public int cycleTime;
+    public double cycleTime;
     @ColumnInfo(name = "comment")
     public String comment;
     @ColumnInfo(name = "bus_name")
@@ -31,10 +31,18 @@ public class MsgInfoEntity {
     @ColumnInfo(name="can_type")
     public String CANType;
 
-    @ColumnInfo(name="namespace")
-    public int namespace;
+    @ColumnInfo(name="cid")
+    public long cid;
 
     public MsgInfoEntity() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
@@ -43,6 +51,14 @@ public class MsgInfoEntity {
                 "name='" + name + '\'' +
                 ", BUSId=" + BUSId +
                 ", CANId=" + CANId +
+                ", sendType='" + sendType + '\'' +
+                ", cycleTime=" + cycleTime +
+                ", comment='" + comment + '\'' +
+                ", BUSName='" + BUSName + '\'' +
+                ", senders='" + senders + '\'' +
+                ", receivers='" + receivers + '\'' +
+                ", CANType='" + CANType + '\'' +
+                ", cid=" + cid +
                 '}';
     }
 }

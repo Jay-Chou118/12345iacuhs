@@ -66,7 +66,8 @@ android {
     sourceSets
     {
         main{
-            assets.srcDirs = ['C:\\Users\\27810\\AndroidStudioProjects\\test\\tsp-assistant\\dist']
+            assets.srcDirs = ['D:\\Python_worksapce\\for_andriod\\dist']
+//            assets.srcDirs = ['C:\\Users\\27810\\AndroidStudioProjects\\test\\tsp-assistant\\dist']
 //            assets.srcDirs = ['src/main/assets1/']
         }
     }

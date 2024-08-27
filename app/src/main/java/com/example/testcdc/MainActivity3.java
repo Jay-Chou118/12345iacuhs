@@ -4,7 +4,6 @@ import static com.google.gson.JsonParser.parseString;
 
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
@@ -13,7 +12,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
-import android.os.Message;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
@@ -22,6 +20,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.LongDef;
 import androidx.annotation.WorkerThread;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
@@ -32,10 +31,9 @@ import androidx.documentfile.provider.DocumentFile;
 
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
-import com.example.testcdc.Utils.DataBaseUtil;
+
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
-import com.example.testcdc.Utils.ToastUtil;
 import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.MX11E4Database;
 import com.example.testcdc.entity.MsgInfoEntity;
@@ -57,7 +55,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.TimeUnit;
+
 
 public class MainActivity3 extends AppCompatActivity {
 
@@ -203,7 +201,7 @@ public class MainActivity3 extends AppCompatActivity {
                     boolean ret = mMiCANBinder.InitModule();
                     if(ret)
                     {
-                        instance.say("恭喜,初始化设备成功拉");
+                        instance.say("恭喜,初始化设备成功啦");
                     }else{
                         instance.say("抱歉,未能找到MiCAN设备,请重新插拔下设备试试看");
                     }
@@ -239,7 +237,7 @@ public class MainActivity3 extends AppCompatActivity {
                             boolean ret = mMiCANBinder.InitModule();
                             if(ret)
                             {
-                                instance.say("恭喜,初始化设备成功拉");
+                                instance.say("恭喜,初始化设备成功啦");
                             }else{
                                 instance.say("抱歉,未能找到MiCAN设备,请重新插拔下设备试试看");
                             }
@@ -317,28 +315,33 @@ public class MainActivity3 extends AppCompatActivity {
             public void handle(JsonElement data, String callback) {
                 String carType = data.getAsJsonObject().get("carType").getAsString();
                 String sdb = data.getAsJsonObject().get("sdb").getAsString();
-
-                Log.i(TAG,"getDBC ");
+                long cid = database.carTypeDao().getCidByName(carType,sdb);
+                Log.i(TAG,"getDBC " + cid + " ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ");
                 if(mMiCANBinder != null)
                 {
                     Log.d(TAG,"i am called");
                     // 进行报文查询
                     Map<Integer,Map<String,List<List<Object>>>> maps = new HashMap<>();
 
-                    ArrayList<Integer> BUSIdList = new ArrayList<>();
-                    BUSIdList.add(1);
-                    BUSIdList.add(2);
-                    BUSIdList.add(3);
-                    BUSIdList.add(4);
-                    BUSIdList.add(6);
-                    BUSIdList.add(7);
-                    BUSIdList.forEach(id->{
+//                    ArrayList<Integer> BUSIdList = new ArrayList<>();
+//                    BUSIdList.add(1);
+//                    BUSIdList.add(2);
+//                    BUSIdList.add(3);
+//                    BUSIdList.add(4);
+//                    BUSIdList.add(6);
+//                    BUSIdList.add(7);
+                    List<Integer> TEST = database.signalInfoDao().getAllBusIds(cid);
+                    Log.d(TAG,"BUSID ZZZZZZZZZZZZZZZZZZZZZZZZZZ  " + TEST);
+                    ArrayList<Integer> BUSIdList = database.signalInfoDao().getBusIdsAsArrayList(cid);
+                    Log.d(TAG,"BUSID ZZZZZZZZZZZZZZZZZZZZZZZZZZ  " + BUSIdList);
+
+                    BUSIdList.forEach(Busid->{
                         Map<String,List<List<Object>>> subMap = new HashMap<>();
-                        List<MsgInfoEntity> msgs = database.msgInfoDao().getMsg(id);
+                        List<MsgInfoEntity> msgs = database.msgInfoDao().getMsg(Busid,cid);
                         msgs.forEach(msg->{
                             List<List<Object>> subList = new ArrayList<>();
                             // 根据busid 和 canid查询
-                            List<SignalInfo> signalInfos = database.signalInfoDao().getSignal(id, msg.CANId);
+                            List<SignalInfo> signalInfos = database.signalInfoDao().getSignalBycid(cid ,Busid, msg.CANId);
                             signalInfos.forEach(signalInfo -> {
                                 List<Object> subList_ = new ArrayList<>();
                                 subList_.add(signalInfo.name);
@@ -352,19 +355,22 @@ public class MainActivity3 extends AppCompatActivity {
                                 subList_.add(0);    // min
                                 subList_.add(0);    // values
                                 subList_.add("m");    // values
-                                subList_.add(27);    // startBit
-                                subList_.add(12);    // bitLength
+                                subList_.add(signalInfo.bitStart);    // startBit
+                                subList_.add(signalInfo.bitLength);    // bitLength
                                 subList_.add(1);    // factory
                                 subList_.add(32);    // factory
-                                subList_.add("CANFD");    // factory
+                                subList_.add(msg.CANType);    // factory
                                 subList_.add(0);    // factory
                                 subList_.add(false);    // factory
-                                subList_.add(signalInfo.id);    // factory
+//                                subList_.add(signalInfo.id);    // factory
                                 subList.add(subList_);
+
                             });
                             subMap.put(msg.name,subList);
+                            Log.d(TAG, "subMap:     ZZZZZZZZZZZZZZ " + subMap);
                         });
-                        maps.put(id,subMap);
+                        maps.put(Busid,subMap);
+                        Log.d(TAG, "maps:     ZZZZZZZZZZZZZZ " + maps);
                     });
 
                     JsCallResult<Result<Map<Integer,Map<String,List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
@@ -411,8 +417,8 @@ public class MainActivity3 extends AppCompatActivity {
                 {
                     CANData[i] =  (byte) Integer.parseInt(dataArray.get(i).getAsString(),16);
                 }
-                Log.e(TAG,"CANData " + Arrays.toString(CANData));
-                Log.e(TAG,"BUSId " + BUSId + " CANId" +CANId);
+                Log.d(TAG,"CANData " + Arrays.toString(CANData));
+                Log.d(TAG,"BUSId " + BUSId + " CANId " + CANId);
 
                 List<Map<String, Object>> maps = new ArrayList<>();
                 Map<String,Object> titleMap = new HashMap<>();
@@ -423,7 +429,8 @@ public class MainActivity3 extends AppCompatActivity {
                 titleMap.put("isExpand",true);
                 titleMap.put("isParent",false);
                 maps.add(titleMap);
-                maps.addAll(mMiCANBinder.parseMsgData(2, 0x90,CANData));
+//                maps.addAll(mMiCANBinder.parseMsgData(2, 0x90,CANData));
+                maps.addAll(mMiCANBinder.parseMsgData(BUSId,CANId,CANData));
                 Log.e(TAG,maps.toString());
 
                 JsCallResult<Result<List<Map<String, Object>>>> jsCallResult = new JsCallResult<>(callback);
@@ -469,6 +476,7 @@ public class MainActivity3 extends AppCompatActivity {
             String callback = jsonObject.get("callback").getAsString();
             JsonElement data = jsonObject.get("data");
             BridgeHandler handler = messageHandlers.get(method);
+            Log.d(TAG, "TTTTTTTTTTTTTTTTTTTTTTTTTT ");
             Log.i(TAG,"method is : " + method );
             Log.i(TAG,"callback is : " + callback );
             Log.i(TAG,"data is : " + data );

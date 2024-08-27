@@ -1,0 +1,1432 @@
+ParkLightReqSigGrpChks#14#516#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+AVPCharLidCtrlFrmADD#14#516#false#false#15#2#1#0#AVP Charging Lid Control Request\nAVP 充电盖控制请求#0.0#0.0#0.0#{"0": "No_Request", "1": "OpenLid", "2": "CloseLid", "3": "Reserved"}#MS11#RC06
+ParkAtmLiReqFrmADD#14#516#false#false#13#2#1#0#Parking system Atmosphere light Request#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request_Around", "2": "Request_Red"}#MS11#RC06
+ParkLightReqSigGrpCntr#14#516#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+ParkBackMirrorUnfoldReqFrmADD#14#516#false#false#23#2#1#0#Parking system Back Mirroe Fold or Unfold Request#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request_Unfold", "2": "Request_Fold"}#MS11#RC06
+ParkDoorLockReqFrmADD#14#516#false#false#21#2#1#0#Parking system Door Lock or unlock Request#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request_Unlock", "2": "Request_lock"}#MS11#RC06
+ParkLoBeamReqFrmADD#14#516#false#false#19#1#1#0#Parking Low Beam Request\n泊车近光灯请求#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request"}#MS11#RC06
+ParkTurnLiReqFrmADD#14#516#false#false#18#2#1#0#Parking system turn light request#0.0#0.0#0.0#{"0": "NoRequest", "1": "Leftturnrequest", "2": "Rightturnrequest", "3": "hazardlightrequest"}#MS11#RC06
+ParkWindowReqFrmADD#14#516#false#false#16#1#1#0#Parking system Window Closed Request#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request"}#MS11#RC06
+PrkgHornReqFrmADD#14#516#false#false#31#1#1#0#parking horn request#0.0#0.0#0.0#{"0": "No_request", "1": "Request"}#MS11#RC06
+RPAAvailableFrmADD#14#516#false#false#30#1#1#0#RPA Available Signal\nRPA 可用信号#0.0#0.0#0.0#{"0": "RPA_available", "1": "RPA_not_available"}#MS11#RC06
+ParkMdlStsFrmADD#14#516#false#false#63#3#1#0#Parking Driver Model Status#0.0#0.0#0.0#{"0": "NoRequest", "1": "DrivingModel_1", "2": "DrivingModel_2", "3": "DrivingMode_3", "4": "DrivingMode_4"}#MS11#RC06
+WeatherStsFrmADD#14#516#false#false#60#3#1#0#Weather Status#0.0#0.0#0.0#{"0": "Unknown", "1": "GoodWeather", "2": "HeavyRain", "3": "HeavySnow"}#MS11#RC06
+PASBuzzerWarnMuteIndFrmADD#14#516#false#false#57#1#1#0#PAS静音提示#0.0#0.0#0.0#{"0": "None", "1": "Mute_info"}#MS11#RC06
+APARPAstatusSigGrpChks#14#516#false#false#87#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+APARPAstatusSigGrpCntr#14#516#false#false#91#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+PRAMoveSigReDistFrmADD#14#516#false#false#103#8#1#0#RPA Move single remain distance indication遥控移车单步剩余距离#0.0#0.0#0.0#null#MS11#RC06
+ParkProgressSigReDistFrmADD#14#516#false#false#111#9#1#0#Parking progress single remain distance indication\n泊车单步剩余距离#0.0#0.0#0.0#null#MS11#RC06
+APARPAstatusFrmADD#14#516#false#false#118#4#1#0#APA RPA status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "background_Searching", "3": "Searching", "4": "Ready", "5": "Active", "6": "Recovery_interrupt", "7": "Completed", "8": "Terminated", "9": "Failure"}#MS11#RC06
+APARPAActiveSubFunFrmADD#14#516#false#false#114#3#1#0#APA RPA Activated function\nAPA RPA 被激活的功能#0.0#0.0#0.0#{"0": "None", "1": "APA_Park_in", "2": "APA_Park_Out", "3": "RPA_Park_in", "4": "RPA_Park_Out", "5": "RPA_Move"}#MS11#RC06
+APARPADriverOperateIndFrmADD#14#516#false#false#127#6#1#0#APA RPA Driver operating indication\nAPA RPA 驾驶员操作提示#0.0#0.0#0.0#{"0": "No_Request", "1": "Req_Gear_D", "2": "Req_Slow_Down", "3": "Req_Close_Door_Driver", "4": "Req_Close_Door_passenger", "5": "Req_Close_Door_LeftRear", "6": "Req_Close_Door_RightRear", "7": "Req_Close_Engine_Front_Door", "8": "Req_Close_Trunk", "9": "Req_Parking_slot_in_Searching", "10": "Req_Parking_slot_is_available(background_seaching)", "11": "Req_Find_parking_slot_Stop", "12": "Req_Choose_Park_Slot", "13": "Req_Slot_Narrow_Recommend_RPA", "14": "Req_Tie_Seat_belt", "15": "Req_Choose_Park_out_direction", "16": "Req_Click_Start_APA_park_Button", "17": "Req_Start_parking_Recommend(Release_steerwheel&Brake)", "18": "Req_Parking_process_Recommend(PI&PO)", "19": "Req_No_Response_gas_pedal", "20": "Req_No_Response_Turnlight", "21": "Req_Rearview_Mirrors_are_folding", "22": "Req_Leave_car_Control_on_APP", "23": "Req_Recommend_RPA(PUSH)", "24": "Req_PopUps_RPA_use_guide", "25": "Req_Warning_someone_In_car", "26": "Req_Phone_Distance_Exceed", "27": "Req_Self_check_RPA_park_in_avaiable", "28": "Req_Self_check_RPA_park_out/move__avaiable", "29": "Req_Self_check_only_RPA_move_avaiable", "30": "Req_Close_Door_LeftRear_RPA", "31": "Req_Close_Door_RightRear_RPA", "32": "Req_Close_Engine_Front_Door_RPA", "33": "Req_Close_Trunk_RPA", "34": "Req_RPA_move_completed", "35": "Req_Pop-ups_Choose_system_refence_Parking_Slot", "36": "Req_Keep_Standstill", "37": "Not_P_Gear", "38": "Req_Press_Button_Not_Press_Brakepedal", "39": "Req_Press_Button_N0_Parkslot", "40": "Req_Press_Brakepedal_Parkslot_Exist", "41": "Req_Left_AutoDeviation_APA", "42": "Req_Right_AutoDeviation_APA", "43": "Parking_GearChange_NotAllow", "44": "AD_NotAvl", "45": "Req_Choose_Parkslot_Speed_Not_Zero", "46": "Recom_Narrow", "47": "Choose_ps", "48": "RPAselfcheck", "49": "RPA_move_selfcheck", "50": "No_parking_record", "51": "Can_not_move", "52": "one_button_search", "53": "one_button_bckgrd", "54": "one_button_parking", "55": "Reserved_1", "56": "Reserved_2", "57": "Reserved_3", "58": "Reserved_4", "59": "Reserved_5", "60": "Reserved_6", "61": "Reserved_7", "62": "Reserved_8", "63": "Req_TLC"}#MS11#RC06
+APAAlrtWarnFrmADD#14#516#false#false#121#2#1#0#APAAlrtWarnFrmADD\nAPA Alert紧急接管提示#0.0#0.0#0.0#{"0": "No_Request", "1": "TakeOverWarnRequest", "2": "Reserved", "3": "Reserved"}#MS11#RC06
+APARPAQuitReasonIndFrmADD#14#516#false#false#135#6#1#0#APA RPA quit reason indication\nAPA RPA完全退出原因提示#0.0#0.0#0.0#{"0": "No_Request", "1": "Req_Quit_Searching_Speed_High", "2": "Req_Quit_Searching_Time_Out", "3": "Req_Quit_Door_Open_Time_Out_RPA", "4": "Req_Quit_Door_Open_Time_Out", "5": "Req_Quit_Handshake_Fail", "6": "Req_Quit_Driver_Require_Quit", "7": "Req_Quit_Driver_Not_release_Brake_Pedal_Time_Out", "8": "Req_Quit_DriverSeatBelt_Nottied_Time_Out", "9": "Req_Quit_Driver_Interrupt_Steering_Wheel_RPA", "10": "Req_Quit_Reselect_Parkin_Time_Out", "11": "Req_Quit_Driver_Interrupt_Brake_Pedal_Time_Out", "12": "Req_Quit_Driver_Interrupt_Gear", "13": "Req_Quit_Driver_Interrupt_Steering_Wheel", "14": "Req_Quit_Obstacle_In_Trajectory_Time_Out", "15": "Req_Quit_EPB_UnLock", "16": "Req_Quit_Parking_Total_time_Time_Out", "17": "Req_Quit_Recover_Interrupt_Times_Overflow", "18": "Req_Quit_D/R_Times_Overflow", "19": "Req_Quit_Control_Speed_Over_Limit", "20": "Req_Quit_Path_Planning_Abnormal", "21": "Req_Quit_Space_limit", "22": "Req_Quit_Slope_Out_Of_limit", "23": "Req_Quit_ADAS_Function_Active", "24": "Req_Quit_Parking_Total_time_TimeOut_RPA", "25": "Req_Quit_Slope_Out_of_limit_RPA", "26": "Req_Quit_ADD_System_Fail", "27": "Req_Quit_ADD_System_Fail_RPA", "28": "Req_Quit_Related_Actuator_Fail", "29": "Account_log_out", "30": "Req_Quit_ADAS_Function_Active_RPA", "31": "Req_Quit_Driver_Press_APP_RPA_Button_Time_Out(RPA)", "32": "Req_Quit_Driver_Actively_Paused_Time_Out(RPA)", "33": "Req_Quit_Driver_leave_Phone_RPA_Contro_lPage_Time_Out(RPA)", "34": "Req_Quit_Phone_Distance_Exceed_Time_Out(RPA)", "35": "Req_Driver_Interrupt_RPA_In", "36": "Req_Driver_Interrupt_RPA_Move", "37": "Req_Quit_Driver_Interrupt_Press_Gas_Pedal(RPA)", "38": "Req_Quit_Driver_Interrupt_Press_Brake_Pedal(RPA)", "39": "Req_Quit_Driver_Interrupt_Open_Door(RPA)", "40": "Req_Quit_Handshake_Fail_RPA_Move", "41": "Req_Quit_Total_Distance_overrange(RPA_Move)", "42": "Req_Quit_Warning_someone_In_car_Time_Out(RPA)", "43": "Req_Quit_None_P_TimeOut", "44": "Req_Quit_RPA_Move&RPA_Park_Out_Not_Available(RPA)", "45": "Req_Quit_Timeout_Not_Press_Start_Button(RPA)", "46": "Req_Quit_ChoosePOdirectionTimeout", "47": "Req_Quit_Function_off", "48": "BatteryLow", "49": "Req_Quit_Driver_Interrupt_Gear_RPA", "50": "Req_Quit_Driver_Door_Open", "51": "Plannig_Control_Sleep", "52": "Req_Quit_MirrorFold_Fail_RPA", "53": "Req_Quit_MirrorFold_Fail", "54": "Req_Quit_Obstacle_In_Trajectory_TimeOut_RPA_Move", "55": "CounterAbnormal_TimeOut_RPA_In", "56": "CounterAbnormal_TimeOut_RPA_Move", "57": "CRC_Abnormal_RPA_In", "58": "CRC_Abnormal_RPA_Move", "59": "FrontLid_Open_TimeOut", "60": "RearLid_Open_TimeOut", "61": "Req_Quit_OtherReason", "62": "Reserved", "63": "Req_TLC"}#MS11#RC06
+APARPARecoverIndFrmADD#14#516#false#false#143#5#1#0#APA RPA recovery interrupt indication\n可恢复中断提示#0.0#0.0#0.0#{"0": "No_Request", "1": "Req_Recover_DriverSeatBeltNot_tied", "2": "Req_Recover_Found_Obstacle_In_Trajectory_RPA", "3": "Req_Recover_Found_Obstacle_In_Trajectory", "4": "Req_Recover_Phone_out_of_range", "5": "Req_Recover_Driver_Press_brake_pedal", "6": "Req_Recover_DoorOpen_Driver", "7": "Req_Recover_DoorOpen_passenger", "8": "Req_Recover_DoorOpen_LeftRear", "9": "Req_Recover_DoorOpen_RightRear", "10": "Req_Recover_Engine_Front_DoorOpen", "11": "Req_Recover_TrunkOpen", "12": "Req_Recover_DoorOpen_RPA", "13": "Req_Recover_Engine_Front_DoorOpen_RPA", "14": "Req_Recover_TrunkOpen_RPA", "15": "Req_Recover_RPA_Move_Driver_Active_pause", "16": "Req_DrvrNotOcupcy", "17": "Pause_To_Active", "18": "CounterAbnormal_RPA_in", "19": "CounterAbnormal_RPA_Move", "20": "Reserved_1", "21": "Reserved_2", "22": "Reserved_3", "23": "Reserved_4", "24": "Reserved_5", "25": "Reserved_6", "26": "Reserved_7", "27": "Reserved_8", "28": "Reserved_9", "29": "Reserved_10", "30": "Reserved_11", "31": "Req_TLC"}#MS11#RC06
+APARPAUnableToActiveIndFrmADD#14#516#false#false#151#6#1#0#APA RPA Unable To Active indication\nAPA RPA无法激活原因提示#0.0#0.0#0.0#{"0": "No_Request", "1": "Speed_high", "2": "Slope_out_of_limit", "3": "Charging", "4": "ADAS_Function_Active", "5": "Space_Limit", "6": "No_routes_available", "7": "Not_Authorized", "8": "System_Fail", "9": "Air_suspension_Action", "10": "Low_Power_Mode", "11": "Extreme_Economic_Driving_Mode", "12": "One-click_Privacy_Enable", "13": "Trailer_Mode", "14": "Car_Wash_Mode", "15": "AD_Setting_Not_Enable", "16": "ESC_Off", "17": "ODD_Not_Available", "18": "Driver_Door_Open", "19": "NO_Detailed_Reason_Failure", "20": "Rescue_Mode", "21": "Tire_Change_Mode", "22": "Ejection_Mode", "23": "Snow_Mode", "24": "One-click_Frenzy_Mode", "25": "Track_Mode", "26": "Drift_Mode", "27": "PwrModSts_NotRun", "28": "RPA2APA", "29": "Lidar_Blocked", "30": "SVS_Blocked", "31": "AD_Setting_Not_Enable_RPA_Move", "32": "RearLR_Door_Open", "33": "FrontLidOpen", "34": "RearLidOpen", "35": "seat_belt", "36": "obstacle", "37": "Conti", "38": "Door_Open_RPA", "39": "FrontLidOpen_RPA", "40": "RearLidOpen_RPA", "41": "Exceed_Dist", "42": "Account_not_log_in", "43": "Not_P", "44": "Obstacle_RPA", "45": "someone_in_car", "46": "SOC_0", "47": "SOC_Low_Aftersearching", "48": "System_failure", "49": "one_button", "50": "SOC_5_Percent", "51": "OtherReason", "52": "Reserved_1", "53": "Reserved_2", "54": "Reserved_3", "55": "Reserved_4", "56": "Reserved_5", "57": "Reserved_6", "58": "Reserved_7", "59": "Reserved_8", "60": "Reserved_9", "61": "Reserved_10", "62": "Reserved_11", "63": "Req_TLC"}#MS11#RC06
+APARPADriverOperateInd2FrmADD#14#516#false#false#159#6#1#0#APA RPA Driver operating indication\nAPA RPA 驾驶员操作提示2#0.0#0.0#0.0#{"0": "No_Request", "1": "Search_Choose_Parkslot_Speed_Not_Zero", "2": "Act_NarrowSlot_Mirrors_folding", "3": "Act_No_Response_gaspedal", "4": "Act_No_Response_Steeringlight", "5": "Act_No_Response_GearPaddle", "6": "Act_Start_parking_Recommend(Release_steerwheel&Brake)", "7": "Recover_brake_pedal", "8": "Recover_Door_Open", "9": "Recover_FrontLidOpen", "10": "Recover_RearLidOpen", "11": "Recover_seat_belt", "12": "Recover_obstacle", "13": "Search_Door_Open", "14": "Search_FrontLidOpen", "15": "Search_Recover_RearLidOpen", "16": "Search_Recover_seat_belt", "17": "Search_Speed_high", "18": "Search_NarrowSlot_Recommend_RPA", "19": "Tips_Return_APA", "20": "Act_Start_parking_Recommend(Release_steerwheel&Brake)", "21": "Reserved_1", "22": "Reserved_2", "23": "Reserved_3", "24": "Reserved_4", "25": "Reserved_5", "26": "Reserved_6", "27": "Reserved_7", "28": "Reserved_8", "29": "Reserved_9", "30": "Reserved_10", "31": "Reserved_11", "32": "Reserved_12", "33": "Reserved_13", "34": "Reserved_14", "35": "Reserved_15", "36": "Reserved_16", "37": "Reserved_17", "38": "Reserved_18", "39": "Reserved_19", "40": "Reserved_20", "41": "Reserved_21", "42": "Reserved_22", "43": "Reserved_23", "44": "Reserved_24", "45": "Reserved_25", "46": "Reserved_26", "47": "Reserved_27", "48": "Reserved_28", "49": "Reserved_29", "50": "Reserved_30", "51": "Reserved_31", "52": "Reserved_32", "53": "Reserved_33", "54": "Reserved_34", "55": "Reserved_35", "56": "Reserved_36", "57": "Reserved_37", "58": "Reserved_38", "59": "Reserved_39", "60": "Reserved_40", "61": "Reserved_41", "62": "Reserved_42", "63": "Req_TLC"}#MS11#RC06
+ParkCornrLiReqFrmADD#14#516#false#false#207#2#1#0#泊车对角灯的控制请求#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request_CornerLightOn", "2": "Reserved", "3": "Reserved"}#MS11#RC06
+ParkingPushFrmADD#14#516#false#false#205#3#1#0#泊车手机端push提示信号#0.0#0.0#0.0#{"0": "No_Request", "1": "RPA_Park_in", "2": "RPA_Park_out", "3": "RPA_Move", "4": "Reserved", "5": "Reserved", "6": "Reserved", "7": "Reserved"}#MS11#RC06
+RPAAvailableFrmADDFV#14#516#false#false#215#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+RPAAvailableFrmADDMAC#14#516#false#false#231#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+ADD2BLEMForRPA00#14#238#false#false#7#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#RC06
+ADD2BLEMForRPA01#14#238#false#false#71#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#RC06
+ADD2BLEMForRPA02#14#238#false#false#135#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#RC06
+ADD2BLEMForRPA03#14#238#false#false#199#16#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#RC06
+ADD2BLEMForRPA00FV#14#238#false#false#215#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+ADD2BLEMForRPA00MAC#14#238#false#false#231#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+WhlStsSigGrpChks#14#179#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+WhlSpdFrntLeVld#14#179#false#false#15#1#1#0#Status of wheel speed front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+WhlSpdFrntRiVld#14#179#false#false#14#1#1#0#Status of wheel speed front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+WhlSpdReLeVld#14#179#false#false#13#1#1#0#Status of wheel speed rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+WhlSpdReRiVld#14#179#false#false#12#1#1#0#Status of wheel speed rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+WhlStsSigGrpCntr#14#179#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+WhlSpdFrntLe#14#179#false#false#23#16#0.05625#0.0#Wheel speed front left#0.0#0.0#0.0#null#MS11#RC06
+WhlSpdFrntRi#14#179#false#false#39#16#0.05625#0.0#Wheel speed front right#0.0#0.0#0.0#null#MS11#RC06
+WhlSpdReLe#14#179#false#false#55#16#0.05625#0.0#Wheel speed rear left#0.0#0.0#0.0#null#MS11#RC06
+WhlSpdReRi#14#179#false#false#71#16#0.05625#0.0#Wheel speed rear right#0.0#0.0#0.0#null#MS11#RC06
+VehSpd#14#179#false#false#87#16#0.05625#0.0#Vehicle speed#0.0#0.0#0.0#null#MS11#RC06
+VehSpdVld#14#179#false#false#103#1#1#0#Qualifier for vehicle speed signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+WhlDirFrntLeVld#14#179#false#false#102#1#1#0#Qualifier for wheel moving direction front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+WhlDirFrntLe#14#179#false#false#101#2#1#0#Wheel moving direction front left#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#RC06
+WhlSpdEdgeFrntLeVld#14#179#false#false#99#1#1#0#Qualifier for wheel speed Edges front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+WhlDirFrntRiVld#14#179#false#false#98#1#1#0#Qualifier for wheel moving direction front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+WhlDirFrntRi#14#179#false#false#97#2#1#0#Wheel moving direction front right#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#RC06
+WhlSpdEdgeFrntLe#14#179#false#false#111#8#1#0#Wheel speed Edges front left#0.0#0.0#0.0#null#MS11#RC06
+WhlSpdEdgeFrntRiVld#14#179#false#false#119#1#1#0#Qualifier for wheel speed Edges front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+WhlDirReLeVld#14#179#false#false#118#1#1#0#Qualifier for wheel moving direction rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+WhlDirReLe#14#179#false#false#117#2#1#0#Wheel moving direction rear left#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#RC06
+WhlSpdEdgeReLeVld#14#179#false#false#115#1#1#0#Qualifier for wheel speed Edges rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+WhlDirReRiVld#14#179#false#false#114#1#1#0#Qualifier for wheel moving direction rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+WhlDirReRi#14#179#false#false#113#2#1#0#Wheel moving direction rear right#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#RC06
+WhlSpdEdgeFrntRi#14#179#false#false#127#8#1#0#Wheel speed Edges front right#0.0#0.0#0.0#null#MS11#RC06
+WhlSpdEdgeReLe#14#179#false#false#135#8#1#0#Wheel speed Edges rear left#0.0#0.0#0.0#null#MS11#RC06
+WhlSpdEdgeReRiVld#14#179#false#false#143#1#1#0#Qualifier for wheel speed Edges rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+WhlSpdEdgeReRi#14#179#false#false#151#8#1#0#Wheel speed Edges rear right#0.0#0.0#0.0#null#MS11#RC06
+WhlDstTiStampFrntLe#14#179#false#false#159#16#1#0#Wheel distance time stamp for front left#0.0#0.0#0.0#null#MS11#RC06
+WhlDstTiStampFrntRi#14#179#false#false#175#16#1#0#Wheel distance time stamp for front right#0.0#0.0#0.0#null#MS11#RC06
+WhlDstTiStampReLe#14#179#false#false#191#16#1#0#Wheel distance time stamp for rear left#0.0#0.0#0.0#null#MS11#RC06
+WhlDstTiStampReRi#14#179#false#false#207#16#1#0#Wheel distance time stamp for rear left#0.0#0.0#0.0#null#MS11#RC06
+AdcFcnSigGrpChks#14#179#false#false#223#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+BCSActrActvForADC#14#179#false#false#231#2#1#0#BCS actuator active for ADC#0.0#0.0#0.0#{"0": "ADC_Normal", "1": "ADC_Active_L12", "2": "ADC_Active_L123"}#MS11#RC06
+BCSActrRampOffStsForADC#14#179#false#false#229#2#1#0#BCS actuator ramp off status for ADC#0.0#0.0#0.0#{"0": "ADC_Normal", "1": "ADC_SuspendByOtherBrake", "2": "ADC_SuspendByDriverPropulsion", "3": "ADC_RampOffByDriverBrake"}#MS11#RC06
+AdcFcnSigGrpCntr#14#179#false#false#227#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+BCSActrAvlStsForADC#14#179#false#false#239#3#1#0#BCS actuator available status for ADC#0.0#0.0#0.0#{"0": "ADC_NotAvailable_L123", "1": "ADC_NotAvailableBySituation_L123", "2": "ADC_AvailableL12_NotAvailableL3", "3": "ADC_AvailableL12_NotAvailableBySituationL3", "4": "ADC_AvailableWithFault_L3", "5": "ADC_AvailableWithSituationIssue_L3", "6": "ADC_Available_L123"}#MS11#RC06
+BCSActrAvlStsForADCL3#14#179#false#false#236#3#1#0#BCS available status for ADC L3#0.0#0.0#0.0#{"0": "ADC_NotAvailable_L3", "1": "ADC_NotAvailableBySituation_L3", "2": "ADC_AvailableWithFault_L3", "3": "ADC_AvailableWithSituationIssue_L3", "4": "ADC_Available_L3_No_failure"}#MS11#RC06
+BCSActrVldForADC#14#179#false#false#233#1#1#0#BCS actuator valid for ADC#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+BLEA2BLEMCli00#14#348#false#false#7#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMCli01#14#348#false#false#71#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMCli02#14#348#false#false#135#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMCli03#14#348#false#false#199#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMCli04#14#348#false#false#263#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMCli05#14#348#false#false#327#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMCli06#14#348#false#false#391#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMCli07#14#348#false#false#455#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForDebugResp00#14#608#false#false#7#64#1#0#BLEA发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForDebugResp01#14#608#false#false#71#64#1#0#BLEA发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForDebugResp02#14#608#false#false#135#64#1#0#BLEA发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForDebugResp03#14#608#false#false#199#64#1#0#BLEA发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForDebugResp04#14#608#false#false#263#64#1#0#BLEA发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForDebugResp05#14#608#false#false#327#64#1#0#BLEA发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForDebugResp06#14#608#false#false#391#64#1#0#BLEA发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForDebugResp07#14#608#false#false#455#64#1#0#BLEA发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLEAFaultInfoFlag#14#670#false#false#0#1#1#0#BLEA Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#MS11#RC06
+BLEA2BLEMForBTReq00#14#771#false#false#7#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForBTReq01#14#771#false#false#71#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForBTReq02#14#771#false#false#135#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForBTReq03#14#771#false#false#199#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForBTReq04#14#771#false#false#263#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForBTReq05#14#771#false#false#327#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForBTReq06#14#771#false#false#391#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEA2BLEMForBTReq07#14#771#false#false#455#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug00#14#780#false#false#7#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug01#14#780#false#false#39#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug02#14#780#false#false#71#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug03#14#780#false#false#103#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug04#14#780#false#false#135#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug05#14#780#false#false#167#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug06#14#780#false#false#199#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug07#14#780#false#false#231#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug08#14#780#false#false#263#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug09#14#780#false#false#295#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug10#14#780#false#false#327#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug11#14#780#false#false#359#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug12#14#780#false#false#391#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug13#14#780#false#false#423#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug14#14#780#false#false#455#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEA2VCCDForDebug15#14#780#false#false#487#32#1#0#BLEA发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEANodeAddress#14#1385#false#false#7#8#1#0#Node source address\n节点源地址#0.0#0.0#0.0#null#MS11#RC06
+BLEAActiveWakeup#14#1385#false#false#12#1#1#0#Active Wakeup Bit\n主动唤醒指示位#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#RC06
+BLEARepeatMsgReq#14#1385#false#false#8#1#1#0#Repeat Message Request Bit\n重复报文请求位#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#RC06
+BLEARepeatMsgSt#14#1385#false#false#16#1#1#0#Repeat Message State indication\n节点处在重复报文状态指示位#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#RC06
+NMKeepAwkRsnBLEA#14#1385#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEAToVCCDDiagResp#14#1731#false#false#7#512#1#0#BLEAToVCCDDiagRespNpdu#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEACli00#14#346#false#false#7#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEACli01#14#346#false#false#71#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEACli02#14#346#false#false#135#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEACli03#14#346#false#false#199#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEACli04#14#346#false#false#263#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEACli05#14#346#false#false#327#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEACli06#14#346#false#false#391#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEACli07#14#346#false#false#455#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMCli00#14#362#false#false#7#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMCli01#14#362#false#false#71#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMCli02#14#362#false#false#135#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMCli03#14#362#false#false#199#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMCli04#14#362#false#false#263#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMCli05#14#362#false#false#327#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMCli06#14#362#false#false#391#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMCli07#14#362#false#false#455#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCCli00#14#364#false#false#7#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCCli01#14#364#false#false#71#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCCli02#14#364#false#false#135#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCCli03#14#364#false#false#199#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCCli04#14#364#false#false#263#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCCli05#14#364#false#false#327#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCCli06#14#364#false#false#391#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCCli07#14#364#false#false#455#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#RC06
+RCAvailable#14#444#false#false#7#1#1#0#远控设备可用#0.0#0.0#0.0#{"0": "Not_Available", "1": "Available"}#MS11#RC06
+RPARemReq#14#444#false#false#15#2#1#0#遥控泊车APP开关#0.0#0.0#0.0#{"0": "No_Request", "1": "RPA_Request", "2": "Reserved1", "3": "Reserved1"}#MS11#RC06
+RPARemReqFV#14#444#false#false#23#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+RPARemReqMAC#14#444#false#false#39#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEMSyncFVReq#14#530#false#false#7#32#1#0#BLEM同步请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETCli00#14#563#false#false#7#64#1#0#BLEM发送给BLET的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETCli01#14#563#false#false#71#64#1#0#BLEM发送给BLET的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETCli02#14#563#false#false#135#64#1#0#BLEM发送给BLET的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETCli03#14#563#false#false#199#64#1#0#BLEM发送给BLET的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETCli04#14#563#false#false#263#64#1#0#BLEM发送给BLET的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETCli05#14#563#false#false#327#64#1#0#BLEM发送给BLET的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETCli06#14#563#false#false#391#64#1#0#BLEM发送给BLET的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETCli07#14#563#false#false#455#64#1#0#BLEM发送给BLET的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2HMIFobLowBattRem#14#565#false#false#7#4#1.0#0.0#Fob低电量提醒#0.0#0.0#0.0#{"0": "noremind", "1": "weak", "2": "strong"}#MS11#RC06
+BLEM2BLETForDebugReq00#14#609#false#false#7#64#1#0#BLEM发送给BLET的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETForDebugReq01#14#609#false#false#71#64#1#0#BLEM发送给BLET的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETForDebugReq02#14#609#false#false#135#64#1#0#BLEM发送给BLET的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETForDebugReq03#14#609#false#false#199#64#1#0#BLEM发送给BLET的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETForDebugReq04#14#609#false#false#263#64#1#0#BLEM发送给BLET的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETForDebugReq05#14#609#false#false#327#64#1#0#BLEM发送给BLET的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETForDebugReq06#14#609#false#false#391#64#1#0#BLEM发送给BLET的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLETForDebugReq07#14#609#false#false#455#64#1#0#BLEM发送给BLET的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForDebugReq00#14#610#false#false#7#64#1#0#BLEM发送给NEM的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForDebugReq01#14#610#false#false#71#64#1#0#BLEM发送给NEM的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForDebugReq02#14#610#false#false#135#64#1#0#BLEM发送给NEM的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForDebugReq03#14#610#false#false#199#64#1#0#BLEM发送给NEM的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForDebugReq04#14#610#false#false#263#64#1#0#BLEM发送给NEM的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForDebugReq05#14#610#false#false#327#64#1#0#BLEM发送给NEM的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForDebugReq06#14#610#false#false#391#64#1#0#BLEM发送给NEM的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForDebugReq07#14#610#false#false#455#64#1#0#BLEM发送给NEM的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEAForDebugReq00#14#611#false#false#7#64#1#0#BLEM发送给BLEA的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEAForDebugReq01#14#611#false#false#71#64#1#0#BLEM发送给BLEA的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEAForDebugReq02#14#611#false#false#135#64#1#0#BLEM发送给BLEA的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEAForDebugReq03#14#611#false#false#199#64#1#0#BLEM发送给BLEA的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEAForDebugReq04#14#611#false#false#263#64#1#0#BLEM发送给BLEA的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEAForDebugReq05#14#611#false#false#327#64#1#0#BLEM发送给BLEA的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEAForDebugReq06#14#611#false#false#391#64#1#0#BLEM发送给BLEA的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2BLEAForDebugReq07#14#611#false#false#455#64#1#0#BLEM发送给BLEA的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn10#14#657#false#false#7#32#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn11#14#657#false#false#39#32#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn12#14#657#false#false#71#32#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn13#14#657#false#false#103#32#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn14#14#657#false#false#135#32#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn15#14#657#false#false#167#32#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn16#14#657#false#false#199#32#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn17#14#657#false#false#231#32#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn18#14#657#false#false#263#32#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn19#14#657#false#false#295#32#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn1A#14#657#false#false#327#32#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn1B#14#657#false#false#359#32#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn1C#14#657#false#false#391#32#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn1D#14#657#false#false#423#32#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn1F#14#657#false#false#455#16#1#0#BLEM to VCCD For Phone1 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn1FV#14#657#false#false#471#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn1MAC#14#657#false#false#487#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS00#14#658#false#false#7#32#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS01#14#658#false#false#39#32#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS02#14#658#false#false#71#32#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS03#14#658#false#false#103#32#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS04#14#658#false#false#135#32#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS05#14#658#false#false#167#32#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS06#14#658#false#false#199#32#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS07#14#658#false#false#231#32#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS08#14#658#false#false#263#32#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS09#14#658#false#false#295#32#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS10#14#658#false#false#327#32#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS11#14#658#false#false#359#32#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS12#14#658#false#false#391#32#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS13#14#658#false#false#423#32#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKS14#14#658#false#false#455#16#1#0#BLEM发送/响应DKS请求给VCCD#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKSFV#14#658#false#false#471#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDKSMAC#14#658#false#false#487#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRSSI01#14#659#false#false#7#32#1#0#BLEM to VCCD for device1 RSSI#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRSSI02#14#659#false#false#39#32#1#0#BLEM to VCCD for device2 RSSI#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRSSI03#14#659#false#false#71#32#1#0#BLEM to VCCD for device3 RSSI#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRSSI04#14#659#false#false#103#32#1#0#BLEM to VCCD for device4 RSSI#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRSSIFV#14#659#false#false#151#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRSSIMAC#14#659#false#false#167#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS00#14#660#false#false#7#32#1#0#BLEM send message to TBox#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS01#14#660#false#false#39#32#1#0#BLEM send message to TBOX#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS02#14#660#false#false#71#32#1#0#BLEM send message to TBOX#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS03#14#660#false#false#103#32#1#0#BLEM send message to TBOX#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS04#14#660#false#false#135#32#1#0#BLEM send message to TBOX#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS05#14#660#false#false#167#32#1#0#BLEM send message to TBOX#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS06#14#660#false#false#199#32#1#0#BLEM send message to TBOX#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS07#14#660#false#false#231#32#1#0#BLEM send message to TBOX#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS08#14#660#false#false#263#32#1#0#BLEM send message to TBOX#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS09#14#660#false#false#295#32#1#0#BLEM send message to TBOX#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS10#14#660#false#false#327#32#1#0#BLEM send message to TBOX#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS11#14#660#false#false#359#32#1#0#BLEM send message to TBOX#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS12#14#660#false#false#391#32#1#0#BLEM send message to TBOX#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS13#14#660#false#false#423#32#1#0#BLEM send message to TBOX#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKS14#14#660#false#false#455#16#1#0#BLEM send message to TBOX#0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKSFV#14#660#false#false#471#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2TBOXForDKSMAC#14#660#false#false#487#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+NFCOnrPring#14#662#false#false#7#4#1#0#Display request for owner to create NFC digital key\n车主创建NFC数字钥匙的显示请求#0.0#0.0#0.0#{"0": "Initial", "1": "NFCOPStart", "2": "NFCCardAuth", "3": "Phone2WPC", "4": "NFCOPContinuing", "5": "NFCOPSuccess", "6": "NFCOPFail", "7": "NFCDetectTimeout", "8": "Reserved"}#MS11#RC06
+NFCOnrPringFV#14#662#false#false#23#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+NFCOnrPringMAC#14#662#false#false#39#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+DltAllKeyFb#14#663#false#false#7#3#1#0#Delete all key feedback#0.0#0.0#0.0#{"0": "Idle", "1": "Success", "2": "NFC_card_certificated", "3": "NFC_card_certificate_fail", "4": "Certificate_timeout", "5": "No_feedback_from_server", "6": "Wait_for_NFC_card"}#MS11#RC06
+SndBLEKeyPosnToRPA#14#663#false#false#4#3#1#0#Send BLE key message to RPA module#0.0#0.0#0.0#{"0": "Initial_value", "1": "R0_distance", "2": "R1_distance", "3": "R2_distance", "4": "R3_distance", "5": "R4_distance"}#MS11#RC06
+DltAllKeyFbFV#14#663#false#false#23#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+DltAllKeyFbMAC#14#663#false#false#39#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn20#14#665#false#false#7#32#1#0#BLEM to VCCD For Phone2 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn21#14#665#false#false#39#32#1#0#BLEM to VCCD For Phone2 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn22#14#665#false#false#71#32#1#0#BLEM to VCCD For Phone2 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn23#14#665#false#false#103#32#1#0#BLEM to VCCD For Phone2  location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn24#14#665#false#false#135#32#1#0#BLEM to VCCD For Phone2 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn25#14#665#false#false#167#32#1#0#BLEM to VCCD For Phone2 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn26#14#665#false#false#199#32#1#0#BLEM to VCCD For Phone2 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn27#14#665#false#false#231#32#1#0#BLEM to VCCD For Phone2 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn28#14#665#false#false#263#32#1#0#BLEM to VCCD For Phone2 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn29#14#665#false#false#295#32#1#0#BLEM to VCCD For Phone2 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn2A#14#665#false#false#327#32#1#0#BLEM to VCCD For Phone2 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn2B#14#665#false#false#359#32#1#0#BLEM to VCCD For Phone2 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn2C#14#665#false#false#391#32#1#0#BLEM to VCCD For Phone2 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn2D#14#665#false#false#423#32#1#0#BLEM to VCCD For Phone2 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn2F#14#665#false#false#455#16#1#0#BLEM to VCCD For Phone2 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn2FV#14#665#false#false#471#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn2MAC#14#665#false#false#487#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEMFaultInfoFlag#14#671#false#false#0#1#1#0#BLEM Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#MS11#RC06
+BLEM2VCCDForDebug00#14#781#false#false#7#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug01#14#781#false#false#39#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug02#14#781#false#false#71#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug03#14#781#false#false#103#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug04#14#781#false#false#135#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug05#14#781#false#false#167#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug06#14#781#false#false#199#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug07#14#781#false#false#231#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug08#14#781#false#false#263#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug09#14#781#false#false#295#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug10#14#781#false#false#327#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug11#14#781#false#false#359#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug12#14#781#false#false#391#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug13#14#781#false#false#423#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug14#14#781#false#false#455#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForDebug15#14#781#false#false#487#32#1#0#BLEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLEM2DigKeyAnch00#14#797#false#false#7#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEM2DigKeyAnch01#14#797#false#false#71#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEM2DigKeyAnch02#14#797#false#false#135#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEM2DigKeyAnch03#14#797#false#false#199#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEM2DigKeyAnch04#14#797#false#false#263#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEM2DigKeyAnch05#14#797#false#false#327#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEM2DigKeyAnch06#14#797#false#false#391#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEM2DigKeyAnch07#14#797#false#false#455#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForNFCResp00#14#798#false#false#7#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForNFCResp01#14#798#false#false#71#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForNFCResp02#14#798#false#false#135#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForNFCResp03#14#798#false#false#199#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForNFCResp04#14#798#false#false#263#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForNFCResp05#14#798#false#false#327#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForNFCResp06#14#798#false#false#391#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2NEMForNFCResp07#14#798#false#false#455#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCResp00#14#812#false#false#7#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCResp01#14#812#false#false#71#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCResp02#14#812#false#false#135#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCResp03#14#812#false#false#199#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCResp04#14#812#false#false#263#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCResp05#14#812#false#false#327#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCResp06#14#812#false#false#391#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2WPCResp07#14#812#false#false#455#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq00#14#813#false#false#7#32#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq01#14#813#false#false#39#32#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq02#14#813#false#false#71#32#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq03#14#813#false#false#103#32#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq04#14#813#false#false#135#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq05#14#813#false#false#167#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq06#14#813#false#false#199#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq07#14#813#false#false#231#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq08#14#813#false#false#263#32#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq09#14#813#false#false#295#32#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq10#14#813#false#false#327#32#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq11#14#813#false#false#359#32#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq12#14#813#false#false#391#32#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq13#14#813#false#false#423#32#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReq14#14#813#false#false#455#16#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReqFV#14#813#false#false#471#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForNFCReqMAC#14#813#false#false#487#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn44#14#817#false#false#7#32#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn45#14#817#false#false#39#32#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn46#14#817#false#false#71#32#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn47#14#817#false#false#103#32#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn40#14#817#false#false#135#32#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn41#14#817#false#false#167#32#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn42#14#817#false#false#199#32#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn43#14#817#false#false#231#32#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn48#14#817#false#false#263#32#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn49#14#817#false#false#295#32#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn4A#14#817#false#false#327#32#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn4B#14#817#false#false#359#32#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn4C#14#817#false#false#391#32#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn4D#14#817#false#false#423#32#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn4F#14#817#false#false#455#16#1#0#BLEM to VCCD For Phone4 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn4FV#14#817#false#false#471#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn4MAC#14#817#false#false#487#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2ADDForRPA00#14#825#false#false#7#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#RC06
+BLEM2ADDForRPA01#14#825#false#false#71#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#RC06
+BLEM2ADDForRPA02#14#825#false#false#135#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#RC06
+BLEM2ADDForRPA03#14#825#false#false#199#16#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#RC06
+BLEM2ADDForRPA00FV#14#825#false#false#215#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2ADDForRPA00MAC#14#825#false#false#231#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn30#14#826#false#false#7#32#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn31#14#826#false#false#39#32#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn32#14#826#false#false#71#32#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn33#14#826#false#false#103#32#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn34#14#826#false#false#135#32#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn35#14#826#false#false#167#32#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn36#14#826#false#false#199#32#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn37#14#826#false#false#231#32#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn38#14#826#false#false#263#32#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn39#14#826#false#false#295#32#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn3A#14#826#false#false#327#32#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn3B#14#826#false#false#359#32#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn3C#14#826#false#false#391#32#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn3D#14#826#false#false#423#32#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn3F#14#826#false#false#455#16#1#0#BLEM to VCCD For Phone3 location#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn3FV#14#826#false#false#471#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForLocn3MAC#14#826#false#false#487#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq00#14#827#false#false#7#32#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq01#14#827#false#false#39#32#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq02#14#827#false#false#71#32#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq03#14#827#false#false#103#32#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq04#14#827#false#false#135#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq05#14#827#false#false#167#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq06#14#827#false#false#199#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq07#14#827#false#false#231#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq08#14#827#false#false#263#32#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq09#14#827#false#false#295#32#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq10#14#827#false#false#327#32#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq11#14#827#false#false#359#32#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq12#14#827#false#false#391#32#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq13#14#827#false#false#423#32#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReq14#14#827#false#false#455#16#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReqFV#14#827#false#false#471#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEM2VCCDForRkeReqMAC#14#827#false#false#487#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEMNodeAddress#14#1383#false#false#7#8#1#0#Node source address\n节点源地址#0.0#0.0#0.0#null#MS11#RC06
+BLEMActiveWakeup#14#1383#false#false#12#1#1#0#Active Wakeup Bit\n主动唤醒指示位#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#RC06
+BLEMRepeatMsgReq#14#1383#false#false#8#1#1#0#Repeat Message Request Bit\n重复报文请求位#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#RC06
+UDB23BLEM#14#1383#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB22BLEM#14#1383#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB21BLEM#14#1383#false#false#21#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB20BLEM#14#1383#false#false#20#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB19BLEM#14#1383#false#false#19#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB18BLEM#14#1383#false#false#18#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB17BLEM#14#1383#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEMRepeatMsgSt#14#1383#false#false#16#1#1#0#Repeat Message State indication\n节点处在重复报文状态指示位#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#RC06
+UDB31BLEM#14#1383#false#false#31#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB30BLEM#14#1383#false#false#30#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB29BLEM#14#1383#false#false#29#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB28BLEM#14#1383#false#false#28#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB27BLEM#14#1383#false#false#27#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB26BLEM#14#1383#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB25BLEM#14#1383#false#false#25#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB24BLEM#14#1383#false#false#24#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB39BLEM#14#1383#false#false#39#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB38BLEM#14#1383#false#false#38#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB37BLEM#14#1383#false#false#37#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB36BLEM#14#1383#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB35BLEM#14#1383#false#false#35#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB34BLEM#14#1383#false#false#34#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB33BLEM#14#1383#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB32BLEM#14#1383#false#false#32#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB47BLEM#14#1383#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB46BLEM#14#1383#false#false#46#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB45BLEM#14#1383#false#false#45#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB44BLEM#14#1383#false#false#44#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB43BLEM#14#1383#false#false#43#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB42BLEM#14#1383#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB41BLEM#14#1383#false#false#41#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB40BLEM#14#1383#false#false#40#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+NMKeepAwkRsnBLEM#14#1383#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLEMToVCCDDiagResp#14#1729#false#false#7#512#1#0#BLEMToVCCDDiagRespNpdu#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMCli00#14#564#false#false#7#64#1#0#BLET返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMCli01#14#564#false#false#71#64#1#0#BLET返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMCli02#14#564#false#false#135#64#1#0#BLET返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMCli03#14#564#false#false#199#64#1#0#BLET返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMCli04#14#564#false#false#263#64#1#0#BLET返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMCli05#14#564#false#false#327#64#1#0#BLET返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMCli06#14#564#false#false#391#64#1#0#BLET返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMCli07#14#564#false#false#455#64#1#0#BLET返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForDebugResp00#14#612#false#false#7#64#1#0#BLET发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForDebugResp01#14#612#false#false#71#64#1#0#BLET发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForDebugResp02#14#612#false#false#135#64#1#0#BLET发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForDebugResp03#14#612#false#false#199#64#1#0#BLET发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForDebugResp04#14#612#false#false#263#64#1#0#BLET发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForDebugResp05#14#612#false#false#327#64#1#0#BLET发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForDebugResp06#14#612#false#false#391#64#1#0#BLET发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForDebugResp07#14#612#false#false#455#64#1#0#BLET发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForBTReq00#14#613#false#false#7#64#1#0#车内BLET蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForBTReq01#14#613#false#false#71#64#1#0#车内BLET蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForBTReq02#14#613#false#false#135#64#1#0#车内BLET蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForBTReq03#14#613#false#false#199#64#1#0#车内BLET蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForBTReq04#14#613#false#false#263#64#1#0#车内BLET蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForBTReq05#14#613#false#false#327#64#1#0#车内BLET蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForBTReq06#14#613#false#false#391#64#1#0#车内BLET蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLET2BLEMForBTReq07#14#613#false#false#455#64#1#0#车内BLET蓝牙#0.0#0.0#0.0#null#MS11#RC06
+BLETFaultInfoFlag#14#687#false#false#7#1#1#0#BLET Fault Information Flag#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug00#14#782#false#false#7#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug01#14#782#false#false#39#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug02#14#782#false#false#71#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug03#14#782#false#false#103#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug04#14#782#false#false#135#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug05#14#782#false#false#167#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug06#14#782#false#false#199#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug07#14#782#false#false#231#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug08#14#782#false#false#263#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug09#14#782#false#false#295#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug10#14#782#false#false#327#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug11#14#782#false#false#359#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug12#14#782#false#false#391#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug13#14#782#false#false#423#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug14#14#782#false#false#455#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLET2VCCDForDebug15#14#782#false#false#487#32#1#0#BLET发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+BLETNodeAddress#14#1386#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLETActiveWakeup#14#1386#false#false#12#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLETRepeatMsgReq#14#1386#false#false#8#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLETRepeatMsgSt#14#1386#false#false#16#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+NMKeepAwkRsnBLET#14#1386#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#RC06
+BLETToVCCDDiagResp#14#1737#false#false#7#512#1#0##0.0#0.0#0.0#null#MS11#RC06
+BattURawSigGrpChks#14#579#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+BattURawSigGrpCntr#14#579#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+BattURaw#14#579#false#false#23#15#0.001#0.0#Battery Voltage raw\n电池电压#0.0#0.0#0.0#null#MS11#RC06
+BattSocRawSigGrpChks#14#579#false#false#39#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+BattSocRawSigGrpCntr#14#579#false#false#43#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+BattSocRaw#14#579#false#false#49#10#0.1#0.0#Battery State of charge raw\n电池SOC#0.0#0.0#0.0#{"800": "Invalid"}#MS11#RC06
+ExtrLiFcnSetSigGrpChks#14#549#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+ExtrLiFcnSetSigGrpCntr#14#549#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+ExtrLiFcnSet#14#549#false#false#23#3#1#0#Exterior Light Function Set\n外灯功能设定#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "Position_Lamp", "3": "Low_Beam", "4": "Auto"}#MS11#RC06
+WiprSpdAdjCfgSet#14#549#false#false#20#5#1#0#Wiper Control adjust configuration Set\n雨刮控制设定#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "IntermittentWipingRequest_LowSpeed", "3": "IntermittentWipingRequest_HighSpeed", "4": "LowSpeedWipingRequest", "5": "HighSpeedWipingRequest", "6": "AutoWipingSpeed", "7": "Reserve"}#MS11#RC06
+DCDDltAllKeyCmd#14#549#false#false#47#1#1#0#Delete all Mobile NFC or BLE key#0.0#0.0#0.0#{"0": "No_Command", "1": "Delete_all_key"}#MS11#RC06
+ADSELKSwtSet#14#549#false#false#46#2#1#0#紧急车道保持开关\nADS ELK switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "Middle", "3": "High"}#MS11#RC06
+ADSFltQuitReqFrmDCD#14#549#false#false#44#2#1#0##0.0#0.0#0.0#{"0": "default", "1": "Quit_Request", "2": "reserved_1", "3": "reserved_2"}#MS11#RC06
+DCDDisplayFailSts#14#549#false#false#42#3#1#0#Center Display Fail Status\n座舱中控显示失效状态#0.0#0.0#0.0#{"0": "No_Failure", "1": "No_Comm_with_CIDM", "2": "CIDM_internal_display_error", "3": "DCD_actively_shutdown_display", "4": "CIDM_freeze_frame_detected", "5": "reserved_1", "6": "reserved_2", "7": "reserved_3"}#MS11#RC06
+DCDDltAllKeyCmdFV#14#549#false#false#87#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+DCDDltAllKeyCmdMAC#14#549#false#false#103#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+TotOdoAcrt#14#914#false#false#7#24#0.1#0.0#ODO#0.0#0.0#0.0#{"16777215": "Invaild"}#MS11#RC06
+TotOdoAcrtLvlMVld#14#914#false#false#27#1#1#0#Total odometer accurate for meter level valid\n米级精确总里程有效性#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#RC06
+DCDVINMat#14#914#false#false#26#1#1#0#DCD VIN Match\nVIN匹配信号#0.0#0.0#0.0#{"0": "Mismatch", "1": "Match"}#MS11#RC06
+TotOdoAcrtVld#14#914#false#false#25#1#1#0#The valid signal of TotOdoAcrt#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#RC06
+TotOdoAcrtLvlM#14#914#false#false#39#32#1.0#0.0#Total odometer accurate for meter level\n米级精确总里程\n其中，有效范围：0x0~0x?3B9AC9FF?，表示0~999，999，999#0.0#0.0#0.0#{"4294967295": "Invaild"}#MS11#RC06
+DCDHoodOpenSet#14#929#false#false#7#2#1#0#DCD Hood open set\n前舱盖控制命令#0.0#0.0#0.0#{"0": "No_Command", "1": "Close", "2": "Open"}#MS11#RC06
+DCDHoodRelsBtn#14#929#false#false#5#1#1#0#DCD Hood Release Button\n前舱盖控制按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+CenLockgCmd#14#929#false#false#4#2#1#0#Central locking Command\n车内中控解闭锁控制命令#0.0#0.0#0.0#{"0": "No_Command", "1": "Unlock", "2": "Lock"}#MS11#RC06
+DCDBacOdoIncsReq#14#929#false#false#2#1#1#0#DCD Backup Odometer Increase flag#0.0#0.0#0.0#{"0": "NoReq", "1": "Req"}#MS11#RC06
+ParkUnlckCfgSet#14#929#false#false#1#2#1#0#Park UnLock configuration Set\nP挡自动解锁功能设定#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "ON"}#MS11#RC06
+CenLockgBtn#14#929#false#false#15#1#1#0#Central locking Button\n车内中控解闭锁控制按键#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+SteerWhlAdjmtEna#14#929#false#false#14#1#1#0#Steering wheel adjustment enable\n方向盘调整使能#0.0#0.0#0.0#{"0": "No_Command", "1": "Enable"}#MS11#RC06
+DCDChrgnLidOpenSet#14#929#false#false#13#2#1#0#DCD Charging lid open set\n充电口盖控制命令#0.0#0.0#0.0#{"0": "No_Command", "1": "Close", "2": "Open"}#MS11#RC06
+DCDChrgnLidRelsBtn#14#929#false#false#11#1#1#0#DCD Charging lid release button\n充电口盖开关按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDTrOpenSet#14#929#false#false#10#2#1#0#DCD Trunk open set 尾门控制命令#0.0#0.0#0.0#{"0": "No_Command", "1": "Close", "2": "Open", "3": "Stop"}#MS11#RC06
+DCDTrRelsBtn#14#929#false#false#8#1#1#0#DCD Trunk Release Button\n尾门控制按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+SteerWhlHeatSet#14#929#false#false#23#4#1#0#DCD set steering wheel heat function\n方向盘加热功能设定#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "level1", "3": "level2", "4": "level3", "5": "Auto"}#MS11#RC06
+SteerWhlHeatBtn#14#929#false#false#19#1#1#0#DCD s steering wheel heat button status\n方向盘加热按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+SteerWhlAdjmtCmd#14#929#false#false#18#3#1#0#Steering wheel adjustment Command\n方向盘调整指令#0.0#0.0#0.0#{"0": "No_Command", "1": "up", "2": "down", "3": "in", "4": "out"}#MS11#RC06
+DCDDchrgnOnOffSet#14#929#false#false#31#2#1#0#DCD set discharging function#0.0#0.0#0.0#{"0": "No_Command", "1": "ON", "2": "OFF"}#MS11#RC06
+RearFogLampSet#14#929#false#false#29#2#1#0#DCD set rear fog lamp function\n后雾灯功能设定#0.0#0.0#0.0#{"0": "No_Command", "1": "Close", "2": "Open"}#MS11#RC06
+RearFogLampBtn#14#929#false#false#27#1#1#0#DCD s rear fog lamp button status\n后雾灯按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDTrlrModSet#14#929#false#false#26#2#1#0#DCD set trailer mode select function#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#RC06
+DCDScenModDrvPosn#14#929#false#false#24#1#1#0#Driver Position related scene mode\nDCD正在进行驾驶员姿态相关的场景模式控制#0.0#0.0#0.0#{"0": "Scenario_Mode_OFF_DrvPosn", "1": "Scenario_Moden_On_DrvPosn"}#MS11#RC06
+ExtrMirrFoldHmiReqCmd#14#929#false#false#39#2#1#0#Exterior mirror fold HMI request command.\nHMI外后视镜折叠指令#0.0#0.0#0.0#{"0": "No_Command", "1": "Fold", "2": "Unfold"}#MS11#RC06
+IllmnSet#14#929#false#false#37#4#1#0#Illumination Set\n背光亮度设定#0.0#0.0#0.0#{"0": "No_Command", "1": "Brightness1", "2": "Brightness2", "3": "Brightness3", "4": "Brightness4", "5": "Brightness5", "6": "Brightness6", "7": "Brightness7", "8": "Brightness8", "9": "Brightness9", "10": "Brightness10"}#MS11#RC06
+DCDNFCDetnOnOffSet#14#929#false#false#33#2#1#0##0.0#0.0#0.0#{"0": "NoCommand", "1": "Off", "2": "On"}#MS11#RC06
+ExtrMirrFoldCfgSet#14#929#false#false#45#2#1#0#Exterior Mirror fold configuration set\n外后视镜自动折叠配置设定#0.0#0.0#0.0#{"0": "No_Command", "1": "manual", "2": "Auto"}#MS11#RC06
+ExtrMirrAdjCmd#14#929#false#false#43#3#1#0#Exterior Mirror Adjust Command\n外后视镜调节指令#0.0#0.0#0.0#{"0": "MirrDirReqTyp_Idle", "1": "MirrDirReqTyp_Up", "2": "MirrDirReqTyp_Dwn", "3": "MirrDirReqTyp_Le", "4": "MirrDirReqTyp_Ri"}#MS11#RC06
+ExtrMirrFoldHmiReqBtn#14#929#false#false#40#1#1#0#Exterior mirror fold HMI request button status.\nHMI外后视镜折叠按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDAutoModSet#14#929#false#false#55#2#1#0#DCD set HVAC auro mode type funciton\n自动空调模式设定#0.0#0.0#0.0#{"0": "No_command", "1": "Low", "2": "Normal", "3": "High"}#MS11#RC06
+DCDAirRecircSet#14#929#false#false#53#2#1#0#DCD set HVAC air recirculation funciton\n内外循环状态设置#0.0#0.0#0.0#{"0": "No_command", "1": "Inner_air_circulation", "2": "Outside_air_circulation", "3": "AUTO_air_circulation"}#MS11#RC06
+DCDAirRecircBtn#14#929#false#false#51#1#1#0#DCD s air recirculation button press status\n内外循环按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+IntrMirrDimCfgSet#14#929#false#false#49#2#1#0#Interior mirror dimming configuration set\n内后视镜自动防眩目配置设定#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "ON"}#MS11#RC06
+DCDEvaprSelfCleanSet#14#929#false#false#60#2#1#0#DCD set HVAC evaprator self clean funciton\n蒸发器自干燥设定#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#RC06
+ExtrMirrTiltCfgSet#14#929#false#false#58#3#1#0#Exterior mirror tilt config set#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "Only_Left", "3": "Only_Right", "4": "All"}#MS11#RC06
+DCDFirstLeWindModSet#14#929#false#false#70#4#1#0#DCD set HVAC first left wind mode funciton\n主驾空调吹风方向设定#0.0#0.0#0.0#{"0": "No_command", "1": "Face", "2": "Foot", "3": "Faceandfoot", "4": "Defrost", "5": "FaceAndDefrost", "6": "FootAndDefrost", "7": "FaceAndFootAndDefrost"}#MS11#RC06
+DCDFirstLeWindFootModBtn#14#929#false#false#66#1#1#0#DCD s first left wind foot Mode button press status\n主驾空调吹脚模式按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDFirstLeWindFaceModBtn#14#929#false#false#65#1#1#0#DCD s first left wind face mode button press status\n主驾空调吹脸模式按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDFirstLeWindDefrstModBtn#14#929#false#false#64#1#1#0#DCD s first left wind defrost mode button press status\n主驾空调除霜模式按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+RainSnsrSnvtySet#14#929#false#false#79#3#1#0#雨量传感器灵敏度设置#0.0#0.0#0.0#{"0": "No_Command", "1": "level1", "2": "level2", "3": "level3", "4": "level4", "5": "Reserve", "6": "Reserve", "7": "Reserve"}#MS11#RC06
+DCDOvrHeatProtectTempSet#14#929#false#false#76#5#1.0#29.0#DCD set HVAC over heat protect trigger temperature funciton#0.0#0.0#0.0#{"0": "No_Command"}#MS11#RC06
+ReDefrstBtn#14#929#false#false#87#1#1#0#Rear defrost button status\n后除霜按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+WiprSrvModSet#14#929#false#false#86#2#1#0#Wiper service mode Set\n雨刮维修模式设定#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "ON"}#MS11#RC06
+DCDHVACAutoBtn#14#929#false#false#83#1#1#0#DCD s HVAC Auto button press status\n空调系统AUTO模式开关按键#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDHVACOnOffSet#14#929#false#false#82#2#1#0#DCD set HVAC on off funciton\n空调系统开关设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#RC06
+DCDHVACOnOffBtn#14#929#false#false#80#1#1#0#DCD s HVAC ON OFF button press status\n空调系统开关按键#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+ExtrMirrSelnHmiEna#14#929#false#false#95#2#1#0#Exterior mirror selection HMI enable status\nHMI外后视镜选择使能状态#0.0#0.0#0.0#{"0": "No_Command", "1": "Left_enable", "2": "Right_enable"}#MS11#RC06
+ChrgnOnOffSet#14#929#false#false#93#2#1#0#DCD Charging On Off set\n充电控制#0.0#0.0#0.0#{"0": "No_Command", "1": "On", "2": "Pause", "3": "Off"}#MS11#RC06
+ReDefrstCmd#14#929#false#false#89#2#1#0#Rear defrost command\n后除霜命令#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "ON"}#MS11#RC06
+ChrgnSOCLimSet#14#929#false#false#102#7#1.0#-1.0#DCD set charging limit SOC function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#RC06
+DCDHVACACMaxSet#14#929#false#false#111#2#1#0#DCD set HVAC AC Max funciton\n空调系统AC MAX设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#RC06
+DCDHVACACMaxBtn#14#929#false#false#109#1#1#0#DCD s HVAC AC Max button press status\n空调系统AC MAX按键#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDHVACACSet#14#929#false#false#108#2#1#0#DCD set HVAC AC funciton\n空调系统AC设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#RC06
+DCDHVACACBtn#14#929#false#false#106#1#1#0#DCD s HVAC AC button press status\n空调系统AC按键#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDHVACAutoSet#14#929#false#false#105#2#1#0#DCD set HVAC auto funciton\n空调系统AUTO模式开关设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#RC06
+DCDFirstLeTSet#14#929#false#false#118#5#1#0#DCD set HVAC first row left temperature to xxx  \n前排左侧温度设定值#0.0#0.0#0.0#{"0": "No_command", "1": "Lo", "2": "18p5", "3": "19", "4": "19p5", "5": "20", "6": "20p5", "7": "21", "8": "21p5", "9": "22", "10": "22p5", "11": "23", "12": "23p5", "13": "24", "14": "24p5", "15": "25", "16": "25p5", "17": "26", "18": "26p5", "19": "27", "20": "27p5", "21": "28", "22": "28p5", "23": "29", "24": "29p5", "25": "30", "26": "30p5", "27": "31", "28": "31p5", "29": "Hi"}#MS11#RC06
+DCDFirstLeTIncBtn#14#929#false#false#113#1#1#0#DCD s first row left temperature increase button press status\n主驾温度增加按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDFirstLeTDecBtn#14#929#false#false#112#1#1#0#DCD s first row left temperature decrease button press status\n主驾温度减小按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDFrntFanSpdSetMethod#14#929#false#false#127#1#1#0#DCD set HVAC front fan speed Method#0.0#0.0#0.0#{"0": "not_touch", "1": "touch"}#MS11#RC06
+DCDFirstRiTSet#14#929#false#false#126#5#1#0#DCD set HVAC first row right temperature to xxx \n前排右侧温度设定值#0.0#0.0#0.0#{"0": "No_command", "1": "Lo", "2": "18p5", "3": "19", "4": "19p5", "5": "20", "6": "20p5", "7": "21", "8": "21p5", "9": "22", "10": "22p5", "11": "23", "12": "23p5", "13": "24", "14": "24p5", "15": "25", "16": "25p5", "17": "26", "18": "26p5", "19": "27", "20": "27p5", "21": "28", "22": "28p5", "23": "29", "24": "29p5", "25": "30", "26": "30p5", "27": "31", "28": "31p5", "29": "Hi"}#MS11#RC06
+DCDFirstRiTIncBtn#14#929#false#false#121#1#1#0#DCD s first row right temperature increase button press status\n副驾温度增加按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDFirstRiTDecBtn#14#929#false#false#120#1#1#0#DCD s first row right temperature decrease button press status\n副驾温度减小按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDFrntFanSpdSet#14#929#false#false#135#4#1#0#DCD set HVAC front fan speed funciton\n前排风量设定#0.0#0.0#0.0#{"0": "No_command", "1": "Level_0", "2": "Level_1", "3": "Level_2", "4": "Level_3", "5": "Level_4", "6": "Level_5", "7": "Level_6", "8": "Level_7", "9": "Level_8"}#MS11#RC06
+DCDFrntFanSpdIncBtn#14#929#false#false#129#1#1#0#DCD s front fan speed increase button press status\n前排风量增大软按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDFrntFanSpdDecBtn#14#929#false#false#128#1#1#0#DCD s front fan speed decrease button press status\n前排风量减小软按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDWpcChrgSet#14#929#false#false#143#2#1#0#DCD WPC charge set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#RC06
+DCDHVACECOSet#14#929#false#false#141#2#1#0#DCD set HVAC ECO funciton\n空调ECO功能设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#RC06
+DCDHVACECOBtn#14#929#false#false#139#1#1#0#DCD s ECO button press status\n空调ECO按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDFrntSyncSet#14#929#false#false#138#2#1#0#DCD set HVAC front SYNC funciton\n前排温区同步功能设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#RC06
+DCDFrntSyncBtn#14#929#false#false#136#1#1#0#DCD s HVAC front SYNC status\n前排温区同步按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDTimedVentSet#14#929#false#false#150#2#1#0#DCD set HVAC timed ventilation funciton\n定时通风设定#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#RC06
+DCDOvrHeatProtectSet#14#929#false#false#148#2#1#0#DCD set HVAC over heat protect funciton#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "Not_Ac_On", "3": "Ac_On"}#MS11#RC06
+DCDHVACFrntDefrstSet#14#929#false#false#146#2#1#0#DCD set HVAC front defrost defog funciton\n前除霜 除雾设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "Defog", "3": "Max_defrost"}#MS11#RC06
+DCDHVACFrntDefrstBtn#14#929#false#false#144#1#1#0#DCD s front defrost defog button press status\n前除霜 除雾按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#RC06
+DCDUnlockVentSet#14#929#false#false#153#2#1#0#DCD set HVAC unlock ventilation funciton\n解锁通风设定#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#RC06
+DCDBookDefdTiChrgnSet#14#929#false#false#169#2#1#0#DCD set book defined time charging on off function#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On"}#MS11#RC06
+DCDRiExtrMirrHozlPerctSet#14#929#false#false#183#8#1.0#-1.0#DCD Right Exterior Mirror Horizontal Percentage Set#0.0#0.0#0.0#{"0": "No_Command", "255": "Stop"}#MS11#RC06
+DCDBookDepartrMinSet#14#929#false#false#191#6#1.0#-1.0#DCD set book departure min time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#RC06
+DCDBookDepartrHeatgSet#14#929#false#false#185#2#1#0#DCD set book departure charging on off function#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On"}#MS11#RC06
+DCDACChrgnCurMaxSet#14#929#false#false#199#7#1.0#-1.0#DCD set AC charging current max value function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#RC06
+DCDBookAutoManStopSet#14#929#false#false#205#2#1#0#DCD set book Auto Manual charging stop#0.0#0.0#0.0#{"0": "No_Command", "1": "Manual", "2": "Auto"}#MS11#RC06
+DCDBookchrgnStopHourSet#14#929#false#false#213#5#1.0#-1.0#DCD set book charging stop hour time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#RC06
+DCDTouchScrStsForPwrMod#14#929#false#false#208#1#1#0#DCD Touch screen Status For PowerMode#0.0#0.0#0.0#{"0": "Idle", "1": "Touched_for_PowerMode"}#MS11#RC06
+DCDBookchrgnStoptMinSet#14#929#false#false#223#6#1.0#-1.0#DCD set book charging stop min time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#RC06
+DCDBookDepartrRepTypSet#14#929#false#false#217#2#1#0#DCD set book departure repeat type function#0.0#0.0#0.0#{"0": "No_Command", "1": "Weekday_repeat", "2": "Everyday_repeat"}#MS11#RC06
+DCDBookchrgnStrtHourSet#14#929#false#false#231#5#1.0#-1.0#DCD set book charging start hour time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#RC06
+DCDBookchrgnStrtMinSet#14#929#false#false#237#6#1.0#-1.0#DCD set book charging start min time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#RC06
+DCDBookDepartrHourSet#14#929#false#false#247#5#1.0#-1.0#DCD set book departure hour time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#RC06
+DCDDchrgnSOCMinSet#14#929#false#false#255#7#1.0#-1.0#DCD set discharging min SOC function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#RC06
+FZCU117Rsvd01#14#279#false#false#7#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd02#14#279#false#false#39#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd03#14#279#false#false#71#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd04#14#279#false#false#103#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd05#14#279#false#false#135#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd06#14#279#false#false#167#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd07#14#279#false#false#199#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd08#14#279#false#false#231#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd09#14#279#false#false#263#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd10#14#279#false#false#295#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd11#14#279#false#false#327#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd12#14#279#false#false#359#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd13#14#279#false#false#391#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd14#14#279#false#false#423#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd15#14#279#false#false#455#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU117Rsvd16#14#279#false#false#487#32#1#0#117Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd01#14#1264#false#false#7#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd02#14#1264#false#false#39#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd03#14#1264#false#false#71#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd04#14#1264#false#false#103#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd05#14#1264#false#false#135#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd06#14#1264#false#false#167#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd07#14#1264#false#false#199#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd08#14#1264#false#false#231#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd09#14#1264#false#false#263#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd10#14#1264#false#false#295#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd11#14#1264#false#false#327#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd12#14#1264#false#false#359#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd13#14#1264#false#false#391#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd14#14#1264#false#false#423#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd15#14#1264#false#false#455#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F0Rsvd16#14#1264#false#false#487#32#1#0#4F0Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+N1_BD4LD650_Init_Cnt#14#1265#false#false#7#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+N2_BTS7002_Init_Cnt#14#1265#false#false#23#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+N3_DRV8705_Init_Cnt#14#1265#false#false#39#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+N4_DRV871x_Init_Cnt#14#1265#false#false#55#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+N5_FS2620_Init_Cnt#14#1265#false#false#71#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+N6_TCA9539_Init_Cnt#14#1265#false#false#87#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+N7_TIC12400_Init_Cnt#14#1265#false#false#103#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+N8_TPSXHXXX_Init_Cnt#14#1265#false#false#119#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+N9_VN9DXX_Init_Cnt#14#1265#false#false#135#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+N10_VNF1048_Init_Cnt#14#1265#false#false#151#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrFrtHatchCoverMotor#14#1265#false#false#167#13#0.1#0.0#Current Monitor Front Hatch Cover Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrFrtWiperMotorHiSpd#14#1265#false#false#183#13#0.1#0.0#Current Monitor Front Wiper Motor High Speed#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrFrtWiperMotorLoSpd#14#1265#false#false#199#13#0.1#0.0#Current Monitor Front Wiper Motor Low Speed#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrHiHorn#14#1265#false#false#215#13#0.1#0.0#Current Monitor High Horn#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrLoHorn#14#1265#false#false#231#13#0.1#0.0#Current Monitor Low Horn#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRRWindHeat#14#1265#false#false#247#13#0.1#0.0#Current Monitor Rear Wind Heating#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrWashPump#14#1265#false#false#263#13#0.1#0.0#Current Monitor Wash Pump#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F1Rsvd09#14#1265#false#false#279#32#1#0#4F1Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F1Rsvd10#14#1265#false#false#311#32#1#0#4F1Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F1Rsvd11#14#1265#false#false#343#32#1#0#4F1Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F1Rsvd12#14#1265#false#false#375#32#1#0#4F1Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F1Rsvd13#14#1265#false#false#407#32#1#0#4F1Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F1Rsvd14#14#1265#false#false#439#32#1#0#4F1Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F1Rsvd15#14#1265#false#false#471#32#1#0#4F1Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCU4F1Rsvd16#14#1265#false#false#503#16#1#0#4F1Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+FZCUXCP#14#1408#false#false#0#1#1#0#XCP调试信号#0.0#0.0#0.0#null#MS11#RC06
+UDB23FZCU#14#1352#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB22FZCU#14#1352#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB21FZCU#14#1352#false#false#21#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB20FZCU#14#1352#false#false#20#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB19FZCU#14#1352#false#false#19#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB18FZCU#14#1352#false#false#18#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB17FZCU#14#1352#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB31FZCU#14#1352#false#false#31#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB30FZCU#14#1352#false#false#30#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB29FZCU#14#1352#false#false#29#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB28FZCU#14#1352#false#false#28#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB27FZCU#14#1352#false#false#27#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB26FZCU#14#1352#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB25FZCU#14#1352#false#false#25#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB24FZCU#14#1352#false#false#24#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB39FZCU#14#1352#false#false#39#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB38FZCU#14#1352#false#false#38#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB37FZCU#14#1352#false#false#37#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB36FZCU#14#1352#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB35FZCU#14#1352#false#false#35#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB34FZCU#14#1352#false#false#34#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB33FZCU#14#1352#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB32FZCU#14#1352#false#false#32#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB47FZCU#14#1352#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB46FZCU#14#1352#false#false#46#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB45FZCU#14#1352#false#false#45#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB44FZCU#14#1352#false#false#44#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB43FZCU#14#1352#false#false#43#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB42FZCU#14#1352#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB41FZCU#14#1352#false#false#41#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB40FZCU#14#1352#false#false#40#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+NMKeepAwkRsnFZCU#14#1352#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd01#14#280#false#false#7#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd02#14#280#false#false#39#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd03#14#280#false#false#71#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd04#14#280#false#false#103#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd05#14#280#false#false#135#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd06#14#280#false#false#167#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd07#14#280#false#false#199#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd08#14#280#false#false#231#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd09#14#280#false#false#263#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd10#14#280#false#false#295#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd11#14#280#false#false#327#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd12#14#280#false#false#359#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd13#14#280#false#false#391#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd14#14#280#false#false#423#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd15#14#280#false#false#455#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU118Rsvd16#14#280#false#false#487#32#1#0#118Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+DoorDrvrAjarSwtStsBkp#14#436#false#false#12#1#1#0#Driver Door Ajar Switch Status BackUp in DKCAN#0.0#0.0#0.0#{"0": "SwtClose", "1": "SwtOpen"}#MS11#RC06
+ActvtOfHornZCUBkp#14#436#false#false#11#2#1#0#Activate of Horn ZCU BackUp#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "HighHornOnOnly", "3": "LowHornOnOnly"}#MS11#RC06
+DoorLeReAjarSwtStsBkp#14#436#false#false#9#1#1#0#Left Rear Door Ajar Switch Status BackUp in DKCAN#0.0#0.0#0.0#{"0": "SwtClose", "1": "SwtOpen"}#MS11#RC06
+DoorLeReIntPwrRelsBtnStsBkp#14#491#false#false#7#2#1#0#Left Rear Door Inside Powe rRelease Button Status BackUp in DKCAN#0.0#0.0#0.0#{"0": "Err", "1": "NotPsd", "2": "Psd", "3": "NoInfo"}#MS11#RC06
+DoorLeReOutPwrRelsBtnStsBkp#14#491#false#false#5#2#1#0#Left Rear Door Outside Powe rRelease Button Status BackUp in DKCAN#0.0#0.0#0.0#{"0": "Err", "1": "NotPsd", "2": "Psd", "3": "NoInfo"}#MS11#RC06
+DoorDrvrIntPwrRelsBtnStsBkp#14#491#false#false#3#2#1#0#Driver Door Inside Powe rRelease Button Status BackUp in DKCAN#0.0#0.0#0.0#{"0": "Err", "1": "NotPsd", "2": "Psd", "3": "NoInfo"}#MS11#RC06
+DoorDrvrOutPwrRelsBtnStsBkp#14#491#false#false#1#2#1#0#Driver Door Outside Powe rRelease Button Status BackUp in DKCAN#0.0#0.0#0.0#{"0": "Err", "1": "NotPsd", "2": "Psd", "3": "NoInfo"}#MS11#RC06
+LzcuLostVccdGrpChks#14#491#false#false#15#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+LzcuLostVccdGrpCntr#14#491#false#false#19#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+CenLockStsZcu#14#491#false#false#31#2#1#0#ZCU Central Lock Status When VCCD Failure#0.0#0.0#0.0#{"0": "NoInfo", "1": "Unlckd", "2": "Lockd", "3": "NoInfo"}#MS11#RC06
+LzcuLostVccdDkCan#14#491#false#false#29#1#1#0#LZCU Lost VCCD in DKCAN#0.0#0.0#0.0#{"0": "NoLost", "1": "Lost"}#MS11#RC06
+LzcuLostVccdZcuCan#14#491#false#false#28#1#1#0#LZCU Lost VCCD in ZCUCAN#0.0#0.0#0.0#{"0": "NoLost", "1": "Lost"}#MS11#RC06
+ChrgLidCurSts#14#615#false#false#7#3#1#0#充电口盖当前状态#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd", "3": "MovgToOpen", "4": "MovgToClsd"}#MS11#RC06
+ChrgLidCalSts#14#615#false#false#2#2#1#0#充电口盖标定状态反馈#0.0#0.0#0.0#{"0": "Idle", "1": "InProgs", "2": "CmplOk", "3": "Err"}#MS11#RC06
+ChrgLidBlkSts#14#615#false#false#0#1#1#0#充电口盖堵转状态#0.0#0.0#0.0#{"0": "NoErr", "1": "Err"}#MS11#RC06
+ChrgLidCurPosn#14#615#false#false#15#8#1#0#充电口盖当前位置#0.0#0.0#0.0#null#MS11#RC06
+ChrgLidEleclErr#14#615#false#false#23#1#1#0#充电口盖电气故障#0.0#0.0#0.0#{"0": "NoErr", "1": "Err"}#MS11#RC06
+ChrgLidLINRespErr#14#615#false#false#22#1#1#0#充电口盖LINResponse故障#0.0#0.0#0.0#{"0": "NoErr", "1": "Err"}#MS11#RC06
+ChrgLidMovgSts#14#615#false#false#21#1#1#0#充电口盖运动状态#0.0#0.0#0.0#{"0": "NotMoving", "1": "Moving"}#MS11#RC06
+ChrgLidOverTempErr#14#615#false#false#20#1#1#0#充电口盖过温#0.0#0.0#0.0#{"0": "NoErr", "1": "Err"}#MS11#RC06
+ChrgLidOverTrvlErr#14#615#false#false#19#1#1#0#充电口盖机械故障#0.0#0.0#0.0#{"0": "NoErr", "1": "Err"}#MS11#RC06
+ChrgLidOverUErr#14#615#false#false#18#1#1#0#充电口盖电压高#0.0#0.0#0.0#{"0": "NoErr", "1": "Err"}#MS11#RC06
+LINChrgnlghtSts#14#615#false#false#31#2#1#0#LIN charge light status#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC06
+ChrgLidUnderUErr#14#615#false#false#29#1#1#0#充电口盖电压低#0.0#0.0#0.0#{"0": "NoErr", "1": "Err"}#MS11#RC06
+PSLMDiag#14#615#false#false#28#2#1#0#PSLM Diagnose#0.0#0.0#0.0#{"0": "Normal", "1": "Over_Temperature", "2": "LED_Fault", "3": "Other_Error"}#MS11#RC06
+IVFExtrFanSpd#14#615#false#false#39#6#100#0##0.0#0.0#0.0#null#MS11#RC06
+IVFIntrFanSpd#14#615#false#false#47#6#100#0##0.0#0.0#0.0#null#MS11#RC06
+IVFSwVers#14#615#false#false#119#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+IVFActCur#14#615#false#false#143#8#0.1#0.0#IVF Actual Curernt#0.0#0.0#0.0#null#MS11#RC06
+IVFCbnTSts#14#615#false#false#151#8#1#-20#Inside Vehicle Fridge Cabin Temperature Status feedback#0.0#0.0#0.0#null#MS11#RC06
+IVFErrSts#14#615#false#false#159#8#1#0#Inside Vehicle Fridge Error Status#0.0#0.0#0.0#null#MS11#RC06
+IVFTSetACK#14#615#false#false#167#6#1#0#Inside Vehicle Fridge Actual Temperature Ack#0.0#0.0#0.0#null#MS11#RC06
+IVFWModSts#14#615#false#false#161#2#1#0#Inside Vehicle Fridge Worf Mode Status#0.0#0.0#0.0#{"0": "Off", "1": "Cool", "2": "Heat", "3": "Reserved"}#MS11#RC06
+IVFDoorAjarSts#14#615#false#false#175#1#1#0#Inside Vehicle Fridge Door Ajar Open Status#0.0#0.0#0.0#{"0": "Close", "1": "Open"}#MS11#RC06
+IVFExtrFanSts#14#615#false#false#174#1#1#0#Inside Vehicle Fridge Exterior Fan Status#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC06
+IVFIntrLiSts#14#615#false#false#173#1#1#0#Inside Vehicle Fridge Interior Light Status#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC06
+IVFTEC1WSts#14#615#false#false#172#1#1#0#Inside Vehicle Fridge TEC1 Work Status#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC06
+IVFTEC2WSts#14#615#false#false#171#1#1#0#Inside Vehicle Fridge TEC1 Work Status#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC06
+IVFIntrFanSts#14#615#false#false#170#1#1#0#Inside Vehicle Fridge Interior Fan Status#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC06
+LZCU2BLEMForNFCResp00#14#768#false#false#7#32#1#0#LZCU to BLEM For NFC Response 00#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCResp01#14#768#false#false#39#32#1#0#LZCU to BLEM For NFC Response 01#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCResp02#14#768#false#false#71#32#1#0#LZCU to BLEM For NFC Response 02#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCResp03#14#768#false#false#103#32#1#0#LZCU to BLEM For NFC Response 03#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCResp04#14#768#false#false#135#32#1#0#LZCU to BLEM For NFC Response 04#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCResp05#14#768#false#false#167#32#1#0#LZCU to BLEM For NFC Response 05#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCResp06#14#768#false#false#199#32#1#0#LZCU to BLEM For NFC Response 06#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCResp07#14#768#false#false#231#32#1#0#LZCU to BLEM For NFC Response 07#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCResp08#14#768#false#false#263#32#1#0#LZCU to BLEM For NFC Response 08#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCResp09#14#768#false#false#295#32#1#0#LZCU to BLEM For NFC Response 09#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCResp10#14#768#false#false#327#32#1#0#LZCU to BLEM For NFC Response 10#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCResp11#14#768#false#false#359#32#1#0#LZCU to BLEM For NFC Response 11#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCResp12#14#768#false#false#391#32#1#0#LZCU to BLEM For NFC Response 12#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCResp13#14#768#false#false#423#32#1#0#LZCU to BLEM For NFC Response 13#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCResp14#14#768#false#false#455#16#1#0#LZCU to BLEM For NFC Response 14#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCRespBkp0#14#768#false#false#471#16#1#0#LZCU to BLEM For NFC Response BackUp0#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForNFCRespBkp1#14#768#false#false#487#32#1#0#LZCU to BLEM For NFC Response Backup1#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp00#14#777#false#false#7#32#1#0#LZCU to BLEM For Rke Response 00#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp01#14#777#false#false#39#32#1#0#LZCU to BLEM For Rke Response 01#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp02#14#777#false#false#71#32#1#0#LZCU to BLEM For Rke Response 02#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp03#14#777#false#false#103#32#1#0#LZCU to BLEM For Rke Response 03#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp04#14#777#false#false#135#32#1#0#LZCU to BLEM For Rke Response 04#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp05#14#777#false#false#167#32#1#0#LZCU to BLEM For Rke Response 05#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp06#14#777#false#false#199#32#1#0#LZCU to BLEM For Rke Response 06#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp07#14#777#false#false#231#32#1#0#LZCU to BLEM For Rke Response 07#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp08#14#777#false#false#263#32#1#0#LZCU to BLEM For Rke Response 08#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp09#14#777#false#false#295#32#1#0#LZCU to BLEM For Rke Response 09#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp10#14#777#false#false#327#32#1#0#LZCU to BLEM For Rke Response 10#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp11#14#777#false#false#359#32#1#0#LZCU to BLEM For Rke Response 11#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp12#14#777#false#false#391#32#1#0#LZCU to BLEM For Rke Response 12#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp13#14#777#false#false#423#32#1#0#LZCU to BLEM For Rke Response 13#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeResp14#14#777#false#false#455#16#1#0#LZCU to BLEM For Rke Response 14#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeRespBkp0#14#777#false#false#471#16#1#0#LZCU to BLEM For Rke Response BackUp0#0.0#0.0#0.0#null#MS11#RC06
+LZCU2BLEMForRkeRespBkp1#14#777#false#false#487#32#1#0#LZCU to BLEM For Rke Response Backup1#0.0#0.0#0.0#null#MS11#RC06
+DrvrOcupcyStsGroupChks#14#892#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+DrvrOcupcyStsGroupCntr#14#892#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+DrvrOcupcySts#14#892#false#false#23#2#1#0#Driver Occupancy Sensor Status\n主驾座椅占位传感器检测状态#0.0#0.0#0.0#{"0": "Empty", "1": "Occupied", "2": "Invaild_STG", "3": "Invaild_STB_OL"}#MS11#RC06
+LZCU4F2Rsvd01#14#1266#false#false#7#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd02#14#1266#false#false#39#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd03#14#1266#false#false#71#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd04#14#1266#false#false#103#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd05#14#1266#false#false#135#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd06#14#1266#false#false#167#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd07#14#1266#false#false#199#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd08#14#1266#false#false#231#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd09#14#1266#false#false#263#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd10#14#1266#false#false#295#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd11#14#1266#false#false#327#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd12#14#1266#false#false#359#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd13#14#1266#false#false#391#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd14#14#1266#false#false#423#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd15#14#1266#false#false#455#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F2Rsvd16#14#1266#false#false#487#32#1#0#4F2Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrDrvSeatBackrestAdjust#14#1267#false#false#7#13#0.1#0.0#Current Monitor Driver Seat Backrest Adjust Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrDrvSeatCushionAdjust#14#1267#false#false#23#13#0.1#0.0#Current Monitor Driver Seat Cushion Adjust Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrDrvSeatForeAftAdjust#14#1267#false#false#39#13#0.1#0.0#Current Monitor Driver Seat Hight Fore After Adjust Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrDrvSeatHeat#14#1267#false#false#55#13#0.1#0.0#Current Monitor Driver Seat Heating#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrDrvSeatHightAdjust#14#1267#false#false#71#13#0.1#0.0#Current Monitor Driver Seat Hight Adjust Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrFLDoorCinchMotor#14#1267#false#false#87#13#0.1#0.0#Current Monitor Front Left Door Cinch Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrFLDoorHandleMotor#14#1267#false#false#103#13#0.1#0.0#Current Monitor Front Left Door Handle Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrFLDoorPwrRelseMotor#14#1267#false#false#119#13#0.1#0.0#Current Monitor Front Left Door Latch Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrFLWindowMotor#14#1267#false#false#135#13#0.1#0.0#Current Monitor Front Left Window Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRLChildLockMotor#14#1267#false#false#151#13#0.1#0.0#Current Monitor Rear Left Child Lock Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRLDoorCinchMotor#14#1267#false#false#167#13#0.1#0.0#Current Monitor Rear Left Door Cinch Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRLDoorHandleMotor#14#1267#false#false#183#13#0.1#0.0#Current Monitor Rear Left Door Handle Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRLDoorPwrRelseMotor#14#1267#false#false#199#13#0.1#0.0#Current Monitor Rear Left Door Latch Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRLWindowMotor#14#1267#false#false#215#13#0.1#0.0#Current Monitor Rear Left Window Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRRWiperMotor#14#1267#false#false#231#13#0.1#0.0#Current Monitor Rear Wiper Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrSpeakerUpDnMotor#14#1267#false#false#247#13#0.1#0.0#Current Monitor Driver Speaker Height Adjust Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrSteerWheelHeat#14#1267#false#false#263#13#0.1#0.0#Current Monitor Steering Wheel Heating#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrSteerWheelInOutMotor#14#1267#false#false#279#13#0.1#0.0#Current Monitor Steering Wheel Adjust Motor-in/out#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrSteerWheelUpDnMotor#14#1267#false#false#295#13#0.1#0.0#Current Monitor Steering Wheel Adjust Motor-up/down#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrTrunkMotor#14#1267#false#false#311#13#0.1#0.0#Current Monitor Trunk Motor#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F3Rsvd11#14#1267#false#false#327#32#1#0#4F3Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F3Rsvd12#14#1267#false#false#359#32#1#0#4F3Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F3Rsvd13#14#1267#false#false#391#32#1#0#4F3Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F3Rsvd14#14#1267#false#false#423#32#1#0#4F3Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F3Rsvd15#14#1267#false#false#455#32#1#0#4F3Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCU4F3Rsvd16#14#1267#false#false#487#32#1#0#4F3Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+LZCUXCP#14#1410#false#false#0#1#1#0#XCP调试信号#0.0#0.0#0.0#null#MS11#RC06
+UDB23LZCU#14#1353#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB22LZCU#14#1353#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB21LZCU#14#1353#false#false#21#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB20LZCU#14#1353#false#false#20#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB19LZCU#14#1353#false#false#19#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB18LZCU#14#1353#false#false#18#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB17LZCU#14#1353#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB31LZCU#14#1353#false#false#31#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB30LZCU#14#1353#false#false#30#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB29LZCU#14#1353#false#false#29#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB28LZCU#14#1353#false#false#28#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB27LZCU#14#1353#false#false#27#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB26LZCU#14#1353#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB25LZCU#14#1353#false#false#25#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB24LZCU#14#1353#false#false#24#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB39LZCU#14#1353#false#false#39#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB38LZCU#14#1353#false#false#38#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB37LZCU#14#1353#false#false#37#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB36LZCU#14#1353#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB35LZCU#14#1353#false#false#35#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB34LZCU#14#1353#false#false#34#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB33LZCU#14#1353#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB32LZCU#14#1353#false#false#32#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB47LZCU#14#1353#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB46LZCU#14#1353#false#false#46#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB45LZCU#14#1353#false#false#45#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB44LZCU#14#1353#false#false#44#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB43LZCU#14#1353#false#false#43#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB42LZCU#14#1353#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB41LZCU#14#1353#false#false#41#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB40LZCU#14#1353#false#false#40#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB49LZCU#14#1353#false#false#49#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+NMKeepAwkRsnLZCU#14#1353#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMCli00#14#349#false#false#7#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMCli01#14#349#false#false#71#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMCli02#14#349#false#false#135#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMCli03#14#349#false#false#199#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMCli04#14#349#false#false#263#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMCli05#14#349#false#false#327#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMCli06#14#349#false#false#391#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMCli07#14#349#false#false#455#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForDebugResp00#14#614#false#false#7#64#1#0#NEM发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForDebugResp01#14#614#false#false#71#64#1#0#NEM发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForDebugResp02#14#614#false#false#135#64#1#0#NEM发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForDebugResp03#14#614#false#false#199#64#1#0#NEM发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForDebugResp04#14#614#false#false#263#64#1#0#NEM发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForDebugResp05#14#614#false#false#327#64#1#0#NEM发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForDebugResp06#14#614#false#false#391#64#1#0#NEM发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForDebugResp07#14#614#false#false#455#64#1#0#NEM发送给BLEM的Debug响应信号#0.0#0.0#0.0#null#MS11#RC06
+NEMFaultInfoFlag#14#669#false#false#0#1#1#0#NEM Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#MS11#RC06
+NEM2VCCDForDebug00#14#783#false#false#7#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug01#14#783#false#false#39#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug02#14#783#false#false#71#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug03#14#783#false#false#103#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug04#14#783#false#false#135#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug05#14#783#false#false#167#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug06#14#783#false#false#199#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug07#14#783#false#false#231#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug08#14#783#false#false#263#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug09#14#783#false#false#295#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug10#14#783#false#false#327#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug11#14#783#false#false#359#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug12#14#783#false#false#391#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug13#14#783#false#false#423#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug14#14#783#false#false#455#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2VCCDForDebug15#14#783#false#false#487#32#1#0#NEM发送给VCCD的Debug请求信号#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForNFCReq00#14#792#false#false#7#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForNFCReq01#14#792#false#false#71#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForNFCReq02#14#792#false#false#135#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForNFCReq03#14#792#false#false#199#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForNFCReq04#14#792#false#false#263#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForNFCReq05#14#792#false#false#327#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForNFCReq06#14#792#false#false#391#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForNFCReq07#14#792#false#false#455#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForBTReq00#14#831#false#false#7#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForBTReq01#14#831#false#false#71#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForBTReq02#14#831#false#false#135#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForBTReq03#14#831#false#false#199#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForBTReq04#14#831#false#false#263#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForBTReq05#14#831#false#false#327#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForBTReq06#14#831#false#false#391#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+NEM2BLEMForBTReq07#14#831#false#false#455#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#RC06
+NEMNodeAddress#14#1382#false#false#7#8#1#0#Node source address\n节点源地址#0.0#0.0#0.0#null#MS11#RC06
+NEMActiveWakeup#14#1382#false#false#12#1#1#0#Active Wakeup Bit\n主动唤醒指示位#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#RC06
+NEMRepeatMsgReq#14#1382#false#false#8#1#1#0#Repeat Message Request Bit\n重复报文请求位#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#RC06
+UDB23NEM#14#1382#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB22NEM#14#1382#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB21NEM#14#1382#false#false#21#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB20NEM#14#1382#false#false#20#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB19NEM#14#1382#false#false#19#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB18NEM#14#1382#false#false#18#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB17NEM#14#1382#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+NEMRepeatMsgSt#14#1382#false#false#16#1#1#0#Repeat Message State indication\n节点处在重复报文状态指示位#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#RC06
+UDB31NEM#14#1382#false#false#31#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB30NEM#14#1382#false#false#30#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB29NEM#14#1382#false#false#29#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB28NEM#14#1382#false#false#28#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB27NEM#14#1382#false#false#27#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB26NEM#14#1382#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB25NEM#14#1382#false#false#25#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB24NEM#14#1382#false#false#24#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB39NEM#14#1382#false#false#39#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB38NEM#14#1382#false#false#38#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB37NEM#14#1382#false#false#37#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB36NEM#14#1382#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB35NEM#14#1382#false#false#35#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB34NEM#14#1382#false#false#34#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB33NEM#14#1382#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB32NEM#14#1382#false#false#32#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB47NEM#14#1382#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB46NEM#14#1382#false#false#46#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB45NEM#14#1382#false#false#45#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB44NEM#14#1382#false#false#44#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB43NEM#14#1382#false#false#43#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB42NEM#14#1382#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB41NEM#14#1382#false#false#41#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB40NEM#14#1382#false#false#40#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+NMKeepAwkRsnNEM#14#1382#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#RC06
+NEMToVCCDDiagResp#14#1730#false#false#7#512#1#0##0.0#0.0#0.0#null#MS11#RC06
+ARSMotStall#14#443#false#false#6#2#1#0#Active Rear Spoiler Motor Stall#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#MS11#RC06
+ARSMotMoveSts#14#443#false#false#4#3#1#0#Active Rear Spoiler Motor Move Status#0.0#0.0#0.0#{"0": "Idle", "1": "Stop", "2": "Up", "3": "Down", "4": "IceBreak", "5": "AutoAdjust"}#MS11#RC06
+ARSAntiPinch#14#443#false#false#1#2#1#0#Active Rear Spoiler Anti pinch#0.0#0.0#0.0#{"0": "NoAntiPinch", "1": "Active_AntiPinch"}#MS11#RC06
+TZCUInpUSts#14#443#false#false#15#3#1#0#TZCU Input Voltage Status#0.0#0.0#0.0#{"0": "Normal", "1": "HighVoltage", "2": "OverVoltage", "3": "LowVoltage", "4": "UnderVoltage", "5": "Reserve", "6": "Reserve", "7": "Reserve"}#MS11#RC06
+POTCurPosn#14#443#false#false#39#8#1.0#0.0#尾门当前位置反馈#0.0#0.0#0.0#{"0": "0%", "100": "100%", "255": "Ukwn"}#MS11#RC06
+POTHomeRstSwtSts#14#443#false#false#47#1#1#0#尾门复位开关状态#0.0#0.0#0.0#{"0": "SwtCls", "1": "SwtOpen"}#MS11#RC06
+POTPrimarySwtSts#14#443#false#false#41#1#1#0#尾门全锁开关状态#0.0#0.0#0.0#{"0": "SwtCls", "1": "SwtOpen"}#MS11#RC06
+POTSecondarySwtSts#14#443#false#false#53#1#1#0#尾门半锁开关状态#0.0#0.0#0.0#{"0": "SwtCls", "1": "SwtOpen"}#MS11#RC06
+POTShutfaceBtnSts#14#443#false#false#52#2#1#0#尾门Shutface按钮状态#0.0#0.0#0.0#{"0": "Err", "1": "NotPsd", "2": "Psd", "3": "NoInfo"}#MS11#RC06
+POTLtchMotSts#14#443#false#false#50#3#1#0#尾门锁电机状态#0.0#0.0#0.0#{"0": "NoDrv", "1": "PRDrv", "2": "PRRstDrv", "3": "CinchDrv", "4": "CinchRstDrv"}#MS11#RC06
+POTLePLGMotSts#14#443#false#false#63#2#1#0#尾门左撑杆电机状态#0.0#0.0#0.0#{"0": "NoDrv", "1": "OpenDrv", "2": "ClsDrv"}#MS11#RC06
+POTTopPosnSetFb#14#443#false#false#59#2#1#0#尾门高度设置反馈#0.0#0.0#0.0#{"0": "InActv", "1": "Actv", "2": "Fail"}#MS11#RC06
+ARSPerctPosn#14#601#false#false#7#8#1#0#Active Rear Spoiler Percentage Position#0.0#0.0#0.0#null#MS11#RC06
+ARSPosnSts#14#601#false#false#15#4#1#0#Active Rear Spoiler Position Status#0.0#0.0#0.0#{"0": "Unknown", "1": "P0", "2": "P1", "3": "P2", "4": "P3", "5": "OpenHardStop", "6": "CloseHardStop", "7": "LessPo", "8": "MoreP3", "9": "OtherPosn", "10": "BtwP0P1", "11": "BtwP1P2", "12": "BtwP2P3"}#MS11#RC06
+ARSHallPosnDataVld#14#601#false#false#9#2#1#0#Active Rear Spoiler Position Valid#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#RC06
+POTSpindleFlt#14#601#false#false#39#16#1#0#尾门撑杆故障状态0:NoErr_1:Err\nBit0:PLGMotSho2Batt Bit1:PLGMotSho2Gnd\nBit2:PLGMotOpen  \nBit3:PLGHallFlt   \nBit4:PLGHallSplyFlt   \nBit5~Bit15 Reserved#0.0#0.0#0.0#null#MS11#RC06
+POTAntiPnchSts#14#601#false#false#55#1#1#0#尾门防夹状态#0.0#0.0#0.0#{"0": "InActv", "1": "Actv"}#MS11#RC06
+POTArSts#14#601#false#false#54#3#1#0#尾门区域定义#0.0#0.0#0.0#{"0": "Ukwn", "1": "ClsAr", "2": "OpenOnlyAr", "3": "TogAr", "4": "ClsOnlyAr"}#MS11#RC06
+POTBlkSts#14#601#false#false#51#1#1#0#尾门堵转状态#0.0#0.0#0.0#{"0": "InActv", "1": "Actv"}#MS11#RC06
+POTMeclFullOpenPosnLrnSts#14#601#false#false#50#1#1#0#尾门机械位置学习状态#0.0#0.0#0.0#{"0": "InActv", "1": "Actv"}#MS11#RC06
+POTExtBtnSts#14#601#false#false#57#2#1#0#尾门外部按钮状态#0.0#0.0#0.0#{"0": "Err", "1": "NotPsd", "2": "Psd", "3": "NoInfo"}#MS11#RC06
+ARSATSForceThd#14#601#false#false#71#16#1#0#尾翼防夹力阈值#0.0#0.0#0.0#null#MS11#RC06
+ARSMotorCur#14#601#false#false#87#16#0.1#0.0#尾翼驱动电流#0.0#0.0#0.0#null#MS11#RC06
+ARSMotorSpd#14#601#false#false#103#16#1#0#尾翼电机转速#0.0#0.0#0.0#null#MS11#RC06
+ARSRunResistance#14#601#false#false#119#16#1#0#尾翼驱动阻力#0.0#0.0#0.0#null#MS11#RC06
+POTLtchFlt#14#601#false#false#135#16#1#0#尾门锁故障状态 0:NoErr_1:Err\nBit0:PRSho2Batt  Bit1:PRSho2Gnd Bit2:PROpen Bit3:PRDrvFlt  \nBit4:CinchSho2Batt Bit5:CinchSho2Gnd \nBit6:CinchOpen  Bit7:CinchDrvFlt \nBit8 ~ Bit15: Reserved#0.0#0.0#0.0#null#MS11#RC06
+ArsAtsDataVld#14#601#false#false#151#1#1#0#ARS ATS Data Valid#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#RC06
+ARSFunInhbn#14#601#false#false#150#1#1#0#尾翼由于驱动受限功能抑制#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#RC06
+ARSPosnCheckError#14#601#false#false#149#1#1#0#尾翼位置自检错误#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#RC06
+DoorPOTCurSts#14#601#false#false#148#3#1#0#电动尾门当前状态#0.0#0.0#0.0#{"0": "Cls", "1": "OpenOnlyArea", "2": "POTClosing", "3": "POTCloseStop", "4": "POTOpenStop", "5": "POTOpening", "6": "Fullopen"}#MS11#RC06
+POTMissLatched#14#601#false#false#145#1#1#0#尾门误上锁#0.0#0.0#0.0#{"0": "InActv", "1": "Actv"}#MS11#RC06
+ARSHallMaxPosn#14#601#false#false#159#16#1#0#ARS Hall Max Position#0.0#0.0#0.0#null#MS11#RC06
+ARSMotorFreq#14#601#false#false#175#8#1#0#尾翼驱动频率#0.0#0.0#0.0#null#MS11#RC06
+ARSMotFlt#14#821#false#false#7#8#1#0#Active Rear Spoiler Motor Fault#0.0#0.0#0.0#null#MS11#RC06
+ARSClsSwtFlt#14#821#false#false#15#3#1#0#Active Rear Spoiler Close Switch Fault#0.0#0.0#0.0#{"0": "NoFault", "1": "open_circuit", "2": "short_circuit"}#MS11#RC06
+ARSOpenSwtFlt#14#821#false#false#12#3#1#0#Active Rear Spoiler Open Switch Fault#0.0#0.0#0.0#{"0": "NoFault", "1": "open_circuit", "2": "short_circuit"}#MS11#RC06
+ARSClsSwt#14#821#false#false#9#2#1#0#ARS Close Switch#0.0#0.0#0.0#{"0": "ON", "1": "OFF", "2": "Reserve1", "3": "Reserve2"}#MS11#RC06
+ARSMotorProtnSts#14#821#false#false#23#2#1#0#Active Rear Spoiler MotorThermal Protect Status#0.0#0.0#0.0#{"0": "NoThermProtn", "1": "ThermProtn"}#MS11#RC06
+ARSOpenSwt#14#821#false#false#21#2#1#0#ARS Open Switch#0.0#0.0#0.0#{"0": "ON", "1": "OFF", "2": "Reserve1", "3": "Reserve2"}#MS11#RC06
+ARSHardHallPosn#14#821#false#false#31#16#1#1#尾翼相对下堵转点的霍尔位置#0.0#0.0#0.0#null#MS11#RC06
+ARSMotorDuty#14#821#false#false#47#8#1#0#尾翼驱动占空比#0.0#0.0#0.0#null#MS11#RC06
+TZCUFaultInfoFlag#14#821#false#false#55#1#1#0#TZCU Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#MS11#RC06
+T01OutpU_SCUUBVR#14#1270#false#false#7#8#0.1#0.0##0.0#0.0#0.0#null#MS11#RC06
+T02OutpU_SCUUBMR#14#1270#false#false#15#8#0.1#0.0##0.0#0.0#0.0#null#MS11#RC06
+T03OutpU_AMP#14#1270#false#false#23#8#0.1#0.0##0.0#0.0#0.0#null#MS11#RC06
+N1_DRV871x_Init_Cnt_TZCU#14#1270#false#false#31#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+N2_FS2620_Init_Cnt_TZCU#14#1270#false#false#47#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+N3_TIC12400_Init_Cnt_TZCU#14#1270#false#false#63#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+N4_VNF1048_Init_Cnt_TZCU#14#1270#false#false#79#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrElecSpoilerMotor#14#1271#false#false#7#13#0.1#0.0#Current Monitor Electric Spoiler Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRRWindHeatTZCU#14#1271#false#false#23#13#0.1#0.0#Current Monitor Rear Wind Heating from TZCU#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRRWiperMotorTZCU#14#1271#false#false#39#13#0.1#0.0#Current Monitor Rear Wiper Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrTailLeStrutMotor#14#1271#false#false#55#13#0.1#0.0#Current Monitor Tailgate Left Strut Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrTailRiStrutMotor#14#1271#false#false#71#13#0.1#0.0#Current Monitor Tailgate Right Strut Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrTrunkCinchMotor#14#1271#false#false#87#13#0.1#0.0#Current Monitor Trunk Cinch Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrTrunkPwrRelseMotor#14#1271#false#false#103#13#0.1#0.0#Current Monitor Trunk Latch Motor#0.0#0.0#0.0#null#MS11#RC06
+TZCUXCP#14#1414#false#false#0#1#1#0#XCP调试信号#0.0#0.0#0.0#null#MS11#RC06
+UDB23TZCU#14#1355#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB22TZCU#14#1355#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB21TZCU#14#1355#false#false#21#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB20TZCU#14#1355#false#false#20#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB19TZCU#14#1355#false#false#19#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB18TZCU#14#1355#false#false#18#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB17TZCU#14#1355#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB31TZCU#14#1355#false#false#31#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB30TZCU#14#1355#false#false#30#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB29TZCU#14#1355#false#false#29#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB28TZCU#14#1355#false#false#28#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB27TZCU#14#1355#false#false#27#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB26TZCU#14#1355#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB25TZCU#14#1355#false#false#25#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB24TZCU#14#1355#false#false#24#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB39TZCU#14#1355#false#false#39#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB38TZCU#14#1355#false#false#38#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB37TZCU#14#1355#false#false#37#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB36TZCU#14#1355#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB35TZCU#14#1355#false#false#35#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB34TZCU#14#1355#false#false#34#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB33TZCU#14#1355#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB32TZCU#14#1355#false#false#32#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB47TZCU#14#1355#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB46TZCU#14#1355#false#false#46#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB45TZCU#14#1355#false#false#45#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB44TZCU#14#1355#false#false#44#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB43TZCU#14#1355#false#false#43#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB42TZCU#14#1355#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB41TZCU#14#1355#false#false#41#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB40TZCU#14#1355#false#false#40#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+NMKeepAwkRsnTZCU#14#1355#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd01#14#281#false#false#7#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd02#14#281#false#false#39#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd03#14#281#false#false#71#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd04#14#281#false#false#103#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd05#14#281#false#false#135#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd06#14#281#false#false#167#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd07#14#281#false#false#199#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd08#14#281#false#false#231#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd09#14#281#false#false#263#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd10#14#281#false#false#295#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd11#14#281#false#false#327#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd12#14#281#false#false#359#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd13#14#281#false#false#391#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd14#14#281#false#false#423#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd15#14#281#false#false#455#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU119Rsvd16#14#281#false#false#487#32#1#0#119Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+DoorPassAjarSwtStsBkp#14#439#false#false#12#1#1#0#Passenger Door Ajar Switch Status BackUp in DKCAN#0.0#0.0#0.0#{"0": "SwtClose", "1": "SwtOpen"}#MS11#RC06
+DoorRiReAjarSwtStsBkp#14#439#false#false#11#1#1#0#Right Rear Door Ajar Switch Status BackUp in DKCAN#0.0#0.0#0.0#{"0": "SwtClose", "1": "SwtOpen"}#MS11#RC06
+DoorPassIntPwrRelsBtnStsBkp#14#492#false#false#7#2#1#0#Passenger Door Inside Powe rRelease Button Status BackUp in DKCAN#0.0#0.0#0.0#{"0": "Err", "1": "NotPsd", "2": "Psd", "3": "NoInfo"}#MS11#RC06
+DoorPassOutPwrRelsBtnStsBkp#14#492#false#false#5#2#1#0#Passenger Door Outside Powe rRelease Button Status BackUp in DKCAN#0.0#0.0#0.0#{"0": "Err", "1": "NotPsd", "2": "Psd", "3": "NoInfo"}#MS11#RC06
+DoorRiReIntPwrRelsBtnStsBkp#14#492#false#false#3#2#1#0#Right Rear Door Inside Powe rRelease Button Status BackUp in DKCAN#0.0#0.0#0.0#{"0": "Err", "1": "NotPsd", "2": "Psd", "3": "NoInfo"}#MS11#RC06
+DoorRiReOutPwrRelsBtnStsBkp#14#492#false#false#1#2#1#0#Right Rear Door Outside Powe rRelease Button Status BackUp in DKCAN#0.0#0.0#0.0#{"0": "Err", "1": "NotPsd", "2": "Psd", "3": "NoInfo"}#MS11#RC06
+RzcuLostVccdGrpChks#14#492#false#false#47#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+RzcuLostVccdGrpCntr#14#492#false#false#51#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+RzcuLostVccdDkCan#14#492#false#false#63#1#1#0#RZCU Lost VCCD in DKCAN#0.0#0.0#0.0#{"0": "NoLost", "1": "Lost"}#MS11#RC06
+RzcuLostVccdZcuCan#14#492#false#false#62#1#1#0#RZCU Lost VCCD in ZCUCAN#0.0#0.0#0.0#{"0": "NoLost", "1": "Lost"}#MS11#RC06
+RZCU4F4Rsvd01#14#1268#false#false#7#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd02#14#1268#false#false#39#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd03#14#1268#false#false#71#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd04#14#1268#false#false#103#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd05#14#1268#false#false#135#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd06#14#1268#false#false#167#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd07#14#1268#false#false#199#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd08#14#1268#false#false#231#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd09#14#1268#false#false#263#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd10#14#1268#false#false#295#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd11#14#1268#false#false#327#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd12#14#1268#false#false#359#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd13#14#1268#false#false#391#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd14#14#1268#false#false#423#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd15#14#1268#false#false#455#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F4Rsvd16#14#1268#false#false#487#32#1#0#4F4Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrFRDoorCinchMotor#14#1269#false#false#7#13#0.1#0.0#Current Monitor Front Right Door Cinch Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrFRDoorHandleMotor#14#1269#false#false#23#13#0.1#0.0#Current Monitor Front Right Door Handle Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrFRDoorPwrRelseMotor#14#1269#false#false#39#13#0.1#0.0#Current Monitor Front Right Door Latch Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrFrtCameraHeat#14#1269#false#false#55#13#0.1#0.0#Current Monitor Front Camera Heating#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrFRWindowMotor#14#1269#false#false#71#13#0.1#0.0#Current Monitor Front Right Window Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrLegSuptExtenMotor#14#1269#false#false#87#13#0.1#0.0#Current Monitor Leg Support Extension Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrLegSuptRotaMotor#14#1269#false#false#103#13#0.1#0.0#Current Monitor Leg Support Rotation Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrFRSeatBackrestAdj#14#1269#false#false#119#13#0.1#0.0#Current Monitor Passenger Seat Backrest Adjust Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrPassSeatCushionAdjust#14#1269#false#false#135#13#0.1#0.0#Current Monitor Passenger Seat Cushion Adjust Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrPassSeatForeAftAdjust#14#1269#false#false#151#13#0.1#0.0#Current Monitor Passenger Seat Fore After Adjust Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrPassSeatHeat#14#1269#false#false#167#13#0.1#0.0#Current Monitor Passenger Seat Heating#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrPassSeatHightAdjust#14#1269#false#false#183#13#0.1#0.0#Current Monitor Passenger Seat Height Adjust Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrPassSpeakerUpDnMotor#14#1269#false#false#199#13#0.1#0.0#Current Monitor Passenger Speaker Height Adjust Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRiOSRVMUpDnAdjust#14#1269#false#false#215#13#0.1#0.0#Current Monitor Right OSRVM Up/Down Adjust Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRLSeatCushionHeat#14#1269#false#false#231#13#0.1#0.0#Current Monitor Rear Left Seat Cushion Heating#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRRChildLockMotor#14#1269#false#false#247#13#0.1#0.0#Current Monitor Rear Right Child Lock Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRRDoorCinchMotor#14#1269#false#false#263#13#0.1#0.0#Current Monitor Rear Right Door Cinch Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRRDoorHandleMotor#14#1269#false#false#279#13#0.1#0.0#Current Monitor Rear Right Door Handle Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRRDoorPwrRelseMotor#14#1269#false#false#295#13#0.1#0.0#Current Monitor Rear Right Door Latch Motor#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrrRMSeatCushionHeat#14#1269#false#false#311#13#0.1#0.0#Current Monitor Rear Middle Seat Cushion Heating#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRRSeatCushionHeat#14#1269#false#false#327#13#0.1#0.0#Current Monitor Rear Right Seat Cushion Heat#0.0#0.0#0.0#null#MS11#RC06
+OutpCurMonrRRWindowMotor#14#1269#false#false#343#13#0.1#0.0#Current MonitorRear Right Window Motor#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F5Rsvd12#14#1269#false#false#359#32#1#0#4F5Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F5Rsvd13#14#1269#false#false#391#32#1#0#4F5Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F5Rsvd14#14#1269#false#false#423#32#1#0#4F5Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F5Rsvd15#14#1269#false#false#455#32#1#0#4F5Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCU4F5Rsvd16#14#1269#false#false#487#32#1#0#4F5Rsvdmessage for test#0.0#0.0#0.0#null#MS11#RC06
+RZCUXCP#14#1412#false#false#7#1#1#0#XCP调试信号#0.0#0.0#0.0#null#MS11#RC06
+UDB23RZCU#14#1354#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB22RZCU#14#1354#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB21RZCU#14#1354#false#false#21#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB20RZCU#14#1354#false#false#20#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB19RZCU#14#1354#false#false#19#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB18RZCU#14#1354#false#false#18#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB17RZCU#14#1354#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB31RZCU#14#1354#false#false#31#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB30RZCU#14#1354#false#false#30#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB29RZCU#14#1354#false#false#29#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB28RZCU#14#1354#false#false#28#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB27RZCU#14#1354#false#false#27#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB26RZCU#14#1354#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB25RZCU#14#1354#false#false#25#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB24RZCU#14#1354#false#false#24#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB39RZCU#14#1354#false#false#39#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB38RZCU#14#1354#false#false#38#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB37RZCU#14#1354#false#false#37#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB36RZCU#14#1354#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB35RZCU#14#1354#false#false#35#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB34RZCU#14#1354#false#false#34#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB33RZCU#14#1354#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB32RZCU#14#1354#false#false#32#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB47RZCU#14#1354#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB46RZCU#14#1354#false#false#46#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB45RZCU#14#1354#false#false#45#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB44RZCU#14#1354#false#false#44#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB43RZCU#14#1354#false#false#43#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB42RZCU#14#1354#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB41RZCU#14#1354#false#false#41#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB40RZCU#14#1354#false#false#40#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+NMKeepAwkRsnRZCU#14#1354#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#RC06
+TiDomn#14#263#false#false#4#5#1#0#time domain#0.0#0.0#0.0#{"0": "UTC_plus_0", "1": "UTC_plus_1", "2": "UTC_plus_2", "3": "UTC_plus_3", "4": "UTC_plus_4", "5": "UTC_plus_5", "6": "UTC_plus_6", "7": "UTC_plus_7", "8": "UTC_plus_8", "9": "UTC_plus_9", "10": "UTC_plus_10", "11": "UTC_plus_11", "12": "UTC_plus_12", "13": "UTC_plus_13", "14": "UTC_plus_14", "15": "UTC_plus_15", "16": "UTC_plus_16", "17": "UTC_plus_17", "18": "UTC_plus_18", "19": "UTC_plus_19", "20": "UTC_plus_20", "21": "UTC_plus_21", "22": "UTC_plus_22", "23": "UTC_plus_23", "24": "Invalid"}#MS11#RC06
+DateTiYr#14#263#false#false#15#8#1.0#2000.0#date time year#0.0#0.0#0.0#{"255": "Invalid"}#MS11#RC06
+DateTiMth#14#263#false#false#19#4#1.0#0.0#date time month#0.0#0.0#0.0#{"0": "Invalid"}#MS11#RC06
+DateTiDay#14#263#false#false#28#5#1#0#date time day#0.0#0.0#0.0#{"0": "init"}#MS11#RC06
+DateTiHr#14#263#false#false#36#5#1.0#0.0#date time hour#0.0#0.0#0.0#{"24": "Invalid"}#MS11#RC06
+DateTiMins#14#263#false#false#45#6#1.0#0.0#date time minute#0.0#0.0#0.0#{"60": "Invalid"}#MS11#RC06
+DateTiSec#14#263#false#false#55#6#1.0#0.0#date time second#0.0#0.0#0.0#{"60": "Invalid"}#MS11#RC06
+DateTiMilsec#14#263#false#false#49#10#1.0#0.0#date time millisecond#0.0#0.0#0.0#{"0": "0", "999": "999", "1000": "invalid"}#MS11#RC06
+TBOX2BLEMForDKS00#14#745#false#false#7#32#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKS01#14#745#false#false#39#32#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKS02#14#745#false#false#71#32#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKS03#14#745#false#false#103#32#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKS04#14#745#false#false#135#32#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKS05#14#745#false#false#167#32#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKS06#14#745#false#false#199#32#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKS07#14#745#false#false#231#32#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKS08#14#745#false#false#263#32#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKS09#14#745#false#false#295#32#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKS10#14#745#false#false#327#32#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKS11#14#745#false#false#359#32#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKS12#14#745#false#false#391#32#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKS13#14#745#false#false#423#32#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKS14#14#745#false#false#455#16#1#0#TBOX send message to BLEM From DKS#0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKSFV#14#745#false#false#471#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+TBOX2BLEMForDKSMAC#14#745#false#false#487#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+PwrModSigGrpChks#14#287#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+PwrModSigGrpCntr#14#287#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+PwrModSts#14#287#false#false#23#3#1#0#PowerMode Status#0.0#0.0#0.0#{"0": "OFF", "1": "Awake", "2": "ACC", "3": "RUN"}#MS11#RC06
+PwrModVld#14#287#false#false#20#1#1#0#PowerMode Validty#0.0#0.0#0.0#{"0": "Valid", "1": "NotValid"}#MS11#RC06
+VCUActGearSigGrpChks#14#287#false#false#47#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCUActGearLvr#14#287#false#false#55#3#1#0#Actual gear level 车辆实际档位\nP R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#MS11#RC06
+VCUActGearLvrVld#14#287#false#false#52#1#1#0#车辆实际档位有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC06
+VCUActGearSigGrpCntr#14#287#false#false#51#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+GearLvrSigGrpChks#14#287#false#false#71#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+GearLvrSigGrpCntr#14#287#false#false#75#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCUGearLvrForDisp#14#287#false#false#87#3#1#0#仪表显示挡位\nP R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#MS11#RC06
+VCUGearLvrForDispVld#14#287#false#false#84#1#1#0#The Vehicle Display Gear of PRND is valid.#0.0#0.0#0.0#{"0": "The_Vehicle_Display_Gear_is_invalid", "1": "The_Vehicle_Display_Gear_is_Valid"}#MS11#RC06
+VCUPtRdyFlg#14#287#false#false#127#1#1#0#驾驶使能#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MS11#RC06
+CarModSts#14#287#false#false#126#3#1#0#CarMode状态信号#0.0#0.0#0.0#{"0": "Normal", "1": "Reserved1", "2": "Trsnp", "3": "Showroom", "4": "Dyno", "5": "TestDrv", "6": "Service", "7": "Reserved3"}#MS11#RC06
+StrtBtnSts#14#287#false#false#123#1#1#0#仪式感按键按下 未按下状态#0.0#0.0#0.0#{"0": "NotPsd", "1": "Psd"}#MS11#RC06
+LockFltLiHornReq#14#287#false#false#122#3#1.0#0.0#闭锁失败声光请求#0.0#0.0#0.0#{"0": "No_request", "1": "Horn_only", "2": "Lights_only", "3": "Lights_and_Horn", "4": "Lights_and_Speaker"}#MS11#RC06
+VCCD2BLEMForDKS00#14#291#false#false#7#32#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKS01#14#291#false#false#39#32#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKS02#14#291#false#false#71#32#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKS03#14#291#false#false#103#32#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKS04#14#291#false#false#135#32#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKS05#14#291#false#false#167#32#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKS06#14#291#false#false#199#32#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKS07#14#291#false#false#231#32#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKS08#14#291#false#false#263#32#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKS09#14#291#false#false#295#32#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKS10#14#291#false#false#327#32#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKS11#14#291#false#false#359#32#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKS12#14#291#false#false#391#32#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKS13#14#291#false#false#423#32#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKS14#14#291#false#false#455#16#1#0#VCCD发送/响应DKS请求给BLEM#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKSFV#14#291#false#false#471#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForDKSMAC#14#291#false#false#487#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+ARSCtrlCmd#14#350#false#false#7#4#1#0#Active Rear Spoiler Control Command#0.0#0.0#0.0#{"0": "Idle", "1": "P0Cmd", "2": "P1Cmd", "3": "P2Cmd", "4": "P3Cmd", "5": "AutoUp", "6": "AutoDown", "7": "Stop", "8": "IceBreakP1", "9": "IceBreakP2", "10": "IceBreakP3"}#MS11#RC06
+DiagcComActv#14#350#false#false#3#1#1#0#diagnostic communication activation#0.0#0.0#0.0#{"0": "No", "1": "Yes"}#MS11#RC06
+POTBuzReq#14#350#false#false#2#3#1#0#尾门蜂鸣器请求#0.0#0.0#0.0#{"0": "None", "1": "Level1Req", "2": "Level2Req", "3": "Level3Req", "4": "Level4Req"}#MS11#RC06
+ARSTarPosn#14#350#false#false#15#8#1#0#Active Rear SpoilerTarget Position#0.0#0.0#0.0#null#MS11#RC06
+POTOpenClsTrigSrc#14#350#false#false#23#5#1#0#电动尾门开闭请求触发源#0.0#0.0#0.0#{"0": "NoTrigSrc", "1": "HMIOpen", "2": "HMICls", "3": "HMIStop", "4": "BLEOpen", "5": "BLECls", "6": "BLEStop", "7": "VoiceOpen", "8": "VoiceCls", "9": "VoiceStop", "10": "SOAOpen", "11": "SOACls", "12": "SOAClsStop", "13": "ExtSwtOpen", "14": "ExtSwtCls", "15": "ExtSwtStop", "16": "IntSwtOpen", "17": "IntSwtCls", "18": "IntSwtStop", "19": "FobOpen", "20": "FobCls", "21": "FobStop"}#MS11#RC06
+POTPerctSetSts#14#350#false#false#18#1#1#0#尾门目标位置激活状态#0.0#0.0#0.0#{"0": "InActv", "1": "Actv"}#MS11#RC06
+ReShdDefrstCmd#14#350#false#false#17#1#1#0#后风挡除霜指令#0.0#0.0#0.0#{"0": "OnOff1_Off", "1": "OnOff1_On"}#MS11#RC06
+POTPerctSet#14#350#false#false#31#8#1.0#-1.0#电动尾门运行目标位置#0.0#0.0#0.0#{"0": "None", "1": "0%", "101": "100%", "255": "Stop"}#MS11#RC06
+POTTopPosn#14#350#false#false#39#8#1.0#0.0#尾门当前最大开启高度设置位置#0.0#0.0#0.0#{"0": "0%", "100": "100%", "255": "Ukwn"}#MS11#RC06
+LvPwrDistbnWUActvReqSigGrpChks#14#350#false#false#47#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+LvPwrDistbnWUActvReqSigGrpCntr#14#350#false#false#51#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+LvPwrDistbnWUActvReq#14#350#false#false#63#8#1#0#Lower Power Distribution Wakeup Active Request#0.0#0.0#0.0#{"0": "Normal", "1": "ACChrgOnly", "2": "DCChrgOnly", "3": "PIntelgntChrgOnly"}#MS11#RC06
+LvPwrDistbnWUActvReqVld#14#350#false#false#71#1#1#0#Lower Power Distribution Wakeup Active Request Valid#0.0#0.0#0.0#{"0": "Valid", "1": "InValid"}#MS11#RC06
+TrunkCmdGrpChks#14#350#false#false#79#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+TrunkCmdGrpCntr#14#350#false#false#83#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+POTOpenClsCmd#14#350#false#false#95#3#1#0#电动尾门控制请求指令#0.0#0.0#0.0#{"0": "NoReq", "1": "OpenReq", "2": "ClsReq", "3": "StopReq", "4": "PRonlyReq", "5": "TopPosnSetReq", "6": "LearnReq"}#MS11#RC06
+TrOpenClsCmd#14#350#false#false#92#3#1#0#尾门开闭请求指令#0.0#0.0#0.0#{"0": "TrOpenerReq1_TrOpenerIdle", "1": "TrOpenerReq1_TrOpenerOpen", "2": "TrOpenerReq1_TrOpenerCls", "3": "TrOpenerReq1_TrOpenerStop", "4": "TrOpenerReq1_TrOpenerClsDly"}#MS11#RC06
+MIASplrTarPosnReq#14#350#false#false#103#3#1.0#0.0#Micar Intelligent Aerodynamic Active Rear SpoilerTarget Position Request\n米车智能空气动力学对尾翼开度请求#0.0#0.0#0.0#{"0": "Unknow", "1": "Close", "2": "Low", "3": "Mid", "4": "High"}#MS11#RC06
+MIACurSts#14#350#false#false#100#2#1#0#Micar Intelligent Aerodynamic Current Status \n米车智能空气动力学当前工作状态#0.0#0.0#0.0#{"0": "OFF", "1": "ON", "2": "Reserve", "3": "Reserve"}#MS11#RC06
+AmbTEstimdVld#14#350#false#false#98#1#1#0#Estimated ambient temperature valid value.#0.0#0.0#0.0#{"0": "Not_Valid", "1": "Valid"}#MS11#RC06
+TrunkSwtIllmnCmd#14#350#false#false#97#1#1#0#Trunk Switch Illumination Command#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC06
+ZcuTmPwrDistbnReq#14#350#false#false#96#1#1#0#Thermal Power Distribution request for ZCU in special condition#0.0#0.0#0.0#{"0": "No_Request", "1": "Request"}#MS11#RC06
+AmbTEstimd#14#350#false#false#111#16#0.01#-80.0#Estimated ambient temperature.#0.0#0.0#0.0#null#MS11#RC06
+BLEOpenClsFrntLeWinReq#14#351#false#false#7#8#1#0#RKE WindowDriver  percentage control \n   0x00~0x64 0%~100%\n   0xFF NotReq#0.0#0.0#0.0#{"0": "0%_\u63091%\u6b65\u8fdb\u5230100%", "100": "100%", "255": "NotReq"}#MS11#RC06
+BLEOpenClsFrntRiWinReq#14#351#false#false#15#8#1#0#RKE WindowPassenger percentage control \n   0x00~0x64 0%~100%\n   0xFF NotReq#0.0#0.0#0.0#{"0": "0%_\u63091%\u6b65\u8fdb\u5230100%", "100": "100%", "255": "NotReq"}#MS11#RC06
+BLEOpenClsReLeWinReq#14#351#false#false#23#8#1#0#RKE  WindowLeftRear percentage control \n   0x00~0x64 0%~100%\n   0xFF NotReq#0.0#0.0#0.0#{"0": "0%_\u63091%\u6b65\u8fdb\u5230100%", "100": "100%", "255": "NotReq"}#MS11#RC06
+BLEOpenClsReRiWinReq#14#351#false#false#31#8#1#0#RKE WindowRightRear percentage control \n   0x00~0x64 0%~100%\n   0xFF NotReq#0.0#0.0#0.0#{"0": "0%_\u63091%\u6b65\u8fdb\u5230100%", "100": "100%", "255": "NotReq"}#MS11#RC06
+ChrgLidSts#14#351#false#false#39#2#1#0#充电口盖打开状态显示#0.0#0.0#0.0#{"0": "Ukwn", "1": "Open", "2": "Clsd"}#MS11#RC06
+DoorLeReSts#14#351#false#false#37#2#1#0#左后侧门状态#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd"}#MS11#RC06
+DoorPassSts#14#351#false#false#35#2#1#0#副驾侧门状态#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd"}#MS11#RC06
+DoorRiReSts#14#351#false#false#33#2#1#0#右后侧门状态#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd"}#MS11#RC06
+BLECenLockgReq#14#351#false#false#47#2#1.0#0.0#BLE Smart Mobile phone lock unlock Request#0.0#0.0#0.0#{"0": "NotReqd", "1": "Unlock", "2": "Locked"}#MS11#RC06
+BLEChrgLidCtrlReq#14#351#false#false#45#2#1#0#手机蓝牙控制充电口盖开闭请求#0.0#0.0#0.0#{"0": "NotReqd", "1": "Opend", "2": "Clsd"}#MS11#RC06
+HoodOpenClsSts#14#351#false#false#43#2#1#0#Hood Open Close Status\n前舱盖开启关闭状态#0.0#0.0#0.0#{"0": "Ukwn", "1": "Open", "2": "Clsd"}#MS11#RC06
+TrOpenClsSts#14#351#false#false#41#2#1#0#Trunk Open Close Status#0.0#0.0#0.0#{"0": "Ukwn", "1": "Open", "2": "Clsd"}#MS11#RC06
+BLEForCtrlLB#14#351#false#false#55#2#1#0#mobile phone BLE control dipped headlight \n0x0 NotReq\n0x1 open\n0x2 close#0.0#0.0#0.0#{"0": "NotReq", "1": "open", "2": "close"}#MS11#RC06
+BLEForFlght#14#351#false#false#53#2#1#0#mobile phone BLE control flashing light \n0x0 NotReq\n0x1 flashing light request#0.0#0.0#0.0#{"0": "NotReq", "1": "flashing_light_request"}#MS11#RC06
+BLEForHorn#14#351#false#false#51#2#1#0#mobile phone control horn \n0x0  NoCmd\n0x1 HornReq#0.0#0.0#0.0#{"0": "NoCmd", "1": "HornReq"}#MS11#RC06
+BLEHoodCtrlReq#14#351#false#false#49#2#1#0#手机蓝牙控制前舱开闭请求#0.0#0.0#0.0#{"0": "NotReqd", "1": "Opend", "2": "Clsd"}#MS11#RC06
+DoorDrvrSts#14#351#false#false#63#2#1#0#驾驶侧门状态#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd"}#MS11#RC06
+LvLoadCtrlLvl#14#351#false#false#61#3#1#0#低压负载控制等级#0.0#0.0#0.0#{"0": "FullEgy", "1": "LowEgy", "2": "BattErr", "3": "ExtmECOMod", "4": "DcdcErr", "5": "Reserved0", "6": "Reserved1", "7": "Reserved2"}#MS11#RC06
+DigkeyBLEReq#14#351#false#false#58#1#1#0#手机蓝牙请求指令触发#0.0#0.0#0.0#{"0": "NotReqd", "1": "Reqd"}#MS11#RC06
+BLETrCtrlReq#14#351#false#false#73#2#1#0#手机蓝牙控制尾门开闭请求#0.0#0.0#0.0#{"0": "NotReqd", "1": "Opend", "2": "Clsd"}#MS11#RC06
+ActvtOfHornDKBkp#14#351#false#false#89#2#1#0#Activate of Horn BackUp#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "HighHornOnOnly", "3": "LowHornOnOnly"}#MS11#RC06
+DoorCmdBkpGrpChks#14#351#false#false#111#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+HoodOpenClsCmdBkp#14#351#false#false#119#3#1#0#Hood Open Close Cmd Backup in DK CAN#0.0#0.0#0.0#{"0": "Idle", "1": "Open", "2": "Cls", "3": "Stop", "4": "ClsDly"}#MS11#RC06
+DoorCmdBkpGrpCntr#14#351#false#false#115#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+DoorDrvrPwrRelsCmdBkp#14#351#false#false#127#2#1#0#Driver Door Power Release BackUp Cmd BackUp in DKCAN#0.0#0.0#0.0#{"0": "Idle", "1": "PwrRels", "2": "CrashUnlock", "3": "Reserved"}#MS11#RC06
+DoorLeRePwrRelsCmdBkp#14#351#false#false#125#2#1#0#Left Rear Door Power Release Cmd BackUp in DKCAN#0.0#0.0#0.0#{"0": "Idle", "1": "PwrRels", "2": "CrashUnlock", "3": "Reserved"}#MS11#RC06
+DoorPassPwrRelsCmdBkp#14#351#false#false#123#2#1#0#Passenger Door Power Release Cmd BackUp in DKCAN#0.0#0.0#0.0#{"0": "Idle", "1": "PwrRels", "2": "CrashUnlock", "3": "Reserved"}#MS11#RC06
+DoorRiRePwrRelsCmdBkp#14#351#false#false#121#2#1#0#Right Rear Door Power Release Cmd BackUp in DKCAN#0.0#0.0#0.0#{"0": "Idle", "1": "PwrRels", "2": "CrashUnlock", "3": "Reserved"}#MS11#RC06
+ArmSts#14#490#false#false#7#3#1#0#车辆设防状态\nArm Status#0.0#0.0#0.0#{"0": "Invalid", "1": "DisArmed", "2": "PreArmed", "3": "Armed", "4": "PartiallyArmed", "5": "Alarm"}#MS11#RC06
+DKeyInfoCh4Pos#14#490#false#false#4#3#1#0#Digital key channel 4 Key position information#0.0#0.0#0.0#{"0": "Initial_value", "1": "Pos_PS", "2": "Pos_Unlock", "3": "Pos_Lock", "4": "Pos_Connect"}#MS11#RC06
+DKeyInfoCh4PESts#14#490#false#false#1#2#1#0#Digital key channel 4 Key PE Status#0.0#0.0#0.0#{"0": "PE_Invalid", "1": "PE_Valid", "2": "PE_PS", "3": "Reserved"}#MS11#RC06
+DKeyInfoCh1PESts#14#490#false#false#15#2#1#0#Digital key channel 1 Key PE Status#0.0#0.0#0.0#{"0": "PE_Invalid", "1": "PE_Valid", "2": "PE_PS", "3": "Reserved"}#MS11#RC06
+DKeyInfoCh1Pos#14#490#false#false#13#3#1#0#Digital key channel 1 Key position information#0.0#0.0#0.0#{"0": "Initial_value", "1": "Pos_PS", "2": "Pos_Unlock", "3": "Pos_Lock", "4": "Pos_Connect"}#MS11#RC06
+DKeyInfoCh2Pos#14#490#false#false#10#3#1#0#Digital key channel 2 Key position information#0.0#0.0#0.0#{"0": "Initial_value", "1": "Pos_PS", "2": "Pos_Unlock", "3": "Pos_Lock", "4": "Pos_Connect"}#MS11#RC06
+DKeyInfoCh2PESts#14#490#false#false#23#2#1#0#Digital key channel 2 Key PE Status#0.0#0.0#0.0#{"0": "PE_Invalid", "1": "PE_Valid", "2": "PE_PS", "3": "Reserved"}#MS11#RC06
+DKeyInfoCh3PESts#14#490#false#false#21#2#1#0#Digital key channel 3 Key PE Status#0.0#0.0#0.0#{"0": "PE_Invalid", "1": "PE_Valid", "2": "PE_PS", "3": "Reserved"}#MS11#RC06
+DKeyInfoCh3Pos#14#490#false#false#19#3#1#0#Digital key channel 3 Key position information#0.0#0.0#0.0#{"0": "Initial_value", "1": "Pos_PS", "2": "Pos_Unlock", "3": "Pos_Lock", "4": "Pos_Connect"}#MS11#RC06
+OTAMode#14#494#false#false#7#1#1#0#OTA模式#0.0#0.0#0.0#{"0": "OTA_Install_Mode_disable", "1": "OTA_Install_Mode_enable"}#MS11#RC06
+OTAZCUNotify#14#494#false#false#6#1#1#0#OTA require ZCU to power on ECU\nOTA请求ZCU配电#0.0#0.0#0.0#{"0": "No_Request", "1": "Request_Power_On"}#MS11#RC06
+HvacFrntFanSpdSt#14#494#false#false#5#4#1#0#HVAC front wind speed select state.#0.0#0.0#0.0#{"0": "Level0", "1": "Level1", "2": "Level2", "3": "Level3", "4": "Level4", "5": "Level5", "6": "Level6", "7": "Level7", "8": "Level8", "9": "Not_Available"}#MS11#RC06
+RelayCtlSigGrpChks#14#494#false#false#15#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+RelayCtlSigGrpCntr#14#494#false#false#19#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+ExtrLampRlyDown#14#494#false#false#31#1#1#0#Extrior Lamp Relay  Down#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MS11#RC06
+LampSigGrpChks#14#494#false#false#39#8#1#0##0.0#0.0#0.0#null#MS11#RC06
+LampSigGrpCntr#14#494#false#false#43#4#1#0##0.0#0.0#0.0#null#MS11#RC06
+ActnOfLedRePosnLamp#14#494#false#false#55#1#1#0#后位置灯激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC06
+ActnOfLoBeam#14#494#false#false#54#1#1#0#近光灯激活#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC06
+ActnOfStopLamp#14#494#false#false#53#1#1#0#刹车灯激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC06
+ActvnOfIndcr#14#494#false#false#52#3#1#0#转向灯激活命令#0.0#0.0#0.0#{"0": "NoReq", "1": "Off", "2": "LeOn", "3": "RiOn", "4": "LeRiOn"}#MS11#RC06
+SecOCTripCnt#14#529#false#false#7#24#1#0#同步计数器#0.0#0.0#0.0#null#MS11#RC06
+SecOCResetCnt#14#529#false#false#31#16#1#0#重置计数器#0.0#0.0#0.0#null#MS11#RC06
+SecOCMAC1#14#529#false#false#47#32#1#0#消息认证码1#0.0#0.0#0.0#null#MS11#RC06
+SecOCMAC2#14#529#false#false#79#32#1#0#消息认证码2#0.0#0.0#0.0#null#MS11#RC06
+SecOCMAC3#14#529#false#false#111#24#1#0#消息认证码3#0.0#0.0#0.0#null#MS11#RC06
+VCCD2WPC4SwiNFC#14#617#false#false#15#4#1#0#The signal sent by the VCCD to the WPC，indicates the opening and closing of the NFC field#0.0#0.0#0.0#{"0": "\u5173\u95edNFC\u573a", "1": "\u6253\u5f00\u4f4e\u529f\u8017\u6a21\u5f0f", "2": "\u6253\u5f00polling\u6a21\u5f0f", "3": "\u5173\u95edNFC\u573a\u4e14\u5173\u95ed\u5361\u4fdd\u62a4\u529f\u80fd"}#MS11#RC06
+VCCD2BLEMForNFCResp00#14#770#false#false#7#32#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCResp01#14#770#false#false#39#32#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCResp02#14#770#false#false#71#32#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCResp03#14#770#false#false#103#32#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCResp05#14#770#false#false#135#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCResp06#14#770#false#false#167#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCResp07#14#770#false#false#199#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCResp04#14#770#false#false#231#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCResp08#14#770#false#false#263#32#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCResp09#14#770#false#false#295#32#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCResp10#14#770#false#false#327#32#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCResp11#14#770#false#false#359#32#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCResp12#14#770#false#false#391#32#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCResp13#14#770#false#false#423#32#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCResp14#14#770#false#false#455#16#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCRespFV#14#770#false#false#471#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForNFCRespMAC#14#770#false#false#487#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+LockgCenLockSts#14#778#false#false#7#2#1#0#中控锁状态#0.0#0.0#0.0#{"0": "Not_defined", "1": "Unlocked", "2": "Locked", "3": "Partially_unlocked"}#MS11#RC06
+SetMgrWPCWpcChrgSt#14#778#false#false#5#2#1#0#个性化设置WPC充电状态设置#0.0#0.0#0.0#{"0": "OFF", "1": "On"}#MS11#RC06
+CenLockgResp#14#778#false#false#15#2#1#0#中控锁状态响应#0.0#0.0#0.0#{"0": "Not_used", "1": "Unlock", "2": "Lock"}#MS11#RC06
+VCCD2BLEMForRkeResp00#14#828#false#false#7#32#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeResp01#14#828#false#false#39#32#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeResp02#14#828#false#false#71#32#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeResp03#14#828#false#false#103#32#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeResp07#14#828#false#false#135#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeResp04#14#828#false#false#167#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeResp05#14#828#false#false#199#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeResp06#14#828#false#false#231#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeResp08#14#828#false#false#263#32#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeResp09#14#828#false#false#295#32#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeResp10#14#828#false#false#327#32#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeResp11#14#828#false#false#359#32#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeResp12#14#828#false#false#391#32#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeResp13#14#828#false#false#423#32#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeResp14#14#828#false#false#455#16#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeRespFV#14#828#false#false#471#16#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCD2BLEMForRkeRespMAC#14#828#false#false#487#32#1#0##0.0#0.0#0.0#null#MS11#RC06
+VinVINBlkID#14#1023#false#false#7#8#1#0#Block ID for VIN Signal sequence#0.0#0.0#0.0#{"0": "Invalid", "1": "Block_1", "2": "Block_2", "3": "Block_3"}#MS11#RC06
+VinVINSignalPos1#14#1023#false#false#15#8#1#0#1st position in VIN Signal    Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VinVINSignalPos2#14#1023#false#false#23#8#1#0#2nd position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VinVINSignalPos3#14#1023#false#false#31#8#1#0#3rd position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VinVINSignalPos4#14#1023#false#false#39#8#1#0#4th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VinVINSignalPos5#14#1023#false#false#47#8#1#0#5th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VinVINSignalPos6#14#1023#false#false#55#8#1#0#6th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VinVINSignalPos7#14#1023#false#false#63#8#1#0#7th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VidBlkId#14#1023#false#false#71#8#1#0#Block ID for VID Signal sequence#0.0#0.0#0.0#{"0": "Invalid", "1": "Block_1", "2": "Block_2", "3": "Block_3"}#MS11#RC06
+VidSignalPos1#14#1023#false#false#79#8#1#0#1st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VidSignalPos2#14#1023#false#false#87#8#1#0#2st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VidSignalPos3#14#1023#false#false#95#8#1#0#3st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VidSignalPos4#14#1023#false#false#103#8#1#0#4st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VidSignalPos5#14#1023#false#false#111#8#1#0#5st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VidSignalPos6#14#1023#false#false#119#8#1#0#6st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VidSignalPos7#14#1023#false#false#127#8#1#0#7st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VehCfgPrmBlkIDBytePosn1#14#135#false#false#7#8#1#0#Block ID for specific Car Configuration parameter sequence#0.0#0.0#0.0#null#MS11#RC06
+VehCfgPrmCCPBytePosn2#14#135#false#false#15#8#1#0#1st position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VehCfgPrmCCPBytePosn3#14#135#false#false#23#8#1#0#2nd position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VehCfgPrmCCPBytePosn4#14#135#false#false#31#8#1#0#3rd position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VehCfgPrmCCPBytePosn5#14#135#false#false#39#8#1#0#4th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VehCfgPrmCCPBytePosn6#14#135#false#false#47#8#1#0#5th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VehCfgPrmCCPBytePosn7#14#135#false#false#55#8#1#0#6th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+VehCfgPrmCCPBytePosn8#14#135#false#false#63#8#1#0#7th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MS11#RC06
+ReLeWinPosnSts#14#366#false#false#7#4#1#0#Rear Left Window Position Status#0.0#0.0#0.0#{"0": "OtherPosn", "1": "FullClose", "2": "FullOpen", "3": "SP", "4": "OpenHardStop", "5": "CloseHardStop", "6": "ATSEnd", "7": "ATSStart", "8": "BetweenATSArea", "15": "Unknown"}#MS11#RC06
+DrvrWinPosnSts#14#366#false#false#3#4#1#0#Driver Window Position Status#0.0#0.0#0.0#{"0": "OtherPosn", "1": "FullClose", "2": "FullOpen", "3": "SP", "4": "OpenHardStop", "5": "CloseHardStop", "6": "ATSEnd", "7": "ATSStart", "8": "BetweenATSArea", "15": "Unknown"}#MS11#RC06
+PassWinPosnSts#14#366#false#false#15#4#1#0#Passenger Window Position Status#0.0#0.0#0.0#{"0": "OtherPosn", "1": "FullClose", "2": "FullOpen", "3": "SP", "4": "OpenHardStop", "5": "CloseHardStop", "6": "ATSEnd", "7": "ATSStart", "8": "BetweenATSArea", "15": "Unknown"}#MS11#RC06
+ReRiWinPosnSts#14#366#false#false#11#4#1#0#Rear Right Window Position Status#0.0#0.0#0.0#{"0": "OtherPosn", "1": "FullClose", "2": "FullOpen", "3": "SP", "4": "OpenHardStop", "5": "CloseHardStop", "6": "ATSEnd", "7": "ATSStart", "8": "BetweenATSArea", "15": "Unknown"}#MS11#RC06
+BrkPedlAppld#14#366#false#false#23#1#1#0#Indicates whether the driver operates the\n brake pedal. Only active when the driver brakes#0.0#0.0#0.0#{"0": "NotApplied", "1": "Applied"}#MS11#RC06
+BrkPedlAppldVld#14#366#false#false#22#2#1#0#Qualifier for brake pedal applied signal#0.0#0.0#0.0#{"0": "BrkPedlAppld_NotInitialized", "1": "BrkPedlAppld_Normal", "2": "BrkPedlAppld_Faulty"}#MS11#RC06
+RPAPrkinRecdFrmADD#14#366#false#false#20#2#1#0#RPA Park in Record\nRPA 记录上次是遥控泊入还是人为泊入#0.0#0.0#0.0#{"0": "Default", "1": "RPA_In", "2": "Manual_In", "3": "Reserved"}#MS11#RC06
+DrvrWinPerctPosn#14#366#false#false#31#8#1#0#Driver Window Percentage Position#0.0#0.0#0.0#null#MS11#RC06
+PassWinPerctPosn#14#366#false#false#39#8#1#0#Passenger Window Percentage Position#0.0#0.0#0.0#null#MS11#RC06
+ReLeWinPerctPosn#14#366#false#false#47#8#1#0#Rear Left Window Percentage Position#0.0#0.0#0.0#null#MS11#RC06
+ReRiWinPerctPosn#14#366#false#false#55#8#1#0#Rear Right Window Percentage Position#0.0#0.0#0.0#null#MS11#RC06
+BattSocRaw#14#816#false#false#7#10#0.1#0.0#Battery State of charge raw\n电池SOC#0.0#0.0#0.0#{"800": "Invalid"}#MS11#RC06
+TiDomn#14#816#false#false#13#5#1#0#time domain#0.0#0.0#0.0#{"0": "UTC_plus_0", "1": "UTC_plus_1", "2": "UTC_plus_2", "3": "UTC_plus_3", "4": "UTC_plus_4", "5": "UTC_plus_5", "6": "UTC_plus_6", "7": "UTC_plus_7", "8": "UTC_plus_8", "9": "UTC_plus_9", "10": "UTC_plus_10", "11": "UTC_plus_11", "12": "UTC_plus_12", "13": "UTC_plus_13", "14": "UTC_plus_14", "15": "UTC_plus_15", "16": "UTC_plus_16", "17": "UTC_plus_17", "18": "UTC_plus_18", "19": "UTC_plus_19", "20": "UTC_plus_20", "21": "UTC_plus_21", "22": "UTC_plus_22", "23": "UTC_plus_23", "24": "Invalid"}#MS11#RC06
+BattURaw#14#816#false#false#23#15#0.001#0.0#Battery Voltage raw\n电池电压#0.0#0.0#0.0#null#MS11#RC06
+DateTiDay#14#816#false#false#39#5#1#0#date time day#0.0#0.0#0.0#{"0": "init"}#MS11#RC06
+DateTiHr#14#816#false#false#47#5#1.0#0.0#date time hour#0.0#0.0#0.0#{"24": "Invalid"}#MS11#RC06
+DateTiMilsec#14#816#false#false#41#10#1.0#0.0#date time millisecond#0.0#0.0#0.0#{"0": "0", "999": "999", "1000": "invalid"}#MS11#RC06
+DateTiMins#14#816#false#false#63#6#1.0#0.0#date time minute#0.0#0.0#0.0#{"60": "Invalid"}#MS11#RC06
+DateTiMth#14#816#false#false#71#4#1.0#0.0#date time month#0.0#0.0#0.0#{"0": "Invalid"}#MS11#RC06
+DateTiSec#14#816#false#false#79#6#1.0#0.0#date time second#0.0#0.0#0.0#{"60": "Invalid"}#MS11#RC06
+DateTiYr#14#816#false#false#87#8#1.0#2000.0#date time year#0.0#0.0#0.0#{"255": "Invalid"}#MS11#RC06
+TotOdoAcrt#14#816#false#false#95#24#0.1#0.0#ODO#0.0#0.0#0.0#{"16777215": "Invaild"}#MS11#RC06
+TotOdoAcrtVld#14#816#false#false#119#1#1#0#The valid signal of TotOdoAcrt#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#RC06
+VCCDDKNodeAddress#14#1356#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#RC06
+VCCDDKActiveWakeup#14#1356#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#RC06
+VCCDDKRepeatMsgReq#14#1356#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "not_requested", "1": "requested"}#MS11#RC06
+UDB23VCCD#14#1356#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB22VCCD#14#1356#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB21VCCD#14#1356#false#false#21#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB20VCCD#14#1356#false#false#20#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB19VCCD#14#1356#false#false#19#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB18VCCD#14#1356#false#false#18#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB17VCCD#14#1356#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCDDKRepeatMsgSt#14#1356#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#RC06
+UDB31VCCD#14#1356#false#false#31#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB30VCCD#14#1356#false#false#30#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB29VCCD#14#1356#false#false#29#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB28VCCD#14#1356#false#false#28#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB27VCCD#14#1356#false#false#27#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB26VCCD#14#1356#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB25VCCD#14#1356#false#false#25#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB24VCCD#14#1356#false#false#24#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB39VCCD#14#1356#false#false#39#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB38VCCD#14#1356#false#false#38#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB37VCCD#14#1356#false#false#37#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB36VCCD#14#1356#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB35VCCD#14#1356#false#false#35#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB34VCCD#14#1356#false#false#34#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB33VCCD#14#1356#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB32VCCD#14#1356#false#false#32#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB47VCCD#14#1356#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB46VCCD#14#1356#false#false#46#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB45VCCD#14#1356#false#false#45#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB44VCCD#14#1356#false#false#44#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB43VCCD#14#1356#false#false#43#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB42VCCD#14#1356#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB41VCCD#14#1356#false#false#41#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB40VCCD#14#1356#false#false#40#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB53VCCD#14#1356#false#false#53#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB52VCCD#14#1356#false#false#52#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB51VCCD#14#1356#false#false#51#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB50VCCD#14#1356#false#false#50#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB49VCCD#14#1356#false#false#49#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+NMKeepAwkRsnVCCD#14#1356#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCDToBLEADiagReq#14#1987#false#false#7#512#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCDToBLEMDiagReq#14#1985#false#false#7#512#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCDToBLETDiagReq#14#1993#false#false#7#512#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCDToNEMDiagReq#14#1986#false#false#7#512#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCDToWPCDiagReq#14#1988#false#false#7#512#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCD2FZCUXCP#14#1409#false#false#0#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCD2LZCUXCP#14#1411#false#false#0#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+VCCD2RZCUXCP#14#1413#false#false#0#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMCli00#14#363#false#false#7#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMCli01#14#363#false#false#71#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMCli02#14#363#false#false#135#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMCli03#14#363#false#false#199#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMCli04#14#363#false#false#263#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMCli05#14#363#false#false#327#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMCli06#14#363#false#false#391#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMCli07#14#363#false#false#455#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMReq00#14#795#false#false#7#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMReq01#14#795#false#false#71#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMReq02#14#795#false#false#135#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMReq03#14#795#false#false#199#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMReq04#14#795#false#false#263#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMReq05#14#795#false#false#327#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMReq06#14#795#false#false#391#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#RC06
+WPC2BLEMReq07#14#795#false#false#455#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#RC06
+WPCMobilPhnRmn#14#830#false#false#7#1#1#0#Mobile phone Reminder\n手机遗忘提醒#0.0#0.0#0.0#{"0": "\u6b63\u5e38", "1": "\u9057\u5fd8"}#MS11#RC06
+WPCwpcChrgSt#14#830#false#false#6#3#1#0#Phone charging status\n手机充电状态#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Connecting", "3": "Charging", "4": "Charged_Full", "5": "Fault"}#MS11#RC06
+WPCWpcChrgFltSt#14#830#false#false#3#3#1#0#WPC phone charging Fault status\n无线充电错误状态#0.0#0.0#0.0#{"0": "No_fault", "1": "Device_Recoverable_failure_cannot_charging", "2": "Device_Unrecoverable_failure_cannot_charging", "3": "Device_Recoverable_failure_can_charging", "4": "Device_Unrecoverable_failure_can_charging", "5": "FOD_Occur", "6": "Lv_Power_Management", "7": "Low_efficiency_Charging"}#MS11#RC06
+WPCFaultInfoFlag#14#830#false#false#0#1#1#0#WPC Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#MS11#RC06
+WPCReservedforTSP#14#1428#false#false#7#8#1#0#WPCReservedforTSP\nWPC调试信号#0.0#0.0#0.0#null#MS11#RC06
+WPCNodeAddress#14#1384#false#false#7#8#1#0#Node source address\n节点源地址#0.0#0.0#0.0#null#MS11#RC06
+WPCActiveWakeup#14#1384#false#false#12#1#1#0#Active Wakeup Bit\n主动唤醒指示位#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#RC06
+WPCRepeatMsgReq#14#1384#false#false#8#1#1#0#Repeat Message Request Bit\n重复报文请求位#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#RC06
+UDB23WPC#14#1384#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB22WPC#14#1384#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB21WPC#14#1384#false#false#21#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB20WPC#14#1384#false#false#20#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB19WPC#14#1384#false#false#19#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB18WPC#14#1384#false#false#18#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB17WPC#14#1384#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+WPCRepeatMsgSt#14#1384#false#false#16#1#1#0#Repeat Message State indication\n节点处在重复报文状态指示位#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#RC06
+UDB31WPC#14#1384#false#false#31#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB30WPC#14#1384#false#false#30#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB29WPC#14#1384#false#false#29#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB28WPC#14#1384#false#false#28#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB27WPC#14#1384#false#false#27#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB26WPC#14#1384#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB25WPC#14#1384#false#false#25#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB24WPC#14#1384#false#false#24#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB39WPC#14#1384#false#false#39#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB38WPC#14#1384#false#false#38#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB37WPC#14#1384#false#false#37#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB36WPC#14#1384#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB35WPC#14#1384#false#false#35#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB34WPC#14#1384#false#false#34#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB33WPC#14#1384#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB32WPC#14#1384#false#false#32#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB47WPC#14#1384#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB46WPC#14#1384#false#false#46#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB45WPC#14#1384#false#false#45#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB44WPC#14#1384#false#false#44#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB43WPC#14#1384#false#false#43#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB42WPC#14#1384#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB41WPC#14#1384#false#false#41#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+UDB40WPC#14#1384#false#false#40#1#1#0##0.0#0.0#0.0#null#MS11#RC06
+NMKeepAwkRsnWPC#14#1384#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#RC06
+WPCToVCCDDiagResp#14#1732#false#false#7#512#1#0##0.0#0.0#0.0#null#MS11#RC06

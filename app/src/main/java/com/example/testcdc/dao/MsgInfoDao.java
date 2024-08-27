@@ -5,7 +5,6 @@ import androidx.room.Insert;
 import androidx.room.Query;
 
 import com.example.testcdc.entity.MsgInfoEntity;
-import com.example.testcdc.entity.SignalInfo;
 
 import java.util.List;
 
@@ -15,9 +14,12 @@ public interface MsgInfoDao {
     @Insert
     void insert(MsgInfoEntity msgInfoEntity);
 
-    @Query("select * from msg_info where bus_id=:BUSId")
-    List<MsgInfoEntity> getMsg(int BUSId);
+    @Query("select * from msg_info where bus_id=:BUSId and cid=:cid")
+    List<MsgInfoEntity> getMsg(int BUSId,long cid);
 
     @Query("select * from msg_info where bus_id=:BUSId and can_id=:CANId limit 1")
     MsgInfoEntity getMsg(int BUSId, int CANId);
+
+    @Query("select * from car_type where car_type_name = :cartTypeName and sdb_name = :SDBName limit 1")
+    long getCidByName(String cartTypeName, String SDBName);
 }
