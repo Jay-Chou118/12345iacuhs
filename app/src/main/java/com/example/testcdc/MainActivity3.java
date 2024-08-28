@@ -20,6 +20,9 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.LongDef;
 import androidx.annotation.WorkerThread;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,7 +31,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.documentfile.provider.DocumentFile;
+import androidx.fragment.app.strictmode.SetRetainInstanceUsageViolation;
 
+import com.chaquo.python.PyObject;
+import com.chaquo.python.Python;
+import com.chaquo.python.android.AndroidPlatform;
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
 
@@ -71,6 +78,8 @@ public class MainActivity3 extends AppCompatActivity {
     private MyService.MiCANBinder mMiCANBinder;
 
 
+    private static final int READ_REQUEST_CODE = 42;
+
     private ServiceConnection mSC = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName className, IBinder service) {
@@ -96,10 +105,18 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main3);
+        if(!Python.isStarted()){
+            Python.start(new AndroidPlatform(this));
+        }
+        Python python=Python.getInstance();
+        PyObject pyObject=python.getModule("HelloWorld");
+        pyObject.callAttr("Python_say_Hello");
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+
         });
 
 
@@ -226,7 +243,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void handle(JsonElement data, String callback) {
 
-
+                Log.d(TAG, "TTTTTTTTTTTTTT: " + data);
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
@@ -313,6 +330,7 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("getDBC", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
+                Log.d(TAG, "TTTTTTTTTTTTTT: " + data);
                 String carType = data.getAsJsonObject().get("carType").getAsString();
                 String sdb = data.getAsJsonObject().get("sdb").getAsString();
                 long cid = database.carTypeDao().getCidByName(carType,sdb);
@@ -385,7 +403,7 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("selectShowSignals", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
-
+                Log.d(TAG, "TTTTTTTTTTTTTT: " + data);
                 List<Long> ids = new ArrayList<>();
 
                 JsonArray array = data.getAsJsonArray();
@@ -404,9 +422,26 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
+        //test
+        messageHandlers.put("getUserDBC", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                intent.setType("*/*");
+                intent.addCategory(Intent.CATEGORY_OPENABLE);
+
+                startActivityForResult(intent, READ_REQUEST_CODE);
+
+
+            }
+        });
+
+
+
         messageHandlers.put("parsedSignal", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
+                Log.d(TAG, "TTTTTTTTTTTTTT: " + data);
                 int BUSId = data.getAsJsonObject().get("channel").getAsInt();
                 int CANId = data.getAsJsonObject().get("canId").getAsInt();
                 JsonArray dataArray = data.getAsJsonObject().get("canData").getAsJsonArray();
@@ -476,7 +511,6 @@ public class MainActivity3 extends AppCompatActivity {
             String callback = jsonObject.get("callback").getAsString();
             JsonElement data = jsonObject.get("data");
             BridgeHandler handler = messageHandlers.get(method);
-            Log.d(TAG, "TTTTTTTTTTTTTTTTTTTTTTTTTT ");
             Log.i(TAG,"method is : " + method );
             Log.i(TAG,"callback is : " + callback );
             Log.i(TAG,"data is : " + data );
@@ -571,6 +605,36 @@ public class MainActivity3 extends AppCompatActivity {
         DocumentFile documentFile = DocumentFile.fromSingleUri(context, uri);
         String path = documentFile.getUri().getPath();
         return path;
+    }
+
+    private String getFileNameFromUri(Context context, Uri uri) {
+        String fileName = null;
+        String[] projection = { MediaStore.Files.FileColumns.DISPLAY_NAME };
+        Cursor cursor = context.getContentResolver().query(uri, projection, null, null, null);
+        if (cursor != null && cursor.moveToFirst()) {
+            int columnIndex = cursor.getColumnIndexOrThrow(MediaStore.Files.FileColumns.DISPLAY_NAME);
+            fileName = cursor.getString(columnIndex);
+            cursor.close();
+        }
+        return fileName;
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == READ_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
+            Uri uri = data.getData();
+
+            // 获取文件名
+            String fileName = getFileNameFromUri(this, uri);
+
+            // 获取文件路径
+            String filePath = getPathFromUri(this, uri);
+
+//            String Realfile = getRealPathFromURI(uri);
+
+            Log.d(TAG, "EEEEEEEE :  " +fileName + "   EEEEEEEEE " +filePath + " Real  " );
+        }
     }
 
     public String readFileFromUri(Context context, Uri fileUri) {
