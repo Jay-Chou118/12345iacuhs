@@ -33,9 +33,9 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.documentfile.provider.DocumentFile;
 import androidx.fragment.app.strictmode.SetRetainInstanceUsageViolation;
 
-import com.chaquo.python.PyObject;
-import com.chaquo.python.Python;
-import com.chaquo.python.android.AndroidPlatform;
+//import com.chaquo.python.PyObject;
+//import com.chaquo.python.Python;
+//import com.chaquo.python.android.AndroidPlatform;
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
 
@@ -105,12 +105,12 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main3);
-        if(!Python.isStarted()){
-            Python.start(new AndroidPlatform(this));
-        }
-        Python python=Python.getInstance();
-        PyObject pyObject=python.getModule("HelloWorld");
-        pyObject.callAttr("Python_say_Hello");
+//        if(!Python.isStarted()){
+//            Python.start(new AndroidPlatform(this));
+//        }
+//        Python python=Python.getInstance();
+//        PyObject pyObject=python.getModule("HelloWorld");
+//        pyObject.callAttr("Python_say_Hello");
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
