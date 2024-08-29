@@ -76,11 +76,11 @@ public class DataBaseUtil {
 //        files.add(R.raw.signal_info_7_mx11_e4);
 
         files.add(R.raw.signal_info_1_mx11_e3);
-        files.add(R.raw.signal_info_2_mx11_e3);
-        files.add(R.raw.signal_info_3_mx11_e3);
-        files.add(R.raw.signal_info_4_mx11_e3);
-        files.add(R.raw.signal_info_6_mx11_e3);
-        files.add(R.raw.signal_info_7_mx11_e3);
+//        files.add(R.raw.signal_info_2_mx11_e3);
+//        files.add(R.raw.signal_info_3_mx11_e3);
+//        files.add(R.raw.signal_info_4_mx11_e3);
+//        files.add(R.raw.signal_info_6_mx11_e3);
+//        files.add(R.raw.signal_info_7_mx11_e3);
 
 //        files.add(R.raw.signal_info_1_ms11_e3);
 //        files.add(R.raw.signal_info_2_ms11_e3);
@@ -96,16 +96,16 @@ public class DataBaseUtil {
 //        files.add(R.raw.signal_info_15_ms11_e3);
 
         files.add(R.raw.signal_info_2_ms11_rc06);
-        files.add(R.raw.signal_info_3_ms11_rc06);
-        files.add(R.raw.signal_info_4_ms11_rc06);
-        files.add(R.raw.signal_info_5_ms11_rc06);
-        files.add(R.raw.signal_info_9_ms11_rc06);
-        files.add(R.raw.signal_info_10_ms11_rc06);
-        files.add(R.raw.signal_info_11_ms11_rc06);
-        files.add(R.raw.signal_info_12_ms11_rc06);
-        files.add(R.raw.signal_info_13_ms11_rc06);
-        files.add(R.raw.signal_info_14_ms11_rc06);
-        files.add(R.raw.signal_info_15_ms11_rc06);
+//        files.add(R.raw.signal_info_3_ms11_rc06);
+//        files.add(R.raw.signal_info_4_ms11_rc06);
+//        files.add(R.raw.signal_info_5_ms11_rc06);
+//        files.add(R.raw.signal_info_9_ms11_rc06);
+//        files.add(R.raw.signal_info_10_ms11_rc06);
+//        files.add(R.raw.signal_info_11_ms11_rc06);
+//        files.add(R.raw.signal_info_12_ms11_rc06);
+//        files.add(R.raw.signal_info_13_ms11_rc06);
+//        files.add(R.raw.signal_info_14_ms11_rc06);
+//        files.add(R.raw.signal_info_15_ms11_rc06);
 
 //        files.add(R.raw.signal_info_2_ms11_rc05);
 //        files.add(R.raw.signal_info_3_ms11_rc05);
@@ -186,16 +186,16 @@ public class DataBaseUtil {
 //        files.add(R.raw.msg_info_6);
 //        files.add(R.raw.msg_info_7);
         files.add(R.raw.msg_info_2_ms11_rc06);
-        files.add(R.raw.msg_info_3_ms11_rc06);
-        files.add(R.raw.msg_info_4_ms11_rc06);
-        files.add(R.raw.msg_info_5_ms11_rc06);
-        files.add(R.raw.msg_info_9_ms11_rc06);
-        files.add(R.raw.msg_info_10_ms11_rc06);
-        files.add(R.raw.msg_info_11_ms11_rc06);
-        files.add(R.raw.msg_info_12_ms11_rc06);
-        files.add(R.raw.msg_info_13_ms11_rc06);
-        files.add(R.raw.msg_info_14_ms11_rc06);
-        files.add(R.raw.msg_info_15_ms11_rc06);
+//        files.add(R.raw.msg_info_3_ms11_rc06);
+//        files.add(R.raw.msg_info_4_ms11_rc06);
+//        files.add(R.raw.msg_info_5_ms11_rc06);
+//        files.add(R.raw.msg_info_9_ms11_rc06);
+//        files.add(R.raw.msg_info_10_ms11_rc06);
+//        files.add(R.raw.msg_info_11_ms11_rc06);
+//        files.add(R.raw.msg_info_12_ms11_rc06);
+//        files.add(R.raw.msg_info_13_ms11_rc06);
+//        files.add(R.raw.msg_info_14_ms11_rc06);
+//        files.add(R.raw.msg_info_15_ms11_rc06);
 
 
         files.forEach(file->{

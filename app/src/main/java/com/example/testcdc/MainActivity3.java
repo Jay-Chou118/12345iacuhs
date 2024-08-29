@@ -20,6 +20,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.LongDef;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import androidx.core.graphics.Insets;
@@ -27,9 +28,14 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.documentfile.provider.DocumentFile;
 
+//import com.chaquo.python.PyObject;
+//import com.chaquo.python.Python;
+//import com.chaquo.python.android.AndroidPlatform;
+//import com.example.testcdc.MiCAN.DataWrapper;
+//import com.example.testcdc.MiCAN.DeviceInfo;
+
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
-
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
 import com.example.testcdc.Utils.Utils;
@@ -69,7 +75,13 @@ public class MainActivity3 extends AppCompatActivity {
     private MyService.MiCANBinder mMiCANBinder;
 
 
-    private static final int READ_REQUEST_CODE = 42;
+    private static final int READ_REQUEST_CODE = 1;
+
+    private String selectedFilePath; // 添加成员变量来保存选中的文件路径
+
+    private String selectedCallback; // 用于存储从 JavaScript 调用过来的回调函数名称
+
+    private JsCallResult<Result<Object>> selectedJsCallResult; // 用于存储 JsCallResult 实例
 
     private ServiceConnection mSC = new ServiceConnection() {
         @Override
@@ -101,14 +113,7 @@ public class MainActivity3 extends AppCompatActivity {
 //        }
 //        Python python=Python.getInstance();
 //        PyObject pyObject=python.getModule("HelloWorld");
-//        pyObject.callAttr("Python_say_Hello");
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-
-        });
+//        pyObject.callAttr("test");
 
 
         initWebView();
@@ -376,7 +381,7 @@ public class MainActivity3 extends AppCompatActivity {
 
                             });
                             subMap.put(msg.name,subList);
-                            Log.d(TAG, "subMap:     ZZZZZZZZZZZZZZ " + subMap);
+                            Log.d(TAG, "subMap:     ZZZZZZZZZZZZZ " + subMap);
                         });
                         maps.put(Busid,subMap);
                         Log.d(TAG, "maps:     ZZZZZZZZZZZZZZ " + maps);
@@ -385,6 +390,7 @@ public class MainActivity3 extends AppCompatActivity {
                     JsCallResult<Result<Map<Integer,Map<String,List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
                     Result<Map<Integer,Map<String,List<List<Object>>>>> result = ResponseData.success(maps);
                     jsCallResult.setData(result);
+                    Log.d(TAG, "GGGGGGGGGGG   " + jsCallResult);
                     callJs(jsCallResult);
                 }
                 Log.i(TAG,"getDBC finish");
@@ -408,7 +414,7 @@ public class MainActivity3 extends AppCompatActivity {
                 JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
                 Result<Object> success = ResponseData.success();
                 jsCallResult.setData(success);
-
+                Log.d(TAG, "GGGGGGGGGGG   " + jsCallResult);
                 callJs(jsCallResult);
             }
         });
@@ -423,6 +429,12 @@ public class MainActivity3 extends AppCompatActivity {
 
                 startActivityForResult(intent, READ_REQUEST_CODE);
 
+                // 保存回调函数，以便在 onActivityResult 中使用
+//                selectedCallback = callback;
+
+                // 创建 JsCallResult 实例并保存回调函数
+                JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
+                selectedJsCallResult = jsCallResult;
 
             }
         });
@@ -621,10 +633,26 @@ public class MainActivity3 extends AppCompatActivity {
 
             // 获取文件路径
             String filePath = getPathFromUri(this, uri);
-
-//            String Realfile = getRealPathFromURI(uri);
-
             Log.d(TAG, "EEEEEEEE :  " +fileName + "   EEEEEEEEE " +filePath + " Real  " );
+//            selectedFilePath = filePath;
+//            if (selectedCallback != null) {
+//                Log.d(TAG, "GGGGGGGG : " + selectedFilePath);
+//
+//                callJs(selectedFilePath);
+//                selectedCallback = null; // 清空回调，防止重复调用
+//            }
+            Result<Object> success = new Result<>();
+            success.setCode(200); // 成功状态码
+            success.setMsg("Success"); // 成功消息
+            success.setData(filePath); // 文件路径作为数据
+
+            // 如果有 JsCallResult 实例，则填充数据并调用 callJs
+            if (selectedJsCallResult != null) {
+                selectedJsCallResult.setData(success);
+                callJs(selectedJsCallResult);
+                Log.d(TAG, "GGGGGGGGGG: " +selectedJsCallResult);
+                selectedJsCallResult = null; // 清空 JsCallResult 实例
+            }
         }
     }
 
