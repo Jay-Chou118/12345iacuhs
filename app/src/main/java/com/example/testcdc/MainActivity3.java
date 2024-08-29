@@ -4,6 +4,7 @@ import static com.google.gson.JsonParser.parseString;
 
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
+import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
@@ -12,6 +13,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
+import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
@@ -28,11 +30,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.documentfile.provider.DocumentFile;
 
-//import com.chaquo.python.PyObject;
-//import com.chaquo.python.Python;
-//import com.chaquo.python.android.AndroidPlatform;
-//import com.example.testcdc.MiCAN.DataWrapper;
-//import com.example.testcdc.MiCAN.DeviceInfo;
+import com.chaquo.python.PyObject;
+import com.chaquo.python.Python;
+import com.chaquo.python.android.AndroidPlatform;
 
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
@@ -58,6 +58,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.SplittableRandom;
 import java.util.concurrent.LinkedBlockingQueue;
 
 
@@ -108,12 +109,12 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main3);
-//        if(!Python.isStarted()){
-//            Python.start(new AndroidPlatform(this));
-//        }
+        if(!Python.isStarted()){
+            Python.start(new AndroidPlatform(this));
+        }
 //        Python python=Python.getInstance();
 //        PyObject pyObject=python.getModule("HelloWorld");
-//        pyObject.callAttr("test");
+//        pyObject.callAttr("Python_say_Hello");
 
 
         initWebView();
@@ -571,6 +572,20 @@ public class MainActivity3 extends AppCompatActivity {
         Log.i(TAG,"Uri: " + fileUri + "\t path: " + getRealPathFromURI(fileUri));
 //        readFileFromUri(this,fileUri);
         // 在此处处理BLF文件，例如读取文件内容或进行解析
+        // 检查是否为 content:// 方式的 Uri
+        if (fileUri.getScheme().equals("content")) {
+            String path = getRealPathFromURI(fileUri);
+            Log.i(TAG, "Uri: " + fileUri + "\t real path: " + path);
+            // 使用 path 进行后续操作
+        } else if (fileUri.getScheme().equals("file")) {
+            // 直接使用 file 方式的 Uri
+            String path = fileUri.getPath();
+            Log.i(TAG, "Uri: " + fileUri + "\t path: " + path);
+            // 使用 path 进行后续操作
+        } else {
+            // 不支持的 Uri 方式
+            Log.e(TAG, "Unsupported URI scheme: " + fileUri.getScheme());
+        }
 
 //        // 进行文件读取
 //        Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -585,6 +600,7 @@ public class MainActivity3 extends AppCompatActivity {
         cursor.close();
         return "";
     }
+
     private String getRealPathFromURI(Uri uri) {
         String[] proj = {MediaStore.Images.Media.DATA};
         Cursor cursor = getContentResolver().query(uri, null, null, null, null);
@@ -607,6 +623,9 @@ public class MainActivity3 extends AppCompatActivity {
     public String getPathFromUri(Context context, Uri uri) {
         DocumentFile documentFile = DocumentFile.fromSingleUri(context, uri);
         String path = documentFile.getUri().getPath();
+        if (path.startsWith("/document/raw:")) {
+            path = path.substring("/document/raw:".length());
+        }
         return path;
     }
 
@@ -633,7 +652,8 @@ public class MainActivity3 extends AppCompatActivity {
 
             // 获取文件路径
             String filePath = getPathFromUri(this, uri);
-            Log.d(TAG, "EEEEEEEE :  " +fileName + "   EEEEEEEEE " +filePath + " Real  " );
+//            String RealfilePath = getRealPathFromURI(uri);
+            Log.d(TAG, "EEEEEEEE :  " +fileName + "   EEEEEEEEE " +filePath + " Real  "  );
 //            selectedFilePath = filePath;
 //            if (selectedCallback != null) {
 //                Log.d(TAG, "GGGGGGGG : " + selectedFilePath);
@@ -641,16 +661,19 @@ public class MainActivity3 extends AppCompatActivity {
 //                callJs(selectedFilePath);
 //                selectedCallback = null; // 清空回调，防止重复调用
 //            }
+            Python python=Python.getInstance();
+            PyObject pyObject=python.getModule("HelloWorld");
+            pyObject.callAttr("Python_say_Hello",filePath);
+
             Result<Object> success = new Result<>();
             success.setCode(200); // 成功状态码
             success.setMsg("Success"); // 成功消息
-            success.setData(filePath); // 文件路径作为数据
+            success.setData(fileName); // 文件名称作为数据
 
             // 如果有 JsCallResult 实例，则填充数据并调用 callJs
             if (selectedJsCallResult != null) {
                 selectedJsCallResult.setData(success);
                 callJs(selectedJsCallResult);
-                Log.d(TAG, "GGGGGGGGGG: " +selectedJsCallResult);
                 selectedJsCallResult = null; // 清空 JsCallResult 实例
             }
         }

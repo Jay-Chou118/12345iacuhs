@@ -1,13 +1,11 @@
 plugins {
     alias(libs.plugins.androidApplication)
+    id 'com.chaquo.python'
 }
 
-android {
+android {  // 注意这里多了一个开括号
     namespace 'com.example.testcdc'
     compileSdk 34
-//    dexOptions{
-//        javaMaxHeapSize "4g"
-//    }
 
     defaultConfig {
         applicationId "com.example.testcdc"
@@ -16,11 +14,20 @@ android {
         versionCode 1
         versionName "1.0"
 
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
+        python {
+            buildPython "C:\\Users\\Mi\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+            pip{
+                install 'canmatrix'
+//                insatll 'typing'
+            }
+        }
 
-        externalNativeBuild{
-            ndkBuild{
+        externalNativeBuild {
+            ndkBuild {
                 cppFlags ''
             }
             cmake {
@@ -34,6 +41,7 @@ android {
             path 'src/main/cpp/Android.mk'
         }
     }
+
     signingConfigs {
         release {
             storeFile file("testcdc.jks")
@@ -59,16 +67,17 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    sourceSets
-    {
-        main{
-            assets.srcDirs = ['D:\\Python_worksapce\\for_andriod\\dist']
-//            assets.srcDirs = ['C:\\Users\\27810\\AndroidStudioProjects\\test\\tsp-assistant\\dist']
-//            assets.srcDirs = ['src/main/assets1/']
+
+    sourceSets {
+        main {
+            assets {
+                srcDirs = ['D:\\Python_worksapce\\for_andriod\\dist']
+            }
         }
     }
 }
