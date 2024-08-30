@@ -33,9 +33,6 @@ import androidx.documentfile.provider.DocumentFile;
 import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
-import com.chaquo.python.PyObject;
-import com.chaquo.python.Python;
-import com.chaquo.python.android.AndroidPlatform;
 
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
@@ -43,8 +40,10 @@ import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
 import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.MX11E4Database;
+import com.example.testcdc.database.UserDatabase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
+import com.example.testcdc.entity.UserMsgEntity;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -91,30 +90,28 @@ public class MainActivity3 extends AppCompatActivity {
         @Override
         public void onServiceConnected(ComponentName className, IBinder service) {
 
-            Log.i(TAG, "onServiceConnected");
+            Log.i(TAG,"onServiceConnected");
             // 我们已经绑定了LocalService，强制类型转换IBinder对象并存储MyService的实例
             mMiCANBinder = (MyService.MiCANBinder) service;
         }
 
         @Override
         public void onServiceDisconnected(ComponentName arg0) {
-            Log.i(TAG, "onServiceDisconnected");
+            Log.i(TAG,"onServiceDisconnected");
             mMiCANBinder = null;
         }
     };
     private WebView webView;
 
-    MyApplication instance = MyApplication.getInstance();
-    ;
+    MyApplication instance = MyApplication.getInstance();;
 
     private static final String CALLBACK_JS_FORMAT = "javascript:JSBridge.handleNativeResponse('%s')";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main3);
-        if (!Python.isStarted()) {
+        if(!Python.isStarted()){
             Python.start(new AndroidPlatform(this));
         }
 //        Python python=Python.getInstance();
@@ -127,14 +124,16 @@ public class MainActivity3 extends AppCompatActivity {
         Thread m = new Thread(new Runnable() {
             @Override
             public void run() {
-                while (true) {
+                while(true)
+                {
                     try {
                         Thread.sleep(3000);
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
 
                     }
-                    if (mMiCANBinder != null) {
+                    if(mMiCANBinder!=null)
+                    {
                         mMiCANBinder.printInfo();
                     }
 
@@ -145,18 +144,21 @@ public class MainActivity3 extends AppCompatActivity {
         showLoggingMessage = new Thread(new Runnable() {
             @Override
             public void run() {
-                while (true) {
+                while(true)
+                {
                     String callback = showLoggingMessageQueue.poll();
-                    if (callback == null) {
+                    if(callback==null)
+                    {
                         Utils.wait10ms();
                         continue;
                     }
-                    if (mMiCANBinder != null) {
+                    if(mMiCANBinder != null)
+                    {
                         JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
                         Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
                         jsCallResult.setData(result);
                         final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                        Log.d(TAG, "callbackJs " + callbackJs);
+                        Log.d(TAG,"callbackJs "+ callbackJs );
                         webView.post(new Runnable() {
                             @Override
                             public void run() {
@@ -188,7 +190,8 @@ public class MainActivity3 extends AppCompatActivity {
     }
 
 
-    private void initWebView() {
+    private void initWebView()
+    {
         webView = findViewById(R.id.webView1);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -203,23 +206,25 @@ public class MainActivity3 extends AppCompatActivity {
         webView.loadUrl("file:///android_asset/index.html");
 //        webView.loadUrl("http://192.168.215.240:5173/#/");
 
-        bindService(new Intent(this, MyService.class), mSC, Context.BIND_AUTO_CREATE);
+        bindService(new Intent(this, MyService.class),mSC, Context.BIND_AUTO_CREATE);
 
         messageHandlers.put("initDevice", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
-                if (mMiCANBinder != null) {
+                if(mMiCANBinder != null)
+                {
                     JsCallResult<Result<DeviceInfo>> jsCallResult = new JsCallResult<>(callback);
                     boolean ret = mMiCANBinder.InitModule();
-                    if (ret) {
+                    if(ret)
+                    {
                         instance.say("恭喜,初始化设备成功啦");
-                    } else {
+                    }else{
                         instance.say("抱歉,未能找到MiCAN设备,请重新插拔下设备试试看");
                     }
-                    Result<DeviceInfo> result = ResponseData.ret(mMiCANBinder.getDeviceInfo(), ret);
+                    Result<DeviceInfo> result = ResponseData.ret(mMiCANBinder.getDeviceInfo(),ret);
                     jsCallResult.setData(result);
                     final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                    Log.d(TAG, "callbackJs " + callbackJs);
+                    Log.d(TAG,"callbackJs "+ callbackJs );
                     webView.post(new Runnable() {
                         @Override
                         public void run() {
@@ -246,15 +251,16 @@ public class MainActivity3 extends AppCompatActivity {
                         {
                             JsCallResult<Result<DeviceInfo>> jsCallResult = new JsCallResult<>(callback);
                             boolean ret = mMiCANBinder.InitModule();
-                            if (ret) {
+                            if(ret)
+                            {
                                 instance.say("恭喜,初始化设备成功啦");
-                            } else {
+                            }else{
                                 instance.say("抱歉,未能找到MiCAN设备,请重新插拔下设备试试看");
                             }
-                            Result<DeviceInfo> result = ResponseData.ret(mMiCANBinder.getDeviceInfo(), ret);
+                            Result<DeviceInfo> result = ResponseData.ret(mMiCANBinder.getDeviceInfo(),ret);
                             jsCallResult.setData(result);
                             final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                            Log.i(TAG, "callbackJs " + callbackJs);
+                            Log.i(TAG,"callbackJs "+ callbackJs );
                             // 打开CANFD设备
                             mMiCANBinder.CANOnBus();
                             mMiCANBinder.startSaveBlf();
@@ -278,12 +284,13 @@ public class MainActivity3 extends AppCompatActivity {
             public void handle(JsonElement data, String callback) {
 
 //                showLoggingMessageQueue.add(callback);
-                if (mMiCANBinder != null) {
+                if(mMiCANBinder != null)
+                {
                     JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
                     Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
                     jsCallResult.setData(result);
                     final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                    Log.d(TAG, "callbackJs " + callbackJs);
+                    Log.d(TAG,"callbackJs "+ callbackJs );
                     webView.post(new Runnable() {
                         @Override
                         public void run() {
@@ -297,9 +304,10 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("stopDevice", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
-                Log.d(TAG, "stopDevice ");
-                if (mMiCANBinder != null) {
-                    Log.d(TAG, "i am called");
+                Log.d(TAG,"stopDevice ");
+                if(mMiCANBinder != null)
+                {
+                    Log.d(TAG,"i am called");
 
                     mMiCANBinder.CANOffBus();
                     mMiCANBinder.stopSaveBlf();
@@ -324,32 +332,26 @@ public class MainActivity3 extends AppCompatActivity {
                 Log.d(TAG, "TTTTTTTTTTTTTT: " + data);
                 String carType = data.getAsJsonObject().get("carType").getAsString();
                 String sdb = data.getAsJsonObject().get("sdb").getAsString();
-                long cid = database.carTypeDao().getCidByName(carType, sdb);
-                Log.i(TAG, "getDBC " + cid + " ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ");
-                if (mMiCANBinder != null) {
-                    Log.d(TAG, "i am called");
+                long cid = database.carTypeDao().getCidByName(carType,sdb);
+                Log.i(TAG,"getDBC " + cid + " ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ");
+                if(mMiCANBinder != null)
+                {
+                    Log.d(TAG,"i am called");
                     // 进行报文查询
-                    Map<Integer, Map<String, List<List<Object>>>> maps = new HashMap<>();
+                    Map<Integer,Map<String,List<List<Object>>>> maps = new HashMap<>();
 
-//                    ArrayList<Integer> BUSIdList = new ArrayList<>();
-//                    BUSIdList.add(1);
-//                    BUSIdList.add(2);
-//                    BUSIdList.add(3);
-//                    BUSIdList.add(4);
-//                    BUSIdList.add(6);
-//                    BUSIdList.add(7);
                     List<Integer> TEST = database.signalInfoDao().getAllBusIds(cid);
-                    Log.d(TAG, "BUSID ZZZZZZZZZZZZZZZZZZZZZZZZZZ  " + TEST);
+                    Log.d(TAG,"BUSID ZZZZZZZZZZZZZZZZZZZZZZZZZZ  " + TEST);
                     ArrayList<Integer> BUSIdList = database.signalInfoDao().getBusIdsAsArrayList(cid);
-                    Log.d(TAG, "BUSID ZZZZZZZZZZZZZZZZZZZZZZZZZZ  " + BUSIdList);
+                    Log.d(TAG,"BUSID ZZZZZZZZZZZZZZZZZZZZZZZZZZ  " + BUSIdList);
 
-                    BUSIdList.forEach(Busid -> {
-                        Map<String, List<List<Object>>> subMap = new HashMap<>();
-                        List<MsgInfoEntity> msgs = database.msgInfoDao().getMsg(Busid, cid);
-                        msgs.forEach(msg -> {
+                    BUSIdList.forEach(Busid->{
+                        Map<String,List<List<Object>>> subMap = new HashMap<>();
+                        List<MsgInfoEntity> msgs = database.msgInfoDao().getMsg(Busid,cid);
+                        msgs.forEach(msg->{
                             List<List<Object>> subList = new ArrayList<>();
                             // 根据busid 和 canid查询
-                            List<SignalInfo> signalInfos = database.signalInfoDao().getSignalBycid(cid, Busid, msg.CANId);
+                            List<SignalInfo> signalInfos = database.signalInfoDao().getSignalBycid(cid ,Busid, msg.CANId);
                             signalInfos.forEach(signalInfo -> {
                                 List<Object> subList_ = new ArrayList<>();
                                 subList_.add(signalInfo.name);
@@ -374,20 +376,20 @@ public class MainActivity3 extends AppCompatActivity {
                                 subList.add(subList_);
 
                             });
-                            subMap.put(msg.name, subList);
+                            subMap.put(msg.name,subList);
                             Log.d(TAG, "subMap:     ZZZZZZZZZZZZZ " + subMap);
                         });
-                        maps.put(Busid, subMap);
+                        maps.put(Busid,subMap);
                         Log.d(TAG, "maps:     ZZZZZZZZZZZZZZ " + maps);
                     });
 
-                    JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
-                    Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
+                    JsCallResult<Result<Map<Integer,Map<String,List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
+                    Result<Map<Integer,Map<String,List<List<Object>>>>> result = ResponseData.success(maps);
                     jsCallResult.setData(result);
                     Log.d(TAG, "GGGGGGGGGGG   " + jsCallResult);
                     callJs(jsCallResult);
                 }
-                Log.i(TAG, "getDBC finish");
+                Log.i(TAG,"getDBC finish");
             }
         });
 
@@ -398,7 +400,7 @@ public class MainActivity3 extends AppCompatActivity {
                 List<Long> ids = new ArrayList<>();
 
                 JsonArray array = data.getAsJsonArray();
-                array.forEach(item -> {
+                array.forEach(item->{
                     int id = item.getAsJsonObject().get("id").getAsInt();
                     SignalInfo signalInfo = database.signalInfoDao().getSignalById(id);
                     ids.add(signalInfo.id);
@@ -445,24 +447,25 @@ public class MainActivity3 extends AppCompatActivity {
                 int length = dataArray.size();
                 byte[] CANData = new byte[length];
 
-                for (int i = 0; i < length; i++) {
-                    CANData[i] = (byte) Integer.parseInt(dataArray.get(i).getAsString(), 16);
+                for(int i=0;i<length;i++)
+                {
+                    CANData[i] =  (byte) Integer.parseInt(dataArray.get(i).getAsString(),16);
                 }
-                Log.d(TAG, "CANData " + Arrays.toString(CANData));
-                Log.d(TAG, "BUSId " + BUSId + " CANId " + CANId);
+                Log.d(TAG,"CANData " + Arrays.toString(CANData));
+                Log.d(TAG,"BUSId " + BUSId + " CANId " + CANId);
 
                 List<Map<String, Object>> maps = new ArrayList<>();
-                Map<String, Object> titleMap = new HashMap<>();
-                titleMap.put("canId", String.valueOf(CANId));
-                titleMap.put("channel", BUSId);
-                titleMap.put("id", "18028-");
-                titleMap.put("isChildTit", true);
-                titleMap.put("isExpand", true);
-                titleMap.put("isParent", false);
+                Map<String,Object> titleMap = new HashMap<>();
+                titleMap.put("canId",String.valueOf(CANId));
+                titleMap.put("channel",BUSId);
+                titleMap.put("id","18028-");
+                titleMap.put("isChildTit",true);
+                titleMap.put("isExpand",true);
+                titleMap.put("isParent",false);
                 maps.add(titleMap);
 //                maps.addAll(mMiCANBinder.parseMsgData(2, 0x90,CANData));
-                maps.addAll(mMiCANBinder.parseMsgData(BUSId, CANId, CANData));
-                Log.e(TAG, maps.toString());
+                maps.addAll(mMiCANBinder.parseMsgData(BUSId,CANId,CANData));
+                Log.e(TAG,maps.toString());
 
                 JsCallResult<Result<List<Map<String, Object>>>> jsCallResult = new JsCallResult<>(callback);
                 Result<List<Map<String, Object>>> success = ResponseData.success(maps);
@@ -474,9 +477,10 @@ public class MainActivity3 extends AppCompatActivity {
     }
 
 
-    private <T> void callJs(T result) {
+    private <T> void callJs(T result)
+    {
         final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(result));
-        Log.d(TAG, "callbackJs " + callbackJs);
+        Log.d(TAG,"callbackJs "+ callbackJs );
         webView.post(new Runnable() {
             @Override
             public void run() {
@@ -488,7 +492,7 @@ public class MainActivity3 extends AppCompatActivity {
     private class JsInterface {
         @JavascriptInterface
         public void send(String message) {
-            Log.d(TAG, "i am recv " + message);
+            Log.d(TAG,"i am recv "+ message);
 
 //            instance.test7();
             handleNativeResponse(message);
@@ -506,33 +510,36 @@ public class MainActivity3 extends AppCompatActivity {
             String callback = jsonObject.get("callback").getAsString();
             JsonElement data = jsonObject.get("data");
             BridgeHandler handler = messageHandlers.get(method);
-            Log.i(TAG, "method is : " + method);
-            Log.i(TAG, "callback is : " + callback);
-            Log.i(TAG, "data is : " + data);
-            if (handler != null) {
-                handler.handle(data, callback);
-            } else {
-                Log.w(TAG, "BridgeHandler is null");
+            Log.i(TAG,"method is : " + method );
+            Log.i(TAG,"callback is : " + callback );
+            Log.i(TAG,"data is : " + data );
+            if(handler!=null)
+            {
+                handler.handle(data,callback);
+            }else
+            {
+                Log.w(TAG,"BridgeHandler is null");
             }
 
 
         } catch (Exception e) {
-            Log.e(TAG, e.toString());
+            Log.e(TAG,e.toString());
         }
     }
 
     public interface BridgeHandler {
-        void handle(JsonElement data, String callback);
+        void handle(JsonElement data,String callback);
     }
 
     public interface MyRunnable extends Runnable {
         public MyRunnable setParam(String param);
     }
 
-    private void sharedFile(String filePath) {
+    private void sharedFile(String filePath)
+    {
         // 获取要分享的文件
         File file = new File(filePath);
-        Uri uri = FileProvider.getUriForFile(this, "fileprovider", file);
+        Uri uri = FileProvider.getUriForFile(this,"fileprovider",file);
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND);
         intent.putExtra(Intent.EXTRA_STREAM, uri);
@@ -541,24 +548,23 @@ public class MainActivity3 extends AppCompatActivity {
         startActivity(Intent.createChooser(intent, "分享录制文件"));
     }
 
-    private void checkPermission() {
-        boolean externalStorageManager = false;
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
-            externalStorageManager = Environment.isExternalStorageManager();
-        }
-        Log.e(TAG, "externalStorageManager: " + externalStorageManager);
-        if (!externalStorageManager) {
+    private void checkPermission()
+    {
+        boolean externalStorageManager = Environment.isExternalStorageManager();
+        Log.e(TAG,"externalStorageManager: " +externalStorageManager );
+        if(!externalStorageManager)
+        {
             Intent intent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);
-            intent.setData(Uri.parse("package:" + getPackageName()));
+            intent.setData(Uri.parse("package:" + getPackageName()) );
             startActivity(intent);
         }
     }
 
     private void handleFile(Uri fileUri) {
-        Log.i(TAG, "uri getAuthority: " + fileUri.getAuthority());
-        Log.i(TAG, "uri schema: " + fileUri.getScheme());
-        Log.i(TAG, "Uri: " + fileUri + "\t path: " + fileUri.getPath());
-        Log.i(TAG, "Uri: " + fileUri + "\t path: " + getRealPathFromURI(fileUri));
+        Log.i(TAG,"uri getAuthority: " + fileUri.getAuthority());
+        Log.i(TAG,"uri schema: " + fileUri.getScheme());
+        Log.i(TAG,"Uri: " + fileUri + "\t path: " + fileUri.getPath());
+        Log.i(TAG,"Uri: " + fileUri + "\t path: " + getRealPathFromURI(fileUri));
 //        readFileFromUri(this,fileUri);
         // 在此处处理BLF文件，例如读取文件内容或进行解析
         // 检查是否为 content:// 方式的 Uri
@@ -598,13 +604,13 @@ public class MainActivity3 extends AppCompatActivity {
         if (cursor.moveToFirst()) {
             // 获取你需要的列信息，例如文件的MIME类型
             @SuppressLint("Range") String mimeType = cursor.getString(cursor.getColumnIndex(MediaStore.Files.FileColumns.MIME_TYPE));
-            Log.e(TAG, "mimeType: " + mimeType);
+            Log.e(TAG,"mimeType: " +mimeType );
             // 处理你的文件信息
             // ...
         }
 
 
-        Log.e(TAG, "cursor " + cursor.toString());
+        Log.e(TAG,"cursor " + cursor.toString());
         int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
         cursor.moveToFirst();
         return cursor.getString(column_index);
@@ -613,7 +619,7 @@ public class MainActivity3 extends AppCompatActivity {
     public String getPathFromUri(Context context, Uri uri) {
         DocumentFile documentFile = DocumentFile.fromSingleUri(context, uri);
         String path = documentFile.getUri().getPath();
-        Log.d(TAG, "EEEEEEE  : " + path);
+        Log.d(TAG, "EEEEEEE : " + path);
         if (path.startsWith("/document/raw:")) {
             path = path.substring("/document/raw:".length());
             Log.d("pathTest: ", path);
@@ -644,7 +650,8 @@ public class MainActivity3 extends AppCompatActivity {
 
             // 获取文件名
             String fileName = getFileNameFromUri(this, uri);
-//
+
+            Gson gson = new Gson();
 //            Log.d("testName: ", fileName);
 //
 //            Uri selectedFile = data.getData();
@@ -656,7 +663,7 @@ public class MainActivity3 extends AppCompatActivity {
             // 获取文件路径
             String filePath = getPathFromUri(this, uri);
 //            String RealfilePath = getRealPathFromURI(uri);
-            Log.d(TAG, "EEEEEEEE :  " + fileName + "   EEEEEEEEE " + filePath + " Real  ");
+            Log.d(TAG, "EEEEEEEE :  " +fileName + "   EEEEEEEEE " +filePath + " Real  "  );
 //            selectedFilePath = filePath;
 //            if (selectedCallback != null) {
 //                Log.d(TAG, "GGGGGGGG : " + selectedFilePath);
@@ -666,9 +673,16 @@ public class MainActivity3 extends AppCompatActivity {
 //            }
             Python python = Python.getInstance();
             PyObject pyObject = python.getModule("HelloWorld");
-            Log.d("path!!!!!!!! ", filePath);
-            pyObject.callAttr("Python_say_Hello", filePath);
+            pyObject.callAttr("parse_dbc_to_msg", filePath);
 
+//            List<UserMsgEntity> usermsgs = gson.fromJson(jsonString, List.class);
+//            for (UserMsgEntity usermsgs : ) {
+//                UserMsgEntity usermsg = new UserMsgEntity();
+//                usermsg.BUSId =
+//                MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(usermsg);
+//            }
+
+//            Log.d(TAG, "jsonString: "  + pyObject.callAttr("parse_dbc_to_msg",filePath));
             Result<Object> success = new Result<>();
             success.setCode(200); // 成功状态码
             success.setMsg("Success"); // 成功消息
@@ -678,7 +692,7 @@ public class MainActivity3 extends AppCompatActivity {
             if (selectedJsCallResult != null) {
                 selectedJsCallResult.setData(success);
                 callJs(selectedJsCallResult);
-                selectedJsCallResult = null; // 清空 JsCallResult 实例
+                selectedJsCallResult = null; // 清空 JsCallRHesult 实例
             }
         }
     }
@@ -720,4 +734,9 @@ public class MainActivity3 extends AppCompatActivity {
         return fileContent;
     }
 
-}
+
+
+
+
+
+    }

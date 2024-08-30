@@ -9,7 +9,10 @@ import androidx.room.Room;
 
 import com.example.testcdc.Utils.DataBaseUtil;
 import com.example.testcdc.database.MX11E4Database;
+import com.example.testcdc.database.UserDatabase;
 import com.example.testcdc.entity.SignalInfo;
+import com.example.testcdc.entity.UserMsgEntity;
+import com.example.testcdc.entity.UserSignalEntity;
 import com.xiaomi.xms.wearable.Wearable;
 import com.xiaomi.xms.wearable.auth.AuthApi;
 import com.xiaomi.xms.wearable.auth.Permission;
@@ -34,6 +37,7 @@ public class MyApplication extends Application {
 
     private static final String TAG = "MICAN_application";
     private MX11E4Database mx11E4Database = null;
+    private UserDatabase userDatabase = null;
 
     private static MyApplication sInstance;
 
@@ -56,11 +60,18 @@ public class MyApplication extends Application {
         super.onCreate();
         sInstance = this;
         Log.d(TAG, "i am on create");
-        mx11E4Database =  Room.databaseBuilder(this,MX11E4Database.class,"mx11_e4")
+        mx11E4Database =  Room.databaseBuilder(this,MX11E4Database.class,"basic_database")
                 .allowMainThreadQueries()
                 .addMigrations()
                 .build();
-        initDatabase();
+        userDatabase = Room.databaseBuilder(this,UserDatabase.class,"user_database")
+                .allowMainThreadQueries()
+                .addMigrations()
+                .build();
+//        initUserDatabase();
+        Log.d(TAG, "PPPPPPPPPP: ");
+        initDatabase_Basic();
+
 
         textToSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
             @Override
@@ -105,7 +116,13 @@ public class MyApplication extends Application {
 
     public MX11E4Database getMx11E4Database()
     {
+
         return mx11E4Database;
+    }
+
+    public UserDatabase getUserDatabase(){
+
+        return userDatabase;
     }
 
 
@@ -121,9 +138,9 @@ public class MyApplication extends Application {
     }
 
 
-    public void initDatabase()
+    public void initDatabase_Basic()
     {
-        boolean ret = DataBaseUtil.checkDataBase(this,"database");
+        boolean ret = DataBaseUtil.checkDataBase(this,"basic_database");
         if(ret)
         {
             Log.i(TAG,"数据库不存在1");
@@ -131,7 +148,7 @@ public class MyApplication extends Application {
             Log.i(TAG,"num is " + all.size());
             List<SignalInfo> data = MyApplication.getInstance().getMx11E4Database().signalInfoDao().getSignal(6,0x1a9);
             for(SignalInfo element : data) {
-                Log.i(TAG, element.toString());
+//                Log.i(TAG, element.toString());
             }
 
             boolean open = MyApplication.getInstance().getMx11E4Database().isOpen();
@@ -155,6 +172,36 @@ public class MyApplication extends Application {
 
         }
 
+    }
+
+    public void initUserDatabase() {
+        boolean ret = DataBaseUtil.checkDataBase(this, "user_database");
+        if (ret) {
+            // 数据库存在
+            List<UserMsgEntity> allMsgs = MyApplication.getInstance().getUserDatabase().userMsgInfoDao().getAll();
+            List<UserSignalEntity> allSignals = MyApplication.getInstance().getUserDatabase().userSignalInfoDao().getAll();
+            if (!allMsgs.isEmpty() && !allSignals.isEmpty()) {
+                // 数据库中有数据
+                Log.i(TAG, "PPPPPPPPP数据库中有 " + (allMsgs.size()+allSignals.size()) + " 条记录。");
+                // 清空数据库
+                MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteAllUsers(allMsgs);
+                MyApplication.getInstance().getUserDatabase().userSignalInfoDao().deleteAllUsers(allSignals);
+                Log.i(TAG, "PPPPPPPPPPPPP已清空数据库。");
+            } else {
+                // 数据库为空
+                Log.i(TAG, "PPPPPPPPPPPPPP数据库为空，无需操作。");
+            }
+        } else {
+            // 数据库不存在
+            Log.i(TAG, "数据库不存在，无需操作。");
+
+            // 强制创建数据库
+//            User newUser = new User();
+//            newUser.setName("John Doe");
+//            newUser.setEmail("john.doe@example.com");
+//            MyApp.getUserDatabase(this).userDao().insert(newUser);
+//            Log.i(TAG, "插入了一条新数据，数据库现在应该存在了。");
+        }
     }
 
     void test()
