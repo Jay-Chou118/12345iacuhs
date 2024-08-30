@@ -4,6 +4,7 @@ import static com.google.gson.JsonParser.parseString;
 
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
+import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
@@ -12,6 +13,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
+import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
@@ -20,13 +22,21 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.LongDef;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.documentfile.provider.DocumentFile;
 
 import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
+import com.chaquo.python.PyObject;
+import com.chaquo.python.Python;
+import com.chaquo.python.android.AndroidPlatform;
+
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
 import com.example.testcdc.Utils.ResponseData;
@@ -51,6 +61,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.SplittableRandom;
 import java.util.concurrent.LinkedBlockingQueue;
 
 
@@ -230,8 +241,9 @@ public class MainActivity3 extends AppCompatActivity {
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        Log.e(TAG, "thread: " + Thread.currentThread().getId());
-                        if (mMiCANBinder != null) {
+                        Log.e(TAG,"thread: " + Thread.currentThread().getId());
+                        if(mMiCANBinder != null)
+                        {
                             JsCallResult<Result<DeviceInfo>> jsCallResult = new JsCallResult<>(callback);
                             boolean ret = mMiCANBinder.InitModule();
                             if (ret) {
@@ -420,6 +432,7 @@ public class MainActivity3 extends AppCompatActivity {
 
             }
         });
+
 
 
         messageHandlers.put("parsedSignal", new BridgeHandler() {
