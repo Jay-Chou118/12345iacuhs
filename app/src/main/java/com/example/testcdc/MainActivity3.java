@@ -642,6 +642,7 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        // 切换channelId
         channelId = (channelId == 1) ? 2 : 1;
         if (requestCode == READ_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
             Uri uri = data.getData();
@@ -724,7 +725,7 @@ public class MainActivity3 extends AppCompatActivity {
 //                    MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteByChannelId(channelId);
                     MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(userMsgEntity);
 
-                    // 切换channelId
+
 
                 }
             } catch (JSONException e) {
