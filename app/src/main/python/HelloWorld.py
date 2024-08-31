@@ -7,8 +7,8 @@ def can_matrix_to_list(can_matrix: CanMatrix) -> List[Dict]:
     # 将 CanMatrix 中的所有信号转换为列表
     result = [
         {
-            "frame_id": frame.arbitration_id.id,
-            "frame_name": frame.name,
+            "id": frame.arbitration_id.id,
+            "name": frame.name,
             "signals": [
                 {
                     "name": signal.name,
@@ -55,7 +55,7 @@ def parse_dbc_to_msg(path):
     db = formats.loadp(path)
     serialized_data = serialize_can_matrices(db)
     # 打印序列化后的 JSON 字符串
-    # print(serialized_data)
+    print(serialized_data)
     return serialized_data
     # return serialized_data
     # 解析数据

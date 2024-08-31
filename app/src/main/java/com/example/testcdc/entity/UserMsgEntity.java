@@ -5,6 +5,9 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import java.util.List;
+import java.util.Map;
+
 @Entity(tableName = "user_msg")
 public class UserMsgEntity {
 
@@ -13,10 +16,13 @@ public class UserMsgEntity {
     public long id;
     @ColumnInfo(name = "name")
     public String name;
-    @ColumnInfo(name="bus_id")
-    public int BUSId;
+//    @ColumnInfo(name="bus_id")
+//    public int BUSId;
     @ColumnInfo(name="can_id")
     public int CANId;
+
+    @ColumnInfo(name="include_signal")
+    public String signals;
 
     @ColumnInfo(name = "send_type")
     public String sendType;
@@ -34,25 +40,100 @@ public class UserMsgEntity {
     public String CANType;
 
     @ColumnInfo(name="channel")
-    public char channel;
+    public int channel;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getCANId() {
+        return CANId;
+    }
+
+    public void setCANId(int CANId) {
+        this.CANId = CANId;
+    }
+
+    public String getSignals() {
+        return signals;
+    }
+
+    public void setSignals(String signals) {
+        this.signals = signals;
+    }
+
+    public String getSendType() {
+        return sendType;
+    }
+
+    public void setSendType(String sendType) {
+        this.sendType = sendType;
+    }
+
+    public double getCycleTime() {
+        return cycleTime;
+    }
+
+    public void setCycleTime(double cycleTime) {
+        this.cycleTime = cycleTime;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public String getBUSName() {
+        return BUSName;
+    }
+
+    public void setBUSName(String BUSName) {
+        this.BUSName = BUSName;
+    }
+
+    public String getSenders() {
+        return senders;
+    }
+
+    public void setSenders(String senders) {
+        this.senders = senders;
+    }
+
+    public String getReceivers() {
+        return receivers;
+    }
+
+    public void setReceivers(String receivers) {
+        this.receivers = receivers;
+    }
+
+    public String getCANType() {
+        return CANType;
+    }
+
+    public void setCANType(String CANType) {
+        this.CANType = CANType;
+    }
+
+    public int getChannel() {
+        return channel;
+    }
+
+    public void setChannel(int channel) {
+        this.channel = channel;
+    }
+
 
     public UserMsgEntity() {
     }
 
-    @Override
-    public String toString() {
-        return "UserMsgEntity{" +
-                "name='" + name + '\'' +
-                ", BUSId=" + BUSId +
-                ", CANId=" + CANId +
-                ", sendType='" + sendType + '\'' +
-                ", cycleTime=" + cycleTime +
-                ", comment='" + comment + '\'' +
-                ", BUSName='" + BUSName + '\'' +
-                ", senders='" + senders + '\'' +
-                ", receivers='" + receivers + '\'' +
-                ", CANType='" + CANType + '\'' +
-                ", channel=" + channel +
-                '}';
-    }
+
+
 }

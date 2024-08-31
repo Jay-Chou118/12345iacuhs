@@ -45,8 +45,127 @@ public class UserSignalEntity {
     public String choices;
 
     @ColumnInfo(name="channel")
-    public char channel;
+    public int channel;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getBUSId() {
+        return BUSId;
+    }
+
+    public void setBUSId(int BUSId) {
+        this.BUSId = BUSId;
+    }
+
+    public int getCANId() {
+        return CANId;
+    }
+
+    public void setCANId(int CANId) {
+        this.CANId = CANId;
+    }
+
+    public boolean isByteOrder() {
+        return byteOrder;
+    }
+
+    public void setByteOrder(boolean byteOrder) {
+        this.byteOrder = byteOrder;
+    }
+
+    public boolean isSigned() {
+        return isSigned;
+    }
+
+    public void setSigned(boolean signed) {
+        isSigned = signed;
+    }
+
+    public int getBitStart() {
+        return bitStart;
+    }
+
+    public void setBitStart(int bitStart) {
+        this.bitStart = bitStart;
+    }
+
+    public int getBitLength() {
+        return bitLength;
+    }
+
+    public void setBitLength(int bitLength) {
+        this.bitLength = bitLength;
+    }
+
+    public double getScale() {
+        return scale;
+    }
+
+    public void setScale(double scale) {
+        this.scale = scale;
+    }
+
+    public double getOffset() {
+        return offset;
+    }
+
+    public void setOffset(double offset) {
+        this.offset = offset;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public Double getMinimum() {
+        return minimum;
+    }
+
+    public void setMinimum(Double minimum) {
+        this.minimum = minimum;
+    }
+
+    public Double getMaximum() {
+        return maximum;
+    }
+
+    public void setMaximum(Double maximum) {
+        this.maximum = maximum;
+    }
+
+    public Double getInitial() {
+        return initial;
+    }
+
+    public void setInitial(Double initial) {
+        this.initial = initial;
+    }
+
+    public String getChoices() {
+        return choices;
+    }
+
+    public void setChoices(String choices) {
+        this.choices = choices;
+    }
+
+    public int getChannel() {
+        return channel;
+    }
+
+    public void setChannel(int channel) {
+        this.channel = channel;
+    }
 
     @Override
     public String toString() {

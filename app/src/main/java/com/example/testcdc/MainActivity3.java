@@ -4,7 +4,6 @@ import static com.google.gson.JsonParser.parseString;
 
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
-import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
@@ -13,7 +12,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
-import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
@@ -22,12 +20,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.LongDef;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.documentfile.provider.DocumentFile;
 
 import com.chaquo.python.PyObject;
@@ -40,14 +34,18 @@ import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
 import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.MX11E4Database;
-import com.example.testcdc.database.UserDatabase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
 import com.example.testcdc.entity.UserMsgEntity;
+import com.example.testcdc.entity.UserSignalEntity;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -60,7 +58,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.SplittableRandom;
 import java.util.concurrent.LinkedBlockingQueue;
 
 
@@ -85,6 +82,9 @@ public class MainActivity3 extends AppCompatActivity {
     private String selectedCallback; // 用于存储从 JavaScript 调用过来的回调函数名称
 
     private JsCallResult<Result<Object>> selectedJsCallResult; // 用于存储 JsCallResult 实例
+
+    //切换通道
+    private int channelId = 2;
 
     private ServiceConnection mSC = new ServiceConnection() {
         @Override
@@ -341,9 +341,7 @@ public class MainActivity3 extends AppCompatActivity {
                     Map<Integer,Map<String,List<List<Object>>>> maps = new HashMap<>();
 
                     List<Integer> TEST = database.signalInfoDao().getAllBusIds(cid);
-                    Log.d(TAG,"BUSID ZZZZZZZZZZZZZZZZZZZZZZZZZZ  " + TEST);
                     ArrayList<Integer> BUSIdList = database.signalInfoDao().getBusIdsAsArrayList(cid);
-                    Log.d(TAG,"BUSID ZZZZZZZZZZZZZZZZZZZZZZZZZZ  " + BUSIdList);
 
                     BUSIdList.forEach(Busid->{
                         Map<String,List<List<Object>>> subMap = new HashMap<>();
@@ -377,16 +375,15 @@ public class MainActivity3 extends AppCompatActivity {
 
                             });
                             subMap.put(msg.name,subList);
-                            Log.d(TAG, "subMap:     ZZZZZZZZZZZZZ " + subMap);
+
                         });
                         maps.put(Busid,subMap);
-                        Log.d(TAG, "maps:     ZZZZZZZZZZZZZZ " + maps);
+
                     });
 
                     JsCallResult<Result<Map<Integer,Map<String,List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
                     Result<Map<Integer,Map<String,List<List<Object>>>>> result = ResponseData.success(maps);
                     jsCallResult.setData(result);
-                    Log.d(TAG, "GGGGGGGGGGG   " + jsCallResult);
                     callJs(jsCallResult);
                 }
                 Log.i(TAG,"getDBC finish");
@@ -645,6 +642,7 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        channelId = (channelId == 1) ? 2 : 1;
         if (requestCode == READ_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
             Uri uri = data.getData();
 
@@ -664,25 +662,77 @@ public class MainActivity3 extends AppCompatActivity {
             String filePath = getPathFromUri(this, uri);
 //            String RealfilePath = getRealPathFromURI(uri);
             Log.d(TAG, "EEEEEEEE :  " +fileName + "   EEEEEEEEE " +filePath + " Real  "  );
-//            selectedFilePath = filePath;
-//            if (selectedCallback != null) {
-//                Log.d(TAG, "GGGGGGGG : " + selectedFilePath);
-//
-//                callJs(selectedFilePath);
-//                selectedCallback = null; // 清空回调，防止重复调用
-//            }
+
             Python python = Python.getInstance();
             PyObject pyObject = python.getModule("HelloWorld");
-            pyObject.callAttr("parse_dbc_to_msg", filePath);
+            String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_to_msg", filePath));
 
-//            List<UserMsgEntity> usermsgs = gson.fromJson(jsonString, List.class);
-//            for (UserMsgEntity usermsgs : ) {
-//                UserMsgEntity usermsg = new UserMsgEntity();
-//                usermsg.BUSId =
-//                MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(usermsg);
-//            }
+            try {
+                JSONArray usermsgArray = new JSONArray(usermsg);
 
-//            Log.d(TAG, "jsonString: "  + pyObject.callAttr("parse_dbc_to_msg",filePath));
+                for (int i = 0; i < usermsgArray.length(); i++) {
+                    JSONObject usermsgObject = usermsgArray.getJSONObject(i);
+
+                    UserMsgEntity userMsgEntity = new UserMsgEntity();
+//                    Log.d(TAG, "GGGGGGG " + usermsgObject.toString());
+
+//                    if (usermsgObject.has("id")) {
+//                        userMsgEntity.setCANId(usermsgObject.getInt("id"));
+//                    } else {
+//                        Log.d(TAG, "Warning: Missing 'id' in JSON object at index ");
+//                        continue; // 跳过当前迭代
+//                    }
+
+//                    // 提取id和name
+                    userMsgEntity.setCANId(usermsgObject.getInt("id"));
+                    userMsgEntity.setName(usermsgObject.getString("name"));
+
+                    // 将signals字段直接转换为字符串
+                    String signalsStr = usermsgObject.getJSONArray("signals").toString();
+                    userMsgEntity.setSignals(signalsStr); // 假设setSignals接受字符串参数
+
+                    try{
+                        JSONArray usersignalArray = new JSONArray(signalsStr);
+                        for (int j = 0; j < usersignalArray.length(); j++) {
+                            JSONObject usersignalObject = usersignalArray.getJSONObject(j);
+
+
+                            UserSignalEntity userSignalEntity = new UserSignalEntity();
+
+                            userSignalEntity.setName(usersignalObject.getString("name"));
+                            userSignalEntity.setCANId(usermsgObject.getInt("id"));
+                            userSignalEntity.setBitStart(usersignalObject.getInt("start_bit"));
+                            userSignalEntity.setBitLength(usersignalObject.getInt("size"));
+                            userSignalEntity.setChannel(channelId);
+                            Log.d(TAG, "GGGGGGG " + usersignalObject.toString());
+                            MyApplication.getInstance().getUserDatabase().userSignalInfoDao().insert(userSignalEntity);
+                        }
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                        // 处理异常
+                        }
+
+
+                    userMsgEntity.setComment(usermsgObject.getString("comment"));
+
+                    userMsgEntity.setCANType(usermsgObject.getString("is_fd"));
+                    // 设置channelId
+                    userMsgEntity.setChannel(channelId);
+
+                    // 存入数据库
+//                    MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteByChannelId(channelId);
+                    MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(userMsgEntity);
+
+                    // 切换channelId
+
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+                // 处理异常
+            }
+            Log.d(TAG, "Parse DBC by User finished");
+
             Result<Object> success = new Result<>();
             success.setCode(200); // 成功状态码
             success.setMsg("Success"); // 成功消息
@@ -695,6 +745,8 @@ public class MainActivity3 extends AppCompatActivity {
                 selectedJsCallResult = null; // 清空 JsCallRHesult 实例
             }
         }
+
+
     }
 
     public String readFileFromUri(Context context, Uri fileUri) {

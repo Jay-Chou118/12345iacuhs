@@ -1,6 +1,7 @@
 package com.example.testcdc.dao;
 
 
+import androidx.annotation.NonNull;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -30,6 +31,9 @@ public interface UserMsgInfoDao {
             delete(user);
         }
     }
+
+    @Query("DELETE FROM user_msg WHERE channel = :channelId")
+    void deleteByChannelId(@NonNull int channelId);
 
 
 }
