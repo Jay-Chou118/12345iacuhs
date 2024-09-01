@@ -68,7 +68,7 @@ public class MyApplication extends Application {
                 .allowMainThreadQueries()
                 .addMigrations()
                 .build();
-//        initUserDatabase();
+        initUserDatabase();
         Log.d(TAG, "PPPPPPPPPP: ");
         initDatabase_Basic();
 
