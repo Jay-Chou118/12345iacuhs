@@ -25,6 +25,10 @@ public interface UserMsgInfoDao {
     @Delete
     void delete(UserMsgEntity userMsgEntity);
 
+    @Query("DELETE FROM user_msg WHERE channel = :channelId")
+    void deleteByChannel(int channelId);
+
+
     @Transaction
     default void deleteAllUsers(List<UserMsgEntity> userMsgEntity) {
         for (UserMsgEntity user : userMsgEntity) {

@@ -17,4 +17,11 @@ public abstract class UserDatabase extends RoomDatabase {
 
     public abstract UserSignalInfoDao userSignalInfoDao();
 
+
+    private static volatile UserDatabase INSTANCE;
+
+    public static void destroyInstance() {
+        INSTANCE = null;
+    }
+
 }

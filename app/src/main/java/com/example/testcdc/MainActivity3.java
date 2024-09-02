@@ -34,6 +34,7 @@ import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
 import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.MX11E4Database;
+import com.example.testcdc.database.UserDatabase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
 import com.example.testcdc.entity.UserMsgEntity;
@@ -75,7 +76,8 @@ public class MainActivity3 extends AppCompatActivity {
     private MyService.MiCANBinder mMiCANBinder;
 
 
-    private static final int READ_REQUEST_CODE = 1;
+    private static final int READ_REQUEST_CHNANEL1_CODE = 1;
+    private static final int READ_REQUEST_CHNANEL2_CODE = 2;
 
     private String selectedFilePath; // 添加成员变量来保存选中的文件路径
 
@@ -84,7 +86,7 @@ public class MainActivity3 extends AppCompatActivity {
     private JsCallResult<Result<Object>> selectedJsCallResult; // 用于存储 JsCallResult 实例
 
     //切换通道
-    private int channelId = 2;
+    private int channelId;
 
     private ServiceConnection mSC = new ServiceConnection() {
         @Override
@@ -412,15 +414,53 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
-        //test
-        messageHandlers.put("getUserDBC", new BridgeHandler() {
+
+//        messageHandlers.put("getUserDBC", new BridgeHandler() {
+//            @Override
+//            public void handle(JsonElement data, String callback) {
+//                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+//                intent.setType("*/*");
+//                intent.addCategory(Intent.CATEGORY_OPENABLE);
+//
+//                startActivityForResult(intent, READ_REQUEST_CHNANEL1_CODE);
+//
+//                // 保存回调函数，以便在 onActivityResult 中使用
+////                selectedCallback = callback;
+//
+//                // 创建 JsCallResult 实例并保存回调函数
+//                JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
+//                selectedJsCallResult = jsCallResult;
+//
+//            }
+//        });
+
+        messageHandlers.put("getUserDBC1", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
                 intent.setType("*/*");
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
 
-                startActivityForResult(intent, READ_REQUEST_CODE);
+                startActivityForResult(intent, READ_REQUEST_CHNANEL1_CODE);
+
+                // 保存回调函数，以便在 onActivityResult 中使用
+//                selectedCallback = callback;
+
+                // 创建 JsCallResult 实例并保存回调函数
+                JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
+                selectedJsCallResult = jsCallResult;
+
+            }
+        });
+
+        messageHandlers.put("getUserDBC2", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                intent.setType("*/*");
+                intent.addCategory(Intent.CATEGORY_OPENABLE);
+
+                startActivityForResult(intent, READ_REQUEST_CHNANEL2_CODE);
 
                 // 保存回调函数，以便在 onActivityResult 中使用
 //                selectedCallback = callback;
@@ -642,11 +682,12 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+//        MyApplication.getInstance().initUserDatabase();
         // 切换channelId
-        channelId = (channelId == 1) ? 2 : 1;
-        if (requestCode == READ_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
+//        channelId = (channelId == 1) ? 2 : 1;
+        if (requestCode == READ_REQUEST_CHNANEL1_CODE && resultCode == RESULT_OK && data != null) {
             Uri uri = data.getData();
-
+            channelId = 1;
             // 获取文件名
             String fileName = getFileNameFromUri(this, uri);
 
@@ -667,9 +708,14 @@ public class MainActivity3 extends AppCompatActivity {
             Python python = Python.getInstance();
             PyObject pyObject = python.getModule("HelloWorld");
             String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_to_msg", filePath));
+            Log.d(TAG, "DBC1 channelId: " + channelId);
 
             try {
                 JSONArray usermsgArray = new JSONArray(usermsg);
+                Log.d(TAG, "PPPPPPPPP:tttt1 ");
+                MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteByChannel(channelId);
+                MyApplication.getInstance().getUserDatabase().userSignalInfoDao().deleteByChannel(channelId);
+
 
                 for (int i = 0; i < usermsgArray.length(); i++) {
                     JSONObject usermsgObject = usermsgArray.getJSONObject(i);
@@ -716,10 +762,10 @@ public class MainActivity3 extends AppCompatActivity {
 
 
                     userMsgEntity.setComment(usermsgObject.getString("comment"));
-
                     userMsgEntity.setCANType(usermsgObject.getString("is_fd"));
                     // 设置channelId
                     userMsgEntity.setChannel(channelId);
+                    Log.d(TAG, "PPPPPPPPP:tttt1 " + channelId);
 
                     // 存入数据库
 //                    MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteByChannelId(channelId);
@@ -732,7 +778,93 @@ public class MainActivity3 extends AppCompatActivity {
                 e.printStackTrace();
                 // 处理异常
             }
-            Log.d(TAG, "Parse DBC by User finished");
+            Log.d(TAG, "Parse DBC1 by User finished");
+
+            Result<Object> success = new Result<>();
+            success.setCode(200); // 成功状态码
+            success.setMsg("Success"); // 成功消息
+            success.setData(fileName); // 文件名称作为数据
+
+            // 如果有 JsCallResult 实例，则填充数据并调用 callJs
+            if (selectedJsCallResult != null) {
+                selectedJsCallResult.setData(success);
+                callJs(selectedJsCallResult);
+                selectedJsCallResult = null; // 清空 JsCallRHesult 实例
+            }
+        }else if(requestCode == READ_REQUEST_CHNANEL2_CODE && resultCode == RESULT_OK && data != null){
+            Uri uri = data.getData();
+            channelId = 2;
+            // 获取文件名
+            String fileName = getFileNameFromUri(this, uri);
+            // 获取文件路径
+            String filePath = getPathFromUri(this, uri);
+//           String RealfilePath = getRealPathFromURI(uri);
+            Log.d(TAG, "EEEEEEEE :  " +fileName + "   EEEEEEEEE " +filePath + " Real  "  );
+
+            Python python = Python.getInstance();
+            PyObject pyObject = python.getModule("HelloWorld");
+            String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_to_msg", filePath));
+            Log.d(TAG, "DBC2 channelId: " + channelId);
+
+            try {
+                JSONArray usermsgArray = new JSONArray(usermsg);
+                // 先删除旧数据
+                MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteByChannel(channelId);
+                MyApplication.getInstance().getUserDatabase().userSignalInfoDao().deleteByChannel(channelId);
+
+                for (int i = 0; i < usermsgArray.length(); i++) {
+                    JSONObject usermsgObject = usermsgArray.getJSONObject(i);
+
+                    UserMsgEntity userMsgEntity = new UserMsgEntity();
+                    Log.d(TAG, "PPPPPPPPP:tttt2 " );
+//                    // 提取id和name
+                    userMsgEntity.setCANId(usermsgObject.getInt("id"));
+                    userMsgEntity.setName(usermsgObject.getString("name"));
+
+                    // 将signals字段直接转换为字符串
+                    String signalsStr = usermsgObject.getJSONArray("signals").toString();
+                    userMsgEntity.setSignals(signalsStr); // 假设setSignals接受字符串参数
+
+                    try{
+                        JSONArray usersignalArray = new JSONArray(signalsStr);
+                        for (int j = 0; j < usersignalArray.length(); j++) {
+                            JSONObject usersignalObject = usersignalArray.getJSONObject(j);
+
+
+                            UserSignalEntity userSignalEntity = new UserSignalEntity();
+
+                            userSignalEntity.setName(usersignalObject.getString("name"));
+                            userSignalEntity.setCANId(usermsgObject.getInt("id"));
+                            userSignalEntity.setBitStart(usersignalObject.getInt("start_bit"));
+                            userSignalEntity.setBitLength(usersignalObject.getInt("size"));
+                            userSignalEntity.setChannel(channelId);
+                            Log.d(TAG, "GGGGGGG " + usersignalObject.toString());
+                            MyApplication.getInstance().getUserDatabase().userSignalInfoDao().insert(userSignalEntity);
+                        }
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                        // 处理异常
+                    }
+
+
+                    userMsgEntity.setComment(usermsgObject.getString("comment"));
+
+                    userMsgEntity.setCANType(usermsgObject.getString("is_fd"));
+                    // 设置channelId
+                    userMsgEntity.setChannel(channelId);
+                    Log.d(TAG, "PPPPPPPPP:tttt2 " + channelId);
+
+                    MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(userMsgEntity);
+
+
+
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+                // 处理异常
+            }
+            Log.d(TAG, "Parse DBC2 by User finished");
 
             Result<Object> success = new Result<>();
             success.setCode(200); // 成功状态码
@@ -746,7 +878,6 @@ public class MainActivity3 extends AppCompatActivity {
                 selectedJsCallResult = null; // 清空 JsCallRHesult 实例
             }
         }
-
 
     }
 
@@ -787,6 +918,22 @@ public class MainActivity3 extends AppCompatActivity {
         return fileContent;
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        // 获取数据库实例
+        UserDatabase userDatabase = MyApplication.getInstance().getUserDatabase();
+        if (userDatabase != null) {
+            userDatabase.close();
+            userDatabase.destroyInstance();
+            // 删除数据库文件
+            File dbFile = new File(getFilesDir(), "user_database");
+            if (dbFile.exists()) {
+                dbFile.delete();
+            }
+        }
+    }
 
 
 

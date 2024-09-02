@@ -27,6 +27,9 @@ public interface UserSignalInfoDao {
     @Delete
     void delete(UserSignalEntity userSignal);
 
+    @Query("DELETE FROM user_signal WHERE channel = :channelId")
+    void deleteByChannel(int channelId);
+
     @Transaction
     default void deleteAllUsers(List<UserSignalEntity> userSignal) {
         for (UserSignalEntity user : userSignal) {
