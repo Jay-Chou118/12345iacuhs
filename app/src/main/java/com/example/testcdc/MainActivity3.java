@@ -59,6 +59,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 
 
@@ -75,6 +77,8 @@ public class MainActivity3 extends AppCompatActivity {
 
     private MyService.MiCANBinder mMiCANBinder;
 
+
+    private static final ExecutorService executorService = Executors.newSingleThreadExecutor();
 
     private static final int READ_REQUEST_CHNANEL1_CODE = 1;
     private static final int READ_REQUEST_CHNANEL2_CODE = 2;
@@ -696,204 +700,133 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-//        MyApplication.getInstance().initUserDatabase();
-        // 切换channelId
-//        BusId = (BusId == 1) ? 2 : 1;
+
         if (requestCode == READ_REQUEST_CHNANEL1_CODE && resultCode == RESULT_OK && data != null) {
             Uri uri = data.getData();
             BusId = 1;
-            // 获取文件名
             String fileName = getFileNameFromUri(this, uri);
-
-            Gson gson = new Gson();
-//            Log.d("testName: ", fileName);
-//
-//            Uri selectedFile = data.getData();
-//
-//            File file = new File(getPathFromUri(this, selectedFile));
-//            String testPath = file.getAbsolutePath();
-//            Log.d("testPath", testPath);
-
-            // 获取文件路径
             String filePath = getPathFromUri(this, uri);
-//            String RealfilePath = getRealPathFromURI(uri);
             Log.d(TAG, "EEEEEEEE :  " + fileName + "   EEEEEEEEE " + filePath + " Real  ");
 
-            Python python = Python.getInstance();
-            PyObject pyObject = python.getModule("HelloWorld");
-            String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_to_msg", filePath));
-//            Log.d(TAG, "DBC1 channelId: " + BusId);
+            // 使用 ExecutorService 提交任务
+            executorService.submit(() -> {
+                try {
+                    Python python = Python.getInstance();
+                    PyObject pyObject = python.getModule("HelloWorld");
+                    String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_to_msg", filePath));
 
-            try {
-                JSONArray usermsgArray = new JSONArray(usermsg);
-                Log.d(TAG, "PPPPPPPPP:tttt1 ");
-                MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteByChannel(BusId);
-                MyApplication.getInstance().getUserDatabase().userSignalInfoDao().deleteByChannel(BusId);
+                    JSONArray usermsgArray = new JSONArray(usermsg);
+                    MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteByChannel(BusId);
+                    MyApplication.getInstance().getUserDatabase().userSignalInfoDao().deleteByChannel(BusId);
 
+                    for (int i = 0; i < usermsgArray.length(); i++) {
+                        JSONObject usermsgObject = usermsgArray.getJSONObject(i);
+                        UserMsgEntity userMsgEntity = new UserMsgEntity();
+                        userMsgEntity.setCANId(usermsgObject.getInt("id"));
+                        userMsgEntity.setName(usermsgObject.getString("name"));
+                        String signalsStr = usermsgObject.getJSONArray("signals").toString();
+                        userMsgEntity.setSignals(signalsStr);
 
-                for (int i = 0; i < usermsgArray.length(); i++) {
-                    JSONObject usermsgObject = usermsgArray.getJSONObject(i);
-
-                    UserMsgEntity userMsgEntity = new UserMsgEntity();
-//                    Log.d(TAG, "GGGGGGG " + usermsgObject.toString());
-
-//                    if (usermsgObject.has("id")) {
-//                        userMsgEntity.setCANId(usermsgObject.getInt("id"));
-//                    } else {
-//                        Log.d(TAG, "Warning: Missing 'id' in JSON object at index ");
-//                        continue; // 跳过当前迭代
-//                    }
-
-//                    // 提取id和name
-                    userMsgEntity.setCANId(usermsgObject.getInt("id"));
-                    userMsgEntity.setName(usermsgObject.getString("name"));
-
-                    // 将signals字段直接转换为字符串
-                    String signalsStr = usermsgObject.getJSONArray("signals").toString();
-                    userMsgEntity.setSignals(signalsStr); // 假设setSignals接受字符串参数
-
-                    try {
                         JSONArray usersignalArray = new JSONArray(signalsStr);
                         for (int j = 0; j < usersignalArray.length(); j++) {
                             JSONObject usersignalObject = usersignalArray.getJSONObject(j);
-
-
                             UserSignalEntity userSignalEntity = new UserSignalEntity();
-
                             userSignalEntity.setName(usersignalObject.getString("name"));
                             userSignalEntity.setCANId(usermsgObject.getInt("id"));
                             userSignalEntity.setBitStart(usersignalObject.getInt("start_bit"));
                             userSignalEntity.setBitLength(usersignalObject.getInt("size"));
                             userSignalEntity.setBUSId(BusId);
-//                            Log.d(TAG, "GGGGGGG " + usersignalObject.toString());
                             MyApplication.getInstance().getUserDatabase().userSignalInfoDao().insert(userSignalEntity);
                         }
 
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                        // 处理异常
+                        userMsgEntity.setComment(usermsgObject.getString("comment"));
+                        userMsgEntity.setCANType(usermsgObject.getString("is_fd"));
+                        userMsgEntity.setBUSId(BusId);
+                        MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(userMsgEntity);
                     }
 
+                    // 完成后在主线程中更新UI
+                    runOnUiThread(() -> {
+                        Log.d(TAG, "Parse DBC1 by User finished");
+                        Result<Object> success = new Result<>();
+                        success.setCode(200);
+                        success.setMsg("Success");
+                        success.setData(fileName);
 
-                    userMsgEntity.setComment(usermsgObject.getString("comment"));
-
-                    userMsgEntity.setCANType(usermsgObject.getString("is_fd"));
-                    // 设置channelId
-                    userMsgEntity.setBUSId(BusId);
-//                    Log.d(TAG, "PPPPPPPPP:tttt1 " + BusId);
-
-                    // 存入数据库
-//                    MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteByChannelId(channelId);
-                    MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(userMsgEntity);
-
-
-
+                        if (selectedJsCallResult != null) {
+                            selectedJsCallResult.setData(success);
+                            callJs(selectedJsCallResult);
+                            selectedJsCallResult = null;
+                        }
+                    });
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
-            } catch (JSONException e) {
-                e.printStackTrace();
-                // 处理异常
-            }
-            Log.d(TAG, "Parse DBC1 by User finished");
+            });
 
-            Result<Object> success = new Result<>();
-            success.setCode(200); // 成功状态码
-            success.setMsg("Success"); // 成功消息
-            success.setData(fileName); // 文件名称作为数据
-
-            // 如果有 JsCallResult 实例，则填充数据并调用 callJs
-            if (selectedJsCallResult != null) {
-                selectedJsCallResult.setData(success);
-                callJs(selectedJsCallResult);
-                selectedJsCallResult = null; // 清空 JsCallRHesult 实例
-            }
-        }else if(requestCode == READ_REQUEST_CHNANEL2_CODE && resultCode == RESULT_OK && data != null){
+        } else if (requestCode == READ_REQUEST_CHNANEL2_CODE && resultCode == RESULT_OK && data != null) {
             Uri uri = data.getData();
             BusId = 2;
-            // 获取文件名
             String fileName = getFileNameFromUri(this, uri);
-            // 获取文件路径
             String filePath = getPathFromUri(this, uri);
-//           String RealfilePath = getRealPathFromURI(uri);
-            Log.d(TAG, "EEEEEEEE :  " +fileName + "   EEEEEEEEE " +filePath + " Real  "  );
+            Log.d(TAG, "EEEEEEEE :  " + fileName + "   EEEEEEEEE " + filePath + " Real  ");
 
-            Python python = Python.getInstance();
-            PyObject pyObject = python.getModule("HelloWorld");
-            String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_to_msg", filePath));
-            Log.d(TAG, "DBC2 channelId: " + BusId);
+            // 使用 ExecutorService 提交任务
+            executorService.submit(() -> {
+                try {
+                    Python python = Python.getInstance();
+                    PyObject pyObject = python.getModule("HelloWorld");
+                    String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_to_msg", filePath));
 
-            try {
-                JSONArray usermsgArray = new JSONArray(usermsg);
-                // 先删除旧数据
-                MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteByChannel(BusId);
-                MyApplication.getInstance().getUserDatabase().userSignalInfoDao().deleteByChannel(BusId);
+                    JSONArray usermsgArray = new JSONArray(usermsg);
+                    MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteByChannel(BusId);
+                    MyApplication.getInstance().getUserDatabase().userSignalInfoDao().deleteByChannel(BusId);
 
-                for (int i = 0; i < usermsgArray.length(); i++) {
-                    JSONObject usermsgObject = usermsgArray.getJSONObject(i);
+                    for (int i = 0; i < usermsgArray.length(); i++) {
+                        JSONObject usermsgObject = usermsgArray.getJSONObject(i);
+                        UserMsgEntity userMsgEntity = new UserMsgEntity();
+                        userMsgEntity.setCANId(usermsgObject.getInt("id"));
+                        userMsgEntity.setName(usermsgObject.getString("name"));
+                        String signalsStr = usermsgObject.getJSONArray("signals").toString();
+                        userMsgEntity.setSignals(signalsStr);
 
-                    UserMsgEntity userMsgEntity = new UserMsgEntity();
-                    Log.d(TAG, "PPPPPPPPP:tttt2 " );
-//                    // 提取id和name
-                    userMsgEntity.setCANId(usermsgObject.getInt("id"));
-                    userMsgEntity.setName(usermsgObject.getString("name"));
-
-                    // 将signals字段直接转换为字符串
-                    String signalsStr = usermsgObject.getJSONArray("signals").toString();
-                    userMsgEntity.setSignals(signalsStr); // 假设setSignals接受字符串参数
-
-                    try{
                         JSONArray usersignalArray = new JSONArray(signalsStr);
                         for (int j = 0; j < usersignalArray.length(); j++) {
                             JSONObject usersignalObject = usersignalArray.getJSONObject(j);
-
-
                             UserSignalEntity userSignalEntity = new UserSignalEntity();
-
                             userSignalEntity.setName(usersignalObject.getString("name"));
                             userSignalEntity.setCANId(usermsgObject.getInt("id"));
                             userSignalEntity.setBitStart(usersignalObject.getInt("start_bit"));
                             userSignalEntity.setBitLength(usersignalObject.getInt("size"));
                             userSignalEntity.setBUSId(BusId);
-//                            Log.d(TAG, "GGGGGGG " + usersignalObject.toString());
                             MyApplication.getInstance().getUserDatabase().userSignalInfoDao().insert(userSignalEntity);
                         }
 
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                        // 处理异常
+                        userMsgEntity.setComment(usermsgObject.getString("comment"));
+                        userMsgEntity.setCANType(usermsgObject.getString("is_fd"));
+                        userMsgEntity.setBUSId(BusId);
+                        MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(userMsgEntity);
                     }
 
+                    // 完成后在主线程中更新UI
+                    runOnUiThread(() -> {
+                        Log.d(TAG, "Parse DBC2 by User finished");
+                        Result<Object> success = new Result<>();
+                        success.setCode(200);
+                        success.setMsg("Success");
+                        success.setData(fileName);
 
-                    userMsgEntity.setComment(usermsgObject.getString("comment"));
-
-                    userMsgEntity.setCANType(usermsgObject.getString("is_fd"));
-                    // 设置channelId
-                    userMsgEntity.setBUSId(BusId);
-//                    Log.d(TAG, "PPPPPPPPP:tttt2 " + channelId);
-
-                    MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(userMsgEntity);
-
-
-
+                        if (selectedJsCallResult != null) {
+                            selectedJsCallResult.setData(success);
+                            callJs(selectedJsCallResult);
+                            selectedJsCallResult = null;
+                        }
+                    });
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
-            } catch (JSONException e) {
-                e.printStackTrace();
-                // 处理异常
-            }
-            Log.d(TAG, "Parse DBC2 by User finished");
-
-            Result<Object> success = new Result<>();
-            success.setCode(200); // 成功状态码
-            success.setMsg("Success"); // 成功消息
-            success.setData(fileName); // 文件名称作为数据
-
-            // 如果有 JsCallResult 实例，则填充数据并调用 callJs
-            if (selectedJsCallResult != null) {
-                selectedJsCallResult.setData(success);
-                callJs(selectedJsCallResult);
-                selectedJsCallResult = null; // 清空 JsCallRHesult 实例
-            }
+            });
         }
-
     }
 
     public String readFileFromUri(Context context, Uri fileUri) {
