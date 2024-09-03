@@ -16,8 +16,8 @@ public class UserMsgEntity {
     public long id;
     @ColumnInfo(name = "name")
     public String name;
-//    @ColumnInfo(name="bus_id")
-//    public int BUSId;
+    @ColumnInfo(name="bus_id")
+    public int BUSId;
     @ColumnInfo(name="can_id")
     public int CANId;
 
@@ -39,8 +39,8 @@ public class UserMsgEntity {
     @ColumnInfo(name="can_type")
     public String CANType;
 
-    @ColumnInfo(name="channel")
-    public int channel;
+//    @ColumnInfo(name="channel")
+//    public int channel;
 
     public String getName() {
         return name;
@@ -122,14 +122,13 @@ public class UserMsgEntity {
         this.CANType = CANType;
     }
 
-    public int getChannel() {
-        return channel;
+    public int getBUSId() {
+        return BUSId;
     }
 
-    public void setChannel(int channel) {
-        this.channel = channel;
+    public void setBUSId(int BUSId) {
+        this.BUSId = BUSId;
     }
-
 
     public UserMsgEntity() {
     }

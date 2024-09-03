@@ -69,7 +69,7 @@ public class MyApplication extends Application {
                 .addMigrations()
                 .build();
         initUserDatabase();
-        Log.d(TAG, "PPPPPPPPPP: ");
+//        Log.d(TAG, "PPPPPPPPPP: ");
         initDatabase_Basic();
 
 
