@@ -1,5 +1,3 @@
-from typing import Optional, Dict
-from canmatrix import CanMatrix, formats
 import json
 from typing import List, Dict, Optional
 from canmatrix import CanMatrix, formats
