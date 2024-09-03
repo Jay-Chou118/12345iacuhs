@@ -29,4 +29,5 @@ public class DataWrapper {
     public void setSignal_data(List<ShowSignal> signal_data) {
         this.signal_data = signal_data;
     }
+
 }

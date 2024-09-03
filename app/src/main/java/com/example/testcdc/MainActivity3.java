@@ -157,7 +157,7 @@ public class MainActivity3 extends AppCompatActivity {
                         Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
                         jsCallResult.setData(result);
                         final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                        Log.d(TAG, "callbackJs " + callbackJs);
+                        Log.d(TAG, "callbackJs1 " + callbackJs);
                         webView.post(new Runnable() {
                             @Override
                             public void run() {
@@ -221,7 +221,7 @@ public class MainActivity3 extends AppCompatActivity {
                     Result<DeviceInfo> result = ResponseData.ret(mMiCANBinder.getDeviceInfo(), ret);
                     jsCallResult.setData(result);
                     final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                    Log.d(TAG, "callbackJs " + callbackJs);
+                    Log.d(TAG, "callbackJs2 " + callbackJs);
                     webView.post(new Runnable() {
                         @Override
                         public void run() {
@@ -282,9 +282,9 @@ public class MainActivity3 extends AppCompatActivity {
                 if (mMiCANBinder != null) {
                     JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
                     Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
-                    jsCallResult.setData(result);
+                    Log.d(TAG, "callbackJs 44: " + result);
                     final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                    Log.d(TAG, "callbackJs " + callbackJs);
+                    Log.d(TAG, "callbackJs 4" + callbackJs);
                     webView.post(new Runnable() {
                         @Override
                         public void run() {
@@ -536,7 +536,7 @@ public class MainActivity3 extends AppCompatActivity {
 
     private <T> void callJs(T result) {
         final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(result));
-        Log.d(TAG, "callbackJs " + callbackJs);
+        Log.d(TAG, "callbackJs 5" + callbackJs);
         webView.post(new Runnable() {
             @Override
             public void run() {
@@ -825,6 +825,7 @@ public class MainActivity3 extends AppCompatActivity {
                         userMsgEntity.setComment(usermsgObject.getString("comment"));
                         userMsgEntity.setCANType(usermsgObject.getString("is_fd"));
                         userMsgEntity.setBUSId(BusId);
+                        Log.e(TAG, "I am in channel 2 " + BusId);
                         MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(userMsgEntity);
                     }
 
