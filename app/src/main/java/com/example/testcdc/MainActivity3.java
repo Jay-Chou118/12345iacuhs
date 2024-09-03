@@ -331,9 +331,7 @@ public class MainActivity3 extends AppCompatActivity {
                     if("custom".equals(carType)){
                         Log.d(TAG, "I am called 2 ");
                         Map<Integer, Map<String, List<List<Object>>>> maps = new HashMap<>();
-                        Log.d(TAG, "33333333 ");
                         ArrayList<Integer> BUSIdList = userdatabase.userSignalInfoDao().getBusIdsAsArrayList();
-                        Log.d(TAG, "4444444 ");
                         BUSIdList.forEach(Busid -> {
                             Map<String, List<List<Object>>> subMap = new HashMap<>();
                             List<UserMsgEntity> usermsgs = userdatabase.userMsgInfoDao().getUserMsg(Busid);
@@ -700,21 +698,28 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
+//        MyApplication.getInstance().initUserDatabase();
+        // 切换channelId
+//        BusId = (BusId == 1) ? 2 : 1;
         if (requestCode == READ_REQUEST_CHNANEL1_CODE && resultCode == RESULT_OK && data != null) {
+            Log.e(TAG, "I am in channel 1 " );
             Uri uri = data.getData();
             BusId = 1;
+            // 获取文件名
             String fileName = getFileNameFromUri(this, uri);
+
+            // 获取文件路径
             String filePath = getPathFromUri(this, uri);
+//            String RealfilePath = getRealPathFromURI(uri);
             Log.d(TAG, "EEEEEEEE :  " + fileName + "   EEEEEEEEE " + filePath + " Real  ");
 
             // 使用 ExecutorService 提交任务
             executorService.submit(() -> {
-                try {
-                    Python python = Python.getInstance();
-                    PyObject pyObject = python.getModule("HelloWorld");
-                    String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_to_msg", filePath));
+                Python python = Python.getInstance();
+                PyObject pyObject = python.getModule("HelloWorld");
+                String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_to_msg", filePath));
 
+                try {
                     JSONArray usermsgArray = new JSONArray(usermsg);
                     MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteByChannel(BusId);
                     MyApplication.getInstance().getUserDatabase().userSignalInfoDao().deleteByChannel(BusId);
@@ -727,22 +732,34 @@ public class MainActivity3 extends AppCompatActivity {
                         String signalsStr = usermsgObject.getJSONArray("signals").toString();
                         userMsgEntity.setSignals(signalsStr);
 
+                    try {
                         JSONArray usersignalArray = new JSONArray(signalsStr);
                         for (int j = 0; j < usersignalArray.length(); j++) {
                             JSONObject usersignalObject = usersignalArray.getJSONObject(j);
+
+
                             UserSignalEntity userSignalEntity = new UserSignalEntity();
+
                             userSignalEntity.setName(usersignalObject.getString("name"));
                             userSignalEntity.setCANId(usermsgObject.getInt("id"));
                             userSignalEntity.setBitStart(usersignalObject.getInt("start_bit"));
                             userSignalEntity.setBitLength(usersignalObject.getInt("size"));
                             userSignalEntity.setBUSId(BusId);
+//                            Log.d(TAG, "GGGGGGG " + usersignalObject.toString());
                             MyApplication.getInstance().getUserDatabase().userSignalInfoDao().insert(userSignalEntity);
                         }
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                        // 处理异常
+                    }
+
 
                         userMsgEntity.setComment(usermsgObject.getString("comment"));
                         userMsgEntity.setCANType(usermsgObject.getString("is_fd"));
                         userMsgEntity.setBUSId(BusId);
                         MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(userMsgEntity);
+                        Log.e(TAG, "I am in channel 1 " + BusId);
                     }
 
                     // 完成后在主线程中更新UI
@@ -764,14 +781,17 @@ public class MainActivity3 extends AppCompatActivity {
                 }
             });
 
-        } else if (requestCode == READ_REQUEST_CHNANEL2_CODE && resultCode == RESULT_OK && data != null) {
+        }else if(requestCode == READ_REQUEST_CHNANEL2_CODE && resultCode == RESULT_OK && data != null)
+        {
             Uri uri = data.getData();
             BusId = 2;
+            // 获取文件名
             String fileName = getFileNameFromUri(this, uri);
+            // 获取文件路径
             String filePath = getPathFromUri(this, uri);
-            Log.d(TAG, "EEEEEEEE :  " + fileName + "   EEEEEEEEE " + filePath + " Real  ");
+//           String RealfilePath = getRealPathFromURI(uri);
+            Log.d(TAG, "EEEEEEEE :  " +fileName + "   EEEEEEEEE " +filePath + " Real  "  );
 
-            // 使用 ExecutorService 提交任务
             executorService.submit(() -> {
                 try {
                     Python python = Python.getInstance();
@@ -827,6 +847,7 @@ public class MainActivity3 extends AppCompatActivity {
                 }
             });
         }
+
     }
 
     public String readFileFromUri(Context context, Uri fileUri) {

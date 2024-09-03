@@ -178,7 +178,7 @@ public class DataBaseUtil {
                 }
                 is.close();
                 reader.close();
-//                Log.i(TAG,"读取csv文件成功 " + file);
+                Log.i(TAG,"读取csv文件成功 " + file);
             } catch (Exception e) {
                 Log.e(TAG,e.toString());
             }
@@ -248,7 +248,7 @@ public class DataBaseUtil {
                 }
                 is.close();
                 reader.close();
-//                Log.i(TAG,"读取msg csv文件成功 " + file);
+                Log.i(TAG,"读取msg csv文件成功 " + file);
             } catch (Exception e) {
                 Log.e(TAG,e.toString());
             }
