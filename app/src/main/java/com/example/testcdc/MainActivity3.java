@@ -105,7 +105,8 @@ public class MainActivity3 extends AppCompatActivity {
     };
     private WebView webView;
 
-    MyApplication instance = MyApplication.getInstance();;
+    MyApplication instance = MyApplication.getInstance();
+    ;
 
     private static final String CALLBACK_JS_FORMAT = "javascript:JSBridge.handleNativeResponse('%s')";
 
