@@ -44,8 +44,8 @@ public class UserSignalEntity {
     @ColumnInfo(name="choices")
     public String choices;
 
-    @ColumnInfo(name="channel")
-    public int channel;
+//    @ColumnInfo(name="channel")
+//    public int channel;
 
     public String getName() {
         return name;
@@ -155,17 +155,12 @@ public class UserSignalEntity {
         return choices;
     }
 
+
+
     public void setChoices(String choices) {
         this.choices = choices;
     }
 
-    public int getChannel() {
-        return channel;
-    }
-
-    public void setChannel(int channel) {
-        this.channel = channel;
-    }
 
     @Override
     public String toString() {
@@ -184,7 +179,6 @@ public class UserSignalEntity {
                 ", maximum=" + maximum +
                 ", initial=" + initial +
                 ", choices='" + choices + '\'' +
-                ", channel=" + channel +
                 '}';
     }
 }

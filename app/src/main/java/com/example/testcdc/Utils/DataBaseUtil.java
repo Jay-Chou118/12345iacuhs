@@ -76,24 +76,24 @@ public class DataBaseUtil {
 //        files.add(R.raw.signal_info_7_mx11_e4);
 
         files.add(R.raw.signal_info_1_mx11_e3);
-//        files.add(R.raw.signal_info_2_mx11_e3);
-//        files.add(R.raw.signal_info_3_mx11_e3);
-//        files.add(R.raw.signal_info_4_mx11_e3);
-//        files.add(R.raw.signal_info_6_mx11_e3);
-//        files.add(R.raw.signal_info_7_mx11_e3);
+        files.add(R.raw.signal_info_2_mx11_e3);
+        files.add(R.raw.signal_info_3_mx11_e3);
+        files.add(R.raw.signal_info_4_mx11_e3);
+        files.add(R.raw.signal_info_6_mx11_e3);
+        files.add(R.raw.signal_info_7_mx11_e3);
 
-//        files.add(R.raw.signal_info_1_ms11_e3);
-//        files.add(R.raw.signal_info_2_ms11_e3);
-//        files.add(R.raw.signal_info_3_ms11_e3);
-//        files.add(R.raw.signal_info_4_ms11_e3);
-//        files.add(R.raw.signal_info_5_ms11_e3);
-//        files.add(R.raw.signal_info_6_ms11_e3);
-//        files.add(R.raw.signal_info_7_ms11_e3);
-//        files.add(R.raw.signal_info_8_ms11_e3);
-//        files.add(R.raw.signal_info_9_ms11_e3);
-//        files.add(R.raw.signal_info_10_ms11_e3);
-//        files.add(R.raw.signal_info_14_ms11_e3);
-//        files.add(R.raw.signal_info_15_ms11_e3);
+        files.add(R.raw.signal_info_1_ms11_e3);
+        files.add(R.raw.signal_info_2_ms11_e3);
+        files.add(R.raw.signal_info_3_ms11_e3);
+        files.add(R.raw.signal_info_4_ms11_e3);
+        files.add(R.raw.signal_info_5_ms11_e3);
+        files.add(R.raw.signal_info_6_ms11_e3);
+        files.add(R.raw.signal_info_7_ms11_e3);
+        files.add(R.raw.signal_info_8_ms11_e3);
+        files.add(R.raw.signal_info_9_ms11_e3);
+        files.add(R.raw.signal_info_10_ms11_e3);
+        files.add(R.raw.signal_info_14_ms11_e3);
+        files.add(R.raw.signal_info_15_ms11_e3);
 
         files.add(R.raw.signal_info_2_ms11_rc06);
         files.add(R.raw.signal_info_3_ms11_rc06);
@@ -107,29 +107,39 @@ public class DataBaseUtil {
         files.add(R.raw.signal_info_14_ms11_rc06);
         files.add(R.raw.signal_info_15_ms11_rc06);
 
-//        files.add(R.raw.signal_info_2_ms11_rc05);
-//        files.add(R.raw.signal_info_3_ms11_rc05);
-//        files.add(R.raw.signal_info_4_ms11_rc05);
-//        files.add(R.raw.signal_info_5_ms11_rc05);
-//        files.add(R.raw.signal_info_9_ms11_rc05);
-//        files.add(R.raw.signal_info_10_ms11_rc05);
-//        files.add(R.raw.signal_info_11_ms11_rc05);
-//        files.add(R.raw.signal_info_12_ms11_rc05);
-//        files.add(R.raw.signal_info_13_ms11_rc05);
-//        files.add(R.raw.signal_info_14_ms11_rc05);
-//        files.add(R.raw.signal_info_15_ms11_rc05);
-//
-//        files.add(R.raw.signal_info_2_ms11_rc04);
-//        files.add(R.raw.signal_info_3_ms11_rc04);
-//        files.add(R.raw.signal_info_4_ms11_rc04);
-//        files.add(R.raw.signal_info_5_ms11_rc04);
-//        files.add(R.raw.signal_info_9_ms11_rc04);
-//        files.add(R.raw.signal_info_10_ms11_rc04);
-//        files.add(R.raw.signal_info_11_ms11_rc04);
-//        files.add(R.raw.signal_info_12_ms11_rc04);
-//        files.add(R.raw.signal_info_13_ms11_rc04);
-//        files.add(R.raw.signal_info_14_ms11_rc04);
-//        files.add(R.raw.signal_info_15_ms11_rc04);
+        files.add(R.raw.signal_info_2_ms11_rc05);
+        files.add(R.raw.signal_info_3_ms11_rc05);
+        files.add(R.raw.signal_info_4_ms11_rc05);
+        files.add(R.raw.signal_info_5_ms11_rc05);
+        files.add(R.raw.signal_info_9_ms11_rc05);
+        files.add(R.raw.signal_info_10_ms11_rc05);
+        files.add(R.raw.signal_info_11_ms11_rc05);
+        files.add(R.raw.signal_info_12_ms11_rc05);
+        files.add(R.raw.signal_info_13_ms11_rc05);
+        files.add(R.raw.signal_info_14_ms11_rc05);
+        files.add(R.raw.signal_info_15_ms11_rc05);
+
+        files.add(R.raw.signal_info_2_ms11_rc04);
+        files.add(R.raw.signal_info_3_ms11_rc04);
+        files.add(R.raw.signal_info_4_ms11_rc04);
+        files.add(R.raw.signal_info_5_ms11_rc04);
+        files.add(R.raw.signal_info_9_ms11_rc04);
+        files.add(R.raw.signal_info_10_ms11_rc04);
+        files.add(R.raw.signal_info_11_ms11_rc04);
+        files.add(R.raw.signal_info_12_ms11_rc04);
+        files.add(R.raw.signal_info_13_ms11_rc04);
+        files.add(R.raw.signal_info_14_ms11_rc04);
+        files.add(R.raw.signal_info_15_ms11_rc04);
+
+        files.add(R.raw.signal_info_1_mx11_e4u1);
+        files.add(R.raw.signal_info_2_mx11_e4u1);
+        files.add(R.raw.signal_info_3_mx11_e4u1);
+        files.add(R.raw.signal_info_4_mx11_e4u1);
+        files.add(R.raw.signal_info_6_mx11_e4u1);
+        files.add(R.raw.signal_info_7_mx11_e4u1);
+        files.add(R.raw.signal_info_13_mx11_e4u1);
+
+
 
 
         Log.d(TAG, "files: " + files);
@@ -140,9 +150,9 @@ public class DataBaseUtil {
                 String line;
                 while ((line =  reader.readLine()) !=null)
                 {
-                    Log.e(TAG,line);
+//                    Log.e(TAG,line);
                     String[] data = line.split("#");   // 使用井号“#”作为分隔符
-                    Log.e(TAG, Arrays.toString(data));
+//                    Log.e(TAG, Arrays.toString(data));
                     SignalInfo signalInfo = new SignalInfo();
                     signalInfo.setName(data[0]);
                     signalInfo.setBUSId(Integer.parseInt(data[1]));
@@ -162,9 +172,9 @@ public class DataBaseUtil {
                     CarTypeEntity carTypeEntity = MyApplication.getInstance().getMx11E4Database().carTypeDao().getByName(data[14], data[15]);
                     signalInfo.cid = carTypeEntity.id;
 
-                    Log.d(TAG, "setCarTypeId: " +data[14] + " setSdbId: " + data[15] + " CCCCCCCC "+ signalInfo.cid);
+//                    Log.d(TAG, "setCarTypeId: " +data[14] + " setSdbId: " + data[15] + " CCCCCCCC "+ signalInfo.cid);
                     MyApplication.getInstance().getMx11E4Database().signalInfoDao().insert(signalInfo);
-                    Log.e(TAG,"插入signal成功");
+//                    Log.e(TAG,"插入signal成功");
                 }
                 is.close();
                 reader.close();
@@ -198,6 +208,15 @@ public class DataBaseUtil {
         files.add(R.raw.msg_info_14_ms11_rc06);
         files.add(R.raw.msg_info_15_ms11_rc06);
 
+        files.add(R.raw.msg_info_1_mx11_e4u1);
+        files.add(R.raw.msg_info_2_mx11_e4u1);
+        files.add(R.raw.msg_info_3_mx11_e4u1);
+        files.add(R.raw.msg_info_4_mx11_e4u1);
+        files.add(R.raw.msg_info_6_mx11_e4u1);
+        files.add(R.raw.msg_info_7_mx11_e4u1);
+        files.add(R.raw.msg_info_13_mx11_e4u1);
+
+
 
         files.forEach(file->{
             try {
@@ -208,7 +227,7 @@ public class DataBaseUtil {
                 {
                     Log.e(TAG,line);
                     String[] data = line.split(",");   // 使用逗号作为分隔符
-                    Log.e(TAG, "data " + Arrays.toString(data));
+//                    Log.e(TAG, "data " + Arrays.toString(data));
                     MsgInfoEntity msgInfo = new MsgInfoEntity();
                     msgInfo.setName(data[0]);
                     msgInfo.BUSId = Integer.parseInt(data[1]);
@@ -223,9 +242,9 @@ public class DataBaseUtil {
 
                     msgInfo.cid = MyApplication.getInstance().getMx11E4Database().msgInfoDao().getCidByName(data[10],data[11]);
 
-                    Log.e(TAG, "msgInfo  :   ZZZZZZZZ" + msgInfo);
+//                    Log.e(TAG, "msgInfo  :   ZZZZZZZZ" + msgInfo);
                     MyApplication.getInstance().getMx11E4Database().msgInfoDao().insert(msgInfo);
-                    Log.e(TAG,"插入msg成功");
+//                    Log.e(TAG,"插入msg成功");
                 }
                 is.close();
                 reader.close();
@@ -275,6 +294,11 @@ public class DataBaseUtil {
         ms11RC04.setCarTypeName("MS11");
         ms11RC04.setSDBName("RC04");
         carTypeEntities.add(ms11RC04);
+
+        CarTypeEntity mx11E4U1 = new CarTypeEntity();
+        mx11E4U1.setCarTypeName("MX11");
+        mx11E4U1.setSDBName("E4U1");
+        carTypeEntities.add(mx11E4U1);
 
         carTypeEntities.forEach(carTypeEntity -> {
 //            carTypeEntity.carTypeName = "MX11";

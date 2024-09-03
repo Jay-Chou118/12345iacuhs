@@ -9,9 +9,9 @@ import androidx.room.Transaction;
 
 
 import com.example.testcdc.entity.SignalInfo;
-import com.example.testcdc.entity.UserMsgEntity;
 import com.example.testcdc.entity.UserSignalEntity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -27,8 +27,20 @@ public interface UserSignalInfoDao {
     @Delete
     void delete(UserSignalEntity userSignal);
 
-    @Query("DELETE FROM user_signal WHERE channel = :channelId")
-    void deleteByChannel(int channelId);
+    @Query("DELETE FROM user_signal WHERE bus_id = :BusId")
+    void deleteByChannel(int BusId);
+
+    @Query("SELECT DISTINCT bus_id FROM user_signal")
+    List<Integer> getAllBusIds();
+
+    default ArrayList<Integer> getBusIdsAsArrayList() {
+        List<Integer> busIds = getAllBusIds();
+        return new ArrayList<>(busIds);
+    }
+
+    @Query("select * from user_signal where bus_id=:BUSId and can_id=:CANId ")
+    List<UserSignalEntity> getUserSignal( int BUSId, int CANId);
+
 
     @Transaction
     default void deleteAllUsers(List<UserSignalEntity> userSignal) {
@@ -36,6 +48,9 @@ public interface UserSignalInfoDao {
             delete(user);
         }
     }
+
+
+
 
 
 }

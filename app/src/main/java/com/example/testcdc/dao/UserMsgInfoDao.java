@@ -8,6 +8,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Transaction;
 
+import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.UserMsgEntity;
 import com.example.testcdc.entity.UserSignalEntity;
 
@@ -25,8 +26,8 @@ public interface UserMsgInfoDao {
     @Delete
     void delete(UserMsgEntity userMsgEntity);
 
-    @Query("DELETE FROM user_msg WHERE channel = :channelId")
-    void deleteByChannel(int channelId);
+    @Query("DELETE FROM user_msg WHERE bus_id = :BusId")
+    void deleteByChannel(int BusId);
 
 
     @Transaction
@@ -36,8 +37,11 @@ public interface UserMsgInfoDao {
         }
     }
 
-    @Query("DELETE FROM user_msg WHERE channel = :channelId")
-    void deleteByChannelId(@NonNull int channelId);
+    @Query("DELETE FROM user_msg WHERE bus_id = :BUSId")
+    void deleteByChannelId(@NonNull int BUSId);
+
+    @Query("select * from user_msg where bus_id=:BUSId ")
+    List<UserMsgEntity> getUserMsg(int BUSId);
 
 
 }
