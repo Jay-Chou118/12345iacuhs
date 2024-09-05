@@ -78,17 +78,16 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static final ExecutorService executorService = Executors.newSingleThreadExecutor();
 
-    private static final int READ_REQUEST_CHNANEL1_CODE = 1;
-    private static final int READ_REQUEST_CHNANEL2_CODE = 2;
+    private static final int READ_REQUEST_CODE = 1;
+//    private static final int READ_REQUEST_CHNANEL2_CODE = 2;
+
+    private static String mCallbackId;
 
     private String selectedFilePath; // 添加成员变量来保存选中的文件路径
 
     private String selectedCallback; // 用于存储从 JavaScript 调用过来的回调函数名称
 
     private JsCallResult<Result<Object>> selectedJsCallResult; // 用于存储 JsCallResult 实例
-
-
-    private String mCallbackId;
 
     //切换通道
     private int BusId;
@@ -279,7 +278,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void handle(JsonElement data, String callback) {
 
-//                showLoggingMessageQueue.add(callback);
+                showLoggingMessageQueue.add(callback);
                 if (mMiCANBinder != null) {
                     JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
                     Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
@@ -358,7 +357,6 @@ public class MainActivity3 extends AppCompatActivity {
                 // 首先要确定要提取哪几路bus信息
 
                 if (mMiCANBinder != null) {
-                    if ("custom".equals(carType)) {
                         Log.d(TAG, "I am called 2 ");
                         Map<Integer, Map<String, List<List<Object>>>> maps = new HashMap<>();
 
@@ -412,57 +410,7 @@ public class MainActivity3 extends AppCompatActivity {
                         Log.d(TAG, "ZZZZZZZZZZZZZZZZZZZ2: " + result + " ZZZZZZZZZC C CC " + jsCallResult + "");
                         callJs(jsCallResult);
 
-                    } else {
-                        Log.d(TAG, "i am called 1");
-                        // 进行报文查询
-                        Map<Integer, Map<String, List<List<Object>>>> maps = new HashMap<>();
 
-                        ArrayList<Integer> BUSIdList = database.signalInfoDao().getBusIdsAsArrayList(cid);
-
-                        BUSIdList.forEach(Busid -> {
-                            Map<String, List<List<Object>>> subMap = new HashMap<>();
-                            List<MsgInfoEntity> msgs = database.msgInfoDao().getMsg(Busid, cid);
-                            msgs.forEach(msg -> {
-                                List<List<Object>> subList = new ArrayList<>();
-                                // 根据busid 和 canid查询
-                                List<SignalInfo> signalInfos = database.signalInfoDao().getSignalBycid(cid, Busid, msg.CANId);
-                                signalInfos.forEach(signalInfo -> {
-                                    List<Object> subList_ = new ArrayList<>();
-                                    subList_.add(signalInfo.name);
-                                    subList_.add("信号comment");
-                                    subList_.add("信号remark");
-                                    subList_.add(signalInfo.id);
-                                    subList_.add(0);    // 初始值
-                                    subList_.add(0);    // 最大
-                                    subList_.add(0);    // 最小值
-                                    subList_.add(0);    // max
-                                    subList_.add(0);    // min
-                                    subList_.add(0);    // values
-                                    subList_.add("m");    // values
-                                    subList_.add(signalInfo.bitStart);    // startBit
-                                    subList_.add(signalInfo.bitLength);    // bitLength
-                                    subList_.add(1);    // factory
-                                    subList_.add(32);    // factory
-                                    subList_.add(msg.CANType);    // factory
-                                    subList_.add(0);    // factory
-                                    subList_.add(false);    // factory
-//                                subList_.add(signalInfo.id);    // factory
-                                    subList.add(subList_);
-
-                                });
-                                subMap.put(msg.name, subList);
-
-                            });
-                            maps.put(Busid, subMap);
-
-                        });
-
-                        JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
-                        Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
-                        jsCallResult.setData(result);
-                        Log.d(TAG, "ZZZZZZZZZZZZZZZZZZZ1: " + result + " ZZZZZZZZZC C CC " + jsCallResult);
-                        callJs(jsCallResult);
-                    }
                 }
                 Log.i(TAG, "getDBC finish");
             }
@@ -491,33 +439,33 @@ public class MainActivity3 extends AppCompatActivity {
         });
 
 
-        messageHandlers.put("getUserDBC1", new BridgeHandler() {
+        messageHandlers.put("getUserDBC", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
                 // 用于文件回调时候调用js方法。
                 mCallbackId = callback;
 
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                intent.setType("*/*");
+                intent.setType("application/octet-stream");
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
 
-                startActivityForResult(intent, READ_REQUEST_CHNANEL1_CODE);
+                startActivityForResult(intent, READ_REQUEST_CODE);
                 Log.i(TAG, "start file select activity");
 
             }
         });
 
-        messageHandlers.put("getUserDBC2", new BridgeHandler() {
-            @Override
-            public void handle(JsonElement data, String callback) {
-                mCallbackId = callback;
-                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                intent.setType("*/*");
-                intent.addCategory(Intent.CATEGORY_OPENABLE);
-
-                startActivityForResult(intent, READ_REQUEST_CHNANEL1_CODE);
-            }
-        });
+//        messageHandlers.put("getUserDBC2", new BridgeHandler() {
+//            @Override
+//            public void handle(JsonElement data, String callback) {
+//                mCallbackId = callback;
+//                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+//                intent.setType("*/*");
+//                intent.addCategory(Intent.CATEGORY_OPENABLE);
+//
+//                startActivityForResult(intent, READ_REQUEST_CHNANEL1_CODE);
+//            }
+//        });
 
 
         messageHandlers.put("parsedSignal", new BridgeHandler() {
@@ -724,7 +672,7 @@ public class MainActivity3 extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == READ_REQUEST_CHNANEL1_CODE && resultCode == RESULT_OK && data != null) {
+        if (requestCode == READ_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
 
             Log.e(TAG, "I am in channel 1 ");
             Uri uri = data.getData();

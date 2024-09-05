@@ -42,4 +42,7 @@ public interface SignalInfoDao {
         return new ArrayList<>(busIds);
     }
 
+    @Query("DELETE FROM signal_info WHERE cid = :cid")
+    void deleteBycid(int cid);
+
 }

@@ -427,7 +427,7 @@ public class MyService extends Service {
             // 获取最新的100条数据
             List<ShowCANMsg> showCANMsgs = gDealQueue.readAll();
             int num = showCANMsgs.size();
-//            Log.d(TAG,"showCANMsgs is " + num);
+            Log.d(TAG,"showCANMsgs is " + num);
             if(num > 500)
             {
                 showCANMsgs = showCANMsgs.subList(num-500,num);
@@ -438,7 +438,6 @@ public class MyService extends Service {
             {
                 monitorSignalMap.values().forEach(value->{
                     value.forEach(signalInfo -> {
-                        Log.d(TAG, "callbackjs  444444: " + signalInfo.name);
                         ShowSignal showSignal = new ShowSignal();
                         showSignal.setName(signalInfo.name);
                         showSignal.setBusId(signalInfo.BUSId);
@@ -459,7 +458,6 @@ public class MyService extends Service {
             dataWrapper.setStart_time((double) startCANTime /1000000);
             dataWrapper.setFrame_data(showCANMsgs);
             dataWrapper.setSignal_data(showSignals);
-            Log.d(TAG, "callbackjs  444444: " + dataWrapper.getFrame_data().toString()  );
             return dataWrapper;
         }
 

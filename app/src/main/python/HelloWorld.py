@@ -18,6 +18,14 @@ def can_matrix_to_list(can_matrix: CanMatrix) -> List[Dict]:
                     "start_bit": signal.start_bit,
                     "size": signal.size,
                     "is_little_endian": signal.is_little_endian,
+                    "is_signed": signal.is_signed,
+                    "factor": float(signal.factor),
+                    "offset": float(signal.offset),
+                    "min": float(signal.min),
+                    "max": float(signal.max),
+                    "comment": signal.comment,
+                    "initial_value": float(signal.initial_value),
+                    "attributes": signal.attributes
                 }
                 for signal in frame.signals
             ],
@@ -47,12 +55,17 @@ def parse_can_matrix_data(can_matrix_dict: Optional[Dict[str, CanMatrix]]) -> No
         return
 
     for key, can_matrix in can_matrix_dict.items():
-#         print(f"Parsing CAN Matrix with key: {key}")
+        # print(f"Parsing CAN Matrix with key: {key}")
         # 这里可以添加解析每个 CanMatrix 的逻辑
+
         for message in can_matrix.frames:
 #             print("==============={}".format(message.keys());
             print(f"  - Message ID: {message.arbitration_id.id}, Name: {message.name}, "
                   f"Signals: {message.signals}, Comment: {message.comment}, Is FD: {message.is_fd}")
+            # print(f"  - Signals: {message.signals}")
+
+
+
 
 
 def parse_dbc_to_msg(path):
@@ -64,6 +77,10 @@ def parse_dbc_to_msg(path):
     # return serialized_data
     # 解析数据
     # parse_can_matrix_data(db)
+
+def msg_to_signal(path):
+    db = formats.loadp(path)
+    serialized_data = serialize_can_matrix_data(db)
 
 
 
