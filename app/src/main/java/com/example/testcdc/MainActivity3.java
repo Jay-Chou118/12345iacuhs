@@ -283,6 +283,7 @@ public class MainActivity3 extends AppCompatActivity {
                 if (mMiCANBinder != null) {
                     JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
                     Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
+                    jsCallResult.setData(result);
                     Log.d(TAG, "callbackJs 44: " + result);
                     final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
                     Log.d(TAG, "callbackJs 4" + callbackJs);
