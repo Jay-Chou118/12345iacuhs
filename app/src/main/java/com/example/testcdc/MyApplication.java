@@ -64,12 +64,6 @@ public class MyApplication extends Application {
                 .allowMainThreadQueries()
                 .addMigrations()
                 .build();
-        userDatabase = Room.databaseBuilder(this,UserDatabase.class,"user_database")
-                .allowMainThreadQueries()
-                .addMigrations()
-                .build();
-        mx11E4Database.clearAllTables();
-        initUserDatabase();
 //        Log.d(TAG, "PPPPPPPPPP: ");
         initDatabase_Basic();
 
@@ -162,8 +156,8 @@ public class MyApplication extends Application {
             }
         }else{
 
-//            DataBaseUtil.initDataFromCsv(this);
-//            DataBaseUtil.initMsgFromCsv(this);
+            DataBaseUtil.initDataFromCsv(this);
+            DataBaseUtil.initMsgFromCsv(this);
             Log.i(TAG,"数据库不存在2");
 //            DataBaseUtil.copyDataBase(this,"mx11_e4");
 
@@ -176,35 +170,6 @@ public class MyApplication extends Application {
 
     }
 
-    public void initUserDatabase() {
-        boolean ret = DataBaseUtil.checkDataBase(this, "user_database");
-        if (ret) {
-            // 数据库存在
-            List<UserMsgEntity> allMsgs = MyApplication.getInstance().getUserDatabase().userMsgInfoDao().getAll();
-            List<UserSignalEntity> allSignals = MyApplication.getInstance().getUserDatabase().userSignalInfoDao().getAll();
-            if (!allMsgs.isEmpty() && !allSignals.isEmpty()) {
-                // 数据库中有数据
-                Log.i(TAG, "PPPPPPPPP数据库中有 " + (allMsgs.size()+allSignals.size()) + " 条记录。");
-                // 清空数据库
-                MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteAllUsers(allMsgs);
-                MyApplication.getInstance().getUserDatabase().userSignalInfoDao().deleteAllUsers(allSignals);
-                Log.i(TAG, "PPPPPPPPPPPPP已清空数据库。");
-            } else {
-                // 数据库为空
-                Log.i(TAG, "PPPPPPPPPPPPPP数据库为空，无需操作。");
-            }
-        } else {
-            // 数据库不存在
-            Log.i(TAG, "数据库不存在，无需操作。");
-
-            // 强制创建数据库
-//            User newUser = new User();
-//            newUser.setName("John Doe");
-//            newUser.setEmail("john.doe@example.com");
-//            MyApp.getUserDatabase(this).userDao().insert(newUser);
-//            Log.i(TAG, "插入了一条新数据，数据库现在应该存在了。");
-        }
-    }
 
     void test()
     {

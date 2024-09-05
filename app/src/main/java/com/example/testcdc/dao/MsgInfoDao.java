@@ -23,6 +23,12 @@ public interface MsgInfoDao {
     @Query("select * from car_type where car_type_name = :cartTypeName and sdb_name = :SDBName limit 1")
     long getCidByName(String cartTypeName, String SDBName);
 
+    @Query("select * from msg_info where  cid = :cid and bus_id =:BUSId")
+    List<MsgInfoEntity> getMsgBycidBusId(int BUSId,long cid);
+
+
     @Query("DELETE FROM msg_info WHERE cid = :cid")
-    void deleteBycid(int cid);
+    void deleteBycid(long cid);
+
+
 }

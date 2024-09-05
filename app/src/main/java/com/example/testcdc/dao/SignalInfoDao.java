@@ -43,6 +43,6 @@ public interface SignalInfoDao {
     }
 
     @Query("DELETE FROM signal_info WHERE cid = :cid")
-    void deleteBycid(int cid);
+    void deleteBycid(long cid);
 
 }

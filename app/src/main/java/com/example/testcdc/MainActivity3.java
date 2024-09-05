@@ -35,7 +35,6 @@ import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
 import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.MX11E4Database;
-import com.example.testcdc.database.UserDatabase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
 import com.example.testcdc.entity.UserMsgEntity;
@@ -186,7 +185,6 @@ public class MainActivity3 extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         database = MyApplication.getInstance().getMx11E4Database();
-        userdatabase = MyApplication.getInstance().getUserDatabase();
     }
 
 
@@ -323,66 +321,63 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("getDBC", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
-                //  i am recv {"method":"getDBC","data":{"sdb":"默认视图","carType":"custom","dbcChn":[1,2],"ldfChn":[],"files":["MS11_DCDCANFD_230807.dbc","MS11_ADASCANFD_220603.dbc","","","","","","","","","","","","","",""],"ldfFiles":["","","","","","","","","","","","","","","",""],"comments":["","","","","","","","","","","","","","","",""],"ldfComments":["","","","","","","","","","","","","","","",""]},"callback":"cb_1725500583492"}
 
 
                 String carType = data.getAsJsonObject().get("carType").getAsString();
                 String sdb = data.getAsJsonObject().get("sdb").getAsString();
                 JsonArray files = data.getAsJsonObject().get("files").getAsJsonArray();
 
+                Map<Integer, Map<String, List<List<Object>>>> maps = new HashMap<>();
+                ArrayList<Integer> BUSIdList = new ArrayList<>();;
 
                 // STEP 1 查找cid
                 long cid = database.carTypeDao().getCidByName(carType, sdb);
 
-                if (carType.equals("custom")) {
-                    // 如果是自定义，则要先把文件调用python方法解析入库，然后统一查找库
-                    AtomicInteger BUSId = new AtomicInteger();
-                    files.forEach(file -> {
-                        String filePath = file.getAsString();
-                        BUSId.addAndGet(1);
-                        if (filePath.isEmpty()) return;
-                        // 解析dbc
-
-                        // 使用 ExecutorService 提交任务
-//                        executorService.submit(() -> {
-//                            parseDBCByPython(filePath);
-//                        });
-                        String content = parseDBCByPython(filePath);
-                        updateCustomData(content,cid,BUSId.get());
-
-                    });
-                }
-
-
-                // step 2 查找入参要提取的信号数据
-                // 首先要确定要提取哪几路bus信息
-
                 if (mMiCANBinder != null) {
-                        Log.d(TAG, "I am called 2 ");
-                        Map<Integer, Map<String, List<List<Object>>>> maps = new HashMap<>();
+                    //  i am recv {"method":"getDBC","data":{"sdb":"默认视图","carType":"custom","dbcChn":[1,2],"ldfChn":[],"files":["MS11_DCDCANFD_230807.dbc","MS11_ADASCANFD_220603.dbc","","","","","","","","","","","","","",""],"ldfFiles":["","","","","","","","","","","","","","","",""],"comments":["","","","","","","","","","","","","","","",""],"ldfComments":["","","","","","","","","","","","","","","",""]},"callback":"cb_1725500583492"}
+                    if (carType.equals("custom")) {
+                        // 如果是自定义，则要先把文件调用python方法解析入库，然后统一查找库
 
+                        Log.d(TAG, "I am called 1");
+                        //清库操作
+//                        database.signalInfoDao().deleteBycid(cid);
+//                        database.msgInfoDao().deleteBycid(cid);
 
-                        // step1 查找要解析的bus通道。
-                        // 从入参获取 dbcChal，1，2，
-//                        BUSIdList = [1,2]
-                        ArrayList<Integer> BUSIdList = userdatabase.userSignalInfoDao().getBusIdsAsArrayList();
+                        AtomicInteger BUSId = new AtomicInteger();
+                        files.forEach(file -> {
+                            String filePath = file.getAsString();
+                            BUSId.addAndGet(1);
+                            if (filePath.isEmpty()) return;
+                            BUSIdList.add(BUSId.get());
+                            // 解析dbc
+                            // 使用 ExecutorService 提交任务
+    //                        executorService.submit(() -> {
+    //                            parseDBCByPython(filePath);
+    //                        });
+                            String content = parseDBCByPython(filePath);
+                            updateCustomData(content,cid,BUSId.get());
 
+                        });
+                        Log.d(TAG, "BUSIdList: " + BUSIdList);
+
+                        // step 2 查找入参要提取的信号数据
+                        // 首先要确定要提取哪几路bus信息
                         BUSIdList.forEach(Busid -> {
                             Map<String, List<List<Object>>> subMap = new HashMap<>();
-                            List<UserMsgEntity> usermsgs = userdatabase.userMsgInfoDao().getUserMsg(Busid);
+                            List<MsgInfoEntity> usermsgs = database.msgInfoDao().getMsgBycidBusId(Busid,cid);
                             usermsgs.forEach(usermsg -> {
                                 List<List<Object>> subList = new ArrayList<>();
                                 // 根据busid 和 canid查询
-                                List<UserSignalEntity> UsersignalInfos = userdatabase.userSignalInfoDao().getUserSignal(Busid, usermsg.CANId);
+                                List<SignalInfo> UsersignalInfos = database.signalInfoDao().getSignalBycid(cid,Busid,usermsg.CANId);
                                 UsersignalInfos.forEach(UsersignalInfo -> {
                                     List<Object> subList_ = new ArrayList<>();
                                     subList_.add(UsersignalInfo.name);
-                                    subList_.add("信号comment");
+                                    subList_.add(UsersignalInfo.comment);
                                     subList_.add("信号remark");
                                     subList_.add(UsersignalInfo.id);
-                                    subList_.add(0);    // 初始值
-                                    subList_.add(0);    // 最大
-                                    subList_.add(0);    // 最小值
+                                    subList_.add(UsersignalInfo.initial);    // 初始值
+                                    subList_.add(UsersignalInfo.maximum);    // 最大
+                                    subList_.add(UsersignalInfo.minimum);    // 最小值
                                     subList_.add(0);    // max
                                     subList_.add(0);    // min
                                     subList_.add(0);    // values
@@ -390,10 +385,10 @@ public class MainActivity3 extends AppCompatActivity {
                                     subList_.add(UsersignalInfo.bitStart);    // startBit
                                     subList_.add(UsersignalInfo.bitLength);    // bitLength
                                     subList_.add(1);    // factory
-                                    subList_.add(32);    // factory
-                                    subList_.add(usermsg.CANType);    // factory
-                                    subList_.add(0);    // factory
-                                    subList_.add(false);    // factory
+                                    subList_.add(UsersignalInfo.scale);    // factory
+                                    subList_.add(UsersignalInfo.offset);    // factory
+                                    subList_.add(UsersignalInfo.byteOrder);    // factory
+                                    subList_.add(UsersignalInfo.isSigned);    // factory
 //                                subList_.add(signalInfo.id);    // factory
                                     subList.add(subList_);
 
@@ -412,7 +407,77 @@ public class MainActivity3 extends AppCompatActivity {
                         callJs(jsCallResult);
 
 
+                    }else
+                    {
+                        //{"method":"getDBC","data":{"sdb":"RC06","carType":"MS11","dbcChn":[3,5],"ldfChn":[0,0],"files":["","","","","","","","","","","","","","","",""],"ldfFiles":["","","","","","","","","","","","","","","",""],"comments":["","","","","","","","","","","","","","","",""],"ldfComments":["","","","","","","","","","","","","","","",""]},"callback":"cb_1725535479569"}
+//                        JsonObject dbcChn = data.getAsJsonObject().get("dbcChn").getAsJsonObject();
+
+                        Log.d(TAG, "I am called 2");
+
+
+                    }
                 }
+
+
+
+
+
+//                if (mMiCANBinder != null) {
+//                        Log.d(TAG, "I am called 2 ");
+//                        Map<Integer, Map<String, List<List<Object>>>> maps = new HashMap<>();
+//
+//
+//                        // step1 查找要解析的bus通道。
+//                        // 从入参获取 dbcChal，1，2，
+////                        BUSIdList = [1,2]
+//                        ArrayList<Integer> BUSIdList = userdatabase.userSignalInfoDao().getBusIdsAsArrayList();
+//
+//                        BUSIdList.forEach(Busid -> {
+//                            Map<String, List<List<Object>>> subMap = new HashMap<>();
+//                            List<UserMsgEntity> usermsgs = userdatabase.userMsgInfoDao().getUserMsg(Busid);
+//                            usermsgs.forEach(usermsg -> {
+//                                List<List<Object>> subList = new ArrayList<>();
+//                                // 根据busid 和 canid查询
+//                                List<UserSignalEntity> UsersignalInfos = userdatabase.userSignalInfoDao().getUserSignal(Busid, usermsg.CANId);
+//                                UsersignalInfos.forEach(UsersignalInfo -> {
+//                                    List<Object> subList_ = new ArrayList<>();
+//                                    subList_.add(UsersignalInfo.name);
+//                                    subList_.add("信号comment");
+//                                    subList_.add("信号remark");
+//                                    subList_.add(UsersignalInfo.id);
+//                                    subList_.add(0);    // 初始值
+//                                    subList_.add(0);    // 最大
+//                                    subList_.add(0);    // 最小值
+//                                    subList_.add(0);    // max
+//                                    subList_.add(0);    // min
+//                                    subList_.add(0);    // values
+//                                    subList_.add("m");    // values
+//                                    subList_.add(UsersignalInfo.bitStart);    // startBit
+//                                    subList_.add(UsersignalInfo.bitLength);    // bitLength
+//                                    subList_.add(1);    // factory
+//                                    subList_.add(32);    // factory
+//                                    subList_.add(usermsg.CANType);    // factory
+//                                    subList_.add(0);    // factory
+//                                    subList_.add(false);    // factory
+////                                subList_.add(signalInfo.id);    // factory
+//                                    subList.add(subList_);
+//
+//                                });
+//                                subMap.put(usermsg.name, subList);
+//
+//                            });
+//                            maps.put(Busid, subMap);
+//
+//                        });
+//
+//                        JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
+//                        Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
+//                        jsCallResult.setData(result);
+//                        Log.d(TAG, "ZZZZZZZZZZZZZZZZZZZ2: " + result + " ZZZZZZZZZC C CC " + jsCallResult + "");
+//                        callJs(jsCallResult);
+//
+//
+//                }
                 Log.i(TAG, "getDBC finish");
             }
         });
@@ -531,7 +596,6 @@ public class MainActivity3 extends AppCompatActivity {
 
     private MX11E4Database database;
 
-    private UserDatabase userdatabase;
 
     private Thread showLoggingMessage;
 
@@ -738,17 +802,6 @@ public class MainActivity3 extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
 
-        // 获取数据库实例
-        UserDatabase userDatabase = MyApplication.getInstance().getUserDatabase();
-        if (userDatabase != null) {
-            userDatabase.close();
-            userDatabase.destroyInstance();
-            // 删除数据库文件
-            File dbFile = new File(getFilesDir(), "user_database");
-            if (dbFile.exists()) {
-                dbFile.delete();
-            }
-        }
     }
 
 }

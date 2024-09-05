@@ -59,9 +59,10 @@ def parse_can_matrix_data(can_matrix_dict: Optional[Dict[str, CanMatrix]]) -> No
         # 这里可以添加解析每个 CanMatrix 的逻辑
 
         for message in can_matrix.frames:
+            pass
 #             print("==============={}".format(message.keys());
-            print(f"  - Message ID: {message.arbitration_id.id}, Name: {message.name}, "
-                  f"Signals: {message.signals}, Comment: {message.comment}, Is FD: {message.is_fd}")
+#             print(f"  - Message ID: {message.arbitration_id.id}, Name: {message.name}, "
+#                   f"Signals: {message.signals}, Comment: {message.comment}, Is FD: {message.is_fd}")
             # print(f"  - Signals: {message.signals}")
 
 
