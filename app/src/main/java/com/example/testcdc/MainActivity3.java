@@ -1,5 +1,7 @@
 package com.example.testcdc;
 
+import static com.example.testcdc.Utils.Utils.parseDBCByPython;
+import static com.example.testcdc.Utils.Utils.updateCustomData;
 import static com.google.gson.JsonParser.parseString;
 
 import android.annotation.SuppressLint;
@@ -24,7 +26,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import androidx.documentfile.provider.DocumentFile;
 
-import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
 
@@ -44,10 +45,6 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -62,6 +59,7 @@ import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.atomic.AtomicInteger;
 
 
 public class MainActivity3 extends AppCompatActivity {
@@ -88,6 +86,9 @@ public class MainActivity3 extends AppCompatActivity {
     private String selectedCallback; // 用于存储从 JavaScript 调用过来的回调函数名称
 
     private JsCallResult<Result<Object>> selectedJsCallResult; // 用于存储 JsCallResult 实例
+
+
+    private String mCallbackId;
 
     //切换通道
     private int BusId;
@@ -322,23 +323,58 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("getDBC", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
-                Log.d(TAG, "TTTTTTTTTTTTTT: " + data);
+                //  i am recv {"method":"getDBC","data":{"sdb":"默认视图","carType":"custom","dbcChn":[1,2],"ldfChn":[],"files":["MS11_DCDCANFD_230807.dbc","MS11_ADASCANFD_220603.dbc","","","","","","","","","","","","","",""],"ldfFiles":["","","","","","","","","","","","","","","",""],"comments":["","","","","","","","","","","","","","","",""],"ldfComments":["","","","","","","","","","","","","","","",""]},"callback":"cb_1725500583492"}
+
+
                 String carType = data.getAsJsonObject().get("carType").getAsString();
                 String sdb = data.getAsJsonObject().get("sdb").getAsString();
+                JsonArray files = data.getAsJsonObject().get("files").getAsJsonArray();
+
+
+                // STEP 1 查找cid
                 long cid = database.carTypeDao().getCidByName(carType, sdb);
-                Log.i(TAG, "getDBC " + cid + " ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ");
+
+                if (carType.equals("custom")) {
+                    // 如果是自定义，则要先把文件调用python方法解析入库，然后统一查找库
+                    AtomicInteger BUSId = new AtomicInteger();
+                    files.forEach(file -> {
+                        String filePath = file.getAsString();
+                        BUSId.addAndGet(1);
+                        if (filePath.isEmpty()) return;
+                        // 解析dbc
+
+                        // 使用 ExecutorService 提交任务
+//                        executorService.submit(() -> {
+//                            parseDBCByPython(filePath);
+//                        });
+                        String content = parseDBCByPython(filePath);
+                        updateCustomData(content,cid,BUSId.get());
+
+                    });
+                }
+
+
+                // step 2 查找入参要提取的信号数据
+                // 首先要确定要提取哪几路bus信息
+
                 if (mMiCANBinder != null) {
-                    if("custom".equals(carType)){
+                    if ("custom".equals(carType)) {
                         Log.d(TAG, "I am called 2 ");
                         Map<Integer, Map<String, List<List<Object>>>> maps = new HashMap<>();
+
+
+                        // step1 查找要解析的bus通道。
+                        // 从入参获取 dbcChal，1，2，
+//                        BUSIdList = [1,2]
                         ArrayList<Integer> BUSIdList = userdatabase.userSignalInfoDao().getBusIdsAsArrayList();
+
                         BUSIdList.forEach(Busid -> {
                             Map<String, List<List<Object>>> subMap = new HashMap<>();
                             List<UserMsgEntity> usermsgs = userdatabase.userMsgInfoDao().getUserMsg(Busid);
                             usermsgs.forEach(usermsg -> {
                                 List<List<Object>> subList = new ArrayList<>();
                                 // 根据busid 和 canid查询
-                                List<UserSignalEntity> UsersignalInfos = userdatabase.userSignalInfoDao().getUserSignal(Busid,usermsg.CANId);
+                                List<UserSignalEntity> UsersignalInfos = userdatabase.userSignalInfoDao().getUserSignal(Busid, usermsg.CANId);
                                 UsersignalInfos.forEach(UsersignalInfo -> {
                                     List<Object> subList_ = new ArrayList<>();
                                     subList_.add(UsersignalInfo.name);
@@ -373,60 +409,60 @@ public class MainActivity3 extends AppCompatActivity {
                         JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
                         Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
                         jsCallResult.setData(result);
-                        Log.d(TAG, "ZZZZZZZZZZZZZZZZZZZ2: " + result +  " ZZZZZZZZZC C CC "+jsCallResult + "");
+                        Log.d(TAG, "ZZZZZZZZZZZZZZZZZZZ2: " + result + " ZZZZZZZZZC C CC " + jsCallResult + "");
                         callJs(jsCallResult);
 
-                    }else {
-                    Log.d(TAG, "i am called 1");
-                    // 进行报文查询
-                    Map<Integer, Map<String, List<List<Object>>>> maps = new HashMap<>();
+                    } else {
+                        Log.d(TAG, "i am called 1");
+                        // 进行报文查询
+                        Map<Integer, Map<String, List<List<Object>>>> maps = new HashMap<>();
 
-                    ArrayList<Integer> BUSIdList = database.signalInfoDao().getBusIdsAsArrayList(cid);
+                        ArrayList<Integer> BUSIdList = database.signalInfoDao().getBusIdsAsArrayList(cid);
 
-                    BUSIdList.forEach(Busid -> {
-                        Map<String, List<List<Object>>> subMap = new HashMap<>();
-                        List<MsgInfoEntity> msgs = database.msgInfoDao().getMsg(Busid, cid);
-                        msgs.forEach(msg -> {
-                            List<List<Object>> subList = new ArrayList<>();
-                            // 根据busid 和 canid查询
-                            List<SignalInfo> signalInfos = database.signalInfoDao().getSignalBycid(cid, Busid, msg.CANId);
-                            signalInfos.forEach(signalInfo -> {
-                                List<Object> subList_ = new ArrayList<>();
-                                subList_.add(signalInfo.name);
-                                subList_.add("信号comment");
-                                subList_.add("信号remark");
-                                subList_.add(signalInfo.id);
-                                subList_.add(0);    // 初始值
-                                subList_.add(0);    // 最大
-                                subList_.add(0);    // 最小值
-                                subList_.add(0);    // max
-                                subList_.add(0);    // min
-                                subList_.add(0);    // values
-                                subList_.add("m");    // values
-                                subList_.add(signalInfo.bitStart);    // startBit
-                                subList_.add(signalInfo.bitLength);    // bitLength
-                                subList_.add(1);    // factory
-                                subList_.add(32);    // factory
-                                subList_.add(msg.CANType);    // factory
-                                subList_.add(0);    // factory
-                                subList_.add(false);    // factory
+                        BUSIdList.forEach(Busid -> {
+                            Map<String, List<List<Object>>> subMap = new HashMap<>();
+                            List<MsgInfoEntity> msgs = database.msgInfoDao().getMsg(Busid, cid);
+                            msgs.forEach(msg -> {
+                                List<List<Object>> subList = new ArrayList<>();
+                                // 根据busid 和 canid查询
+                                List<SignalInfo> signalInfos = database.signalInfoDao().getSignalBycid(cid, Busid, msg.CANId);
+                                signalInfos.forEach(signalInfo -> {
+                                    List<Object> subList_ = new ArrayList<>();
+                                    subList_.add(signalInfo.name);
+                                    subList_.add("信号comment");
+                                    subList_.add("信号remark");
+                                    subList_.add(signalInfo.id);
+                                    subList_.add(0);    // 初始值
+                                    subList_.add(0);    // 最大
+                                    subList_.add(0);    // 最小值
+                                    subList_.add(0);    // max
+                                    subList_.add(0);    // min
+                                    subList_.add(0);    // values
+                                    subList_.add("m");    // values
+                                    subList_.add(signalInfo.bitStart);    // startBit
+                                    subList_.add(signalInfo.bitLength);    // bitLength
+                                    subList_.add(1);    // factory
+                                    subList_.add(32);    // factory
+                                    subList_.add(msg.CANType);    // factory
+                                    subList_.add(0);    // factory
+                                    subList_.add(false);    // factory
 //                                subList_.add(signalInfo.id);    // factory
-                                subList.add(subList_);
+                                    subList.add(subList_);
+
+                                });
+                                subMap.put(msg.name, subList);
 
                             });
-                            subMap.put(msg.name, subList);
+                            maps.put(Busid, subMap);
 
                         });
-                        maps.put(Busid, subMap);
 
-                    });
-
-                    JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
-                    Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
-                    jsCallResult.setData(result);
-                    Log.d(TAG, "ZZZZZZZZZZZZZZZZZZZ1: " + result +  " ZZZZZZZZZC C CC "+jsCallResult);
-                    callJs(jsCallResult);
-                }
+                        JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
+                        Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
+                        jsCallResult.setData(result);
+                        Log.d(TAG, "ZZZZZZZZZZZZZZZZZZZ1: " + result + " ZZZZZZZZZC C CC " + jsCallResult);
+                        callJs(jsCallResult);
+                    }
                 }
                 Log.i(TAG, "getDBC finish");
             }
@@ -458,18 +494,15 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("getUserDBC1", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
+                // 用于文件回调时候调用js方法。
+                mCallbackId = callback;
+
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
                 intent.setType("*/*");
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
 
                 startActivityForResult(intent, READ_REQUEST_CHNANEL1_CODE);
-
-                // 保存回调函数，以便在 onActivityResult 中使用
-//                selectedCallback = callback;
-
-                // 创建 JsCallResult 实例并保存回调函数
-                JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
-                selectedJsCallResult = jsCallResult;
+                Log.i(TAG, "start file select activity");
 
             }
         });
@@ -477,22 +510,14 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("getUserDBC2", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
+                mCallbackId = callback;
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
                 intent.setType("*/*");
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
 
-                startActivityForResult(intent, READ_REQUEST_CHNANEL2_CODE);
-
-                // 保存回调函数，以便在 onActivityResult 中使用
-//                selectedCallback = callback;
-
-                // 创建 JsCallResult 实例并保存回调函数
-                JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
-                selectedJsCallResult = jsCallResult;
-
+                startActivityForResult(intent, READ_REQUEST_CHNANEL1_CODE);
             }
         });
-
 
 
         messageHandlers.put("parsedSignal", new BridgeHandler() {
@@ -698,157 +723,29 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-//        MyApplication.getInstance().initUserDatabase();
-        // 切换channelId
-//        BusId = (BusId == 1) ? 2 : 1;
+
         if (requestCode == READ_REQUEST_CHNANEL1_CODE && resultCode == RESULT_OK && data != null) {
-            Log.e(TAG, "I am in channel 1 " );
+
+            Log.e(TAG, "I am in channel 1 ");
             Uri uri = data.getData();
-            BusId = 1;
-            // 获取文件名
-            String fileName = getFileNameFromUri(this, uri);
-
-            // 获取文件路径
-            String filePath = getPathFromUri(this, uri);
-//            String RealfilePath = getRealPathFromURI(uri);
-            Log.d(TAG, "EEEEEEEE :  " + fileName + "   EEEEEEEEE " + filePath + " Real  ");
-
-            // 使用 ExecutorService 提交任务
-            executorService.submit(() -> {
-                Python python = Python.getInstance();
-                PyObject pyObject = python.getModule("HelloWorld");
-                String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_to_msg", filePath));
-
-                try {
-                    JSONArray usermsgArray = new JSONArray(usermsg);
-                    MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteByChannel(BusId);
-                    MyApplication.getInstance().getUserDatabase().userSignalInfoDao().deleteByChannel(BusId);
-
-                    for (int i = 0; i < usermsgArray.length(); i++) {
-                        JSONObject usermsgObject = usermsgArray.getJSONObject(i);
-                        UserMsgEntity userMsgEntity = new UserMsgEntity();
-                        userMsgEntity.setCANId(usermsgObject.getInt("id"));
-                        userMsgEntity.setName(usermsgObject.getString("name"));
-                        String signalsStr = usermsgObject.getJSONArray("signals").toString();
-                        userMsgEntity.setSignals(signalsStr);
-
-                    try {
-                        JSONArray usersignalArray = new JSONArray(signalsStr);
-                        for (int j = 0; j < usersignalArray.length(); j++) {
-                            JSONObject usersignalObject = usersignalArray.getJSONObject(j);
-
-
-                            UserSignalEntity userSignalEntity = new UserSignalEntity();
-
-                            userSignalEntity.setName(usersignalObject.getString("name"));
-                            userSignalEntity.setCANId(usermsgObject.getInt("id"));
-                            userSignalEntity.setBitStart(usersignalObject.getInt("start_bit"));
-                            userSignalEntity.setBitLength(usersignalObject.getInt("size"));
-                            userSignalEntity.setBUSId(BusId);
-//                            Log.d(TAG, "GGGGGGG " + usersignalObject.toString());
-                            MyApplication.getInstance().getUserDatabase().userSignalInfoDao().insert(userSignalEntity);
-                        }
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                        // 处理异常
-                    }
-
-
-                        userMsgEntity.setComment(usermsgObject.getString("comment"));
-                        userMsgEntity.setCANType(usermsgObject.getString("is_fd"));
-                        userMsgEntity.setBUSId(BusId);
-                        MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(userMsgEntity);
-                        Log.e(TAG, "I am in channel 1 " + BusId);
-                    }
-
-                    // 完成后在主线程中更新UI
-                    runOnUiThread(() -> {
-                        Log.d(TAG, "Parse DBC1 by User finished");
-                        Result<Object> success = new Result<>();
-                        success.setCode(200);
-                        success.setMsg("Success");
-                        success.setData(fileName);
-
-                        if (selectedJsCallResult != null) {
-                            selectedJsCallResult.setData(success);
-                            callJs(selectedJsCallResult);
-                            selectedJsCallResult = null;
-                        }
-                    });
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            });
-
-        }else if(requestCode == READ_REQUEST_CHNANEL2_CODE && resultCode == RESULT_OK && data != null)
-        {
-            Uri uri = data.getData();
-            BusId = 2;
             // 获取文件名
             String fileName = getFileNameFromUri(this, uri);
             // 获取文件路径
             String filePath = getPathFromUri(this, uri);
-//           String RealfilePath = getRealPathFromURI(uri);
-            Log.d(TAG, "EEEEEEEE :  " +fileName + "   EEEEEEEEE " +filePath + " Real  "  );
+            Log.d(TAG, "Parse DBC1 by User finished");
 
-            executorService.submit(() -> {
-                try {
-                    Python python = Python.getInstance();
-                    PyObject pyObject = python.getModule("HelloWorld");
-                    String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_to_msg", filePath));
+            if (mCallbackId == null) {
+                Log.e(TAG, "mCallbackId is null,please check it");
+                return;
+            }
+            JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(mCallbackId);
+            Result<Object> success = ResponseData.success();
+            success.setData(filePath);
+            jsCallResult.setData(success);
+            callJs(jsCallResult);
+            mCallbackId = null;
 
-                    JSONArray usermsgArray = new JSONArray(usermsg);
-                    MyApplication.getInstance().getUserDatabase().userMsgInfoDao().deleteByChannel(BusId);
-                    MyApplication.getInstance().getUserDatabase().userSignalInfoDao().deleteByChannel(BusId);
-
-                    for (int i = 0; i < usermsgArray.length(); i++) {
-                        JSONObject usermsgObject = usermsgArray.getJSONObject(i);
-                        UserMsgEntity userMsgEntity = new UserMsgEntity();
-                        userMsgEntity.setCANId(usermsgObject.getInt("id"));
-                        userMsgEntity.setName(usermsgObject.getString("name"));
-                        String signalsStr = usermsgObject.getJSONArray("signals").toString();
-                        userMsgEntity.setSignals(signalsStr);
-
-                        JSONArray usersignalArray = new JSONArray(signalsStr);
-                        for (int j = 0; j < usersignalArray.length(); j++) {
-                            JSONObject usersignalObject = usersignalArray.getJSONObject(j);
-                            UserSignalEntity userSignalEntity = new UserSignalEntity();
-                            userSignalEntity.setName(usersignalObject.getString("name"));
-                            userSignalEntity.setCANId(usermsgObject.getInt("id"));
-                            userSignalEntity.setBitStart(usersignalObject.getInt("start_bit"));
-                            userSignalEntity.setBitLength(usersignalObject.getInt("size"));
-                            userSignalEntity.setBUSId(BusId);
-                            MyApplication.getInstance().getUserDatabase().userSignalInfoDao().insert(userSignalEntity);
-                        }
-
-                        userMsgEntity.setComment(usermsgObject.getString("comment"));
-                        userMsgEntity.setCANType(usermsgObject.getString("is_fd"));
-                        userMsgEntity.setBUSId(BusId);
-                        Log.e(TAG, "I am in channel 2 " + BusId);
-                        MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(userMsgEntity);
-                    }
-
-                    // 完成后在主线程中更新UI
-                    runOnUiThread(() -> {
-                        Log.d(TAG, "Parse DBC2 by User finished");
-                        Result<Object> success = new Result<>();
-                        success.setCode(200);
-                        success.setMsg("Success");
-                        success.setData(fileName);
-
-                        if (selectedJsCallResult != null) {
-                            selectedJsCallResult.setData(success);
-                            callJs(selectedJsCallResult);
-                            selectedJsCallResult = null;
-                        }
-                    });
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            });
         }
-
     }
 
     public String readFileFromUri(Context context, Uri fileUri) {

@@ -16,7 +16,7 @@ public interface CarTypeDao {
     @Query("select * from car_type where car_type_name=:cartTypeName and sdb_name=:SDBName limit 1")
     CarTypeEntity getByName(String cartTypeName,String SDBName);
 
-    @Query("select * from car_type where car_type_name = :cartTypeName and sdb_name = :SDBName limit 1")
+    @Query("select id from car_type where car_type_name = :cartTypeName and sdb_name = :SDBName limit 1")
     long getCidByName(String cartTypeName, String SDBName);
 
 

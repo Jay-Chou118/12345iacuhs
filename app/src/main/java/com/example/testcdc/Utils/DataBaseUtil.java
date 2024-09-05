@@ -300,6 +300,11 @@ public class DataBaseUtil {
         mx11E4U1.setSDBName("E4U1");
         carTypeEntities.add(mx11E4U1);
 
+        CarTypeEntity userDefined = new CarTypeEntity();
+        userDefined.setCarTypeName("custom");
+        userDefined.setSDBName("默认视图");
+        carTypeEntities.add(userDefined);
+
         carTypeEntities.forEach(carTypeEntity -> {
 //            carTypeEntity.carTypeName = "MX11";
 //            carTypeEntity.SDBName = "E4";

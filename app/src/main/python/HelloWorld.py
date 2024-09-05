@@ -9,6 +9,9 @@ def can_matrix_to_list(can_matrix: CanMatrix) -> List[Dict]:
         {
             "id": frame.arbitration_id.id,
             "name": frame.name,
+            "cycle_time" : frame.cycle_time,
+            "senders": "|".join(frame.transmitters),
+            "receivers": "|".join(frame.receivers),
             "signals": [
                 {
                     "name": signal.name,
@@ -44,9 +47,10 @@ def parse_can_matrix_data(can_matrix_dict: Optional[Dict[str, CanMatrix]]) -> No
         return
 
     for key, can_matrix in can_matrix_dict.items():
-        print(f"Parsing CAN Matrix with key: {key}")
+#         print(f"Parsing CAN Matrix with key: {key}")
         # 这里可以添加解析每个 CanMatrix 的逻辑
         for message in can_matrix.frames:
+#             print("==============={}".format(message.keys());
             print(f"  - Message ID: {message.arbitration_id.id}, Name: {message.name}, "
                   f"Signals: {message.signals}, Comment: {message.comment}, Is FD: {message.is_fd}")
 
@@ -55,7 +59,7 @@ def parse_dbc_to_msg(path):
     db = formats.loadp(path)
     serialized_data = serialize_can_matrices(db)
     # 打印序列化后的 JSON 字符串
-    print(serialized_data)
+#     print(serialized_data)
     return serialized_data
     # return serialized_data
     # 解析数据

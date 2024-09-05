@@ -68,6 +68,7 @@ public class MyApplication extends Application {
                 .allowMainThreadQueries()
                 .addMigrations()
                 .build();
+        mx11E4Database.clearAllTables();
         initUserDatabase();
 //        Log.d(TAG, "PPPPPPPPPP: ");
         initDatabase_Basic();
@@ -160,9 +161,9 @@ public class MyApplication extends Application {
                 Log.i(TAG,"database is not open");
             }
         }else{
-            DataBaseUtil.init_carType();
-            DataBaseUtil.initDataFromCsv(this);
-            DataBaseUtil.initMsgFromCsv(this);
+
+//            DataBaseUtil.initDataFromCsv(this);
+//            DataBaseUtil.initMsgFromCsv(this);
             Log.i(TAG,"数据库不存在2");
 //            DataBaseUtil.copyDataBase(this,"mx11_e4");
 
@@ -171,6 +172,7 @@ public class MyApplication extends Application {
 //            DataBaseUtil.initData_6();
 
         }
+        DataBaseUtil.init_carType();
 
     }
 

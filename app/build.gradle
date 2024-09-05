@@ -19,7 +19,7 @@ android {  // 注意这里多了一个开括号
             abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
         }
         python {
-            buildPython "C:\\Users\\Mi\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+            buildPython "D:\\software\\python\\3.9.13\\python.exe"
             pip{
                 install 'canmatrix'
 //                insatll 'typing'
@@ -76,7 +76,7 @@ android {  // 注意这里多了一个开括号
     sourceSets {
         main {
             assets {
-                srcDirs = ['D:\\Python_worksapce\\for_andriod\\dist']
+                srcDirs = ['C:\\Users\\27810\\Downloads\\dist (2)']
             }
         }
     }

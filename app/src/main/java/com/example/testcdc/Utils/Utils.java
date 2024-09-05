@@ -7,7 +7,20 @@ import android.provider.Settings;
 import android.text.SpannableStringBuilder;
 import android.util.Log;
 
+import com.chaquo.python.PyObject;
+import com.chaquo.python.Python;
+import com.example.testcdc.MyApplication;
+import com.example.testcdc.dao.MsgInfoDao;
+import com.example.testcdc.dao.SignalInfoDao;
+import com.example.testcdc.entity.MsgInfoEntity;
+import com.example.testcdc.entity.SignalInfo;
+import com.example.testcdc.entity.UserMsgEntity;
+import com.example.testcdc.entity.UserSignalEntity;
 import com.hoho.android.usbserial.util.HexDump;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.time.Instant;
@@ -132,5 +145,129 @@ public class Utils {
     static public long getKey(int BUSId,int CANId)
     {
         return (long) BUSId << 32 | CANId;
+    }
+
+
+
+    static public String parseDBCByPython(String filePath)
+    {
+        Python python = Python.getInstance();
+        PyObject pyObject = python.getModule("HelloWorld");
+        String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_to_msg", filePath));
+        Log.e(TAG,"parseDBCByPython :" + usermsg);
+        return usermsg;
+    }
+
+    static public void updateCustomData(String content,long cid,int BUSId)
+    {
+
+        MsgInfoDao msgInfoDao = MyApplication.getInstance().getMx11E4Database().msgInfoDao();
+        SignalInfoDao signalInfoDao = MyApplication.getInstance().getMx11E4Database().signalInfoDao();
+        try {
+            JSONArray usermsgArray = new JSONArray(content);
+
+
+            for (int i = 0; i < usermsgArray.length(); i++) {
+                JSONObject usermsgObject = usermsgArray.getJSONObject(i);
+                MsgInfoEntity msgInfo = new MsgInfoEntity();
+                msgInfo.cid = cid;
+
+                msgInfo.name = usermsgObject.getString("name");
+                msgInfo.BUSId = BUSId;
+                msgInfo.CANId = usermsgObject.getInt("id");
+                msgInfo.sendType =  usermsgObject.getInt("cycle_time") == 0 ? "spontaneous": "cyclic";
+                msgInfo.cycleTime =  usermsgObject.getInt("cycle_time");
+                msgInfo.comment = usermsgObject.getString("comment");
+                msgInfo.BUSName = "";
+                msgInfo.senders = usermsgObject.getString("senders");
+                msgInfo.receivers = usermsgObject.getString("receivers");
+                msgInfo.CANType = usermsgObject.getBoolean("is_fd") ? "CANFD": "CAN";
+                msgInfoDao.insert(msgInfo);
+                // 处理这个报文下的所有signal
+                JSONArray signals = usermsgObject.getJSONArray("signals");
+                for (int j = 0; j < signals.length(); j++) {
+                    JSONObject signal = signals.getJSONObject(j);
+                    SignalInfo signalInfo = new SignalInfo();
+                    signalInfo.name = signal.getString("name");
+                    signalInfo.BUSId = BUSId;
+                    signalInfo.CANId = usermsgObject.getInt("id");
+                    //(name='XCDToBodyFuncDiagReq', start_bit=0, size=64, is_little_endian=False,
+                    // is_signed=False, offset=Decimal('0'), factor=Decimal('1'),
+                    // unit='', receivers=['ACU', 'BMDM'], comment='VCCDToBodyCanFuncDiagReqNpdu',
+                    // multiplex=None, mux_value=None, is_float=False, is_ascii=False, type_label='',
+                    // enumeration=None, comments={}, attributes={'GenSigSendType': 'OnWrite', 'GenSigStartValue': '0'},
+                    // values={}, mux_val_grp=[], muxer_for_signal=None, calc_min_for_none=True, calc_max_for_none=True, cycle_time=0,
+                    // initial_value=Decimal('0'), min=Decimal('0'), max=Decimal('18446744073709551615'))
+                    signalInfo.byteOrder = signal.getBoolean("is_little_endian");
+                    signalInfo.isSigned = signal.getBoolean("is_signed");
+                    signalInfo.bitStart = signal.getInt("start_bit");
+                    signalInfo.bitLength = signal.getInt("size");
+                    signalInfo.scale = signal.getDouble("factor");
+                    signalInfo.offset = signal.getDouble("offset");
+                    signalInfo.comment = signal.getString("comment");
+                    signalInfo.minimum = signal.getDouble("min");
+                    signalInfo.maximum = signal.getDouble("max");
+                    signalInfo.initial = signal.getDouble("initial_value");
+                    signalInfo.choices = signal.getString("attributes");
+                    signalInfo.cid = cid;
+                    signalInfoDao.insert(signalInfo);
+
+                }
+
+////                CANType
+////                usermsgObject.getBoolean("is_fd") ? "CANFD": "CAN";
+//
+//                userMsgEntity.setCANId(usermsgObject.getInt("id"));
+//                userMsgEntity.setName(usermsgObject.getString("name"));
+//                String signalsStr = usermsgObject.getJSONArray("signals").toString();
+//                userMsgEntity.setSignals(signalsStr);
+//
+//                try {
+//                    JSONArray usersignalArray = new JSONArray(signalsStr);
+//                    for (int j = 0; j < usersignalArray.length(); j++) {
+//                        JSONObject usersignalObject = usersignalArray.getJSONObject(j);
+//
+//
+//                        UserSignalEntity userSignalEntity = new UserSignalEntity();
+//
+//                        userSignalEntity.setName(usersignalObject.getString("name"));
+//                        userSignalEntity.setCANId(usermsgObject.getInt("id"));
+//                        userSignalEntity.setBitStart(usersignalObject.getInt("start_bit"));
+//                        userSignalEntity.setBitLength(usersignalObject.getInt("size"));
+//                        userSignalEntity.setBUSId(BusId);
+////                            Log.d(TAG, "GGGGGGG " + usersignalObject.toString());
+//                        MyApplication.getInstance().getUserDatabase().userSignalInfoDao().insert(userSignalEntity);
+//                    }
+//
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                    // 处理异常
+//                }
+//
+//
+//                userMsgEntity.setComment(usermsgObject.getString("comment"));
+//                userMsgEntity.setCANType(usermsgObject.getString("is_fd"));
+//                userMsgEntity.setBUSId(BusId);
+//                MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(userMsgEntity);
+//                Log.e(TAG, "I am in channel 1 " + BusId);
+            }
+//
+//            // 完成后在主线程中更新UI
+//            runOnUiThread(() -> {
+//                Log.d(TAG, "Parse DBC1 by User finished");
+//                Result<Object> success = new Result<>();
+//                success.setCode(200);
+//                success.setMsg("Success");
+//                success.setData(fileName);
+//
+//                if (selectedJsCallResult != null) {
+//                    selectedJsCallResult.setData(success);
+//                    callJs(selectedJsCallResult);
+//                    selectedJsCallResult = null;
+//                }
+//            });
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 }
