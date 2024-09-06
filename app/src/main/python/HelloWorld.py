@@ -22,7 +22,7 @@ def can_matrix_to_list(can_matrix: CanMatrix) -> List[Dict]:
                     "offset": float(signal.offset),
                     "min": float(signal.min),
                     "max": float(signal.max),
-                    "comment": (comment.replace('\n', r"\n") if isinstance(comment := getattr(signal, 'comment', None), str) else ""),
+                    "comment":(signal.comment.encode('unicode_escape').decode() if hasattr(signal, 'comment') and isinstance(signal.comment, str) else ""),
                     "initial_value": float(signal.initial_value),
                     "attributes": signal.attributes
                 }
