@@ -85,11 +85,6 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static String mCallbackId;
 
-    private String selectedFilePath; // 添加成员变量来保存选中的文件路径
-
-    private String selectedCallback; // 用于存储从 JavaScript 调用过来的回调函数名称
-
-    private JsCallResult<Result<Object>> selectedJsCallResult; // 用于存储 JsCallResult 实例
 
     //切换通道
     private int BusId;
@@ -159,7 +154,6 @@ public class MainActivity3 extends AppCompatActivity {
                         Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
                         jsCallResult.setData(result);
                         final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                        Log.d(TAG, "callbackJs1 " + callbackJs);
                         webView.post(new Runnable() {
                             @Override
                             public void run() {
@@ -256,7 +250,7 @@ public class MainActivity3 extends AppCompatActivity {
                             Result<DeviceInfo> result = ResponseData.ret(mMiCANBinder.getDeviceInfo(), ret);
                             jsCallResult.setData(result);
                             final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                            Log.i(TAG, "callbackJs " + callbackJs);
+
                             // 打开CANFD设备
                             mMiCANBinder.CANOnBus();
                             mMiCANBinder.startSaveBlf();
@@ -284,9 +278,7 @@ public class MainActivity3 extends AppCompatActivity {
                     JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
                     Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
                     jsCallResult.setData(result);
-                    Log.d(TAG, "callbackJs 44: " + result);
                     final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                    Log.d(TAG, "callbackJs 4" + callbackJs);
                     webView.post(new Runnable() {
                         @Override
                         public void run() {
@@ -331,151 +323,107 @@ public class MainActivity3 extends AppCompatActivity {
                 JsonArray files = data.getAsJsonObject().get("files").getAsJsonArray();
 
                 Map<Integer, Map<String, List<List<Object>>>> maps = new HashMap<>();
-                ArrayList<Integer> BUSIdList = new ArrayList<>();;
+                ArrayList<Integer> BUSIdList = new ArrayList<>();
+
+                JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
 
                 // STEP 1 查找cid
                 long cid = database.carTypeDao().getCidByName(carType, sdb);
 
-                if (mMiCANBinder != null) {
-                    //  i am recv {"method":"getDBC","data":{"sdb":"默认视图","carType":"custom","dbcChn":[1,2],"ldfChn":[],"files":["MS11_DCDCANFD_230807.dbc","MS11_ADASCANFD_220603.dbc","","","","","","","","","","","","","",""],"ldfFiles":["","","","","","","","","","","","","","","",""],"comments":["","","","","","","","","","","","","","","",""],"ldfComments":["","","","","","","","","","","","","","","",""]},"callback":"cb_1725500583492"}
-                    if (carType.equals("custom")) {
-                        // 如果是自定义，则要先把文件调用python方法解析入库，然后统一查找库
 
-                        Log.e(TAG, "I am called 1");
-                        //清库操作
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Log.e(TAG, "thread: " + Thread.currentThread().getId());
+                        if (mMiCANBinder != null) {
+                            //  i am recv {"method":"getDBC","data":{"sdb":"默认视图","carType":"custom","dbcChn":[1,2],"ldfChn":[],"files":["MS11_DCDCANFD_230807.dbc","MS11_ADASCANFD_220603.dbc","","","","","","","","","","","","","",""],"ldfFiles":["","","","","","","","","","","","","","","",""],"comments":["","","","","","","","","","","","","","","",""],"ldfComments":["","","","","","","","","","","","","","","",""]},"callback":"cb_1725500583492"}
+                            if (carType.equals("custom")) {
+                                // 如果是自定义，则要先把文件调用python方法解析入库，然后统一查找库
+
+                                Log.e(TAG, "I am called 1");
+                                //清库操作
 //                        database.signalInfoDao().deleteBycid(cid);
 //                        database.msgInfoDao().deleteBycid(cid);
 
-                        AtomicInteger BUSId = new AtomicInteger();
-                        files.forEach(file -> {
-                            String filePath = file.getAsString();
-                            BUSId.addAndGet(1);
-                            if (filePath.isEmpty()) return;
-                            BUSIdList.add(BUSId.get());
-                            // 解析dbc
-                            String content = parseDBCByPython(filePath);
-                            updateCustomData(content, cid, BUSId.get());
+                                AtomicInteger BUSId = new AtomicInteger();
+                                files.forEach(file -> {
+                                    String filePath = file.getAsString();
+                                    BUSId.addAndGet(1);
+                                    if (filePath.isEmpty()) return;
+                                    BUSIdList.add(BUSId.get());
+                                    // 解析dbc
+                                    String content = parseDBCByPython(filePath);
+                                    updateCustomData(content, cid, BUSId.get());
 
-                        });
-                        Log.e(TAG, "BUSIdList: " + BUSIdList + "CID " + cid);
+                                });
+                                Log.e(TAG, "BUSIdList: " + BUSIdList + "CID " + cid);
 
-                    }else{
+                            } else {
 
-                        Log.d(TAG, "I am called 2");
-                        JsonArray dbcChn = data.getAsJsonObject().get("dbcChn").getAsJsonArray();
-                        for (JsonElement element : dbcChn) {
-                            int value = element.getAsInt();
-                            BUSIdList.add(value);
+                                Log.d(TAG, "I am called 2");
+                                JsonArray dbcChn = data.getAsJsonObject().get("dbcChn").getAsJsonArray();
+                                for (JsonElement element : dbcChn) {
+                                    int value = element.getAsInt();
+                                    BUSIdList.add(value);
+                                }
+
+                                Log.e(TAG, "BUSIdList: " + BUSIdList + "CID " + cid);
+                            }
+                            for (int busId : BUSIdList) {
+                                Map<String, List<List<Object>>> subMap = new HashMap<>();
+                                List<MsgInfoEntity> userMsgs = database.msgInfoDao().getMsgBycidBusId(busId, cid);
+                                for (MsgInfoEntity usermsg : userMsgs) {
+                                    List<List<Object>> subList = new ArrayList<>();
+                                    List<SignalInfo> userSignalInfos = database.signalInfoDao().getSignalBycid(cid, busId, usermsg.CANId);
+                                    for (SignalInfo signalInfo : userSignalInfos) {
+                                        List<Object> subListItem = Arrays.asList(
+                                                signalInfo.name,
+                                                signalInfo.comment,
+                                                "信号remark",
+                                                signalInfo.id,
+                                                signalInfo.initial,
+                                                signalInfo.maximum,
+                                                signalInfo.minimum,
+                                                0,
+                                                0,
+                                                0,
+                                                "m",
+                                                signalInfo.bitStart,
+                                                signalInfo.bitLength,
+                                                1,
+                                                signalInfo.scale,
+                                                signalInfo.offset,
+                                                signalInfo.byteOrder,
+                                                signalInfo.isSigned
+                                        );
+                                        subList.add(subListItem);
+                                    }
+                                    subMap.put(usermsg.name, subList);
+                                }
+                                maps.put(busId, subMap);
+                            }
+//                            JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
+                            Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
+                            jsCallResult.setData(result);
+
                         }
+                        final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
+                        Log.i(TAG, "getDBC finish");
 
-                        Log.e(TAG, "BUSIdList: " + BUSIdList + "CID " + cid);
+                        webView.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                Log.e(TAG, "RRRRRRRRRRRRRRRRR " + callbackJs );
+                                webView.loadUrl(callbackJs);
+                            }
+                        });
                     }
 
 
-                        // step 2 查找入参要提取的信号数据
-                        // 首先要确定要提取哪几路bus信息
-                        for (int busId : BUSIdList) {
-                            Map<String, List<List<Object>>> subMap = new HashMap<>();
-                            List<MsgInfoEntity> userMsgs = database.msgInfoDao().getMsgBycidBusId(busId, cid);
-                            for (MsgInfoEntity usermsg : userMsgs) {
-                                List<List<Object>> subList = new ArrayList<>();
-                                List<SignalInfo> userSignalInfos = database.signalInfoDao().getSignalBycid(cid, busId, usermsg.CANId);
-                                for (SignalInfo signalInfo : userSignalInfos) {
-                                    List<Object> subListItem = Arrays.asList(
-                                            signalInfo.name,
-                                            signalInfo.comment,
-                                            "信号remark",
-                                            signalInfo.id,
-                                            signalInfo.initial,
-                                            signalInfo.maximum,
-                                            signalInfo.minimum,
-                                            0,
-                                            0,
-                                            0,
-                                            "m",
-                                            signalInfo.bitStart,
-                                            signalInfo.bitLength,
-                                            1,
-                                            signalInfo.scale,
-                                            signalInfo.offset,
-                                            signalInfo.byteOrder,
-                                            signalInfo.isSigned
-                                    );
-                                    subList.add(subListItem);
-                                }
-                                subMap.put(usermsg.name, subList);
-                            }
-                            maps.put(busId, subMap);
-                        }
-                    JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
-                    Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
-                    Log.d(TAG, "ZZZZZZZZZZ : result  " + result);
-                    jsCallResult.setData(result);
-                    Log.d(TAG, "ZZZZZZZZZZ : jsCallResult   " + jsCallResult.toString());
-                    callJs(jsCallResult);
-                }
+                }).start();
 
-
-
-
-
-//                if (mMiCANBinder != null) {
-//                        Log.d(TAG, "I am called 2 ");
-//                        Map<Integer, Map<String, List<List<Object>>>> maps = new HashMap<>();
-//
-//
-//                        // step1 查找要解析的bus通道。
-//                        // 从入参获取 dbcChal，1，2，
-////                        BUSIdList = [1,2]
-//                        ArrayList<Integer> BUSIdList = userdatabase.userSignalInfoDao().getBusIdsAsArrayList();
-//
-//                        BUSIdList.forEach(Busid -> {
-//                            Map<String, List<List<Object>>> subMap = new HashMap<>();
-//                            List<UserMsgEntity> usermsgs = userdatabase.userMsgInfoDao().getUserMsg(Busid);
-//                            usermsgs.forEach(usermsg -> {
-//                                List<List<Object>> subList = new ArrayList<>();
-//                                // 根据busid 和 canid查询
-//                                List<UserSignalEntity> UsersignalInfos = userdatabase.userSignalInfoDao().getUserSignal(Busid, usermsg.CANId);
-//                                UsersignalInfos.forEach(UsersignalInfo -> {
-//                                    List<Object> subList_ = new ArrayList<>();
-//                                    subList_.add(UsersignalInfo.name);
-//                                    subList_.add("信号comment");
-//                                    subList_.add("信号remark");
-//                                    subList_.add(UsersignalInfo.id);
-//                                    subList_.add(0);    // 初始值
-//                                    subList_.add(0);    // 最大
-//                                    subList_.add(0);    // 最小值
-//                                    subList_.add(0);    // max
-//                                    subList_.add(0);    // min
-//                                    subList_.add(0);    // values
-//                                    subList_.add("m");    // values
-//                                    subList_.add(UsersignalInfo.bitStart);    // startBit
-//                                    subList_.add(UsersignalInfo.bitLength);    // bitLength
-//                                    subList_.add(1);    // factory
-//                                    subList_.add(32);    // factory
-//                                    subList_.add(usermsg.CANType);    // factory
-//                                    subList_.add(0);    // factory
-//                                    subList_.add(false);    // factory
-////                                subList_.add(signalInfo.id);    // factory
-//                                    subList.add(subList_);
-//
-//                                });
-//                                subMap.put(usermsg.name, subList);
-//
-//                            });
-//                            maps.put(Busid, subMap);
-//
-//                        });
-//
-//                        JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
-//                        Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
-//                        jsCallResult.setData(result);
-//                        Log.d(TAG, "ZZZZZZZZZZZZZZZZZZZ2: " + result + " ZZZZZZZZZC C CC " + jsCallResult + "");
-//                        callJs(jsCallResult);
-//
-//
-//                }
-                Log.i(TAG, "getDBC finish");
+                // step 2 查找入参要提取的信号数据
+                // 首先要确定要提取哪几路bus信息
             }
         });
 
