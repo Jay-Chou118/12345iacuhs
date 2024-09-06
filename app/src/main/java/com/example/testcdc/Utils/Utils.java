@@ -24,7 +24,9 @@ import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.zip.CRC32;
 
 public class Utils {
@@ -163,6 +165,8 @@ public class Utils {
 
         MsgInfoDao msgInfoDao = MyApplication.getInstance().getMx11E4Database().msgInfoDao();
         SignalInfoDao signalInfoDao = MyApplication.getInstance().getMx11E4Database().signalInfoDao();
+        List<MsgInfoEntity> msgInfoEntities = new ArrayList<>();
+        List<SignalInfo> signalInfos = new ArrayList<>();
         try {
             JSONArray usermsgArray = new JSONArray(content);
 
@@ -182,7 +186,8 @@ public class Utils {
                 msgInfo.senders = usermsgObject.getString("senders");
                 msgInfo.receivers = usermsgObject.getString("receivers");
                 msgInfo.CANType = usermsgObject.getBoolean("is_fd") ? "CANFD": "CAN";
-                msgInfoDao.insert(msgInfo);
+                msgInfoEntities.add(msgInfo);
+//                msgInfoDao.insert(msgInfo);
                 // 处理这个报文下的所有signal
                 JSONArray signals = usermsgObject.getJSONArray("signals");
                 for (int j = 0; j < signals.length(); j++) {
@@ -210,62 +215,14 @@ public class Utils {
                     signalInfo.initial = signal.getDouble("initial_value");
                     signalInfo.choices = signal.getString("attributes");
                     signalInfo.cid = cid;
-                    signalInfoDao.insert(signalInfo);
+                    signalInfos.add(signalInfo);
+//                    signalInfoDao.insert(signalInfo);
 
                 }
-
-////                CANType
-////                usermsgObject.getBoolean("is_fd") ? "CANFD": "CAN";
-//
-//                userMsgEntity.setCANId(usermsgObject.getInt("id"));
-//                userMsgEntity.setName(usermsgObject.getString("name"));
-//                String signalsStr = usermsgObject.getJSONArray("signals").toString();
-//                userMsgEntity.setSignals(signalsStr);
-//
-//                try {
-//                    JSONArray usersignalArray = new JSONArray(signalsStr);
-//                    for (int j = 0; j < usersignalArray.length(); j++) {
-//                        JSONObject usersignalObject = usersignalArray.getJSONObject(j);
-//
-//
-//                        UserSignalEntity userSignalEntity = new UserSignalEntity();
-//
-//                        userSignalEntity.setName(usersignalObject.getString("name"));
-//                        userSignalEntity.setCANId(usermsgObject.getInt("id"));
-//                        userSignalEntity.setBitStart(usersignalObject.getInt("start_bit"));
-//                        userSignalEntity.setBitLength(usersignalObject.getInt("size"));
-//                        userSignalEntity.setBUSId(BusId);
-////                            Log.d(TAG, "GGGGGGG " + usersignalObject.toString());
-//                        MyApplication.getInstance().getUserDatabase().userSignalInfoDao().insert(userSignalEntity);
-//                    }
-//
-//                } catch (JSONException e) {
-//                    e.printStackTrace();
-//                    // 处理异常
-//                }
-//
-//
-//                userMsgEntity.setComment(usermsgObject.getString("comment"));
-//                userMsgEntity.setCANType(usermsgObject.getString("is_fd"));
-//                userMsgEntity.setBUSId(BusId);
-//                MyApplication.getInstance().getUserDatabase().userMsgInfoDao().insert(userMsgEntity);
-//                Log.e(TAG, "I am in channel 1 " + BusId);
             }
-//
-//            // 完成后在主线程中更新UI
-//            runOnUiThread(() -> {
-//                Log.d(TAG, "Parse DBC1 by User finished");
-//                Result<Object> success = new Result<>();
-//                success.setCode(200);
-//                success.setMsg("Success");
-//                success.setData(fileName);
-//
-//                if (selectedJsCallResult != null) {
-//                    selectedJsCallResult.setData(success);
-//                    callJs(selectedJsCallResult);
-//                    selectedJsCallResult = null;
-//                }
-//            });
+            msgInfoDao.insertAll(msgInfoEntities);
+            signalInfoDao.insertAll(signalInfos);
+            Log.e(TAG,"insert finish");
         } catch (JSONException e) {
             e.printStackTrace();
         }

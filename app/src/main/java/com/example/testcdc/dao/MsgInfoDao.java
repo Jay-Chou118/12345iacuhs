@@ -14,6 +14,9 @@ public interface MsgInfoDao {
     @Insert
     void insert(MsgInfoEntity msgInfoEntity);
 
+    @Insert
+    void insertAll(List<MsgInfoEntity> msgInfos);
+
     @Query("select * from msg_info where bus_id=:BUSId and cid=:cid")
     List<MsgInfoEntity> getMsg(int BUSId,long cid);
 

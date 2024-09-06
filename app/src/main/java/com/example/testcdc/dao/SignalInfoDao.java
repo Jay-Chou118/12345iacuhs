@@ -4,6 +4,7 @@ import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 
+import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
 
 import java.util.ArrayList;
@@ -14,6 +15,9 @@ public interface SignalInfoDao {
 
     @Insert
     void insert(SignalInfo signalInfo);
+
+    @Insert
+    void insertAll(List<SignalInfo> signalInfos);
 
     @Query("select * from signal_info")
     List<SignalInfo> getAll();

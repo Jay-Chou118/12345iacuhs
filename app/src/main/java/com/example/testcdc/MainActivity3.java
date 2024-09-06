@@ -338,7 +338,7 @@ public class MainActivity3 extends AppCompatActivity {
                     if (carType.equals("custom")) {
                         // 如果是自定义，则要先把文件调用python方法解析入库，然后统一查找库
 
-                        Log.d(TAG, "I am called 1");
+                        Log.e(TAG, "I am called 1");
                         //清库操作
 //                        database.signalInfoDao().deleteBycid(cid);
 //                        database.msgInfoDao().deleteBycid(cid);
@@ -358,7 +358,7 @@ public class MainActivity3 extends AppCompatActivity {
                             updateCustomData(content,cid,BUSId.get());
 
                         });
-                        Log.d(TAG, "BUSIdList: " + BUSIdList);
+                        Log.e(TAG, "BUSIdList: " + BUSIdList);
 
                         // step 2 查找入参要提取的信号数据
                         // 首先要确定要提取哪几路bus信息
@@ -403,7 +403,6 @@ public class MainActivity3 extends AppCompatActivity {
                         JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
                         Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
                         jsCallResult.setData(result);
-                        Log.d(TAG, "ZZZZZZZZZZZZZZZZZZZ2: " + result + " ZZZZZZZZZC C CC " + jsCallResult + "");
                         callJs(jsCallResult);
 
 

@@ -64,8 +64,10 @@ public class MyApplication extends Application {
                 .allowMainThreadQueries()
                 .addMigrations()
                 .build();
+        mx11E4Database.clearAllTables();
 //        Log.d(TAG, "PPPPPPPPPP: ");
-        initDatabase_Basic();
+//        initDatabase_Basic();
+        DataBaseUtil.init_carType();
 
 
         textToSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
