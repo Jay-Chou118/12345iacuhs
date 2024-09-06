@@ -34,4 +34,5 @@ public interface MsgInfoDao {
     void deleteBycid(long cid);
 
 
+
 }

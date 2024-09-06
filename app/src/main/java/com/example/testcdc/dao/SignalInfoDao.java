@@ -3,6 +3,7 @@ package com.example.testcdc.dao;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
+import androidx.room.Transaction;
 
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
@@ -35,7 +36,7 @@ public interface SignalInfoDao {
     SignalInfo getSignal(String name);
 
     @Query("select * from signal_info where bus_id=:BUSId and cid=:cid")
-    List<SignalInfo> getSignalByBusId(int BUSId,long cid);
+    List<SignalInfo> getSignalByBusIdcid(long cid,int BUSId);
 
     @Query("SELECT DISTINCT bus_id FROM signal_info WHERE cid = :cid")
     List<Integer> getAllBusIds(long cid);

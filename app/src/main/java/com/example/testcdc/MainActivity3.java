@@ -52,13 +52,16 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 
 
 public class MainActivity3 extends AppCompatActivity {
@@ -350,71 +353,66 @@ public class MainActivity3 extends AppCompatActivity {
                             if (filePath.isEmpty()) return;
                             BUSIdList.add(BUSId.get());
                             // 解析dbc
-                            // 使用 ExecutorService 提交任务
-    //                        executorService.submit(() -> {
-    //                            parseDBCByPython(filePath);
-    //                        });
                             String content = parseDBCByPython(filePath);
-                            updateCustomData(content,cid,BUSId.get());
+                            updateCustomData(content, cid, BUSId.get());
 
                         });
-                        Log.e(TAG, "BUSIdList: " + BUSIdList);
+                        Log.e(TAG, "BUSIdList: " + BUSIdList + "CID " + cid);
+
+                    }else{
+
+                        Log.d(TAG, "I am called 2");
+                        JsonArray dbcChn = data.getAsJsonObject().get("dbcChn").getAsJsonArray();
+                        for (JsonElement element : dbcChn) {
+                            int value = element.getAsInt();
+                            BUSIdList.add(value);
+                        }
+
+                        Log.e(TAG, "BUSIdList: " + BUSIdList + "CID " + cid);
+                    }
+
 
                         // step 2 查找入参要提取的信号数据
                         // 首先要确定要提取哪几路bus信息
-                        BUSIdList.forEach(Busid -> {
+                        for (int busId : BUSIdList) {
                             Map<String, List<List<Object>>> subMap = new HashMap<>();
-                            List<MsgInfoEntity> usermsgs = database.msgInfoDao().getMsgBycidBusId(Busid,cid);
-                            usermsgs.forEach(usermsg -> {
+                            List<MsgInfoEntity> userMsgs = database.msgInfoDao().getMsgBycidBusId(busId, cid);
+                            for (MsgInfoEntity usermsg : userMsgs) {
                                 List<List<Object>> subList = new ArrayList<>();
-                                // 根据busid 和 canid查询
-                                List<SignalInfo> UsersignalInfos = database.signalInfoDao().getSignalBycid(cid,Busid,usermsg.CANId);
-                                UsersignalInfos.forEach(UsersignalInfo -> {
-                                    List<Object> subList_ = new ArrayList<>();
-                                    subList_.add(UsersignalInfo.name);
-                                    subList_.add(UsersignalInfo.comment);
-                                    subList_.add("信号remark");
-                                    subList_.add(UsersignalInfo.id);
-                                    subList_.add(UsersignalInfo.initial);    // 初始值
-                                    subList_.add(UsersignalInfo.maximum);    // 最大
-                                    subList_.add(UsersignalInfo.minimum);    // 最小值
-                                    subList_.add(0);    // max
-                                    subList_.add(0);    // min
-                                    subList_.add(0);    // values
-                                    subList_.add("m");    // values
-                                    subList_.add(UsersignalInfo.bitStart);    // startBit
-                                    subList_.add(UsersignalInfo.bitLength);    // bitLength
-                                    subList_.add(1);    // factory
-                                    subList_.add(UsersignalInfo.scale);    // factory
-                                    subList_.add(UsersignalInfo.offset);    // factory
-                                    subList_.add(UsersignalInfo.byteOrder);    // factory
-                                    subList_.add(UsersignalInfo.isSigned);    // factory
-//                                subList_.add(signalInfo.id);    // factory
-                                    subList.add(subList_);
-
-                                });
+                                List<SignalInfo> userSignalInfos = database.signalInfoDao().getSignalBycid(cid, busId, usermsg.CANId);
+                                for (SignalInfo signalInfo : userSignalInfos) {
+                                    List<Object> subListItem = Arrays.asList(
+                                            signalInfo.name,
+                                            signalInfo.comment,
+                                            "信号remark",
+                                            signalInfo.id,
+                                            signalInfo.initial,
+                                            signalInfo.maximum,
+                                            signalInfo.minimum,
+                                            0,
+                                            0,
+                                            0,
+                                            "m",
+                                            signalInfo.bitStart,
+                                            signalInfo.bitLength,
+                                            1,
+                                            signalInfo.scale,
+                                            signalInfo.offset,
+                                            signalInfo.byteOrder,
+                                            signalInfo.isSigned
+                                    );
+                                    subList.add(subListItem);
+                                }
                                 subMap.put(usermsg.name, subList);
-
-                            });
-                            maps.put(Busid, subMap);
-
-                        });
-
-                        JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
-                        Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
-                        jsCallResult.setData(result);
-                        callJs(jsCallResult);
-
-
-                    }else
-                    {
-                        //{"method":"getDBC","data":{"sdb":"RC06","carType":"MS11","dbcChn":[3,5],"ldfChn":[0,0],"files":["","","","","","","","","","","","","","","",""],"ldfFiles":["","","","","","","","","","","","","","","",""],"comments":["","","","","","","","","","","","","","","",""],"ldfComments":["","","","","","","","","","","","","","","",""]},"callback":"cb_1725535479569"}
-//                        JsonObject dbcChn = data.getAsJsonObject().get("dbcChn").getAsJsonObject();
-
-                        Log.d(TAG, "I am called 2");
-
-
-                    }
+                            }
+                            maps.put(busId, subMap);
+                        }
+                    JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
+                    Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
+                    Log.d(TAG, "ZZZZZZZZZZ : result  " + result);
+                    jsCallResult.setData(result);
+                    Log.d(TAG, "ZZZZZZZZZZ : jsCallResult   " + jsCallResult.toString());
+                    callJs(jsCallResult);
                 }
 
 
@@ -801,6 +799,12 @@ public class MainActivity3 extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
 
+    }
+
+    public static void runInBackground(Runnable task) {
+        ExecutorService executorService = Executors.newSingleThreadExecutor();
+        executorService.submit(task);
+        executorService.shutdown();
     }
 
 }

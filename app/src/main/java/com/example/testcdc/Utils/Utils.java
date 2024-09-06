@@ -155,8 +155,8 @@ public class Utils {
     {
         Python python = Python.getInstance();
         PyObject pyObject = python.getModule("HelloWorld");
-        String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_to_msg", filePath));
-        Log.e(TAG,"parseDBCByPython :" + usermsg);
+        String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_file", filePath));
+//        Log.e(TAG,"parseDBCByPython :" + usermsg);
         return usermsg;
     }
 
@@ -210,6 +210,7 @@ public class Utils {
                     signalInfo.scale = signal.getDouble("factor");
                     signalInfo.offset = signal.getDouble("offset");
                     signalInfo.comment = signal.getString("comment");
+                    Log.e(TAG, "updateCustomData: " +   signalInfo.comment);
                     signalInfo.minimum = signal.getDouble("min");
                     signalInfo.maximum = signal.getDouble("max");
                     signalInfo.initial = signal.getDouble("initial_value");
