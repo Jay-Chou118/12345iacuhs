@@ -13,7 +13,9 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.os.IBinder;
+import android.os.Looper;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
@@ -342,8 +344,8 @@ public class MainActivity3 extends AppCompatActivity {
 
                                 Log.e(TAG, "I am called 1");
                                 //清库操作
-//                        database.signalInfoDao().deleteBycid(cid);
-//                        database.msgInfoDao().deleteBycid(cid);
+                                database.signalInfoDao().deleteBycid(cid);
+                                database.msgInfoDao().deleteBycid(cid);
 
                                 AtomicInteger BUSId = new AtomicInteger();
                                 files.forEach(file -> {
@@ -405,19 +407,34 @@ public class MainActivity3 extends AppCompatActivity {
 //                            JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
                             Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
                             jsCallResult.setData(result);
+                            callJs(jsCallResult);
+//                            Log.e(TAG, "RRRRRRRRRRRRRRRCCCC " + jsCallResult );
 
                         }
                         final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                        Log.i(TAG, "getDBC finish");
-
+//                        Log.i(TAG, "RRRRRRRRRRRRRRRCCCC getDBC finish");
+//
                         webView.post(new Runnable() {
                             @Override
                             public void run() {
-                                Log.e(TAG, "RRRRRRRRRRRRRRRRR " + callbackJs );
+//                                Log.e(TAG, "RRRRRRRRRRRRRRRRR " + callbackJs );
                                 webView.loadUrl(callbackJs);
                             }
                         });
                     }
+//                        // 使用Handler来延迟执行webView.post
+//                        final Handler mainHandler = new Handler(Looper.getMainLooper());
+//                        final Runnable postWebViewRunnable = new Runnable() {
+//                            @Override
+//                            public void run() {
+//                                Log.e(TAG, "RRRRRRRRRRRRRRRRR " + callbackJs );
+//                                webView.loadUrl(callbackJs);
+//                            }
+//                        };
+//
+//                        long delayMillis = 1000; // 延迟的时间，单位是毫秒，这里设置为1秒
+//                        mainHandler.postDelayed(postWebViewRunnable, delayMillis);
+//                    }
 
 
                 }).start();

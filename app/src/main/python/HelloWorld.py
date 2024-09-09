@@ -22,7 +22,8 @@ def can_matrix_to_list(can_matrix: CanMatrix) -> List[Dict]:
                     "offset": float(signal.offset),
                     "min": float(signal.min),
                     "max": float(signal.max),
-                    "comment":(signal.comment.encode('unicode_escape').decode() if hasattr(signal, 'comment') and isinstance(signal.comment, str) else ""),
+                    # "comment":(signal.comment.encode('iso-8859-1').decode('gb2312') if hasattr(signal, 'comment') and isinstance(signal.comment, str) else ""),
+                    'comment':' ',
                     "initial_value": float(signal.initial_value),
                     "attributes": signal.attributes
                 }
@@ -51,6 +52,7 @@ def parse_dbc_file(path: str) -> Optional[str]:
     try:
         db = formats.loadp(path)
         serialized_data = serialize_can_matrices(db)
+        print("length : " ,len(serialized_data))
         return serialized_data
     except Exception as e:
         print(f"Error loading DBC file from path '{path}': {e}")
