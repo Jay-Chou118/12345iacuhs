@@ -155,6 +155,7 @@ public class MainActivity3 extends AppCompatActivity {
                         JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
                         Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
                         jsCallResult.setData(result);
+                        Log.d(TAG, "1111 showloggingmessage " + result );
                         final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
                         webView.post(new Runnable() {
                             @Override
@@ -346,6 +347,8 @@ public class MainActivity3 extends AppCompatActivity {
                                 //清库操作
                                 database.signalInfoDao().deleteBycid(cid);
                                 database.msgInfoDao().deleteBycid(cid);
+                                Log.d(TAG, "Finished delete for signalInfoDao msgInfoDao with cid " + cid);
+//                                DeleteIfExist(database,cid);
 
                                 AtomicInteger BUSId = new AtomicInteger();
                                 files.forEach(file -> {
@@ -727,13 +730,12 @@ public class MainActivity3 extends AppCompatActivity {
 
         if (requestCode == READ_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
 
-            Log.e(TAG, "I am in channel 1 ");
             Uri uri = data.getData();
             // 获取文件名
             String fileName = getFileNameFromUri(this, uri);
             // 获取文件路径
             String filePath = getPathFromUri(this, uri);
-            Log.d(TAG, "Parse DBC1 by User finished");
+            Log.d(TAG, "Parse DBC by User finished");
 
             if (mCallbackId == null) {
                 Log.e(TAG, "mCallbackId is null,please check it");
@@ -743,6 +745,7 @@ public class MainActivity3 extends AppCompatActivity {
             Result<Object> success = ResponseData.success();
             success.setData(filePath);
             jsCallResult.setData(success);
+//            Log.d(TAG, "onActivityResult: " + jsCallResult.getData());
             callJs(jsCallResult);
             mCallbackId = null;
 
