@@ -500,35 +500,61 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void handle(JsonElement data, String callback) {
                 Log.d(TAG, "TTTTTTTTTTTTTT: " + data);
+
+                if (data == null || !data.isJsonObject()) {
+                    Log.e(TAG, "Received data is not a JSON object.");
+                    return;
+                }
+
                 int BUSId = data.getAsJsonObject().get("channel").getAsInt();
                 int CANId = data.getAsJsonObject().get("canId").getAsInt();
-                JsonArray dataArray = data.getAsJsonObject().get("canData").getAsJsonArray();
+                JsonElement canDataElement = data.getAsJsonObject().get("canData");
+                if (canDataElement == null || !canDataElement.isJsonArray()) {
+                    Log.e(TAG, "No or invalid 'canData' found in the JSON object.");
+                    return;
+                }
+
+                JsonArray dataArray = canDataElement.getAsJsonArray();
                 int length = dataArray.size();
                 byte[] CANData = new byte[length];
 
+//                for (int i = 0; i < length; i++) {
+//                    CANData[i] = (byte) Integer.parseInt(dataArray.get(i).getAsString(), 16);
+//                }
+
                 for (int i = 0; i < length; i++) {
-                    CANData[i] = (byte) Integer.parseInt(dataArray.get(i).getAsString(), 16);
+                    // 获取JsonElement，然后判断是否为null
+                    JsonElement element = dataArray.get(i);
+                    if (element != null) {
+                        // 如果不是null，则获取字符串表示形式
+                        String hexString = element.getAsString();
+                        CANData[i] = (byte) Integer.parseInt(hexString, 16);
+                    } else {
+                        // 如果为null，可以设定一个默认值或处理逻辑
+                        // 这里假设默认值为0
+                        CANData[i] = 0;
+                        Log.e(TAG, "JsonElement at index " + i + " was null, defaulting to 0.");
+                    }
                 }
                 Log.d(TAG, "CANData " + Arrays.toString(CANData));
                 Log.d(TAG, "BUSId " + BUSId + " CANId " + CANId);
-
                 List<Map<String, Object>> maps = new ArrayList<>();
                 Map<String, Object> titleMap = new HashMap<>();
-                titleMap.put("canId", String.valueOf(CANId));
-                titleMap.put("channel", BUSId);
-                titleMap.put("id", "18028-");
-                titleMap.put("isChildTit", true);
-                titleMap.put("isExpand", true);
-                titleMap.put("isParent", false);
-                maps.add(titleMap);
+//                titleMap.put("canId", String.valueOf(CANId));
+//                titleMap.put("channel", BUSId);
+//                titleMap.put("id", "18028-");
+//                titleMap.put("isChildTit", true);
+//                titleMap.put("isExpand", true);
+//                titleMap.put("isParent", false);
+//                maps.add(titleMap);
 //                maps.addAll(mMiCANBinder.parseMsgData(2, 0x90,CANData));
                 maps.addAll(mMiCANBinder.parseMsgData(BUSId, CANId, CANData));
-                Log.e(TAG, maps.toString());
+                Log.e(TAG, " 111111 444444 " + maps.toString());
 
                 JsCallResult<Result<List<Map<String, Object>>>> jsCallResult = new JsCallResult<>(callback);
                 Result<List<Map<String, Object>>> success = ResponseData.success(maps);
                 jsCallResult.setData(success);
-
+                Log.e(TAG, "1111111 222222 3333: " + jsCallResult.getData() );
                 callJs(jsCallResult);
             }
         });

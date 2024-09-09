@@ -31,6 +31,7 @@ import com.example.testcdc.MiCAN.ShowSignal;
 import com.example.testcdc.database.MX11E4Database;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.hoho.android.usbserial.driver.UsbSerialDriver;
 import com.hoho.android.usbserial.driver.UsbSerialPort;
@@ -514,22 +515,33 @@ public class MyService extends Service {
                 info.put("hex",rawData);
                 Log.d(TAG,"Info 11111111   " + info);
                 String choices = signalInfo.choices;
-                if(choices != null)
-                {
-                    Log.d(TAG,"rawDATA   222222    " + rawData);
+                if (choices != null) {
                     JsonObject jsonObject = parseString(choices).getAsJsonObject();
-                    Log.d(TAG,"jsonObject    " + jsonObject);
-                    String enumStr = jsonObject.get(String.valueOf(rawData)).getAsString();
-                    Log.d(TAG,"enumStr    " + enumStr);
-                    info.put("value","0x" + Long.toHexString(rawData) +"-" +enumStr);
-                }else {
-                    info.put("value",String.valueOf(rawData));
+                    Log.d(TAG, "jsonObject    " + jsonObject);
+
+                    if (jsonObject != null) {
+                        JsonElement valueElement = jsonObject.get(String.valueOf(rawData));
+                        if (valueElement != null) {
+                            String enumStr = valueElement.getAsString();
+                            Log.d(TAG, "enumStr    " + enumStr);
+                            info.put("value", "0x" + Long.toHexString(rawData) + "-" + enumStr);
+                        } else {
+                            Log.e(TAG, "Value not found in JSON for rawData: " + rawData);
+                            info.put("value", "0x" + Long.toHexString(rawData));
+                        }
+                    } else {
+                        Log.e(TAG, "jsonObject is null");
+                        info.put("value", "0x" + Long.toHexString(rawData));
+                    }
+                } else {
+                    info.put("value", "0x" + Long.toHexString(rawData));
                 }
-                info.put("id",String.valueOf(signalInfo.id));
-                info.put("isChildTit",false);
-                info.put("isExpand",true);
-                info.put("isParent",false);
-                info.put("name",signalInfo.getName());
+
+                info.put("id", String.valueOf(signalInfo.id));
+                info.put("isChildTit", false);
+                info.put("isExpand", true);
+                info.put("isParent", false);
+                info.put("name", signalInfo.getName());
                 infos.add(info);
             });
             Log.d(TAG,"infos   " + infos);
