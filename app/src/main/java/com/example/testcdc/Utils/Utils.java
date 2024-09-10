@@ -12,6 +12,7 @@ import com.chaquo.python.Python;
 import com.example.testcdc.MyApplication;
 import com.example.testcdc.dao.MsgInfoDao;
 import com.example.testcdc.dao.SignalInfoDao;
+import com.example.testcdc.database.MX11E4Database;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
 import com.example.testcdc.entity.UserMsgEntity;
@@ -150,7 +151,23 @@ public class Utils {
     }
 
 
-
+//    static public void DeleteIfExist(MX11E4Database database, long cid)
+//    {
+//        if(database.msgInfoDao().existsBycid(cid)){
+//            database.msgInfoDao().deleteBycid(cid);
+//            Log.d(TAG, "Finished delete for msg with cid " + cid);
+//        }else {
+//            Log.d(TAG, "No records found in msg for cid " + cid);
+//        }
+//
+//        if (database.signalInfoDao().existsBycid(cid)){
+//            database.signalInfoDao().deleteBycid(cid);
+//            Log.d(TAG, "Finished delete for signal with cid " + cid);
+//        }else {
+//            Log.d(TAG, "No records found in signal for cid " + cid);
+//        }
+//
+//    }
     static public String parseDBCByPython(String filePath)
     {
         Python python = Python.getInstance();
@@ -210,7 +227,7 @@ public class Utils {
                     signalInfo.scale = signal.getDouble("factor");
                     signalInfo.offset = signal.getDouble("offset");
                     signalInfo.comment = signal.getString("comment");
-                    Log.e(TAG, "updateCustomData: " +   signalInfo.comment);
+//                    Log.e(TAG, "updateCustomData: " +   signalInfo.comment);
                     signalInfo.minimum = signal.getDouble("min");
                     signalInfo.maximum = signal.getDouble("max");
                     signalInfo.initial = signal.getDouble("initial_value");

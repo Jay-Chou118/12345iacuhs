@@ -47,6 +47,11 @@ public interface SignalInfoDao {
         return new ArrayList<>(busIds);
     }
 
+
+    @Query("SELECT EXISTS (SELECT 1 FROM signal_info WHERE cid = :cid)")
+    boolean existsBycid(long cid);
+
+
     @Query("DELETE FROM signal_info WHERE cid = :cid")
     void deleteBycid(long cid);
 

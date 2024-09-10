@@ -29,6 +29,8 @@ public interface MsgInfoDao {
     @Query("select * from msg_info where  cid = :cid and bus_id =:BUSId")
     List<MsgInfoEntity> getMsgBycidBusId(int BUSId,long cid);
 
+    @Query("SELECT EXISTS (SELECT 1 FROM msg_info WHERE cid = :cid)")
+    boolean existsBycid(long cid);
 
     @Query("DELETE FROM msg_info WHERE cid = :cid")
     void deleteBycid(long cid);
