@@ -15,8 +15,6 @@ import com.example.testcdc.dao.SignalInfoDao;
 import com.example.testcdc.database.MX11E4Database;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
-import com.example.testcdc.entity.UserMsgEntity;
-import com.example.testcdc.entity.UserSignalEntity;
 import com.hoho.android.usbserial.util.HexDump;
 
 import org.json.JSONArray;
@@ -199,7 +197,7 @@ public class Utils {
                 msgInfo.sendType =  usermsgObject.getInt("cycle_time") == 0 ? "spontaneous": "cyclic";
                 msgInfo.cycleTime =  usermsgObject.getInt("cycle_time");
                 msgInfo.comment = usermsgObject.getString("comment");
-                msgInfo.BUSName = usermsgObject.getString("BUSName");
+                msgInfo.BUSName = "";
                 msgInfo.senders = usermsgObject.getString("senders");
                 msgInfo.receivers = usermsgObject.getString("receivers");
                 msgInfo.CANType = usermsgObject.getBoolean("is_fd") ? "CANFD": "CAN";
@@ -231,7 +229,7 @@ public class Utils {
                     signalInfo.minimum = signal.getDouble("min");
                     signalInfo.maximum = signal.getDouble("max");
                     signalInfo.initial = signal.getDouble("initial_value");
-                    signalInfo.choices = signal.getString("attributes");
+                    signalInfo.choices = signal.getString("choices");
                     signalInfo.cid = cid;
                     signalInfos.add(signalInfo);
 //                    signalInfoDao.insert(signalInfo);

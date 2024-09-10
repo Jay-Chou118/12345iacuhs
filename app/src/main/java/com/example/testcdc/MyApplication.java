@@ -9,10 +9,7 @@ import androidx.room.Room;
 
 import com.example.testcdc.Utils.DataBaseUtil;
 import com.example.testcdc.database.MX11E4Database;
-import com.example.testcdc.database.UserDatabase;
 import com.example.testcdc.entity.SignalInfo;
-import com.example.testcdc.entity.UserMsgEntity;
-import com.example.testcdc.entity.UserSignalEntity;
 import com.xiaomi.xms.wearable.Wearable;
 import com.xiaomi.xms.wearable.auth.AuthApi;
 import com.xiaomi.xms.wearable.auth.Permission;
@@ -37,7 +34,6 @@ public class MyApplication extends Application {
 
     private static final String TAG = "MICAN_application";
     private MX11E4Database mx11E4Database = null;
-    private UserDatabase userDatabase = null;
 
     private static MyApplication sInstance;
 
@@ -115,11 +111,6 @@ public class MyApplication extends Application {
     {
 
         return mx11E4Database;
-    }
-
-    public UserDatabase getUserDatabase(){
-
-        return userDatabase;
     }
 
 
