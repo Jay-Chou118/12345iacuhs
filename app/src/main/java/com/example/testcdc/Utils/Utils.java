@@ -227,7 +227,7 @@ public class Utils {
                     signalInfo.scale = signal.getDouble("factor");
                     signalInfo.offset = signal.getDouble("offset");
                     signalInfo.comment = signal.getString("comment");
-                    Log.e(TAG, "updateCustomData: " +   signalInfo.comment);
+//                    Log.e(TAG, "updateCustomData: " +   signalInfo.comment);
                     signalInfo.minimum = signal.getDouble("min");
                     signalInfo.maximum = signal.getDouble("max");
                     signalInfo.initial = signal.getDouble("initial_value");

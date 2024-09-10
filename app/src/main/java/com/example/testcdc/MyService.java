@@ -504,7 +504,7 @@ public class MyService extends Service {
         {
             // 根据BUSID 和CANID找到里面有多少个signal
             List<SignalInfo> signalInfos = database.signalInfoDao().getSignal(BUSId, CANId);
-            Log.d(TAG,"signalInfos " + signalInfos);
+            Log.e(TAG,"signalInfos " + signalInfos);
             List<Map<String, Object>> infos = new ArrayList<>();
             signalInfos.forEach(signalInfo -> {
                 Map<String,Object> info = new HashMap<>();
@@ -544,7 +544,7 @@ public class MyService extends Service {
                 info.put("name", signalInfo.getName());
                 infos.add(info);
             });
-            Log.d(TAG,"infos   " + infos);
+            Log.e(TAG,"infos   " + infos);
             return infos;
         }
     }

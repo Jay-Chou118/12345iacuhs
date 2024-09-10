@@ -502,8 +502,8 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("parsedSignal", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
-                Log.d(TAG, "TTTTTTTTTTTTTT: " + data);
-
+                Log.e(TAG, "TTTTTTTTTTTTTT: " + data);
+                //  {"channel":2,"canId":"441","canData":["30","0","0","0","0","0","0","0"]}
                 if (data == null || !data.isJsonObject()) {
                     Log.e(TAG, "Received data is not a JSON object.");
                     return;
@@ -521,26 +521,12 @@ public class MainActivity3 extends AppCompatActivity {
                 int length = dataArray.size();
                 byte[] CANData = new byte[length];
 
-//                for (int i = 0; i < length; i++) {
-//                    CANData[i] = (byte) Integer.parseInt(dataArray.get(i).getAsString(), 16);
-//                }
-
                 for (int i = 0; i < length; i++) {
-                    // 获取JsonElement，然后判断是否为null
-                    JsonElement element = dataArray.get(i);
-                    if (element != null) {
-                        // 如果不是null，则获取字符串表示形式
-                        String hexString = element.getAsString();
-                        CANData[i] = (byte) Integer.parseInt(hexString, 16);
-                    } else {
-                        // 如果为null，可以设定一个默认值或处理逻辑
-                        // 这里假设默认值为0
-                        CANData[i] = 0;
-                        Log.e(TAG, "JsonElement at index " + i + " was null, defaulting to 0.");
-                    }
+                    CANData[i] = (byte) Integer.parseInt(dataArray.get(i).getAsString(), 16);
                 }
-                Log.d(TAG, "CANData " + Arrays.toString(CANData));
-                Log.d(TAG, "BUSId " + BUSId + " CANId " + CANId);
+                Log.e(TAG, Arrays.toString(CANData));
+                Log.e(TAG, "CANData " + Arrays.toString(CANData));
+                Log.e(TAG, "BUSId " + BUSId + " CANId " + CANId);
                 List<Map<String, Object>> maps = new ArrayList<>();
                 Map<String, Object> titleMap = new HashMap<>();
 //                titleMap.put("canId", String.valueOf(CANId));
