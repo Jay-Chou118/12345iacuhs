@@ -182,7 +182,7 @@ public class Utils {
                 msgInfo.sendType =  usermsgObject.getInt("cycle_time") == 0 ? "spontaneous": "cyclic";
                 msgInfo.cycleTime =  usermsgObject.getInt("cycle_time");
                 msgInfo.comment = usermsgObject.getString("comment");
-                msgInfo.BUSName = "";
+                msgInfo.BUSName = usermsgObject.getString("BUSName");
                 msgInfo.senders = usermsgObject.getString("senders");
                 msgInfo.receivers = usermsgObject.getString("receivers");
                 msgInfo.CANType = usermsgObject.getBoolean("is_fd") ? "CANFD": "CAN";
@@ -205,7 +205,7 @@ public class Utils {
                     // initial_value=Decimal('0'), min=Decimal('0'), max=Decimal('18446744073709551615'))
                     signalInfo.byteOrder = signal.getBoolean("is_little_endian");
                     signalInfo.isSigned = signal.getBoolean("is_signed");
-                    signalInfo.bitStart = signal.getInt("start_bit");
+                    signalInfo.bitStart = signal.getInt("start_bit") & ~7 | 7;
                     signalInfo.bitLength = signal.getInt("size");
                     signalInfo.scale = signal.getDouble("factor");
                     signalInfo.offset = signal.getDouble("offset");
