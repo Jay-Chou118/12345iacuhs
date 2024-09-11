@@ -1,6 +1,7 @@
 import json
 from typing import List, Dict, Optional
 from canmatrix import CanMatrix, formats
+from can.io.blf import BLFReader
 
 
 def can_matrix_to_list(can_matrix: CanMatrix) -> List[Dict]:
@@ -57,6 +58,21 @@ def parse_dbc_file(path: str) -> Optional[str]:
     except Exception as e:
         print(f"Error loading DBC file from path '{path}': {e}")
         return None
+
+
+def deal_file(file_obj:BLFReader):
+    msg_map = [{},{},{},{},{},{},{},{},{},{},{},{}]
+    for msg in file_obj:
+        if msg.arbitration_id not in msg_map[msg.channel]:
+            msg_map[msg.channel][msg.arbitration_id] = [(msg.timestamp,msg.data)]
+        else:
+            msg_map[msg.channel][msg.arbitration_id].append((msg.timestamp,msg.data))
+    return json.dumps(msg_map)
+
+
+def blfRead(path):
+    BLFReader = blfRead(path)
+    msg_map = deal_file(BLFReader)
 
 
 # Example usage
