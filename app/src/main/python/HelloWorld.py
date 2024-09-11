@@ -22,8 +22,8 @@ def can_matrix_to_list(can_matrix: CanMatrix) -> List[Dict]:
                     "offset": float(signal.offset),
                     "min": float(signal.min),
                     "max": float(signal.max),
-                    # "comment":(signal.comment.encode('iso-8859-1').decode('gb2312') if hasattr(signal, 'comment') and isinstance(signal.comment, str) else ""),
-                    'comment':' ',
+                    "comment":(signal.comment.encode('iso-8859-1').decode('gb2312') if hasattr(signal, 'comment') and isinstance(signal.comment, str) else ""),
+                    # 'comment':' ',
                     "initial_value": float(signal.initial_value),
                     "choices": json.dumps(signal.values or {})
                 }

@@ -76,7 +76,8 @@ public class MainActivity3 extends AppCompatActivity {
     private static final ExecutorService executorService = Executors.newSingleThreadExecutor();
 
     private static final int READ_REQUEST_CODE = 1;
-//    private static final int READ_REQUEST_CHNANEL2_CODE = 2;
+    private static final int CHOOSE_REQUEST_CODE = 2;
+
     private static long Current_cid;
 
     private static String mCallbackId;
@@ -487,10 +488,12 @@ public class MainActivity3 extends AppCompatActivity {
             public void handle(JsonElement data, String callback) {
                 mCallbackId = callback;
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                intent.setType("*/*");
+                intent.setType("application/octet-stream");
+
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
 
-                startActivityForResult(intent, 1);
+//                startActivityForResult(intent, CHOOSE_REQUEST_CODE);
+                  startActivityForResult(intent,READ_REQUEST_CODE);
             }
         });
 
