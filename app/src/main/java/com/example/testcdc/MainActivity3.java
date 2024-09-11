@@ -482,17 +482,17 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
-//        messageHandlers.put("getUserDBC2", new BridgeHandler() {
-//            @Override
-//            public void handle(JsonElement data, String callback) {
-//                mCallbackId = callback;
-//                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-//                intent.setType("*/*");
-//                intent.addCategory(Intent.CATEGORY_OPENABLE);
-//
-//                startActivityForResult(intent, READ_REQUEST_CHNANEL1_CODE);
-//            }
-//        });
+        messageHandlers.put("choosePath", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+                mCallbackId = callback;
+                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                intent.setType("*/*");
+                intent.addCategory(Intent.CATEGORY_OPENABLE);
+
+                startActivityForResult(intent, 1);
+            }
+        });
 
 
         messageHandlers.put("parsedSignal", new BridgeHandler() {
