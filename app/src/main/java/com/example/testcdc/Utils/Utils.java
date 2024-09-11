@@ -220,7 +220,7 @@ public class Utils {
                     // initial_value=Decimal('0'), min=Decimal('0'), max=Decimal('18446744073709551615'))
                     signalInfo.byteOrder = signal.getBoolean("is_little_endian");
                     signalInfo.isSigned = signal.getBoolean("is_signed");
-                    signalInfo.bitStart = signal.getInt("start_bit") & ~7 | 7;
+                    signalInfo.bitStart = signal.getInt("start_bit") ;
                     signalInfo.bitLength = signal.getInt("size");
                     signalInfo.scale = signal.getDouble("factor");
                     signalInfo.offset = signal.getDouble("offset");

@@ -77,12 +77,10 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static final int READ_REQUEST_CODE = 1;
 //    private static final int READ_REQUEST_CHNANEL2_CODE = 2;
+    private static long Current_cid;
 
     private static String mCallbackId;
 
-
-    //切换通道
-    private int BusId;
 
     private ServiceConnection mSC = new ServiceConnection() {
         @Override
@@ -325,6 +323,8 @@ public class MainActivity3 extends AppCompatActivity {
                 // STEP 1 查找cid
                 long cid = database.carTypeDao().getCidByName(carType, sdb);
 
+                Current_cid = cid;
+
 
                 new Thread(new Runnable() {
                     @Override
@@ -364,6 +364,9 @@ public class MainActivity3 extends AppCompatActivity {
 
                                 Log.e(TAG, "BUSIdList: " + BUSIdList + "CID " + cid);
                             }
+
+
+
                             for (int busId : BUSIdList) {
                                 Map<String, List<List<Object>>> subMap = new HashMap<>();
                                 List<MsgInfoEntity> userMsgs = database.msgInfoDao().getMsgBycidBusId(busId, cid);
@@ -373,7 +376,8 @@ public class MainActivity3 extends AppCompatActivity {
                                     for (SignalInfo signalInfo : userSignalInfos) {
                                         List<Object> subListItem = Arrays.asList(
                                                 signalInfo.name,
-                                                signalInfo.comment,
+//                                                signalInfo.comment,
+                                                " ",
                                                 "信号remark",
                                                 signalInfo.id,
                                                 signalInfo.initial,
@@ -467,10 +471,10 @@ public class MainActivity3 extends AppCompatActivity {
                 mCallbackId = callback;
 
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                intent.setType("*/*");
+                intent.setType("application/octet-stream");
 
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
-                intent.putExtra("filter", "*.dbc");
+//                intent.putExtra("filter", "*.dbc");
 
                 startActivityForResult(intent, READ_REQUEST_CODE);
                 Log.i(TAG, "start file select activity");
@@ -512,7 +516,7 @@ public class MainActivity3 extends AppCompatActivity {
                 JsonArray dataArray = canDataElement.getAsJsonArray();
                 int length = dataArray.size();
                 byte[] CANData = new byte[length];
-
+                Log.e(TAG, "length:   " + length );
                 for (int i = 0; i < length; i++) {
                     CANData[i] = (byte) Integer.parseInt(dataArray.get(i).getAsString(), 16);
                 }
@@ -529,8 +533,9 @@ public class MainActivity3 extends AppCompatActivity {
 //                titleMap.put("isParent", false);
 //                maps.add(titleMap);
 //                maps.addAll(mMiCANBinder.parseMsgData(2, 0x90,CANData));
-                maps.addAll(mMiCANBinder.parseMsgData(BUSId, CANId, CANData));
-                Log.e(TAG, " 111111 444444 " + maps.toString());
+//                maps.addAll(mMiCANBinder.parseMsgData(BUSId, CANId, CANData));
+                maps.addAll(mMiCANBinder.parseMsgData(BUSId, CANId, Current_cid, CANData));
+//                Log.e(TAG, " 111111 444444 " + maps.toString());
 
                 JsCallResult<Result<List<Map<String, Object>>>> jsCallResult = new JsCallResult<>(callback);
                 Result<List<Map<String, Object>>> success = ResponseData.success(maps);

@@ -500,10 +500,11 @@ public class MyService extends Service {
             });
         }
 
-        public  List<Map<String, Object>> parseMsgData(int BUSId, int CANId,byte[] data)
+        public  List<Map<String, Object>> parseMsgData(int BUSId, int CANId, long cid, byte[] data)
         {
             // 根据BUSID 和CANID找到里面有多少个signal
-            List<SignalInfo> signalInfos = database.signalInfoDao().getSignal(BUSId, CANId);
+//            List<SignalInfo> signalInfos = database.signalInfoDao().getSignal(BUSId, CANId);
+            List<SignalInfo> signalInfos = database.signalInfoDao().getSignalBycid(cid, BUSId, CANId);
             Log.e(TAG,"signalInfos " + signalInfos);
             List<Map<String, Object>> infos = new ArrayList<>();
             signalInfos.forEach(signalInfo -> {

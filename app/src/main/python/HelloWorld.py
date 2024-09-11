@@ -14,7 +14,7 @@ def can_matrix_to_list(can_matrix: CanMatrix) -> List[Dict]:
             "signals": [
                 {
                     "name": signal.name,
-                    "start_bit": signal.start_bit,
+                    "start_bit": signal.start_bit - (signal.start_bit % 8) + ( 7 - (signal.start_bit % 8)),
                     "size": signal.size,
                     "is_little_endian": signal.is_little_endian,
                     "is_signed": signal.is_signed,
