@@ -6,6 +6,8 @@ import android.util.Log;
 
 import com.example.testcdc.MyApplication;
 import com.example.testcdc.R;
+import com.example.testcdc.dao.MsgInfoDao;
+import com.example.testcdc.dao.SignalInfoDao;
 import com.example.testcdc.entity.CarTypeEntity;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
@@ -142,7 +144,10 @@ public class DataBaseUtil {
 
 
 
-        Log.d(TAG, "files: " + files);
+//        Log.d(TAG, "files: " + files);
+        SignalInfoDao signalInfoDao = MyApplication.getInstance().getMx11E4Database().signalInfoDao();
+        List<SignalInfo> signalInfos = new ArrayList<>();
+
         files.forEach(file->{
             try {
                 InputStream is = context.getResources().openRawResource(file);// 得到数据库文件的数据流
@@ -174,14 +179,17 @@ public class DataBaseUtil {
 
 //                    Log.d(TAG, "setCarTypeId: " +data[14] + " setSdbId: " + data[15] + " CCCCCCCC "+ signalInfo.cid);
                     MyApplication.getInstance().getMx11E4Database().signalInfoDao().insert(signalInfo);
+                    signalInfos.add(signalInfo);
 //                    Log.e(TAG,"插入signal成功");
                 }
                 is.close();
                 reader.close();
-                Log.i(TAG,"读取csv文件成功 " + file);
+//                Log.i(TAG,"读取csv文件成功 " + file);
             } catch (Exception e) {
                 Log.e(TAG,e.toString());
             }
+            signalInfoDao.insertAll(signalInfos);
+            Log.d(TAG,"signal insert finished");
         });
     }
 
@@ -217,7 +225,8 @@ public class DataBaseUtil {
         files.add(R.raw.msg_info_13_mx11_e4u1);
 
 
-
+        MsgInfoDao msgInfoDao = MyApplication.getInstance().getMx11E4Database().msgInfoDao();
+        List<MsgInfoEntity> msgInfoEntities = new ArrayList<>();
         files.forEach(file->{
             try {
                 InputStream is = ctx.getResources().openRawResource(file);// 得到数据库文件的数据流
@@ -240,18 +249,21 @@ public class DataBaseUtil {
                     msgInfo.receivers = data[8];
                     msgInfo.CANType = data[9];
 
-                    msgInfo.cid = MyApplication.getInstance().getMx11E4Database().msgInfoDao().getCidByName(data[10],data[11]);
-
+//                    msgInfo.cid = MyApplication.getInstance().getMx11E4Database().msgInfoDao().getCidByName(data[10],data[11]);
+                    msgInfoEntities.add(msgInfo);
 //                    Log.e(TAG, "msgInfo  :   ZZZZZZZZ" + msgInfo);
                     MyApplication.getInstance().getMx11E4Database().msgInfoDao().insert(msgInfo);
 //                    Log.e(TAG,"插入msg成功");
                 }
                 is.close();
                 reader.close();
-                Log.i(TAG,"读取msg csv文件成功 " + file);
+//                Log.i(TAG,"读取msg csv文件成功 " + file);
             } catch (Exception e) {
                 Log.e(TAG,e.toString());
             }
+            msgInfoDao.insertAll(msgInfoEntities);
+            Log.d(TAG,"msg insert finished");
+
         });
     }
 
