@@ -175,6 +175,15 @@ public class Utils {
         return usermsg;
     }
 
+    static public String parseBlfByPython(String filePath)
+    {
+        Python python = Python.getInstance();
+        PyObject pyObject = python.getModule("main");
+        String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_file", filePath));
+//        Log.e(TAG,"parseDBCByPython :" + usermsg);
+        return usermsg;
+    }
+
     static public void updateCustomData(String content,long cid,int BUSId)
     {
 
