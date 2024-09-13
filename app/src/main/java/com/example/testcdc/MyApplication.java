@@ -60,10 +60,9 @@ public class MyApplication extends Application {
                 .allowMainThreadQueries()
                 .addMigrations()
                 .build();
-        mx11E4Database.clearAllTables();
-//        Log.d(TAG, "PPPPPPPPPP: ");
-//        initDatabase_Basic();
-        DataBaseUtil.init_carType();
+        //mx11E4Database.clearAllTables();
+        Log.d(TAG, "PPPPPPPPPP: ");
+        initDatabase_Basic();
 
 
         textToSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
@@ -131,27 +130,28 @@ public class MyApplication extends Application {
         boolean ret = DataBaseUtil.checkDataBase(this,"basic_database");
         if(ret)
         {
-            Log.i(TAG,"数据库不存在1");
+            Log.i(TAG,"数据库存在");
             List<SignalInfo> all = MyApplication.getInstance().getMx11E4Database().signalInfoDao().getAll();
             Log.i(TAG,"num is " + all.size());
             List<SignalInfo> data = MyApplication.getInstance().getMx11E4Database().signalInfoDao().getSignal(6,0x1a9);
-            for(SignalInfo element : data) {
-//                Log.i(TAG, element.toString());
-            }
+//            for(SignalInfo element : data) {
+////                Log.i(TAG, element.toString());
+//            }
 
-            boolean open = MyApplication.getInstance().getMx11E4Database().isOpen();
-            if(open)
-            {
-                Log.i(TAG,"database is open");
-            }else {
-
-                Log.i(TAG,"database is not open");
-            }
+//            boolean open = MyApplication.getInstance().getMx11E4Database().isOpen();
+//            if(open)
+//            {
+//                Log.i(TAG,"database is open");
+//            }else {
+//
+//                Log.i(TAG,"database is not open");
+//            }
         }else{
-
+            Log.i(TAG,"数据库不存在");
+            DataBaseUtil.init_carType();
             DataBaseUtil.initDataFromCsv(this);
             DataBaseUtil.initMsgFromCsv(this);
-            Log.i(TAG,"数据库不存在2");
+
 //            DataBaseUtil.copyDataBase(this,"mx11_e4");
 
 //            DataBaseUtil.initData_2();
@@ -159,7 +159,6 @@ public class MyApplication extends Application {
 //            DataBaseUtil.initData_6();
 
         }
-        DataBaseUtil.init_carType();
 
     }
 
