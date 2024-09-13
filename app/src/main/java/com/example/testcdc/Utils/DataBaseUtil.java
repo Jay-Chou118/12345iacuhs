@@ -145,8 +145,8 @@ public class DataBaseUtil {
 
 
 //        Log.d(TAG, "files: " + files);
-        SignalInfoDao signalInfoDao = MyApplication.getInstance().getMx11E4Database().signalInfoDao();
-        List<SignalInfo> signalInfos = new ArrayList<>();
+//        SignalInfoDao signalInfoDao = MyApplication.getInstance().getMx11E4Database().signalInfoDao();
+//        List<SignalInfo> signalInfos = new ArrayList<>();
 
         files.forEach(file->{
             try {
@@ -179,7 +179,7 @@ public class DataBaseUtil {
 
 //                    Log.d(TAG, "setCarTypeId: " +data[14] + " setSdbId: " + data[15] + " CCCCCCCC "+ signalInfo.cid);
                     MyApplication.getInstance().getMx11E4Database().signalInfoDao().insert(signalInfo);
-                    signalInfos.add(signalInfo);
+//                    signalInfos.add(signalInfo);
 //                    Log.e(TAG,"插入signal成功");
                 }
                 is.close();
@@ -188,9 +188,11 @@ public class DataBaseUtil {
             } catch (Exception e) {
                 Log.e(TAG,e.toString());
             }
-            signalInfoDao.insertAll(signalInfos);
-            Log.d(TAG,"signal insert finished");
+//            signalInfoDao.insertAll(signalInfos);
+//            Log.d(TAG,"signal insert finished");
+
         });
+
     }
 
     public static void initMsgFromCsv(Context ctx)
@@ -225,8 +227,8 @@ public class DataBaseUtil {
         files.add(R.raw.msg_info_13_mx11_e4u1);
 
 
-        MsgInfoDao msgInfoDao = MyApplication.getInstance().getMx11E4Database().msgInfoDao();
-        List<MsgInfoEntity> msgInfoEntities = new ArrayList<>();
+//        MsgInfoDao msgInfoDao = MyApplication.getInstance().getMx11E4Database().msgInfoDao();
+//        List<MsgInfoEntity> msgInfoEntities = new ArrayList<>();
         files.forEach(file->{
             try {
                 InputStream is = ctx.getResources().openRawResource(file);// 得到数据库文件的数据流
@@ -234,7 +236,7 @@ public class DataBaseUtil {
                 String line;
                 while ((line =  reader.readLine()) !=null)
                 {
-                    Log.e(TAG,line);
+//                    Log.e(TAG,line);
                     String[] data = line.split(",");   // 使用逗号作为分隔符
 //                    Log.e(TAG, "data " + Arrays.toString(data));
                     MsgInfoEntity msgInfo = new MsgInfoEntity();
@@ -249,8 +251,8 @@ public class DataBaseUtil {
                     msgInfo.receivers = data[8];
                     msgInfo.CANType = data[9];
 
-//                    msgInfo.cid = MyApplication.getInstance().getMx11E4Database().msgInfoDao().getCidByName(data[10],data[11]);
-                    msgInfoEntities.add(msgInfo);
+                    msgInfo.cid = MyApplication.getInstance().getMx11E4Database().msgInfoDao().getCidByName(data[10],data[11]);
+//                    msgInfoEntities.add(msgInfo);
 //                    Log.e(TAG, "msgInfo  :   ZZZZZZZZ" + msgInfo);
                     MyApplication.getInstance().getMx11E4Database().msgInfoDao().insert(msgInfo);
 //                    Log.e(TAG,"插入msg成功");
@@ -261,8 +263,8 @@ public class DataBaseUtil {
             } catch (Exception e) {
                 Log.e(TAG,e.toString());
             }
-            msgInfoDao.insertAll(msgInfoEntities);
-            Log.d(TAG,"msg insert finished");
+//            msgInfoDao.insertAll(msgInfoEntities);
+//            Log.d(TAG,"msg insert finished");
 
         });
     }

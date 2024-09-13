@@ -1,7 +1,9 @@
 import json
 from typing import List, Dict, Optional
 from canmatrix import CanMatrix, formats
-from can.io.blf import BLFReader
+import can
+# from blf import BLFreader
+import sqlite3
 
 
 def can_matrix_to_list(can_matrix: CanMatrix) -> List[Dict]:
@@ -60,23 +62,33 @@ def parse_dbc_file(path: str) -> Optional[str]:
         return None
 
 
-def deal_file(file_obj:BLFReader):
+
+def blf_Read(path):
+    blf = (path)
     msg_map = [{},{},{},{},{},{},{},{},{},{},{},{}]
-    for msg in file_obj:
+    for msg in blf:
         if msg.arbitration_id not in msg_map[msg.channel]:
             msg_map[msg.channel][msg.arbitration_id] = [(msg.timestamp,msg.data)]
         else:
             msg_map[msg.channel][msg.arbitration_id].append((msg.timestamp,msg.data))
+    print("OK111111111111111111111111")
     return json.dumps(msg_map)
-
-
-def blfRead(path):
-    BLFReader = blfRead(path)
-    msg_map = deal_file(BLFReader)
 
 
 # Example usage
 # path1 = "/storage/emulated/0/Download/Lark/MS11_ChassisFusionCANFD_240903_1.dbc"
 # result = parse_dbc_file(path1)
+path = "/data/data/com.example.testcdc/databases/basic_database"
+
+def obtain_database():
+    conn = sqlite3.connect(path)
+    # 创建一个游标对象
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+    tables = cursor.fetchall()
+    print("1111111111111",tables)
+
+
 # if result:
 #     print(result)

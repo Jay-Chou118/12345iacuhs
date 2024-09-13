@@ -175,15 +175,6 @@ public class Utils {
         return usermsg;
     }
 
-    static public String parseBlfByPython(String filePath)
-    {
-        Python python = Python.getInstance();
-        PyObject pyObject = python.getModule("main");
-        String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_file", filePath));
-//        Log.e(TAG,"parseDBCByPython :" + usermsg);
-        return usermsg;
-    }
-
     static public void updateCustomData(String content,long cid,int BUSId)
     {
 
@@ -252,4 +243,15 @@ public class Utils {
             e.printStackTrace();
         }
     }
+
+    static public String parseBlfByPython(String filePath)
+    {
+        Python python = Python.getInstance();
+        PyObject pyObject = python.getModule("HelloWorld");
+        String usermsg = String.valueOf(pyObject.callAttr("blf_Read", filePath));
+//        Log.e(TAG,"parseDBCByPython :" + usermsg);
+        return usermsg;
+    }
+
+
 }

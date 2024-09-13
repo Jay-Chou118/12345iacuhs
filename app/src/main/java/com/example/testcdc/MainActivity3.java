@@ -27,6 +27,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import androidx.documentfile.provider.DocumentFile;
 
+import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
 
@@ -483,13 +484,13 @@ public class MainActivity3 extends AppCompatActivity {
                 String BlfPath = data.getAsString();
 //                Log.d(TAG, "BlfPath" + BlfPath);
 
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        String content= parseBlfByPython(BlfPath);
-                        Log.d(TAG, "msgFromBlf" + content);
-                    }
-                });
+//                new Thread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        String content= parseBlfByPython(BlfPath);
+//                        Log.d(TAG, "msgFromBlf" + content);
+//                    }
+//                });
             }
         });
 
@@ -734,7 +735,6 @@ public class MainActivity3 extends AppCompatActivity {
             String fileName = getFileNameFromUri(this, uri);
             // 获取文件路径
             String filePath = getPathFromUri(this, uri);
-            Log.d(TAG, "Parse DBC1 by User finished");
 
             if (mCallbackId == null) {
                 Log.e(TAG, "mCallbackId is null,please check it");
