@@ -1,5 +1,6 @@
 package com.example.testcdc;
 
+import static com.example.testcdc.Utils.Utils.parseBlfByPython;
 import static com.example.testcdc.Utils.Utils.parseDBCByPython;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
 import static com.google.gson.JsonParser.parseString;
@@ -48,6 +49,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -402,16 +404,13 @@ public class MainActivity3 extends AppCompatActivity {
                                 }
                                 maps.put(busId, subMap);
                             }
-//                            JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
                             Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
                             jsCallResult.setData(result);
                             callJs(jsCallResult);
-//                            Log.e(TAG, "RRRRRRRRRRRRRRRCCCC " + jsCallResult );
 
                         }
                         final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-//                        Log.i(TAG, "RRRRRRRRRRRRRRRCCCC getDBC finish");
-//
+
                         webView.post(new Runnable() {
                             @Override
                             public void run() {
@@ -420,20 +419,6 @@ public class MainActivity3 extends AppCompatActivity {
                             }
                         });
                     }
-//                        // 使用Handler来延迟执行webView.post
-//                        final Handler mainHandler = new Handler(Looper.getMainLooper());
-//                        final Runnable postWebViewRunnable = new Runnable() {
-//                            @Override
-//                            public void run() {
-//                                Log.e(TAG, "RRRRRRRRRRRRRRRRR " + callbackJs );
-//                                webView.loadUrl(callbackJs);
-//                            }
-//                        };
-//
-//                        long delayMillis = 1000; // 延迟的时间，单位是毫秒，这里设置为1秒
-//                        mainHandler.postDelayed(postWebViewRunnable, delayMillis);
-//                    }
-
 
                 }).start();
 
@@ -483,7 +468,7 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
-        messageHandlers.put("choosePath", new BridgeHandler() {
+        messageHandlers.put("chooseBlfPath", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
                 mCallbackId = callback;
@@ -493,10 +478,36 @@ public class MainActivity3 extends AppCompatActivity {
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
 
 //                startActivityForResult(intent, CHOOSE_REQUEST_CODE);
-                  startActivityForResult(intent,READ_REQUEST_CODE);
+                startActivityForResult(intent,READ_REQUEST_CODE);
+
+                String BlfPath = data.getAsString();
+//                Log.d(TAG, "BlfPath" + BlfPath);
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        String content= parseBlfByPython(BlfPath);
+                        Log.d(TAG, "msgFromBlf" + content);
+                    }
+                });
             }
         });
 
+        messageHandlers.put("chooseDBCPath", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+                mCallbackId = callback;
+                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                intent.setType("application/octet-stream");
+
+                intent.addCategory(Intent.CATEGORY_OPENABLE);
+
+//                startActivityForResult(intent, CHOOSE_REQUEST_CODE);
+                startActivityForResult(intent,READ_REQUEST_CODE);
+
+
+            }
+        });
 
         messageHandlers.put("parsedSignal", new BridgeHandler() {
             @Override
@@ -519,7 +530,8 @@ public class MainActivity3 extends AppCompatActivity {
                 JsonArray dataArray = canDataElement.getAsJsonArray();
                 int length = dataArray.size();
                 byte[] CANData = new byte[length];
-                Log.e(TAG, "length:   " + length );
+                Log.e(TAG, "0911" + "length:   " + length );
+                Log.d(TAG, "0911" + data);
                 for (int i = 0; i < length; i++) {
                     CANData[i] = (byte) Integer.parseInt(dataArray.get(i).getAsString(), 16);
                 }
