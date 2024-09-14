@@ -97,6 +97,118 @@ public class DataBaseUtil {
         files.add(R.raw.signal_info_14_ms11_e3);
         files.add(R.raw.signal_info_15_ms11_e3);
 
+        files.add(R.raw.signal_info_2_ms11_e4);
+        files.add(R.raw.signal_info_3_ms11_e4);
+        files.add(R.raw.signal_info_4_ms11_e4);
+        files.add(R.raw.signal_info_5_ms11_e4);
+        files.add(R.raw.signal_info_9_ms11_e4);
+        files.add(R.raw.signal_info_10_ms11_e4);
+        files.add(R.raw.signal_info_11_ms11_e4);
+        files.add(R.raw.signal_info_12_ms11_e4);
+        files.add(R.raw.signal_info_13_ms11_e4);
+        files.add(R.raw.signal_info_14_ms11_e4);
+        files.add(R.raw.signal_info_15_ms11_e4);
+
+        files.add(R.raw.signal_info_2_ms11_e4u1);
+        files.add(R.raw.signal_info_3_ms11_e4u1);
+        files.add(R.raw.signal_info_4_ms11_e4u1);
+        files.add(R.raw.signal_info_5_ms11_e4u1);
+        files.add(R.raw.signal_info_9_ms11_e4u1);
+        files.add(R.raw.signal_info_10_ms11_e4u1);
+        files.add(R.raw.signal_info_11_ms11_e4u1);
+        files.add(R.raw.signal_info_12_ms11_e4u1);
+        files.add(R.raw.signal_info_13_ms11_e4u1);
+        files.add(R.raw.signal_info_14_ms11_e4u1);
+        files.add(R.raw.signal_info_15_ms11_e4u1);
+        files.add(R.raw.signal_info_33_ms11_e4u1);
+        files.add(R.raw.signal_info_34_ms11_e4u1);
+        files.add(R.raw.signal_info_35_ms11_e4u1);
+        files.add(R.raw.signal_info_36_ms11_e4u1);
+
+
+        files.add(R.raw.signal_info_2_ms11_e4u2);
+        files.add(R.raw.signal_info_3_ms11_e4u2);
+        files.add(R.raw.signal_info_4_ms11_e4u2);
+        files.add(R.raw.signal_info_5_ms11_e4u2);
+        files.add(R.raw.signal_info_9_ms11_e4u2);
+        files.add(R.raw.signal_info_10_ms11_e4u2);
+        files.add(R.raw.signal_info_11_ms11_e4u2);
+        files.add(R.raw.signal_info_12_ms11_e4u2);
+        files.add(R.raw.signal_info_13_ms11_e4u2);
+        files.add(R.raw.signal_info_14_ms11_e4u2);
+        files.add(R.raw.signal_info_15_ms11_e4u2);
+        files.add(R.raw.signal_info_33_ms11_e4u2);
+        files.add(R.raw.signal_info_34_ms11_e4u2);
+        files.add(R.raw.signal_info_35_ms11_e4u2);
+        files.add(R.raw.signal_info_36_ms11_e4u2);
+        files.add(R.raw.signal_info_37_ms11_e4u2);
+
+
+
+        files.add(R.raw.signal_info_2_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_3_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_4_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_5_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_9_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_10_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_11_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_12_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_13_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_14_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_15_ms11_e4u3_0812);
+
+
+        files.add(R.raw.signal_info_2_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_3_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_4_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_5_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_9_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_10_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_11_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_12_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_13_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_14_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_15_ms11_e4u3_0915);
+
+
+        files.add(R.raw.signal_info_2_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_3_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_4_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_5_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_9_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_10_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_11_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_12_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_13_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_14_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_15_ms11_e4u3_1015);
+
+        files.add(R.raw.signal_info_2_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_3_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_4_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_5_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_9_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_10_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_11_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_12_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_13_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_14_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_15_ms11_e4u3_1115);
+
+
+        files.add(R.raw.signal_info_2_ms11_rc07);
+        files.add(R.raw.signal_info_3_ms11_rc07);
+        files.add(R.raw.signal_info_4_ms11_rc07);
+        files.add(R.raw.signal_info_5_ms11_rc07);
+        files.add(R.raw.signal_info_9_ms11_rc07);
+        files.add(R.raw.signal_info_10_ms11_rc07);
+        files.add(R.raw.signal_info_11_ms11_rc07);
+        files.add(R.raw.signal_info_12_ms11_rc07);
+        files.add(R.raw.signal_info_13_ms11_rc07);
+        files.add(R.raw.signal_info_14_ms11_rc07);
+        files.add(R.raw.signal_info_15_ms11_rc07);
+
+
         files.add(R.raw.signal_info_2_ms11_rc06);
         files.add(R.raw.signal_info_3_ms11_rc06);
         files.add(R.raw.signal_info_4_ms11_rc06);
@@ -227,6 +339,153 @@ public class DataBaseUtil {
         files.add(R.raw.msg_info_13_mx11_e4u1);
 
 
+        files.add(R.raw.msg_info_2_ms11_e4);
+        files.add(R.raw.msg_info_3_ms11_e4);
+        files.add(R.raw.msg_info_4_ms11_e4);
+        files.add(R.raw.msg_info_5_ms11_e4);
+        files.add(R.raw.msg_info_9_ms11_e4);
+        files.add(R.raw.msg_info_10_ms11_e4);
+        files.add(R.raw.msg_info_11_ms11_e4);
+        files.add(R.raw.msg_info_12_ms11_e4);
+        files.add(R.raw.msg_info_13_ms11_e4);
+        files.add(R.raw.msg_info_14_ms11_e4);
+        files.add(R.raw.msg_info_15_ms11_e4);
+
+        files.add(R.raw.msg_info_2_ms11_e4u1);
+        files.add(R.raw.msg_info_3_ms11_e4u1);
+        files.add(R.raw.msg_info_4_ms11_e4u1);
+        files.add(R.raw.msg_info_5_ms11_e4u1);
+        files.add(R.raw.msg_info_9_ms11_e4u1);
+        files.add(R.raw.msg_info_10_ms11_e4u1);
+        files.add(R.raw.msg_info_11_ms11_e4u1);
+        files.add(R.raw.msg_info_12_ms11_e4u1);
+        files.add(R.raw.msg_info_13_ms11_e4u1);
+        files.add(R.raw.msg_info_14_ms11_e4u1);
+        files.add(R.raw.msg_info_15_ms11_e4u1);
+        files.add(R.raw.msg_info_33_ms11_e4u1);
+        files.add(R.raw.msg_info_34_ms11_e4u1);
+        files.add(R.raw.msg_info_35_ms11_e4u1);
+        files.add(R.raw.msg_info_36_ms11_e4u1);
+
+
+        files.add(R.raw.msg_info_2_ms11_e4u2);
+        files.add(R.raw.msg_info_3_ms11_e4u2);
+        files.add(R.raw.msg_info_4_ms11_e4u2);
+        files.add(R.raw.msg_info_5_ms11_e4u2);
+        files.add(R.raw.msg_info_9_ms11_e4u2);
+        files.add(R.raw.msg_info_10_ms11_e4u2);
+        files.add(R.raw.msg_info_11_ms11_e4u2);
+        files.add(R.raw.msg_info_12_ms11_e4u2);
+        files.add(R.raw.msg_info_13_ms11_e4u2);
+        files.add(R.raw.msg_info_14_ms11_e4u2);
+        files.add(R.raw.msg_info_15_ms11_e4u2);
+        files.add(R.raw.msg_info_33_ms11_e4u2);
+        files.add(R.raw.msg_info_34_ms11_e4u2);
+        files.add(R.raw.msg_info_35_ms11_e4u2);
+        files.add(R.raw.msg_info_36_ms11_e4u2);
+        files.add(R.raw.msg_info_37_ms11_e4u2);
+
+
+        files.add(R.raw.msg_info_2_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_3_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_4_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_5_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_9_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_10_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_11_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_12_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_13_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_14_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_15_ms11_e4u3_0812);
+
+
+        files.add(R.raw.msg_info_2_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_3_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_4_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_5_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_9_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_10_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_11_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_12_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_13_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_14_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_15_ms11_e4u3_0915);
+
+        files.add(R.raw.msg_info_2_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_3_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_4_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_5_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_9_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_10_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_11_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_12_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_13_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_14_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_15_ms11_e4u3_1015);
+
+        files.add(R.raw.msg_info_2_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_3_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_4_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_5_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_9_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_10_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_11_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_12_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_13_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_14_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_15_ms11_e4u3_1115);
+
+        files.add(R.raw.msg_info_2_ms11_rc04);
+        files.add(R.raw.msg_info_3_ms11_rc04);
+        files.add(R.raw.msg_info_4_ms11_rc04);
+        files.add(R.raw.msg_info_5_ms11_rc04);
+        files.add(R.raw.msg_info_9_ms11_rc04);
+        files.add(R.raw.msg_info_10_ms11_rc04);
+        files.add(R.raw.msg_info_11_ms11_rc04);
+        files.add(R.raw.msg_info_12_ms11_rc04);
+        files.add(R.raw.msg_info_13_ms11_rc04);
+        files.add(R.raw.msg_info_14_ms11_rc04);
+        files.add(R.raw.msg_info_15_ms11_rc04);
+
+        files.add(R.raw.msg_info_2_ms11_rc05);
+        files.add(R.raw.msg_info_3_ms11_rc05);
+        files.add(R.raw.msg_info_4_ms11_rc05);
+        files.add(R.raw.msg_info_5_ms11_rc05);
+        files.add(R.raw.msg_info_9_ms11_rc05);
+        files.add(R.raw.msg_info_10_ms11_rc05);
+        files.add(R.raw.msg_info_11_ms11_rc05);
+        files.add(R.raw.msg_info_12_ms11_rc05);
+        files.add(R.raw.msg_info_13_ms11_rc05);
+        files.add(R.raw.msg_info_14_ms11_rc05);
+        files.add(R.raw.msg_info_15_ms11_rc05);
+
+        files.add(R.raw.msg_info_2_ms11_rc06);
+        files.add(R.raw.msg_info_3_ms11_rc06);
+        files.add(R.raw.msg_info_4_ms11_rc06);
+        files.add(R.raw.msg_info_5_ms11_rc06);
+        files.add(R.raw.msg_info_9_ms11_rc06);
+        files.add(R.raw.msg_info_10_ms11_rc06);
+        files.add(R.raw.msg_info_11_ms11_rc06);
+        files.add(R.raw.msg_info_12_ms11_rc06);
+        files.add(R.raw.msg_info_13_ms11_rc06);
+        files.add(R.raw.msg_info_14_ms11_rc06);
+        files.add(R.raw.msg_info_15_ms11_rc06);
+
+        files.add(R.raw.msg_info_2_ms11_rc07);
+        files.add(R.raw.msg_info_3_ms11_rc07);
+        files.add(R.raw.msg_info_4_ms11_rc07);
+        files.add(R.raw.msg_info_5_ms11_rc07);
+        files.add(R.raw.msg_info_9_ms11_rc07);
+        files.add(R.raw.msg_info_10_ms11_rc07);
+        files.add(R.raw.msg_info_11_ms11_rc07);
+        files.add(R.raw.msg_info_12_ms11_rc07);
+        files.add(R.raw.msg_info_13_ms11_rc07);
+        files.add(R.raw.msg_info_14_ms11_rc07);
+        files.add(R.raw.msg_info_15_ms11_rc07);
+
+
+
+
 //        MsgInfoDao msgInfoDao = MyApplication.getInstance().getMx11E4Database().msgInfoDao();
 //        List<MsgInfoEntity> msgInfoEntities = new ArrayList<>();
         files.forEach(file->{
@@ -294,20 +553,62 @@ public class DataBaseUtil {
         ms11E3.setSDBName("E3");
         carTypeEntities.add(ms11E3);
 
-        CarTypeEntity ms11RC06 = new CarTypeEntity();
-        ms11RC06.setCarTypeName("MS11");
-        ms11RC06.setSDBName("RC06");
-        carTypeEntities.add(ms11RC06);
+        CarTypeEntity ms11E4 = new CarTypeEntity();
+        ms11E4.setCarTypeName("MS11");
+        ms11E4.setSDBName("E4");
+        carTypeEntities.add(ms11E4);
+
+        CarTypeEntity ms11E4U1 = new CarTypeEntity();
+        ms11E4U1.setCarTypeName("MS11");
+        ms11E4U1.setSDBName("E4U1");
+        carTypeEntities.add(ms11E4U1);
+
+        CarTypeEntity ms11E4U2 = new CarTypeEntity();
+        ms11E4U2.setCarTypeName("MS11");
+        ms11E4U2.setSDBName("E4U2");
+        carTypeEntities.add(ms11E4U2);
+
+        CarTypeEntity ms11E4U3_0812 = new CarTypeEntity();
+        ms11E4U3_0812.setCarTypeName("MS11");
+        ms11E4U3_0812.setSDBName("E4U3_0812");
+        carTypeEntities.add(ms11E4U3_0812);
+
+        CarTypeEntity ms11E4U3_0915 = new CarTypeEntity();
+        ms11E4U3_0812.setCarTypeName("MS11");
+        ms11E4U3_0812.setSDBName("E4U3_0915");
+        carTypeEntities.add(ms11E4U3_0915);
+
+        CarTypeEntity ms11E4U3_1015 = new CarTypeEntity();
+        ms11E4U3_1015.setCarTypeName("MS11");
+        ms11E4U3_1015.setSDBName("E4U3_1015");
+        carTypeEntities.add(ms11E4U3_1015);
+
+        CarTypeEntity ms11E4U3_1115 = new CarTypeEntity();
+        ms11E4U3_1115.setCarTypeName("MS11");
+        ms11E4U3_1115.setSDBName("E4U3_1115");
+        carTypeEntities.add(ms11E4U3_1115);
+
+        CarTypeEntity ms11RC04 = new CarTypeEntity();
+        ms11RC04.setCarTypeName("MS11");
+        ms11RC04.setSDBName("RC04");
+        carTypeEntities.add(ms11RC04);
+
 
         CarTypeEntity ms11RC05 = new CarTypeEntity();
         ms11RC05.setCarTypeName("MS11");
         ms11RC05.setSDBName("RC05");
         carTypeEntities.add(ms11RC05);
 
-        CarTypeEntity ms11RC04 = new CarTypeEntity();
-        ms11RC04.setCarTypeName("MS11");
-        ms11RC04.setSDBName("RC04");
-        carTypeEntities.add(ms11RC04);
+
+        CarTypeEntity ms11RC06 = new CarTypeEntity();
+        ms11RC06.setCarTypeName("MS11");
+        ms11RC06.setSDBName("RC06");
+        carTypeEntities.add(ms11RC06);
+
+        CarTypeEntity ms11RC07 = new CarTypeEntity();
+        ms11RC07.setCarTypeName("MS11");
+        ms11RC07.setSDBName("RC07");
+        carTypeEntities.add(ms11RC07);
 
         CarTypeEntity mx11E4U1 = new CarTypeEntity();
         mx11E4U1.setCarTypeName("MX11");
