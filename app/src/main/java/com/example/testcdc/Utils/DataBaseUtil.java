@@ -343,11 +343,11 @@ public class DataBaseUtil {
                     signalInfo.setInitial(Double.parseDouble(data[12]));
                     signalInfo.choices = data[13].equals("null") ? null : data[13];
 
-                    CarTypeEntity carTypeEntity = MyApplication.getInstance().getMx11E4Database().carTypeDao().getByName(data[14], data[15]);
+                    CarTypeEntity carTypeEntity = MyApplication.getInstance().getDatabase().carTypeDao().getByName(data[14], data[15]);
                     signalInfo.cid = carTypeEntity.id;
 
 //                    Log.d(TAG, "setCarTypeId: " +data[14] + " setSdbId: " + data[15] + " CCCCCCCC "+ signalInfo.cid);
-                    MyApplication.getInstance().getMx11E4Database().signalInfoDao().insert(signalInfo);
+                    MyApplication.getInstance().getDatabase().signalInfoDao().insert(signalInfo);
 //                    signalInfos.add(signalInfo);
 //                    Log.e(TAG,"插入signal成功");
                 }
@@ -634,10 +634,10 @@ public class DataBaseUtil {
                     msgInfo.receivers = data[8];
                     msgInfo.CANType = data[9];
 
-                    msgInfo.cid = MyApplication.getInstance().getMx11E4Database().msgInfoDao().getCidByName(data[10],data[11]);
+                    msgInfo.cid = MyApplication.getInstance().getDatabase().msgInfoDao().getCidByName(data[10],data[11]);
 //                    msgInfoEntities.add(msgInfo);
 //                    Log.e(TAG, "msgInfo  :   ZZZZZZZZ" + msgInfo);
-                    MyApplication.getInstance().getMx11E4Database().msgInfoDao().insert(msgInfo);
+                    MyApplication.getInstance().getDatabase().msgInfoDao().insert(msgInfo);
 //                    Log.e(TAG,"插入msg成功");
                 }
                 is.close();
@@ -777,7 +777,7 @@ public class DataBaseUtil {
         carTypeEntities.forEach(carTypeEntity -> {
 //            carTypeEntity.carTypeName = "MX11";
 //            carTypeEntity.SDBName = "E4";
-            MyApplication.getInstance().getMx11E4Database().carTypeDao().insert(carTypeEntity);
+            MyApplication.getInstance().getDatabase().carTypeDao().insert(carTypeEntity);
         });
     }
 

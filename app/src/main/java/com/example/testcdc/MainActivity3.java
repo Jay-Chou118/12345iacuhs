@@ -1,6 +1,5 @@
 package com.example.testcdc;
 
-import static com.example.testcdc.Utils.Utils.parseBlfByPython;
 import static com.example.testcdc.Utils.Utils.parseDBCByPython;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
 import static com.google.gson.JsonParser.parseString;
@@ -27,7 +26,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import androidx.documentfile.provider.DocumentFile;
 
-import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
 
@@ -36,7 +34,7 @@ import com.example.testcdc.MiCAN.DeviceInfo;
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
 import com.example.testcdc.Utils.Utils;
-import com.example.testcdc.database.MX11E4Database;
+import com.example.testcdc.database.Basic_DataBase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
 import com.google.gson.Gson;
@@ -50,7 +48,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -178,7 +175,7 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        database = MyApplication.getInstance().getMx11E4Database();
+        database = MyApplication.getInstance().getDatabase();
     }
 
 
@@ -584,7 +581,7 @@ public class MainActivity3 extends AppCompatActivity {
         }
     }
 
-    private MX11E4Database database;
+    private Basic_DataBase database;
 
 
     private Thread showLoggingMessage;

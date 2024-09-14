@@ -1,14 +1,18 @@
 package com.example.testcdc;
 
+import static android.content.ContentValues.TAG;
+
 import android.app.Application;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.room.Room;
+import androidx.room.RoomDatabase;
+import androidx.sqlite.db.SupportSQLiteDatabase;
 
 import com.example.testcdc.Utils.DataBaseUtil;
-import com.example.testcdc.database.MX11E4Database;
+import com.example.testcdc.database.Basic_DataBase;
 import com.example.testcdc.entity.SignalInfo;
 import com.xiaomi.xms.wearable.Wearable;
 import com.xiaomi.xms.wearable.auth.AuthApi;
@@ -33,7 +37,7 @@ import java.util.Locale;
 public class MyApplication extends Application {
 
     private static final String TAG = "MICAN_application";
-    private MX11E4Database mx11E4Database = null;
+    private Basic_DataBase Database = null;
 
     private static MyApplication sInstance;
 
@@ -56,11 +60,17 @@ public class MyApplication extends Application {
         super.onCreate();
         sInstance = this;
         Log.d(TAG, "i am on create");
-        mx11E4Database =  Room.databaseBuilder(this,MX11E4Database.class,"basic_database")
+        Database =  Room.databaseBuilder(this, Basic_DataBase.class,"basic_database")
                 .allowMainThreadQueries()
                 .addMigrations()
                 .build();
-        //mx11E4Database.clearAllTables();
+
+        //修改
+//        Database = Room.databaseBuilder(this, Basic_DataBase.class, "basic_database")
+//                .createFromAsset("basic_database") // 从assets加载数据库文件
+//                .build();
+//        Log.i(TAG, "数据库构建完成：" + Database.getPath());
+        //Database.clearAllTables();
         Log.d(TAG, "PPPPPPPPPP: ");
         initDatabase_Basic();
 
@@ -106,10 +116,10 @@ public class MyApplication extends Application {
 
     }
 
-    public MX11E4Database getMx11E4Database()
+    public Basic_DataBase getDatabase()
     {
 
-        return mx11E4Database;
+        return Database;
     }
 
 
@@ -131,14 +141,14 @@ public class MyApplication extends Application {
         if(ret)
         {
             Log.i(TAG,"数据库存在");
-            List<SignalInfo> all = MyApplication.getInstance().getMx11E4Database().signalInfoDao().getAll();
+            List<SignalInfo> all = MyApplication.getInstance().getDatabase().signalInfoDao().getAll();
             Log.i(TAG,"num is " + all.size());
-            List<SignalInfo> data = MyApplication.getInstance().getMx11E4Database().signalInfoDao().getSignal(6,0x1a9);
+//            List<SignalInfo> data = MyApplication.getInstance().getDatabase().signalInfoDao().getSignal(6,0x1a9);
 //            for(SignalInfo element : data) {
 ////                Log.i(TAG, element.toString());
 //            }
 
-//            boolean open = MyApplication.getInstance().getMx11E4Database().isOpen();
+//            boolean open = MyApplication.getInstance().getDatabase().isOpen();
 //            if(open)
 //            {
 //                Log.i(TAG,"database is open");
@@ -148,6 +158,10 @@ public class MyApplication extends Application {
 //            }
         }else{
             Log.i(TAG,"数据库不存在");
+
+            //修改
+//            Basic_DataBase db = Basic_DataBase.getDatabase(getApplicationContext());
+
             DataBaseUtil.init_carType();
             DataBaseUtil.initDataFromCsv(this);
             DataBaseUtil.initMsgFromCsv(this);

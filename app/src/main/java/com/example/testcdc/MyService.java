@@ -28,7 +28,7 @@ import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
 import com.example.testcdc.MiCAN.ShowCANMsg;
 import com.example.testcdc.MiCAN.ShowSignal;
-import com.example.testcdc.database.MX11E4Database;
+import com.example.testcdc.database.Basic_DataBase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
 import com.google.gson.JsonElement;
@@ -70,7 +70,7 @@ public class MyService extends Service {
     public static AtomicBoolean g_notExitFlag = new AtomicBoolean(true);
     private final IBinder m_binder = new MiCANBinder();
 
-    private MX11E4Database database;
+    private Basic_DataBase database;
     public class MiCANBinder extends Binder {
 
         private Thread mReadPortThread = null;
@@ -553,7 +553,7 @@ public class MyService extends Service {
     @Override
     public IBinder onBind(Intent intent) {
         Log.i(TAG, "onBind");
-        database = MyApplication.getInstance().getMx11E4Database();
+        database = MyApplication.getInstance().getDatabase();
         return m_binder;
     }
 

@@ -1,9 +1,5 @@
 package com.example.testcdc.Utils;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Environment;
-import android.provider.Settings;
 import android.text.SpannableStringBuilder;
 import android.util.Log;
 
@@ -12,7 +8,6 @@ import com.chaquo.python.Python;
 import com.example.testcdc.MyApplication;
 import com.example.testcdc.dao.MsgInfoDao;
 import com.example.testcdc.dao.SignalInfoDao;
-import com.example.testcdc.database.MX11E4Database;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
 import com.hoho.android.usbserial.util.HexDump;
@@ -178,8 +173,8 @@ public class Utils {
     static public void updateCustomData(String content,long cid,int BUSId)
     {
 
-        MsgInfoDao msgInfoDao = MyApplication.getInstance().getMx11E4Database().msgInfoDao();
-        SignalInfoDao signalInfoDao = MyApplication.getInstance().getMx11E4Database().signalInfoDao();
+        MsgInfoDao msgInfoDao = MyApplication.getInstance().getDatabase().msgInfoDao();
+        SignalInfoDao signalInfoDao = MyApplication.getInstance().getDatabase().signalInfoDao();
         List<MsgInfoEntity> msgInfoEntities = new ArrayList<>();
         List<SignalInfo> signalInfos = new ArrayList<>();
         try {

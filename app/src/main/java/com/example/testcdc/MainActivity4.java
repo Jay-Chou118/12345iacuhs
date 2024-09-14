@@ -14,9 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.testcdc.Utils.ToastUtil;
-import com.example.testcdc.database.MX11E4Database;
 import com.example.testcdc.database.UserDBHelper;
-import com.example.testcdc.entity.SignalInfo;
 import com.example.testcdc.entity.User;
 
 import java.util.List;
