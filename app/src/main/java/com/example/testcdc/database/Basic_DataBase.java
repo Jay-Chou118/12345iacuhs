@@ -34,14 +34,7 @@ public abstract class Basic_DataBase extends RoomDatabase {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                                     Basic_DataBase.class, "basic_database")
-                            .createFromAsset("basic_database") // 从assets加载数据库文件
-                            .addCallback(new Callback() {
-                                @Override
-                                public void onCreate(SupportSQLiteDatabase db) {
-                                    super.onCreate(db);
-                                    Log.i(TAG, "数据库创建或打开成功");
-                                }
-                            })
+                            .createFromAsset("assets/basic_database") // 从assets加载数据库文件
                             .build();
 
                 }
