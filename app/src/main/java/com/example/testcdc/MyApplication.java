@@ -1,18 +1,12 @@
 package com.example.testcdc;
 
-import static android.content.ContentValues.TAG;
-
 import android.app.Application;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
-import androidx.room.Room;
-import androidx.room.RoomDatabase;
-import androidx.sqlite.db.SupportSQLiteDatabase;
 
 import com.example.testcdc.Utils.DataBaseUtil;
-import com.example.testcdc.Utils.MyDatabaseHelper;
 import com.example.testcdc.database.Basic_DataBase;
 import com.example.testcdc.entity.SignalInfo;
 import com.xiaomi.xms.wearable.Wearable;
@@ -32,7 +26,6 @@ import com.xiaomi.xms.wearable.tasks.OnSuccessListener;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
@@ -56,6 +49,8 @@ public class MyApplication extends Application {
     NotifyApi notifyApi;
     private String wearId;
 
+    DatabaseHelper databaseHelper;
+
 
     @Override
     public void onCreate() {
@@ -65,9 +60,17 @@ public class MyApplication extends Application {
 //        Database = Room.databaseBuilder(this, Basic_DataBase.class, "basic_database")
 //                .createFromAsset("assets/basic_database") // 从assets加载数据库文件
 //                .build();
+        databaseHelper = new DatabaseHelper(this,"basic_database",1);
+        try{
+            databaseHelper.CheckDb();
 
-        Database = Basic_DataBase.CreateDatabase(this);
-        //Database.clearAllTables();
+        }catch (Exception e){e.printStackTrace();}
+        try{
+            databaseHelper.OpenDatabase();
+        }catch (Exception e){e.printStackTrace();}
+
+//        Database = Basic_DataBase.CreateDatabase(this);
+//        Database.clearAllTables();
         //修改
 
 //        MyDatabaseHelper myHelper = new MyDatabaseHelper(MyApplication.this);
