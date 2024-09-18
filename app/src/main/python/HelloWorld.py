@@ -2,7 +2,7 @@ import json
 from typing import List, Dict, Optional
 from canmatrix import CanMatrix, formats
 import can
-# from blf import BLFreader
+from can import BLFreader
 import sqlite3
 
 
@@ -64,7 +64,7 @@ def parse_dbc_file(path: str) -> Optional[str]:
 
 
 def blf_Read(path):
-    blf = (path)
+    blf = can.BLFreader(path)
     msg_map = [{},{},{},{},{},{},{},{},{},{},{},{}]
     for msg in blf:
         if msg.arbitration_id not in msg_map[msg.channel]:
