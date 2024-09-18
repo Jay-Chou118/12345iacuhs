@@ -12,6 +12,8 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import javax.xml.transform.sax.SAXResult;
+
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -92,7 +94,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void OpenDatabase(){
 
         String filePath = dbPath;
-        SQLiteDatabase.openDatabase(filePath,null,0);
+        String Path = dbPath + dbName;
+        SQLiteDatabase.openDatabase(Path,null,0);
 
+
+        Log.e(TAG, "Database opened " );
     }
 }
