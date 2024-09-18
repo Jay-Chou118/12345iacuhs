@@ -81,7 +81,7 @@ public class MyApplication extends Application {
 //        }
 
         Log.d(TAG, "PPPPPPPPPP: ");
-        initDatabase_Basic();
+        //initDatabase_Basic();
 
 
         textToSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
