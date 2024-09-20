@@ -116,7 +116,7 @@ public class MainActivity3 extends AppCompatActivity {
         }
         Python python = Python.getInstance();
         PyObject pyObject = python.getModule("app");
-
+        //pyObject.callAttr("main");
 
         initWebView();
 
