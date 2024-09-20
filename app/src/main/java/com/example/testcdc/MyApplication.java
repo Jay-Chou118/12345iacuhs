@@ -1,10 +1,12 @@
 package com.example.testcdc;
 
 import android.app.Application;
+import android.provider.ContactsContract;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
+import androidx.room.Room;
 
 import com.example.testcdc.Utils.DataBaseUtil;
 import com.example.testcdc.database.Basic_DataBase;
@@ -26,12 +28,15 @@ import com.xiaomi.xms.wearable.tasks.OnSuccessListener;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
 public class MyApplication extends Application {
 
     private static final String TAG = "MICAN_application";
+
     private Basic_DataBase Database = null;
 
     private static MyApplication sInstance;
@@ -49,8 +54,6 @@ public class MyApplication extends Application {
     NotifyApi notifyApi;
     private String wearId;
 
-    DatabaseHelper databaseHelper;
-
 
     @Override
     public void onCreate() {
@@ -60,28 +63,9 @@ public class MyApplication extends Application {
 //        Database = Room.databaseBuilder(this, Basic_DataBase.class, "basic_database")
 //                .createFromAsset("assets/basic_database") // 从assets加载数据库文件
 //                .build();
-        databaseHelper = new DatabaseHelper(this,"basic_database",1);
-        try{
-            databaseHelper.CheckDb();
-
-        }catch (Exception e){e.printStackTrace();}
-        try{
-            databaseHelper.OpenDatabase();
-        }catch (Exception e){e.printStackTrace();}
-
-//        Database = Basic_DataBase.CreateDatabase(this);
-//        Database.clearAllTables();
-        //修改
-
-//        MyDatabaseHelper myHelper = new MyDatabaseHelper(MyApplication.this);
-//        try {
-//            myHelper.CopyDBFile();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
 
         Log.d(TAG, "PPPPPPPPPP: ");
-        //initDatabase_Basic();
+        initDatabase_Basic();
 
 
         textToSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
@@ -147,11 +131,15 @@ public class MyApplication extends Application {
     public void initDatabase_Basic()
     {
         boolean ret = DataBaseUtil.checkDataBase(this,"basic_database");
+        Log.e(TAG, "FFFFFF " + ret );
         if(ret)
         {
             Log.i(TAG,"数据库存在");
-            List<SignalInfo> all = MyApplication.getInstance().getDatabase().signalInfoDao().getAll();
-            Log.i(TAG,"num is " + all.size());
+//            Database = Room.databaseBuilder(this, Basic_DataBase.class, "basic_database")
+////                .createFromAsset("databases/basic_database.db") // 从assets加载数据库文件
+//                .build();
+//            List<SignalInfo> all = MyApplication.getInstance().getDatabase().signalInfoDao().getAll();
+//            Log.i(TAG,"num is " + all.size());
 //            List<SignalInfo> data = MyApplication.getInstance().getDatabase().signalInfoDao().getSignal(6,0x1a9);
 //            for(SignalInfo element : data) {
 ////                Log.i(TAG, element.toString());
@@ -166,23 +154,18 @@ public class MyApplication extends Application {
 //                Log.i(TAG,"database is not open");
 //            }
         }else{
-            Log.i(TAG,"数据库不存在");
-
+            Log.d(TAG,"数据库不存在");
+            DataBaseUtil.copyDataBase(this,"basic_database");
             //修改
 //            Basic_DataBase db = Basic_DataBase.getDatabase(getApplicationContext());
-
-            DataBaseUtil.init_carType();
-            DataBaseUtil.initDataFromCsv(this);
-            DataBaseUtil.initMsgFromCsv(this);
-
-//            DataBaseUtil.copyDataBase(this,"mx11_e4");
-
-//            DataBaseUtil.initData_2();
-//            DataBaseUtil.initData_2_msg();
-//            DataBaseUtil.initData_6();
+//            DataBaseUtil.init_carType();
+//            DataBaseUtil.initDataFromCsv(this);
+//            DataBaseUtil.initMsgFromCsv(this);
 
         }
-
+        Database = Room.databaseBuilder(this, Basic_DataBase.class, "basic_database")
+                .addMigrations()
+                .build();
     }
 
 

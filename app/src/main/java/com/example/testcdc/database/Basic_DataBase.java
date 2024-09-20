@@ -1,14 +1,7 @@
 package com.example.testcdc.database;
 
-import static android.content.ContentValues.TAG;
-
-import android.content.Context;
-import android.util.Log;
-
 import androidx.room.Database;
-import androidx.room.Room;
 import androidx.room.RoomDatabase;
-import androidx.sqlite.db.SupportSQLiteDatabase;
 
 import com.example.testcdc.dao.CarTypeDao;
 import com.example.testcdc.dao.MsgInfoDao;
@@ -28,19 +21,6 @@ public abstract class Basic_DataBase extends RoomDatabase {
 
     private static volatile Basic_DataBase INSTANCE;
 
-    public static Basic_DataBase CreateDatabase(final Context context){
-        if (INSTANCE == null) {
-            synchronized (Basic_DataBase.class) {
-                if (INSTANCE == null) {
-                    INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                                    Basic_DataBase.class, "basic_database")
-                            .createFromAsset("assets/basic_database") // 从assets加载数据库文件
-                            .build();
 
-                }
-            }
-        }
-        return INSTANCE;
-    }
 
 }

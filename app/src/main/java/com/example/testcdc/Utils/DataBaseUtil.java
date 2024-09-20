@@ -49,7 +49,7 @@ public class DataBaseUtil {
         int count = 0;
         try {
             os = new FileOutputStream(databaseFilePath);
-            is = context.getResources().openRawResource(R.raw.mx11_e4);// 得到数据库文件的数据流
+            is = context.getResources().openRawResource(R.raw.basic_database);// 得到数据库文件的数据流
             while ((count = is.read(buffer)) > 0) {
                 os.write(buffer, 0, count);
                 os.flush();
