@@ -2,7 +2,7 @@ import json
 from typing import List, Dict, Optional
 from canmatrix import CanMatrix, formats
 import can
-from can import BLFreader
+# from can import BLFreader
 import sqlite3
 
 

@@ -26,6 +26,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import androidx.documentfile.provider.DocumentFile;
 
+import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
 
@@ -113,6 +114,9 @@ public class MainActivity3 extends AppCompatActivity {
         if (!Python.isStarted()) {
             Python.start(new AndroidPlatform(this));
         }
+//        Python python = Python.getInstance();
+//        PyObject pyObject = python.getModule("app");
+
 
         initWebView();
 
