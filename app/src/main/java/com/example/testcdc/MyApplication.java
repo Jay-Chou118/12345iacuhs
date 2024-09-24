@@ -60,10 +60,11 @@ public class MyApplication extends Application {
         super.onCreate();
         sInstance = this;
         Log.d(TAG, "i am on create");
-//        Database = Room.databaseBuilder(this, Basic_DataBase.class, "basic_database")
-//                .createFromAsset("assets/basic_database") // 从assets加载数据库文件
-//                .build();
+        Database = Room.databaseBuilder(this, Basic_DataBase.class, "basic_database")
+                .addMigrations()
+                .build();
 
+//        Database.clearAllTables();
         Log.d(TAG, "PPPPPPPPPP: ");
         initDatabase_Basic();
 
@@ -137,7 +138,9 @@ public class MyApplication extends Application {
             Log.i(TAG,"数据库存在");
 //            Database = Room.databaseBuilder(this, Basic_DataBase.class, "basic_database")
 ////                .createFromAsset("databases/basic_database.db") // 从assets加载数据库文件
+//                .addMigrations()
 //                .build();
+//            Database.clearAllTables();
 //            List<SignalInfo> all = MyApplication.getInstance().getDatabase().signalInfoDao().getAll();
 //            Log.i(TAG,"num is " + all.size());
 //            List<SignalInfo> data = MyApplication.getInstance().getDatabase().signalInfoDao().getSignal(6,0x1a9);
@@ -166,6 +169,7 @@ public class MyApplication extends Application {
         Database = Room.databaseBuilder(this, Basic_DataBase.class, "basic_database")
                 .addMigrations()
                 .build();
+//        Database.clearAllTables();
     }
 
 

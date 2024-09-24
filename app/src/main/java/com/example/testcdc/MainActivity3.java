@@ -143,6 +143,9 @@ public class MainActivity3 extends AppCompatActivity {
         if (!Python.isStarted()) {
             start(new AndroidPlatform(this));
         }
+        Python python = Python.getInstance();
+        PyObject pyObject = python.getModule("app");
+        //pyObject.callAttr("main");
 
         initWebView();
 
