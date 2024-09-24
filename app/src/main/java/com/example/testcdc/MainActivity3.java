@@ -1,5 +1,8 @@
 package com.example.testcdc;
 
+import static android.database.sqlite.SQLiteDatabase.openDatabase;
+import static com.chaquo.python.Python.start;
+import static com.example.testcdc.Utils.Utils.parseBLFByPython;
 import static com.example.testcdc.Utils.Utils.parseDBCByPython;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
 import static com.google.gson.JsonParser.parseString;
@@ -11,15 +14,19 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.os.IBinder;
+import android.os.Looper;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,23 +39,36 @@ import com.chaquo.python.android.AndroidPlatform;
 
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
+import com.example.testcdc.Utils.BlfRequest;
+import com.example.testcdc.Utils.DataBaseUtil;
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
 import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.Basic_DataBase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
+import com.example.testcdc.httpServer.BlfService;
+import com.example.testcdc.httpServer.FlaskService;
+import com.example.testcdc.httpServer.HttpServer;
+import com.example.testcdc.httpServer.RetrofitClient;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
+import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -58,6 +78,15 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import retrofit2.http.POST;
 
 
 public class MainActivity3 extends AppCompatActivity {
@@ -112,7 +141,7 @@ public class MainActivity3 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main3);
         if (!Python.isStarted()) {
-            Python.start(new AndroidPlatform(this));
+            start(new AndroidPlatform(this));
         }
         Python python = Python.getInstance();
         PyObject pyObject = python.getModule("app");
@@ -175,6 +204,7 @@ public class MainActivity3 extends AppCompatActivity {
         }
 
     }
+
 
     @Override
     protected void onStart() {
@@ -472,26 +502,39 @@ public class MainActivity3 extends AppCompatActivity {
 
         messageHandlers.put("chooseBlfPath", new BridgeHandler() {
             @Override
-            public void handle(JsonElement data, String callback) {
+            public void handle(JsonElement data, String callback) throws IOException {
                 mCallbackId = callback;
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
                 intent.setType("application/octet-stream");
 
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
 
-//                startActivityForResult(intent, CHOOSE_REQUEST_CODE);
                 startActivityForResult(intent,READ_REQUEST_CODE);
 
-                String BlfPath = data.getAsString();
-//                Log.d(TAG, "BlfPath" + BlfPath);
 
-//                new Thread(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        String content= parseBlfByPython(BlfPath);
-//                        Log.d(TAG, "msgFromBlf" + content);
-//                    }
-//                });
+                Python py = Python.getInstance();
+
+                PyObject pyObject = py.getModule("test");
+                new Thread(() -> pyObject.callAttr("run")).start();
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        pyObject.callAttr("run");
+                        postBlfData("/storage/emulated/0/Download/Lark/MiCAN_record_2024-08-01_17_32_40_1.blf", "");
+                    }
+                });
+//                sendBLFData("/storage/emulated/0/Download/Lark/MiCAN_record_2024-08-01_17_32_40_1.blf");
+
+            }
+        });
+
+        messageHandlers.put("getBLFData", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+                JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
+                String filePath = data.getAsString();
+
             }
         });
 
@@ -506,7 +549,6 @@ public class MainActivity3 extends AppCompatActivity {
 
 //                startActivityForResult(intent, CHOOSE_REQUEST_CODE);
                 startActivityForResult(intent,READ_REQUEST_CODE);
-
 
             }
         });
@@ -563,6 +605,40 @@ public class MainActivity3 extends AppCompatActivity {
         });
     }
 
+    public void postBlfData(String filePath, String mode) {
+        OkHttpClient client = new OkHttpClient();
+
+        // 创建请求体
+        BlfRequest requestBody = new BlfRequest(filePath, mode);
+        Gson gson = new Gson();
+        String json = gson.toJson(requestBody);
+
+        // 创建 POST 请求
+        RequestBody body = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), json);
+        Request request = new Request.Builder()
+                .url("http://127.0.0.1:8080/blft/getBLFdata") // 替换为你的服务器 IP
+                .post(body)
+                .build();
+
+        // 发送请求
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                e.printStackTrace();
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                if (response.isSuccessful()) {
+                    String responseData = response.body().string();
+                    // 处理响应数据
+                    Log.d("Response", responseData);
+                } else {
+                    Log.e("Error", "请求失败: " + response.code());
+                }
+            }
+        });
+    }
 
     private <T> void callJs(T result) {
         final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(result));
@@ -613,7 +689,7 @@ public class MainActivity3 extends AppCompatActivity {
     }
 
     public interface BridgeHandler {
-        void handle(JsonElement data, String callback);
+        void handle(JsonElement data, String callback) throws IOException;
     }
 
     public interface MyRunnable extends Runnable {
