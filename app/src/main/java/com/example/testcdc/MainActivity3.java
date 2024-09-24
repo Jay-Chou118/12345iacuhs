@@ -2,7 +2,6 @@ package com.example.testcdc;
 
 import static android.database.sqlite.SQLiteDatabase.openDatabase;
 import static com.chaquo.python.Python.start;
-import static com.example.testcdc.Utils.Utils.parseBLFByPython;
 import static com.example.testcdc.Utils.Utils.parseDBCByPython;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
 import static com.google.gson.JsonParser.parseString;
@@ -609,7 +608,7 @@ public class MainActivity3 extends AppCompatActivity {
         OkHttpClient client = new OkHttpClient();
 
         // 创建请求体
-        BlfRequest requestBody = new BlfRequest(filePath, mode);
+        BlfRequest requestBody = new BlfRequest(filePath);
         Gson gson = new Gson();
         String json = gson.toJson(requestBody);
 
