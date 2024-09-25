@@ -55,6 +55,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -602,6 +603,59 @@ public class MainActivity3 extends AppCompatActivity {
                 callJs(jsCallResult);
             }
         });
+
+        messageHandlers.put("getManualSend", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) throws IOException {
+                Log.d(TAG, "TTTTTTTTTTTTTT: " + data);
+                //{"row":1,"name":"","e2e":false,
+                // "periodic":0,"canId":111,
+                // "channel":1,
+                // "canType":"CAN",
+                // "dlc":8,
+                // "isSending":false,
+                // "from":"CAN",
+                // "rawData":[0,0,0,0,0,0,0,0],
+                // "children":[{"eteDisable":false}],"dirty":false,"raw":1}
+
+                JsonObject jsonObject = data.getAsJsonObject();
+
+                int channel = jsonObject.get("channel").getAsInt();
+                int canId = jsonObject.get("canId").getAsInt();
+                String canType = jsonObject.get("canType").getAsString();
+                int dlc = jsonObject.get("dlc").getAsInt();
+                JsonArray rawDataJsonArray = jsonObject.getAsJsonArray("rawData");
+                int FDFormat = "CAN".equals(canType) ? 0 : 1;
+
+                // Convert JsonArray to int[]
+                int[] rawData = new int[rawDataJsonArray.size()];
+                for (int i = 0; i < rawDataJsonArray.size(); i++) {
+                    rawData[i] = rawDataJsonArray.get(i).getAsInt();
+                }
+
+                // Create the content JSONObject
+                JSONObject content = new JSONObject();
+                try {
+                    content.put("CANId", canId);
+                    content.put("BUSId", channel);
+                    content.put("dataLength", dlc);
+                    content.put("FDFormat", FDFormat);
+
+                    // Convert the int[] rawData to a JSONArray and put it into the JSONObject
+                    JSONArray dataJsonArray = new JSONArray(rawData);
+                    content.put("data", dataJsonArray);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+                Log.d(TAG, "TTTTTTTTTTTTT: " + content);
+
+            }
+        });
+
+
+
+
     }
 
     public void postBlfData(String filePath, String mode) {
