@@ -13,8 +13,14 @@ import static com.example.testcdc.Utils.Utils.wait100ms;
 import android.os.Process;
 import android.util.Log;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 import com.hoho.android.usbserial.driver.UsbSerialPort;
 import com.hoho.android.usbserial.util.SerialInputOutputManager;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -140,6 +146,10 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
     private Thread m_parseThread = null;
 
     private Thread m_readPortThread = null;
+
+    private Thread m_sendThread = null;
+
+
 
     private String mAppVersion;
 
@@ -337,10 +347,11 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 return false;
             }
             int len = mSerial.read(mReadBuffer,100);
-//            Log.d(TAG,"read num " + len);
+            //Log.d(TAG,"read num " + len);
             if(len >0)
             {
                 mSerialBuffer.writeBuffer(mReadBuffer,len);
+              //  Log.d(TAG, "read num " +  len + " wirte num : " + mReadBuffer);
                 return true;
             }
         } catch (IOException e) {
@@ -442,7 +453,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 }
                 else
                 {
-                    parseUsbCmdPackage_v2(m_curCmdType,mParseBuffer,mUsbPackageSize);
+                     parseUsbCmdPackage_v2(m_curCmdType,mParseBuffer,mUsbPackageSize);
                 }
                 m_curState = PARSE_SER_BUFFER_STATE.PARSE_HEAD_PHASE1;
                 break;
@@ -472,17 +483,23 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
     public void sendHeartBeat()
     {
-        sendCmd(COMMAND_TYPE.SET_HEART_BEATS);
+        sendCmd(COMMAND_TYPE.SET_HEART_BEATS,null);
     }
 
     public void startCANFD()
     {
-        sendCmd(COMMAND_TYPE.START_CAN_ALL);
+        sendCmd(COMMAND_TYPE.START_CAN_ALL,null);
     }
 
     public void stopCANFD()
     {
-        sendCmd(COMMAND_TYPE.STOP_CAN_ALL);
+        sendCmd(COMMAND_TYPE.STOP_CAN_ALL,null);
+    }
+
+
+    public void SendOnce(JsonElement data)
+    {
+        sendCmd(COMMAND_TYPE.PERIOD_SEND_ONCE,data);
     }
 
     public void monitor()
@@ -491,19 +508,19 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
     }
 
     private void getAppVersion() {
-        sendCmd(COMMAND_TYPE.GET_APP_VERSION);
+        sendCmd(COMMAND_TYPE.GET_APP_VERSION,null);
     }
 
 
     private void getAppLevel() {
-        sendCmd(COMMAND_TYPE.GET_APP_LEVEL);
+        sendCmd(COMMAND_TYPE.GET_APP_LEVEL,null);
     }
 
     void getMCUIndex() {
-        sendCmd(COMMAND_TYPE.GET_DEVICE_CONFIG);
+        sendCmd(COMMAND_TYPE.GET_DEVICE_CONFIG,null);
     }
 
-    private boolean sendCmd(COMMAND_TYPE cmd)
+    private boolean sendCmd(COMMAND_TYPE cmd, JsonElement data)
     {
         mLock.lock();
         Log.d(TAG,cmd.toString());
@@ -517,6 +534,10 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             case SET_HEART_BEATS:
                 cmd_genCommonCmd(cmd);
                 break;
+            case PERIOD_SEND_ONCE:
+                cmd_periodSendOnce(cmd,data);
+                break;
+
             default:
                 mCmdData = new byte[]{};
                 break;
@@ -532,11 +553,74 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         mCmdData = new byte[]{0x5a,0x5a,0x5a,0x5a,(byte)(cmd.code & 0xff),(byte)(cmd.code >> 8 & 0xff),0,0};
     }
 
+    private void cmd_periodSendOnce(COMMAND_TYPE cmd,JsonElement data){
+        //{"row":1,"_id":"2_RLEDS_PTFusionCANFD_0x76","id":"2_RLEDS_PTFusionCANFD_0x76",
+        // "text":"RLEDS_PTFusionCANFD_0x76",
+        // "node_type":"msg","channel":1,"checked":true,"
+        // children":[{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotSigGrpChks","id":"RLMotSigGrpChks","msg":118,"channel":2,"text":"RLMotSigGrpChks","node_type":"signal","comment":" ","remark":"信号remark","canId":177682,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":7,"length":8,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotSigGrpChks"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotSigGrpCntr","id":"RLMotSigGrpCntr","msg":118,"channel":2,"text":"RLMotSigGrpCntr","node_type":"signal","comment":" ","remark":"信号remark","canId":177683,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":11,"length":4,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotSigGrpCntr"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotActTq","id":"RLMotActTq","msg":118,"channel":2,"text":"RLMotActTq","node_type":"signal","comment":" ","remark":"信号remark","canId":177684,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":23,"length":15,"physStep":1,"dlc":0.1,"canType":-1638.3,"periodic":false,"eteDisable":false,"name":"RLMotActTq"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotActSpd","id":"RLMotActSpd","msg":118,"channel":2,"text":"RLMotActSpd","node_type":"signal","comment":" ","remark":"信号remark","canId":177685,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":39,"length":16,"physStep":1,"dlc":1,"canType":-32768,"periodic":false,"eteDisable":false,"name":"RLMotActSpd"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotMaxDynTqCp","id":"RLMotMaxDynTqCp","msg":118,"channel":2,"text":"RLMotMaxDynTqCp","node_type":"signal","comment":" ","remark":"信号remark","canId":177686,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":55,"length":10,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotMaxDynTqCp"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotMinDynTqCp","id":"RLMotMinDynTqCp","msg":118,"channel":2,"text":"RLMotMinDynTqCp","node_type":"signal","comment":" ","remark":"信号remark","canId":177687,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":71,"length":10,"physStep":1,"dlc":1,"canType":-1023,"periodic":false,"eteDisable":false,"name":"RLMotMinDynTqCp"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotFltLvlIndcn","id":"RLMotFltLvlIndcn","msg":118,"channel":2,"text":"RLMotFltLvlIndcn","node_type":"signal","comment":" ","remark":"信号remark","canId":177688,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":87,"length":3,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotFltLvlIndcn"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotAglRslvr","id":"RLMotAglRslvr","msg":118,"channel":2,"text":"RLMotAglRslvr","node_type":"signal","comment":" ","remark":"信号remark","canId":177689,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":95,"length":12,"physStep":1,"dlc":0.1,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotAglRslvr"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotActSfSt","id":"RLMotActSfSt","msg":118,"channel":2,"text":"RLMotActSfSt","node_type":"signal","comment":" ","remark":"信号remark","canId":177690,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":111,"length":3,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotActSfSt"}],"name":"RLEDS_PTFusionCANFD_0x76","from":"dbc","e2e":false,
+        // "periodic":0,"canType":"CAN","dlc":1,"canId":118,"dirty":"raw","isSending":false}
+
+        mCmdData = new byte[]{};
+//        mCmdData = new byte[]{0x5a,0x5a,0x5a,0x5a,(byte)(cmd.code & 0xff),(byte)(cmd.code >> 8 & 0xff),76 &0xFF,(76 >>8) &0xFF};
+
+        JsonObject jsonObject = data.getAsJsonObject();
+
+        //int channel = jsonObject.get("channel").getAsInt();
+        int BusId = jsonObject.get("channel").getAsInt();
+        int CanId = jsonObject.get("canId").getAsInt();
+        String canType = jsonObject.get("canType").getAsString();
+        int dlc = jsonObject.get("dlc").getAsInt();
+        JsonArray rawDataJsonArray = jsonObject.getAsJsonArray("rawData");
+        int FDFormat = "CAN".equals(canType) ? 0 : 1;
+
+        // Convert JsonArray to int[]
+        int[] rawData = new int[rawDataJsonArray.size()];
+        for (int i = 0; i < rawDataJsonArray.size(); i++) {
+            rawData[i] = rawDataJsonArray.get(i).getAsInt();
+        }
+
+        Log.w(TAG, "TTTTTTT mMcuIndex  " + mMcuIndex + "BusId  " + BusId);
+        if (((BusId - 1) / 3) == mMcuIndex)
+        {
+//            JSONObject content = new JSONObject();
+//                try {
+//                    content.put("CANId", CanId);
+//                    content.put("BUSId", BusId);
+//                    content.put("dataLength", dlc);
+//                    content.put("FDFormat", FDFormat);
+//                    content.put("period", 0); // Set period to 0
+//                    content.put("isReady", ""); // Default value for isReady
+//                    content.put("slot", ""); // Default value for slot
+//                    content.put("unused_2", ""); // Default value for unused_2
+//
+//                    // Convert the int[] rawData to a JSONArray and put it into the JSONObject
+//                    JSONArray dataJsonArray = new JSONArray(rawData);
+//                    content.put("data", dataJsonArray);
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//
+//                Log.d(TAG, "TTTTTTTTTTTTT content: " + content);
+            //BusId = (int)(BusId - 3 * mMcuIndex);
+
+        }else
+        {
+
+            mCmdData = new byte[]{};
+
+        }
+
+
+
+
+
+    }
     private boolean writeSerial() {
         if (mSerial != null && mCmdData.length > 0 )
         {
             try {
                 mSerial.write(mCmdData,2000);
+                //Log.e(TAG, " TTTTT mCmdData: " + mCmdData );
                 if(mAppLevel<0x1040)
                 {
                     // 适配之前无buffer缓存的电脑

@@ -244,7 +244,7 @@ public class MainActivity3 extends AppCompatActivity {
                     Result<DeviceInfo> result = ResponseData.ret(mMiCANBinder.getDeviceInfo(), ret);
                     jsCallResult.setData(result);
                     final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                    Log.d(TAG, "callbackJs2 " + callbackJs);
+                    //Log.d(TAG, "callbackJs2 " + callbackJs);
                     webView.post(new Runnable() {
                         @Override
                         public void run() {
@@ -617,38 +617,49 @@ public class MainActivity3 extends AppCompatActivity {
                 // "from":"CAN",
                 // "rawData":[0,0,0,0,0,0,0,0],
                 // "children":[{"eteDisable":false}],"dirty":false,"raw":1}
+                mMiCANBinder.CANOnBus();
+                mMiCANBinder.SendOnce(data);
+                //CanMessage
 
-                JsonObject jsonObject = data.getAsJsonObject();
+//                {"row":2,"_id":"3_ACU_ChassisCANFD_0x1A9","id":"3_ACU_ChassisCANFD_0x1A9","text":"ACU_ChassisCANFD_0x1A9","node_type":"msg",
+//                "channel":1,"checked":true,
+//                "children":[{"_id":"3_ACU_ChassisCANFD_0x1A9_LonAccrSigGrpChks","id":"LonAccrSigGrpChks","msg":425,"channel":3,"text":"LonAccrSigGrpChks","node_type":"signal","comment":" ","remark":"信号remark","canId":162815,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":7,"length":8,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"LonAccrSigGrpChks"},{"_id":"3_ACU_ChassisCANFD_0x1A9_LonAccrSigGrpCntr","id":"LonAccrSigGrpCntr","msg":425,"channel":3,"text":"LonAccrSigGrpCntr","node_type":"signal","comment":" ","remark":"信号remark","canId":162816,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":11,"length":4,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"LonAccrSigGrpCntr"},{"_id":"3_ACU_ChassisCANFD_0x1A9_LonAccr","id":"LonAccr","msg":425,"channel":3,"text":"LonAccr","node_type":"signal","comment":" ","remark":"信号remark","canId":162817,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":23,"length":16,"physStep":1,"dlc":0.0002,"canType":-5,"periodic":false,"eteDisable":false,"name":"LonAccr"},{"_id":"3_ACU_ChassisCANFD_0x1A9_LonSnsrSt","id":"LonSnsrSt","msg":425,"channel":3,"text":"LonSnsrSt","node_type":"signal","comment":" ","remark":"信号remark","canId":162818,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":33,"length":2,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"LonSnsrSt"},{"_id":"3_ACU_ChassisCANFD_0x1A9_IMUCalSt","id":"IMUCalSt","msg":425,"channel":3,"text":"IMUCalSt","node_type":"signal","comment":" ","remark":"信号remark","canId":162819,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":63,"length":1,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"IMUCalSt"}],"name":"ACU_ChassisCANFD_0x1A9","from":"dbc","e2e":false,"periodic":0,"canType":"CAN","dlc":1,"canId":425,"dirty":"raw","isSending":false}
 
-                int channel = jsonObject.get("channel").getAsInt();
-                int canId = jsonObject.get("canId").getAsInt();
-                String canType = jsonObject.get("canType").getAsString();
-                int dlc = jsonObject.get("dlc").getAsInt();
-                JsonArray rawDataJsonArray = jsonObject.getAsJsonArray("rawData");
-                int FDFormat = "CAN".equals(canType) ? 0 : 1;
-
-                // Convert JsonArray to int[]
-                int[] rawData = new int[rawDataJsonArray.size()];
-                for (int i = 0; i < rawDataJsonArray.size(); i++) {
-                    rawData[i] = rawDataJsonArray.get(i).getAsInt();
-                }
-
-                // Create the content JSONObject
-                JSONObject content = new JSONObject();
-                try {
-                    content.put("CANId", canId);
-                    content.put("BUSId", channel);
-                    content.put("dataLength", dlc);
-                    content.put("FDFormat", FDFormat);
-
-                    // Convert the int[] rawData to a JSONArray and put it into the JSONObject
-                    JSONArray dataJsonArray = new JSONArray(rawData);
-                    content.put("data", dataJsonArray);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-
-                Log.d(TAG, "TTTTTTTTTTTTT: " + content);
+//                JsonObject jsonObject = data.getAsJsonObject();
+//
+//                int channel = jsonObject.get("channel").getAsInt();
+//                int canId = jsonObject.get("canId").getAsInt();
+//                String canType = jsonObject.get("canType").getAsString();
+//                int dlc = jsonObject.get("dlc").getAsInt();
+//                JsonArray rawDataJsonArray = jsonObject.getAsJsonArray("rawData");
+//                int FDFormat = "CAN".equals(canType) ? 0 : 1;
+//
+//                // Convert JsonArray to int[]
+//                int[] rawData = new int[rawDataJsonArray.size()];
+//                for (int i = 0; i < rawDataJsonArray.size(); i++) {
+//                    rawData[i] = rawDataJsonArray.get(i).getAsInt();
+//                }
+//
+//                // Create the content JSONObject
+//                JSONObject content = new JSONObject();
+//                try {
+//                    content.put("CANId", canId);
+//                    content.put("BUSId", channel);
+//                    content.put("dataLength", dlc);
+//                    content.put("FDFormat", FDFormat);
+//                    content.put("period", 0); // Set period to 0
+//                    content.put("isReady", ""); // Default value for isReady
+//                    content.put("slot", ""); // Default value for slot
+//                    content.put("unused_2", ""); // Default value for unused_2
+//
+//                    // Convert the int[] rawData to a JSONArray and put it into the JSONObject
+//                    JSONArray dataJsonArray = new JSONArray(rawData);
+//                    content.put("data", dataJsonArray);
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//
+//                Log.d(TAG, "TTTTTTTTTTTTT: " + content);
 
             }
         });
