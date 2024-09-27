@@ -2,6 +2,7 @@ package com.example.testcdc;
 
 import static android.database.sqlite.SQLiteDatabase.openDatabase;
 import static com.chaquo.python.Python.start;
+import static com.example.testcdc.Utils.Utils.parseBlfByPython;
 import static com.example.testcdc.Utils.Utils.parseDBCByPython;
 import static com.example.testcdc.Utils.Utils.parseDBCforBlf;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
@@ -511,7 +512,7 @@ public class MainActivity3 extends AppCompatActivity {
 
                 parseDBCforBlf("MX11","E4U1");
 
-//                sendBLFData("/storage/emulated/0/Download/Lark/MiCAN_record_2024-08-01_17_32_40_1.blf");
+                parseBlfByPython("/storage/emulated/0/Download/Lark/LV009_LNBQU35LBPRDASKB1_20240924094755_472728478610830472.blf");
 
             }
         });

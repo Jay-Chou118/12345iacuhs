@@ -182,32 +182,25 @@ def blfCppGetDBC(carType, sdb):
     return json.dumps(signalMapNew)
 
 
-def blfGetBLFdata(data):
+def blfGetBLFdata(blfFile):
 
-    data = data.json
     global log
     global dbc
     global frameDict
     global frameDict_zero
     global blf_file_state
     global isBigfile
+    isBigfile = False
     frameDict = copy.deepcopy(frameDict_zero)
-    file = data.get('blfFile')
+    file = blfFile
     stats = os.stat(file)
     # 以字节为单位
     file_size = stats.st_size
     file_size_G = file_size / (1024 ** 3)
     blf_file_state["file_size"] = file_size_G
     blf_file_state["file_path"] = file
-    log = myBLFReader(data.get('blfFile'))
+    log = myBLFReader(blfFile)
 
-    if data.get("mode") == "bigFile":
-        isBigfile = True
-        ret = {}
-        ret["startTime"] = log.start_timestamp
-        return json.dumps(ret)
-    else:
-        isBigfile = False
 
     counter = 0
     for each in log:
@@ -222,6 +215,7 @@ def blfGetBLFdata(data):
 
     ret = {}
     ret["startTime"] = log.start_timestamp
+    print(log.start_timestamp)
     return json.dumps(ret)
 
 

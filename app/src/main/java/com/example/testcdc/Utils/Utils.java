@@ -245,8 +245,8 @@ public class Utils {
     static public String parseBlfByPython(String filePath)
     {
         Python python = Python.getInstance();
-        PyObject pyObject = python.getModule("HelloWorld");
-        String usermsg = String.valueOf(pyObject.callAttr("blf_Read", filePath));
+        PyObject pyObject = python.getModule("app");
+        String usermsg = String.valueOf(pyObject.callAttr("blfGetBLFdata", filePath));
 //        Log.e(TAG,"parseDBCByPython :" + usermsg);
         return usermsg;
     }
@@ -259,5 +259,7 @@ public class Utils {
 //        Log.e(TAG,"parseDBCByPython :" + usermsg
         return usermsg;
     }
+
+
 
 }
