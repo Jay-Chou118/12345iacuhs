@@ -2,66 +2,89 @@ import copy
 import json
 import os
 import struct
-import unittest
+from pathlib import Path
 from urllib import request
 
-from flask import Flask, request, jsonify
+import canmatrix.formats
+
+from Cryptodome.Cipher import DES
 
 from shared_pkg.myBlf import myBLFReader
 
-app = Flask(__name__)
 
-blf_file_state = {"file_size": 0, "file_path": ""}
-valueDict = {}
-frameDict_zero={}
-dbc={}
+frameDict_zero = {}
+blf_file_state = {"file_size" : None,"file_path" : None}
+dbc = {}
+custom = 'custom'
+isBigfile = True
 
-@app.route('/')
-def hello_world():  # put application's code here
-    return 'Hello World!'
 
-@app.route("/blft/getDBC",methods=['POST'])
-def blfGetDBC():
-    """
-    @api {post} /blft/getDBC 获取dbc信息
-    @apiVersion 1.0.0
-    @apiName blfGetDBC
-    @apiGroup blf 通讯质量
-    @apiBody {string} sdb SDB版本
-    @apiSampleRequest /blft/getDBC
-    """
-    # return json.dumps((os.getcwd(),os.path.join(os.path.dirname(__file__),  'assets')))
+def data_reset():
     global dbc
     global valueDict
     global frameDict
     global signalMap
     global signalMapNew
     global frameDict_zero
+    global multiplexSignal
+    global frameName
+    global channelComment
+    global reMap_res
+    global IdToNameId
+    global frameDataLength
+    global overLenSig
+    reMap_res = {"isRemap":False,"data":{},"dataReverse":{}}
+    dbc = {}
+    valueDict = {}
+    frameDict = {}
+    signalMap = {}
+    signalMapNew = {}
+    frameDict_zero = {}
+    multiplexSignal = {}
+    frameName = {}
+    channelComment = {}
+    IdToNameId = {}
+    frameDataLength = {}
+    overLenSig = []
+
+
+def get_dbcConf(files,comments):
+    conf = []
+    for k,v in enumerate(files):
+        if v != '':
+            if comments[k] == '':
+                tmp = [v,k+1,f'Channel {k+1}']
+            else:
+                tmp = [v,k+1,comments[k]]
+            conf.append(tmp)
+    return conf
+
+
+
+def blfCppGetDBC(carType, sdb):
+    global dbc
+    global valueDict
+    global frameDict
+    global signalMap
+    global signalMapNew
+    global frameDict_zero
+    global multiplexSignal
     global channelComment
     global frameName
+    global IdToNameId
+    global frameDataLength
+    global overLenSig
     data_reset()
 
-    data = request.json
-    print(data)
-    cartype = data.get('carType')
-
+    cartype = carType
     if cartype != custom:
         is_custom = False
-        sdb = data.get('sdb')
-        # if sdb not in ['E3', 'E3U1']:
-        #     return 'sdb版本错误！'
-        # dir=os.path.join(os.path.dirname(__file__),  'assets')#os.getcwd()
+        sdb = sdb
         dir = os.path.dirname(__file__)
-        dir_parent = os.path.join(Path(dir).parent, 'shared_pkg')
+        dir_parent = os.path.join(Path(dir), 'apps/shared_pkg')
         key_ini = b'jiamiini'
-        # print(dir)
-        # dir=os.path.join(os.path.abspath('.') ,".\\backend\\apps\\blft\\assets")
-        # f_h = open(dir+r".\dbc\dbConf.ini")
-        # f_h = open(dir + r"\bdaces\cfignsf\Extp2DceSpicProtIo\Lib\nxqlzxhtq.dll",'rb')
-        #
-        # DBCconfingJson1aW5p.dll = f_h.read()
-        # DBCconfingJson = lzss.decompress(DBCconfingJson1).decode()
-        f_h = open(dir_parent + f"{os.sep}bdaces{os.sep}cfignsf{os.sep}Extp2DceSpicProtIo{os.sep}Lib{os.sep}aW5p.dll", 'rb')
+        f_h = open("/data/data/com.example.testcdc/files/chaquopy/AssetFinder/app/shared_pkg/bdaces/cfignsf/Extp2DceSpicProtIo/Lib/aW5p.dll", 'rb')
+
         DBCconfingJson1 = f_h.read()
         des = DES.new(key_ini, DES.MODE_ECB)
         DBCconfingJson = des.decrypt(DBCconfingJson1).decode().rstrip(' ')
@@ -70,17 +93,18 @@ def blfGetDBC():
         dbcFiles = DBCconfing[cartype][sdb]
         signalMap = {}
         signalMapNew = {}
+        # dbcFiles=[(dir+"\\dbc\\MS11_TBOXCANFD_220303.dbc",1)]
         key_dbc = b'jiamidbc'
         des_dbc = DES.new(key_dbc, DES.MODE_ECB)
     else:
         is_custom = True
-        files = data.get('files')
-        comments = data.get('comments')
+        files = carType
+        comments = sdb
         dbcFiles = get_dbcConf(files,comments)
         signalMap = {}
         signalMapNew = {}
-
     for dbcFile in dbcFiles:
+        # dbcMap[dbcFile[1]] = dbcFile[0][1:]
         dbc[dbcFile[1]] = {}
         valueDict[dbcFile[1]] = {}
         frameDict[dbcFile[1]] = {}
@@ -88,17 +112,19 @@ def blfGetDBC():
         signalMapNew[dbcFile[1]] = {}
         channelComment[dbcFile[1]] = dbcFile[2]
         frameName[dbcFile[1]] = {}
+        IdToNameId[dbcFile[1]] = {}
+        frameDataLength[dbcFile[1]] = {}
         try:
             if not is_custom:
                 dbc_str = open(dir_parent + dbcFile[0][1:], 'rb').read()
                 # dbc_info = lzss.decompress(dbc_str).decode()
                 dbc_info = des_dbc.decrypt(dbc_str).decode().rstrip(' ')
+
             else:
                 try:
-                    dbc_info = open(dbcFile[0], 'r', encoding="gbk").read()
+                    dbc_info = open(dbcFile[0],'r',encoding="gbk").read()
                 except:
-                    dbc_info = open(dbcFile[0], 'r', encoding="utf-8").read()
-
+                    dbc_info = open(dbcFile[0],'r',encoding="utf-8").read()
             try:
                 channel = canmatrix.formats.loads_flat(dbc_info, import_type='dbc', encoding='gbk', dbcImportEncoding='gbk')
             except:
@@ -110,16 +136,28 @@ def blfGetDBC():
         # channel=loadp_flat(dir+dbcFile[0],import_type='dbc')
         for each in channel.frames:
             frameID = each.arbitration_id.id
-            # frameID = hex(int(frameID))
+            # if each.arbitration_id.id == 0x81:
+            #     for signal in each.signals:
+            #         print(signal)
+            #         print(signal.multiplex)
+            #         print(signal.is_multiplexer)
             dbc[dbcFile[1]][frameID] = each
             valueDict[dbcFile[1]][frameID] = {}
             frameDict[dbcFile[1]][frameID] = []
             signalMap[dbcFile[1]][frameID] = []
             signalMapNew[dbcFile[1]][each.name+"("+str(hex(frameID))+")"] = []
             frameName[dbcFile[1]][frameID] = each.name
+            IdToNameId[dbcFile[1]][frameID] = each.name+"("+str(hex(frameID))+")"
+            frameDataLength[dbcFile[1]][frameID] = each.size
             for signal in each.signals:
-                signalMap[dbcFile[1]][frameID].append((signal.name, signal.comment))
-                valueDict[dbcFile[1]][frameID][signal.name] = (signal.values, each.cycle_time)
+                if signal.size >= 32:
+                    overLenSig.append(signal.name)
+                if signal.is_multiplexer:
+                    if dbcFile[1] not in multiplexSignal.keys():
+                        multiplexSignal[dbcFile[1]] = {}
+                    if frameID not in multiplexSignal[dbcFile[1]].keys():
+                        multiplexSignal[dbcFile[1]][frameID] = ''
+                    multiplexSignal[dbcFile[1]][frameID] = signal.name
                 receivers = ''
                 for rev in each.receivers:
                     receivers = receivers + rev + "/"
@@ -128,23 +166,25 @@ def blfGetDBC():
                 for trm in each.transmitters:
                     transmitters = transmitters + trm + "/"
                 transmitters = transmitters[0:len(transmitters) - 1]
-                finalname = transmitters + "::" + receivers + "::" + each.name + "::" + signal.name + "::" + ("CANFD signal" if each.is_fd else "CAN signal")
+                finalname = transmitters + "::" + receivers + "::" + each.name + "::" + signal.name + "::" +("CANFD signal" if each.is_fd else "CAN signal")
+                signalMap[dbcFile[1]][frameID].append((signal.name, signal.comment))
                 signalMapNew[dbcFile[1]][each.name+"("+str(hex(frameID))+")"].append((signal.name, signal.comment, finalname))
+                valueDict[dbcFile[1]][frameID][signal.name] = (signal.get_startbit(signal.name),
+                                                               signal.size,
+                                                               each.cycle_time,
+                                                               float(signal.factor),
+                                                               float(signal.offset),
+                                                               signal.values,
+                                                               signal.multiplex,
+                                                               signal.is_signed
+                                                               )
     frameDict_zero = copy.deepcopy(frameDict)
     return json.dumps(signalMapNew)
 
 
-@app.route("/blft/getBLFdata", methods=['POST'])
-def blfGetBLFdata():
-    """
-        @api {post} /blft/getBLFdata 读取blf文件
-        @apiVersion 1.0.0
-        @apiName blfGetBLFdata
-        @apiGroup blf 通讯质量
-        @apiBody {string} blfFile blf文件路径
-        @apiSampleRequest /blft/getBLFdata
-        """
-    data = request.json
+def blfGetBLFdata(data):
+
+    data = data.json
     global log
     global dbc
     global frameDict
@@ -184,8 +224,8 @@ def blfGetBLFdata():
     ret["startTime"] = log.start_timestamp
     return json.dumps(ret)
 
-@app.route("/blft/getAnalysisByParams", methods=['POST'])
-def blfGetAnalysisByParams():
+
+def blfGetAnalysisByParams(data):
     """
     @api {post} /blft/getAnalysisByParams 指定信号解析
     @apiVersion 1.0.0
@@ -194,7 +234,7 @@ def blfGetAnalysisByParams():
     @apiBody {array} params [[msg 消息ID,channel 通道ID,signal 信号名]]
     @apiSampleRequest /blft/getAnalysisByParams
     """
-    data = request.json
+    data = data.json
     global dbc
     global frameDict
     global blf_file_state
@@ -266,7 +306,7 @@ def blfGetAnalysisByParams():
                         if sigName in overLenSig:
                             signalValue[sigName].append((timestampe, int(decoded[sigName].phys_value)))
                         else:
-                            signalValue[sigName].append((timestampe, decoded[sigName].phys_value))
+                            signalValue[sigName].append((timestampe, int(decoded[sigName].phys_value)))
         for sigName in signalsName:
             if sigName in valueDict[channelID][frameID].keys():
                 if sigName in overLenSig:
@@ -278,11 +318,3 @@ def blfGetAnalysisByParams():
                 x = (channelID, frameID, sigName, signalValue[sigName], signalEmum, signalPeriod,bigData)
                 retSignalValue.append(x)
     return json.dumps(retSignalValue)
-
-
-
-def run():
-    app.run(host='0.0.0.0', port=8080, debug=False)
-
-if __name__ == '__main__':
-    app.run()

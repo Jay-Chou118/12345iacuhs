@@ -3,6 +3,7 @@ package com.example.testcdc;
 import static android.database.sqlite.SQLiteDatabase.openDatabase;
 import static com.chaquo.python.Python.start;
 import static com.example.testcdc.Utils.Utils.parseDBCByPython;
+import static com.example.testcdc.Utils.Utils.parseDBCforBlf;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
 import static com.google.gson.JsonParser.parseString;
 
@@ -28,17 +29,18 @@ import android.webkit.WebView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import androidx.documentfile.provider.DocumentFile;
 
+import com.chaquo.python.PyException;
 import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
 
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
-import com.example.testcdc.Utils.BlfRequest;
 import com.example.testcdc.Utils.DataBaseUtil;
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
@@ -46,10 +48,7 @@ import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.Basic_DataBase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
-import com.example.testcdc.httpServer.BlfService;
-import com.example.testcdc.httpServer.FlaskService;
-import com.example.testcdc.httpServer.HttpServer;
-import com.example.testcdc.httpServer.RetrofitClient;
+
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -510,29 +509,9 @@ public class MainActivity3 extends AppCompatActivity {
 
                 startActivityForResult(intent,READ_REQUEST_CODE);
 
+                parseDBCforBlf("MX11","E4U1");
 
-                Python py = Python.getInstance();
-
-                PyObject pyObject = py.getModule("test");
-                new Thread(() -> pyObject.callAttr("run")).start();
-
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        pyObject.callAttr("run");
-                        postBlfData("/storage/emulated/0/Download/Lark/MiCAN_record_2024-08-01_17_32_40_1.blf", "");
-                    }
-                });
 //                sendBLFData("/storage/emulated/0/Download/Lark/MiCAN_record_2024-08-01_17_32_40_1.blf");
-
-            }
-        });
-
-        messageHandlers.put("getBLFData", new BridgeHandler() {
-            @Override
-            public void handle(JsonElement data, String callback) {
-                JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
-                String filePath = data.getAsString();
 
             }
         });
@@ -604,40 +583,7 @@ public class MainActivity3 extends AppCompatActivity {
         });
     }
 
-    public void postBlfData(String filePath, String mode) {
-        OkHttpClient client = new OkHttpClient();
 
-        // 创建请求体
-        BlfRequest requestBody = new BlfRequest(filePath);
-        Gson gson = new Gson();
-        String json = gson.toJson(requestBody);
-
-        // 创建 POST 请求
-        RequestBody body = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), json);
-        Request request = new Request.Builder()
-                .url("http://127.0.0.1:8080/blft/getBLFdata") // 替换为你的服务器 IP
-                .post(body)
-                .build();
-
-        // 发送请求
-        client.newCall(request).enqueue(new Callback() {
-            @Override
-            public void onFailure(Call call, IOException e) {
-                e.printStackTrace();
-            }
-
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-                if (response.isSuccessful()) {
-                    String responseData = response.body().string();
-                    // 处理响应数据
-                    Log.d("Response", responseData);
-                } else {
-                    Log.e("Error", "请求失败: " + response.code());
-                }
-            }
-        });
-    }
 
     private <T> void callJs(T result) {
         final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(result));

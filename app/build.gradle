@@ -24,6 +24,8 @@ android {  // 注意这里多了一个开括号
                 install 'canmatrix'
                 install 'flask'
                 install 'typing_extensions'
+                install 'pycryptodomex'
+                install 'pycryptodome'
 //                insatll 'typing'
             }
         }

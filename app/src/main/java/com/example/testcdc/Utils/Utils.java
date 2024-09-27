@@ -1,5 +1,7 @@
 package com.example.testcdc.Utils;
 
+import static java.lang.Math.log;
+
 import android.text.SpannableStringBuilder;
 import android.util.Log;
 
@@ -10,6 +12,7 @@ import com.example.testcdc.dao.MsgInfoDao;
 import com.example.testcdc.dao.SignalInfoDao;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
+import com.google.gson.JsonObject;
 import com.hoho.android.usbserial.util.HexDump;
 
 import org.json.JSONArray;
@@ -248,5 +251,13 @@ public class Utils {
         return usermsg;
     }
 
+    static public String parseDBCforBlf( String carType, String sdb) {
+        Python python = Python.getInstance();
+
+        PyObject pyObject = python.getModule("app");
+        String usermsg = String.valueOf(pyObject.callAttr("blfCppGetDBC", carType, sdb));
+//        Log.e(TAG,"parseDBCByPython :" + usermsg
+        return usermsg;
+    }
 
 }
