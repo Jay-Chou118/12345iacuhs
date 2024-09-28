@@ -174,17 +174,69 @@ public class SendCanMessage implements Cloneable, Serializable {
         return sb.toString().trim();
     }
 
-//    // 将十六进制字符串转换为字节数组
-//    static byte[] hexStringToByteArray(String s) {
-//        s = s.replaceAll("\\s+", ""); // 移除所有空白字符
-//        int len = s.length();
-//        byte[] data = new byte[len / 2];
-//        for (int i = 0; i < len; i += 2) {
-//            data[i / 2] = (byte) ((Character.digit(s.charAt(i), 16) << 4)
-//                    + Character.digit(s.charAt(i+1), 16));
-//        }
-//        return data;
-//    }
+    // 将十六进制字符串转换为字节数组
+    static byte[] hexStringToByteArray(String s) {
+        s = s.replaceAll("\\s+", ""); // 移除所有空白字符
+        int len = s.length();
+        byte[] data = new byte[len / 2];
+        for (int i = 0; i < len; i += 2) {
+            data[i / 2] = (byte) ((Character.digit(s.charAt(i), 16) << 4)
+                    + Character.digit(s.charAt(i+1), 16));
+        }
+        return data;
+    }
+
+
+    public byte[] appendDataTomCmdData(byte[] mCmdData) {
+        String hexStream = toHexStream();
+        byte[] DATA = hexStringToByteArray(hexStream);
+
+        // 创建一个新的数组，包含mCmdData和DATA
+        byte[] result = new byte[mCmdData.length + DATA.length];
+        System.arraycopy(mCmdData, 0, result, 0, mCmdData.length);
+        System.arraycopy(DATA, 0, result, mCmdData.length, DATA.length);
+
+        return result;
+    }
+
+
+    // 将SendCanMessage对象转换为十六进制字符串表示的数据流，并追加到mCmdData后
+    public byte[] toHexStreamAndAppend(byte[] mCmdData) {
+        ByteBuffer buffer = ByteBuffer.allocate(mCmdData.length + 4 * 5 + 64); // 大小为mCmdData长度加上所有int类型的字节数和data数组长度
+
+        // 将mCmdData追加到buffer中
+        buffer.put(mCmdData);
+
+        // 将period转换为字节
+        buffer.putInt(period);
+
+        // 将isReady转换为字节
+        buffer.put(isReady);
+
+        // 将slot转换为字节
+        buffer.put(slot);
+
+        // 将CanID转换为字节
+        buffer.putInt(CanID);
+
+        // 将BUSId转换为字节
+        buffer.put(BUSId);
+
+        // 将dataLength转换为字节
+        buffer.put(dataLength);
+
+        // 将FDFormat转换为字节
+        buffer.put(FDFormat);
+
+        // 将unused_2转换为字节
+        buffer.put(unused_2);
+
+        // 添加data字段
+        buffer.put(data);
+
+        return buffer.array();
+    }
+
 
     @Override
     public String toString() {

@@ -571,7 +571,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         SendCan.isReady = 0;
         SendCan.slot = 0;
         //int channel = jsonObject.get("channel").getAsInt();
-        SendCan.CanID = jsonObject.get("canId").getAsByte();
+        SendCan.CanID = jsonObject.get("canId").getAsInt();
         SendCan.BUSId = jsonObject.get("channel").getAsByte();
         String canType = jsonObject.get("canType").getAsString();
         SendCan.dataLength = jsonObject.get("dlc").getAsByte();
@@ -580,8 +580,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         SendCan.unused_2 = 0;
 
         JsonArray rawDataJsonArray = jsonObject.getAsJsonArray("rawData");
-        rawDataJsonArray.add(1);
-        rawDataJsonArray.add(0xFF);
+
         SendCan.setDataFromJsonArray(rawDataJsonArray);
         //Log.w(TAG, "TTTTTTT Data : " + rawDataJsonArray + "TTTTT " + Arrays.toString(SendCan.data));
         // Convert JsonArray to int[]
@@ -589,17 +588,18 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         Log.w(TAG, "TTTTTTT mMcuIndex  " + mMcuIndex + "BusId  " + SendCan.BUSId);
         Log.w(TAG,  "TTTT" + SendCan.toString());
 
-//        String hexStream = SendCan.toHexStream();
-//        byte[] Candata = SendCan.hexStringToByteArray(hexStream);
         Log.w(TAG,  "TTTT  " + SendCan.getCanMessageLength() + " TTTTTT " +  (byte) (SendCan.getCanMessageLength() & 0xff)+" TTTTT " + (byte) (SendCan.getCanMessageLength()  >> 8 & 0xff));
         mCmdData = new byte[]{0x5a,0x5a,0x5a,0x5a,(byte)(cmd.code & 0xff),(byte)(cmd.code >> 8 & 0xff),
                 (byte) (SendCan.getCanMessageLength() & 0xff),(byte) (SendCan.getCanMessageLength()  >> 8 & 0xff)};
-
+        Log.w(TAG, "TTTTTT mCmdData : " + Arrays.toString(mCmdData) );
         if (((SendCan.BUSId - 1) / 3) == mMcuIndex)
         {
             SendCan.BUSId = (byte) (SendCan.BUSId - 3 * mMcuIndex);
-
-//
+//            String hexStream = SendCan.toHexStream();
+//            byte[] DATA = SendCanMessage.hexStringToByteArray(hexStream);
+            //Log.w(TAG, " TTTTT hexStream : " + Arrays.toString(DATA) );
+            mCmdData = SendCan.appendDataTomCmdData(mCmdData);
+            Log.w(TAG, "TTTTT mCmdData : " + Arrays.toString(mCmdData) );
         }else
         {
 //
@@ -617,7 +617,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         {
             try {
                 mSerial.write(mCmdData,2000);
-                //Log.e(TAG, " TTTTT mCmdData: " + mCmdData );
+                Log.e(TAG, " TTTTT2 mCmdData: " + Arrays.toString(mCmdData) );
                 if(mAppLevel<0x1040)
                 {
                     // 适配之前无buffer缓存的电脑
