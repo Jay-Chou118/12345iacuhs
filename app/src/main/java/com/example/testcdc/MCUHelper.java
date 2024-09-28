@@ -561,51 +561,48 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         // "periodic":0,"canType":"CAN","dlc":1,"canId":118,"dirty":"raw","isSending":false}
 
         mCmdData = new byte[]{};
-//        mCmdData = new byte[]{0x5a,0x5a,0x5a,0x5a,(byte)(cmd.code & 0xff),(byte)(cmd.code >> 8 & 0xff),76 &0xFF,(76 >>8) &0xFF};
 
+
+        SendCanMessage SendCan = new SendCanMessage();
+        Log.d(TAG, " TTTT I AM SENDING");
         JsonObject jsonObject = data.getAsJsonObject();
 
+        SendCan.period = 0;
+        SendCan.isReady = 0;
+        SendCan.slot = 0;
         //int channel = jsonObject.get("channel").getAsInt();
-        int BusId = jsonObject.get("channel").getAsInt();
-        int CanId = jsonObject.get("canId").getAsInt();
+        SendCan.CanID = jsonObject.get("canId").getAsByte();
+        SendCan.BUSId = jsonObject.get("channel").getAsByte();
         String canType = jsonObject.get("canType").getAsString();
-        int dlc = jsonObject.get("dlc").getAsInt();
+        SendCan.dataLength = jsonObject.get("dlc").getAsByte();
+        SendCan.FDFormat = (byte)("CAN".equals(canType) ? 0 : 1);
+
+        SendCan.unused_2 = 0;
+
         JsonArray rawDataJsonArray = jsonObject.getAsJsonArray("rawData");
-        int FDFormat = "CAN".equals(canType) ? 0 : 1;
-
+        rawDataJsonArray.add(1);
+        rawDataJsonArray.add(0xFF);
+        SendCan.setDataFromJsonArray(rawDataJsonArray);
+        //Log.w(TAG, "TTTTTTT Data : " + rawDataJsonArray + "TTTTT " + Arrays.toString(SendCan.data));
         // Convert JsonArray to int[]
-        int[] rawData = new int[rawDataJsonArray.size()];
-        for (int i = 0; i < rawDataJsonArray.size(); i++) {
-            rawData[i] = rawDataJsonArray.get(i).getAsInt();
-        }
 
-        Log.w(TAG, "TTTTTTT mMcuIndex  " + mMcuIndex + "BusId  " + BusId);
-        if (((BusId - 1) / 3) == mMcuIndex)
+        Log.w(TAG, "TTTTTTT mMcuIndex  " + mMcuIndex + "BusId  " + SendCan.BUSId);
+        Log.w(TAG,  "TTTT" + SendCan.toString());
+
+//        String hexStream = SendCan.toHexStream();
+//        byte[] Candata = SendCan.hexStringToByteArray(hexStream);
+        Log.w(TAG,  "TTTT  " + SendCan.getCanMessageLength() + " TTTTTT " +  (byte) (SendCan.getCanMessageLength() & 0xff)+" TTTTT " + (byte) (SendCan.getCanMessageLength()  >> 8 & 0xff));
+        mCmdData = new byte[]{0x5a,0x5a,0x5a,0x5a,(byte)(cmd.code & 0xff),(byte)(cmd.code >> 8 & 0xff),
+                (byte) (SendCan.getCanMessageLength() & 0xff),(byte) (SendCan.getCanMessageLength()  >> 8 & 0xff)};
+
+        if (((SendCan.BUSId - 1) / 3) == mMcuIndex)
         {
-//            JSONObject content = new JSONObject();
-//                try {
-//                    content.put("CANId", CanId);
-//                    content.put("BUSId", BusId);
-//                    content.put("dataLength", dlc);
-//                    content.put("FDFormat", FDFormat);
-//                    content.put("period", 0); // Set period to 0
-//                    content.put("isReady", ""); // Default value for isReady
-//                    content.put("slot", ""); // Default value for slot
-//                    content.put("unused_2", ""); // Default value for unused_2
-//
-//                    // Convert the int[] rawData to a JSONArray and put it into the JSONObject
-//                    JSONArray dataJsonArray = new JSONArray(rawData);
-//                    content.put("data", dataJsonArray);
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//
-//                Log.d(TAG, "TTTTTTTTTTTTT content: " + content);
-            //BusId = (int)(BusId - 3 * mMcuIndex);
+            SendCan.BUSId = (byte) (SendCan.BUSId - 3 * mMcuIndex);
 
+//
         }else
         {
-
+//
             mCmdData = new byte[]{};
 
         }
