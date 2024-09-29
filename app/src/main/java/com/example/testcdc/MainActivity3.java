@@ -1,6 +1,5 @@
 package com.example.testcdc;
 
-import static android.database.sqlite.SQLiteDatabase.openDatabase;
 import static com.chaquo.python.Python.start;
 import static com.example.testcdc.Utils.Utils.parseBlfByPython;
 import static com.example.testcdc.Utils.Utils.parseDBCByPython;
@@ -15,59 +14,42 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.database.Cursor;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
-import android.os.Handler;
 import android.os.IBinder;
-import android.os.Looper;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import androidx.documentfile.provider.DocumentFile;
 
-import com.chaquo.python.PyException;
-import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
-
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
-import com.example.testcdc.Utils.DataBaseUtil;
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
 import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.Basic_DataBase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
-
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-import org.json.JSONObject;
-
 import java.io.BufferedReader;
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -77,15 +59,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.MediaType;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
-import retrofit2.http.POST;
 
 
 public class MainActivity3 extends AppCompatActivity {
@@ -111,6 +84,8 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static String mCallbackId;
 
+    private static String BlfFilePath;
+
 
     private ServiceConnection mSC = new ServiceConnection() {
         @Override
@@ -130,7 +105,6 @@ public class MainActivity3 extends AppCompatActivity {
     private WebView webView;
 
     MyApplication instance = MyApplication.getInstance();
-    ;
 
     private static final String CALLBACK_JS_FORMAT = "javascript:JSBridge.handleNativeResponse('%s')";
 
@@ -142,8 +116,7 @@ public class MainActivity3 extends AppCompatActivity {
         if (!Python.isStarted()) {
             start(new AndroidPlatform(this));
         }
-        Python python = Python.getInstance();
-        PyObject pyObject = python.getModule("app");
+
         //pyObject.callAttr("main");
 
         initWebView();
@@ -400,7 +373,6 @@ public class MainActivity3 extends AppCompatActivity {
                             }
 
 
-
                             for (int busId : BUSIdList) {
                                 Map<String, List<List<Object>>> subMap = new HashMap<>();
                                 List<MsgInfoEntity> userMsgs = database.msgInfoDao().getMsgBycidBusId(busId, cid);
@@ -445,7 +417,7 @@ public class MainActivity3 extends AppCompatActivity {
                         webView.post(new Runnable() {
                             @Override
                             public void run() {
-                                Log.e(TAG, "RRRRRRRRRRRRRRRRR " + callbackJs );
+                                Log.e(TAG, "RRRRRRRRRRRRRRRRR " + callbackJs);
                                 webView.loadUrl(callbackJs);
                             }
                         });
@@ -508,16 +480,18 @@ public class MainActivity3 extends AppCompatActivity {
 
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
 
-                startActivityForResult(intent,READ_REQUEST_CODE);
+                startActivityForResult(intent, READ_REQUEST_CODE);
 
+                //TODO:前端返回carType，sbd
                 parseDBCforBlf("MX11","E4U1");
 
-                parseBlfByPython("/storage/emulated/0/Download/Lark/LV009_LNBQU35LBPRDASKB1_20240924094755_472728478610830472.blf");
+                Log.d("BlfFilePath", BlfFilePath);
+                parseBlfByPython(BlfFilePath);
 
             }
         });
 
-        messageHandlers.put("chooseDBCPath", new BridgeHandler() {
+        messageHandlers.put("getDBCforBlf", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
                 mCallbackId = callback;
@@ -527,7 +501,7 @@ public class MainActivity3 extends AppCompatActivity {
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
 
 //                startActivityForResult(intent, CHOOSE_REQUEST_CODE);
-                startActivityForResult(intent,READ_REQUEST_CODE);
+                startActivityForResult(intent, READ_REQUEST_CODE);
 
             }
         });
@@ -553,7 +527,7 @@ public class MainActivity3 extends AppCompatActivity {
                 JsonArray dataArray = canDataElement.getAsJsonArray();
                 int length = dataArray.size();
                 byte[] CANData = new byte[length];
-                Log.e(TAG, "0911" + "length:   " + length );
+                Log.e(TAG, "0911" + "length:   " + length);
                 Log.d(TAG, "0911" + data);
                 for (int i = 0; i < length; i++) {
                     CANData[i] = (byte) Integer.parseInt(dataArray.get(i).getAsString(), 16);
@@ -578,12 +552,11 @@ public class MainActivity3 extends AppCompatActivity {
                 JsCallResult<Result<List<Map<String, Object>>>> jsCallResult = new JsCallResult<>(callback);
                 Result<List<Map<String, Object>>> success = ResponseData.success(maps);
                 jsCallResult.setData(success);
-                Log.e(TAG, "1111111 222222 3333: " + jsCallResult.getData() );
+                Log.e(TAG, "1111111 222222 3333: " + jsCallResult.getData());
                 callJs(jsCallResult);
             }
         });
     }
-
 
 
     private <T> void callJs(T result) {
@@ -758,6 +731,9 @@ public class MainActivity3 extends AppCompatActivity {
             String fileName = getFileNameFromUri(this, uri);
             // 获取文件路径
             String filePath = getPathFromUri(this, uri);
+
+            BlfFilePath = filePath;
+            Log.e(TAG, "BlfFilePath: " + BlfFilePath);
 
             if (mCallbackId == null) {
                 Log.e(TAG, "mCallbackId is null,please check it");

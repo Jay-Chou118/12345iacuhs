@@ -247,7 +247,6 @@ public class Utils {
         Python python = Python.getInstance();
         PyObject pyObject = python.getModule("app");
         String usermsg = String.valueOf(pyObject.callAttr("blfGetBLFdata", filePath));
-//        Log.e(TAG,"parseDBCByPython :" + usermsg);
         return usermsg;
     }
 
@@ -256,10 +255,15 @@ public class Utils {
 
         PyObject pyObject = python.getModule("app");
         String usermsg = String.valueOf(pyObject.callAttr("blfCppGetDBC", carType, sdb));
-//        Log.e(TAG,"parseDBCByPython :" + usermsg
         return usermsg;
     }
 
+    static public String blfGetAnalysisByParams(String data) {
+        Python python = Python.getInstance();
+        PyObject pyObject = python.getModule("app");
+        String usermsg = String.valueOf(pyObject.callAttr("blfGetAnalysisByParams", data));
 
+        return usermsg;
+    }
 
 }

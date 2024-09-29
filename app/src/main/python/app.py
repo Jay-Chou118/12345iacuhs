@@ -80,8 +80,7 @@ def blfCppGetDBC(carType, sdb):
     if cartype != custom:
         is_custom = False
         sdb = sdb
-        dir = os.path.dirname(__file__)
-        dir_parent = os.path.join(Path(dir), 'apps/shared_pkg')
+        dir_parent = "/data/data/com.example.testcdc/files/chaquopy/AssetFinder/app/shared_pkg"
         key_ini = b'jiamiini'
         f_h = open("/data/data/com.example.testcdc/files/chaquopy/AssetFinder/app/shared_pkg/bdaces/cfignsf/Extp2DceSpicProtIo/Lib/aW5p.dll", 'rb')
 
