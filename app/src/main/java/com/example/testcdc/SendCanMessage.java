@@ -1,18 +1,21 @@
 package com.example.testcdc;
 
+import android.util.Log;
+
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 
 import java.io.Serializable;
 import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 import java.util.Arrays;
 
 public class SendCanMessage implements Cloneable, Serializable {
 
-    short period;
-    byte isReady;
-    byte slot;
-    int CanID;
+    short period; //2个字节
+    byte isReady; //1个字节
+    byte slot;//1个字节
+    int CanID;//4个字节
     byte  BUSId;
     byte  dataLength;
     byte  FDFormat;
@@ -116,80 +119,31 @@ public class SendCanMessage implements Cloneable, Serializable {
 
     }
 
-    public  static  int getCanMessageLength()
-    {
-        return Short.BYTES + Byte.BYTES + Byte.BYTES + Integer.BYTES +
-                Byte.BYTES + Byte.BYTES + Byte.BYTES + Byte.BYTES +
-                (Byte.BYTES * 64);
-    }
+    public byte[] toByteArray() {
+        ByteBuffer buffer = ByteBuffer.allocate(76); // 总长度为75字节
+        buffer.order(ByteOrder.LITTLE_ENDIAN); // 设置字节序为大端序
 
-    // 将SendCanMessage对象转换为十六进制字符串表示的数据流
-    public String toHexStream() {
-        StringBuilder hexBuilder = new StringBuilder();
+        // 将short类型的period写入ByteBuffer
+        buffer.putShort(period);
+        // 写入isReady, slot, CAN ID, BUS Id, dataLength, FDFormat, unused_2
+        buffer.put(isReady);
+        buffer.put(slot);
+        buffer.putInt(CanID);
+        buffer.put(BUSId);
+        buffer.put(dataLength);
+        buffer.put(FDFormat);
+        buffer.put(unused_2);
 
-        // 将period转换为字节
-        byte[] periodBytes = ByteBuffer.allocate(4).putInt(period).array();
-        hexBuilder.append(byteArrayToHex(periodBytes));
+        // 写入data数组
+        buffer.put(data);
 
-        // 将isReady转换为字节
-        byte[] isReadyBytes = ByteBuffer.allocate(4).putInt(isReady).array();
-        hexBuilder.append(byteArrayToHex(isReadyBytes));
-
-        // 将slot转换为字节
-        byte[] slotBytes = ByteBuffer.allocate(4).putInt(slot).array();
-        hexBuilder.append(byteArrayToHex(slotBytes));
-
-        // 将CanID转换为字节
-        byte[] canIDBytes = ByteBuffer.allocate(4).putInt(CanID).array();
-        hexBuilder.append(byteArrayToHex(canIDBytes));
-
-        // 将BUSId转换为字节
-        byte[] busIdBytes = ByteBuffer.allocate(4).putInt(BUSId).array();
-        hexBuilder.append(byteArrayToHex(busIdBytes));
-
-        // 将dataLength转换为字节
-        byte[] dataLengthBytes = ByteBuffer.allocate(4).putInt(dataLength).array();
-        hexBuilder.append(byteArrayToHex(dataLengthBytes));
-
-        // 将FDFormat转换为字节
-        byte[] fdFormatBytes = ByteBuffer.allocate(4).putInt(FDFormat).array();
-        hexBuilder.append(byteArrayToHex(fdFormatBytes));
-
-        // 将unused_2转换为字节
-        byte[] unused2Bytes = ByteBuffer.allocate(4).putInt(unused_2).array();
-        hexBuilder.append(byteArrayToHex(unused2Bytes));
-
-        // 添加data字段的十六进制表示
-        hexBuilder.append(byteArrayToHex(data));
-
-        return hexBuilder.toString();
-    }
-
-    // 辅助方法：将字节数组转换为十六进制字符串
-    private String byteArrayToHex(byte[] bytes) {
-        StringBuilder sb = new StringBuilder();
-        for (byte b : bytes) {
-            sb.append(String.format("%02X ", b));
-        }
-        return sb.toString().trim();
-    }
-
-    // 将十六进制字符串转换为字节数组
-    static byte[] hexStringToByteArray(String s) {
-        s = s.replaceAll("\\s+", ""); // 移除所有空白字符
-        int len = s.length();
-        byte[] data = new byte[len / 2];
-        for (int i = 0; i < len; i += 2) {
-            data[i / 2] = (byte) ((Character.digit(s.charAt(i), 16) << 4)
-                    + Character.digit(s.charAt(i+1), 16));
-        }
-        return data;
+        return buffer.array();
     }
 
 
-    public byte[] appendDataTomCmdData(byte[] mCmdData) {
-        String hexStream = toHexStream();
-        byte[] DATA = hexStringToByteArray(hexStream);
+
+
+    public byte[] appendDataTomCmdData(byte[] mCmdData,byte[] DATA) {
 
         // 创建一个新的数组，包含mCmdData和DATA
         byte[] result = new byte[mCmdData.length + DATA.length];

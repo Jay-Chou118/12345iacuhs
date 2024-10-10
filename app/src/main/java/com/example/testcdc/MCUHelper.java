@@ -19,9 +19,6 @@ import com.google.gson.JsonObject;
 import com.hoho.android.usbserial.driver.UsbSerialPort;
 import com.hoho.android.usbserial.util.SerialInputOutputManager;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.concurrent.locks.Lock;
@@ -563,42 +560,43 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         mCmdData = new byte[]{};
 
 
-        SendCanMessage SendCan = new SendCanMessage();
+        SendCanMessage sendCan = new SendCanMessage();
         Log.d(TAG, " TTTT I AM SENDING");
         JsonObject jsonObject = data.getAsJsonObject();
 
-        SendCan.period = 0;
-        SendCan.isReady = 0;
-        SendCan.slot = 0;
+        sendCan.period = 0;
+        sendCan.isReady = 0;
+        sendCan.slot = 0;
         //int channel = jsonObject.get("channel").getAsInt();
-        SendCan.CanID = jsonObject.get("canId").getAsInt();
-        SendCan.BUSId = jsonObject.get("channel").getAsByte();
+        sendCan.CanID = jsonObject.get("canId").getAsInt();
+        sendCan.BUSId = jsonObject.get("channel").getAsByte();
         String canType = jsonObject.get("canType").getAsString();
-        SendCan.dataLength = jsonObject.get("dlc").getAsByte();
-        SendCan.FDFormat = (byte)("CAN".equals(canType) ? 0 : 1);
+        sendCan.dataLength = jsonObject.get("dlc").getAsByte();
+        sendCan.FDFormat = (byte)("CAN".equals(canType) ? 0 : 1);
 
-        SendCan.unused_2 = 0;
+        sendCan.unused_2 = 0;
 
         JsonArray rawDataJsonArray = jsonObject.getAsJsonArray("rawData");
 
-        SendCan.setDataFromJsonArray(rawDataJsonArray);
-        //Log.w(TAG, "TTTTTTT Data : " + rawDataJsonArray + "TTTTT " + Arrays.toString(SendCan.data));
-        // Convert JsonArray to int[]
+        sendCan.setDataFromJsonArray(rawDataJsonArray);
+        //Log.w(TAG, "TTTTTTT Data : " + rawDataJsonArray + "TTTTT " + Arrays.toString(sendCan.data));
 
-        Log.w(TAG, "TTTTTTT mMcuIndex  " + mMcuIndex + "BusId  " + SendCan.BUSId);
-        Log.w(TAG,  "TTTT" + SendCan.toString());
+        Log.w(TAG, "TTTTTTT mMcuIndex  " + mMcuIndex + "BusId  " + sendCan.BUSId);
+        Log.w(TAG,  "TTTT" + sendCan.toString());
 
-        Log.w(TAG,  "TTTT  " + SendCan.getCanMessageLength() + " TTTTTT " +  (byte) (SendCan.getCanMessageLength() & 0xff)+" TTTTT " + (byte) (SendCan.getCanMessageLength()  >> 8 & 0xff));
         mCmdData = new byte[]{0x5a,0x5a,0x5a,0x5a,(byte)(cmd.code & 0xff),(byte)(cmd.code >> 8 & 0xff),
-                (byte) (SendCan.getCanMessageLength() & 0xff),(byte) (SendCan.getCanMessageLength()  >> 8 & 0xff)};
+                76,0};
+//        mCmdData = new byte[]{0x5a,0x5a,0x5a,0x5a,(byte)(cmd.code & 0xff),(byte)(cmd.code >> 8 & 0xff),
+//                (byte) 0xff,(byte) 0xff};
         Log.w(TAG, "TTTTTT mCmdData : " + Arrays.toString(mCmdData) );
-        if (((SendCan.BUSId - 1) / 3) == mMcuIndex)
+        if (((sendCan.BUSId - 1) / 3) == mMcuIndex)
         {
-            SendCan.BUSId = (byte) (SendCan.BUSId - 3 * mMcuIndex);
-//            String hexStream = SendCan.toHexStream();
+            sendCan.BUSId = (byte) (sendCan.BUSId - 3 * mMcuIndex);
+//            String hexStream = sendCan.toHexStream();
 //            byte[] DATA = SendCanMessage.hexStringToByteArray(hexStream);
-            //Log.w(TAG, " TTTTT hexStream : " + Arrays.toString(DATA) );
-            mCmdData = SendCan.appendDataTomCmdData(mCmdData);
+            Log.w(TAG, " TTTTT hexStream : " + sendCan.toString() );
+            byte[] DATA = sendCan.toByteArray();
+            mCmdData = sendCan.appendDataTomCmdData(mCmdData,DATA);
             Log.w(TAG, "TTTTT mCmdData : " + Arrays.toString(mCmdData) );
         }else
         {
@@ -608,16 +606,13 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         }
 
 
-
-
-
     }
     private boolean writeSerial() {
         if (mSerial != null && mCmdData.length > 0 )
         {
             try {
                 mSerial.write(mCmdData,2000);
-                Log.e(TAG, " TTTTT2 mCmdData: " + Arrays.toString(mCmdData) );
+                //Log.e(TAG, " TTTTT2 mCmdData: " + Arrays.toString(mCmdData) );
                 if(mAppLevel<0x1040)
                 {
                     // 适配之前无buffer缓存的电脑
