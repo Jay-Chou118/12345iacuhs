@@ -227,9 +227,7 @@ def blfGetAnalysisByParams(data):
     @apiBody {array} params [[msg 消息ID,channel 通道ID,signal 信号名]]
     @apiSampleRequest /blft/getAnalysisByParams
     """
-    # 将输入的JSON字符串转换为Python列表
     data = json.loads(data)
-
     global dbc
     global frameDict
     global blf_file_state
