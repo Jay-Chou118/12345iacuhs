@@ -12,6 +12,7 @@ import com.example.testcdc.dao.MsgInfoDao;
 import com.example.testcdc.dao.SignalInfoDao;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
+import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.hoho.android.usbserial.util.HexDump;
 
@@ -250,7 +251,7 @@ public class Utils {
         return usermsg;
     }
 
-    static public String parseDBCforBlf( String carType, String sdb) {
+    static public String parseDBCforBlf(String carType, String sdb) {
         Python python = Python.getInstance();
 
         PyObject pyObject = python.getModule("app");

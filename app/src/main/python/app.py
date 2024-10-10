@@ -227,7 +227,9 @@ def blfGetAnalysisByParams(data):
     @apiBody {array} params [[msg 消息ID,channel 通道ID,signal 信号名]]
     @apiSampleRequest /blft/getAnalysisByParams
     """
-    data = data.json
+    # 将输入的JSON字符串转换为Python列表
+    data = json.loads(data)
+
     global dbc
     global frameDict
     global blf_file_state
@@ -236,9 +238,9 @@ def blfGetAnalysisByParams(data):
     def trimSignalList(inputlist):
         temp = {}
         for each in inputlist:
-            channelID = each[0]
-            frameID = each[1]
-            signalName = each[2]
+            channelID = each["busId"]
+            frameID = each["canId"]
+            signalName = each["name"]
             try:
                 checkSignalValid = valueDict[channelID][frameID][signalName]
             except:
@@ -254,7 +256,7 @@ def blfGetAnalysisByParams(data):
                 ret.append((key1, key2, value2))
         return ret
     overLenSig = []
-    signalList = data.get('params')
+    signalList = data
     signalListTrimed = trimSignalList(signalList)
     retSignalValue = []
     if isBigfile:

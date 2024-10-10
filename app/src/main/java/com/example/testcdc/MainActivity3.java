@@ -39,6 +39,7 @@ import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.Basic_DataBase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
+import com.example.testcdc.httpServer.HttpServer;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -117,6 +118,8 @@ public class MainActivity3 extends AppCompatActivity {
             start(new AndroidPlatform(this));
         }
 
+        startHttpServer();
+
         //pyObject.callAttr("main");
 
         initWebView();
@@ -175,6 +178,17 @@ public class MainActivity3 extends AppCompatActivity {
             handleFile(data);
         }
 
+    }
+
+    private void startHttpServer() {
+        new Thread(() -> {
+            try {
+                HttpServer server = new HttpServer("0.0.0.0", 8000);
+                server.start();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }).start();
     }
 
 
