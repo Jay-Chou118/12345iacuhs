@@ -446,7 +446,7 @@ public class MainActivity3 extends AppCompatActivity {
                         webView.post(new Runnable() {
                             @Override
                             public void run() {
-                                Log.e(TAG, "RRRRRRRRRRRRRRRRR " + callbackJs );
+
                                 webView.loadUrl(callbackJs);
                             }
                         });
@@ -832,7 +832,6 @@ public class MainActivity3 extends AppCompatActivity {
 
         if (requestCode == READ_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
 
-            Log.e(TAG, "I am in channel 1 ");
             Uri uri = data.getData();
             // 获取文件名
             String fileName = getFileNameFromUri(this, uri);
@@ -894,12 +893,6 @@ public class MainActivity3 extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
 
-    }
-
-    public static void runInBackground(Runnable task) {
-        ExecutorService executorService = Executors.newSingleThreadExecutor();
-        executorService.submit(task);
-        executorService.shutdown();
     }
 
 }

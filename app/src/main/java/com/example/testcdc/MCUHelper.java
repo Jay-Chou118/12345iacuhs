@@ -551,22 +551,38 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
     }
 
     private void cmd_periodSendOnce(COMMAND_TYPE cmd,JsonElement data){
+        //内置CAN
         //{"row":1,"_id":"2_RLEDS_PTFusionCANFD_0x76","id":"2_RLEDS_PTFusionCANFD_0x76",
         // "text":"RLEDS_PTFusionCANFD_0x76",
         // "node_type":"msg","channel":1,"checked":true,"
         // children":[{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotSigGrpChks","id":"RLMotSigGrpChks","msg":118,"channel":2,"text":"RLMotSigGrpChks","node_type":"signal","comment":" ","remark":"信号remark","canId":177682,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":7,"length":8,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotSigGrpChks"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotSigGrpCntr","id":"RLMotSigGrpCntr","msg":118,"channel":2,"text":"RLMotSigGrpCntr","node_type":"signal","comment":" ","remark":"信号remark","canId":177683,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":11,"length":4,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotSigGrpCntr"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotActTq","id":"RLMotActTq","msg":118,"channel":2,"text":"RLMotActTq","node_type":"signal","comment":" ","remark":"信号remark","canId":177684,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":23,"length":15,"physStep":1,"dlc":0.1,"canType":-1638.3,"periodic":false,"eteDisable":false,"name":"RLMotActTq"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotActSpd","id":"RLMotActSpd","msg":118,"channel":2,"text":"RLMotActSpd","node_type":"signal","comment":" ","remark":"信号remark","canId":177685,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":39,"length":16,"physStep":1,"dlc":1,"canType":-32768,"periodic":false,"eteDisable":false,"name":"RLMotActSpd"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotMaxDynTqCp","id":"RLMotMaxDynTqCp","msg":118,"channel":2,"text":"RLMotMaxDynTqCp","node_type":"signal","comment":" ","remark":"信号remark","canId":177686,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":55,"length":10,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotMaxDynTqCp"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotMinDynTqCp","id":"RLMotMinDynTqCp","msg":118,"channel":2,"text":"RLMotMinDynTqCp","node_type":"signal","comment":" ","remark":"信号remark","canId":177687,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":71,"length":10,"physStep":1,"dlc":1,"canType":-1023,"periodic":false,"eteDisable":false,"name":"RLMotMinDynTqCp"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotFltLvlIndcn","id":"RLMotFltLvlIndcn","msg":118,"channel":2,"text":"RLMotFltLvlIndcn","node_type":"signal","comment":" ","remark":"信号remark","canId":177688,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":87,"length":3,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotFltLvlIndcn"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotAglRslvr","id":"RLMotAglRslvr","msg":118,"channel":2,"text":"RLMotAglRslvr","node_type":"signal","comment":" ","remark":"信号remark","canId":177689,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":95,"length":12,"physStep":1,"dlc":0.1,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotAglRslvr"},{"_id":"2_RLEDS_PTFusionCANFD_0x76_RLMotActSfSt","id":"RLMotActSfSt","msg":118,"channel":2,"text":"RLMotActSfSt","node_type":"signal","comment":" ","remark":"信号remark","canId":177690,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":111,"length":3,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotActSfSt"}],"name":"RLEDS_PTFusionCANFD_0x76","from":"dbc","e2e":false,
         // "periodic":0,"canType":"CAN","dlc":1,"canId":118,"dirty":"raw","isSending":false}
 
-        mCmdData = new byte[]{};
 
+        //{"row":2,"_id":"4_VCCD_ChassisBkpCANFD_0x1DE","id":"4_VCCD_ChassisBkpCANFD_0x1DE",
+        // "text":"VCCD_ChassisBkpCANFD_0x1DE",
+        // "node_type":"msg","channel":1,"checked":true,
+        // "children":[{"_id":"4_VCCD_ChassisBkpCANFD_0x1DE_DoorDrvrSts","id":"DoorDrvrSts","msg":478,"channel":4,"text":"DoorDrvrSts","node_type":"signal","comment":" ","remark":"信号remark","canId":164650,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":15,"length":2,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"DoorDrvrSts"}],
+        // "name":"VCCD_ChassisBkpCANFD_0x1DE","from":"dbc","e2e":false,"periodic":0,"canType":"CAN","dlc":1,"canId":478,"dirty":"raw","isSending":false}
+        //自定义CAN
+        //{"row":2,"name":"",
+        // "e2e":false,
+        // "periodic":"",
+        // "canId":111,"channel":1,"canType":"CAN","dlc":8,"isSending":false,"from":"CAN","rawData":[0,0,0,0,0,0,0,0],
+        // "children":[{"eteDisable":false}],"dirty":"periodic"}
+        Log.e(TAG, "TTTTT frist data : " + data );
+        JsonObject jsonObject = data.getAsJsonObject();
+        String from = jsonObject.get("from").getAsString();
+
+        mCmdData = new byte[]{};
 
         SendCanMessage sendCan = new SendCanMessage();
         Log.d(TAG, " TTTT I AM SENDING");
-        JsonObject jsonObject = data.getAsJsonObject();
 
         sendCan.period = 0;
         sendCan.isReady = 0;
         sendCan.slot = 0;
+
         //int channel = jsonObject.get("channel").getAsInt();
         sendCan.CanID = jsonObject.get("canId").getAsInt();
         sendCan.BUSId = jsonObject.get("channel").getAsByte();
@@ -576,10 +592,27 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
         sendCan.unused_2 = 0;
 
-        JsonArray rawDataJsonArray = jsonObject.getAsJsonArray("rawData");
 
-        sendCan.setDataFromJsonArray(rawDataJsonArray);
-        //Log.w(TAG, "TTTTTTT Data : " + rawDataJsonArray + "TTTTT " + Arrays.toString(sendCan.data));
+        if(from.equals("CAN"))
+        {
+
+            JsonArray rawDataJsonArray = jsonObject.getAsJsonArray("rawData");
+
+            sendCan.setDataFromJsonArray(rawDataJsonArray);
+            //Log.w(TAG, "TTTTTTT Data : " + rawDataJsonArray + "TTTTT " + Arrays.toString(sendCan.data));
+
+
+
+        }else if(from.equals("dbc"))
+        {
+//            Log.e(TAG, "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT123455666677");
+            //{"row":5,"_id":"2_VCCD_PTFusionCANFD_0x2A4","id":"2_VCCD_PTFusionCANFD_0x2A4","text":"VCCD_PTFusionCANFD_0x2A4","node_type":"msg","channel":1,"checked":true,
+            // "children":[{"_id":"2_VCCD_PTFusionCANFD_0x2A4_VCUTrigEmRecordEvent","id":"VCUTrigEmRecordEvent","msg":676,"channel":2,"text":"VCUTrigEmRecordEvent","node_type":"signal","comment":" ","remark":"信号remark","canId":162755,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":60,"length":1,"physStep":1,"dlc":1,"canType":0,"periodic":false,"eteDisable":false,"name":"VCUTrigEmRecordEvent"}],
+            // "name":"VCCD_PTFusionCANFD_0x2A4","from":"dbc","e2e":false,"periodic":0,"canType":"CAN","dlc":1,"canId":676,"dirty":"raw","isSending":false}
+            JsonArray signals = jsonObject.getAsJsonArray("children");
+            Log.w(TAG, "TTTTTTTTT signals  " + signals);
+            // [{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotLftRemaDCLk","id":"RLMotLftRemaDCLk","msg":971,"channel":2,"text":"RLMotLftRemaDCLk","node_type":"signal","comment":" ","remark":"信号remark","canId":162469,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":7,"length":16,"physStep":1,"dlc":0.002,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotLftRemaDCLk"},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotLftRemaPwrModl","id":"RLMotLftRemaPwrModl","msg":971,"channel":2,"text":"RLMotLftRemaPwrModl","node_type":"signal","comment":" ","remark":"信号remark","canId":162470,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":23,"length":16,"physStep":1,"dlc":0.002,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotLftRemaPwrModl"},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTAvrgDiodeMin","id":"RLMotTAvrgDiodeMin","msg":971,"channel":2,"text":"RLMotTAvrgDiodeMin","node_type":"signal","comment":" ","remark":"信号remark","canId":162471,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":39,"length":8,"physStep":1,"dlc":1,"canType":-40,"periodic":false,"eteDisable":false,"name":"RLMotTAvrgDiodeMin","physValue":0},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTAvrgMosMax","id":"RLMotTAvrgMosMax","msg":971,"channel":2,"text":"RLMotTAvrgMosMax","node_type":"signal","comment":" ","remark":"信号remark","canId":162472,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":47,"length":8,"physStep":1,"dlc":1,"canType":-40,"periodic":false,"eteDisable":false,"name":"RLMotTAvrgMosMax","physValue":0},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTAvrgMosMin","id":"RLMotTAvrgMosMin","msg":971,"channel":2,"text":"RLMotTAvrgMosMin","node_type":"signal","comment":" ","remark":"信号remark","canId":162473,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":55,"length":8,"physStep":1,"dlc":1,"canType":-40,"periodic":false,"eteDisable":false,"name":"RLMotTAvrgMosMin"},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTCoolOilMax","id":"RLMotTCoolOilMax","msg":971,"channel":2,"text":"RLMotTCoolOilMax","node_type":"signal","comment":" ","remark":"信号remark","canId":162474,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":63,"length":8,"physStep":1,"dlc":1,"canType":-40,"periodic":false,"eteDisable":false,"name":"RLMotTCoolOilMax"},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTCoolOilMin","id":"RLMotTCoolOilMin","msg":971,"channel":2,"text":"RLMotTCoolOilMin","node_type":"signal","comment":" ","remark":"信号remark","canId":162475,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":71,"length":8,"physStep":1,"dlc":1,"canType":-40,"periodic":false,"eteDisable":false,"name":"RLMotTCoolOilMin"},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTCoolWtrMax","id":"RLMotTCoolWtrMax","msg":971,"channel":2,"text":"RLMotTCoolWtrMax","node_type":"signal","comment":" ","remark":"信号remark","canId":162476,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":79,"length":8,"physStep":1,"dlc":1,"canType":-40,"periodic":false,"eteDisable":false,"name":"RLMotTCoolWtrMax"},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTCoolWtrMin","id":"RLMotTCoolWtrMin","msg":971,"channel":2,"text":"RLMotTCoolWtrMin","node_type":"signal","comment":" ","remark":"信号remark","canId":162477,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":87,"length":8,"physStep":1,"dlc":1,"canType":-40,"periodic":false,"eteDisable":false,"name":"RLMotTCoolWtrMin"},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTDCLkCapMax","id":"RLMotTDCLkCapMax","msg":971,"channel":2,"text":"RLMotTDCLkCapMax","node_type":"signal","comment":" ","remark":"信号remark","canId":162478,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":95,"lengt
+        }
 
         Log.w(TAG, "TTTTTTT mMcuIndex  " + mMcuIndex + "BusId  " + sendCan.BUSId);
         Log.w(TAG,  "TTTT" + sendCan.toString());
@@ -604,6 +637,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             mCmdData = new byte[]{};
 
         }
+
 
 
     }
