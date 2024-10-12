@@ -236,9 +236,9 @@ def blfGetAnalysisByParams(data):
     def trimSignalList(inputlist):
         temp = {}
         for each in inputlist:
-            channelID = each["busId"]
-            frameID = each["canId"]
-            signalName = each["name"]
+            channelID = each[0]
+            frameID = each[1]
+            signalName = each[2]
             try:
                 checkSignalValid = valueDict[channelID][frameID][signalName]
             except:
@@ -254,7 +254,7 @@ def blfGetAnalysisByParams(data):
                 ret.append((key1, key2, value2))
         return ret
     overLenSig = []
-    signalList = data
+    signalList = data.get("params")
     signalListTrimed = trimSignalList(signalList)
     retSignalValue = []
     if isBigfile:
