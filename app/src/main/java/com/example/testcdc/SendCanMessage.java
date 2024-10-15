@@ -120,8 +120,8 @@ public class SendCanMessage implements Cloneable, Serializable {
     }
 
     public byte[] toByteArray() {
-        ByteBuffer buffer = ByteBuffer.allocate(76); // 总长度为75字节
-        buffer.order(ByteOrder.LITTLE_ENDIAN); // 设置字节序为大端序
+        ByteBuffer buffer = ByteBuffer.allocate(76); // 总长度为76字节
+        buffer.order(ByteOrder.LITTLE_ENDIAN); // 设置字节序为小端序
 
         // 将short类型的period写入ByteBuffer
         buffer.putShort(period);

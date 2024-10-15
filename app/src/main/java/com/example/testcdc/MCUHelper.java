@@ -20,7 +20,9 @@ import com.hoho.android.usbserial.driver.UsbSerialPort;
 import com.hoho.android.usbserial.util.SerialInputOutputManager;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -168,6 +170,9 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
     private SerialInputOutputManager usbIoManager;
 
+    private SendCanMessageManager sendcanMessageManager = new SendCanMessageManager() ;
+
+    private SendCanMessage sendCan = new SendCanMessage();
 
     public long getmMcuIndex() {
         return mMcuIndex;
@@ -534,7 +539,12 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             case PERIOD_SEND_ONCE:
                 cmd_periodSendOnce(cmd,data);
                 break;
+            case PERIOD_SEND_START:
+            case PERIOD_SEND_STOP:
 
+            case PERIOD_SEND_CONFIG:
+                cmd_periodSendConfig(cmd,data);
+                break;
             default:
                 mCmdData = new byte[]{};
                 break;
@@ -576,8 +586,8 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
         mCmdData = new byte[]{};
 
-        SendCanMessage sendCan = new SendCanMessage();
-        Log.d(TAG, " TTTT I AM SENDING");
+
+        Log.d(TAG, " TTTT I AM SENDING ONCE");
 
         sendCan.period = 0;
         sendCan.isReady = 0;
@@ -593,13 +603,13 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         sendCan.unused_2 = 0;
 
 
-        if(from.equals("CAN"))
+        if(from.equals("CAN") || from.equals("CANFD"))
         {
 
             JsonArray rawDataJsonArray = jsonObject.getAsJsonArray("rawData");
 
             sendCan.setDataFromJsonArray(rawDataJsonArray);
-            //Log.w(TAG, "TTTTTTT Data : " + rawDataJsonArray + "TTTTT " + Arrays.toString(sendCan.data));
+            Log.w(TAG, "TTTTTTT Data : " + rawDataJsonArray + "TTTTT " + Arrays.toString(sendCan.data));
 
 
 
@@ -614,13 +624,12 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             // [{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotLftRemaDCLk","id":"RLMotLftRemaDCLk","msg":971,"channel":2,"text":"RLMotLftRemaDCLk","node_type":"signal","comment":" ","remark":"信号remark","canId":162469,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":7,"length":16,"physStep":1,"dlc":0.002,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotLftRemaDCLk"},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotLftRemaPwrModl","id":"RLMotLftRemaPwrModl","msg":971,"channel":2,"text":"RLMotLftRemaPwrModl","node_type":"signal","comment":" ","remark":"信号remark","canId":162470,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":23,"length":16,"physStep":1,"dlc":0.002,"canType":0,"periodic":false,"eteDisable":false,"name":"RLMotLftRemaPwrModl"},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTAvrgDiodeMin","id":"RLMotTAvrgDiodeMin","msg":971,"channel":2,"text":"RLMotTAvrgDiodeMin","node_type":"signal","comment":" ","remark":"信号remark","canId":162471,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":39,"length":8,"physStep":1,"dlc":1,"canType":-40,"periodic":false,"eteDisable":false,"name":"RLMotTAvrgDiodeMin","physValue":0},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTAvrgMosMax","id":"RLMotTAvrgMosMax","msg":971,"channel":2,"text":"RLMotTAvrgMosMax","node_type":"signal","comment":" ","remark":"信号remark","canId":162472,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":47,"length":8,"physStep":1,"dlc":1,"canType":-40,"periodic":false,"eteDisable":false,"name":"RLMotTAvrgMosMax","physValue":0},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTAvrgMosMin","id":"RLMotTAvrgMosMin","msg":971,"channel":2,"text":"RLMotTAvrgMosMin","node_type":"signal","comment":" ","remark":"信号remark","canId":162473,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":55,"length":8,"physStep":1,"dlc":1,"canType":-40,"periodic":false,"eteDisable":false,"name":"RLMotTAvrgMosMin"},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTCoolOilMax","id":"RLMotTCoolOilMax","msg":971,"channel":2,"text":"RLMotTCoolOilMax","node_type":"signal","comment":" ","remark":"信号remark","canId":162474,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":63,"length":8,"physStep":1,"dlc":1,"canType":-40,"periodic":false,"eteDisable":false,"name":"RLMotTCoolOilMax"},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTCoolOilMin","id":"RLMotTCoolOilMin","msg":971,"channel":2,"text":"RLMotTCoolOilMin","node_type":"signal","comment":" ","remark":"信号remark","canId":162475,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":71,"length":8,"physStep":1,"dlc":1,"canType":-40,"periodic":false,"eteDisable":false,"name":"RLMotTCoolOilMin"},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTCoolWtrMax","id":"RLMotTCoolWtrMax","msg":971,"channel":2,"text":"RLMotTCoolWtrMax","node_type":"signal","comment":" ","remark":"信号remark","canId":162476,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":79,"length":8,"physStep":1,"dlc":1,"canType":-40,"periodic":false,"eteDisable":false,"name":"RLMotTCoolWtrMax"},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTCoolWtrMin","id":"RLMotTCoolWtrMin","msg":971,"channel":2,"text":"RLMotTCoolWtrMin","node_type":"signal","comment":" ","remark":"信号remark","canId":162477,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":87,"length":8,"physStep":1,"dlc":1,"canType":-40,"periodic":false,"eteDisable":false,"name":"RLMotTCoolWtrMin"},{"_id":"2_RLEDS_PTFusionCANFD_0x3CB_RLMotTDCLkCapMax","id":"RLMotTDCLkCapMax","msg":971,"channel":2,"text":"RLMotTDCLkCapMax","node_type":"signal","comment":" ","remark":"信号remark","canId":162478,"rawValue":0,"maxRaw":0,"minRaw":0,"maxPhys":0,"minPhys":0,"selectPhys":0,"unit":"m","startBit":95,"lengt
         }
 
-        Log.w(TAG, "TTTTTTT mMcuIndex  " + mMcuIndex + "BusId  " + sendCan.BUSId);
-        Log.w(TAG,  "TTTT" + sendCan.toString());
+//        Log.w(TAG, "TTTTTTT mMcuIndex  " + mMcuIndex + "BusId  " + sendCan.BUSId);
+//        Log.w(TAG,  "TTTT" + sendCan.toString());
 
         mCmdData = new byte[]{0x5a,0x5a,0x5a,0x5a,(byte)(cmd.code & 0xff),(byte)(cmd.code >> 8 & 0xff),
                 76,0};
-//        mCmdData = new byte[]{0x5a,0x5a,0x5a,0x5a,(byte)(cmd.code & 0xff),(byte)(cmd.code >> 8 & 0xff),
-//                (byte) 0xff,(byte) 0xff};
+
         Log.w(TAG, "TTTTTT mCmdData : " + Arrays.toString(mCmdData) );
         if (((sendCan.BUSId - 1) / 3) == mMcuIndex)
         {
@@ -629,6 +638,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 //            byte[] DATA = SendCanMessage.hexStringToByteArray(hexStream);
             Log.w(TAG, " TTTTT hexStream : " + sendCan.toString() );
             byte[] DATA = sendCan.toByteArray();
+            sendcanMessageManager.addSendCanMessage(sendCan);
             mCmdData = sendCan.appendDataTomCmdData(mCmdData,DATA);
             Log.w(TAG, "TTTTT mCmdData : " + Arrays.toString(mCmdData) );
         }else
@@ -638,9 +648,85 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
         }
 
-
+        Log.e(TAG, "TTTTTTTTTTTTT m_PeriodSendConfig  " + sendcanMessageManager.getPeriodSendConfig() );
 
     }
+
+    private void cmd_periodSendConfig(COMMAND_TYPE cmd,JsonElement data){
+
+        sendcanMessageManager.clearPeriodSendConfig();
+
+        Log.e(TAG, "TTTTT frist data : " + data );
+        JsonObject jsonObject = data.getAsJsonObject();
+//        String from = jsonObject.get("from").getAsString();
+
+        SendCanMessage sendCan = new SendCanMessage();
+        Log.d(TAG, " TTTT I AM SENDING PERIOD");
+
+        sendCan.period = jsonObject.get("periodic").getAsShort();
+        sendCan.isReady = 0;
+        sendCan.slot = 0;
+
+        //int channel = jsonObject.get("channel").getAsInt();
+        sendCan.CanID = jsonObject.get("canId").getAsInt();
+        sendCan.BUSId = jsonObject.get("channel").getAsByte();
+        String canType = jsonObject.get("canType").getAsString();
+        sendCan.dataLength = jsonObject.get("dlc").getAsByte();
+        sendCan.FDFormat = (byte)("CAN".equals(canType) ? 0 : 1);
+
+        sendCan.unused_2 = 0;
+
+        if (((sendCan.BUSId - 1) / 3) == mMcuIndex)
+        {
+            sendCan.BUSId = (byte) (sendCan.BUSId - 3 * mMcuIndex);
+        }
+
+
+
+        int num = 0;
+        List<Byte> tmp = new ArrayList<>();
+
+        for (SendCanMessage usbSendCan : sendcanMessageManager.getPeriodSendConfig()){
+            byte[] usbSendCanBytes = usbSendCan.toByteArray();
+            for (byte b : usbSendCanBytes) {
+                tmp.add(b);
+            }
+            num++;
+
+            if ((num % 23) == 0) {
+
+                mCmdData = new byte[]{};
+                mCmdData = new byte[]{0x5a,0x5a,0x5a,0x5a,(byte)(cmd.code & 0xff),(byte)(cmd.code >> 8 & 0xff), (byte) 0xd4,0x06};
+
+                // 将 tmp 列表中的数据追加到 mCmdData 中
+                byte[] tmpArray = new byte[tmp.size()];
+                for (int i = 0; i < tmp.size(); i++) {
+                    tmpArray[i] = tmp.get(i);
+                }
+
+                // 创建新的 byte 数组，包含前缀和 tmp 数据
+                byte[] combinedData = new byte[mCmdData.length + tmpArray.length];
+                System.arraycopy(mCmdData, 0, combinedData, 0, mCmdData.length);
+                System.arraycopy(tmpArray, 0, combinedData, mCmdData.length, tmpArray.length);
+
+                mCmdData = combinedData;
+
+
+
+                writeSerial();
+                num = 0;
+                tmp.clear();
+
+
+
+            }
+
+        }
+
+    }
+
+
+
     private boolean writeSerial() {
         if (mSerial != null && mCmdData.length > 0 )
         {
