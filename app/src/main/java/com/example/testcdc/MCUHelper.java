@@ -533,15 +533,14 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             case GET_APP_LEVEL:
             case GET_APP_BUILD_TIME:
             case GET_DEVICE_CONFIG:
+            case PERIOD_SEND_START:
+            case PERIOD_SEND_STOP:
             case SET_HEART_BEATS:
                 cmd_genCommonCmd(cmd);
                 break;
             case PERIOD_SEND_ONCE:
                 cmd_periodSendOnce(cmd,data);
                 break;
-            case PERIOD_SEND_START:
-            case PERIOD_SEND_STOP:
-
             case PERIOD_SEND_CONFIG:
                 cmd_periodSendConfig(cmd,data);
                 break;
@@ -695,8 +694,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
             if ((num % 23) == 0) {
 
-                mCmdData = new byte[]{};
-                mCmdData = new byte[]{0x5a,0x5a,0x5a,0x5a,(byte)(cmd.code & 0xff),(byte)(cmd.code >> 8 & 0xff), (byte) 0xd4,0x06};
+                mCmdData = new byte[]{0x5a,0x5a,0x5a,0x5a,(byte)(cmd.code & 0xff),(byte)(cmd.code >> 8 & 0xff), (byte)0xd4, (byte)0x06};
 
                 // 将 tmp 列表中的数据追加到 mCmdData 中
                 byte[] tmpArray = new byte[tmp.size()];
@@ -711,15 +709,51 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
                 mCmdData = combinedData;
 
-
+                // 检查 mCmdData 的大小是否为 64 的倍数
+                if (mCmdData.length % 64 == 0) {
+                    byte[] newCmdDataWithExtraByte = new byte[mCmdData.length + 1];
+                    System.arraycopy(mCmdData, 0, newCmdDataWithExtraByte, 0, mCmdData.length);
+                    newCmdDataWithExtraByte[mCmdData.length] = 0;
+                    mCmdData = newCmdDataWithExtraByte;
+                }
 
                 writeSerial();
                 num = 0;
                 tmp.clear();
 
-
-
             }
+
+        }
+
+        //mCmdData = new byte[]{};
+
+        if (!tmp.isEmpty()) {
+            // 重新初始化 mCmdData
+            mCmdData = new byte[]{0x5a, 0x5a, 0x5a, 0x5a, (byte) (cmd.code & 0xff), (byte) (cmd.code >> 8 & 0xff), (byte)76, (byte)0};
+
+            // 将 tmp 列表中的数据追加到 mCmdData 中
+            byte[] tmpArray = new byte[tmp.size()];
+            for (int i = 0; i < tmp.size(); i++) {
+                tmpArray[i] = tmp.get(i);
+            }
+
+            // 创建新的 byte 数组，包含前缀和 tmp 数据
+            byte[] combinedData = new byte[mCmdData.length + tmpArray.length];
+            System.arraycopy(mCmdData, 0, combinedData, 0, mCmdData.length);
+            System.arraycopy(tmpArray, 0, combinedData, mCmdData.length, tmpArray.length);
+
+            mCmdData = combinedData;
+
+            // 检查 mCmdData 的大小是否为 64 的倍数
+            if (mCmdData.length % 64 == 0) {
+                byte[] newCmdDataWithExtraByte = new byte[mCmdData.length + 1];
+                System.arraycopy(mCmdData, 0, newCmdDataWithExtraByte, 0, mCmdData.length);
+                newCmdDataWithExtraByte[mCmdData.length] = 0;
+                mCmdData = newCmdDataWithExtraByte;
+            }
+
+            writeSerial();
+
 
         }
 
