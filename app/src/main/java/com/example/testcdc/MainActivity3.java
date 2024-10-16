@@ -629,16 +629,6 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("getPeriodicSend", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) throws IOException {
-                //Log.d(TAG, "TTTTTTTTTTTTTT: " + data);
-                //{"row":1,"name":"","e2e":false,
-                // "periodic":0,"canId":111,
-                // "channel":1,
-                // "canType":"CAN",
-                // "dlc":8,
-                // "isSending":false,
-                // "from":"CAN",
-                // "rawData":[0,0,0,0,0,0,0,0],
-                // "children":[{"eteDisable":false}],"dirty":false,"raw":1}
 
                 mMiCANBinder.CANOnBus();
                 Log.d(TAG, "RRRRR get in Periods");
@@ -648,7 +638,12 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
+        messageHandlers.put("getRawValueToPhysValue", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) throws IOException {
 
+            }
+        });
 
 
     }
