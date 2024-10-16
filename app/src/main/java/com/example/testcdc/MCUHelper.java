@@ -19,6 +19,8 @@ import com.google.gson.JsonObject;
 import com.hoho.android.usbserial.driver.UsbSerialPort;
 import com.hoho.android.usbserial.util.SerialInputOutputManager;
 
+import org.json.JSONArray;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -504,6 +506,8 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         sendCmd(COMMAND_TYPE.PERIOD_SEND_ONCE,data);
     }
 
+    public void SendPeriods(JsonElement data){sendCmd(COMMAND_TYPE.PERIOD_SEND_CONFIG,data);}
+
     public void monitor()
     {
         Log.d(TAG,String.format("mMcuIndex: %d, mSerialBuffer: %d mErrorNum: %d",mMcuIndex,mSerialBuffer.size(),mErrorNum));
@@ -651,41 +655,48 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
     }
 
-    private void cmd_periodSendConfig(COMMAND_TYPE cmd,JsonElement data){
-
+    private void cmd_periodSendConfig(COMMAND_TYPE cmd, JsonElement data) {
         sendcanMessageManager.clearPeriodSendConfig();
 
-        Log.e(TAG, "TTTTT frist data : " + data );
+        Log.e(TAG, "TTTTT first data : " + data);
         JsonObject jsonObject = data.getAsJsonObject();
-//        String from = jsonObject.get("from").getAsString();
 
-        SendCanMessage sendCan = new SendCanMessage();
-        Log.d(TAG, " TTTT I AM SENDING PERIOD");
+        // 获取 data 数组
+        JsonArray dataArray = jsonObject.getAsJsonArray("data");
 
-        sendCan.period = jsonObject.get("periodic").getAsShort();
-        sendCan.isReady = 0;
-        sendCan.slot = 0;
+        // 遍历 data 数组
+        for (JsonElement itemElement : dataArray) {
+            JsonObject item = itemElement.getAsJsonObject();
 
-        //int channel = jsonObject.get("channel").getAsInt();
-        sendCan.CanID = jsonObject.get("canId").getAsInt();
-        sendCan.BUSId = jsonObject.get("channel").getAsByte();
-        String canType = jsonObject.get("canType").getAsString();
-        sendCan.dataLength = jsonObject.get("dlc").getAsByte();
-        sendCan.FDFormat = (byte)("CAN".equals(canType) ? 0 : 1);
+            SendCanMessage sendCan = new SendCanMessage();
+            Log.d(TAG, " RRRRR I AM SENDING PERIOD");
 
-        sendCan.unused_2 = 0;
+            sendCan.period = item.get("periodic").getAsShort();
+            sendCan.isReady = 0;
+            sendCan.slot = 0;
 
-        if (((sendCan.BUSId - 1) / 3) == mMcuIndex)
-        {
-            sendCan.BUSId = (byte) (sendCan.BUSId - 3 * mMcuIndex);
+            sendCan.CanID = item.get("canId").getAsInt();
+            sendCan.BUSId = item.get("channel").getAsByte();
+            String canType = item.get("canType").getAsString();
+            sendCan.dataLength = item.get("dlc").getAsByte();
+            sendCan.FDFormat = (byte) ("CAN".equals(canType) ? 0 : 1);
+
+            sendCan.unused_2 = 0;
+
+            if (((sendCan.BUSId - 1) / 3) == mMcuIndex) {
+                sendCan.BUSId = (byte) (sendCan.BUSId - 3 * mMcuIndex);
+            }
+
+            Log.w(TAG, "RRRRRR sendCan: " + sendCan.toString());
+
+            // 将 SendCanMessage 对象添加到 CanMessageManager 中
+            sendcanMessageManager.addSendCanMessage(sendCan);
         }
-
-
 
         int num = 0;
         List<Byte> tmp = new ArrayList<>();
 
-        for (SendCanMessage usbSendCan : sendcanMessageManager.getPeriodSendConfig()){
+        for (SendCanMessage usbSendCan : sendcanMessageManager.getPeriodSendConfig()) {
             byte[] usbSendCanBytes = usbSendCan.toByteArray();
             for (byte b : usbSendCanBytes) {
                 tmp.add(b);
@@ -693,8 +704,8 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             num++;
 
             if ((num % 23) == 0) {
-
-                mCmdData = new byte[]{0x5a,0x5a,0x5a,0x5a,(byte)(cmd.code & 0xff),(byte)(cmd.code >> 8 & 0xff), (byte)0xd4, (byte)0x06};
+                // 重新初始化 mCmdData
+                mCmdData = new byte[]{0x5a, 0x5a, 0x5a, 0x5a, (byte) (cmd.code & 0xff), (byte) (cmd.code >> 8 & 0xff), (byte) 0xd4, 0x06};
 
                 // 将 tmp 列表中的数据追加到 mCmdData 中
                 byte[] tmpArray = new byte[tmp.size()];
@@ -717,19 +728,19 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                     mCmdData = newCmdDataWithExtraByte;
                 }
 
+                // 打印或处理 mCmdData
+                Log.d(TAG, "Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
+
                 writeSerial();
                 num = 0;
                 tmp.clear();
-
             }
-
         }
 
-        //mCmdData = new byte[]{};
-
+        // 如果 tmp 列表中还有剩余的数据，也需要处理
         if (!tmp.isEmpty()) {
             // 重新初始化 mCmdData
-            mCmdData = new byte[]{0x5a, 0x5a, 0x5a, 0x5a, (byte) (cmd.code & 0xff), (byte) (cmd.code >> 8 & 0xff), (byte)76, (byte)0};
+            mCmdData = new byte[]{0x5a, 0x5a, 0x5a, 0x5a, (byte) (cmd.code & 0xff), (byte) (cmd.code >> 8 & 0xff), (byte) 76, 0};
 
             // 将 tmp 列表中的数据追加到 mCmdData 中
             byte[] tmpArray = new byte[tmp.size()];
@@ -752,13 +763,12 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 mCmdData = newCmdDataWithExtraByte;
             }
 
+            // 打印或处理 mCmdData
+            Log.d(TAG, "RRRRR Processing remaining SendCanMessages: " + Arrays.toString(mCmdData));
+
             writeSerial();
-
-
         }
-
     }
-
 
 
     private boolean writeSerial() {
@@ -766,7 +776,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         {
             try {
                 mSerial.write(mCmdData,2000);
-                //Log.e(TAG, " TTTTT2 mCmdData: " + Arrays.toString(mCmdData) );
+                Log.e(TAG, " TTTTTRRRRRR mCmdData: " + Arrays.toString(mCmdData) );
                 if(mAppLevel<0x1040)
                 {
                     // 适配之前无buffer缓存的电脑

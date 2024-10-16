@@ -393,6 +393,23 @@ public class MyService extends Service {
 
         }
 
+        public boolean SendPeriods(JsonElement data)
+        {
+            if(mMcuHelperList.isEmpty())
+            {
+                return false;
+            }
+
+            for(MCUHelper mcuHelper: mMcuHelperList)
+            {
+                mcuHelper.SendPeriods(data);
+            }
+
+            return true;
+
+
+        }
+
         public boolean CANOffBus()
         {
             if(mMcuHelperList.isEmpty())
