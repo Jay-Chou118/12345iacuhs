@@ -20,9 +20,12 @@ import android.os.IBinder;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
+import android.webkit.CookieManager;
 import android.webkit.JavascriptInterface;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -496,16 +499,19 @@ public class MainActivity3 extends AppCompatActivity {
 
                 startActivityForResult(intent, READ_REQUEST_CODE);
 
-                //TODO:前端返回carType，sbd
-                parseDBCforBlf("MX11","E4U1");
 
-                Log.d("BlfFilePath", BlfFilePath);
-                parseBlfByPython(BlfFilePath);
+//                parseDBCforBlf("MX11","E4U1");
+//                Log.d("BlfFilePath", BlfFilePath);
+//                parseBlfByPython(BlfFilePath);
+//
+//                String res = parseBlfByPython(BlfFilePath);
+//                Log.d("parseBlfByPython", res);
+
 
             }
         });
 
-        messageHandlers.put("getDBCforBlf", new BridgeHandler() {
+        messageHandlers.put("chooseDBCPath", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
                 mCallbackId = callback;

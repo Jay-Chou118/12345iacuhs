@@ -1,9 +1,12 @@
 package com.example.testcdc.httpServer;
 
 import static com.example.testcdc.Utils.Utils.blfGetAnalysisByParams;
+import static com.example.testcdc.Utils.Utils.blfthaveDataSignal;
 import static com.example.testcdc.Utils.Utils.parseBlfByPython;
 import static com.example.testcdc.Utils.Utils.parseDBCforBlf;
+import static com.example.testcdc.Utils.Utils.reAdjust;
 
+import com.google.common.base.MoreObjects;
 import android.util.Log;
 
 import com.google.gson.Gson;
@@ -385,6 +388,8 @@ public class HttpServer extends NanoHTTPD {
             resp.addHeader(HeaderNames.ACCESS_CONTROL_ALLOW_CREDENTIALS, "true");
             // 如果请求头中包含'Origin',则响应头中'Access-Control-Allow-Origin'使用此值否则为'*'
             // nanohttd将所有请求头的名称强制转为了小写
+            String origin = MoreObjects.firstNonNull(headers.get(HeaderNames.ORIGIN.toLowerCase()), "*");
+            resp.addHeader(HeaderNames.ACCESS_CONTROL_ALLOW_ORIGIN, origin);
 
             String  requestHeaders = headers.get(HeaderNames.ACCESS_CONTROL_REQUEST_HEADERS.toLowerCase());
             if(requestHeaders != null){
@@ -400,6 +405,9 @@ public class HttpServer extends NanoHTTPD {
 
     private static final String getAnalysisByParams = "/getAnalysisByParams";
 
+    private static final String reAdjust = "/reAdjust";
+
+    private static final String blfthaveDataSignal = "/blfthaveDataSignal";
 
     @Override
     public Response serve(IHTTPSession session) {
@@ -412,6 +420,8 @@ public class HttpServer extends NanoHTTPD {
         }
 
         String uri = session.getUri();
+        //是否接收到http请求
+        Log.d("network",session.toString()+"http win!!!!!!!");
 
         Method method = session.getMethod();
         if (method.equals(Method.POST)) {
@@ -419,6 +429,7 @@ public class HttpServer extends NanoHTTPD {
             Map<String, String> params = new HashMap<String, String>();
             switch (uri) {
                 case getDBC:
+                    Log.e("HTTP", "getDBC run ");
                     try {
                         session.parseBody(params);
                     } catch (IOException e) {
@@ -438,12 +449,15 @@ public class HttpServer extends NanoHTTPD {
 
                         ret = parseDBCforBlf(carType, sdb);
 
+                        Log.e("HTTP", "getDBC finish");
+
                         return wrapResponse(session, newFixedLengthResponse(Response.Status.OK, "application/json", ret));
                     } catch (JSONException e) {
                         throw new RuntimeException(e);
                     }
 
                 case getBLFdata:
+                    Log.e("HTTP", "getBLFdata run ");
                     try {
                         session.parseBody(params);
                     } catch (IOException e) {
@@ -460,13 +474,16 @@ public class HttpServer extends NanoHTTPD {
                         String blfFile = jsonObject.getString("blfFile");
 
                         ret = parseBlfByPython(blfFile);
+                        Log.e("HTTP", "getBLFdata finish");
 
                         return wrapResponse(session, newFixedLengthResponse(Response.Status.OK, "application/json", ret));
                     } catch (JSONException e) {
+                        Log.e("getBLFdata error",  "error");
                         throw new RuntimeException(e);
                     }
 
                 case getAnalysisByParams:
+                    Log.e("HTTP", "getAnalysisByParams run");
                     try {
                         session.parseBody(params);
                     } catch (IOException e) {
@@ -479,11 +496,29 @@ public class HttpServer extends NanoHTTPD {
                     Log.d("postDataStr", postDataStr);
 
                     ret = blfGetAnalysisByParams(postDataStr);
+                    Log.e("HTTP", "getAnalysisByParams finish");
                     return wrapResponse(session, newFixedLengthResponse(Response.Status.OK, "application/json", ret));
+
+                case reAdjust:
+                    ret = reAdjust();
+                    return wrapResponse(session, newFixedLengthResponse(Response.Status.OK, "application/json", ret));
+
+                case blfthaveDataSignal:
+                    Log.e("HTTP", "blfthaveDataSignal run ");
+                    try {
+                        session.parseBody(params);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    } catch (ResponseException e) {
+                        throw new RuntimeException(e);
+                    }
+                    postDataStr = params.get("postData");
+
+                    blfthaveDataSignal(postDataStr);
+                    return wrapResponse(session, newFixedLengthResponse(Response.Status.OK, "application/json", ""));
             }
 
         }
-
 
         return newFixedLengthResponse(Response.Status.OK, "application/json", "");
 

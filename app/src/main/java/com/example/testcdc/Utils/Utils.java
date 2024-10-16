@@ -247,8 +247,8 @@ public class Utils {
     {
         Python python = Python.getInstance();
         PyObject pyObject = python.getModule("app");
-        String usermsg = String.valueOf(pyObject.callAttr("blfGetBLFdata", filePath));
-        return usermsg;
+        String msg = String.valueOf(pyObject.callAttr("blfGetBLFdata", filePath));
+        return msg;
     }
 
     static public String parseDBCforBlf(String carType, String sdb) {
@@ -263,6 +263,22 @@ public class Utils {
         Python python = Python.getInstance();
         PyObject pyObject = python.getModule("app");
         String usermsg = String.valueOf(pyObject.callAttr("blfGetAnalysisByParams", data));
+
+        return usermsg;
+    }
+
+    static public String reAdjust(){
+        Python python = Python.getInstance();
+        PyObject pyObject = python.getModule("app");
+        String usermsg = String.valueOf(pyObject.callAttr("reAdjust"));
+
+        return usermsg;
+    }
+
+    static public String blfthaveDataSignal(String data) {
+        Python python = Python.getInstance();
+        PyObject pyObject = python.getModule("app");
+        String usermsg = String.valueOf(pyObject.callAttr("blfthaveDataSignal",data));
 
         return usermsg;
     }

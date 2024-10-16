@@ -1,4 +1,5 @@
 import copy
+import re
 import json
 import os
 import struct
@@ -311,3 +312,72 @@ def blfGetAnalysisByParams(data):
                 x = (channelID, frameID, sigName, signalValue[sigName], signalEmum, signalPeriod,bigData)
                 retSignalValue.append(x)
     return json.dumps(retSignalValue)
+
+class ReturnStatus:
+    def __init__(self, code, data, msg):
+        self.code = code
+        self.data = data
+        self.msg = msg
+
+
+def reAdjust():
+    """
+    @api {post} /blfCpp/reAdjust dbc信息自适应后调整
+    @apiVersion 1.0.0
+    @apiName selfAdaption
+    @apiGroup blfCpp 解析报文
+    @apiBody {string} isConfirm 是否确认
+    @apiBody {string} reMatchRes 修改后数据
+    @apiSampleRequest /blfCpp/reAdjust
+    """
+    global reMap_res
+    data = request.json
+    isConfirm = data["isConfirm"]
+    if not isConfirm:
+        reMap_res = {"isRemap": False, "data": {}, "dataReverse": {}}
+        res = ReturnStatus(0, {}, "Match Res not affect")
+        return res.get_json_str()
+    else:
+        reMatchRes = data["reMatchRes"]
+        for item in reMatchRes:
+            origin_busId = item["origin_busId"]
+            matched_busId = item["matched_busId"]
+            if origin_busId == matched_busId:
+                continue
+            else:
+                reMap_res["isRemap"] = True
+                reMap_res["data"][origin_busId] = matched_busId
+                reMap_res["dataReverse"][matched_busId] = origin_busId
+        res = ReturnStatus(0, {}, "Match Res affected")
+        return res.get_json_str()
+
+def blfthaveDataSignal(data):
+
+    global signalMapNew
+    global dbc
+    ret = {}
+    for k,v in signalMapNew.items():
+        if not frameDict.get(k):
+            continue
+
+        # blf_msgIds = list(frameDict[k].keys())
+        blf_msgIds = []
+        for msgid,val in frameDict[k].items():
+            if len(val) > 0 :
+                if dbc[k][msgid].size == len(val[0][8:]):
+                    blf_msgIds.append(msgid)
+                else:
+                    print("cannot recognize msgid: ",msgid)
+        for k1,v1 in v.items():
+            result = re.search(r'\((.*?)\)', k1)
+            if result:
+                try:
+                    msgId = int(result.group(1), 16)
+                except:
+                    continue
+
+                if msgId in blf_msgIds:
+                    if not ret.get(k):
+                        ret[k] = {}
+                    ret[k][k1] = v1
+    return json.dumps(ret)
