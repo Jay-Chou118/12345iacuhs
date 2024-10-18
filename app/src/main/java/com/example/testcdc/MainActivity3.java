@@ -1,13 +1,10 @@
 package com.example.testcdc;
 
 import static com.chaquo.python.Python.start;
-import static com.example.testcdc.Utils.Utils.parseBlfByPython;
 import static com.example.testcdc.Utils.Utils.parseDBCByPython;
-import static com.example.testcdc.Utils.Utils.parseDBCforBlf;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
 import static com.google.gson.JsonParser.parseString;
 
-import android.annotation.SuppressLint;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -20,9 +17,7 @@ import android.os.IBinder;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
-import android.webkit.CookieManager;
 import android.webkit.JavascriptInterface;
-import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -47,6 +42,10 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+
+import org.greenrobot.eventbus.EventBus;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -90,6 +89,10 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static String BlfFilePath;
 
+    private Cursor cursor;
+
+    private static boolean flag = false;
+
 
     private ServiceConnection mSC = new ServiceConnection() {
         @Override
@@ -127,12 +130,21 @@ public class MainActivity3 extends AppCompatActivity {
 
         initWebView();
 
+        EventBus.builder().installDefaultEventBus();
+
+        try {
+            initCursor();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         Thread m = new Thread(new Runnable() {
             @Override
             public void run() {
                 while (true) {
                     try {
                         Thread.sleep(3000);
+
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
 
@@ -178,10 +190,48 @@ public class MainActivity3 extends AppCompatActivity {
         Uri data = intent.getData();
         if (Intent.ACTION_VIEW.equals(action) && data != null) {
             // 处理文件
-            handleFile(data);
-        }
+            String larkFile = getPathFromUri(this, data);
+            Log.i("20241017", larkFile);
+            JSONObject jsonObject = new JSONObject();
+            try {
+                jsonObject.put("data", larkFile);
+            } catch (JSONException e) {
+                throw new RuntimeException(e);
+            }
+            Log.i("20241017", jsonObject.toString());
 
+            webView.setWebViewClient(new WebViewClient() {
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+                    webView.postDelayed(() -> {
+                        webView.evaluateJavascript("getandroiddata();", null);
+                    }, 1000);
+
+                    webView.postDelayed(() -> {
+                        webView.evaluateJavascript("larkFile('"+ larkFile+"');", null);
+                    }, 2000);
+                }
+            });
+
+        }
     }
+
+
+    private void initCursor() {
+        Cursor cursor = getContentResolver().query(null, null, null, null, null);
+        if (cursor != null && cursor.moveToFirst()) {
+            // 处理 Cursor 数据
+            while (!cursor.isAfterLast()) {
+                // 处理每一行数据
+                cursor.moveToNext();
+            }
+            cursor.close();
+        } else {
+            throw new IllegalStateException("Cursor is not initialized correctly.");
+        }
+    }
+
 
     private void startHttpServer() {
         new Thread(() -> {
@@ -211,6 +261,7 @@ public class MainActivity3 extends AppCompatActivity {
         // 添加Java对象到JavaScript的window对象
 //        webView.addJavascriptInterface(this, "Android");
 
+        webView.addJavascriptInterface(new WebAppInterface(this), "Android");
         webView.addJavascriptInterface(new JsInterface(), BRIDGE_NAME);
 
         // 加载页面
@@ -499,7 +550,6 @@ public class MainActivity3 extends AppCompatActivity {
 
                 startActivityForResult(intent, READ_REQUEST_CODE);
 
-
 //                parseDBCforBlf("MX11","E4U1");
 //                Log.d("BlfFilePath", BlfFilePath);
 //                parseBlfByPython(BlfFilePath);
@@ -665,19 +715,22 @@ public class MainActivity3 extends AppCompatActivity {
 //        readFileFromUri(this,fileUri);
         // 在此处处理BLF文件，例如读取文件内容或进行解析
         // 检查是否为 content:// 方式的 Uri
-        if (fileUri.getScheme().equals("content")) {
-            String path = getRealPathFromURI(fileUri);
-            Log.i(TAG, "Uri: " + fileUri + "\t real path: " + path);
-            // 使用 path 进行后续操作
-        } else if (fileUri.getScheme().equals("file")) {
-            // 直接使用 file 方式的 Uri
-            String path = fileUri.getPath();
-            Log.i(TAG, "Uri: " + fileUri + "\t path: " + path);
-            // 使用 path 进行后续操作
-        } else {
-            // 不支持的 Uri 方式
-            Log.e(TAG, "Unsupported URI scheme: " + fileUri.getScheme());
+        if (fileUri != null) {
+            if (fileUri.getScheme().equals("content")) {
+                String path = getRealPathFromURI(fileUri);
+                Log.i(TAG, "Uri: " + fileUri + "\t real path: " + path);
+                // 使用 path 进行后续操作
+            } else if (fileUri.getScheme().equals("file")) {
+                // 直接使用 file 方式的 Uri
+                String path = fileUri.getPath();
+                Log.i(TAG, "Uri: " + fileUri + "\t path: " + path);
+                // 使用 path 进行后续操作
+            } else {
+                // 不支持的 Uri 方式
+                Log.e(TAG, "Unsupported URI scheme: " + fileUri.getScheme());
+            }
         }
+
 
 //        // 进行文件读取
 //        Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -685,32 +738,29 @@ public class MainActivity3 extends AppCompatActivity {
 //        startActivity(intent);
     }
 
-    public String getFilePathFromUri(Uri uri) {
-        Cursor cursor = this.getContentResolver().query(uri, null, null, null, null);
-
-        cursor.moveToFirst();
-//        String filePath = cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA));
-        cursor.close();
-        return "";
-    }
 
     private String getRealPathFromURI(Uri uri) {
         String[] proj = {MediaStore.Images.Media.DATA};
-        Cursor cursor = getContentResolver().query(uri, null, null, null, null);
+        String realPath = null;
+        Cursor cursor = getContentResolver().query(uri, proj, null, null, null);
 
-        if (cursor.moveToFirst()) {
-            // 获取你需要的列信息，例如文件的MIME类型
-            @SuppressLint("Range") String mimeType = cursor.getString(cursor.getColumnIndex(MediaStore.Files.FileColumns.MIME_TYPE));
-            Log.e(TAG, "mimeType: " + mimeType);
-            // 处理你的文件信息
-            // ...
+        if (cursor != null) {
+            try {
+                if (cursor.moveToFirst()) {
+                    int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+                    realPath = cursor.getString(column_index);
+                } else {
+                    Log.e(TAG, "Cursor is empty");
+                }
+            } catch (Exception e) {
+                Log.e(TAG, "Cursor is empty");
+            } finally {
+                cursor.close();
+            }
+        } else {
+            Log.e(TAG, "Cursor is null");
         }
-
-
-        Log.e(TAG, "cursor " + cursor.toString());
-        int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
-        cursor.moveToFirst();
-        return cursor.getString(column_index);
+        return realPath;
     }
 
     public String getPathFromUri(Context context, Uri uri) {
@@ -809,7 +859,9 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
+        if (cursor != null) {
+            cursor.close();
+        }
     }
 
     public static void runInBackground(Runnable task) {
