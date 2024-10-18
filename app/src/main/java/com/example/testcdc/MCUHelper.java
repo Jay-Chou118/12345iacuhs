@@ -19,8 +19,6 @@ import com.google.gson.JsonObject;
 import com.hoho.android.usbserial.driver.UsbSerialPort;
 import com.hoho.android.usbserial.util.SerialInputOutputManager;
 
-import org.json.JSONArray;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -351,11 +349,19 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 return false;
             }
             int len = mSerial.read(mReadBuffer,100);
-            //Log.d(TAG,"read num " + len);
+//            Log.d(TAG,"AAAAA read num " + len);
             if(len >0)
             {
                 mSerialBuffer.writeBuffer(mReadBuffer,len);
-              //  Log.d(TAG, "read num " +  len + " wirte num : " + mReadBuffer);
+//                Log.d(TAG, "AAAA read num " +  len + " wirte num : " + mReadBuffer); // 打印mReadBuffer的前100字节
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < Math.min(len, 100); i++) {
+                    sb.append(String.format("%02X ", mReadBuffer[i]));
+                }
+                Log.d(TAG, "AAAA readPort: mReadBuffer的前100个字节: " + sb.toString());
+//                printBufferFirst200Bytes();
+
+
                 return true;
             }
         } catch (IOException e) {
@@ -367,9 +373,13 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
     public boolean parseSerial()
     {
+//        Log.w(TAG, "parseSerial ");
         boolean readRet = false;
+//        Log.w(TAG, "AAAA mParseBuffer " + mParseBuffer[0] + " " + mParseBuffer[1] + " " + mParseBuffer[2] + " " + mParseBuffer[3] );
+//        Log.w(TAG, "AAAAA m_curState " + m_curState );
         switch (m_curState){
             case PARSE_HEAD_PHASE1:
+//                Log.i(TAG, "AAAA PARSE_HEAD_PHASE1 " );
 //                        Log.i(PARSE_TAG,m_curState.toString());
                 readRet = mSerialBuffer.readBuffer(mParseBuffer,1);
                 if(!readRet)
@@ -380,6 +390,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 }
                 if(HEAD_FLAG_1 == mParseBuffer[0])
                 {
+                    Log.i(TAG, "AAAA PARSE_HEAD_PHASE1 " + mParseBuffer[0] );
                     m_curState = PARSE_SER_BUFFER_STATE.PARSE_HEAD_PHASE2;
                 }else{
                     break;
@@ -391,12 +402,13 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 readRet = mSerialBuffer.readBuffer(mParseBuffer,3);
                 if(!readRet)
                 {
-//                            Log.d(PARSE_TAG,"未读取到数据");
+                    Log.d(TAG,"AAAA PARSE_HEAD_PHASE2 未读取到数据");
 //                    waitForData();
                     break;
                 }
                 if(HEAD_FLAG_2 == mParseBuffer[0] && HEAD_FLAG_3 == mParseBuffer[1] && HEAD_FLAG_4 == mParseBuffer[2])
                 {
+                    Log.i(TAG, "AAAA PARSE_HEAD_PHASE2 " + mParseBuffer[0]  + " " + mParseBuffer[1] + " " + mParseBuffer[2]);
                     m_curState = PARSE_SER_BUFFER_STATE.PARSE_TYPE_PHASE;
                 }else
                 {
@@ -409,11 +421,26 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 readRet = mSerialBuffer.readBuffer(mParseBuffer,2);
                 if(!readRet)
                 {
-//                            Log.d(PARSE_TAG,"未读取到数据");
+                            Log.d(TAG,"AAAA PARSE_TYPE_PHASE 未读取到数据");
 //                    waitForData();
                    break;
                 }
                 m_curCmdType = COMMAND_TYPE.fromValue(convert_u16(mParseBuffer));
+                //字节读取错误，导致无法正确发送
+                Log.w(TAG, "AAAA m_curCmdType: " + m_curCmdType + " FFFFF " + convert_u16(mParseBuffer) );
+                // 添加输出前两个字节的代码
+                String hexFirstByte = String.format("%02X", mParseBuffer[0]);
+                String hexSecondByte = String.format("%02X", mParseBuffer[1]);
+                Log.d(TAG, "AAAA mParseBuffer的前两个字节为: " + hexFirstByte + " " + hexSecondByte);
+//                byte[] cmdBytes = new byte[2]; // 创建一个临时数组存储当前无效命令的前两个字节
+//                System.arraycopy(mParseBuffer, 0, cmdBytes, 0, 2); // 将前两个字节复制到cmdBytes
+//                invalidCmdBytesList.add(cmdBytes); // 将cmdBytes添加到列表中
+//                Log.w(TAG, "AA 接收到的无效命令的前两个字节为: " + String.format("%02X %02X", cmdBytes[0], cmdBytes[1]));
+//                for (byte[] bytes : invalidCmdBytesList) {
+//                    Log.w(TAG, "AAAA 无效命令字节: " + String.format("%02X %02X", bytes[0], bytes[1]));
+//                }
+                // 打印mParseBuffer的前100个字节
+//                printFirst100Bytes();
                 m_curState = PARSE_SER_BUFFER_STATE.PARSE_USB_PACKAGE_SIZE;
                 break;
             case PARSE_USB_PACKAGE_SIZE:
@@ -421,7 +448,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 readRet = mSerialBuffer.readBuffer(mParseBuffer,2);
                 if(!readRet)
                 {
-//                            Log.d(PARSE_TAG,"未读取到数据");
+                            Log.d(TAG,"AAA PARSE_USE_PACKAGE_SIZE 未读取到数据");
 //                    waitForData();
                    break;
                 }
@@ -436,7 +463,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 readRet = mSerialBuffer.readBuffer(mParseBuffer, mUsbPackageSize);
                 if(!readRet)
                 {
-                    Log.d(TAG,"未读取到数据");
+                    Log.d(TAG,"AAA PARSE_USE_PACKAGE_DATA 未读取到数据");
 //                    waitForData();
                    break;
                 }
@@ -445,20 +472,38 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
                     if(mAppLevel >= 0x1040)
                     {
+                        Log.w(TAG, "AAAA parseUsbPackage_v3: ");
                         parseUsbPackage_v3(mParseBuffer,mUsbPackageSize);
                     }else
                     {
-//                        Log.d(TAG,"parseUsbPackage_v2");
+                        Log.w(TAG,"AAAA parseUsbPackage_v2");
                         parseUsbPackage_v2(mParseBuffer,mUsbPackageSize,true);
                     }
                 }else if(m_curCmdType.code == 0x3000)
                 {
-                    Log.i(TAG,"错误帧处理逻辑");
+                    Log.w(TAG,"AAAA 错误帧处理逻辑");
                 }
                 else
                 {
+                    Log.w(TAG, "AAA parseUsbCmdPackage_v2: ");
                      parseUsbCmdPackage_v2(m_curCmdType,mParseBuffer,mUsbPackageSize);
                 }
+//                if(convert_u16(mParseBuffer) <= 0x00ff)
+//                {
+//                    if(mAppLevel >= 0x1040)
+//                    {
+//                        Log.w(TAG, "AAAA parseUsbPackage_v3: ");
+//                        parseUsbPackage_v3(mParseBuffer,mUsbPackageSize);
+//                    }else
+//                    {
+//                        Log.w(TAG,"AAAA parseUsbPackage_v2");
+//                        parseUsbPackage_v2(mParseBuffer,mUsbPackageSize,true);
+//                    }
+//                }else
+//                {
+//                    Log.w(TAG, "AAA parseUsbCmdPackage_v2: ");
+//                    parseUsbCmdPackage_v2(m_curCmdType,mParseBuffer,mUsbPackageSize);
+//                }
                 m_curState = PARSE_SER_BUFFER_STATE.PARSE_HEAD_PHASE1;
                 break;
             default:
@@ -506,7 +551,11 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         sendCmd(COMMAND_TYPE.PERIOD_SEND_ONCE,data);
     }
 
-    public void SendPeriods(JsonElement data){sendCmd(COMMAND_TYPE.PERIOD_SEND_CONFIG,data);}
+    public void SendPeriodsConfig(JsonElement data){sendCmd(COMMAND_TYPE.PERIOD_SEND_CONFIG,data);}
+
+    public void StartSendPeriods(){sendCmd(COMMAND_TYPE.PERIOD_SEND_START,null);}
+
+    public void StopSendPeriods(){sendCmd(COMMAND_TYPE.PERIOD_SEND_STOP,null);}
 
     public void monitor()
     {
@@ -539,6 +588,9 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             case GET_DEVICE_CONFIG:
             case PERIOD_SEND_START:
             case PERIOD_SEND_STOP:
+                cmd_genCommonCmd(cmd);
+                Log.w(TAG, "AAA sendCmd : " + cmd );
+                break;
             case SET_HEART_BEATS:
                 cmd_genCommonCmd(cmd);
                 break;
@@ -547,6 +599,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 break;
             case PERIOD_SEND_CONFIG:
                 cmd_periodSendConfig(cmd,data);
+                Log.w(TAG, "AAA sendCmd : " + cmd );
                 break;
             default:
                 mCmdData = new byte[]{};
@@ -594,6 +647,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
         sendCan.period = 0;
         sendCan.isReady = 0;
+//        sendCan.slot = jsonObject.get("raw").getAsByte();
         sendCan.slot = 0;
 
         //int channel = jsonObject.get("channel").getAsInt();
@@ -612,7 +666,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             JsonArray rawDataJsonArray = jsonObject.getAsJsonArray("rawData");
 
             sendCan.setDataFromJsonArray(rawDataJsonArray);
-            Log.w(TAG, "TTTTTTT Data : " + rawDataJsonArray + "TTTTT " + Arrays.toString(sendCan.data));
+//            Log.w(TAG, "TTTTTTT Data : " + rawDataJsonArray + "TTTTT " + Arrays.toString(sendCan.data));
 
 
 
@@ -633,7 +687,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         mCmdData = new byte[]{0x5a,0x5a,0x5a,0x5a,(byte)(cmd.code & 0xff),(byte)(cmd.code >> 8 & 0xff),
                 76,0};
 
-        Log.w(TAG, "TTTTTT mCmdData : " + Arrays.toString(mCmdData) );
+//        Log.w(TAG, "TTTTTT mCmdData : " + Arrays.toString(mCmdData) );
         if (((sendCan.BUSId - 1) / 3) == mMcuIndex)
         {
             sendCan.BUSId = (byte) (sendCan.BUSId - 3 * mMcuIndex);
@@ -641,9 +695,11 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 //            byte[] DATA = SendCanMessage.hexStringToByteArray(hexStream);
             Log.w(TAG, " TTTTT hexStream : " + sendCan.toString() );
             byte[] DATA = sendCan.toByteArray();
+
             sendcanMessageManager.addSendCanMessage(sendCan);
+            Log.w(TAG, "AAA length is " + sendcanMessageManager.getPeriodSendConfig().size() );
             mCmdData = sendCan.appendDataTomCmdData(mCmdData,DATA);
-            Log.w(TAG, "TTTTT mCmdData : " + Arrays.toString(mCmdData) );
+            Log.w(TAG, "TTTTT DOWN mCmdData : " + Arrays.toString(mCmdData) );
         }else
         {
 //
@@ -651,14 +707,14 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
         }
 
-        Log.e(TAG, "TTTTTTTTTTTTT m_PeriodSendConfig  " + sendcanMessageManager.getPeriodSendConfig() );
+//        Log.e(TAG, "TTTTTTTTTTTTT m_PeriodSendConfig  " + sendcanMessageManager.getPeriodSendConfig() );
 
     }
 
     private void cmd_periodSendConfig(COMMAND_TYPE cmd, JsonElement data) {
         sendcanMessageManager.clearPeriodSendConfig();
 
-        Log.e(TAG, "TTTTT first data : " + data);
+        Log.e(TAG, "AAA first data : " + data);
         JsonObject jsonObject = data.getAsJsonObject();
 
         // 获取 data 数组
@@ -669,11 +725,11 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             JsonObject item = itemElement.getAsJsonObject();
 
             SendCanMessage sendCan = new SendCanMessage();
-            Log.d(TAG, " RRRRR I AM SENDING PERIOD");
+            Log.d(TAG, " AAA I AM SENDING PERIOD");
 
             sendCan.period = item.get("periodic").getAsShort();
             sendCan.isReady = 0;
-            sendCan.slot = 0;
+            sendCan.slot = item.get("row").getAsByte();
 
             sendCan.CanID = item.get("canId").getAsInt();
             sendCan.BUSId = item.get("channel").getAsByte();
@@ -693,7 +749,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             sendCan.setDataFromJsonArray(rawData);
 
 
-            Log.w(TAG, "RRRRRR sendCan: " + sendCan.toString());
+            Log.w(TAG, "AAA sendCan: " + sendCan.toString());
 
             // 将 SendCanMessage 对象添加到 CanMessageManager 中
             sendcanMessageManager.addSendCanMessage(sendCan);
@@ -710,7 +766,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             }
             Log.w(TAG, "The size of tmp : " +  tmp.size());
             num++;
-            Log.d(TAG, "RRRRRnum "+ num +"Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
+            //Log.d(TAG, "AAA "+ num +"Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
             if ((num % 23) == 0) {
                 // 重新初始化 mCmdData
                 mCmdData = new byte[]{0x5a, 0x5a, 0x5a, 0x5a, (byte) (cmd.code & 0xff), (byte) (cmd.code >> 8 & 0xff), (byte) 0xd4, 0x06};
@@ -737,7 +793,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 }
 
                 // 打印或处理 mCmdData
-                Log.d(TAG, "Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
+                Log.d(TAG, "AAA Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
 
                 writeSerial();
                 num = 0;
@@ -746,10 +802,10 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         }
 
         // 如果 tmp 列表中还有剩余的数据，也需要处理
-        if (!tmp.isEmpty()) {
+//        if (!tmp.isEmpty()) {
             // 重新初始化 mCmdData
-            Log.d(TAG, "RRRRRnum "+ num +"Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
-            Log.w(TAG, "the size of current mCmdData : " + mCmdData.length );
+            //Log.d(TAG, "RRRRRnum "+ num +"Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
+            //Log.w(TAG, "the size of current mCmdData : " + mCmdData.length );
             mCmdData = new byte[]{0x5a, 0x5a, 0x5a, 0x5a, (byte) (cmd.code & 0xff), (byte) (cmd.code >> 8 & 0xff), (byte) (num * 76), 0};
 
             // 将 tmp 列表中的数据追加到 mCmdData 中
@@ -772,12 +828,11 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 newCmdDataWithExtraByte[mCmdData.length] = 0;
                 mCmdData = newCmdDataWithExtraByte;
             }
-            Log.w(TAG, "the size of current mCmdData : " + mCmdData.length );
+            //Log.w(TAG, "the size of current mCmdData : " + mCmdData.length );
             // 打印或处理 mCmdData
-            Log.d(TAG, "RRRRR Processing remaining SendCanMessages: " + Arrays.toString(mCmdData));
-
+            //Log.d(TAG, "RRRRR Processing remaining SendCanMessages: " + Arrays.toString(mCmdData));
             writeSerial();
-        }
+//        }
     }
 
 
@@ -786,7 +841,9 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         {
             try {
                 mSerial.write(mCmdData,2000);
-                Log.e(TAG, " TTTTTRRRRRR mCmdData: " + Arrays.toString(mCmdData) );
+                if(!(mCmdData.length >=6 && mCmdData[4] == 33 && mCmdData[5] == 16)) {
+                    Log.w(TAG, " TTTTTRRRRRR mCmdData: " + Arrays.toString(mCmdData));
+                }
                 if(mAppLevel<0x1040)
                 {
                     // 适配之前无buffer缓存的电脑
@@ -812,7 +869,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
     private void parseUsbPackage_v2(byte[] data,int num, boolean ifCheckCrc)
     {
 //
-//            Log.i(PARSE_TAG,"parseUsbPackage_v2");
+//        Log.w(TAG,"parseUsbPackage_v2");
         // 等待处理的剩余个数
         int remainNum = num;
         if(ifCheckCrc) {
@@ -823,7 +880,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 //
 
             long calCrc = myCrc32(Arrays.copyOf(data, num - 4));
-//
+            Log.w(TAG, "AAA crc: " + crc + "aaaaa calCrc " + calCrc);
             if (crc != calCrc) {
                 Log.e(TAG, "crc from board is " + crc);
                 Log.e(TAG, "crc from calculate is " + calCrc);
@@ -838,23 +895,28 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
         /// 先取出4个字节,代表usb包的index
         long currentUsbPackageIndex = convert_u32(data);
+        //Log.w(TAG, "AAAA currentUsbPackageIndex: " + currentUsbPackageIndex + "mUsbPackageIndex = " + mUsbPackageIndex);
         currentIndex += 4;
         /// 代表还未收到usb包
         if(mUsbPackageIndex == 0)
         {
+            //Log.w(TAG, "AAA first time" );
             mUsbPackageIndex = currentUsbPackageIndex;
         }else{
             if(currentUsbPackageIndex != (mUsbPackageIndex +1))
             {
-                Log.e(TAG,"last: " + mUsbPackageIndex + "\t current: " + currentUsbPackageIndex + "\t fatal error usb dismiss!" + "\n");
+                //Log.e(TAG,"AAAA last: " + mUsbPackageIndex + "\t current: " + currentUsbPackageIndex + "\t fatal error usb dismiss!" + "\n");
                 mUsbPackageIndex = currentUsbPackageIndex;
+//                。。。。。
                 return;
             }
+            //Log.w(TAG, "AAA latter " );
             mUsbPackageIndex = currentUsbPackageIndex;
         }
 
 
         CanMessage msg = new CanMessage();
+        Log.w(TAG, "AAAA here parseUsbPackage_v2: " );
         while(currentIndex < remainNum )
         {
             int CAN_ID = (data[currentIndex] & 0xff) | ( (data[currentIndex +1 ]  & 0xff) << 8);
@@ -890,9 +952,9 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             gCanQueue1.write_deepcopy(msg);
 
             gRecvMsgNum.incrementAndGet();
-//            Log.i(TAG,msg.toString());
+            Log.w(TAG,"AAAAA " + msg.toString());
         }
-//                Log.i(TAG,"当前usb包包含 " + CAN_num);
+                Log.w(TAG,"当前usb包包含 " + CAN_num);
 
 
     }
@@ -926,8 +988,13 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
     }
 
+    //test
+    private List<byte[]> invalidCmdBytesList = new ArrayList<>(); // 创建一个列表用于保存多组无效命令的前两个字节
+    //
+
+
     private void parseUsbCmdPackage_v2(COMMAND_TYPE cmd,byte[] data,int num ) {
-        Log.d(TAG,"parseUsbCmdPackage_v2 " + cmd.toString());
+        Log.d(TAG,"AAAA   parseUsbCmdPackage_v2 " + cmd.toString());
         switch (cmd) {
             case PING_PONG_ACK:
             case START_CAN_ALL_ACK:
@@ -951,9 +1018,30 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             case GET_APP_LEVEL_ACK:
                 mAppLevel = convert_u32(data);
                 Log.d(TAG,"mAppLevel: 0x" + Long.toHexString(mAppLevel));
+//            case NOT_VALID:
+//                byte[] cmdBytes = new byte[2]; // 创建一个临时数组存储当前无效命令的前两个字节
+//                System.arraycopy(data, 0, cmdBytes, 0, 2); // 将前两个字节复制到cmdBytes
+//                invalidCmdBytesList.add(cmdBytes); // 将cmdBytes添加到列表中
+//                Log.w(TAG, "AA 接收到的无效命令的前两个字节为: " + String.format("%02X %02X", cmdBytes[0], cmdBytes[1]));
+//                for (byte[] bytes : invalidCmdBytesList) {
+//                    Log.w(TAG, "AAAA 无效命令字节: " + String.format("%02X %02X", bytes[0], bytes[1]));
+//                }
+//                break;
             default:
                 break;
         }
     }
+
+    //test
+    private void printFirst100Bytes() {
+        StringBuilder sb = new StringBuilder();
+        int length = Math.min(mParseBuffer.length, 200); // 确保不超过数组的实际长度
+        for (int i = 0; i < length; i++) {
+            sb.append(String.format("%02X ", mParseBuffer[i]));
+        }
+        Log.d(TAG, "AAAA mParseBuffer的前100个字节: " + sb.toString());
+    }
+
+
 
 }

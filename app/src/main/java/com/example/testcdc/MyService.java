@@ -402,7 +402,8 @@ public class MyService extends Service {
 
             for(MCUHelper mcuHelper: mMcuHelperList)
             {
-                mcuHelper.SendPeriods(data);
+                mcuHelper.SendPeriodsConfig(data);
+                mcuHelper.StartSendPeriods();
             }
 
             return true;

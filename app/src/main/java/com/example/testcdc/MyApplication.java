@@ -65,7 +65,7 @@ public class MyApplication extends Application {
                 .build();
 
 //        Database.clearAllTables();
-        Log.d(TAG, "PPPPPPPPPP: ");
+//        Log.d(TAG, "PPPPPPPPPP: ");
         initDatabase_Basic();
 
 
