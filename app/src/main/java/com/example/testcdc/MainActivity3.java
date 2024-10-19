@@ -633,6 +633,13 @@ public class MainActivity3 extends AppCompatActivity {
 //                mMiCANBinder.CANOnBus();
                 Log.d(TAG, "RRRRR get in Periods" + data);
                 JsonObject jsonObject = data.getAsJsonObject();
+                String behaviour = jsonObject.get("behavor").getAsString();
+//                Log.w(TAG, "handle: " + behaviour );
+                if(behaviour.equals("add"))
+                {
+                 //初始化
+
+                }
                 JsonArray dataArray = jsonObject.getAsJsonArray("data");
 
 //                Boolean isSending = JsonElement
