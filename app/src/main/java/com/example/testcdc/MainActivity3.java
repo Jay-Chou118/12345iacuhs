@@ -635,10 +635,16 @@ public class MainActivity3 extends AppCompatActivity {
                 JsonObject jsonObject = data.getAsJsonObject();
                 String behaviour = jsonObject.get("behavor").getAsString();
 //                Log.w(TAG, "handle: " + behaviour );
-                if(behaviour.equals("add"))
-                {
-                 //初始化
+                switch(behaviour){
+                    case "add":
 
+                        break;
+                    case "modify":
+
+                        break;
+                    case "delete":
+
+                        break;
                 }
                 JsonArray dataArray = jsonObject.getAsJsonArray("data");
 
