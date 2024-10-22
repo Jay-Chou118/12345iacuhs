@@ -22,6 +22,9 @@ public class SendCanMessage implements Cloneable, Serializable {
     byte  unused_2;
     byte[] data = new byte[64];
 
+    boolean isSending;
+
+
     public SendCanMessage(){
 
     }
@@ -202,8 +205,8 @@ public class SendCanMessage implements Cloneable, Serializable {
                 ", BUSId=" + BUSId +
                 ", dataLength=" + dataLength +
                 ", FDFormat=" + FDFormat +
-                ", unused_2=" + unused_2 +
-                ", data=" + Arrays.toString(data) +
+                ", isSending=" + isSending +
+//                ", data=" + Arrays.toString(data) +
                 '}';
     }
 }

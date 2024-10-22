@@ -13,19 +13,15 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.database.Cursor;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
-import android.os.Handler;
 import android.os.IBinder;
-import android.os.Looper;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,36 +35,23 @@ import com.chaquo.python.android.AndroidPlatform;
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
 import com.example.testcdc.Utils.BlfRequest;
-import com.example.testcdc.Utils.DataBaseUtil;
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
 import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.Basic_DataBase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
-import com.example.testcdc.httpServer.BlfService;
-import com.example.testcdc.httpServer.FlaskService;
-import com.example.testcdc.httpServer.HttpServer;
-import com.example.testcdc.httpServer.RetrofitClient;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
 import java.io.BufferedReader;
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -86,7 +69,6 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
-import retrofit2.http.POST;
 
 
 public class MainActivity3 extends AppCompatActivity {
@@ -442,6 +424,7 @@ public class MainActivity3 extends AppCompatActivity {
                             Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
                             jsCallResult.setData(result);
                             callJs(jsCallResult);
+//                            Log.w(TAG, "DBC " + jsCallResult.getData().toString() );
 
                         }
                         final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
@@ -1077,6 +1060,36 @@ public class MainActivity3 extends AppCompatActivity {
                 "data: [" + Arrays.toString(sendCanMessage.data).replaceAll("[\\[\\]]", "") + "], " +
                 "period: " + sendCanMessage.period + ", " +
                 "isSending: " + sendCanMessage.isSending;
+    }
+
+    public Map<Integer, Map<String, List<List<String>>>> chenfeihao(String carType, String sdb)
+    {
+        Map<Integer, Map<String, List<List<String>>>> maps = new HashMap<>();
+        long cid = database.carTypeDao().getCidByName(carType, sdb);
+        List<Integer> busIds = database.msgInfoDao().getDistinctBusIdsByCid(cid);
+
+        for (Integer busId : busIds)
+        {
+            Map<String, List<List<String>>> map = new HashMap<>();
+            List<MsgInfoEntity> userMsgs = database.msgInfoDao().getMsgBycid(cid);
+
+            for (MsgInfoEntity usermsg : userMsgs) {
+                List<List<String>> subList = new ArrayList<>();
+                List<SignalInfo> userSignalInfos = database.signalInfoDao().getSignalByBusIdcid(cid, busId);
+                for (SignalInfo signalInfo : userSignalInfos) {
+                    List<String> subListItem = new ArrayList<>();
+                    subListItem.add(signalInfo.name);
+                    subListItem.add(signalInfo.comment != null ? signalInfo.comment : "null");
+                    subListItem.add(signalInfo.choices);
+                    subList.add(subListItem);
+                }
+                map.put(usermsg.name, subList);
+            }
+
+            maps.put(busId, map);
+        }
+
+        return maps;
     }
 
 }
