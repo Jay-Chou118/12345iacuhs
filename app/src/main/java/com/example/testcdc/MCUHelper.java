@@ -390,7 +390,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 }
                 if(HEAD_FLAG_1 == mParseBuffer[0])
                 {
-                    Log.i(TAG, "AAAA PARSE_HEAD_PHASE1 " + mParseBuffer[0] );
+//                    Log.i(TAG, "AAAA PARSE_HEAD_PHASE1 " + mParseBuffer[0] );
                     m_curState = PARSE_SER_BUFFER_STATE.PARSE_HEAD_PHASE2;
                 }else{
                     break;
@@ -408,7 +408,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 }
                 if(HEAD_FLAG_2 == mParseBuffer[0] && HEAD_FLAG_3 == mParseBuffer[1] && HEAD_FLAG_4 == mParseBuffer[2])
                 {
-                    Log.i(TAG, "AAAA PARSE_HEAD_PHASE2 " + mParseBuffer[0]  + " " + mParseBuffer[1] + " " + mParseBuffer[2]);
+//                    Log.i(TAG, "AAAA PARSE_HEAD_PHASE2 " + mParseBuffer[0]  + " " + mParseBuffer[1] + " " + mParseBuffer[2]);
                     m_curState = PARSE_SER_BUFFER_STATE.PARSE_TYPE_PHASE;
                 }else
                 {
@@ -488,22 +488,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                     Log.w(TAG, "AAA parseUsbCmdPackage_v2: ");
                      parseUsbCmdPackage_v2(m_curCmdType,mParseBuffer,mUsbPackageSize);
                 }
-//                if(convert_u16(mParseBuffer) <= 0x00ff)
-//                {
-//                    if(mAppLevel >= 0x1040)
-//                    {
-//                        Log.w(TAG, "AAAA parseUsbPackage_v3: ");
-//                        parseUsbPackage_v3(mParseBuffer,mUsbPackageSize);
-//                    }else
-//                    {
-//                        Log.w(TAG,"AAAA parseUsbPackage_v2");
-//                        parseUsbPackage_v2(mParseBuffer,mUsbPackageSize,true);
-//                    }
-//                }else
-//                {
-//                    Log.w(TAG, "AAA parseUsbCmdPackage_v2: ");
-//                    parseUsbCmdPackage_v2(m_curCmdType,mParseBuffer,mUsbPackageSize);
-//                }
+
                 m_curState = PARSE_SER_BUFFER_STATE.PARSE_HEAD_PHASE1;
                 break;
             default:
@@ -553,6 +538,9 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
     public void SendPeriodsConfig(JsonElement data){sendCmd(COMMAND_TYPE.PERIOD_SEND_CONFIG,data);}
 
+    public void loadPeriodsConfig(JsonElement data){sendCmd(COMMAND_TYPE.PERIOD_SEND_CONFIG,data);}
+
+
     public void StartSendPeriods(){sendCmd(COMMAND_TYPE.PERIOD_SEND_START,null);}
 
     public void StopSendPeriods(){sendCmd(COMMAND_TYPE.PERIOD_SEND_STOP,null);}
@@ -587,6 +575,8 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             case GET_APP_BUILD_TIME:
             case GET_DEVICE_CONFIG:
             case PERIOD_SEND_START:
+                cmd_genCommonCmd(cmd);
+                break;
             case PERIOD_SEND_STOP:
                 cmd_genCommonCmd(cmd);
                 Log.w(TAG, "AAA sendCmd : " + cmd );
@@ -598,6 +588,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 cmd_periodSendOnce(cmd,data);
                 break;
             case PERIOD_SEND_CONFIG:
+//                loadPeriodSendConfig(data);
                 cmd_periodSendConfig(cmd,data);
                 Log.w(TAG, "AAA sendCmd : " + cmd );
                 break;
@@ -711,50 +702,92 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
     }
 
+    private boolean loadPeriodSendConfig(JsonElement data)
+    {
+        sendcanMessageManager.clearPeriodSendConfig();
+
+        try {
+            JsonArray dataArray = data.getAsJsonArray();
+
+            for (JsonElement itemElement : dataArray) {
+                JsonObject item = itemElement.getAsJsonObject();
+
+                SendCanMessage sendCan = new SendCanMessage();
+                sendCan.period = item.get("period").getAsShort();
+                sendCan.isReady = 0;
+                sendCan.slot = item.get("slot").getAsByte();
+                sendCan.CanID = item.get("CanID").getAsInt();
+                sendCan.BUSId = item.get("BUSId").getAsByte();
+                String canType = item.get("FDFormat").getAsString();
+                sendCan.dataLength = item.get("dataLength").getAsByte();
+                sendCan.FDFormat = (byte) ("FDFormat".equals(canType) ? 0 : 1);
+
+                if (((sendCan.BUSId - 1) / 3) == mMcuIndex) {
+                    sendCan.BUSId = (byte) (sendCan.BUSId - 3 * mMcuIndex);
+//                    Log.w(TAG, "mcuIndex: " + mMcuIndex + "\tslot: " + sendCan.slot + "\tcanid: " + sendCan.CanID + "\tbusid: " + sendCan.BUSId + "\tperiod: " + sendCan.period);
+//                    Log.w(TAG, "\tdataLength: " + sendCan.dataLength);
+                    // 将 SendCanMessage 对象添加到 CanMessageManager 中
+                }
+                // 设置 rawData
+                JsonArray rawData = item.getAsJsonArray("data");
+                sendCan.setDataFromJsonArray(rawData);
+                sendcanMessageManager.addSendCanMessage(sendCan);
+            }
+
+            // 如果没有异常，返回 true
+            return true;
+        } catch (Exception e) {
+            // 如果在处理数据时遇到异常，记录错误并返回 false
+            Log.e(TAG, "Error while loading config: " + e.getMessage());
+            return false;
+        }
+    }
     private void cmd_periodSendConfig(COMMAND_TYPE cmd, JsonElement data) {
         sendcanMessageManager.clearPeriodSendConfig();
 
-        Log.e(TAG, "AAA first data : " + data);
-        JsonObject jsonObject = data.getAsJsonObject();
+//        Log.e(TAG, "AAA first data : " + data);
+//        JsonObject jsonObject = data.getAsJsonObject();
+//
+//        // 获取 data 数组
+//        JsonArray dataArray = jsonObject.getAsJsonArray("data");
+//
+//        // 遍历 data 数组
+//        for (JsonElement itemElement : dataArray) {
+//            JsonObject item = itemElement.getAsJsonObject();
+//
+//            SendCanMessage sendCan = new SendCanMessage();
+//            Log.d(TAG, " AAA I AM SENDING PERIOD");
+//
+//            sendCan.period = item.get("periodic").getAsShort();
+//            sendCan.isReady = 0;
+//            sendCan.slot = item.get("row").getAsByte();
+//
+//            sendCan.CanID = item.get("canId").getAsInt();
+//            sendCan.BUSId = item.get("channel").getAsByte();
+//            String canType = item.get("canType").getAsString();
+//            sendCan.dataLength = item.get("dlc").getAsByte();
+//            sendCan.FDFormat = (byte) ("CAN".equals(canType) ? 0 : 1);
+//
+//
+//            sendCan.unused_2 = 0;
+//
+//            if (((sendCan.BUSId - 1) / 3) == mMcuIndex) {
+//                sendCan.BUSId = (byte) (sendCan.BUSId - 3 * mMcuIndex);
+//            }
+//
+//            // 设置 rawData
+//            JsonArray rawData = item.getAsJsonArray("rawData");
+//            sendCan.setDataFromJsonArray(rawData);
+//            sendcanMessageManager.addSendCanMessage(sendCan);
+//        }
 
-        // 获取 data 数组
-        JsonArray dataArray = jsonObject.getAsJsonArray("data");
-
-        // 遍历 data 数组
-        for (JsonElement itemElement : dataArray) {
-            JsonObject item = itemElement.getAsJsonObject();
-
-            SendCanMessage sendCan = new SendCanMessage();
-            Log.d(TAG, " AAA I AM SENDING PERIOD");
-
-            sendCan.period = item.get("periodic").getAsShort();
-            sendCan.isReady = 0;
-            sendCan.slot = item.get("row").getAsByte();
-
-            sendCan.CanID = item.get("canId").getAsInt();
-            sendCan.BUSId = item.get("channel").getAsByte();
-            String canType = item.get("canType").getAsString();
-            sendCan.dataLength = item.get("dlc").getAsByte();
-            sendCan.FDFormat = (byte) ("CAN".equals(canType) ? 0 : 1);
-
-
-            sendCan.unused_2 = 0;
-
-            if (((sendCan.BUSId - 1) / 3) == mMcuIndex) {
-                sendCan.BUSId = (byte) (sendCan.BUSId - 3 * mMcuIndex);
-            }
-
-            // 设置 rawData
-            JsonArray rawData = item.getAsJsonArray("rawData");
-            sendCan.setDataFromJsonArray(rawData);
-
-
-            Log.w(TAG, "AAA sendCan: " + sendCan.toString());
-
-            // 将 SendCanMessage 对象添加到 CanMessageManager 中
-            sendcanMessageManager.addSendCanMessage(sendCan);
+        boolean ret = loadPeriodSendConfig(data);
+//        Log.d(TAG, "RRRRR get in Periods ret " + ret);
+        if (!ret) {
+            // 如果 loadPeriodSendConfig 失败，立即返回 false
+            return;
         }
-
+//        Log.d(TAG, "AAAAA get in Periods ret ");
         int num = 0;
         List<Byte> tmp = new ArrayList<>();
 
@@ -766,7 +799,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             }
             Log.w(TAG, "The size of tmp : " +  tmp.size());
             num++;
-            //Log.d(TAG, "AAA "+ num +"Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
+            Log.d(TAG, "AAAAAA "+ num +"Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
             if ((num % 23) == 0) {
                 // 重新初始化 mCmdData
                 mCmdData = new byte[]{0x5a, 0x5a, 0x5a, 0x5a, (byte) (cmd.code & 0xff), (byte) (cmd.code >> 8 & 0xff), (byte) 0xd4, 0x06};
@@ -831,7 +864,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             //Log.w(TAG, "the size of current mCmdData : " + mCmdData.length );
             // 打印或处理 mCmdData
             //Log.d(TAG, "RRRRR Processing remaining SendCanMessages: " + Arrays.toString(mCmdData));
-            writeSerial();
+//            writeSerial();
 //        }
     }
 
