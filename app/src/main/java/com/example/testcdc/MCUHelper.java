@@ -721,6 +721,8 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 String canType = item.get("FDFormat").getAsString();
                 sendCan.dataLength = item.get("dataLength").getAsByte();
                 sendCan.FDFormat = (byte) ("FDFormat".equals(canType) ? 0 : 1);
+                sendCan.isSending = item.get("isSending").getAsBoolean();
+
 
                 if (((sendCan.BUSId - 1) / 3) == mMcuIndex) {
                     sendCan.BUSId = (byte) (sendCan.BUSId - 3 * mMcuIndex);
@@ -733,7 +735,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 sendCan.setDataFromJsonArray(rawData);
                 sendcanMessageManager.addSendCanMessage(sendCan);
             }
-
+            Log.w(TAG, "CCCCCC DATA " + sendCan.toString() );
             // 如果没有异常，返回 true
             return true;
         } catch (Exception e) {
@@ -744,7 +746,6 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
     }
     private void cmd_periodSendConfig(COMMAND_TYPE cmd, JsonElement data) {
         sendcanMessageManager.clearPeriodSendConfig();
-
 //        Log.e(TAG, "AAA first data : " + data);
 //        JsonObject jsonObject = data.getAsJsonObject();
 //
@@ -787,7 +788,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             // 如果 loadPeriodSendConfig 失败，立即返回 false
             return;
         }
-//        Log.d(TAG, "AAAAA get in Periods ret ");
+        Log.d(TAG, "CCCCCC AAAAA get in Periods ret " + ret);
         int num = 0;
         List<Byte> tmp = new ArrayList<>();
 
@@ -797,9 +798,9 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             for (byte b : usbSendCanBytes) {
                 tmp.add(b);
             }
-            Log.w(TAG, "The size of tmp : " +  tmp.size());
+            Log.w(TAG, "CCCCCCCThe size of tmp : " +  tmp.size());
             num++;
-            Log.d(TAG, "AAAAAA "+ num +"Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
+            Log.d(TAG, "CCCCCC "+ num +"Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
             if ((num % 23) == 0) {
                 // 重新初始化 mCmdData
                 mCmdData = new byte[]{0x5a, 0x5a, 0x5a, 0x5a, (byte) (cmd.code & 0xff), (byte) (cmd.code >> 8 & 0xff), (byte) 0xd4, 0x06};
@@ -826,7 +827,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 }
 
                 // 打印或处理 mCmdData
-                Log.d(TAG, "AAA Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
+                Log.d(TAG, "CCCCCC Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
 
                 writeSerial();
                 num = 0;

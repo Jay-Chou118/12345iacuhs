@@ -54,6 +54,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -94,7 +95,7 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static String mCallbackId;
 
-    private SendCanMessageManager sendcanMessageManager = new SendCanMessageManager() ;
+
 
     private ServiceConnection mSC = new ServiceConnection() {
         @Override
@@ -611,22 +612,28 @@ public class MainActivity3 extends AppCompatActivity {
 
             }
         });
+
+
         //getPeriodicSend
         messageHandlers.put("getPeriodicSend", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) throws IOException {
                 //{"data":[{"name":"","e2e":false,"periodic":0,"canId":111,"channel":1,"canType":"CAN","dlc":8,"isSending":false,"from":"CAN","rawData":[0,0,0,0,0,0,0,0],"children":[{"eteDisable":false}],"dirty":false,"raw":1,"row":1},{"name":"","e2e":false,"periodic":1000,"canId":222,"channel":2,"canType":"CANFD","dlc":8,"isSending":false,"from":"CANFD","rawData":[0,0,0,0,0,0,0,0],"children":[{"eteDisable":false}],"row":2},{"name":"","e2e":false,"periodic":1000,"canId":111,"channel":1,"canType":"CAN","dlc":8,"isSending":false,"from":"CAN","rawData":[0,0,0,0,0,0,0,0],"children":[{"eteDisable":false}],"row":3}],"behavor":"add"}
 //                mMiCANBinder.CANOnBus();
-//                Log.d(TAG, "RRRRR get in Periods" + data);
+                //中途添加不会更新这边的数据，
+                Log.d(TAG, "BBBBBB " + data);
                 JsonObject jsonObject = data.getAsJsonObject();
                 String behaviour = jsonObject.get("behavor").getAsString();
 //                Log.w(TAG, "handle: " + behaviour );
                 JsonArray dataJsonArray = jsonObject.getAsJsonArray("data");
 
+                Gson gson = new Gson();
+                JsonArray Sendcan = new JsonArray();
+
 
                 switch(behaviour){
                     case "add":
-                        Log.d(TAG, "Final g_send_list after delete operation: add" );
+                        Log.d(TAG, "BBBBBB Final g_send_list after delete operation: add" );
 
                         for (JsonElement jsonElement : dataJsonArray) {
                             JsonObject configObject = jsonElement.getAsJsonObject();
@@ -646,6 +653,14 @@ public class MainActivity3 extends AppCompatActivity {
                                 tmp.period = 0;
                             }
 
+//                            if (g_send_list.size() <= tmp.slot) {
+//                                // 直接设置，如果越界，则调整slot值
+//                                tmp.slot = (byte) (g_send_list.size());
+//                                g_send_list.add(tmp);
+//                            } else {
+//                                // 如果已经有元素，直接替换
+//                                g_send_list.set(tmp.slot, tmp);
+//                            }
 
                             // 确保g_send_list不会越界
                             while (g_send_list.size() <= tmp.slot) {
@@ -658,17 +673,18 @@ public class MainActivity3 extends AppCompatActivity {
                             }
 
                             g_send_list.set(tmp.slot,tmp);
+                            Log.w(TAG, "BBBBB current g_sent_list " + g_send_list.toString() );
                         }
                         break;
                     case "modify":
-                        Log.d(TAG, "Final g_send_list after delete operation: modify" );
+                        Log.d(TAG, "BBBBBB Final g_send_list after delete operation: modify" );
 
                         for (JsonElement jsonElement : dataJsonArray) {
                             JsonObject configObject = jsonElement.getAsJsonObject();
 //                            int slot = configObject.get("row").getAsInt() - 1; // Java中索引从0开始
                             int slot = configObject.get("row").getAsInt();
                             SendCanMessage toModify = g_send_list.get(slot);
-
+                            Log.d(TAG, "BBBB SendCanMessage toModify: " + toModify.toString());
                             if (toModify != null) {
                                 toModify.BUSId = (byte) configObject.get("channel").getAsInt();
                                 toModify.CanID = configObject.get("canId").getAsInt();
@@ -685,12 +701,14 @@ public class MainActivity3 extends AppCompatActivity {
                                 for (int i = 0; i < Math.min(64, rawDataJsonArray.size()); i++) {
                                     toModify.data[i] = (byte) rawDataJsonArray.get(i).getAsInt();
                                 }
+
+                                Log.d(TAG, "BBBBB g_send_list modify " + g_send_list.toString()  );
                             }
                         }
 
                         break;
                     case "delete":
-                        Log.d(TAG, "Final g_send_list after delete operation: delete" );
+                        Log.d(TAG, "BBBBBB Final g_send_list after delete operation: delete" );
 
                         JsonArray deleteIndexJsonArray = jsonObject.getAsJsonArray("data");
                         List<Integer> deleteIndexList = new ArrayList<>();
@@ -700,51 +718,39 @@ public class MainActivity3 extends AppCompatActivity {
                         }
 
                         List<SendCanMessage> newSendList = new ArrayList<>();
-                        int newSendListIndex = 0;
-                        int gSendListIndex = 0;
+                        Collections.sort(deleteIndexList); // 确保索引列表是排序的
+
 
                         for (int i = 0; i < g_send_list.size(); i++) {
                             SendCanMessage current = g_send_list.get(i);
-                            if (current != null) {
-                                gSendListIndex++;
-                                boolean shouldDelete = deleteIndexList.contains(i);
-                                if (!shouldDelete) {
-                                    if (i < deleteIndexList.get(0)) {
-                                        newSendList.add(current);
-                                        newSendListIndex++;
-                                    } else {
-                                        newSendList.add(current);
-                                        current.slot = (byte) (current.slot - 1);
-                                        newSendListIndex++;
-                                    }
+                            if (!deleteIndexList.contains(i)) {
+                                newSendList.add(current);
+                                // 调整slot，如果i大于等于最小的删除索引
+                                if (i >= deleteIndexList.get(0)) {
+                                    current.slot = (byte) (current.slot - 1);
                                 }
                             }
                         }
 
-                        // 填充剩余位置
-                        for (int i = newSendListIndex; i < gSendListIndex; i++) {
-                            SendCanMessage fillMessage = new SendCanMessage();
-                            fillMessage.slot = (byte) (i + 1);
-                            fillMessage.BUSId = (byte) 1;
-                            fillMessage.CanID = 425;
-                            fillMessage.FDFormat = (byte) 1;
-                            fillMessage.dataLength = (byte) 8;
-                            fillMessage.period = (short) 0;
-                            fillMessage.isSending = false;
-                            fillMessage.data = new byte[]{0, 0, 0, 0, 0, 0, 0, 0};
-
-                            newSendList.add(fillMessage);
+                        // 移除开头的元素，因为最小的删除索引已经不适用
+                        if (!deleteIndexList.isEmpty()) {
+                            deleteIndexList.remove(0);
                         }
 
-                        // 更新g_send_list
-                        g_send_list = newSendList;
+                        // 如果还有其他删除索引，继续调整slot
+                        for (int deleteIndex : deleteIndexList) {
+                            for (SendCanMessage message : newSendList) {
+                                if (message.slot >= (byte) deleteIndex) {
+                                    message.slot = (byte) (message.slot - 1);
+                                }
+                            }
+                        }
 
+                        g_send_list = newSendList;
+                        Log.d(TAG, "BBBBBB Final g_send_list after delete operation:" + g_send_list.toString());
                         break;
                 }
-                Log.d(TAG, "Final g_send_list after delete operation:" + g_send_list.toString());
-//                g_send_list.forEach(message -> Log.d(TAG, sendCanMessageToString(message)));
-                Gson gson = new Gson();
-                JsonArray Sendcan = new JsonArray();
+
 
                 for (SendCanMessage message : g_send_list) {
                     if (message != null) {
@@ -752,7 +758,7 @@ public class MainActivity3 extends AppCompatActivity {
                         Sendcan.add(jsonMessage);
                     }
                 }
-                Log.d(TAG, "AAAAA get in Periods" + Sendcan);
+                Log.d(TAG, "BBBBBB get in Periods" + Sendcan);
                 mMiCANBinder.CANOnBus();
                 mMiCANBinder.SendPeriods(Sendcan);
 
@@ -763,6 +769,7 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("endRecord", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) throws IOException {
+                g_send_list.clear();
                 mMiCANBinder.CANOffBus();
             }
         });
