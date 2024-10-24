@@ -543,7 +543,7 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("parsedSignal", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
-                Log.d(TAG, "TTTTTTTTTTTTTT: " + data);
+//                Log.d(TAG, "TTTTTTTTTTTTTT: " + data);
 
                 if (data == null || !data.isJsonObject()) {
                     Log.e(TAG, "Received data is not a JSON object.");
@@ -618,7 +618,8 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("getPeriodicSend", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) throws IOException {
-                //{"data":[{"name":"","e2e":false,"periodic":0,"canId":111,"channel":1,"canType":"CAN","dlc":8,"isSending":false,"from":"CAN","rawData":[0,0,0,0,0,0,0,0],"children":[{"eteDisable":false}],"dirty":false,"raw":1,"row":1},{"name":"","e2e":false,"periodic":1000,"canId":222,"channel":2,"canType":"CANFD","dlc":8,"isSending":false,"from":"CANFD","rawData":[0,0,0,0,0,0,0,0],"children":[{"eteDisable":false}],"row":2},{"name":"","e2e":false,"periodic":1000,"canId":111,"channel":1,"canType":"CAN","dlc":8,"isSending":false,"from":"CAN","rawData":[0,0,0,0,0,0,0,0],"children":[{"eteDisable":false}],"row":3}],"behavor":"add"}
+                //{"data":[{"name":"","e2e":false,"periodic":0,"canId":111,"channel":1,"canType":"CAN","dlc":8,"isSending":false,"from":"CAN",
+                // "rawData":[0,0,0,0,0,0,0,0],"children":[{"eteDisable":false}],"dirty":false,"raw":1,"row":1},{"name":"","e2e":false,"periodic":1000,"canId":222,"channel":2,"canType":"CANFD","dlc":8,"isSending":false,"from":"CANFD","rawData":[0,0,0,0,0,0,0,0],"children":[{"eteDisable":false}],"row":2},{"name":"","e2e":false,"periodic":1000,"canId":111,"channel":1,"canType":"CAN","dlc":8,"isSending":false,"from":"CAN","rawData":[0,0,0,0,0,0,0,0],"children":[{"eteDisable":false}],"row":3}],"behavor":"add"}
 //                mMiCANBinder.CANOnBus();
                 //中途添加不会更新这边的数据，
                 Log.d(TAG, "BBBBBB " + data);
@@ -633,14 +634,35 @@ public class MainActivity3 extends AppCompatActivity {
 
                 switch(behaviour){
                     case "add":
-                        Log.d(TAG, "BBBBBB Final g_send_list after delete operation: add" );
 
+
+                        Log.d(TAG, "BBBBBB Final g_send_list after delete operation: add" + data );
+
+                        byte maxSlot = 0; // 确定当前最大slot值
+                        boolean isFirstOperation = g_send_list.isEmpty(); // 检查是否是第一次操作
+
+                        // 如果不是第一次操作，找出当前最大slot值
+                        if (!isFirstOperation) {
+                            for (SendCanMessage message : g_send_list) {
+                                if (message != null && message.slot > maxSlot) {
+                                    maxSlot = message.slot;
+                                }
+                            }
+                        }
                         for (JsonElement jsonElement : dataJsonArray) {
                             JsonObject configObject = jsonElement.getAsJsonObject();
                             SendCanMessage tmp = new SendCanMessage();
 
 //                            tmp.slot = (byte) (configObject.get("row").getAsInt() - 1); // Java中索引从0开始
-                            tmp.slot =  (byte) (configObject.get("row").getAsInt());
+//                            tmp.slot =  (byte) (configObject.get("row").getAsInt());
+
+                            // 对于首次添加数据，使用row作为slot；对于后续添加数据，使用最高slot值加1
+//                            int row = configObject.get("row").getAsInt();
+//                            byte newSlot = (row > maxSlot) ? (byte) row : (byte) (maxSlot + 1);
+//                            tmp.slot = newSlot;
+                            // 确定slot值
+                            tmp.slot = isFirstOperation ? (byte) (configObject.get("row").getAsInt()) : (byte) (maxSlot + 1);
+
                             tmp.BUSId = (byte) configObject.get("channel").getAsInt();
 
                             tmp.CanID = configObject.get("canId").getAsInt();
@@ -653,28 +675,37 @@ public class MainActivity3 extends AppCompatActivity {
                                 tmp.period = 0;
                             }
 
-//                            if (g_send_list.size() <= tmp.slot) {
-//                                // 直接设置，如果越界，则调整slot值
-//                                tmp.slot = (byte) (g_send_list.size());
-//                                g_send_list.add(tmp);
-//                            } else {
-//                                // 如果已经有元素，直接替换
-//                                g_send_list.set(tmp.slot, tmp);
-//                            }
-
                             // 确保g_send_list不会越界
                             while (g_send_list.size() <= tmp.slot) {
                                 g_send_list.add(null);
                             }
 
-                            // 替换或者填充g_send_list
-                            while (g_send_list.size() <= tmp.slot) {
-                                g_send_list.add(null);
+                            g_send_list.set(tmp.slot ,tmp);
+                            // 更新当前最大slot值，以备下一次添加使用
+                            if (tmp.slot > maxSlot) {
+                                maxSlot = tmp.slot;
                             }
 
-                            g_send_list.set(tmp.slot,tmp);
-                            Log.w(TAG, "BBBBB current g_sent_list " + g_send_list.toString() );
+                            Log.d(TAG, "BBBBB current g_sent_list " + g_send_list.toString() );
                         }
+                        Log.w(TAG, "BBBBB current g_sent_list " + g_send_list.toString() );
+//                        for (int i = 0; i < g_send_list.size(); i++) {
+//                            SendCanMessage message = g_send_list.get(i);
+//                            if (message != null) {
+//                                message.slot = (byte) (message.slot + 1); // 将slot值增加1
+//                                // 更新list中的对象，确保修改被保存
+//                                g_send_list.set(i, message);
+//                            }
+//                        }
+//                        Log.w(TAG, "BBBBB current g_sent_list " + g_send_list.toString() );
+
+//                        for (SendCanMessage message : g_send_list) {
+//                            if (message != null) {
+//                                JsonElement jsonMessage = gson.toJsonTree(message);
+//
+//                                Sendcan.add(jsonMessage);
+//                            }
+//                        }
                         break;
                     case "modify":
                         Log.d(TAG, "BBBBBB Final g_send_list after delete operation: modify" );
@@ -682,7 +713,7 @@ public class MainActivity3 extends AppCompatActivity {
                         for (JsonElement jsonElement : dataJsonArray) {
                             JsonObject configObject = jsonElement.getAsJsonObject();
 //                            int slot = configObject.get("row").getAsInt() - 1; // Java中索引从0开始
-                            int slot = configObject.get("row").getAsInt();
+                            int slot = configObject.get("row").getAsInt() ;
                             SendCanMessage toModify = g_send_list.get(slot);
                             Log.d(TAG, "BBBB SendCanMessage toModify: " + toModify.toString());
                             if (toModify != null) {
@@ -705,7 +736,12 @@ public class MainActivity3 extends AppCompatActivity {
                                 Log.d(TAG, "BBBBB g_send_list modify " + g_send_list.toString()  );
                             }
                         }
-
+//                        for (SendCanMessage message : g_send_list) {
+//                            if (message != null) {
+//                                JsonElement jsonMessage = gson.toJsonTree(message);
+//                                Sendcan.add(jsonMessage);
+//                            }
+//                        }
                         break;
                     case "delete":
                         Log.d(TAG, "BBBBBB Final g_send_list after delete operation: delete" );
@@ -748,9 +784,9 @@ public class MainActivity3 extends AppCompatActivity {
 
                         g_send_list = newSendList;
                         Log.d(TAG, "BBBBBB Final g_send_list after delete operation:" + g_send_list.toString());
+
                         break;
                 }
-
 
                 for (SendCanMessage message : g_send_list) {
                     if (message != null) {
@@ -758,6 +794,8 @@ public class MainActivity3 extends AppCompatActivity {
                         Sendcan.add(jsonMessage);
                     }
                 }
+
+
                 Log.d(TAG, "BBBBBB get in Periods" + Sendcan);
                 mMiCANBinder.CANOnBus();
                 mMiCANBinder.SendPeriods(Sendcan);

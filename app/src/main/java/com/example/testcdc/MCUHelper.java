@@ -788,10 +788,11 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             // 如果 loadPeriodSendConfig 失败，立即返回 false
             return;
         }
-        Log.d(TAG, "CCCCCC AAAAA get in Periods ret " + ret);
+        Log.d(TAG, "BBBBBBBBBBBBB AAAAA get in Periods ret " + data);
         int num = 0;
         List<Byte> tmp = new ArrayList<>();
-
+//        showSendALLMessage();
+        Log.d(TAG,  sendcanMessageManager.toString() );
         for (SendCanMessage usbSendCan : sendcanMessageManager.getPeriodSendConfig())
         {
             byte[] usbSendCanBytes = usbSendCan.toByteArray();
@@ -834,6 +835,8 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 tmp.clear();
             }
         }
+        //输出目前的全部对象
+//        showSendALLMessage();
 
         // 如果 tmp 列表中还有剩余的数据，也需要处理
 //        if (!tmp.isEmpty()) {
@@ -1076,6 +1079,17 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         Log.d(TAG, "AAAA mParseBuffer的前100个字节: " + sb.toString());
     }
 
+    //test
+    private void showSendALLMessage(){
+        List<SendCanMessage> sendCanList = sendcanMessageManager.getPeriodSendConfig();
+        for (SendCanMessage sendCan : sendCanList) {
+            Log.d(TAG, "11111SendCanMessage info: " + sendCan.toString()); // 这里使用toString()或其他自定义的输出方法
+            // 如果SendCanMessage类中没有合适的输出方法，你可以手动输出其属性，如：
+//             Log.d(TAG, "111111SendCanMessage info: id=" + sendCan.getCanID() + ", data=" + Arrays.toString(sendCan.getData()));
+        }
+
+
+    }
 
 
 }
