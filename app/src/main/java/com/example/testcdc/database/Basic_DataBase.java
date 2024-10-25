@@ -20,7 +20,4 @@ public abstract class Basic_DataBase extends RoomDatabase {
     public abstract CarTypeDao carTypeDao();
 
     private static volatile Basic_DataBase INSTANCE;
-
-
-
 }

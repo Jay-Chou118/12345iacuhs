@@ -381,3 +381,27 @@ def blfthaveDataSignal(data):
                         ret[k] = {}
                     ret[k][k1] = v1
     return json.dumps(ret)
+
+def channelBlf(blffile):
+    global log
+    log = myBLFReader(blffile)
+
+    channelIDs = set()
+    for each in log:
+        channelID = each[4]
+        channelIDs.add(str(channelID))
+
+    channelIDs_str = ', '.join(channelIDs)
+    return channelIDs_str
+
+def canIdBlf(blffile):
+    global log
+    log = myBLFReader(blffile)
+
+    frameIDs= set()
+    for each in log:
+        frameID = each[1]
+        frameIDs.add(str(frameID))
+
+    frameIDs_str = ', '.join(frameIDs)  # Join the string representations of frame IDs
+    return  frameIDs_str

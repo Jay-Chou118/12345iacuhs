@@ -4,22 +4,18 @@ import static com.example.testcdc.Utils.Utils.blfGetAnalysisByParams;
 import static com.example.testcdc.Utils.Utils.blfthaveDataSignal;
 import static com.example.testcdc.Utils.Utils.parseBlfByPython;
 import static com.example.testcdc.Utils.Utils.parseDBCforBlf;
+import static com.example.testcdc.Utils.Utils.parseDBCforBlf1;
 import static com.example.testcdc.Utils.Utils.reAdjust;
 
-import com.google.common.base.MoreObjects;
 import android.util.Log;
 
-import com.google.gson.Gson;
+import com.google.common.base.MoreObjects;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import fi.iki.elonen.NanoHTTPD;
@@ -27,8 +23,8 @@ import fi.iki.elonen.NanoHTTPD;
 public class HttpServer extends NanoHTTPD {
 
 
-
     private final static String LOG_PREFIX = "HttpServer";
+    private String carType,sdb;
 
 
     public HttpServer(String hostname, int port) {
@@ -45,6 +41,7 @@ public class HttpServer extends NanoHTTPD {
 
     /**
      * 判断是否为CORS 预检请求请求(Preflight)
+     *
      * @param session
      * @return
      */
@@ -59,13 +56,14 @@ public class HttpServer extends NanoHTTPD {
 
     /**
      * 向响应包中添加CORS包头数据
+     *
      * @param session
      * @return
      */
     private Response responseCORS(IHTTPSession session) {
-        Response resp = wrapResponse(session,newFixedLengthResponse(""));
+        Response resp = wrapResponse(session, newFixedLengthResponse(""));
         Map<String, String> headers = session.getHeaders();
-        resp.addHeader("Access-Control-Allow-Methods","POST,GET,OPTIONS");
+        resp.addHeader("Access-Control-Allow-Methods", "POST,GET,OPTIONS");
 
         String requestHeaders = headers.get("access-control-request-headers");
         //resp.addHeader("Access-Control-Max-Age", "86400");
@@ -375,15 +373,15 @@ public class HttpServer extends NanoHTTPD {
     }
 
 
-
     /**
      * 封装响应包
+     *
      * @param session http请求
-     * @param resp 响应包
+     * @param resp    响应包
      * @return resp
      */
-    private Response wrapResponse(IHTTPSession session,Response resp) {
-        if(null != resp){
+    private Response wrapResponse(IHTTPSession session, Response resp) {
+        if (null != resp) {
             Map<String, String> headers = session.getHeaders();
             resp.addHeader(HeaderNames.ACCESS_CONTROL_ALLOW_CREDENTIALS, "true");
             // 如果请求头中包含'Origin',则响应头中'Access-Control-Allow-Origin'使用此值否则为'*'
@@ -391,8 +389,8 @@ public class HttpServer extends NanoHTTPD {
             String origin = MoreObjects.firstNonNull(headers.get(HeaderNames.ORIGIN.toLowerCase()), "*");
             resp.addHeader(HeaderNames.ACCESS_CONTROL_ALLOW_ORIGIN, origin);
 
-            String  requestHeaders = headers.get(HeaderNames.ACCESS_CONTROL_REQUEST_HEADERS.toLowerCase());
-            if(requestHeaders != null){
+            String requestHeaders = headers.get(HeaderNames.ACCESS_CONTROL_REQUEST_HEADERS.toLowerCase());
+            if (requestHeaders != null) {
                 resp.addHeader(HeaderNames.ACCESS_CONTROL_ALLOW_HEADERS, requestHeaders);
             }
         }
@@ -409,26 +407,28 @@ public class HttpServer extends NanoHTTPD {
 
     private static final String blfthaveDataSignal = "/blfthaveDataSignal";
 
+    private static final String getDBC1 = "/getDBC1";
+
     @Override
     public Response serve(IHTTPSession session) {
 
 
         // 判断是否为跨域预请求
-        if(isPreflightRequest(session)){
+        if (isPreflightRequest(session)) {
             // 如果是则发送CORS响应告诉浏览HTTP服务支持的METHOD及HEADERS和请求源
             return responseCORS(session);
         }
 
         String uri = session.getUri();
         //是否接收到http请求
-        Log.d("network",session.toString()+"http win!!!!!!!");
+        Log.d("network", session.toString() + "http win!!!!!!!");
 
         Method method = session.getMethod();
         if (method.equals(Method.POST)) {
             String ret;
             Map<String, String> params = new HashMap<String, String>();
             switch (uri) {
-                case getDBC:
+                case getDBC1:
                     Log.e("HTTP", "getDBC run ");
                     try {
                         session.parseBody(params);
@@ -447,6 +447,36 @@ public class HttpServer extends NanoHTTPD {
                         String carType = jsonObject.getString("carType");
                         String sdb = jsonObject.getString("sdb");
 
+                        Log.e("HTTP","getDBC running" );
+                        ret = parseDBCforBlf1(carType, sdb);
+
+                        Log.e("HTTP", "getDBC finish");
+
+                        return wrapResponse(session, newFixedLengthResponse(Response.Status.OK, "application/json", ret));
+                    } catch (JSONException e) {
+                        throw new RuntimeException(e);
+                    }
+
+                case getDBC:
+                    Log.e("HTTP", "getDBC run ");
+                    try {
+                        session.parseBody(params);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    } catch (ResponseException e) {
+                        throw new RuntimeException(e);
+                    }
+                    String postDataStr1 = params.get("postData");
+
+                    try {
+                        // 将 postDataStr 转换为 JSONObject
+                        JSONObject jsonObject = new JSONObject(postDataStr1);
+
+                        // 提取 carType和sdb 字段
+                        carType = jsonObject.getString("carType");
+                        sdb = jsonObject.getString("sdb");
+
+                        Log.e("HTTP","getDBC running" );
                         ret = parseDBCforBlf(carType, sdb);
 
                         Log.e("HTTP", "getDBC finish");
@@ -473,12 +503,13 @@ public class HttpServer extends NanoHTTPD {
 
                         String blfFile = jsonObject.getString("blfFile");
 
+                        parseDBCforBlf1(carType, sdb);
                         ret = parseBlfByPython(blfFile);
                         Log.e("HTTP", "getBLFdata finish");
 
                         return wrapResponse(session, newFixedLengthResponse(Response.Status.OK, "application/json", ret));
                     } catch (JSONException e) {
-                        Log.e("getBLFdata error",  "error");
+                        Log.e("getBLFdata error", "error");
                         throw new RuntimeException(e);
                     }
 

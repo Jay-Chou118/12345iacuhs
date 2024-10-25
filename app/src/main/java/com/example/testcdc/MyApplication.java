@@ -148,27 +148,32 @@ public class MyApplication extends Application {
 ////                Log.i(TAG, element.toString());
 //            }
 
-//            boolean open = MyApplication.getInstance().getDatabase().isOpen();
-//            if(open)
-//            {
-//                Log.i(TAG,"database is open");
-//            }else {
-//
-//                Log.i(TAG,"database is not open");
-//            }
+            boolean open = MyApplication.getInstance().getDatabase().isOpen();
+            if(open)
+            {
+                Log.i(TAG,"database is open");
+            }else {
+
+                Log.i(TAG,"database is not open");
+            }
         }else{
             Log.d(TAG,"数据库不存在");
-            DataBaseUtil.copyDataBase(this,"basic_database");
+//            DataBaseUtil.copyDataBase(this,"basic_database");
             //修改
 //            Basic_DataBase db = Basic_DataBase.getDatabase(getApplicationContext());
-//            DataBaseUtil.init_carType();
-//            DataBaseUtil.initDataFromCsv(this);
-//            DataBaseUtil.initMsgFromCsv(this);
+            Log.e(TAG,"111111111111111" );
+            new Thread(()->{
+                DataBaseUtil.init_carType();
+                Log.e(TAG, "222222222222222222222222222" );
+                DataBaseUtil.initDataFromCsv(this);
+                DataBaseUtil.initMsgFromCsv(this);
+            }).start();
+
 
         }
-        Database = Room.databaseBuilder(this, Basic_DataBase.class, "basic_database")
-                .addMigrations()
-                .build();
+//        Database = Room.databaseBuilder(this, Basic_DataBase.class, "basic_database")
+//                .addMigrations()
+//                .build();
 //        Database.clearAllTables();
     }
 

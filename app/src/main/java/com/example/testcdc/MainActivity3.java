@@ -23,6 +23,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import androidx.documentfile.provider.DocumentFile;
@@ -37,11 +38,13 @@ import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.Basic_DataBase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
+import com.example.testcdc.entity.SignalInfo_getdbc;
 import com.example.testcdc.httpServer.HttpServer;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONException;
@@ -209,7 +212,7 @@ public class MainActivity3 extends AppCompatActivity {
                     }, 1000);
 
                     webView.postDelayed(() -> {
-                        webView.evaluateJavascript("larkFile('"+ larkFile+"');", null);
+                        webView.evaluateJavascript("larkFile('" + larkFile + "');", null);
                     }, 2000);
                 }
             });
@@ -550,13 +553,6 @@ public class MainActivity3 extends AppCompatActivity {
 
                 startActivityForResult(intent, READ_REQUEST_CODE);
 
-//                parseDBCforBlf("MX11","E4U1");
-//                Log.d("BlfFilePath", BlfFilePath);
-//                parseBlfByPython(BlfFilePath);
-//
-//                String res = parseBlfByPython(BlfFilePath);
-//                Log.d("parseBlfByPython", res);
-
 
             }
         });
@@ -650,7 +646,7 @@ public class MainActivity3 extends AppCompatActivity {
         }
     }
 
-    private Basic_DataBase database;
+    public static Basic_DataBase database;
 
 
     private Thread showLoggingMessage;
@@ -868,6 +864,67 @@ public class MainActivity3 extends AppCompatActivity {
         ExecutorService executorService = Executors.newSingleThreadExecutor();
         executorService.submit(task);
         executorService.shutdown();
+    }
+
+    @NonNull
+    public static String chooseDBC(String carType, String sdb) {
+//        int index = 0;
+        Map<Integer, Map<String, List<List<String>>>> maps = new HashMap<>();
+        long cid = database.carTypeDao().getCidByName(carType, sdb);
+        Log.d("HTTP", "cid: " + cid);
+
+        List<Integer> busIds = Arrays.asList(1, 2, 3, 4, 6, 7, 13);
+        Log.d("HTTP", "busIds: " + busIds);
+
+        for (Integer busId : busIds) {
+
+            Map<String, List<List<String>>> map = new HashMap<>();
+            Log.d("HTTP", "进入msg表 for busId: " + busId);
+
+
+            Log.d("HTTP", "开始msg");
+            List<MsgInfoEntity> msgByBusIdcid = database.msgInfoDao().getMsgBycidBusId(busId, cid);
+            Log.d("HTTP", "msg" + msgByBusIdcid.toString());
+            Log.d("HTTP", "结束msg");
+
+
+            //TODO:优化插入
+            for (MsgInfoEntity msgInfoEntity : msgByBusIdcid) {
+//                index+=1;
+//                Log.d("HTTP", canIds.toString());
+//                Log.d("HTTP","开始");
+                List<List<String>> subList = new ArrayList<>();
+                List<SignalInfo_getdbc> signalInfos = database.signalInfoDao().getSignalBy3col(cid,busId,msgInfoEntity.CANId);
+//                Log.d("HTTP", signalInfos.toString());
+                for (SignalInfo_getdbc signalInfo : signalInfos) {
+                    List<String> subListItem = new ArrayList<>();
+                    subListItem.add(signalInfo.name);
+                    subListItem.add(signalInfo.comment);
+                    subListItem.add(signalInfo.choices);
+                    subList.add(subListItem);
+                }
+
+//                List<List<String>> signalInfos = Collections.singletonList(database.signalInfoDao().getSignalByCid(cid));
+//                List<String> signalInfos = database.signalInfoDao().getSignalByBusId(busId);
+
+                map.put(msgInfoEntity.name, subList);
+            }
+//                Log.d("HTTP", map.toString());
+
+//                Log.d("HTTP", signalInfos.toString());
+//                Log.d("HTTP","结束");
+            Log.d("HTTP", "开始拼接最外层");
+            maps.put(busId, map);
+        }
+//        Log.d("HTTP","INDEX= "+index);
+
+
+
+        Log.d("HTTP", "结束" + maps);
+
+        Gson gson = new Gson();
+        JsonElement jsonElement = JsonParser.parseString(gson.toJson(maps));
+        return jsonElement.toString();
     }
 
 }

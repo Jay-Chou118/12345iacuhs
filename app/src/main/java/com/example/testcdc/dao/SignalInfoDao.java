@@ -7,6 +7,7 @@ import androidx.room.Transaction;
 
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
+import com.example.testcdc.entity.SignalInfo_getdbc;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,4 +56,20 @@ public interface SignalInfoDao {
     @Query("DELETE FROM signal_info WHERE cid = :cid")
     void deleteBycid(long cid);
 
+
+    @Query("SELECT name FROM signal_info WHERE cid = :cidValue and can_id = :can_id")
+    List<String> getSignalNameByCid(long cidValue,int can_id);
+
+    @Query("select * from signal_info where can_id=:CANId and cid =:cid" )
+    List<SignalInfo> getSignal(long cid, int CANId);
+
+    @Query("SELECT name FROM signal_info WHERE cid = :cidValue ")
+    List<String> getSignalByCid(long cidValue);
+
+
+    @Query("SELECT name FROM signal_info WHERE bus_id = :busidValue ")
+    List<String> getSignalByBusId(int busidValue);
+
+    @Query("select name,comment,choices from signal_info where bus_id=:BUSId and can_id=:CANId and cid=:cid")
+    List<SignalInfo_getdbc> getSignalBy3col(long cid, int BUSId, int CANId);
 }

@@ -368,12 +368,12 @@ public class DataBaseUtil {
     {
         ArrayList<Integer> files = new ArrayList<>();
 
-//        files.add(R.raw.msg_info_1);
-//        files.add(R.raw.msg_info_2);
-//        files.add(R.raw.msg_info_3);
-//        files.add(R.raw.msg_info_4);
-//        files.add(R.raw.msg_info_6);
-//        files.add(R.raw.msg_info_7);
+        files.add(R.raw.msg_info_1);
+        files.add(R.raw.msg_info_2);
+        files.add(R.raw.msg_info_3);
+        files.add(R.raw.msg_info_4);
+        files.add(R.raw.msg_info_6);
+        files.add(R.raw.msg_info_7);
 
         files.add(R.raw.msg_info_2_ms11_rc06);
         files.add(R.raw.msg_info_3_ms11_rc06);

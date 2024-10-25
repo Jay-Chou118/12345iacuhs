@@ -1,6 +1,7 @@
 package com.example.testcdc.Utils;
 
-import static java.lang.Math.log;
+
+import static com.example.testcdc.MainActivity3.chooseDBC;
 
 import android.text.SpannableStringBuilder;
 import android.util.Log;
@@ -10,10 +11,9 @@ import com.chaquo.python.Python;
 import com.example.testcdc.MyApplication;
 import com.example.testcdc.dao.MsgInfoDao;
 import com.example.testcdc.dao.SignalInfoDao;
+import com.example.testcdc.database.Basic_DataBase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 import com.hoho.android.usbserial.util.HexDump;
 
 import org.json.JSONArray;
@@ -24,29 +24,30 @@ import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.zip.CRC32;
 
 public class Utils {
     private static final String TAG = "MICAN_UTILS";
 
-    static public int convert_u16(byte[] data)
-    {
+
+    public static Basic_DataBase database;
+
+    static public int convert_u16(byte[] data) {
         return ((data[1] & 0xff) << 8) | (data[0] & 0xff);
     }
 
-    static public long convert_u32(byte[] data)
-    {
-        return ((long)(data[3] & 0xff) << 24) | ( (data[2] & 0xff) << 16) | ((data[1] & 0xff) << 8) | (data[0] & 0xff);
+    static public long convert_u32(byte[] data) {
+        return ((long) (data[3] & 0xff) << 24) | ((data[2] & 0xff) << 16) | ((data[1] & 0xff) << 8) | (data[0] & 0xff);
     }
 
-    static public long convert_u64(byte[] data)
-    {
-        return ((long)(data[7] & 0xff) << 56) | ((long)(data[6] & 0xff) << 48) | ((long)(data[5] & 0xff) << 40) | ((long)(data[4] & 0xff) << 32) | ((long)(data[3] & 0xff) << 24) | ( (data[2] & 0xff) << 16) | ((data[1] & 0xff) << 8) | (data[0] & 0xff);
+    static public long convert_u64(byte[] data) {
+        return ((long) (data[7] & 0xff) << 56) | ((long) (data[6] & 0xff) << 48) | ((long) (data[5] & 0xff) << 40) | ((long) (data[4] & 0xff) << 32) | ((long) (data[3] & 0xff) << 24) | ((data[2] & 0xff) << 16) | ((data[1] & 0xff) << 8) | (data[0] & 0xff);
     }
 
-    static public long myCrc32(byte[] data)
-    {
+    static public long myCrc32(byte[] data) {
         CRC32 crc32 = new CRC32();
 
         // 更新CRC32校验和
@@ -56,39 +57,35 @@ public class Utils {
         return crc32.getValue();
     }
 
-    static public void wait100ms()
-    {
+    static public void wait100ms() {
         try {
             Thread.sleep(100);
         } catch (InterruptedException e) {
-            Log.e(TAG,"sleep error");
+            Log.e(TAG, "sleep error");
         }
     }
 
-    static public void wait10ms()
-    {
+    static public void wait10ms() {
         try {
             Thread.sleep(10);
         } catch (InterruptedException e) {
-            Log.e(TAG,"sleep error");
+            Log.e(TAG, "sleep error");
         }
     }
 
-    static public void wait200ms()
-    {
+    static public void wait200ms() {
         try {
             Thread.sleep(200);
         } catch (InterruptedException e) {
-            Log.e(TAG,"sleep error");
+            Log.e(TAG, "sleep error");
         }
     }
 
-    static public void wait1000ms()
-    {
+    static public void wait1000ms() {
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
-            Log.e(TAG,"sleep error");
+            Log.e(TAG, "sleep error");
         }
     }
 
@@ -96,11 +93,10 @@ public class Utils {
         SpannableStringBuilder spn = new SpannableStringBuilder();
         spn.append("receive " + data.length + " bytes\n");
         spn.append(HexDump.dumpHexString(data)).append("\n");
-        Log.i(TAG,spn.toString());
+        Log.i(TAG, spn.toString());
     }
 
-    static public String formatTime()
-    {
+    static public String formatTime() {
         long timestamp = System.currentTimeMillis();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd_HH_mm_ss");
         Date date = new Date(timestamp);
@@ -108,25 +104,24 @@ public class Utils {
     }
 
 
-    static public long getCurTime()
-    {
+    static public long getCurTime() {
 
         Instant instant = Instant.now(); // 获取当前时间
         long timestamp = instant.toEpochMilli() * 1000;
-        return  timestamp; // 获取微秒级时间戳
+        return timestamp; // 获取微秒级时间戳
     }
 
-    static int[] mapInfo = mapInfo = new int[]{0b00000000, 0b00000001, 0b00000011, 0b00000111, 0b00001111, 0b00011111, 0b00111111, 0b01111111,0b11111111};
-    static public long getSignal(int startBit,int bitLength,byte[] data)
-    {
+    static int[] mapInfo = mapInfo = new int[]{0b00000000, 0b00000001, 0b00000011, 0b00000111, 0b00001111, 0b00011111, 0b00111111, 0b01111111, 0b11111111};
+
+    static public long getSignal(int startBit, int bitLength, byte[] data) {
         long parsedValue = 0;
         //第一行的signal到达的位
-        int curByteContainBitLength = startBit % 8 +1;
+        int curByteContainBitLength = startBit % 8 + 1;
         //开始的行数
         int curByteIndex = startBit / 8;
         //未处理字节数
         int remainBitNum = bitLength;
-        while(true) {
+        while (true) {
             if (curByteContainBitLength >= remainBitNum) {
                 int offset = curByteContainBitLength - remainBitNum;
                 parsedValue += (data[curByteIndex] >> offset) & mapInfo[remainBitNum];
@@ -142,13 +137,12 @@ public class Utils {
         return parsedValue;
     }
 
-    static public long getKey(int BUSId,int CANId)
-    {
+    static public long getKey(int BUSId, int CANId) {
         return (long) BUSId << 32 | CANId;
     }
 
 
-//    static public void DeleteIfExist(MX11E4Database database, long cid)
+    //    static public void DeleteIfExist(MX11E4Database database, long cid)
 //    {
 //        if(database.msgInfoDao().existsBycid(cid)){
 //            database.msgInfoDao().deleteBycid(cid);
@@ -165,8 +159,7 @@ public class Utils {
 //        }
 //
 //    }
-    static public String parseDBCByPython(String filePath)
-    {
+    static public String parseDBCByPython(String filePath) {
         Python python = Python.getInstance();
         PyObject pyObject = python.getModule("HelloWorld");
         String usermsg = String.valueOf(pyObject.callAttr("parse_dbc_file", filePath));
@@ -174,8 +167,7 @@ public class Utils {
         return usermsg;
     }
 
-    static public void updateCustomData(String content,long cid,int BUSId)
-    {
+    static public void updateCustomData(String content, long cid, int BUSId) {
 
         MsgInfoDao msgInfoDao = MyApplication.getInstance().getDatabase().msgInfoDao();
         SignalInfoDao signalInfoDao = MyApplication.getInstance().getDatabase().signalInfoDao();
@@ -193,13 +185,13 @@ public class Utils {
                 msgInfo.name = usermsgObject.getString("name");
                 msgInfo.BUSId = BUSId;
                 msgInfo.CANId = usermsgObject.getInt("id");
-                msgInfo.sendType =  usermsgObject.getInt("cycle_time") == 0 ? "spontaneous": "cyclic";
-                msgInfo.cycleTime =  usermsgObject.getInt("cycle_time");
+                msgInfo.sendType = usermsgObject.getInt("cycle_time") == 0 ? "spontaneous" : "cyclic";
+                msgInfo.cycleTime = usermsgObject.getInt("cycle_time");
                 msgInfo.comment = usermsgObject.getString("comment");
                 msgInfo.BUSName = "";
                 msgInfo.senders = usermsgObject.getString("senders");
                 msgInfo.receivers = usermsgObject.getString("receivers");
-                msgInfo.CANType = usermsgObject.getBoolean("is_fd") ? "CANFD": "CAN";
+                msgInfo.CANType = usermsgObject.getBoolean("is_fd") ? "CANFD" : "CAN";
                 msgInfoEntities.add(msgInfo);
 //                msgInfoDao.insert(msgInfo);
                 // 处理这个报文下的所有signal
@@ -219,7 +211,7 @@ public class Utils {
                     // initial_value=Decimal('0'), min=Decimal('0'), max=Decimal('18446744073709551615'))
                     signalInfo.byteOrder = signal.getBoolean("is_little_endian");
                     signalInfo.isSigned = signal.getBoolean("is_signed");
-                    signalInfo.bitStart = signal.getInt("start_bit") ;
+                    signalInfo.bitStart = signal.getInt("start_bit");
                     signalInfo.bitLength = signal.getInt("size");
                     signalInfo.scale = signal.getDouble("factor");
                     signalInfo.offset = signal.getDouble("offset");
@@ -237,25 +229,29 @@ public class Utils {
             }
             msgInfoDao.insertAll(msgInfoEntities);
             signalInfoDao.insertAll(signalInfos);
-            Log.e(TAG,"insert finish");
+            Log.e(TAG, "insert finish");
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
 
-    static public String parseBlfByPython(String filePath)
-    {
+    static public String parseBlfByPython(String filePath) {
         Python python = Python.getInstance();
         PyObject pyObject = python.getModule("app");
         String msg = String.valueOf(pyObject.callAttr("blfGetBLFdata", filePath));
         return msg;
     }
 
-    static public String parseDBCforBlf(String carType, String sdb) {
+    static public String parseDBCforBlf1(String carType, String sdb) {  //python解析版本
         Python python = Python.getInstance();
-
         PyObject pyObject = python.getModule("app");
         String usermsg = String.valueOf(pyObject.callAttr("blfCppGetDBC", carType, sdb));
+        return usermsg;
+    }
+
+    static public String parseDBCforBlf(String carType, String sdb) {   //数据库查询版本
+        String usermsg = chooseDBC(carType, sdb).toString();
+        Log.e( "parseDBCforBlf: ", usermsg);
         return usermsg;
     }
 
@@ -267,7 +263,7 @@ public class Utils {
         return usermsg;
     }
 
-    static public String reAdjust(){
+    static public String reAdjust() {
         Python python = Python.getInstance();
         PyObject pyObject = python.getModule("app");
         String usermsg = String.valueOf(pyObject.callAttr("reAdjust"));
@@ -278,7 +274,7 @@ public class Utils {
     static public String blfthaveDataSignal(String data) {
         Python python = Python.getInstance();
         PyObject pyObject = python.getModule("app");
-        String usermsg = String.valueOf(pyObject.callAttr("blfthaveDataSignal",data));
+        String usermsg = String.valueOf(pyObject.callAttr("blfthaveDataSignal", data));
 
         return usermsg;
     }
