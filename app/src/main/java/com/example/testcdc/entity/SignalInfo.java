@@ -3,12 +3,13 @@ package com.example.testcdc.entity;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.Ignore;
+import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity(tableName = "signal_info")
+@Entity(tableName = "signal_info",indices = @Index({"bus_id","cid","can_id"}))
 public class SignalInfo {
 
     @PrimaryKey(autoGenerate = true)

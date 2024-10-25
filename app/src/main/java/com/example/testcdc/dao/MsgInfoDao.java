@@ -41,5 +41,14 @@ public interface MsgInfoDao {
     @Query("DELETE FROM msg_info WHERE cid = :cid")
     void deleteBycid(long cid);
 
+    @Query("select * from msg_info where  cid = :cid")
+    List<MsgInfoEntity> getMsgBycid(long cid);
+
+    @Query("SELECT DISTINCT bus_id FROM msg_info WHERE cid = :cid")
+    List<Integer> getDistinctBusIdsByCid(long cid);
+
+    @Query("SELECT can_id FROM msg_info WHERE cid = :cid and bus_id = :bus_id and name = :name")
+    List<Integer> getCanId(long cid, int bus_id, String name);
+
 
 }

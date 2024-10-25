@@ -1,12 +1,10 @@
 package com.example.testcdc;
 
-import static android.database.sqlite.SQLiteDatabase.openDatabase;
 import static com.chaquo.python.Python.start;
 import static com.example.testcdc.Utils.Utils.parseDBCByPython;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
 import static com.google.gson.JsonParser.parseString;
 
-import android.annotation.SuppressLint;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -22,13 +20,14 @@ import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import androidx.documentfile.provider.DocumentFile;
 
-import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
 
@@ -41,10 +40,17 @@ import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.Basic_DataBase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
+import com.example.testcdc.entity.SignalInfo_getdbc;
+import com.example.testcdc.httpServer.HttpServer;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+import org.greenrobot.eventbus.EventBus;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -95,6 +101,12 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static String mCallbackId;
 
+    private static String BlfFilePath;
+
+    private Cursor cursor;
+
+    private static boolean flag = false;
+
 
 
     private ServiceConnection mSC = new ServiceConnection() {
@@ -115,7 +127,6 @@ public class MainActivity3 extends AppCompatActivity {
     private WebView webView;
 
     MyApplication instance = MyApplication.getInstance();
-    ;
 
     private static final String CALLBACK_JS_FORMAT = "javascript:JSBridge.handleNativeResponse('%s')";
 
@@ -129,11 +140,20 @@ public class MainActivity3 extends AppCompatActivity {
         if (!Python.isStarted()) {
             start(new AndroidPlatform(this));
         }
-        Python python = Python.getInstance();
-        PyObject pyObject = python.getModule("app");
+
+        startHttpServer();
+
         //pyObject.callAttr("main");
 
         initWebView();
+
+        EventBus.builder().installDefaultEventBus();
+
+        try {
+            initCursor();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         Thread m = new Thread(new Runnable() {
             @Override
@@ -141,6 +161,7 @@ public class MainActivity3 extends AppCompatActivity {
                 while (true) {
                     try {
                         Thread.sleep(3000);
+
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
 
@@ -186,9 +207,58 @@ public class MainActivity3 extends AppCompatActivity {
         Uri data = intent.getData();
         if (Intent.ACTION_VIEW.equals(action) && data != null) {
             // 处理文件
-            handleFile(data);
-        }
+            String larkFile = getPathFromUri(this, data);
+            Log.i("20241017", larkFile);
+            JSONObject jsonObject = new JSONObject();
+            try {
+                jsonObject.put("data", larkFile);
+            } catch (JSONException e) {
+                throw new RuntimeException(e);
+            }
+            Log.i("20241017", jsonObject.toString());
 
+            webView.setWebViewClient(new WebViewClient() {
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+                    webView.postDelayed(() -> {
+                        webView.evaluateJavascript("getandroiddata();", null);
+                    }, 1000);
+
+                    webView.postDelayed(() -> {
+                        webView.evaluateJavascript("larkFile('" + larkFile + "');", null);
+                    }, 2000);
+                }
+            });
+
+        }
+    }
+
+
+    private void initCursor() {
+        Cursor cursor = getContentResolver().query(null, null, null, null, null);
+        if (cursor != null && cursor.moveToFirst()) {
+            // 处理 Cursor 数据
+            while (!cursor.isAfterLast()) {
+                // 处理每一行数据
+                cursor.moveToNext();
+            }
+            cursor.close();
+        } else {
+            throw new IllegalStateException("Cursor is not initialized correctly.");
+        }
+    }
+
+
+    private void startHttpServer() {
+        new Thread(() -> {
+            try {
+                HttpServer server = new HttpServer("0.0.0.0", 8000);
+                server.start();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }).start();
     }
 
 
@@ -208,6 +278,7 @@ public class MainActivity3 extends AppCompatActivity {
         // 添加Java对象到JavaScript的window对象
 //        webView.addJavascriptInterface(this, "Android");
 
+        webView.addJavascriptInterface(new WebAppInterface(this), "Android");
         webView.addJavascriptInterface(new JsInterface(), BRIDGE_NAME);
 
         // 加载页面
@@ -266,7 +337,7 @@ public class MainActivity3 extends AppCompatActivity {
                             final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
 
                             // 打开CANFD设备
-//                            mMiCANBinder.CANOnBus();
+                            mMiCANBinder.CANOnBus();
                             mMiCANBinder.startSaveBlf();
 
 
@@ -387,7 +458,6 @@ public class MainActivity3 extends AppCompatActivity {
                             }
 
 
-
                             for (int busId : BUSIdList) {
                                 Map<String, List<List<Object>>> subMap = new HashMap<>();
                                 List<MsgInfoEntity> userMsgs = database.msgInfoDao().getMsgBycidBusId(busId, cid);
@@ -434,6 +504,7 @@ public class MainActivity3 extends AppCompatActivity {
                             @Override
                             public void run() {
 
+                                Log.e(TAG, "RRRRRRRRRRRRRRRRR " + callbackJs);
                                 webView.loadUrl(callbackJs);
                             }
                         });
@@ -496,31 +567,8 @@ public class MainActivity3 extends AppCompatActivity {
 
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
 
-                startActivityForResult(intent,READ_REQUEST_CODE);
+                startActivityForResult(intent, READ_REQUEST_CODE);
 
-
-                Python py = Python.getInstance();
-
-                PyObject pyObject = py.getModule("test");
-                new Thread(() -> pyObject.callAttr("run")).start();
-
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        pyObject.callAttr("run");
-                        postBlfData("/storage/emulated/0/Download/Lark/MiCAN_record_2024-08-01_17_32_40_1.blf", "");
-                    }
-                });
-//                sendBLFData("/storage/emulated/0/Download/Lark/MiCAN_record_2024-08-01_17_32_40_1.blf");
-
-            }
-        });
-
-        messageHandlers.put("getBLFData", new BridgeHandler() {
-            @Override
-            public void handle(JsonElement data, String callback) {
-                JsCallResult<Result<Map<Integer, Map<String, List<List<Object>>>>>> jsCallResult = new JsCallResult<>(callback);
-                String filePath = data.getAsString();
 
             }
         });
@@ -535,7 +583,7 @@ public class MainActivity3 extends AppCompatActivity {
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
 
 //                startActivityForResult(intent, CHOOSE_REQUEST_CODE);
-                startActivityForResult(intent,READ_REQUEST_CODE);
+                startActivityForResult(intent, READ_REQUEST_CODE);
 
             }
         });
@@ -561,7 +609,7 @@ public class MainActivity3 extends AppCompatActivity {
                 JsonArray dataArray = canDataElement.getAsJsonArray();
                 int length = dataArray.size();
                 byte[] CANData = new byte[length];
-                Log.e(TAG, "0911" + "length:   " + length );
+                Log.e(TAG, "0911" + "length:   " + length);
                 Log.d(TAG, "0911" + data);
                 for (int i = 0; i < length; i++) {
                     CANData[i] = (byte) Integer.parseInt(dataArray.get(i).getAsString(), 16);
@@ -586,7 +634,7 @@ public class MainActivity3 extends AppCompatActivity {
                 JsCallResult<Result<List<Map<String, Object>>>> jsCallResult = new JsCallResult<>(callback);
                 Result<List<Map<String, Object>>> success = ResponseData.success(maps);
                 jsCallResult.setData(success);
-                Log.e(TAG, "1111111 222222 3333: " + jsCallResult.getData() );
+                Log.e(TAG, "1111111 222222 3333: " + jsCallResult.getData());
                 callJs(jsCallResult);
             }
         });
@@ -828,40 +876,6 @@ public class MainActivity3 extends AppCompatActivity {
 
     }
 
-    public void postBlfData(String filePath, String mode) {
-        OkHttpClient client = new OkHttpClient();
-
-        // 创建请求体
-        BlfRequest requestBody = new BlfRequest(filePath);
-        Gson gson = new Gson();
-        String json = gson.toJson(requestBody);
-
-        // 创建 POST 请求
-        RequestBody body = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), json);
-        Request request = new Request.Builder()
-                .url("http://127.0.0.1:8080/blft/getBLFdata") // 替换为你的服务器 IP
-                .post(body)
-                .build();
-
-        // 发送请求
-        client.newCall(request).enqueue(new Callback() {
-            @Override
-            public void onFailure(Call call, IOException e) {
-                e.printStackTrace();
-            }
-
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-                if (response.isSuccessful()) {
-                    String responseData = response.body().string();
-                    // 处理响应数据
-                    Log.d("Response", responseData);
-                } else {
-                    Log.e("Error", "请求失败: " + response.code());
-                }
-            }
-        });
-    }
 
     private <T> void callJs(T result) {
         final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(result));
@@ -884,7 +898,7 @@ public class MainActivity3 extends AppCompatActivity {
         }
     }
 
-    private Basic_DataBase database;
+    public static Basic_DataBase database;
 
 
     private Thread showLoggingMessage;
@@ -949,19 +963,22 @@ public class MainActivity3 extends AppCompatActivity {
 //        readFileFromUri(this,fileUri);
         // 在此处处理BLF文件，例如读取文件内容或进行解析
         // 检查是否为 content:// 方式的 Uri
-        if (fileUri.getScheme().equals("content")) {
-            String path = getRealPathFromURI(fileUri);
-            Log.i(TAG, "Uri: " + fileUri + "\t real path: " + path);
-            // 使用 path 进行后续操作
-        } else if (fileUri.getScheme().equals("file")) {
-            // 直接使用 file 方式的 Uri
-            String path = fileUri.getPath();
-            Log.i(TAG, "Uri: " + fileUri + "\t path: " + path);
-            // 使用 path 进行后续操作
-        } else {
-            // 不支持的 Uri 方式
-            Log.e(TAG, "Unsupported URI scheme: " + fileUri.getScheme());
+        if (fileUri != null) {
+            if (fileUri.getScheme().equals("content")) {
+                String path = getRealPathFromURI(fileUri);
+                Log.i(TAG, "Uri: " + fileUri + "\t real path: " + path);
+                // 使用 path 进行后续操作
+            } else if (fileUri.getScheme().equals("file")) {
+                // 直接使用 file 方式的 Uri
+                String path = fileUri.getPath();
+                Log.i(TAG, "Uri: " + fileUri + "\t path: " + path);
+                // 使用 path 进行后续操作
+            } else {
+                // 不支持的 Uri 方式
+                Log.e(TAG, "Unsupported URI scheme: " + fileUri.getScheme());
+            }
         }
+
 
 //        // 进行文件读取
 //        Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -969,32 +986,29 @@ public class MainActivity3 extends AppCompatActivity {
 //        startActivity(intent);
     }
 
-    public String getFilePathFromUri(Uri uri) {
-        Cursor cursor = this.getContentResolver().query(uri, null, null, null, null);
-
-        cursor.moveToFirst();
-//        String filePath = cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA));
-        cursor.close();
-        return "";
-    }
 
     private String getRealPathFromURI(Uri uri) {
         String[] proj = {MediaStore.Images.Media.DATA};
-        Cursor cursor = getContentResolver().query(uri, null, null, null, null);
+        String realPath = null;
+        Cursor cursor = getContentResolver().query(uri, proj, null, null, null);
 
-        if (cursor.moveToFirst()) {
-            // 获取你需要的列信息，例如文件的MIME类型
-            @SuppressLint("Range") String mimeType = cursor.getString(cursor.getColumnIndex(MediaStore.Files.FileColumns.MIME_TYPE));
-            Log.e(TAG, "mimeType: " + mimeType);
-            // 处理你的文件信息
-            // ...
+        if (cursor != null) {
+            try {
+                if (cursor.moveToFirst()) {
+                    int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+                    realPath = cursor.getString(column_index);
+                } else {
+                    Log.e(TAG, "Cursor is empty");
+                }
+            } catch (Exception e) {
+                Log.e(TAG, "Cursor is empty");
+            } finally {
+                cursor.close();
+            }
+        } else {
+            Log.e(TAG, "Cursor is null");
         }
-
-
-        Log.e(TAG, "cursor " + cursor.toString());
-        int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
-        cursor.moveToFirst();
-        return cursor.getString(column_index);
+        return realPath;
     }
 
     public String getPathFromUri(Context context, Uri uri) {
@@ -1034,6 +1048,9 @@ public class MainActivity3 extends AppCompatActivity {
             String fileName = getFileNameFromUri(this, uri);
             // 获取文件路径
             String filePath = getPathFromUri(this, uri);
+
+            BlfFilePath = filePath;
+            Log.e(TAG, "BlfFilePath: " + BlfFilePath);
 
             if (mCallbackId == null) {
                 Log.e(TAG, "mCallbackId is null,please check it");
@@ -1089,7 +1106,9 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
+        if (cursor != null) {
+            cursor.close();
+        }
     }
 
     //test
@@ -1135,6 +1154,67 @@ public class MainActivity3 extends AppCompatActivity {
         }
 
         return maps;
+    }
+
+    @NonNull
+    public static String chooseDBC(String carType, String sdb) {
+//        int index = 0;
+        Map<Integer, Map<String, List<List<String>>>> maps = new HashMap<>();
+        long cid = database.carTypeDao().getCidByName(carType, sdb);
+        Log.d("HTTP", "cid: " + cid);
+
+        List<Integer> busIds = Arrays.asList(1, 2, 3, 4, 6, 7, 13);
+        Log.d("HTTP", "busIds: " + busIds);
+
+        for (Integer busId : busIds) {
+
+            Map<String, List<List<String>>> map = new HashMap<>();
+            Log.d("HTTP", "进入msg表 for busId: " + busId);
+
+
+            Log.d("HTTP", "开始msg");
+            List<MsgInfoEntity> msgByBusIdcid = database.msgInfoDao().getMsgBycidBusId(busId, cid);
+            Log.d("HTTP", "msg" + msgByBusIdcid.toString());
+            Log.d("HTTP", "结束msg");
+
+
+            //TODO:优化插入
+            for (MsgInfoEntity msgInfoEntity : msgByBusIdcid) {
+//                index+=1;
+//                Log.d("HTTP", canIds.toString());
+//                Log.d("HTTP","开始");
+                List<List<String>> subList = new ArrayList<>();
+                List<SignalInfo_getdbc> signalInfos = database.signalInfoDao().getSignalBy3col(cid,busId,msgInfoEntity.CANId);
+//                Log.d("HTTP", signalInfos.toString());
+                for (SignalInfo_getdbc signalInfo : signalInfos) {
+                    List<String> subListItem = new ArrayList<>();
+                    subListItem.add(signalInfo.name);
+                    subListItem.add(signalInfo.comment);
+                    subListItem.add(signalInfo.choices);
+                    subList.add(subListItem);
+                }
+
+//                List<List<String>> signalInfos = Collections.singletonList(database.signalInfoDao().getSignalByCid(cid));
+//                List<String> signalInfos = database.signalInfoDao().getSignalByBusId(busId);
+
+                map.put(msgInfoEntity.name, subList);
+            }
+//                Log.d("HTTP", map.toString());
+
+//                Log.d("HTTP", signalInfos.toString());
+//                Log.d("HTTP","结束");
+            Log.d("HTTP", "开始拼接最外层");
+            maps.put(busId, map);
+        }
+//        Log.d("HTTP","INDEX= "+index);
+
+
+
+        Log.d("HTTP", "结束" + maps);
+
+        Gson gson = new Gson();
+        JsonElement jsonElement = JsonParser.parseString(gson.toJson(maps));
+        return jsonElement.toString();
     }
 
 }
