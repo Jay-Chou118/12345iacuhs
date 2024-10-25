@@ -26,6 +26,9 @@ public interface SignalInfoDao {
     @Query("select * from signal_info where bus_id=:BUSId and can_id=:CANId")
     List<SignalInfo> getSignal(int BUSId, int CANId);
 
+    @Query("select * from signal_info where bus_id=:BUSId and can_id=:CANId and cid =:cid" )
+    List<SignalInfo> getSignal(long cid,int BUSId, int CANId);
+
     @Query("select * from signal_info where bus_id=:BUSId and can_id=:CANId and cid=:cid")
     List<SignalInfo> getSignalBycid(long cid,int BUSId, int CANId);
 
@@ -37,6 +40,7 @@ public interface SignalInfoDao {
 
     @Query("select * from signal_info where bus_id=:BUSId and cid=:cid")
     List<SignalInfo> getSignalByBusIdcid(long cid,int BUSId);
+
 
     @Query("SELECT DISTINCT bus_id FROM signal_info WHERE cid = :cid")
     List<Integer> getAllBusIds(long cid);

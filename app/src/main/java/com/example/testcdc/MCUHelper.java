@@ -792,16 +792,16 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         int num = 0;
         List<Byte> tmp = new ArrayList<>();
 //        showSendALLMessage();
-        Log.d(TAG,  sendcanMessageManager.toString() );
+//        Log.d(TAG,  sendcanMessageManager.toString() );
         for (SendCanMessage usbSendCan : sendcanMessageManager.getPeriodSendConfig())
         {
             byte[] usbSendCanBytes = usbSendCan.toByteArray();
             for (byte b : usbSendCanBytes) {
                 tmp.add(b);
             }
-            Log.w(TAG, "CCCCCCCThe size of tmp : " +  tmp.size());
+            Log.w(TAG, "BBBBBBCCCCCCCThe size of tmp : " +  tmp.size());
             num++;
-            Log.d(TAG, "CCCCCC "+ num +"Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
+            Log.d(TAG, "BBBBBBNUMCCCCCC "+ num +"Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
             if ((num % 23) == 0) {
                 // 重新初始化 mCmdData
                 mCmdData = new byte[]{0x5a, 0x5a, 0x5a, 0x5a, (byte) (cmd.code & 0xff), (byte) (cmd.code >> 8 & 0xff), (byte) 0xd4, 0x06};
@@ -828,7 +828,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 }
 
                 // 打印或处理 mCmdData
-                Log.d(TAG, "CCCCCC Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
+                Log.d(TAG, "BBBBBBCCCCCC Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
 
                 writeSerial();
                 num = 0;
@@ -839,11 +839,13 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 //        showSendALLMessage();
 
         // 如果 tmp 列表中还有剩余的数据，也需要处理
-//        if (!tmp.isEmpty()) {
+        if (!tmp.isEmpty()) {
             // 重新初始化 mCmdData
             //Log.d(TAG, "RRRRRnum "+ num +"Processing 23 SendCanMessages: " + Arrays.toString(mCmdData));
             //Log.w(TAG, "the size of current mCmdData : " + mCmdData.length );
-            mCmdData = new byte[]{0x5a, 0x5a, 0x5a, 0x5a, (byte) (cmd.code & 0xff), (byte) (cmd.code >> 8 & 0xff), (byte) (num * 76), 0};
+//            Log.d(TAG, "BBBBBBBCCCCCCC HERE");
+            int code = num * 76;
+            mCmdData = new byte[]{0x5a, 0x5a, 0x5a, 0x5a, (byte) (cmd.code & 0xff), (byte) (cmd.code >> 8 & 0xff), (byte) (code & 0xff), (byte)((code >> 8) & 0xff)};
 
             // 将 tmp 列表中的数据追加到 mCmdData 中
             byte[] tmpArray = new byte[tmp.size()];
@@ -860,6 +862,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
             // 检查 mCmdData 的大小是否为 64 的倍数
             if (mCmdData.length % 64 == 0) {
+                Log.d(TAG, "BBBBBBCCCCC HERE1");
                 byte[] newCmdDataWithExtraByte = new byte[mCmdData.length + 1];
                 System.arraycopy(mCmdData, 0, newCmdDataWithExtraByte, 0, mCmdData.length);
                 newCmdDataWithExtraByte[mCmdData.length] = 0;
@@ -867,9 +870,10 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             }
             //Log.w(TAG, "the size of current mCmdData : " + mCmdData.length );
             // 打印或处理 mCmdData
-            //Log.d(TAG, "RRRRR Processing remaining SendCanMessages: " + Arrays.toString(mCmdData));
+//            Log.d(TAG, "BBBBBBCCCCBRRRRR  " + Arrays.toString(mCmdData));
+            Log.d(TAG,  sendcanMessageManager.toString() );
 //            writeSerial();
-//        }
+        }
     }
 
 

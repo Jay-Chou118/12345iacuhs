@@ -28,8 +28,11 @@ public class SendCanMessageManager {
 
     @Override
     public String toString() {
-        return "BBBBB current g_sent_list  SendCanMessageManager{" +
+        return "SendCanMessageManager{" +
                 "mPeriodSendConfig=" + mPeriodSendConfig +
                 '}';
+//        return "BBBBBBCCCCBRRRRR current g_sent_list  SendCanMessageManager{" +
+//                "mPeriodSendConfig=" + mPeriodSendConfig +
+//                '}';
     }
 }
