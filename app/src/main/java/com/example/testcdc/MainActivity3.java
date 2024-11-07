@@ -361,6 +361,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void handle(JsonElement data, String callback) {
 
+                mMiCANBinder.CANOnBus();
                 showLoggingMessageQueue.add(callback);
                 if (mMiCANBinder != null) {
                     JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
@@ -1134,36 +1135,6 @@ public class MainActivity3 extends AppCompatActivity {
                 "data: [" + Arrays.toString(sendCanMessage.data).replaceAll("[\\[\\]]", "") + "], " +
                 "period: " + sendCanMessage.period + ", " +
                 "isSending: " + sendCanMessage.isSending;
-    }
-
-    public Map<Integer, Map<String, List<List<String>>>> chenfeihao(String carType, String sdb)
-    {
-        Map<Integer, Map<String, List<List<String>>>> maps = new HashMap<>();
-        long cid = database.carTypeDao().getCidByName(carType, sdb);
-        List<Integer> busIds = database.msgInfoDao().getDistinctBusIdsByCid(cid);
-
-        for (Integer busId : busIds)
-        {
-            Map<String, List<List<String>>> map = new HashMap<>();
-            List<MsgInfoEntity> userMsgs = database.msgInfoDao().getMsgBycid(cid);
-
-            for (MsgInfoEntity usermsg : userMsgs) {
-                List<List<String>> subList = new ArrayList<>();
-                List<SignalInfo> userSignalInfos = database.signalInfoDao().getSignalByBusIdcid(cid, busId);
-                for (SignalInfo signalInfo : userSignalInfos) {
-                    List<String> subListItem = new ArrayList<>();
-                    subListItem.add(signalInfo.name);
-                    subListItem.add(signalInfo.comment != null ? signalInfo.comment : "null");
-                    subListItem.add(signalInfo.choices);
-                    subList.add(subListItem);
-                }
-                map.put(usermsg.name, subList);
-            }
-
-            maps.put(busId, map);
-        }
-
-        return maps;
     }
 
     @NonNull
