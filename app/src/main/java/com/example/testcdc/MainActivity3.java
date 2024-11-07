@@ -96,6 +96,10 @@ public class MainActivity3 extends AppCompatActivity {
     private static final int READ_REQUEST_CODE = 1;
     private static final int CHOOSE_REQUEST_CODE = 2;
 
+    private static String carType;
+
+    private static String sdb;
+
     private static long Current_cid;
 
     private static String mCallbackId;
@@ -402,8 +406,8 @@ public class MainActivity3 extends AppCompatActivity {
             public void handle(JsonElement data, String callback) {
 
 
-                String carType = data.getAsJsonObject().get("carType").getAsString();
-                String sdb = data.getAsJsonObject().get("sdb").getAsString();
+                carType = data.getAsJsonObject().get("carType").getAsString();
+                sdb = data.getAsJsonObject().get("sdb").getAsString();
                 JsonArray files = data.getAsJsonObject().get("files").getAsJsonArray();
 
                 Map<Integer, Map<String, List<List<Object>>>> maps = new HashMap<>();
@@ -519,15 +523,22 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("selectShowSignals", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
-                Log.d(TAG, "TTTTTTTTTTTTTT: " + data);
+                Log.d(TAG, "selectShowSignals data : " + data);
                 List<Long> ids = new ArrayList<>();
+
+                long cid = database.carTypeDao().getCidByName(carType,sdb);
 
                 JsonArray array = data.getAsJsonArray();
                 array.forEach(item -> {
-                    int id = item.getAsJsonObject().get("id").getAsInt();
-                    SignalInfo signalInfo = database.signalInfoDao().getSignalById(id);
+                    int busId = item.getAsJsonObject().get("busId").getAsInt();//busId是通道
+                    String name = item.getAsJsonObject().get("name").getAsString();
+                    Log.d(TAG, "selectShowSignals busId = " + busId +" selectShowSignals cid = " + cid);
+                    SignalInfo signalInfo = database.signalInfoDao().getSignal_idBynamecidbusId(name,cid,busId);
                     ids.add(signalInfo.id);
                 });
+
+                Log.d(TAG, "selectShowSignals ids before monitorSignal: " + ids);
+
                 mMiCANBinder.monitorSignal(ids);
 
                 JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);

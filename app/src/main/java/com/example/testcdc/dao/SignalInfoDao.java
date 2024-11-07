@@ -42,6 +42,9 @@ public interface SignalInfoDao {
     @Query("select * from signal_info where bus_id=:BUSId and cid=:cid")
     List<SignalInfo> getSignalByBusIdcid(long cid,int BUSId);
 
+    @Query("select * from signal_info where name =:name and bus_id=:BUSId and cid=:cid")
+    SignalInfo getSignal_idBynamecidbusId(String name,long cid,int BUSId);
+
 
     @Query("SELECT DISTINCT bus_id FROM signal_info WHERE cid = :cid")
     List<Integer> getAllBusIds(long cid);

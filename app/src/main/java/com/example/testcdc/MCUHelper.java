@@ -358,7 +358,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 for (int i = 0; i < Math.min(len, 100); i++) {
                     sb.append(String.format("%02X ", mReadBuffer[i]));
                 }
-                Log.d(TAG, "AAAA readPort: mReadBuffer的前100个字节: " + sb.toString());
+                //Log.d(TAG, "AAAA readPort: mReadBuffer的前100个字节: " + sb.toString());
 //                printBufferFirst200Bytes();
 
 

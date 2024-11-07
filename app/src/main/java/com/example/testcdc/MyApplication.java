@@ -161,10 +161,10 @@ public class MyApplication extends Application {
 //            DataBaseUtil.copyDataBase(this,"basic_database");
             //修改
 //            Basic_DataBase db = Basic_DataBase.getDatabase(getApplicationContext());
-            Log.e(TAG,"111111111111111" );
+//            Log.e(TAG,"111111111111111" );
             new Thread(()->{
                 DataBaseUtil.init_carType();
-                Log.e(TAG, "222222222222222222222222222" );
+//                Log.e(TAG, "222222222222222222222222222" );
                 DataBaseUtil.initDataFromCsv(this);
                 DataBaseUtil.initMsgFromCsv(this);
             }).start();
