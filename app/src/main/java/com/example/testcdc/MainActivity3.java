@@ -385,6 +385,7 @@ public class MainActivity3 extends AppCompatActivity {
                 if (mMiCANBinder != null) {
                     Log.d(TAG, "i am called");
 
+                    g_send_list.clear();
                     mMiCANBinder.CANOffBus();
                     mMiCANBinder.stopSaveBlf();
                     sharedFile(mMiCANBinder.getFilePath());
@@ -862,15 +863,6 @@ public class MainActivity3 extends AppCompatActivity {
 
             }
         });
-
-        messageHandlers.put("endRecord", new BridgeHandler() {
-            @Override
-            public void handle(JsonElement data, String callback) throws IOException {
-                g_send_list.clear();
-                mMiCANBinder.CANOffBus();
-            }
-        });
-
 
 
         messageHandlers.put("getRawValueToPhysValue", new BridgeHandler() {

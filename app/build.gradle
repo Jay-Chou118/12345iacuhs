@@ -14,12 +14,18 @@ android {  // 注意这里多了一个开括号
         versionCode 1
         versionName "1.0"
 
+        android.applicationVariants.all { variant ->
+            variant.outputs.all {
+                outputFileName = "安卓数采.apk"
+            }
+        }
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         ndk {
             abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
         }
         python {
-            buildPython "C:\\Users\\Mi\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+            buildPython "app/Python38/python.exe"
             pip{
                 install 'canmatrix'
                 install 'flask'
@@ -77,13 +83,13 @@ android {  // 注意这里多了一个开括号
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    sourceSets {
-        main {
-            assets {
-                srcDirs = ['C:\\Users\\Mi\\Desktop\\tsp\\tsp-assistant-1\\dist']
-            }
-        }
-    }
+//    sourceSets {
+//        main {
+//            assets {
+//                srcDirs = ['C:\\Users\\Mi\\Desktop\\tsp\\tsp-assistant-1\\dist']
+//            }
+//        }
+//    }
 }
 
 dependencies {
