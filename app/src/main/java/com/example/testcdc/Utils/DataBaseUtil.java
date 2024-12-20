@@ -65,7 +65,8 @@ public class DataBaseUtil {
 
 
     public static void initDataFromCsv(Context context){
-        Log.e(TAG,"2222 initDataFromCsv");
+       // Log.e(TAG,"2222 initDataFromCsv");
+        Log.e(TAG,"initDataFromCsv");
         ArrayList<Integer> files = new ArrayList<>();
 //        files.add(R.raw.signal_info_1_mx11_e4);
 //        files.add(R.raw.signal_info_2_mx11_e4);
@@ -392,7 +393,7 @@ public class DataBaseUtil {
                 Log.e(TAG,e.toString());
             }
 //            signalInfoDao.insertAll(signalInfos);
-//            Log.d(TAG,"signal insert finished");
+              Log.e(TAG,"signal insert finished");
 
         });
 
@@ -400,7 +401,9 @@ public class DataBaseUtil {
 
     public static void initMsgFromCsv(Context ctx)
     {
-        Log.e(TAG, "2222 initMsgFromCsv " );
+        //Log.e(TAG, "2222 initMsgFromCsv " );
+
+        Log.e(TAG, "initMsgFromCsv " );
         ArrayList<Integer> files = new ArrayList<>();
 
         files.add(R.raw.msg_info_1);
@@ -717,7 +720,7 @@ public class DataBaseUtil {
                 Log.e(TAG,e.toString());
             }
 //            msgInfoDao.insertAll(msgInfoEntities);
-//            Log.d(TAG,"msg insert finished");
+              Log.e(TAG,"msg insert finished");
 
         });
     }

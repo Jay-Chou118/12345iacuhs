@@ -164,7 +164,7 @@ public class MyApplication extends Application {
 //            Log.e(TAG,"111111111111111" );
             new Thread(()->{
                 DataBaseUtil.init_carType();
-                Log.e(TAG, "222222222222222222222222222  数据库不存在  remake " );
+                //Log.e(TAG, "222222222222222222222222222  数据库不存在  remake " );
                 DataBaseUtil.initDataFromCsv(this);
                 DataBaseUtil.initMsgFromCsv(this);
             }).start();
