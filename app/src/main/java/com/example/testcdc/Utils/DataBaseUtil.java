@@ -65,7 +65,7 @@ public class DataBaseUtil {
 
 
     public static void initDataFromCsv(Context context){
-        Log.e(TAG,"initDataFromCsv");
+        Log.e(TAG,"2222 initDataFromCsv");
         ArrayList<Integer> files = new ArrayList<>();
 //        files.add(R.raw.signal_info_1_mx11_e4);
 //        files.add(R.raw.signal_info_2_mx11_e4);
@@ -311,7 +311,41 @@ public class DataBaseUtil {
         files.add(R.raw.signal_info_14_ms11u_sm3);
         files.add(R.raw.signal_info_15_ms11u_sm3);
 
+        files.add(R.raw.signal_info_2_ms11_rc11);
+        files.add(R.raw.signal_info_3_ms11_rc11);
+        files.add(R.raw.signal_info_4_ms11_rc11);
+        files.add(R.raw.signal_info_5_ms11_rc11);
+        files.add(R.raw.signal_info_9_ms11_rc11);
+        files.add(R.raw.signal_info_10_ms11_rc11);
+        files.add(R.raw.signal_info_11_ms11_rc11);
+        files.add(R.raw.signal_info_12_ms11_rc11);
+        files.add(R.raw.signal_info_13_ms11_rc11);
+        files.add(R.raw.signal_info_14_ms11_rc11);
+        files.add(R.raw.signal_info_15_ms11_rc11);
 
+        files.add(R.raw.signal_info_2_ms11_rc12);
+        files.add(R.raw.signal_info_3_ms11_rc12);
+        files.add(R.raw.signal_info_4_ms11_rc12);
+        files.add(R.raw.signal_info_5_ms11_rc12);
+        files.add(R.raw.signal_info_9_ms11_rc12);
+        files.add(R.raw.signal_info_10_ms11_rc12);
+        files.add(R.raw.signal_info_11_ms11_rc12);
+        files.add(R.raw.signal_info_12_ms11_rc12);
+        files.add(R.raw.signal_info_13_ms11_rc12);
+        files.add(R.raw.signal_info_14_ms11_rc12);
+        files.add(R.raw.signal_info_15_ms11_rc12);
+
+        files.add(R.raw.signal_info_2_ms11_25rc01);
+        files.add(R.raw.signal_info_3_ms11_25rc01);
+        files.add(R.raw.signal_info_4_ms11_25rc01);
+        files.add(R.raw.signal_info_5_ms11_25rc01);
+        files.add(R.raw.signal_info_9_ms11_25rc01);
+        files.add(R.raw.signal_info_10_ms11_25rc01);
+        files.add(R.raw.signal_info_11_ms11_25rc01);
+        files.add(R.raw.signal_info_12_ms11_25rc01);
+        files.add(R.raw.signal_info_13_ms11_25rc01);
+        files.add(R.raw.signal_info_14_ms11_25rc01);
+        files.add(R.raw.signal_info_15_ms11_25rc01);
 
 //        Log.d(TAG, "files: " + files);
 //        SignalInfoDao signalInfoDao = MyApplication.getInstance().getMx11E4Database().signalInfoDao();
@@ -366,6 +400,7 @@ public class DataBaseUtil {
 
     public static void initMsgFromCsv(Context ctx)
     {
+        Log.e(TAG, "2222 initMsgFromCsv " );
         ArrayList<Integer> files = new ArrayList<>();
 
         files.add(R.raw.msg_info_1);
@@ -608,6 +643,41 @@ public class DataBaseUtil {
         files.add(R.raw.msg_info_7_mx11_e3);
         files.add(R.raw.msg_info_13_mx11_e3);
 
+        files.add(R.raw.msg_info_2_ms11_rc11);
+        files.add(R.raw.msg_info_3_ms11_rc11);
+        files.add(R.raw.msg_info_4_ms11_rc11);
+        files.add(R.raw.msg_info_5_ms11_rc11);
+        files.add(R.raw.msg_info_9_ms11_rc11);
+        files.add(R.raw.msg_info_10_ms11_rc11);
+        files.add(R.raw.msg_info_11_ms11_rc11);
+        files.add(R.raw.msg_info_12_ms11_rc11);
+        files.add(R.raw.msg_info_13_ms11_rc11);
+        files.add(R.raw.msg_info_14_ms11_rc11);
+        files.add(R.raw.msg_info_15_ms11_rc11);
+
+        files.add(R.raw.msg_info_2_ms11_rc12);
+        files.add(R.raw.msg_info_3_ms11_rc12);
+        files.add(R.raw.msg_info_4_ms11_rc12);
+        files.add(R.raw.msg_info_5_ms11_rc12);
+        files.add(R.raw.msg_info_9_ms11_rc12);
+        files.add(R.raw.msg_info_10_ms11_rc12);
+        files.add(R.raw.msg_info_11_ms11_rc12);
+        files.add(R.raw.msg_info_12_ms11_rc12);
+        files.add(R.raw.msg_info_13_ms11_rc12);
+        files.add(R.raw.msg_info_14_ms11_rc12);
+        files.add(R.raw.msg_info_15_ms11_rc12);
+
+        files.add(R.raw.msg_info_2_ms11_25rc01);
+        files.add(R.raw.msg_info_3_ms11_25rc01);
+        files.add(R.raw.msg_info_4_ms11_25rc01);
+        files.add(R.raw.msg_info_5_ms11_25rc01);
+        files.add(R.raw.msg_info_9_ms11_25rc01);
+        files.add(R.raw.msg_info_10_ms11_25rc01);
+        files.add(R.raw.msg_info_11_ms11_25rc01);
+        files.add(R.raw.msg_info_12_ms11_25rc01);
+        files.add(R.raw.msg_info_13_ms11_25rc01);
+        files.add(R.raw.msg_info_14_ms11_25rc01);
+        files.add(R.raw.msg_info_15_ms11_25rc01);
 
 
 //        MsgInfoDao msgInfoDao = MyApplication.getInstance().getMx11E4Database().msgInfoDao();
@@ -768,6 +838,21 @@ public class DataBaseUtil {
         mx11E4U1.setCarTypeName("MX11");
         mx11E4U1.setSDBName("E4U1");
         carTypeEntities.add(mx11E4U1);
+
+        CarTypeEntity ms11RC11 = new CarTypeEntity();
+        ms11RC11.setCarTypeName("MS11");
+        ms11RC11.setSDBName("RC11");
+        carTypeEntities.add(ms11RC11);
+
+        CarTypeEntity ms11RC12 = new CarTypeEntity();
+        ms11RC12.setCarTypeName("MS11");
+        ms11RC12.setSDBName("RC12");
+        carTypeEntities.add(ms11RC12);
+
+        CarTypeEntity ms1125RC01 = new CarTypeEntity();
+        ms1125RC01.setCarTypeName("MS11");
+        ms1125RC01.setSDBName("25RC01");
+        carTypeEntities.add(ms1125RC01);
 
         CarTypeEntity userDefined = new CarTypeEntity();
         userDefined.setCarTypeName("custom");
