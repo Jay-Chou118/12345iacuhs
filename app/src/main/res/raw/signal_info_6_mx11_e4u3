@@ -1,0 +1,582 @@
+ABADrvrSeatSideBlstrSwtSts#6#417#false#false#13#2#1#0#ABA Driver Seat Side Boslter Switch Status\nABA 主驾座椅侧翼支撑按键状态#0.0#0.0#0.0#{"0": "Idle", "1": "Inflate", "2": "Deflate", "3": "Invalid"}#MX11#E4U3
+ABADrvrSeatPump1Sts#6#417#false#false#11#1#1#0#ABA Driver Seat Pump 1 Status\nABA 主驾座椅气泵1状态#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#MX11#E4U3
+ABADrvrSeatSideBlstrLeSts#6#417#false#false#9#2#1#0#ABA Driver Seat Side Bolster Left Status\nABA 主驾座椅静态侧翼左侧状态#0.0#0.0#0.0#{"0": "Idle", "1": "Inflate", "2": "Deflate"}#MX11#E4U3
+ABADrvrSeatSideBlstrRiSts#6#417#false#false#23#2#1#0#ABA Driver Seat Side Bolster Right Status\nABA 主驾座椅静态侧翼右侧状态#0.0#0.0#0.0#{"0": "Idle", "1": "Inflate", "2": "Deflate"}#MX11#E4U3
+ABAFaultInfoFlag#6#738#false#false#6#1#1#0#ABA Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#MX11#E4U3
+FLSPUMassgModStsAtDrvr#6#738#false#false#5#4#1#0#Massage Mode status at Driver\n主驾座椅按摩模式状态#0.0#0.0#0.0#{"0": "Mode1", "1": "Mode2", "2": "Mode3", "3": "Mode4"}#MX11#E4U3
+ABADrvrSeatInpUSts#6#738#false#false#1#2#1#0#ABA Driver Seat Input Voltage Status\nABA 主驾座椅输入电源状态#0.0#0.0#0.0#{"0": "Normal", "1": "UnderVoltage", "2": "OverVoltage", "3": "Out_Of_Range"}#MX11#E4U3
+ABADrvrSeatPumpFlt#6#738#false#false#15#2#1#0#ABA Driver Seat Pump Fault\nABA 主驾座椅气泵故障\nBit 0 Pump1\nBit 1 Pump2#0.0#0.0#0.0#null#MX11#E4U3
+ABADrvrSeatTemSts#6#738#false#false#13#2#1#0#ABA Driver Seat Temperature Status\nABA 主驾座椅温度状态#0.0#0.0#0.0#{"0": "Normal", "1": "UnderTemp", "2": "OverTemp", "3": "Out_Of_Range"}#MX11#E4U3
+FLSPUMassgOperStsAtDrvr#6#738#false#false#11#1#1#0#Massage Opertion status at Driver\n主驾座椅按摩工作状态#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#MX11#E4U3
+FLSPUMassgVlvFltStsAtDrvr#6#738#false#false#10#1#1#0#Massage Valve Fault status at Driver\n主驾座椅按摩气阀故障状态#0.0#0.0#0.0#{"0": "No_Error", "1": "Error"}#MX11#E4U3
+ABANtcTPrm#6#738#false#false#23#8#1#-50#ABA Ntc Temperature  Parameter\nABA NTC温度参数#0.0#0.0#0.0#null#MX11#E4U3
+ABAResvFcn#6#738#false#false#31#16#1#0#ABA Reserve function\nABA 预留功能#0.0#0.0#0.0#null#MX11#E4U3
+ABAUPrm#6#738#false#false#47#8#0.1#0#ABA Voltage  Parameter\nABA 电压参数#0.0#0.0#0.0#null#MX11#E4U3
+FLSPUFaultInfoFlag#6#738#false#false#63#1#1#0#FLSPU Fault Information Flag#0.0#0.0#0.0#null#MX11#E4U3
+FLSPUMassgIntenStsAtDrvr#6#738#false#false#62#4#1#0#Massage Intensity status at Driver\n主驾座椅按摩强度状态#0.0#0.0#0.0#{"0": "Low", "1": "Mid", "2": "High"}#MX11#E4U3
+LonAccrSigGrpChks#6#425#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+LonAccrSigGrpCntr#6#425#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+LonAccr#6#425#false#false#23#16#0.0002#-5#Longititude Acceleration\n纵向加速度#0.0#0.0#0.0#null#MX11#E4U3
+LonSnsrSt#6#425#false#false#33#2#1#0#Longititude Sensor State\n纵向加速度有效性#0.0#0.0#0.0#{"0": "SIG_IN_SPEC", "1": "SIGNOTAVAIL", "2": "SIGFAIL", "3": "Reserved"}#MX11#E4U3
+IMUCalSt#6#425#false#false#63#1#1#0#IMUCalibrationSt\nIMU标定状态#0.0#0.0#0.0#{"0": "IMU_not_Calibrated", "1": "IMU_Calibrated"}#MX11#E4U3
+LatAccrYawRateSigGrpChks#6#426#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+LatAccrYawRateSigGrpCntr#6#426#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+LatAccr#6#426#false#false#23#16#0.0002#-5#Lateral Acceleration\n横向加速度#0.0#0.0#0.0#null#MX11#E4U3
+YawRate#6#426#false#false#39#16#0.01#-300#Yaw Rate\n横摆角速度#0.0#0.0#0.0#null#MX11#E4U3
+YawRateSnsrSt#6#426#false#false#51#2#1#0#Yaw Rate Sensor State\n横摆角速度有效性#0.0#0.0#0.0#{"0": "SIG_IN_SPEC", "1": "SIGNOTAVAIL", "2": "SIGFAIL", "3": "Reserved"}#MX11#E4U3
+LatAccrSt#6#426#false#false#49#2#1#0#Lateral Sensor State\n横向加速度有效性#0.0#0.0#0.0#{"0": "SIG_IN_SPEC", "1": "SIGNOTAVAIL", "2": "SIGFAIL", "3": "Reserved"}#MX11#E4U3
+ACUFaultInfoFlag#6#746#false#false#0#1#1#0#ACU Fault Information Flag#0.0#0.0#0.0#null#MX11#E4U3
+ACUWarnLampStsSigGrpChks#6#848#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ACUWarnLampStsSigGrpCntr#6#848#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ACUWarnLampSts#6#848#false#false#17#2#1#0#Airbag Warning Lamp Status \nACU故障灯信号#0.0#0.0#0.0#{"0": "LampOFF", "1": "LampON", "2": "Blinking", "3": "Reserved"}#MX11#E4U3
+SecRowMidBucSts#6#848#false#false#39#2#1#0#Second Row Middle Buckle Status\n第二排中安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MX11#E4U3
+SecRowLeBucSts#6#848#false#false#37#2#1#0#Second Row Left Buckle Status\n第二排左安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MX11#E4U3
+PassBucSts#6#848#false#false#35#2#1#0#Passenger Buckle Status\n副驾安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MX11#E4U3
+DrvrBucSts#6#848#false#false#33#2#1#0#Driver Buckle Status \n主驾驶安全带扣状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MX11#E4U3
+ThrdRowMidBucSts#6#848#false#false#46#2#1#0#Third Row Middle Buckle Status第三排中安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MX11#E4U3
+ThrdRowLeBucSts#6#848#false#false#44#2#1#0#Third Row Left Buckle Status 第三排左安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MX11#E4U3
+PassAirbDiIndcr#6#848#false#false#42#1#1#0#Passenger airbag disable indicator\n副驾安全气囊禁用状态指示#0.0#0.0#0.0#{"0": "enabled", "1": "disable"}#MX11#E4U3
+SecRowRiBucSts#6#848#false#false#41#2#1#0#Second Row Right Buckle Status\n第二排右安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MX11#E4U3
+ThrdRowRiBucSts#6#848#false#false#55#2#1#0#Third Row Right Buckle Status 第三排右安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MX11#E4U3
+ImpctEvntStsSigGrpChks#6#849#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ImpctEvntStsSigGrpCntr#6#849#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ImpctEvntSts#6#849#false#false#16#1#1#0#Impact Event Status\n 碰撞事件状态#0.0#0.0#0.0#{"0": "Normal", "1": "Crash"}#MX11#E4U3
+ImpctEvntTypeSigGrpChks#6#849#false#false#39#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ImpctEvntTypeSigGrpCntr#6#849#false#false#43#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ImpctEvntType1#6#849#false#false#55#1#1#0#Impact Event Type\n  碰撞事件类型#0.0#0.0#0.0#{"0": "No_crash", "1": "Front_crash"}#MX11#E4U3
+ImpctEvntType2#6#849#false#false#54#1#1#0#Impact Event Type\n  碰撞事件类型#0.0#0.0#0.0#{"0": "No_crash", "1": "LeftSide_crash"}#MX11#E4U3
+ImpctEvntType3#6#849#false#false#53#1#1#0#Impact Event Type\n  碰撞事件类型#0.0#0.0#0.0#{"0": "No_crash", "1": "RightSide_crash"}#MX11#E4U3
+ImpctEvntType4#6#849#false#false#52#1#1#0#Impact Event Type\n  碰撞事件类型#0.0#0.0#0.0#{"0": "No_crash", "1": "Rear_crash"}#MX11#E4U3
+ImpctEvntType5#6#849#false#false#51#1#1#0#Impact Event Type\n  碰撞事件类型#0.0#0.0#0.0#{"0": "No_crash", "1": "Roll_Over"}#MX11#E4U3
+ImpctEvntType6#6#849#false#false#50#1#1#0#Impact Event Type\n  碰撞事件类型#0.0#0.0#0.0#{"0": "No_crash", "1": "EPP"}#MX11#E4U3
+ImpctEvntType7#6#849#false#false#49#1#1#0#Impact Event Type\n碰撞事件类型#0.0#0.0#0.0#{"0": "No_Front_crash-high", "1": "Front_crash-high"}#MX11#E4U3
+ACUNodeAddress#6#1378#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MX11#E4U3
+ACUActiveWakeup#6#1378#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MX11#E4U3
+ACURepeatMsgReq#6#1378#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MX11#E4U3
+UDB23ACU#6#1378#false#false#23#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB22ACU#6#1378#false#false#22#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB21ACU#6#1378#false#false#21#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB20ACU#6#1378#false#false#20#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB19ACU#6#1378#false#false#19#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB18ACU#6#1378#false#false#18#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB17ACU#6#1378#false#false#17#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ACURepeatMsgSt#6#1378#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MX11#E4U3
+UDB31ACU#6#1378#false#false#31#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB30ACU#6#1378#false#false#30#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB29ACU#6#1378#false#false#29#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB28ACU#6#1378#false#false#28#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB27ACU#6#1378#false#false#27#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB26ACU#6#1378#false#false#26#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB25ACU#6#1378#false#false#25#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB24ACU#6#1378#false#false#24#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB39ACU#6#1378#false#false#39#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB38ACU#6#1378#false#false#38#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB37ACU#6#1378#false#false#37#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB36ACU#6#1378#false#false#36#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB35ACU#6#1378#false#false#35#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB34ACU#6#1378#false#false#34#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB33ACU#6#1378#false#false#33#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB32ACU#6#1378#false#false#32#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB47ACU#6#1378#false#false#47#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB46ACU#6#1378#false#false#46#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB45ACU#6#1378#false#false#45#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB44ACU#6#1378#false#false#44#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB43ACU#6#1378#false#false#43#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB42ACU#6#1378#false#false#42#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB41ACU#6#1378#false#false#41#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB40ACU#6#1378#false#false#40#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+NMKeepAwkRsnACU#6#1378#false#false#48#9#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ACUToVCCDBodyCanDiagResp#6#2041#false#false#7#64#1#0#ACUToVCCDBodyCanDiagRespNpdu#0.0#0.0#0.0#null#MX11#E4U3
+ACUToVCCDDiagResp#6#1651#false#false#7#64#1#0#ACUToVCCDBodyCanDiagRespNpdu#0.0#0.0#0.0#null#MX11#E4U3
+BattIRawSigGrpChks#6#562#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattIRawSigGrpCntr#6#562#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattIRaw#6#562#false#false#23#21#0.001#-1000#Battery I raw\nBMDM电池电流#0.0#0.0#0.0#null#MX11#E4U3
+BattSnsrGenlFltRawSigGrpChks#6#562#false#false#47#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattSnsrGenlFltRawSigGrpCntr#6#562#false#false#51#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattSnsrGenlFltRaw#6#562#false#false#63#4#1#0#battery sensor general fault Raw\n电池管理器一般性断开故障#0.0#0.0#0.0#{"0": "no_fault", "1": "\u7535\u82af\u8fc7\u538b\u65ad\u5f00", "2": "\u7535\u82af\u6b20\u538b\u65ad\u5f00", "3": "Pack\u8fc7\u538b\u65ad\u5f00", "4": "Pack\u6b20\u538b\u65ad\u5f00", "5": "\u5145\u7535\u8fc7\u6d41\u65ad\u5f00", "6": "\u6cf5\u7535\u4fdd\u62a4\u65ad\u5f00", "7": "\u653e\u7535\u8fc7\u6d41\u65ad\u5f00", "8": "Reserved", "9": "\u8fc7\u6e29\u65ad\u5f00", "10": "Reserved", "11": "Reserved", "12": "Mos\u8fc7\u6e29\u65ad\u5f00", "13": "Reserved", "14": "\u77ed\u8def\u4fdd\u62a4\u65ad\u5f00", "15": "Reserved"}#MX11#E4U3
+BattSnsrHwFltRawSigGrpChks#6#578#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattSnsrHwFltRawSigGrpCntr#6#578#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattSnsrHwFltRaw#6#578#false#false#20#5#1#0#battery sensor hardware fault Raw\n电池管理器硬件故障#0.0#0.0#0.0#{"0": "no_fault", "1": "Circuit_fault-Current", "2": "Circuit_fault-Voltage", "3": "Circuit_fault-Temperature", "4": "Mosfet_and_drive_fault", "5": "AFE_fault", "6": "MCU_fault", "7": "SBC_fault", "8": "DCDC_fault", "9": "Power_fault", "10": "Clock_fault", "11": "Processing_modules_fault", "12": "Peripheral_fault", "13": "Memory_fault", "14": "Latent_Fault", "15": "Reserved"}#MX11#E4U3
+BattCpEstimdRaw#6#578#false#false#31#6#1#0#battery capacity Estimated RAW\n电池容量估计值#0.0#0.0#0.0#{"22": "Invalid"}#MX11#E4U3
+BattTRawSigGrpChks#6#578#false#false#39#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattTRawSigGrpCntr#6#578#false#false#43#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattTRaw#6#578#false#false#55#9#0.5#-128#Battery temperature raw\n电池温度#0.0#0.0#0.0#null#MX11#E4U3
+BattURawSigGrpChks#6#579#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattURawSigGrpCntr#6#579#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattURaw#6#579#false#false#23#15#0.001#0#Battery Voltage raw\n电池电压#0.0#0.0#0.0#null#MX11#E4U3
+BattSocRawSigGrpChks#6#579#false#false#39#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattSocRawSigGrpCntr#6#579#false#false#43#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattSocRaw#6#579#false#false#49#10#0.1#0#Battery State of charge raw\n电池SOC#0.0#0.0#0.0#null#MX11#E4U3
+BattSohSigGrpChks#6#581#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattSohSigGrpCntr#6#581#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattSoh#6#581#false#false#23#10#0.1#0#Battery State of health\n电池SOH#0.0#0.0#0.0#null#MX11#E4U3
+LVBattMosDrvFlt#6#581#false#false#39#4#1#0#Low Voltage Battery Mosfet Drive Fault \n低压电池Mos粘连故障#0.0#0.0#0.0#null#MX11#E4U3
+LVBattMosStuckFlt#6#581#false#false#35#4#1#0#Low Voltage Battery Mosfet Stuck Fault \n低压电池Mos卡滞故障#0.0#0.0#0.0#null#MX11#E4U3
+BMDMAcvDcnMosSt#6#581#false#false#47#2#1#0#BMDM active disconnect Mosfet State\nBMDM主动断电Mos状态#0.0#0.0#0.0#{"0": "default", "1": "power_off", "2": "unable_to_perform_power_off", "3": "reserved"}#MX11#E4U3
+WakUpMem#6#740#false#false#6#1#1#0#wake up memory\n唤醒标志位#0.0#0.0#0.0#{"0": "Not_wake_up", "1": "wake_up"}#MX11#E4U3
+LvBattDCDCSts#6#740#false#false#5#1#1#0#low voltage battery DCDC status\n低压电池DCDC状态#0.0#0.0#0.0#{"0": "DCDC_is_not_work", "1": "DCDC_is_work"}#MX11#E4U3
+LVcellbalSts#6#740#false#false#4#4#1#0#low voltage cell voltage balance state\n低压电池电芯均衡状态#0.0#0.0#0.0#{"0": "normal", "1": "cell_1", "2": "cell_2", "3": "cell_1_2", "4": "cell_3", "5": "cell_1_3", "6": "cell_2_3", "7": "cell_1_2_3", "8": "cell_4", "9": "cell_1_4", "10": "cell_2_4", "11": "cell_1_2_4", "12": "cell_3_4", "13": "cell_1_3_4", "14": "cell_2_3_4", "15": "cell_1_2_3_4"}#MX11#E4U3
+SocCalreq#6#740#false#false#0#1#1#0#SOC Calibration request\nSOC校准请求#0.0#0.0#0.0#{"0": "NotReqd", "1": "Reqd"}#MX11#E4U3
+BattRRaw#6#740#false#false#15#8#0.1#0#battery resistance raw\n当前SOC和温度下的电池内阻#0.0#0.0#0.0#null#MX11#E4U3
+BattSnsrGenlWarnRawSigGrpChks#6#740#false#false#23#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattSnsrGenlWarnRaw#6#740#false#false#31#4#1#0#battery sensor general warning Raw\n电池管理器一般性警示故障#0.0#0.0#0.0#{"0": "no_fault", "1": "\u7535\u82af\u8fc7\u538b\u63d0\u9192", "2": "\u7535\u82af\u6b20\u538b\u63d0\u9192", "3": "Pack\u8fc7\u538b\u63d0\u9192", "4": "Pack\u6b20\u538b\u63d0\u9192", "5": "\u5145\u7535\u8fc7\u6d41\u63d0\u9192", "6": "\u653e\u7535\u8fc7\u6d41\u63d0\u9192", "7": "Reserved", "8": "\u8fc7\u6e29\u63d0\u9192", "9": "Reserved", "10": "Mos\u8fc7\u6e29\u63d0\u9192", "11": "\u5747\u8861\u533a\u57df\u8fc7\u6e29\u63d0\u9192", "12": "AFE\u8fc7\u6e29\u63d0\u9192", "13": "Shunt\u8fc7\u6e29\u63d0\u9192", "14": " \u9650\u6d41\u6a21\u5757\u8fc7\u6e29\u63d0\u9192", "15": "Reserved"}#MX11#E4U3
+BattSnsrGenlWarnRawSigGrpCntr#6#740#false#false#27#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattTiInSrvRaw#6#740#false#false#39#12#1#0#Battery time in service raw\n电池服务年限#0.0#0.0#0.0#{"0": "Invalid"}#MX11#E4U3
+LVBattMosAdhFlt#6#740#false#false#43#4#1#0#Low Voltage Battery Mosfet Adhesion Fault\n低压电池Mos粘连故障#0.0#0.0#0.0#null#MX11#E4U3
+LvMaxIAvlSho#6#740#false#false#55#12#0.5#0#low voltage Max Current available低压电池最大可用电流-瞬时#0.0#0.0#0.0#null#MX11#E4U3
+BattRlySts#6#740#false#false#59#4#1#0#battery relay status\n电池继电器状态#0.0#0.0#0.0#null#MX11#E4U3
+BMDMSocCalTisTot#6#761#false#false#7#12#1#0#BMDM SOC Calibration times total\nBMDM SOC校准总次数#0.0#0.0#0.0#null#MX11#E4U3
+BMDMSocCalTiSncLst#6#761#false#false#23#8#1#0#BMDM SOC Calibration Time since last\nBMDM SOC距离上次校准过去的时间#0.0#0.0#0.0#null#MX11#E4U3
+BMDMSocCalMod#6#761#false#false#31#3#1#0#BMDM SOC Calibration Mode\nBMDM SOC上次发生校准的方式#0.0#0.0#0.0#{"0": "Default", "1": "Full_Charge", "2": "End_Charge", "3": "Middle_Discharge", "4": "Low_Soc_Discharge", "5": "Reserved", "6": "Reserved", "7": "Reserved"}#MX11#E4U3
+BMDMFaultInfoFlag#6#761#false#false#28#1#1#0#BMDM Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#MX11#E4U3
+QuiscCurMeasTiDurgPrkg#6#866#false#false#7#17#1#0#quiescent Current Measure time during Parking\n停车状态下的静态电流测量时间#0.0#0.0#0.0#{"0": "Invalid"}#MX11#E4U3
+BattQuiscAvgFildShoRaw#6#866#false#false#22#15#1#-20000#Battery Quiescent average filtered short raw\n短时静态电流平均值#0.0#0.0#0.0#{"19980": "Invalid"}#MX11#E4U3
+BattQuiscAvgFildLongRaw#6#866#false#false#39#11#1#-1024#Battery Quiescent average filtered long raw\n长时静态电流平均值#0.0#0.0#0.0#{"1004": "Invalid"}#MX11#E4U3
+BattTAtCell1#6#866#false#false#44#9#0.5#-128#battery temperature at the cell level 4 measurements \n电池单体1温度#0.0#0.0#0.0#{"306": "Invalid"}#MX11#E4U3
+BattTAtCell2#6#866#false#false#48#9#0.5#-128#battery temperature at the cell level 4 measurements \n电池单体2温度#0.0#0.0#0.0#{"306": "Invalid"}#MX11#E4U3
+BattCycDchaCntrDurgwakRaw#6#870#false#false#7#16#0.05#0#Battery cycle Discharge counter During wake Raw\n额定温度车辆Awake状态下电池放电量#0.0#0.0#0.0#{"0": "Invalid"}#MX11#E4U3
+BattCycDchaCntrDurgQuiscPhaRaw#6#870#false#false#23#18#0.005#0#Battery cycle Discharge counter During Quiescent Phase raw\n静态电流阶段放电量#0.0#0.0#0.0#null#MX11#E4U3
+BattQuiscAvgRaw#6#870#false#false#34#11#1#-2000#Battery Quiescent average raw\n当前静态电流平均值#0.0#0.0#0.0#{"1980": "Invalid"}#MX11#E4U3
+ShoQuiscCurMeasTiDurgPrkg#6#870#false#false#55#15#1#0#quiescent Current Measure during Parking\n停车状态下的静态电流测量值Ah#0.0#0.0#0.0#null#MX11#E4U3
+BattUAtCell1#6#871#false#false#7#16#0.001#0#battery voltage at the cell level 4 measurements \n电池单体电压#0.0#0.0#0.0#{"3200": "Invalid"}#MX11#E4U3
+BattUAtCell2#6#871#false#false#23#16#0.001#0#battery voltage at the cell level 4 measurements \n电池单体电压#0.0#0.0#0.0#{"3200": "Invalid"}#MX11#E4U3
+BattUAtCell3#6#871#false#false#39#16#0.001#0#battery voltage at the cell level 4 measurements \n电池单体电压#0.0#0.0#0.0#{"3200": "Invalid"}#MX11#E4U3
+BattUAtCell4#6#871#false#false#55#16#0.001#0#battery voltage at the cell level 4 measurements \n电池单体电压#0.0#0.0#0.0#{"3200": "Invalid"}#MX11#E4U3
+BattChrgBalDurgRunRaw#6#872#false#false#7#16#0.05#0#Battery cycle charge balance during running raw\n驾驶过程中电池充电量#0.0#0.0#0.0#{"0": "Invalid"}#MX11#E4U3
+BattChrgBalDurgWakRaw#6#872#false#false#23#16#0.05#0#Battery cycle charge balance during awake raw\nawake过程中电池充电量#0.0#0.0#0.0#{"0": "Invalid"}#MX11#E4U3
+BattCycDchaCntrDurgRunngRaw#6#872#false#false#47#14#0.05#0#Battery cycle Discharge counter  During running Raw\n额定温度车辆running/ACC状态下电池放电量#0.0#0.0#0.0#{"0": "Invalid"}#MX11#E4U3
+BMDMNodeAddress#6#1388#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MX11#E4U3
+BMDMActiveWakeup#6#1388#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MX11#E4U3
+BMDMRepeatMsgReq#6#1388#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#null#MX11#E4U3
+UDB23BMDM#6#1388#false#false#23#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB22BMDM#6#1388#false#false#22#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB21BMDM#6#1388#false#false#21#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB20BMDM#6#1388#false#false#20#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB19BMDM#6#1388#false#false#19#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB18BMDM#6#1388#false#false#18#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB17BMDM#6#1388#false#false#17#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BMDMRepeatMsgSt#6#1388#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MX11#E4U3
+UDB31BMDM#6#1388#false#false#31#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB30BMDM#6#1388#false#false#30#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB29BMDM#6#1388#false#false#29#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB28BMDM#6#1388#false#false#28#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB27BMDM#6#1388#false#false#27#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB26BMDM#6#1388#false#false#26#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB25BMDM#6#1388#false#false#25#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB24BMDM#6#1388#false#false#24#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB39BMDM#6#1388#false#false#39#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB38BMDM#6#1388#false#false#38#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB37BMDM#6#1388#false#false#37#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB36BMDM#6#1388#false#false#36#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB35BMDM#6#1388#false#false#35#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB34BMDM#6#1388#false#false#34#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB33BMDM#6#1388#false#false#33#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB32BMDM#6#1388#false#false#32#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB47BMDM#6#1388#false#false#47#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB46BMDM#6#1388#false#false#46#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB45BMDM#6#1388#false#false#45#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB44BMDM#6#1388#false#false#44#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB43BMDM#6#1388#false#false#43#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB42BMDM#6#1388#false#false#42#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB41BMDM#6#1388#false#false#41#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB40BMDM#6#1388#false#false#40#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+NMKeepAwkRsnBMDM#6#1388#false#false#48#9#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BMDMToVCCDDiagResp#6#1656#false#false#7#64#1#0#BMDMToVCCDBodyCanDiagRespNpdu#0.0#0.0#0.0#null#MX11#E4U3
+DCDCSigGrpChks#6#306#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+DCDCSigGrpCntr#6#306#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+DCDCCurAvlMaxLV#6#306#false#false#23#11#0.5#0#available maximal current at DCDC Lv side considering DCDC status  positive means current flows from DCDC to LV#0.0#0.0#0.0#null#MX11#E4U3
+DCDCFltLvlIndcn#6#306#false#false#28#3#1#0#DCDC fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_LV0_DTCOnly", "2": "Fault_LV1_Recoverable", "3": "Fault_LV2_Not_Recoverable"}#MX11#E4U3
+DCDCModSts#6#306#false#false#39#4#1#0#DCDC mode status.#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Power_conversion_HV_to_LV_Buck", "4": "Power_conversion_LV_to_HV_Boost", "5": "After_Run", "6": "Failure", "7": "Active_discharge"}#MX11#E4U3
+EtcDeacRes#6#586#false#false#7#2#1#0#ETC deactivated result\nETC去激活执行结果#0.0#0.0#0.0#{"0": "No_command", "1": "Success", "2": "Failure"}#MX11#E4U3
+EtcDeacRsn#6#586#false#false#5#3#1#0#ETC deactivated fauilure reason\nETC去激活失败原因#0.0#0.0#0.0#{"0": "no_command", "1": "execution_error", "2": "ETC_ID_numbers_are_inconsistent", "3": "another", "4": "deactive_succeed", "5": "Reserved1", "6": "Reserved2", "7": "Reserved3"}#MX11#E4U3
+EtcStateInd#6#586#false#false#2#1#1#0#ETC激活状态标识#0.0#0.0#0.0#{"0": "Activated", "1": "Deactivated"}#MX11#E4U3
+EtcSwtEnSts#6#586#false#false#1#1#1#0#ETC开关使能信号#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#MX11#E4U3
+EtcSwtSts#6#586#false#false#0#1#1#0#ETC开关信号状态#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MX11#E4U3
+ETCFaultInfoFlag#6#586#false#false#15#1#1#0#ETC Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#MX11#E4U3
+EtcSwtNotAvlRsn#6#586#false#false#14#3#1#0#ETC开关不可用原因#0.0#0.0#0.0#{"0": "Normal", "1": "Certification_failed", "2": "On_highway", "3": "ESAM_test_failed", "4": "Notactivated", "5": "Reserved2", "6": "Reserved3", "7": "Reserved4"}#MX11#E4U3
+EtcBuzrInd#6#586#false#false#11#3#1#0#ETC buzzer indication\nETC蜂鸣指示#0.0#0.0#0.0#{"0": "No_buzzer", "1": "One_beep_transaction_success", "2": "Two_beeps_no_action", "3": "Three_beeps_transaction_failure", "4": "Reserved\u4fdd\u7559\u503c", "5": "Reserved\u4fdd\u7559\u503c", "6": "Reserved\u4fdd\u7559\u503c", "7": "Reserved\u4fdd\u7559\u503c"}#MX11#E4U3
+EtcBluthName#6#899#false#false#7#56#1#0#Etc bluetooth Name \n提示蓝牙名称\n发送蓝牙名称后七位 ETC XX XXXX#0.0#0.0#0.0#null#MX11#E4U3
+EtcAutRes#6#899#false#false#63#2#1#0#ETCAuthentRes\n防拆认证结果#0.0#0.0#0.0#{"0": "Inactive", "1": "Succeed", "2": "Failure", "3": "Reserved"}#MX11#E4U3
+EtcChekSt#6#899#false#false#61#3#1#0#ETCCheck_State\nETC自检结果#0.0#0.0#0.0#{"0": "Inactive", "1": "Checking", "2": "Normal", "3": "Equipment_failure", "4": "Reserved1", "5": "Reserved2", "6": "Reserved3", "7": "Reserved4"}#MX11#E4U3
+EtcSupplierInfo#6#899#false#false#58#2#1#0#ETC Supplier information\nETC 发行方信息#0.0#0.0#0.0#{"0": "sgxl", "1": "wlzl", "2": "Reserved1", "3": "Reserved2"}#MX11#E4U3
+ETCNodeAddress#6#1379#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MX11#E4U3
+ETCActiveWakeup#6#1379#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MX11#E4U3
+ETCRepeatMsgReq#6#1379#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "not_requested", "1": "requested"}#MX11#E4U3
+ETCRepeatMsgSt#6#1379#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MX11#E4U3
+ETCToVCCDDiagResp#6#1652#false#false#7#64#1#0#ETCToVCCDBodyCanDiagRespNpdu#0.0#0.0#0.0#null#MX11#E4U3
+FLSPUNodeAddress#6#1405#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MX11#E4U3
+FLSPUActiveWakeup#6#1405#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MX11#E4U3
+FLSPURepeatMsgReq#6#1405#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MX11#E4U3
+FLSPURepeatMsgSt#6#1405#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MX11#E4U3
+FLSPUToXCDDiagReq#6#1657#false#false#7#64#1#0##0.0#0.0#0.0#null#MX11#E4U3
+FRSPUFaultInfoFlag#6#763#false#false#7#1#1#0#FRSPU Fault Information Flag#0.0#0.0#0.0#null#MX11#E4U3
+FRSPUMassgOperStsAtPass#6#763#false#false#6#1#1#0#Massage Opertion status at Driver\n主驾座椅按摩工作状态#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#MX11#E4U3
+FRSPUMassgPmpFltStsAtPass#6#763#false#false#5#1#1#0#Massage Pump Fault status at  Passager\n副驾座椅按摩气泵故障状态#0.0#0.0#0.0#{"0": "No_Error", "1": "Error"}#MX11#E4U3
+FRSPUMassgUStsAtPass#6#763#false#false#4#2#1#0#Massage Voltage status at  Passager\n副驾座椅按摩控制器电压状态#0.0#0.0#0.0#{"0": "Normal", "1": "UnderVoltage", "2": "OverVoltage"}#MX11#E4U3
+FRSPUMassgVlvFltStsAtPass#6#763#false#false#2#1#1#0#Massage Valve Fault status at  Passager\n副驾座椅按摩气阀故障状态#0.0#0.0#0.0#{"0": "No_Error", "1": "Error"}#MX11#E4U3
+FRSPUMassgIntenStsAtPass#6#763#false#false#15#4#1#0#Massage Intensity status at  Passager\n副驾座椅按摩强度状态#0.0#0.0#0.0#{"0": "Low", "1": "Mid", "2": "High"}#MX11#E4U3
+FRSPUMassgModStsAtPass#6#763#false#false#11#4#1#0#Massage Mode status at  Passager\n副驾座椅按摩模式状态#0.0#0.0#0.0#{"0": "Mode1", "1": "Mode2", "2": "Mode3", "3": "Mode4"}#MX11#E4U3
+FRSPUMassgPmpCurPrmAtPass#6#763#false#false#23#8#0.01#0#Massage Pump Current Parameter at Passenger\n副驾按摩气泵电流参数#0.0#0.0#0.0#null#MX11#E4U3
+FRSPUNodeAddress#6#1406#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MX11#E4U3
+FRSPUActiveWakeup#6#1406#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MX11#E4U3
+FRSPURepeatMsgReq#6#1406#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MX11#E4U3
+FRSPURepeatMsgSt#6#1406#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MX11#E4U3
+FRSPUToXCDDiagReq#6#1658#false#false#7#64#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VehDrvDirctSigGrpChks#6#256#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VehDrvDirctSigGrpCntr#6#256#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VehDrvDirct#6#256#false#false#23#2#1#0#vehicle drive direction\n车辆行驶方向#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MX11#E4U3
+VCUAccAnaPtsRaw#6#256#false#false#31#15#0.004#0#Accelerator pedal position sensor raw value.\n加速踏板百分比Raw值#0.0#0.0#0.0#null#MX11#E4U3
+VCUAccrPedlRatGrdt#6#256#false#true#47#15#0.0625#0#加速油门踏板开度变化率#0.0#0.0#0.0#null#MX11#E4U3
+VcuInpSigGrpChks#6#286#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCURgnTqCorrnFac#6#286#false#false#15#4#0.1#0#Regeneration Torque Correction Factor#0.0#0.0#0.0#null#MX11#E4U3
+VcuInpSigGrpCntr#6#286#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCUStsModCst#6#286#false#false#23#8#1#0#energy recuperation end mode.\n能量回收状态模式#0.0#0.0#0.0#{"0": "OPedl_No_RgL1", "1": "OPedl_No_RgL2", "2": "OPedl_No_RgL3", "3": "OPedl_No_RgL4", "4": "OPedl_No_RgL5", "5": "OPedl_No_ADASactive", "6": "OPedl_No_RoadGradientInhbit", "7": "OPedl_No_PowerDown", "16": "OPedl_Stop_RgL1", "17": "OPedl_Stop_RgL2", "18": "OPedl_Stop_RgL3", "19": "OPedl_Stop_RgL4", "20": "OPedl_Stop_RgL5", "21": "OPedl_Crp_RgL1", "22": "OPedl_Crp_RgL2", "23": "OPedl_Crp_RgL3", "24": "OPedl_Crp_RgL4", "25": "OPedl_Crp_RgL5", "26": "OPedl_FW_RgL1", "27": "OPedl_FW_RgL2", "28": "OPedl_FW_RgL3", "29": "OPedl_FW_RgL4", "30": "OPedl_FW_RgL5"}#MX11#E4U3
+VCUAccrPedlRat#6#286#false#false#31#15#0.004#0#加速油门踏板开度#0.0#0.0#0.0#null#MX11#E4U3
+VCUPrkgBtnPsd#6#286#false#false#32#1#1#0#驾驶员按下P档#0.0#0.0#0.0#{"0": "Not_Active", "1": "active"}#MX11#E4U3
+VCUVirtAccrPedl#6#286#false#false#47#7#1#0#虚拟油门开度 当前模式的pedal map反算#0.0#0.0#0.0#null#MX11#E4U3
+VCUTarGearLvrVld#6#286#false#false#40#1#1#0#目标档位有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MX11#E4U3
+VCUAccrPedlRatVld#6#286#false#false#55#1#1#0#加速踏板有效性#0.0#0.0#0.0#{"0": "invalid", "1": "valid"}#MX11#E4U3
+VCUFrntEmTqRdy#6#286#false#false#54#1#1#0#The Front Motor  can be ready to response chassis torque request.\n前电机可以响应扭矩请求.#0.0#0.0#0.0#{"0": "Not_ready", "1": "Ready"}#MX11#E4U3
+VCUReEmTqRdy#6#286#false#false#53#1#1#0#Rear EM is ready to response chassis Torque Request\n后电机是否处于Ready状态#0.0#0.0#0.0#{"0": "Not_ready", "1": "Ready"}#MX11#E4U3
+VCUTarGearLvr#6#286#false#false#52#3#1#0#目标档位  P R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#MX11#E4U3
+VCUVirtAccrPedlVld#6#286#false#false#49#1#1#0#虚拟油门开度有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MX11#E4U3
+VCUShifterMoveFlg#6#286#false#false#48#1#1#0#驾驶员拨动了换挡杆的标志位#0.0#0.0#0.0#null#MX11#E4U3
+VCUDrvOffFcnLim#6#286#false#false#63#1#1#0#VCU send to BCS to identify whether vehcile can drive off or not as powertrain has fault and power limited.\nVCU发送给BCS系统，用于判断整车动力系统是否存在故障动力受限不能起步的判断#0.0#0.0#0.0#{"0": "Normal;", "1": "PowerLimited_Fault."}#MX11#E4U3
+VCUGearLvrAvail#6#286#false#false#62#1#1#0#Vehicle Gear Response is available for ADAS\n给智驾反馈的挡位可用标志位#0.0#0.0#0.0#{"0": "Not_Available", "1": "Available"}#MX11#E4U3
+ClusterActAg#6#420#false#false#7#8#1#0#旋转屏实际角度#0.0#0.0#0.0#null#MX11#E4U3
+ChrgUReq#6#420#false#false#15#16#0.001#0#充电电压请求#0.0#0.0#0.0#null#MX11#E4U3
+IntelgntChrgReq#6#420#false#false#30#2#1#0#battery Intelligent charging request\n智能充电请求#0.0#0.0#0.0#{"0": "NotReqd", "1": "Reqd", "2": "Reserved0", "3": "Reserved1"}#MX11#E4U3
+BattConnctdFlt#6#420#false#false#28#1#1#0#Battery Connected Fault\n电池连接错误状态#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MX11#E4U3
+EgyAvlDelta#6#420#false#false#27#12#0.01#0#可用电池容量#0.0#0.0#0.0#null#MX11#E4U3
+BattSocFild#6#420#false#false#47#10#0.1#0#过滤后的SOC#0.0#0.0#0.0#null#MX11#E4U3
+ClusterActState#6#420#false#false#53#3#1#0#旋转屏位置状态#0.0#0.0#0.0#{"0": "Fully_Retracted", "1": "Displaying", "2": "Fully_Displayed", "3": "Retracting", "4": "Stopped_in_Middle", "5": "PosnUnkwn"}#MX11#E4U3
+ClusterActAgVld#6#420#false#false#50#1#1#0#旋转屏角度是否有效#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MX11#E4U3
+ChrgnUReqMax#6#567#false#false#7#12#0.01#0#charge voltage request Maximum\n允许的最大充电电压#0.0#0.0#0.0#null#MX11#E4U3
+BattSnsrStReq#6#567#false#false#11#2#1#0#Battery sensor state set request\n电池管理器状态设置请求#0.0#0.0#0.0#{"0": "BattSnsrSt_Off", "1": "BattSnsrSt_Awake_default", "2": "BattSnsrSt_ACCorRUN"}#MX11#E4U3
+ChrgModReq#6#567#false#false#9#2#1#0#charge mode request\n充电模式需求#0.0#0.0#0.0#{"0": "\u4f20\u7edf/\u9ed8\u8ba4\u6a21\u5f0f", "1": "\u6821\u51c6/\u6ee1\u5145\u6a21\u5f0f", "2": "\u653e\u7535/\u8109\u51b2\u6a21\u5f0f"}#MX11#E4U3
+BattFltAfctCrk#6#567#false#false#23#1#1#0#1#0.0#0.0#0.0#{"0": "no_fault", "1": "fault"}#MX11#E4U3
+DCDCOutpBreak#6#567#false#false#22#1#1#0#DCDC Output Break\nDCDC输出中断#0.0#0.0#0.0#{"0": "no_fault", "1": "fault"}#MX11#E4U3
+LVPwrSplyErrSOCLoRmd#6#567#false#false#21#1#1#0#Low voltage power supply error soc low remind\n低压供电错误低电量提醒#0.0#0.0#0.0#{"0": "no_fault", "1": "SOC_Low"}#MX11#E4U3
+BattSnsrComFlt#6#567#false#false#20#1#1#0#battery sensor communication fault\n电池管理器通讯故障#0.0#0.0#0.0#{"0": "no_fault", "1": "fault"}#MX11#E4U3
+SysURaw#6#567#false#false#19#12#0.01#0#System Voltage raw\n负载端电压#0.0#0.0#0.0#null#MX11#E4U3
+TarSOC#6#567#false#false#39#7#1#0#target SOC\n目标SOC#0.0#0.0#0.0#{"0": "100%", "1": "\u9884\u7559", "2": "\u9884\u7559"}#MX11#E4U3
+BattSnsrHwFltFild#6#567#false#false#32#1#1#0#battery sensor hardware fault Field\n过滤的电池管理器硬件故障#0.0#0.0#0.0#{"0": "no_fault", "1": "fault"}#MX11#E4U3
+PwrAlvDelta#6#567#false#false#47#13#1#-200#power available delta\n可用能量#0.0#0.0#0.0#null#MX11#E4U3
+ULoWarn#6#567#false#false#50#2#1#0#voltage Low warning\n欠压报警#0.0#0.0#0.0#{"0": "normal_voltage", "1": "undervoltage", "2": "overvoltage", "3": "Reserved"}#MX11#E4U3
+StsOfIndcr#6#567#false#false#63#3#1#0#转向状态指示#0.0#0.0#0.0#{"0": "Noflash", "1": "flashLeft", "2": "flashRight", "3": "Doubleflash"}#MX11#E4U3
+SwtIndcr#6#567#false#false#60#3#1#0#转向拨杆信号#0.0#0.0#0.0#{"0": "Noflash", "1": "ShotFlashLeft", "2": "NormalFlashLeft", "3": "ShortFlashRight", "4": "NormalFlashRight"}#MX11#E4U3
+ClusterAutoFoldingSetAvl#6#757#false#false#7#1#1#0#仪表旋转HMI设置不可用#0.0#0.0#0.0#{"0": "Avl", "1": "NotAvl"}#MX11#E4U3
+ClusterAutoFoldingSetSts#6#757#false#false#6#1#1#0#仪表旋转HMI设置反馈#0.0#0.0#0.0#{"0": "AutoFolding_Off", "1": "AutoFolding_On"}#MX11#E4U3
+AmbTEstimdVld#6#757#false#false#5#1#1#0#Estimated ambient temperature valid value.#0.0#0.0#0.0#{"0": "Not_Valid", "1": "Valid"}#MX11#E4U3
+RotateDirCmd#6#757#false#false#4#2#1#0#RDA motor drive command#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down", "3": "Stop"}#MX11#E4U3
+RDAPosnLrnReq#6#757#false#false#2#1#1#0#RDA Position learn request#0.0#0.0#0.0#null#MX11#E4U3
+IntelgntChrgPollingLogl#6#757#false#false#1#2#1#0#Intelligent charge polling logic\n智能补电轮询逻辑#0.0#0.0#0.0#{"0": "default", "1": "stop", "2": "polling", "3": "Reserved"}#MX11#E4U3
+AmbTEstimd#6#757#false#false#15#16#0.01#-80#Estimated ambient temperature.#0.0#0.0#0.0#null#MX11#E4U3
+VehSysFltWarnSigGrpChks#6#759#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCUHVSysFltWarnSts#6#759#false#false#15#4#1#0#高压系统故障 分等级#0.0#0.0#0.0#{"0": "no_warning", "1": "reserved", "2": "HV_System_Fault_warning_Level2", "3": "reserved", "4": "HV_System_Fault_warning_Level4", "5": "HV_System_Fault_warning_Level5", "6": "HV_System_Fault_warning_Level6", "7": "reserved", "8": "HV_System_Fault_warning_Level8", "9": "HV_System_Fault_warning_Level9", "10": "reserved", "11": "reserved", "12": "reserved", "13": "reserved", "14": "reserved", "15": "reserved"}#MX11#E4U3
+VehSysFltWarnSigGrpCntr#6#759#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCUGearChgFailInde#6#759#false#false#23#4#1#0#换挡失败提醒#0.0#0.0#0.0#{"0": "No_request", "1": "Please_brake", "2": "Vehicle_speed_high", "3": "Charging_plug_insertion", "4": "EPB_failure", "5": "E_motor_failure", "6": "Connect_the_key_and_press_SSB", "7": "Press_SSB", "8": "Show_Room_Keep_Park", "9": "LV_System_Failure", "10": "HV_System_Failure", "11": "Immobilizer_Not_Pass", "12": "Trailer_Mode_Not_Shift", "13": "Shifter_Failure"}#MX11#E4U3
+VCULoSocWarngMsg#6#759#false#false#19#2#1#0#高压电池低电量报警\nHV Battery low SOC warnning#0.0#0.0#0.0#{"0": "Not_active", "1": "Level1_warning", "2": "Level2_warning"}#MX11#E4U3
+VCUBattOverHeatWarn#6#759#false#false#17#1#1#0#电池过温时 仪表点亮电池过温报警灯#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MX11#E4U3
+VCUDrvMotFltWarn#6#759#false#false#16#1#1#0#当驱动电机发生故障时 仪表点亮驱动电机故障灯#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MX11#E4U3
+VCUDrvMotOverHeatWarn#6#759#false#false#31#1#1#0#驱动电机过热报警#0.0#0.0#0.0#{"0": "Not_active", "1": "Active"}#MX11#E4U3
+VCUDrvSysLimdWarn#6#759#false#false#30#1#1#0#VCU发送点亮跛行故障灯信号 仪表点灯#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MX11#E4U3
+VCUHvBattSysFltIndcr#6#759#false#false#29#1#1#0#动力电池故障报警灯 低级#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MX11#E4U3
+VCUHvBattSysFltWarn#6#759#false#false#28#1#1#0#动力电池故障报警灯 严重#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MX11#E4U3
+VCUHvPwrSysCutOff#6#759#false#false#27#1#1#0#VCU发送动力系统切断故障telltale#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MX11#E4U3
+VCUPrpsnPwrDrt#6#759#false#false#26#1#1#0#VCU发送动力性能降级故障 仪表进行文字显示和声音提醒#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MX11#E4U3
+VCUThermRunawayErrAlrm#6#759#false#false#25#1#1#0#热失控报警#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MX11#E4U3
+VCUVehSysFltWarn#6#759#false#false#24#1#1#0#VCU发送点亮整车系统故障灯信号 仪表点灯#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MX11#E4U3
+PwrModSigGrpChks#6#144#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+PwrModSigGrpCntr#6#144#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+PwrModSts#6#144#false#false#23#3#1#0#PowerMode Status#0.0#0.0#0.0#{"0": "OFF", "1": "Awake", "2": "ACC", "3": "RUN"}#MX11#E4U3
+PwrModVld#6#144#false#false#20#1#1#0#PowerMode Validty#0.0#0.0#0.0#{"0": "Valid", "1": "NotValid"}#MX11#E4U3
+VCUActGearSigGrpChks#6#144#false#false#47#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCUActGearLvr#6#144#false#false#55#3#1#0#Actual gear level 车辆实际档位\nP R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#MX11#E4U3
+VCUActGearLvrVld#6#144#false#false#52#1#1#0#车辆实际档位有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MX11#E4U3
+VCUActGearSigGrpCntr#6#144#false#false#51#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCUPtRdyFlg#6#144#false#false#63#1#1#0#驾驶使能#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MX11#E4U3
+CarModSts#6#144#false#false#62#3#1#0#CarMode状态信号#0.0#0.0#0.0#{"0": "Normal", "1": "Fcy", "2": "Trsnp", "3": "Showroom", "4": "Dyno", "5": "TestDrv", "6": "Service", "7": "Reserved3"}#MX11#E4U3
+VCUActDrvMod#6#144#false#false#59#4#1#0#VCU actual drive mode \nVCU实际驾驶模式#0.0#0.0#0.0#{"0": "Comfort_Mode", "1": "Sport_Mode", "2": "Individual_Mode1", "3": "Individual_Mode2", "4": "Individual_Mode3", "5": "Snow_Mode", "6": "Mountain_Mode", "7": "Battle_Mode", "8": "Extreme_Eco_mode", "9": "Sport_plus_mode", "10": "Off_road_Mode", "11": "Wet_Mode", "12": "Standard_Mode", "13": "AntMtnsick_Mode"}#MX11#E4U3
+UDB23FZCU#6#1381#false#false#23#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB22FZCU#6#1381#false#false#22#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB21FZCU#6#1381#false#false#21#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB20FZCU#6#1381#false#false#20#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB19FZCU#6#1381#false#false#19#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB18FZCU#6#1381#false#false#18#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB17FZCU#6#1381#false#false#17#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB31FZCU#6#1381#false#false#31#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB30FZCU#6#1381#false#false#30#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB29FZCU#6#1381#false#false#29#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB28FZCU#6#1381#false#false#28#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB27FZCU#6#1381#false#false#27#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB26FZCU#6#1381#false#false#26#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB25FZCU#6#1381#false#false#25#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB24FZCU#6#1381#false#false#24#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB39FZCU#6#1381#false#false#39#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB38FZCU#6#1381#false#false#38#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB37FZCU#6#1381#false#false#37#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB36FZCU#6#1381#false#false#36#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB35FZCU#6#1381#false#false#35#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB34FZCU#6#1381#false#false#34#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB33FZCU#6#1381#false#false#33#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB32FZCU#6#1381#false#false#32#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB47FZCU#6#1381#false#false#47#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB46FZCU#6#1381#false#false#46#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB45FZCU#6#1381#false#false#45#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB44FZCU#6#1381#false#false#44#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB43FZCU#6#1381#false#false#43#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB42FZCU#6#1381#false#false#42#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB41FZCU#6#1381#false#false#41#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB40FZCU#6#1381#false#false#40#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+NMKeepAwkRsnFZCU#6#1381#false#false#48#9#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BattSocBliveSts#6#570#false#false#7#2#1#0#battery SOC believable Status\n电池SOC可信状态#0.0#0.0#0.0#{"0": "\u53ef\u4fe1", "1": "\u4e0d\u53ef\u4fe1", "2": "\u9884\u7559", "3": "\u9884\u7559"}#MX11#E4U3
+LABSocCalMod#6#570#false#false#50#2#1#0#lead acid battery SOC calibration mode\n铅酸电池SOC校准模式#0.0#0.0#0.0#{"0": "\u672a\u53d1\u751f\u6821\u51c6", "1": "\u6ee1\u5145\u6821\u51c6", "2": "OCV\u6821\u51c6", "3": "\u9884\u7559"}#MX11#E4U3
+PassMassgIntenStsCmd#6#555#false#false#7#4#1#0#Passenger Seat Massage Intensity Status Setting Command\n副驾座椅按摩强度状态设置指令#0.0#0.0#0.0#{"0": "Low", "1": "Mid", "2": "High"}#MX11#E4U3
+PassMassgModStsCmd#6#555#false#false#3#4#1#0#Passenger Seat Massage Mode Status Setting Command\n副驾按摩模式状态设置指令#0.0#0.0#0.0#{"0": "Mode1", "1": "Mode2", "2": "Mode3", "3": "Mode4", "4": "Mode5", "5": "Mode6"}#MX11#E4U3
+DrvrMassgIntenStsCmd#6#555#false#false#15#4#1#0#Driver Seat Massage Intensity Status Setting Command\n主驾座椅按摩强度状态设置指令#0.0#0.0#0.0#{"0": "Low", "1": "Mid", "2": "High"}#MX11#E4U3
+DrvrMassgModStsCmd#6#555#false#false#11#4#1#0#Driver Seat Massage Mode Status Setting Command\n主驾按摩模式状态设置指令#0.0#0.0#0.0#{"0": "Mode1", "1": "Mode2", "2": "Mode3", "3": "Mode4", "4": "Mode5", "5": "Mode6"}#MX11#E4U3
+DrvrSeatActvBlstrAdjCmd#6#555#false#false#23#2#1#0#Driver Seat Active Boslter Adjustment Sensitivity Status\n主驾座椅主动侧翼支撑强度状态#0.0#0.0#0.0#{"0": "OFF", "1": "LowSensitivity", "2": "HighSensitivity", "3": "Custom_Settings(\u9884\u7559)"}#MX11#E4U3
+DrvrSeatActvBlstrAdjSts#6#555#false#false#21#2#1#0#Driver Seat Active Boslter Adjustment Sensitivity Status\n主驾座椅主动侧翼支撑强度状态#0.0#0.0#0.0#{"0": "OFF", "1": "LowSensitivity", "2": "HighSensitivity", "3": "Custom_Settings(\u9884\u7559)"}#MX11#E4U3
+DrvrSeatLumAdjSts#6#555#false#false#19#3#1#0#Driver Seat Lumbar Adjustment Status\n主驾腰托调节状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down", "3": "Forward", "4": "Rearward", "5": "Setting"}#MX11#E4U3
+DrvrMassgStsCmd#6#555#false#false#16#1#1#0#Driver Massage Status Setting Commnad\n主驾按摩状态设置指令#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#MX11#E4U3
+PassMassgStsCmd#6#555#false#false#31#1#1#0#Passenger Massage Status Setting Command\n副驾按摩状态设置指令#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#MX11#E4U3
+RDAActAgFb#6#416#false#false#7#8#1#0#The feedback of actual angle of angle sensor#0.0#0.0#0.0#null#MX11#E4U3
+RDATrvlSwtSts2#6#416#false#false#15#2#1#0#RDA Travel connector switch status at display cover#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd", "3": "Reserved"}#MX11#E4U3
+RDATrvlSwtSts1#6#416#false#false#13#2#1#0#RDA Travel connector switch status at decoration cover#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd", "3": "Reserved"}#MX11#E4U3
+RDAMotMovDirSts#6#416#false#false#11#2#1#0#the RDA motor drive status#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down", "3": "Reserved"}#MX11#E4U3
+MotActCurVal#6#762#false#false#7#8#1#0#the actual current of motor#0.0#0.0#0.0#null#MX11#E4U3
+RDALrnedAgVal1#6#762#false#false#15#8#1#0#the learned voltage of angle sensor at decoration connector#0.0#0.0#0.0#null#MX11#E4U3
+RDALrnedAgVal2#6#762#false#false#23#8#1#0#the learned voltage of angle sensor at display connector#0.0#0.0#0.0#null#MX11#E4U3
+RDAMotAgSnsrUFb#6#762#false#false#31#8#1#0#The feedback of actual voltage of angle connector#0.0#0.0#0.0#null#MX11#E4U3
+RDAMotPWMVal#6#762#false#false#39#7#1#0#the drive PWM value of RDA motor#0.0#0.0#0.0#null#MX11#E4U3
+RDAMotOTP#6#762#false#false#32#1#1#0#RDA MOTOR over temperature protection flag#0.0#0.0#0.0#null#MX11#E4U3
+RDASysErrSts#6#762#false#false#47#8#1#0#the RDA System Error status#0.0#0.0#0.0#null#MX11#E4U3
+RDAMotStall#6#762#false#false#55#1#1#0#the stall flag for RDA MOTOR#0.0#0.0#0.0#null#MX11#E4U3
+RDAPosnLrnedFb#6#762#false#false#54#2#1#0#The feedback of the RDA position learned status#0.0#0.0#0.0#{"0": "Idle", "1": "InProgress", "2": "NotLrned", "3": "Lrned"}#MX11#E4U3
+RDAFaultInfoFlag#6#762#false#false#52#1#1#0#RDA Fault Information Flag#0.0#0.0#0.0#null#MX11#E4U3
+RDATrvlSwtErrSts1#6#762#false#false#51#1#1#0#RDA Travel connector switch error status at decoration cover#0.0#0.0#0.0#{"0": "NoErr", "1": "Err"}#MX11#E4U3
+RDATrvlSwtErrSts2#6#762#false#false#50#1#1#0#RDA Travel connector switch error status at display cover#0.0#0.0#0.0#{"0": "NoErr", "1": "Err"}#MX11#E4U3
+RDANTCADRaw#6#762#false#false#49#10#1#0#RDA controller NTC sample value#0.0#0.0#0.0#null#MX11#E4U3
+RDANodeAddress#6#1377#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+RDAActiveWakeup#6#1377#false#false#12#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+RDARepeatMsgReq#6#1377#false#false#8#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB23RDA#6#1377#false#false#23#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB22RDA#6#1377#false#false#22#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB21RDA#6#1377#false#false#21#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB20RDA#6#1377#false#false#20#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB19RDA#6#1377#false#false#19#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB18RDA#6#1377#false#false#18#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB17RDA#6#1377#false#false#17#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+RDARepeatMsgSt#6#1377#false#false#16#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB31RDA#6#1377#false#false#31#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB30RDA#6#1377#false#false#30#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB29RDA#6#1377#false#false#29#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB28RDA#6#1377#false#false#28#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB27RDA#6#1377#false#false#27#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB26RDA#6#1377#false#false#26#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB25RDA#6#1377#false#false#25#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB24RDA#6#1377#false#false#24#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB39RDA#6#1377#false#false#39#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB38RDA#6#1377#false#false#38#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB37RDA#6#1377#false#false#37#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB36RDA#6#1377#false#false#36#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB35RDA#6#1377#false#false#35#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB34RDA#6#1377#false#false#34#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB33RDA#6#1377#false#false#33#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB32RDA#6#1377#false#false#32#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB47RDA#6#1377#false#false#47#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB46RDA#6#1377#false#false#46#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB45RDA#6#1377#false#false#45#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB44RDA#6#1377#false#false#44#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB43RDA#6#1377#false#false#43#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB42RDA#6#1377#false#false#42#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB41RDA#6#1377#false#false#41#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB40RDA#6#1377#false#false#40#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+NMKeepAwkRsnRDA#6#1377#false#false#48#9#1#0##0.0#0.0#0.0#null#MX11#E4U3
+RDAToVCCDBodyDiagRespFr#6#1649#false#false#7#64#1#0##0.0#0.0#0.0#null#MX11#E4U3
+TiDomn#6#263#false#false#4#5#1#0#time domain#0.0#0.0#0.0#{"0": "UTC_plus_0", "1": "UTC_plus_1", "2": "UTC_plus_2", "3": "UTC_plus_3", "4": "UTC_plus_4", "5": "UTC_plus_5", "6": "UTC_plus_6", "7": "UTC_plus_7", "8": "UTC_plus_8", "9": "UTC_plus_9", "10": "UTC_plus_10", "11": "UTC_plus_11", "12": "UTC_plus_12", "13": "UTC_plus_13", "14": "UTC_plus_14", "15": "UTC_plus_15", "16": "UTC_plus_16", "17": "UTC_plus_17", "18": "UTC_plus_18", "19": "UTC_plus_19", "20": "UTC_plus_20", "21": "UTC_plus_21", "22": "UTC_plus_22", "23": "UTC_plus_23", "24": "Invalid"}#MX11#E4U3
+DateTiYr#6#263#false#false#15#8#1#2000#date time year#0.0#0.0#0.0#{"255": "Invalid"}#MX11#E4U3
+DateTiMth#6#263#false#false#19#4#1#0#date time month#0.0#0.0#0.0#{"0": "Invalid"}#MX11#E4U3
+DateTiDay#6#263#false#false#28#5#1#0#date time day#0.0#0.0#0.0#{"0": "init"}#MX11#E4U3
+DateTiHr#6#263#false#false#36#5#1#0#date time hour#0.0#0.0#0.0#{"24": "Invalid"}#MX11#E4U3
+DateTiMins#6#263#false#false#45#6#1#0#date time minute#0.0#0.0#0.0#{"60": "Invalid"}#MX11#E4U3
+DateTiSec#6#263#false#false#55#6#1#0#date time second#0.0#0.0#0.0#{"60": "Invalid"}#MX11#E4U3
+DateTiMilsec#6#263#false#false#49#10#1#0#date time millisecond#0.0#0.0#0.0#{"0": "0", "999": "999", "1000": "invalid"}#MX11#E4U3
+EtcIDNum#6#486#false#false#7#32#1#0#ETC签号前8位#0.0#0.0#0.0#null#MX11#E4U3
+EtcActIns#6#486#false#false#39#1#1#0#ETC Activation Instructions\nETC激活指令#0.0#0.0#0.0#{"0": "No_action", "1": "Deactived"}#MX11#E4U3
+ETCBlkID#6#486#false#false#38#1#1#0#信号序号标识#0.0#0.0#0.0#{"0": "EtcIDNum", "1": "EtcActIns"}#MX11#E4U3
+OTAMode#6#560#false#false#6#1#1#0#OTA模式#0.0#0.0#0.0#{"0": "OTA_Install_Mode_disable", "1": "OTA_Install_Mode_enable"}#MX11#E4U3
+DCDAirBagLampFailSts#6#851#false#false#7#1#1#0#DCD AirBagLamp failure state#0.0#0.0#0.0#{"0": "No_Failure", "1": "Failure"}#MX11#E4U3
+TotOdoAcrt#6#914#false#false#7#24#0.1#0#ODO#0.0#0.0#0.0#{"16777215": "Invaild"}#MX11#E4U3
+TotOdoAcrtLvlMVld#6#914#false#false#27#1#1#0#Total odometer accurate for meter level valid\n米级精确总里程有效性#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MX11#E4U3
+TotOdoAcrtVld#6#914#false#false#25#1#1#0#The valid signal of TotOdoAcrt#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MX11#E4U3
+XCDbkdHvBattStrtAllwd#6#914#false#false#24#1#1#0#Arriving HV batter book heating time flag\n到达电池预热时间使能标志位#0.0#0.0#0.0#null#MX11#E4U3
+TotOdoAcrtLvlM#6#914#false#false#39#32#1#0#Total odometer accurate for meter level\n米级精确总里程\n其中，有效范围：0x0~0x?3B9AC9FF?，表示0~999，999，999#0.0#0.0#0.0#{"-2147483648": "Invaild"}#MX11#E4U3
+DCDETCSwtSet#6#933#false#false#9#2#1#0#DCDETC Switch Set\nETC服务设置开关#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MX11#E4U3
+DCDETCBTSwtSet#6#933#false#false#23#2#1#0#DCDETC Bluetooth  Switch Set\nETC蓝牙设置开关#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MX11#E4U3
+PassSideAirbClsSet#6#933#false#false#19#2#1#0#passenger side airbag close Set\n副驾安全气囊关闭设定#0.0#0.0#0.0#{"0": "no_command", "1": "enable", "2": "disable"}#MX11#E4U3
+DCDClusterAutoFoldCfgSet#6#933#false#false#17#2#1#0#DCD Cluster auto fold config set#0.0#0.0#0.0#{"0": "No_Command", "1": "AutoFolding_Off", "2": "AutoFolding_ON"}#MX11#E4U3
+VinVINBlkID#6#995#false#false#7#8#1#0#Block ID for VIN Signal sequence#0.0#0.0#0.0#{"0": "Invalid", "1": "Block_1", "2": "Block_2", "3": "Block_3"}#MX11#E4U3
+VinVINSignalPos1#6#995#false#false#15#8#1#0#1st position in VIN Signal    Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VinVINSignalPos2#6#995#false#false#23#8#1#0#2nd position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VinVINSignalPos3#6#995#false#false#31#8#1#0#3rd position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VinVINSignalPos4#6#995#false#false#39#8#1#0#4th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VinVINSignalPos5#6#995#false#false#47#8#1#0#5th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VinVINSignalPos6#6#995#false#false#55#8#1#0#6th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VinVINSignalPos7#6#995#false#false#63#8#1#0#7th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VidBlkId#6#998#false#false#7#8#1#0#Block ID for VID Signal sequence#0.0#0.0#0.0#{"0": "Invalid", "1": "Block_1", "2": "Block_2", "3": "Block_3"}#MX11#E4U3
+VidSignalPos1#6#998#false#false#15#8#1#0#1st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VidSignalPos2#6#998#false#false#23#8#1#0#2st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VidSignalPos3#6#998#false#false#31#8#1#0#3st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VidSignalPos4#6#998#false#false#39#8#1#0#4st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VidSignalPos5#6#998#false#false#47#8#1#0#5st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VidSignalPos6#6#998#false#false#55#8#1#0#6st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VidSignalPos7#6#998#false#false#63#8#1#0#7st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VehCfgPrmBlkIDBytePosn1#6#135#false#false#7#8#1#0#Block ID for specific Car Configuration parameter sequence#0.0#0.0#0.0#null#MX11#E4U3
+VehCfgPrmCCPBytePosn2#6#135#false#false#15#8#1#0#1st position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VehCfgPrmCCPBytePosn3#6#135#false#false#23#8#1#0#2nd position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VehCfgPrmCCPBytePosn4#6#135#false#false#31#8#1#0#3rd position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VehCfgPrmCCPBytePosn5#6#135#false#false#39#8#1#0#4th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VehCfgPrmCCPBytePosn6#6#135#false#false#47#8#1#0#5th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VehCfgPrmCCPBytePosn7#6#135#false#false#55#8#1#0#6th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+VehCfgPrmCCPBytePosn8#6#135#false#false#63#8#1#0#7th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MX11#E4U3
+BcpBrkSysIndcnBkpSigGrpChks#6#260#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BrkSysBrkPedlAppld#6#260#false#false#15#1#1#0#Indicates whether the driver operates the\nbrakepedal.Only active when the driver brakes#0.0#0.0#0.0#{"0": "NotApplied", "1": "Applied"}#MX11#E4U3
+BrkSysBrkPedlAppldVld#6#260#false#false#14#2#1#0#Qualifier for brake system brake pedal applied signal#0.0#0.0#0.0#{"0": "BrkPedlAppld_NotInitialized", "1": "BrkPedlAppld_Normal", "2": "BrkPedlAppld_Faulty"}#MX11#E4U3
+BrkSysEnaActvCtrlByDrvr#6#260#false#false#12#1#1#0#Indicate if the BCP pressure control is dominated by driver#0.0#0.0#0.0#{"0": "NotEnable", "1": "Enable"}#MX11#E4U3
+BcpBrkSysIndcnBkpSigGrpCntr#6#260#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BrkSysPRednPotnl#6#260#false#false#23#8#0.5#0#Indicates the pressure reduction potential from BCP to BCS  to limit the max CRB brakeregen.#0.0#0.0#0.0#null#MX11#E4U3
+BrkSysFTarDrvr#6#260#false#false#31#11#64#-131008#Target brake force from driver#0.0#0.0#0.0#null#MX11#E4U3
+BrkSysFTarDrvrVld#6#260#false#false#36#2#1#0#Qualifier for Target brake force from driver signal#0.0#0.0#0.0#{"0": "NotInitialized", "1": "Normal", "2": "ExternalBrakeRequest", "3": "Faulty"}#MX11#E4U3
+BrkSysPRednPotnlVld#6#260#false#false#34#2#1#0#Qualifier for pressure reduction potential signal#0.0#0.0#0.0#{"0": "NotInitialized", "1": "Normal", "2": "Faulty"}#MX11#E4U3
+BrkSysWarnLampReq#6#260#false#false#47#2#1#0#Indicatethewarninglampinfothatshouldbeset#0.0#0.0#0.0#{"0": "NoLamp", "1": "YellowLamp", "2": "RedLamp"}#MX11#E4U3
+VehSpd#6#262#false#false#7#16#0.05625#0#Vehicle speed#0.0#0.0#0.0#null#MX11#E4U3
+VehSpdVld#6#262#false#false#23#1#1#0#Qualifier for vehicle speed signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MX11#E4U3
+PinionSteerAgl#6#267#false#true#23#15#0.0625#0#方向盘转角\nSteering Wheel Angle\n方向 \nAnticlockwise direction of steering wheel increase angle output.\nClockwise direction of steering wheel decrease angle output.#0.0#0.0#0.0#null#MX11#E4U3
+PinionSteerAglVld#6#267#false#false#43#1#1#0#方向盘转角有效位\nSteering Wheel Angle Valid Flag#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MX11#E4U3
+ABSActv#6#361#false#false#23#1#1#0#ABS Control Active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MX11#E4U3
+ABSErrDetd#6#361#false#false#22#1#1#0#ABS error detected#0.0#0.0#0.0#{"0": "Error", "1": "NoError"}#MX11#E4U3
+APBTxtDip#6#361#false#false#21#4#1#0#APB Text Display#0.0#0.0#0.0#{"0": "default", "1": "Slope_out_of_specified_limit", "2": "Left_Parking_brake_fail", "3": "Right_Parking_brake_fail", "4": "Hot_parking_brake_system", "5": "Use_APB_Button_to_releaseandappl", "6": "Parking_brake_cannot_hold_vehicle", "7": "Parking_brake_roller_bench_test_mode", "8": "Left_parking_brake_released", "9": "Left_parking_brake_Applied", "10": "reserved", "11": "reserved", "12": "reserved", "13": "reserved"}#MX11#E4U3
+HBBSts#6#361#false#false#17#2#1#0#HBB function status#0.0#0.0#0.0#{"0": "HBBNormalMode", "1": "HBBFailedBoost", "2": "HBBFailedBoostBackup", "3": "HBBDisabled"}#MX11#E4U3
+BCSBrkSysWarnText#6#361#false#false#31#3#1#0#BCS Brake System Warning Text#0.0#0.0#0.0#{"0": "NoWarning", "1": "the_brake_system_fault", "2": "Please_check_because_the_brake_system_leakage", "3": "Overheat_of_brake_system", "4": "reserved", "5": "reserved", "6": "reserved", "7": "reserved"}#MX11#E4U3
+BrkLiIllmnReq#6#361#false#false#28#1#1#0#Request to illuminate brake light#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request"}#MX11#E4U3
+BrkSysWarnLamp#6#361#false#false#27#2#1#0#Brake System Warning Lamp#0.0#0.0#0.0#{"0": "NoRequest", "1": "YellowLampt", "2": "RedLamp"}#MX11#E4U3
+CSTSts#6#361#false#false#25#2#1#0#CST function status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Active", "3": "Failure"}#MX11#E4U3
+EBDActv#6#361#false#false#39#1#1#0#EBD Control Active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MX11#E4U3
+EBDErrDetd#6#361#false#false#38#1#1#0#EBD error detected#0.0#0.0#0.0#{"0": "Error", "1": "NoError"}#MX11#E4U3
+EmgyBrkLiReq#6#361#false#false#37#1#1#0#Emergency brake light request#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request"}#MX11#E4U3
+ESCErrDetd#6#361#false#false#36#1#1#0#ESC error detected#0.0#0.0#0.0#{"0": "Error", "1": "NoError"}#MX11#E4U3
+ESCIntvLamp#6#361#false#false#35#1#1#0#ESC Intervention Lamp#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MX11#E4U3
+ESCPataLamp#6#361#false#false#34#2#1#0#ESC diable status#0.0#0.0#0.0#{"0": "NoRequest", "1": "Level1Request", "2": "Level2Request"}#MX11#E4U3
+APBStsBkp#6#361#false#false#47#3#1#0#BCP&BCS APB Status#0.0#0.0#0.0#{"0": "Released", "1": "Applied", "2": "Releasing", "3": "Applying", "4": "Undefined"}#MX11#E4U3
+HDCCtrlSts#6#361#false#false#44#2#1#0#HDC function control status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Active", "3": "Reserved"}#MX11#E4U3
+HDCAvl#6#361#false#false#42#1#1#0#HDC function available#0.0#0.0#0.0#{"0": "NotAvailable", "1": "Available"}#MX11#E4U3
+APBErrDetd#6#361#false#false#41#2#1#0#APB Error Status#0.0#0.0#0.0#{"0": "NotInit", "1": "Normal", "2": "Faulty"}#MX11#E4U3
+HRBActv#6#361#false#false#55#1#1#0#HRB available#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MX11#E4U3
+HRBAvl#6#361#false#false#54#1#1#0#HRB active#0.0#0.0#0.0#{"0": "NotAvailable", "1": "Available"}#MX11#E4U3
+HydBrkFExist#6#361#false#false#53#1#1#0#Hydraulic brake force exsit#0.0#0.0#0.0#{"0": "NotExist", "1": "Exist"}#MX11#E4U3
+TCSActv#6#361#false#false#51#1#1#0#TCS Controller Active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MX11#E4U3
+VDCActv#6#361#false#false#50#1#1#0#VDC Controller Active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MX11#E4U3
+VehStandStillIndcr#6#361#false#false#49#1#1#0#Indicate whether the vehicle is standstill or not#0.0#0.0#0.0#{"0": "NotStandstill", "1": "Standstill"}#MX11#E4U3
+VehStandStillIndcrVld#6#361#false#false#48#1#1#0#Qualifier for vehicle standstill indicate signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MX11#E4U3
+APBSts#6#361#false#false#63#3#1#0#APB Status#0.0#0.0#0.0#{"0": "Released", "1": "Applied", "2": "Releasing", "3": "Applying", "4": "Undefined"}#MX11#E4U3
+WhlspdBkpFcnSigGrpChks#6#369#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VehSpdBkpVld#6#369#false#false#15#1#1#0#Qualifierforvehiclespeedsignalbackup#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MX11#E4U3
+WhlspdBkpFcnSigGrpCntr#6#369#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VehSpdBkp#6#369#false#false#23#16#0.05625#0#Vehiclespeedbackup#0.0#0.0#0.0#null#MX11#E4U3
+BrkPedlAppld#6#369#false#false#47#1#1#0#Indicates whether the driver operates the\n brake pedal. Only active when the driver brakes#0.0#0.0#0.0#{"0": "NotApplied", "1": "Applied"}#MX11#E4U3
+BrkPedlAppldVld#6#369#false#false#46#2#1#0#Qualifier for brake pedal applied signal#0.0#0.0#0.0#{"0": "BrkPedlAppld_NotInitialized", "1": "BrkPedlAppld_Normal", "2": "BrkPedlAppld_Faulty"}#MX11#E4U3
+VCCDDrvrSeatSideBlstrlLeCmd#6#369#false#false#44#2#1#0#VCCD Driver Seat Side Boslter Left Command\nVCCD主驾座椅侧翼支撑左侧控制指令#0.0#0.0#0.0#{"0": "Idle", "1": "Inflate", "2": "Deflate"}#MX11#E4U3
+VCCDDrvrSeatSideBlstrlRiCmd#6#369#false#false#42#2#1#0#VCCD Driver Seat Side Boslter Right Command\nVCCD主驾座椅侧翼支撑右侧控制指令#0.0#0.0#0.0#{"0": "Idle", "1": "Inflate", "2": "Deflate"}#MX11#E4U3
+BrkPedlPerct#6#369#false#false#55#7#1#0#Brake Pedal Percentage#0.0#0.0#0.0#null#MX11#E4U3
+BrkPedlPerctVld#6#369#false#false#48#1#1#0#Qualifier for Brake Pedal Percentage signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MX11#E4U3
+FailrStsSigGrpChks#6#421#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+FailrSts#6#421#false#false#15#3#1#0#EPS 故障状态\nEPS Failure Status#0.0#0.0#0.0#{"0": "SteerNormal", "1": "SteerAssitTempRed", "2": "SteerAssitServReq", "3": "SteerAssitErrStopVehicle", "4": "Notused", "5": "Notused", "6": "Notused", "7": "Notused"}#MX11#E4U3
+FailrStsSigGrpCntr#6#421#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+BcsExtdFcnSigGrpChks#6#421#false#false#31#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ABPActv#6#421#false#false#39#1#1#0#ABP active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MX11#E4U3
+ABPAvl#6#421#false#false#38#1#1#0#ABP available#0.0#0.0#0.0#{"0": "NotAvailable", "1": "Available"}#MX11#E4U3
+AEBActv#6#421#false#false#37#1#1#0#AEB active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MX11#E4U3
+AEBAvl#6#421#false#false#36#1#1#0#AEB available#0.0#0.0#0.0#{"0": "NotAvailable", "1": "Available"}#MX11#E4U3
+BcsExtdFcnSigGrpCntr#6#421#false#false#35#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+AWBActv#6#421#false#false#47#1#1#0#AWB active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MX11#E4U3
+AWBAvl#6#421#false#false#46#1#1#0#AWB available#0.0#0.0#0.0#{"0": "NotAvailable", "1": "Available"}#MX11#E4U3
+EBAActv#6#421#false#false#45#1#1#0#EBA active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MX11#E4U3
+AEBtoIDPFrmADDChks#6#561#false#false#39#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+AEBTarObjClassFrmADD#6#561#false#false#47#2#1#0#AEB target object classification#0.0#0.0#0.0#{"0": "Unknown", "1": "4_wheeler", "2": "2_wheeler", "3": "Pedestrian"}#MX11#E4U3
+AEBtoIDPFrmADDCntr#6#561#false#false#43#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+AEBTarObjTTIFrmADD#6#561#false#false#55#8#0.02#0#AEB  target object time to impact#0.0#0.0#0.0#null#MX11#E4U3
+ADSAEBStsFrmADD#6#561#false#false#60#3#1#0#AEB function status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Active", "3": "Failure", "4": "Reserved", "5": "Reserved", "6": "Reserved", "7": "Reserved"}#MX11#E4U3
+SwtLiHzrdWarn#6#561#false#false#57#1#1#0#双闪开关#0.0#0.0#0.0#{"0": "NotPsd", "1": "Psd"}#MX11#E4U3
+DrvFcn1FrmADDSigGrpChks#6#564#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+DrvFltStsFrmADD#6#564#false#false#15#3#1#0#Autonomous Driving system Fault status#0.0#0.0#0.0#{"0": "NoError", "1": "PerformanceDegradation", "2": "SystemTemporaryUnvailable", "3": "ServiceRequired", "4": "SentryModeNotAvl"}#MX11#E4U3
+DrvFltStsVldFrmADD#6#564#false#false#12#1#1#0#Autonomous Driving system Fault status Valid#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MX11#E4U3
+DrvFcn1FrmADDSigGrpCntr#6#564#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ADSACCStsFrmADD#6#564#false#false#23#3#1#0#ACC状态 \n激活状态为 Normal ACtive StandActive StandWait Override Takeover#0.0#0.0#0.0#{"0": "Passive", "1": "Standby", "2": "NormalActive", "3": "StandActive", "4": "Override", "5": "StandWait", "6": "Takeover", "7": "Fault"}#MX11#E4U3
+ReLeTyrePVal#6#818#false#false#7#8#2.75#0#RearLeftTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#MX11#E4U3
+ReRiTyrePVal#6#818#false#false#15#8#2.75#0#RearRightTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#MX11#E4U3
+ReLeTyrePWarn#6#818#false#false#23#2#1#0#RearLeftTyrePressureWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Low_Pressure", "2": "High_Pressure", "3": "Invalid"}#MX11#E4U3
+ReRiTyrePWarn#6#818#false#false#21#2#1#0#RearRightTyrePressureWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Low_Pressure", "2": "High_Pressure", "3": "Invalid"}#MX11#E4U3
+FrntLeTyrePWarn#6#818#false#false#19#2#1#0#FrontLeftTyrePressureWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Low_Pressure", "2": "High_Pressure", "3": "Invalid"}#MX11#E4U3
+FrntRiTyrePWarn#6#818#false#false#17#2#1#0#FrontRightTyrePressureWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Low_Pressure", "2": "High_Pressure", "3": "Invalid"}#MX11#E4U3
+FrntLeTyrePVal#6#818#false#false#31#8#2.75#0#FrontLeftTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#MX11#E4U3
+FrntRiTyrePVal#6#818#false#false#39#8#2.75#0#FrontRightTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#MX11#E4U3
+FrntLeTyrePSnsrLoBattWarn#6#818#false#false#47#1#1#0#FrontLeftTyrePressureSensorLowBatteryWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#MX11#E4U3
+FrntLeTyrePSnsrLostWarn#6#818#false#false#46#1#1#0#FrontLeftTyrePressureSensorLostWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#MX11#E4U3
+FrntRiTyrePSnsrLoBattWarn#6#818#false#false#45#1#1#0#FrontRightTyrePressureSensorLowBatteryWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#MX11#E4U3
+FrntRiTyrePSnsrLostWarn#6#818#false#false#44#1#1#0#FrontRightTyrePressureSensorLostWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#MX11#E4U3
+ReLeTyrePSnsrLoBattWarn#6#818#false#false#43#1#1#0#RearLeftTyrePressureSensorLowBatteryWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#MX11#E4U3
+ReLeTyrePSnsrLostWarn#6#818#false#false#42#1#1#0#RearLeftTyrePressureSensorLostWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#MX11#E4U3
+ReRiTyrePSnsrLoBattWarn#6#818#false#false#41#1#1#0#RearRightTyrePressureSensorLowBatteryWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#MX11#E4U3
+ReRiTyrePSnsrLostWarn#6#818#false#false#40#1#1#0#RearRightTyrePressureSensorLostWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#MX11#E4U3
+VCCDBdCanNodeAddress#6#1376#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MX11#E4U3
+VCCDBdCanActiveWakeup#6#1376#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MX11#E4U3
+VCCDBdCanRepeatMsgReq#6#1376#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "not_requested", "1": "requested"}#MX11#E4U3
+UDB23VCCD#6#1376#false#false#23#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB22VCCD#6#1376#false#false#22#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB21VCCD#6#1376#false#false#21#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB20VCCD#6#1376#false#false#20#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB19VCCD#6#1376#false#false#19#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB18VCCD#6#1376#false#false#18#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB17VCCD#6#1376#false#false#17#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCCDBdCanRepeatMsgSt#6#1376#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MX11#E4U3
+UDB31VCCD#6#1376#false#false#31#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB30VCCD#6#1376#false#false#30#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB29VCCD#6#1376#false#false#29#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB28VCCD#6#1376#false#false#28#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB27VCCD#6#1376#false#false#27#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB26VCCD#6#1376#false#false#26#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB25VCCD#6#1376#false#false#25#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB24VCCD#6#1376#false#false#24#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB39VCCD#6#1376#false#false#39#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB38VCCD#6#1376#false#false#38#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB37VCCD#6#1376#false#false#37#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB36VCCD#6#1376#false#false#36#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB35VCCD#6#1376#false#false#35#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB34VCCD#6#1376#false#false#34#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB33VCCD#6#1376#false#false#33#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB32VCCD#6#1376#false#false#32#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB47VCCD#6#1376#false#false#47#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB46VCCD#6#1376#false#false#46#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB45VCCD#6#1376#false#false#45#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB44VCCD#6#1376#false#false#44#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB43VCCD#6#1376#false#false#43#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB42VCCD#6#1376#false#false#42#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB41VCCD#6#1376#false#false#41#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB40VCCD#6#1376#false#false#40#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB53VCCD#6#1376#false#false#53#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB52VCCD#6#1376#false#false#52#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB51VCCD#6#1376#false#false#51#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB50VCCD#6#1376#false#false#50#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB49VCCD#6#1376#false#false#49#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+NMKeepAwkRsnVCCD#6#1376#false#false#48#9#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCCDToACUBodyCanDiagReq#6#2033#false#false#7#64#1#0#VCCDToACUBodyCanDiagReqNpdu#0.0#0.0#0.0#null#MX11#E4U3
+VCCDToACUDiagReq#6#1907#false#false#7#64#1#0#VCCDToACUBodyCanDiagReqNpdu#0.0#0.0#0.0#null#MX11#E4U3
+VCCDToACUCanFuncDiagReq#6#2015#false#false#7#64#1#0#VCCDToACUCanFuncDiagReqNpdu#0.0#0.0#0.0#null#MX11#E4U3
+VCCDToBMDMDiagReq#6#1912#false#false#7#64#1#0#VCCDToBMDMBodyCanDiagReqNpdu#0.0#0.0#0.0#null#MX11#E4U3
+XCDToBodyFuncDiagReq#6#2047#false#false#7#64#1#0#VCCDToBodyCanFuncDiagReqNpdu#0.0#0.0#0.0#null#MX11#E4U3
+VCCDToETCDiagReq#6#1908#false#false#7#64#1#0#VCCDToETCBodyCanDiagReqNpdu#0.0#0.0#0.0#null#MX11#E4U3
+XCDToFLSPUDiagReq#6#1913#false#false#7#64#1#0##0.0#0.0#0.0#null#MX11#E4U3
+XCDToFRSPUDiagReq#6#1914#false#false#7#64#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCCDToRDABodyCanDiagReq#6#1905#false#false#7#64#1#0##0.0#0.0#0.0#null#MX11#E4U3
