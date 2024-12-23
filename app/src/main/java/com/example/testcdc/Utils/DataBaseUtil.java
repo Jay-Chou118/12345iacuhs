@@ -56,9 +56,9 @@ public class DataBaseUtil {
             }
             is.close();
             os.close();
-            Log.i(TAG,"初始化数据库文件成功");
+            Log.i(TAG, "初始化数据库文件成功");
         } catch (Exception e) {
-            Log.e(TAG,e.toString());
+            Log.e(TAG, e.toString());
         }
     }
 
@@ -1057,6 +1057,31 @@ public class DataBaseUtil {
         userDefined.setCarTypeName("custom");
         userDefined.setSDBName("默认视图");
         carTypeEntities.add(userDefined);
+
+        CarTypeEntity mx11E4U31 = new CarTypeEntity();
+        mx11E4U31.setCarTypeName("MX11");
+        mx11E4U31.setSDBName("E4U3.1");
+        carTypeEntities.add(mx11E4U31);
+
+        CarTypeEntity mx11E4U3 = new CarTypeEntity();
+        mx11E4U3.setCarTypeName("MX11");
+        mx11E4U3.setSDBName("E4U3");
+        carTypeEntities.add(mx11E4U3);
+
+        CarTypeEntity mx11E4U2 = new CarTypeEntity();
+        mx11E4U2.setCarTypeName("MX11");
+        mx11E4U2.setSDBName("E4U2");
+        carTypeEntities.add(mx11E4U2);
+
+        CarTypeEntity mx11EEA15E4 = new CarTypeEntity();
+        mx11EEA15E4.setCarTypeName("MX11");
+        mx11EEA15E4.setSDBName("EEA1.5_E4");
+        carTypeEntities.add(mx11EEA15E4);
+
+        CarTypeEntity mx11EEA15E3 = new CarTypeEntity();
+        mx11EEA15E3.setCarTypeName("MX11");
+        mx11EEA15E3.setSDBName("EEA1.5_E3");
+        carTypeEntities.add(mx11EEA15E3);
 
         carTypeEntities.forEach(carTypeEntity -> {
 //            carTypeEntity.carTypeName = "MX11";
