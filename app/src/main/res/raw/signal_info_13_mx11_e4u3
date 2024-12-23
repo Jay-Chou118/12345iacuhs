@@ -1,0 +1,109 @@
+FrntMotSigGrpChks#13#113#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+FrntMotSigGrpCntr#13#113#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+FrntMotActTq#13#113#false#false#23#15#0.1#-1638.3#Front motor actual torque  at motor output axle .#0.0#0.0#0.0#{"32767": "Invalid"}#MX11#E4U3
+FrntMotActSpd#13#113#false#false#39#16#1.0#-32768.0#Front motor actual speed#0.0#0.0#0.0#{"65535": "Invalid"}#MX11#E4U3
+FrntMotMaxDynTqCp#13#113#false#false#55#10#1#0#Front motor maximum dynamic torque capacity at motor output axle .#0.0#0.0#0.0#null#MX11#E4U3
+FrntMotMinDynTqCp#13#113#false#false#71#10#1#-1023#Front motor minimum dynamic torque capacity at motor output axle .#0.0#0.0#0.0#null#MX11#E4U3
+FrntMotAglRslvr#13#113#false#false#87#12#0.1#0.0#Front motor angle resolver#0.0#0.0#0.0#null#MX11#E4U3
+FrntMotActCur#13#161#false#false#7#14#0.1#-819.1#Front motor actual current on DC bus  \nNegative means current flow from front motor to HV battery  positive means current flow from HV battery to front motor.#0.0#0.0#0.0#null#MX11#E4U3
+FrntMotBoostModAvl#13#161#false#false#9#1#1#0#Front motor boost mode available#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MX11#E4U3
+FrntMotActDampgSts#13#161#false#false#8#1#1#0#Front motor active damping status.#0.0#0.0#0.0#{"0": "off", "1": "on"}#MX11#E4U3
+FrntMotActUSigGrpChks#13#161#false#false#23#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+FrntMotActUSigGrpCntr#13#161#false#false#27#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+FrntMotActU#13#161#false#false#39#14#0.1#0.0#Front motor actual voltage#0.0#0.0#0.0#{"16383": "Invalid"}#MX11#E4U3
+FrntMotFltLvlIndcnSigGrpChks#13#161#false#false#55#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+FrntMotFltLvlIndcnSigGrpCntr#13#161#false#false#59#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+FrntMotSfSpdMax#13#161#false#false#71#16#1#-32768#Front motor safe speed maximum#0.0#0.0#0.0#null#MX11#E4U3
+FrntMotFltLvlIndcn#13#161#false#false#87#3#1#0#Front motor fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0_DTCOnly", "2": "Fault_Lv1_PowerLimited", "3": "Fault_Lv2_Recoverable", "4": "Fault_Lv3_Not_recoverable", "5": "Fault_Lv4_Crash"}#MX11#E4U3
+ClutchPosSts#13#161#false#false#95#3#1#0#EDS反馈的脱开装置的位置信号\nCluntch postision status from EDS#0.0#0.0#0.0#{"0": "ini", "1": "Engaged", "2": "Engaging", "3": "Disengaged", "4": "Disengaging", "5": "Unknown"}#MX11#E4U3
+EdsSpdModCtrlReq#13#161#false#false#92#2#1#0#EDS请求进入转速模式\nEDS Request to enter speed mode#0.0#0.0#0.0#{"0": "ini", "1": "YES", "2": "No"}#MX11#E4U3
+FbCluStsFromEDS#13#161#false#false#90#3#1#0#EDS反馈的脱开装置可用性\nFeedback clutch status from EDS#0.0#0.0#0.0#{"0": "ini", "1": "available", "2": "not_available", "3": "Fault"}#MX11#E4U3
+FrntMotModStsSigGrpChks#13#161#false#false#103#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+FrntMotModStsSigGrpCntr#13#161#false#false#107#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+FrntMotModSts#13#161#false#false#119#5#1#0#Front motor mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "9": "activeDischarge", "12": "OffsetCal", "13": "Failure", "14": "After_Run"}#MX11#E4U3
+FrntMotDrtSts#13#161#false#false#123#1#1#0#Front motor derating status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MX11#E4U3
+FEDSPtFusionCanfdNodeAddress#13#1303#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MX11#E4U3
+FEDSPtFusionCanfdActiveWakeup#13#1303#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MX11#E4U3
+FEDSPtFusionCanfdRepeatMsgReq#13#1303#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MX11#E4U3
+FEDSPtFusionCanfdRepeatMsgSt#13#1303#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MX11#E4U3
+UDB37DEDS#13#1303#false#false#37#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+NMKeepAwkRsnFEDS#13#1303#false#false#48#9#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCUReMotReqSigGrpChks#13#112#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCUReMotModReq#13#112#false#false#15#4#1#0#Rear motor mode request#0.0#0.0#0.0#{"0": "Standby", "1": "Offset_Calibration_Mode_1", "2": "Offset_Calibration_Mode_2", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_Discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Buck_Control"}#MX11#E4U3
+VCUReMotReqSigGrpCntr#13#112#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCUReMotOverBoostEna#13#112#false#false#24#1#1#0#Rear motor over boost enable#0.0#0.0#0.0#{"0": "off", "1": "on"}#MX11#E4U3
+VCUReMotSpdReq#13#112#false#false#39#16#1#-32767#Rear motor speed request  at motor output shaft#0.0#0.0#0.0#null#MX11#E4U3
+VCUFrntMotReqSigGrpChks#13#112#false#false#79#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCUFrntMotModReq#13#112#false#false#87#4#1#0#Front motor mode request#0.0#0.0#0.0#{"0": "Standby", "1": "Offset_Calibration_Mode_1", "2": "Offset_Calibration_Mode_2", "3": "Torque_Control", "4": "Speed_Control", "5": "Reserved", "6": "Reserved", "7": "Reserved", "8": "Reserved", "9": "Active_Discharge"}#MX11#E4U3
+VCUFrntMotReqSigGrpCntr#13#112#false#false#83#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCUFrntMotOverBoostEna#13#112#false#false#96#1#1#0#Front motor over boost enable#0.0#0.0#0.0#{"0": "off", "1": "on"}#MX11#E4U3
+VCUFrntMotSpdReq#13#112#false#false#111#16#1#-32767#Front motor speed request  at motor output shaft#0.0#0.0#0.0#null#MX11#E4U3
+FrntMotTqReqSigGrpChks#13#112#false#false#127#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+FrntMotTqReqSigGrpCntr#13#112#false#false#131#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCUFrntMotTqReq#13#112#false#false#143#15#0.1#-1638.3#Front motor torque request#0.0#0.0#0.0#null#MX11#E4U3
+ReMotTqReqSigGrpChks#13#112#false#false#159#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ReMotTqReqSigGrpCntr#13#112#false#false#163#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+VCUReMotTqReq#13#112#false#false#175#15#0.1#-1638.3#Rear motor torque request#0.0#0.0#0.0#null#MX11#E4U3
+CluEngmtReqFromVCU#13#112#false#false#187#2#1#0#VCU对脱开装置结合目标状态请求\nClutch Engagement Request from VCU#0.0#0.0#0.0#{"0": "NoRequest", "1": "Engage", "2": "Disengage"}#MX11#E4U3
+VCUFrntMotDampgModReq#13#112#false#false#199#3#1#0#Front motor damping mode request#0.0#0.0#0.0#{"0": "No_req", "1": "Low_damping", "2": "Medium_damping", "3": "High_damping", "4": "Adas_damping", "5": "TBD", "6": "TBD", "7": "TBD"}#MX11#E4U3
+VCUReMotDampgModReq#13#112#false#false#196#3#1#0#Rear motor damping mode request#0.0#0.0#0.0#{"0": "No_req", "1": "Low_damping", "2": "Medium_damping", "3": "High_damping", "4": "Adas_damping", "5": "TBD", "6": "TBD", "7": "TBD"}#MX11#E4U3
+UDB23FZCU#13#1309#false#false#23#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB22FZCU#13#1309#false#false#22#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB21FZCU#13#1309#false#false#21#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB20FZCU#13#1309#false#false#20#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB19FZCU#13#1309#false#false#19#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB18FZCU#13#1309#false#false#18#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB17FZCU#13#1309#false#false#17#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB31FZCU#13#1309#false#false#31#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB30FZCU#13#1309#false#false#30#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB29FZCU#13#1309#false#false#29#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB28FZCU#13#1309#false#false#28#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB27FZCU#13#1309#false#false#27#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB26FZCU#13#1309#false#false#26#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB25FZCU#13#1309#false#false#25#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB24FZCU#13#1309#false#false#24#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB39FZCU#13#1309#false#false#39#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB38FZCU#13#1309#false#false#38#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB37FZCU#13#1309#false#false#37#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB36FZCU#13#1309#false#false#36#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB35FZCU#13#1309#false#false#35#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB34FZCU#13#1309#false#false#34#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB33FZCU#13#1309#false#false#33#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB32FZCU#13#1309#false#false#32#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB47FZCU#13#1309#false#false#47#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB46FZCU#13#1309#false#false#46#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB45FZCU#13#1309#false#false#45#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB44FZCU#13#1309#false#false#44#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB43FZCU#13#1309#false#false#43#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB42FZCU#13#1309#false#false#42#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB41FZCU#13#1309#false#false#41#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+UDB40FZCU#13#1309#false#false#40#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+NMKeepAwkRsnFZCU#13#1309#false#false#48#9#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ReMotSigGrpChks#13#114#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ReMotSigGrpCntr#13#114#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ReMotActTq#13#114#false#false#23#15#0.1#-1638.3#Rear motor actual torque  at motor output axle .#0.0#0.0#0.0#{"32767": "Invalid"}#MX11#E4U3
+ReMotActSpd#13#114#false#false#39#16#1.0#-32768.0#Rear motor actual speed#0.0#0.0#0.0#{"65535": "Invalid"}#MX11#E4U3
+ReMotMaxDynTqCp#13#114#false#false#55#10#1#0#Rear motor maximum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MX11#E4U3
+ReMotMinDynTqCp#13#114#false#false#71#10#1#-1023#Rear motor minimum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MX11#E4U3
+ReMotAglRslvr#13#114#false#false#87#12#0.1#0.0#Rear motor angle resolver#0.0#0.0#0.0#null#MX11#E4U3
+ReMotActCur#13#163#false#false#7#14#0.1#-819.1#Rear motor actual current on DC bus  \nNegative means current flow from rear motor to HV battery  positive means current flow from HV battery to rear motor.#0.0#0.0#0.0#null#MX11#E4U3
+ReMotBoostModAvl#13#163#false#false#9#1#1#0#Rear motor boost mode available#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MX11#E4U3
+ReMotActDampgSts#13#163#false#false#8#1#1#0#Rear motor active damping status.#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MX11#E4U3
+ReMotDrtSts#13#163#false#false#32#1#1#0#Rear motor derating Status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MX11#E4U3
+ReMotStSigGrpChks#13#163#false#false#47#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ReMotFltLvlIndcn#13#163#false#false#54#3#1#0#Rear motor fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0_DTCOnly", "2": "Fault_Lv1_PowerLimited", "3": "Fault_Lv2_Recoverable", "4": "Fault_Lv3_Not_Recoverable", "5": "Fault_Lv4_Crash"}#MX11#E4U3
+ReMotStSigGrpCntr#13#163#false#false#51#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ReMotSfSpdMax#13#163#false#false#63#16#1.0#-32768.0#Rear motor safe speed maximum#0.0#0.0#0.0#{"65535": "Invalid"}#MX11#E4U3
+ReMotSfStConfig#13#163#false#false#79#2#1#0#Rear Motor safe state configuration#0.0#0.0#0.0#{"1": "ASC", "2": "FreeWheeling"}#MX11#E4U3
+ReMotModStsSigGrpChks#13#163#false#false#207#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ReMotModStsSigGrpCntr#13#163#false#false#211#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ReMotModSts#13#163#false#false#223#5#1#0#Rear motor mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Booster_discharge_finished", "12": "OffsetCal", "13": "Failure", "14": "After_Run", "15": "Buck_Control"}#MX11#E4U3
+ReMotActUSigGrpChks#13#163#false#false#231#8#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ReMotActUSigGrpCntr#13#163#false#false#235#4#1#0##0.0#0.0#0.0#null#MX11#E4U3
+ReMotActU#13#163#false#false#247#14#0.1#0.0#Rear motor actual voltage#0.0#0.0#0.0#{"16383": "Invalid"}#MX11#E4U3
+REDSPtFusionNodeAddress#13#1300#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MX11#E4U3
+REDSPtFusionActiveWakeup#13#1300#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MX11#E4U3
+REDSPtFusionRepeatMsgReq#13#1300#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MX11#E4U3
+REDSPtFusionRepeatMsgSt#13#1300#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MX11#E4U3
+UDB37REDS#13#1300#false#false#37#1#1#0##0.0#0.0#0.0#null#MX11#E4U3
+NMKeepAwkRsnREDS#13#1300#false#false#48#9#1#0##0.0#0.0#0.0#null#MX11#E4U3

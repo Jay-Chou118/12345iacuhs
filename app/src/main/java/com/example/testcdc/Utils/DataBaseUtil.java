@@ -41,7 +41,7 @@ public class DataBaseUtil {
     }
 
 
-    public static void copyDataBase(Context context,String dbName){
+    public static void copyDataBase(Context context, String dbName) {
         String databaseFilePath = context.getDatabasePath(dbName).getPath();
         FileOutputStream os = null;// 得到数据库文件的写入流
         InputStream is = null;
@@ -63,10 +63,9 @@ public class DataBaseUtil {
     }
 
 
-
-    public static void initDataFromCsv(Context context){
-       // Log.e(TAG,"2222 initDataFromCsv");
-        Log.e(TAG,"initDataFromCsv");
+    public static void initDataFromCsv(Context context) {
+        // Log.e(TAG,"2222 initDataFromCsv");
+        Log.e(TAG, "initDataFromCsv");
         ArrayList<Integer> files = new ArrayList<>();
 //        files.add(R.raw.signal_info_1_mx11_e4);
 //        files.add(R.raw.signal_info_2_mx11_e4);
@@ -75,12 +74,114 @@ public class DataBaseUtil {
 //        files.add(R.raw.signal_info_6_mx11_e4);
 //        files.add(R.raw.signal_info_7_mx11_e4);
 
+        files.add(R.raw.signal_info_2_ms11u_e4bugfix);
+        files.add(R.raw.signal_info_3_ms11u_e4bugfix);
+        files.add(R.raw.signal_info_4_ms11u_e4bugfix);
+        files.add(R.raw.signal_info_5_ms11u_e4bugfix);
+        files.add(R.raw.signal_info_9_ms11u_e4bugfix);
+        files.add(R.raw.signal_info_10_ms11u_e4bugfix);
+        files.add(R.raw.signal_info_11_ms11u_e4bugfix);
+        files.add(R.raw.signal_info_12_ms11u_e4bugfix);
+        files.add(R.raw.signal_info_13_ms11u_e4bugfix);
+        files.add(R.raw.signal_info_14_ms11u_e4bugfix);
+        files.add(R.raw.signal_info_15_ms11u_e4bugfix);
+
+        files.add(R.raw.signal_info_2_ms11u_e4u1);
+        files.add(R.raw.signal_info_3_ms11u_e4u1);
+        files.add(R.raw.signal_info_4_ms11u_e4u1);
+        files.add(R.raw.signal_info_5_ms11u_e4u1);
+        files.add(R.raw.signal_info_9_ms11u_e4u1);
+        files.add(R.raw.signal_info_10_ms11u_e4u1);
+        files.add(R.raw.signal_info_11_ms11u_e4u1);
+        files.add(R.raw.signal_info_12_ms11u_e4u1);
+        files.add(R.raw.signal_info_13_ms11u_e4u1);
+        files.add(R.raw.signal_info_14_ms11u_e4u1);
+        files.add(R.raw.signal_info_15_ms11u_e4u1);
+
+        files.add(R.raw.signal_info_2_ms11u_e4u2);
+        files.add(R.raw.signal_info_3_ms11u_e4u2);
+        files.add(R.raw.signal_info_4_ms11u_e4u2);
+        files.add(R.raw.signal_info_5_ms11u_e4u2);
+        files.add(R.raw.signal_info_9_ms11u_e4u2);
+        files.add(R.raw.signal_info_10_ms11u_e4u2);
+        files.add(R.raw.signal_info_11_ms11u_e4u2);
+        files.add(R.raw.signal_info_12_ms11u_e4u2);
+        files.add(R.raw.signal_info_13_ms11u_e4u2);
+        files.add(R.raw.signal_info_14_ms11u_e4u2);
+        files.add(R.raw.signal_info_15_ms11u_e4u2);
+
+        files.add(R.raw.signal_info_2_ms11u_e4u3);
+        files.add(R.raw.signal_info_3_ms11u_e4u3);
+        files.add(R.raw.signal_info_4_ms11u_e4u3);
+        files.add(R.raw.signal_info_5_ms11u_e4u3);
+        files.add(R.raw.signal_info_9_ms11u_e4u3);
+        files.add(R.raw.signal_info_10_ms11u_e4u3);
+        files.add(R.raw.signal_info_11_ms11u_e4u3);
+        files.add(R.raw.signal_info_12_ms11u_e4u3);
+        files.add(R.raw.signal_info_13_ms11u_e4u3);
+        files.add(R.raw.signal_info_14_ms11u_e4u3);
+        files.add(R.raw.signal_info_15_ms11u_e4u3);
+
+        files.add(R.raw.signal_info_2_ms11u_25rc02);
+        files.add(R.raw.signal_info_3_ms11u_25rc02);
+        files.add(R.raw.signal_info_4_ms11u_25rc02);
+        files.add(R.raw.signal_info_5_ms11u_25rc02);
+        files.add(R.raw.signal_info_9_ms11u_25rc02);
+        files.add(R.raw.signal_info_10_ms11u_25rc02);
+        files.add(R.raw.signal_info_11_ms11u_25rc02);
+        files.add(R.raw.signal_info_12_ms11u_25rc02);
+        files.add(R.raw.signal_info_13_ms11u_25rc02);
+        files.add(R.raw.signal_info_14_ms11u_25rc02);
+        files.add(R.raw.signal_info_15_ms11u_25rc02);
+
+        files.add(R.raw.signal_info_1_mx11_eea15_e3);
+        files.add(R.raw.signal_info_2_mx11_eea15_e3);
+        files.add(R.raw.signal_info_3_mx11_eea15_e3);
+        files.add(R.raw.signal_info_4_mx11_eea15_e3);
+        files.add(R.raw.signal_info_6_mx11_eea15_e3);
+        files.add(R.raw.signal_info_7_mx11_eea15_e3);
+        files.add(R.raw.signal_info_13_mx11_eea15_e3);
+
+        files.add(R.raw.signal_info_1_mx11_eea15_e4);
+        files.add(R.raw.signal_info_2_mx11_eea15_e4);
+        files.add(R.raw.signal_info_3_mx11_eea15_e4);
+        files.add(R.raw.signal_info_4_mx11_eea15_e4);
+        files.add(R.raw.signal_info_6_mx11_eea15_e4);
+        files.add(R.raw.signal_info_7_mx11_eea15_e4);
+        files.add(R.raw.signal_info_13_mx11_eea15_e4);
+
+        files.add(R.raw.signal_info_1_mx11_e4u2);
+        files.add(R.raw.signal_info_2_mx11_e4u2);
+        files.add(R.raw.signal_info_3_mx11_e4u2);
+        files.add(R.raw.signal_info_4_mx11_e4u2);
+        files.add(R.raw.signal_info_6_mx11_e4u2);
+        files.add(R.raw.signal_info_7_mx11_e4u2);
+        files.add(R.raw.signal_info_13_mx11_e4u2);
+
+        files.add(R.raw.signal_info_1_mx11_e4u3);
+        files.add(R.raw.signal_info_2_mx11_e4u3);
+        files.add(R.raw.signal_info_3_mx11_e4u3);
+        files.add(R.raw.signal_info_4_mx11_e4u3);
+        files.add(R.raw.signal_info_6_mx11_e4u3);
+        files.add(R.raw.signal_info_7_mx11_e4u3);
+        files.add(R.raw.signal_info_13_mx11_e4u3);
+
+        files.add(R.raw.signal_info_1_mx11_e4u3);
+        files.add(R.raw.signal_info_1_mx11_e4u31);
+        files.add(R.raw.signal_info_2_mx11_e4u31);
+        files.add(R.raw.signal_info_3_mx11_e4u31);
+        files.add(R.raw.signal_info_4_mx11_e4u31);
+        files.add(R.raw.signal_info_6_mx11_e4u31);
+        files.add(R.raw.signal_info_7_mx11_e4u31);
+        files.add(R.raw.signal_info_13_mx11_e4u31);
+
         files.add(R.raw.signal_info_1_mx11_e3);
         files.add(R.raw.signal_info_2_mx11_e3);
         files.add(R.raw.signal_info_3_mx11_e3);
         files.add(R.raw.signal_info_4_mx11_e3);
         files.add(R.raw.signal_info_6_mx11_e3);
         files.add(R.raw.signal_info_7_mx11_e3);
+        files.add(R.raw.signal_info_13_mx11_e3);
 
         files.add(R.raw.signal_info_1_ms11_e3);
         files.add(R.raw.signal_info_2_ms11_e3);
@@ -140,7 +241,6 @@ public class DataBaseUtil {
         files.add(R.raw.signal_info_35_ms11_e4u2);
         files.add(R.raw.signal_info_36_ms11_e4u2);
         files.add(R.raw.signal_info_37_ms11_e4u2);
-
 
 
         files.add(R.raw.signal_info_2_ms11_e4u3_0812);
@@ -352,13 +452,12 @@ public class DataBaseUtil {
 //        SignalInfoDao signalInfoDao = MyApplication.getInstance().getMx11E4Database().signalInfoDao();
 //        List<SignalInfo> signalInfos = new ArrayList<>();
 
-        files.forEach(file->{
+        files.forEach(file -> {
             try {
                 InputStream is = context.getResources().openRawResource(file);// 得到数据库文件的数据流
                 BufferedReader reader = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
                 String line;
-                while ((line =  reader.readLine()) !=null)
-                {
+                while ((line = reader.readLine()) != null) {
 //                    Log.e(TAG,line);
                     String[] data = line.split("#");   // 使用井号“#”作为分隔符
 //                    Log.e(TAG, Arrays.toString(data));
@@ -390,20 +489,19 @@ public class DataBaseUtil {
                 reader.close();
 //                Log.i(TAG,"读取csv文件成功 " + file);
             } catch (Exception e) {
-                Log.e(TAG,e.toString());
+                Log.e(TAG, e.toString());
             }
 //            signalInfoDao.insertAll(signalInfos);
-              Log.e(TAG,"signal insert finished");
+            Log.e(TAG, "signal insert finished");
 
         });
 
     }
 
-    public static void initMsgFromCsv(Context ctx)
-    {
+    public static void initMsgFromCsv(Context ctx) {
         //Log.e(TAG, "2222 initMsgFromCsv " );
 
-        Log.e(TAG, "initMsgFromCsv " );
+        Log.e(TAG, "initMsgFromCsv ");
         ArrayList<Integer> files = new ArrayList<>();
 
         files.add(R.raw.msg_info_1);
@@ -412,6 +510,106 @@ public class DataBaseUtil {
         files.add(R.raw.msg_info_4);
         files.add(R.raw.msg_info_6);
         files.add(R.raw.msg_info_7);
+
+        files.add(R.raw.msg_info_2_ms11u_e4bugfix);
+        files.add(R.raw.msg_info_3_ms11u_e4bugfix);
+        files.add(R.raw.msg_info_4_ms11u_e4bugfix);
+        files.add(R.raw.msg_info_5_ms11u_e4bugfix);
+        files.add(R.raw.msg_info_9_ms11u_e4bugfix);
+        files.add(R.raw.msg_info_10_ms11u_e4bugfix);
+        files.add(R.raw.msg_info_11_ms11u_e4bugfix);
+        files.add(R.raw.msg_info_12_ms11u_e4bugfix);
+        files.add(R.raw.msg_info_13_ms11u_e4bugfix);
+        files.add(R.raw.msg_info_14_ms11u_e4bugfix);
+        files.add(R.raw.msg_info_15_ms11u_e4bugfix);
+
+        files.add(R.raw.msg_info_2_ms11u_e4u1);
+        files.add(R.raw.msg_info_3_ms11u_e4u1);
+        files.add(R.raw.msg_info_4_ms11u_e4u1);
+        files.add(R.raw.msg_info_5_ms11u_e4u1);
+        files.add(R.raw.msg_info_9_ms11u_e4u1);
+        files.add(R.raw.msg_info_10_ms11u_e4u1);
+        files.add(R.raw.msg_info_11_ms11u_e4u1);
+        files.add(R.raw.msg_info_12_ms11u_e4u1);
+        files.add(R.raw.msg_info_13_ms11u_e4u1);
+        files.add(R.raw.msg_info_14_ms11u_e4u1);
+        files.add(R.raw.msg_info_15_ms11u_e4u1);
+
+        files.add(R.raw.msg_info_2_ms11u_e4u2);
+        files.add(R.raw.msg_info_3_ms11u_e4u2);
+        files.add(R.raw.msg_info_4_ms11u_e4u2);
+        files.add(R.raw.msg_info_5_ms11u_e4u2);
+        files.add(R.raw.msg_info_9_ms11u_e4u2);
+        files.add(R.raw.msg_info_10_ms11u_e4u2);
+        files.add(R.raw.msg_info_11_ms11u_e4u2);
+        files.add(R.raw.msg_info_12_ms11u_e4u2);
+        files.add(R.raw.msg_info_13_ms11u_e4u2);
+        files.add(R.raw.msg_info_14_ms11u_e4u2);
+        files.add(R.raw.msg_info_15_ms11u_e4u2);
+
+        files.add(R.raw.msg_info_2_ms11u_e4u3);
+        files.add(R.raw.msg_info_3_ms11u_e4u3);
+        files.add(R.raw.msg_info_4_ms11u_e4u3);
+        files.add(R.raw.msg_info_5_ms11u_e4u3);
+        files.add(R.raw.msg_info_9_ms11u_e4u3);
+        files.add(R.raw.msg_info_10_ms11u_e4u3);
+        files.add(R.raw.msg_info_11_ms11u_e4u3);
+        files.add(R.raw.msg_info_12_ms11u_e4u3);
+        files.add(R.raw.msg_info_13_ms11u_e4u3);
+        files.add(R.raw.msg_info_14_ms11u_e4u3);
+        files.add(R.raw.msg_info_15_ms11u_e4u3);
+
+        files.add(R.raw.msg_info_2_ms11u_25rc02);
+        files.add(R.raw.msg_info_3_ms11u_25rc02);
+        files.add(R.raw.msg_info_4_ms11u_25rc02);
+        files.add(R.raw.msg_info_5_ms11u_25rc02);
+        files.add(R.raw.msg_info_9_ms11u_25rc02);
+        files.add(R.raw.msg_info_10_ms11u_25rc02);
+        files.add(R.raw.msg_info_11_ms11u_25rc02);
+        files.add(R.raw.msg_info_12_ms11u_25rc02);
+        files.add(R.raw.msg_info_13_ms11u_25rc02);
+        files.add(R.raw.msg_info_14_ms11u_25rc02);
+        files.add(R.raw.msg_info_15_ms11u_25rc02);
+
+        files.add(R.raw.msg_info_1_mx11_eea15_e3);
+        files.add(R.raw.msg_info_2_mx11_eea15_e3);
+        files.add(R.raw.msg_info_3_mx11_eea15_e3);
+        files.add(R.raw.msg_info_4_mx11_eea15_e3);
+        files.add(R.raw.msg_info_6_mx11_eea15_e3);
+        files.add(R.raw.msg_info_7_mx11_eea15_e3);
+        files.add(R.raw.msg_info_13_mx11_eea15_e3);
+
+        files.add(R.raw.msg_info_1_mx11_eea15_e4);
+        files.add(R.raw.msg_info_2_mx11_eea15_e4);
+        files.add(R.raw.msg_info_3_mx11_eea15_e4);
+        files.add(R.raw.msg_info_4_mx11_eea15_e4);
+        files.add(R.raw.msg_info_6_mx11_eea15_e4);
+        files.add(R.raw.msg_info_7_mx11_eea15_e4);
+        files.add(R.raw.msg_info_13_mx11_eea15_e4);
+
+        files.add(R.raw.msg_info_1_mx11_e4u2);
+        files.add(R.raw.msg_info_2_mx11_e4u2);
+        files.add(R.raw.msg_info_3_mx11_e4u2);
+        files.add(R.raw.msg_info_4_mx11_e4u2);
+        files.add(R.raw.msg_info_6_mx11_e4u2);
+        files.add(R.raw.msg_info_7_mx11_e4u2);
+        files.add(R.raw.msg_info_13_mx11_e4u2);
+
+        files.add(R.raw.msg_info_1_mx11_e4u3);
+        files.add(R.raw.msg_info_2_mx11_e4u3);
+        files.add(R.raw.msg_info_3_mx11_e4u3);
+        files.add(R.raw.msg_info_4_mx11_e4u3);
+        files.add(R.raw.msg_info_6_mx11_e4u3);
+        files.add(R.raw.msg_info_7_mx11_e4u3);
+        files.add(R.raw.msg_info_13_mx11_e4u3);
+
+        files.add(R.raw.msg_info_1_mx11_e4u31);
+        files.add(R.raw.msg_info_2_mx11_e4u31);
+        files.add(R.raw.msg_info_3_mx11_e4u31);
+        files.add(R.raw.msg_info_4_mx11_e4u31);
+        files.add(R.raw.msg_info_6_mx11_e4u31);
+        files.add(R.raw.msg_info_7_mx11_e4u31);
+        files.add(R.raw.msg_info_13_mx11_e4u31);
 
         files.add(R.raw.msg_info_2_ms11_rc06);
         files.add(R.raw.msg_info_3_ms11_rc06);
@@ -685,13 +883,12 @@ public class DataBaseUtil {
 
 //        MsgInfoDao msgInfoDao = MyApplication.getInstance().getMx11E4Database().msgInfoDao();
 //        List<MsgInfoEntity> msgInfoEntities = new ArrayList<>();
-        files.forEach(file->{
+        files.forEach(file -> {
             try {
                 InputStream is = ctx.getResources().openRawResource(file);// 得到数据库文件的数据流
                 BufferedReader reader = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
                 String line;
-                while ((line =  reader.readLine()) !=null)
-                {
+                while ((line = reader.readLine()) != null) {
 //                    Log.e(TAG,line);
                     String[] data = line.split(",");   // 使用逗号作为分隔符
 //                    Log.e(TAG, "data " + Arrays.toString(data));
@@ -701,13 +898,13 @@ public class DataBaseUtil {
                     msgInfo.CANId = Integer.parseInt(data[2]);
                     msgInfo.sendType = data[3];
                     msgInfo.cycleTime = Double.parseDouble(data[4]);
-                    msgInfo.comment =  data[5];
+                    msgInfo.comment = data[5];
                     msgInfo.BUSName = data[6];
                     msgInfo.senders = data[7];
                     msgInfo.receivers = data[8];
                     msgInfo.CANType = data[9];
 
-                    msgInfo.cid = MyApplication.getInstance().getDatabase().msgInfoDao().getCidByName(data[10],data[11]);
+                    msgInfo.cid = MyApplication.getInstance().getDatabase().msgInfoDao().getCidByName(data[10], data[11]);
 //                    msgInfoEntities.add(msgInfo);
 //                    Log.e(TAG, "msgInfo  :   ZZZZZZZZ" + msgInfo);
                     MyApplication.getInstance().getDatabase().msgInfoDao().insert(msgInfo);
@@ -717,17 +914,16 @@ public class DataBaseUtil {
                 reader.close();
 //                Log.i(TAG,"读取msg csv文件成功 " + file);
             } catch (Exception e) {
-                Log.e(TAG,e.toString());
+                Log.e(TAG, e.toString());
             }
 //            msgInfoDao.insertAll(msgInfoEntities);
-              Log.e(TAG,"msg insert finished");
+            Log.e(TAG, "msg insert finished");
 
         });
     }
 
 
-    public static void init_carType()
-    {
+    public static void init_carType() {
         /**********************************************************************************************/
         // 初始化 车型数据库
         List<CarTypeEntity> carTypeEntities = new ArrayList<>();
@@ -868,7 +1064,6 @@ public class DataBaseUtil {
             MyApplication.getInstance().getDatabase().carTypeDao().insert(carTypeEntity);
         });
     }
-
 
 
 }

@@ -1,0 +1,409 @@
+FrntMotSigGrpChks#13#113#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotSigGrpCntr#13#113#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotActTq#13#113#false#false#23#15#0.1#-1638.3#Front motor actual torque  at motor output axle .#0.0#0.0#0.0#{"32767": "Invalid"}#MX11#EEA1.5_E3
+FrntMotActSpd#13#113#false#false#39#16#1.0#-32768.0#Front motor actual speed#0.0#0.0#0.0#{"65535": "Invalid"}#MX11#EEA1.5_E3
+FrntMotMaxDynTqCp#13#113#false#false#55#10#1#0#Front motor maximum dynamic torque capacity at motor output axle .#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotMinDynTqCp#13#113#false#false#71#10#1#-1023#Front motor minimum dynamic torque capacity at motor output axle .#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotAglRslvr#13#113#false#false#87#12#0.1#0.0#Front motor angle resolver#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotActCur#13#161#false#false#7#14#0.1#-819.1#Front motor actual current on DC bus  \nNegative means current flow from front motor to HV battery  positive means current flow from HV battery to front motor.#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotBoostModAvl#13#161#false#false#9#1#1#0#Front motor boost mode available#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MX11#EEA1.5_E3
+FrntMotActDampgSts#13#161#false#false#8#1#1#0#Front motor active damping status.#0.0#0.0#0.0#{"0": "off", "1": "on"}#MX11#EEA1.5_E3
+FrntMotActUSigGrpChks#13#161#false#false#23#8#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotActUSigGrpCntr#13#161#false#false#27#4#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotActU#13#161#false#false#39#14#0.1#0.0#Front motor actual voltage#0.0#0.0#0.0#{"16383": "Invalid"}#MX11#EEA1.5_E3
+FrntMotFltLvlIndcnSigGrpChks#13#161#false#false#55#8#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotFltLvlIndcnSigGrpCntr#13#161#false#false#59#4#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotSfSpdMax#13#161#false#false#71#16#1#-32768#Front motor safe speed maximum#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotFltLvlIndcn#13#161#false#false#87#3#1#0#Front motor fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0_DTCOnly", "2": "Fault_Lv1_PowerLimited", "3": "Fault_Lv2_Recoverable", "4": "Fault_Lv3_Not_recoverable", "5": "Fault_Lv4_Crash"}#MX11#EEA1.5_E3
+FrntMotModStsSigGrpChks#13#161#false#false#103#8#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotModStsSigGrpCntr#13#161#false#false#107#4#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotModSts#13#161#false#false#119#5#1#0#Front motor mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "9": "activeDischarge", "12": "OffsetCal", "13": "Failure", "14": "After_Run"}#MX11#EEA1.5_E3
+FrntMotDrtSts#13#161#false#false#123#1#1#0#Front motor derating status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MX11#EEA1.5_E3
+FEDSPtFusionCanfdNodeAddress#13#1303#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FEDSPtFusionCanfdActiveWakeup#13#1303#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MX11#EEA1.5_E3
+FEDSPtFusionCanfdRepeatMsgReq#13#1303#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MX11#EEA1.5_E3
+FEDSPtFusionCanfdRepeatMsgSt#13#1303#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MX11#EEA1.5_E3
+NMKeepAwkRsnFEDS#13#1303#false#false#48#9#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+VCUHvBattHeatCurLim#13#484#false#false#7#14#0.1#0.0#Hv battery pulse heating current limit#0.0#0.0#0.0#{"16383": "Invalid"}#MX11#EEA1.5_E3
+VCUReMotReqSigGrpChks#13#112#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+VCUReMotModReq#13#112#false#false#15#4#1#0#Rear motor mode request#0.0#0.0#0.0#{"0": "Standby", "1": "Offset_Calibration_Mode_1", "2": "Offset_Calibration_Mode_2", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_Discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Buck_Control"}#MX11#EEA1.5_E3
+VCUReMotReqSigGrpCntr#13#112#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+VCUReMotOverBoostEna#13#112#false#false#24#1#1#0#Rear motor over boost enable#0.0#0.0#0.0#{"0": "off", "1": "on"}#MX11#EEA1.5_E3
+VCUReMotSpdReq#13#112#false#false#39#16#1#-32767#Rear motor speed request  at motor output shaft#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+VCUFrntMotReqSigGrpChks#13#112#false#false#79#8#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+VCUFrntMotModReq#13#112#false#false#87#4#1#0#Front motor mode request#0.0#0.0#0.0#{"0": "Standby", "1": "Offset_Calibration_Mode_1", "2": "Offset_Calibration_Mode_2", "3": "Torque_Control", "4": "Speed_Control", "5": "Reserved", "6": "Reserved", "7": "Reserved", "8": "Reserved", "9": "Active_Discharge"}#MX11#EEA1.5_E3
+VCUFrntMotReqSigGrpCntr#13#112#false#false#83#4#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+VCUFrntMotOverBoostEna#13#112#false#false#96#1#1#0#Front motor over boost enable#0.0#0.0#0.0#{"0": "off", "1": "on"}#MX11#EEA1.5_E3
+VCUFrntMotSpdReq#13#112#false#false#111#16#1#-32767#Front motor speed request  at motor output shaft#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotTqReqSigGrpChks#13#112#false#false#127#8#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+FrntMotTqReqSigGrpCntr#13#112#false#false#131#4#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+VCUFrntMotTqReq#13#112#false#false#143#15#0.1#-1638.3#Front motor torque request#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotTqReqSigGrpChks#13#112#false#false#159#8#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotTqReqSigGrpCntr#13#112#false#false#163#4#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+VCUReMotTqReq#13#112#false#false#175#15#0.1#-1638.3#Rear motor torque request#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+VCUFrntMotDampgModReq#13#112#false#false#191#2#1#0#Front motor damping mode request#0.0#0.0#0.0#{"0": "No_req", "1": "Low_damping", "2": "Medium_damping", "3": "High_damping"}#MX11#EEA1.5_E3
+VCUReMotDampgModReq#13#112#false#false#189#2#1#0#Rear motor damping mode request#0.0#0.0#0.0#{"0": "No_req", "1": "Low_damping", "2": "Medium_damping", "3": "High_damping"}#MX11#EEA1.5_E3
+UDB23FZCU#13#1309#false#false#23#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB22FZCU#13#1309#false#false#22#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB21FZCU#13#1309#false#false#21#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB20FZCU#13#1309#false#false#20#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB19FZCU#13#1309#false#false#19#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB18FZCU#13#1309#false#false#18#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB17FZCU#13#1309#false#false#17#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB31FZCU#13#1309#false#false#31#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB30FZCU#13#1309#false#false#30#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB29FZCU#13#1309#false#false#29#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB28FZCU#13#1309#false#false#28#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB27FZCU#13#1309#false#false#27#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB26FZCU#13#1309#false#false#26#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB25FZCU#13#1309#false#false#25#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB24FZCU#13#1309#false#false#24#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB39FZCU#13#1309#false#false#39#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB38FZCU#13#1309#false#false#38#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB37FZCU#13#1309#false#false#37#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB36FZCU#13#1309#false#false#36#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB35FZCU#13#1309#false#false#35#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB34FZCU#13#1309#false#false#34#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB33FZCU#13#1309#false#false#33#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB32FZCU#13#1309#false#false#32#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB47FZCU#13#1309#false#false#47#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB46FZCU#13#1309#false#false#46#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB45FZCU#13#1309#false#false#45#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB44FZCU#13#1309#false#false#44#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB43FZCU#13#1309#false#false#43#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB42FZCU#13#1309#false#false#42#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB41FZCU#13#1309#false#false#41#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+UDB40FZCU#13#1309#false#false#40#1#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+NMKeepAwkRsnFZCU#13#1309#false#false#48#9#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotSigGrpChks#13#114#false#false#7#8#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotSigGrpCntr#13#114#false#false#11#4#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotActTq#13#114#false#false#23#15#0.1#-1638.3#Rear motor actual torque  at motor output axle .#0.0#0.0#0.0#{"32767": "Invalid"}#MX11#EEA1.5_E3
+ReMotActSpd#13#114#false#false#39#16#1.0#-32768.0#Rear motor actual speed#0.0#0.0#0.0#{"65535": "Invalid"}#MX11#EEA1.5_E3
+ReMotMaxDynTqCp#13#114#false#false#55#10#1#0#Rear motor maximum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotMinDynTqCp#13#114#false#false#71#10#1#-1023#Rear motor minimum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotAglRslvr#13#114#false#false#87#12#0.1#0.0#Rear motor angle resolver#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotActCur#13#163#false#false#7#14#0.1#-819.1#Rear motor actual current on DC bus  \nNegative means current flow from rear motor to HV battery  positive means current flow from HV battery to rear motor.#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotBoostModAvl#13#163#false#false#9#1#1#0#Rear motor boost mode available#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MX11#EEA1.5_E3
+ReMotActDampgSts#13#163#false#false#8#1#1#0#Rear motor active damping status.#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MX11#EEA1.5_E3
+ReMotDrtSts#13#163#false#false#32#1#1#0#Rear motor derating Status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MX11#EEA1.5_E3
+ReMotStSigGrpChks#13#163#false#false#47#8#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotFltLvlIndcn#13#163#false#false#54#3#1#0#Rear motor fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0_DTCOnly", "2": "Fault_Lv1_PowerLimited", "3": "Fault_Lv2_Recoverable", "4": "Fault_Lv3_Not_Recoverable", "5": "Fault_Lv4_Crash"}#MX11#EEA1.5_E3
+ReMotStSigGrpCntr#13#163#false#false#51#4#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotSfSpdMax#13#163#false#false#63#16#1.0#-32768.0#Rear motor safe speed maximum#0.0#0.0#0.0#{"65535": "Invalid"}#MX11#EEA1.5_E3
+ReMotSfStConfig#13#163#false#false#79#2#1#0#Rear Motor safe state configuration#0.0#0.0#0.0#{"1": "ASC", "2": "FreeWheeling"}#MX11#EEA1.5_E3
+ReMotModStsSigGrpChks#13#163#false#false#207#8#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotModStsSigGrpCntr#13#163#false#false#211#4#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotModSts#13#163#false#false#223#5#1#0#Rear motor mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Booster_discharge_finished", "12": "OffsetCal", "13": "Failure", "14": "After_Run", "15": "Buck_Control"}#MX11#EEA1.5_E3
+ReMotActUSigGrpChks#13#163#false#false#231#8#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotActUSigGrpCntr#13#163#false#false#235#4#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+ReMotActU#13#163#false#false#247#14#0.1#0.0#Rear motor actual voltage#0.0#0.0#0.0#{"16383": "Invalid"}#MX11#EEA1.5_E3
+REDSPtFusionNodeAddress#13#1300#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+REDSPtFusionActiveWakeup#13#1300#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MX11#EEA1.5_E3
+REDSPtFusionRepeatMsgReq#13#1300#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MX11#EEA1.5_E3
+REDSPtFusionRepeatMsgSt#13#1300#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MX11#EEA1.5_E3
+NMKeepAwkRsnREDS#13#1300#false#false#48#9#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotIndHeatgActPwrBkp#13#474#false#false#6#7#50#0#Rear left motor indirect heating actual power backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotIndHeatgMaxPwrCpBkp#13#474#false#false#14#7#50#0#Rear left motor indirect heating maximum power capacity backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotIndHeatgStsBkp#13#628#false#false#15#1#1#0#Rear left motor indirect heating status backup#0.0#0.0#0.0#{"0": "Not_available", "1": "Available"}#MX11#EEA1.5_E3
+RLMotOverSpdTimeoutBkp#13#628#false#false#14#1#1#0#Rear left motor Over speed timeout backup#0.0#0.0#0.0#{"0": "no_timeout", "1": "timeout"}#MX11#EEA1.5_E3
+RLMotCooltFlowReqBkp#13#628#false#false#13#6#0.25#0.0#Rear left motor coolant flow request backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotFltInfoActv1Bkp#13#628#false#false#23#9#1#0#fault information singal group  1  Rear left motor fault information active backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotFltInfoActv2Bkp#13#628#false#false#39#9#1#0#fault information singal group  2  Rear left motor fault information active backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotFltInfoActv3Bkp#13#628#false#false#55#9#1#0#fault information singal group  3  Rear left motor fault information active backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotFltInfoHist1Bkp#13#628#false#false#79#9#1#0#fault information singal group  1  Rear left motor fault information history backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotFltInfoHist2Bkp#13#628#false#false#95#9#1#0#fault information singal group  2  Rear left motor fault information history backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotFltInfoHist3Bkp#13#628#false#false#111#9#1#0#fault information singal group  3  Rear left motor fault information history backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotOilFlowEstimdBkp#13#628#false#false#113#10#0.05#0.0#Estimated oil flowrate for Rear left motor oil pump circuit.#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCooltTBkp#13#628#false#false#175#8#1#-40#Rear left motor coolant temperature backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotIvtTBkp#13#628#false#false#183#8#1#-40#Rear left motor inverter temperature backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotMotTBkp#13#628#false#false#191#8#1#-40#Rear left motor motor temperature backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotPtChVldBkpSigGrpChks#13#628#false#false#215#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotPtChVldBkp#13#628#false#false#220#1#1#0#Rear left motor Powertrains valid Channel backup#0.0#0.0#0.0#{"0": "PT_fusion_CANFD_valid", "1": "PT_CANFD_valid"}#MX11#EEA1.5_E3
+RLMotPtChVldBkpSigGrpCntr#13#628#false#false#219#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotOverBoostTimesLeBkp#13#949#false#false#7#13#1#0#Rear left motor Over boost times left backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotOverSpdTimesLeBkp#13#949#false#false#23#13#1#0#Rear left motor Over speed times left backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotLftRemaDCLk#13#971#false#false#7#16#0.002#0.0#DC Link capacitor remaining lifetime\n电容剩余寿命#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotLftRemaPwrModl#13#971#false#false#23#16#0.002#0.0#Power module remaining lifetime\n功率模块剩余寿命#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTAvrgDiodeMin#13#971#false#false#39#8#1#-40#Min average temperature of mosfet during driving cycle\n驾驶循环内二极管平均温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTAvrgMosMax#13#971#false#false#47#8#1#-40#Max average temperature of mosfet during driving cycle\n驾驶循环内晶体管平均温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTAvrgMosMin#13#971#false#false#55#8#1#-40#Min average temperature of mosfet during driving cycle\n驾驶循环内晶体管平均温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTCoolOilMax#13#971#false#false#63#8#1#-40#Max temperature of cooling water during driving cycle\n驾驶循环内冷却油温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTCoolOilMin#13#971#false#false#71#8#1#-40#Min temperature of cooling wator during driving cycle\n驾驶循环内冷却油温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTCoolWtrMax#13#971#false#false#79#8#1#-40#Max temperature of cooling water during driving cycle\n驾驶循环内冷却水温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTCoolWtrMin#13#971#false#false#87#8#1#-40#Min temperature of cooling wator during driving cycle\n驾驶循环内冷却水温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTDCLkCapMax#13#971#false#false#95#8#1#-40#Max temperature of DC Link capacitor during driving cycle\n驾驶循环内电容温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTDCLkCapMin#13#971#false#false#103#8#1#-40#Min temperature of DC Link capacitor during driving cycle\n驾驶循环内电容温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTGbxMax#13#971#false#false#111#8#1#-40#Max temperature of gear box during driving cycle\n驾驶循环内齿轮箱温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTGbxMin#13#971#false#false#119#8#1#-40#Min temperature of gear box during driving cycle\n驾驶循环内齿轮箱温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTAvrgDiodeMax#13#971#false#false#127#8#1#-40#Max average temperature of diode during driving cycle\n驾驶循环内二极管平均温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTqCalcdMax#13#971#false#false#135#16#0.1#-3276.8#Max calculated torque during driving cycle\n驾驶循环内电磁扭矩最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTqCalcdMin#13#971#false#false#151#16#0.1#-3276.8#Min calculated torque during driving cycle\n驾驶循环内电磁扭矩最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTRiseDiodeMax#13#971#false#false#167#8#1#-40#Max temperature rise of diode during diriving cycle\n驾驶循环内二极管最大温升#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTRiseMosMax#13#971#false#false#175#8#1#-40#Max temperature rise of mosfet during driving cycle\n驾驶循环内晶体管最大温升#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTRtrMax#13#971#false#false#183#8#1#-40#Max temperature of rator during driving cycle\n驾驶循环内电机转子温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTRtrMin#13#971#false#false#191#8#1#-40#Min temperature of rator during driving cycle\n驾驶循环内电机转子温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTStatMax#13#971#false#false#199#8#1#-40#Max temperature of stator during driving cycle\n驾驶循环内电机定子温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTStatMin#13#971#false#false#207#8#1#-40#Min temperature of stator during driving cycle\n驾驶循环内电机定子温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTStatIni#13#971#false#false#215#8#1#-40#Initial stator temperature when HV is setup\n电机定子初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotAglDeMax#13#973#false#false#7#16#0.1#0.0#Max deviation of angle monitoring between L1 and L2 software\n角度监控偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrAglDeFlt#13#973#false#false#23#8#1#0#Counter regarding over upper threshold of Angle mornitoring\n角度监控偏差超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrCurThrPhaSumFlt#13#973#false#false#31#8#1#0#Counter of fault regarding sumary of three phase current\n三相电流和超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrMosSnsrOverFlt#13#973#false#false#39#8#1#0#Counter regarding over upper threshold of mosfet sensor temperature\nMosfet温度传感器超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrMosSnsrUnderFlt#13#973#false#false#47#8#1#0#Counter regarding over lower threshold of mosfet sensor temperature\nMosfet温度传感器超下限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrStatSnsrOverFlt#13#973#false#false#55#8#1#0#Counter regarding over upper threshold of stator sensor temperature\n电机温度传感器超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrStatSnsrUnderFlt#13#973#false#false#63#8#1#0#Counter regarding over lower threshold of stator sensor temperature\n电机温度传感器超下限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrThrPhaCurZeroShift#13#973#false#false#71#8#1#0#三相电流零飘超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrUDCLkDe#13#973#false#false#79#8#1#0#电压偏差超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrUKl30OverFlt#13#973#false#false#87#8#1#0#Counter regarding over upper threshold of KL30 voltage\nKL30电压超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrUKl30UnderFlt#13#973#false#false#95#8#1#0#Counter regarding over lower threshold of KL30 voltage\nKL30电压超下限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrURslvrSqurSumOverFlt#13#973#false#false#103#8#1#0#Counter regarding over max sum of squares of resolver voltage \n旋转变压器平方和超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrURslvrSqurSumUnderFlt#13#973#false#false#111#8#1#0#Counter regarding under min sum of squares of resolver voltage \n旋转变压器平方和超下限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCurThrPhaSumDeMax#13#973#false#false#119#16#0.1#-3276.8#Max deviation of summary of three phase current\n三相电流和最大偏差值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCurThrPhaZeroShiftMax#13#973#false#false#135#16#0.1#-3276.8#Max zero shift of three phase current\n三相电流零飘最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTMosSnsrMax#13#973#false#false#151#8#1#-40#Max Mosfet sensor temperature\nMosfet温度传感器最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTMosSnsrMin#13#973#false#false#159#8#1#-40#Min Mosfet sensor temperature\nMosfet温度传感器最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTStatSnsrMax#13#973#false#false#167#8#1#-40#Max stator sensor temerature\n电机温度传感器最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTStatSnsrMin#13#973#false#false#175#8#1#-40#Min stator sensor temerature\n机温度传感器最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotUDCLkDeMax#13#973#false#false#183#16#0.1#0.0#Max deviation between DC link voltage in L1 and L2 software\n电压偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotUKl30Max#13#973#false#false#199#16#0.1#0.0#Max KL30 voltage\nKL30电压最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotUKl30Min#13#973#false#false#215#16#0.1#0.0#Min KL30 voltage\nKL30电压最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTCoolWtrIni#13#973#false#false#231#8#1#-40#Initial cooling water temperature when HV is setup\n冷却液初始温度 水温 高压上电完成时刻#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotAglOffsRslvr#13#987#false#false#7#12#0.1#0.0#Resolver offset angle\n旋变offset角度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLstAglOffsSlipTst#13#987#false#false#11#1#1#0#resolver offset angle in slip mode state\n旋变滑行角标角度状态#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MX11#EEA1.5_E3
+RLMotAglOffsSlipTst#13#987#false#false#23#12#0.1#0.0#resolver offset angle in slip mode\n旋变滑行角标角度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrGateDrvrFltHwRaw#13#987#false#false#39#8#1#0#Gate driver fault counter Raw fault counter without debounce \nGate Driver芯片驱动故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrMCURstUFltHwRaw#13#987#false#false#47#8#1#0#MCU Reset counter\nMCU Reset累计计数器#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrOverCurFltHwRaw#13#987#false#false#55#8#1#0#Hardware over current fault counter Raw fault counter without debounce \n硬件过流故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrOverUFltHwRaw#13#987#false#false#63#8#1#0#Hardware over voltage fault counter Raw fault counter without debounce \n硬件过压故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrSOPFltHwRaw#13#987#false#false#71#8#1#0#Shut off path fault counter Raw fault counter withour debounce \n关断路径检测故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrWdgFltHwRaw#13#987#false#false#79#8#1#0#MCU Wdg fault counter Raw fault counter without debounce \nMCU Wdg故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCurDCLkMax#13#987#false#false#87#16#0.1#-3276.8#Max DC Link current during driving cycle\n驾驶循环内直流母线电流最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCurDCLkMin#13#987#false#false#103#16#0.1#-3276.8#Min DC Link current during driving cycle\n驾驶循环内直流母线电流最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCurOffsSelfLrn1#13#987#false#false#119#8#1#-128#self learned offset value for current sensor ph1\n第一相电流传感器自学习值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCurOffsSelfLrn2#13#987#false#false#127#8#1#-128#self learned offset value for current sensor ph2\n第二相电流传感器自学习值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCurOffsSelfLrn3#13#987#false#false#135#8#1#-128#self learned offset value for current sensor ph3\n第三相电流传感器自学习值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotMotSpdMax#13#987#false#false#143#16#1.0#-3276.8#Max e motor speed during driving cycle\n驾驶循环内电机转速最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotPwrGenMax#13#987#false#false#159#16#0.1#-1000.0#Max calculated generating power during driving cycle\n驾驶循环内发电功率最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotPwrMotMax#13#987#false#false#175#16#0.1#0.0#Min Electric power during driving cycle\n驾驶循环内电动功率最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTCoolOilIni#13#987#false#false#191#8#1#-40#Initial cooling oil temperature when HV is setup\n冷却液初始温度 油温 高压上电完成时刻#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTIvtDBCIni1#13#987#false#false#199#8#1#-40#1st Phase DBC initial itemperature of Inverter when HV is setup\n控制器第1相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTIvtDBCIni2#13#987#false#false#207#8#1#-40#2nd Phase DBC initial itemperature of Inverter when HV is setup\n控制器第2相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTIvtDBCIni3#13#987#false#false#215#8#1#-40#3rd Phase DBC initial itemperature of Inverter when HV is setup\n控制器第3相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotUDCLkMax#13#987#false#false#223#16#0.1#0.0#Max DC Link voltage during driving cycle\n驾驶循环内直流母线电压最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotUDCLkMin#13#987#false#false#239#16#0.1#0.0#Min DC Link voltage during driving cycle\n驾驶循环内直流母线电压最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrCANCtrlrFltMax#13#989#false#false#7#8#1#0#Max Fault counter of CAN controller\nCAN控制器误计数器最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrRollgDeFltMax#13#989#false#false#15#8#1#0#Max deviation of rolling counter of E2E frames\nE2E报文Rolling Counter偏差最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrRollgFlt#13#989#false#false#23#8#1#0#Fault counter of rolling counter of E2E frames\nE2E报文Rolling Counter错误计数器#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrTqDeCmdL2Flt#13#989#false#false#31#8#1#0#Counter of over threshold of deviation between request torque and L2 torque\n转矩监控偏差 请求 VS 实际 超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrTqDeCmdL2OppstFlt#13#989#false#false#39#8#1#0#Counter of over threshold of opposite torque deviation between request torque and L2 torque\n转矩反向偏差 请求 VS 实际 超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotCntrTqDeL1L2Flt#13#989#false#false#47#8#1#0#Counter regarding over upper threshold of torque monitoring\n转矩估算偏差 L1 VS L2 超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTqDeCmdL2Max#13#989#false#false#55#16#0.1#-3276.8#Max torque deviation between request torque and L2 torque\n转矩监控偏差 请求 VS 实际 最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTqDeCmdL2OppstMax#13#989#false#false#71#16#0.1#-3276.8#Max opposite torque deviation between request torque and L2 torque\n转矩反向偏差 请求 VS 实际 最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTqDeL1L2Max#13#989#false#false#87#16#0.1#-3276.8#Max deviation between torque calculation between L1 and L2 software\n转矩估算偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotURslvrSqurSumMax#13#989#false#false#103#16#0.01#0.0#Max sum of squares of resolver voltage\n旋转变压器平方和最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotURslvrSqurSumMin#13#989#false#false#119#16#0.01#0.0#Min sum of squares of resolver voltage\n旋转变压器平方和最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotSigGrpChks#13#118#false#false#7#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotSigGrpCntr#13#118#false#false#11#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotActTq#13#118#false#false#23#15#0.1#-1638.3#Rear left motor actual torque  at motor output axle .#0.0#0.0#0.0#{"32767": "Invalid"}#MX11#EEA1.5_E3
+RLMotActSpd#13#118#false#false#39#16#1.0#-32768.0#Rear left motor actual speed#0.0#0.0#0.0#{"65535": "Invalid"}#MX11#EEA1.5_E3
+RLMotMaxDynTqCp#13#118#false#false#55#10#1#0#Rear left motor maximum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotMinDynTqCp#13#118#false#false#71#10#1#-1023#Rear left motor minimum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotFltLvlIndcn#13#118#false#false#87#3#1#0#Rear left motor fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0", "2": "Fault_Lv1", "3": "Fault_Lv2", "4": "Fault_Lv3", "5": "Fault_Lv4"}#MX11#EEA1.5_E3
+RLMotAglRslvr#13#118#false#false#95#12#0.1#0.0#Rear left Motor stator angle#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotActSfSt#13#118#false#false#111#3#1#0#Rear left Motor actual safe state#0.0#0.0#0.0#{"0": "normal", "1": "0Nm", "2": "VDSS", "3": "SDSS", "4": "permanent_ASC", "5": "permanent_FW", "6": "Reserve", "7": "Invalid"}#MX11#EEA1.5_E3
+RLMotActCur#13#174#false#false#7#14#0.1#-819.1#Rear left motor actual current on DC bus  \nNegative means current flow from Rear left motor to HV battery  positive means current flow from HV battery to Rear left motor.#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotBoostModAvl#13#174#false#false#9#1#1#0#Rear left motor boost mode available#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MX11#EEA1.5_E3
+RLMotActDampgSts#13#174#false#false#8#1#1#0#Rear left motor active damping status.#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MX11#EEA1.5_E3
+RLMotTCoolOilBkp#13#174#false#false#23#8#1#-40#Cooling temperature Oil \nbackup\n冷却液温度 油温#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotDrtSts#13#174#false#false#32#1#1#0#Rear left motor derating Status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MX11#EEA1.5_E3
+RLMotStSigGrpChks#13#174#false#false#47#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotStSigGrpCntr#13#174#false#false#51#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotSfSpdMax#13#174#false#false#63#16#1.0#-32768.0#Rear left motor safe speed maximum#0.0#0.0#0.0#{"65535": "Invalid"}#MX11#EEA1.5_E3
+RLMotBoostModNotAvlRsnBkp#13#174#false#false#79#4#1#0#Rear left motor boost mode not available reasons backup#0.0#0.0#0.0#{"0": "Available", "1": "Not_available"}#MX11#EEA1.5_E3
+RLMotModStsSigGrpChks#13#174#false#false#87#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotModStsSigGrpCntr#13#174#false#false#91#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotModSts#13#174#false#false#103#5#1#0#Rear left motor mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Booster_discharge_finished", "12": "OffsetCal", "13": "Failure", "14": "After_Run", "15": "Buck_Control"}#MX11#EEA1.5_E3
+RLMotIdCmdIvt#13#174#false#false#111#16#0.1#-3276.8#Iq output command of Inverter\n控制器输出d轴电流#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotIqCmdIvt#13#174#false#false#127#16#0.1#-3276.8#Iq output command of Inverter\n控制器输出q轴电流#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotModDiffT#13#174#false#false#143#8#1#-40#Temperature difference motor ntc 电机NTC域温度模型观测差值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTCoolWtr#13#174#false#false#175#8#1#-40#Cooling temperature Water \n冷却液温度 水温#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTDcCapIvt#13#174#false#false#183#8#1#-40#Temperature of DC Link capacitor\n控制器电容温度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTGbx#13#174#false#false#191#8#1#-40#Temperature of EDS Gear Box\n齿轮箱温度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTIvtDBC1#13#174#false#false#199#8#1#-40#1st Phase DBC temperature of Inverter\n控制器第1相dbc温度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTIvtDBC2#13#174#false#false#207#8#1#-40#2nd Phase DBC temperature of Inverter\n控制器第2相dbc温度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTIvtDBC3#13#174#false#false#215#8#1#-40#3rd Phase DBC temperature of Inverter\n控制器第3相dbc温度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotTRtr#13#174#false#false#223#8#1#-40#Rotor temperature\n电机转子温度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotUdCmdIvt#13#174#false#false#231#16#0.1#-3276.8#Ud output command of Inverter\n控制器输出d轴电压#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotUqCmdIvt#13#174#false#false#247#16#0.1#-3276.8#Ud output command of Inverter\n控制器输出q轴电压#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotActUSigGrpChks#13#174#false#false#263#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotActUSigGrpCntr#13#174#false#false#267#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLMotActU#13#174#false#false#279#14#0.1#0.0#Rear left motor actual voltage#0.0#0.0#0.0#{"16383": "Invalid"}#MX11#EEA1.5_E3
+RLEDSPtFusionNodeAddress#13#1298#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RLEDSPtFusionActiveWakeup#13#1298#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MX11#EEA1.5_E3
+RLEDSPtFusionRepeatMsgReq#13#1298#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MX11#EEA1.5_E3
+RLEDSPtFusionRepeatMsgSt#13#1298#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MX11#EEA1.5_E3
+NMKeepAwkRsnRLEDS#13#1298#false#false#48#9#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotIndHeatgActPwrBkp#13#475#false#false#6#7#50#0#Rear right motor indirect heating actual power backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotIndHeatgMaxPwrCpBkp#13#475#false#false#14#7#50#0#Rear right motor indirect heating maximum power capacity backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoosterCntctStsBkpSigGrpChks#13#475#false#false#23#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoosterCntctStsBkpSigGrpCntr#13#475#false#false#27#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoosterS7CntctStsBkp#13#475#false#false#39#2#1#0#booster S7 positive  contactor status backup#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MX11#EEA1.5_E3
+RRMotBoosterS6CntctStsBkp#13#475#false#false#37#2#1#0#booster S6 negative  contactor status backup#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MX11#EEA1.5_E3
+RRMotBoosterS1CntctStsBkp#13#475#false#false#35#2#1#0#booster  output  S1 contactor status backup#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MX11#EEA1.5_E3
+RRMotBoosterInducerTBkp#13#644#false#false#7#8#1#-40#Booster Inducer temperature backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotIndHeatgStsBkp#13#644#false#false#15#1#1#0#Rear right motor indirect heating status backup#0.0#0.0#0.0#{"0": "Not_available", "1": "Available"}#MX11#EEA1.5_E3
+RRMotOverSpdTimeoutBkp#13#644#false#false#14#1#1#0#Rear right motor Over speed timeout backup#0.0#0.0#0.0#{"0": "no_timeout", "1": "timeout"}#MX11#EEA1.5_E3
+RRMotCooltFlowReqBkp#13#644#false#false#13#6#0.25#0.0#Rear right motor coolant flow request backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotFltInfoActv1Bkp#13#644#false#false#23#9#1#0#fault information singal group  1  Rear right motor fault information active backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotFltInfoActv2Bkp#13#644#false#false#39#9#1#0#fault information singal group  2  Rear right motor fault information active backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotFltInfoActv3Bkp#13#644#false#false#55#9#1#0#fault information singal group  3  Rear right motor fault information active backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoosterS1CntctFltBkp#13#644#false#false#71#2#1#0#Booster S1 contactor fault backup#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MX11#EEA1.5_E3
+RRMotBoosterS6CntctFltBkp#13#644#false#false#69#2#1#0#Booster S6 contactor fault backup#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MX11#EEA1.5_E3
+RRMotBoosterS7CntctFltBkp#13#644#false#false#67#2#1#0#Booster S7 contactor fault backup#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MX11#EEA1.5_E3
+RRMotFltInfoHist1Bkp#13#644#false#false#79#9#1#0#fault information singal group  1  Rear right motor fault information history backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotFltInfoHist2Bkp#13#644#false#false#95#9#1#0#fault information singal group  2  Rear right motor fault information history backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotFltInfoHist3Bkp#13#644#false#false#111#9#1#0#fault information singal group  3  Rear right motor fault information history backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoostChrgnOutpBkpSigGrpChks#13#644#false#false#127#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoostChrgnOutpBkpSigGrpCntr#13#644#false#false#131#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoostChrgnOutpCurBkp#13#644#false#false#143#14#0.1#0.0#Boost charging output current 电池端  backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoostChrgnOutpUBkp#13#644#false#false#159#14#0.1#0.0#Boost charging output voltage 电池端  backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCooltTBkp#13#644#false#false#175#8#1#-40#Rear right motor coolant temperature backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotIvtTBkp#13#644#false#false#183#8#1#-40#Rear right motor inverter temperature backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotMotTBkp#13#644#false#false#191#8#1#-40#Rear right motor motor temperature backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoostHVILStsBkpSigGrpChks#13#644#false#false#199#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoostHVILStsBkp#13#644#false#false#207#2#1#0#Booster inter lock loop status backup#0.0#0.0#0.0#{"0": "Close", "1": "Open", "2": "Not_determined", "3": "Invalid"}#MX11#EEA1.5_E3
+RRMotBoostHVILStsBkpSigGrpCntr#13#644#false#false#203#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotPtChVldBkpSigGrpChks#13#644#false#false#215#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotPtChVldBkp#13#644#false#false#220#1#1#0#Rear right motor Powertrains valid Channel backup#0.0#0.0#0.0#{"0": "PT_fusion_CANFD_valid", "1": "PT_CANFD_valid"}#MX11#EEA1.5_E3
+RRMotPtChVldBkpSigGrpCntr#13#644#false#false#219#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotOverBoostTimesLeBkp#13#950#false#false#7#13#1#0#Rear right motor Over boost times left backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotOverSpdTimesLeBkp#13#950#false#false#23#13#1#0#Rear right motor Over speed times left backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotLftRemaDCLk#13#972#false#false#7#16#0.002#0.0#DC Link capacitor remaining lifetime\n电容剩余寿命#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotLftRemaPwrModl#13#972#false#false#23#16#0.002#0.0#Power module remaining lifetime\n功率模块剩余寿命#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTAvrgDiodeMin#13#972#false#false#39#8#1#-40#Min average temperature of mosfet during driving cycle\n驾驶循环内二极管平均温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTAvrgMosMax#13#972#false#false#47#8#1#-40#Max average temperature of mosfet during driving cycle\n驾驶循环内晶体管平均温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTAvrgMosMin#13#972#false#false#55#8#1#-40#Min average temperature of mosfet during driving cycle\n驾驶循环内晶体管平均温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTCoolOilMax#13#972#false#false#63#8#1#-40#Max temperature of cooling water during driving cycle\n驾驶循环内冷却油温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTCoolOilMin#13#972#false#false#71#8#1#-40#Min temperature of cooling wator during driving cycle\n驾驶循环内冷却油温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTCoolWtrMax#13#972#false#false#79#8#1#-40#Max temperature of cooling water during driving cycle\n驾驶循环内冷却水温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTCoolWtrMin#13#972#false#false#87#8#1#-40#Min temperature of cooling wator during driving cycle\n驾驶循环内冷却水温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTDCLkCapMax#13#972#false#false#95#8#1#-40#Max temperature of DC Link capacitor during driving cycle\n驾驶循环内电容温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTDCLkCapMin#13#972#false#false#103#8#1#-40#Min temperature of DC Link capacitor during driving cycle\n驾驶循环内电容温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTGbxMax#13#972#false#false#111#8#1#-40#Max temperature of gear box during driving cycle\n驾驶循环内齿轮箱温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTGbxMin#13#972#false#false#119#8#1#-40#Min temperature of gear box during driving cycle\n驾驶循环内齿轮箱温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTAvrgDiodeMax#13#972#false#false#127#8#1#-40#Max average temperature of diode during driving cycle\n驾驶循环内二极管平均温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTqCalcdMax#13#972#false#false#135#16#0.1#-3276.8#Max calculated torque during driving cycle\n驾驶循环内电磁扭矩最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTqCalcdMin#13#972#false#false#151#16#0.1#-3276.8#Min calculated torque during driving cycle\n驾驶循环内电磁扭矩最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTRiseDiodeMax#13#972#false#false#167#8#1#-40#Max temperature rise of diode during diriving cycle\n驾驶循环内二极管最大温升#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTRiseMosMax#13#972#false#false#175#8#1#-40#Max temperature rise of mosfet during driving cycle\n驾驶循环内晶体管最大温升#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTRtrMax#13#972#false#false#183#8#1#-40#Max temperature of rator during driving cycle\n驾驶循环内电机转子温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTRtrMin#13#972#false#false#191#8#1#-40#Min temperature of rator during driving cycle\n驾驶循环内电机转子温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTStatMax#13#972#false#false#199#8#1#-40#Max temperature of stator during driving cycle\n驾驶循环内电机定子温度最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTStatMin#13#972#false#false#207#8#1#-40#Min temperature of stator during driving cycle\n驾驶循环内电机定子温度最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTStatIni#13#972#false#false#215#8#1#-40#Initial stator temperature when HV is setup\n电机定子初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotAglDeMax#13#974#false#false#7#16#0.1#0.0#Max deviation of angle monitoring between L1 and L2 software\n角度监控偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrAglDeFlt#13#974#false#false#23#8#1#0#Counter regarding over upper threshold of Angle mornitoring\n角度监控偏差超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrCurThrPhaSumFlt#13#974#false#false#31#8#1#0#Counter of fault regarding sumary of three phase current\n三相电流和超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrMosSnsrOverFlt#13#974#false#false#39#8#1#0#Counter regarding over upper threshold of mosfet sensor temperature\nMosfet温度传感器超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrMosSnsrUnderFlt#13#974#false#false#47#8#1#0#Counter regarding over lower threshold of mosfet sensor temperature\nMosfet温度传感器超下限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrStatSnsrOverFlt#13#974#false#false#55#8#1#0#Counter regarding over upper threshold of stator sensor temperature\n电机温度传感器超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrStatSnsrUnderFlt#13#974#false#false#63#8#1#0#Counter regarding over lower threshold of stator sensor temperature\n电机温度传感器超下限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrThrPhaCurZeroShift#13#974#false#false#71#8#1#0#三相电流零飘超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrUDCLkDe#13#974#false#false#79#8#1#0#电压偏差超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrUKl30OverFlt#13#974#false#false#87#8#1#0#Counter regarding over upper threshold of KL30 voltage\nKL30电压超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrUKl30UnderFlt#13#974#false#false#95#8#1#0#Counter regarding over lower threshold of KL30 voltage\nKL30电压超下限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrURslvrSqurSumOverFlt#13#974#false#false#103#8#1#0#Counter regarding over max sum of squares of resolver voltage \n旋转变压器平方和超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrURslvrSqurSumUnderFlt#13#974#false#false#111#8#1#0#Counter regarding under min sum of squares of resolver voltage \n旋转变压器平方和超下限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCurThrPhaSumDeMax#13#974#false#false#119#16#0.1#-3276.8#Max deviation of summary of three phase current\n三相电流和最大偏差值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCurThrPhaZeroShiftMax#13#974#false#false#135#16#0.1#-3276.8#Max zero shift of three phase current\n三相电流零飘最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTMosSnsrMax#13#974#false#false#151#8#1#-40#Max Mosfet sensor temperature\nMosfet温度传感器最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTMosSnsrMin#13#974#false#false#159#8#1#-40#Min Mosfet sensor temperature\nMosfet温度传感器最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTStatSnsrMax#13#974#false#false#167#8#1#-40#Max stator sensor temerature\n电机温度传感器最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTStatSnsrMin#13#974#false#false#175#8#1#-40#Min stator sensor temerature\n机温度传感器最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotUDCLkDeMax#13#974#false#false#183#16#0.1#0.0#Max deviation between DC link voltage in L1 and L2 software\n电压偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotUKl30Max#13#974#false#false#199#16#0.1#0.0#Max KL30 voltage\nKL30电压最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotUKl30Min#13#974#false#false#215#16#0.1#0.0#Min KL30 voltage\nKL30电压最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTCoolWtrIni#13#974#false#false#231#8#1#-40#Initial cooling water temperature when HV is setup\n冷却液初始温度 水温 高压上电完成时刻#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotAglOffsRslvr#13#988#false#false#7#12#0.1#0.0#Resolver offset angle\n旋变offset角度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRstAglOffsSlipTst#13#988#false#false#11#1#1#0#resolver offset angle in slip mode state\n旋变滑行角标角度状态#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MX11#EEA1.5_E3
+RRMotAglOffsSlipTst#13#988#false#false#23#12#0.1#0.0#resolver offset angle in slip mode\n旋变滑行角标角度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrGateDrvrFltHwRaw#13#988#false#false#39#8#1#0#Gate driver fault counter Raw fault counter without debounce \nGate Driver芯片驱动故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrMCURstUFltHwRaw#13#988#false#false#47#8#1#0#MCU Reset counter\nMCU Reset累计计数器#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrOverCurFltHwRaw#13#988#false#false#55#8#1#0#Hardware over current fault counter Raw fault counter without debounce \n硬件过流故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrOverUFltHwRaw#13#988#false#false#63#8#1#0#Hardware over voltage fault counter Raw fault counter without debounce \n硬件过压故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrSOPFltHwRaw#13#988#false#false#71#8#1#0#Shut off path fault counter Raw fault counter withour debounce \n关断路径检测故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrWdgFltHwRaw#13#988#false#false#79#8#1#0#MCU Wdg fault counter Raw fault counter without debounce \nMCU Wdg故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCurDCLkMax#13#988#false#false#87#16#0.1#-3276.8#Max DC Link current during driving cycle\n驾驶循环内直流母线电流最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCurDCLkMin#13#988#false#false#103#16#0.1#-3276.8#Min DC Link current during driving cycle\n驾驶循环内直流母线电流最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCurOffsSelfLrn1#13#988#false#false#119#8#1#-128#self learned offset value for current sensor ph1\n第一相电流传感器自学习值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCurOffsSelfLrn2#13#988#false#false#127#8#1#-128#self learned offset value for current sensor ph2\n第二相电流传感器自学习值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCurOffsSelfLrn3#13#988#false#false#135#8#1#-128#self learned offset value for current sensor ph3\n第三相电流传感器自学习值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotMotSpdMax#13#988#false#false#143#16#1.0#-3276.8#Max e motor speed during driving cycle\n驾驶循环内电机转速最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotPwrGenMax#13#988#false#false#159#16#0.1#-1000.0#Max calculated generating power during driving cycle\n驾驶循环内发电功率最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotPwrMotMax#13#988#false#false#175#16#0.1#0.0#Min Electric power during driving cycle\n驾驶循环内电动功率最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTCoolOilIni#13#988#false#false#191#8#1#-40#Initial cooling oil temperature when HV is setup\n冷却液初始温度 油温 高压上电完成时刻#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTIvtDBCIni1#13#988#false#false#199#8#1#-40#1st Phase DBC initial itemperature of Inverter when HV is setup\n控制器第1相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTIvtDBCIni2#13#988#false#false#207#8#1#-40#2nd Phase DBC initial itemperature of Inverter when HV is setup\n控制器第2相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTIvtDBCIni3#13#988#false#false#215#8#1#-40#3rd Phase DBC initial itemperature of Inverter when HV is setup\n控制器第3相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotUDCLkMax#13#988#false#false#223#16#0.1#0.0#Max DC Link voltage during driving cycle\n驾驶循环内直流母线电压最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotUDCLkMin#13#988#false#false#239#16#0.1#0.0#Min DC Link voltage during driving cycle\n驾驶循环内直流母线电压最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrCANCtrlrFltMax#13#990#false#false#7#8#1#0#Max Fault counter of CAN controller\nCAN控制器误计数器最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrRollgDeFltMax#13#990#false#false#15#8#1#0#Max deviation of rolling counter of E2E frames\nE2E报文Rolling Counter偏差最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrRollgFlt#13#990#false#false#23#8#1#0#Fault counter of rolling counter of E2E frames\nE2E报文Rolling Counter错误计数器#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrTqDeCmdL2Flt#13#990#false#false#31#8#1#0#Counter of over threshold of deviation between request torque and L2 torque\n转矩监控偏差 请求 VS 实际 超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrTqDeCmdL2OppstFlt#13#990#false#false#39#8#1#0#Counter of over threshold of opposite torque deviation between request torque and L2 torque\n转矩反向偏差 请求 VS 实际 超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotCntrTqDeL1L2Flt#13#990#false#false#47#8#1#0#Counter regarding over upper threshold of torque monitoring\n转矩估算偏差 L1 VS L2 超上限阈值次数#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTqDeCmdL2Max#13#990#false#false#55#16#0.1#-3276.8#Max torque deviation between request torque and L2 torque\n转矩监控偏差 请求 VS 实际 最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTqDeCmdL2OppstMax#13#990#false#false#71#16#0.1#-3276.8#Max opposite torque deviation between request torque and L2 torque\n转矩反向偏差 请求 VS 实际 最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTqDeL1L2Max#13#990#false#false#87#16#0.1#-3276.8#Max deviation between torque calculation between L1 and L2 software\n转矩估算偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotURslvrSqurSumMax#13#990#false#false#103#16#0.01#0.0#Max sum of squares of resolver voltage\n旋转变压器平方和最大值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotURslvrSqurSumMin#13#990#false#false#119#16#0.01#0.0#Min sum of squares of resolver voltage\n旋转变压器平方和最小值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotSigGrpChks#13#117#false#false#7#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotSigGrpCntr#13#117#false#false#11#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotActTq#13#117#false#false#23#15#0.1#-1638.3#Rear right motor actual torque  at motor output axle .#0.0#0.0#0.0#{"32767": "Invalid"}#MX11#EEA1.5_E3
+RRMotActSpd#13#117#false#false#39#16#1.0#-32768.0#Rear right motor actual speed#0.0#0.0#0.0#{"65535": "Invalid"}#MX11#EEA1.5_E3
+RRMotMaxDynTqCp#13#117#false#false#55#10#1#0#Rear right motor maximum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotMinDynTqCp#13#117#false#false#71#10#1#-1023#Rear right motor minimum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotFltLvlIndcn#13#117#false#false#87#3#1#0#Rear right motor fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0", "2": "Fault_Lv1", "3": "Fault_Lv2", "4": "Fault_Lv3", "5": "Fault_Lv4"}#MX11#EEA1.5_E3
+RRMotAglRslvr#13#117#false#false#95#12#0.1#0.0#Rear right motor stator angle#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotActSfSt#13#117#false#false#111#3#1#0#Rear right motor actual safe state#0.0#0.0#0.0#{"0": "normal", "1": "0Nm", "2": "VDSS", "3": "SDSS", "4": "permanent_ASC", "5": "permanent_FW", "6": "Reserve", "7": "Invalid"}#MX11#EEA1.5_E3
+RRMotActCur#13#175#false#false#7#14#0.1#-819.1#Rear right motor actual current on DC bus  \nNegative means current flow from Rear right motor to HV battery  positive means current flow from HV battery to Rear right motor.#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoostModAvl#13#175#false#false#9#1#1#0#Rear right motor boost mode available#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MX11#EEA1.5_E3
+RRMotActDampgSts#13#175#false#false#8#1#1#0#Rear right motor active damping status.#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MX11#EEA1.5_E3
+RRMotTCoolOilBkp#13#175#false#false#23#8#1#-40#Cooling temperature Oil \n冷却液温度 油温#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotDrtSts#13#175#false#false#32#1#1#0#Rear right motor derating Status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MX11#EEA1.5_E3
+RRMotStSigGrpChks#13#175#false#false#47#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotStSigGrpCntr#13#175#false#false#51#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotSfSpdMax#13#175#false#false#63#16#1.0#-32768.0#Rear right motor safe speed maximum#0.0#0.0#0.0#{"65535": "Invalid"}#MX11#EEA1.5_E3
+RRMotBoostChrgnInpBkpSigGrpChks#13#175#false#false#103#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoostChrgnInpBkpSigGrpCntr#13#175#false#false#107#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoostChrgnInpCurBkp#13#175#false#false#119#14#0.1#0.0#Boost Charging Input current 桩端  backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoostChrgnInpUBkp#13#175#false#false#135#14#0.1#0.0#Boost Charging Input voltage 桩端  backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoostChrgnOutpPwrMaxBkp#13#175#false#false#151#11#0.1#0.0#Boost Charging output power max backup#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoostModNotAvlRsnBkp#13#175#false#false#167#4#1#0#Rear right motor boost mode not available reasons backup#0.0#0.0#0.0#{"0": "Available", "1": "Not_available"}#MX11#EEA1.5_E3
+RRMotBoosterFltLvlBkpSigGrpChks#13#175#false#false#175#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoosterFltLvlBkpSigGrpCntr#13#175#false#false#179#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotBoosterFltLvlIndcnBkp#13#175#false#false#191#3#1#0#Booster fault level indication#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0", "2": "Fault_Lv1", "3": "Fault_Lv2", "4": "Fault_Lv3", "5": "Fault_Lv4"}#MX11#EEA1.5_E3
+RRMotModStsSigGrpChks#13#175#false#false#207#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotModStsSigGrpCntr#13#175#false#false#211#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotModSts#13#175#false#false#223#5#1#0#Rear right motor mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Booster_discharge_finished", "12": "OffsetCal", "13": "Failure", "14": "After_Run", "15": "Buck_Control"}#MX11#EEA1.5_E3
+RRMotIdCmdIvt#13#175#false#false#231#16#0.1#-3276.8#Iq output command of Inverter\n控制器输出d轴电流#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotIqCmdIvt#13#175#false#false#247#16#0.1#-3276.8#Iq output command of Inverter\n控制器输出q轴电流#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotModDiffT#13#175#false#false#263#8#1#-40#Temperature difference motor ntc 电机NTC域温度模型观测差值#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTCoolWtr#13#175#false#false#271#8#1#-40#Cooling temperature Water \n冷却液温度 水温#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTDcCapIvt#13#175#false#false#279#8#1#-40#Temperature of DC Link capacitor\n控制器电容温度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTGbx#13#175#false#false#287#8#1#-40#Temperature of EDS Gear Box\n齿轮箱温度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTIvtDBC1#13#175#false#false#295#8#1#-40#1st Phase DBC temperature of Inverter\n控制器第1相dbc温度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTIvtDBC2#13#175#false#false#303#8#1#-40#2nd Phase DBC temperature of Inverter\n控制器第2相dbc温度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTIvtDBC3#13#175#false#false#311#8#1#-40#3rd Phase DBC temperature of Inverter\n控制器第3相dbc温度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotTRtr#13#175#false#false#319#8#1#-40#Rotor temperature\n电机转子温度#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotUdCmdIvt#13#175#false#false#327#16#0.1#-3276.8#Ud output command of Inverter\n控制器输出d轴电压#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotUqCmdIvt#13#175#false#false#343#16#0.1#-3276.8#Ud output command of Inverter\n控制器输出q轴电压#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotActUSigGrpChks#13#175#false#false#359#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotActUSigGrpCntr#13#175#false#false#363#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RRMotActU#13#175#false#false#375#14#0.1#0.0#Rear right motor actual voltage#0.0#0.0#0.0#{"16383": "Invalid"}#MX11#EEA1.5_E3
+RREDSPtFusionNodeAddress#13#1308#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MX11#EEA1.5_E3
+RREDSPtFusionActiveWakeup#13#1308#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MX11#EEA1.5_E3
+RREDSPtFusionRepeatMsgReq#13#1308#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MX11#EEA1.5_E3
+RREDSPtFusionRepeatMsgSt#13#1308#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MX11#EEA1.5_E3
+NMKeepAwkRsnRREDS#13#1308#false#false#48#9#1#0##0.0#0.0#0.0#null#MX11#EEA1.5_E3
