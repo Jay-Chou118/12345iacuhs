@@ -47,6 +47,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import org.checkerframework.checker.lock.qual.LockHeld;
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -135,10 +136,12 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static List<SendCanMessage> g_send_list = new ArrayList<>();
 
+    public static Map<Integer,Integer> BUSRedirectMap = new HashMap<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
+//        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main3);
         if (!Python.isStarted()) {
             start(new AndroidPlatform(this));
@@ -169,6 +172,7 @@ public class MainActivity3 extends AppCompatActivity {
                         throw new RuntimeException(e);
 
                     }
+                    Log.e(TAG,"------------------------------");
                     if (mMiCANBinder != null) {
                         mMiCANBinder.printInfo();
                     }
@@ -177,32 +181,32 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
         m.start();
-        showLoggingMessage = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while (true) {
-                    String callback = showLoggingMessageQueue.poll();
-                    if (callback == null) {
-                        Utils.wait10ms();
-                        continue;
-                    }
-                    if (mMiCANBinder != null) {
-                        JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
-                        Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
-                        jsCallResult.setData(result);
-                        final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                        webView.post(new Runnable() {
-                            @Override
-                            public void run() {
-                                webView.loadUrl(callbackJs);
-                            }
-                        });
-                    }
-                }
-
-            }
-        });
-        showLoggingMessage.start();
+//        showLoggingMessage = new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                while (true) {
+//                    String callback = showLoggingMessageQueue.poll();
+//                    if (callback == null) {
+//                        Utils.wait10ms();
+//                        continue;
+//                    }
+//                    if (mMiCANBinder != null) {
+//                        JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
+//                        Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
+//                        jsCallResult.setData(result);
+//                        final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
+//                        webView.post(new Runnable() {
+//                            @Override
+//                            public void run() {
+//                                webView.loadUrl(callbackJs);
+//                            }
+//                        });
+//                    }
+//                }
+//
+//            }
+//        });
+//        showLoggingMessage.start();
         checkPermission();
 
         Intent intent = getIntent();
@@ -311,9 +315,9 @@ public class MainActivity3 extends AppCompatActivity {
                             webView.loadUrl(callbackJs);
                         }
                     });
-                    // 打开CANFD设备
-                    mMiCANBinder.CANOnBus();
-                    mMiCANBinder.startSaveBlf();
+//                    // 打开CANFD设备
+//                    mMiCANBinder.CANOnBus();
+//                    mMiCANBinder.startSaveBlf();
                 }
             }
         });
@@ -361,13 +365,16 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void handle(JsonElement data, String callback) {
 
-                mMiCANBinder.CANOnBus();
-                showLoggingMessageQueue.add(callback);
+//                mMiCANBinder.CANOnBus();                mMiCANBinder.CANOnBus();
+//                showLoggingMessageQueue.add(callback);
                 if (mMiCANBinder != null) {
                     JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
                     Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
+                    Log.w(TAG,new Gson().toJson(result.getData().getSignal_data()));
+                    Log.w(TAG,"frame_data: " + result.getData().getFrame_data().size() + " signal: " + result.getData().getSignal_data().size());
                     jsCallResult.setData(result);
                     final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
+//                    mMiCANBinder.printInfo();
                     webView.post(new Runnable() {
                         @Override
                         public void run() {
@@ -451,15 +458,20 @@ public class MainActivity3 extends AppCompatActivity {
                                 Log.e(TAG, "BUSIdList: " + BUSIdList + "CID " + cid);
 
                             } else {
-
+                                BUSRedirectMap.clear();
                                 Log.d(TAG, "I am called 2");
                                 JsonArray dbcChn = data.getAsJsonObject().get("dbcChn").getAsJsonArray();
+                                int curBoardCANChannel = 1;
                                 for (JsonElement element : dbcChn) {
                                     int value = element.getAsInt();
                                     BUSIdList.add(value);
+                                    //
+                                    BUSRedirectMap.put(curBoardCANChannel,value);
+                                    curBoardCANChannel++;
                                 }
 
-                                Log.e(TAG, "BUSIdList: " + BUSIdList + "CID " + cid);
+                                Log.e(TAG, "BUSIdList: " + BUSIdList + "CID " + cid + BUSRedirectMap.toString());
+
                             }
 
 
@@ -542,6 +554,7 @@ public class MainActivity3 extends AppCompatActivity {
                 Log.d(TAG, "selectShowSignals ids before monitorSignal: " + ids);
 
                 mMiCANBinder.monitorSignal(ids);
+                mMiCANBinder.monitorSignalShadow(ids);
 
                 JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
                 Result<Object> success = ResponseData.success();
@@ -621,27 +634,14 @@ public class MainActivity3 extends AppCompatActivity {
                 JsonArray dataArray = canDataElement.getAsJsonArray();
                 int length = dataArray.size();
                 byte[] CANData = new byte[length];
-                Log.e(TAG, "0911" + "length:   " + length);
-                Log.d(TAG, "0911" + data);
                 for (int i = 0; i < length; i++) {
                     CANData[i] = (byte) Integer.parseInt(dataArray.get(i).getAsString(), 16);
                 }
 
-                Log.d(TAG, "CANData " + Arrays.toString(CANData));
-                Log.d(TAG, "BUSId " + BUSId + " CANId " + CANId);
+                Log.e(TAG, "CANData " + Arrays.toString(CANData));
                 List<Map<String, Object>> maps = new ArrayList<>();
                 Map<String, Object> titleMap = new HashMap<>();
-//                titleMap.put("canId", String.valueOf(CANId));
-//                titleMap.put("channel", BUSId);
-//                titleMap.put("id", "18028-");
-//                titleMap.put("isChildTit", true);
-//                titleMap.put("isExpand", true);
-//                titleMap.put("isParent", false);
-//                maps.add(titleMap);
-//                maps.addAll(mMiCANBinder.parseMsgData(2, 0x90,CANData));
-//                maps.addAll(mMiCANBinder.parseMsgData(BUSId, CANId, CANData));
                 maps.addAll(mMiCANBinder.parseMsgData(BUSId, CANId, Current_cid, CANData));
-//                Log.e(TAG, " 111111 444444 " + maps.toString());
 
                 JsCallResult<Result<List<Map<String, Object>>>> jsCallResult = new JsCallResult<>(callback);
                 Result<List<Map<String, Object>>> success = ResponseData.success(maps);

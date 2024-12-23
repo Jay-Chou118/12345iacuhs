@@ -87,9 +87,10 @@ public class MyService extends Service {
 
 
         private Map<Long,List<SignalInfo>> monitorSignalMap = new HashMap<>();
+        private Map<Long,List<SignalInfo>> monitorSignalMapShadow = new HashMap<>();
 
 
-
+        Map<Integer, Integer> BUSRedirectMap = MainActivity3.BUSRedirectMap;
 
         public String getFilePath() {
             return filePath;
@@ -145,7 +146,7 @@ public class MyService extends Service {
 
                         try {
                             port.open(connection);
-                            port.setParameters(1382400, 8, UsbSerialPort.STOPBITS_1, UsbSerialPort.PARITY_NONE);
+                            port.setParameters(115200, 8, UsbSerialPort.STOPBITS_1, UsbSerialPort.PARITY_NONE);
                             Log.i(TAG,"open port successful~~~~~");
                             byte[] buffer = new byte[1024];
                             while(port.read(buffer,100) > 0)
@@ -211,23 +212,23 @@ public class MyService extends Service {
             mHeartBeatThread.start();
 
             mCostMsgThread = new Thread(new Runnable() {
+                // 该线程为消费者队列
 
                 private Map<Long,String> msgNameMap = new HashMap<>();
 
 
                 private String findName(int BUSId,int CANId)
                 {
+//                    Log.e(TAG,msgNameMap.toString());
                     long key = getKey(BUSId, CANId);
-                    if(msgNameMap.containsKey(key))
-                    {
-                        return msgNameMap.get(key);
-                    }
+                    String name = msgNameMap.get(key);
+                    if(name != null) return name;
                     MsgInfoEntity msg = database.msgInfoDao().getMsg(BUSId, CANId);
                     if(msg == null)
                     {
+                        msgNameMap.put(key,"");
                         return "";
                     }
-
                     msgNameMap.put(key,msg.name);
                     return msg.name;
                 }
@@ -236,11 +237,13 @@ public class MyService extends Service {
                     String[] directMap = {"rx","tx"};
                     String[] CANTypeMap = {"CANFD","CAN"};
                     ShowCANMsg showCANMsg = new ShowCANMsg();
+                    // 获取设备canid和界面上配置的通道转换
 
                     boolean ret;
                     while (g_notExitFlag.get())
                     {
 //                        CanMessage poll = gCanQueue.poll();
+                        // 从队列中获取一条数据
                         CanMessage poll = gCanQueue1.read();
 
                         if(poll == null)
@@ -249,29 +252,39 @@ public class MyService extends Service {
                             wait100ms();
                             continue;
                         }
+
                         ShowSignal[] tmp = new ShowSignal[1];
                         tmp[0] = new ShowSignal();
                         tmp[0].setName("111");
                         showCANMsg.setTimestamp((double) (poll.timestamp + startCANTime) /1000000);
                         showCANMsg.setSqlId(poll.getIndex());
+
+                        Integer redirctBUSID = BUSRedirectMap.get(Integer.valueOf(poll.getBUS_ID()));
+                        if(redirctBUSID == null)
+                        {
+                            redirctBUSID = (int) poll.getBUS_ID();
+                        }
+////                        Log.e(TAG,"============busid: " +poll.getBUS_ID() +" 修正后: " + redirctBUSID);
+//                        // 前端显示不需要修正
                         showCANMsg.setChannel(poll.getBUS_ID());
                         showCANMsg.setArbitrationId(poll.getCAN_ID());
-                        showCANMsg.setName(findName(poll.BUS_ID,poll.CAN_ID));
+                        showCANMsg.setName(findName(redirctBUSID,poll.CAN_ID));
                         showCANMsg.setCanType(CANTypeMap[poll.getCAN_TYPE()]);
                         showCANMsg.setDir(directMap[poll.getDirect()]);
                         showCANMsg.setDlc(String.valueOf(poll.getDataLength()));
                         showCANMsg.setData(Arrays.copyOf(poll.getData(),poll.getDataLength()));
-                        showCANMsg.setParsedData(tmp);
+//                        showCANMsg.setParsedData(tmp);
                         ret = gDealQueue.write_deepcopy(showCANMsg);
 
                         /***************************************************************************************/
                         synchronized (MiCANBinder.this)
                         {
+//                            // 如果存在要解析的信号，则将信号解析出来
                             checkIfMonitor(poll);
                         }
                         /**************************************************************************************/
-                        record(poll.timestamp,poll.BUS_ID,poll.dataLength,poll.CAN_ID,poll.CAN_TYPE,
-                                poll.data);
+//                        record(poll.timestamp,poll.BUS_ID,poll.dataLength,poll.CAN_ID,poll.CAN_TYPE,
+//                                poll.data);
                     }
                 }
             },"CostMsg");
@@ -317,12 +330,17 @@ public class MyService extends Service {
 
             int BUSId = canMessage.getBUS_ID();
             int CANId = canMessage.getCAN_ID();
+            Integer redirctBUSID = BUSRedirectMap.get(BUSId);
+            if(redirctBUSID == null)
+            {
+                redirctBUSID = BUSId;
+            }
             double timestamp = (double) (canMessage.timestamp + startCANTime) /1000000 ;
-            long uniqueKey = getKey(BUSId,CANId);
+            long uniqueKey = getKey(redirctBUSID,CANId);
             byte[] data = canMessage.getData();
             // 看该报文是否存在要解析的信号
-            if(monitorSignalMap.containsKey(uniqueKey))
-            {
+//            if(monitorSignalMap.containsKey(uniqueKey))
+//            {
                 List<SignalInfo> signalInfos = monitorSignalMap.get(uniqueKey);
                 if(signalInfos != null)
                 {
@@ -334,11 +352,20 @@ public class MyService extends Service {
                     });
 //                    Log.d(TAG,"该信号已成功解析");
                 }else {
-                    Log.w(TAG,"uniqueKey in msgSignalMap is null");
+//                    Log.w(TAG,"uniqueKey in msgSignalMap is null");
                 }
-            }
+//            }
         }
 
+        private int modifyBUSID(int BUSId)
+        {
+            Integer redirctBUSID = BUSRedirectMap.get(BUSId);
+            if(redirctBUSID == null)
+            {
+                redirctBUSID = BUSId;
+            }
+            return redirctBUSID;
+        }
         public String getAppVersion()
         {
             if(mMcuHelperList.isEmpty())
@@ -445,11 +472,14 @@ public class MyService extends Service {
             {
                 mcuHelper.monitor();
             }
-            Log.d(TAG,String.format("已录制 %d 报文 gCanQueue1 %d gDealQueue %d",gRecvMsgNum.get(),
+            Log.e(TAG,String.format("已录制 %d 报文 gCanQueue1 %d gDealQueue %d",gRecvMsgNum.get(),
                     gCanQueue1.size(),gDealQueue.size()
                     ));
-//            Log.i(TAG,msgSignalMap.toString());
-
+            monitorSignalMap.values().forEach(signalInfos -> {
+                signalInfos.forEach(signalInfo -> {
+                    Log.e(TAG,String.format("collect CANID: %d,name: %s, count: %d",signalInfo.CANId,signalInfo.name,signalInfo.times.size()));
+                });
+            });
         }
 
         public void startSaveBlf()
@@ -473,19 +503,28 @@ public class MyService extends Service {
          */
         public DataWrapper getCurrentMsgs()
         {
+
             // 获取最新的100条数据
             List<ShowCANMsg> showCANMsgs = gDealQueue.readAll();
             int num = showCANMsgs.size();
             Log.d(TAG,"showCANMsgs is " + num);
-            if(num > 500)
+            if(num > 100)
             {
-                showCANMsgs = showCANMsgs.subList(num-500,num);
+                showCANMsgs = showCANMsgs.subList(num-100,num);
             }
             // 将 monitorSignal 里面的数据都返回出来，这里要设计为线程安全
             List<ShowSignal> showSignals = new ArrayList<>();
-            synchronized (MiCANBinder.this)
-            {
-                monitorSignalMap.values().forEach(value->{
+//            synchronized (MiCANBinder.this)
+//            {
+//                Map<Long, List<SignalInfo>> tmp = monitorSignalMap;
+//                // step 1 将 monitorSignalMap 指向shadow
+//                monitorSignalMap = monitorSignalMapShadow;
+//                monitorSignalMapShadow = tmp;
+//
+//            }
+//
+            synchronized (MiCANBinder.this) {
+                monitorSignalMap.values().forEach(value -> {
                     value.forEach(signalInfo -> {
                         ShowSignal showSignal = new ShowSignal();
                         showSignal.setName(signalInfo.name);
@@ -495,7 +534,7 @@ public class MyService extends Service {
                         showSignal.setTimes(signalInfo.times);
                         showSignal.setRaw_values(signalInfo.values);
                         showSignals.add(showSignal);
-                        // 将观察表中的数据复位
+////                        // 将观察表中的数据复位
                         signalInfo.values = new ArrayList<>();
                         signalInfo.times = new ArrayList<>();
                     });
@@ -526,6 +565,7 @@ public class MyService extends Service {
          */
         public void monitorSignal(List<Long> ids)
         {
+            // 获取canid 映射表
             // 初始化监控
             monitorSignalMap = new HashMap<>();
             ids.forEach(id->{
@@ -548,21 +588,45 @@ public class MyService extends Service {
             });
         }
 
+        public void monitorSignalShadow(List<Long> ids)
+        {
+            // 获取canid 映射表
+            // 初始化监控
+            monitorSignalMapShadow = new HashMap<>();
+            ids.forEach(id->{
+                SignalInfo signalInfo = database.signalInfoDao().getSignalById(id);
+                long key = getKey(signalInfo.BUSId, signalInfo.CANId);
+                if(monitorSignalMapShadow.containsKey(key))
+                {
+                    List<SignalInfo> signalInfos = monitorSignalMapShadow.get(key);
+                    if(signalInfos == null)
+                    {
+                        signalInfos = new ArrayList<>();
+                    }
+                    signalInfos.add(signalInfo);
+                }else {
+                    List<SignalInfo> signalInfos = new ArrayList<>();
+                    signalInfos.add(signalInfo);
+                    monitorSignalMapShadow.put(key,signalInfos);
+                }
+                Log.e(TAG,"添加 " + signalInfo.name + " 成功");
+            });
+        }
+
         public  List<Map<String, Object>> parseMsgData(int BUSId, int CANId, long cid, byte[] data)
         {
             // 根据BUSID 和CANID找到里面有多少个signal
-//            List<SignalInfo> signalInfos = database.signalInfoDao().getSignal(BUSId, CANId);
-            List<SignalInfo> signalInfos = database.signalInfoDao().getSignalBycid(cid, BUSId, CANId);
-            Log.e(TAG,"signalInfos " + signalInfos);
+            // 进行busid修正
+            List<SignalInfo> signalInfos = database.signalInfoDao().getSignalBycid(cid, modifyBUSID(BUSId), CANId);
             List<Map<String, Object>> infos = new ArrayList<>();
             signalInfos.forEach(signalInfo -> {
+                Log.e(TAG,"signalInfo: " + signalInfo);
                 Map<String,Object> info = new HashMap<>();
                 info.put("canId",signalInfo.CANId);
                 info.put("channel",signalInfo.BUSId);
                 info.put("comment",signalInfo.comment);
                 long rawData = getSignal(signalInfo.bitStart,signalInfo.bitLength,data);
                 info.put("hex",rawData);
-                Log.d(TAG,"Info 11111111   " + info);
                 String choices = signalInfo.choices;
                 if (choices != null) {
                     JsonObject jsonObject = parseString(choices).getAsJsonObject();

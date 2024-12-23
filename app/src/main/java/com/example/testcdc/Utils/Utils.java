@@ -114,27 +114,33 @@ public class Utils {
     static int[] mapInfo = mapInfo = new int[]{0b00000000, 0b00000001, 0b00000011, 0b00000111, 0b00001111, 0b00011111, 0b00111111, 0b01111111, 0b11111111};
 
     static public long getSignal(int startBit, int bitLength, byte[] data) {
-        long parsedValue = 0;
-        //第一行的signal到达的位
-        int curByteContainBitLength = startBit % 8 + 1;
-        //开始的行数
-        int curByteIndex = startBit / 8;
-        //未处理字节数
-        int remainBitNum = bitLength;
-        while (true) {
-            if (curByteContainBitLength >= remainBitNum) {
-                int offset = curByteContainBitLength - remainBitNum;
-                parsedValue += (data[curByteIndex] >> offset) & mapInfo[remainBitNum];
-                break;
-            } else {
-                ///从上到下依次左移剩余长度
-                remainBitNum = remainBitNum - curByteContainBitLength;
-                parsedValue += (long) (data[curByteIndex] & mapInfo[curByteContainBitLength]) << remainBitNum;
-                curByteIndex++;
-                curByteContainBitLength = 8;
+        try {
+            long parsedValue = 0;
+            //第一行的signal到达的位
+            int curByteContainBitLength = startBit % 8 + 1;
+            //开始的行数
+            int curByteIndex = startBit / 8;
+            //未处理字节数
+            int remainBitNum = bitLength;
+            while (true) {
+                if (curByteContainBitLength >= remainBitNum) {
+                    int offset = curByteContainBitLength - remainBitNum;
+                    parsedValue += (data[curByteIndex] >> offset) & mapInfo[remainBitNum];
+                    break;
+                } else {
+                    ///从上到下依次左移剩余长度
+                    remainBitNum = remainBitNum - curByteContainBitLength;
+                    parsedValue += (long) (data[curByteIndex] & mapInfo[curByteContainBitLength]) << remainBitNum;
+                    curByteIndex++;
+                    curByteContainBitLength = 8;
+                }
             }
+            return parsedValue;
+        }catch (Exception e)
+        {
+            Log.e(TAG,"attention parse signal error!!! ");
+            return 0;
         }
-        return parsedValue;
     }
 
     static public long getKey(int BUSId, int CANId) {

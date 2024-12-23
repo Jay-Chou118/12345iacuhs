@@ -7,6 +7,10 @@ public class DataWrapper {
     double start_time;
     List<ShowCANMsg> frame_data;
 
+    public List<ShowSignal> getSignal_data() {
+        return signal_data;
+    }
+
     List<ShowSignal> signal_data;
 
 
@@ -29,5 +33,6 @@ public class DataWrapper {
     public void setSignal_data(List<ShowSignal> signal_data) {
         this.signal_data = signal_data;
     }
+
 
 }

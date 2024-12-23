@@ -16,7 +16,7 @@ android {  // 注意这里多了一个开括号
 
         android.applicationVariants.all { variant ->
             variant.outputs.all {
-                outputFileName = "安卓数采.apk"
+                outputFileName = "MCDT.apk"
             }
         }
 
