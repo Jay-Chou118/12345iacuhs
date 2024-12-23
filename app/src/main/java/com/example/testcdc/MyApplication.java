@@ -1,5 +1,7 @@
 package com.example.testcdc;
 
+import static com.example.testcdc.Utils.DataBaseUtil.copyDataBase;
+
 import android.app.Application;
 import android.provider.ContactsContract;
 import android.speech.tts.TextToSpeech;
@@ -163,10 +165,11 @@ public class MyApplication extends Application {
 //            Basic_DataBase db = Basic_DataBase.getDatabase(getApplicationContext());
 //            Log.e(TAG,"111111111111111" );
             new Thread(()->{
-                DataBaseUtil.init_carType();
-                //Log.e(TAG, "222222222222222222222222222  数据库不存在  remake " );
-                DataBaseUtil.initDataFromCsv(this);
-                DataBaseUtil.initMsgFromCsv(this);
+//                DataBaseUtil.init_carType();
+//                //Log.e(TAG, "222222222222222222222222222  数据库不存在  remake " );
+//                DataBaseUtil.initDataFromCsv(this);
+//                DataBaseUtil.initMsgFromCsv(this);
+                copyDataBase(this, "basic_database");
             }).start();
 
 
