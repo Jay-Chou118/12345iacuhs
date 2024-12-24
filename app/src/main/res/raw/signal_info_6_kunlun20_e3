@@ -1,0 +1,589 @@
+LonAccrSigGrpChks#6#425#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+LonAccrSigGrpCntr#6#425#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+LonAccr#6#425#false#false#23#16#0.0002#-5.0#Longititude Acceleration\n纵向加速度#0.0#0.0#0.0#null#KUNLUN20#E3
+LonSnsrSt#6#425#false#false#33#2#1#0#Longititude Sensor State\n纵向加速度有效性#0.0#0.0#0.0#{"0": "SIG_IN_SPEC", "1": "SIGNOTAVAIL", "2": "SIGFAIL", "3": "Reserved"}#KUNLUN20#E3
+IMUCalSt#6#425#false#false#63#1#1#0#IMUCalibrationSt\nIMU标定状态#0.0#0.0#0.0#{"0": "IMU_not_Calibrated", "1": "IMU_Calibrated"}#KUNLUN20#E3
+LatAccrYawRateSigGrpChks#6#426#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+LatAccrYawRateSigGrpCntr#6#426#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+LatAccr#6#426#false#false#23#16#0.0002#-5.0#Lateral Acceleration\n横向加速度#0.0#0.0#0.0#null#KUNLUN20#E3
+YawRate#6#426#false#false#39#16#0.01#-300.0#Yaw Rate\n横摆角速度#0.0#0.0#0.0#null#KUNLUN20#E3
+YawRateSnsrSt#6#426#false#false#51#2#1#0#Yaw Rate Sensor State\n横摆角速度有效性#0.0#0.0#0.0#{"0": "SIG_IN_SPEC", "1": "SIGNOTAVAIL", "2": "SIGFAIL", "3": "Reserved"}#KUNLUN20#E3
+LatAccrSt#6#426#false#false#49#2#1#0#Lateral Sensor State\n横向加速度有效性#0.0#0.0#0.0#{"0": "SIG_IN_SPEC", "1": "SIGNOTAVAIL", "2": "SIGFAIL", "3": "Reserved"}#KUNLUN20#E3
+ACUFaultInfoFlag#6#746#false#false#0#1#1#0#ACU Fault Information Flag#0.0#0.0#0.0#null#KUNLUN20#E3
+ACUWarnLampStsSigGrpChks#6#848#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+ACUWarnLampStsSigGrpCntr#6#848#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+ACUWarnLampSts#6#848#false#false#17#2#1#0#Airbag Warning Lamp Status \nACU故障灯信号#0.0#0.0#0.0#{"0": "LampOFF", "1": "LampON", "2": "Blinking", "3": "Reserved"}#KUNLUN20#E3
+SecRowMidBucSts#6#848#false#false#39#2#1#0#Second Row Middle Buckle Status\n第二排中安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#KUNLUN20#E3
+SecRowLeBucSts#6#848#false#false#37#2#1#0#Second Row Left Buckle Status\n第二排左安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#KUNLUN20#E3
+PassBucSts#6#848#false#false#35#2#1#0#Passenger Buckle Status\n副驾安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#KUNLUN20#E3
+DrvrBucSts#6#848#false#false#33#2#1#0#Driver Buckle Status \n主驾驶安全带扣状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#KUNLUN20#E3
+ThrdRowMidBucSts#6#848#false#false#46#2#1#0#Third Row Middle Buckle Status第三排中安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#KUNLUN20#E3
+ThrdRowLeBucSts#6#848#false#false#44#2#1#0#Third Row Left Buckle Status 第三排左安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#KUNLUN20#E3
+PassAirbDiIndcr#6#848#false#false#42#1#1#0#Passenger airbag disable indicator\n副驾安全气囊禁用状态指示#0.0#0.0#0.0#{"0": "enabled", "1": "disable"}#KUNLUN20#E3
+SecRowRiBucSts#6#848#false#false#41#2#1#0#Second Row Right Buckle Status\n第二排右安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#KUNLUN20#E3
+ThrdRowRiBucSts#6#848#false#false#55#2#1#0#Third Row Right Buckle Status 第三排右安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#KUNLUN20#E3
+ImpctEvntStsSigGrpChks#6#849#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+ImpctEvntStsSigGrpCntr#6#849#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+ImpctEvntSts#6#849#false#false#16#1#1#0#Impact Event Status\n 碰撞事件状态#0.0#0.0#0.0#{"0": "Normal", "1": "Crash"}#KUNLUN20#E3
+ImpctEvntTypeSigGrpChks#6#849#false#false#39#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+ImpctEvntTypeSigGrpCntr#6#849#false#false#43#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+ImpctEvntType1#6#849#false#false#55#1#1#0#Impact Event Type\n  碰撞事件类型#0.0#0.0#0.0#{"0": "No_crash", "1": "Front_crash"}#KUNLUN20#E3
+ImpctEvntType2#6#849#false#false#54#1#1#0#Impact Event Type\n  碰撞事件类型#0.0#0.0#0.0#{"0": "No_crash", "1": "LeftSide_crash"}#KUNLUN20#E3
+ImpctEvntType3#6#849#false#false#53#1#1#0#Impact Event Type\n  碰撞事件类型#0.0#0.0#0.0#{"0": "No_crash", "1": "RightSide_crash"}#KUNLUN20#E3
+ImpctEvntType4#6#849#false#false#52#1#1#0#Impact Event Type\n  碰撞事件类型#0.0#0.0#0.0#{"0": "No_crash", "1": "Rear_crash"}#KUNLUN20#E3
+ImpctEvntType5#6#849#false#false#51#1#1#0#Impact Event Type\n  碰撞事件类型#0.0#0.0#0.0#{"0": "No_crash", "1": "Roll_Over"}#KUNLUN20#E3
+ImpctEvntType6#6#849#false#false#50#1#1#0#Impact Event Type\n  碰撞事件类型#0.0#0.0#0.0#{"0": "No_crash", "1": "EPP"}#KUNLUN20#E3
+ImpctEvntType7#6#849#false#false#49#1#1#0#Impact Event Type\n碰撞事件类型#0.0#0.0#0.0#{"0": "No_Front_crash-high", "1": "Front_crash-high"}#KUNLUN20#E3
+ACUNodeAddress#6#1378#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#KUNLUN20#E3
+ACUActiveWakeup#6#1378#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#KUNLUN20#E3
+ACURepeatMsgReq#6#1378#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#KUNLUN20#E3
+UDB23ACU#6#1378#false#false#23#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB22ACU#6#1378#false#false#22#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB21ACU#6#1378#false#false#21#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB20ACU#6#1378#false#false#20#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB19ACU#6#1378#false#false#19#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB18ACU#6#1378#false#false#18#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB17ACU#6#1378#false#false#17#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+ACURepeatMsgSt#6#1378#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#KUNLUN20#E3
+UDB31ACU#6#1378#false#false#31#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB30ACU#6#1378#false#false#30#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB29ACU#6#1378#false#false#29#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB28ACU#6#1378#false#false#28#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB27ACU#6#1378#false#false#27#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB26ACU#6#1378#false#false#26#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB25ACU#6#1378#false#false#25#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB24ACU#6#1378#false#false#24#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB39ACU#6#1378#false#false#39#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB38ACU#6#1378#false#false#38#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB37ACU#6#1378#false#false#37#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB36ACU#6#1378#false#false#36#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB35ACU#6#1378#false#false#35#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB34ACU#6#1378#false#false#34#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB33ACU#6#1378#false#false#33#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB32ACU#6#1378#false#false#32#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB47ACU#6#1378#false#false#47#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB46ACU#6#1378#false#false#46#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB45ACU#6#1378#false#false#45#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB44ACU#6#1378#false#false#44#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB43ACU#6#1378#false#false#43#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB42ACU#6#1378#false#false#42#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB41ACU#6#1378#false#false#41#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB40ACU#6#1378#false#false#40#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+NMKeepAwkRsnACU#6#1378#false#false#48#9#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+ACUToVCCDBodyCanDiagResp#6#2041#false#false#7#64#1#0#ACUToVCCDBodyCanDiagRespNpdu#0.0#0.0#0.0#null#KUNLUN20#E3
+ACUToVCCDDiagResp#6#1651#false#false#7#64#1#0#ACUToVCCDBodyCanDiagRespNpdu#0.0#0.0#0.0#null#KUNLUN20#E3
+BattIRawSigGrpChks#6#562#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattIRawSigGrpCntr#6#562#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattIRaw#6#562#false#false#23#21#0.001#-1000.0#Battery I raw\nBMDM电池电流#0.0#0.0#0.0#null#KUNLUN20#E3
+BattSnsrGenlFltRawSigGrpChks#6#562#false#false#47#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattSnsrGenlFltRawSigGrpCntr#6#562#false#false#51#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattSnsrGenlFltRaw#6#562#false#false#63#4#1#0#battery sensor general fault Raw\n电池管理器一般性断开故障#0.0#0.0#0.0#{"0": "no_fault", "1": "\u7535\u82af\u8fc7\u538b\u65ad\u5f00", "2": "\u7535\u82af\u6b20\u538b\u65ad\u5f00", "3": "Pack\u8fc7\u538b\u65ad\u5f00", "4": "Pack\u6b20\u538b\u65ad\u5f00", "5": "\u5145\u7535\u8fc7\u6d41\u65ad\u5f00", "6": "\u6cf5\u7535\u4fdd\u62a4\u65ad\u5f00", "7": "\u653e\u7535\u8fc7\u6d41\u65ad\u5f00", "8": "Reserved", "9": "\u8fc7\u6e29\u65ad\u5f00", "10": "Reserved", "11": "Reserved", "12": "Mos\u8fc7\u6e29\u65ad\u5f00", "13": "Reserved", "14": "\u77ed\u8def\u4fdd\u62a4\u65ad\u5f00", "15": "Reserved"}#KUNLUN20#E3
+BattSnsrHwFltRawSigGrpChks#6#578#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattSnsrHwFltRawSigGrpCntr#6#578#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattSnsrHwFltRaw#6#578#false#false#20#5#1#0#battery sensor hardware fault Raw\n电池管理器硬件故障#0.0#0.0#0.0#{"0": "no_fault", "1": "Circuit_fault-Current", "2": "Circuit_fault-Voltage", "3": "Circuit_fault-Temperature", "4": "Mosfet_and_drive_fault", "5": "AFE_fault", "6": "MCU_fault", "7": "SBC_fault", "8": "DCDC_fault", "9": "Power_fault", "10": "Clock_fault", "11": "Processing_modules_fault", "12": "Peripheral_fault", "13": "Memory_fault", "14": "Latent_Fault", "15": "Reserved"}#KUNLUN20#E3
+BattCpEstimdRaw#6#578#false#false#31#6#1.0#0.0#battery capacity Estimated RAW\n电池容量估计值#0.0#0.0#0.0#{"22": "Invalid"}#KUNLUN20#E3
+BattTRawSigGrpChks#6#578#false#false#39#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattTRawSigGrpCntr#6#578#false#false#43#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattTRaw#6#578#false#false#55#9#0.5#-128.0#Battery temperature raw\n电池温度#0.0#0.0#0.0#{"296": "Invalid"}#KUNLUN20#E3
+BattURawSigGrpChks#6#579#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattURawSigGrpCntr#6#579#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattURaw#6#579#false#false#23#15#0.001#0.0#Battery Voltage raw\n电池电压#0.0#0.0#0.0#null#KUNLUN20#E3
+BattSocRawSigGrpChks#6#579#false#false#39#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattSocRawSigGrpCntr#6#579#false#false#43#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattSocRaw#6#579#false#false#49#10#0.1#0.0#Battery State of charge raw\n电池SOC#0.0#0.0#0.0#{"800": "Invalid"}#KUNLUN20#E3
+BattSohSigGrpChks#6#581#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattSohSigGrpCntr#6#581#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattSoh#6#581#false#false#23#10#0.1#0.0#Battery State of health\n电池SOH#0.0#0.0#0.0#null#KUNLUN20#E3
+LVBattMosDrvFlt#6#581#false#false#39#4#1#0#Low Voltage Battery Mosfet Drive Fault \n低压电池Mos粘连故障#0.0#0.0#0.0#null#KUNLUN20#E3
+LVBattMosStuckFlt#6#581#false#false#35#4#1#0#Low Voltage Battery Mosfet Stuck Fault \n低压电池Mos卡滞故障#0.0#0.0#0.0#null#KUNLUN20#E3
+BMDMAcvDcnMosSt#6#581#false#false#47#2#1#0#BMDM active disconnect Mosfet State\nBMDM主动断电Mos状态#0.0#0.0#0.0#{"0": "default", "1": "power_off", "2": "unable_to_perform_power_off", "3": "reserved"}#KUNLUN20#E3
+WakUpMem#6#740#false#false#6#1#1#0#wake up memory\n唤醒标志位#0.0#0.0#0.0#{"0": "Not_wake_up", "1": "wake_up"}#KUNLUN20#E3
+LvBattDCDCSts#6#740#false#false#5#1#1#0#low voltage battery DCDC status\n低压电池DCDC状态#0.0#0.0#0.0#{"0": "DCDC_is_not_work", "1": "DCDC_is_work"}#KUNLUN20#E3
+LVcellbalSts#6#740#false#false#4#4#1#0#low voltage cell voltage balance state\n低压电池电芯均衡状态#0.0#0.0#0.0#{"0": "normal", "1": "cell_1", "2": "cell_2", "3": "cell_1_2", "4": "cell_3", "5": "cell_1_3", "6": "cell_2_3", "7": "cell_1_2_3", "8": "cell_4", "9": "cell_1_4", "10": "cell_2_4", "11": "cell_1_2_4", "12": "cell_3_4", "13": "cell_1_3_4", "14": "cell_2_3_4", "15": "cell_1_2_3_4"}#KUNLUN20#E3
+BattRRaw#6#740#false#false#15#8#0.1#0.0#battery resistance raw\n当前SOC和温度下的电池内阻#0.0#0.0#0.0#{"60": "Invalid"}#KUNLUN20#E3
+BattSnsrGenlWarnRawSigGrpChks#6#740#false#false#23#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattSnsrGenlWarnRaw#6#740#false#false#31#4#1#0#battery sensor general warning Raw\n电池管理器一般性警示故障#0.0#0.0#0.0#{"0": "no_fault", "1": "\u7535\u82af\u8fc7\u538b\u63d0\u9192", "2": "\u7535\u82af\u6b20\u538b\u63d0\u9192", "3": "Pack\u8fc7\u538b\u63d0\u9192", "4": "Pack\u6b20\u538b\u63d0\u9192", "5": "\u5145\u7535\u8fc7\u6d41\u63d0\u9192", "6": "\u653e\u7535\u8fc7\u6d41\u63d0\u9192", "7": "Reserved", "8": "\u8fc7\u6e29\u63d0\u9192", "9": "Reserved", "10": "Mos\u8fc7\u6e29\u63d0\u9192", "11": "\u5747\u8861\u533a\u57df\u8fc7\u6e29\u63d0\u9192", "12": "AFE\u8fc7\u6e29\u63d0\u9192", "13": "Shunt\u8fc7\u6e29\u63d0\u9192", "14": "\u9650\u6d41\u6a21\u5757\u8fc7\u6e29\u63d0\u9192", "15": "Reserved"}#KUNLUN20#E3
+BattSnsrGenlWarnRawSigGrpCntr#6#740#false#false#27#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattTiInSrvRaw#6#740#false#false#39#12#1#0#Battery time in service raw\n电池服务年限#0.0#0.0#0.0#{"0": "Invalid"}#KUNLUN20#E3
+LVBattMosAdhFlt#6#740#false#false#43#4#1#0#Low Voltage Battery Mosfet Adhesion Fault\n低压电池Mos粘连故障#0.0#0.0#0.0#null#KUNLUN20#E3
+LvMaxIAvlSho#6#740#false#false#55#12#0.5#0.0#low voltage Max Current available低压电池最大可用电流-瞬时#0.0#0.0#0.0#null#KUNLUN20#E3
+BattRlySts#6#740#false#false#59#4#1#0#battery relay status\n电池继电器状态#0.0#0.0#0.0#null#KUNLUN20#E3
+BMDMSocCalTisTot#6#761#false#false#7#12#1#0#BMDM SOC Calibration times total\nBMDM SOC校准总次数#0.0#0.0#0.0#null#KUNLUN20#E3
+BMDMSocCalTiSncLst#6#761#false#false#23#8#1#0#BMDM SOC Calibration Time since last\nBMDM SOC距离上次校准过去的时间#0.0#0.0#0.0#null#KUNLUN20#E3
+BMDMSocCalMod#6#761#false#false#31#3#1#0#BMDM SOC Calibration Mode\nBMDM SOC上次发生校准的方式#0.0#0.0#0.0#{"0": "Default", "1": "Full_Charge", "2": "End_Charge", "3": "Middle_Discharge", "4": "Low_Soc_Discharge", "5": "Reserved", "6": "Reserved", "7": "Reserved"}#KUNLUN20#E3
+BMDMFaultInfoFlag#6#761#false#false#28#1#1#0#BMDM Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#KUNLUN20#E3
+QuiscCurMeasTiDurgPrkg#6#866#false#false#7#17#1#0#quiescent Current Measure time during Parking\n停车状态下的静态电流测量时间#0.0#0.0#0.0#{"0": "Invalid"}#KUNLUN20#E3
+BattQuiscAvgFildShoRaw#6#866#false#false#22#15#1.0#-20000.0#Battery Quiescent average filtered short raw\n短时静态电流平均值#0.0#0.0#0.0#{"19980": "Invalid"}#KUNLUN20#E3
+BattQuiscAvgFildLongRaw#6#866#false#false#39#11#1.0#-1024.0#Battery Quiescent average filtered long raw\n长时静态电流平均值#0.0#0.0#0.0#{"1004": "Invalid"}#KUNLUN20#E3
+BattTAtCell1#6#866#false#false#44#9#0.5#-128.0#battery temperature at the cell level 4 measurements \n电池单体1温度#0.0#0.0#0.0#null#KUNLUN20#E3
+BattTAtCell2#6#866#false#false#48#9#0.5#-128.0#battery temperature at the cell level 4 measurements \n电池单体2温度#0.0#0.0#0.0#null#KUNLUN20#E3
+BattCycDchaCntrDurgwakRaw#6#870#false#false#7#16#0.05#0.0#Battery cycle Discharge counter During wake Raw\n额定温度车辆Awake状态下电池放电量#0.0#0.0#0.0#{"0": "Invalid"}#KUNLUN20#E3
+BattCycDchaCntrDurgQuiscPhaRaw#6#870#false#false#23#18#0.005#0.0#Battery cycle Discharge counter During Quiescent Phase raw\n静态电流阶段放电量#0.0#0.0#0.0#null#KUNLUN20#E3
+BattQuiscAvgRaw#6#870#false#false#34#11#1.0#-2000.0#Battery Quiescent average raw\n当前静态电流平均值#0.0#0.0#0.0#{"1980": "Invalid"}#KUNLUN20#E3
+ShoQuiscCurMeasTiDurgPrkg#6#870#false#false#55#15#1#0#quiescent Current Measure during Parking\n停车状态下的静态电流测量值Ah#0.0#0.0#0.0#null#KUNLUN20#E3
+BattUAtCell1#6#871#false#false#7#16#0.001#0.0#battery voltage at the cell level 4 measurements \n电池单体电压#0.0#0.0#0.0#{"3200": "Invalid"}#KUNLUN20#E3
+BattUAtCell2#6#871#false#false#23#16#0.001#0.0#battery voltage at the cell level 4 measurements \n电池单体电压#0.0#0.0#0.0#{"3200": "Invalid"}#KUNLUN20#E3
+BattUAtCell3#6#871#false#false#39#16#0.001#0.0#battery voltage at the cell level 4 measurements \n电池单体电压#0.0#0.0#0.0#{"3200": "Invalid"}#KUNLUN20#E3
+BattUAtCell4#6#871#false#false#55#16#0.001#0.0#battery voltage at the cell level 4 measurements \n电池单体电压#0.0#0.0#0.0#{"3200": "Invalid"}#KUNLUN20#E3
+BattChrgBalDurgRunRaw#6#872#false#false#7#16#0.05#0.0#Battery cycle charge balance during running raw\n驾驶过程中电池充电量#0.0#0.0#0.0#{"0": "Invalid"}#KUNLUN20#E3
+BattChrgBalDurgWakRaw#6#872#false#false#23#16#0.05#0.0#Battery cycle charge balance during awake raw\nawake过程中电池充电量#0.0#0.0#0.0#{"0": "Invalid"}#KUNLUN20#E3
+BattCycDchaCntrDurgRunngRaw#6#872#false#false#47#14#0.05#0.0#Battery cycle Discharge counter  During running Raw\n额定温度车辆running/ACC状态下电池放电量#0.0#0.0#0.0#{"0": "Invalid"}#KUNLUN20#E3
+BMDMNodeAddress#6#1388#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#KUNLUN20#E3
+BMDMActiveWakeup#6#1388#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#KUNLUN20#E3
+BMDMRepeatMsgReq#6#1388#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#null#KUNLUN20#E3
+UDB23BMDM#6#1388#false#false#23#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB22BMDM#6#1388#false#false#22#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB21BMDM#6#1388#false#false#21#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB20BMDM#6#1388#false#false#20#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB19BMDM#6#1388#false#false#19#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB18BMDM#6#1388#false#false#18#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB17BMDM#6#1388#false#false#17#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BMDMRepeatMsgSt#6#1388#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#KUNLUN20#E3
+UDB31BMDM#6#1388#false#false#31#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB30BMDM#6#1388#false#false#30#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB29BMDM#6#1388#false#false#29#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB28BMDM#6#1388#false#false#28#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB27BMDM#6#1388#false#false#27#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB26BMDM#6#1388#false#false#26#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB25BMDM#6#1388#false#false#25#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB24BMDM#6#1388#false#false#24#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB39BMDM#6#1388#false#false#39#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB38BMDM#6#1388#false#false#38#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB37BMDM#6#1388#false#false#37#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB36BMDM#6#1388#false#false#36#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB35BMDM#6#1388#false#false#35#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB34BMDM#6#1388#false#false#34#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB33BMDM#6#1388#false#false#33#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB32BMDM#6#1388#false#false#32#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB47BMDM#6#1388#false#false#47#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB46BMDM#6#1388#false#false#46#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB45BMDM#6#1388#false#false#45#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB44BMDM#6#1388#false#false#44#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB43BMDM#6#1388#false#false#43#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB42BMDM#6#1388#false#false#42#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB41BMDM#6#1388#false#false#41#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB40BMDM#6#1388#false#false#40#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+NMKeepAwkRsnBMDM#6#1388#false#false#48#9#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BMDMToVCCDDiagResp#6#1656#false#false#7#64#1#0#BMDMToVCCDBodyCanDiagRespNpdu#0.0#0.0#0.0#null#KUNLUN20#E3
+DCDCSigGrpChks#6#306#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+DCDCSigGrpCntr#6#306#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+DCDCCurAvlMaxLV#6#306#false#false#23#11#0.5#0.0#available maximal current at DCDC Lv side considering DCDC status  positive means current flows from DCDC to LV#0.0#0.0#0.0#null#KUNLUN20#E3
+DCDCFltLvlIndcn#6#306#false#false#28#3#1#0#DCDC fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_LV0_DTCOnly", "2": "Fault_LV1_Recoverable", "3": "Fault_LV2_Not_Recoverable"}#KUNLUN20#E3
+DCDCModSts#6#306#false#false#39#4#1#0#DCDC mode status.#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Power_conversion_HV_to_LV_Buck", "4": "Power_conversion_LV_to_HV_Boost", "5": "After_Run", "6": "Failure", "7": "Active_discharge"}#KUNLUN20#E3
+VehDrvDirctSigGrpChks#6#256#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+VehDrvDirctSigGrpCntr#6#256#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+VehDrvDirct#6#256#false#false#23#2#1#0#vehicle drive direction\n车辆行驶方向#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#KUNLUN20#E3
+VCUAccAnaPtsRaw#6#256#false#false#31#15#0.004#0.0#Accelerator pedal position sensor raw value.\n加速踏板百分比Raw值#0.0#0.0#0.0#null#KUNLUN20#E3
+VCUAccrPedlRatGrdt#6#256#false#true#47#15#0.0625#0.0#加速油门踏板开度变化率#0.0#0.0#0.0#null#KUNLUN20#E3
+VcuInpSigGrpChks#6#286#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+VCURgnTqCorrnFac#6#286#false#false#15#4#0.1#0.0#Regeneration Torque Correction Factor#0.0#0.0#0.0#null#KUNLUN20#E3
+VcuInpSigGrpCntr#6#286#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+VCUStsModCst#6#286#false#false#23#8#1#0#energy recuperation end mode.\n能量回收状态模式#0.0#0.0#0.0#{"0": "OPedl_No_RgL1", "1": "OPedl_No_RgL2", "2": "OPedl_No_RgL3", "3": "OPedl_No_RgL4", "4": "OPedl_No_RgL5", "5": "OPedl_No_ADASactive", "6": "OPedl_No_RoadGradientInhbit", "7": "OPedl_No_PowerDown", "16": "OPedl_Stop_RgL1", "17": "OPedl_Stop_RgL2", "18": "OPedl_Stop_RgL3", "19": "OPedl_Stop_RgL4", "20": "OPedl_Stop_RgL5", "21": "OPedl_Crp_RgL1", "22": "OPedl_Crp_RgL2", "23": "OPedl_Crp_RgL3", "24": "OPedl_Crp_RgL4", "25": "OPedl_Crp_RgL5", "26": "OPedl_FW_RgL1", "27": "OPedl_FW_RgL2", "28": "OPedl_FW_RgL3", "29": "OPedl_FW_RgL4", "30": "OPedl_FW_RgL5"}#KUNLUN20#E3
+VCUAccrPedlRat#6#286#false#false#31#15#0.004#0.0#加速油门踏板开度#0.0#0.0#0.0#null#KUNLUN20#E3
+VCUPrkgBtnPsd#6#286#false#false#32#1#1#0#驾驶员按下P档#0.0#0.0#0.0#{"0": "Not_Active", "1": "active"}#KUNLUN20#E3
+VCUVirtAccrPedl#6#286#false#false#47#7#1#0#虚拟油门开度 当前模式的pedal map反算#0.0#0.0#0.0#null#KUNLUN20#E3
+VCUTarGearLvrVld#6#286#false#false#40#1#1#0#目标档位有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#KUNLUN20#E3
+VCUAccrPedlRatVld#6#286#false#false#55#1#1#0#加速踏板有效性#0.0#0.0#0.0#{"0": "invalid", "1": "valid"}#KUNLUN20#E3
+VCUFrntEmTqRdy#6#286#false#false#54#1#1#0#The Front Motor  can be ready to response chassis torque request.\n前电机可以响应扭矩请求.#0.0#0.0#0.0#{"0": "Not_ready", "1": "Ready"}#KUNLUN20#E3
+VCUReEmTqRdy#6#286#false#false#53#1#1#0#Rear EM is ready to response chassis Torque Request\n后电机是否处于Ready状态#0.0#0.0#0.0#{"0": "Not_ready", "1": "Ready"}#KUNLUN20#E3
+VCUTarGearLvr#6#286#false#false#52#3#1#0#目标档位  P R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#KUNLUN20#E3
+VCUVirtAccrPedlVld#6#286#false#false#49#1#1#0#虚拟油门开度有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#KUNLUN20#E3
+VCUShifterMoveFlg#6#286#false#false#48#1#1#0#驾驶员拨动了换挡杆的标志位#0.0#0.0#0.0#null#KUNLUN20#E3
+VCUDrvOffFcnLim#6#286#false#false#63#1#1#0#VCU send to BCS to identify whether vehcile can drive off or not as powertrain has fault and power limited.\nVCU发送给BCS系统，用于判断整车动力系统是否存在故障动力受限不能起步的判断#0.0#0.0#0.0#{"0": "Normal;", "1": "PowerLimited_Fault."}#KUNLUN20#E3
+VCUGearLvrAvail#6#286#false#false#62#1#1#0#Vehicle Gear Response is available for ADAS\n给智驾反馈的挡位可用标志位#0.0#0.0#0.0#{"0": "Not_Available", "1": "Available"}#KUNLUN20#E3
+ChrgUReq#6#420#false#false#15#16#0.001#0.0#充电电压请求#0.0#0.0#0.0#null#KUNLUN20#E3
+IntelgntChrgReq#6#420#false#false#30#2#1#0#battery Intelligent charging request\n智能充电请求#0.0#0.0#0.0#{"0": "NotReqd", "1": "Reqd", "2": "Reserved0", "3": "Reserved1"}#KUNLUN20#E3
+EgyAvlDelta#6#420#false#false#27#12#0.01#0.0#可用电池容量#0.0#0.0#0.0#null#KUNLUN20#E3
+BattSocFild#6#420#false#false#47#10#0.1#0.0#过滤后的SOC#0.0#0.0#0.0#null#KUNLUN20#E3
+ChrgnUReqMax#6#567#false#false#7#12#0.01#0.0#charge voltage request Maximum\n允许的最大充电电压#0.0#0.0#0.0#null#KUNLUN20#E3
+BattSnsrStReq#6#567#false#false#11#2#1#0#Battery sensor state set request\n电池管理器状态设置请求#0.0#0.0#0.0#{"0": "BattSnsrSt_Off", "1": "BattSnsrSt_Awake_default", "2": "BattSnsrSt_ACCorRUN"}#KUNLUN20#E3
+ChrgModReq#6#567#false#false#9#2#1#0#charge mode request\n充电模式需求#0.0#0.0#0.0#{"0": "\u4f20\u7edf/\u9ed8\u8ba4\u6a21\u5f0f", "1": "\u6821\u51c6/\u6ee1\u5145\u6a21\u5f0f", "2": "\u653e\u7535/\u8109\u51b2\u6a21\u5f0f"}#KUNLUN20#E3
+BattFltAfctCrk#6#567#false#false#23#1#1#0#1#0.0#0.0#0.0#{"0": "no_fault", "1": "fault"}#KUNLUN20#E3
+DCDCOutpBreak#6#567#false#false#22#1#1#0#DCDC Output Break\nDCDC输出中断#0.0#0.0#0.0#{"0": "no_fault", "1": "fault"}#KUNLUN20#E3
+LVPwrSplyErrSOCLoRmd#6#567#false#false#21#1#1#0#Low voltage power supply error soc low remind\n低压供电错误低电量提醒#0.0#0.0#0.0#{"0": "no_fault", "1": "SOC_Low"}#KUNLUN20#E3
+LvMaxIAvlToDCDC#6#567#false#false#19#12#0.5#0.0#Low voltage Maximum current available to DCDC 低压最大可给DCDC使用的电流#0.0#0.0#0.0#null#KUNLUN20#E3
+TarSOC#6#567#false#false#39#7#1.0#0.0#target SOC\n目标SOC#0.0#0.0#0.0#{"0": "100%", "1": "\u9884\u7559", "2": "\u9884\u7559"}#KUNLUN20#E3
+BattSnsrHwFltFild#6#567#false#false#32#1#1#0#battery sensor hardware fault Field\n过滤的电池管理器硬件故障#0.0#0.0#0.0#{"0": "no_fault", "1": "fault"}#KUNLUN20#E3
+PwrAlvDelta#6#567#false#false#47#13#1#-200#power available delta\n可用能量#0.0#0.0#0.0#null#KUNLUN20#E3
+ULoWarn#6#567#false#false#50#2#1#0#voltage Low warning\n欠压报警#0.0#0.0#0.0#{"0": "normal_voltage", "1": "undervoltage", "2": "overvoltage", "3": "Reserved"}#KUNLUN20#E3
+StsOfIndcr#6#567#false#false#63#3#1#0#转向状态指示#0.0#0.0#0.0#{"0": "Noflash", "1": "flashLeft", "2": "flashRight", "3": "Doubleflash"}#KUNLUN20#E3
+SwtIndcr#6#567#false#false#60#3#1#0#转向拨杆信号#0.0#0.0#0.0#{"0": "Noflash", "1": "ShotFlashLeft", "2": "NormalFlashLeft", "3": "ShortFlashRight", "4": "NormalFlashRight"}#KUNLUN20#E3
+SysURaw#6#568#false#false#55#12#0.01#0.0#System Voltage raw\n负载端电压#0.0#0.0#0.0#null#KUNLUN20#E3
+BattSnsrComFlt#6#568#false#false#59#1#1#0#battery sensor communication fault\n电池管理器通讯故障#0.0#0.0#0.0#{"0": "no_fault", "1": "fault"}#KUNLUN20#E3
+AmbTEstimdVld#6#757#false#false#5#1#1#0#Estimated ambient temperature valid value.#0.0#0.0#0.0#{"0": "Not_Valid", "1": "Valid"}#KUNLUN20#E3
+IntelgntChrgPollingLogl#6#757#false#false#1#2#1#0#Intelligent charge polling logic\n智能补电轮询逻辑#0.0#0.0#0.0#{"0": "default", "1": "stop", "2": "polling", "3": "Reserved"}#KUNLUN20#E3
+AmbTEstimd#6#757#false#false#15#16#0.01#-80.0#Estimated ambient temperature.#0.0#0.0#0.0#null#KUNLUN20#E3
+VehSysFltWarnSigGrpChks#6#759#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+VCUHVSysFltWarnSts#6#759#false#false#15#4#1#0#高压系统故障 分等级#0.0#0.0#0.0#{"0": "no_warning", "1": "reserved", "2": "HV_System_Fault_warning_Level2", "3": "reserved", "4": "HV_System_Fault_warning_Level4", "5": "HV_System_Fault_warning_Level5", "6": "HV_System_Fault_warning_Level6", "7": "reserved", "8": "HV_System_Fault_warning_Level8", "9": "HV_System_Fault_warning_Level9", "10": "reserved", "11": "reserved", "12": "reserved", "13": "reserved", "14": "reserved", "15": "reserved"}#KUNLUN20#E3
+VehSysFltWarnSigGrpCntr#6#759#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+VCUGearChgFailInde#6#759#false#false#23#4#1#0#换挡失败提醒#0.0#0.0#0.0#{"0": "No_request", "1": "Please_brake", "2": "Vehicle_speed_high", "3": "Charging_plug_insertion", "4": "EPB_failure", "5": "E_motor_failure", "6": "Connect_the_key_and_press_SSB", "7": "Press_SSB", "8": "Show_Room_Keep_Park", "9": "LV_System_Failure", "10": "HV_System_Failure", "11": "Immobilizer_Not_Pass", "12": "Trailer_Mode_Not_Shift", "13": "Shifter_Failure"}#KUNLUN20#E3
+VCULoSocWarngMsg#6#759#false#false#19#2#1.0#0.0#高压电池低电量报警\nHV Battery low SOC warnning#0.0#0.0#0.0#{"0": "Not_active", "1": "Level1_warning", "2": "Level2_warning"}#KUNLUN20#E3
+VCUBattOverHeatWarn#6#759#false#false#17#1#1#0#电池过温时 仪表点亮电池过温报警灯#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#KUNLUN20#E3
+VCUDrvMotFltWarn#6#759#false#false#16#1#1#0#当驱动电机发生故障时 仪表点亮驱动电机故障灯#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#KUNLUN20#E3
+VCUDrvMotOverHeatWarn#6#759#false#false#31#1#1#0#驱动电机过热报警#0.0#0.0#0.0#{"0": "Not_active", "1": "Active"}#KUNLUN20#E3
+VCUDrvSysLimdWarn#6#759#false#false#30#1#1#0#VCU发送点亮跛行故障灯信号 仪表点灯#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#KUNLUN20#E3
+VCUHvBattSysFltIndcr#6#759#false#false#29#1#1#0#动力电池故障报警灯 低级#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#KUNLUN20#E3
+VCUHvBattSysFltWarn#6#759#false#false#28#1#1#0#动力电池故障报警灯 严重#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#KUNLUN20#E3
+VCUHvPwrSysCutOff#6#759#false#false#27#1#1#0#VCU发送动力系统切断故障telltale#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#KUNLUN20#E3
+VCUPrpsnPwrDrt#6#759#false#false#26#1#1#0#VCU发送动力性能降级故障 仪表进行文字显示和声音提醒#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#KUNLUN20#E3
+VCUThermRunawayErrAlrm#6#759#false#false#25#1#1#0#热失控报警#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#KUNLUN20#E3
+VCUVehSysFltWarn#6#759#false#false#24#1#1#0#VCU发送点亮整车系统故障灯信号 仪表点灯#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#KUNLUN20#E3
+PwrModSigGrpChks#6#144#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+PwrModSigGrpCntr#6#144#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+PwrModSts#6#144#false#false#23#3#1#0#PowerMode Status#0.0#0.0#0.0#{"0": "OFF", "1": "Awake", "2": "ACC", "3": "RUN"}#KUNLUN20#E3
+PwrModVld#6#144#false#false#20#1#1#0#PowerMode Validty#0.0#0.0#0.0#{"0": "Valid", "1": "NotValid"}#KUNLUN20#E3
+VCUActGearSigGrpChks#6#144#false#false#47#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+VCUActGearLvr#6#144#false#false#55#3#1#0#Actual gear level 车辆实际档位\nP R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#KUNLUN20#E3
+VCUActGearLvrVld#6#144#false#false#52#1#1#0#车辆实际档位有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#KUNLUN20#E3
+VCUActGearSigGrpCntr#6#144#false#false#51#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+VCUPtRdyFlg#6#144#false#false#63#1#1#0#驾驶使能#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#KUNLUN20#E3
+CarModSts#6#144#false#false#62#3#1#0#CarMode状态信号#0.0#0.0#0.0#{"0": "Normal", "1": "Fcy", "2": "Trsnp", "3": "Showroom", "4": "Dyno", "5": "TestDrv", "6": "Service", "7": "Reserved3"}#KUNLUN20#E3
+VCUActDrvMod#6#144#false#false#59#4#1#0#VCU actual drive mode \nVCU实际驾驶模式#0.0#0.0#0.0#{"0": "Comfort_Mode", "1": "Sport_Mode", "2": "Individual_Mode1", "3": "Individual_Mode2", "4": "Individual_Mode3", "5": "Snow_Mode", "6": "Mountain_Mode", "7": "Battle_Mode", "8": "Extreme_Eco_mode", "9": "Sport_plus_mode", "10": "Off_road_Mode"}#KUNLUN20#E3
+UDB23FZCU#6#1381#false#false#23#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB22FZCU#6#1381#false#false#22#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB21FZCU#6#1381#false#false#21#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB20FZCU#6#1381#false#false#20#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB19FZCU#6#1381#false#false#19#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB18FZCU#6#1381#false#false#18#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB17FZCU#6#1381#false#false#17#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB31FZCU#6#1381#false#false#31#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB30FZCU#6#1381#false#false#30#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB29FZCU#6#1381#false#false#29#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB28FZCU#6#1381#false#false#28#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB27FZCU#6#1381#false#false#27#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB26FZCU#6#1381#false#false#26#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB25FZCU#6#1381#false#false#25#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB24FZCU#6#1381#false#false#24#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB39FZCU#6#1381#false#false#39#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB38FZCU#6#1381#false#false#38#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB37FZCU#6#1381#false#false#37#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB36FZCU#6#1381#false#false#36#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB35FZCU#6#1381#false#false#35#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB34FZCU#6#1381#false#false#34#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB33FZCU#6#1381#false#false#33#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB32FZCU#6#1381#false#false#32#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB47FZCU#6#1381#false#false#47#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB46FZCU#6#1381#false#false#46#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB45FZCU#6#1381#false#false#45#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB44FZCU#6#1381#false#false#44#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB43FZCU#6#1381#false#false#43#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB42FZCU#6#1381#false#false#42#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB41FZCU#6#1381#false#false#41#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB40FZCU#6#1381#false#false#40#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+NMKeepAwkRsnFZCU#6#1381#false#false#48#9#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BattSocBliveSts#6#570#false#false#7#2#1#0#battery SOC believable Status\n电池SOC可信状态#0.0#0.0#0.0#{"0": "\u53ef\u4fe1", "1": "\u4e0d\u53ef\u4fe1", "2": "\u9884\u7559", "3": "\u9884\u7559"}#KUNLUN20#E3
+LABSocCalMod#6#570#false#false#50#2#1#0#lead acid battery SOC calibration mode\n铅酸电池SOC校准模式#0.0#0.0#0.0#{"0": "\u672a\u53d1\u751f\u6821\u51c6", "1": "\u6ee1\u5145\u6821\u51c6", "2": "OCV\u6821\u51c6", "3": "\u9884\u7559"}#KUNLUN20#E3
+SecLeSeatHeatgSet#6#494#false#false#7#8#1#0#Second Row  Left Seat Heating Setting\n二排左侧驾座椅加热设置  加热占空比设置#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowLeSeatBackPosSetCmd#6#494#false#false#15#8#1.0#-1.0#Second Row Left Seat Seat Back Position Setting Command\n二排左侧座椅靠背电机位置设置#0.0#0.0#0.0#{"0": "No_Command", "255": "Stop"}#KUNLUN20#E3
+SecRowLeSeatHozlPosSetCmd#6#494#false#false#23#8#1.0#-1.0#Second Row Left Seat Seat Horizontal Position Setting Command\n二排左侧座椅水平电机位置设置#0.0#0.0#0.0#{"0": "No_Command", "255": "Stop"}#KUNLUN20#E3
+SecRowLeSeatLegRestHeiPosSetCmd#6#494#false#false#31#8#1.0#-1.0#Second Row Left Seat Seat Leg Rest Height Position Setting Command 二排左侧座椅座椅腿托高度电机位置设置#0.0#0.0#0.0#{"0": "No_Command", "255": "Stop"}#KUNLUN20#E3
+SecRowLeSeatTiltPosSetCmd#6#494#false#false#39#8#1.0#-1.0#Second Row Left Seat Seat Tilt Position Setting Command 二排左侧座椅倾角电机位置设置#0.0#0.0#0.0#{"0": "No_Command", "255": "Stop"}#KUNLUN20#E3
+SecLeSeatHeatgEnaSts#6#494#false#false#47#1#1#0#Second Row Left Seat Heating Enable Status\n二排左侧座椅加热使能#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#KUNLUN20#E3
+SecRowLeBackAdjCmd#6#494#false#false#46#2#1#0#Second Row Left Seat Back Adjustment Command\n二排左侧座椅靠背电机调节指令#0.0#0.0#0.0#{"0": "No_Command", "1": "Forward", "2": "Rearward"}#KUNLUN20#E3
+SecRowLeHozlAdjCmd#6#494#false#false#44#2#1#0#Second Row Left Seat Horizontal Adjustment Command \n二排左侧座椅水平电机调节指令#0.0#0.0#0.0#{"0": "No_Command", "1": "Forward", "2": "Rearward"}#KUNLUN20#E3
+SecRowLeSeatMotIninReq#6#494#false#false#42#2#1#0#Second Row Left Seat Seat Motor Initialization Request\n二排左侧座椅座椅电机初始化请求#0.0#0.0#0.0#{"0": "No_Command", "1": "IninReq_Both_Side", "2": "IninReq_Single_Side", "3": "IninStop"}#KUNLUN20#E3
+SecRowLeTiltAdjCmd#6#494#false#false#55#2#1#0#Second Row Left Seat Tilt Adjustment Command  二排左侧座椅倾角电机调节指令#0.0#0.0#0.0#{"0": "No_Command", "1": "Up", "2": "Down"}#KUNLUN20#E3
+SecRowLeLegRestHeiAdjCmd#6#494#false#false#53#2#1#0#Second Row Left Seat Leg Rest Height Adjustment Command  二排左侧座椅腿托高度电机调节指令#0.0#0.0#0.0#{"0": "No_Command", "1": "Up", "2": "Down"}#KUNLUN20#E3
+SecLeSeatVentnSet#6#814#false#false#7#8#1#0#Second Row Left Seat Ventilation Set\n二排左侧座椅通风设置 通风风扇调速PWM占空比设置#0.0#0.0#0.0#null#KUNLUN20#E3
+SeatVentnSecLePwrCtrl#6#814#false#false#15#1#1#0#Second Row Left Seat  Ventilation Power Control\n二排左侧座椅通风电源控制#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#KUNLUN20#E3
+SecRowLeOcupcyRawSts#6#428#false#false#7#2#1#0##0.0#0.0#0.0#{"0": "Empty", "1": "Occupied", "2": "Invaild_STG", "3": "Invaild_STB_OL"}#KUNLUN20#E3
+MLSDMInpU#6#521#false#false#7#8#0.1#0.0#MLSDM Input Voltage\nMLSDM 输入电压参数#0.0#0.0#0.0#null#KUNLUN20#E3
+MLSDMInpUSts#6#521#false#false#15#2#1#0#MLSDM Input Voltage Status\nMLSDM 输入电压状态#0.0#0.0#0.0#{"0": "Normal", "1": "UnderVoltage", "2": "OverVoltage"}#KUNLUN20#E3
+SecRowLeBackAdjSts#6#521#false#false#13#2#1#0#Second Row Left Seat Back Motor Adjusts Status二排左侧靠背电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Forward", "2": "Rearward"}#KUNLUN20#E3
+SecRowLeLatAdjSts#6#521#false#false#11#2#1#0#Second Row Left Seat Latral Motor Adjusts Status二排左侧侧滑电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Forward", "2": "Rearward"}#KUNLUN20#E3
+SecRowLeLegRestHeiAdjSts#6#521#false#false#9#2#1#0#Second Row Left Seat Leg Rest Height Motor Adjust Status 二排左侧腿托高度电机调节状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down"}#KUNLUN20#E3
+SecRowLeBackLegRestHwSwtSts#6#521#false#false#23#3#1#0#Second Row Left Back and Leg Rest Height Hardwire Switch Status  二排左侧靠背调角和腿托高度电机硬线按键状态#0.0#0.0#0.0#{"0": "Idle", "1": "Tilt_Up", "2": "Tilt_Down", "3": "Back_Fwd", "4": "Back_Rwd", "5": "invalid"}#KUNLUN20#E3
+SecRowLeHozlTiltHwSwtSts#6#521#false#false#20#3#1#0#Second Row Left Horizontal and Tilt Hardwire Switch Status\n二排左侧水平和倾角电机硬线按键状态#0.0#0.0#0.0#{"0": "Idle", "1": "Hozl_Fwd", "2": "Hozl_Rwd", "3": "Hei_Up", "4": "Hei_Down", "5": "invalid", "6": "Reserved", "7": "Reserved"}#KUNLUN20#E3
+SecRowLeLeHozlAdjSts#6#521#false#false#17#2#1#0#Second Row Left Seat Left Side Horizontal Motor Adjusts Status二排左侧左水平电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Forward", "2": "Rearward"}#KUNLUN20#E3
+SecRowLeLegRestHwSwtSts#6#521#false#false#31#3#1#0#Second Row Left Legrest Height and Width  Hard Switch Status  二排左侧腿托高度&宽度硬线按键状态#0.0#0.0#0.0#{"0": "Idle", "1": "LegRest_Up", "2": "LegRest_Down", "3": "LegRest_Widen(Reserved)", "4": "LegRest_Narrow(Reserved)", "5": "invalid", "6": "Reserved", "7": "Reserved"}#KUNLUN20#E3
+SecRowLeLeTiltAdjSts#6#521#false#false#28#2#1#0#Second Row Left Seat Left Side Tilt Motor Adjusts Status二排左侧左倾角电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down"}#KUNLUN20#E3
+SecRowLeRiHozlAdjSts#6#521#false#false#26#2#1#0#Second Row Left Seat Right Side Horizontal Motor Adjusts Status二排左侧右水平电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Forward", "2": "Rearward"}#KUNLUN20#E3
+SecLeSeatHeatgSts#6#521#false#false#24#1#1#0#Second Row Left Seat Heating Status \n二排左侧座椅加热状态#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#KUNLUN20#E3
+SecRowLeRiTiltAdjSts#6#521#false#false#39#2#1#0#Second Row Left Seat Right Side Tilt Motor Adjusts Status二排左侧右倾角电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down"}#KUNLUN20#E3
+SecRowLeRstHwSwtSts#6#521#false#false#37#2#1#0#Second Row Left One Step Rest Seat Hardware Switch Status 二排左侧一键复位座椅硬按键状态#0.0#0.0#0.0#{"0": "No_Pressed", "1": "Pressed", "2": "Invalid"}#KUNLUN20#E3
+SecRowLeSeatMotSetSts#6#521#false#false#35#3#1#0#Second Row Left Seat Motor Set Status\n二排左侧座椅电机设置状态#0.0#0.0#0.0#{"0": "No_SetReq", "1": "Setting", "2": "Intrpt", "3": "Set_Suc", "4": "Set_Faild", "5": "Reserve1", "6": "Reserve2", "7": "Reserve3"}#KUNLUN20#E3
+SecRowLeZeroGSeatHwSwtSts#6#521#false#false#47#2#1#0#Second Row Left Zero Gravity Seat Hardware Switch Status 二排左侧零重力座椅硬开关状态#0.0#0.0#0.0#{"0": "Idle", "1": "Sho_Psd", "2": "Long_Psd", "3": "Invalid"}#KUNLUN20#E3
+SecLeSeatHeatgTSts#6#521#false#false#55#8#0.5#-40.0#Second Row Left Seat Heating Temperature Status\n二排左侧座椅加热温度状态#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowLeSeatBackMotPosn#6#522#false#false#7#8#1.0#0.0#Second Row Left Seat Back Motor Position\n二排左侧靠背电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#KUNLUN20#E3
+SecRowLeSeatHozlMotPosn#6#522#false#false#15#8#1.0#0.0#Second Row Left Seat Horizontal Motor Position\n二排左侧水平电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#KUNLUN20#E3
+SecRowLeSeatLegRestHeiMotPosn#6#522#false#false#23#8#1.0#0.0#Second Row Left Seat Leg Rest Height Motor Position 二排左侧腿托高度电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#KUNLUN20#E3
+SecRowLeSeatLeTiltMotPosn#6#522#false#false#31#8#1.0#0.0#Second Row Left Seat Side Left Motor Position\n二排左侧座椅左倾角电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#KUNLUN20#E3
+SecRowLeSeatRiTiltMotPosn#6#522#false#false#39#8#1.0#0.0#Second Row Left Seat Side Left Motor Position\n二排左侧座椅右倾角电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#KUNLUN20#E3
+SecRowLeSeatBackMotFlt#6#807#false#false#7#8#1#0#Second Row Left Seat Back Motor Fault\n二排左侧座椅靠背电机故障\nBit0 MotorOutputSTB\nBit1 MotorOutputSTG\nBit2 MotorOutputOpen\nBit3 HallSensorFlt\nBit4 HallSensorPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowLeSeatLeTiltMotFlt#6#807#false#false#15#8#1#0#Second Row Left Seat Left Tilt Motor Fault\n二排左侧座椅左倾角电机故障\nBit0 MotorOutputSTB\nBit1 MotorOutputSTG\nBit2 MotorOutputOpen\nBit3 HallSensorFlt\nBit4 HallSensorPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowLeSeatLatMotFlt#6#807#false#false#23#8#1#0#Second Row Left Side Seat Lateral Slide Motor Fault\n二排左侧座椅侧滑电机故障\nBit0 MotorOutputSTB\nBit1 MotorOutputSTG\nBit2 MotorOutputOpen\nBit3 HallSensorFlt\nBit4 HallSensorPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowLeSeatLegRestHeiMotFlt#6#807#false#false#31#8#1#0#Second Row Left Seat Leg Rest Height Motor Fault 二排左侧座椅腿托高度电机故障  \nBit0 MotorOutputSTB Bit1 MotorOutputSTG Bit2 MotorOutputOpen Bit3 HallSensorFlt Bit4 HallSensorPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowLeSeatLeHozlMotFlt#6#807#false#false#39#8#1#0#Second Row Left Side Left Seat Horizontal Motor Fault\n二排左侧座椅左水平电机故障\nBit0 MotorOutputSTB\nBit1 MotorOutputSTG\nBit2 MotorOutputOpen\nBit3 HallSensorFlt\nBit4 HallSensorPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowLeLegRestAntiPinchSts#6#807#false#false#47#1#1#0#Second Row Left Seat LegRest Anti Pinch Status\n二排左侧腿托电机防夹状态#0.0#0.0#0.0#{"0": "No_Anti_Pinch", "1": "Motor_Anti_Pinch"}#KUNLUN20#E3
+SecRowLeLegRestHeiTemProtdSts#6#807#false#false#46#2#1#0#Second Row Left Seat Legrest Height Motor Temperature Protected Status 二排左侧座椅腿托高度电机温度保护状态#0.0#0.0#0.0#{"0": "No_TempProtd", "1": "TempProtd"}#KUNLUN20#E3
+SecRowLeSeatBackAntiPinchSts#6#807#false#false#44#1#1#0#Second Row Left  Side Seat Back Anti Pinch Status\n二排左侧靠背电机防夹状态#0.0#0.0#0.0#{"0": "No_Anti_Pinch", "1": "Motor_Anti_Pinch"}#KUNLUN20#E3
+SecRowLeSeatIninFaildRsn#6#807#false#false#43#4#1#0#Second Row Left Seat initialization Failed Reason 二排左侧座椅初始化失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "StopReq", "2": "MotFlt", "3": "HwSwIntrpt", "4": "TimeOut", "5": "DataWrFaild", "6": "ComError", "7": "VoltError", "8": "Ocupacy", "9": "VehSpdLim"}#KUNLUN20#E3
+SecRowLeSeatBackMotStallSts#6#807#false#false#55#1#1#0#Second Row Left  Side Seat Back Anti Pinch Status\n二排左侧靠背电机防夹状态#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#KUNLUN20#E3
+SecRowLeSeatLatAntiPinchSts#6#807#false#false#54#1#1#0#Second Row Left Side Seat Lateral Slide Anti Pinch Status\n二排左侧侧滑电机防夹状态#0.0#0.0#0.0#{"0": "No_Anti_Pinch", "1": "Motor_Anti_Pinch"}#KUNLUN20#E3
+SecRowLeSeatLatMotStallSts#6#807#false#false#53#1#1#0#Second Row Left Seat Lateral Slide Motor Stall Status\n二排左侧座椅侧滑电机堵转状态#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#KUNLUN20#E3
+SecRowLeSeatLegRestMotStallSts#6#807#false#false#52#1#1#0#Second Row Left Seat Leg Rest Height Motor Stall Status 二排左侧座椅腿托高度调节电机堵转状态#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#KUNLUN20#E3
+SecRowLeSeatLeHozlMotStallSts#6#807#false#false#51#1#1#0#Second Row Left Seat Left Horizontal Motor Stall Status\n二排左侧座椅左水平电机堵转状态#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#KUNLUN20#E3
+SecRowLeSeatLeTiltMotStallSts#6#807#false#false#50#1#1#0#Second Row Left Side Left Seat Tilt Motor Stall Status\n二排左侧左座椅倾角电机堵转状态#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#KUNLUN20#E3
+SecRowLeSeatMotIninSts#6#807#false#false#49#2#1#0#Second Row Left Seat Motor Initialization Status\n二排左侧座椅电机初始化状态#0.0#0.0#0.0#{"0": "OFF", "1": "Learning", "2": "LearningSuccessed", "3": "LearningFailed"}#KUNLUN20#E3
+SecRowLeSeatRiHozlAntiPinchSts#6#807#false#false#63#1#1#0#Second Row Left Seat Horizontal Anti Pinch Status\n二排左侧右水平电机防夹状态#0.0#0.0#0.0#{"0": "No_Anti_Pinch", "1": "Motor_Anti_Pinch"}#KUNLUN20#E3
+SecRowLeSeatLeHozlAntiPinchSts#6#807#false#false#62#1#1#0#Second Row Left Side Right Seat Horizontal Anti Pinch Status\n二排左侧右水平电机防夹状态#0.0#0.0#0.0#{"0": "No_Anti_Pinch", "1": "Motor_Anti_Pinch"}#KUNLUN20#E3
+SecRowLeRiTiltTemProtdSts#6#807#false#false#61#2#1#0#Second Row Left Side Seat Right Motor Temperature Protected Status\n二排左侧座椅右倾角电机温度保护状态#0.0#0.0#0.0#{"0": "No_TempProtd", "1": "TempProtd"}#KUNLUN20#E3
+SeatHeatgSecRowLeFlt#6#810#false#false#7#8#1#0#Second Row Left Seat Heating Fault at Left side \n二排左侧座椅加热故障\nBit0 HeaterOutputOverCurrent Bit1 HeaterOutputUnderCurrent Bit2 NTCSensorSTB Bit3 NTCSensorSTG Bit4 HeaterReturnFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecLeSeatVentnFlt#6#810#false#false#23#8#1#0#Second Row Left Seat Ventilation Fault \n二排左侧座椅通风故障 \nBit0  VentnOutputSTG_Open Bit1  VentnPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecLeSeatVentnSts#6#810#false#false#31#8#1#0#Second Row Left Seat Ventilation Status\n二排左侧座椅通风状态 通风风扇调速PWM占空比反馈#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowLeSeatRiHozlMotFlt#6#810#false#false#39#8#1#0#Second Row Left Side Right Seat Horizontal Motor Fault\n二排左侧座椅右水平电机故障\nBit0 MotorOutputSTB\nBit1 MotorOutputSTG\nBit2 MotorOutputOpen\nBit3 HallSensorFlt\nBit4 HallSensorPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowLeSeatRiTiltMotFlt#6#810#false#false#47#8#1#0#Second Row Left Seat Right Tilt Motor Fault\n二排左侧座椅右倾角电机故障\nBit0 MotorOutputSTB\nBit1 MotorOutputSTG\nBit2 MotorOutputOpen\nBit3 HallSensorFlt\nBit4 HallSensorPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowLeBackTemProtdSts#6#810#false#false#55#2#1#0#Second Row Left Back Motor Temperature Protected Status\n二排左侧靠背电机温度保护状态#0.0#0.0#0.0#{"0": "No_TempProtd", "1": "TempProtd"}#KUNLUN20#E3
+SecRowLeLatTemProtdSts#6#810#false#false#53#2#1#0#Second Row Left Side Lateral Slide Motor Temperature Protected Status\n二排左侧侧滑电机温度保护状态#0.0#0.0#0.0#{"0": "No_TempProtd", "1": "TempProtd"}#KUNLUN20#E3
+SecRowLeLeTiltTemProtdSts#6#810#false#false#51#2#1#0#Second Row Left  Side Seat Left Motor Temperature Protected Status\n二排左侧座椅左倾角电机温度保护状态#0.0#0.0#0.0#{"0": "No_TempProtd", "1": "TempProtd"}#KUNLUN20#E3
+SecRowLeRiHozlTemProtdSts#6#810#false#false#49#2#1#0#Second Row Left Side Seat Right Horizontal Motor Temperature Protected Status\n二排左侧右水平电机温度保护状态#0.0#0.0#0.0#{"0": "No_TempProtd", "1": "TempProtd"}#KUNLUN20#E3
+MLSDMFaultInfoFlag#6#810#false#false#63#1#1#0#MLSDM Fault Information Flag#0.0#0.0#0.0#null#KUNLUN20#E3
+SecLeSeatVentnPwrSts#6#810#false#false#61#2#1#0#Second Left Seat Ventilation Power Status\n二排左侧座椅通风电源状态#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#KUNLUN20#E3
+SecRowLeSeatRiHozlMotStallSts#6#810#false#false#59#1#1#0#Second Row Left Seat Right Horizontal Motor Stall Status\n二排左侧座椅右水平电机堵转状态#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#KUNLUN20#E3
+SecRowLeSeatRiTiltMotStallSts#6#810#false#false#58#1#1#0#Second Row Left Seat Tilt Motor Stall Status\n二排左侧座椅右倾角电机堵转状态#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#KUNLUN20#E3
+SecRowLeLeHozlTemProtdSts#6#810#false#false#57#2#1#0#Second Row Left Side Left Horizontal Motor Temperature Protected Status\n二排左侧左水平电机温度保护状态#0.0#0.0#0.0#{"0": "No_TempProtd", "1": "TempProtd"}#KUNLUN20#E3
+SecRowRiOcupcyRawSts#6#429#false#false#7#2#1#0##0.0#0.0#0.0#{"0": "Empty", "1": "Occupied", "2": "Invaild_STG", "3": "Invaild_STB_OL"}#KUNLUN20#E3
+MRSDMInpU#6#584#false#false#7#8#0.1#0.0#MRSDM Input Voltage\nMSDM 输入电压参数#0.0#0.0#0.0#null#KUNLUN20#E3
+MRSDMInpUSts#6#584#false#false#15#2#1#0#MRSDM Input Voltage Status\nMRSDM 输入电压状态#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRiSeatHeatgSts#6#584#false#false#13#1#1#0#Second Row Right Seat Heating Status \n二排右侧座椅加热状态#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#KUNLUN20#E3
+SecRowRiBackAdjSts#6#584#false#false#12#2#1#0#Second Row Right Seat Back Motor Adjusts Status二排右侧靠背电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Forward", "2": "Rearward"}#KUNLUN20#E3
+SecRowRiBackLegRestHwSwtSts#6#584#false#false#10#3#1#0#Second Row Right Back and Leg Rest Height Hardwire Switch Status  二排右侧靠背调角和腿托高度电机硬线按键状态#0.0#0.0#0.0#{"0": "Idle", "1": "Tilt_Up", "2": "Tilt_Down", "3": "Back_Fwd", "4": "Back_Rwd", "5": "invalid"}#KUNLUN20#E3
+SecRiSeatHeatgTSts#6#584#false#false#23#8#0.5#-40.0#Second Row Right Seat Heating Temperature Status\n二排右侧座椅加热温度状态#0.0#0.0#0.0#{"255": "Error"}#KUNLUN20#E3
+SecRowRiHozlTiltHwSwtSts#6#584#false#false#31#3#1#0#Second Row Right Horizontal and Tilt Hardwire Switch Status\n二排右侧水平和倾角电机硬线按键状态#0.0#0.0#0.0#{"0": "Idle", "1": "Hozl_Fwd", "2": "Hozl_Rwd", "3": "Hei_Up", "4": "Hei_Down", "5": "invalid", "6": "Reserved", "7": "Reserved"}#KUNLUN20#E3
+SecRowRiSeatMotSetSts#6#584#false#false#28#3#1#0#Second Row Right Seat Motor Set Status\n二排右侧座椅电机设置状态#0.0#0.0#0.0#{"0": "No_SetReq", "1": "Setting", "2": "Intrpt", "3": "Set_Suc", "4": "Set_Faild", "5": "Reserve1", "6": "Reserve2", "7": "Reserve3"}#KUNLUN20#E3
+SecRowRiLatAdjSts#6#584#false#false#25#2#1#0#Second Row Right Seat Latral Motor Adjusts Status二排右侧侧滑电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Forward", "2": "Rearward"}#KUNLUN20#E3
+SecRowRiLegRestHeiAdjSts#6#584#false#false#39#2#1#0#Second Row Right Seat Leg Rest Height Motor Adjust Status 二排右侧腿托高度电机调节状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down"}#KUNLUN20#E3
+SecRowRiLeHozlAdjSts#6#584#false#false#37#2#1#0#Second Row Right Seat Left Side Horizontal Motor Adjusts Status二排右侧左水平电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Forward", "2": "Rearward"}#KUNLUN20#E3
+SecRowRiLeTiltAdjSts#6#584#false#false#35#2#1#0#Second Row Right Seat Left Side Tilt Motor Adjusts Status二排右侧左倾角电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down"}#KUNLUN20#E3
+SecRowRiRiHozlAdjSts#6#584#false#false#33#2#1#0#Second Row Right Seat Right Side Horizontal Motor Adjusts Status二排右侧右水平电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Forward", "2": "Rearward"}#KUNLUN20#E3
+SecRowRiRiTiltAdjSts#6#584#false#false#47#2#1#0#Second Row Right Seat Right Side Tilt Motor Adjusts Status二排右侧右倾角电机状态信号#0.0#0.0#0.0#{"0": "Idle", "1": "Up", "2": "Down"}#KUNLUN20#E3
+SecRowRiRstHwSwtSts#6#584#false#false#45#2#1#0#Second Row Right One Step Rest Seat Hardware Switch Status 二排右侧一键复位座椅硬按键状态#0.0#0.0#0.0#{"0": "No_Pressed", "1": "Pressed", "2": "Invalid"}#KUNLUN20#E3
+SecRowRiSeatBackMotPosn#6#585#false#false#7#8#1.0#0.0#Second Row Right Seat Back Motor Position\n二排右侧靠背电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#KUNLUN20#E3
+SecRowRiSeatHozlMotPosn#6#585#false#false#15#8#1.0#0.0#Second Row Right Seat Horizontal Motor Position\n二排右侧水平电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#KUNLUN20#E3
+SecRowRiSeatLegRestHeiMotPosn#6#585#false#false#23#8#1#0#Second Row Right Seat Leg Rest Height Motor Position 二排右侧腿托高度电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#KUNLUN20#E3
+SecRowRiSeatLeTiltMotPosn#6#585#false#false#31#8#1.0#0.0#Second Row Right Seat Side Left Motor Position\n二排右侧座椅左倾角电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#KUNLUN20#E3
+SecRowRiSeatRiTiltMotPosn#6#585#false#false#39#8#1.0#0.0#Second Row Right Seat Side Left Motor Position\n二排右侧座椅右倾角电机位置#0.0#0.0#0.0#{"255": "PosnErr"}#KUNLUN20#E3
+SecRowRiZeroGSeatHwSwtSts#6#585#false#false#47#2#1#0#Second Row Right Zero Gravity Seat Hardware Switch Status 二排右侧零重力座椅硬开关状态#0.0#0.0#0.0#{"0": "Idle", "1": "Sho_Psd", "2": "Long_Psd", "3": "Invalid"}#KUNLUN20#E3
+SecRowRiLegRestHwSwtSts#6#585#false#false#45#3#1#0#Second Row Right Legrest Height and Width  Hard Switch Status  二排右侧腿托高度&宽度硬线按键状态#0.0#0.0#0.0#{"0": "Idle", "1": "LegRest_Up", "2": "LegRest_Down", "3": "LegRest_Widen(Reserved)", "4": "LegRest_Narrow(Reserved)", "5": "invalid", "6": "Reserved", "7": "Reserved"}#KUNLUN20#E3
+SecRowRiBackTemProtdSts#6#753#false#false#7#2#1#0#Second Row Right Back Motor Temperature Protected Status\n二排右侧靠背电机温度保护状态#0.0#0.0#0.0#{"0": "No_TempProtd", "1": "TempProtd"}#KUNLUN20#E3
+SecRowRiLatTemProtdSts#6#753#false#false#5#2#1#0#Second Row Right Side Lateral Slide Motor Temperature Protected Status\n二排右侧侧滑电机温度保护状态#0.0#0.0#0.0#{"0": "No_TempProtd", "1": "TempProtd"}#KUNLUN20#E3
+SecRowRiLegRestAntiPinchSts#6#753#false#false#3#1#1#0#Second Row Right Seat LegRest Anti Pinch Status\n二排右侧腿托电机防夹状态#0.0#0.0#0.0#{"0": "No_Anti_Pinch", "1": "Motor_Anti_Pinch"}#KUNLUN20#E3
+SecRowRiLegRestHeiTemProtdSts#6#753#false#false#2#2#1#0#Second Row Right Seat Legrest Height Motor Temperature Protected Status 二排右侧座椅腿托高度电机温度保护状态#0.0#0.0#0.0#{"0": "No_TempProtd", "1": "TempProtd"}#KUNLUN20#E3
+SecRowRiSeatBackAntiPinchSts#6#753#false#false#0#1#1#0#Second Row Right Seat Back Anti Pinch Status\n二排右侧靠背电机防夹状态#0.0#0.0#0.0#{"0": "No_Anti_Pinch", "1": "Motor_Anti_Pinch"}#KUNLUN20#E3
+SecRowRiLeHozlTemProtdSts#6#753#false#false#15#2#1#0#Second Row Right Side Left Horizontal Motor Temperature Protected Status\n二排右侧左水平电机温度保护状态#0.0#0.0#0.0#{"0": "No_TempProtd", "1": "TempProtd"}#KUNLUN20#E3
+SecRowRiLeTiltTemProtdSts#6#753#false#false#13#2#1#0#Second Row Right  Side Seat Left Motor Temperature Protected Status\n二排右侧座椅左倾角电机温度保护状态#0.0#0.0#0.0#{"0": "No_TempProtd", "1": "TempProtd"}#KUNLUN20#E3
+SecRowRiRiHozlTemProtdSts#6#753#false#false#11#2#1#0#Second Row Right Horizontal Motor Temperature Protected Status\n二排右侧右水平电机温度保护状态#0.0#0.0#0.0#{"0": "No_TempProtd", "1": "TempProtd"}#KUNLUN20#E3
+SecRowRiRiTiltTemProtdSts#6#753#false#false#9#2#1#0#Second Row Right Side Seat Right Motor Temperature Protected Status\n二排右侧座椅右倾角电机温度保护状态#0.0#0.0#0.0#{"0": "No_TempProtd", "1": "TempProtd"}#KUNLUN20#E3
+SecRowRiSeatBackMotFlt#6#753#false#false#23#8#1#0#Second Row Right Seat Back Motor Fault\n二排右侧座椅靠背电机故障\nBit0 MotorOutputSTB\nBit1 MotorOutputSTG\nBit2 MotorOutputOpen\nBit3 HallSensorFlt\nBit4 HallSensorPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowRiSeatBackMotStallSts#6#753#false#false#31#1#1#0#Second Row LeftSeat Back Motor Stall Status\n二排左侧座椅靠背电机堵转状态#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#KUNLUN20#E3
+SecRowRiSeatIninFaildRsn#6#753#false#false#30#4#1#0#Second Row Right Seat initialization Failed Reason 二排右侧座椅初始化失败原因#0.0#0.0#0.0#{"0": "No_Error", "1": "StopReq", "2": "MotFlt", "3": "HwSwIntrpt", "4": "TimeOut", "5": "DataWrFaild", "6": "ComError", "7": "VoltError", "8": "Ocupacy", "9": "VehSpdLim"}#KUNLUN20#E3
+SecRowRiSeatLatAntiPinchSts#6#753#false#false#26#1#1#0#Second Row Right Side Seat Lateral Slide Anti Pinch Status\n二排右侧侧滑电机防夹状态#0.0#0.0#0.0#{"0": "No_Anti_Pinch", "1": "Motor_Anti_Pinch"}#KUNLUN20#E3
+SecRowRiSeatLatMotStallSts#6#753#false#false#25#1#1#0#Second Row Right Seat Lateral Slide Motor Stall Status\n二排右侧座椅侧滑电机堵转状态#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#KUNLUN20#E3
+SecRowRiSeatLatMotFlt#6#753#false#false#39#8#1#0#Second Row Right Side Seat Lateral Slide Motor Fault\n二排右侧座椅侧滑电机故障\nBit0 MotorOutputSTB\nBit1 MotorOutputSTG\nBit2 MotorOutputOpen\nBit3 HallSensorFlt\nBit4 HallSensorPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowRiSeatLegRestHeiMotFlt#6#753#false#false#47#8#1#0#Second Row Right Seat Leg Rest Height Motor Fault 二排右侧座椅腿托高度电机故障  \nBit0 MotorOutputSTB Bit1 MotorOutputSTG Bit2 MotorOutputOpen Bit3 HallSensorFlt Bit4 HallSensorPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRiSeatVentnFlt#6#753#false#false#55#8#1#0#Second Row Left Seat Ventilation Fault \n二排右侧座椅通风故障 \nBit0  VentnOutputSTG_Open Bit1  VentnPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowRiSeatLegRestMotStallSts#6#754#false#false#7#1#1#0#Second Row Right Seat Leg Rest Height Motor Stall Status 二排右侧座椅腿托高度调节电机堵转状态#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#KUNLUN20#E3
+SecRowRiSeatLeHozlAntiPinchSts#6#754#false#false#6#1#1#0#Second Row Right Side Right Seat Horizontal Anti Pinch Status\n二排右侧右水平电机防夹状态#0.0#0.0#0.0#{"0": "No_Anti_Pinch", "1": "Motor_Anti_Pinch"}#KUNLUN20#E3
+SecRowRiSeatLeHozlMotStallSts#6#754#false#false#5#1#1#0#Second Row Right Seat Left Horizontal Motor Stall Status\n二排右侧座椅左水平电机堵转状态#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#KUNLUN20#E3
+SecRowRiSeatLeTiltMotStallSts#6#754#false#false#4#1#1#0#Second Row Right Side Left Seat Tilt Motor Stall Status\n二排右侧座椅左倾角电机堵转状态#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#KUNLUN20#E3
+SecRowRiSeatMotIninSts#6#754#false#false#3#2#1#0#Second Row Right Seat Motor Initialization Status\n二排右侧座椅电机初始化状态#0.0#0.0#0.0#{"0": "OFF", "1": "Learning", "2": "LearningSuccessed", "3": "LearningFailed"}#KUNLUN20#E3
+SecRowRiSeatRiHozlAntiPinchSts#6#754#false#false#1#1#1#0#Second Row Right Seat Horizontal Anti Pinch Status\n二排右侧右水平电机防夹状态#0.0#0.0#0.0#{"0": "No_Anti_Pinch", "1": "Motor_Anti_Pinch"}#KUNLUN20#E3
+SecRowRiSeatRiHozlMotStallSts#6#754#false#false#0#1#1#0#Second Row Right Seat Right Horizontal Motor Stall Status\n二排右侧座椅右水平电机堵转状态#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#KUNLUN20#E3
+SecRowRiSeatLeHozlMotFlt#6#754#false#false#15#8#1#0#Second Row Right Side Left Seat Horizontal Motor Fault\n二排右侧座椅左水平电机故障\nBit0 MotorOutputSTB\nBit1 MotorOutputSTG\nBit2 MotorOutputOpen\nBit3 HallSensorFlt\nBit4 HallSensorPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowRiSeatLeTiltMotFlt#6#754#false#false#23#8#1#0#Second Row Right Seat Left Tilt Motor Fault\n二排右侧座椅左倾角电机故障\nBit0 MotorOutputSTB\nBit1 MotorOutputSTG\nBit2 MotorOutputOpen\nBit3 HallSensorFlt\nBit4 HallSensorPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowRiSeatRiHozlMotFlt#6#754#false#false#31#8#1#0#Second Row Right Side Right Seat Horizontal Motor Fault\n二排右侧座椅右水平电机故障\nBit0 MotorOutputSTB\nBit1 MotorOutputSTG\nBit2 MotorOutputOpen\nBit3 HallSensorFlt\nBit4 HallSensorPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowRiSeatRiTiltMotFlt#6#754#false#false#39#8#1#0#Second Row Right Seat Right Tilt Motor Fault\n二排右侧座椅右倾角电机故障\nBit0 MotorOutputSTB\nBit1 MotorOutputSTG\nBit2 MotorOutputOpen\nBit3 HallSensorFlt\nBit4 HallSensorPwrFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowRiSeatRiTiltMotStallSts#6#754#false#false#47#1#1#0#Second Row Right Seat Tilt Motor Stall Status\n二排右侧座椅右倾角电机堵转状态#0.0#0.0#0.0#{"0": "No_Motor_Stall", "1": "Motor_Stall"}#KUNLUN20#E3
+SecRiSeatVentnPwrSts#6#754#false#false#46#2#1#0#Second Right Seat Ventilation Power Status 二排右侧座椅通风电源状态#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#KUNLUN20#E3
+MRSDMFaultInfoFlag#6#754#false#false#44#1#1#0#MRSDM Fault Information Flag#0.0#0.0#0.0#null#KUNLUN20#E3
+SeatHeatgSecRowRiFlt#6#754#false#false#55#8#1#0#Second Row Right Seat Heating Fault at Left side \n二排右侧座椅加热故障\nBit0 HeaterOutputOverCurrent Bit1 HeaterOutputUnderCurrent Bit2 NTCSensorSTB Bit3 NTCSensorSTG Bit4 HeaterReturnFlt#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRiSeatVentnSts#6#754#false#false#63#8#1#0#Second Row Right Seat Ventilation Status\n二排右侧座椅通风状态 通风风扇调速PWM占空比反馈#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRiSeatHeatgSet#6#495#false#false#7#8#1#0#Second Row Right Seat Heating Setting\n二排右侧驾座椅加热设置 加热占空比设置#0.0#0.0#0.0#null#KUNLUN20#E3
+SecRowRiSeatBackPosSetCmd#6#495#false#false#15#8#1.0#-1.0#Second Row Right Seat Seat Back Position Setting Command\n二排右侧座椅靠背电机位置设置#0.0#0.0#0.0#{"0": "No_Command", "255": "Stop"}#KUNLUN20#E3
+SecRowRiSeatHozlPosSetCmd#6#495#false#false#23#8#1.0#-1.0#Second Row Right Seat Seat Horizontal Position Setting Command\n二排右侧座椅水平电机位置设置#0.0#0.0#0.0#{"0": "No_Command", "255": "Stop"}#KUNLUN20#E3
+SecRowRiSeatLegRestPosSetCmd#6#495#false#false#31#8#1.0#-1.0#Second Row Right Seat Seat Leg Rest Height Position Setting Command 二排右侧座椅座椅腿托高度电机位置设置#0.0#0.0#0.0#{"0": "No_Command", "255": "Stop"}#KUNLUN20#E3
+SecRowRiSeatTiltPosSetCmd#6#495#false#false#39#8#1.0#-1.0#Second Row Right Seat Seat Tilt Position Setting Command 二排右侧座椅倾角电机位置设置#0.0#0.0#0.0#{"0": "No_Command", "255": "Stop"}#KUNLUN20#E3
+SecRiSeatHeatgEnaSts#6#495#false#false#47#1#1#0#Second Row Right Seat Heating Enable Status\n二排右侧座椅加热使能#0.0#0.0#0.0#{"0": "Disable", "1": "Enable"}#KUNLUN20#E3
+SecRowRiBackAdjCmd#6#495#false#false#46#2#1#0#Second Row Right Seat Back Adjustment Command\n二排右侧座椅靠背电机调节指令#0.0#0.0#0.0#{"0": "No_Command", "1": "Forward", "2": "Rearward"}#KUNLUN20#E3
+SecRowRiHozlAdjCmd#6#495#false#false#44#2#1#0#Second Row Right Seat Horizontal Adjustment Command \n二排右侧座椅水平电机调节指令#0.0#0.0#0.0#{"0": "No_Command", "1": "Forward", "2": "Rearward"}#KUNLUN20#E3
+SecRowRiLegRestAdjCmd#6#495#false#false#42#2#1#0#Second Row Right Seat Leg Rest Height Adjustment Command  二排右侧座椅腿托高度电机调节指令#0.0#0.0#0.0#{"0": "No_Command", "1": "Up", "2": "Down"}#KUNLUN20#E3
+SecRowRiSeatMotIninReq#6#495#false#false#55#2#1#0#Second Row Right Seat Seat Motor Initialization Request\n二排右侧座椅座椅电机初始化请求#0.0#0.0#0.0#{"0": "No_Command", "1": "IninReq_Both_Side", "2": "IninReq_Single_Side", "3": "IninStop"}#KUNLUN20#E3
+SecRowRiTiltAdjCmd#6#495#false#false#53#2#1#0#Second Row Right Seat Tilt Adjustment Command  二排右侧座椅倾角电机调节指令#0.0#0.0#0.0#{"0": "No_Command", "1": "Up", "2": "Down"}#KUNLUN20#E3
+SecRiSeatVentnSet#6#815#false#false#7#8#1#0#Second Row Right Seat Ventilation Set\n二排右侧座椅通风设置 通风风扇调速PWM占空比设置#0.0#0.0#0.0#null#KUNLUN20#E3
+SeatVentnSecRiPwrCtrl#6#815#false#false#15#1#1#0#Second Row Right Seat Ventilation Power Control 二排右侧座椅通风电源控制#0.0#0.0#0.0#null#KUNLUN20#E3
+TiDomn#6#263#false#false#4#5#1#0#time domain#0.0#0.0#0.0#{"0": "UTC_plus_0", "1": "UTC_plus_1", "2": "UTC_plus_2", "3": "UTC_plus_3", "4": "UTC_plus_4", "5": "UTC_plus_5", "6": "UTC_plus_6", "7": "UTC_plus_7", "8": "UTC_plus_8", "9": "UTC_plus_9", "10": "UTC_plus_10", "11": "UTC_plus_11", "12": "UTC_plus_12", "13": "UTC_plus_13", "14": "UTC_plus_14", "15": "UTC_plus_15", "16": "UTC_plus_16", "17": "UTC_plus_17", "18": "UTC_plus_18", "19": "UTC_plus_19", "20": "UTC_plus_20", "21": "UTC_plus_21", "22": "UTC_plus_22", "23": "UTC_plus_23", "24": "Invalid"}#KUNLUN20#E3
+DateTiYr#6#263#false#false#15#8#1.0#2000.0#date time year#0.0#0.0#0.0#{"255": "Invalid"}#KUNLUN20#E3
+DateTiMth#6#263#false#false#19#4#1.0#0.0#date time month#0.0#0.0#0.0#{"0": "Invalid"}#KUNLUN20#E3
+DateTiDay#6#263#false#false#28#5#1#0#date time day#0.0#0.0#0.0#{"0": "init"}#KUNLUN20#E3
+DateTiHr#6#263#false#false#36#5#1.0#0.0#date time hour#0.0#0.0#0.0#{"24": "Invalid"}#KUNLUN20#E3
+DateTiMins#6#263#false#false#45#6#1.0#0.0#date time minute#0.0#0.0#0.0#{"60": "Invalid"}#KUNLUN20#E3
+DateTiSec#6#263#false#false#55#6#1.0#0.0#date time second#0.0#0.0#0.0#{"60": "Invalid"}#KUNLUN20#E3
+DateTiMilsec#6#263#false#false#49#10#1.0#0.0#date time millisecond#0.0#0.0#0.0#{"0": "0", "999": "999", "1000": "invalid"}#KUNLUN20#E3
+OTAMode#6#560#false#false#6#1#1#0#OTA模式#0.0#0.0#0.0#{"0": "OTA_Install_Mode_disable", "1": "OTA_Install_Mode_enable"}#KUNLUN20#E3
+DCDAirBagLampFailSts#6#851#false#false#7#1#1#0#DCD AirBagLamp failure state#0.0#0.0#0.0#{"0": "No_Failure", "1": "Failure"}#KUNLUN20#E3
+TotOdoAcrt#6#914#false#false#7#24#0.1#0.0#ODO#0.0#0.0#0.0#{"16777215": "Invaild"}#KUNLUN20#E3
+TotOdoAcrtLvlMVld#6#914#false#false#27#1#1#0#Total odometer accurate for meter level valid\n米级精确总里程有效性#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#KUNLUN20#E3
+TotOdoAcrtVld#6#914#false#false#25#1#1#0#The valid signal of TotOdoAcrt#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#KUNLUN20#E3
+XCDbkdHvBattStrtAllwd#6#914#false#false#24#1#1#0#Arriving HV batter book heating time flag\n到达电池预热时间使能标志位#0.0#0.0#0.0#null#KUNLUN20#E3
+TotOdoAcrtLvlM#6#914#false#false#39#32#1.0#0.0#Total odometer accurate for meter level\n米级精确总里程\n其中，有效范围：0x0~0x?3B9AC9FF?，表示0~999，999，999#0.0#0.0#0.0#{"4294967295": "Invaild"}#KUNLUN20#E3
+PassSideAirbClsSet#6#933#false#false#19#2#1#0#passenger side airbag close Set\n副驾安全气囊关闭设定#0.0#0.0#0.0#{"0": "no_command", "1": "enable", "2": "disable"}#KUNLUN20#E3
+VinVINBlkID#6#995#false#false#7#8#1#0#Block ID for VIN Signal sequence#0.0#0.0#0.0#{"0": "Invalid", "1": "Block_1", "2": "Block_2", "3": "Block_3"}#KUNLUN20#E3
+VinVINSignalPos1#6#995#false#false#15#8#1#0#1st position in VIN Signal    Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VinVINSignalPos2#6#995#false#false#23#8#1#0#2nd position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VinVINSignalPos3#6#995#false#false#31#8#1#0#3rd position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VinVINSignalPos4#6#995#false#false#39#8#1#0#4th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VinVINSignalPos5#6#995#false#false#47#8#1#0#5th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VinVINSignalPos6#6#995#false#false#55#8#1#0#6th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VinVINSignalPos7#6#995#false#false#63#8#1#0#7th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VidBlkId#6#998#false#false#7#8#1#0#Block ID for VID Signal sequence#0.0#0.0#0.0#{"0": "Invalid", "1": "Block_1", "2": "Block_2", "3": "Block_3"}#KUNLUN20#E3
+VidSignalPos1#6#998#false#false#15#8#1#0#1st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VidSignalPos2#6#998#false#false#23#8#1#0#2st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VidSignalPos3#6#998#false#false#31#8#1#0#3st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VidSignalPos4#6#998#false#false#39#8#1#0#4st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VidSignalPos5#6#998#false#false#47#8#1#0#5st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VidSignalPos6#6#998#false#false#55#8#1#0#6st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VidSignalPos7#6#998#false#false#63#8#1#0#7st position in VID Signal - Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VehCfgPrmBlkIDBytePosn1#6#135#false#false#7#8#1#0#Block ID for specific Car Configuration parameter sequence#0.0#0.0#0.0#null#KUNLUN20#E3
+VehCfgPrmCCPBytePosn2#6#135#false#false#15#8#1#0#1st position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VehCfgPrmCCPBytePosn3#6#135#false#false#23#8#1#0#2nd position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VehCfgPrmCCPBytePosn4#6#135#false#false#31#8#1#0#3rd position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VehCfgPrmCCPBytePosn5#6#135#false#false#39#8#1#0#4th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VehCfgPrmCCPBytePosn6#6#135#false#false#47#8#1#0#5th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VehCfgPrmCCPBytePosn7#6#135#false#false#55#8#1#0#6th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+VehCfgPrmCCPBytePosn8#6#135#false#false#63#8#1#0#7th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#KUNLUN20#E3
+BcpBrkSysIndcnBkpSigGrpChks#6#260#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BrkSysBrkPedlAppld#6#260#false#false#15#1#1#0#Indicates whether the driver operates the\nbrakepedal.Only active when the driver brakes#0.0#0.0#0.0#{"0": "NotApplied", "1": "Applied"}#KUNLUN20#E3
+BrkSysBrkPedlAppldVld#6#260#false#false#14#2#1#0#Qualifier for brake system brake pedal applied signal#0.0#0.0#0.0#{"0": "BrkPedlAppld_NotInitialized", "1": "BrkPedlAppld_Normal", "2": "BrkPedlAppld_Faulty"}#KUNLUN20#E3
+BrkSysEnaActvCtrlByDrvr#6#260#false#false#12#1#1#0#Indicate if the BCP pressure control is dominated by driver#0.0#0.0#0.0#{"0": "NotEnable", "1": "Enable"}#KUNLUN20#E3
+BcpBrkSysIndcnBkpSigGrpCntr#6#260#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BrkSysPRednPotnl#6#260#false#false#23#8#0.5#0.0#Indicates the pressure reduction potential from BCP to BCS  to limit the max CRB brakeregen.#0.0#0.0#0.0#null#KUNLUN20#E3
+BrkSysFTarDrvr#6#260#false#false#31#11#64#-131008#Target brake force from driver#0.0#0.0#0.0#null#KUNLUN20#E3
+BrkSysFTarDrvrVld#6#260#false#false#36#2#1#0#Qualifier for Target brake force from driver signal#0.0#0.0#0.0#{"0": "NotInitialized", "1": "Normal", "2": "ExternalBrakeRequest", "3": "Faulty"}#KUNLUN20#E3
+BrkSysPRednPotnlVld#6#260#false#false#34#2#1#0#Qualifier for pressure reduction potential signal#0.0#0.0#0.0#{"0": "NotInitialized", "1": "Normal", "2": "Faulty"}#KUNLUN20#E3
+BrkSysWarnLampReq#6#260#false#false#47#2#1#0#Indicatethewarninglampinfothatshouldbeset#0.0#0.0#0.0#{"0": "NoLamp", "1": "YellowLamp", "2": "RedLamp"}#KUNLUN20#E3
+VehSpd#6#262#false#false#7#16#0.05625#0.0#Vehicle speed#0.0#0.0#0.0#null#KUNLUN20#E3
+VehSpdVld#6#262#false#false#23#1#1#0#Qualifier for vehicle speed signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#KUNLUN20#E3
+PinionSteerAgl#6#267#false#true#23#15#0.0625#0.0#方向盘转角\nSteering Wheel Angle\n方向 \nAnticlockwise direction of steering wheel increase angle output.\nClockwise direction of steering wheel decrease angle output.#0.0#0.0#0.0#null#KUNLUN20#E3
+PinionSteerAglVld#6#267#false#false#43#1#1#0#方向盘转角有效位\nSteering Wheel Angle Valid Flag#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#KUNLUN20#E3
+ABSActv#6#361#false#false#23#1#1#0#ABS Control Active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#KUNLUN20#E3
+ABSErrDetd#6#361#false#false#22#1#1#0#ABS error detected#0.0#0.0#0.0#{"0": "Error", "1": "NoError"}#KUNLUN20#E3
+APBTxtDip#6#361#false#false#21#4#1#0#APB Text Display#0.0#0.0#0.0#{"0": "default", "1": "Slope_out_of_specified_limit", "2": "Left_Parking_brake_fail", "3": "Right_Parking_brake_fail", "4": "Hot_parking_brake_system", "5": "Use_APB_Button_to_releaseandappl", "6": "Parking_brake_cannot_hold_vehicle", "7": "Parking_brake_roller_bench_test_mode", "8": "Left_parking_brake_released", "9": "Left_parking_brake_Applied", "10": "reserved", "11": "reserved", "12": "reserved", "13": "reserved"}#KUNLUN20#E3
+HBBSts#6#361#false#false#17#2#1#0#HBB function status#0.0#0.0#0.0#{"0": "HBBNormalMode", "1": "HBBFailedBoost", "2": "HBBFailedBoostBackup", "3": "HBBDisabled"}#KUNLUN20#E3
+BCSBrkSysWarnText#6#361#false#false#31#3#1#0#BCS Brake System Warning Text#0.0#0.0#0.0#{"0": "NoWarning", "1": "the_brake_system_fault", "2": "Please_check_because_the_brake_system_leakage", "3": "Overheat_of_brake_system", "4": "reserved", "5": "reserved", "6": "reserved", "7": "reserved"}#KUNLUN20#E3
+BrkLiIllmnReq#6#361#false#false#28#1#1#0#Request to illuminate brake light#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request"}#KUNLUN20#E3
+BrkSysWarnLamp#6#361#false#false#27#2#1#0#Brake System Warning Lamp#0.0#0.0#0.0#{"0": "NoRequest", "1": "YellowLampt", "2": "RedLamp"}#KUNLUN20#E3
+CSTSts#6#361#false#false#25#2#1#0#CST function status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Active", "3": "Failure"}#KUNLUN20#E3
+EBDActv#6#361#false#false#39#1#1#0#EBD Control Active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#KUNLUN20#E3
+EBDErrDetd#6#361#false#false#38#1#1#0#EBD error detected#0.0#0.0#0.0#{"0": "Error", "1": "NoError"}#KUNLUN20#E3
+EmgyBrkLiReq#6#361#false#false#37#1#1#0#Emergency brake light request#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request"}#KUNLUN20#E3
+ESCErrDetd#6#361#false#false#36#1#1#0#ESC error detected#0.0#0.0#0.0#{"0": "Error", "1": "NoError"}#KUNLUN20#E3
+ESCIntvLamp#6#361#false#false#35#1#1#0#ESC Intervention Lamp#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#KUNLUN20#E3
+ESCPataLamp#6#361#false#false#34#2#1#0#ESC diable status#0.0#0.0#0.0#{"0": "NoRequest", "1": "Level1Request", "2": "Level2Request"}#KUNLUN20#E3
+APBStsBkp#6#361#false#false#47#3#1#0#BCP&BCS APB Status#0.0#0.0#0.0#{"0": "Released", "1": "Applied", "2": "Releasing", "3": "Applying", "4": "Undefined"}#KUNLUN20#E3
+HDCCtrlSts#6#361#false#false#44#2#1#0#HDC function control status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Active", "3": "Reserved"}#KUNLUN20#E3
+HDCAvl#6#361#false#false#42#1#1#0#HDC function available#0.0#0.0#0.0#{"0": "NotAvailable", "1": "Available"}#KUNLUN20#E3
+APBErrDetd#6#361#false#false#41#2#1#0#APB Error Status#0.0#0.0#0.0#{"0": "NotInit", "1": "Normal", "2": "Faulty"}#KUNLUN20#E3
+HRBActv#6#361#false#false#55#1#1#0#HRB available#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#KUNLUN20#E3
+HRBAvl#6#361#false#false#54#1#1#0#HRB active#0.0#0.0#0.0#{"0": "NotAvailable", "1": "Available"}#KUNLUN20#E3
+HydBrkFExist#6#361#false#false#53#1#1#0#Hydraulic brake force exsit#0.0#0.0#0.0#{"0": "NotExist", "1": "Exist"}#KUNLUN20#E3
+TCSActv#6#361#false#false#51#1#1#0#TCS Controller Active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#KUNLUN20#E3
+VDCActv#6#361#false#false#50#1#1#0#VDC Controller Active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#KUNLUN20#E3
+VehStandStillIndcr#6#361#false#false#49#1#1#0#Indicate whether the vehicle is standstill or not#0.0#0.0#0.0#{"0": "NotStandstill", "1": "Standstill"}#KUNLUN20#E3
+VehStandStillIndcrVld#6#361#false#false#48#1#1#0#Qualifier for vehicle standstill indicate signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#KUNLUN20#E3
+APBSts#6#361#false#false#63#3#1#0#APB Status#0.0#0.0#0.0#{"0": "Released", "1": "Applied", "2": "Releasing", "3": "Applying", "4": "Undefined"}#KUNLUN20#E3
+WhlspdBkpFcnSigGrpChks#6#369#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+VehSpdBkpVld#6#369#false#false#15#1#1#0#Qualifierforvehiclespeedsignalbackup#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#KUNLUN20#E3
+WhlspdBkpFcnSigGrpCntr#6#369#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+VehSpdBkp#6#369#false#false#23#16#0.05625#0.0#Vehiclespeedbackup#0.0#0.0#0.0#null#KUNLUN20#E3
+BrkPedlAppld#6#369#false#false#47#1#1#0#Indicates whether the driver operates the\n brake pedal. Only active when the driver brakes#0.0#0.0#0.0#{"0": "NotApplied", "1": "Applied"}#KUNLUN20#E3
+BrkPedlAppldVld#6#369#false#false#46#2#1#0#Qualifier for brake pedal applied signal#0.0#0.0#0.0#{"0": "BrkPedlAppld_NotInitialized", "1": "BrkPedlAppld_Normal", "2": "BrkPedlAppld_Faulty"}#KUNLUN20#E3
+BrkPedlPerct#6#369#false#false#55#7#1#0#Brake Pedal Percentage#0.0#0.0#0.0#null#KUNLUN20#E3
+BrkPedlPerctVld#6#369#false#false#48#1#1#0#Qualifier for Brake Pedal Percentage signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#KUNLUN20#E3
+FailrStsSigGrpChks#6#421#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+FailrSts#6#421#false#false#15#3#1#0#EPS 故障状态\nEPS Failure Status#0.0#0.0#0.0#{"0": "SteerNormal", "1": "SteerAssitTempRed", "2": "SteerAssitServReq", "3": "SteerAssitErrStopVehicle", "4": "Notused", "5": "Notused", "6": "Notused", "7": "Notused"}#KUNLUN20#E3
+FailrStsSigGrpCntr#6#421#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+BcsExtdFcnSigGrpChks#6#421#false#false#31#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+ABPActv#6#421#false#false#39#1#1#0#ABP active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#KUNLUN20#E3
+ABPAvl#6#421#false#false#38#1#1#0#ABP available#0.0#0.0#0.0#{"0": "NotAvailable", "1": "Available"}#KUNLUN20#E3
+AEBActv#6#421#false#false#37#1#1#0#AEB active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#KUNLUN20#E3
+AEBAvl#6#421#false#false#36#1#1#0#AEB available#0.0#0.0#0.0#{"0": "NotAvailable", "1": "Available"}#KUNLUN20#E3
+BcsExtdFcnSigGrpCntr#6#421#false#false#35#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+AWBActv#6#421#false#false#47#1#1#0#AWB active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#KUNLUN20#E3
+AWBAvl#6#421#false#false#46#1#1#0#AWB available#0.0#0.0#0.0#{"0": "NotAvailable", "1": "Available"}#KUNLUN20#E3
+EBAActv#6#421#false#false#45#1#1#0#EBA active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#KUNLUN20#E3
+LZCUCrashSts#6#561#false#false#7#2#1#0#LZCU碰撞硬线信号#0.0#0.0#0.0#{"0": "Resd1", "1": "NoCrash", "2": "Crash", "3": "Resd2"}#KUNLUN20#E3
+RZCUCrashSts#6#561#false#false#5#2#1#0#RZCU碰撞硬线信号#0.0#0.0#0.0#{"0": "Resd1", "1": "NoCrash", "2": "Crash", "3": "Resd2"}#KUNLUN20#E3
+DoorRiReSts#6#561#false#false#3#2#1#0#右后侧门状态#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd"}#KUNLUN20#E3
+AEBtoIDPFrmADDChks#6#561#false#false#39#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+AEBTarObjClassFrmADD#6#561#false#false#47#2#1#0#AEB target object classification#0.0#0.0#0.0#{"0": "Unknown", "1": "4_wheeler", "2": "2_wheeler", "3": "Pedestrian"}#KUNLUN20#E3
+AEBtoIDPFrmADDCntr#6#561#false#false#43#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+AEBTarObjTTIFrmADD#6#561#false#false#55#8#0.02#0.0#AEB  target object time to impact#0.0#0.0#0.0#null#KUNLUN20#E3
+ADSAEBStsFrmADD#6#561#false#false#60#3#1#0#AEB function status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Active", "3": "Failure", "4": "Reserved", "5": "Reserved", "6": "Reserved", "7": "Reserved"}#KUNLUN20#E3
+SwtLiHzrdWarn#6#561#false#false#57#1#1#0#双闪开关#0.0#0.0#0.0#{"0": "NotPsd", "1": "Psd"}#KUNLUN20#E3
+DrvFcn1FrmADDSigGrpChks#6#564#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+DrvFltStsFrmADD#6#564#false#false#15#3#1#0#Autonomous Driving system Fault status#0.0#0.0#0.0#{"0": "NoError", "1": "PerformanceDegradation", "2": "SystemTemporaryUnvailable", "3": "ServiceRequired", "4": "SentryModeNotAvl"}#KUNLUN20#E3
+DrvFltStsVldFrmADD#6#564#false#false#12#1#1#0#Autonomous Driving system Fault status Valid#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#KUNLUN20#E3
+DrvFcn1FrmADDSigGrpCntr#6#564#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+ADSACCStsFrmADD#6#564#false#false#23#3#1#0#ACC状态 \n激活状态为 Normal ACtive StandActive StandWait Override Takeover#0.0#0.0#0.0#{"0": "Passive", "1": "Standby", "2": "NormalActive", "3": "StandActive", "4": "Override", "5": "StandWait", "6": "Takeover", "7": "Fault"}#KUNLUN20#E3
+ReLeTyrePVal#6#818#false#false#7#8#2.75#0.0#RearLeftTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#KUNLUN20#E3
+ReRiTyrePVal#6#818#false#false#15#8#2.75#0.0#RearRightTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#KUNLUN20#E3
+ReLeTyrePWarn#6#818#false#false#23#2#1#0#RearLeftTyrePressureWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Low_Pressure", "2": "High_Pressure", "3": "Invalid"}#KUNLUN20#E3
+ReRiTyrePWarn#6#818#false#false#21#2#1#0#RearRightTyrePressureWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Low_Pressure", "2": "High_Pressure", "3": "Invalid"}#KUNLUN20#E3
+FrntLeTyrePWarn#6#818#false#false#19#2#1#0#FrontLeftTyrePressureWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Low_Pressure", "2": "High_Pressure", "3": "Invalid"}#KUNLUN20#E3
+FrntRiTyrePWarn#6#818#false#false#17#2#1#0#FrontRightTyrePressureWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Low_Pressure", "2": "High_Pressure", "3": "Invalid"}#KUNLUN20#E3
+FrntLeTyrePVal#6#818#false#false#31#8#2.75#0.0#FrontLeftTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#KUNLUN20#E3
+FrntRiTyrePVal#6#818#false#false#39#8#2.75#0.0#FrontRightTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#KUNLUN20#E3
+FrntLeTyrePSnsrLoBattWarn#6#818#false#false#47#1#1#0#FrontLeftTyrePressureSensorLowBatteryWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#KUNLUN20#E3
+FrntLeTyrePSnsrLostWarn#6#818#false#false#46#1#1#0#FrontLeftTyrePressureSensorLostWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#KUNLUN20#E3
+FrntRiTyrePSnsrLoBattWarn#6#818#false#false#45#1#1#0#FrontRightTyrePressureSensorLowBatteryWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#KUNLUN20#E3
+FrntRiTyrePSnsrLostWarn#6#818#false#false#44#1#1#0#FrontRightTyrePressureSensorLostWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#KUNLUN20#E3
+ReLeTyrePSnsrLoBattWarn#6#818#false#false#43#1#1#0#RearLeftTyrePressureSensorLowBatteryWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#KUNLUN20#E3
+ReLeTyrePSnsrLostWarn#6#818#false#false#42#1#1#0#RearLeftTyrePressureSensorLostWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#KUNLUN20#E3
+ReRiTyrePSnsrLoBattWarn#6#818#false#false#41#1#1#0#RearRightTyrePressureSensorLowBatteryWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#KUNLUN20#E3
+ReRiTyrePSnsrLostWarn#6#818#false#false#40#1#1#0#RearRightTyrePressureSensorLostWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#KUNLUN20#E3
+VCCDBdCanNodeAddress#6#1376#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#KUNLUN20#E3
+VCCDBdCanActiveWakeup#6#1376#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#KUNLUN20#E3
+VCCDBdCanRepeatMsgReq#6#1376#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "not_requested", "1": "requested"}#KUNLUN20#E3
+UDB23VCCD#6#1376#false#false#23#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB22VCCD#6#1376#false#false#22#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB21VCCD#6#1376#false#false#21#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB20VCCD#6#1376#false#false#20#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB19VCCD#6#1376#false#false#19#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB18VCCD#6#1376#false#false#18#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB17VCCD#6#1376#false#false#17#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+VCCDBdCanRepeatMsgSt#6#1376#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#KUNLUN20#E3
+UDB31VCCD#6#1376#false#false#31#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB30VCCD#6#1376#false#false#30#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB29VCCD#6#1376#false#false#29#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB28VCCD#6#1376#false#false#28#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB27VCCD#6#1376#false#false#27#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB26VCCD#6#1376#false#false#26#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB25VCCD#6#1376#false#false#25#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB24VCCD#6#1376#false#false#24#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB39VCCD#6#1376#false#false#39#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB38VCCD#6#1376#false#false#38#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB37VCCD#6#1376#false#false#37#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB36VCCD#6#1376#false#false#36#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB35VCCD#6#1376#false#false#35#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB34VCCD#6#1376#false#false#34#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB33VCCD#6#1376#false#false#33#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB32VCCD#6#1376#false#false#32#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB47VCCD#6#1376#false#false#47#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB46VCCD#6#1376#false#false#46#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB45VCCD#6#1376#false#false#45#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB44VCCD#6#1376#false#false#44#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB43VCCD#6#1376#false#false#43#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB42VCCD#6#1376#false#false#42#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB41VCCD#6#1376#false#false#41#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB40VCCD#6#1376#false#false#40#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB53VCCD#6#1376#false#false#53#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB52VCCD#6#1376#false#false#52#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB51VCCD#6#1376#false#false#51#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB50VCCD#6#1376#false#false#50#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+UDB49VCCD#6#1376#false#false#49#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+NMKeepAwkRsnVCCD#6#1376#false#false#48#9#1#0##0.0#0.0#0.0#null#KUNLUN20#E3
+VCCDToACUBodyCanDiagReq#6#2033#false#false#7#64#1#0#VCCDToACUBodyCanDiagReqNpdu#0.0#0.0#0.0#null#KUNLUN20#E3
+VCCDToACUDiagReq#6#1907#false#false#7#64#1#0#VCCDToACUBodyCanDiagReqNpdu#0.0#0.0#0.0#null#KUNLUN20#E3
+VCCDToACUCanFuncDiagReq#6#2015#false#false#7#64#1#0#VCCDToACUCanFuncDiagReqNpdu#0.0#0.0#0.0#null#KUNLUN20#E3
+VCCDToBMDMDiagReq#6#1912#false#false#7#64#1#0#VCCDToBMDMBodyCanDiagReqNpdu#0.0#0.0#0.0#null#KUNLUN20#E3
+XCDToBodyFuncDiagReq#6#2047#false#false#7#64#1#0#VCCDToBodyCanFuncDiagReqNpdu#0.0#0.0#0.0#null#KUNLUN20#E3

@@ -1,0 +1,150 @@
+GenrMotIdCmdIvt#13#175#false#false#7#16#0.1#-3276.8#Iq output command of Inverter\n 控制器输出d轴电流#0.0#0.0#0.0#null#KUNLUN20#E4
+GenrMotIdIvt#13#175#false#false#23#16#0.1#-3276.8#Id output of Inverter\n 控制器实际输出d轴电流#0.0#0.0#0.0#null#KUNLUN20#E4
+GenrMotIqCmdIvt#13#175#false#false#39#16#0.1#-3276.8#Iq output command of Inverter\n 控制器输出q轴电流#0.0#0.0#0.0#null#KUNLUN20#E4
+GenrMotIqIvt#13#175#false#false#55#16#0.1#-3276.8#Iq output  of Inverter\n 控制器实际输出输出q轴电流#0.0#0.0#0.0#null#KUNLUN20#E4
+GenrMotTIvtDBC1#13#175#false#false#71#8#1#-40#1st Phase DBC temperature of Inverter\n  控制器第1相dbc温度#0.0#0.0#0.0#null#KUNLUN20#E4
+GenrMotTIvtDBC2#13#175#false#false#79#8#1#-40#2nd Phase DBC temperature of Inverter\n \n 控制器第2相dbc温度#0.0#0.0#0.0#null#KUNLUN20#E4
+GenrMotTIvtDBC3#13#175#false#false#87#8#1#-40#3rd Phase DBC temperature of Inverter\n \n 控制器第3相dbc温度#0.0#0.0#0.0#null#KUNLUN20#E4
+GenrMotUdCmdIvt#13#175#false#false#95#16#0.1#-3276.8#Ud output command of Inverter\n 控制器输出d轴电压#0.0#0.0#0.0#null#KUNLUN20#E4
+GenrMotUqCmdIvt#13#175#false#false#111#16#0.1#-3276.8#Ud output command of Inverter\n 控制器输出q轴电压#0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotSigGrpChks#13#113#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotSigGrpCntr#13#113#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotActTq#13#113#false#false#23#15#0.1#-1638.3#Front motor actual torque  at motor output axle .#0.0#0.0#0.0#{"32767": "Invalid"}#KUNLUN20#E4
+FrntMotActSpd#13#113#false#false#39#16#1.0#-32768.0#Front motor actual speed#0.0#0.0#0.0#{"65535": "Invalid"}#KUNLUN20#E4
+FrntMotMaxDynTqCp#13#113#false#false#55#10#1#0#Front motor maximum dynamic torque capacity at motor output axle .#0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotMinDynTqCp#13#113#false#false#71#10#1#-1023#Front motor minimum dynamic torque capacity at motor output axle .#0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotAglRslvr#13#113#false#false#87#12#0.1#0.0#Front motor angle resolver#0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotActCur#13#161#false#false#7#14#0.1#-819.1#Front motor actual current on DC bus  \nNegative means current flow from front motor to HV battery  positive means current flow from HV battery to front motor.#0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotBoostModAvl#13#161#false#false#9#1#1#0#Front motor boost mode available#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#KUNLUN20#E4
+FrntMotActDampgSts#13#161#false#false#8#1#1#0#Front motor active damping status.#0.0#0.0#0.0#{"0": "off", "1": "on"}#KUNLUN20#E4
+FrntMotActUSigGrpChks#13#161#false#false#23#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotActUSigGrpCntr#13#161#false#false#27#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotActU#13#161#false#false#39#14#0.1#0.0#Front motor actual voltage#0.0#0.0#0.0#{"16383": "Invalid"}#KUNLUN20#E4
+FrntMotFltLvlIndcnSigGrpChks#13#161#false#false#55#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotFltLvlIndcnSigGrpCntr#13#161#false#false#59#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotSfSpdMax#13#161#false#false#71#16#1#-32768#Front motor safe speed maximum#0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotFltLvlIndcn#13#161#false#false#87#3#1#0#Front motor fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0_DTCOnly", "2": "Fault_Lv1_PowerLimited", "3": "Fault_Lv2_Recoverable", "4": "Fault_Lv3_Not_recoverable", "5": "Fault_Lv4_Crash"}#KUNLUN20#E4
+FrntMotModStsSigGrpChks#13#161#false#false#103#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotModStsSigGrpCntr#13#161#false#false#107#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotModSts#13#161#false#false#119#5#1#0#Front motor mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "9": "activeDischarge", "12": "OffsetCal", "13": "Failure", "14": "After_Run"}#KUNLUN20#E4
+FrntMotActSfSt#13#161#false#false#114#2#1#0#Front Motor actual safe state#0.0#0.0#0.0#{"0": "Normal", "1": "ASC", "2": "FreeWheeling"}#KUNLUN20#E4
+FrntMotDrtSts#13#161#false#false#123#1#1#0#Front motor derating status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#KUNLUN20#E4
+FEDSPtFusionCanfdNodeAddress#13#1303#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#KUNLUN20#E4
+FEDSPtFusionCanfdActiveWakeup#13#1303#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#KUNLUN20#E4
+FEDSPtFusionCanfdRepeatMsgReq#13#1303#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#KUNLUN20#E4
+FEDSPtFusionCanfdRepeatMsgSt#13#1303#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#KUNLUN20#E4
+UDB37DEDS#13#1303#false#false#37#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+NMKeepAwkRsnFEDS#13#1303#false#false#48#9#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+BattChrgBalDurgRunRawEBS#13#842#false#false#7#16#0.01#0.0#Battery cycle charge balance during running raw EBS \n驾驶过程中电池充电量#0.0#0.0#0.0#null#KUNLUN20#E4
+BattSocBliveStsEBS#13#842#false#false#21#2#1#0#battery SOC believable Status EBS\n电池SOC可信状态#0.0#0.0#0.0#{"0": "deviation_higher_15%", "1": "deviation_lower_15%", "2": "deviation_lower_10%", "3": "invalid"}#KUNLUN20#E4
+BattSnsrHwFltRawEBS#13#842#false#false#19#4#1#0#battery sensor hardware fault Raw EBS \n电池管理器硬件故障#0.0#0.0#0.0#null#KUNLUN20#E4
+BattChrgBalDurgWakRawEBS#13#842#false#false#31#16#0.01#0.0#Battery cycle charge balance during awake raw EBS \nawake过程中电池充电量#0.0#0.0#0.0#null#KUNLUN20#E4
+ChrgCurWUSts#13#842#false#false#45#1#1#0#charge current wakeup stutes\n充电电流唤醒状态#0.0#0.0#0.0#{"0": "Disabled", "1": "Enabled"}#KUNLUN20#E4
+DchaCurWUSts#13#842#false#false#44#1#1#0#Discharge current wakeup stutes \n放电电流唤醒状态#0.0#0.0#0.0#{"0": "Disabled", "1": "Enabled"}#KUNLUN20#E4
+LVWUSts#13#842#false#false#43#1#1#0#Low voltage wakeup Stutes\n低电压唤醒状态#0.0#0.0#0.0#{"0": "Disabled", "1": "Enabled"}#KUNLUN20#E4
+SOCWUSts#13#842#false#false#42#1#1#0##0.0#0.0#0.0#{"0": "Disabled", "1": "Enabled"}#KUNLUN20#E4
+BattCycDchaCntrDurgQuiscPhaRaEBS#13#842#false#false#55#16#0.01#0.0#Battery cycle Discharge counter During Quiescent Phase raw 静态电流阶段放电量#0.0#0.0#0.0#null#KUNLUN20#E4
+BattCycDchaCntrDurgRunngRawEBS#13#842#false#false#71#16#0.01#0.0#Battery cycle Discharge counter During running Raw EBS \n额定温度车辆running/ACC状态下电池放电量#0.0#0.0#0.0#null#KUNLUN20#E4
+BattIRawEBS#13#842#false#false#87#16#0.01#-450.0#Battery I raw EBS\nEBS发出的电池电流#0.0#0.0#0.0#null#KUNLUN20#E4
+BattQuiscAvgRawEBS#13#842#false#false#111#12#1#-3000#Battery Quiescent average raw EBS\n当前静态电流平均值#0.0#0.0#0.0#null#KUNLUN20#E4
+BattTiInSrvRawEBS#13#842#false#false#115#12#1#0#Battery time in service raw EBS\n电池服务时长#0.0#0.0#0.0#null#KUNLUN20#E4
+BattURawEBS#13#842#false#false#135#15#0.001#0.0#Battery Voltage raw EBS\nEBS电池电压#0.0#0.0#0.0#{"18000": "invalid"}#KUNLUN20#E4
+QuiscCurMeasTiDurgPrkgEBS#13#842#false#false#151#16#1#0#quiescent Current Measure time during Parking EBS\n停车状态下的静态电流测量时间#0.0#0.0#0.0#null#KUNLUN20#E4
+BattCycDchaCntrDurgwakRawEBS#13#842#false#false#167#16#0.01#0.0#Battery cycle Discharge counter During wake Raw EBS \n车辆Awake状态下电池放电量#0.0#0.0#0.0#null#KUNLUN20#E4
+BattQuiscAvgFildLongRawEBS#13#842#false#false#178#11#1#-1024#Battery Quiescent average filtered long raw EBS\n长时静态电流平均值#0.0#0.0#0.0#null#KUNLUN20#E4
+BattRRawEBS#13#842#false#false#199#8#0.1#0.0#battery resistance raw EBS\n当前SOC和温度下的电池内阻#0.0#0.0#0.0#null#KUNLUN20#E4
+BattTRawEBS#13#842#false#false#207#8#1#-40#Battery temperature raw EBS\nEBS发出的电池温度#0.0#0.0#0.0#null#KUNLUN20#E4
+BattSocRawEBS#13#842#false#false#215#10#1#0#Battery State of charge raw EBS\nEBS发出的电池SOC#0.0#0.0#0.0#null#KUNLUN20#E4
+BattSohEBS#13#842#false#false#217#10#0.1#0.0#Battery State of health EBS\n电池SOH#0.0#0.0#0.0#{"1023": "invaild"}#KUNLUN20#E4
+ChrgCurWUEna#13#844#false#false#7#1#1#0#charge current wakeup Ena\n充电电流唤醒使能#0.0#0.0#0.0#{"0": "Disabled", "1": "Enabled"}#KUNLUN20#E4
+LABattCp#13#844#false#false#6#7#1#0#Lead acid battery capacity \n铅酸电池容量#0.0#0.0#0.0#null#KUNLUN20#E4
+ChrgCurWUThd#13#844#false#false#15#8#0.01#0.0#charge current wakeup threshold \n充电电流唤醒阈值#0.0#0.0#0.0#null#KUNLUN20#E4
+DchaCurWUEna#13#844#false#false#23#1#1#0#Discharge current wakeup Ena \n放电电流唤醒使能#0.0#0.0#0.0#{"0": "Disabled", "1": "Enabled"}#KUNLUN20#E4
+LABattTyp#13#844#false#false#22#2#1#0#Lead acid battery type\n铅酸电池类型#0.0#0.0#0.0#{"0": "invalid", "1": "flooded", "2": "EFB", "3": "AGM"}#KUNLUN20#E4
+LVWUEna#13#844#false#false#20#1#1#0#Low voltage wakeup Ena\n低电压唤醒使能#0.0#0.0#0.0#{"0": "Disabled", "1": "Enabled"}#KUNLUN20#E4
+LABattOCV1nmalT#13#844#false#false#18#11#0.01#0.0#Lead acid battery OCV1 nomal temperature\n铅酸电池常温OCV1#0.0#0.0#0.0#null#KUNLUN20#E4
+DchaCurWUThd#13#844#false#false#39#8#0.01#-2.55#Discharge current wakeup threshold\n放电电流唤醒阈值#0.0#0.0#0.0#null#KUNLUN20#E4
+LABattOCV2nmalT#13#844#false#false#47#11#0.01#0.0#Lead acid battery OCV2 nomal temperature 铅酸电池常温OCV2#0.0#0.0#0.0#null#KUNLUN20#E4
+LVWUThd#13#844#false#false#50#11#0.01#0.0#Low voltage wakeup threshold\n低电压唤醒阈值#0.0#0.0#0.0#null#KUNLUN20#E4
+SOCWUEna#13#844#false#false#71#1#1#0##0.0#0.0#0.0#{"0": "Disabled", "1": "Enabled"}#KUNLUN20#E4
+SOCWUThd#13#844#false#false#70#7#1#0#SOC wakeup threshold\nSOC唤醒阈值#0.0#0.0#0.0#null#KUNLUN20#E4
+VCCD2WPC4SwiNFC#13#845#false#false#7#4#1#0#VCCD发给WPC的信号 表示开关NFC的场#0.0#0.0#0.0#{"0": "\u5173\u95edNFC\u573a", "1": "\u6253\u5f00\u4f4e\u529f\u8017\u6a21\u5f0f", "2": "\u6253\u5f00polling\u6a21\u5f0f", "3": "\u5173\u95edNFC\u573a\u4e14\u5173\u95ed\u5361\u4fdd\u62a4\u529f\u80fd"}#KUNLUN20#E4
+VCUReMotReqSigGrpChks#13#112#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+VCUReMotModReq#13#112#false#false#15#4#1#0#Rear motor mode request#0.0#0.0#0.0#{"0": "Standby", "1": "Offset_Calibration_Mode_1", "2": "Offset_Calibration_Mode_2", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_Discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Buck_Control"}#KUNLUN20#E4
+VCUReMotReqSigGrpCntr#13#112#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+VCUReMotOverBoostEna#13#112#false#false#24#1#1#0#Rear motor over boost enable#0.0#0.0#0.0#{"0": "off", "1": "on"}#KUNLUN20#E4
+VCUReMotSpdReq#13#112#false#false#39#16#1#-32767#Rear motor speed request  at motor output shaft#0.0#0.0#0.0#null#KUNLUN20#E4
+VCUFrntMotReqSigGrpChks#13#112#false#false#79#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+VCUFrntMotModReq#13#112#false#false#87#4#1#0#Front motor mode request#0.0#0.0#0.0#{"0": "Standby", "1": "Offset_Calibration_Mode_1", "2": "Offset_Calibration_Mode_2", "3": "Torque_Control", "4": "Speed_Control", "5": "Reserved", "6": "Reserved", "7": "Reserved", "8": "Reserved", "9": "Active_Discharge"}#KUNLUN20#E4
+VCUFrntMotReqSigGrpCntr#13#112#false#false#83#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+VCUFrntMotOverBoostEna#13#112#false#false#96#1#1#0#Front motor over boost enable#0.0#0.0#0.0#{"0": "off", "1": "on"}#KUNLUN20#E4
+VCUFrntMotSpdReq#13#112#false#false#111#16#1#-32767#Front motor speed request  at motor output shaft#0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotTqReqSigGrpChks#13#112#false#false#127#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+FrntMotTqReqSigGrpCntr#13#112#false#false#131#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+VCUFrntMotTqReq#13#112#false#false#143#15#0.1#-1638.3#Front motor torque request#0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotTqReqSigGrpChks#13#112#false#false#159#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotTqReqSigGrpCntr#13#112#false#false#163#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+VCUReMotTqReq#13#112#false#false#175#15#0.1#-1638.3#Rear motor torque request#0.0#0.0#0.0#null#KUNLUN20#E4
+VCUFrntMotDampgModReq#13#112#false#false#199#3#1#0#Front motor damping mode request#0.0#0.0#0.0#{"0": "No_req", "1": "Low_damping", "2": "Medium_damping", "3": "High_damping", "4": "Adas_damping", "5": "TBD", "6": "TBD", "7": "TBD"}#KUNLUN20#E4
+VCUReMotDampgModReq#13#112#false#false#196#3#1#0#Rear motor damping mode request#0.0#0.0#0.0#{"0": "No_req", "1": "Low_damping", "2": "Medium_damping", "3": "High_damping", "4": "Adas_damping", "5": "TBD", "6": "TBD", "7": "TBD"}#KUNLUN20#E4
+UDB23FZCU#13#1309#false#false#23#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB22FZCU#13#1309#false#false#22#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB21FZCU#13#1309#false#false#21#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB20FZCU#13#1309#false#false#20#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB19FZCU#13#1309#false#false#19#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB18FZCU#13#1309#false#false#18#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB17FZCU#13#1309#false#false#17#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB31FZCU#13#1309#false#false#31#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB30FZCU#13#1309#false#false#30#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB29FZCU#13#1309#false#false#29#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB28FZCU#13#1309#false#false#28#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB27FZCU#13#1309#false#false#27#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB26FZCU#13#1309#false#false#26#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB25FZCU#13#1309#false#false#25#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB24FZCU#13#1309#false#false#24#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB39FZCU#13#1309#false#false#39#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB38FZCU#13#1309#false#false#38#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB37FZCU#13#1309#false#false#37#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB36FZCU#13#1309#false#false#36#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB35FZCU#13#1309#false#false#35#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB34FZCU#13#1309#false#false#34#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB33FZCU#13#1309#false#false#33#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB32FZCU#13#1309#false#false#32#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB47FZCU#13#1309#false#false#47#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB46FZCU#13#1309#false#false#46#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB45FZCU#13#1309#false#false#45#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB44FZCU#13#1309#false#false#44#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB43FZCU#13#1309#false#false#43#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB42FZCU#13#1309#false#false#42#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB41FZCU#13#1309#false#false#41#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+UDB40FZCU#13#1309#false#false#40#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+NMKeepAwkRsnFZCU#13#1309#false#false#48#9#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotSigGrpChks#13#114#false#false#7#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotSigGrpCntr#13#114#false#false#11#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotActTq#13#114#false#false#23#15#0.1#-1638.3#Rear motor actual torque  at motor output axle .#0.0#0.0#0.0#{"32767": "Invalid"}#KUNLUN20#E4
+ReMotActSpd#13#114#false#false#39#16#1.0#-32768.0#Rear motor actual speed#0.0#0.0#0.0#{"65535": "Invalid"}#KUNLUN20#E4
+ReMotMaxDynTqCp#13#114#false#false#55#10#1#0#Rear motor maximum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotMinDynTqCp#13#114#false#false#71#10#1#-1023#Rear motor minimum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotAglRslvr#13#114#false#false#87#12#0.1#0.0#Rear motor angle resolver#0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotActCur#13#163#false#false#7#14#0.1#-819.1#Rear motor actual current on DC bus  \nNegative means current flow from rear motor to HV battery  positive means current flow from HV battery to rear motor.#0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotBoostModAvl#13#163#false#false#9#1#1#0#Rear motor boost mode available#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#KUNLUN20#E4
+ReMotActDampgSts#13#163#false#false#8#1#1#0#Rear motor active damping status.#0.0#0.0#0.0#{"0": "Off", "1": "On"}#KUNLUN20#E4
+ReMotDrtSts#13#163#false#false#32#1#1#0#Rear motor derating Status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#KUNLUN20#E4
+ReMotStSigGrpChks#13#163#false#false#47#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotFltLvlIndcn#13#163#false#false#54#3#1#0#Rear motor fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0_DTCOnly", "2": "Fault_Lv1_PowerLimited", "3": "Fault_Lv2_Recoverable", "4": "Fault_Lv3_Not_Recoverable", "5": "Fault_Lv4_Crash"}#KUNLUN20#E4
+ReMotStSigGrpCntr#13#163#false#false#51#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotSfSpdMax#13#163#false#false#63#16#1.0#-32768.0#Rear motor safe speed maximum#0.0#0.0#0.0#{"65535": "Invalid"}#KUNLUN20#E4
+ReMotSfStConfig#13#163#false#false#79#2#1#0#Rear Motor safe state configuration#0.0#0.0#0.0#{"1": "ASC", "2": "FreeWheeling"}#KUNLUN20#E4
+ReMotActSfSt#13#163#false#false#77#2#1.0#0.0#RearMotor safe state#0.0#0.0#0.0#{"0": "normal", "1": "ASC", "2": "FreeWheeling"}#KUNLUN20#E4
+ReMotModStsSigGrpChks#13#163#false#false#207#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotModStsSigGrpCntr#13#163#false#false#211#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotModSts#13#163#false#false#223#5#1#0#Rear motor mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Booster_discharge_finished", "12": "OffsetCal", "13": "Failure", "14": "After_Run", "15": "Buck_Control"}#KUNLUN20#E4
+ReMotActUSigGrpChks#13#163#false#false#231#8#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotActUSigGrpCntr#13#163#false#false#235#4#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+ReMotActU#13#163#false#false#247#14#0.1#0.0#Rear motor actual voltage#0.0#0.0#0.0#{"16383": "Invalid"}#KUNLUN20#E4
+REDSPtFusionNodeAddress#13#1300#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#KUNLUN20#E4
+REDSPtFusionActiveWakeup#13#1300#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#KUNLUN20#E4
+REDSPtFusionRepeatMsgReq#13#1300#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#KUNLUN20#E4
+REDSPtFusionRepeatMsgSt#13#1300#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#KUNLUN20#E4
+UDB37REDS#13#1300#false#false#37#1#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
+NMKeepAwkRsnREDS#13#1300#false#false#48#9#1#0##0.0#0.0#0.0#null#KUNLUN20#E4
