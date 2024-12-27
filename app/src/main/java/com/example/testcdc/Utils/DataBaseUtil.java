@@ -448,6 +448,54 @@ public class DataBaseUtil {
         files.add(R.raw.signal_info_14_ms11_25rc01);
         files.add(R.raw.signal_info_15_ms11_25rc01);
 
+        files.add(R.raw.signal_info_1_kunlun20_e2);
+        files.add(R.raw.signal_info_2_kunlun20_e2);
+        files.add(R.raw.signal_info_3_kunlun20_e2);
+        files.add(R.raw.signal_info_4_kunlun20_e2);
+        files.add(R.raw.signal_info_6_kunlun20_e2);
+        files.add(R.raw.signal_info_7_kunlun20_e2);
+        files.add(R.raw.signal_info_13_kunlun20_e2);
+
+        files.add(R.raw.signal_info_1_kunlun20_e3);
+        files.add(R.raw.signal_info_2_kunlun20_e3);
+        files.add(R.raw.signal_info_3_kunlun20_e3);
+        files.add(R.raw.signal_info_4_kunlun20_e3);
+        files.add(R.raw.signal_info_6_kunlun20_e3);
+        files.add(R.raw.signal_info_7_kunlun20_e3);
+        files.add(R.raw.signal_info_13_kunlun20_e3);
+
+        files.add(R.raw.signal_info_1_kunlun20_e3u1);
+        files.add(R.raw.signal_info_2_kunlun20_e3u1);
+        files.add(R.raw.signal_info_3_kunlun20_e3u1);
+        files.add(R.raw.signal_info_4_kunlun20_e3u1);
+        files.add(R.raw.signal_info_6_kunlun20_e3u1);
+        files.add(R.raw.signal_info_7_kunlun20_e3u1);
+        files.add(R.raw.signal_info_13_kunlun20_e3u1);
+
+        files.add(R.raw.msg_info_1_kunlun20_e3u2);
+        files.add(R.raw.msg_info_2_kunlun20_e3u2);
+        files.add(R.raw.msg_info_3_kunlun20_e3u2);
+        files.add(R.raw.msg_info_4_kunlun20_e3u2);
+        files.add(R.raw.msg_info_6_kunlun20_e3u2);
+        files.add(R.raw.msg_info_7_kunlun20_e3u2);
+        files.add(R.raw.msg_info_13_kunlun20_e3u2);
+
+        files.add(R.raw.signal_info_1_kunlun20_e3u2);
+        files.add(R.raw.signal_info_2_kunlun20_e3u2);
+        files.add(R.raw.signal_info_3_kunlun20_e3u2);
+        files.add(R.raw.signal_info_4_kunlun20_e3u2);
+        files.add(R.raw.signal_info_6_kunlun20_e3u2);
+        files.add(R.raw.signal_info_7_kunlun20_e3u2);
+        files.add(R.raw.signal_info_13_kunlun20_e3u2);
+
+        files.add(R.raw.signal_info_1_kunlun20_e4);
+        files.add(R.raw.signal_info_2_kunlun20_e4);
+        files.add(R.raw.signal_info_3_kunlun20_e4);
+        files.add(R.raw.signal_info_4_kunlun20_e4);
+        files.add(R.raw.signal_info_6_kunlun20_e4);
+        files.add(R.raw.signal_info_7_kunlun20_e4);
+        files.add(R.raw.signal_info_13_kunlun20_e4);
+
 //        Log.d(TAG, "files: " + files);
 //        SignalInfoDao signalInfoDao = MyApplication.getInstance().getMx11E4Database().signalInfoDao();
 //        List<SignalInfo> signalInfos = new ArrayList<>();
@@ -881,6 +929,40 @@ public class DataBaseUtil {
         files.add(R.raw.msg_info_15_ms11_25rc01);
 
 
+        files.add(R.raw.msg_info_1_kunlun20_e2);
+        files.add(R.raw.msg_info_2_kunlun20_e2);
+        files.add(R.raw.msg_info_3_kunlun20_e2);
+        files.add(R.raw.msg_info_4_kunlun20_e2);
+        files.add(R.raw.msg_info_6_kunlun20_e2);
+        files.add(R.raw.msg_info_7_kunlun20_e2);
+        files.add(R.raw.msg_info_13_kunlun20_e2);
+
+        files.add(R.raw.msg_info_1_kunlun20_e3);
+        files.add(R.raw.msg_info_2_kunlun20_e3);
+        files.add(R.raw.msg_info_3_kunlun20_e3);
+        files.add(R.raw.msg_info_4_kunlun20_e3);
+        files.add(R.raw.msg_info_6_kunlun20_e3);
+        files.add(R.raw.msg_info_7_kunlun20_e3);
+        files.add(R.raw.msg_info_13_kunlun20_e3);
+
+        files.add(R.raw.msg_info_1_kunlun20_e3u1);
+        files.add(R.raw.msg_info_2_kunlun20_e3u1);
+        files.add(R.raw.msg_info_3_kunlun20_e3u1);
+        files.add(R.raw.msg_info_4_kunlun20_e3u1);
+        files.add(R.raw.msg_info_6_kunlun20_e3u1);
+        files.add(R.raw.msg_info_7_kunlun20_e3u1);
+        files.add(R.raw.msg_info_13_kunlun20_e3u1);
+
+        files.add(R.raw.msg_info_1_kunlun20_e4);
+        files.add(R.raw.msg_info_2_kunlun20_e4);
+        files.add(R.raw.msg_info_3_kunlun20_e4);
+        files.add(R.raw.msg_info_4_kunlun20_e4);
+        files.add(R.raw.msg_info_6_kunlun20_e4);
+        files.add(R.raw.msg_info_7_kunlun20_e4);
+        files.add(R.raw.msg_info_13_kunlun20_e4);
+
+
+
 //        MsgInfoDao msgInfoDao = MyApplication.getInstance().getMx11E4Database().msgInfoDao();
 //        List<MsgInfoEntity> msgInfoEntities = new ArrayList<>();
         files.forEach(file -> {
@@ -930,17 +1012,6 @@ public class DataBaseUtil {
 //        carTypeEntities.add(new CarTypeEntity());
 
         // Add the first car type
-        CarTypeEntity mx11E4 = new CarTypeEntity();
-        mx11E4.setCarTypeName("MX11");
-        mx11E4.setSDBName("E4");
-        carTypeEntities.add(mx11E4);
-
-        // Add the second car type
-        CarTypeEntity mx11E3 = new CarTypeEntity();
-        mx11E3.setCarTypeName("MX11");
-        mx11E3.setSDBName("E3");
-        carTypeEntities.add(mx11E3);
-
         CarTypeEntity ms11E3 = new CarTypeEntity();
         ms11E3.setCarTypeName("MS11");
         ms11E3.setSDBName("E3");
@@ -986,12 +1057,10 @@ public class DataBaseUtil {
         ms11RC04.setSDBName("RC04");
         carTypeEntities.add(ms11RC04);
 
-
         CarTypeEntity ms11RC05 = new CarTypeEntity();
         ms11RC05.setCarTypeName("MS11");
         ms11RC05.setSDBName("RC05");
         carTypeEntities.add(ms11RC05);
-
 
         CarTypeEntity ms11RC06 = new CarTypeEntity();
         ms11RC06.setCarTypeName("MS11");
@@ -1018,26 +1087,6 @@ public class DataBaseUtil {
         ms11RC10.setSDBName("RC10");
         carTypeEntities.add(ms11RC10);
 
-        CarTypeEntity ms11uE3 = new CarTypeEntity();
-        ms11uE3.setCarTypeName("MS11-U");
-        ms11uE3.setSDBName("E3");
-        carTypeEntities.add(ms11uE3);
-
-        CarTypeEntity ms11uE4bugfix = new CarTypeEntity();
-        ms11uE4bugfix.setCarTypeName("MS11-U");
-        ms11uE4bugfix.setSDBName("E4-bugfix");
-        carTypeEntities.add(ms11uE4bugfix);
-
-        CarTypeEntity ms11uSM3 = new CarTypeEntity();
-        ms11uSM3.setCarTypeName("MS11-U");
-        ms11uSM3.setSDBName("SM3");
-        carTypeEntities.add(ms11uSM3);
-
-        CarTypeEntity mx11E4U1 = new CarTypeEntity();
-        mx11E4U1.setCarTypeName("MX11");
-        mx11E4U1.setSDBName("E4U1");
-        carTypeEntities.add(mx11E4U1);
-
         CarTypeEntity ms11RC11 = new CarTypeEntity();
         ms11RC11.setCarTypeName("MS11");
         ms11RC11.setSDBName("RC11");
@@ -1053,10 +1102,76 @@ public class DataBaseUtil {
         ms1125RC01.setSDBName("25RC01");
         carTypeEntities.add(ms1125RC01);
 
-        CarTypeEntity userDefined = new CarTypeEntity();
-        userDefined.setCarTypeName("custom");
-        userDefined.setSDBName("默认视图");
-        carTypeEntities.add(userDefined);
+        CarTypeEntity ms11e4ky = new CarTypeEntity();
+        ms11e4ky.setCarTypeName("MS11");
+        ms11e4ky.setSDBName("E4-昆易");
+        carTypeEntities.add(ms11e4ky);
+
+        CarTypeEntity ms11e3ky = new CarTypeEntity();
+        ms11e3ky.setCarTypeName("MS11");
+        ms11e3ky.setSDBName("E3-昆易");
+        carTypeEntities.add(ms11e3ky);
+
+        CarTypeEntity ms11e3u1ky = new CarTypeEntity();
+        ms11e3u1ky.setCarTypeName("MS11");
+        ms11e3u1ky.setSDBName("E3U1-昆易");
+        carTypeEntities.add(ms11e3u1ky);
+
+        CarTypeEntity ms11e3u1 = new CarTypeEntity();
+        ms11e3u1.setCarTypeName("MS11");
+        ms11e3u1.setSDBName("E3U1");
+        carTypeEntities.add(ms11e3u1);
+
+
+        CarTypeEntity ms11uE3 = new CarTypeEntity();
+        ms11uE3.setCarTypeName("MS11-U");
+        ms11uE3.setSDBName("E3");
+        carTypeEntities.add(ms11uE3);
+
+        CarTypeEntity ms11uE4bugfix = new CarTypeEntity();
+        ms11uE4bugfix.setCarTypeName("MS11-U");
+        ms11uE4bugfix.setSDBName("E4-bugfix");
+        carTypeEntities.add(ms11uE4bugfix);
+
+        CarTypeEntity ms11uSM3 = new CarTypeEntity();
+        ms11uSM3.setCarTypeName("MS11-U");
+        ms11uSM3.setSDBName("SM3");
+        carTypeEntities.add(ms11uSM3);
+
+        CarTypeEntity ms11u25rc02 = new CarTypeEntity();
+        ms11u25rc02.setCarTypeName("MS11-U");
+        ms11u25rc02.setSDBName("25RC02");
+        carTypeEntities.add(ms11u25rc02);
+
+        CarTypeEntity ms11ue4u3 = new CarTypeEntity();
+        ms11ue4u3.setCarTypeName("MS11-U");
+        ms11ue4u3.setSDBName("E4U3");
+        carTypeEntities.add(ms11ue4u3);
+
+        CarTypeEntity ms11ue4u2 = new CarTypeEntity();
+        ms11ue4u2.setCarTypeName("MS11-U");
+        ms11ue4u2.setSDBName("E4U2");
+        carTypeEntities.add(ms11ue4u2);
+
+        CarTypeEntity ms11ue4u1 = new CarTypeEntity();
+        ms11ue4u1.setCarTypeName("MS11-U");
+        ms11ue4u1.setSDBName("E4U1");
+        carTypeEntities.add(ms11ue4u1);
+
+//        CarTypeEntity mx11E4 = new CarTypeEntity();
+//        mx11E4.setCarTypeName("MX11");
+//        mx11E4.setSDBName("E4");
+//        carTypeEntities.add(mx11E4);
+
+        CarTypeEntity mx11E3 = new CarTypeEntity();
+        mx11E3.setCarTypeName("MX11");
+        mx11E3.setSDBName("E3");
+        carTypeEntities.add(mx11E3);
+
+        CarTypeEntity mx11E4U1 = new CarTypeEntity();
+        mx11E4U1.setCarTypeName("MX11");
+        mx11E4U1.setSDBName("E4U1");
+        carTypeEntities.add(mx11E4U1);
 
         CarTypeEntity mx11E4U31 = new CarTypeEntity();
         mx11E4U31.setCarTypeName("MX11");
@@ -1082,6 +1197,37 @@ public class DataBaseUtil {
         mx11EEA15E3.setCarTypeName("MX11");
         mx11EEA15E3.setSDBName("EEA1.5_E3");
         carTypeEntities.add(mx11EEA15E3);
+
+        CarTypeEntity kunlun20E3 = new CarTypeEntity();
+        kunlun20E3.setCarTypeName("KUNLUN20");
+        kunlun20E3.setSDBName("E3");
+        carTypeEntities.add(kunlun20E3);
+
+        CarTypeEntity kunlun20E2 = new CarTypeEntity();
+        kunlun20E2.setCarTypeName("KUNLUN20");
+        kunlun20E2.setSDBName("E2");
+        carTypeEntities.add(kunlun20E2);
+
+        CarTypeEntity kunlun20E3U1 = new CarTypeEntity();
+        kunlun20E3U1.setCarTypeName("KUNLUN20");
+        kunlun20E3U1.setSDBName("E3U1");
+        carTypeEntities.add(kunlun20E3U1);
+
+        CarTypeEntity kunlun20E4 = new CarTypeEntity();
+        kunlun20E4.setCarTypeName("KUNLUN20");
+        kunlun20E4.setSDBName("E4");
+        carTypeEntities.add(kunlun20E4);
+
+        CarTypeEntity kunlun20E4U1 = new CarTypeEntity();
+        kunlun20E4U1.setCarTypeName("KUNLUN20");
+        kunlun20E4U1.setSDBName("E3U2");
+        carTypeEntities.add(kunlun20E4U1);
+
+        CarTypeEntity userDefined = new CarTypeEntity();
+        userDefined.setCarTypeName("custom");
+        userDefined.setSDBName("默认视图");
+        carTypeEntities.add(userDefined);
+
 
         carTypeEntities.forEach(carTypeEntity -> {
 //            carTypeEntity.carTypeName = "MX11";
