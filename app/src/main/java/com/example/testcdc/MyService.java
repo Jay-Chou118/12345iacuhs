@@ -675,6 +675,7 @@ public class MyService extends Service {
     public void onCreate() {
         Log.i(TAG,"onCreate");
         super.onCreate();
+        sayHello();
 
 
 //        findCDCDevice();
@@ -719,6 +720,9 @@ public class MyService extends Service {
                               int can_type,byte[] data);
 
     public static native int decompress(byte[] compressDataBuffer,byte[] unCompressDataBuffer);
+
+
+    public native void sayHello();
 
     private String getWorkHomeDir()
     {

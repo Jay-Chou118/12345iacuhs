@@ -145,3 +145,10 @@ Java_com_example_testcdc_MyService_decompress(JNIEnv *env, jclass obj,
 //    }
     return 0;
 }
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_example_testcdc_MyService_sayHello(JNIEnv *env, jobject obj)
+{
+    LOGI("========Java_com_example_testcdc_MyService_sayHello=========");
+    //todo 后续调用native的方法进行验证
+}
