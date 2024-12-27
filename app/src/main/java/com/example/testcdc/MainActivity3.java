@@ -148,6 +148,9 @@ public class MainActivity3 extends AppCompatActivity {
         }
 
         startHttpServer();
+        Runtime rt=Runtime.getRuntime();
+        long maxMemory=rt.maxMemory();
+        Log.e("maxMemory:",Long.toString(maxMemory/(1024*1024)));
 
         //pyObject.callAttr("main");
 
@@ -511,10 +514,12 @@ public class MainActivity3 extends AppCompatActivity {
                             }
                             Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
                             jsCallResult.setData(result);
+                            Log.e(TAG,"---------:" + new Gson().toJson(result));
                             callJs(jsCallResult);
 //                            Log.w(TAG, "DBC " + jsCallResult.getData().toString() );
 
                         }
+
                         final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
 
                         webView.post(new Runnable() {
@@ -563,7 +568,6 @@ public class MainActivity3 extends AppCompatActivity {
                 callJs(jsCallResult);
             }
         });
-
 
         messageHandlers.put("getUserDBC", new BridgeHandler() {
             @Override

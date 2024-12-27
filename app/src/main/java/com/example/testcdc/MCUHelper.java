@@ -324,7 +324,14 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 Process.setThreadPriority(Process.THREAD_PRIORITY_URGENT_AUDIO);
                 while (g_notExitFlag.get())
                 {
+                    long startTime = System.currentTimeMillis();
                     readPort();
+                    long endTime = System.currentTimeMillis();
+                    long timeElapsed = endTime - startTime;
+                    if(timeElapsed > 15)
+                    {
+                        Log.e(TAG,"代码执行耗时: " + timeElapsed + " 毫秒");
+                    }
                 }
                 Log.w(TAG,"ReadPort thread is exit");
 
@@ -351,9 +358,10 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 return false;
             }
             int len = mSerial.read(mReadBuffer,100);
-//            Log.d(TAG,"AAAAA read num " + len);
+//            Log.w(TAG,"AAAAA read num " + len);
             if(len >0)
             {
+
                 mSerialBuffer.writeBuffer(mReadBuffer,len);
 //                Log.d(TAG, "AAAA read num " +  len + " wirte num : " + mReadBuffer); // 打印mReadBuffer的前100字节
 //                StringBuilder sb = new StringBuilder();
