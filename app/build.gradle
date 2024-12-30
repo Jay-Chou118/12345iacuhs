@@ -22,7 +22,7 @@ android {  // 注意这里多了一个开括号
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         ndk {
-            abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+            abiFilters "arm64-v8a"
         }
         python {
             buildPython "app/Python38/python.exe"

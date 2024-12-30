@@ -15,7 +15,10 @@ import android.app.NotificationManager;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbDeviceConnection;
+import android.hardware.usb.UsbEndpoint;
+import android.hardware.usb.UsbInterface;
 import android.hardware.usb.UsbManager;
 import android.os.Binder;
 import android.os.Environment;
@@ -153,7 +156,7 @@ public class MyService extends Service {
                             {
                                 Log.i(TAG,"clear history buffer before start");
                             }
-                            mMcuHelperList.add(new MCUHelper(port));
+                            mMcuHelperList.add(new MCUHelper(port,null,null));
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
@@ -322,6 +325,190 @@ public class MyService extends Service {
                     return false;
                 }
             }
+            return true;
+        }
+
+        public boolean InitModule2()
+        {
+            resetModuleMem();
+            UsbManager usbManager = (UsbManager) getSystemService(Context.USB_SERVICE);
+            HashMap<String, UsbDevice> usbDevices = usbManager.getDeviceList();
+            Log.e(TAG,"=========================InitModule2========================");
+            for (UsbDevice device : usbDevices.values()) {
+                // 检查设备的VID和PID是否匹配你的USB设备
+                Log.e(TAG,device.toString());
+                if (device.getVendorId() == 1155 || device.getVendorId() == 4236) {
+//                PendingIntent permissionIntent = PendingIntent.getBroadcast(this, 0, new Intent(ACTION_USB_PERMISSION), PendingIntent.FLAG_IMMUTABLE);
+//                usbManager.requestPermission(device, permissionIntent);
+                    Log.e(TAG,"==========================================================");
+                    mMcuHelperList.add(new MCUHelper(null,device,usbManager));
+                }
+            }
+            wait10ms();
+            Log.e(TAG,"=====================step1============================");
+            if(mMcuHelperList.isEmpty())
+            {
+                return false;
+            }
+
+            for(MCUHelper mcuHelper: mMcuHelperList)
+            {
+                mcuHelper.init();
+
+            }
+            mParseThread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    boolean ret = false;
+                    while (g_notExitFlag.get())
+                    {
+                        ret = false;
+                        for(MCUHelper mcuHelper : mMcuHelperList)
+                        {
+                            ret = mcuHelper.parseSerial() || ret;
+                        }
+                        if(!ret)
+                        {
+                            wait10ms();
+                        }
+                    }
+                    Log.w(TAG,"ParseSerial thread is exit");
+                }
+            },"ParseSerial");
+            mParseThread.start();
+            mHeartBeatThread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    long index = 0;
+                    while (g_notExitFlag.get())
+                    {
+                        if(index % 100 == 0)
+                        {
+                            for(MCUHelper mcuHelper : mMcuHelperList)
+                            {
+                                mcuHelper.sendHeartBeat();
+                            }
+                        }
+                        index += 1;
+                        wait10ms();
+                    }
+                    Log.w(TAG,"HeartBeat thread is exit");
+                }
+            },"HeartBeat");
+            mHeartBeatThread.start();
+
+            mCostMsgThread = new Thread(new Runnable() {
+                // 该线程为消费者队列
+
+                private Map<Long,String> msgNameMap = new HashMap<>();
+
+
+                private String findName(int BUSId,int CANId)
+                {
+//                    Log.e(TAG,msgNameMap.toString());
+                    long key = getKey(BUSId, CANId);
+                    String name = msgNameMap.get(key);
+                    if(name != null) return name;
+                    MsgInfoEntity msg = database.msgInfoDao().getMsg(BUSId, CANId);
+                    if(msg == null)
+                    {
+                        msgNameMap.put(key,"");
+                        return "";
+                    }
+                    msgNameMap.put(key,msg.name);
+                    return msg.name;
+                }
+                @Override
+                public void run() {
+                    String[] directMap = {"rx","tx"};
+                    String[] CANTypeMap = {"CANFD","CAN"};
+                    ShowCANMsg showCANMsg = new ShowCANMsg();
+                    // 获取设备canid和界面上配置的通道转换
+
+                    boolean ret;
+                    while (g_notExitFlag.get())
+                    {
+//                        CanMessage poll = gCanQueue.poll();
+                        // 从队列中获取一条数据
+                        CanMessage poll = gCanQueue1.read();
+
+                        if(poll == null)
+                        {
+//                            Log.d(TAG,"poll is null");
+                            wait100ms();
+                            continue;
+                        }
+
+                        ShowSignal[] tmp = new ShowSignal[1];
+                        tmp[0] = new ShowSignal();
+                        tmp[0].setName("111");
+                        showCANMsg.setTimestamp((double) (poll.timestamp + startCANTime) /1000000);
+                        showCANMsg.setSqlId(poll.getIndex());
+
+                        Integer redirctBUSID = BUSRedirectMap.get(Integer.valueOf(poll.getBUS_ID()));
+                        if(redirctBUSID == null)
+                        {
+                            redirctBUSID = (int) poll.getBUS_ID();
+                        }
+////                        Log.e(TAG,"============busid: " +poll.getBUS_ID() +" 修正后: " + redirctBUSID);
+//                        // 前端显示不需要修正
+                        showCANMsg.setChannel(poll.getBUS_ID());
+                        showCANMsg.setArbitrationId(poll.getCAN_ID());
+                        showCANMsg.setName(findName(redirctBUSID,poll.CAN_ID));
+                        showCANMsg.setCanType(CANTypeMap[poll.getCAN_TYPE()]);
+                        showCANMsg.setDir(directMap[poll.getDirect()]);
+                        showCANMsg.setDlc(String.valueOf(poll.getDataLength()));
+                        showCANMsg.setData(Arrays.copyOf(poll.getData(),poll.getDataLength()));
+//                        showCANMsg.setParsedData(tmp);
+                        ret = gDealQueue.write_deepcopy(showCANMsg);
+
+                        /***************************************************************************************/
+                        synchronized (MiCANBinder.this)
+                        {
+//                            // 如果存在要解析的信号，则将信号解析出来
+                            checkIfMonitor(poll);
+                        }
+                        /**************************************************************************************/
+//                        record(poll.timestamp,poll.BUS_ID,poll.dataLength,poll.CAN_ID,poll.CAN_TYPE,
+//                                poll.data);
+                    }
+                }
+            },"CostMsg");
+            mCostMsgThread.start();
+
+            wait200ms();
+            String firstSn = mMcuHelperList.get(0).getmSN();
+            // 判断后续几个mcu是否为一个产品
+            Log.e(TAG,"firstsn " +firstSn);
+            // 如果是CR开头的，就是单设备
+            if(firstSn == null)
+            {
+                return false;
+            }
+
+            if(firstSn.startsWith("CR"))
+            {
+                if(mMcuHelperList.size() != 1)
+                {
+                    Log.e(TAG, "当前为CR设备，但个数不为1");
+                    return false;
+                }
+            }else if(firstSn.startsWith("DR4"))
+            {
+                if(mMcuHelperList.size() != 4)
+                {
+                    Log.e(TAG, "当前为DR4设备，但个数不为4");
+                    return false;
+                }
+            }else if(firstSn.startsWith("DR2"))
+            {
+                if(mMcuHelperList.size() != 2)
+                {
+                    Log.e(TAG, "当前为DR2设备，但个数不为2");
+                    return false;
+                }
+            }
+
             return true;
         }
 
