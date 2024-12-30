@@ -1,5 +1,6 @@
 package com.example.testcdc;
 
+import static android.app.SystemServiceRegistry.getSystemService;
 import static com.example.testcdc.MyService.decompress;
 import static com.example.testcdc.MyService.gCanQueue1;
 import static com.example.testcdc.MyService.gRecvMsgNum;
@@ -10,6 +11,12 @@ import static com.example.testcdc.Utils.Utils.convert_u64;
 import static com.example.testcdc.Utils.Utils.myCrc32;
 import static com.example.testcdc.Utils.Utils.wait100ms;
 
+import android.content.Context;
+import android.hardware.usb.UsbDevice;
+import android.hardware.usb.UsbDeviceConnection;
+import android.hardware.usb.UsbEndpoint;
+import android.hardware.usb.UsbInterface;
+import android.hardware.usb.UsbManager;
 import android.os.Process;
 import android.util.Log;
 
@@ -126,12 +133,20 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
     private UsbSerialPort mSerial = null;
 
+    private UsbDevice mDevice = null;
+
+    private UsbEndpoint mInEndpoint = null;
+
+    private UsbEndpoint mOutEndpoint = null;
+
+    private UsbDeviceConnection mConnection = null;
+
     /**
      * 下发的命令指令
      */
     private byte[] mCmdData = new byte[]{};
 
-    private final byte[] mReadBuffer = new byte[1024*1024];
+    private final byte[] mReadBuffer = new byte[1024*8];
     private final byte[] mParseBuffer = new byte[1024*1024];
 
     private final NoLockBuffer mSerialBuffer = new NoLockBuffer(1024*1024*20);
@@ -170,6 +185,8 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
     private Lock mLock = new ReentrantLock();
 
+    private Lock mUsbLock = new ReentrantLock(true);
+
     private SerialInputOutputManager usbIoManager;
 
     private SendCanMessageManager sendcanMessageManager = new SendCanMessageManager() ;
@@ -200,123 +217,21 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         return mTotalOTANumber;
     }
 
-    public MCUHelper(UsbSerialPort mSerial) {
-        this.mSerial = mSerial;
+    public MCUHelper(UsbSerialPort mSerial,UsbDevice device,UsbManager usbManager) {
 
-//        m_parseThread = new Thread(new Runnable() {
-//
-//            private static final String TAG = "MICAN_PARSE";
-//            @Override
-//            public void run() {
-//                /// 每次读取的返回值，若为空，则跳到idle状态，等待总线数据
-//                boolean readRet = false;
-//                int usbPackageSize = 0;
-//
-//                while (g_notExitFlag.get())
-//                {
-//                    switch (m_curState){
-//                        case PARSE_HEAD_PHASE1:
-////                        Log.i(PARSE_TAG,m_curState.toString());
-//                            readRet = mSerialBuffer.readBuffer(mParseBuffer,1);
-//                            if(!readRet)
-//                            {
-////                            Log.d(PARSE_TAG,"未读取到数据");
-//                                waitForData();
-//                                continue;
-//                            }
-//                            if(HEAD_FLAG_1 == mParseBuffer[0])
-//                            {
-//                                m_curState = PARSE_SER_BUFFER_STATE.PARSE_HEAD_PHASE2;
-//                            }else{
-//                                Log.w(TAG,String.format( "============not valid===============: %d",mParseBuffer[0]));
-//                            }
-//                            break;
-//                        case PARSE_HEAD_PHASE2:
-////                        Log.i(PARSE_TAG,m_curState.toString());
-//                            readRet = mSerialBuffer.readBuffer(mParseBuffer,3);
-//                            if(!readRet)
-//                            {
-////                            Log.d(PARSE_TAG,"未读取到数据");
-//                                waitForData();
-//                                continue;
-//                            }
-//                            if(HEAD_FLAG_2 == mParseBuffer[0] && HEAD_FLAG_3 == mParseBuffer[1] && HEAD_FLAG_4 == mParseBuffer[2])
-//                            {
-//                                m_curState = PARSE_SER_BUFFER_STATE.PARSE_TYPE_PHASE;
-//                            }else
-//                            {
-//                                Log.w(TAG, "============not valid===============: PARSE_HEAD_PHASE2");
-//                                m_curState = PARSE_SER_BUFFER_STATE.PARSE_HEAD_PHASE1;
-//                            }
-//                            break;
-//                        case PARSE_TYPE_PHASE:
-////                        Log.i(PARSE_TAG,m_curState.toString());
-//                            readRet = mSerialBuffer.readBuffer(mParseBuffer,2);
-//                            if(!readRet)
-//                            {
-////                            Log.d(PARSE_TAG,"未读取到数据");
-//                                waitForData();
-//                                continue;
-//                            }
-//                            m_curCmdType = COMMAND_TYPE.fromValue(convert_u16(mParseBuffer));
-//                            m_curState = PARSE_SER_BUFFER_STATE.PARSE_USB_PACKAGE_SIZE;
-//                            break;
-//                        case PARSE_USB_PACKAGE_SIZE:
-////                        Log.i(PARSE_TAG,m_curState.toString());
-//                            readRet = mSerialBuffer.readBuffer(mParseBuffer,2);
-//                            if(!readRet)
-//                            {
-////                            Log.d(PARSE_TAG,"未读取到数据");
-//                                waitForData();
-//                                continue;
-//                            }
-//                            usbPackageSize = convert_u16(mParseBuffer);
-////                        receive(Arrays.copyOf(buffer, 2));
-////                        Log.i(PARSE_TAG,String.format("包大小为 %d",usbPackageSize));
-//                            m_curState = PARSE_SER_BUFFER_STATE.PARSE_USB_PACKAGE_DATA;
-//                            break;
-//                        case PARSE_USB_PACKAGE_DATA:
-////                        Log.i(PARSE_TAG,m_curState.toString());
-////                        Log.i(PARSE_TAG,"==========" + m_curCmdType.toString());
-//                            readRet = mSerialBuffer.readBuffer(mParseBuffer, usbPackageSize);
-//                            if(!readRet)
-//                            {
-//                                Log.d(TAG,"未读取到数据");
-//                                waitForData();
-//                                continue;
-//                            }
-//                            if(m_curCmdType.code <= 0x1000)
-//                            {
-//
-//                                if(mAppLevel >= 0x1040)
-//                                {
-//                                    parseUsbPackage_v3(mParseBuffer,usbPackageSize);
-//                                }else
-//                                {
-//                                    parseUsbPackage_v2(mParseBuffer,usbPackageSize,true);
-//                                }
-//                            }else if(m_curCmdType.code == 0x3000)
-//                            {
-//                                Log.i(TAG,"错误帧处理逻辑");
-//                            }
-//                            else
-//                            {
-//                                parseUsbCmdPackage_v2(m_curCmdType,mParseBuffer,usbPackageSize);
-//                            }
-//                            m_curState = PARSE_SER_BUFFER_STATE.PARSE_HEAD_PHASE1;
-//                            break;
-//                        default:
-//                            Log.e(TAG,"default is not designed!");
-//
-//                    }
-//                }
-//
-//                Log.i(TAG,"ParseSerial thread is exit");
-//
-//            }
-//        },"ParseSerial");
-//
-//        m_parseThread.start();
+        this.mSerial = mSerial;
+        this.mDevice = device;
+
+        if(mDevice != null)
+        {
+            mConnection = usbManager.openDevice(device);
+            Log.e(TAG,"open ok");
+            UsbInterface usbInterface = device.getInterface(1);
+            mConnection.claimInterface(usbInterface, true);
+            mOutEndpoint = usbInterface.getEndpoint(0); // 假设第一个是OUT
+            mInEndpoint = usbInterface.getEndpoint(1);
+
+        }
 
         m_readPortThread = new Thread(new Runnable() {
             @Override
@@ -325,12 +240,18 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 while (g_notExitFlag.get())
                 {
                     long startTime = System.currentTimeMillis();
-                    readPort();
+                    if(mDevice != null)
+                    {
+                        int num = readPort2();
+                    }else{
+                        readPort();
+                    }
+
                     long endTime = System.currentTimeMillis();
                     long timeElapsed = endTime - startTime;
-                    if(timeElapsed > 15)
+                    if(timeElapsed > 50)
                     {
-                        Log.e(TAG,"代码执行耗时: " + timeElapsed + " 毫秒");
+                        Log.e(TAG,"代码执行耗时: " + timeElapsed + " 毫秒" );
                     }
                 }
                 Log.w(TAG,"ReadPort thread is exit");
@@ -338,47 +259,56 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             }
         },"ReadPort");
         m_readPortThread.start();
-
-//        usbIoManager = new SerialInputOutputManager(mSerial, this);
-//        usbIoManager.start();
-        // 开始解析数据
     }
 
     public boolean readPort()
     {
-//        if(mMcuIndex > 2)
-//        {
-//            waitForData();
-//            return  false;
-//        }
         try {
             if(mSerial == null)
             {
                 Log.w(TAG,"m_port is null");
                 return false;
             }
-            int len = mSerial.read(mReadBuffer,100);
-//            Log.w(TAG,"AAAAA read num " + len);
+            int len = mSerial.read(mReadBuffer,1000);
             if(len >0)
             {
-
                 mSerialBuffer.writeBuffer(mReadBuffer,len);
-//                Log.d(TAG, "AAAA read num " +  len + " wirte num : " + mReadBuffer); // 打印mReadBuffer的前100字节
-//                StringBuilder sb = new StringBuilder();
-//                for (int i = 0; i < Math.min(len, 100); i++) {
-//                    sb.append(String.format("%02X ", mReadBuffer[i]));
-//                }
-                //Log.d(TAG, "AAAA readPort: mReadBuffer的前100个字节: " + sb.toString());
-//                printBufferFirst200Bytes();
-
-
                 return true;
             }
-        } catch (IOException e) {
-            Log.e(TAG,"readPort error!!");
+        } catch (Exception e) {
+            Log.e(TAG,"readPort error!!" + e.toString());
             g_notExitFlag.set(false);
         }
         return false;
+    }
+
+    public int readPort2()
+    {
+        if(mInEndpoint == null)
+        {
+            Log.w(TAG,"mInEndpoint is null");
+            return 0;
+        }
+//
+        int len = 0;
+        try {
+//            mUsbLock.lock();
+            len = mConnection.bulkTransfer(mInEndpoint, mReadBuffer, mReadBuffer.length, 1000);
+            if(len >0)
+            {
+//                Log.w(TAG,"AAAA readPort2: " + len);
+                mSerialBuffer.writeBuffer(mReadBuffer,len);
+            }
+
+        } catch (Exception e) {
+            Log.e(TAG,"readPort error!!" + e.toString());
+            g_notExitFlag.set(false);
+        }
+        finally {
+//            mUsbLock.unlock();
+        }
+
+        return len;
     }
 
     public boolean parseSerial()
@@ -464,12 +394,11 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 }
                 mUsbPackageSize = convert_u16(mParseBuffer);
 //                        receive(Arrays.copyOf(buffer, 2));
-//                        Log.i(PARSE_TAG,String.format("包大小为 %d",usbPackageSize));
+//                        Log.i(TAG,String.format("包大小为 %d",mUsbPackageSize));
                 m_curState = PARSE_SER_BUFFER_STATE.PARSE_USB_PACKAGE_DATA;
                 break;
             case PARSE_USB_PACKAGE_DATA:
 //                        Log.i(PARSE_TAG,m_curState.toString());
-//                        Log.i(PARSE_TAG,"==========" + m_curCmdType.toString());
                 readRet = mSerialBuffer.readBuffer(mParseBuffer, mUsbPackageSize);
                 if(!readRet)
                 {
@@ -495,7 +424,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                 }
                 else
                 {
-                    Log.w(TAG, "AAA parseUsbCmdPackage_v2: ");
+//                    Log.w(TAG, "AAA parseUsbCmdPackage_v2: " +m_curCmdType);
                      parseUsbCmdPackage_v2(m_curCmdType,mParseBuffer,mUsbPackageSize);
                 }
 
@@ -566,6 +495,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
 
     private void getAppLevel() {
+        Log.e(TAG,"============getAppLevel:getAppLevel");
         sendCmd(COMMAND_TYPE.GET_APP_LEVEL,null);
     }
 
@@ -576,39 +506,47 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
     private boolean sendCmd(COMMAND_TYPE cmd, JsonElement data)
     {
         mLock.lock();
-        Log.d(TAG,cmd.toString());
-        switch (cmd){
-            case START_CAN_ALL:
-            case STOP_CAN_ALL:
-            case GET_APP_VERSION:
-            case GET_APP_LEVEL:
-            case GET_APP_BUILD_TIME:
-            case GET_DEVICE_CONFIG:
-            case PERIOD_SEND_START:
-                cmd_genCommonCmd(cmd);
-                break;
-            case PERIOD_SEND_STOP:
-                cmd_genCommonCmd(cmd);
-                Log.w(TAG, "AAA sendCmd : " + cmd );
-                break;
-            case SET_HEART_BEATS:
-                cmd_genCommonCmd(cmd);
-                break;
-            case PERIOD_SEND_ONCE:
-                cmd_periodSendOnce(cmd,data);
-                break;
-            case PERIOD_SEND_CONFIG:
+        try
+        {
+            Log.d(TAG,cmd.toString());
+            switch (cmd){
+                case START_CAN_ALL:
+                case STOP_CAN_ALL:
+                case GET_APP_VERSION:
+                case GET_APP_LEVEL:
+                case GET_APP_BUILD_TIME:
+                case GET_DEVICE_CONFIG:
+                case PERIOD_SEND_START:
+                    cmd_genCommonCmd(cmd);
+                    break;
+                case PERIOD_SEND_STOP:
+                    cmd_genCommonCmd(cmd);
+                    Log.w(TAG, "AAA sendCmd : " + cmd );
+                    break;
+                case SET_HEART_BEATS:
+                    cmd_genCommonCmd(cmd);
+                    break;
+                case PERIOD_SEND_ONCE:
+                    cmd_periodSendOnce(cmd,data);
+                    break;
+                case PERIOD_SEND_CONFIG:
 //                loadPeriodSendConfig(data);
-                cmd_periodSendConfig(cmd,data);
-                Log.w(TAG, "AAA sendCmd : " + cmd );
-                break;
-            default:
-                mCmdData = new byte[]{};
-                break;
-        }
+                    cmd_periodSendConfig(cmd,data);
+                    Log.w(TAG, "AAA sendCmd : " + cmd );
+                    break;
+                default:
+                    mCmdData = new byte[]{};
+                    break;
+            }
 
-        boolean ret = writeSerial();
-        mLock.unlock();
+            if(mDevice != null) {
+                boolean ret = writeSerial2();
+            }else {
+                writeSerial();
+            }
+        }finally {
+            mLock.unlock();
+        }
 
         return true;
     }
@@ -900,6 +838,25 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         return false;
     }
 
+    private boolean writeSerial2() {
+        boolean ret = false;
+        if (mOutEndpoint != null && mCmdData.length > 0 )
+        {
+
+            try {
+//                mUsbLock.lock();
+                int sendBytes = mConnection.bulkTransfer(mOutEndpoint, mCmdData, mCmdData.length, 1000);
+                ret = true;
+            } catch (Exception e) {
+                Log.e(TAG,"writeSerial failed!");
+            }
+            finally {
+//                mUsbLock.unlock();
+            }
+        }
+        return ret;
+    }
+
     private void waitForData()
     {
         try {
@@ -950,7 +907,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
         }else{
             if(currentUsbPackageIndex != (mUsbPackageIndex +1))
             {
-                //Log.e(TAG,"AAAA last: " + mUsbPackageIndex + "\t current: " + currentUsbPackageIndex + "\t fatal error usb dismiss!" + "\n");
+                Log.e(TAG,"AAAA last: " + mUsbPackageIndex + "\t current: " + currentUsbPackageIndex + "\t fatal error usb dismiss!" + "\n");
                 mUsbPackageIndex = currentUsbPackageIndex;
 //                。。。。。
                 return;
@@ -1039,30 +996,30 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
 
     private void parseUsbCmdPackage_v2(COMMAND_TYPE cmd,byte[] data,int num ) {
-        Log.d(TAG,"AAAA   parseUsbCmdPackage_v2 " + cmd.toString());
+//        Log.d(TAG,"AAAA   parseUsbCmdPackage_v2 " + cmd.toString());
         switch (cmd) {
             case PING_PONG_ACK:
             case START_CAN_ALL_ACK:
+            case SET_HEART_BEATS_ACK:
                 break;
-
             case GET_DEVICE_CONFIG_ACK:
                 mTotalOTANumber = convert_u64(Arrays.copyOfRange(data, 16, 24));
                 mMcuIndex  = convert_u64(Arrays.copyOfRange(data, 24, 32));
                 mSN = new String(data,32,7);
-                Log.d(TAG,"mTotalOTANumber: " + mTotalOTANumber);
-                Log.d(TAG,"mMcuIndex: " + mMcuIndex);
-                Log.d(TAG,"mSN: " + mSN);
+                Log.e(TAG,"mTotalOTANumber: " + mTotalOTANumber);
+                Log.e(TAG,"mMcuIndex: " + mMcuIndex);
+                Log.e(TAG,"mSN: " + mSN);
                 break;
             case GET_APP_VERSION_ACK:
                 mAppVersion = new String(data,0,num);
-                Log.d(TAG,"mAppVersion: " + mAppVersion);
+                Log.e(TAG,"mAppVersion: " + mAppVersion);
                 break;
             case GET_APP_BUILD_TIME_ACK:
                 mAppBuildTime = new String(data,0,num);
-                Log.d(TAG,"mAppBuildTime: " + mAppBuildTime);
+                Log.e(TAG,"mAppBuildTime: " + mAppBuildTime);
             case GET_APP_LEVEL_ACK:
                 mAppLevel = convert_u32(data);
-                Log.d(TAG,"mAppLevel: 0x" + Long.toHexString(mAppLevel));
+                Log.e(TAG,"mAppLevel: 0x" + Long.toHexString(mAppLevel));
 //            case NOT_VALID:
 //                byte[] cmdBytes = new byte[2]; // 创建一个临时数组存储当前无效命令的前两个字节
 //                System.arraycopy(data, 0, cmdBytes, 0, 2); // 将前两个字节复制到cmdBytes

@@ -5,11 +5,17 @@ import static com.example.testcdc.Utils.Utils.parseDBCByPython;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
 import static com.google.gson.JsonParser.parseString;
 
+import android.app.PendingIntent;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.database.Cursor;
+import android.hardware.usb.UsbDevice;
+import android.hardware.usb.UsbDeviceConnection;
+import android.hardware.usb.UsbEndpoint;
+import android.hardware.usb.UsbInterface;
+import android.hardware.usb.UsbManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -111,7 +117,7 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static boolean flag = false;
 
-
+    private static final String ACTION_USB_PERMISSION = "com.android.usb.USB_PERMISSION";
 
     private ServiceConnection mSC = new ServiceConnection() {
         @Override
@@ -138,11 +144,61 @@ public class MainActivity3 extends AppCompatActivity {
 
     public static Map<Integer,Integer> BUSRedirectMap = new HashMap<>();
 
+
+    public void test()
+    {
+        UsbManager usbManager = (UsbManager) getSystemService(Context.USB_SERVICE);
+        HashMap<String, UsbDevice> usbDevices = usbManager.getDeviceList();
+        Log.e(TAG,"=================================================");
+        for (UsbDevice device : usbDevices.values()) {
+            // 检查设备的VID和PID是否匹配你的USB设备
+            Log.e(TAG,device.toString());
+            if (device.getVendorId() == 1155 || device.getVendorId() == 4236) {
+//                PendingIntent permissionIntent = PendingIntent.getBroadcast(this, 0, new Intent(ACTION_USB_PERMISSION), PendingIntent.FLAG_IMMUTABLE);
+//                usbManager.requestPermission(device, permissionIntent);
+                UsbDeviceConnection connection = usbManager.openDevice(device);
+                Log.e(TAG,"open ok");
+                UsbInterface usbInterface = device.getInterface(1);
+                connection.claimInterface(usbInterface, true);
+
+
+
+                UsbEndpoint endpointIn = usbInterface.getEndpoint(0); // 假设第一个是OUT端点
+
+// 此处实现数据读写逻辑
+                Log.e(TAG, "start send data");
+                byte[] buffer = new byte[63];
+                int bytesRead = connection.bulkTransfer(endpointIn, buffer, buffer.length, 100);
+                Log.e(TAG,"send bytes " + bytesRead);
+                if (bytesRead != 0) {
+                    String result = new String(buffer, 0, bytesRead);
+                    Log.e(TAG, "Received Data: " + result);
+                }else {
+                    Log.e(TAG, "not read data");
+                }
+//                Log.e(TAG, "not read data");
+//                int writeData = connection.bulkTransfer(endpointIn, buffer, buffer.length, 1000);
+//                if (writeData > 0) {
+//                    String result = new String(buffer, 0, bytesRead);
+//                    Log.e(TAG, "Received Data: " + result);
+//                }else {
+//                    Log.e(TAG, "not read data");
+//                }
+
+
+                connection.releaseInterface(usbInterface);
+                connection.close();
+            }
+        }
+        Log.e(TAG,"=================================================");
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        EdgeToEdge.enable(this);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main3);
+//        test();
         if (!Python.isStarted()) {
             start(new AndroidPlatform(this));
         }
@@ -336,6 +392,7 @@ public class MainActivity3 extends AppCompatActivity {
                         //Log.e(TAG, "thread: " + Thread.currentThread().getId());
                         if (mMiCANBinder != null) {
                             JsCallResult<Result<DeviceInfo>> jsCallResult = new JsCallResult<>(callback);
+//                            boolean ret = mMiCANBinder.InitModule2();
                             boolean ret = mMiCANBinder.InitModule();
                             if (ret) {
                                 instance.say("恭喜,初始化设备成功啦");
