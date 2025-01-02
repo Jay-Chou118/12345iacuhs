@@ -138,6 +138,9 @@ public class MyApplication extends Application {
         if(ret)
         {
             Log.i(TAG,"数据库存在");
+
+
+
 //            Database = Room.databaseBuilder(this, Basic_DataBase.class, "basic_database")
 ////                .createFromAsset("databases/basic_database.db") // 从assets加载数据库文件
 //                .addMigrations()
