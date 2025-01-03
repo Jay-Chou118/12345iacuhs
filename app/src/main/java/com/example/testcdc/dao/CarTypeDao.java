@@ -13,6 +13,12 @@ public interface CarTypeDao {
     @Query("select * from car_type")
     List<CarTypeEntity> getAll();
 
+    @Query("select DISTINCT car_type_name from car_type")
+    List<String> getDistinctCarTypeNames();
+
+    @Query("select sdb_name from car_type where car_type_name=:cartTypeName")
+    List<String> getSDBNames(String cartTypeName);
+
     @Query("select * from car_type where car_type_name=:cartTypeName and sdb_name=:SDBName limit 1")
     CarTypeEntity getByName(String cartTypeName,String SDBName);
 

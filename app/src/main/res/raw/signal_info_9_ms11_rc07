@@ -1,0 +1,898 @@
+WhlStsSigGrpChks#9#179#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#RC07
+WhlSpdFrntLeVld#9#179#false#false#15#1#1#0#Status of wheel speed front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+WhlSpdFrntRiVld#9#179#false#false#14#1#1#0#Status of wheel speed front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+WhlSpdReLeVld#9#179#false#false#13#1#1#0#Status of wheel speed rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+WhlSpdReRiVld#9#179#false#false#12#1#1#0#Status of wheel speed rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+WhlStsSigGrpCntr#9#179#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#RC07
+WhlSpdFrntLe#9#179#false#false#23#16#0.05625#0.0#Wheel speed front left#0.0#0.0#0.0#null#MS11#RC07
+WhlSpdFrntRi#9#179#false#false#39#16#0.05625#0.0#Wheel speed front right#0.0#0.0#0.0#null#MS11#RC07
+WhlSpdReLe#9#179#false#false#55#16#0.05625#0.0#Wheel speed rear left#0.0#0.0#0.0#null#MS11#RC07
+WhlSpdReRi#9#179#false#false#71#16#0.05625#0.0#Wheel speed rear right#0.0#0.0#0.0#null#MS11#RC07
+VehSpd#9#179#false#false#87#16#0.05625#0.0#Vehicle speed#0.0#0.0#0.0#null#MS11#RC07
+VehSpdVld#9#179#false#false#103#1#1#0#Qualifier for vehicle speed signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+WhlDirFrntLeVld#9#179#false#false#102#1#1#0#Qualifier for wheel moving direction front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+WhlDirFrntLe#9#179#false#false#101#2#1#0#Wheel moving direction front left#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#RC07
+WhlSpdEdgeFrntLeVld#9#179#false#false#99#1#1#0#Qualifier for wheel speed Edges front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+WhlDirFrntRiVld#9#179#false#false#98#1#1#0#Qualifier for wheel moving direction front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+WhlDirFrntRi#9#179#false#false#97#2#1#0#Wheel moving direction front right#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#RC07
+WhlSpdEdgeFrntLe#9#179#false#false#111#8#1#0#Wheel speed Edges front left#0.0#0.0#0.0#null#MS11#RC07
+WhlSpdEdgeFrntRiVld#9#179#false#false#119#1#1#0#Qualifier for wheel speed Edges front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+WhlDirReLeVld#9#179#false#false#118#1#1#0#Qualifier for wheel moving direction rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+WhlDirReLe#9#179#false#false#117#2#1#0#Wheel moving direction rear left#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#RC07
+WhlSpdEdgeReLeVld#9#179#false#false#115#1#1#0#Qualifier for wheel speed Edges rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+WhlDirReRiVld#9#179#false#false#114#1#1#0#Qualifier for wheel moving direction rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+WhlDirReRi#9#179#false#false#113#2#1#0#Wheel moving direction rear right#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#RC07
+WhlSpdEdgeFrntRi#9#179#false#false#127#8#1#0#Wheel speed Edges front right#0.0#0.0#0.0#null#MS11#RC07
+WhlSpdEdgeReLe#9#179#false#false#135#8#1#0#Wheel speed Edges rear left#0.0#0.0#0.0#null#MS11#RC07
+WhlSpdEdgeReRiVld#9#179#false#false#143#1#1#0#Qualifier for wheel speed Edges rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+WhlSpdEdgeReRi#9#179#false#false#151#8#1#0#Wheel speed Edges rear right#0.0#0.0#0.0#null#MS11#RC07
+WhlDstTiStampFrntLe#9#179#false#false#159#16#1#0#Wheel distance time stamp for front left#0.0#0.0#0.0#null#MS11#RC07
+WhlDstTiStampFrntRi#9#179#false#false#175#16#1#0#Wheel distance time stamp for front right#0.0#0.0#0.0#null#MS11#RC07
+WhlDstTiStampReLe#9#179#false#false#191#16#1#0#Wheel distance time stamp for rear left#0.0#0.0#0.0#null#MS11#RC07
+WhlDstTiStampReRi#9#179#false#false#207#16#1#0#Wheel distance time stamp for rear left#0.0#0.0#0.0#null#MS11#RC07
+AdcFcnSigGrpChks#9#179#false#false#223#8#1#0##0.0#0.0#0.0#null#MS11#RC07
+BCSActrActvForADC#9#179#false#false#231#2#1#0#BCS actuator active for ADC#0.0#0.0#0.0#{"0": "ADC_Normal", "1": "ADC_Active_L12", "2": "ADC_Active_L123"}#MS11#RC07
+BCSActrRampOffStsForADC#9#179#false#false#229#2#1#0#BCS actuator ramp off status for ADC#0.0#0.0#0.0#{"0": "ADC_Normal", "1": "ADC_SuspendByOtherBrake", "2": "ADC_SuspendByDriverPropulsion", "3": "ADC_RampOffByDriverBrake"}#MS11#RC07
+AdcFcnSigGrpCntr#9#179#false#false#227#4#1#0##0.0#0.0#0.0#null#MS11#RC07
+BCSActrAvlStsForADC#9#179#false#false#239#3#1#0#BCS actuator available status for ADC#0.0#0.0#0.0#{"0": "ADC_NotAvailable_L123", "1": "ADC_NotAvailableBySituation_L123", "2": "ADC_AvailableL12_NotAvailableL3", "3": "ADC_AvailableL12_NotAvailableBySituationL3", "4": "ADC_AvailableWithFault_L3", "5": "ADC_AvailableWithSituationIssue_L3", "6": "ADC_Available_L123"}#MS11#RC07
+BCSActrAvlStsForADCL3#9#179#false#false#236#3#1#0#BCS available status for ADC L3#0.0#0.0#0.0#{"0": "ADC_NotAvailable_L3", "1": "ADC_NotAvailableBySituation_L3", "2": "ADC_AvailableWithFault_L3", "3": "ADC_AvailableWithSituationIssue_L3", "4": "ADC_Available_L3_No_failure"}#MS11#RC07
+BCSActrVldForADC#9#179#false#false#233#1#1#0#BCS actuator valid for ADC#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+BattURawSigGrpChks#9#579#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#RC07
+BattURawSigGrpCntr#9#579#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#RC07
+BattURaw#9#579#false#false#23#15#0.001#0.0#Battery Voltage raw\n电池电压#0.0#0.0#0.0#null#MS11#RC07
+BattSocRawSigGrpChks#9#579#false#false#39#8#1#0##0.0#0.0#0.0#null#MS11#RC07
+BattSocRawSigGrpCntr#9#579#false#false#43#4#1#0##0.0#0.0#0.0#null#MS11#RC07
+BattSocRaw#9#579#false#false#49#10#0.1#0.0#Battery State of charge raw\n电池SOC#0.0#0.0#0.0#{"800": "Invalid"}#MS11#RC07
+TotOdoAcrt#9#914#false#false#7#24#0.1#0.0#ODO#0.0#0.0#0.0#{"16777215": "Invaild"}#MS11#RC07
+TotOdoAcrtLvlMVld#9#914#false#false#27#1#1#0#Total odometer accurate for meter level valid\n米级精确总里程有效性#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#RC07
+DCDVINMat#9#914#false#false#26#1#1#0#DCD VIN Match\nVIN匹配信号#0.0#0.0#0.0#{"0": "Mismatch", "1": "Match"}#MS11#RC07
+TotOdoAcrtVld#9#914#false#false#25#1#1#0#The valid signal of TotOdoAcrt#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#RC07
+TotOdoAcrtLvlM#9#914#false#false#39#32#1.0#0.0#Total odometer accurate for meter level\n米级精确总里程\n其中，有效范围：0x0~0x?3B9AC9FF?，表示0~999，999，999#0.0#0.0#0.0#{"4294967295": "Invaild"}#MS11#RC07
+StsOfDayRunngLampLe#9#790#false#false#7#2#1#0#左日行灯状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfFrntCornrgLampLe#9#790#false#false#5#2#1#0#左角灯状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfFrntTurnIndcrLe#9#790#false#false#3#2#1#0#左前转向灯状态反馈#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfLedFrntPosnLampLe#9#790#false#false#1#2#1#0#左前位置灯LED状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+AHLRefLernedFlagLe#9#790#false#false#15#1#1#0#Left AHL motor Reference learned flag#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MS11#RC07
+HCMLFaultInfoFlag#9#790#false#false#14#1#1#0#HCML Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#MS11#RC07
+StsOfADBLe#9#790#false#false#13#2#1#0#Left Status Of ADB#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfLedHiBeamLe#9#790#false#false#11#2#1#0#左远光状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfLedLoBeamLe#9#790#false#false#9#2#1#0#左近光状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+MotorCurPosLe#9#790#false#true#23#10#0.01#0.0#left motor Current position#0.0#0.0#0.0#null#MS11#RC07
+MotorFltStsLe#9#790#false#false#29#1#1#0#left motor fault status#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MS11#RC07
+StsofSBLLe#9#790#false#false#28#2#1#0#Status of  Left Static Bending Light#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+HCMLNodeAddress#9#1363#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#RC07
+HCMLActiveWakeup#9#1363#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#RC07
+HCMLRepeatMsgReq#9#1363#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#RC07
+HCMLRepeatMsgSt#9#1363#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#RC07
+NMKeepAwkRsnHCML#9#1363#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#RC07
+HCMLToVCCDDiagResp#9#1634#false#false#7#512#1#0#HCMLToVCCDLampCanfdDiagRespNpdu#0.0#0.0#0.0#null#MS11#RC07
+StsOfDayRunngLampRi#9#806#false#false#7#2#1#0#State of day running lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfFrntCornrgLampRi#9#806#false#false#5#2#1#0#State of corner lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfFrntTurnIndcrRi#9#806#false#false#3#2#1#0#State of front turning lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfLedFrntPosnLampRi#9#806#false#false#1#2#1#0#State of front position lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+MotorFltStsRi#9#806#false#false#13#1#1#0#right motor fault status#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MS11#RC07
+HCMRFaultInfoFlag#9#806#false#false#12#1#1#0#HCMR Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#MS11#RC07
+StsOfLedHiBeamRi#9#806#false#false#11#2#1#0#State of high beam right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfLedLoBeamRi#9#806#false#false#9#2#1#0#State of low beam right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+MotorCurPosRi#9#806#false#true#23#10#0.01#0.0#Right motor current position#0.0#0.0#0.0#null#MS11#RC07
+AHLRefLernedFlagRi#9#806#false#false#29#1#1#0#Right AHL motor Reference learned flag#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MS11#RC07
+StsOfADBRi#9#806#false#false#28#2#1#0#Right Status Of ADB#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsofSBLRi#9#806#false#false#26#2#1#0#Status of  Right Static Bending light#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+HCMRNodeAddress#9#1362#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#RC07
+HCMRActiveWakeup#9#1362#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#RC07
+HCMRRepeatMsgReq#9#1362#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#RC07
+HCMRRepeatMsgSt#9#1362#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#RC07
+NMKeepAwkRsnHCMR#9#1362#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#RC07
+HCMRToVCCDDiagResp#9#1635#false#false#7#512#1#0#HCMRToVCCDLampCanfdDiagRespNpdu#0.0#0.0#0.0#null#MS11#RC07
+StsOfReTurnIndcrLe#9#804#false#false#7#2#1#0#State of rear turning lamp left#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfLedRePosnLampRi#9#804#false#false#5#2#1#0#State of rear position lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfLedRePosnLampLe#9#804#false#false#3#2#1#0#State of rear position lamp left#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+RLCMFaultInfoFlag#9#804#false#false#1#1#1#0#RLCM Fault Information Flag#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#MS11#RC07
+StsOfLedStopLampLe#9#804#false#false#15#2#1#0#State of stop lamp left#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfRvsgLampLe#9#804#false#false#13#2#1#0#State of reverse lamp left#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfRvsgLampRi#9#804#false#false#11#2#1#0#State of reverse lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfReTurnIndcrRi#9#804#false#false#9#2#1#0#State of rear turning lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+StsOfLedStopLampRi#9#804#false#false#17#2#1#0#State of stop lamp right#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#RC07
+RLCMNodeAddress#9#1364#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#RC07
+RLCMActiveWakeup#9#1364#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#RC07
+RLCMRepeatMsgReq#9#1364#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#RC07
+RLCMRepeatMsgSt#9#1364#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#RC07
+NMKeepAwkRsnRLCM#9#1364#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#RC07
+RLCMToVCCDDiagResp#9#1636#false#false#7#512#1#0##0.0#0.0#0.0#null#MS11#RC07
+TiDomn#9#263#false#false#4#5#1#0#time domain#0.0#0.0#0.0#{"0": "UTC_plus_0", "1": "UTC_plus_1", "2": "UTC_plus_2", "3": "UTC_plus_3", "4": "UTC_plus_4", "5": "UTC_plus_5", "6": "UTC_plus_6", "7": "UTC_plus_7", "8": "UTC_plus_8", "9": "UTC_plus_9", "10": "UTC_plus_10", "11": "UTC_plus_11", "12": "UTC_plus_12", "13": "UTC_plus_13", "14": "UTC_plus_14", "15": "UTC_plus_15", "16": "UTC_plus_16", "17": "UTC_plus_17", "18": "UTC_plus_18", "19": "UTC_plus_19", "20": "UTC_plus_20", "21": "UTC_plus_21", "22": "UTC_plus_22", "23": "UTC_plus_23", "24": "Invalid"}#MS11#RC07
+DateTiYr#9#263#false#false#15#8#1.0#2000.0#date time year#0.0#0.0#0.0#{"255": "Invalid"}#MS11#RC07
+DateTiMth#9#263#false#false#19#4#1.0#0.0#date time month#0.0#0.0#0.0#{"0": "Invalid"}#MS11#RC07
+DateTiDay#9#263#false#false#28#5#1#0#date time day#0.0#0.0#0.0#{"0": "init"}#MS11#RC07
+DateTiHr#9#263#false#false#36#5#1.0#0.0#date time hour#0.0#0.0#0.0#{"24": "Invalid"}#MS11#RC07
+DateTiMins#9#263#false#false#45#6#1.0#0.0#date time minute#0.0#0.0#0.0#{"60": "Invalid"}#MS11#RC07
+DateTiSec#9#263#false#false#55#6#1.0#0.0#date time second#0.0#0.0#0.0#{"60": "Invalid"}#MS11#RC07
+DateTiMilsec#9#263#false#false#49#10#1.0#0.0#date time millisecond#0.0#0.0#0.0#{"0": "0", "999": "999", "1000": "invalid"}#MS11#RC07
+PwrModSigGrpChks#9#284#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#RC07
+PwrModSigGrpCntr#9#284#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#RC07
+PwrModSts#9#284#false#false#23#3#1#0#PowerMode Status#0.0#0.0#0.0#{"0": "OFF", "1": "Awake", "2": "ACC", "3": "RUN"}#MS11#RC07
+PwrModVld#9#284#false#false#20#1#1#0#PowerMode Validty#0.0#0.0#0.0#{"0": "Valid", "1": "NotValid"}#MS11#RC07
+VCUActGearSigGrpChks#9#284#false#false#39#8#1#0##0.0#0.0#0.0#null#MS11#RC07
+VCUActGearSigGrpCntr#9#284#false#false#43#4#1#0##0.0#0.0#0.0#null#MS11#RC07
+VCUActGearLvr#9#284#false#false#55#3#1#0#Actual gear level 车辆实际档位\nP R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#MS11#RC07
+VCUActGearLvrVld#9#284#false#false#52#1#1#0#车辆实际档位有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+VcuInpSigGrpChks#9#284#false#false#63#8#1#0##0.0#0.0#0.0#null#MS11#RC07
+VcuInpSigGrpCntr#9#284#false#false#67#4#1#0##0.0#0.0#0.0#null#MS11#RC07
+VCUStsModCst#9#284#false#false#79#8#1#0#energy recuperation end mode.\n能量回收状态模式#0.0#0.0#0.0#{"0": "OPedl_No_RgL1", "1": "OPedl_No_RgL2", "2": "OPedl_No_RgL3", "3": "OPedl_No_RgL4", "4": "OPedl_No_RgL5", "5": "OPedl_No_ADASactive", "6": "OPedl_No_RoadGradientInhbit", "7": "OPedl_No_PowerDown", "16": "OPedl_Stop_RgL1", "17": "OPedl_Stop_RgL2", "18": "OPedl_Stop_RgL3", "19": "OPedl_Stop_RgL4", "20": "OPedl_Stop_RgL5", "21": "OPedl_Crp_RgL1", "22": "OPedl_Crp_RgL2", "23": "OPedl_Crp_RgL3", "24": "OPedl_Crp_RgL4", "25": "OPedl_Crp_RgL5", "26": "OPedl_FW_RgL1", "27": "OPedl_FW_RgL2", "28": "OPedl_FW_RgL3", "29": "OPedl_FW_RgL4", "30": "OPedl_FW_RgL5"}#MS11#RC07
+VCUAccrPedlRat#9#284#false#false#87#15#0.004#0.0#加速油门踏板开度#0.0#0.0#0.0#null#MS11#RC07
+VCUAccrPedlRatVld#9#284#false#false#88#1#1#0#加速踏板有效性#0.0#0.0#0.0#{"0": "invalid", "1": "valid"}#MS11#RC07
+VCUFrntEmTqRdy#9#284#false#false#103#1#1#0#The Front Motor  can be ready to response chassis torque request.\n前电机可以响应扭矩请求.#0.0#0.0#0.0#{"0": "Not_ready", "1": "Ready"}#MS11#RC07
+VCUPrkgBtnPsd#9#284#false#false#102#1#1#0#驾驶员按下P档#0.0#0.0#0.0#{"0": "Not_Active", "1": "active"}#MS11#RC07
+VCUReEmTqRdy#9#284#false#false#101#1#1#0#Rear EM is ready to response chassis Torque Request\n后电机是否处于Ready状态#0.0#0.0#0.0#{"0": "Not_ready", "1": "Ready"}#MS11#RC07
+VCUTarGearLvr#9#284#false#false#100#3#1#0#目标档位  P R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#MS11#RC07
+VCUTarGearLvrVld#9#284#false#false#97#1#1#0#目标档位有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+VCUVirtAccrPedlVld#9#284#false#false#96#1#1#0#虚拟油门开度有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+VCUVirtAccrPedl#9#284#false#false#111#7#1#0#虚拟油门开度 当前模式的pedal map反算#0.0#0.0#0.0#null#MS11#RC07
+VCUShifterMoveFlg#9#284#false#false#104#1#1#0#驾驶员拨动了换挡杆的标志位#0.0#0.0#0.0#null#MS11#RC07
+VCURgnTqCorrnFac#9#284#false#false#119#4#0.1#0.0#Regeneration Torque Correction Factor#0.0#0.0#0.0#null#MS11#RC07
+VCUDrvOffFcnLim#9#284#false#false#115#1#1#0#VCU send to BCS to identify whether vehcile can drive off or not as powertrain has fault and power limited.\nVCU发送给BCS系统，用于判断整车动力系统是否存在故障动力受限不能起步的判断#0.0#0.0#0.0#{"0": "Normal;", "1": "PowerLimited_Fault."}#MS11#RC07
+VCUPtRdyFlg#9#284#false#false#127#1#1#0#驾驶使能#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MS11#RC07
+CarModSts#9#284#false#false#126#3#1#0#CarMode状态信号#0.0#0.0#0.0#{"0": "Normal", "1": "Reserved1", "2": "Trsnp", "3": "Showroom", "4": "Dyno", "5": "TestDrv", "6": "Service", "7": "Reserved3"}#MS11#RC07
+FrtLftSegmt1#9#445#false#false#7#8#1#0#Front Left Segment1#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt10#9#445#false#false#15#8#1#0#Front Left Segment10#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt100#9#445#false#false#23#8#1#0#Front Left Segment100#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt101#9#445#false#false#31#8#1#0#Front Left Segment101#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt102#9#445#false#false#39#8#1#0#Front Left Segment102#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt103#9#445#false#false#47#8#1#0#Front Left Segment103#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt104#9#445#false#false#55#8#1#0#Front Left Segment104#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt105#9#445#false#false#63#8#1#0#Front Left Segment105#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt106#9#445#false#false#71#8#1#0#Front Left Segment106#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt107#9#445#false#false#79#8#1#0#Front Left Segment107#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt108#9#445#false#false#87#8#1#0#Front Left Segment108#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt109#9#445#false#false#95#8#1#0#Front Left Segment109#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt11#9#445#false#false#103#8#1#0#Front Left Segment11#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt110#9#445#false#false#111#8#1#0#Front Left Segment110#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt111#9#445#false#false#119#8#1#0#Front Left Segment111#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt112#9#445#false#false#127#8#1#0#Front Left Segment112#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt113#9#445#false#false#135#8#1#0#Front Left Segment113#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt114#9#445#false#false#143#8#1#0#Front Left Segment114#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt115#9#445#false#false#151#8#1#0#Front Left Segment115#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt116#9#445#false#false#159#8#1#0#Front Left Segment116#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt117#9#445#false#false#167#8#1#0#Front Left Segment117#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt118#9#445#false#false#175#8#1#0#Front Left Segment118#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt119#9#445#false#false#183#8#1#0#Front Left Segment119#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt12#9#445#false#false#191#8#1#0#Front Left Segment12#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt120#9#445#false#false#199#8#1#0#Front Left Segment120#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt121#9#445#false#false#207#8#1#0#Front Left Segment121#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt122#9#445#false#false#215#8#1#0#Front Left Segment122#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt123#9#445#false#false#223#8#1#0#Front Left Segment123#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt124#9#445#false#false#231#8#1#0#Front Left Segment124#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt125#9#445#false#false#239#8#1#0#Front Left Segment125#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt126#9#445#false#false#247#8#1#0#Front Left Segment126#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt127#9#445#false#false#255#8#1#0#Front Left Segment127#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt128#9#445#false#false#263#8#1#0#Front Left Segment128#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt13#9#445#false#false#271#8#1#0#Front Left Segment13#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt14#9#445#false#false#279#8#1#0#Front Left Segment14#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt15#9#445#false#false#287#8#1#0#Front Left Segment15#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt16#9#445#false#false#295#8#1#0#Front Left Segment16#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt17#9#445#false#false#303#8#1#0#Front Left Segment17#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt18#9#445#false#false#311#8#1#0#Front Left Segment18#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt19#9#445#false#false#319#8#1#0#Front Left Segment19#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt2#9#445#false#false#327#8#1#0#Front Left Segment2#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt20#9#445#false#false#335#8#1#0#Front Left Segment20#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt21#9#445#false#false#343#8#1#0#Front Left Segment21#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt22#9#445#false#false#351#8#1#0#Front Left Segment22#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt23#9#445#false#false#359#8#1#0#Front Left Segment23#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt24#9#445#false#false#367#8#1#0#Front Left Segment24#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt25#9#445#false#false#375#8#1#0#Front Left Segment25#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt26#9#445#false#false#383#8#1#0#Front Left Segment26#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt27#9#445#false#false#391#8#1#0#Front Left Segment27#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt28#9#445#false#false#399#8#1#0#Front Left Segment28#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt29#9#445#false#false#407#8#1#0#Front Left Segment29#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt3#9#445#false#false#415#8#1#0#Front Left Segment3#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt30#9#445#false#false#423#8#1#0#Front Left Segment30#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt31#9#445#false#false#431#8#1#0#Front Left Segment31#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt32#9#445#false#false#439#8#1#0#Front Left Segment32#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt33#9#445#false#false#447#8#1#0#Front Left Segment33#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt34#9#445#false#false#455#8#1#0#Front Left Segment34#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt35#9#445#false#false#463#8#1#0#Front Left Segment35#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt36#9#445#false#false#471#8#1#0#Front Left Segment36#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt37#9#445#false#false#479#8#1#0#Front Left Segment37#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt38#9#445#false#false#487#8#1#0#Front Left Segment38#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt39#9#445#false#false#495#8#1#0#Front Left Segment39#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt4#9#445#false#false#503#8#1#0#Front Left Segment4#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt40#9#445#false#false#511#8#1#0#Front Left Segment40#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt41#9#446#false#false#7#8#1#0#Front Left Segment41#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt42#9#446#false#false#15#8#1#0#Front Left Segment42#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt43#9#446#false#false#23#8#1#0#Front Left Segment43#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt44#9#446#false#false#31#8#1#0#Front Left Segment44#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt45#9#446#false#false#39#8#1#0#Front Left Segment45#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt46#9#446#false#false#47#8#1#0#Front Left Segment46#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt47#9#446#false#false#55#8#1#0#Front Left Segment47#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt48#9#446#false#false#63#8#1#0#Front Left Segment48#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt49#9#446#false#false#71#8#1#0#Front Left Segment49#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt5#9#446#false#false#79#8#1#0#Front Left Segment5#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt50#9#446#false#false#87#8#1#0#Front Left Segment50#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt51#9#446#false#false#95#8#1#0#Front Left Segment51#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt52#9#446#false#false#103#8#1#0#Front Left Segment52#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt53#9#446#false#false#111#8#1#0#Front Left Segment53#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt54#9#446#false#false#119#8#1#0#Front Left Segment54#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt55#9#446#false#false#127#8#1#0#Front Left Segment55#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt56#9#446#false#false#135#8#1#0#Front Left Segment56#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt57#9#446#false#false#143#8#1#0#Front Left Segment57#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt58#9#446#false#false#151#8#1#0#Front Left Segment58#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt59#9#446#false#false#159#8#1#0#Front Left Segment59#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt6#9#446#false#false#167#8#1#0#Front Left Segment6#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt60#9#446#false#false#175#8#1#0#Front Left Segment60#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt61#9#446#false#false#183#8#1#0#Front Left Segment61#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt62#9#446#false#false#191#8#1#0#Front Left Segment62#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt63#9#446#false#false#199#8#1#0#Front Left Segment63#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt64#9#446#false#false#207#8#1#0#Front Left Segment64#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt65#9#446#false#false#215#8#1#0#Front Left Segment65#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt66#9#446#false#false#223#8#1#0#Front Left Segment66#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt67#9#446#false#false#231#8#1#0#Front Left Segment67#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt68#9#446#false#false#239#8#1#0#Front Left Segment68#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt69#9#446#false#false#247#8#1#0#Front Left Segment69#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt7#9#446#false#false#255#8#1#0#Front Left Segment7#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt70#9#446#false#false#263#8#1#0#Front Left Segment70#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt71#9#446#false#false#271#8#1#0#Front Left Segment71#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt72#9#446#false#false#279#8#1#0#Front Left Segment72#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt73#9#446#false#false#287#8#1#0#Front Left Segment73#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt74#9#446#false#false#295#8#1#0#Front Left Segment74#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt75#9#446#false#false#303#8#1#0#Front Left Segment75#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt76#9#446#false#false#311#8#1#0#Front Left Segment76#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt77#9#446#false#false#319#8#1#0#Front Left Segment77#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt78#9#446#false#false#327#8#1#0#Front Left Segment78#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt79#9#446#false#false#335#8#1#0#Front Left Segment79#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt8#9#446#false#false#343#8#1#0#Front Left Segment8#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt80#9#446#false#false#351#8#1#0#Front Left Segment80#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt81#9#446#false#false#359#8#1#0#Front Left Segment81#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt82#9#446#false#false#367#8#1#0#Front Left Segment82#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt83#9#446#false#false#375#8#1#0#Front Left Segment83#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt84#9#446#false#false#383#8#1#0#Front Left Segment84#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt85#9#446#false#false#391#8#1#0#Front Left Segment85#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt86#9#446#false#false#399#8#1#0#Front Left Segment86#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt87#9#446#false#false#407#8#1#0#Front Left Segment87#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt88#9#446#false#false#415#8#1#0#Front Left Segment88#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt89#9#446#false#false#423#8#1#0#Front Left Segment89#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt9#9#446#false#false#431#8#1#0#Front Left Segment9#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt90#9#446#false#false#439#8#1#0#Front Left Segment90#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt91#9#446#false#false#447#8#1#0#Front Left Segment91#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt92#9#446#false#false#455#8#1#0#Front Left Segment92#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt93#9#446#false#false#463#8#1#0#Front Left Segment93#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt94#9#446#false#false#471#8#1#0#Front Left Segment94#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt95#9#446#false#false#479#8#1#0#Front Left Segment95#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt96#9#446#false#false#487#8#1#0#Front Left Segment96#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt97#9#446#false#false#495#8#1#0#Front Left Segment97#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt98#9#446#false#false#503#8#1#0#Front Left Segment98#0.0#0.0#0.0#null#MS11#RC07
+FrtLftSegmt99#9#446#false#false#511#8#1#0#Front Left Segment99#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt1#9#447#false#false#7#8#1#0#Front Right Segment1#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt10#9#447#false#false#15#8#1#0#Front Right Segment10#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt100#9#447#false#false#23#8#1#0#Front Right Segment100#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt101#9#447#false#false#31#8#1#0#Front Right Segment101#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt102#9#447#false#false#39#8#1#0#Front Right Segment102#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt103#9#447#false#false#47#8#1#0#Front Right Segment103#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt104#9#447#false#false#55#8#1#0#Front Right Segment104#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt105#9#447#false#false#63#8#1#0#Front Right Segment105#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt106#9#447#false#false#71#8#1#0#Front Right Segment106#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt107#9#447#false#false#79#8#1#0#Front Right Segment107#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt108#9#447#false#false#87#8#1#0#Front Right Segment108#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt109#9#447#false#false#95#8#1#0#Front Right Segment109#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt11#9#447#false#false#103#8#1#0#Front Right Segment11#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt110#9#447#false#false#111#8#1#0#Front Right Segment110#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt111#9#447#false#false#119#8#1#0#Front Right Segment111#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt112#9#447#false#false#127#8#1#0#Front Right Segment112#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt113#9#447#false#false#135#8#1#0#Front Right Segment113#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt114#9#447#false#false#143#8#1#0#Front Right Segment114#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt115#9#447#false#false#151#8#1#0#Front Right Segment115#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt116#9#447#false#false#159#8#1#0#Front Right Segment116#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt117#9#447#false#false#167#8#1#0#Front Right Segment117#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt118#9#447#false#false#175#8#1#0#Front Right Segment118#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt119#9#447#false#false#183#8#1#0#Front Right Segment119#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt12#9#447#false#false#191#8#1#0#Front Right Segment12#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt120#9#447#false#false#199#8#1#0#Front Right Segment120#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt121#9#447#false#false#207#8#1#0#Front Right Segment121#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt122#9#447#false#false#215#8#1#0#Front Right Segment122#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt123#9#447#false#false#223#8#1#0#Front Right Segment123#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt124#9#447#false#false#231#8#1#0#Front Right Segment124#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt125#9#447#false#false#239#8#1#0#Front Right Segment125#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt126#9#447#false#false#247#8#1#0#Front Right Segment126#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt127#9#447#false#false#255#8#1#0#Front Right Segment127#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt128#9#447#false#false#263#8#1#0#Front Right Segment128#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt13#9#447#false#false#271#8#1#0#Front Right Segment13#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt14#9#447#false#false#279#8#1#0#Front Right Segment14#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt15#9#447#false#false#287#8#1#0#Front Right Segment15#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt16#9#447#false#false#295#8#1#0#Front Right Segment16#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt17#9#447#false#false#303#8#1#0#Front Right Segment17#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt18#9#447#false#false#311#8#1#0#Front Right Segment18#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt19#9#447#false#false#319#8#1#0#Front Right Segment19#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt2#9#447#false#false#327#8#1#0#Front Right Segment2#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt20#9#447#false#false#335#8#1#0#Front Right Segment20#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt21#9#447#false#false#343#8#1#0#Front Right Segment21#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt22#9#447#false#false#351#8#1#0#Front Right Segment22#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt23#9#447#false#false#359#8#1#0#Front Right Segment23#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt24#9#447#false#false#367#8#1#0#Front Right Segment24#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt25#9#447#false#false#375#8#1#0#Front Right Segment25#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt26#9#447#false#false#383#8#1#0#Front Right Segment26#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt27#9#447#false#false#391#8#1#0#Front Right Segment27#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt28#9#447#false#false#399#8#1#0#Front Right Segment28#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt29#9#447#false#false#407#8#1#0#Front Right Segment29#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt3#9#447#false#false#415#8#1#0#Front Right Segment3#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt30#9#447#false#false#423#8#1#0#Front Right Segment30#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt31#9#447#false#false#431#8#1#0#Front Right Segment31#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt32#9#447#false#false#439#8#1#0#Front Right Segment32#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt33#9#447#false#false#447#8#1#0#Front Right Segment33#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt34#9#447#false#false#455#8#1#0#Front Right Segment34#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt35#9#447#false#false#463#8#1#0#Front Right Segment35#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt36#9#447#false#false#471#8#1#0#Front Right Segment36#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt37#9#447#false#false#479#8#1#0#Front Right Segment37#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt38#9#447#false#false#487#8#1#0#Front Right Segment38#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt39#9#447#false#false#495#8#1#0#Front Right Segment39#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt4#9#447#false#false#503#8#1#0#Front Right Segment4#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt40#9#447#false#false#511#8#1#0#Front Right Segment40#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt214#9#458#false#false#7#8#1#0#Rear Segment214#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt215#9#458#false#false#15#8#1#0#Rear Segment215#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt216#9#458#false#false#23#8#1#0#Rear Segment216#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt217#9#458#false#false#31#8#1#0#Rear Segment217#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt218#9#458#false#false#39#8#1#0#Rear Segment218#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt219#9#458#false#false#47#8#1#0#Rear Segment219#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt22#9#458#false#false#55#8#1#0#Rear Segment22#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt220#9#458#false#false#63#8#1#0#Rear Segment220#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt221#9#458#false#false#71#8#1#0#Rear Segment221#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt222#9#458#false#false#79#8#1#0#Rear Segment222#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt223#9#458#false#false#87#8#1#0#Rear Segment223#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt224#9#458#false#false#95#8#1#0#Rear Segment224#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt225#9#458#false#false#103#8#1#0#Rear Segment225#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt226#9#458#false#false#111#8#1#0#Rear Segment226#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt227#9#458#false#false#119#8#1#0#Rear Segment227#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt228#9#458#false#false#127#8#1#0#Rear Segment228#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt229#9#458#false#false#135#8#1#0#Rear Segment229#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt23#9#458#false#false#143#8#1#0#Rear Segment23#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt230#9#458#false#false#151#8#1#0#Rear Segment230#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt231#9#458#false#false#159#8#1#0#Rear Segment231#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt232#9#458#false#false#167#8#1#0#Rear Segment232#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt233#9#458#false#false#175#8#1#0#Rear Segment233#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt234#9#458#false#false#183#8#1#0#Rear Segment234#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt235#9#458#false#false#191#8#1#0#Rear Segment235#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt236#9#458#false#false#199#8#1#0#Rear Segment236#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt237#9#458#false#false#207#8#1#0#Rear Segment237#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt238#9#458#false#false#215#8#1#0#Rear Segment238#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt239#9#458#false#false#223#8#1#0#Rear Segment239#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt24#9#458#false#false#231#8#1#0#Rear Segment24#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt240#9#458#false#false#239#8#1#0#Rear Segment240#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt241#9#458#false#false#247#8#1#0#Rear Segment241#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt242#9#458#false#false#255#8#1#0#Rear Segment242#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt243#9#458#false#false#263#8#1#0#Rear Segment243#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt244#9#458#false#false#271#8#1#0#Rear Segment244#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt245#9#458#false#false#279#8#1#0#Rear Segment245#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt246#9#458#false#false#287#8#1#0#Rear Segment246#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt247#9#458#false#false#295#8#1#0#Rear Segment247#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt248#9#458#false#false#303#8#1#0#Rear Segment248#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt249#9#458#false#false#311#8#1#0#Rear Segment249#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt25#9#458#false#false#319#8#1#0#Rear Segment25#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt250#9#458#false#false#327#8#1#0#Rear Segment250#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt251#9#458#false#false#335#8#1#0#Rear Segment251#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt252#9#458#false#false#343#8#1#0#Rear Segment252#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt253#9#458#false#false#351#8#1#0#Rear Segment253#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt254#9#458#false#false#359#8#1#0#Rear Segment254#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt255#9#458#false#false#367#8#1#0#Rear Segment255#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt256#9#458#false#false#375#8#1#0#Rear Segment256#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt257#9#458#false#false#383#8#1#0#Rear Segment257#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt258#9#458#false#false#391#8#1#0#Rear Segment258#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt259#9#458#false#false#399#8#1#0#Rear Segment259#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt26#9#458#false#false#407#8#1#0#Rear Segment26#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt260#9#458#false#false#415#8#1#0#Rear Segment260#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt261#9#458#false#false#423#8#1#0#Rear Segment261#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt262#9#458#false#false#431#8#1#0#Rear Segment262#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt263#9#458#false#false#439#8#1#0#Rear Segment263#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt264#9#458#false#false#447#8#1#0#Rear Segment264#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt265#9#458#false#false#455#8#1#0#Rear Segment265#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt266#9#458#false#false#463#8#1#0#Rear Segment266#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt267#9#458#false#false#471#8#1#0#Rear Segment267#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt268#9#458#false#false#479#8#1#0#Rear Segment268#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt269#9#458#false#false#487#8#1#0#Rear Segment269#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt27#9#458#false#false#495#8#1#0#Rear Segment27#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt270#9#458#false#false#503#8#1#0#Rear Segment270#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt271#9#458#false#false#511#8#1#0#Rear Segment271#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt157#9#459#false#false#7#8#1#0#Rear Segment157#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt158#9#459#false#false#15#8#1#0#Rear Segment158#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt159#9#459#false#false#23#8#1#0#Rear Segment159#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt16#9#459#false#false#31#8#1#0#Rear Segment16#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt160#9#459#false#false#39#8#1#0#Rear Segment160#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt161#9#459#false#false#47#8#1#0#Rear Segment161#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt162#9#459#false#false#55#8#1#0#Rear Segment162#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt163#9#459#false#false#63#8#1#0#Rear Segment163#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt164#9#459#false#false#71#8#1#0#Rear Segment164#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt165#9#459#false#false#79#8#1#0#Rear Segment165#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt166#9#459#false#false#87#8#1#0#Rear Segment166#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt167#9#459#false#false#95#8#1#0#Rear Segment167#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt168#9#459#false#false#103#8#1#0#Rear Segment168#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt169#9#459#false#false#111#8#1#0#Rear Segment169#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt17#9#459#false#false#119#8#1#0#Rear Segment17#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt170#9#459#false#false#127#8#1#0#Rear Segment170#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt171#9#459#false#false#135#8#1#0#Rear Segment171#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt172#9#459#false#false#143#8#1#0#Rear Segment172#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt173#9#459#false#false#151#8#1#0#Rear Segment173#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt174#9#459#false#false#159#8#1#0#Rear Segment174#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt175#9#459#false#false#167#8#1#0#Rear Segment175#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt176#9#459#false#false#175#8#1#0#Rear Segment176#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt177#9#459#false#false#183#8#1#0#Rear Segment177#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt178#9#459#false#false#191#8#1#0#Rear Segment178#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt179#9#459#false#false#199#8#1#0#Rear Segment179#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt18#9#459#false#false#207#8#1#0#Rear Segment18#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt180#9#459#false#false#215#8#1#0#Rear Segment180#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt181#9#459#false#false#223#8#1#0#Rear Segment181#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt182#9#459#false#false#231#8#1#0#Rear Segment182#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt183#9#459#false#false#239#8#1#0#Rear Segment183#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt184#9#459#false#false#247#8#1#0#Rear Segment184#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt185#9#459#false#false#255#8#1#0#Rear Segment185#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt186#9#459#false#false#263#8#1#0#Rear Segment186#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt187#9#459#false#false#271#8#1#0#Rear Segment187#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt188#9#459#false#false#279#8#1#0#Rear Segment188#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt189#9#459#false#false#287#8#1#0#Rear Segment189#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt19#9#459#false#false#295#8#1#0#Rear Segment19#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt190#9#459#false#false#303#8#1#0#Rear Segment190#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt191#9#459#false#false#311#8#1#0#Rear Segment191#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt192#9#459#false#false#319#8#1#0#Rear Segment192#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt193#9#459#false#false#327#8#1#0#Rear Segment193#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt194#9#459#false#false#335#8#1#0#Rear Segment194#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt195#9#459#false#false#343#8#1#0#Rear Segment195#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt196#9#459#false#false#351#8#1#0#Rear Segment196#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt197#9#459#false#false#359#8#1#0#Rear Segment197#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt198#9#459#false#false#367#8#1#0#Rear Segment198#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt199#9#459#false#false#375#8#1#0#Rear Segment199#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt2#9#459#false#false#383#8#1#0#Rear Segment2#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt20#9#459#false#false#391#8#1#0#Rear Segment20#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt200#9#459#false#false#399#8#1#0#Rear Segment200#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt201#9#459#false#false#407#8#1#0#Rear Segment201#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt202#9#459#false#false#415#8#1#0#Rear Segment202#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt203#9#459#false#false#423#8#1#0#Rear Segment203#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt204#9#459#false#false#431#8#1#0#Rear Segment204#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt205#9#459#false#false#439#8#1#0#Rear Segment205#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt206#9#459#false#false#447#8#1#0#Rear Segment206#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt207#9#459#false#false#455#8#1#0#Rear Segment207#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt208#9#459#false#false#463#8#1#0#Rear Segment208#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt209#9#459#false#false#471#8#1#0#Rear Segment209#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt21#9#459#false#false#479#8#1#0#Rear Segment21#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt210#9#459#false#false#487#8#1#0#Rear Segment210#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt211#9#459#false#false#495#8#1#0#Rear Segment211#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt212#9#459#false#false#503#8#1#0#Rear Segment212#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt213#9#459#false#false#511#8#1#0#Rear Segment213#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt6#9#460#false#false#7#8#1#0#Rear Segment6#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt60#9#460#false#false#15#8#1#0#Rear Segment60#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt61#9#460#false#false#23#8#1#0#Rear Segment61#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt62#9#460#false#false#31#8#1#0#Rear Segment62#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt63#9#460#false#false#39#8#1#0#Rear Segment63#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt64#9#460#false#false#47#8#1#0#Rear Segment64#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt65#9#460#false#false#55#8#1#0#Rear Segment65#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt66#9#460#false#false#63#8#1#0#Rear Segment66#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt67#9#460#false#false#71#8#1#0#Rear Segment67#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt68#9#460#false#false#79#8#1#0#Rear Segment68#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt69#9#460#false#false#87#8#1#0#Rear Segment69#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt7#9#460#false#false#95#8#1#0#Rear Segment7#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt70#9#460#false#false#103#8#1#0#Rear Segment70#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt71#9#460#false#false#111#8#1#0#Rear Segment71#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt72#9#460#false#false#119#8#1#0#Rear Segment72#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt73#9#460#false#false#127#8#1#0#Rear Segment73#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt74#9#460#false#false#135#8#1#0#Rear Segment74#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt75#9#460#false#false#143#8#1#0#Rear Segment75#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt76#9#460#false#false#151#8#1#0#Rear Segment76#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt77#9#460#false#false#159#8#1#0#Rear Segment77#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt78#9#460#false#false#167#8#1#0#Rear Segment78#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt79#9#460#false#false#175#8#1#0#Rear Segment79#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt8#9#460#false#false#183#8#1#0#Rear Segment8#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt80#9#460#false#false#191#8#1#0#Rear Segment80#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt81#9#460#false#false#199#8#1#0#Rear Segment81#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt82#9#460#false#false#207#8#1#0#Rear Segment82#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt83#9#460#false#false#215#8#1#0#Rear Segment83#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt84#9#460#false#false#223#8#1#0#Rear Segment84#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt85#9#460#false#false#231#8#1#0#Rear Segment85#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt86#9#460#false#false#239#8#1#0#Rear Segment86#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt87#9#460#false#false#247#8#1#0#Rear Segment87#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt88#9#460#false#false#255#8#1#0#Rear Segment88#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt89#9#460#false#false#263#8#1#0#Rear Segment89#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt9#9#460#false#false#271#8#1#0#Rear Segment9#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt90#9#460#false#false#279#8#1#0#Rear Segment90#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt91#9#460#false#false#287#8#1#0#Rear Segment91#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt92#9#460#false#false#295#8#1#0#Rear Segment92#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt93#9#460#false#false#303#8#1#0#Rear Segment93#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt94#9#460#false#false#311#8#1#0#Rear Segment94#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt95#9#460#false#false#319#8#1#0#Rear Segment95#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt96#9#460#false#false#327#8#1#0#Rear Segment96#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt97#9#460#false#false#335#8#1#0#Rear Segment97#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt98#9#460#false#false#343#8#1#0#Rear Segment98#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt99#9#460#false#false#351#8#1#0#Rear Segment99#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt41#9#461#false#false#7#8#1#0#Front Right Segment41#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt42#9#461#false#false#15#8#1#0#Front Right Segment42#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt43#9#461#false#false#23#8#1#0#Front Right Segment43#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt44#9#461#false#false#31#8#1#0#Front Right Segment44#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt45#9#461#false#false#39#8#1#0#Front Right Segment45#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt46#9#461#false#false#47#8#1#0#Front Right Segment46#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt47#9#461#false#false#55#8#1#0#Front Right Segment47#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt48#9#461#false#false#63#8#1#0#Front Right Segment48#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt49#9#461#false#false#71#8#1#0#Front Right Segment49#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt5#9#461#false#false#79#8#1#0#Front Right Segment5#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt50#9#461#false#false#87#8#1#0#Front Right Segment50#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt51#9#461#false#false#95#8#1#0#Front Right Segment51#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt52#9#461#false#false#103#8#1#0#Front Right Segment52#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt53#9#461#false#false#111#8#1#0#Front Right Segment53#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt54#9#461#false#false#119#8#1#0#Front Right Segment54#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt55#9#461#false#false#127#8#1#0#Front Right Segment55#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt56#9#461#false#false#135#8#1#0#Front Right Segment56#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt57#9#461#false#false#143#8#1#0#Front Right Segment57#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt58#9#461#false#false#151#8#1#0#Front Right Segment58#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt59#9#461#false#false#159#8#1#0#Front Right Segment59#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt6#9#461#false#false#167#8#1#0#Front Right Segment6#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt60#9#461#false#false#175#8#1#0#Front Right Segment60#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt61#9#461#false#false#183#8#1#0#Front Right Segment61#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt62#9#461#false#false#191#8#1#0#Front Right Segment62#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt63#9#461#false#false#199#8#1#0#Front Right Segment63#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt64#9#461#false#false#207#8#1#0#Front Right Segment64#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt65#9#461#false#false#215#8#1#0#Front Right Segment65#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt66#9#461#false#false#223#8#1#0#Front Right Segment66#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt67#9#461#false#false#231#8#1#0#Front Right Segment67#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt68#9#461#false#false#239#8#1#0#Front Right Segment68#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt69#9#461#false#false#247#8#1#0#Front Right Segment69#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt7#9#461#false#false#255#8#1#0#Front Right Segment7#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt70#9#461#false#false#263#8#1#0#Front Right Segment70#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt71#9#461#false#false#271#8#1#0#Front Right Segment71#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt72#9#461#false#false#279#8#1#0#Front Right Segment72#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt73#9#461#false#false#287#8#1#0#Front Right Segment73#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt74#9#461#false#false#295#8#1#0#Front Right Segment74#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt75#9#461#false#false#303#8#1#0#Front Right Segment75#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt76#9#461#false#false#311#8#1#0#Front Right Segment76#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt77#9#461#false#false#319#8#1#0#Front Right Segment77#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt78#9#461#false#false#327#8#1#0#Front Right Segment78#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt79#9#461#false#false#335#8#1#0#Front Right Segment79#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt8#9#461#false#false#343#8#1#0#Front Right Segment8#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt80#9#461#false#false#351#8#1#0#Front Right Segment80#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt81#9#461#false#false#359#8#1#0#Front Right Segment81#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt82#9#461#false#false#367#8#1#0#Front Right Segment82#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt83#9#461#false#false#375#8#1#0#Front Right Segment83#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt84#9#461#false#false#383#8#1#0#Front Right Segment84#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt85#9#461#false#false#391#8#1#0#Front Right Segment85#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt86#9#461#false#false#399#8#1#0#Front Right Segment86#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt87#9#461#false#false#407#8#1#0#Front Right Segment87#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt88#9#461#false#false#415#8#1#0#Front Right Segment88#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt89#9#461#false#false#423#8#1#0#Front Right Segment89#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt9#9#461#false#false#431#8#1#0#Front Right Segment9#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt90#9#461#false#false#439#8#1#0#Front Right Segment90#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt91#9#461#false#false#447#8#1#0#Front Right Segment91#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt92#9#461#false#false#455#8#1#0#Front Right Segment92#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt93#9#461#false#false#463#8#1#0#Front Right Segment93#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt94#9#461#false#false#471#8#1#0#Front Right Segment94#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt95#9#461#false#false#479#8#1#0#Front Right Segment95#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt96#9#461#false#false#487#8#1#0#Front Right Segment96#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt97#9#461#false#false#495#8#1#0#Front Right Segment97#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt98#9#461#false#false#503#8#1#0#Front Right Segment98#0.0#0.0#0.0#null#MS11#RC07
+FrtRghtSegmt99#9#461#false#false#511#8#1#0#Front Right Segment99#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt1#9#462#false#false#7#8#1#0#Rear Segment1#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt10#9#462#false#false#15#8#1#0#Rear Segment10#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt100#9#462#false#false#23#8#1#0#Rear Segment100#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt101#9#462#false#false#31#8#1#0#Rear Segment101#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt102#9#462#false#false#39#8#1#0#Rear Segment102#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt103#9#462#false#false#47#8#1#0#Rear Segment103#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt104#9#462#false#false#55#8#1#0#Rear Segment104#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt105#9#462#false#false#63#8#1#0#Rear Segment105#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt106#9#462#false#false#71#8#1#0#Rear Segment106#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt107#9#462#false#false#79#8#1#0#Rear Segment107#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt108#9#462#false#false#87#8#1#0#Rear Segment108#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt109#9#462#false#false#95#8#1#0#Rear Segment109#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt11#9#462#false#false#103#8#1#0#Rear Segment11#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt110#9#462#false#false#111#8#1#0#Rear Segment110#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt111#9#462#false#false#119#8#1#0#Rear Segment111#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt112#9#462#false#false#127#8#1#0#Rear Segment112#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt113#9#462#false#false#135#8#1#0#Rear Segment113#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt114#9#462#false#false#143#8#1#0#Rear Segment114#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt115#9#462#false#false#151#8#1#0#Rear Segment115#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt116#9#462#false#false#159#8#1#0#Rear Segment116#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt117#9#462#false#false#167#8#1#0#Rear Segment117#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt118#9#462#false#false#175#8#1#0#Rear Segment118#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt119#9#462#false#false#183#8#1#0#Rear Segment119#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt12#9#462#false#false#191#8#1#0#Rear Segment12#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt120#9#462#false#false#199#8#1#0#Rear Segment120#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt121#9#462#false#false#207#8#1#0#Rear Segment121#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt122#9#462#false#false#215#8#1#0#Rear Segment122#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt123#9#462#false#false#223#8#1#0#Rear Segment123#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt124#9#462#false#false#231#8#1#0#Rear Segment124#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt125#9#462#false#false#239#8#1#0#Rear Segment125#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt126#9#462#false#false#247#8#1#0#Rear Segment126#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt127#9#462#false#false#255#8#1#0#Rear Segment127#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt128#9#462#false#false#263#8#1#0#Rear Segment128#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt129#9#462#false#false#271#8#1#0#Rear Segment129#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt13#9#462#false#false#279#8#1#0#Rear Segment13#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt130#9#462#false#false#287#8#1#0#Rear Segment130#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt131#9#462#false#false#295#8#1#0#Rear Segment131#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt132#9#462#false#false#303#8#1#0#Rear Segment132#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt133#9#462#false#false#311#8#1#0#Rear Segment133#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt134#9#462#false#false#319#8#1#0#Rear Segment134#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt135#9#462#false#false#327#8#1#0#Rear Segment135#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt136#9#462#false#false#335#8#1#0#Rear Segment136#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt137#9#462#false#false#343#8#1#0#Rear Segment137#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt138#9#462#false#false#351#8#1#0#Rear Segment138#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt139#9#462#false#false#359#8#1#0#Rear Segment139#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt14#9#462#false#false#367#8#1#0#Rear Segment14#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt140#9#462#false#false#375#8#1#0#Rear Segment140#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt141#9#462#false#false#383#8#1#0#Rear Segment141#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt142#9#462#false#false#391#8#1#0#Rear Segment142#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt143#9#462#false#false#399#8#1#0#Rear Segment143#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt144#9#462#false#false#407#8#1#0#Rear Segment144#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt145#9#462#false#false#415#8#1#0#Rear Segment145#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt146#9#462#false#false#423#8#1#0#Rear Segment146#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt147#9#462#false#false#431#8#1#0#Rear Segment147#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt148#9#462#false#false#439#8#1#0#Rear Segment148#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt149#9#462#false#false#447#8#1#0#Rear Segment149#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt15#9#462#false#false#455#8#1#0#Rear Segment15#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt150#9#462#false#false#463#8#1#0#Rear Segment150#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt151#9#462#false#false#471#8#1#0#Rear Segment151#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt152#9#462#false#false#479#8#1#0#Rear Segment152#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt153#9#462#false#false#487#8#1#0#Rear Segment153#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt154#9#462#false#false#495#8#1#0#Rear Segment154#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt155#9#462#false#false#503#8#1#0#Rear Segment155#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt156#9#462#false#false#511#8#1#0#Rear Segment156#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt272#9#463#false#false#7#8#1#0#Rear Segment272#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt273#9#463#false#false#15#8#1#0#Rear Segment273#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt274#9#463#false#false#23#8#1#0#Rear Segment274#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt275#9#463#false#false#31#8#1#0#Rear Segment275#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt276#9#463#false#false#39#8#1#0#Rear Segment276#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt277#9#463#false#false#47#8#1#0#Rear Segment277#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt278#9#463#false#false#55#8#1#0#Rear Segment278#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt279#9#463#false#false#63#8#1#0#Rear Segment279#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt28#9#463#false#false#71#8#1#0#Rear Segment28#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt280#9#463#false#false#79#8#1#0#Rear Segment280#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt281#9#463#false#false#87#8#1#0#Rear Segment281#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt282#9#463#false#false#95#8#1#0#Rear Segment282#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt283#9#463#false#false#103#8#1#0#Rear Segment283#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt284#9#463#false#false#111#8#1#0#Rear Segment284#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt285#9#463#false#false#119#8#1#0#Rear Segment285#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt286#9#463#false#false#127#8#1#0#Rear Segment286#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt287#9#463#false#false#135#8#1#0#Rear Segment287#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt288#9#463#false#false#143#8#1#0#Rear Segment288#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt289#9#463#false#false#151#8#1#0#Rear Segment289#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt29#9#463#false#false#159#8#1#0#Rear Segment29#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt290#9#463#false#false#167#8#1#0#Rear Segment290#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt291#9#463#false#false#175#8#1#0#Rear Segment291#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt292#9#463#false#false#183#8#1#0#Rear Segment292#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt293#9#463#false#false#191#8#1#0#Rear Segment293#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt294#9#463#false#false#199#8#1#0#Rear Segment294#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt295#9#463#false#false#207#8#1#0#Rear Segment295#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt296#9#463#false#false#215#8#1#0#Rear Segment296#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt297#9#463#false#false#223#8#1#0#Rear Segment297#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt298#9#463#false#false#231#8#1#0#Rear Segment298#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt299#9#463#false#false#239#8#1#0#Rear Segment299#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt3#9#463#false#false#247#8#1#0#Rear Segment3#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt30#9#463#false#false#255#8#1#0#Rear Segment30#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt300#9#463#false#false#263#8#1#0#Rear Segment300#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt31#9#463#false#false#271#8#1#0#Rear Segment31#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt32#9#463#false#false#279#8#1#0#Rear Segment32#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt33#9#463#false#false#287#8#1#0#Rear Segment33#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt34#9#463#false#false#295#8#1#0#Rear Segment34#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt35#9#463#false#false#303#8#1#0#Rear Segment35#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt36#9#463#false#false#311#8#1#0#Rear Segment36#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt37#9#463#false#false#319#8#1#0#Rear Segment37#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt38#9#463#false#false#327#8#1#0#Rear Segment38#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt39#9#463#false#false#335#8#1#0#Rear Segment39#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt4#9#463#false#false#343#8#1#0#Rear Segment4#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt40#9#463#false#false#351#8#1#0#Rear Segment40#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt41#9#463#false#false#359#8#1#0#Rear Segment41#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt42#9#463#false#false#367#8#1#0#Rear Segment42#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt43#9#463#false#false#375#8#1#0#Rear Segment43#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt44#9#463#false#false#383#8#1#0#Rear Segment44#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt45#9#463#false#false#391#8#1#0#Rear Segment45#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt46#9#463#false#false#399#8#1#0#Rear Segment46#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt47#9#463#false#false#407#8#1#0#Rear Segment47#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt48#9#463#false#false#415#8#1#0#Rear Segment48#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt49#9#463#false#false#423#8#1#0#Rear Segment49#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt5#9#463#false#false#431#8#1#0#Rear Segment5#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt50#9#463#false#false#439#8#1#0#Rear Segment50#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt51#9#463#false#false#447#8#1#0#Rear Segment51#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt52#9#463#false#false#455#8#1#0#Rear Segment52#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt53#9#463#false#false#463#8#1#0#Rear Segment53#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt54#9#463#false#false#471#8#1#0#Rear Segment54#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt55#9#463#false#false#479#8#1#0#Rear Segment55#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt56#9#463#false#false#487#8#1#0#Rear Segment56#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt57#9#463#false#false#495#8#1#0#Rear Segment57#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt58#9#463#false#false#503#8#1#0#Rear Segment58#0.0#0.0#0.0#null#MS11#RC07
+RearSegmt59#9#463#false#false#511#8#1#0#Rear Segment59#0.0#0.0#0.0#null#MS11#RC07
+TrOpenClsSts#9#471#false#false#7#2#1#0#Trunk Open Close Status#0.0#0.0#0.0#{"0": "Ukwn", "1": "Open", "2": "Clsd"}#MS11#RC07
+LampSigGrpChks#9#600#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#RC07
+LampSigGrpCntr#9#600#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#RC07
+ActnOfLedRePosnLamp#9#600#false#false#23#1#1#0#后位置灯激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC07
+ActnOfLoBeam#9#600#false#false#22#1#1#0#近光灯激活#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC07
+ActnOfStopLamp#9#600#false#false#21#1#1#0#刹车灯激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC07
+ActvnOfIndcr#9#600#false#false#20#3#1#0#转向灯激活命令#0.0#0.0#0.0#{"0": "NoReq", "1": "Off", "2": "LeOn", "3": "RiOn", "4": "LeRiOn"}#MS11#RC07
+ExtrLiFcnSts#9#600#false#false#47#2#1#0#大灯开关状态#0.0#0.0#0.0#{"0": "Off", "1": "Pos", "2": "Lo", "3": "AutL"}#MS11#RC07
+AllowedofADB#9#600#false#false#45#1#1#0#Allowed of ADB function#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MS11#RC07
+FarewellFuncSet#9#600#false#false#44#1#1#0#Farewell function setting#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MS11#RC07
+ActnOfLedHiBeam#9#600#false#false#43#1#1#0#远光激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC07
+ActnOfLedFrntPosnLamp#9#600#false#false#42#1#1#0#前位置灯激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC07
+ActnOfFrntCornrgLampLe#9#600#false#false#41#1#1#0#激活左角灯命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC07
+ActnOfDayRunngLampLe#9#600#false#false#40#1#1#0#左日行灯激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC07
+ManLevlingLvlSetSts#9#600#false#false#55#4#1#0#Manual levling level set status#0.0#0.0#0.0#{"1": "Level0", "2": "Level1", "3": "Level2", "4": "Level3"}#MS11#RC07
+SegmtDirCtrlSet#9#600#false#false#51#4#1#0#Segment  direct control setting#0.0#0.0#0.0#{"0": "NotActive", "1": "ActiveDay", "2": "ActiveNight", "3": "MusicShow"}#MS11#RC07
+WelcomeFuncSet#9#600#false#false#60#1#1#0#Welcome function setting#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MS11#RC07
+StsOfIndcr#9#600#false#false#59#3#1#0#转向状态指示#0.0#0.0#0.0#{"0": "Noflash", "1": "flashLeft", "2": "flashRight", "3": "Doubleflash"}#MS11#RC07
+SeqTurnEnable#9#600#false#false#56#1#1#0#Sequential turn enable#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MS11#RC07
+WelcomeLightSetSts#9#600#false#false#67#4#1#0#welcome & fareweill set  status#0.0#0.0#0.0#{"0": "OFF", "1": "Brief", "2": "Grace", "3": "Crazy"}#MS11#RC07
+ActnOfRvsgLamp#9#600#false#false#74#1#1#0#倒车灯激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC07
+ActnOfFrntCornrgLampRi#9#600#false#false#81#1#1#0#激活右角灯命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC07
+ActnOfDayRunngLampRi#9#600#false#false#80#1#1#0#右日行灯激活命令#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC07
+LeGFACntrHrztlAng1#9#605#false#true#7#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimDwnTime1#9#605#false#false#13#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrHrztlAng2#9#605#false#true#23#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimDwnTime2#9#605#false#false#29#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrHrztlAng3#9#605#false#true#39#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimDwnTime3#9#605#false#false#45#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrHrztlAng4#9#605#false#true#55#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimDwnTime4#9#605#false#false#61#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrHrztlAng5#9#605#false#true#71#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimDwnTime5#9#605#false#false#77#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrHrztlAng6#9#605#false#true#87#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimDwnTime6#9#605#false#false#93#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrHrztlAng7#9#605#false#true#103#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimDwnTime7#9#605#false#false#109#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrHrztlAng8#9#605#false#true#119#10#0.1#0.0#horizontal angle of the center of  left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimDwnTime8#9#605#false#false#125#6#0.05#0.0#dimming down time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAHrztlHlfWidt1#9#605#false#false#135#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrVrtclAng1#9#605#false#true#142#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAHrztlHlfWidt2#9#605#false#false#151#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrVrtclAng2#9#605#false#true#158#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAHrztlHlfWidt3#9#605#false#false#167#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrVrtclAng3#9#605#false#true#174#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAHrztlHlfWidt4#9#605#false#false#183#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrVrtclAng4#9#605#false#true#190#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAHrztlHlfWidt5#9#605#false#false#199#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrVrtclAng5#9#605#false#true#206#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAHrztlHlfWidt6#9#605#false#false#215#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrVrtclAng6#9#605#false#true#222#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAHrztlHlfWidt7#9#605#false#false#231#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrVrtclAng7#9#605#false#true#238#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAHrztlHlfWidt8#9#605#false#false#247#9#0.1#0.0#horizontal half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFACntrVrtclAng8#9#605#false#true#254#7#0.1#0.0#vertical angle of the center of left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimUpTime1#9#605#false#false#263#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAValidFlag1#9#605#false#false#257#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+LeGFADimUpTime2#9#605#false#false#271#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAValidFlag2#9#605#false#false#265#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+LeGFADimUpTime3#9#605#false#false#279#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAValidFlag3#9#605#false#false#273#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+LeGFADimUpTime4#9#605#false#false#287#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAValidFlag4#9#605#false#false#281#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+LeGFADimUpTime5#9#605#false#false#295#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAValidFlag5#9#605#false#false#289#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+LeGFADimUpTime6#9#605#false#false#303#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAValidFlag6#9#605#false#false#297#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+LeGFADimUpTime7#9#605#false#false#311#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAValidFlag7#9#605#false#false#305#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+LeGFADimUpTime8#9#605#false#false#319#6#0.05#0.0#dimming up time of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAValidFlag8#9#605#false#false#313#1#1#0#valid flag of the left headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+LeGFADimVal1#9#605#false#false#327#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimVal2#9#605#false#false#335#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimVal3#9#605#false#false#343#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimVal4#9#605#false#false#351#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimVal5#9#605#false#false#359#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimVal6#9#605#false#false#367#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimVal7#9#605#false#false#375#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFADimVal8#9#605#false#false#383#7#1#0#dimming value of the light source of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAVrtclHlfWidt1#9#605#false#false#391#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAVrtclHlfWidt2#9#605#false#false#399#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAVrtclHlfWidt3#9#605#false#false#407#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAVrtclHlfWidt4#9#605#false#false#415#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAVrtclHlfWidt5#9#605#false#false#423#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAVrtclHlfWidt6#9#605#false#false#431#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAVrtclHlfWidt7#9#605#false#false#439#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+LeGFAVrtclHlfWidt8#9#605#false#false#447#6#0.1#0.0#vertical half width of the left headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+CtrlAHLAglLe#9#605#false#true#455#10#0.01#0.0#Control Left AHL  Angle#0.0#0.0#0.0#null#MS11#RC07
+LBLghtPatnSet#9#605#false#false#461#3#1#0#Low Beam Light Pattern Setting 近光模式设置#0.0#0.0#0.0#{"0": "Default", "1": "TownLight", "2": "CountryLight", "3": "MotorwayLight", "4": "AdverseWeatherLight", "5": "Reserved"}#MS11#RC07
+ExtrLghtPwrOff#9#605#false#false#458#1#1#0#Extrior Light Power Off#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MS11#RC07
+AHLMotrRefRunReq#9#605#false#false#456#1#1#0#Auto Headlamp Leveling Motor Reference RUN Request#0.0#0.0#0.0#{"0": "NoReq", "1": "Req"}#MS11#RC07
+AHLDirtCtrlRq#9#605#false#false#471#2#1#0#Auto Headlamp Leveling Direct control request#0.0#0.0#0.0#{"0": "NoReq", "1": "DirCtrlAngle"}#MS11#RC07
+AxulForRvsPatnSet#9#605#false#false#469#1#1#0#Auxlley Light for Reversed Pattern setting#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#RC07
+WlcmFrwlLghtModSet#9#605#false#false#468#4#1#0#Wellcome and Farewell light mode setting#0.0#0.0#0.0#{"0": "Off", "1": "BriefDay", "2": "GraceDay", "3": "CrazyDay", "4": "BriefNight", "5": "GraceNight", "6": "CrazyNight"}#MS11#RC07
+SBLDmValSetLe#9#605#false#false#479#7#1#0#Left Static bending Light Dimming Value setting#0.0#0.0#0.0#null#MS11#RC07
+SBLPatnSet#9#605#false#false#487#2#1#0#Static bending light Pattern setting#0.0#0.0#0.0#{"0": "Off", "1": "LeftSBLOn", "2": "RightSBLOn", "3": "Resd"}#MS11#RC07
+RiGFACntrHrztlAng1#9#606#false#true#7#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimDwnTime1#9#606#false#false#13#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrHrztlAng2#9#606#false#true#23#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimDwnTime2#9#606#false#false#29#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrHrztlAng3#9#606#false#true#39#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimDwnTime3#9#606#false#false#45#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrHrztlAng4#9#606#false#true#55#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimDwnTime4#9#606#false#false#61#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrHrztlAng5#9#606#false#true#71#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimDwnTime5#9#606#false#false#77#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrHrztlAng6#9#606#false#true#87#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimDwnTime6#9#606#false#false#93#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrHrztlAng7#9#606#false#true#103#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimDwnTime7#9#606#false#false#109#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrHrztlAng8#9#606#false#true#119#10#0.1#0.0#horizontal angle of the center of  right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimDwnTime8#9#606#false#false#125#6#0.05#0.0#dimming down time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAHrztlHlfWidt1#9#606#false#false#135#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrVrtclAng1#9#606#false#true#142#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAHrztlHlfWidt2#9#606#false#false#151#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrVrtclAng2#9#606#false#true#158#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAHrztlHlfWidt3#9#606#false#false#167#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrVrtclAng3#9#606#false#true#174#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAHrztlHlfWidt4#9#606#false#false#183#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrVrtclAng4#9#606#false#true#190#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAHrztlHlfWidt5#9#606#false#false#199#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrVrtclAng5#9#606#false#true#206#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAHrztlHlfWidt6#9#606#false#false#215#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrVrtclAng6#9#606#false#true#222#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAHrztlHlfWidt7#9#606#false#false#231#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrVrtclAng7#9#606#false#true#238#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAHrztlHlfWidt8#9#606#false#false#247#9#0.1#0.0#horizontal half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFACntrVrtclAng8#9#606#false#true#254#7#0.1#0.0#vertical angle of the center of right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimUpTime1#9#606#false#false#263#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimUpTime2#9#606#false#false#271#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimUpTime3#9#606#false#false#279#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimUpTime4#9#606#false#false#287#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimUpTime5#9#606#false#false#295#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimUpTime6#9#606#false#false#303#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimUpTime7#9#606#false#false#311#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimUpTime8#9#606#false#false#319#6#0.05#0.0#dimming up time of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimVal1#9#606#false#false#327#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimVal2#9#606#false#false#335#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimVal3#9#606#false#false#343#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimVal4#9#606#false#false#351#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimVal5#9#606#false#false#359#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimVal6#9#606#false#false#367#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimVal7#9#606#false#false#375#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFADimVal8#9#606#false#false#383#7#1#0#dimming value of the light source of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAVrtclHlfWidt1#9#606#false#false#391#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAValidFlag1#9#606#false#false#385#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+RiGFAVrtclHlfWidt2#9#606#false#false#399#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAValidFlag2#9#606#false#false#393#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+RiGFAVrtclHlfWidt3#9#606#false#false#407#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAValidFlag3#9#606#false#false#401#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+RiGFAVrtclHlfWidt4#9#606#false#false#415#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAValidFlag4#9#606#false#false#409#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+RiGFAVrtclHlfWidt5#9#606#false#false#423#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAValidFlag5#9#606#false#false#417#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+RiGFAVrtclHlfWidt6#9#606#false#false#431#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAValidFlag6#9#606#false#false#425#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+RiGFAVrtclHlfWidt7#9#606#false#false#439#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAValidFlag7#9#606#false#false#433#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+RiGFAVrtclHlfWidt8#9#606#false#false#447#6#0.1#0.0#vertical half width of the right headlamp glare free area#0.0#0.0#0.0#null#MS11#RC07
+RiGFAValidFlag8#9#606#false#false#441#1#1#0#valid flag of the right headlamp glare free area#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#RC07
+SBLDmValSetRi#9#606#false#false#455#7#1#0#Left Static bending Light Dimming Value setting#0.0#0.0#0.0#null#MS11#RC07
+CtrlAHLAglRi#9#606#false#true#463#10#0.01#0.0#Control Right AHL  Angle#0.0#0.0#0.0#null#MS11#RC07
+ActiveOfADB#9#606#false#false#469#1#1#0#Active of ADB Function  激活ADB 功能#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MS11#RC07
+VCCDLampNodeAddress#9#1360#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#RC07
+VCCDLampActiveWakeup#9#1360#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#RC07
+VCCDLampRepeatMsgReq#9#1360#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "not_requested", "1": "requested"}#MS11#RC07
+UDB23VCCD#9#1360#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB22VCCD#9#1360#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB21VCCD#9#1360#false#false#21#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB20VCCD#9#1360#false#false#20#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB19VCCD#9#1360#false#false#19#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB18VCCD#9#1360#false#false#18#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB17VCCD#9#1360#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+VCCDLampRepeatMsgSt#9#1360#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#RC07
+UDB31VCCD#9#1360#false#false#31#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB30VCCD#9#1360#false#false#30#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB29VCCD#9#1360#false#false#29#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB28VCCD#9#1360#false#false#28#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB27VCCD#9#1360#false#false#27#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB26VCCD#9#1360#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB25VCCD#9#1360#false#false#25#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB24VCCD#9#1360#false#false#24#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB39VCCD#9#1360#false#false#39#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB38VCCD#9#1360#false#false#38#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB37VCCD#9#1360#false#false#37#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB36VCCD#9#1360#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB35VCCD#9#1360#false#false#35#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB34VCCD#9#1360#false#false#34#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB33VCCD#9#1360#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB32VCCD#9#1360#false#false#32#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB47VCCD#9#1360#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB46VCCD#9#1360#false#false#46#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB45VCCD#9#1360#false#false#45#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB44VCCD#9#1360#false#false#44#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB43VCCD#9#1360#false#false#43#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB42VCCD#9#1360#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB41VCCD#9#1360#false#false#41#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB40VCCD#9#1360#false#false#40#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB53VCCD#9#1360#false#false#53#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB52VCCD#9#1360#false#false#52#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB51VCCD#9#1360#false#false#51#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB50VCCD#9#1360#false#false#50#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+UDB49VCCD#9#1360#false#false#49#1#1#0##0.0#0.0#0.0#null#MS11#RC07
+NMKeepAwkRsnVCCD#9#1360#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#RC07
+VCCDToHCMLDiagReq#9#1890#false#false#7#512#1#0##0.0#0.0#0.0#null#MS11#RC07
+VCCDToHCMRDiagReq#9#1891#false#false#7#512#1#0##0.0#0.0#0.0#null#MS11#RC07
+VCCDToLampFuncDiagReq#9#2047#false#false#7#64#1#0#VCCDToLampCanfdFuncDiagReqNpdu#0.0#0.0#0.0#null#MS11#RC07
+VCCDToRLCMDiagReq#9#1892#false#false#7#512#1#0##0.0#0.0#0.0#null#MS11#RC07

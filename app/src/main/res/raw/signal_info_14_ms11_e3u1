@@ -1,0 +1,463 @@
+ADD2BLEMForRPA00#14#238#false#false#7#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3U1
+ADD2BLEMForRPA01#14#238#false#false#71#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3U1
+ADD2BLEMForRPA02#14#238#false#false#135#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3U1
+ADD2BLEMForRPA03#14#238#false#false#199#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3U1
+WhlStsSigGrpChks#14#179#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdFrntLeVld#14#179#false#false#15#1#1#0#Status of wheel speed front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlSpdFrntRiVld#14#179#false#false#14#1#1#0#Status of wheel speed front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlSpdReLeVld#14#179#false#false#13#1#1#0#Status of wheel speed rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlSpdReRiVld#14#179#false#false#12#1#1#0#Status of wheel speed rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlStsSigGrpCntr#14#179#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdFrntLe#14#179#false#false#23#16#0.05625#0.0#Wheel speed front left#0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdFrntRi#14#179#false#false#39#16#0.05625#0.0#Wheel speed front right#0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdReLe#14#179#false#false#55#16#0.05625#0.0#Wheel speed rear left#0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdReRi#14#179#false#false#71#16#0.05625#0.0#Wheel speed rear right#0.0#0.0#0.0#null#MS11#E3U1
+VehSpd#14#179#false#false#87#16#0.05625#0.0#Vehicle speed#0.0#0.0#0.0#null#MS11#E3U1
+VehSpdVld#14#179#false#false#103#1#1#0#Qualifier for vehicle speed signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirFrntLeVld#14#179#false#false#102#1#1#0#Qualifier for wheel moving direction front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirFrntLe#14#179#false#false#101#2#1#0#Wheel moving direction front left#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#E3U1
+WhlSpdEdgeFrntLeVld#14#179#false#false#99#1#1#0#Qualifier for wheel speed Edges front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirFrntRiVld#14#179#false#false#98#1#1#0#Qualifier for wheel moving direction front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirFrntRi#14#179#false#false#97#2#1#0#Wheel moving direction front right#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#E3U1
+WhlSpdEdgeFrntLe#14#179#false#false#111#8#1#0#Wheel speed Edges front left#0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdEdgeFrntRiVld#14#179#false#false#119#1#1#0#Qualifier for wheel speed Edges front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirReLeVld#14#179#false#false#118#1#1#0#Qualifier for wheel moving direction rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirReLe#14#179#false#false#117#2#1#0#Wheel moving direction rear left#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#E3U1
+WhlSpdEdgeReLeVld#14#179#false#false#115#1#1#0#Qualifier for wheel speed Edges rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirReRiVld#14#179#false#false#114#1#1#0#Qualifier for wheel moving direction rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirReRi#14#179#false#false#113#2#1#0#Wheel moving direction rear right#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#E3U1
+WhlSpdEdgeFrntRi#14#179#false#false#127#8#1#0#Wheel speed Edges front right#0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdEdgeReLe#14#179#false#false#135#8#1#0#Wheel speed Edges rear left#0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdEdgeReRiVld#14#179#false#false#143#1#1#0#Qualifier for wheel speed Edges rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlSpdEdgeReRi#14#179#false#false#151#8#1#0#Wheel speed Edges rear right#0.0#0.0#0.0#null#MS11#E3U1
+WhlDstTiStampFrntLe#14#179#false#false#159#16#1#0#Wheel distance time stamp for front left#0.0#0.0#0.0#null#MS11#E3U1
+WhlDstTiStampFrntRi#14#179#false#false#175#16#1#0#Wheel distance time stamp for front right#0.0#0.0#0.0#null#MS11#E3U1
+WhlDstTiStampReLe#14#179#false#false#191#16#1#0#Wheel distance time stamp for rear left#0.0#0.0#0.0#null#MS11#E3U1
+WhlDstTiStampReRi#14#179#false#false#207#16#1#0#Wheel distance time stamp for rear left#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMCli00#14#348#false#false#7#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMCli01#14#348#false#false#71#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMCli02#14#348#false#false#135#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMCli03#14#348#false#false#199#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMCli04#14#348#false#false#263#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMCli05#14#348#false#false#327#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMCli06#14#348#false#false#391#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMCli07#14#348#false#false#455#64#1#0#BLEA返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMForBTReq00#14#771#false#false#7#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMForBTReq01#14#771#false#false#71#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMForBTReq02#14#771#false#false#135#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMForBTReq03#14#771#false#false#199#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMForBTReq04#14#771#false#false#263#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMForBTReq05#14#771#false#false#327#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMForBTReq06#14#771#false#false#391#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEA2BLEMForBTReq07#14#771#false#false#455#64#1#0#车内BLEA蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEANodeAddress#14#1385#false#false#7#8#1#0#Node source address\n节点源地址#0.0#0.0#0.0#null#MS11#E3U1
+BLEAActiveWakeup#14#1385#false#false#12#1#1#0#Active Wakeup Bit\n主动唤醒指示位#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3U1
+BLEARepeatMsgReq#14#1385#false#false#8#1#1#0#Repeat Message Request Bit\n重复报文请求位#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3U1
+BLEARepeatMsgSt#14#1385#false#false#16#1#1#0#Repeat Message State indication\n节点处在重复报文状态指示位#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3U1
+BLEM2BLEACli00#14#346#false#false#7#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2BLEACli01#14#346#false#false#71#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2BLEACli02#14#346#false#false#135#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2BLEACli03#14#346#false#false#199#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2BLEACli04#14#346#false#false#263#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2BLEACli05#14#346#false#false#327#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2BLEACli06#14#346#false#false#391#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2BLEACli07#14#346#false#false#455#64#1#0#BLEM发送给BLEA的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMCli00#14#362#false#false#7#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMCli01#14#362#false#false#71#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMCli02#14#362#false#false#135#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMCli03#14#362#false#false#199#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMCli04#14#362#false#false#263#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMCli05#14#362#false#false#327#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMCli06#14#362#false#false#391#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMCli07#14#362#false#false#455#64#1#0#BLEM发送给NEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCCli00#14#364#false#false#7#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCCli01#14#364#false#false#71#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCCli02#14#364#false#false#135#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCCli03#14#364#false#false#199#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCCli04#14#364#false#false#263#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCCli05#14#364#false#false#327#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCCli06#14#364#false#false#391#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCCli07#14#364#false#false#455#64#1#0#BLEM发送给WPC的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+RemRPASigGrpChks#14#444#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+RemRPASigGrpCntr#14#444#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+RPARemReq#14#444#false#false#18#2#1#0#遥控泊车APP开关#0.0#0.0#0.0#{"0": "No_Request", "1": "RPA_Request", "2": "Reserved1", "3": "Reserved1"}#MS11#E3U1
+RCAvailable#14#444#false#false#16#1#1#0#远控设备可用#0.0#0.0#0.0#{"0": "Not_Available", "1": "Available"}#MS11#E3U1
+BLEM2DigKeyAnch00#14#797#false#false#7#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2DigKeyAnch01#14#797#false#false#71#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2DigKeyAnch02#14#797#false#false#135#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2DigKeyAnch03#14#797#false#false#199#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2DigKeyAnch04#14#797#false#false#263#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2DigKeyAnch05#14#797#false#false#327#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2DigKeyAnch06#14#797#false#false#391#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2DigKeyAnch07#14#797#false#false#455#64#1#0#车内BLEM通知BLEA NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMForNFCResp00#14#798#false#false#7#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMForNFCResp01#14#798#false#false#71#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMForNFCResp02#14#798#false#false#135#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMForNFCResp03#14#798#false#false#199#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMForNFCResp04#14#798#false#false#263#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMForNFCResp05#14#798#false#false#327#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMForNFCResp06#14#798#false#false#391#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2NEMForNFCResp07#14#798#false#false#455#64#1#0#BLEM响应车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCResp00#14#812#false#false#7#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCResp01#14#812#false#false#71#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCResp02#14#812#false#false#135#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCResp03#14#812#false#false#199#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCResp04#14#812#false#false#263#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCResp05#14#812#false#false#327#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCResp06#14#812#false#false#391#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2WPCResp07#14#812#false#false#455#64#1#0#BLEM响应WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForNFCReq00#14#813#false#false#7#32#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForNFCReq01#14#813#false#false#39#32#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForNFCReq02#14#813#false#false#71#32#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForNFCReq03#14#813#false#false#103#32#1#0#BLEM发送NFC卡片请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForNFCReq04#14#813#false#false#135#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForNFCReq05#14#813#false#false#167#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForNFCReq06#14#813#false#false#199#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForNFCReq07#14#813#false#false#231#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2ADDForRPA00#14#825#false#false#7#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2ADDForRPA01#14#825#false#false#71#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2ADDForRPA02#14#825#false#false#135#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2ADDForRPA03#14#825#false#false#199#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForLocn00#14#826#false#false#7#32#1#0#手机定位信息#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForLocn01#14#826#false#false#39#32#1#0#手机定位信息#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForLocn02#14#826#false#false#71#32#1#0#手机定位信息#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForLocn03#14#826#false#false#103#32#1#0#手机定位信息#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForLocn04#14#826#false#false#135#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForLocn05#14#826#false#false#167#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForLocn06#14#826#false#false#199#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForLocn07#14#826#false#false#231#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForRkeReq00#14#827#false#false#7#32#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForRkeReq01#14#827#false#false#39#32#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForRkeReq02#14#827#false#false#71#32#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForRkeReq03#14#827#false#false#103#32#1#0#BLEM发送RKE请求#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForRkeReq04#14#827#false#false#135#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForRkeReq05#14#827#false#false#167#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForRkeReq06#14#827#false#false#199#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDForRkeReq07#14#827#false#false#231#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDSrchResp00#14#829#false#false#7#32#1#0#VCCD寻钥匙反馈#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDSrchResp01#14#829#false#false#39#32#1#0#VCCD寻钥匙反馈#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDSrchResp02#14#829#false#false#71#32#1#0#VCCD寻钥匙反馈#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDSrchResp03#14#829#false#false#103#32#1#0#VCCD寻钥匙反馈#0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDSrchResp04#14#829#false#false#135#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDSrchResp05#14#829#false#false#167#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDSrchResp06#14#829#false#false#199#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEM2VCCDSrchResp07#14#829#false#false#231#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEMNodeAddress#14#1383#false#false#7#8#1#0#Node source address\n节点源地址#0.0#0.0#0.0#null#MS11#E3U1
+BLEMActiveWakeup#14#1383#false#false#12#1#1#0#Active Wakeup Bit\n主动唤醒指示位#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3U1
+BLEMRepeatMsgReq#14#1383#false#false#8#1#1#0#Repeat Message Request Bit\n重复报文请求位#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3U1
+UDB23BLEM#14#1383#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB17BLEM#14#1383#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BLEMRepeatMsgSt#14#1383#false#false#16#1#1#0#Repeat Message State indication\n节点处在重复报文状态指示位#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3U1
+NMKeepAwkRsnBLEM#14#1383#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BattURawSigGrpChks#14#579#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BattURawSigGrpCntr#14#579#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BattURaw#14#579#false#false#16#9#0.025#5.0#Battery Voltage raw\n电池电压#0.0#0.0#0.0#null#MS11#E3U1
+BattSocRaw#14#579#false#false#49#10#0.1#0.0#Battery State of charge raw\n电池SOC#0.0#0.0#0.0#null#MS11#E3U1
+TotOdoAcrt#14#914#false#false#7#24#0.1#0.0#ODO value as accuracy of 0.1 km#0.0#0.0#0.0#null#MS11#E3U1
+TotOdoAcrtVld#14#914#false#false#25#1#1#0#The valid signal of TotOdoAcrt#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3U1
+TiModCfgSts#14#914#false#false#24#1#1#0#DCD time mode configuration status#0.0#0.0#0.0#{"0": "24h_mode", "1": "12h_mode"}#MS11#E3U1
+DCDVINMat#14#914#false#false#32#1#1#0#DCD VIN Match\nVIN匹配信号#0.0#0.0#0.0#{"0": "Mismatch", "1": "Match"}#MS11#E3U1
+DCDAmbAvgTFromCld#14#928#false#false#23#8#1#-80#Ambient average temperature from internet based on vehicle location In the next two days\n根据车辆位置从云端获取的未来两天环境平均温度#0.0#0.0#0.0#null#MS11#E3U1
+DCDAmbAvgTFromCldVld#14#928#false#false#24#1#1#0#Ambient average temperature from internet based on vehicle location valid value.\n根据车辆位置从云端获取的未来两天环境平均温度有效值#0.0#0.0#0.0#{"0": "Not_valid", "1": "Valid"}#MS11#E3U1
+DCDAmbHumFromCld#14#928#false#false#39#7#1#0#Ambient humidity from internet based on vehicle location.\n根据车辆位置从云端获取的环境湿度#0.0#0.0#0.0#null#MS11#E3U1
+DCDAmbHumFromCldVld#14#928#false#false#40#1#1#0#Ambient humidity from internet based on vehicle location valid value.\n根据车辆位置从云端获取的环境湿度有效值#0.0#0.0#0.0#{"0": "Not_valid", "1": "Valid"}#MS11#E3U1
+DCDAmbMinTFromCld#14#928#false#false#55#8#1#-80#Ambient minimum temperature from internet based on vehicle location In the next two days\n根据车辆位置从云端获取的未来两天环境最低温度#0.0#0.0#0.0#null#MS11#E3U1
+DCDAmbMinTFromCldVld#14#928#false#false#56#1#1#0#Ambient minimum temperature from internet based on vehicle location valid value.\n根据车辆位置从云端获取的未来两天环境最低温度有效值#0.0#0.0#0.0#{"0": "Not_valid", "1": "Valid"}#MS11#E3U1
+DCDHoodOpenSet#14#929#false#false#7#2#1#0#DCD Hood open set\n前舱盖控制命令#0.0#0.0#0.0#{"0": "No_Command", "1": "Close", "2": "Open"}#MS11#E3U1
+DCDHoodRelsBtn#14#929#false#false#5#1#1#0#DCD Hood Release Button\n前舱盖控制按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+CenLockgCmd#14#929#false#false#4#2#1#0#Central locking Command\n车内中控解闭锁控制命令#0.0#0.0#0.0#{"0": "No_Command", "1": "Unlock", "2": "Lock"}#MS11#E3U1
+ParkUnlckCfgSet#14#929#false#false#1#2#1#0#Park UnLock configuration Set\nP挡自动解锁功能设定#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "ON"}#MS11#E3U1
+CenLockgBtn#14#929#false#false#15#1#1#0#Central locking Button\n车内中控解闭锁控制按键#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+SteerWhlAdjmtEna#14#929#false#false#14#1#1#0#Steering wheel adjustment enable\n方向盘调整使能#0.0#0.0#0.0#{"0": "No_Command", "1": "Enable"}#MS11#E3U1
+DCDChrgnLidOpenSet#14#929#false#false#13#2#1#0#DCD Charging lid open set\n充电口盖控制命令#0.0#0.0#0.0#{"0": "No_Command", "1": "Close", "2": "Open"}#MS11#E3U1
+DCDChrgnLidRelsBtn#14#929#false#false#11#1#1#0#DCD Charging lid release button\n充电口盖开关按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDTrOpenSet#14#929#false#false#10#2#1#0#DCD Trunk open set\n尾门控制命令#0.0#0.0#0.0#{"0": "No_Command", "1": "Close", "2": "Open"}#MS11#E3U1
+DCDTrRelsBtn#14#929#false#false#8#1#1#0#DCD Trunk Release Button\n尾门控制按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+SteerWhlHeatSet#14#929#false#false#23#4#1#0#DCD set steering wheel heat function\n方向盘加热功能设定#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "level1", "3": "level2", "4": "level3"}#MS11#E3U1
+SteerWhlHeatBtn#14#929#false#false#19#1#1#0#DCD s steering wheel heat button status\n方向盘加热按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+SteerWhlAdjmtCmd#14#929#false#false#18#3#1#0#Steering wheel adjustment Command\n方向盘调整指令#0.0#0.0#0.0#{"0": "No_Command", "1": "up", "2": "down", "3": "in", "4": "out"}#MS11#E3U1
+DCDDchrgnOnOffSet#14#929#false#false#31#2#1#0#DCD set discharging function#0.0#0.0#0.0#{"0": "No_Command", "1": "ON", "2": "OFF"}#MS11#E3U1
+RearFogLampSet#14#929#false#false#29#2#1#0#DCD set rear fog lamp function\n后雾灯功能设定#0.0#0.0#0.0#{"0": "No_Command", "1": "Close", "2": "Open"}#MS11#E3U1
+RearFogLampBtn#14#929#false#false#27#1#1#0#DCD s rear fog lamp button status\n后雾灯按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+ExtrMirrFoldHmiReqCmd#14#929#false#false#39#2#1#0#Exterior mirror fold HMI request command.\nHMI外后视镜折叠指令#0.0#0.0#0.0#{"0": "No_Command", "1": "Fold", "2": "Unfold"}#MS11#E3U1
+IllmnSet#14#929#false#false#37#4#1#0#Illumination Set\n背光亮度设定#0.0#0.0#0.0#{"0": "No_Command", "1": "Brightness1", "2": "Brightness2", "3": "Brightness3", "4": "Brightness4", "5": "Brightness5", "6": "Brightness6", "7": "Brightness7", "8": "Brightness8", "9": "Brightness9", "10": "Brightness10"}#MS11#E3U1
+AmbLiMainFcnSet#14#929#false#false#33#2#1#0#Ambient Light Main Function Set\n氛围灯主功能设定#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "Auto", "3": "Custom"}#MS11#E3U1
+DCDProfSave#14#929#false#false#47#2#1#0#DCD Profile Save#0.0#0.0#0.0#{"0": "No_Command", "1": "Confirm", "2": "Resume"}#MS11#E3U1
+ExtrMirrFoldCfgSet#14#929#false#false#45#2#1#0#Exterior Mirror fold configuration set\n外后视镜自动折叠配置设定#0.0#0.0#0.0#{"0": "No_Command", "1": "manual", "2": "Auto"}#MS11#E3U1
+ExtrMirrAdjCmd#14#929#false#false#43#3#1#0#Exterior Mirror Adjust Command\n外后视镜调节指令#0.0#0.0#0.0#{"0": "MirrDirReqTyp_Idle", "1": "MirrDirReqTyp_Up", "2": "MirrDirReqTyp_Dwn", "3": "MirrDirReqTyp_Le", "4": "MirrDirReqTyp_Ri"}#MS11#E3U1
+ExtrMirrFoldHmiReqBtn#14#929#false#false#40#1#1#0#Exterior mirror fold HMI request button status.\nHMI外后视镜折叠按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDAutoModSet#14#929#false#false#55#2#1#0#DCD set HVAC auro mode type funciton\n自动空调模式设定#0.0#0.0#0.0#{"0": "No_command", "1": "Low", "2": "Normal", "3": "High"}#MS11#E3U1
+DCDAirRecircSet#14#929#false#false#53#2#1#0#DCD set HVAC air recirculation funciton\n内外循环状态设置#0.0#0.0#0.0#{"0": "No_command", "1": "Inner_air_circulation", "2": "Outside_air_circulation", "3": "AUTO_air_circulation"}#MS11#E3U1
+DCDAirRecircBtn#14#929#false#false#51#1#1#0#DCD s air recirculation button press status\n内外循环按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+IntrMirrDimCfgSet#14#929#false#false#49#2#1#0#Interior mirror dimming configuration set\n内后视镜自动防眩目配置设定#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "ON"}#MS11#E3U1
+DCDEvaprSelfCleanSet#14#929#false#false#60#2#1#0#DCD set HVAC evaprator self clean funciton\n蒸发器自干燥设定#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#E3U1
+ExtrMirrTiltCfgSet#14#929#false#false#58#3#1#0#Exterior mirror tilt config set#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "Only_Left", "3": "Only_Right", "4": "All"}#MS11#E3U1
+DCDFirstLeWindModSet#14#929#false#false#70#4#1#0#DCD set HVAC first left wind mode funciton\n主驾空调吹风方向设定#0.0#0.0#0.0#{"0": "No_command", "1": "Face", "2": "Foot", "3": "Faceandfoot", "4": "Defrost", "5": "FaceAndDefrost", "6": "FootAndDefrost", "7": "FaceAndFootAndDefrost"}#MS11#E3U1
+DCDFirstLeWindFootModBtn#14#929#false#false#66#1#1#0#DCD s first left wind foot Mode button press status\n主驾空调吹脚模式按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDFirstLeWindFaceModBtn#14#929#false#false#65#1#1#0#DCD s first left wind face mode button press status\n主驾空调吹脸模式按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDFirstLeWindDefrstModBtn#14#929#false#false#64#1#1#0#DCD s first left wind defrost mode button press status\n主驾空调除霜模式按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+RainSnsrSnvtySet#14#929#false#false#78#3#1#0#雨量传感器灵敏度设置#0.0#0.0#0.0#{"0": "No_Command", "1": "level1", "2": "level2", "3": "level3", "4": "level4", "5": "level5", "6": "level6", "7": "level7"}#MS11#E3U1
+DCDDelProID#14#929#false#false#75#4#1#0#DCD Delete ProfileID\n删除选中的用户习惯ID#0.0#0.0#0.0#{"0": "No_command", "1": "Delete_Current_ProfileID_1", "2": "Delete_Current_ProfileID_2", "3": "Delete_Current_ProfileID_3", "4": "Delete_Current_ProfileID_4", "5": "Delete_Current_ProfileID_5", "6": "Delete_Current_ProfileID_6", "7": "Delete_Current_ProfileID_7", "8": "Delete_Current_ProfileID_8", "9": "Delete_Current_ProfileID_9", "10": "Delete_Current_ProfileID_A", "11": "Delete_Current_ProfileID_B", "12": "Delete_Current_ProfileID_C", "13": "Delete_Current_ProfileID_D", "14": "Delete_Current_ProfileID_E", "15": "Delete_Current_ProfileID_F"}#MS11#E3U1
+ReDefrstBtn#14#929#false#false#87#1#1#0#Rear defrost button status\n后除霜按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+WiprSrvModSet#14#929#false#false#86#2#1#0#Wiper service mode Set\n雨刮维修模式设定#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "ON"}#MS11#E3U1
+DCDHVACAutoBtn#14#929#false#false#83#1#1#0#DCD s HVAC Auto button press status\n空调系统AUTO模式开关按键#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDHVACOnOffSet#14#929#false#false#82#2#1#0#DCD set HVAC on off funciton\n空调系统开关设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#E3U1
+DCDHVACOnOffBtn#14#929#false#false#80#1#1#0#DCD s HVAC ON OFF button press status\n空调系统开关按键#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+ExtrMirrSelnHmiEna#14#929#false#false#95#2#1#0#Exterior mirror selection HMI enable status\nHMI外后视镜选择使能状态#0.0#0.0#0.0#{"0": "No_Command", "1": "Left_enable", "2": "Right_enable"}#MS11#E3U1
+ChrgnOnOffSet#14#929#false#false#93#2#1#0#DCD Charging On Off set\n充电控制#0.0#0.0#0.0#{"0": "No_Command", "1": "On", "2": "Pause", "3": "Off"}#MS11#E3U1
+PassSideAirbClsSet#14#929#false#false#91#2#1#0#passenger side airbag close Set\n副驾安全气囊关闭设定#0.0#0.0#0.0#{"0": "no_command", "1": "enable", "2": "disable"}#MS11#E3U1
+ReDefrstCmd#14#929#false#false#89#2#1#0#Rear defrost command\n后除霜命令#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "ON"}#MS11#E3U1
+ChrgnSOCLimSet#14#929#false#false#102#7#1.0#-1.0#DCD set charging limit SOC function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3U1
+DCDHVACACMaxSet#14#929#false#false#111#2#1#0#DCD set HVAC AC Max funciton\n空调系统AC MAX设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#E3U1
+DCDHVACACMaxBtn#14#929#false#false#109#1#1#0#DCD s HVAC AC Max button press status\n空调系统AC MAX按键#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDHVACACSet#14#929#false#false#108#2#1#0#DCD set HVAC AC funciton\n空调系统AC设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#E3U1
+DCDHVACACBtn#14#929#false#false#106#1#1#0#DCD s HVAC AC button press status\n空调系统AC按键#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDHVACAutoSet#14#929#false#false#105#2#1#0#DCD set HVAC auto funciton\n空调系统AUTO模式开关设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#E3U1
+DCDFirstLeTSet#14#929#false#false#118#5#1#0#DCD set HVAC first row left temperature to xxx  \n前排左侧温度设定值#0.0#0.0#0.0#{"0": "No_command", "1": "Lo", "2": "18p5", "3": "19", "4": "19p5", "5": "20", "6": "20p5", "7": "21", "8": "21p5", "9": "22", "10": "22p5", "11": "23", "12": "23p5", "13": "24", "14": "24p5", "15": "25", "16": "25p5", "17": "26", "18": "26p5", "19": "27", "20": "27p5", "21": "28", "22": "28p5", "23": "29", "24": "29p5", "25": "30", "26": "30p5", "27": "31", "28": "31p5", "29": "Hi"}#MS11#E3U1
+DCDFirstLeTIncBtn#14#929#false#false#113#1#1#0#DCD s first row left temperature increase button press status\n主驾温度增加按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDFirstLeTDecBtn#14#929#false#false#112#1#1#0#DCD s first row left temperature decrease button press status\n主驾温度减小按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDFirstRiTSet#14#929#false#false#126#5#1#0#DCD set HVAC first row right temperature to xxx \n前排右侧温度设定值#0.0#0.0#0.0#{"0": "No_command", "1": "Lo", "2": "18p5", "3": "19", "4": "19p5", "5": "20", "6": "20p5", "7": "21", "8": "21p5", "9": "22", "10": "22p5", "11": "23", "12": "23p5", "13": "24", "14": "24p5", "15": "25", "16": "25p5", "17": "26", "18": "26p5", "19": "27", "20": "27p5", "21": "28", "22": "28p5", "23": "29", "24": "29p5", "25": "30", "26": "30p5", "27": "31", "28": "31p5", "29": "Hi"}#MS11#E3U1
+DCDFirstRiTIncBtn#14#929#false#false#121#1#1#0#DCD s first row right temperature increase button press status\n副驾温度增加按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDFirstRiTDecBtn#14#929#false#false#120#1#1#0#DCD s first row right temperature decrease button press status\n副驾温度减小按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDFrntFanSpdSet#14#929#false#false#135#4#1#0#DCD set HVAC front fan speed funciton\n前排风量设定#0.0#0.0#0.0#{"0": "No_command", "1": "Level_0", "2": "Level_1", "3": "Level_2", "4": "Level_3", "5": "Level_4", "6": "Level_5", "7": "Level_6", "8": "Level_7", "9": "Level_8"}#MS11#E3U1
+DCDFrntFanSpdIncBtn#14#929#false#false#129#1#1#0#DCD s front fan speed increase button press status\n前排风量增大软按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDFrntFanSpdDecBtn#14#929#false#false#128#1#1#0#DCD s front fan speed decrease button press status\n前排风量减小软按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDWpcChrgSet#14#929#false#false#143#2#1#0#DCD WPC charge set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3U1
+DCDHVACECOSet#14#929#false#false#141#2#1#0#DCD set HVAC ECO funciton\n空调ECO功能设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#E3U1
+DCDHVACECOBtn#14#929#false#false#139#1#1#0#DCD s ECO button press status\n空调ECO按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDFrntSyncSet#14#929#false#false#138#2#1#0#DCD set HVAC front SYNC funciton\n前排温区同步功能设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#E3U1
+DCDFrntSyncBtn#14#929#false#false#136#1#1#0#DCD s HVAC front SYNC status\n前排温区同步按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+DCDTimedVentSet#14#929#false#false#150#2#1#0#DCD set HVAC timed ventilation funciton\n定时通风设定#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#E3U1
+DCDOvrHeatProtectSet#14#929#false#false#148#2#1#0#DCD set HVAC over heat protect funciton\n空调过热保护设定#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#E3U1
+DCDHVACFrntDefrstSet#14#929#false#false#146#2#1#0#DCD set HVAC front defrost defog funciton\n前除霜 除雾设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "Defog", "3": "Max_defrost"}#MS11#E3U1
+DCDHVACFrntDefrstBtn#14#929#false#false#144#1#1#0#DCD s front defrost defog button press status\n前除霜 除雾按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3U1
+BookchrgnHeatEndMinSet#14#929#false#false#159#6#1.0#-1.0#passenger room and HV battery book heating end minute time#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3U1
+DCDUnlockVentSet#14#929#false#false#153#2#1#0#DCD set HVAC unlock ventilation funciton\n解锁通风设定#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#E3U1
+BookchrgnHeatEndHrSet#14#929#false#false#167#5#1.0#-1.0#opassenger room and HV battery book heating end hour time#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3U1
+BookDefdTiHvBattHeatgSet#14#929#false#false#162#2#1#0#Book defined time charging HV battery book heating control#0.0#0.0#0.0#{"0": "No_Command", "1": "ON", "2": "OFF"}#MS11#E3U1
+BookDefdTiPassHeatgSet#14#929#false#false#175#2#1#0#Book defined time charging passenger room book heating control#0.0#0.0#0.0#{"0": "No_Command", "1": "ON", "2": "OFF"}#MS11#E3U1
+BookDepartrHvBattHeatgSet#14#929#false#false#173#2#1#0#Book departure charging HV battery book heating control#0.0#0.0#0.0#{"0": "No_Command", "1": "ON", "2": "OFF"}#MS11#E3U1
+BookDepartrPassHeatgSet#14#929#false#false#171#2#1#0#Book departure charging passenger room book heating control#0.0#0.0#0.0#{"0": "No_Command", "1": "ON", "2": "OFF"}#MS11#E3U1
+DCDRiExtrMirrHozlPerctSet#14#929#false#false#183#8#1.0#-1.0#DCD Right Exterior Mirror Horizontal Percentage Set#0.0#0.0#0.0#{"0": "No_Command", "255": "Stop"}#MS11#E3U1
+DCDBookDepartrMinSet#14#929#false#false#191#6#1.0#-1.0#DCD set book departure min time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3U1
+DCDACChrgnCurMaxSet#14#929#false#false#199#10#0.1#-0.1#DCD set AC charging current max value function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3U1
+DCDBookAutoManStopSet#14#929#false#false#205#2#1#0#DCD set book Auto Manual charging stop#0.0#0.0#0.0#{"0": "No_Command", "1": "Manual", "2": "Auto"}#MS11#E3U1
+DCDBookchrgnModSet#14#929#false#false#203#2#1#0#DCD set book charging mode function#0.0#0.0#0.0#{"0": "No_Command", "1": "Departecture_charging_set", "2": "Defined_time_charging_set"}#MS11#E3U1
+DCDBookchrgnOnOffSet#14#929#false#false#201#2#1#0#DCD set book charging on off function#0.0#0.0#0.0#{"0": "No_Comamnd", "1": "ON", "2": "OFF"}#MS11#E3U1
+DCDBookchrgnRepTypSet#14#929#false#false#215#2#1#0#DCD set book charging repeat type function#0.0#0.0#0.0#{"0": "No_Command", "1": "weekday_repeat", "2": "everyday_repeat"}#MS11#E3U1
+DCDBookchrgnStopHourSet#14#929#false#false#213#5#1.0#-1.0#DCD set book charging stop hour time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3U1
+DCDTouchScrStsForPwrMod#14#929#false#false#208#1#1#0#DCD Touch screen Status For PowerMode#0.0#0.0#0.0#{"0": "Idle", "1": "Touched_for_PowerMode"}#MS11#E3U1
+DCDBookchrgnStoptMinSet#14#929#false#false#223#6#1.0#-1.0#DCD set book charging stop min time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3U1
+DCDBookDepartrRepTypSet#14#929#false#false#217#2#1#0#DCD set book departure repeat type function#0.0#0.0#0.0#{"0": "No_Command", "1": "Weekday_repeat", "2": "Everyday_repeat"}#MS11#E3U1
+DCDBookchrgnStrtHourSet#14#929#false#false#231#5#1.0#-1.0#DCD set book charging start hour time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3U1
+DCDHvBattHeatgSet#14#929#false#false#239#2#1#0#High Voltage battery heating set#0.0#0.0#0.0#{"0": "No_Command", "1": "ON", "2": "OFF"}#MS11#E3U1
+DCDBookchrgnStrtMinSet#14#929#false#false#237#6#1.0#-1.0#DCD set book charging start min time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3U1
+DCDBookDepartrHourSet#14#929#false#false#247#5#1.0#-1.0#DCD set book departure hour time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3U1
+DCDDchrgnSOCMinSet#14#929#false#false#255#7#1.0#-1.0#DCD set discharging min SOC function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3U1
+DCD2BLEMForRPA00#14#132#false#false#7#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3U1
+DCD2BLEMForRPA01#14#132#false#false#71#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3U1
+DCD2BLEMForRPA02#14#132#false#false#135#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3U1
+DCD2BLEMForRPA03#14#132#false#false#199#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3U1
+FZCU2VCCDRsvByte0#14#279#false#false#7#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+FZCU2VCCDRsvByte1#14#279#false#false#15#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+FZCU2VCCDRsvByte2#14#279#false#false#23#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+FZCU2VCCDRsvByte3#14#279#false#false#31#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+FZCU2VCCDRsvByte4#14#279#false#false#39#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+FZCU2VCCDRsvByte5#14#279#false#false#47#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+FZCU2VCCDRsvByte6#14#279#false#false#55#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+FZCU2VCCDRsvByte7#14#279#false#false#63#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+FZCUDKreserved#14#1264#false#false#0#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FZCU2VCCDDKreserved#14#1265#false#false#0#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FZCUXCP#14#1408#false#false#0#1#1#0#XCP调试信号#0.0#0.0#0.0#null#MS11#E3U1
+UDB34FZCU#14#1352#false#false#34#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB46FZCU#14#1352#false#false#46#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+NMKeepAwkRsnFZCU#14#1352#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3U1
+LZCU2VCCDRsvByte0#14#280#false#false#7#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+LZCU2VCCDRsvByte1#14#280#false#false#15#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+LZCU2VCCDRsvByte2#14#280#false#false#23#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+LZCU2VCCDRsvByte3#14#280#false#false#31#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+LZCU2VCCDRsvByte4#14#280#false#false#39#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+LZCU2VCCDRsvByte5#14#280#false#false#47#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+LZCU2VCCDRsvByte6#14#280#false#false#55#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+LZCU2VCCDRsvByte7#14#280#false#false#63#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+LZCUDKreserved#14#1266#false#false#0#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+LZCU2VCCDDKreserved#14#1267#false#false#0#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+LZCUXCP#14#1410#false#false#0#1#1#0#XCP调试信号#0.0#0.0#0.0#null#MS11#E3U1
+UDB22LZCU#14#1353#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB26LZCU#14#1353#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB33LZCU#14#1353#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB44LZCU#14#1353#false#false#44#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB49LZCU#14#1353#false#false#49#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+NMKeepAwkRsnLZCU#14#1353#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMCli00#14#349#false#false#7#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMCli01#14#349#false#false#71#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMCli02#14#349#false#false#135#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMCli03#14#349#false#false#199#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMCli04#14#349#false#false#263#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMCli05#14#349#false#false#327#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMCli06#14#349#false#false#391#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMCli07#14#349#false#false#455#64#1#0#NEM返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForNFCReq00#14#792#false#false#7#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForNFCReq01#14#792#false#false#71#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForNFCReq02#14#792#false#false#135#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForNFCReq03#14#792#false#false#199#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForNFCReq04#14#792#false#false#263#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForNFCReq05#14#792#false#false#327#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForNFCReq06#14#792#false#false#391#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForNFCReq07#14#792#false#false#455#64#1#0#车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForBTReq00#14#831#false#false#7#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForBTReq01#14#831#false#false#71#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForBTReq02#14#831#false#false#135#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForBTReq03#14#831#false#false#199#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForBTReq04#14#831#false#false#263#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForBTReq05#14#831#false#false#327#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForBTReq06#14#831#false#false#391#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+NEM2BLEMForBTReq07#14#831#false#false#455#64#1#0#车内NEM蓝牙#0.0#0.0#0.0#null#MS11#E3U1
+NEMNodeAddress#14#1382#false#false#7#8#1#0#Node source address\n节点源地址#0.0#0.0#0.0#null#MS11#E3U1
+NEMActiveWakeup#14#1382#false#false#12#1#1#0#Active Wakeup Bit\n主动唤醒指示位#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3U1
+NEMRepeatMsgReq#14#1382#false#false#8#1#1#0#Repeat Message Request Bit\n重复报文请求位#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3U1
+UDB23NEM#14#1382#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+NEMRepeatMsgSt#14#1382#false#false#16#1#1#0#Repeat Message State indication\n节点处在重复报文状态指示位#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3U1
+NMKeepAwkRsnNEM#14#1382#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3U1
+RZCU2VCCDRsvByte0#14#281#false#false#7#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+RZCU2VCCDRsvByte1#14#281#false#false#15#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+RZCU2VCCDRsvByte2#14#281#false#false#23#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+RZCU2VCCDRsvByte3#14#281#false#false#31#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+RZCU2VCCDRsvByte4#14#281#false#false#39#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+RZCU2VCCDRsvByte5#14#281#false#false#47#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+RZCU2VCCDRsvByte6#14#281#false#false#55#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+RZCU2VCCDRsvByte7#14#281#false#false#63#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+RZCUDKreserved#14#1268#false#false#7#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+RZCU2VCCDDKreserved#14#1269#false#false#0#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+RZCUXCP#14#1412#false#false#7#1#1#0#XCP调试信号#0.0#0.0#0.0#null#MS11#E3U1
+UDB22RZCU#14#1354#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB26RZCU#14#1354#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+NMKeepAwkRsnRZCU#14#1354#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3U1
+TiDomn#14#263#false#false#4#5#1#0#time domain#0.0#0.0#0.0#{"0": "UTC_plus_0", "1": "UTC_plus_1", "2": "UTC_plus_2", "3": "UTC_plus_3", "4": "UTC_plus_4", "5": "UTC_plus_5", "6": "UTC_plus_6", "7": "UTC_plus_7", "8": "UTC_plus_8", "9": "UTC_plus_9", "10": "UTC_plus_10", "11": "UTC_plus_11", "12": "UTC_plus_12", "13": "UTC_plus_13", "14": "UTC_plus_14", "15": "UTC_plus_15", "16": "UTC_plus_16", "17": "UTC_plus_17", "18": "UTC_plus_18", "19": "UTC_plus_19", "20": "UTC_plus_20", "21": "UTC_plus_21", "22": "UTC_plus_22", "23": "UTC_plus_23", "24": "Invalid"}#MS11#E3U1
+DateTiYr#14#263#false#false#15#8#1.0#2000.0#date time year#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+DateTiMth#14#263#false#false#19#4#1.0#0.0#date time month#0.0#0.0#0.0#{"0": "Invalid"}#MS11#E3U1
+DateTiDay#14#263#false#false#28#5#1#0#date time day#0.0#0.0#0.0#{"0": "init"}#MS11#E3U1
+DateTiHr#14#263#false#false#36#5#1.0#0.0#date time hour#0.0#0.0#0.0#{"24": "Invalid"}#MS11#E3U1
+DateTiMins#14#263#false#false#45#6#1.0#0.0#date time minute#0.0#0.0#0.0#{"60": "Invalid"}#MS11#E3U1
+DateTiSec#14#263#false#false#55#6#1.0#0.0#date time second#0.0#0.0#0.0#{"60": "Invalid"}#MS11#E3U1
+DateTiMilsec#14#263#false#false#49#10#1.0#0.0#date time millisecond#0.0#0.0#0.0#{"1000": "invalid"}#MS11#E3U1
+TZCU2VCCDRsvByte0#14#282#false#false#7#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+TZCU2VCCDRsvByte1#14#282#false#false#15#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+TZCU2VCCDRsvByte2#14#282#false#false#23#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+TZCU2VCCDRsvByte3#14#282#false#false#31#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+TZCU2VCCDRsvByte4#14#282#false#false#39#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+TZCU2VCCDRsvByte5#14#282#false#false#47#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+TZCU2VCCDRsvByte6#14#282#false#false#55#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+TZCU2VCCDRsvByte7#14#282#false#false#63#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+TZCUDKreserved#14#1270#false#false#0#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+TZCU2VCCDDKreserved#14#1271#false#false#0#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+TZCUXCP#14#1414#false#false#0#1#1#0#XCP调试信号#0.0#0.0#0.0#null#MS11#E3U1
+UDB22TZCU#14#1355#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+NMKeepAwkRsnTZCU#14#1355#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3U1
+GearLvrSigGrpChks#14#272#false#false#15#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+GearLvrSigGrpCntr#14#272#false#false#19#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUGearLvrForDisp#14#272#false#false#25#3#1#0#仪表显示挡位\nP R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#MS11#E3U1
+DoorDrvrSts#14#272#false#false#63#2#1#0#驾驶侧门状态#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd"}#MS11#E3U1
+PwrModSigGrpChks#14#287#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+PwrModSigGrpCntr#14#287#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+PwrModSts#14#287#false#false#23#3#1#0#PowerMode Status#0.0#0.0#0.0#{"0": "OFF", "1": "Awake", "2": "ACC", "3": "RUN"}#MS11#E3U1
+PwrModVld#14#287#false#false#20#1#1#0#PowerMode Validty#0.0#0.0#0.0#{"0": "Valid", "1": "NotValid"}#MS11#E3U1
+VCUActGearSigGrpChks#14#287#false#false#47#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUActGearLvr#14#287#false#false#55#3#1#0#Actual gear level 车辆实际档位\nP R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#MS11#E3U1
+VCUActGearLvrVld#14#287#false#false#52#1#1#0#车辆实际档位有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCUActGearSigGrpCntr#14#287#false#false#51#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUPtRdyFlg#14#287#false#false#127#1#1#0#驾驶使能#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MS11#E3U1
+CarModSts#14#287#false#false#126#3#1#0#CarMode状态信号#0.0#0.0#0.0#{"0": "Normal", "1": "Fcy", "2": "Trsnp", "3": "Showroom", "4": "Dyno", "5": "OTAInstall", "6": "Service", "7": "Spare"}#MS11#E3U1
+VCCD2ZCURsvdByte0#14#289#false#false#7#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2ZCURsvdByte1#14#289#false#false#15#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2ZCURsvdByte2#14#289#false#false#23#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2ZCURsvdByte3#14#289#false#false#31#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMSrchReq00#14#769#false#false#7#32#1#0#VCCD寻钥匙#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMSrchReq01#14#769#false#false#39#32#1#0#VCCD寻钥匙#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMSrchReq02#14#769#false#false#71#32#1#0#VCCD寻钥匙#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMSrchReq03#14#769#false#false#103#32#1#0#VCCD寻钥匙#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMSrchReq04#14#769#false#false#135#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMSrchReq05#14#769#false#false#167#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMSrchReq06#14#769#false#false#199#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMSrchReq07#14#769#false#false#231#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForNFCResp00#14#770#false#false#7#32#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForNFCResp01#14#770#false#false#39#32#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForNFCResp02#14#770#false#false#71#32#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForNFCResp03#14#770#false#false#103#32#1#0#VCCD响应车外NFC请求#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForNFCResp04#14#770#false#false#135#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForNFCResp05#14#770#false#false#167#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForNFCResp06#14#770#false#false#199#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForNFCResp07#14#770#false#false#231#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForRkeResp00#14#828#false#false#7#32#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForRkeResp01#14#828#false#false#39#32#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForRkeResp02#14#828#false#false#71#32#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForRkeResp03#14#828#false#false#103#32#1#0#RKE请求应答#0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForRkeResp04#14#828#false#false#135#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForRkeResp05#14#828#false#false#167#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForRkeResp06#14#828#false#false#199#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2BLEMForRkeResp07#14#828#false#false#231#32#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2FZCUXCP#14#1409#false#false#0#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2LZCUXCP#14#1411#false#false#0#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2RZCUXCP#14#1413#false#false#0#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCD2TZCUXCP#14#1415#false#false#0#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCDZCUBkpNodeAddress#14#1356#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#E3U1
+VCCDZCUBkpActiveWakeup#14#1356#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3U1
+VCCDZCUBkpRepeatMsgReq#14#1356#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "not_requested", "1": "requested"}#MS11#E3U1
+UDB23VCCD#14#1356#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB22VCCD#14#1356#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB21VCCD#14#1356#false#false#21#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB19VCCD#14#1356#false#false#19#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB18VCCD#14#1356#false#false#18#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB17VCCD#14#1356#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCDZCUBkpRepeatMsgSt#14#1356#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3U1
+UDB31VCCD#14#1356#false#false#31#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB30VCCD#14#1356#false#false#30#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB29VCCD#14#1356#false#false#29#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB28VCCD#14#1356#false#false#28#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB27VCCD#14#1356#false#false#27#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB26VCCD#14#1356#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB25VCCD#14#1356#false#false#25#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB24VCCD#14#1356#false#false#24#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB39VCCD#14#1356#false#false#39#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB38VCCD#14#1356#false#false#38#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB36VCCD#14#1356#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB35VCCD#14#1356#false#false#35#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB34VCCD#14#1356#false#false#34#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB33VCCD#14#1356#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB32VCCD#14#1356#false#false#32#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB47VCCD#14#1356#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB46VCCD#14#1356#false#false#46#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB45VCCD#14#1356#false#false#45#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB44VCCD#14#1356#false#false#44#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB43VCCD#14#1356#false#false#43#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB42VCCD#14#1356#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB40VCCD#14#1356#false#false#40#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB53VCCD#14#1356#false#false#53#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB52VCCD#14#1356#false#false#52#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB51VCCD#14#1356#false#false#51#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB50VCCD#14#1356#false#false#50#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB49VCCD#14#1356#false#false#49#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+NMKeepAwkRsnVCCD#14#1356#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMCli00#14#363#false#false#7#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMCli01#14#363#false#false#71#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMCli02#14#363#false#false#135#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMCli03#14#363#false#false#199#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMCli04#14#363#false#false#263#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMCli05#14#363#false#false#327#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMCli06#14#363#false#false#391#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMCli07#14#363#false#false#455#64#1#0#WPC返回给BLEM的周期信号#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMReq00#14#795#false#false#7#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMReq01#14#795#false#false#71#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMReq02#14#795#false#false#135#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMReq03#14#795#false#false#199#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMReq04#14#795#false#false#263#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMReq05#14#795#false#false#327#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMReq06#14#795#false#false#391#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+WPC2BLEMReq07#14#795#false#false#455#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#E3U1
+WPCMobilPhnRmn#14#830#false#false#7#1#1#0#Mobile phone Reminder\n手机遗忘提醒#0.0#0.0#0.0#{"0": "\u6b63\u5e38", "1": "\u9057\u5fd8"}#MS11#E3U1
+WPCwpcChrgSt#14#830#false#false#6#1#1#0#Phone charging status\n手机充电状态#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#MS11#E3U1
+WPCReservedforTSP#14#1428#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+WPCNodeAddress#14#1384#false#false#7#8#1#0#Node source address\n节点源地址#0.0#0.0#0.0#null#MS11#E3U1
+WPCActiveWakeup#14#1384#false#false#12#1#1#0#Active Wakeup Bit\n主动唤醒指示位#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3U1
+WPCRepeatMsgReq#14#1384#false#false#8#1#1#0#Repeat Message Request Bit\n重复报文请求位#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3U1
+WPCRepeatMsgSt#14#1384#false#false#16#1#1#0#Repeat Message State indication\n节点处在重复报文状态指示位#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3U1

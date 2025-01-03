@@ -410,120 +410,84 @@ public class MainActivity3 extends AppCompatActivity {
             public void handle(JsonElement data, String callback) throws IOException {
 
                 JsonArray jsonArray = new JsonArray();
-//
-                // 获取所有的车类型
-                List<CarTypeEntity> carTypes = database.carTypeDao().getAll();
-                if (carTypes != null) {
-                    // 使用Map来处理重复的carTypeName
-                    Map<String, List<CarTypeEntity>> carTypeMap = new HashMap<>();
-                    for (CarTypeEntity carType : carTypes) {
-                        String carTypeName = carType.getCarTypeName();
-                        carTypeMap.computeIfAbsent(carTypeName, k -> new ArrayList<>()).add(carType);
-                    }
-//
-//                    // 遍历每个唯一的carTypeName
-//                    for (Map.Entry<String, List<CarTypeEntity>> entry : carTypeMap.entrySet()) {
-//                        JsonObject carTypeInfo = new JsonObject();
-//                        carTypeInfo.addProperty("label", entry.getKey());
-//                        carTypeInfo.addProperty("value", entry.getKey());
-//
-//                        JsonArray childrenArray = new JsonArray();
-//                        for (CarTypeEntity carType : entry.getValue()) {
-//                            long cid = carType.getId(); // 获取cid
-//                            String sdbName = carType.getSDBName(); // 获取sdbName
-//
-//                            // 获取该车类型下的所有不同的bus_name和bus_id
-//                            List<Map<String, Object>> busNamesAndIds = database.msgInfoDao().getDistinctBusNamesAndIdsByCid(new SimpleSQLiteQuery(
-//                                    "SELECT DISTINCT bus_name, bus_id FROM msg_info WHERE cid = ? ORDER BY bus_id",
-//                                    new Object[]{cid}));
-//
-//                            // 初始化comments数组，假设最大bus_id为50（根据实际情况调整）
-//                            List<String> comments = new ArrayList<>(Collections.nCopies(50, ""));
-//
-//                            // 根据bus_id排序后填充comments
-//                            for (Map<String, Object> row : busNamesAndIds) {
-//                                String busName = (String) row.get("bus_name");
-//                                int busId = (int) row.get("bus_id");
-//
-//                                // 将bus_name填充到对应的bus_id位置
-//                                comments.set(busId - 1, busName);  // bus_id从1开始，所以需要减1
-//                            }
-//
-//                            // 生成children中的信息
-//                            JsonObject childInfo = new JsonObject();
-//                            childInfo.addProperty("label", sdbName);
-//                            childInfo.addProperty("value", sdbName);
-//                            JsonArray commentArray = new JsonArray();
-//                            for (String comment : comments) {
-//                                commentArray.add(comment);
-//                            }
-//                            childInfo.add("comments", commentArray);
-//
-//                            childrenArray.add(childInfo);
-//                        }
-//
-//                        // 将children数组添加到carTypeInfo中
-//                        carTypeInfo.add("children", childrenArray);
-//
-//                        // 将最终的carTypeInfo添加到jsonArray中
-//                        jsonArray.add(carTypeInfo);
-//                    }
 
-                    // 遍历每个唯一的carTypeName
-                    for (Map.Entry<String, List<CarTypeEntity>> entry : carTypeMap.entrySet()) {
+                // 获取所有的车类型
+                List<String> carTypes = database.carTypeDao().getDistinctCarTypeNames();
+                if (carTypes != null) {
+
+                    for (String carTypeName : carTypes) {
                         JsonObject carTypeInfo = new JsonObject();
-                        carTypeInfo.addProperty("label", entry.getKey());
-                        carTypeInfo.addProperty("value", entry.getKey());
+                        carTypeInfo.addProperty("label", carTypeName);
+                        carTypeInfo.addProperty("value", carTypeName);
+
+                        //拼接children部分
+                        //step1 遍历carType，拼接children中的label和value
+
+                        //step2 遍历carType，根据cid查询bus_names和bus_id
+
+                        //step3 根据顺序讲bus_name组成children中的comments
 
                         JsonArray childrenArray = new JsonArray();
-                        for (CarTypeEntity carType : entry.getValue()) {
-                            long cid = carType.getId(); // 获取cid
-                            String sdbName = carType.getSDBName();
 
-                            // 获取该车类型下的所有不同的bus_name和bus_id
-                            List<ChannelInf> busNamesAndIds = database.msgInfoDao().getDistinctBusNamesAndIdsByCid(cid);
+                        List<String> sdbNames = database.carTypeDao().getSDBNames(carTypeName);
+                        if (sdbNames!= null) {
+                            for (String sdbName : sdbNames) {
+                                JsonObject child = new JsonObject();
+                                child.addProperty("label", sdbName);
+                                child.addProperty("value", sdbName);
 
-                            // 将bus_name按照bus_id排序（默认是按bus_id升序）
-                            Map<Integer, String> busMap = new HashMap<>();
-                            for (ChannelInf channelInf : busNamesAndIds) {
-                                busMap.put(channelInf.getBus_id(), channelInf.getBus_name());
-                            }
+                                // step2 根据cid查询bus_names和bus_id
+                                long cid = database.carTypeDao().getCidByName(carTypeName, sdbName);
+                                List<ChannelInf> channelInfos = database.msgInfoDao().getDistinctBusNamesAndIdsByCid(cid);
 
-                            // 拼接comments，按照bus_id排序
-                            List<String> comments = new ArrayList<>();
-                            // 假设最大bus_id为50，可以根据实际情况调整
-                            for (int i = 1; i <= 40; i++) {
-                                String busName = busMap.get(i); // 根据bus_id从map中获取bus_name
-                                if (busName != null) {
-                                    // 将bus_name添加到comments中
-                                    Log.d(TAG, "method 55555555: " + busName);
-                                    comments.add(busName);
-                                } else {
-                                    comments.add(""); // 如果没有对应的bus_id，放空
-                                    Log.d(TAG, "method 1111155555555: " );
+                                // step3 根据顺序将bus_name组成children中的comments
+                                JsonArray commentsArray = new JsonArray();
+                                commentsArray.add("");// 前面空一位
+                                // 创建一个以bus_id为索引的列表，方便按顺序填充
+//                                List<String> busNameList = new ArrayList<>();
+//                                for (int i = 0; i < channelInfos.size(); i++) {
+//                                    ChannelInf info = channelInfos.get(i);
+//                                    int busId = info.getBus_id();
+//                                    while (busNameList.size() < busId) {
+//                                        busNameList.add("");
+//                                    }
+//                                    busNameList.add(info.getBus_name());
+//                                }
+//                                while (busNameList.size() < 40) {
+//                                    busNameList.add("");
+//                                }
+//                                for (String busName : busNameList) {
+//                                    commentsArray.add(busName);
+//                                }
+                                int maxBusId = 0;
+                                if (!channelInfos.isEmpty()) {
+                                    maxBusId = channelInfos.get(channelInfos.size() - 1).getBus_id();
                                 }
-                            }
 
-                            // 构建children节点
-                            JsonObject child = new JsonObject();
-                            child.addProperty("label", sdbName);
-                            child.addProperty("value", sdbName);
-                            JsonArray commentsArray = new JsonArray();
-                            for (String comment : comments) {
-                                commentsArray.add(comment);
-                            }
-                            child.add("comments", commentsArray);
+                                for (int i = 1; i <= maxBusId; i++) {
+                                    boolean found = false;
+                                    for (ChannelInf info : channelInfos) {
+                                        if (info.getBus_id() == i) {
+                                            commentsArray.add(info.getBus_name());
+                                            found = true;
+                                            break;
+                                        }
+                                    }
+                                    if (!found) {
+                                        commentsArray.add("");
+                                    }
+                                }
 
-                            // 将该child节点加入到childrenArray中
-                            childrenArray.add(child);
+
+                                child.add("comments", commentsArray);
+                                childrenArray.add(child);
+                            }
                         }
-
-                        // 将children节点添加到carTypeInfo中
                         carTypeInfo.add("children", childrenArray);
-
-                        // 最后将这个carTypeInfo添加到jsonArray中
                         jsonArray.add(carTypeInfo);
                     }
+
+
                 }
 
                 Log.w(TAG, "method 55555555 " + jsonArray);
@@ -531,10 +495,6 @@ public class MainActivity3 extends AppCompatActivity {
                 Result<Object> success = ResponseData.success(jsonArray);
                 jsCallResult.setData(success);
                 callJs(jsCallResult);
-
-
-
-
 
             }
         });
@@ -1322,5 +1282,7 @@ public class MainActivity3 extends AppCompatActivity {
         JsonElement jsonElement = JsonParser.parseString(gson.toJson(maps));
         return jsonElement.toString();
     }
+
+
 
 }

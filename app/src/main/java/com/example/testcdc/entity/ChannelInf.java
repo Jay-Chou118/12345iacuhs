@@ -5,6 +5,8 @@ package com.example.testcdc.entity;
 //只能自己定义一个了
 //
 public class ChannelInf {
+
+
     private String bus_name;
     private int bus_id;
 
