@@ -27,6 +27,7 @@ import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -39,6 +40,7 @@ import com.chaquo.python.android.AndroidPlatform;
 
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
+import com.example.testcdc.Utils.FTPClientFunctions;
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
 import com.example.testcdc.Utils.Utils;
@@ -193,6 +195,49 @@ public class MainActivity3 extends AppCompatActivity {
         Log.e(TAG,"=================================================");
     }
 
+    public void upLoadFile(String filePath)
+    {
+        File file = new File(filePath);
+        String FTP_SERVER = "172.31.2.252";
+        int FTP_PORT = 21;
+        String FTP_USERNAME = "MICAN";
+        String FTP_PASSWORD = "MICAN";
+        String descFileName = file.getName();
+
+        // 网络操作，但开一个线程进行处理
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                // TODO 可以首先去判断一下网络
+                FTPClientFunctions ftpClient = new FTPClientFunctions();
+                boolean connectResult = ftpClient.ftpConnect(FTP_SERVER, FTP_USERNAME, FTP_PASSWORD, FTP_PORT);
+                if (connectResult) {
+                    Log.e(TAG,"====connectResult====");
+                    boolean changeDirResult = ftpClient.ftpChangeDir("/");
+                    if (changeDirResult) {
+                        boolean uploadResult = ftpClient.ftpUpload(filePath, descFileName, "");
+                        if (uploadResult) {
+                            Log.w(TAG, "上传成功");
+                            boolean disConnectResult = ftpClient.ftpDisconnect();
+                            if(disConnectResult) {
+                                Log.e(TAG, "关闭ftp连接成功");
+                            } else {
+                                Log.e(TAG, "关闭ftp连接失败");
+                            }
+                        } else {
+                            Log.w(TAG, "上传失败");
+                        }
+                    } else {
+                        Log.w(TAG, "切换ftp目录失败");
+                    }
+
+                } else {
+                    Log.w(TAG, "连接ftp服务器失败");
+                }
+            }
+        }).start();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -340,6 +385,9 @@ public class MainActivity3 extends AppCompatActivity {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         WebView.setWebContentsDebuggingEnabled(true);
+        // 启用LocalStorage
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setDatabaseEnabled(true);
 
         // 添加Java对象到JavaScript的window对象
 //        webView.addJavascriptInterface(this, "Android");
@@ -405,7 +453,7 @@ public class MainActivity3 extends AppCompatActivity {
 
                             // 打开CANFD设备
                             mMiCANBinder.CANOnBus();
-                            mMiCANBinder.startSaveBlf();
+                            mMiCANBinder.startSaveBlf(MainActivity3.this);
 
 
                             webView.post(new Runnable() {
@@ -456,6 +504,8 @@ public class MainActivity3 extends AppCompatActivity {
                     mMiCANBinder.CANOffBus();
                     mMiCANBinder.stopSaveBlf();
                     sharedFile(mMiCANBinder.getFilePath());
+                    // 测试上传文件
+                    upLoadFile(mMiCANBinder.getFilePath());
 
 //                    JsCallResult<Result<String>> jsCallResult = new JsCallResult<>(callback);
 //                    final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
@@ -999,6 +1049,7 @@ public class MainActivity3 extends AppCompatActivity {
 
     private void sharedFile(String filePath) {
         // 获取要分享的文件
+        Log.e(TAG,"============sharedFile============");
         File file = new File(filePath);
         Uri uri = FileProvider.getUriForFile(this, "fileprovider", file);
         Intent intent = new Intent();

@@ -138,7 +138,7 @@ public class MainActivity2 extends AppCompatActivity {
                 Log.i(TAG,"InitModule ret ok");
                 tv.setText("版本号: " + mMiCANBinder.getAppVersion() + "\t SN: " + mMiCANBinder.getSN());
                 mMiCANBinder.CANOnBus();
-                mMiCANBinder.startSaveBlf();
+                mMiCANBinder.startSaveBlf(MainActivity2.this);
             }else{
                 Log.e(TAG,"InitModule ret failed");
             }
