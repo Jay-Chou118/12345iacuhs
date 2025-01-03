@@ -5,11 +5,17 @@ import static com.example.testcdc.Utils.Utils.parseDBCByPython;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
 import static com.google.gson.JsonParser.parseString;
 
+import android.app.PendingIntent;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.database.Cursor;
+import android.hardware.usb.UsbDevice;
+import android.hardware.usb.UsbDeviceConnection;
+import android.hardware.usb.UsbEndpoint;
+import android.hardware.usb.UsbInterface;
+import android.hardware.usb.UsbManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -21,6 +27,7 @@ import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,6 +39,7 @@ import com.chaquo.python.android.AndroidPlatform;
 
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
+import com.example.testcdc.Utils.FTPClientFunctions;
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
 import com.example.testcdc.database.Basic_DataBase;
@@ -102,7 +110,7 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static boolean flag = false;
 
-
+    private static final String ACTION_USB_PERMISSION = "com.android.usb.USB_PERMISSION";
 
     private ServiceConnection mSC = new ServiceConnection() {
         @Override
@@ -129,11 +137,104 @@ public class MainActivity3 extends AppCompatActivity {
 
     public static Map<Integer,Integer> BUSRedirectMap = new HashMap<>();
 
+
+    public void test()
+    {
+        UsbManager usbManager = (UsbManager) getSystemService(Context.USB_SERVICE);
+        HashMap<String, UsbDevice> usbDevices = usbManager.getDeviceList();
+        Log.e(TAG,"=================================================");
+        for (UsbDevice device : usbDevices.values()) {
+            // 检查设备的VID和PID是否匹配你的USB设备
+            Log.e(TAG,device.toString());
+            if (device.getVendorId() == 1155 || device.getVendorId() == 4236) {
+//                PendingIntent permissionIntent = PendingIntent.getBroadcast(this, 0, new Intent(ACTION_USB_PERMISSION), PendingIntent.FLAG_IMMUTABLE);
+//                usbManager.requestPermission(device, permissionIntent);
+                UsbDeviceConnection connection = usbManager.openDevice(device);
+                Log.e(TAG,"open ok");
+                UsbInterface usbInterface = device.getInterface(1);
+                connection.claimInterface(usbInterface, true);
+
+
+
+                UsbEndpoint endpointIn = usbInterface.getEndpoint(0); // 假设第一个是OUT端点
+
+// 此处实现数据读写逻辑
+                Log.e(TAG, "start send data");
+                byte[] buffer = new byte[63];
+                int bytesRead = connection.bulkTransfer(endpointIn, buffer, buffer.length, 100);
+                Log.e(TAG,"send bytes " + bytesRead);
+                if (bytesRead != 0) {
+                    String result = new String(buffer, 0, bytesRead);
+                    Log.e(TAG, "Received Data: " + result);
+                }else {
+                    Log.e(TAG, "not read data");
+                }
+//                Log.e(TAG, "not read data");
+//                int writeData = connection.bulkTransfer(endpointIn, buffer, buffer.length, 1000);
+//                if (writeData > 0) {
+//                    String result = new String(buffer, 0, bytesRead);
+//                    Log.e(TAG, "Received Data: " + result);
+//                }else {
+//                    Log.e(TAG, "not read data");
+//                }
+
+
+                connection.releaseInterface(usbInterface);
+                connection.close();
+            }
+        }
+        Log.e(TAG,"=================================================");
+    }
+
+    public void upLoadFile(String filePath)
+    {
+        File file = new File(filePath);
+        String FTP_SERVER = "172.31.2.252";
+        int FTP_PORT = 21;
+        String FTP_USERNAME = "MICAN";
+        String FTP_PASSWORD = "MICAN";
+        String descFileName = file.getName();
+
+        // 网络操作，但开一个线程进行处理
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                // TODO 可以首先去判断一下网络
+                FTPClientFunctions ftpClient = new FTPClientFunctions();
+                boolean connectResult = ftpClient.ftpConnect(FTP_SERVER, FTP_USERNAME, FTP_PASSWORD, FTP_PORT);
+                if (connectResult) {
+                    Log.e(TAG,"====connectResult====");
+                    boolean changeDirResult = ftpClient.ftpChangeDir("/");
+                    if (changeDirResult) {
+                        boolean uploadResult = ftpClient.ftpUpload(filePath, descFileName, "");
+                        if (uploadResult) {
+                            Log.w(TAG, "上传成功");
+                            boolean disConnectResult = ftpClient.ftpDisconnect();
+                            if(disConnectResult) {
+                                Log.e(TAG, "关闭ftp连接成功");
+                            } else {
+                                Log.e(TAG, "关闭ftp连接失败");
+                            }
+                        } else {
+                            Log.w(TAG, "上传失败");
+                        }
+                    } else {
+                        Log.w(TAG, "切换ftp目录失败");
+                    }
+
+                } else {
+                    Log.w(TAG, "连接ftp服务器失败");
+                }
+            }
+        }).start();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        EdgeToEdge.enable(this);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main3);
+//        test();
         if (!Python.isStarted()) {
             start(new AndroidPlatform(this));
         }
@@ -275,6 +376,9 @@ public class MainActivity3 extends AppCompatActivity {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         WebView.setWebContentsDebuggingEnabled(true);
+        // 启用LocalStorage
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setDatabaseEnabled(true);
 
         // 添加Java对象到JavaScript的window对象
 //        webView.addJavascriptInterface(this, "Android");
@@ -327,6 +431,7 @@ public class MainActivity3 extends AppCompatActivity {
                         //Log.e(TAG, "thread: " + Thread.currentThread().getId());
                         if (mMiCANBinder != null) {
                             JsCallResult<Result<DeviceInfo>> jsCallResult = new JsCallResult<>(callback);
+//                            boolean ret = mMiCANBinder.InitModule2();
                             boolean ret = mMiCANBinder.InitModule();
                             if (ret) {
                                 instance.say("恭喜,初始化设备成功啦");
@@ -339,7 +444,7 @@ public class MainActivity3 extends AppCompatActivity {
 
                             // 打开CANFD设备
                             mMiCANBinder.CANOnBus();
-                            mMiCANBinder.startSaveBlf();
+                            mMiCANBinder.startSaveBlf(MainActivity3.this);
 
 
                             webView.post(new Runnable() {
@@ -390,6 +495,8 @@ public class MainActivity3 extends AppCompatActivity {
                     mMiCANBinder.CANOffBus();
                     mMiCANBinder.stopSaveBlf();
                     sharedFile(mMiCANBinder.getFilePath());
+                    // 测试上传文件
+                    upLoadFile(mMiCANBinder.getFilePath());
 
 //                    JsCallResult<Result<String>> jsCallResult = new JsCallResult<>(callback);
 //                    final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
@@ -1031,6 +1138,7 @@ public class MainActivity3 extends AppCompatActivity {
 
     private void sharedFile(String filePath) {
         // 获取要分享的文件
+        Log.e(TAG,"============sharedFile============");
         File file = new File(filePath);
         Uri uri = FileProvider.getUriForFile(this, "fileprovider", file);
         Intent intent = new Intent();

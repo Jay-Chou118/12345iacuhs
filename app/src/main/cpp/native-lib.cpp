@@ -9,6 +9,7 @@
 
 #include "blfwriter.h"
 #include "minilzo.h"
+#include "pch.h"
 
 #define LOG_TAG "MICAN_CPP" //定义TAG
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)
@@ -144,4 +145,13 @@ Java_com_example_testcdc_MyService_decompress(JNIEnv *env, jclass obj,
 //        LOGW(" %d",dest[i]);
 //    }
     return 0;
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_example_testcdc_MyService_sayHello(JNIEnv *env, jobject obj)
+{
+    LOGI("========Java_com_example_testcdc_MyService_sayHello=========");
+    //todo 后续调用native的方法进行验证
+    sayHello();
+    InitModule(0);
 }

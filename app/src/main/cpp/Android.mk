@@ -10,6 +10,8 @@ LOCAL_C_INCLUDES += \
     $(LOCAL_PATH)/include/CAN \
     $(LOCAL_PATH)/src/minilzo
 
+LOCAL_LDFLAGS += -L$(LOCAL_PATH)/../jniLibs/arm64-v8a
+
 # 定义源代码文件路径
 LOCAL_SRC_FILES := \
     native-lib.cpp \
@@ -19,7 +21,7 @@ LOCAL_SRC_FILES := \
     src/CAN/blfstream.c \
     src/minilzo/minilzo.c
 
-LOCAL_LDFLAGS := -llog -lc++ -std=c++17 -lz
+LOCAL_LDFLAGS += -lmodule_mican -llog -lc++ -std=c++17 -lz
 
 
 
@@ -28,6 +30,6 @@ include $(BUILD_SHARED_LIBRARY)
 
 APP_STL := c++_shared
 
-APP_ABI := arm64-v8a,armeabi-v7a,x86_64
+APP_ABI := arm64-v8a
 
 APP_PLATFORM := android-28
