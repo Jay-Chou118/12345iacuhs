@@ -1,31 +1,31 @@
 LonAccrSigGrpChks#7#425#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 LonAccrSigGrpCntr#7#425#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
-LonAccr#7#425#false#false#23#16#0.0002#-5.0#Longititude Acceleration\n绾靛��������搴�#0.0#0.0#0.0#null#MS11#E3
-LonSnsrSt#7#425#false#false#33#2#1#0#Longititude Sensor State\n绾靛��������搴����������#0.0#0.0#0.0#{"0": "SIG_IN_SPEC", "1": "SIGNOTAVAIL", "2": "SIGFAIL", "3": "Reserved"}#MS11#E3
-IMUCalSt#7#425#false#false#63#1#1#0#IMUCalibrationSt\nIMU���瀹���舵��#0.0#0.0#0.0#{"0": "IMU_not_Calibrated", "1": "IMU_Calibrated"}#MS11#E3
+LonAccr#7#425#false#false#23#16#0.0002#-5#Longititude Acceleration\n纵向加速度#0.0#0.0#0.0#null#MS11#E3
+LonSnsrSt#7#425#false#false#33#2#1#0#Longititude Sensor State\n纵向加速度有效性#0.0#0.0#0.0#{"0": "SIG_IN_SPEC", "1": "SIGNOTAVAIL", "2": "SIGFAIL", "3": "Reserved"}#MS11#E3
+IMUCalSt#7#425#false#false#63#1#1#0#IMUCalibrationSt\nIMU标定状态#0.0#0.0#0.0#{"0": "IMU_not_Calibrated", "1": "IMU_Calibrated"}#MS11#E3
 LatAccrYawRateSigGrpChks#7#426#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 LatAccrYawRateSigGrpCntr#7#426#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
-LatAccr#7#426#false#false#23#16#0.0002#-5.0#Lateral Acceleration\n妯����������搴�#0.0#0.0#0.0#null#MS11#E3
-YawRate#7#426#false#false#39#16#0.01#-300.0#Yaw Rate\n妯����瑙����搴�#0.0#0.0#0.0#null#MS11#E3
-YawRateSnsrSt#7#426#false#false#51#2#1#0#Yaw Rate Sensor State\n妯����瑙����搴����������#0.0#0.0#0.0#{"0": "SIG_IN_SPEC", "1": "SIGNOTAVAIL", "2": "SIGFAIL", "3": "Reserved"}#MS11#E3
-LatAccrSt#7#426#false#false#49#2#1#0#Lateral Sensor State\n妯����������搴����������#0.0#0.0#0.0#{"0": "SIG_IN_SPEC", "1": "SIGNOTAVAIL", "2": "SIGFAIL", "3": "Reserved"}#MS11#E3
+LatAccr#7#426#false#false#23#16#0.0002#-5#Lateral Acceleration\n横向加速度#0.0#0.0#0.0#null#MS11#E3
+YawRate#7#426#false#false#39#16#0.01#-300#Yaw Rate\n横摆角速度#0.0#0.0#0.0#null#MS11#E3
+YawRateSnsrSt#7#426#false#false#51#2#1#0#Yaw Rate Sensor State\n横摆角速度有效性#0.0#0.0#0.0#{"0": "SIG_IN_SPEC", "1": "SIGNOTAVAIL", "2": "SIGFAIL", "3": "Reserved"}#MS11#E3
+LatAccrSt#7#426#false#false#49#2#1#0#Lateral Sensor State\n横向加速度有效性#0.0#0.0#0.0#{"0": "SIG_IN_SPEC", "1": "SIGNOTAVAIL", "2": "SIGFAIL", "3": "Reserved"}#MS11#E3
 ACUWarnLampStsSigGrpChks#7#848#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 ACUWarnLampStsSigGrpCntr#7#848#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
-ACUWarnLampSts#7#848#false#false#17#2#1#0#Airbag Warning Lamp Status \nACU���������淇″��#0.0#0.0#0.0#{"0": "LampOFF", "1": "LampON", "2": "Blinking", "3": "Reserved"}#MS11#E3
-SecRowMidBucSts#7#848#false#false#39#2#1#0#Second Row Middle Buckle Status\n绗�浜����涓�瀹���ㄥ甫��舵��#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MS11#E3
-SecRowLeBucSts#7#848#false#false#37#2#1#0#Second Row Left Buckle Status\n绗�浜����宸�瀹���ㄥ甫��舵��#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MS11#E3
-PassBucSts#7#848#false#false#35#2#1#0#Passenger Buckle Status\n���椹惧����ㄥ甫��舵��#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MS11#E3
-DrvrBucSts#7#848#false#false#33#2#1#0#Driver Buckle Status \n涓婚┚椹跺����ㄥ甫��ｇ�舵��#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MS11#E3
-SecRowMidSftyBltStsBlive#7#848#false#false#47#1#1#0#Second Row Middle Safety belt status believable\n浜����涓���村����ㄥ甫�����ｇ�舵�����淇″害#0.0#0.0#0.0#{"0": "unbelievable", "1": "believable"}#MS11#E3
-SecRowRiSftyBltStsBlive#7#848#false#false#46#1#1#0#Second Row Right Safety belt status believable\n浜������充晶瀹���ㄥ甫�����ｇ�舵�����淇″害#0.0#0.0#0.0#{"0": "unbelievable", "1": "believable"}#MS11#E3
-SecRowLeSftyBltStsBlive#7#848#false#false#45#1#1#0#Second Row Left Safety belt status believable\n浜����宸�渚у����ㄥ甫�����ｇ�舵�����淇″害#0.0#0.0#0.0#{"0": "unbelievable", "1": "believable"}#MS11#E3
-PassSftyBltStsBlive#7#848#false#false#44#1#1#0#Passenger Safety belt status believable\n���椹惧����ㄥ甫�����ｇ�舵�����淇″害#0.0#0.0#0.0#{"0": "unbelievable", "1": "believable"}#MS11#E3
-DrvrSftyBltStsBlive#7#848#false#false#43#1#1#0#Driver Safety belt status believable\n涓婚┚瀹���ㄥ甫�����ｇ�舵�����淇″害#0.0#0.0#0.0#{"0": "unbelievable", "1": "believable"}#MS11#E3
-PassAirbDiIndcr#7#848#false#false#42#1#1#0#Passenger airbag disable indicator\n���椹惧����ㄦ�����绂���ㄧ�舵�����绀�#0.0#0.0#0.0#{"0": "enabled", "1": "disable"}#MS11#E3
-SecRowRiBucSts#7#848#false#false#41#2#1#0#Second Row Right Buckle Status\n绗�浜������冲����ㄥ甫��舵��#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MS11#E3
+ACUWarnLampSts#7#848#false#false#17#2#1#0#Airbag Warning Lamp Status \nACU故障灯信号#0.0#0.0#0.0#{"0": "LampOFF", "1": "LampON", "2": "Blinking", "3": "Reserved"}#MS11#E3
+SecRowMidBucSts#7#848#false#false#39#2#1#0#Second Row Middle Buckle Status\n第二排中安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MS11#E3
+SecRowLeBucSts#7#848#false#false#37#2#1#0#Second Row Left Buckle Status\n第二排左安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MS11#E3
+PassBucSts#7#848#false#false#35#2#1#0#Passenger Buckle Status\n副驾安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MS11#E3
+DrvrBucSts#7#848#false#false#33#2#1#0#Driver Buckle Status \n主驾驶安全带扣状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MS11#E3
+SecRowMidSftyBltStsBlive#7#848#false#false#47#1#1#0#Second Row Middle Safety belt status believable\n二排中间安全带锁扣状态可信度#0.0#0.0#0.0#{"0": "unbelievable", "1": "believable"}#MS11#E3
+SecRowRiSftyBltStsBlive#7#848#false#false#46#1#1#0#Second Row Right Safety belt status believable\n二排右侧安全带锁扣状态可信度#0.0#0.0#0.0#{"0": "unbelievable", "1": "believable"}#MS11#E3
+SecRowLeSftyBltStsBlive#7#848#false#false#45#1#1#0#Second Row Left Safety belt status believable\n二排左侧安全带锁扣状态可信度#0.0#0.0#0.0#{"0": "unbelievable", "1": "believable"}#MS11#E3
+PassSftyBltStsBlive#7#848#false#false#44#1#1#0#Passenger Safety belt status believable\n副驾安全带锁扣状态可信度#0.0#0.0#0.0#{"0": "unbelievable", "1": "believable"}#MS11#E3
+DrvrSftyBltStsBlive#7#848#false#false#43#1#1#0#Driver Safety belt status believable\n主驾安全带锁扣状态可信度#0.0#0.0#0.0#{"0": "unbelievable", "1": "believable"}#MS11#E3
+PassAirbDiIndcr#7#848#false#false#42#1#1#0#Passenger airbag disable indicator\n副驾安全气囊禁用状态指示#0.0#0.0#0.0#{"0": "enabled", "1": "disable"}#MS11#E3
+SecRowRiBucSts#7#848#false#false#41#2#1#0#Second Row Right Buckle Status\n第二排右安全带状态#0.0#0.0#0.0#{"0": "Buckled", "1": "Unbuckle", "2": "Reserved", "3": "Reserved"}#MS11#E3
 ImpctEvntStsSigGrpChks#7#849#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 ImpctEvntStsSigGrpCntr#7#849#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
-ImpctEvntSts#7#849#false#false#16#1#1#0#Impact Event Status\n 纰版��浜�浠剁�舵��#0.0#0.0#0.0#{"0": "Normal", "1": "Crash"}#MS11#E3
+ImpctEvntSts#7#849#false#false#16#1#1#0#Impact Event Status\n 碰撞事件状态#0.0#0.0#0.0#{"0": "Normal", "1": "Crash"}#MS11#E3
 SyncMsgTypeADD2Radar#7#131#false#false#7#8#1#0#Time synchronization messagetype#0.0#0.0#0.0#null#MS11#E3
 ChecksumADD2Radar#7#131#false#false#15#8#1#0#Time synchronization messageCRC  Cyclic Redundancy Check#0.0#0.0#0.0#null#MS11#E3
 SyncMsgTimeDomainADD2Radar#7#131#false#false#23#4#1#0#Time synchronization messagetime domain#0.0#0.0#0.0#null#MS11#E3
@@ -42,14 +42,6 @@ ADDAdasCanfdRepeatMsgSt#7#1399#false#false#16#1#1#0#Repeat Message State indicat
 UDB36ADD#7#1399#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11#E3
 UDB42ADD#7#1399#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11#E3
 NMKeepAwkRsnADD#7#1399#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3
-ADDAdasCanfdNodeAddress1#7#1324#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#E3
-ADDAdasCanfdActiveWakeup1#7#1324#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3
-ADDAdasCanfdRepeatMsgReq1#7#1324#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3
-UDB17ADD#7#1324#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11#E3
-ADDAdasCanfdRepeatMsgSt1#7#1324#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3
-UDB36ADD#7#1324#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11#E3
-UDB42ADD#7#1324#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11#E3
-NMKeepAwkRsnADD#7#1324#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3
 BcpSysStsSigGrpChks#7#336#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 BcpSysStsSigGrpCntr#7#336#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
 BrkFldWarn#7#336#false#false#23#1#1#0#Brake Fluid Warning#0.0#0.0#0.0#{"0": "NoWarning", "1": "Warning"}#MS11#E3
@@ -57,13 +49,13 @@ BrkPedlAppld#7#336#false#false#22#1#1#0#Indicates whether the driver operates th
 BrkPedlAppldVld#7#336#false#false#21#2#1#0#Qualifier for brake pedal applied signal#0.0#0.0#0.0#{"0": "BrkPedlAppld_NotInitialized", "1": "BrkPedlAppld_Normal", "2": "BrkPedlAppld_Faulty"}#MS11#E3
 BCPBrkLiIllmnReq#7#336#false#false#19#1#1#0#Request to illuminate brake light from BCP#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request"}#MS11#E3
 InpRodStkVld#7#336#false#false#18#1#1#0#Qualifier for Input Rod Stroke signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
-InpRodStk#7#336#false#false#17#10#0.05#-5.0#Input Rod Stroke#0.0#0.0#0.0#null#MS11#E3
+InpRodStk#7#336#false#false#17#10#0.05#-5#Input Rod Stroke#0.0#0.0#0.0#null#MS11#E3
 BrkPedlPerctVld#7#336#false#false#39#1#1#0#Qualifier for Brake Pedal Percentage signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 BrkPedlPerct#7#336#false#false#38#7#1#0#Brake Pedal Percentage#0.0#0.0#0.0#null#MS11#E3
 BCPSysSts#7#336#false#false#47#2#1#0#BCP System Status#0.0#0.0#0.0#{"0": "Off", "1": "DegradedPedalFeeling", "2": "On"}#MS11#E3
 BCPBrkSysWarnText#7#336#false#false#45#3#1#0#BCP Brake System Warning Text#0.0#0.0#0.0#{"0": "NoWarning", "1": "the_brake_system_fault", "2": "Please_check_because_the_brake_system_leakage", "3": "Overheat_of_brake_system", "4": "reserved", "5": "reserved", "6": "reserved", "7": "reserved"}#MS11#E3
 BrkFldWarnVld#7#336#false#false#42#1#1#0#Qualifier for Brake Fluid Warning Signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
-BCPPlungerP#7#336#false#false#41#10#0.3#-30.0#Pressure in the BCP Plunger#0.0#0.0#0.0#null#MS11#E3
+BCPPlungerP#7#336#false#false#41#10#0.3#-30#Pressure in the BCP Plunger#0.0#0.0#0.0#null#MS11#E3
 BCPPlungerVld#7#336#false#false#63#2#1#0#Qualifier for BCP Plunger's pressure signal#0.0#0.0#0.0#{"0": "NotInitialized", "1": "Normal", "2": "Faulty"}#MS11#E3
 BrkAssSigGrpChks#7#336#false#false#79#8#1#0##0.0#0.0#0.0#null#MS11#E3
 BrkAssSigGrpCntr#7#336#false#false#83#4#1#0##0.0#0.0#0.0#null#MS11#E3
@@ -74,7 +66,7 @@ HBAActv#7#336#false#false#92#1#1#0#HBA active#0.0#0.0#0.0#{"0": "NotActive", "1"
 APBStsBkp#7#336#false#false#91#2#1#0#BCP&BCS APB Status#0.0#0.0#0.0#{"0": "Released", "1": "Applied", "2": "InProgress", "3": "Undefined"}#MS11#E3
 WhlspdBkpFcnSigGrpChks#7#336#false#false#135#8#1#0##0.0#0.0#0.0#null#MS11#E3
 WhlspdBkpFcnSigGrpCntr#7#336#false#false#139#4#1#0##0.0#0.0#0.0#null#MS11#E3
-BCPMstCylP#7#336#false#false#151#10#0.3#-30.0#PressureintheBCPmastercylinder#0.0#0.0#0.0#null#MS11#E3
+BCPMstCylP#7#336#false#false#151#10#0.3#-30#PressureintheBCPmastercylinder#0.0#0.0#0.0#null#MS11#E3
 BCPMstCylPVld#7#336#false#false#157#2#1#0#QualifierforBCPmastercyclinder spressuresignal#0.0#0.0#0.0#{"0": "NotInitialized", "1": "Normal", "2": "Faulty"}#MS11#E3
 BCPKeepAwakeReq#7#336#false#false#191#1#1#0#BCP Keep Awake Request#0.0#0.0#0.0#{"0": "No_request", "1": "Request"}#MS11#E3
 BcsSysCtrSigGrpChks#7#337#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
@@ -113,7 +105,7 @@ SCMActv#7#337#false#false#104#1#1#0#SCM active#0.0#0.0#0.0#{"0": "NotActive", "1
 DSTActv#7#337#false#false#119#1#1#0#DST active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MS11#E3
 APBSts#7#337#false#false#118#2#1#0#APB Status#0.0#0.0#0.0#{"0": "Released", "1": "Applied", "2": "InProgress", "3": "Undefined"}#MS11#E3
 APBErrDetd#7#337#false#false#116#2#1#0#APB Error Status#0.0#0.0#0.0#{"0": "NotInit", "1": "Normal", "2": "Faulty"}#MS11#E3
-DSTSteerTqReq#7#337#false#true#112#9#0.1#0.0#Steering wheel torque requested from DST#0.0#0.0#0.0#null#MS11#E3
+DSTSteerTqReq#7#337#false#true#112#9#0.1#0#Steering wheel torque requested from DST#0.0#0.0#0.0#null#MS11#E3
 HHCActv#7#337#false#false#143#1#1#0#HHC active#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MS11#E3
 HHCAvl#7#337#false#false#142#1#1#0#HHC available#0.0#0.0#0.0#{"0": "NotAvailable", "1": "Available"}#MS11#E3
 AVHSts#7#337#false#false#141#2#1#0#AVH function status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Active"}#MS11#E3
@@ -137,11 +129,11 @@ WhlSpdFrntRiVld#7#179#false#false#14#1#1#0#Status of wheel speed front right#0.0
 WhlSpdReLeVld#7#179#false#false#13#1#1#0#Status of wheel speed rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 WhlSpdReRiVld#7#179#false#false#12#1#1#0#Status of wheel speed rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 WhlStsSigGrpCntr#7#179#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
-WhlSpdFrntLe#7#179#false#false#23#16#0.05625#0.0#Wheel speed front left#0.0#0.0#0.0#null#MS11#E3
-WhlSpdFrntRi#7#179#false#false#39#16#0.05625#0.0#Wheel speed front right#0.0#0.0#0.0#null#MS11#E3
-WhlSpdReLe#7#179#false#false#55#16#0.05625#0.0#Wheel speed rear left#0.0#0.0#0.0#null#MS11#E3
-WhlSpdReRi#7#179#false#false#71#16#0.05625#0.0#Wheel speed rear right#0.0#0.0#0.0#null#MS11#E3
-VehSpd#7#179#false#false#87#16#0.05625#0.0#Vehicle speed#0.0#0.0#0.0#null#MS11#E3
+WhlSpdFrntLe#7#179#false#false#23#16#0.05625#0#Wheel speed front left#0.0#0.0#0.0#null#MS11#E3
+WhlSpdFrntRi#7#179#false#false#39#16#0.05625#0#Wheel speed front right#0.0#0.0#0.0#null#MS11#E3
+WhlSpdReLe#7#179#false#false#55#16#0.05625#0#Wheel speed rear left#0.0#0.0#0.0#null#MS11#E3
+WhlSpdReRi#7#179#false#false#71#16#0.05625#0#Wheel speed rear right#0.0#0.0#0.0#null#MS11#E3
+VehSpd#7#179#false#false#87#16#0.05625#0#Vehicle speed#0.0#0.0#0.0#null#MS11#E3
 VehSpdVld#7#179#false#false#103#1#1#0#Qualifier for vehicle speed signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 WhlDirFrntLeVld#7#179#false#false#102#1#1#0#Qualifier for wheel moving direction front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 WhlDirFrntLe#7#179#false#false#101#2#1#0#Wheel moving direction front left#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#E3
@@ -179,25 +171,25 @@ BCSActrActvForADC#7#192#false#false#49#2#1#0#BCS actuator active for ADC#0.0#0.0
 BCSActrVldForADC#7#192#false#false#57#1#1#0#BCS actuator valid for ADC#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 BattURawSigGrpChks#7#579#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 BattURawSigGrpCntr#7#579#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
-BattURaw#7#579#false#false#16#9#0.025#5.0#Battery Voltage raw\n��垫����靛��#0.0#0.0#0.0#null#MS11#E3
-BattSocRaw#7#579#false#false#49#10#0.1#0.0#Battery State of charge raw\n��垫��SOC#0.0#0.0#0.0#null#MS11#E3
+BattURaw#7#579#false#false#16#9#0.025#5#Battery Voltage raw\n电池电压#0.0#0.0#0.0#null#MS11#E3
+BattSocRaw#7#579#false#false#49#10#0.1#0#Battery State of charge raw\n电池SOC#0.0#0.0#0.0#null#MS11#E3
 DCChrgnHvBattSoCSigGrpChks#7#449#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 DCChrgnPosCntctSts#7#449#false#false#15#2#1#0#DC charging positive contactor status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3
 DCChrgnCntctSts#7#449#false#false#13#2#1#0#DC charging contactor status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3
 DCChrgnHvBattSoCSigGrpCntr#7#449#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
-HvBattSoCAct#7#449#false#false#23#11#0.05#0.0#HV battery SoC actual#0.0#0.0#0.0#null#MS11#E3
+HvBattSoCAct#7#449#false#false#23#11#0.05#0#HV battery SoC actual#0.0#0.0#0.0#null#MS11#E3
 DCChrgnNegCntctSts#7#449#false#false#25#2#1#0#DC charging negative contactor status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3
 PrechrgnCntctSts#7#449#false#false#39#2#1#0#Precharging contactor status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3
 PrechargnPosCntctSts#7#449#false#false#37#2#1#0#Precharging positive contact status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3
 HvBattCoolgLvlReq#7#449#false#false#35#2#1#0#HV battery cooling level request.#0.0#0.0#0.0#{"0": "NoReq", "1": "Low", "2": "Middle", "3": "High"}#MS11#E3
 HvBattHeatgLvlReq#7#449#false#false#33#2#1#0#HV battery heating level request.#0.0#0.0#0.0#{"0": "NoReq", "1": "Low", "2": "Middle", "3": "High"}#MS11#E3
-HvBattSoCDisp#7#449#false#false#47#11#0.05#0.0#HV battery SoC for Display#0.0#0.0#0.0#null#MS11#E3
+HvBattSoCDisp#7#449#false#false#47#11#0.05#0#HV battery SoC for Display#0.0#0.0#0.0#null#MS11#E3
 HvBattFlgFullChrgnFinish#7#449#false#false#52#1#1#0#HV battery full Charging of HV battery is finished or not flag#0.0#0.0#0.0#null#MS11#E3
 HvBattFlgChrgnSoCLimFinish#7#449#false#false#51#1#1#0#HV battery Set SOC charging limit finish flag#0.0#0.0#0.0#{"0": "Not_finish", "1": "Finish"}#MS11#E3
 HvBattFlgDchrgnSoCLimFinish#7#449#false#false#50#1#1#0#HV battery Set SOC discharge limit finish flag#0.0#0.0#0.0#{"0": "Not_finish", "1": "Finish"}#MS11#E3
 DrvFcn1FrmSFCChks#7#389#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 DrvFcn1FrmSFCCntr#7#389#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
-AebTarDecelFrmSFC#7#389#false#false#47#10#0.03125#-16.0#AEB target deceleration#0.0#0.0#0.0#null#MS11#E3
+AebTarDecelFrmSFC#7#389#false#false#47#10#0.03125#-16#AEB target deceleration#0.0#0.0#0.0#null#MS11#E3
 AWBLvlFrmSFC#7#389#false#false#53#3#1#0#AWB level#0.0#0.0#0.0#{"0": "NoRequest", "1": "Level1", "2": "Level2", "3": "Level3"}#MS11#E3
 AEBReqFrmSFC#7#389#false#false#50#3#1#0#Request of the AEB EBA AEB VRU etc deceleration control.#0.0#0.0#0.0#{"0": "No_demand", "1": "AEB", "2": "EBA", "3": "Reserved", "4": "Reserved", "5": "Reserved", "6": "Reserved", "7": "Reserved"}#MS11#E3
 ABAReqFrmSFC#7#389#false#false#60#1#1#0#ABA request#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request"}#MS11#E3
@@ -217,7 +209,7 @@ LDPWarnReqRiFrmSFC#7#390#false#false#17#1#1#0#LDP warning request   right#0.0#0.
 LDPWarnReqLeFrmSFC#7#390#false#false#16#1#1#0#LDP warning request   left#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request"}#MS11#E3
 TSRSpdLimitFrmSFC#7#390#false#false#31#5#1#0#TSR Traffic Sign Recognition Speed limit values#0.0#0.0#0.0#{"0": "No_display", "1": "Cancelled", "2": "5", "3": "10", "4": "15", "5": "20", "6": "25", "7": "30", "8": "35", "9": "40", "10": "45", "11": "50", "12": "55", "13": "60", "14": "65", "15": "70", "16": "75", "17": "80", "18": "85", "19": "90", "20": "95", "21": "100", "22": "105", "23": "110", "24": "115", "25": "120", "26": "125", "27": "130"}#MS11#E3
 DrvSysWarnFrmSFC#7#390#false#false#25#3#1#0#Pilot System Warning#0.0#0.0#0.0#{"0": "NoWarning", "1": "WarningLevel1", "2": "WarningLevel2", "3": "WarningLevel3", "4": "WarningLevel4", "5": "WarningLevel5"}#MS11#E3
-TSASignQlyFrmSFC#7#390#false#false#37#7#1.0#0.0#Quality Confidence of the detected road sign#0.0#0.0#0.0#{"127": "invalid"}#MS11#E3
+TSASignQlyFrmSFC#7#390#false#false#37#7#1#0#Quality Confidence of the detected road sign#0.0#0.0#0.0#{"127": "invalid"}#MS11#E3
 TSASignTypeFrmSFC#7#390#false#false#45#6#1#0#Detected road sign type#0.0#0.0#0.0#{"0": "NotDetected", "1": "SpeedLimits", "2": "OvertakingSigns", "3": "StopYieldSigns", "4": "CityLimits_EntryExit", "5": "MotorwayHighway", "6": "PreferenceRoad", "7": "ResidentialAreaSigns", "8": "NoEntry_NoAll", "9": "DangerSigns", "10": "WeatherCondition", "11": "VehicleCategory", "12": "Exit", "13": "Zone", "63": "Unknown"}#MS11#E3
 SFCSwtStsSigGrpChks#7#394#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 SFCSwtStsSigGrpCntr#7#394#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
@@ -232,7 +224,7 @@ ELKSwtFbFrmSFC#7#394#false#false#47#2#1#0#ELK switch Feedback#0.0#0.0#0.0#{"0": 
 LDWPWarnTypSwtFbFrmSFC#7#394#false#false#45#2#1#0#LDW and LDP warning type switch feedback#0.0#0.0#0.0#{"0": "default", "1": "Warning", "2": "Warning_Prevention", "3": "unavailable"}#MS11#E3
 AESESSSwtFbFrmSFC#7#394#false#false#43#2#1#0#AES ESS switch feedback#0.0#0.0#0.0#{"0": "default", "1": "Off", "2": "ON", "3": "unavailable"}#MS11#E3
 AebSwtFbFrmSFC#7#394#false#false#41#2#1#0#AEB switch feedback#0.0#0.0#0.0#{"0": "default", "1": "Off", "2": "ON", "3": "unavailable"}#MS11#E3
-FcwSwtFbFrmSFC#7#394#false#false#52#3#1#0#FCW寮���冲��棣�#0.0#0.0#0.0#{"0": "default", "1": "unavailable", "2": "early", "3": "middle", "4": "late"}#MS11#E3
+FcwSwtFbFrmSFC#7#394#false#false#52#3#1#0#FCW开关反馈#0.0#0.0#0.0#{"0": "default", "1": "unavailable", "2": "early", "3": "middle", "4": "late"}#MS11#E3
 LDWPHptcWarnSwtFbFrmSFC#7#394#false#false#49#2#1#0#LDW haptic warning switch Feedback#0.0#0.0#0.0#{"0": "default", "1": "Off", "2": "On", "3": "unavailable"}#MS11#E3
 FTASwtFbFrmSFC#7#394#false#false#63#2#1#0#FTA switch Feedback#0.0#0.0#0.0#{"0": "default", "1": "Off", "2": "On", "3": "unavailable"}#MS11#E3
 LowPwrSwtFbFrmSFC#7#394#false#false#61#2#1#0#Low power mode switch feedback#0.0#0.0#0.0#{"0": "default", "1": "Off", "2": "ON", "3": "unavailable"}#MS11#E3
@@ -243,10 +235,10 @@ LDWStsFrmSFC#7#395#false#false#21#3#1#0#LDW function status#0.0#0.0#0.0#{"0": "O
 ACCStsFrmSFC#7#395#false#false#18#3#1#0#The status of the ACC control unit.\nThe ACC mode should be contained in every message sent by ACC.#0.0#0.0#0.0#{"0": "Not_Ready", "1": "Standby", "2": "NormalActive", "3": "Hold", "4": "Override", "5": "Reserved", "6": "Reserved", "7": "Fault"}#MS11#E3
 ELKStsFrmSFC#7#395#false#false#29#3#1#0#ELK overall state  incl. RE OC OT#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "NoWorking", "3": "LeftOverride", "4": "LeftWorking", "5": "RightOverride", "6": "RightWorking", "7": "Fault"}#MS11#E3
 LDPStsFrmSFC#7#395#false#false#26#3#1#0#LDP function status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "NoWarning", "3": "LeftOverride", "4": "LeftWarning", "5": "RightOverride", "6": "RightWarning", "7": "Fault"}#MS11#E3
-AEBStsFrmSFC#7#395#false#false#37#3#1#0#AEB��舵�����#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Active", "3": "Failure"}#MS11#E3
+AEBStsFrmSFC#7#395#false#false#37#3#1#0#AEB状态机#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Active", "3": "Failure"}#MS11#E3
 ESSStsFrmSFC#7#395#false#false#34#3#1#0#ESS function status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Active", "3": "Failure"}#MS11#E3
 FTAStsOtFrmSFC#7#395#false#false#45#3#1#0#FTA status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Active", "3": "Failure"}#MS11#E3
-FCWStsFrmSFC#7#395#false#false#42#3#1#0#FCW�����舵�����#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Active", "3": "Failure"}#MS11#E3
+FCWStsFrmSFC#7#395#false#false#42#3#1#0#FCW的状态机#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Active", "3": "Failure"}#MS11#E3
 ELKOCStsFrmSFC#7#395#false#false#53#3#1#0#ELK on coming status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "NoWorking", "3": "LeftOverride", "4": "LeftWorking", "5": "RightOverride", "6": "RightWorking", "7": "Fault"}#MS11#E3
 ELKREStsFrmSFC#7#395#false#false#50#3#1#0#ELK road edge status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "NoWorking", "3": "LeftOverride", "4": "LeftWorking", "5": "RightOverride", "6": "RightWorking", "7": "Fault"}#MS11#E3
 ELKOTStsFrmSFC#7#395#false#false#58#3#1#0#ELK overtaking status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "NoWorking", "3": "LeftOverride", "4": "LeftWorking", "5": "RightOverride", "6": "RightWorking", "7": "Fault"}#MS11#E3
@@ -270,14 +262,14 @@ ADSAxTarReqFrmSFC#7#217#false#false#23#12#0.01#-20.48#ADS Ax request value#0.0#0
 ADSShutdownModeFrmSFC#7#217#false#false#27#2#1#0#ADSShutdownModeMain#0.0#0.0#0.0#{"0": "ADC_SoftOff", "1": "ADC_FastOff", "2": "ADC_ImmediateOff"}#MS11#E3
 ADSSecureReqFrmSFC#7#217#false#false#25#1#1#0#EPB request#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request"}#MS11#E3
 ADSVehStopReqFrmSFC#7#217#false#false#24#1#1#0#Autonomous Driving system Standstill Request#0.0#0.0#0.0#{"0": "NoRequest", "1": "standstillrequest"}#MS11#E3
-ADSAxTarUpperComfBandFrmSFC#7#217#false#false#39#7#0.01#0.0#ADSAxTarUpperComfBandMain#0.0#0.0#0.0#null#MS11#E3
+ADSAxTarUpperComfBandFrmSFC#7#217#false#false#39#7#0.01#0#ADSAxTarUpperComfBandMain#0.0#0.0#0.0#null#MS11#E3
 ADSAxTarEnaFrmSFC#7#217#false#false#32#1#1#0#ADS Ax target request#0.0#0.0#0.0#{"0": "NoRequest", "1": "Request"}#MS11#E3
 ADSUseUpperComfBandFrmSFC#7#217#false#false#47#1#1#0#ADSUseUpperComfBandMain#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3
-ADSAxTarLowerComfBandFrmSFC#7#217#false#false#46#7#0.01#0.0#ADSAxTarLowerComfBandMain#0.0#0.0#0.0#null#MS11#E3
+ADSAxTarLowerComfBandFrmSFC#7#217#false#false#46#7#0.01#0#ADSAxTarLowerComfBandMain#0.0#0.0#0.0#null#MS11#E3
 ADSBrakePreferredFrmSFC#7#217#false#false#55#1#1#0#ADSBrakePreferredMain#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3
-ADSdAxTarUpperLimitFrmSFC#7#217#false#false#54#7#0.1#0.0#ADSdAxTarUpperLimitMain#0.0#0.0#0.0#null#MS11#E3
+ADSdAxTarUpperLimitFrmSFC#7#217#false#false#54#7#0.1#0#ADSdAxTarUpperLimitMain#0.0#0.0#0.0#null#MS11#E3
 ADSDriveAwayReqFrmSFC#7#217#false#false#63#1#1#0#Drive off request#0.0#0.0#0.0#{"0": "NoRequest", "1": "DriveOffrequest"}#MS11#E3
-ADSdAxTarLowerLimitFrmSFC#7#217#false#false#62#7#0.1#0.0#ADSdAxTarLowerLimitMain#0.0#0.0#0.0#null#MS11#E3
+ADSdAxTarLowerLimitFrmSFC#7#217#false#false#62#7#0.1#0#ADSdAxTarLowerLimitMain#0.0#0.0#0.0#null#MS11#E3
 ADSACCStsFrmSFC#7#217#false#false#66#3#1#0#ACC function status#0.0#0.0#0.0#{"0": "Not_Ready", "1": "Standby", "2": "NormalActive", "3": "Hold", "4": "Override", "5": "Reserved", "6": "Reserved", "7": "Fault"}#MS11#E3
 DrvSteerWhlReqFrmSFCSigGrpChks#7#217#false#false#79#8#1#0##0.0#0.0#0.0#null#MS11#E3
 DrvSteerWhlReqFrmSFCSigGrpCntr#7#217#false#false#83#4#1#0##0.0#0.0#0.0#null#MS11#E3
@@ -287,7 +279,7 @@ DrvSteerWhlTqLimFrmSFC#7#217#false#false#111#11#0.01#-10.24#Steering Wheel Torqu
 DrvPinStrAglReqStsFrmSFC#7#217#false#false#116#2#1#0#Pinion steering angle request STATE for driving functions#0.0#0.0#0.0#{"0": "NoRequest", "1": "Ready", "2": "Active", "3": "Failure"}#MS11#E3
 DrvPinStrAglReqStsVldFrmSFC#7#217#false#false#114#1#1#0#Valid flag of pinion steering angle request STATE for driving functions#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 ADSVibActvFrmSFC#7#217#false#false#127#1#1#0#Haptic Vibration warning request#0.0#0.0#0.0#{"0": "inactive", "1": "active"}#MS11#E3
-DrvPrecsReqFrmSFC#7#217#false#false#126#7#1.0#0.0#Precision request for torque#0.0#0.0#0.0#{"127": "invalid"}#MS11#E3
+DrvPrecsReqFrmSFC#7#217#false#false#126#7#1#0#Precision request for torque#0.0#0.0#0.0#{"127": "invalid"}#MS11#E3
 SFCAdasCanfdNodeAddress#7#1393#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#E3
 SFCAdasCanfdActiveWakeup#7#1393#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3
 SFCAdasCanfdRepeatMsgReq#7#1393#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3
@@ -296,51 +288,51 @@ UDB39DAC#7#1393#false#false#39#1#1#0##0.0#0.0#0.0#null#MS11#E3
 NMKeepAwkRsnDAC#7#1393#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3
 APARPAstatusFrmDCDSigGrpChks#7#407#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 APARPAstatusFrmDCDSigGrpCntr#7#407#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
-APARPARecoverIndFrmDCD#7#407#false#false#23#5#1#0#APA RPA recovery interrupt indication\n�����㈠��涓�������绀�#0.0#0.0#0.0#{"0": "No_Request", "1": "Req_Recover_DriverSeatBeltNot_tied", "2": "Req_2rdParkin_button", "3": "Req_Recover_Found_Obstacle_In_Trajectory", "4": "Req_Recover_Phone_out_of_range", "5": "Req_Recover_Driver_Press_brake_pedal", "6": "Req_Recover_DoorOpen_Driver", "7": "Req_Recover_DoorOpen_passenger", "8": "Req_Recover_DoorOpen_LeftRear", "9": "Req_Recover_DoorOpen_RightRear", "10": "Req_Recover_Engine_Front_DoorOpen", "11": "Req_Recover_TrunkOpen", "12": "Req_Recover_DriverPresspause", "13": "Req_Recover_DriverleavePhoneRPAControlPage", "14": "Req_Recover_Remote__Move_Distance_overrange", "15": "Req_Recover_RPA_Move_Driver_Active_pause"}#MS11#E3
-APARPAActiveSubFunFrmDCD#7#407#false#false#18#3#1#0#APA RPA Activated function\nAPA RPA 琚�婵�娲荤��������#0.0#0.0#0.0#{"0": "None", "1": "APA_Park_in", "2": "APA_Park_Out", "3": "RPA_Park_in", "4": "RPA_Park_Out", "5": "RPA_Move"}#MS11#E3
-APARPADriverOperateIndFrmDCD#7#407#false#false#31#6#1#0#APA RPA Driver operating indication\nAPA RPA 椹鹃┒������浣����绀�#0.0#0.0#0.0#{"0": "No_Request", "1": "Req_Gear_D", "2": "Req_Slow_Down", "3": "Req_Close_Door_Driver", "4": "Req_Close_Door_passenger", "5": "Req_Close_Door_LeftRear", "6": "Req_Close_Door_RightRear", "7": "Req_Close_Engine_Front_Door", "8": "Req_Close_Trunk", "9": "Req_Parking_slot_in_Searching", "10": "Req_Parking_slot_is_available_\u951b\ufffdbackground_seaching\u951b\ufffd", "11": "Req_Find_parking_slot_Stop", "12": "Req_Choose_Park_Slot", "13": "Req_Slot_Narrow_Recommend_RPA", "14": "Req_Tie_Seat_belt", "15": "Req_Choose_Park_out_direction", "16": "Req_Click_Start_APA_park_Button", "17": "Req_Start_parking_Recommend(Release_steerwheel&Brake)", "18": "Req_Parking_process_Recommend(PI&PO)", "19": "Req_No_Response_gas_pedal", "20": "Req_No_Response_Turnlight", "21": "Req_Rearview_Mirrors_are_folding", "22": "Req_Leave_car_Control_on_APP", "23": "Req_Recommend_RPA\u951b\ufffdPUSH\u951b\ufffd", "24": "Req_PopUps_RPA_use_guide", "25": "Req_Warning_someone_In_car", "26": "Req_Phone_Distance_Exceed", "27": "Req_Self_check_RPA_park_in_avaiable", "28": "Req_Self_check_RPA_park_out/move__avaiable", "29": "Req_Self_check_only_RPA_move_avaiable", "30": "Req_Moving_forward_,release_to_stop", "31": "Req_Moving_Backward\u951b\ufffdrelease_to_stop", "32": "Req_RPA_Park_out_completed_", "33": "Req_RPA_Park_in_completed_", "34": "Req_RPA_move_completed", "35": "Req_Pop-ups_Choose_system_refence_Parking_Slot", "36": "Req_Keep_Standstill"}#MS11#E3
-APARPAQuitReasonIndFrmDCD#7#407#false#false#39#6#1#0#APA RPA quit reason indication\nAPA RPA瀹���ㄩ����哄��������绀�#0.0#0.0#0.0#{"0": "No_Request", "1": "Req_Quit_Searching_Speed_High", "2": "Req_Quit_Searching_Time_Out", "3": "Req_Quit_Driver_Change_Gear_Time_Out", "4": "Req_Quit_Door_Open_Time_Out", "5": "Req_Quit_Handshake_Fail", "6": "Req_Quit_Driver_Require_Quit", "7": "Req_Quit_Driver_Not_release_Brake_Pedal_Time_Out", "8": "Req_Quit_DriverSeatBelt_Nottied_Time_Out", "9": "Req_Quit_Timeout_Not_Press_Start_Button(APA)", "10": "Req_Quit_Reselect_Parkin_Time_Out", "11": "Req_Quit_Driver_Interrupt_Brake_Pedal_Time_Out", "12": "Req_Quit_Driver_Interrupt_Gear", "13": "Req_Quit_Driver_Interrupt_Steering_Wheel", "14": "Req_Quit_Obstacle_In_Trajectory_Time_Out", "15": "Req_Quit_EPB_UnLock", "16": "Req_Quit_Parking_Total_time_Time_Out", "17": "Req_Quit_Recover_Interrupt_Times_Overflow", "18": "Req_Quit_D/R_Times_Overflow", "19": "Req_Quit_Control_Speed_Over_Limit", "20": "Req_Quit_Path_Planning_Abnormal", "21": "Req_Quit_Space_limit", "22": "Req_Quit_Slope_Out_Of_limit", "23": "Req_Quit_ADAS_Function_Active", "24": "Req_Quit_Bad_Weather", "25": "Req_Quit_Crash", "26": "Req_Quit_ADD_System_Fail", "27": "Req_Quit_Sensor_Fail", "28": "Req_Quit_Related_Actuator_Fail", "29": "Req_Quit_Communication_Fail", "30": "Req_Quit_Sensor_block", "31": "Req_Quit_Driver_Press_APP_RPA_Button_Time_Out(RPA)", "32": "Req_Quit_Driver_Actively_Paused_Time_Out(RPA)", "33": "Req_Quit_Driver_leave_Phone_RPA_Contro_lPage_Time_Out(RPA)", "34": "Req_Quit__Phone_Distance_Exceed_Time_Out(RPA)", "35": "Req_Quit_Driver_Require_Quit_Or_Kill_The_App(RPA)", "36": "Req_Quit_Phone_bluetooth_connect_lost(RPA)", "37": "Req_Quit_Driver_Interrupt_Press_Gas_Pedal(RPA)", "38": "Req_Quit_Driver_Interrupt_Press_Brake_Pedal(RPA)", "39": "Req_Quit_Driver_Interrupt_Open_Door(RPA)", "40": "Req_Quit_Too_Close_Obstacles(RPA)", "41": "Req_Quit_Total_Distance_overrange(RPA_Move)", "42": "Req_Quit_Warning_someone_In_car_Time_Out(RPA)", "43": "Req_Quit_None_P_Status(RPA)", "44": "Req_Quit_RPA_Move&RPA_Park_Out_Not_Available(RPA)", "45": "Req_Quit_Timeout_Not_Press_Start_Button(RPA)", "46": "Req_Quit_ChoosePOdirectionTimeout", "47": "Req_Quit_Function_off"}#MS11#E3
-APARPAUnableToActiveIndFrmDCD#7#407#false#false#47#4#1#0#APA RPA Unable To Active indication\nAPA RPA���娉�婵�娲诲��������绀�#0.0#0.0#0.0#{"0": "No_Request", "1": "Speed_high", "2": "Slope_out_of_limit", "3": "Charging", "4": "ADAS_Function_Active", "5": "No_parking_behavior_Before", "6": "No_routes_available", "7": "Speed_not_zero", "8": "System_Fail", "9": "Air_suspension_Action"}#MS11#E3
+APARPARecoverIndFrmDCD#7#407#false#false#23#5#1#0#APA RPA recovery interrupt indication\n可恢复中断提示#0.0#0.0#0.0#{"0": "No_Request", "1": "Req_Recover_DriverSeatBeltNot_tied", "2": "Req_2rdParkin_button", "3": "Req_Recover_Found_Obstacle_In_Trajectory", "4": "Req_Recover_Phone_out_of_range", "5": "Req_Recover_Driver_Press_brake_pedal", "6": "Req_Recover_DoorOpen_Driver", "7": "Req_Recover_DoorOpen_passenger", "8": "Req_Recover_DoorOpen_LeftRear", "9": "Req_Recover_DoorOpen_RightRear", "10": "Req_Recover_Engine_Front_DoorOpen", "11": "Req_Recover_TrunkOpen", "12": "Req_Recover_DriverPresspause", "13": "Req_Recover_DriverleavePhoneRPAControlPage", "14": "Req_Recover_Remote__Move_Distance_overrange", "15": "Req_Recover_RPA_Move_Driver_Active_pause"}#MS11#E3
+APARPAActiveSubFunFrmDCD#7#407#false#false#18#3#1#0#APA RPA Activated function\nAPA RPA 被激活的功能#0.0#0.0#0.0#{"0": "None", "1": "APA_Park_in", "2": "APA_Park_Out", "3": "RPA_Park_in", "4": "RPA_Park_Out", "5": "RPA_Move"}#MS11#E3
+APARPADriverOperateIndFrmDCD#7#407#false#false#31#6#1#0#APA RPA Driver operating indication\nAPA RPA 驾驶员操作提示#0.0#0.0#0.0#{"0": "No_Request", "1": "Req_Gear_D", "2": "Req_Slow_Down", "3": "Req_Close_Door_Driver", "4": "Req_Close_Door_passenger", "5": "Req_Close_Door_LeftRear", "6": "Req_Close_Door_RightRear", "7": "Req_Close_Engine_Front_Door", "8": "Req_Close_Trunk", "9": "Req_Parking_slot_in_Searching", "10": "Req_Parking_slot_is_available_\uff08background_seaching\uff09", "11": "Req_Find_parking_slot_Stop", "12": "Req_Choose_Park_Slot", "13": "Req_Slot_Narrow_Recommend_RPA", "14": "Req_Tie_Seat_belt", "15": "Req_Choose_Park_out_direction", "16": "Req_Click_Start_APA_park_Button", "17": "Req_Start_parking_Recommend(Release_steerwheel&Brake)", "18": "Req_Parking_process_Recommend(PI&PO)", "19": "Req_No_Response_gas_pedal", "20": "Req_No_Response_Turnlight", "21": "Req_Rearview_Mirrors_are_folding", "22": "Req_Leave_car_Control_on_APP", "23": "Req_Recommend_RPA\uff08PUSH\uff09", "24": "Req_PopUps_RPA_use_guide", "25": "Req_Warning_someone_In_car", "26": "Req_Phone_Distance_Exceed", "27": "Req_Self_check_RPA_park_in_avaiable", "28": "Req_Self_check_RPA_park_out/move__avaiable", "29": "Req_Self_check_only_RPA_move_avaiable", "30": "Req_Moving_forward_,release_to_stop", "31": "Req_Moving_Backward\uff0crelease_to_stop", "32": "Req_RPA_Park_out_completed_", "33": "Req_RPA_Park_in_completed_", "34": "Req_RPA_move_completed", "35": "Req_Pop-ups_Choose_system_refence_Parking_Slot", "36": "Req_Keep_Standstill"}#MS11#E3
+APARPAQuitReasonIndFrmDCD#7#407#false#false#39#6#1#0#APA RPA quit reason indication\nAPA RPA完全退出原因提示#0.0#0.0#0.0#{"0": "No_Request", "1": "Req_Quit_Searching_Speed_High", "2": "Req_Quit_Searching_Time_Out", "3": "Req_Quit_Driver_Change_Gear_Time_Out", "4": "Req_Quit_Door_Open_Time_Out", "5": "Req_Quit_Handshake_Fail", "6": "Req_Quit_Driver_Require_Quit", "7": "Req_Quit_Driver_Not_release_Brake_Pedal_Time_Out", "8": "Req_Quit_DriverSeatBelt_Nottied_Time_Out", "9": "Req_Quit_Timeout_Not_Press_Start_Button(APA)", "10": "Req_Quit_Reselect_Parkin_Time_Out", "11": "Req_Quit_Driver_Interrupt_Brake_Pedal_Time_Out", "12": "Req_Quit_Driver_Interrupt_Gear", "13": "Req_Quit_Driver_Interrupt_Steering_Wheel", "14": "Req_Quit_Obstacle_In_Trajectory_Time_Out", "15": "Req_Quit_EPB_UnLock", "16": "Req_Quit_Parking_Total_time_Time_Out", "17": "Req_Quit_Recover_Interrupt_Times_Overflow", "18": "Req_Quit_D/R_Times_Overflow", "19": "Req_Quit_Control_Speed_Over_Limit", "20": "Req_Quit_Path_Planning_Abnormal", "21": "Req_Quit_Space_limit", "22": "Req_Quit_Slope_Out_Of_limit", "23": "Req_Quit_ADAS_Function_Active", "24": "Req_Quit_Bad_Weather", "25": "Req_Quit_Crash", "26": "Req_Quit_ADD_System_Fail", "27": "Req_Quit_Sensor_Fail", "28": "Req_Quit_Related_Actuator_Fail", "29": "Req_Quit_Communication_Fail", "30": "Req_Quit_Sensor_block", "31": "Req_Quit_Driver_Press_APP_RPA_Button_Time_Out(RPA)", "32": "Req_Quit_Driver_Actively_Paused_Time_Out(RPA)", "33": "Req_Quit_Driver_leave_Phone_RPA_Contro_lPage_Time_Out(RPA)", "34": "Req_Quit__Phone_Distance_Exceed_Time_Out(RPA)", "35": "Req_Quit_Driver_Require_Quit_Or_Kill_The_App(RPA)", "36": "Req_Quit_Phone_bluetooth_connect_lost(RPA)", "37": "Req_Quit_Driver_Interrupt_Press_Gas_Pedal(RPA)", "38": "Req_Quit_Driver_Interrupt_Press_Brake_Pedal(RPA)", "39": "Req_Quit_Driver_Interrupt_Open_Door(RPA)", "40": "Req_Quit_Too_Close_Obstacles(RPA)", "41": "Req_Quit_Total_Distance_overrange(RPA_Move)", "42": "Req_Quit_Warning_someone_In_car_Time_Out(RPA)", "43": "Req_Quit_None_P_Status(RPA)", "44": "Req_Quit_RPA_Move&RPA_Park_Out_Not_Available(RPA)", "45": "Req_Quit_Timeout_Not_Press_Start_Button(RPA)", "46": "Req_Quit_ChoosePOdirectionTimeout", "47": "Req_Quit_Function_off"}#MS11#E3
+APARPAUnableToActiveIndFrmDCD#7#407#false#false#47#4#1#0#APA RPA Unable To Active indication\nAPA RPA无法激活原因提示#0.0#0.0#0.0#{"0": "No_Request", "1": "Speed_high", "2": "Slope_out_of_limit", "3": "Charging", "4": "ADAS_Function_Active", "5": "No_parking_behavior_Before", "6": "No_routes_available", "7": "Speed_not_zero", "8": "System_Fail", "9": "Air_suspension_Action"}#MS11#E3
 APARPAstatusFrmDCD#7#407#false#false#43#4#1#0#APA RPA status#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "background_Searching", "3": "Searching", "4": "Ready", "5": "Active", "6": "Recovery_interrupt", "7": "Completed", "8": "Terminated", "9": "Failure"}#MS11#E3
-ParkProgressSigReDistFrmDCD#7#407#false#false#55#9#1#0#Parking progress single remain distance indication\n娉�杞����姝ュ�╀��璺�绂�#0.0#0.0#0.0#null#MS11#E3
-PRAMoveSigReDistFrmDCD#7#407#false#false#71#8#1#0#RPA Move single remain distance indication��ユ�хЩ杞����姝ュ�╀��璺�绂�#0.0#0.0#0.0#null#MS11#E3
-VidTxReq#7#720#false#false#1#1#1#0#Video Transmit Request 璇锋��ADD���������瑙�瑙�棰�#0.0#0.0#0.0#{"0": "On", "1": "Off"}#MS11#E3
+ParkProgressSigReDistFrmDCD#7#407#false#false#55#9#1#0#Parking progress single remain distance indication\n泊车单步剩余距离#0.0#0.0#0.0#null#MS11#E3
+PRAMoveSigReDistFrmDCD#7#407#false#false#71#8#1#0#RPA Move single remain distance indication遥控移车单步剩余距离#0.0#0.0#0.0#null#MS11#E3
+VidTxReq#7#720#false#false#1#1#1#0#Video Transmit Request 请求ADD发送环视视频#0.0#0.0#0.0#{"0": "On", "1": "Off"}#MS11#E3
 VehAvgSpd#7#720#false#false#0#9#1#0#Vehicle average speed#0.0#0.0#0.0#null#MS11#E3
 VehRunngTiAftRdy#7#720#false#false#23#16#1#0#Vehicle running time after ready#0.0#0.0#0.0#null#MS11#E3
 TripOdoAftRstVldVal#7#720#false#false#39#1#1#0#DCD_Trip after reset valid value#0.0#0.0#0.0#{"0": "Not_valid", "1": "Valid"}#MS11#E3
 TripOdoAftRst#7#720#false#false#35#20#1#0#Trip odometer after reset#0.0#0.0#0.0#null#MS11#E3
 DCDReqHornOn#7#720#false#false#63#1#1#0#DCD request horn on#0.0#0.0#0.0#{"0": "NoReq", "1": "Req"}#MS11#E3
 DCDDVRSrvReq#7#720#false#false#62#1#1#0#DCD DVR Service Request#0.0#0.0#0.0#{"0": "No_request", "1": "Request"}#MS11#E3
-DCDDMSFatgDetnSts#7#720#false#false#61#1#1#0#DCD DMS fatigue Detection status\n��插�虫��娴�寮������舵��#0.0#0.0#0.0#{"0": "OFF", "1": "On"}#MS11#E3
-DCDDMSdstrctnDetnSts#7#720#false#false#60#1#1#0#DCD DMS distraction  Detection status\n���蹇�妫�娴�寮������舵��#0.0#0.0#0.0#{"0": "OFF", "1": "On"}#MS11#E3
+DCDDMSFatgDetnSts#7#720#false#false#61#1#1#0#DCD DMS fatigue Detection status\n疲劳检测开启状态#0.0#0.0#0.0#{"0": "OFF", "1": "On"}#MS11#E3
+DCDDMSdstrctnDetnSts#7#720#false#false#60#1#1#0#DCD DMS distraction  Detection status\n分心检测开启状态#0.0#0.0#0.0#{"0": "OFF", "1": "On"}#MS11#E3
 DCDAIoTChrgnStaTyp#7#720#false#false#59#2#1#0#DCD AIoT Charging Station Type#0.0#0.0#0.0#{"0": "No_Connection", "1": "Public_charging_station", "2": "Private_charging_station", "3": "unknown_charging_station"}#MS11#E3
-AVMSts#7#720#false#false#57#2#1#0#AVM Status  娉�杞�褰卞��绯荤����舵��#0.0#0.0#0.0#{"0": "AVM_Initial", "1": "AVM_Standby", "2": "AVM_Active", "3": "AVM_Failed"}#MS11#E3
+AVMSts#7#720#false#false#57#2#1#0#AVM Status  泊车影像系统状态#0.0#0.0#0.0#{"0": "AVM_Initial", "1": "AVM_Standby", "2": "AVM_Active", "3": "AVM_Failed"}#MS11#E3
 DCDsentryModSts#7#720#false#false#71#3#1#0#DCD sentry mode status#0.0#0.0#0.0#{"0": "Switch_off", "1": "Switch_on", "2": "Standby1", "3": "Standby2", "4": "Alert", "5": "Alarm"}#MS11#E3
 DCDsentryModReqHvOn#7#720#false#false#68#1#1#0#DCD sentry mode request HV on#0.0#0.0#0.0#{"0": "No_request", "1": "request"}#MS11#E3
 DCDsentryModReq#7#720#false#false#67#1#1#0#DCD sentry mode request#0.0#0.0#0.0#{"0": "No_request", "1": "Request"}#MS11#E3
-DCDReqHzrdOn#7#720#false#false#66#1#1#0#DCD request Hazard On  \n寮����������璇锋��#0.0#0.0#0.0#{"0": "No_Req", "1": "Req"}#MS11#E3
+DCDReqHzrdOn#7#720#false#false#66#1#1#0#DCD request Hazard On  \n开启双闪请求#0.0#0.0#0.0#{"0": "No_Req", "1": "Req"}#MS11#E3
 TripOdoAftRdyVldVal#7#720#false#false#65#1#1#0#DCD_Trip after ready valid value#0.0#0.0#0.0#{"0": "Not_valid", "1": "Valid"}#MS11#E3
-TripOdoAftRdy#7#720#false#false#64#17#0.1#0.0#Trip odometer after ready#0.0#0.0#0.0#null#MS11#E3
+TripOdoAftRdy#7#720#false#false#64#17#0.1#0#Trip odometer after ready#0.0#0.0#0.0#null#MS11#E3
 DCDDMSSigGrpChks#7#720#false#false#95#8#1#0##0.0#0.0#0.0#null#MS11#E3
 DCDDMSSigGrpCntr#7#720#false#false#99#4#1#0##0.0#0.0#0.0#null#MS11#E3
-DCDDMSSysFltSts#7#720#false#false#109#1#1#0#DMS system fault Status\nDMS绯荤��������淇℃��#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3
-DCDDMSfatgSts#7#720#false#false#108#2#1#0#DCD DMS fatigue status\n��插�崇��搴�#0.0#0.0#0.0#{"0": "No_fatigue", "1": "Mild_fatigue", "2": "Moderate_fatigue", "3": "sever_fatigue"}#MS11#E3
-DCDDMSdstrctnSts#7#720#false#false#106#2#1#0#DCD DMS distraction status\n���蹇�绋�搴�#0.0#0.0#0.0#{"0": "No_distraction", "1": "Mild_distraction", "2": "Moderate_distraction", "3": "Sever_distraction"}#MS11#E3
-DCDDMSCameraFltSts#7#720#false#false#104#1#1#0#DMS camera fault Status\nDMS������澶存�����淇℃��#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3
+DCDDMSSysFltSts#7#720#false#false#109#1#1#0#DMS system fault Status\nDMS系统故障信息#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3
+DCDDMSfatgSts#7#720#false#false#108#2#1#0#DCD DMS fatigue status\n疲劳程度#0.0#0.0#0.0#{"0": "No_fatigue", "1": "Mild_fatigue", "2": "Moderate_fatigue", "3": "sever_fatigue"}#MS11#E3
+DCDDMSdstrctnSts#7#720#false#false#106#2#1#0#DCD DMS distraction status\n分心程度#0.0#0.0#0.0#{"0": "No_distraction", "1": "Mild_distraction", "2": "Moderate_distraction", "3": "Sever_distraction"}#MS11#E3
+DCDDMSCameraFltSts#7#720#false#false#104#1#1#0#DMS camera fault Status\nDMS摄像头故障信息#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3
 VehInsSpdDispVld#7#833#false#false#4#1#1#0#Vehicle instantaneous speed display Valid#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3
 DCDSysWrkgStsForPwrMod#7#833#false#false#3#1#1#0#DCD System Working status For PowerMode#0.0#0.0#0.0#{"0": "Idle", "1": "Busy_forPwrMod"}#MS11#E3
 DCDReqPwrMod2Awk#7#833#false#false#2#1#1#0#DCD request PowerMode to Awake#0.0#0.0#0.0#{"0": "No_request", "1": "Request_to_awake"}#MS11#E3
 DCDReqKeepACC#7#833#false#false#1#1#1#0#DCD request keep ACC#0.0#0.0#0.0#{"0": "No_request", "1": "Request_keep_Acc"}#MS11#E3
 DCDTSASlifSpdDisp#7#833#false#false#0#9#1#0#TSA SLIF speed display#0.0#0.0#0.0#{"0": "No_display", "511": "Canceled"}#MS11#E3
 VehInsSpdDisp#7#833#false#false#40#9#1#0#Vehicle instantaneous speed display#0.0#0.0#0.0#null#MS11#E3
-VehInsSpdDispIntnal#7#833#false#false#63#16#0.05625#0.0#Vehicle instantaneous speed display for internal#0.0#0.0#0.0#null#MS11#E3
-BattU#7#833#false#false#79#8#0.1#0.0#Battery voltage#0.0#0.0#0.0#null#MS11#E3
+VehInsSpdDispIntnal#7#833#false#false#63#16#0.05625#0#Vehicle instantaneous speed display for internal#0.0#0.0#0.0#null#MS11#E3
+BattU#7#833#false#false#79#8#0.1#0#Battery voltage#0.0#0.0#0.0#null#MS11#E3
 DCDGamePwrAsstSteerReq#7#833#false#false#85#1#1#0#DCD Game power assisted steering Request#0.0#0.0#0.0#{"0": "No_request", "1": "Request_EPS_Asst"}#MS11#E3
 DstUnitDisp#7#833#false#false#84#1#1#0#Unit of distance from DCD#0.0#0.0#0.0#{"0": "km", "1": "mi"}#MS11#E3
 PDispUnit#7#833#false#false#83#2#1#0#Unit of pressure display#0.0#0.0#0.0#{"0": "KPa", "1": "Bar", "2": "Psi", "3": "Reserved"}#MS11#E3
 TDispUnit#7#833#false#false#81#1#1#0#Unit of temperature display#0.0#0.0#0.0#{"0": "degreeC", "1": "degreeF"}#MS11#E3
 BattUVldData#7#833#false#false#80#1#1#0#Battery voltage valid data#0.0#0.0#0.0#{"0": "Not_valid", "1": "Valid"}#MS11#E3
-DCDGameModSteerAsstPrmSts#7#833#false#false#106#3#1#0#DCD Game mode steering assistance parameter Status\n娓告��妯″��杞������╁����规�у����拌�剧疆#0.0#0.0#0.0#{"0": "No_Request", "1": "GameSteerAsscLvl_Lvl1", "2": "GameSteerAsscLvl_Lvl2", "3": "GameSteerAsscLvl_Lvl3", "4": "GameSteerAsscLvl_Lvl4", "5": "GameSteerAsscLvl_Lvl5"}#MS11#E3
+DCDGameModSteerAsstPrmSts#7#833#false#false#106#3#1#0#DCD Game mode steering assistance parameter Status\n游戏模式转向助力特性参数设置#0.0#0.0#0.0#{"0": "No_Request", "1": "GameSteerAsscLvl_Lvl1", "2": "GameSteerAsscLvl_Lvl2", "3": "GameSteerAsscLvl_Lvl3", "4": "GameSteerAsscLvl_Lvl4", "5": "GameSteerAsscLvl_Lvl5"}#MS11#E3
 DCDAdCode#7#833#false#false#147#20#1#0#Address Code of current city.#0.0#0.0#0.0#{"0": "Unknown"}#MS11#E3
 DCDCameraSpdLim#7#833#false#false#175#8#1#0#Camera speed limit within 200m.#0.0#0.0#0.0#{"0": "NoLimit"}#MS11#E3
 DCDRoadClass#7#833#false#false#181#4#1#0#Current road class.#0.0#0.0#0.0#{"0": "Unknown", "1": "Freeway", "2": "NationalRoad", "3": "ProvinceRoad", "4": "CountyRoad", "5": "RuralRoad", "6": "InCountyRoad", "7": "CitySpeedWay", "8": "MainRoad", "9": "SecondaryRoad", "10": "CommonRoad", "11": "NonNaviRoad"}#MS11#E3
@@ -348,66 +340,66 @@ DCDNavSts#7#833#false#false#177#2#1#0#Navigation on off status.#0.0#0.0#0.0#{"0"
 DCDRoadFacSpdLim#7#833#false#false#191#8#1#0#Road facility speed limit.#0.0#0.0#0.0#{"0": "NoLimit"}#MS11#E3
 DCDRoadType#7#833#false#false#197#6#1#0#Type of current road. For detailed definition of signal value  please refer to Navigation SC.#0.0#0.0#0.0#{"0": "Unknown", "1": "DivisedLink", "2": "CrossLink", "3": "JCT", "4": "RoundCircle", "5": "ServiceRoad", "6": "SlipRoad", "7": "SideRoad", "8": "SlipJCT", "9": "ExitLink", "10": "EntranceLink", "11": "TurnRightLineA", "12": "TurnRightLineB", "13": "TurnLeftLineA", "14": "TurnLeftLineB", "15": "CommonLink", "16": "TurnLeftRightLine", "53": "ServiceJCTRoad", "56": "ServiceSlipRoad", "58": "ServiceSlipJCTRoad"}#MS11#E3
 DCDTrfcSts#7#833#false#false#203#4#1#0#Traffice status of current road segment.#0.0#0.0#0.0#{"0": "Unknown", "1": "Open", "2": "Slow", "3": "Jam", "4": "Congested"}#MS11#E3
-TotOdoAcrt#7#914#false#false#7#24#0.1#0.0#ODO value as accuracy of 0.1 km#0.0#0.0#0.0#null#MS11#E3
+TotOdoAcrt#7#914#false#false#7#24#0.1#0#ODO value as accuracy of 0.1 km#0.0#0.0#0.0#null#MS11#E3
 TotOdoAcrtVld#7#914#false#false#25#1#1#0#The valid signal of TotOdoAcrt#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3
 TiModCfgSts#7#914#false#false#24#1#1#0#DCD time mode configuration status#0.0#0.0#0.0#{"0": "24h_mode", "1": "12h_mode"}#MS11#E3
-DCDVINMat#7#914#false#false#32#1#1#0#DCD VIN Match\nVIN��归��淇″��#0.0#0.0#0.0#{"0": "Mismatch", "1": "Match"}#MS11#E3
-PltSwtSet#7#932#false#false#7#2#1#0#PILOT�����藉�����\nPilot Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "Pilot"}#MS11#E3
-ADSVcCtrlSwtSet#7#932#false#false#5#2#1#0#璇���虫�у�跺����藉�����\nADS voice control switch set#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "ON"}#MS11#E3
-CtyNOASwtSet#7#932#false#false#15#2#1#0#���甯�NOA�����藉�����\nCity NOA Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
-HwNOASwtSet#7#932#false#false#13#2#1#0#楂����NOA�����藉�����\nHighway NOA Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
-PltSwtALCSet#7#932#false#false#11#2#1#0#杞������������������藉�����\nPilot Switch ALC set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "ALC"}#MS11#E3
-LdwLdpHptcWarnSwtSet#7#932#false#false#21#2#1#0#杞�������绂昏Е瑙���ヨ��寮����\nLDW And LDP haptic switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "HptcWarn_On"}#MS11#E3
-LdwLdpSwtSet#7#932#false#false#19#2#1#0#杞�������绂绘�ヨ�� 杞�������绂荤�����寮����\nLDW And LDP Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "ON", "3": "Reserved"}#MS11#E3
-NoaLcSwtSet#7#932#false#false#17#2#1#0#������纭�璁ゅ����藉�����\nNOA Lane Change Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
-ADSAEBFCWSwtSet#7#932#false#false#31#2#1#0#�����ㄧ揣��ュ�跺�ㄥ�����\nAEB switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
-ADSFCWWarnTiSet#7#932#false#false#29#2#1#0#������纰版��棰�璀���������舵�鸿�剧疆\nADS FCW warning time set#0.0#0.0#0.0#{"0": "No_Command", "1": "early", "2": "middle", "3": "late"}#MS11#E3
-ADSBSDLCASwtSet#7#932#false#false#39#2#1#0#��插�虹��娴�涓���㈤��杈���╁�����\nADS BSD LCA Switch Set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
-ADSRCWSwtSet#7#932#false#false#37#2#1#0#�����归�叉��杈���╁�����\nRCW Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
-ADSPMAEBSwtSet#7#932#false#false#35#2#1#0#杩�璺�绂婚�叉��杈���╁����宠�剧疆\nParking And Maneuvering Automatic Emergency Brake switch Set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
-ADSAESESSSwtSet#7#932#false#false#33#2#1#0#�����ㄧ揣��ヨ浆�����块��寮����\nAES_ESS switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
-RPASwtSet#7#932#false#false#47#2#1#0#��ユ�ф��杞�寮����\nRPA Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
-AVPSwtSet#7#932#false#false#45#2#1#0#���浜轰唬瀹㈡��杞�寮����\nAVP Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
-HPPSwtSet#7#932#false#false#43#2#1#0#璁板��娉�杞�寮����\nHPP Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
-ADSDOWSwtSet#7#932#false#false#41#2#1#0#寮���ㄩ��璀�寮����\nDOW Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
+DCDVINMat#7#914#false#false#32#1#1#0#DCD VIN Match\nVIN匹配信号#0.0#0.0#0.0#{"0": "Mismatch", "1": "Match"}#MS11#E3
+PltSwtSet#7#932#false#false#7#2#1#0#PILOT功能开关\nPilot Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "Pilot"}#MS11#E3
+ADSVcCtrlSwtSet#7#932#false#false#5#2#1#0#语音控制功能开关\nADS voice control switch set#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "ON"}#MS11#E3
+CtyNOASwtSet#7#932#false#false#15#2#1#0#城市NOA功能开关\nCity NOA Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
+HwNOASwtSet#7#932#false#false#13#2#1#0#高速NOA功能开关\nHighway NOA Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
+PltSwtALCSet#7#932#false#false#11#2#1#0#转向灯变道功能开关\nPilot Switch ALC set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "ALC"}#MS11#E3
+LdwLdpHptcWarnSwtSet#7#932#false#false#21#2#1#0#车道偏离触觉报警开关\nLDW And LDP haptic switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "HptcWarn_On"}#MS11#E3
+LdwLdpSwtSet#7#932#false#false#19#2#1#0#车道偏离报警 车道偏离纠偏开关\nLDW And LDP Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "ON", "3": "Reserved"}#MS11#E3
+NoaLcSwtSet#7#932#false#false#17#2#1#0#变道确认功能开关\nNOA Lane Change Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
+ADSAEBFCWSwtSet#7#932#false#false#31#2#1#0#自动紧急制动开关\nAEB switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
+ADSFCWWarnTiSet#7#932#false#false#29#2#1#0#向前碰撞预警提醒时机设置\nADS FCW warning time set#0.0#0.0#0.0#{"0": "No_Command", "1": "early", "2": "middle", "3": "late"}#MS11#E3
+ADSBSDLCASwtSet#7#932#false#false#39#2#1#0#盲区监测与换道辅助开关\nADS BSD LCA Switch Set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
+ADSRCWSwtSet#7#932#false#false#37#2#1#0#后方防撞辅助开关\nRCW Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
+ADSPMAEBSwtSet#7#932#false#false#35#2#1#0#近距离防撞辅助开关设置\nParking And Maneuvering Automatic Emergency Brake switch Set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
+ADSAESESSSwtSet#7#932#false#false#33#2#1#0#自动紧急转向避障开关\nAES_ESS switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
+RPASwtSet#7#932#false#false#47#2#1#0#遥控泊车开关\nRPA Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
+AVPSwtSet#7#932#false#false#45#2#1#0#无人代客泊车开关\nAVP Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
+HPPSwtSet#7#932#false#false#43#2#1#0#记忆泊车开关\nHPP Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
+ADSDOWSwtSet#7#932#false#false#41#2#1#0#开门预警开关\nDOW Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
 DCDAudModSwtSet#7#932#false#false#55#2#1#0#TTS mode switch#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "Nomal", "3": "Simple"}#MS11#E3
 DCDADSRCTABSwtSet#7#932#false#false#53#2#1#0#RCTA and RCTB switch#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "Warning", "3": "warning_and_brake"}#MS11#E3
 DCDACCInitSpdSwtSet#7#932#false#false#51#2#1#0#intelligent speed limit control  switch#0.0#0.0#0.0#{"0": "No_command", "1": "Current_Veh_Spd", "2": "Current_Spd_Limit"}#MS11#E3
-APASwtSet#7#932#false#false#49#2#1#0#杈���╂��杞�寮����\nAPA Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
-DCDLdwLdpWarnTypSwtSet#7#932#false#false#63#2#1#0#LDW And LDP warning type switch set\n杞����杈���╃郴缁���ヨ��绫诲��璁剧疆#0.0#0.0#0.0#{"0": "No_Command", "1": "warning", "2": "warning_and_Prevention"}#MS11#E3
+APASwtSet#7#932#false#false#49#2#1#0#辅助泊车开关\nAPA Switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
+DCDLdwLdpWarnTypSwtSet#7#932#false#false#63#2#1#0#LDW And LDP warning type switch set\n车道辅助系统报警类型设置#0.0#0.0#0.0#{"0": "No_Command", "1": "warning", "2": "warning_and_Prevention"}#MS11#E3
 DCDHPPBckGrPathAutDoLoSet#7#932#false#false#61#2#1#0#HPP path background auto download switch#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "ON"}#MS11#E3
 DCDHPPBckGrLearSwtSet#7#932#false#false#59#2#1#0#HPP background learn switch#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "ON"}#MS11#E3
-DCDELKHptcWarnSwtSet#7#932#false#false#57#2#1#0#ELK haptic switch switch  set\nELK�����ㄥ����宠�剧疆#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "HptcWarn_On"}#MS11#E3
+DCDELKHptcWarnSwtSet#7#932#false#false#57#2#1#0#ELK haptic switch switch  set\nELK震动开关设置#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "HptcWarn_On"}#MS11#E3
 DCDTouchdSpdTyp#7#932#false#false#67#2#1#0#DCD touched Speed Type#0.0#0.0#0.0#{"0": "No_command", "1": "Current_Veh_Spd_touched", "2": "Current_Spd_Limit_touched"}#MS11#E3
 DCDLVPwrSwtSet#7#932#false#false#65#2#1#0#Low power mode switch#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "ON"}#MS11#E3
-ADSELKSwtSet#7#932#false#false#87#2#1#0#绱ф�ヨ溅���淇����寮����\nADS ELK switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
+ADSELKSwtSet#7#932#false#false#87#2#1#0#紧急车道保持开关\nADS ELK switch set#0.0#0.0#0.0#{"0": "No_Command", "1": "Off", "2": "On"}#MS11#E3
 FailrStsSigGrpChks#7#353#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
-FailrSts#7#353#false#false#15#3#1#0#EPS ��������舵��\nEPS Failure Status#0.0#0.0#0.0#{"0": "SteerNormal", "1": "SteerAssitTempRed", "2": "SteerAssitServReq", "3": "SteerAssitErrStopVehicle", "4": "Notused", "5": "Notused", "6": "Notused", "7": "Notused"}#MS11#E3
+FailrSts#7#353#false#false#15#3#1#0#EPS 故障状态\nEPS Failure Status#0.0#0.0#0.0#{"0": "SteerNormal", "1": "SteerAssitTempRed", "2": "SteerAssitServReq", "3": "SteerAssitErrStopVehicle", "4": "Notused", "5": "Notused", "6": "Notused", "7": "Notused"}#MS11#E3
 FailrStsSigGrpCntr#7#353#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
-DSTReqCtrlSts#7#353#false#false#23#3#1#0#EPS ���棣�BCS褰����DST�����界��fault��舵��\nEPS status related to execution of DST from BCS#0.0#0.0#0.0#{"0": "Normal", "1": "Ready", "2": "Active", "3": "ReversibleError", "4": "InreversibleError", "5": "Reserved", "6": "Reserved", "7": "Reserved"}#MS11#E3
-HODSts#7#353#false#false#20#2#1#0#EPS 妫�娴�椹鹃┒��������������ㄦ�瑰�����涓�\nEPS indicate the driver hands on the steering wheel or not#0.0#0.0#0.0#{"0": "NoInfo", "1": "NotHandsOnOrHandsOff", "2": "HandsOff", "3": "HandsOn"}#MS11#E3
-HODVld#7#353#false#false#18#1#1#0#HOD 淇″�锋�����浣�\nHOD signal Valid Flag#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3
-HODQly#7#353#false#false#31#8#1#0#HOD 淇″�风疆淇″害���\nIndicate the HOD signal confidence  spcifically for hands off detect.#0.0#0.0#0.0#null#MS11#E3
+DSTReqCtrlSts#7#353#false#false#23#3#1#0#EPS 反馈BCS当前DST功能的fault状态\nEPS status related to execution of DST from BCS#0.0#0.0#0.0#{"0": "Normal", "1": "Ready", "2": "Active", "3": "ReversibleError", "4": "InreversibleError", "5": "Reserved", "6": "Reserved", "7": "Reserved"}#MS11#E3
+HODSts#7#353#false#false#20#2#1#0#EPS 检测驾驶员手是否在方向盘上\nEPS indicate the driver hands on the steering wheel or not#0.0#0.0#0.0#{"0": "NoInfo", "1": "NotHandsOnOrHandsOff", "2": "HandsOff", "3": "HandsOn"}#MS11#E3
+HODVld#7#353#false#false#18#1#1#0#HOD 信号有效位\nHOD signal Valid Flag#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3
+HODQly#7#353#false#false#31#8#1#0#HOD 信号置信度值\nIndicate the HOD signal confidence  spcifically for hands off detect.#0.0#0.0#0.0#null#MS11#E3
 PasReqSigGrpChks#7#353#false#false#39#8#1#0##0.0#0.0#0.0#null#MS11#E3
 PasReqSigGrpCntr#7#353#false#false#43#4#1#0##0.0#0.0#0.0#null#MS11#E3
-PASReqFbSts#7#353#false#false#55#3#1#0#EPS 瀵逛��PAS���璇锋�����棣�\nEPS feedback for PAS request#0.0#0.0#0.0#{"0": "Initial", "1": "Ready", "2": "Open", "3": "Active", "4": "Fault", "5": "Notused", "6": "Notused", "7": "Notused"}#MS11#E3
-PASReqFltSts#7#353#false#false#52#4#1#0#EPS ���棣�PAS褰����Fault ��舵��\nEPS status related to execution of PAS#0.0#0.0#0.0#{"0": "Normal", "1": "VehicleSpeedOutOfRange", "2": "SteeringWheelTorqueOutOfRange", "3": "AngleRequestOutOfRange", "4": "DeltaAngleRequestOutOfEange", "5": "PASLowPriority", "6": "ImproperHandshaking", "7": "HandshakeTimeout", "8": "EPSInternalFault"}#MS11#E3
+PASReqFbSts#7#353#false#false#55#3#1#0#EPS 对于PAS的请求反馈\nEPS feedback for PAS request#0.0#0.0#0.0#{"0": "Initial", "1": "Ready", "2": "Open", "3": "Active", "4": "Fault", "5": "Notused", "6": "Notused", "7": "Notused"}#MS11#E3
+PASReqFltSts#7#353#false#false#52#4#1#0#EPS 反馈PAS当前Fault 状态\nEPS status related to execution of PAS#0.0#0.0#0.0#{"0": "Normal", "1": "VehicleSpeedOutOfRange", "2": "SteeringWheelTorqueOutOfRange", "3": "AngleRequestOutOfRange", "4": "DeltaAngleRequestOutOfEange", "5": "PASLowPriority", "6": "ImproperHandshaking", "7": "HandshakeTimeout", "8": "EPSInternalFault"}#MS11#E3
 PinionSteerSigGrpChks#7#181#false#false#135#8#1#0##0.0#0.0#0.0#null#MS11#E3
 PinionSteerSigGrpCntr#7#181#false#false#139#4#1#0##0.0#0.0#0.0#null#MS11#E3
-PinionSteerAgl#7#181#false#true#151#15#0.0625#0.0#��瑰�����杞�瑙�\nSteering Wheel Angle\n��瑰�� \nAnticlockwise direction of steering wheel increase angle output.\nClockwise direction of steering wheel decrease angle output.#0.0#0.0#0.0#null#MS11#E3
-PinionSteerAglVld#7#181#false#false#152#1#1#0#��瑰�����杞�瑙�������浣�\nSteering Wheel Angle Valid Flag#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3
-SteerWhlTq#7#181#false#true#167#11#0.01#0.0#��瑰�����������\nSteering Wheel Torque\n��瑰��  Clockwise     Anti Clockwise#0.0#0.0#0.0#null#MS11#E3
-SteerWhlTqVld#7#181#false#false#172#1#1#0#��瑰����������╂�����浣�\nSteering Wheel torque Valid Flag#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3
-PinionSteerAglSpd#7#181#false#true#183#12#1#0#��瑰�����杞����\nSteering Wheel Velocity\n��瑰��  Clockwise     Anti Clockwise#0.0#0.0#0.0#null#MS11#E3
-PinionSteerAglSpdVld#7#181#false#false#187#1#1#0#��瑰�����杞����������浣�\nSteering Wheel Velocity Valid Flag#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3
-ElecPwrCns#7#181#false#false#215#11#0.1#0.0#EPS ��垫��\nEPS battery consumption#0.0#0.0#0.0#null#MS11#E3
-EstimdRkFVld#7#181#false#false#220#1#1#0#EPS�����ㄤ及绠����榻挎�″��������浣�\nEPS internal estimated rack force valid flag#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3
-EstimdRkF#7#181#false#true#231#16#1#0#EPS�����ㄤ及绠����榻挎�″��\nEPS internal estimated rack force#0.0#0.0#0.0#null#MS11#E3
+PinionSteerAgl#7#181#false#true#151#15#0.0625#0#方向盘转角\nSteering Wheel Angle\n方向 \nAnticlockwise direction of steering wheel increase angle output.\nClockwise direction of steering wheel decrease angle output.#0.0#0.0#0.0#null#MS11#E3
+PinionSteerAglVld#7#181#false#false#152#1#1#0#方向盘转角有效位\nSteering Wheel Angle Valid Flag#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3
+SteerWhlTq#7#181#false#true#167#11#0.01#0#方向盘扭矩\nSteering Wheel Torque\n方向  Clockwise     Anti Clockwise#0.0#0.0#0.0#null#MS11#E3
+SteerWhlTqVld#7#181#false#false#172#1#1#0#方向盘扭矩有效位\nSteering Wheel torque Valid Flag#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3
+PinionSteerAglSpd#7#181#false#true#183#12#1#0#方向盘转速\nSteering Wheel Velocity\n方向  Clockwise     Anti Clockwise#0.0#0.0#0.0#null#MS11#E3
+PinionSteerAglSpdVld#7#181#false#false#187#1#1#0#方向盘转速有效位\nSteering Wheel Velocity Valid Flag#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3
+ElecPwrCns#7#181#false#false#215#11#0.1#0#EPS 电流\nEPS battery consumption#0.0#0.0#0.0#null#MS11#E3
+EstimdRkFVld#7#181#false#false#220#1#1#0#EPS内部估算的齿条力有效位\nEPS internal estimated rack force valid flag#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3
+EstimdRkF#7#181#false#true#231#16#1#0#EPS内部估算的齿条力\nEPS internal estimated rack force#0.0#0.0#0.0#null#MS11#E3
 AdasReqCtrlADDSigGrpChks#7#226#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 AdasReqCtrlADDSigGrpCntr#7#226#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
 ADASReqFltStsADD#7#226#false#false#21#3#1#0#Feedback fault status to ADD driving lateral control request#0.0#0.0#0.0#{"0": "Normal", "1": "ADAS_Control_not_available", "2": "EPS_RevError", "3": "EPS_IrrevError", "4": "Caused_by_ADAS_failure", "5": "Reserved", "6": "Reserved", "7": "Reserved"}#MS11#E3
 ADASReqFbStsADD#7#226#false#false#18#3#1#0#Feedback status to ADD driving lateral control request#0.0#0.0#0.0#{"0": "Initial", "1": "Ready", "2": "Open", "3": "Active", "4": "Fault", "5": "Notused", "6": "Notused", "7": "Notused"}#MS11#E3
-ADASReqOvlyTqADD#7#226#false#true#29#14#0.00390625#0.0#Overlay Torque  Motor Torque  from ADD driving lateral control request\n��瑰�� \n椤烘�堕��杞���ㄦ�瑰�����璇锋��  \n�����堕��杞���ㄦ�瑰�����璇锋��#0.0#0.0#0.0#null#MS11#E3
+ADASReqOvlyTqADD#7#226#false#true#29#14#0.00390625#0#Overlay Torque  Motor Torque  from ADD driving lateral control request\n方向 \n顺时针转动方向盘请求  \n逆时针转动方向盘请求#0.0#0.0#0.0#null#MS11#E3
 SteerWhlVibStsADD#7#226#false#false#41#1#1#0#Indicate the steering wheel vibration active or not to ADD#0.0#0.0#0.0#{"0": "NotActive", "1": "Active"}#MS11#E3
 DrvrSteerActvADD#7#226#false#false#40#1#1#0#Indicate if the driver override or not to ADD driving lateral control request#0.0#0.0#0.0#{"0": "Notactive", "1": "Active"}#MS11#E3
 FLSRWarnSigGrpChks#7#393#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
@@ -431,58 +423,58 @@ LRRAdasCanfdNodeAddress#7#1394#false#false#7#8#1#0#Node source address#0.0#0.0#0
 LRRAdasCanfdActiveWakeup#7#1394#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3
 LRRAdasCanfdRepeatMsgReq#7#1394#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3
 LRRAdasCanfdRepeatMsgSt#7#1394#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3
-DoorTrLtchFlt#7#440#false#false#7#8#1#0#灏鹃�ㄩ����垫�烘�������舵��\nBit0 PRSho2Batt_0 NoErr_1 Err Bit1 PRSho2Gnd  Bit2 PROpen\nBit3 PRDrvFlt  Bit4 CinhSho2Batt\nBit5 CinhSho2Gnd  Bit6 CinhOpen\nBit7 CinhDrvFlt#0.0#0.0#0.0#null#MS11#E3
-TrPawlSwtSts#7#440#false#false#10#1#1#0#灏鹃�ㄦ�����寮���崇�舵��#0.0#0.0#0.0#{"0": "Clsd", "1": "Opened"}#MS11#E3
-TrExtSwtSts#7#440#false#false#9#2#1#0#灏鹃�ㄥ��寮���崇�舵��#0.0#0.0#0.0#{"0": "Err", "1": "NotPsd", "2": "Psd", "3": "NoInfo"}#MS11#E3
-DoorTrLtchSts#7#440#false#false#18#2#1#0#灏鹃�ㄩ����舵��#0.0#0.0#0.0#{"0": "NoDrv", "1": "UnlockDrv", "2": "LockDrv", "3": "Reserved"}#MS11#E3
-LZCUInpU#7#440#false#false#47#8#0.2#0.0#LZCU Input Voltage#0.0#0.0#0.0#null#MS11#E3
+DoorTrLtchFlt#7#440#false#false#7#8#1#0#尾门锁电机故障状态\nBit0 PRSho2Batt_0 NoErr_1 Err Bit1 PRSho2Gnd  Bit2 PROpen\nBit3 PRDrvFlt  Bit4 CinhSho2Batt\nBit5 CinhSho2Gnd  Bit6 CinhOpen\nBit7 CinhDrvFlt#0.0#0.0#0.0#null#MS11#E3
+TrPawlSwtSts#7#440#false#false#10#1#1#0#尾门棘爪开关状态#0.0#0.0#0.0#{"0": "Clsd", "1": "Opened"}#MS11#E3
+TrExtSwtSts#7#440#false#false#9#2#1#0#尾门外开关状态#0.0#0.0#0.0#{"0": "Err", "1": "NotPsd", "2": "Psd", "3": "NoInfo"}#MS11#E3
+DoorTrLtchSts#7#440#false#false#18#2#1#0#尾门锁状态#0.0#0.0#0.0#{"0": "NoDrv", "1": "UnlockDrv", "2": "LockDrv", "3": "Reserved"}#MS11#E3
+LZCUInpU#7#440#false#false#47#8#0.2#0#LZCU Input Voltage#0.0#0.0#0.0#null#MS11#E3
 LZCUInpUSts#7#440#false#false#50#3#1#0#LZCU Input Voltage Status#0.0#0.0#0.0#{"0": "Normal", "1": "HighVoltage", "2": "OverVoltage", "3": "LowVoltage", "4": "UnderVoltage", "5": "Reserve", "6": "Reserve", "7": "Reserve"}#MS11#E3
 AdasSwtSigGrpChks#7#455#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 AdasSwtSigGrpCntr#7#455#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
-AdasSwt#7#455#false#false#23#2#1#0#涓������洪┚寮����#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#MS11#E3
-DiagcFailSWTRCmnFltSts#7#455#false#false#39#3#1#0#��瑰�������㈡�垮�充�����寮���虫�������舵��#0.0#0.0#0.0#{"0": "No_Failure", "1": "Failure"}#MS11#E3
-DrvModSwKnobRotDir#7#455#false#false#36#2#1#0#椹鹃┒妯″�������㈡��������杞���瑰��#0.0#0.0#0.0#{"0": "Idle", "1": "ClockWise", "2": "ConterClockWise"}#MS11#E3
-DrvModSwRiKnobCounter#7#455#false#false#47#8#1.0#0.0#椹鹃┒妯″�������㈡��������杞�Counter���#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
-LeKnobCounter#7#455#false#false#55#8#1.0#0.0#��瑰�����宸�婊�杞�婊����Counter���#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
-LeKnobRotDir#7#455#false#false#63#2#1#0#��瑰�����宸�渚ф��杞�婊���ㄦ�瑰��\n0x0 Idle\n0x1 Up\n0x2 Down#0.0#0.0#0.0#null#MS11#E3
-LeMFctActSgCe#7#455#false#false#61#2#1#0#��瑰�������㈡�垮乏渚у����虫��杞���惧����舵��#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#MS11#E3
-LeMFctActSgLe#7#455#false#false#59#2#1#0#��瑰�������㈡�垮乏渚у����冲�哄乏渚ф�������舵��#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#MS11#E3
-LeMFctActSgRi#7#455#false#false#57#2#1#0#��瑰�������㈡�垮乏渚у����冲�哄�充晶��������舵��#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#MS11#E3
-RiKnobCounter#7#455#false#false#71#8#1.0#0.0#��瑰�������充晶婊�杞�婊����Counter���#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
-RiKnobRotDir#7#455#false#false#79#2#1#0#��瑰�������充晶婊�杞�婊���ㄦ�瑰��\n0x0 Idle\n0x1 Up\n0x2 Down#0.0#0.0#0.0#null#MS11#E3
-RiMFctActSgCe#7#455#false#false#77#2#1#0#��瑰�������㈡�垮�充晶寮���虫��杞���惧����舵��#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#MS11#E3
-RiMFctActSgLe#7#455#false#false#75#2#1#0#��瑰�������㈡�垮�充晶寮���冲�哄乏渚ф�������舵��#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#MS11#E3
-RiMFctActSgRi#7#455#false#false#73#2#1#0#��瑰�������㈡�垮�充晶寮���冲�哄�充晶��������舵��#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#MS11#E3
-SteerWhlHeatgClct#7#794#false#false#151#8#1#-80#��瑰�����NTC娓╁害������#0.0#0.0#0.0#null#MS11#E3
-PmsiPm25Val#7#794#false#false#191#16#1#0#瀹ゅ��PM2.5娴�搴����#0.0#0.0#0.0#null#MS11#E3
-PmsiFanErrSts#7#794#false#false#206#1#1#0#��������舵�����棣�#0.0#0.0#0.0#{"0": "Normal", "1": "Error"}#MS11#E3
-PmsiComErrSts#7#794#false#false#205#1#1#0#LIN���璁����璇�#0.0#0.0#0.0#{"0": "Normal", "1": "Error"}#MS11#E3
-PmsiWorkSts#7#794#false#false#204#2#1#0#宸ヤ����舵�����棣�#0.0#0.0#0.0#{"0": "Standby", "1": "Collecting", "2": "Complete", "3": "Reserved"}#MS11#E3
-PmsiAirQLyLvl#7#794#false#false#202#3#1#0#杞����PM2.5娴�搴�绛�绾�#0.0#0.0#0.0#{"0": "Level_1", "1": "Level_2", "2": "Level_3", "3": "Level_4", "4": "Level_5", "5": "Level_6", "6": "Reserved", "7": "Invalid"}#MS11#E3
-PmsiLoPwrI#7#794#false#false#216#10#0.1#0.0#PMSI Low Voltage Power DC Current#0.0#0.0#0.0#null#MS11#E3
+AdasSwt#7#455#false#false#23#2#1#0#一键智驾开关#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#MS11#E3
+DiagcFailSWTRCmnFltSts#7#455#false#false#39#3#1#0#方向盘面板右五向开关故障状态#0.0#0.0#0.0#{"0": "No_Failure", "1": "Failure"}#MS11#E3
+DrvModSwKnobRotDir#7#455#false#false#36#2#1#0#驾驶模式切换旋钮旋转方向#0.0#0.0#0.0#{"0": "Idle", "1": "ClockWise", "2": "ConterClockWise"}#MS11#E3
+DrvModSwRiKnobCounter#7#455#false#false#47#8#1#0#驾驶模式切换旋钮旋转Counter值#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
+LeKnobCounter#7#455#false#false#55#8#1#0#方向盘左滚轮滚动Counter值#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
+LeKnobRotDir#7#455#false#false#63#2#1#0#方向盘左侧滚轮滚动方向\n0x0 Idle\n0x1 Up\n0x2 Down#0.0#0.0#0.0#null#MS11#E3
+LeMFctActSgCe#7#455#false#false#61#2#1#0#方向盘面板左侧开关滚轮松压状态#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#MS11#E3
+LeMFctActSgLe#7#455#false#false#59#2#1#0#方向盘面板左侧开关区左侧按键状态#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#MS11#E3
+LeMFctActSgRi#7#455#false#false#57#2#1#0#方向盘面板左侧开关区右侧按键状态#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#MS11#E3
+RiKnobCounter#7#455#false#false#71#8#1#0#方向盘右侧滚轮滚动Counter值#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
+RiKnobRotDir#7#455#false#false#79#2#1#0#方向盘右侧滚轮滚动方向\n0x0 Idle\n0x1 Up\n0x2 Down#0.0#0.0#0.0#null#MS11#E3
+RiMFctActSgCe#7#455#false#false#77#2#1#0#方向盘面板右侧开关滚轮松压状态#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#MS11#E3
+RiMFctActSgLe#7#455#false#false#75#2#1#0#方向盘面板右侧开关区左侧按键状态#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#MS11#E3
+RiMFctActSgRi#7#455#false#false#73#2#1#0#方向盘面板右侧开关区右侧按键状态#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Error", "3": "Reserved"}#MS11#E3
+SteerWhlHeatgClct#7#794#false#false#151#8#1#-80#方向盘NTC温度采集#0.0#0.0#0.0#null#MS11#E3
+PmsiPm25Val#7#794#false#false#191#16#1#0#室内PM2.5浓度值#0.0#0.0#0.0#null#MS11#E3
+PmsiFanErrSts#7#794#false#false#206#1#1#0#故障状态反馈#0.0#0.0#0.0#{"0": "Normal", "1": "Error"}#MS11#E3
+PmsiComErrSts#7#794#false#false#205#1#1#0#LIN通讯错误#0.0#0.0#0.0#{"0": "Normal", "1": "Error"}#MS11#E3
+PmsiWorkSts#7#794#false#false#204#2#1#0#工作状态反馈#0.0#0.0#0.0#{"0": "Standby", "1": "Collecting", "2": "Complete", "3": "Reserved"}#MS11#E3
+PmsiAirQLyLvl#7#794#false#false#202#3#1#0#车内PM2.5浓度等级#0.0#0.0#0.0#{"0": "Level_1", "1": "Level_2", "2": "Level_3", "3": "Level_4", "4": "Level_5", "5": "Level_6", "6": "Reserved", "7": "Invalid"}#MS11#E3
+PmsiLoPwrI#7#794#false#false#216#10#0.1#0#PMSI Low Voltage Power DC Current#0.0#0.0#0.0#null#MS11#E3
 PmsiLinComFltSts#7#794#false#false#238#2#1#0#Pmsi LIN node communication fault status.#0.0#0.0#0.0#{"0": "No_Fault", "1": "Node_Miss", "2": "Checksum_Error"}#MS11#E3
-PmsiLoPwrU#7#794#false#false#233#8#0.1#0.0#PMSI Low Voltage Power DC Voltage#0.0#0.0#0.0#null#MS11#E3
-DrvrOcupcySts#7#892#false#false#1#2#1#0#Driver Occupancy Sensor Status\n涓婚┚搴ф�����浣�浼������ㄦ��娴���舵��#0.0#0.0#0.0#{"0": "empty", "1": "occupied", "2": "Reserved", "3": "Reserved"}#MS11#E3
-HandsOnDetectionErrorStatus#7#895#false#false#87#1#1#0#��瑰�����绂绘��妫�娴���������舵��#0.0#0.0#0.0#{"0": "NoError", "1": "Error"}#MS11#E3
-HandsOnDetectionStatus#7#895#false#false#86#1#1#0#��瑰�����绂绘��妫�娴���舵��#0.0#0.0#0.0#{"0": "No_Detect", "1": "Detect"}#MS11#E3
-RlsClsWinReq#7#895#false#false#85#2#1#0#涓���ㄥ�崇��璇锋��#0.0#0.0#0.0#{"0": "No_Request", "1": "Request_close_win_for_rain", "2": "Request_close_win_for_time_out", "3": "Reserved"}#MS11#E3
+PmsiLoPwrU#7#794#false#false#233#8#0.1#0#PMSI Low Voltage Power DC Voltage#0.0#0.0#0.0#null#MS11#E3
+DrvrOcupcySts#7#892#false#false#1#2#1#0#Driver Occupancy Sensor Status\n主驾座椅占位传感器检测状态#0.0#0.0#0.0#{"0": "empty", "1": "occupied", "2": "Reserved", "3": "Reserved"}#MS11#E3
+HandsOnDetectionErrorStatus#7#895#false#false#87#1#1#0#方向盘离手检测故障状态#0.0#0.0#0.0#{"0": "NoError", "1": "Error"}#MS11#E3
+HandsOnDetectionStatus#7#895#false#false#86#1#1#0#方向盘离手检测状态#0.0#0.0#0.0#{"0": "No_Detect", "1": "Detect"}#MS11#E3
+RlsClsWinReq#7#895#false#false#85#2#1#0#下雨关窗请求#0.0#0.0#0.0#{"0": "No_Request", "1": "Request_close_win_for_rain", "2": "Request_close_win_for_time_out", "3": "Reserved"}#MS11#E3
 RlsLiSwtReq#7#895#false#false#83#2#1#0##0.0#0.0#0.0#{"0": "Switch_ligt_off", "1": "Switch_ligt_on", "2": "Reserved", "3": "Invalid"}#MS11#E3
-RlsFrntWinHum#7#895#false#false#95#10#0.1#0.0#�����￠����荤��婀垮害#0.0#0.0#0.0#null#MS11#E3
-RlsFrntWinT#7#895#false#false#111#11#0.1#-40.0#�����￠����荤��娓╁害#0.0#0.0#0.0#null#MS11#E3
-RlsRainFallAmnt#7#895#false#false#127#4#1#0#��ㄩ��#0.0#0.0#0.0#{"0": "0mm_24h", "1": "0_10mm_24h", "2": "10_15mm_24h", "3": "15_25mm_24h", "4": "25_35mm_24h", "5": "35_50mm_24h", "6": "50_70mm_24h", "7": "70_100mm_24h", "8": "100_mm_24h"}#MS11#E3
-RlsRainFallSts#7#895#false#false#123#4#1#0#涓���ㄧ�舵��#0.0#0.0#0.0#{"0": "No_rain", "1": "ligt_rain", "2": "moderate_rain", "3": "heavy_rain", "15": "Invalid"}#MS11#E3
-RlsRainSnsrVal#7#895#false#false#135#12#1#0#��ㄩ��妫�娴�浼������ㄦ�板��#0.0#0.0#0.0#null#MS11#E3
-RlsRainSnsrFlt#7#895#false#false#139#1#1#0#��ㄩ��浼������ㄦ�����#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3
-RlsSolarSnsrFlt#7#895#false#false#151#2#1#0#��冲��浼������ㄦ�����#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3
-RlsTHumSnsrFlt#7#895#false#false#149#1#1#0#娓╁害婀垮害浼������ㄦ�������舵��#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3
-RlsOutdBriSts#7#895#false#false#148#3#1#0#��藉ぉ 榛�澶� ��ч��妫�娴�#0.0#0.0#0.0#{"0": "Day", "1": "Night", "2": "Tunnel", "3": "Darkstart", "4": "Invalid"}#MS11#E3
-DrvrGearShiftParkReqLin#7#895#false#false#183#2#1#0#缁����寮����P妗�Push璇锋�� Lin���浣�#0.0#0.0#0.0#{"0": "NotPressed", "1": "Pressed", "2": "Invalid"}#MS11#E3
-GearShiftPosReqLin#7#895#false#false#181#3#1#0#缁����寮���虫����℃�ㄦ��浣�缃� Lin���浣�#0.0#0.0#0.0#{"0": "Center", "1": "Up", "2": "UpUp", "3": "Dwn", "4": "DwnDwn", "5": "Invalid"}#MS11#E3
+RlsFrntWinHum#7#895#false#false#95#10#0.1#0#前挡风玻璃湿度#0.0#0.0#0.0#null#MS11#E3
+RlsFrntWinT#7#895#false#false#111#11#0.1#-40#前挡风玻璃温度#0.0#0.0#0.0#null#MS11#E3
+RlsRainFallAmnt#7#895#false#false#127#4#1#0#雨量#0.0#0.0#0.0#{"0": "0mm_24h", "1": "0_10mm_24h", "2": "10_15mm_24h", "3": "15_25mm_24h", "4": "25_35mm_24h", "5": "35_50mm_24h", "6": "50_70mm_24h", "7": "70_100mm_24h", "8": "100_mm_24h"}#MS11#E3
+RlsRainFallSts#7#895#false#false#123#4#1#0#下雨状态#0.0#0.0#0.0#{"0": "No_rain", "1": "ligt_rain", "2": "moderate_rain", "3": "heavy_rain", "15": "Invalid"}#MS11#E3
+RlsRainSnsrVal#7#895#false#false#135#12#1#0#雨量检测传感器数值#0.0#0.0#0.0#null#MS11#E3
+RlsRainSnsrFlt#7#895#false#false#139#1#1#0#雨量传感器故障#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3
+RlsSolarSnsrFlt#7#895#false#false#151#2#1#0#阳光传感器故障#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3
+RlsTHumSnsrFlt#7#895#false#false#149#1#1#0#温度湿度传感器故障状态#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3
+RlsOutdBriSts#7#895#false#false#148#3#1#0#白天 黑夜 隧道检测#0.0#0.0#0.0#{"0": "Day", "1": "Night", "2": "Tunnel", "3": "Darkstart", "4": "Invalid"}#MS11#E3
+DrvrGearShiftParkReqLin#7#895#false#false#183#2#1#0#组合开关P档Push请求 Lin冗余#0.0#0.0#0.0#{"0": "NotPressed", "1": "Pressed", "2": "Invalid"}#MS11#E3
+GearShiftPosReqLin#7#895#false#false#181#3#1#0#组合开关怀挡拨杆位置 Lin冗余#0.0#0.0#0.0#{"0": "Center", "1": "Up", "2": "UpUp", "3": "Dwn", "4": "DwnDwn", "5": "Invalid"}#MS11#E3
 LINChrgnlghtSts#7#895#false#false#178#2#1#0#LIN charge light status#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#E3
-SwtHiBeamLin#7#895#false#false#191#2#1#0#缁����寮���宠��������璇锋����戒护 Lin���浣�#0.0#0.0#0.0#{"0": "Neutral", "1": "Pull", "2": "Push", "3": "Invalid"}#MS11#E3
-SwtIndcrRawLin#7#895#false#false#189#3#1#0#缁����寮���宠浆������璇锋����戒护 Lin���浣�#0.0#0.0#0.0#{"0": "Center", "1": "Up", "2": "UpUp", "3": "Dwn", "4": "DwnDwn", "5": "Invalid"}#MS11#E3
-WiprPushSwtLin#7#895#false#false#186#2#1#0#缁����寮���抽�ㄥ��Push������ Lin���浣�#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "1st_Pressed", "2": "2nd_Pressed", "3": "Invalid"}#MS11#E3
-ColShiftLvrDiagcLin#7#895#false#false#199#3#1#0#缁����寮���虫。浣���������� Lin���浣�#0.0#0.0#0.0#{"0": "NoFailure", "1": "Failure"}#MS11#E3
+SwtHiBeamLin#7#895#false#false#191#2#1#0#组合开关远光灯请求命令 Lin冗余#0.0#0.0#0.0#{"0": "Neutral", "1": "Pull", "2": "Push", "3": "Invalid"}#MS11#E3
+SwtIndcrRawLin#7#895#false#false#189#3#1#0#组合开关转向灯请求命令 Lin冗余#0.0#0.0#0.0#{"0": "Center", "1": "Up", "2": "UpUp", "3": "Dwn", "4": "DwnDwn", "5": "Invalid"}#MS11#E3
+WiprPushSwtLin#7#895#false#false#186#2#1#0#组合开关雨刮Push按键 Lin冗余#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "1st_Pressed", "2": "2nd_Pressed", "3": "Invalid"}#MS11#E3
+ColShiftLvrDiagcLin#7#895#false#false#199#3#1#0#组合开关档位有效性 Lin冗余#0.0#0.0#0.0#{"0": "NoFailure", "1": "Failure"}#MS11#E3
 RLSRWarnSigGrpChks#7#391#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 RLSRRCTAWarnReqFrmSFC#7#391#false#false#15#2#1#0#RCTA warning request   rear left radar#0.0#0.0#0.0#{"0": "no_warning", "1": "warning_level_1", "2": "warning_level_2"}#MS11#E3
 RLSRRCTAStsFrmSFC#7#391#false#false#13#2#1#0#RCTA Function status   rear left radar#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Active", "3": "Failure"}#MS11#E3
@@ -502,7 +494,7 @@ RLSRRCTBBrkReqFrmSFC#7#391#false#false#32#1#1#0#RCTB Brake request   rear left r
 RLSRRCTBWarnReqFrmSFC#7#391#false#false#43#2#1#0#RCTB warning request    rear left radar#0.0#0.0#0.0#{"0": "nowarning", "1": "warninglevel1", "2": "warninglevel2", "3": "reserved"}#MS11#E3
 RLSRRCWSwtFbFrmSFC#7#391#false#false#41#2#1#0#RCW switch feedback   rear left radar#0.0#0.0#0.0#{"0": "default", "1": "Off", "2": "ON", "3": "unavailable"}#MS11#E3
 RLSRSnsrStsFrmSFC#7#391#false#false#55#8#1#0#rear left radar working status  bitfield\nbit0=Misalignment\nbit1=Blindness\nbit2=HW failure\nbit3=Emission off w o failure\nbit4=Not calibrated\nbit5=Temp out of range\nbit6=Reserved\nbit7=Reserved\nbit8=Reserved#0.0#0.0#0.0#null#MS11#E3
-RLSRRCTBTarDecelFrmSFC#7#391#false#false#63#8#0.05#-10.0#target deceleration value from RCTB   rear left radar#0.0#0.0#0.0#null#MS11#E3
+RLSRRCTBTarDecelFrmSFC#7#391#false#false#63#8#0.05#-10#target deceleration value from RCTB   rear left radar#0.0#0.0#0.0#null#MS11#E3
 RLSRAdasCanfdNodeAddress#7#1397#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#E3
 RLSRAdasCanfdActiveWakeup#7#1397#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3
 RLSRAdasCanfdRepeatMsgReq#7#1397#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3
@@ -526,15 +518,15 @@ RRSRRCTBBrkReqFrmSFC#7#392#false#false#32#1#1#0#RCTB Brake request   rear right 
 RRSRRCTBWarnReqFrmSFC#7#392#false#false#43#2#1#0#RCTB warning request    rear right radar#0.0#0.0#0.0#{"0": "nowarning", "1": "warninglevel1", "2": "warninglevel2", "3": "reserved"}#MS11#E3
 RRSRRCWSwtFbFrmSFC#7#392#false#false#41#2#1#0#RCW switch feedback   rear right radar#0.0#0.0#0.0#{"0": "default", "1": "Off", "2": "ON", "3": "unavailable"}#MS11#E3
 RRSRSnsrStsFrmSFC#7#392#false#false#55#8#1#0#rear right radar working status  bitfield\nbit0=Misalignment\nbit1=Blindness\nbit2=HW failure\nbit3=Emission off w o failure\nbit4=Not calibrated\nbit5=Temp out of range\nbit6=Reserved\nbit7=Reserved\nbit8=Reserved#0.0#0.0#0.0#null#MS11#E3
-RRSRRCTBTarDecelFrmSFC#7#392#false#false#63#8#0.05#-10.0#target deceleration value from RCTB   rear right radar#0.0#0.0#0.0#null#MS11#E3
+RRSRRCTBTarDecelFrmSFC#7#392#false#false#63#8#0.05#-10#target deceleration value from RCTB   rear right radar#0.0#0.0#0.0#null#MS11#E3
 RRSRAdasCanfdNodeAddress#7#1398#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#E3
 RRSRAdasCanfdActiveWakeup#7#1398#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3
 RRSRAdasCanfdRepeatMsgReq#7#1398#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3
 RRSRAdasCanfdRepeatMsgSt#7#1398#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3
-PassOcupcySts#7#893#false#false#1#2#1#0#Passenger Occupancy Sensor  Status\n���椹惧骇妞����浣�浼������ㄦ��娴���舵��#0.0#0.0#0.0#{"0": "empty", "1": "occupied", "2": "Reserved", "3": "Reserved"}#MS11#E3
-SecRowRiOcupcySts#7#893#false#false#13#2#1#0#Second Row Right Ocupcy Sensor Status\n浜������充晶搴ф�����浣�浼������ㄦ��娴���舵��#0.0#0.0#0.0#{"0": "empty", "1": "occupied", "2": "Reserved", "3": "Reserved"}#MS11#E3
-SecRowMidOcupcySts#7#893#false#false#11#2#1#0#Second Row Middle Ocupcy Sensor Status\n浜����涓���村骇妞����浣�浼������ㄦ��娴���舵��#0.0#0.0#0.0#{"0": "empty", "1": "occupied", "2": "Reserved", "3": "Reserved"}#MS11#E3
-SecRowLeOcupcySts#7#893#false#false#9#2#1#0#Second Row Left Ocupcy Sensor Status\n浜����宸�渚у骇妞����浣�浼������ㄦ��娴���舵��#0.0#0.0#0.0#{"0": "empty", "1": "occupied", "2": "Reserved", "3": "Reserved"}#MS11#E3
+PassOcupcySts#7#893#false#false#1#2#1#0#Passenger Occupancy Sensor  Status\n副驾座椅占位传感器检测状态#0.0#0.0#0.0#{"0": "empty", "1": "occupied", "2": "Reserved", "3": "Reserved"}#MS11#E3
+SecRowRiOcupcySts#7#893#false#false#13#2#1#0#Second Row Right Ocupcy Sensor Status\n二排右侧座椅占位传感器检测状态#0.0#0.0#0.0#{"0": "empty", "1": "occupied", "2": "Reserved", "3": "Reserved"}#MS11#E3
+SecRowMidOcupcySts#7#893#false#false#11#2#1#0#Second Row Middle Ocupcy Sensor Status\n二排中间座椅占位传感器检测状态#0.0#0.0#0.0#{"0": "empty", "1": "occupied", "2": "Reserved", "3": "Reserved"}#MS11#E3
+SecRowLeOcupcySts#7#893#false#false#9#2#1#0#Second Row Left Ocupcy Sensor Status\n二排左侧座椅占位传感器检测状态#0.0#0.0#0.0#{"0": "empty", "1": "occupied", "2": "Reserved", "3": "Reserved"}#MS11#E3
 FrntLeAirSprgP#7#342#false#false#7#16#1#0#Front Left Air spring pressure#0.0#0.0#0.0#null#MS11#E3
 FrntRiAirSprgP#7#342#false#false#23#16#1#0#Front Right Air spring pressure#0.0#0.0#0.0#null#MS11#E3
 ReLeAirSprgP#7#342#false#false#39#16#1#0#Rear Left Air spring pressure#0.0#0.0#0.0#null#MS11#E3
@@ -560,7 +552,7 @@ LvlCtrlRestrcn10#7#342#false#false#110#1#1#0#Level Control Restriction Reason Ev
 CDCFltSts#7#342#false#false#108#2#1#0#Continuous Daming control fault status#0.0#0.0#0.0#{"0": "No_Fault", "1": "Damper_control_restriction", "2": "Damper_control_not_available", "3": "Damper_control_not_available_caused_by_system_over_heated"}#MS11#E3
 ASCFltSts#7#342#false#false#106#2#1#0#Air spring control fault status#0.0#0.0#0.0#{"0": "No_Fault", "1": "Level_control_restriction", "2": "Level_control_not_available", "3": "Level_control_not_available_caused_by_system_over_heated"}#MS11#E3
 AirPResvSts#7#342#false#false#104#1#1#0#Air Pressure Reservoir status#0.0#0.0#0.0#{"0": "InValid", "1": "Valid"}#MS11#E3
-SCUActvAwakeReq#7#342#false#false#119#1#1#0#SCU active powermode awake request.\nSCU璇锋����垫��妯″��awake#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3
+SCUActvAwakeReq#7#342#false#false#119#1#1#0#SCU active powermode awake request.\nSCU请求电源模式awake#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3
 ReRiAirSprgPSts#7#342#false#false#118#1#1#0#Rear Right Air spring pressure status#0.0#0.0#0.0#{"0": "InValid", "1": "Valid"}#MS11#E3
 ReLeAirSprgPSts#7#342#false#false#117#1#1#0#Rear Left Air spring pressure status#0.0#0.0#0.0#{"0": "InValid", "1": "Valid"}#MS11#E3
 FrntRiAirSprgPSts#7#342#false#false#116#1#1#0#Front Right Air spring pressure status#0.0#0.0#0.0#{"0": "InValid", "1": "Valid"}#MS11#E3
@@ -578,11 +570,11 @@ EasyLoadgFuncCouplAct#7#342#false#false#143#1#1#0#Easy loading couple function a
 NormDamprModAllwd#7#342#false#false#142#1#1#0#Normal Damping Mode Allowed#0.0#0.0#0.0#{"0": "not_allow", "1": "allow"}#MS11#E3
 CmftDamprModAllwd#7#342#false#false#141#1#1#0#Comfort Damping Mode Allowed#0.0#0.0#0.0#{"0": "not_allow", "1": "allow"}#MS11#E3
 SptDamprModAllwd#7#342#false#false#140#1#1#0#Sport Damping Mode Allowed#0.0#0.0#0.0#{"0": "not_allow", "1": "allow"}#MS11#E3
-SuspHeiSetSts#7#342#false#false#139#3#1#0#Suspension Height Set Status\n�����堕��搴�璁惧����舵��  ������������璁剧疆#0.0#0.0#0.0#{"0": "No_Command", "1": "HL2", "2": "HL1", "3": "NL", "4": "LL1", "5": "LL2"}#MS11#E3
-StdLvlSpdSwtVld#7#342#false#false#166#1#1#0#Standard Level Speed depending Switch available to select or not  ������璋���������芥�����������#0.0#0.0#0.0#{"0": "not_allowed", "1": "allowed"}#MS11#E3
-StdLvlSpdSwtSts#7#342#false#false#165#1#1#0#Standard Level Speed depending Switch status\n������璋���������藉����崇�舵��#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#MS11#E3
-SCUWarnLampReq#7#342#false#false#164#2#1#0#SCU Warning Lamp Request\nSCU ���������璇锋��#0.0#0.0#0.0#{"0": "No_Request", "1": "Yellow_warning_light", "2": "Red_warning_light"}#MS11#E3
-SCUExtmHeiSts#7#342#false#false#162#2#1#0#SCU Extreme Height Status\nSCU �����舵��楂����浣���舵��#0.0#0.0#0.0#{"0": "Normal", "1": "Extreme_High", "2": "Extreme_Low"}#MS11#E3
+SuspHeiSetSts#7#342#false#false#139#3#1#0#Suspension Height Set Status\n悬架高度设定状态  单独按键设置#0.0#0.0#0.0#{"0": "No_Command", "1": "HL2", "2": "HL1", "3": "NL", "4": "LL1", "5": "LL2"}#MS11#E3
+StdLvlSpdSwtVld#7#342#false#false#166#1#1#0#Standard Level Speed depending Switch available to select or not  随速调节功能是否可用#0.0#0.0#0.0#{"0": "not_allowed", "1": "allowed"}#MS11#E3
+StdLvlSpdSwtSts#7#342#false#false#165#1#1#0#Standard Level Speed depending Switch status\n随速调节功能开关状态#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#MS11#E3
+SCUWarnLampReq#7#342#false#false#164#2#1#0#SCU Warning Lamp Request\nSCU 故障灯请求#0.0#0.0#0.0#{"0": "No_Request", "1": "Yellow_warning_light", "2": "Red_warning_light"}#MS11#E3
+SCUExtmHeiSts#7#342#false#false#162#2#1#0#SCU Extreme Height Status\nSCU 悬架极高极低状态#0.0#0.0#0.0#{"0": "Normal", "1": "Extreme_High", "2": "Extreme_Low"}#MS11#E3
 LvlCtrlCalCompl#7#342#false#false#160#1#1#0#Level control  HeightSensor  calibration completed#0.0#0.0#0.0#{"0": "Level_calibration_not_completed", "1": "Level_calibration_completed"}#MS11#E3
 ESPEnaReq#7#342#false#false#185#2#1#0#ESC OFF NOT ALLOWED#0.0#0.0#0.0#{"0": "None", "1": "InValid", "2": "Valid"}#MS11#E3
 CurHeiSigGrpChks#7#182#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
@@ -600,30 +592,30 @@ SCUAccrSnsrCntr#7#182#false#false#75#4#1#0##0.0#0.0#0.0#null#MS11#E3
 AccrSnsrAzFrntLe#7#182#false#false#87#10#0.01#-1.6#Front left sensor vertical acceleration#0.0#0.0#0.0#null#MS11#E3
 AccrSnsrAzFrntRi#7#182#false#false#103#10#0.01#-1.6#Front right sensor vertical acceleration#0.0#0.0#0.0#null#MS11#E3
 AccrSnsrAzRe#7#182#false#false#119#10#0.01#-1.6#Rear sensor vertical acceleration#0.0#0.0#0.0#null#MS11#E3
-BodyVertVFL#7#182#false#false#175#13#0.001#-4.0#Body vertical velocity front left corner\n宸����杞�韬����������搴�#0.0#0.0#0.0#null#MS11#E3
-BodyVertVFR#7#182#false#false#191#13#0.001#-4.0#Body vertical velocity front right corner\n宸����杞�韬����������搴�#0.0#0.0#0.0#null#MS11#E3
-BodyVertVRL#7#182#false#false#207#13#0.001#-4.0#Body vertical velocity rear left corner\n宸����杞�韬����������搴�#0.0#0.0#0.0#null#MS11#E3
-BodyVertVRR#7#182#false#false#223#13#0.001#-4.0#Body vertical velocity rear right corner\n��冲��杞�韬����������搴�#0.0#0.0#0.0#null#MS11#E3
-SwtHiBeam#7#419#false#false#6#2#1#0#缁����寮���宠��������璇锋����戒护#0.0#0.0#0.0#{"0": "Neutral", "1": "Pull", "2": "Push", "3": "Invalid"}#MS11#E3
-ColShiftLvrDiagc#7#419#false#false#2#3#1#0#缁����寮���虫。浣����������#0.0#0.0#0.0#{"0": "No_Failure", "1": "Failure"}#MS11#E3
-WiprPushSwt#7#419#false#false#9#2#1#0#缁����寮���抽�ㄥ��Push������#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "1st_Pressed", "2": "2nd_Pressed", "3": "Invalid_"}#MS11#E3
+BodyVertVFL#7#182#false#false#175#13#0.001#-4#Body vertical velocity front left corner\n左前车身垂向速度#0.0#0.0#0.0#null#MS11#E3
+BodyVertVFR#7#182#false#false#191#13#0.001#-4#Body vertical velocity front right corner\n左前车身垂向速度#0.0#0.0#0.0#null#MS11#E3
+BodyVertVRL#7#182#false#false#207#13#0.001#-4#Body vertical velocity rear left corner\n左后车身垂向速度#0.0#0.0#0.0#null#MS11#E3
+BodyVertVRR#7#182#false#false#223#13#0.001#-4#Body vertical velocity rear right corner\n右后车身垂向速度#0.0#0.0#0.0#null#MS11#E3
+SwtHiBeam#7#419#false#false#6#2#1#0#组合开关远光灯请求命令#0.0#0.0#0.0#{"0": "Neutral", "1": "Pull", "2": "Push", "3": "Invalid"}#MS11#E3
+ColShiftLvrDiagc#7#419#false#false#2#3#1#0#组合开关档位有效性#0.0#0.0#0.0#{"0": "No_Failure", "1": "Failure"}#MS11#E3
+WiprPushSwt#7#419#false#false#9#2#1#0#组合开关雨刮Push按键#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "1st_Pressed", "2": "2nd_Pressed", "3": "Invalid_"}#MS11#E3
 SwtIndcrRawSigGrpChks#7#419#false#false#31#8#1#0##0.0#0.0#0.0#null#MS11#E3
 SwtIndcrRawSigGrpCntr#7#419#false#false#35#4#1#0##0.0#0.0#0.0#null#MS11#E3
-SwtIndcrRaw#7#419#false#false#42#3#1#0#缁����寮���宠浆������璇锋����戒护#0.0#0.0#0.0#{"0": "Center", "1": "Up", "2": "UpUp", "3": "Dwn", "4": "DwnDwn", "5": "Invalid"}#MS11#E3
+SwtIndcrRaw#7#419#false#false#42#3#1#0#组合开关转向灯请求命令#0.0#0.0#0.0#{"0": "Center", "1": "Up", "2": "UpUp", "3": "Dwn", "4": "DwnDwn", "5": "Invalid"}#MS11#E3
 GearShiftPosReqSigGrpChks#7#419#false#false#63#8#1#0##0.0#0.0#0.0#null#MS11#E3
 GearShiftPosReqSigGrpCntr#7#419#false#false#67#4#1#0##0.0#0.0#0.0#null#MS11#E3
-GearShiftPosReq#7#419#false#false#74#3#1#0#缁����寮���虫����℃�ㄦ��浣�缃�#0.0#0.0#0.0#{"0": "Center", "1": "Up", "2": "UpUp", "3": "Dwn", "4": "DwnDwn", "5": "Invalid"}#MS11#E3
+GearShiftPosReq#7#419#false#false#74#3#1#0#组合开关怀挡拨杆位置#0.0#0.0#0.0#{"0": "Center", "1": "Up", "2": "UpUp", "3": "Dwn", "4": "DwnDwn", "5": "Invalid"}#MS11#E3
 DrvrGearShiftParkReqSigGrpChks#7#419#false#false#95#8#1#0##0.0#0.0#0.0#null#MS11#E3
 DrvrGearShiftParkReqSigGrpCntr#7#419#false#false#99#4#1#0##0.0#0.0#0.0#null#MS11#E3
-DrvrGearShiftParkReq#7#419#false#false#105#2#1#0#缁����寮����P妗�Push璇锋��#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Invalid"}#MS11#E3
+DrvrGearShiftParkReq#7#419#false#false#105#2#1#0#组合开关P档Push请求#0.0#0.0#0.0#{"0": "Not_Pressed", "1": "Pressed", "2": "Invalid"}#MS11#E3
 TiDomn#7#263#false#false#4#5#1#0#time domain#0.0#0.0#0.0#{"0": "UTC_plus_0", "1": "UTC_plus_1", "2": "UTC_plus_2", "3": "UTC_plus_3", "4": "UTC_plus_4", "5": "UTC_plus_5", "6": "UTC_plus_6", "7": "UTC_plus_7", "8": "UTC_plus_8", "9": "UTC_plus_9", "10": "UTC_plus_10", "11": "UTC_plus_11", "12": "UTC_plus_12", "13": "UTC_plus_13", "14": "UTC_plus_14", "15": "UTC_plus_15", "16": "UTC_plus_16", "17": "UTC_plus_17", "18": "UTC_plus_18", "19": "UTC_plus_19", "20": "UTC_plus_20", "21": "UTC_plus_21", "22": "UTC_plus_22", "23": "UTC_plus_23", "24": "Invalid"}#MS11#E3
-DateTiYr#7#263#false#false#15#8#1.0#2000.0#date time year#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
-DateTiMth#7#263#false#false#19#4#1.0#0.0#date time month#0.0#0.0#0.0#{"0": "Invalid"}#MS11#E3
+DateTiYr#7#263#false#false#15#8#1#2000#date time year#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
+DateTiMth#7#263#false#false#19#4#1#0#date time month#0.0#0.0#0.0#{"0": "Invalid"}#MS11#E3
 DateTiDay#7#263#false#false#28#5#1#0#date time day#0.0#0.0#0.0#{"0": "init"}#MS11#E3
-DateTiHr#7#263#false#false#36#5#1.0#0.0#date time hour#0.0#0.0#0.0#{"24": "Invalid"}#MS11#E3
-DateTiMins#7#263#false#false#45#6#1.0#0.0#date time minute#0.0#0.0#0.0#{"60": "Invalid"}#MS11#E3
-DateTiSec#7#263#false#false#55#6#1.0#0.0#date time second#0.0#0.0#0.0#{"60": "Invalid"}#MS11#E3
-DateTiMilsec#7#263#false#false#49#10#1.0#0.0#date time millisecond#0.0#0.0#0.0#{"1000": "invalid"}#MS11#E3
+DateTiHr#7#263#false#false#36#5#1#0#date time hour#0.0#0.0#0.0#{"24": "Invalid"}#MS11#E3
+DateTiMins#7#263#false#false#45#6#1#0#date time minute#0.0#0.0#0.0#{"60": "Invalid"}#MS11#E3
+DateTiSec#7#263#false#false#55#6#1#0#date time second#0.0#0.0#0.0#{"60": "Invalid"}#MS11#E3
+DateTiMilsec#7#263#false#false#49#10#1#0#date time millisecond#0.0#0.0#0.0#{"1000": "invalid"}#MS11#E3
 FrntLeTyrePSnsrLrngSts#7#742#false#false#5#2#1#0#FrontLeftTyrePressureSensorLearningStatus#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active", "2": "Reserved", "3": "Invalid"}#MS11#E3
 ReLeTyrePSnsrLrngSts#7#742#false#false#3#2#1#0#RearLeftTyrePressureSensorLearningStatus#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active", "2": "Reserved", "3": "Invalid"}#MS11#E3
 ReRiTyrePSnsrLoBattWarn#7#742#false#false#13#1#1#0#RearRightTyrePressureSensorLowBatteryWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#MS11#E3
@@ -639,56 +631,56 @@ ReLeTyrePWarn#7#742#false#false#27#2#1#0#RearLeftTyrePressureWarning#0.0#0.0#0.0
 ReRiTyrePSnsrLostWarn#7#742#false#false#37#1#1#0#RearRightTyrePressureSensorLostWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#MS11#E3
 FrntRiTyreTWarn#7#742#false#false#36#2#1#0#FrontRightTyreTemperatureWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "High_Temperature", "2": "Reserved", "3": "Invalid"}#MS11#E3
 ReLeTyrePSnsrLostWarn#7#742#false#false#34#1#1#0#RearLeftTyrePressureSensorLostWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#MS11#E3
-FrntLeTyrePVal#7#742#false#false#47#8#2.75#0.0#FrontLeftTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
-FrntLeTyreTVal#7#742#false#false#55#8#1.0#-40.0#FrontLeftTyreTemperatureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
-FrntRiTyrePVal#7#742#false#false#63#8#2.75#0.0#FrontRightTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
-FrntRiTyreTVal#7#742#false#false#71#8#1.0#-40.0#FrontRightTyreTemperatureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
-ReLeTyrePVal#7#742#false#false#79#8#2.75#0.0#RearLeftTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
-ReLeTyreTVal#7#742#false#false#87#8#1.0#-40.0#RearLeftTyreTemperatureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
-ReRiTyrePVal#7#742#false#false#95#8#2.75#0.0#RearRightTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
-ReRiTyreTVal#7#742#false#false#103#8#1.0#-40.0#RearRightTyreTemperatureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
+FrntLeTyrePVal#7#742#false#false#47#8#2.75#0#FrontLeftTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
+FrntLeTyreTVal#7#742#false#false#55#8#1#-40#FrontLeftTyreTemperatureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
+FrntRiTyrePVal#7#742#false#false#63#8#2.75#0#FrontRightTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
+FrntRiTyreTVal#7#742#false#false#71#8#1#-40#FrontRightTyreTemperatureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
+ReLeTyrePVal#7#742#false#false#79#8#2.75#0#RearLeftTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
+ReLeTyreTVal#7#742#false#false#87#8#1#-40#RearLeftTyreTemperatureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
+ReRiTyrePVal#7#742#false#false#95#8#2.75#0#RearRightTyrePressureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
+ReRiTyreTVal#7#742#false#false#103#8#1#-40#RearRightTyreTemperatureValue#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
 FrntRiTyrePSnsrLrngSts#7#742#false#false#105#2#1#0#FrontRightTyrePressureSensorLearningStatus#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active", "2": "Reserved", "3": "Invalid"}#MS11#E3
-RemVehOpReq#7#742#false#false#127#2#1#0#Remote vehicle operation request\n杩�绋�杞�杈����浣�璇锋��#0.0#0.0#0.0#{"0": "NoReqd", "1": "RemVehSdReqd", "2": "RemVehAuthReqd"}#MS11#E3
+RemVehOpReq#7#742#false#false#127#2#1#0#Remote vehicle operation request\n远程车辆操作请求#0.0#0.0#0.0#{"0": "NoReqd", "1": "RemVehSdReqd", "2": "RemVehAuthReqd"}#MS11#E3
 ReRiTyrePWarn#7#742#false#false#125#2#1#0#RearRightTyrePressureWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Low_Pressure", "2": "High_Pressure", "3": "Invalid"}#MS11#E3
 ReRiTyreTWarn#7#742#false#false#123#2#1#0#RearRightTyreTemperatureWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "High_Temperature", "2": "Reserved", "3": "Invalid"}#MS11#E3
 FrntRiTyrePWarn#7#742#false#false#121#2#1#0#FrontRightTyrePressureWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Low_Pressure", "2": "High_Pressure", "3": "Invalid"}#MS11#E3
 FrntLeTyrePWarn#7#742#false#false#135#2#1#0#FrontLeftTyrePressureWarning#0.0#0.0#0.0#{"0": "Not_Active", "1": "Low_Pressure", "2": "High_Pressure", "3": "Invalid"}#MS11#E3
 DiagcExtActv#7#381#false#false#5#1#1#0#diagnostic external connection activation#0.0#0.0#0.0#{"0": "No", "1": "Yes"}#MS11#E3
-RiMirrFoldCmd#7#381#false#false#4#2#1#0#��充晶澶����瑙����������璇锋��#0.0#0.0#0.0#{"0": "MirrFoldCmdTyp_Idle", "1": "MirrFoldCmdTyp_FoldIn", "2": "MirrFoldCmdTyp_FoldOut"}#MS11#E3
-LeMirrFoldCmd#7#381#false#false#2#2#1#0#宸�渚у�����瑙����������璇锋��#0.0#0.0#0.0#{"0": "MirrFoldCmdTyp_Idle", "1": "MirrFoldCmdTyp_FoldIn", "2": "MirrFoldCmdTyp_FoldOut"}#MS11#E3
+RiMirrFoldCmd#7#381#false#false#4#2#1#0#右侧外后视镜折叠请求#0.0#0.0#0.0#{"0": "MirrFoldCmdTyp_Idle", "1": "MirrFoldCmdTyp_FoldIn", "2": "MirrFoldCmdTyp_FoldOut"}#MS11#E3
+LeMirrFoldCmd#7#381#false#false#2#2#1#0#左侧外后视镜折叠请求#0.0#0.0#0.0#{"0": "MirrFoldCmdTyp_Idle", "1": "MirrFoldCmdTyp_FoldIn", "2": "MirrFoldCmdTyp_FoldOut"}#MS11#E3
 VCUGearChgFailrSts#7#381#false#false#0#1#1#0#Gear change failure status#0.0#0.0#0.0#{"0": "No_Error", "1": "Unexpected_GearPosition"}#MS11#E3
-ExtrMirrFoldSts#7#381#false#false#26#3#1#0#���瑙������������舵��#0.0#0.0#0.0#{"0": "MirrFoldStsTyp_MirrFoldPosnUndefd", "1": "MirrFoldStsTyp_MirrNotFoldPosn", "2": "MirrFoldStsTyp_MirrFoldPosn", "3": "MirrFoldStsTyp_MirrMovgToNotFold", "4": "MirrFoldStsTyp_MirrMovgToFold"}#MS11#E3
+ExtrMirrFoldSts#7#381#false#false#26#3#1#0#后视镜折叠状态#0.0#0.0#0.0#{"0": "MirrFoldStsTyp_MirrFoldPosnUndefd", "1": "MirrFoldStsTyp_MirrNotFoldPosn", "2": "MirrFoldStsTyp_MirrFoldPosn", "3": "MirrFoldStsTyp_MirrMovgToNotFold", "4": "MirrFoldStsTyp_MirrMovgToFold"}#MS11#E3
 TrOpenClsSts#7#381#false#false#36#2#1#0#Trunk Open Close Status#0.0#0.0#0.0#{"0": "Ukwn", "1": "Open", "2": "Clsd"}#MS11#E3
-HoodOpenClsSts#7#381#false#false#33#2#1#0#Hood Open Close Status\n�����辩��寮������抽����舵��#0.0#0.0#0.0#{"0": "Ukwn", "1": "Open", "2": "Clsd"}#MS11#E3
+HoodOpenClsSts#7#381#false#false#33#2#1#0#Hood Open Close Status\n前舱盖开启关闭状态#0.0#0.0#0.0#{"0": "Ukwn", "1": "Open", "2": "Clsd"}#MS11#E3
 LatAccrValSigGrpChks#7#381#false#false#71#8#1#0##0.0#0.0#0.0#null#MS11#E3
 LatAccrValSigGrpCntr#7#381#false#false#75#4#1#0##0.0#0.0#0.0#null#MS11#E3
-VCULatAccrValForDisp#7#381#false#true#87#8#0.01#0.0#杞�杈�瀹����渚у��������搴�#0.0#0.0#0.0#null#MS11#E3
-VCULgtAccrValForDisp#7#381#false#true#95#8#0.01#0.0#杞�杈�瀹����绾靛��������搴�#0.0#0.0#0.0#null#MS11#E3
-VCUMaxLatAdhCpForDisp#7#381#false#true#103#8#0.01#0.0#渚у��璺���㈤�����������#0.0#0.0#0.0#null#MS11#E3
-VCUMaxLgtAdhCpForDisp#7#381#false#true#111#8#0.01#0.0#绾靛��璺���㈤�����������#0.0#0.0#0.0#null#MS11#E3
-VCUMaxLgtPrpsnCpForDisp#7#381#false#true#119#8#0.01#0.0#杞�杈�绾靛��椹卞�ㄨ�藉��������#0.0#0.0#0.0#null#MS11#E3
-VCUVertAccrValForDisp#7#381#false#true#127#8#0.01#0.0#杞�杈�瀹����������������搴�#0.0#0.0#0.0#null#MS11#E3
-ExtrLtgStsHiBeam#7#517#false#false#7#2#1#0#杩���������荤�舵��#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#E3
-ExtrLtgStsLoBeam#7#517#false#false#5#2#1#0#杩������荤�舵��#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#E3
-ExtrLtgStsStop#7#517#false#false#3#2#1#0#��硅溅�����舵����诲��棣�#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#E3
-ExtrLtgStsTurnIndrLe#7#517#false#false#1#2#1#0#宸�杞���������舵��姹����#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#E3
-ExtrLtgStsTurnIndrRi#7#517#false#false#15#2#1#0#��宠浆��������舵��姹����#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#E3
-SwtIndcr#7#517#false#false#13#3#1#0#杞������ㄦ��淇″��#0.0#0.0#0.0#{"0": "Noflash", "1": "ShotFlashLeft", "2": "NormalFlashLeft", "3": "ShortFlashRight", "4": "NormalFlashRight"}#MS11#E3
-IndcrDisp#7#517#false#false#36#2#1#0#������浠�琛ㄥ��棣�淇″��#0.0#0.0#0.0#{"0": "Off", "1": "LeOn", "2": "RiOn", "3": "LeRiO"}#MS11#E3
+VCULatAccrValForDisp#7#381#false#true#87#8#0.01#0#车辆实际侧向加速度#0.0#0.0#0.0#null#MS11#E3
+VCULgtAccrValForDisp#7#381#false#true#95#8#0.01#0#车辆实际纵向加速度#0.0#0.0#0.0#null#MS11#E3
+VCUMaxLatAdhCpForDisp#7#381#false#true#103#8#0.01#0#侧向路面附着极限#0.0#0.0#0.0#null#MS11#E3
+VCUMaxLgtAdhCpForDisp#7#381#false#true#111#8#0.01#0#纵向路面附着极限#0.0#0.0#0.0#null#MS11#E3
+VCUMaxLgtPrpsnCpForDisp#7#381#false#true#119#8#0.01#0#车辆纵向驱动能力极限#0.0#0.0#0.0#null#MS11#E3
+VCUVertAccrValForDisp#7#381#false#true#127#8#0.01#0#车辆实际垂向加速度#0.0#0.0#0.0#null#MS11#E3
+ExtrLtgStsHiBeam#7#517#false#false#7#2#1#0#远光灯总状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#E3
+ExtrLtgStsLoBeam#7#517#false#false#5#2#1#0#近光总状态#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#E3
+ExtrLtgStsStop#7#517#false#false#3#2#1#0#刹车灯状态总反馈#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#E3
+ExtrLtgStsTurnIndrLe#7#517#false#false#1#2#1#0#左转向灯状态汇总#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#E3
+ExtrLtgStsTurnIndrRi#7#517#false#false#15#2#1#0#右转向灯状态汇总#0.0#0.0#0.0#{"0": "Off", "1": "On", "2": "Err", "3": "Resd"}#MS11#E3
+SwtIndcr#7#517#false#false#13#3#1#0#转向拨杆信号#0.0#0.0#0.0#{"0": "Noflash", "1": "ShotFlashLeft", "2": "NormalFlashLeft", "3": "ShortFlashRight", "4": "NormalFlashRight"}#MS11#E3
+IndcrDisp#7#517#false#false#36#2#1#0#双闪仪表反馈信号#0.0#0.0#0.0#{"0": "Off", "1": "LeOn", "2": "RiOn", "3": "LeRiO"}#MS11#E3
 ActvnOfIndcrGrpChks#7#517#false#false#71#8#1#0##0.0#0.0#0.0#null#MS11#E3
 ActvnOfIndcrGrpCntr#7#517#false#false#75#4#1#0##0.0#0.0#0.0#null#MS11#E3
-ActvnOfIndcr#7#517#false#false#87#2#1#0#杞�������婵�娲诲�戒护#0.0#0.0#0.0#{"0": "Off", "1": "LeOn", "2": "RiOn", "3": "LeRiOn"}#MS11#E3
-ADDCooltCircFlowEstimd#7#699#false#false#31#10#0.05#0.0#Estimated coolant flowrate for ADD coolant circuit.#0.0#0.0#0.0#null#MS11#E3
-LockgCenLockSts#7#699#false#false#33#2#1#0#涓���ч����舵��#0.0#0.0#0.0#{"0": "Not_defined", "1": "Unlocked", "2": "Locked", "3": "Partially_unlocked"}#MS11#E3
+ActvnOfIndcr#7#517#false#false#87#2#1#0#转向灯激活命令#0.0#0.0#0.0#{"0": "Off", "1": "LeOn", "2": "RiOn", "3": "LeRiOn"}#MS11#E3
+ADDCooltCircFlowEstimd#7#699#false#false#31#10#0.05#0#Estimated coolant flowrate for ADD coolant circuit.#0.0#0.0#0.0#null#MS11#E3
+LockgCenLockSts#7#699#false#false#33#2#1#0#中控锁状态#0.0#0.0#0.0#{"0": "Not_defined", "1": "Unlocked", "2": "Locked", "3": "Partially_unlocked"}#MS11#E3
 InsEgyCnsSigGrpChks#7#699#false#false#47#8#1#0##0.0#0.0#0.0#null#MS11#E3
 InsEgyCnsSigGrpCntr#7#699#false#false#51#4#1#0##0.0#0.0#0.0#null#MS11#E3
-VCUEgyCnsInCurDrvCyc#7#699#false#false#63#18#0.01#-200.0#��剧ず���娆¤��绋������佃����� 浠�Powermode  RUN寮�濮�璁＄�� 浠�Powermode  AWAKE缁����璁＄��娓����\nACC ������璁＄��#0.0#0.0#0.0#null#MS11#E3
-VCUInsEgyCnsDurgStsl#7#699#false#false#72#9#0.1#0.0#�����剁�佃�� ���杞���舵��#0.0#0.0#0.0#null#MS11#E3
-VCUInsEgyCnsDurgDrvg#7#699#false#false#95#11#0.1#-100.0#�����剁�佃�� 琛�杞���舵��#0.0#0.0#0.0#null#MS11#E3
-VCUInsEgyCnsFlg#7#699#false#false#100#1#1#0#�����剁�佃�����蹇�浣�#0.0#0.0#0.0#{"0": "Park_status", "1": "driving_status"}#MS11#E3
-VCUPwrFlowForDisp#7#699#false#false#99#2#1#0#椹卞�ㄨ�介��娴����绀�#0.0#0.0#0.0#{"0": "no_display", "1": "Propulsion", "2": "Regenerartion"}#MS11#E3
-VCUEstimdCrsRng#7#699#false#false#111#11#1.0#0.0#Estimated range\n缁�������绋���兼�剧ず#0.0#0.0#0.0#{"2047": "Invalid"}#MS11#E3
-VCUEstimdCrsRngVld#7#699#false#false#116#1#1#0#Estimated range Validty\n缁�������绋����������#0.0#0.0#0.0#{"0": "invalid", "1": "valid"}#MS11#E3
+VCUEgyCnsInCurDrvCyc#7#699#false#false#63#18#0.01#-200#显示本次行程的电耗量 以Powermode  RUN开始计算 以Powermode  AWAKE结束计算清零\nACC 暂停计算#0.0#0.0#0.0#null#MS11#E3
+VCUInsEgyCnsDurgStsl#7#699#false#false#72#9#0.1#0#瞬时电耗 停车状态#0.0#0.0#0.0#null#MS11#E3
+VCUInsEgyCnsDurgDrvg#7#699#false#false#95#11#0.1#-100#瞬时电耗 行车状态#0.0#0.0#0.0#null#MS11#E3
+VCUInsEgyCnsFlg#7#699#false#false#100#1#1#0#瞬时电耗标志位#0.0#0.0#0.0#{"0": "Park_status", "1": "driving_status"}#MS11#E3
+VCUPwrFlowForDisp#7#699#false#false#99#2#1#0#驱动能量流指示#0.0#0.0#0.0#{"0": "no_display", "1": "Propulsion", "2": "Regenerartion"}#MS11#E3
+VCUEstimdCrsRng#7#699#false#false#111#11#1#0#Estimated range\n续航里程值显示#0.0#0.0#0.0#{"2047": "Invalid"}#MS11#E3
+VCUEstimdCrsRngVld#7#699#false#false#116#1#1#0#Estimated range Validty\n续航里程有效性#0.0#0.0#0.0#{"0": "invalid", "1": "valid"}#MS11#E3
 VCUChrgnModSts#7#869#false#false#3#4#1#0#Charging Mode Status#0.0#0.0#0.0#{"0": "Not_in_charging", "1": "In_preparation", "2": "Charging_in_progress", "3": "Charging_done", "4": "Charging_fault", "5": "Driving_charging", "6": "Charging_stop", "7": "Booking_charging_waiting", "8": "Preheating_in_process", "9": "Warming_in_progress"}#MS11#E3
 SyncMsgTypeVCCD2ADAS#7#947#false#false#7#8#1#0#Time synchronization \nmessagetype#0.0#0.0#0.0#{"32": "SYNC_CRC_secured_message_format", "40": "FUP_CRC_secured_message_format"}#MS11#E3
 ChecksumVCCD2ADAS#7#947#false#false#15#8#1#0#Time synchronization messageCRC\n Cyclic Redundancy Check#0.0#0.0#0.0#null#MS11#E3
@@ -698,85 +690,77 @@ SyncMsgOvsVCCD2ADAS#7#947#false#false#25#1#1#0#Time synchronization message\nOve
 SyncMsgSyncTimeVCCD2ADAS#7#947#false#false#39#32#1#0#Time synchronization message\nsynchronization time#0.0#0.0#0.0#null#MS11#E3
 OfsTimeSecVCCD2ADAS#7#947#false#false#71#32#1#0#Offset time value in seconds#0.0#0.0#0.0#null#MS11#E3
 OfsTimeNSecVCCD2ADAS#7#947#false#false#103#32#1#0#Offset time value in nanoseconds#0.0#0.0#0.0#null#MS11#E3
-DoorRiRePwrRelsDlyActv#7#234#false#false#7#2#1#0#��冲����甸����惧欢杩�婵�娲诲��棣�#0.0#0.0#0.0#{"0": "Idle", "1": "Inactive", "2": "Active", "3": "Reserved"}#MS11#E3
-DoorPassPwrRelsDlyActv#7#234#false#false#5#2#1#0#���椹剧�甸����惧欢杩�婵�娲诲��棣�#0.0#0.0#0.0#{"0": "Idle", "1": "Inactive", "2": "Active", "3": "Reserved"}#MS11#E3
-DoorLeRePwrRelsDlyActv#7#234#false#false#3#2#1#0#宸������甸����惧欢杩�婵�娲诲��棣�#0.0#0.0#0.0#{"0": "Idle", "1": "Inactive", "2": "Active", "3": "Reserved"}#MS11#E3
-DoorDrvrPwrRelsDlyActv#7#234#false#false#1#2#1#0#涓婚┚��甸����惧欢杩�婵�娲诲��棣�#0.0#0.0#0.0#{"0": "Idle", "1": "Inactive", "2": "Active", "3": "Reserved"}#MS11#E3
-WiprSpdModSts#7#234#false#false#15#6#1#0#��ㄥ�����搴���舵�����棣�#0.0#0.0#0.0#{"0": "OFF", "1": "Intermittent_wiping_request_LowSpeed", "2": "Intermittent_wiping_request_HighSpeed", "3": "Low_speed_wiping_request", "4": "High_speed_wiping_request", "5": "Auto_wiping_Speed", "6": "Reserved"}#MS11#E3
-WipSpdReqHi#7#234#false#false#23#1#1#0#��ㄥ�����搴�涓洪�����妗ｄ��\nHigh speed wiping request#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#MS11#E3
-WipSpdReqLo#7#234#false#false#22#1#1#0#��ㄥ�����搴�涓轰�����妗ｄ��\nLow speed wiping request#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#MS11#E3
-DoorPassSts#7#234#false#false#47#2#1#0#���椹句晶��ㄧ�舵��#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd"}#MS11#E3
-DoorDrvrSts#7#234#false#false#45#2#1#0#椹鹃┒渚ч�ㄧ�舵��#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd"}#MS11#E3
-DoorRiReSts#7#234#false#false#51#2#1#0#��冲��渚ч�ㄧ�舵��#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd"}#MS11#E3
-DoorLeReSts#7#234#false#false#49#2#1#0#宸����渚ч�ㄧ�舵��#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd"}#MS11#E3
+DoorRiRePwrRelsDlyActv#7#234#false#false#7#2#1#0#右后电释放延迟激活反馈#0.0#0.0#0.0#{"0": "Idle", "1": "Inactive", "2": "Active", "3": "Reserved"}#MS11#E3
+DoorPassPwrRelsDlyActv#7#234#false#false#5#2#1#0#副驾电释放延迟激活反馈#0.0#0.0#0.0#{"0": "Idle", "1": "Inactive", "2": "Active", "3": "Reserved"}#MS11#E3
+DoorLeRePwrRelsDlyActv#7#234#false#false#3#2#1#0#左后电释放延迟激活反馈#0.0#0.0#0.0#{"0": "Idle", "1": "Inactive", "2": "Active", "3": "Reserved"}#MS11#E3
+DoorDrvrPwrRelsDlyActv#7#234#false#false#1#2#1#0#主驾电释放延迟激活反馈#0.0#0.0#0.0#{"0": "Idle", "1": "Inactive", "2": "Active", "3": "Reserved"}#MS11#E3
+WiprSpdModSts#7#234#false#false#15#6#1#0#雨刮速度状态反馈#0.0#0.0#0.0#{"0": "OFF", "1": "Intermittent_wiping_request_LowSpeed", "2": "Intermittent_wiping_request_HighSpeed", "3": "Low_speed_wiping_request", "4": "High_speed_wiping_request", "5": "Auto_wiping_Speed", "6": "Reserved"}#MS11#E3
+WipSpdReqHi#7#234#false#false#23#1#1#0#雨刮速度为高速档位\nHigh speed wiping request#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#MS11#E3
+WipSpdReqLo#7#234#false#false#22#1#1#0#雨刮速度为低速档位\nLow speed wiping request#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#MS11#E3
+DoorPassSts#7#234#false#false#47#2#1#0#副驾侧门状态#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd"}#MS11#E3
+DoorDrvrSts#7#234#false#false#45#2#1#0#驾驶侧门状态#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd"}#MS11#E3
+DoorRiReSts#7#234#false#false#51#2#1#0#右后侧门状态#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd"}#MS11#E3
+DoorLeReSts#7#234#false#false#49#2#1#0#左后侧门状态#0.0#0.0#0.0#{"0": "Ukwn", "1": "Opend", "2": "Clsd"}#MS11#E3
 PwrModSigGrpChks#7#235#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 PwrModSigGrpCntr#7#235#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
 PwrModSts#7#235#false#false#23#3#1#0#PowerMode Status#0.0#0.0#0.0#{"0": "OFF", "1": "Awake", "2": "ACC", "3": "RUN"}#MS11#E3
 PwrModVld#7#235#false#false#20#1#1#0#PowerMode Validty#0.0#0.0#0.0#{"0": "Valid", "1": "NotValid"}#MS11#E3
 VCUActGearSigGrpChks#7#235#false#false#31#8#1#0##0.0#0.0#0.0#null#MS11#E3
 VCUActGearSigGrpCntr#7#235#false#false#35#4#1#0##0.0#0.0#0.0#null#MS11#E3
-VCUActGearLvr#7#235#false#false#55#3#1#0#Actual gear level 杞�杈�瀹����妗ｄ��\nP R N D��′��#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#MS11#E3
-VCUActGearLvrVld#7#235#false#false#52#1#1#0#杞�杈�瀹����妗ｄ��������浣�#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
+VCUActGearLvr#7#235#false#false#55#3#1#0#Actual gear level 车辆实际档位\nP R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#MS11#E3
+VCUActGearLvrVld#7#235#false#false#52#1#1#0#车辆实际档位有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 VcuInpSigGrpChks#7#235#false#false#63#8#1#0##0.0#0.0#0.0#null#MS11#E3
 VcuInpSigGrpCntr#7#235#false#false#67#4#1#0##0.0#0.0#0.0#null#MS11#E3
-VCUStsModCst#7#235#false#false#79#8#1#0#energy recuperation end mode.\n��介�������剁�舵��妯″��#0.0#0.0#0.0#{"0": "OPedl_No_RgL1", "1": "OPedl_No_RgL2", "2": "OPedl_No_RgL3", "3": "OPedl_No_RgL4", "4": "OPedl_No_RgL5", "5": "OPedl_No_ADASactive", "6": "OPedl_No_RoadGradientInhbit", "7": "OPedl_No_PowerDown", "16": "OPedl_Stop_RgL1", "17": "OPedl_Stop_RgL2", "18": "OPedl_Stop_RgL3", "19": "OPedl_Stop_RgL4", "20": "OPedl_Stop_RgL5", "21": "OPedl_Crp_RgL1", "22": "OPedl_Crp_RgL2", "23": "OPedl_Crp_RgL3", "24": "OPedl_Crp_RgL4", "25": "OPedl_Crp_RgL5", "26": "OPedl_FW_RgL1", "27": "OPedl_FW_RgL2", "28": "OPedl_FW_RgL3", "29": "OPedl_FW_RgL4", "30": "OPedl_FW_RgL5"}#MS11#E3
-VCUAccrPedlRat#7#235#false#false#87#15#0.004#0.0#������娌归�ㄨ����垮��搴�#0.0#0.0#0.0#null#MS11#E3
-VCUAccrPedlRatVld#7#235#false#false#88#1#1#0#������韪���挎��������#0.0#0.0#0.0#{"0": "invalid", "1": "valid"}#MS11#E3
-VCUFrntEmTqRdy#7#235#false#false#103#1#1#0#The Front Motor  can be ready to response chassis torque request.\n�����垫�哄��浠ュ��搴������╄�锋��.#0.0#0.0#0.0#{"0": "Not_ready", "1": "Ready"}#MS11#E3
-VCUPrkgBtnPsd#7#235#false#false#102#1#1#0#椹鹃┒������涓�P妗�#0.0#0.0#0.0#{"0": "Not_Active", "1": "active"}#MS11#E3
-VCUReEmTqRdy#7#235#false#false#101#1#1#0#Rear EM is ready to response chassis Torque Request\n�����垫�烘�����澶�浜�Ready��舵��#0.0#0.0#0.0#{"0": "Not_ready", "1": "Ready"}#MS11#E3
-VCUTarGearLvr#7#235#false#false#100#3#1#0#������妗ｄ��  P R N D��′��#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#MS11#E3
-VCUTarGearLvrVld#7#235#false#false#97#1#1#0#������妗ｄ��������浣�#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
-VCUVirtAccrPedlVld#7#235#false#false#96#1#1#0#������娌归�ㄥ��搴�������浣�#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
-VCUVirtAccrPedl#7#235#false#false#111#7#1#0#������娌归�ㄥ��搴� 褰����妯″�����pedal map���绠�#0.0#0.0#0.0#null#MS11#E3
-VCURgnTqCorrnFac#7#235#false#false#119#4#0.1#0.0#Regeneration Torque Correction Factor#0.0#0.0#0.0#null#MS11#E3
-VCUPtRdyFlg#7#235#false#false#127#1#1#0#椹鹃┒浣胯��#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MS11#E3
-CarModSts#7#235#false#false#126#3#1#0#CarMode��舵��淇″��#0.0#0.0#0.0#{"0": "Normal", "1": "Fcy", "2": "Trsnp", "3": "Showroom", "4": "Dyno", "5": "OTAInstall", "6": "Service", "7": "Spare"}#MS11#E3
-VCUAccrPedlRatGrdt#7#235#false#true#151#15#0.0625#0.0#������娌归�ㄨ����垮��搴����������#0.0#0.0#0.0#null#MS11#E3
-VCUAccrPedlFlg#7#235#false#false#152#1#1#0#娌归�ㄨ����胯俯涓����蹇�浣�#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MS11#E3
+VCUStsModCst#7#235#false#false#79#8#1#0#energy recuperation end mode.\n能量回收状态模式#0.0#0.0#0.0#{"0": "OPedl_No_RgL1", "1": "OPedl_No_RgL2", "2": "OPedl_No_RgL3", "3": "OPedl_No_RgL4", "4": "OPedl_No_RgL5", "5": "OPedl_No_ADASactive", "6": "OPedl_No_RoadGradientInhbit", "7": "OPedl_No_PowerDown", "16": "OPedl_Stop_RgL1", "17": "OPedl_Stop_RgL2", "18": "OPedl_Stop_RgL3", "19": "OPedl_Stop_RgL4", "20": "OPedl_Stop_RgL5", "21": "OPedl_Crp_RgL1", "22": "OPedl_Crp_RgL2", "23": "OPedl_Crp_RgL3", "24": "OPedl_Crp_RgL4", "25": "OPedl_Crp_RgL5", "26": "OPedl_FW_RgL1", "27": "OPedl_FW_RgL2", "28": "OPedl_FW_RgL3", "29": "OPedl_FW_RgL4", "30": "OPedl_FW_RgL5"}#MS11#E3
+VCUAccrPedlRat#7#235#false#false#87#15#0.004#0#加速油门踏板开度#0.0#0.0#0.0#null#MS11#E3
+VCUAccrPedlRatVld#7#235#false#false#88#1#1#0#加速踏板有效性#0.0#0.0#0.0#{"0": "invalid", "1": "valid"}#MS11#E3
+VCUFrntEmTqRdy#7#235#false#false#103#1#1#0#The Front Motor  can be ready to response chassis torque request.\n前电机可以响应扭矩请求.#0.0#0.0#0.0#{"0": "Not_ready", "1": "Ready"}#MS11#E3
+VCUPrkgBtnPsd#7#235#false#false#102#1#1#0#驾驶员按下P档#0.0#0.0#0.0#{"0": "Not_Active", "1": "active"}#MS11#E3
+VCUReEmTqRdy#7#235#false#false#101#1#1#0#Rear EM is ready to response chassis Torque Request\n后电机是否处于Ready状态#0.0#0.0#0.0#{"0": "Not_ready", "1": "Ready"}#MS11#E3
+VCUTarGearLvr#7#235#false#false#100#3#1#0#目标档位  P R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#MS11#E3
+VCUTarGearLvrVld#7#235#false#false#97#1#1#0#目标档位有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
+VCUVirtAccrPedlVld#7#235#false#false#96#1#1#0#虚拟油门开度有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
+VCUVirtAccrPedl#7#235#false#false#111#7#1#0#虚拟油门开度 当前模式的pedal map反算#0.0#0.0#0.0#null#MS11#E3
+VCURgnTqCorrnFac#7#235#false#false#119#4#0.1#0#Regeneration Torque Correction Factor#0.0#0.0#0.0#null#MS11#E3
+VCUPtRdyFlg#7#235#false#false#127#1#1#0#驾驶使能#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MS11#E3
+CarModSts#7#235#false#false#126#3#1#0#CarMode状态信号#0.0#0.0#0.0#{"0": "Normal", "1": "Fcy", "2": "Trsnp", "3": "Showroom", "4": "Dyno", "5": "OTAInstall", "6": "Service", "7": "Spare"}#MS11#E3
+VCUAccrPedlRatGrdt#7#235#false#true#151#15#0.0625#0#加速油门踏板开度变化率#0.0#0.0#0.0#null#MS11#E3
+VCUAccrPedlFlg#7#235#false#false#152#1#1#0#油门踏板踩下标志位#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MS11#E3
 FrntMotCtrlSigGrpChks#7#236#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 FrntMotCtrlSigGrpCntr#7#236#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
-VCUFrntDesTqWoIntv#7#236#false#false#23#15#1#-16383#���杞存��骞查�����姹�������#0.0#0.0#0.0#null#MS11#E3
-VCUFrntDesTqWoIntvVld#7#236#false#false#24#1#1#0#���杞存��骞查�����姹������╂��������#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
-VCUFrntMotActSpd#7#236#false#false#39#16#1#-32767#�����垫�哄�����杞����#0.0#0.0#0.0#null#MS11#E3
-VCUFrntMotActTq#7#236#false#false#55#15#1#-16383#�����垫�哄�����������#0.0#0.0#0.0#null#MS11#E3
-VCUFrntMotActSpdVld#7#236#false#false#56#1#1#0#�����垫�哄�����杞����������浣�#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
+VCUFrntDesTqWoIntv#7#236#false#false#23#15#1#-16383#前轴未干预需求扭矩#0.0#0.0#0.0#null#MS11#E3
+VCUFrntDesTqWoIntvVld#7#236#false#false#24#1#1#0#前轴未干预需求扭矩有效性#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
+VCUFrntMotActSpd#7#236#false#false#39#16#1#-32767#前电机实际转速#0.0#0.0#0.0#null#MS11#E3
+VCUFrntMotActTq#7#236#false#false#55#15#1#-16383#前电机实际扭矩#0.0#0.0#0.0#null#MS11#E3
+VCUFrntMotActSpdVld#7#236#false#false#56#1#1#0#前电机实际转速有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 VCUFrntMotWhlTqReq#7#236#false#false#71#15#1#-16383#Front motor torque request#0.0#0.0#0.0#null#MS11#E3
-VCUFrntMotActTqVld#7#236#false#false#72#1#1#0#�����垫�哄����������╂�����浣�#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
-VCUFrntWhlTqMaxAvl#7#236#false#false#87#14#1#0#���杞����澶у����ㄦ�����#0.0#0.0#0.0#null#MS11#E3
-VCUFrntWhlTqMaxAvlVld#7#236#false#false#89#1#1#0#���杞����澶у����ㄦ����╂�����浣�#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
+VCUFrntMotActTqVld#7#236#false#false#72#1#1#0#前电机实际扭矩有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
+VCUFrntWhlTqMaxAvl#7#236#false#false#87#14#1#0#前轮最大可用扭矩#0.0#0.0#0.0#null#MS11#E3
+VCUFrntWhlTqMaxAvlVld#7#236#false#false#89#1#1#0#前轮最大可用扭矩有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 VCUFrntMotWhlTqReqVld#7#236#false#false#88#1#1#0#Front motor torque request Valid#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
-VCUFrntWhlTqMinAvl#7#236#false#false#103#14#1#-16383#���杞����灏������ㄦ�����#0.0#0.0#0.0#null#MS11#E3
-VCUFrntWhlTqMinAvlVld#7#236#false#false#105#1#1#0#���杞����灏������ㄦ����╂�����浣�#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
+VCUFrntWhlTqMinAvl#7#236#false#false#103#14#1#-16383#前轮最小可用扭矩#0.0#0.0#0.0#null#MS11#E3
+VCUFrntWhlTqMinAvlVld#7#236#false#false#105#1#1#0#前轮最小可用扭矩有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 ReMotCtrlSigGrpChks#7#236#false#false#127#8#1#0##0.0#0.0#0.0#null#MS11#E3
 ReMotCtrlSigGrpCntr#7#236#false#false#131#4#1#0##0.0#0.0#0.0#null#MS11#E3
-VCUReDesTqWoIntv#7#236#false#false#143#15#1#-16383#���杞存��骞查�����姹�������#0.0#0.0#0.0#null#MS11#E3
-VCUReDesTqWoIntvVld#7#236#false#false#144#1#1#0#���杞存��骞查�����姹������╂��������#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
-VCUReMotActSpd#7#236#false#false#159#16#1#-32767#�����垫�哄�����杞����#0.0#0.0#0.0#null#MS11#E3
-VCUReMotActTq#7#236#false#false#175#15#1#-16383#�����垫�哄�����������#0.0#0.0#0.0#null#MS11#E3
-VCUReMotActSpdVld#7#236#false#false#176#1#1#0#�����垫�哄�����杞����������浣�#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
+VCUReDesTqWoIntv#7#236#false#false#143#15#1#-16383#后轴未干预需求扭矩#0.0#0.0#0.0#null#MS11#E3
+VCUReDesTqWoIntvVld#7#236#false#false#144#1#1#0#后轴未干预需求扭矩有效性#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
+VCUReMotActSpd#7#236#false#false#159#16#1#-32767#后电机实际转速#0.0#0.0#0.0#null#MS11#E3
+VCUReMotActTq#7#236#false#false#175#15#1#-16383#后电机实际扭矩#0.0#0.0#0.0#null#MS11#E3
+VCUReMotActSpdVld#7#236#false#false#176#1#1#0#后电机实际转速有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 VCUReMotWhlTqReq#7#236#false#false#191#15#1#-16383#Rear motor torque request#0.0#0.0#0.0#null#MS11#E3
 VCUReMotWhlTqReqVld#7#236#false#false#192#1#1#0#Rear motor torque request Valid#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
-VCUReWhlTqMaxAvl#7#236#false#false#207#14#1#0#���杞����澶у����ㄦ�����#0.0#0.0#0.0#null#MS11#E3
-VCUReWhlTqMaxAvlVld#7#236#false#false#209#1#1#0#���杞����澶у����ㄦ����╂�����浣�#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
-VCUReMotActTqVld#7#236#false#false#208#1#1#0#�����垫�哄����������╂�����浣�#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
-VCUReWhlTqMinAvl#7#236#false#false#223#14#1#-16383#���杞����灏������ㄦ�����#0.0#0.0#0.0#null#MS11#E3
-VCUReWhlTqMinAvlVld#7#236#false#false#225#1#1#0#���杞����灏������ㄦ����╂�����浣�#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
-VCUAlwParkRels#7#236#false#false#239#1#1#0#���������璁告�磋溅���P���#0.0#0.0#0.0#null#MS11#E3
-VCUGearLvrAvail#7#236#false#false#238#1#1#0#Vehicle Gear Response is available for ADAS\n缁���洪┚���棣������′�������ㄦ��蹇�浣�#0.0#0.0#0.0#{"0": "Not_Available", "1": "Available"}#MS11#E3
-VCULoSocLampReq#7#236#false#false#237#1#1#0#��ㄥ����垫����甸��浣�#0.0#0.0#0.0#{"0": "Not_active", "1": "Active"}#MS11#E3
-VCUPedlTqOvrdAdsFlg#7#236#false#false#236#1#1#0#绾靛����у��Override���蹇�浣�#0.0#0.0#0.0#{"0": "No", "1": "Yes"}#MS11#E3
-VCUPrkgBtnPsdVld#7#236#false#false#235#1#1#0#椹鹃┒�����挎��P��℃��������#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
-VCUShifterMoveFlg#7#236#false#false#234#1#1#0#椹鹃┒�����ㄥ�ㄤ����㈡�℃��������蹇�浣�#0.0#0.0#0.0#null#MS11#E3
-VCUVehMaxFltLvl#7#236#false#false#247#3#1#0#VCU Max Fault  Level\nVCU���澶ф�����绛�绾�#0.0#0.0#0.0#{"0": "No_Fault", "1": "FaultLevel1", "2": "FaultLevel2", "3": "FaultLevel3", "4": "FaultLevel4"}#MS11#E3
-VinVINBlkID#7#1023#false#false#7#8#1#0#Block ID for VIN Signal sequence#0.0#0.0#0.0#{"0": "Invalid", "1": "Block_1", "2": "Block_2", "3": "Block_3"}#MS11#E3
-VinVINSignalPos1#7#1023#false#false#15#8#1#0#1st position in VIN Signal    Block ID dependant#0.0#0.0#0.0#null#MS11#E3
-VinVINSignalPos2#7#1023#false#false#23#8#1#0#2nd position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MS11#E3
-VinVINSignalPos3#7#1023#false#false#31#8#1#0#3rd position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MS11#E3
-VinVINSignalPos4#7#1023#false#false#39#8#1#0#4th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MS11#E3
-VinVINSignalPos5#7#1023#false#false#47#8#1#0#5th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MS11#E3
-VinVINSignalPos6#7#1023#false#false#55#8#1#0#6th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MS11#E3
-VinVINSignalPos7#7#1023#false#false#63#8#1#0#7th position in VIN Signal   Block ID dependant#0.0#0.0#0.0#null#MS11#E3
+VCUReWhlTqMaxAvl#7#236#false#false#207#14#1#0#后轮最大可用扭矩#0.0#0.0#0.0#null#MS11#E3
+VCUReWhlTqMaxAvlVld#7#236#false#false#209#1#1#0#后轮最大可用扭矩有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
+VCUReMotActTqVld#7#236#false#false#208#1#1#0#后电机实际扭矩有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
+VCUReWhlTqMinAvl#7#236#false#false#223#14#1#-16383#后轮最小可用扭矩#0.0#0.0#0.0#null#MS11#E3
+VCUReWhlTqMinAvlVld#7#236#false#false#225#1#1#0#后轮最小可用扭矩有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
+VCUAlwParkRels#7#236#false#false#239#1#1#0#是否允许整车出P挡#0.0#0.0#0.0#null#MS11#E3
+VCUGearLvrAvail#7#236#false#false#238#1#1#0#Vehicle Gear Response is available for ADAS\n给智驾反馈的挡位可用标志位#0.0#0.0#0.0#{"0": "Not_Available", "1": "Available"}#MS11#E3
+VCULoSocLampReq#7#236#false#false#237#1#1#0#动力电池电量低#0.0#0.0#0.0#{"0": "Not_active", "1": "Active"}#MS11#E3
+VCUPedlTqOvrdAdsFlg#7#236#false#false#236#1#1#0#纵向控制Override标志位#0.0#0.0#0.0#{"0": "No", "1": "Yes"}#MS11#E3
+VCUPrkgBtnPsdVld#7#236#false#false#235#1#1#0#驾驶员长按P挡有效性#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
+VCUShifterMoveFlg#7#236#false#false#234#1#1#0#驾驶员拨动了换挡杆的标志位#0.0#0.0#0.0#null#MS11#E3
+VCUVehMaxFltLvl#7#236#false#false#247#3#1#0#VCU Max Fault  Level\nVCU最大故障等级#0.0#0.0#0.0#{"0": "No_Fault", "1": "FaultLevel1", "2": "FaultLevel2", "3": "FaultLevel3", "4": "FaultLevel4"}#MS11#E3
 VCCDAdasCanfdNodeAddress#7#1400#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#E3
 VCCDAdasCanfdActiveWakeup#7#1400#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3
 VCCDAdasCanfdRepeatMsgReq#7#1400#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "not_requested", "1": "requested"}#MS11#E3

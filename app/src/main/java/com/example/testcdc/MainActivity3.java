@@ -29,7 +29,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
@@ -43,8 +42,9 @@ import com.example.testcdc.MiCAN.DeviceInfo;
 import com.example.testcdc.Utils.FTPClientFunctions;
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
-import com.example.testcdc.Utils.Utils;
 import com.example.testcdc.database.Basic_DataBase;
+import com.example.testcdc.entity.CarTypeEntity;
+import com.example.testcdc.entity.ChannelInf;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
 import com.example.testcdc.entity.SignalInfo_getdbc;
@@ -55,7 +55,6 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import org.checkerframework.checker.lock.qual.LockHeld;
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -76,14 +75,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.MediaType;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
 
 
 public class MainActivity3 extends AppCompatActivity {
@@ -516,9 +507,107 @@ public class MainActivity3 extends AppCompatActivity {
 //                            webView.loadUrl(callbackJs);
 //                        }
 //                    });
+
                 }
             }
         });
+
+        messageHandlers.put("getDBCConfig", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) throws IOException {
+
+                JsonArray jsonArray = new JsonArray();
+
+                // 获取所有的车类型
+                List<String> carTypes = database.carTypeDao().getDistinctCarTypeNames();
+                if (carTypes != null) {
+
+                    for (String carTypeName : carTypes) {
+                        JsonObject carTypeInfo = new JsonObject();
+                        carTypeInfo.addProperty("label", carTypeName);
+                        carTypeInfo.addProperty("value", carTypeName);
+
+                        //拼接children部分
+                        //step1 遍历carType，拼接children中的label和value
+
+                        //step2 遍历carType，根据cid查询bus_names和bus_id
+
+                        //step3 根据顺序讲bus_name组成children中的comments
+
+                        JsonArray childrenArray = new JsonArray();
+
+                        List<String> sdbNames = database.carTypeDao().getSDBNames(carTypeName);
+                        if (sdbNames!= null) {
+                            for (String sdbName : sdbNames) {
+                                JsonObject child = new JsonObject();
+                                child.addProperty("label", sdbName);
+                                child.addProperty("value", sdbName);
+
+                                // step2 根据cid查询bus_names和bus_id
+                                long cid = database.carTypeDao().getCidByName(carTypeName, sdbName);
+                                List<ChannelInf> channelInfos = database.msgInfoDao().getDistinctBusNamesAndIdsByCid(cid);
+
+                                // step3 根据顺序将bus_name组成children中的comments
+                                JsonArray commentsArray = new JsonArray();
+                                commentsArray.add("");// 前面空一位
+                                // 创建一个以bus_id为索引的列表，方便按顺序填充
+//                                List<String> busNameList = new ArrayList<>();
+//                                for (int i = 0; i < channelInfos.size(); i++) {
+//                                    ChannelInf info = channelInfos.get(i);
+//                                    int busId = info.getBus_id();
+//                                    while (busNameList.size() < busId) {
+//                                        busNameList.add("");
+//                                    }
+//                                    busNameList.add(info.getBus_name());
+//                                }
+//                                while (busNameList.size() < 40) {
+//                                    busNameList.add("");
+//                                }
+//                                for (String busName : busNameList) {
+//                                    commentsArray.add(busName);
+//                                }
+                                int maxBusId = 0;
+                                if (!channelInfos.isEmpty()) {
+                                    maxBusId = channelInfos.get(channelInfos.size() - 1).getBus_id();
+                                }
+
+                                for (int i = 1; i <= maxBusId; i++) {
+                                    boolean found = false;
+                                    for (ChannelInf info : channelInfos) {
+                                        if (info.getBus_id() == i) {
+                                            commentsArray.add(info.getBus_name());
+                                            found = true;
+                                            break;
+                                        }
+                                    }
+                                    if (!found) {
+                                        commentsArray.add("");
+                                    }
+                                }
+
+
+                                child.add("comments", commentsArray);
+                                childrenArray.add(child);
+                            }
+                        }
+                        carTypeInfo.add("children", childrenArray);
+                        jsonArray.add(carTypeInfo);
+                    }
+
+
+                }
+
+                Log.w(TAG, "method 55555555 " + jsonArray);
+                JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
+                Result<Object> success = ResponseData.success(jsonArray);
+                jsCallResult.setData(success);
+                callJs(jsCallResult);
+
+            }
+        });
+
+
+
 
         messageHandlers.put("getDBC", new BridgeHandler() {
             @Override
@@ -1301,5 +1390,7 @@ public class MainActivity3 extends AppCompatActivity {
         JsonElement jsonElement = JsonParser.parseString(gson.toJson(maps));
         return jsonElement.toString();
     }
+
+
 
 }

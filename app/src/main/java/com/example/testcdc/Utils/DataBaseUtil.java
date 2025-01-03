@@ -64,7 +64,7 @@ public class DataBaseUtil {
 
 
     public static void initDataFromCsv(Context context) {
-        // Log.e(TAG,"2222 initDataFromCsv");
+//        Log.e(TAG,"2222 initDataFromCsv");
         Log.e(TAG, "initDataFromCsv");
         ArrayList<Integer> files = new ArrayList<>();
 //        files.add(R.raw.signal_info_1_mx11_e4);
@@ -73,6 +73,281 @@ public class DataBaseUtil {
 //        files.add(R.raw.signal_info_4_mx11_e4);
 //        files.add(R.raw.signal_info_6_mx11_e4);
 //        files.add(R.raw.signal_info_7_mx11_e4);
+
+
+        //ms11_e3
+        files.add(R.raw.signal_info_1_ms11_e3);
+        files.add(R.raw.signal_info_2_ms11_e3);
+        files.add(R.raw.signal_info_3_ms11_e3);
+        files.add(R.raw.signal_info_4_ms11_e3);
+        files.add(R.raw.signal_info_5_ms11_e3);
+        files.add(R.raw.signal_info_6_ms11_e3);
+        files.add(R.raw.signal_info_7_ms11_e3);
+        files.add(R.raw.signal_info_8_ms11_e3);
+        files.add(R.raw.signal_info_9_ms11_e3);
+        files.add(R.raw.signal_info_10_ms11_e3);
+        files.add(R.raw.signal_info_14_ms11_e3);
+        files.add(R.raw.signal_info_15_ms11_e3);
+
+        //ms11_e4
+        files.add(R.raw.signal_info_2_ms11_e4);
+        files.add(R.raw.signal_info_3_ms11_e4);
+        files.add(R.raw.signal_info_4_ms11_e4);
+        files.add(R.raw.signal_info_5_ms11_e4);
+        files.add(R.raw.signal_info_9_ms11_e4);
+        files.add(R.raw.signal_info_10_ms11_e4);
+        files.add(R.raw.signal_info_11_ms11_e4);
+        files.add(R.raw.signal_info_12_ms11_e4);
+        files.add(R.raw.signal_info_13_ms11_e4);
+        files.add(R.raw.signal_info_14_ms11_e4);
+        files.add(R.raw.signal_info_15_ms11_e4);
+
+        //ms11_e4u1
+        files.add(R.raw.signal_info_2_ms11_e4u1);
+        files.add(R.raw.signal_info_3_ms11_e4u1);
+        files.add(R.raw.signal_info_4_ms11_e4u1);
+        files.add(R.raw.signal_info_5_ms11_e4u1);
+        files.add(R.raw.signal_info_9_ms11_e4u1);
+        files.add(R.raw.signal_info_10_ms11_e4u1);
+        files.add(R.raw.signal_info_11_ms11_e4u1);
+        files.add(R.raw.signal_info_12_ms11_e4u1);
+        files.add(R.raw.signal_info_13_ms11_e4u1);
+        files.add(R.raw.signal_info_14_ms11_e4u1);
+        files.add(R.raw.signal_info_15_ms11_e4u1);
+        files.add(R.raw.signal_info_33_ms11_e4u1);
+        files.add(R.raw.signal_info_34_ms11_e4u1);
+        files.add(R.raw.signal_info_35_ms11_e4u1);
+        files.add(R.raw.signal_info_36_ms11_e4u1);
+
+        //ms11_e4u2
+        files.add(R.raw.signal_info_2_ms11_e4u2);
+        files.add(R.raw.signal_info_3_ms11_e4u2);
+        files.add(R.raw.signal_info_4_ms11_e4u2);
+        files.add(R.raw.signal_info_5_ms11_e4u2);
+        files.add(R.raw.signal_info_9_ms11_e4u2);
+        files.add(R.raw.signal_info_10_ms11_e4u2);
+        files.add(R.raw.signal_info_11_ms11_e4u2);
+        files.add(R.raw.signal_info_12_ms11_e4u2);
+        files.add(R.raw.signal_info_13_ms11_e4u2);
+        files.add(R.raw.signal_info_14_ms11_e4u2);
+        files.add(R.raw.signal_info_15_ms11_e4u2);
+        files.add(R.raw.signal_info_33_ms11_e4u2);
+        files.add(R.raw.signal_info_34_ms11_e4u2);
+        files.add(R.raw.signal_info_35_ms11_e4u2);
+        files.add(R.raw.signal_info_36_ms11_e4u2);
+        files.add(R.raw.signal_info_37_ms11_e4u2);
+
+
+        //ms11_e4u3_0812
+        files.add(R.raw.signal_info_2_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_3_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_4_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_5_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_9_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_10_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_11_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_12_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_13_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_14_ms11_e4u3_0812);
+        files.add(R.raw.signal_info_15_ms11_e4u3_0812);
+
+
+        //ms11_e4u3_0915
+        files.add(R.raw.signal_info_2_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_3_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_4_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_5_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_9_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_10_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_11_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_12_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_13_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_14_ms11_e4u3_0915);
+        files.add(R.raw.signal_info_15_ms11_e4u3_0915);
+
+        //ms11_e4u3_1015
+        files.add(R.raw.signal_info_2_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_3_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_4_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_5_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_9_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_10_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_11_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_12_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_13_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_14_ms11_e4u3_1015);
+        files.add(R.raw.signal_info_15_ms11_e4u3_1015);
+
+        //ms11_e4u3_1115
+        files.add(R.raw.signal_info_2_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_3_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_4_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_5_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_9_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_10_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_11_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_12_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_13_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_14_ms11_e4u3_1115);
+        files.add(R.raw.signal_info_15_ms11_e4u3_1115);
+
+        //ms11_rc04
+        files.add(R.raw.signal_info_2_ms11_rc04);
+        files.add(R.raw.signal_info_3_ms11_rc04);
+        files.add(R.raw.signal_info_4_ms11_rc04);
+        files.add(R.raw.signal_info_5_ms11_rc04);
+        files.add(R.raw.signal_info_9_ms11_rc04);
+        files.add(R.raw.signal_info_10_ms11_rc04);
+        files.add(R.raw.signal_info_11_ms11_rc04);
+        files.add(R.raw.signal_info_12_ms11_rc04);
+        files.add(R.raw.signal_info_13_ms11_rc04);
+        files.add(R.raw.signal_info_14_ms11_rc04);
+        files.add(R.raw.signal_info_15_ms11_rc04);
+
+        //ms11_rc05
+        files.add(R.raw.signal_info_2_ms11_rc05);
+        files.add(R.raw.signal_info_3_ms11_rc05);
+        files.add(R.raw.signal_info_4_ms11_rc05);
+        files.add(R.raw.signal_info_5_ms11_rc05);
+        files.add(R.raw.signal_info_9_ms11_rc05);
+        files.add(R.raw.signal_info_10_ms11_rc05);
+        files.add(R.raw.signal_info_11_ms11_rc05);
+        files.add(R.raw.signal_info_12_ms11_rc05);
+        files.add(R.raw.signal_info_13_ms11_rc05);
+        files.add(R.raw.signal_info_14_ms11_rc05);
+        files.add(R.raw.signal_info_15_ms11_rc05);
+
+
+        //ms11_rc06
+        files.add(R.raw.signal_info_2_ms11_rc06);
+        files.add(R.raw.signal_info_3_ms11_rc06);
+        files.add(R.raw.signal_info_4_ms11_rc06);
+        files.add(R.raw.signal_info_5_ms11_rc06);
+        files.add(R.raw.signal_info_9_ms11_rc06);
+        files.add(R.raw.signal_info_10_ms11_rc06);
+        files.add(R.raw.signal_info_11_ms11_rc06);
+        files.add(R.raw.signal_info_12_ms11_rc06);
+        files.add(R.raw.signal_info_13_ms11_rc06);
+        files.add(R.raw.signal_info_14_ms11_rc06);
+        files.add(R.raw.signal_info_15_ms11_rc06);
+
+        //ms11_rc07
+        files.add(R.raw.signal_info_2_ms11_rc07);
+        files.add(R.raw.signal_info_3_ms11_rc07);
+        files.add(R.raw.signal_info_4_ms11_rc07);
+        files.add(R.raw.signal_info_5_ms11_rc07);
+        files.add(R.raw.signal_info_9_ms11_rc07);
+        files.add(R.raw.signal_info_10_ms11_rc07);
+        files.add(R.raw.signal_info_11_ms11_rc07);
+        files.add(R.raw.signal_info_12_ms11_rc07);
+        files.add(R.raw.signal_info_13_ms11_rc07);
+        files.add(R.raw.signal_info_14_ms11_rc07);
+        files.add(R.raw.signal_info_15_ms11_rc07);
+
+        //ms11_rc08
+        files.add(R.raw.signal_info_2_ms11_rc08);
+        files.add(R.raw.signal_info_3_ms11_rc08);
+        files.add(R.raw.signal_info_4_ms11_rc08);
+        files.add(R.raw.signal_info_5_ms11_rc08);
+        files.add(R.raw.signal_info_9_ms11_rc08);
+        files.add(R.raw.signal_info_10_ms11_rc08);
+        files.add(R.raw.signal_info_11_ms11_rc08);
+        files.add(R.raw.signal_info_12_ms11_rc08);
+        files.add(R.raw.signal_info_13_ms11_rc08);
+        files.add(R.raw.signal_info_14_ms11_rc08);
+        files.add(R.raw.signal_info_15_ms11_rc08);
+
+        //ms11_rc09
+        files.add(R.raw.signal_info_2_ms11_rc09);
+        files.add(R.raw.signal_info_3_ms11_rc09);
+        files.add(R.raw.signal_info_4_ms11_rc09);
+        files.add(R.raw.signal_info_5_ms11_rc09);
+        files.add(R.raw.signal_info_9_ms11_rc09);
+        files.add(R.raw.signal_info_10_ms11_rc09);
+        files.add(R.raw.signal_info_11_ms11_rc09);
+        files.add(R.raw.signal_info_12_ms11_rc09);
+        files.add(R.raw.signal_info_13_ms11_rc09);
+        files.add(R.raw.signal_info_14_ms11_rc09);
+        files.add(R.raw.signal_info_15_ms11_rc09);
+
+        //ms11_rc10
+        files.add(R.raw.signal_info_2_ms11_rc10);
+        files.add(R.raw.signal_info_3_ms11_rc10);
+        files.add(R.raw.signal_info_4_ms11_rc10);
+        files.add(R.raw.signal_info_5_ms11_rc10);
+        files.add(R.raw.signal_info_9_ms11_rc10);
+        files.add(R.raw.signal_info_10_ms11_rc10);
+        files.add(R.raw.signal_info_11_ms11_rc10);
+        files.add(R.raw.signal_info_12_ms11_rc10);
+        files.add(R.raw.signal_info_13_ms11_rc10);
+        files.add(R.raw.signal_info_14_ms11_rc10);
+        files.add(R.raw.signal_info_15_ms11_rc10);
+
+        //ms11_rc11
+        files.add(R.raw.signal_info_2_ms11_rc11);
+        files.add(R.raw.signal_info_3_ms11_rc11);
+        files.add(R.raw.signal_info_4_ms11_rc11);
+        files.add(R.raw.signal_info_5_ms11_rc11);
+        files.add(R.raw.signal_info_9_ms11_rc11);
+        files.add(R.raw.signal_info_10_ms11_rc11);
+        files.add(R.raw.signal_info_11_ms11_rc11);
+        files.add(R.raw.signal_info_12_ms11_rc11);
+        files.add(R.raw.signal_info_13_ms11_rc11);
+        files.add(R.raw.signal_info_14_ms11_rc11);
+        files.add(R.raw.signal_info_15_ms11_rc11);
+
+        //ms11_rc12
+        files.add(R.raw.signal_info_2_ms11_rc12);
+        files.add(R.raw.signal_info_3_ms11_rc12);
+        files.add(R.raw.signal_info_4_ms11_rc12);
+        files.add(R.raw.signal_info_5_ms11_rc12);
+        files.add(R.raw.signal_info_9_ms11_rc12);
+        files.add(R.raw.signal_info_10_ms11_rc12);
+        files.add(R.raw.signal_info_11_ms11_rc12);
+        files.add(R.raw.signal_info_12_ms11_rc12);
+        files.add(R.raw.signal_info_13_ms11_rc12);
+        files.add(R.raw.signal_info_14_ms11_rc12);
+        files.add(R.raw.signal_info_15_ms11_rc12);
+
+        //ms11_25rc01
+        files.add(R.raw.signal_info_2_ms11_25rc01);
+        files.add(R.raw.signal_info_3_ms11_25rc01);
+        files.add(R.raw.signal_info_4_ms11_25rc01);
+        files.add(R.raw.signal_info_5_ms11_25rc01);
+        files.add(R.raw.signal_info_9_ms11_25rc01);
+        files.add(R.raw.signal_info_10_ms11_25rc01);
+        files.add(R.raw.signal_info_11_ms11_25rc01);
+        files.add(R.raw.signal_info_12_ms11_25rc01);
+        files.add(R.raw.signal_info_13_ms11_25rc01);
+        files.add(R.raw.signal_info_14_ms11_25rc01);
+        files.add(R.raw.signal_info_15_ms11_25rc01);
+
+        //ms11u_e3
+        files.add(R.raw.signal_info_2_ms11u_e3);
+        files.add(R.raw.signal_info_3_ms11u_e3);
+        files.add(R.raw.signal_info_4_ms11u_e3);
+        files.add(R.raw.signal_info_5_ms11u_e3);
+        files.add(R.raw.signal_info_9_ms11u_e3);
+        files.add(R.raw.signal_info_10_ms11u_e3);
+        files.add(R.raw.signal_info_11_ms11u_e3);
+        files.add(R.raw.signal_info_12_ms11u_e3);
+        files.add(R.raw.signal_info_13_ms11u_e3);
+        files.add(R.raw.signal_info_14_ms11u_e3);
+        files.add(R.raw.signal_info_15_ms11u_e3);
+
+        files.add(R.raw.signal_info_1_ms11_e3u1);
+        files.add(R.raw.signal_info_2_ms11_e3u1);
+        files.add(R.raw.signal_info_3_ms11_e3u1);
+        files.add(R.raw.signal_info_4_ms11_e3u1);
+        files.add(R.raw.signal_info_5_ms11_e3u1);
+        files.add(R.raw.signal_info_6_ms11_e3u1);
+        files.add(R.raw.signal_info_7_ms11_e3u1);
+        files.add(R.raw.signal_info_8_ms11_e3u1);
+        files.add(R.raw.signal_info_9_ms11_e3u1);
+        files.add(R.raw.signal_info_10_ms11_e3u1);
+        files.add(R.raw.signal_info_14_ms11_e3u1);
+        files.add(R.raw.signal_info_15_ms11_e3u1);
+
 
         files.add(R.raw.signal_info_2_ms11u_e4bugfix);
         files.add(R.raw.signal_info_3_ms11u_e4bugfix);
@@ -121,6 +396,18 @@ public class DataBaseUtil {
         files.add(R.raw.signal_info_13_ms11u_e4u3);
         files.add(R.raw.signal_info_14_ms11u_e4u3);
         files.add(R.raw.signal_info_15_ms11u_e4u3);
+
+        files.add(R.raw.signal_info_2_ms11u_sm3);
+        files.add(R.raw.signal_info_3_ms11u_sm3);
+        files.add(R.raw.signal_info_4_ms11u_sm3);
+        files.add(R.raw.signal_info_5_ms11u_sm3);
+        files.add(R.raw.signal_info_9_ms11u_sm3);
+        files.add(R.raw.signal_info_10_ms11u_sm3);
+        files.add(R.raw.signal_info_11_ms11u_sm3);
+        files.add(R.raw.signal_info_12_ms11u_sm3);
+        files.add(R.raw.signal_info_13_ms11u_sm3);
+        files.add(R.raw.signal_info_14_ms11u_sm3);
+        files.add(R.raw.signal_info_15_ms11u_sm3);
 
         files.add(R.raw.signal_info_2_ms11u_25rc02);
         files.add(R.raw.signal_info_3_ms11u_25rc02);
@@ -183,214 +470,6 @@ public class DataBaseUtil {
         files.add(R.raw.signal_info_7_mx11_e3);
         files.add(R.raw.signal_info_13_mx11_e3);
 
-        files.add(R.raw.signal_info_1_ms11_e3);
-        files.add(R.raw.signal_info_2_ms11_e3);
-        files.add(R.raw.signal_info_3_ms11_e3);
-        files.add(R.raw.signal_info_4_ms11_e3);
-        files.add(R.raw.signal_info_5_ms11_e3);
-        files.add(R.raw.signal_info_6_ms11_e3);
-        files.add(R.raw.signal_info_7_ms11_e3);
-        files.add(R.raw.signal_info_8_ms11_e3);
-        files.add(R.raw.signal_info_9_ms11_e3);
-        files.add(R.raw.signal_info_10_ms11_e3);
-        files.add(R.raw.signal_info_14_ms11_e3);
-        files.add(R.raw.signal_info_15_ms11_e3);
-
-        files.add(R.raw.signal_info_2_ms11_e4);
-        files.add(R.raw.signal_info_3_ms11_e4);
-        files.add(R.raw.signal_info_4_ms11_e4);
-        files.add(R.raw.signal_info_5_ms11_e4);
-        files.add(R.raw.signal_info_9_ms11_e4);
-        files.add(R.raw.signal_info_10_ms11_e4);
-        files.add(R.raw.signal_info_11_ms11_e4);
-        files.add(R.raw.signal_info_12_ms11_e4);
-        files.add(R.raw.signal_info_13_ms11_e4);
-        files.add(R.raw.signal_info_14_ms11_e4);
-        files.add(R.raw.signal_info_15_ms11_e4);
-
-        files.add(R.raw.signal_info_2_ms11_e4u1);
-        files.add(R.raw.signal_info_3_ms11_e4u1);
-        files.add(R.raw.signal_info_4_ms11_e4u1);
-        files.add(R.raw.signal_info_5_ms11_e4u1);
-        files.add(R.raw.signal_info_9_ms11_e4u1);
-        files.add(R.raw.signal_info_10_ms11_e4u1);
-        files.add(R.raw.signal_info_11_ms11_e4u1);
-        files.add(R.raw.signal_info_12_ms11_e4u1);
-        files.add(R.raw.signal_info_13_ms11_e4u1);
-        files.add(R.raw.signal_info_14_ms11_e4u1);
-        files.add(R.raw.signal_info_15_ms11_e4u1);
-        files.add(R.raw.signal_info_33_ms11_e4u1);
-        files.add(R.raw.signal_info_34_ms11_e4u1);
-        files.add(R.raw.signal_info_35_ms11_e4u1);
-        files.add(R.raw.signal_info_36_ms11_e4u1);
-
-
-        files.add(R.raw.signal_info_2_ms11_e4u2);
-        files.add(R.raw.signal_info_3_ms11_e4u2);
-        files.add(R.raw.signal_info_4_ms11_e4u2);
-        files.add(R.raw.signal_info_5_ms11_e4u2);
-        files.add(R.raw.signal_info_9_ms11_e4u2);
-        files.add(R.raw.signal_info_10_ms11_e4u2);
-        files.add(R.raw.signal_info_11_ms11_e4u2);
-        files.add(R.raw.signal_info_12_ms11_e4u2);
-        files.add(R.raw.signal_info_13_ms11_e4u2);
-        files.add(R.raw.signal_info_14_ms11_e4u2);
-        files.add(R.raw.signal_info_15_ms11_e4u2);
-        files.add(R.raw.signal_info_33_ms11_e4u2);
-        files.add(R.raw.signal_info_34_ms11_e4u2);
-        files.add(R.raw.signal_info_35_ms11_e4u2);
-        files.add(R.raw.signal_info_36_ms11_e4u2);
-        files.add(R.raw.signal_info_37_ms11_e4u2);
-
-
-        files.add(R.raw.signal_info_2_ms11_e4u3_0812);
-        files.add(R.raw.signal_info_3_ms11_e4u3_0812);
-        files.add(R.raw.signal_info_4_ms11_e4u3_0812);
-        files.add(R.raw.signal_info_5_ms11_e4u3_0812);
-        files.add(R.raw.signal_info_9_ms11_e4u3_0812);
-        files.add(R.raw.signal_info_10_ms11_e4u3_0812);
-        files.add(R.raw.signal_info_11_ms11_e4u3_0812);
-        files.add(R.raw.signal_info_12_ms11_e4u3_0812);
-        files.add(R.raw.signal_info_13_ms11_e4u3_0812);
-        files.add(R.raw.signal_info_14_ms11_e4u3_0812);
-        files.add(R.raw.signal_info_15_ms11_e4u3_0812);
-
-
-        files.add(R.raw.signal_info_2_ms11_e4u3_0915);
-        files.add(R.raw.signal_info_3_ms11_e4u3_0915);
-        files.add(R.raw.signal_info_4_ms11_e4u3_0915);
-        files.add(R.raw.signal_info_5_ms11_e4u3_0915);
-        files.add(R.raw.signal_info_9_ms11_e4u3_0915);
-        files.add(R.raw.signal_info_10_ms11_e4u3_0915);
-        files.add(R.raw.signal_info_11_ms11_e4u3_0915);
-        files.add(R.raw.signal_info_12_ms11_e4u3_0915);
-        files.add(R.raw.signal_info_13_ms11_e4u3_0915);
-        files.add(R.raw.signal_info_14_ms11_e4u3_0915);
-        files.add(R.raw.signal_info_15_ms11_e4u3_0915);
-
-
-        files.add(R.raw.signal_info_2_ms11_e4u3_1015);
-        files.add(R.raw.signal_info_3_ms11_e4u3_1015);
-        files.add(R.raw.signal_info_4_ms11_e4u3_1015);
-        files.add(R.raw.signal_info_5_ms11_e4u3_1015);
-        files.add(R.raw.signal_info_9_ms11_e4u3_1015);
-        files.add(R.raw.signal_info_10_ms11_e4u3_1015);
-        files.add(R.raw.signal_info_11_ms11_e4u3_1015);
-        files.add(R.raw.signal_info_12_ms11_e4u3_1015);
-        files.add(R.raw.signal_info_13_ms11_e4u3_1015);
-        files.add(R.raw.signal_info_14_ms11_e4u3_1015);
-        files.add(R.raw.signal_info_15_ms11_e4u3_1015);
-
-        files.add(R.raw.signal_info_2_ms11_e4u3_1115);
-        files.add(R.raw.signal_info_3_ms11_e4u3_1115);
-        files.add(R.raw.signal_info_4_ms11_e4u3_1115);
-        files.add(R.raw.signal_info_5_ms11_e4u3_1115);
-        files.add(R.raw.signal_info_9_ms11_e4u3_1115);
-        files.add(R.raw.signal_info_10_ms11_e4u3_1115);
-        files.add(R.raw.signal_info_11_ms11_e4u3_1115);
-        files.add(R.raw.signal_info_12_ms11_e4u3_1115);
-        files.add(R.raw.signal_info_13_ms11_e4u3_1115);
-        files.add(R.raw.signal_info_14_ms11_e4u3_1115);
-        files.add(R.raw.signal_info_15_ms11_e4u3_1115);
-
-
-        files.add(R.raw.signal_info_2_ms11_rc07);
-        files.add(R.raw.signal_info_3_ms11_rc07);
-        files.add(R.raw.signal_info_4_ms11_rc07);
-        files.add(R.raw.signal_info_5_ms11_rc07);
-        files.add(R.raw.signal_info_9_ms11_rc07);
-        files.add(R.raw.signal_info_10_ms11_rc07);
-        files.add(R.raw.signal_info_11_ms11_rc07);
-        files.add(R.raw.signal_info_12_ms11_rc07);
-        files.add(R.raw.signal_info_13_ms11_rc07);
-        files.add(R.raw.signal_info_14_ms11_rc07);
-        files.add(R.raw.signal_info_15_ms11_rc07);
-
-
-        files.add(R.raw.signal_info_2_ms11_rc06);
-        files.add(R.raw.signal_info_3_ms11_rc06);
-        files.add(R.raw.signal_info_4_ms11_rc06);
-        files.add(R.raw.signal_info_5_ms11_rc06);
-        files.add(R.raw.signal_info_9_ms11_rc06);
-        files.add(R.raw.signal_info_10_ms11_rc06);
-        files.add(R.raw.signal_info_11_ms11_rc06);
-        files.add(R.raw.signal_info_12_ms11_rc06);
-        files.add(R.raw.signal_info_13_ms11_rc06);
-        files.add(R.raw.signal_info_14_ms11_rc06);
-        files.add(R.raw.signal_info_15_ms11_rc06);
-
-        files.add(R.raw.signal_info_2_ms11_rc05);
-        files.add(R.raw.signal_info_3_ms11_rc05);
-        files.add(R.raw.signal_info_4_ms11_rc05);
-        files.add(R.raw.signal_info_5_ms11_rc05);
-        files.add(R.raw.signal_info_9_ms11_rc05);
-        files.add(R.raw.signal_info_10_ms11_rc05);
-        files.add(R.raw.signal_info_11_ms11_rc05);
-        files.add(R.raw.signal_info_12_ms11_rc05);
-        files.add(R.raw.signal_info_13_ms11_rc05);
-        files.add(R.raw.signal_info_14_ms11_rc05);
-        files.add(R.raw.signal_info_15_ms11_rc05);
-
-        files.add(R.raw.signal_info_2_ms11_rc04);
-        files.add(R.raw.signal_info_3_ms11_rc04);
-        files.add(R.raw.signal_info_4_ms11_rc04);
-        files.add(R.raw.signal_info_5_ms11_rc04);
-        files.add(R.raw.signal_info_9_ms11_rc04);
-        files.add(R.raw.signal_info_10_ms11_rc04);
-        files.add(R.raw.signal_info_11_ms11_rc04);
-        files.add(R.raw.signal_info_12_ms11_rc04);
-        files.add(R.raw.signal_info_13_ms11_rc04);
-        files.add(R.raw.signal_info_14_ms11_rc04);
-        files.add(R.raw.signal_info_15_ms11_rc04);
-
-        files.add(R.raw.signal_info_2_ms11_rc08);
-        files.add(R.raw.signal_info_3_ms11_rc08);
-        files.add(R.raw.signal_info_4_ms11_rc08);
-        files.add(R.raw.signal_info_5_ms11_rc08);
-        files.add(R.raw.signal_info_9_ms11_rc08);
-        files.add(R.raw.signal_info_10_ms11_rc08);
-        files.add(R.raw.signal_info_11_ms11_rc08);
-        files.add(R.raw.signal_info_12_ms11_rc08);
-        files.add(R.raw.signal_info_13_ms11_rc08);
-        files.add(R.raw.signal_info_14_ms11_rc08);
-        files.add(R.raw.signal_info_15_ms11_rc08);
-
-
-        files.add(R.raw.signal_info_2_ms11_rc09);
-        files.add(R.raw.signal_info_3_ms11_rc09);
-        files.add(R.raw.signal_info_4_ms11_rc09);
-        files.add(R.raw.signal_info_5_ms11_rc09);
-        files.add(R.raw.signal_info_9_ms11_rc09);
-        files.add(R.raw.signal_info_10_ms11_rc09);
-        files.add(R.raw.signal_info_11_ms11_rc09);
-        files.add(R.raw.signal_info_12_ms11_rc09);
-        files.add(R.raw.signal_info_13_ms11_rc09);
-        files.add(R.raw.signal_info_14_ms11_rc09);
-        files.add(R.raw.signal_info_15_ms11_rc09);
-
-        files.add(R.raw.signal_info_2_ms11_rc10);
-        files.add(R.raw.signal_info_3_ms11_rc10);
-        files.add(R.raw.signal_info_4_ms11_rc10);
-        files.add(R.raw.signal_info_5_ms11_rc10);
-        files.add(R.raw.signal_info_9_ms11_rc10);
-        files.add(R.raw.signal_info_10_ms11_rc10);
-        files.add(R.raw.signal_info_11_ms11_rc10);
-        files.add(R.raw.signal_info_12_ms11_rc10);
-        files.add(R.raw.signal_info_13_ms11_rc10);
-        files.add(R.raw.signal_info_14_ms11_rc10);
-        files.add(R.raw.signal_info_15_ms11_rc10);
-
-        files.add(R.raw.signal_info_2_ms11u_e3);
-        files.add(R.raw.signal_info_3_ms11u_e3);
-        files.add(R.raw.signal_info_4_ms11u_e3);
-        files.add(R.raw.signal_info_5_ms11u_e3);
-        files.add(R.raw.signal_info_9_ms11u_e3);
-        files.add(R.raw.signal_info_10_ms11u_e3);
-        files.add(R.raw.signal_info_11_ms11u_e3);
-        files.add(R.raw.signal_info_12_ms11u_e3);
-        files.add(R.raw.signal_info_13_ms11u_e3);
-        files.add(R.raw.signal_info_14_ms11u_e3);
-        files.add(R.raw.signal_info_15_ms11u_e3);
 
         files.add(R.raw.signal_info_1_mx11_e4u1);
         files.add(R.raw.signal_info_2_mx11_e4u1);
@@ -400,53 +479,6 @@ public class DataBaseUtil {
         files.add(R.raw.signal_info_7_mx11_e4u1);
         files.add(R.raw.signal_info_13_mx11_e4u1);
 
-        files.add(R.raw.signal_info_2_ms11u_sm3);
-        files.add(R.raw.signal_info_3_ms11u_sm3);
-        files.add(R.raw.signal_info_4_ms11u_sm3);
-        files.add(R.raw.signal_info_5_ms11u_sm3);
-        files.add(R.raw.signal_info_9_ms11u_sm3);
-        files.add(R.raw.signal_info_10_ms11u_sm3);
-        files.add(R.raw.signal_info_11_ms11u_sm3);
-        files.add(R.raw.signal_info_12_ms11u_sm3);
-        files.add(R.raw.signal_info_13_ms11u_sm3);
-        files.add(R.raw.signal_info_14_ms11u_sm3);
-        files.add(R.raw.signal_info_15_ms11u_sm3);
-
-        files.add(R.raw.signal_info_2_ms11_rc11);
-        files.add(R.raw.signal_info_3_ms11_rc11);
-        files.add(R.raw.signal_info_4_ms11_rc11);
-        files.add(R.raw.signal_info_5_ms11_rc11);
-        files.add(R.raw.signal_info_9_ms11_rc11);
-        files.add(R.raw.signal_info_10_ms11_rc11);
-        files.add(R.raw.signal_info_11_ms11_rc11);
-        files.add(R.raw.signal_info_12_ms11_rc11);
-        files.add(R.raw.signal_info_13_ms11_rc11);
-        files.add(R.raw.signal_info_14_ms11_rc11);
-        files.add(R.raw.signal_info_15_ms11_rc11);
-
-        files.add(R.raw.signal_info_2_ms11_rc12);
-        files.add(R.raw.signal_info_3_ms11_rc12);
-        files.add(R.raw.signal_info_4_ms11_rc12);
-        files.add(R.raw.signal_info_5_ms11_rc12);
-        files.add(R.raw.signal_info_9_ms11_rc12);
-        files.add(R.raw.signal_info_10_ms11_rc12);
-        files.add(R.raw.signal_info_11_ms11_rc12);
-        files.add(R.raw.signal_info_12_ms11_rc12);
-        files.add(R.raw.signal_info_13_ms11_rc12);
-        files.add(R.raw.signal_info_14_ms11_rc12);
-        files.add(R.raw.signal_info_15_ms11_rc12);
-
-        files.add(R.raw.signal_info_2_ms11_25rc01);
-        files.add(R.raw.signal_info_3_ms11_25rc01);
-        files.add(R.raw.signal_info_4_ms11_25rc01);
-        files.add(R.raw.signal_info_5_ms11_25rc01);
-        files.add(R.raw.signal_info_9_ms11_25rc01);
-        files.add(R.raw.signal_info_10_ms11_25rc01);
-        files.add(R.raw.signal_info_11_ms11_25rc01);
-        files.add(R.raw.signal_info_12_ms11_25rc01);
-        files.add(R.raw.signal_info_13_ms11_25rc01);
-        files.add(R.raw.signal_info_14_ms11_25rc01);
-        files.add(R.raw.signal_info_15_ms11_25rc01);
 
         files.add(R.raw.signal_info_1_kunlun20_e2);
         files.add(R.raw.signal_info_2_kunlun20_e2);
@@ -541,15 +573,19 @@ public class DataBaseUtil {
             }
 //            signalInfoDao.insertAll(signalInfos);
             Log.e(TAG, "signal insert finished");
-
+//            Log.e(TAG, "222222 signal insert finished");
+//
         });
+
+        Log.e(TAG, "All signal insert finished");
 
     }
 
     public static void initMsgFromCsv(Context ctx) {
-        //Log.e(TAG, "2222 initMsgFromCsv " );
 
+//        Log.e(TAG, "2222 initMsgFromCsv " );
         Log.e(TAG, "initMsgFromCsv ");
+
         ArrayList<Integer> files = new ArrayList<>();
 
         files.add(R.raw.msg_info_1);
@@ -558,6 +594,257 @@ public class DataBaseUtil {
         files.add(R.raw.msg_info_4);
         files.add(R.raw.msg_info_6);
         files.add(R.raw.msg_info_7);
+
+        //ms11_e3
+        files.add(R.raw.msg_info_1_ms11_e3);
+        files.add(R.raw.msg_info_2_ms11_e3);
+        files.add(R.raw.msg_info_3_ms11_e3);
+        files.add(R.raw.msg_info_4_ms11_e3);
+        files.add(R.raw.msg_info_5_ms11_e3);
+        files.add(R.raw.msg_info_6_ms11_e3);
+        files.add(R.raw.msg_info_7_ms11_e3);
+        files.add(R.raw.msg_info_8_ms11_e3);
+        files.add(R.raw.msg_info_9_ms11_e3);
+        files.add(R.raw.msg_info_10_ms11_e3);
+        files.add(R.raw.msg_info_14_ms11_e3);
+        files.add(R.raw.msg_info_15_ms11_e3);
+
+        files.add(R.raw.msg_info_1_ms11_e3u1);
+        files.add(R.raw.msg_info_2_ms11_e3u1);
+        files.add(R.raw.msg_info_3_ms11_e3u1);
+        files.add(R.raw.msg_info_4_ms11_e3u1);
+        files.add(R.raw.msg_info_5_ms11_e3u1);
+        files.add(R.raw.msg_info_6_ms11_e3u1);
+        files.add(R.raw.msg_info_7_ms11_e3u1);
+        files.add(R.raw.msg_info_8_ms11_e3u1);
+        files.add(R.raw.msg_info_9_ms11_e3u1);
+        files.add(R.raw.msg_info_10_ms11_e3u1);
+        files.add(R.raw.msg_info_14_ms11_e3u1);
+        files.add(R.raw.msg_info_15_ms11_e3u1);
+
+
+        //ms11_e4
+        files.add(R.raw.msg_info_2_ms11_e4);
+        files.add(R.raw.msg_info_3_ms11_e4);
+        files.add(R.raw.msg_info_4_ms11_e4);
+        files.add(R.raw.msg_info_5_ms11_e4);
+        files.add(R.raw.msg_info_9_ms11_e4);
+        files.add(R.raw.msg_info_10_ms11_e4);
+        files.add(R.raw.msg_info_11_ms11_e4);
+        files.add(R.raw.msg_info_12_ms11_e4);
+        files.add(R.raw.msg_info_13_ms11_e4);
+        files.add(R.raw.msg_info_14_ms11_e4);
+        files.add(R.raw.msg_info_15_ms11_e4);
+
+        //ms11_e4u1
+        files.add(R.raw.msg_info_2_ms11_e4u1);
+        files.add(R.raw.msg_info_3_ms11_e4u1);
+        files.add(R.raw.msg_info_4_ms11_e4u1);
+        files.add(R.raw.msg_info_5_ms11_e4u1);
+        files.add(R.raw.msg_info_9_ms11_e4u1);
+        files.add(R.raw.msg_info_10_ms11_e4u1);
+        files.add(R.raw.msg_info_11_ms11_e4u1);
+        files.add(R.raw.msg_info_12_ms11_e4u1);
+        files.add(R.raw.msg_info_13_ms11_e4u1);
+        files.add(R.raw.msg_info_14_ms11_e4u1);
+        files.add(R.raw.msg_info_15_ms11_e4u1);
+        files.add(R.raw.msg_info_33_ms11_e4u1);
+        files.add(R.raw.msg_info_34_ms11_e4u1);
+        files.add(R.raw.msg_info_35_ms11_e4u1);
+        files.add(R.raw.msg_info_36_ms11_e4u1);
+
+        //ms11_e4u2
+        files.add(R.raw.msg_info_2_ms11_e4u2);
+        files.add(R.raw.msg_info_3_ms11_e4u2);
+        files.add(R.raw.msg_info_4_ms11_e4u2);
+        files.add(R.raw.msg_info_5_ms11_e4u2);
+        files.add(R.raw.msg_info_9_ms11_e4u2);
+        files.add(R.raw.msg_info_10_ms11_e4u2);
+        files.add(R.raw.msg_info_11_ms11_e4u2);
+        files.add(R.raw.msg_info_12_ms11_e4u2);
+        files.add(R.raw.msg_info_13_ms11_e4u2);
+        files.add(R.raw.msg_info_14_ms11_e4u2);
+        files.add(R.raw.msg_info_15_ms11_e4u2);
+        files.add(R.raw.msg_info_33_ms11_e4u2);
+        files.add(R.raw.msg_info_34_ms11_e4u2);
+        files.add(R.raw.msg_info_35_ms11_e4u2);
+        files.add(R.raw.msg_info_36_ms11_e4u2);
+        files.add(R.raw.msg_info_37_ms11_e4u2);
+
+        //ms11_e4u3_0812
+        files.add(R.raw.msg_info_2_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_3_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_4_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_5_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_9_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_10_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_11_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_12_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_13_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_14_ms11_e4u3_0812);
+        files.add(R.raw.msg_info_15_ms11_e4u3_0812);
+
+        //ms11_e4u3_0915
+        files.add(R.raw.msg_info_2_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_3_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_4_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_5_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_9_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_10_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_11_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_12_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_13_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_14_ms11_e4u3_0915);
+        files.add(R.raw.msg_info_15_ms11_e4u3_0915);
+
+        //ms11_e4u3_1015
+        files.add(R.raw.msg_info_2_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_3_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_4_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_5_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_9_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_10_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_11_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_12_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_13_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_14_ms11_e4u3_1015);
+        files.add(R.raw.msg_info_15_ms11_e4u3_1015);
+
+        //ms11_e4u3_1115
+        files.add(R.raw.msg_info_2_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_3_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_4_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_5_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_9_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_10_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_11_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_12_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_13_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_14_ms11_e4u3_1115);
+        files.add(R.raw.msg_info_15_ms11_e4u3_1115);
+
+        files.add(R.raw.msg_info_2_ms11_rc04);
+        files.add(R.raw.msg_info_3_ms11_rc04);
+        files.add(R.raw.msg_info_4_ms11_rc04);
+        files.add(R.raw.msg_info_5_ms11_rc04);
+        files.add(R.raw.msg_info_9_ms11_rc04);
+        files.add(R.raw.msg_info_10_ms11_rc04);
+        files.add(R.raw.msg_info_11_ms11_rc04);
+        files.add(R.raw.msg_info_12_ms11_rc04);
+        files.add(R.raw.msg_info_13_ms11_rc04);
+        files.add(R.raw.msg_info_14_ms11_rc04);
+        files.add(R.raw.msg_info_15_ms11_rc04);
+
+        files.add(R.raw.msg_info_2_ms11_rc05);
+        files.add(R.raw.msg_info_3_ms11_rc05);
+        files.add(R.raw.msg_info_4_ms11_rc05);
+        files.add(R.raw.msg_info_5_ms11_rc05);
+        files.add(R.raw.msg_info_9_ms11_rc05);
+        files.add(R.raw.msg_info_10_ms11_rc05);
+        files.add(R.raw.msg_info_11_ms11_rc05);
+        files.add(R.raw.msg_info_12_ms11_rc05);
+        files.add(R.raw.msg_info_13_ms11_rc05);
+        files.add(R.raw.msg_info_14_ms11_rc05);
+        files.add(R.raw.msg_info_15_ms11_rc05);
+
+        //ms11_rc06
+        files.add(R.raw.msg_info_2_ms11_rc06);
+        files.add(R.raw.msg_info_3_ms11_rc06);
+        files.add(R.raw.msg_info_4_ms11_rc06);
+        files.add(R.raw.msg_info_5_ms11_rc06);
+        files.add(R.raw.msg_info_9_ms11_rc06);
+        files.add(R.raw.msg_info_10_ms11_rc06);
+        files.add(R.raw.msg_info_11_ms11_rc06);
+        files.add(R.raw.msg_info_12_ms11_rc06);
+        files.add(R.raw.msg_info_13_ms11_rc06);
+        files.add(R.raw.msg_info_14_ms11_rc06);
+        files.add(R.raw.msg_info_15_ms11_rc06);
+
+        //ms11_rc07
+        files.add(R.raw.msg_info_2_ms11_rc07);
+        files.add(R.raw.msg_info_3_ms11_rc07);
+        files.add(R.raw.msg_info_4_ms11_rc07);
+        files.add(R.raw.msg_info_5_ms11_rc07);
+        files.add(R.raw.msg_info_9_ms11_rc07);
+        files.add(R.raw.msg_info_10_ms11_rc07);
+        files.add(R.raw.msg_info_11_ms11_rc07);
+        files.add(R.raw.msg_info_12_ms11_rc07);
+        files.add(R.raw.msg_info_13_ms11_rc07);
+        files.add(R.raw.msg_info_14_ms11_rc07);
+        files.add(R.raw.msg_info_15_ms11_rc07);
+
+        files.add(R.raw.msg_info_2_ms11_rc08);
+        files.add(R.raw.msg_info_3_ms11_rc08);
+        files.add(R.raw.msg_info_4_ms11_rc08);
+        files.add(R.raw.msg_info_5_ms11_rc08);
+        files.add(R.raw.msg_info_9_ms11_rc08);
+        files.add(R.raw.msg_info_10_ms11_rc08);
+        files.add(R.raw.msg_info_11_ms11_rc08);
+        files.add(R.raw.msg_info_12_ms11_rc08);
+        files.add(R.raw.msg_info_13_ms11_rc08);
+        files.add(R.raw.msg_info_14_ms11_rc08);
+        files.add(R.raw.msg_info_15_ms11_rc08);
+
+        files.add(R.raw.msg_info_2_ms11_rc09);
+        files.add(R.raw.msg_info_3_ms11_rc09);
+        files.add(R.raw.msg_info_4_ms11_rc09);
+        files.add(R.raw.msg_info_5_ms11_rc09);
+        files.add(R.raw.msg_info_9_ms11_rc09);
+        files.add(R.raw.msg_info_10_ms11_rc09);
+        files.add(R.raw.msg_info_11_ms11_rc09);
+        files.add(R.raw.msg_info_12_ms11_rc09);
+        files.add(R.raw.msg_info_13_ms11_rc09);
+        files.add(R.raw.msg_info_14_ms11_rc09);
+        files.add(R.raw.msg_info_15_ms11_rc09);
+
+        files.add(R.raw.msg_info_2_ms11_rc10);
+        files.add(R.raw.msg_info_3_ms11_rc10);
+        files.add(R.raw.msg_info_4_ms11_rc10);
+        files.add(R.raw.msg_info_5_ms11_rc10);
+        files.add(R.raw.msg_info_9_ms11_rc10);
+        files.add(R.raw.msg_info_10_ms11_rc10);
+        files.add(R.raw.msg_info_11_ms11_rc10);
+        files.add(R.raw.msg_info_12_ms11_rc10);
+        files.add(R.raw.msg_info_13_ms11_rc10);
+        files.add(R.raw.msg_info_14_ms11_rc10);
+        files.add(R.raw.msg_info_15_ms11_rc10);
+
+        files.add(R.raw.msg_info_2_ms11_rc11);
+        files.add(R.raw.msg_info_3_ms11_rc11);
+        files.add(R.raw.msg_info_4_ms11_rc11);
+        files.add(R.raw.msg_info_5_ms11_rc11);
+        files.add(R.raw.msg_info_9_ms11_rc11);
+        files.add(R.raw.msg_info_10_ms11_rc11);
+        files.add(R.raw.msg_info_11_ms11_rc11);
+        files.add(R.raw.msg_info_12_ms11_rc11);
+        files.add(R.raw.msg_info_13_ms11_rc11);
+        files.add(R.raw.msg_info_14_ms11_rc11);
+        files.add(R.raw.msg_info_15_ms11_rc11);
+
+        files.add(R.raw.msg_info_2_ms11_rc12);
+        files.add(R.raw.msg_info_3_ms11_rc12);
+        files.add(R.raw.msg_info_4_ms11_rc12);
+        files.add(R.raw.msg_info_5_ms11_rc12);
+        files.add(R.raw.msg_info_9_ms11_rc12);
+        files.add(R.raw.msg_info_10_ms11_rc12);
+        files.add(R.raw.msg_info_11_ms11_rc12);
+        files.add(R.raw.msg_info_12_ms11_rc12);
+        files.add(R.raw.msg_info_13_ms11_rc12);
+        files.add(R.raw.msg_info_14_ms11_rc12);
+        files.add(R.raw.msg_info_15_ms11_rc12);
+
+        files.add(R.raw.msg_info_2_ms11_25rc01);
+        files.add(R.raw.msg_info_3_ms11_25rc01);
+        files.add(R.raw.msg_info_4_ms11_25rc01);
+        files.add(R.raw.msg_info_5_ms11_25rc01);
+        files.add(R.raw.msg_info_9_ms11_25rc01);
+        files.add(R.raw.msg_info_10_ms11_25rc01);
+        files.add(R.raw.msg_info_11_ms11_25rc01);
+        files.add(R.raw.msg_info_12_ms11_25rc01);
+        files.add(R.raw.msg_info_13_ms11_25rc01);
+        files.add(R.raw.msg_info_14_ms11_25rc01);
+        files.add(R.raw.msg_info_15_ms11_25rc01);
+
 
         files.add(R.raw.msg_info_2_ms11u_e4bugfix);
         files.add(R.raw.msg_info_3_ms11u_e4bugfix);
@@ -606,6 +893,30 @@ public class DataBaseUtil {
         files.add(R.raw.msg_info_13_ms11u_e4u3);
         files.add(R.raw.msg_info_14_ms11u_e4u3);
         files.add(R.raw.msg_info_15_ms11u_e4u3);
+
+        files.add(R.raw.msg_info_2_ms11u_e3);
+        files.add(R.raw.msg_info_3_ms11u_e3);
+        files.add(R.raw.msg_info_4_ms11u_e3);
+        files.add(R.raw.msg_info_5_ms11u_e3);
+        files.add(R.raw.msg_info_9_ms11u_e3);
+        files.add(R.raw.msg_info_10_ms11u_e3);
+        files.add(R.raw.msg_info_11_ms11u_e3);
+        files.add(R.raw.msg_info_12_ms11u_e3);
+        files.add(R.raw.msg_info_13_ms11u_e3);
+        files.add(R.raw.msg_info_14_ms11u_e3);
+        files.add(R.raw.msg_info_15_ms11u_e3);
+
+        files.add(R.raw.msg_info_2_ms11u_sm3);
+        files.add(R.raw.msg_info_3_ms11u_sm3);
+        files.add(R.raw.msg_info_4_ms11u_sm3);
+        files.add(R.raw.msg_info_5_ms11u_sm3);
+        files.add(R.raw.msg_info_9_ms11u_sm3);
+        files.add(R.raw.msg_info_10_ms11u_sm3);
+        files.add(R.raw.msg_info_11_ms11u_sm3);
+        files.add(R.raw.msg_info_12_ms11u_sm3);
+        files.add(R.raw.msg_info_13_ms11u_sm3);
+        files.add(R.raw.msg_info_14_ms11u_sm3);
+        files.add(R.raw.msg_info_15_ms11u_sm3);
 
         files.add(R.raw.msg_info_2_ms11u_25rc02);
         files.add(R.raw.msg_info_3_ms11u_25rc02);
@@ -659,17 +970,6 @@ public class DataBaseUtil {
         files.add(R.raw.msg_info_7_mx11_e4u31);
         files.add(R.raw.msg_info_13_mx11_e4u31);
 
-        files.add(R.raw.msg_info_2_ms11_rc06);
-        files.add(R.raw.msg_info_3_ms11_rc06);
-        files.add(R.raw.msg_info_4_ms11_rc06);
-        files.add(R.raw.msg_info_5_ms11_rc06);
-        files.add(R.raw.msg_info_9_ms11_rc06);
-        files.add(R.raw.msg_info_10_ms11_rc06);
-        files.add(R.raw.msg_info_11_ms11_rc06);
-        files.add(R.raw.msg_info_12_ms11_rc06);
-        files.add(R.raw.msg_info_13_ms11_rc06);
-        files.add(R.raw.msg_info_14_ms11_rc06);
-        files.add(R.raw.msg_info_15_ms11_rc06);
 
         files.add(R.raw.msg_info_1_mx11_e4u1);
         files.add(R.raw.msg_info_2_mx11_e4u1);
@@ -680,210 +980,6 @@ public class DataBaseUtil {
         files.add(R.raw.msg_info_13_mx11_e4u1);
 
 
-        files.add(R.raw.msg_info_2_ms11_e4);
-        files.add(R.raw.msg_info_3_ms11_e4);
-        files.add(R.raw.msg_info_4_ms11_e4);
-        files.add(R.raw.msg_info_5_ms11_e4);
-        files.add(R.raw.msg_info_9_ms11_e4);
-        files.add(R.raw.msg_info_10_ms11_e4);
-        files.add(R.raw.msg_info_11_ms11_e4);
-        files.add(R.raw.msg_info_12_ms11_e4);
-        files.add(R.raw.msg_info_13_ms11_e4);
-        files.add(R.raw.msg_info_14_ms11_e4);
-        files.add(R.raw.msg_info_15_ms11_e4);
-
-        files.add(R.raw.msg_info_2_ms11_e4u1);
-        files.add(R.raw.msg_info_3_ms11_e4u1);
-        files.add(R.raw.msg_info_4_ms11_e4u1);
-        files.add(R.raw.msg_info_5_ms11_e4u1);
-        files.add(R.raw.msg_info_9_ms11_e4u1);
-        files.add(R.raw.msg_info_10_ms11_e4u1);
-        files.add(R.raw.msg_info_11_ms11_e4u1);
-        files.add(R.raw.msg_info_12_ms11_e4u1);
-        files.add(R.raw.msg_info_13_ms11_e4u1);
-        files.add(R.raw.msg_info_14_ms11_e4u1);
-        files.add(R.raw.msg_info_15_ms11_e4u1);
-        files.add(R.raw.msg_info_33_ms11_e4u1);
-        files.add(R.raw.msg_info_34_ms11_e4u1);
-        files.add(R.raw.msg_info_35_ms11_e4u1);
-        files.add(R.raw.msg_info_36_ms11_e4u1);
-
-
-        files.add(R.raw.msg_info_2_ms11_e4u2);
-        files.add(R.raw.msg_info_3_ms11_e4u2);
-        files.add(R.raw.msg_info_4_ms11_e4u2);
-        files.add(R.raw.msg_info_5_ms11_e4u2);
-        files.add(R.raw.msg_info_9_ms11_e4u2);
-        files.add(R.raw.msg_info_10_ms11_e4u2);
-        files.add(R.raw.msg_info_11_ms11_e4u2);
-        files.add(R.raw.msg_info_12_ms11_e4u2);
-        files.add(R.raw.msg_info_13_ms11_e4u2);
-        files.add(R.raw.msg_info_14_ms11_e4u2);
-        files.add(R.raw.msg_info_15_ms11_e4u2);
-        files.add(R.raw.msg_info_33_ms11_e4u2);
-        files.add(R.raw.msg_info_34_ms11_e4u2);
-        files.add(R.raw.msg_info_35_ms11_e4u2);
-        files.add(R.raw.msg_info_36_ms11_e4u2);
-        files.add(R.raw.msg_info_37_ms11_e4u2);
-
-
-        files.add(R.raw.msg_info_2_ms11_e4u3_0812);
-        files.add(R.raw.msg_info_3_ms11_e4u3_0812);
-        files.add(R.raw.msg_info_4_ms11_e4u3_0812);
-        files.add(R.raw.msg_info_5_ms11_e4u3_0812);
-        files.add(R.raw.msg_info_9_ms11_e4u3_0812);
-        files.add(R.raw.msg_info_10_ms11_e4u3_0812);
-        files.add(R.raw.msg_info_11_ms11_e4u3_0812);
-        files.add(R.raw.msg_info_12_ms11_e4u3_0812);
-        files.add(R.raw.msg_info_13_ms11_e4u3_0812);
-        files.add(R.raw.msg_info_14_ms11_e4u3_0812);
-        files.add(R.raw.msg_info_15_ms11_e4u3_0812);
-
-
-        files.add(R.raw.msg_info_2_ms11_e4u3_0915);
-        files.add(R.raw.msg_info_3_ms11_e4u3_0915);
-        files.add(R.raw.msg_info_4_ms11_e4u3_0915);
-        files.add(R.raw.msg_info_5_ms11_e4u3_0915);
-        files.add(R.raw.msg_info_9_ms11_e4u3_0915);
-        files.add(R.raw.msg_info_10_ms11_e4u3_0915);
-        files.add(R.raw.msg_info_11_ms11_e4u3_0915);
-        files.add(R.raw.msg_info_12_ms11_e4u3_0915);
-        files.add(R.raw.msg_info_13_ms11_e4u3_0915);
-        files.add(R.raw.msg_info_14_ms11_e4u3_0915);
-        files.add(R.raw.msg_info_15_ms11_e4u3_0915);
-
-        files.add(R.raw.msg_info_2_ms11_e4u3_1015);
-        files.add(R.raw.msg_info_3_ms11_e4u3_1015);
-        files.add(R.raw.msg_info_4_ms11_e4u3_1015);
-        files.add(R.raw.msg_info_5_ms11_e4u3_1015);
-        files.add(R.raw.msg_info_9_ms11_e4u3_1015);
-        files.add(R.raw.msg_info_10_ms11_e4u3_1015);
-        files.add(R.raw.msg_info_11_ms11_e4u3_1015);
-        files.add(R.raw.msg_info_12_ms11_e4u3_1015);
-        files.add(R.raw.msg_info_13_ms11_e4u3_1015);
-        files.add(R.raw.msg_info_14_ms11_e4u3_1015);
-        files.add(R.raw.msg_info_15_ms11_e4u3_1015);
-
-        files.add(R.raw.msg_info_2_ms11_e4u3_1115);
-        files.add(R.raw.msg_info_3_ms11_e4u3_1115);
-        files.add(R.raw.msg_info_4_ms11_e4u3_1115);
-        files.add(R.raw.msg_info_5_ms11_e4u3_1115);
-        files.add(R.raw.msg_info_9_ms11_e4u3_1115);
-        files.add(R.raw.msg_info_10_ms11_e4u3_1115);
-        files.add(R.raw.msg_info_11_ms11_e4u3_1115);
-        files.add(R.raw.msg_info_12_ms11_e4u3_1115);
-        files.add(R.raw.msg_info_13_ms11_e4u3_1115);
-        files.add(R.raw.msg_info_14_ms11_e4u3_1115);
-        files.add(R.raw.msg_info_15_ms11_e4u3_1115);
-
-        files.add(R.raw.msg_info_2_ms11_rc04);
-        files.add(R.raw.msg_info_3_ms11_rc04);
-        files.add(R.raw.msg_info_4_ms11_rc04);
-        files.add(R.raw.msg_info_5_ms11_rc04);
-        files.add(R.raw.msg_info_9_ms11_rc04);
-        files.add(R.raw.msg_info_10_ms11_rc04);
-        files.add(R.raw.msg_info_11_ms11_rc04);
-        files.add(R.raw.msg_info_12_ms11_rc04);
-        files.add(R.raw.msg_info_13_ms11_rc04);
-        files.add(R.raw.msg_info_14_ms11_rc04);
-        files.add(R.raw.msg_info_15_ms11_rc04);
-
-        files.add(R.raw.msg_info_2_ms11_rc05);
-        files.add(R.raw.msg_info_3_ms11_rc05);
-        files.add(R.raw.msg_info_4_ms11_rc05);
-        files.add(R.raw.msg_info_5_ms11_rc05);
-        files.add(R.raw.msg_info_9_ms11_rc05);
-        files.add(R.raw.msg_info_10_ms11_rc05);
-        files.add(R.raw.msg_info_11_ms11_rc05);
-        files.add(R.raw.msg_info_12_ms11_rc05);
-        files.add(R.raw.msg_info_13_ms11_rc05);
-        files.add(R.raw.msg_info_14_ms11_rc05);
-        files.add(R.raw.msg_info_15_ms11_rc05);
-
-        files.add(R.raw.msg_info_2_ms11_rc06);
-        files.add(R.raw.msg_info_3_ms11_rc06);
-        files.add(R.raw.msg_info_4_ms11_rc06);
-        files.add(R.raw.msg_info_5_ms11_rc06);
-        files.add(R.raw.msg_info_9_ms11_rc06);
-        files.add(R.raw.msg_info_10_ms11_rc06);
-        files.add(R.raw.msg_info_11_ms11_rc06);
-        files.add(R.raw.msg_info_12_ms11_rc06);
-        files.add(R.raw.msg_info_13_ms11_rc06);
-        files.add(R.raw.msg_info_14_ms11_rc06);
-        files.add(R.raw.msg_info_15_ms11_rc06);
-
-        files.add(R.raw.msg_info_2_ms11_rc07);
-        files.add(R.raw.msg_info_3_ms11_rc07);
-        files.add(R.raw.msg_info_4_ms11_rc07);
-        files.add(R.raw.msg_info_5_ms11_rc07);
-        files.add(R.raw.msg_info_9_ms11_rc07);
-        files.add(R.raw.msg_info_10_ms11_rc07);
-        files.add(R.raw.msg_info_11_ms11_rc07);
-        files.add(R.raw.msg_info_12_ms11_rc07);
-        files.add(R.raw.msg_info_13_ms11_rc07);
-        files.add(R.raw.msg_info_14_ms11_rc07);
-        files.add(R.raw.msg_info_15_ms11_rc07);
-
-        files.add(R.raw.msg_info_2_ms11_rc08);
-        files.add(R.raw.msg_info_3_ms11_rc08);
-        files.add(R.raw.msg_info_4_ms11_rc08);
-        files.add(R.raw.msg_info_5_ms11_rc08);
-        files.add(R.raw.msg_info_9_ms11_rc08);
-        files.add(R.raw.msg_info_10_ms11_rc08);
-        files.add(R.raw.msg_info_11_ms11_rc08);
-        files.add(R.raw.msg_info_12_ms11_rc08);
-        files.add(R.raw.msg_info_13_ms11_rc08);
-        files.add(R.raw.msg_info_14_ms11_rc08);
-        files.add(R.raw.msg_info_15_ms11_rc08);
-
-        files.add(R.raw.msg_info_2_ms11_rc09);
-        files.add(R.raw.msg_info_3_ms11_rc09);
-        files.add(R.raw.msg_info_4_ms11_rc09);
-        files.add(R.raw.msg_info_5_ms11_rc09);
-        files.add(R.raw.msg_info_9_ms11_rc09);
-        files.add(R.raw.msg_info_10_ms11_rc09);
-        files.add(R.raw.msg_info_11_ms11_rc09);
-        files.add(R.raw.msg_info_12_ms11_rc09);
-        files.add(R.raw.msg_info_13_ms11_rc09);
-        files.add(R.raw.msg_info_14_ms11_rc09);
-        files.add(R.raw.msg_info_15_ms11_rc09);
-
-        files.add(R.raw.msg_info_2_ms11_rc10);
-        files.add(R.raw.msg_info_3_ms11_rc10);
-        files.add(R.raw.msg_info_4_ms11_rc10);
-        files.add(R.raw.msg_info_5_ms11_rc10);
-        files.add(R.raw.msg_info_9_ms11_rc10);
-        files.add(R.raw.msg_info_10_ms11_rc10);
-        files.add(R.raw.msg_info_11_ms11_rc10);
-        files.add(R.raw.msg_info_12_ms11_rc10);
-        files.add(R.raw.msg_info_13_ms11_rc10);
-        files.add(R.raw.msg_info_14_ms11_rc10);
-        files.add(R.raw.msg_info_15_ms11_rc10);
-
-        files.add(R.raw.msg_info_2_ms11u_e3);
-        files.add(R.raw.msg_info_3_ms11u_e3);
-        files.add(R.raw.msg_info_4_ms11u_e3);
-        files.add(R.raw.msg_info_5_ms11u_e3);
-        files.add(R.raw.msg_info_9_ms11u_e3);
-        files.add(R.raw.msg_info_10_ms11u_e3);
-        files.add(R.raw.msg_info_11_ms11u_e3);
-        files.add(R.raw.msg_info_12_ms11u_e3);
-        files.add(R.raw.msg_info_13_ms11u_e3);
-        files.add(R.raw.msg_info_14_ms11u_e3);
-        files.add(R.raw.msg_info_15_ms11u_e3);
-
-        files.add(R.raw.msg_info_2_ms11u_sm3);
-        files.add(R.raw.msg_info_3_ms11u_sm3);
-        files.add(R.raw.msg_info_4_ms11u_sm3);
-        files.add(R.raw.msg_info_5_ms11u_sm3);
-        files.add(R.raw.msg_info_9_ms11u_sm3);
-        files.add(R.raw.msg_info_10_ms11u_sm3);
-        files.add(R.raw.msg_info_11_ms11u_sm3);
-        files.add(R.raw.msg_info_12_ms11u_sm3);
-        files.add(R.raw.msg_info_13_ms11u_sm3);
-        files.add(R.raw.msg_info_14_ms11u_sm3);
-        files.add(R.raw.msg_info_15_ms11u_sm3);
-
         files.add(R.raw.msg_info_1_mx11_e3);
         files.add(R.raw.msg_info_2_mx11_e3);
         files.add(R.raw.msg_info_3_mx11_e3);
@@ -891,42 +987,6 @@ public class DataBaseUtil {
         files.add(R.raw.msg_info_6_mx11_e3);
         files.add(R.raw.msg_info_7_mx11_e3);
         files.add(R.raw.msg_info_13_mx11_e3);
-
-        files.add(R.raw.msg_info_2_ms11_rc11);
-        files.add(R.raw.msg_info_3_ms11_rc11);
-        files.add(R.raw.msg_info_4_ms11_rc11);
-        files.add(R.raw.msg_info_5_ms11_rc11);
-        files.add(R.raw.msg_info_9_ms11_rc11);
-        files.add(R.raw.msg_info_10_ms11_rc11);
-        files.add(R.raw.msg_info_11_ms11_rc11);
-        files.add(R.raw.msg_info_12_ms11_rc11);
-        files.add(R.raw.msg_info_13_ms11_rc11);
-        files.add(R.raw.msg_info_14_ms11_rc11);
-        files.add(R.raw.msg_info_15_ms11_rc11);
-
-        files.add(R.raw.msg_info_2_ms11_rc12);
-        files.add(R.raw.msg_info_3_ms11_rc12);
-        files.add(R.raw.msg_info_4_ms11_rc12);
-        files.add(R.raw.msg_info_5_ms11_rc12);
-        files.add(R.raw.msg_info_9_ms11_rc12);
-        files.add(R.raw.msg_info_10_ms11_rc12);
-        files.add(R.raw.msg_info_11_ms11_rc12);
-        files.add(R.raw.msg_info_12_ms11_rc12);
-        files.add(R.raw.msg_info_13_ms11_rc12);
-        files.add(R.raw.msg_info_14_ms11_rc12);
-        files.add(R.raw.msg_info_15_ms11_rc12);
-
-        files.add(R.raw.msg_info_2_ms11_25rc01);
-        files.add(R.raw.msg_info_3_ms11_25rc01);
-        files.add(R.raw.msg_info_4_ms11_25rc01);
-        files.add(R.raw.msg_info_5_ms11_25rc01);
-        files.add(R.raw.msg_info_9_ms11_25rc01);
-        files.add(R.raw.msg_info_10_ms11_25rc01);
-        files.add(R.raw.msg_info_11_ms11_25rc01);
-        files.add(R.raw.msg_info_12_ms11_25rc01);
-        files.add(R.raw.msg_info_13_ms11_25rc01);
-        files.add(R.raw.msg_info_14_ms11_25rc01);
-        files.add(R.raw.msg_info_15_ms11_25rc01);
 
 
         files.add(R.raw.msg_info_1_kunlun20_e2);
@@ -999,9 +1059,12 @@ public class DataBaseUtil {
                 Log.e(TAG, e.toString());
             }
 //            msgInfoDao.insertAll(msgInfoEntities);
+//            Log.e(TAG, "2222222 msg insert finished");
             Log.e(TAG, "msg insert finished");
 
         });
+
+        Log.e(TAG, "All message insert finished");
     }
 
 

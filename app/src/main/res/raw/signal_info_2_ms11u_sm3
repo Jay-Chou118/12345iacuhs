@@ -1,0 +1,726 @@
+LatAccrYawRateSigGrpChks#2#426#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+LatAccrYawRateSigGrpCntr#2#426#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+LatAccr#2#426#false#false#23#16#0.0002#-5.0#Lateral Acceleration\n横向加速度#0.0#0.0#0.0#null#MS11-U#SM3
+YawRate#2#426#false#false#39#16#0.01#-300.0#Yaw Rate\n横摆角速度#0.0#0.0#0.0#null#MS11-U#SM3
+YawRateSnsrSt#2#426#false#false#51#2#1#0#Yaw Rate Sensor State\n横摆角速度有效性#0.0#0.0#0.0#{"0": "SIG_IN_SPEC", "1": "SIGNOTAVAIL", "2": "SIGFAIL", "3": "Reserved"}#MS11-U#SM3
+LatAccrSt#2#426#false#false#49#2#1#0#Lateral Sensor State\n横向加速度有效性#0.0#0.0#0.0#{"0": "SIG_IN_SPEC", "1": "SIGNOTAVAIL", "2": "SIGFAIL", "3": "Reserved"}#MS11-U#SM3
+FrntMotIndHeatgActPwrBkp#2#466#false#false#7#7#50#0#Front motor indirect heating actual power backup#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotIndHeatgMaxPwrCpBkp#2#466#false#false#15#7#50#0#Front motor indirect heating maximum power capacity backup#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotFltInfoActv1Bkp#2#672#false#false#7#9#1#0#fault information singal group  1  front motor fault information active backup#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCooltFlowReqBkp#2#672#false#false#14#6#0.25#0.0#Front motor coolant flow request backup#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotIndHeatgStsBkp#2#672#false#false#8#1#1#0#Front motor indirect heating status backup#0.0#0.0#0.0#{"0": "Not_available", "1": "Available"}#MS11-U#SM3
+FrntMotFltInfoActv2Bkp#2#672#false#false#23#9#1#0#fault information singal group  2  front motor fault information active backup#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotFltInfoActv3Bkp#2#672#false#false#39#9#1#0#fault information singal group  3  front motor fault information active backup#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotFltInfoHist1Bkp#2#672#false#false#55#9#1#0#fault information singal group  1  front motor fault information history backup#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotFltInfoHist2Bkp#2#672#false#false#71#9#1#0#fault information singal group  2  front motor fault information history backup#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotFltInfoHist3Bkp#2#672#false#false#87#9#1#0#fault information singal group  3  front motor fault information history backup#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotOverSpdTimeoutBkp#2#672#false#false#103#1#1#0#Front Motor Over speed timeout backup#0.0#0.0#0.0#{"0": "no_timeout", "1": "timeout"}#MS11-U#SM3
+FrntMotCooltTBkp#2#672#false#false#111#8#1#-40#Front motor coolant temperature backup#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotIvtTBkp#2#672#false#false#119#8#1#-40#Front motor inverter temperature backup#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotMotTBkp#2#672#false#false#127#8#1#-40#Front motor motor temperature backup#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotHVILStsBkpSigGrpChks#2#672#false#false#135#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotHVILStsBkp#2#672#false#false#143#2#1#0#Front Motor inter lock loop status backup#0.0#0.0#0.0#{"0": "Close", "1": "Open", "2": "Not_determined", "3": "Invalid"}#MS11-U#SM3
+FrntMotHVILStsBkpSigGrpCntr#2#672#false#false#139#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotPtChVldBkpSigGrpChks#2#672#false#false#151#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotPtChVldBkp#2#672#false#false#159#1#1#0#Front Motor Powertrains valid Channel backup#0.0#0.0#0.0#{"0": "PT_fusion_CANFD_valid", "1": "PT_CANFD_valid"}#MS11-U#SM3
+FrntMotPtChVldBkpSigGrpCntr#2#672#false#false#155#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotOverSpdTimesLeBkp#2#1017#false#false#7#13#1#0#Front Motor Over Speed times left backup#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotOverBoostTimesLeBkp#2#1017#false#false#23#13#1#0#Front Motor Over boost times left backup#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotSigGrpChks#2#113#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotSigGrpCntr#2#113#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotActTq#2#113#false#false#23#15#0.1#-1638.3#Front motor actual torque  at motor output axle .#0.0#0.0#0.0#{"32767": "Invalid"}#MS11-U#SM3
+FrntMotActSpd#2#113#false#false#39#16#1.0#-32768.0#Front motor actual speed#0.0#0.0#0.0#{"65535": "Invalid"}#MS11-U#SM3
+FrntMotMaxDynTqCp#2#113#false#false#55#10#1#0#Front motor maximum dynamic torque capacity at motor output axle .#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotMinDynTqCp#2#113#false#false#71#10#1#-1023#Front motor minimum dynamic torque capacity at motor output axle .#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotAglRslvr#2#113#false#false#87#12#0.1#0.0#Front motor angle resolver#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotLftRemaPwrModl#2#154#false#false#7#16#0.002#0.0#Power module remaining lifetime\n功率模块剩余寿命#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotMotSpdMax#2#154#false#false#23#16#1#-32768#Max e motor speed during driving cycle\n驾驶循环内电机转速最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotPwrGenMax#2#154#false#false#39#16#0.1#-1000.0#Max calculated generating power during driving cycle\n驾驶循环内发电功率最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotPwrMotMax#2#154#false#false#55#16#0.1#0.0#Min Electric power during driving cycle\n驾驶循环内电动功率最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTAvrgDiodeMax#2#154#false#false#71#8#1#-40#Max average temperature of diode during driving cycle\n驾驶循环内二极管平均温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTAvrgDiodeMin#2#154#false#false#79#8#1#-40#Min average temperature of mosfet during driving cycle\n驾驶循环内二极管平均温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTAvrgMosMax#2#154#false#false#87#8#1#-40#Max average temperature of mosfet during driving cycle\n驾驶循环内晶体管平均温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTAvrgMosMin#2#154#false#false#95#8#1#-40#Min average temperature of mosfet during driving cycle\n驾驶循环内晶体管平均温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTDCLkCapMax#2#154#false#false#103#8#1#-40#Max temperature of DC Link capacitor during driving cycle\n驾驶循环内电容温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTDCLkCapMin#2#154#false#false#111#8#1#-40#Min temperature of DC Link capacitor during driving cycle\n驾驶循环内电容温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTGbxMax#2#154#false#false#119#8#1#-40#Max temperature of gear box during driving cycle\n驾驶循环内齿轮箱温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTGbxMin#2#154#false#false#127#8#1#-40#Min temperature of gear box during driving cycle\n驾驶循环内齿轮箱温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTqCalcdMax#2#154#false#false#135#16#0.1#-3276.8#Max calculated torque during driving cycle\n驾驶循环内电磁扭矩最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTqCalcdMin#2#154#false#false#151#16#0.1#-3276.8#Min calculated torque during driving cycle\n驾驶循环内电磁扭矩最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTRiseDiodeMax#2#154#false#false#167#8#1#-40#Max temperature rise of diode during diriving cycle\n驾驶循环内二极管最大温升#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTRiseMosMax#2#154#false#false#175#8#1#-40#Max temperature rise of mosfet during driving cycle\n驾驶循环内晶体管最大温升#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotUDCLkMax#2#154#false#false#183#16#0.1#0.0#Max DC Link voltage during driving cycle\n驾驶循环内直流母线电压最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotUDCLkMin#2#154#false#false#199#16#0.1#0.0#Min DC Link voltage during driving cycle\n驾驶循环内直流母线电压最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrAglDeFlt#2#155#false#false#7#8#1#0#Counter regarding over upper threshold of Angle mornitoring\n角度监控偏差超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrStatSnsrOverFlt#2#155#false#false#31#8#1#0#Counter regarding over upper threshold of stator sensor temperature\n电机温度传感器超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrTqDeL1L2Flt#2#155#false#false#39#8#1#0#Counter regarding over upper threshold of torque monitoring\n转矩估算偏差 L1 VS L2 超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCurDCLkMax#2#155#false#false#55#16#0.1#-3276.8#Max DC Link current during driving cycle\n驾驶循环内直流母线电流最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCurDCLkMin#2#155#false#false#71#16#0.1#-3276.8#Min DC Link current during driving cycle\n驾驶循环内直流母线电流最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotLftRemaDCLk#2#155#false#false#95#16#0.002#0.0#DC Link capacitor remaining lifetime\n电容剩余寿命#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTCoolOilMax#2#155#false#false#119#8#1#-40#Max temperature of cooling water during driving cycle\n驾驶循环内冷却油温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTCoolOilMin#2#155#false#false#127#8#1#-40#Min temperature of cooling wator during driving cycle\n驾驶循环内冷却油温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTCoolWtrMax#2#155#false#false#143#8#1#-40#Max temperature of cooling water during driving cycle\n驾驶循环内冷却水温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTCoolWtrMin#2#155#false#false#151#8#1#-40#Min temperature of cooling wator during driving cycle\n驾驶循环内冷却水温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTqDeCmdL2Max#2#155#false#false#159#16#0.1#-3276.8#Max torque deviation between request torque and L2 torque\n转矩监控偏差 请求 VS 实际 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTqDeCmdL2OppstMax#2#155#false#false#175#16#0.1#-3276.8#Max opposite torque deviation between request torque and L2 torque\n转矩反向偏差 请求 VS 实际 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTqDeL1L2Max#2#155#false#false#191#16#0.1#-3276.8#Max deviation between torque calculation between L1 and L2 software\n转矩估算偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTRtrMax#2#155#false#false#207#8#1#-40#Max temperature of rator during driving cycle\n驾驶循环内电机转子温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTRtrMin#2#155#false#false#215#8#1#-40#Min temperature of rator during driving cycle\n驾驶循环内电机转子温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTStatMax#2#155#false#false#223#8#1#-40#Max temperature of stator during driving cycle\n驾驶循环内电机定子温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTStatMin#2#155#false#false#231#8#1#-40#Min temperature of stator during driving cycle\n驾驶循环内电机定子温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTStatSnsrMax#2#155#false#false#239#8#1#-40#Max stator sensor temerature\n电机温度传感器最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotActCur#2#161#false#false#7#14#0.1#-819.1#Front motor actual current on DC bus  \nNegative means current flow from front motor to HV battery  positive means current flow from HV battery to front motor.#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotBoostModAvl#2#161#false#false#9#1#1#0#Front motor boost mode available#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MS11-U#SM3
+FrntMotActDampgSts#2#161#false#false#8#1#1#0#Front motor active damping status.#0.0#0.0#0.0#{"0": "off", "1": "on"}#MS11-U#SM3
+FrntMotActUSigGrpChks#2#161#false#false#23#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotActUSigGrpCntr#2#161#false#false#27#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotActU#2#161#false#false#39#14#0.1#0.0#Front motor actual voltage#0.0#0.0#0.0#{"16383": "Invalid"}#MS11-U#SM3
+FrntMotFltLvlIndcnSigGrpChks#2#161#false#false#55#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotFltLvlIndcnSigGrpCntr#2#161#false#false#59#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotSfSpdMax#2#161#false#false#71#16#1#-32768#Front motor safe speed maximum#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotFltLvlIndcn#2#161#false#false#87#3#1#0#Front motor fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0_DTCOnly", "2": "Fault_Lv1_PowerLimited", "3": "Fault_Lv2_Recoverable", "4": "Fault_Lv3_Not_recoverable", "5": "Fault_Lv4_Crash"}#MS11-U#SM3
+FrntMotModStsSigGrpChks#2#161#false#false#103#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotModStsSigGrpCntr#2#161#false#false#107#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotModSts#2#161#false#false#119#5#1#0#Front motor mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "9": "activeDischarge", "12": "OffsetCal", "13": "Failure", "14": "After_Run"}#MS11-U#SM3
+FrntMotBoostModNotAvlRsnBkp#2#161#false#false#127#4#1#0#Front motor boost mode not available reasons backup#0.0#0.0#0.0#{"0": "Available", "1": "Not_available_for_times"}#MS11-U#SM3
+FrntMotDrtSts#2#161#false#false#123#1#1#0#Front motor derating status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MS11-U#SM3
+FrntMotIdCmdIvt#2#165#false#false#7#16#0.1#-3276.8#Iq output command of Inverter\n控制器输出d轴电流#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotIqCmdIvt#2#165#false#false#23#16#0.1#-3276.8#Iq output command of Inverter\n控制器输出q轴电流#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotModDiffT#2#165#false#false#39#8#1#-40#Temperature difference motor ntc 电机NTC与温度模型观测差值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTCoolOil#2#165#false#false#47#8#1#-40#Cooling temperature Oil \n冷却液温度 油温#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTCoolWtr#2#165#false#false#55#8#1#-40#Cooling temperature Water \n冷却液温度 水温#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTDcCapIvt#2#165#false#false#63#8#1#-40#Temperature of DC Link capacitor\n控制器电容温度#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTGbx#2#165#false#false#71#8#1#-40#Temperature of EDS Gear Box\n齿轮箱温度#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTIvtDBC1#2#165#false#false#79#8#1#-40#1st Phase DBC temperature of Inverter\n控制器第1相dbc温度#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTIvtDBC2#2#165#false#false#87#8#1#-40#2nd Phase DBC temperature of Inverter\n控制器第2相dbc温度#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTIvtDBC3#2#165#false#false#95#8#1#-40#3rd Phase DBC temperature of Inverter\n控制器第3相dbc温度#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTRtr#2#165#false#false#103#8#1#-40#Rotor temperature\n电机转子温度#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotUdCmdIvt#2#165#false#false#111#16#0.1#-3276.8#Ud output command of Inverter\n控制器输出d轴电压#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotUqCmdIvt#2#165#false#false#127#16#0.1#-3276.8#Ud output command of Inverter\n控制器输出q轴电压#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotAglDeMax#2#170#false#false#7#16#0.1#0.0#Max deviation of angle monitoring between L1 and L2 software\n角度监控偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrCANCtrlrFltMax#2#170#false#false#31#8#1#0#Max Fault counter of CAN controller\nCAN控制器误计数器最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrMosSnsrOverFlt#2#170#false#false#39#8#1#0#Counter regarding over upper threshold of mosfet sensor temperature\nMosfet温度传感器超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrMosSnsrUnderFlt#2#170#false#false#47#8#1#0#Counter regarding over lower threshold of mosfet sensor temperature\nMosfet温度传感器超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrStatSnsrUnderFlt#2#170#false#false#55#8#1#0#Counter regarding over lower threshold of stator sensor temperature\n电机温度传感器超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrUDCLkDe#2#170#false#false#63#8#1#0#电压偏差超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrUKl30OverFlt#2#170#false#false#71#8#1#0#Counter regarding over upper threshold of KL30 voltage\nKL30电压超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrUKl30UnderFlt#2#170#false#false#79#8#1#0#Counter regarding over lower threshold of KL30 voltage\nKL30电压超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrURslvrSqurSumOverFlt#2#170#false#false#87#8#1#0#Counter regarding over max sum of squares of resolver voltage \n旋转变压器平方和超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrURslvrSqurSumUnderFlt#2#170#false#false#95#8#1#0#Counter regarding under min sum of squares of resolver voltage \n旋转变压器平方和超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTMosSnsrMax#2#170#false#false#103#8#1#-40#Max Mosfet sensor temperature\nMosfet温度传感器最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTMosSnsrMin#2#170#false#false#111#8#1#-40#Min Mosfet sensor temperature\nMosfet温度传感器最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTStatSnsrMin#2#170#false#false#119#8#1#-40#Min stator sensor temerature\n机温度传感器最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotUDCLkDeMax#2#170#false#false#127#16#0.1#0.0#Max deviation between DC link voltage in L1 and L2 software\n电压偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotUKl30Max#2#170#false#false#143#16#0.1#0.0#Max KL30 voltage\nKL30电压最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotURslvrSqurSumMax#2#170#false#false#159#16#0.01#0.0#Max sum of squares of resolver voltage\n旋转变压器平方和最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotURslvrSqurSumMin#2#170#false#false#175#16#0.01#0.0#Min sum of squares of resolver voltage\n旋转变压器平方和最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrRollgDeFltMax#2#170#false#false#191#8#1#0#Max deviation of rolling counter of E2E frames\nE2E报文Rolling Counter偏差最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrRollgFlt#2#170#false#false#199#8#1#0#Fault counter of rolling counter of E2E frames\nE2E报文Rolling Counter错误计数器#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrTqDeCmdL2Flt#2#170#false#false#207#8#1#0#Counter of over threshold of deviation between request torque and L2 torque\n转矩监控偏差 请求 VS 实际 超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrTqDeCmdL2OppstFlt#2#170#false#false#215#8#1#0#Counter of over threshold of opposite torque deviation between request torque and L2 torque\n转矩反向偏差 请求 VS 实际 超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotUKl30Min#2#170#false#false#223#16#0.1#0.0#Min KL30 voltage\nKL30电压最小值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotAglOffsRslvr#2#171#false#false#7#12#0.1#0.0#Resolver offset angle\n旋变offset角度#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotAglOffsSlipTst#2#171#false#false#23#12#0.1#0.0#resolver offset angle in slip mode\n旋变滑行角标角度#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrCurThrPhaSumFlt#2#171#false#false#39#8#1#0#Counter of fault regarding sumary of three phase current\n三相电流和超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrGateDrvrFltHwRaw#2#171#false#false#47#8#1#0#Gate driver fault counter Raw fault counter without debounce \nGate Driver芯片驱动故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrMCURstUFltHwRaw#2#171#false#false#55#8#1#0#MCU Reset counter\nMCU Reset累计计数器#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrOverCurFltHwRaw#2#171#false#false#63#8#1#0#Hardware over current fault counter Raw fault counter without debounce \n硬件过流故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrOverUFltHwRaw#2#171#false#false#71#8#1#0#Hardware over voltage fault counter Raw fault counter without debounce \n硬件过压故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrSOPFltHwRaw#2#171#false#false#79#8#1#0#Shut off path fault counter Raw fault counter withour debounce \n关断路径检测故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrThrPhaCurZeroShift#2#171#false#false#87#8#1#0#三相电流零飘超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCntrWdgFltHwRaw#2#171#false#false#95#8#1#0#MCU Wdg fault counter Raw fault counter without debounce \nMCU Wdg故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCurOffsSelfLrn1#2#171#false#false#103#8#1#-128#self learned offset value for current sensor ph1\n第一相电流传感器自学习值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCurOffsSelfLrn2#2#171#false#false#111#8#1#-128#self learned offset value for current sensor ph2\n第二相电流传感器自学习值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCurOffsSelfLrn3#2#171#false#false#119#8#1#-128#self learned offset value for current sensor ph3\n第三相电流传感器自学习值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCurThrPhaSumDeMax#2#171#false#false#127#16#0.1#-3276.8#Max deviation of summary of three phase current\n三相电流和最大偏差值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCurThrPhaZeroShiftMax#2#171#false#false#143#16#0.1#-3276.8#Max zero shift of three phase current\n三相电流零飘最大值#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTCoolOilIni#2#171#false#false#159#8#1#-40#Initial cooling oil temperature when HV is setup\n冷却液初始温度 油温 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTCoolWtrIni#2#171#false#false#167#8#1#-40#Initial cooling water temperature when HV is setup\n冷却液初始温度 水温 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTIvtDBCIni1#2#171#false#false#175#8#1#-40#1st Phase DBC initial itemperature of Inverter when HV is setup\n控制器第1相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTIvtDBCIni2#2#171#false#false#183#8#1#-40#2nd Phase DBC initial itemperature of Inverter when HV is setup\n控制器第2相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTIvtDBCIni3#2#171#false#false#191#8#1#-40#3rd Phase DBC initial itemperature of Inverter when HV is setup\n控制器第3相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTStatIni#2#171#false#false#199#8#1#-40#Initial stator temperature when HV is setup\n电机定子初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+FrntstAglOffsSlipTst#2#171#false#false#207#1#1#0#resolver offset angle in slip mode state\n旋变滑行角标角度状态#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11-U#SM3
+FEDSPtFusionCanfdNodeAddress#2#1303#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11-U#SM3
+FEDSPtFusionCanfdActiveWakeup#2#1303#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11-U#SM3
+FEDSPtFusionCanfdRepeatMsgReq#2#1303#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11-U#SM3
+FEDSPtFusionCanfdRepeatMsgSt#2#1303#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11-U#SM3
+NMKeepAwkRsnFEDS#2#1303#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotIndHeatgActPwrBkp#2#467#false#false#6#7#50#0#Rear motor indirect heating actual power backup#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotIndHeatgMaxPwrCpBkp#2#467#false#false#14#7#50#0#Rear motor indirect heating maximum power capacity backup#0.0#0.0#0.0#null#MS11-U#SM3
+BoosterCntctStsBkpSigGrpChks#2#467#false#false#23#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+BoosterCntctStsBkpSigGrpCntr#2#467#false#false#27#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+BoosterS7CntctStsBkp#2#467#false#false#39#2#1#0#booster S7 positive  contactor status backup#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11-U#SM3
+BoosterS6CntctStsBkp#2#467#false#false#37#2#1#0#booster S6 negative  contactor status backup#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11-U#SM3
+BoosterS1CntctStsBkp#2#467#false#false#35#2#1#0#booster  output  S1 contactor status backup#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11-U#SM3
+BoosterInducerTBkp#2#675#false#false#7#8#1#-40#Booster Inducer temperature backup#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotIndHeatgStsBkp#2#675#false#false#15#1#1#0#Rear motor indirect heating status backup#0.0#0.0#0.0#{"0": "Not_available", "1": "Available"}#MS11-U#SM3
+ReMotOverSpdTimeoutBkp#2#675#false#false#14#1#1#0#Rear Motor Over speed timeout backup#0.0#0.0#0.0#{"0": "no_timeout", "1": "timeout"}#MS11-U#SM3
+ReMotCooltFlowReqBkp#2#675#false#false#13#6#0.25#0.0#Rear motor coolant flow request backup#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotFltInfoActv1Bkp#2#675#false#false#23#9#1#0#fault information singal group  1  Rear motor fault information active backup#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotFltInfoActv2Bkp#2#675#false#false#39#9#1#0#fault information singal group  2  Rear motor fault information active backup#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotFltInfoActv3Bkp#2#675#false#false#55#9#1#0#fault information singal group  3  Rear motor fault information active backup#0.0#0.0#0.0#null#MS11-U#SM3
+BoosterS1CntctFltBkp#2#675#false#false#71#2#1#0#Booster S1 contactor fault backup#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11-U#SM3
+BoosterS6CntctFltBkp#2#675#false#false#69#2#1#0#Booster S6 contactor fault backup#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11-U#SM3
+BoosterS7CntctFltBkp#2#675#false#false#67#2#1#0#Booster S7 contactor fault backup#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11-U#SM3
+ReMotFltInfoHist1Bkp#2#675#false#false#79#9#1#0#fault information singal group  1  Rear motor fault information history backup#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotFltInfoHist2Bkp#2#675#false#false#95#9#1#0#fault information singal group  2  Rear motor fault information history backup#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotFltInfoHist3Bkp#2#675#false#false#111#9#1#0#fault information singal group  3  Rear motor fault information history backup#0.0#0.0#0.0#null#MS11-U#SM3
+BoostChrgnOutpBkpSigGrpChks#2#675#false#false#127#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+BoostChrgnOutpBkpSigGrpCntr#2#675#false#false#131#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+BoostChrgnOutpCurBkp#2#675#false#false#143#14#0.1#0.0#Boost charging output current 电池端  backup#0.0#0.0#0.0#null#MS11-U#SM3
+BoostChrgnOutpUBkp#2#675#false#false#159#14#0.1#0.0#Boost charging output voltage 电池端  backup#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCooltTBkp#2#675#false#false#175#8#1#-40#Rear motor coolant temperature backup#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotIvtTBkp#2#675#false#false#183#8#1#-40#Rear motor inverter temperature backup#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotMotTBkp#2#675#false#false#191#8#1#-40#Rear motor motor temperature backup#0.0#0.0#0.0#null#MS11-U#SM3
+BoostHVILStsBkpSigGrpChks#2#675#false#false#199#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+BoostHVILStsBkp#2#675#false#false#207#2#1#0#Booster inter lock loop status backup#0.0#0.0#0.0#{"0": "Close", "1": "Open", "2": "Not_determined", "3": "Invalid"}#MS11-U#SM3
+BoostHVILStsBkpSigGrpCntr#2#675#false#false#203#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotPtChVldBkpSigGrpChks#2#675#false#false#215#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotPtChVldBkp#2#675#false#false#220#1#1#0#Rear Motor Powertrains valid Channel backup#0.0#0.0#0.0#{"0": "PT_fusion_CANFD_valid", "1": "PT_CANFD_valid"}#MS11-U#SM3
+ReMotPtChVldBkpSigGrpCntr#2#675#false#false#219#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotOverBoostTimesLeBkp#2#1015#false#false#7#13#1#0#Rear Motor Over boost times left backup#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotOverSpdTimesLeBkp#2#1015#false#false#23#13#1#0#Rear Motor Over speed times left backup#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotSigGrpChks#2#114#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotSigGrpCntr#2#114#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotActTq#2#114#false#false#23#15#0.1#-1638.3#Rear motor actual torque  at motor output axle .#0.0#0.0#0.0#{"32767": "Invalid"}#MS11-U#SM3
+ReMotActSpd#2#114#false#false#39#16#1.0#-32768.0#Rear motor actual speed#0.0#0.0#0.0#{"65535": "Invalid"}#MS11-U#SM3
+ReMotMaxDynTqCp#2#114#false#false#55#10#1#0#Rear motor maximum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotMinDynTqCp#2#114#false#false#71#10#1#-1023#Rear motor minimum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotAglRslvr#2#114#false#false#87#12#0.1#0.0#Rear motor angle resolver#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotIdCmdIvt#2#150#false#false#7#16#0.1#-3276.8#Iq output command of Inverter\n控制器输出d轴电流#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotIqCmdIvt#2#150#false#false#23#16#0.1#-3276.8#Iq output command of Inverter\n控制器输出q轴电流#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotModDiffT#2#150#false#false#39#8#1#-40#Temperature difference motor ntc 电机NTC域温度模型观测差值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTCoolOil#2#150#false#false#47#8#1#-40#Cooling temperature Oil \n冷却液温度 油温#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTCoolWtr#2#150#false#false#55#8#1#-40#Cooling temperature Water \n冷却液温度 水温#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTDcCapIvt#2#150#false#false#63#8#1#-40#Temperature of DC Link capacitor\n控制器电容温度#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTGbx#2#150#false#false#71#8#1#-40#Temperature of EDS Gear Box\n齿轮箱温度#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTIvtDBC1#2#150#false#false#79#8#1#-40#1st Phase DBC temperature of Inverter\n控制器第1相dbc温度#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTIvtDBC2#2#150#false#false#87#8#1#-40#2nd Phase DBC temperature of Inverter\n控制器第2相dbc温度#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTIvtDBC3#2#150#false#false#95#8#1#-40#3rd Phase DBC temperature of Inverter\n控制器第3相dbc温度#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTRtr#2#150#false#false#103#8#1#-40#Rotor temperature\n电机转子温度#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotUdCmdIvt#2#150#false#false#111#16#0.1#-3276.8#Ud output command of Inverter\n控制器输出d轴电压#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotUqCmdIvt#2#150#false#false#127#16#0.1#-3276.8#Ud output command of Inverter\n控制器输出q轴电压#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotLftRemaDCLk#2#152#false#false#7#16#0.002#0.0#DC Link capacitor remaining lifetime\n电容剩余寿命#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotLftRemaPwrModl#2#152#false#false#23#16#0.002#0.0#Power module remaining lifetime\n功率模块剩余寿命#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTAvrgDiodeMin#2#152#false#false#39#8#1#-40#Min average temperature of mosfet during driving cycle\n驾驶循环内二极管平均温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTAvrgMosMax#2#152#false#false#47#8#1#-40#Max average temperature of mosfet during driving cycle\n驾驶循环内晶体管平均温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTAvrgMosMin#2#152#false#false#55#8#1#-40#Min average temperature of mosfet during driving cycle\n驾驶循环内晶体管平均温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTCoolOilMax#2#152#false#false#63#8#1#-40#Max temperature of cooling water during driving cycle\n驾驶循环内冷却油温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTCoolOilMin#2#152#false#false#71#8#1#-40#Min temperature of cooling wator during driving cycle\n驾驶循环内冷却油温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTCoolWtrMax#2#152#false#false#79#8#1#-40#Max temperature of cooling water during driving cycle\n驾驶循环内冷却水温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTCoolWtrMin#2#152#false#false#87#8#1#-40#Min temperature of cooling wator during driving cycle\n驾驶循环内冷却水温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTDCLkCapMax#2#152#false#false#95#8#1#-40#Max temperature of DC Link capacitor during driving cycle\n驾驶循环内电容温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTDCLkCapMin#2#152#false#false#103#8#1#-40#Min temperature of DC Link capacitor during driving cycle\n驾驶循环内电容温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTGbxMax#2#152#false#false#111#8#1#-40#Max temperature of gear box during driving cycle\n驾驶循环内齿轮箱温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTGbxMin#2#152#false#false#119#8#1#-40#Min temperature of gear box during driving cycle\n驾驶循环内齿轮箱温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTAvrgDiodeMax#2#152#false#false#127#8#1#-40#Max average temperature of diode during driving cycle\n驾驶循环内二极管平均温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTqCalcdMax#2#152#false#false#135#16#0.1#-3276.8#Max calculated torque during driving cycle\n驾驶循环内电磁扭矩最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTqCalcdMin#2#152#false#false#151#16#0.1#-3276.8#Min calculated torque during driving cycle\n驾驶循环内电磁扭矩最小值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTRiseDiodeMax#2#152#false#false#167#8#1#-40#Max temperature rise of diode during diriving cycle\n驾驶循环内二极管最大温升#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTRiseMosMax#2#152#false#false#175#8#1#-40#Max temperature rise of mosfet during driving cycle\n驾驶循环内晶体管最大温升#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTRtrMax#2#152#false#false#183#8#1#-40#Max temperature of rator during driving cycle\n驾驶循环内电机转子温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTRtrMin#2#152#false#false#191#8#1#-40#Min temperature of rator during driving cycle\n驾驶循环内电机转子温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTStatMax#2#152#false#false#199#8#1#-40#Max temperature of stator during driving cycle\n驾驶循环内电机定子温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTStatMin#2#152#false#false#207#8#1#-40#Min temperature of stator during driving cycle\n驾驶循环内电机定子温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTStatIni#2#152#false#false#215#8#1#-40#Initial stator temperature when HV is setup\n电机定子初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotAglDeMax#2#153#false#false#7#16#0.1#0.0#Max deviation of angle monitoring between L1 and L2 software\n角度监控偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrAglDeFlt#2#153#false#false#23#8#1#0#Counter regarding over upper threshold of Angle mornitoring\n角度监控偏差超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrCurThrPhaSumFlt#2#153#false#false#31#8#1#0#Counter of fault regarding sumary of three phase current\n三相电流和超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrMosSnsrOverFlt#2#153#false#false#39#8#1#0#Counter regarding over upper threshold of mosfet sensor temperature\nMosfet温度传感器超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrMosSnsrUnderFlt#2#153#false#false#47#8#1#0#Counter regarding over lower threshold of mosfet sensor temperature\nMosfet温度传感器超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrStatSnsrOverFlt#2#153#false#false#55#8#1#0#Counter regarding over upper threshold of stator sensor temperature\n电机温度传感器超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrStatSnsrUnderFlt#2#153#false#false#63#8#1#0#Counter regarding over lower threshold of stator sensor temperature\n电机温度传感器超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrThrPhaCurZeroShift#2#153#false#false#71#8#1#0#三相电流零飘超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrUDCLkDe#2#153#false#false#79#8#1#0#电压偏差超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrUKl30OverFlt#2#153#false#false#87#8#1#0#Counter regarding over upper threshold of KL30 voltage\nKL30电压超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrUKl30UnderFlt#2#153#false#false#95#8#1#0#Counter regarding over lower threshold of KL30 voltage\nKL30电压超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrURslvrSqurSumOverFlt#2#153#false#false#103#8#1#0#Counter regarding over max sum of squares of resolver voltage \n旋转变压器平方和超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrURslvrSqurSumUnderFlt#2#153#false#false#111#8#1#0#Counter regarding under min sum of squares of resolver voltage \n旋转变压器平方和超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCurThrPhaSumDeMax#2#153#false#false#119#16#0.1#-3276.8#Max deviation of summary of three phase current\n三相电流和最大偏差值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCurThrPhaZeroShiftMax#2#153#false#false#135#16#0.1#-3276.8#Max zero shift of three phase current\n三相电流零飘最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTMosSnsrMax#2#153#false#false#151#8#1#-40#Max Mosfet sensor temperature\nMosfet温度传感器最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTMosSnsrMin#2#153#false#false#159#8#1#-40#Min Mosfet sensor temperature\nMosfet温度传感器最小值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTStatSnsrMax#2#153#false#false#167#8#1#-40#Max stator sensor temerature\n电机温度传感器最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTStatSnsrMin#2#153#false#false#175#8#1#-40#Min stator sensor temerature\n机温度传感器最小值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotUDCLkDeMax#2#153#false#false#183#16#0.1#0.0#Max deviation between DC link voltage in L1 and L2 software\n电压偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotUKl30Max#2#153#false#false#199#16#0.1#0.0#Max KL30 voltage\nKL30电压最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotUKl30Min#2#153#false#false#215#16#0.1#0.0#Min KL30 voltage\nKL30电压最小值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTCoolWtrIni#2#153#false#false#231#8#1#-40#Initial cooling water temperature when HV is setup\n冷却液初始温度 水温 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotActCur#2#163#false#false#7#14#0.1#-819.1#Rear motor actual current on DC bus  \nNegative means current flow from rear motor to HV battery  positive means current flow from HV battery to rear motor.#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotBoostModAvl#2#163#false#false#9#1#1#0#Rear motor boost mode available#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MS11-U#SM3
+ReMotActDampgSts#2#163#false#false#8#1#1#0#Rear motor active damping status.#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11-U#SM3
+ReMotOffsCalSts#2#163#false#false#34#2#1#0#Rear motor Offset calibration status#0.0#0.0#0.0#{"0": "Normal", "1": "Still_Offset_Normal", "2": "Invalid"}#MS11-U#SM3
+ReMotDrtSts#2#163#false#false#32#1#1#0#Rear motor derating Status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MS11-U#SM3
+ReMotStSigGrpChks#2#163#false#false#47#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotFltLvlIndcn#2#163#false#false#54#3#1#0#Rear motor fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0_DTCOnly", "2": "Fault_Lv1_PowerLimited", "3": "Fault_Lv2_Recoverable", "4": "Fault_Lv3_Not_Recoverable", "5": "Fault_Lv4_Crash"}#MS11-U#SM3
+ReMotStSigGrpCntr#2#163#false#false#51#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotSfSpdMax#2#163#false#false#63#16#1.0#-32768.0#Rear motor safe speed maximum#0.0#0.0#0.0#{"65535": "Invalid"}#MS11-U#SM3
+ReMotSfStConfig#2#163#false#false#79#2#1#0#Rear Motor safe state configuration#0.0#0.0#0.0#{"1": "ASC", "2": "FreeWheeling"}#MS11-U#SM3
+BoostChrgnInpBkpSigGrpChks#2#163#false#false#103#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+BoostChrgnInpBkpSigGrpCntr#2#163#false#false#107#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+BoostChrgnInpCurBkp#2#163#false#false#119#14#0.1#0.0#Boost Charging Input current 桩端  backup#0.0#0.0#0.0#null#MS11-U#SM3
+BoostChrgnInpUBkp#2#163#false#false#135#14#0.1#0.0#Boost Charging Input voltage 桩端  backup#0.0#0.0#0.0#null#MS11-U#SM3
+BoostChrgnOutpPwrMaxBkp#2#163#false#false#151#11#0.1#0.0#Boost Charging output power max backup#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotBoostModNotAvlRsnBkp#2#163#false#false#167#4#1#0#Rear motor boost mode not available reasons backup#0.0#0.0#0.0#{"0": "Available", "1": "Not_available_for_times"}#MS11-U#SM3
+BoosterFltLvlBkpSigGrpChks#2#163#false#false#175#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+BoosterFltLvlBkpSigGrpCntr#2#163#false#false#179#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+BoosterFltLvlIndcnBkp#2#163#false#false#191#3#1#0#Booster fault level indication#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0", "2": "Fault_Lv1", "3": "Fault_Lv2", "4": "Fault_Lv3", "5": "Fault_Lv4"}#MS11-U#SM3
+ReMotModStsSigGrpChks#2#163#false#false#207#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotModStsSigGrpCntr#2#163#false#false#211#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotModSts#2#163#false#false#223#5#1#0#Rear motor mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Booster_discharge_finished", "12": "OffsetCal", "13": "Failure", "14": "After_Run", "15": "Buck_Control"}#MS11-U#SM3
+ReMotActUSigGrpChks#2#163#false#false#231#8#0.1#0.0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotActUSigGrpCntr#2#163#false#false#235#4#0.1#0.0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotActU#2#163#false#false#247#14#0.1#0.0#Rear motor actual voltage#0.0#0.0#0.0#{"16383": "Invalid"}#MS11-U#SM3
+ReMotAglOffsRslvr#2#168#false#false#7#12#0.1#0.0#Resolver offset angle\n旋变offset角度#0.0#0.0#0.0#null#MS11-U#SM3
+RestAglOffsSlipTst#2#168#false#false#11#1#1#0#resolver offset angle in slip mode state\n旋变滑行角标角度状态#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11-U#SM3
+ReMotAglOffsSlipTst#2#168#false#false#23#12#0.1#0.0#resolver offset angle in slip mode\n旋变滑行角标角度#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrGateDrvrFltHwRaw#2#168#false#false#39#8#1#0#Gate driver fault counter Raw fault counter without debounce \nGate Driver芯片驱动故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrMCURstUFltHwRaw#2#168#false#false#47#8#1#0#MCU Reset counter\nMCU Reset累计计数器#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrOverCurFltHwRaw#2#168#false#false#55#8#1#0#Hardware over current fault counter Raw fault counter without debounce \n硬件过流故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrOverUFltHwRaw#2#168#false#false#63#8#1#0#Hardware over voltage fault counter Raw fault counter without debounce \n硬件过压故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrSOPFltHwRaw#2#168#false#false#71#8#1#0#Shut off path fault counter Raw fault counter withour debounce \n关断路径检测故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrWdgFltHwRaw#2#168#false#false#79#8#1#0#MCU Wdg fault counter Raw fault counter without debounce \nMCU Wdg故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCurDCLkMax#2#168#false#false#87#16#0.1#-3276.8#Max DC Link current during driving cycle\n驾驶循环内直流母线电流最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCurDCLkMin#2#168#false#false#103#16#0.1#-3276.8#Min DC Link current during driving cycle\n驾驶循环内直流母线电流最小值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCurOffsSelfLrn1#2#168#false#false#119#8#1#-128#self learned offset value for current sensor ph1\n第一相电流传感器自学习值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCurOffsSelfLrn2#2#168#false#false#127#8#1#-128#self learned offset value for current sensor ph2\n第二相电流传感器自学习值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCurOffsSelfLrn3#2#168#false#false#135#8#1#-128#self learned offset value for current sensor ph3\n第三相电流传感器自学习值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotMotSpdMax#2#168#false#false#143#16#1#-32768#Max e motor speed during driving cycle\n驾驶循环内电机转速最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotPwrGenMax#2#168#false#false#159#16#0.1#-1000.0#Max calculated generating power during driving cycle\n驾驶循环内发电功率最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotPwrMotMax#2#168#false#false#175#16#0.1#0.0#Min Electric power during driving cycle\n驾驶循环内电动功率最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTCoolOilIni#2#168#false#false#191#8#1#-40#Initial cooling oil temperature when HV is setup\n冷却液初始温度 油温 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTIvtDBCIni1#2#168#false#false#199#8#1#-40#1st Phase DBC initial itemperature of Inverter when HV is setup\n控制器第1相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTIvtDBCIni2#2#168#false#false#207#8#1#-40#2nd Phase DBC initial itemperature of Inverter when HV is setup\n控制器第2相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTIvtDBCIni3#2#168#false#false#215#8#1#-40#3rd Phase DBC initial itemperature of Inverter when HV is setup\n控制器第3相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotUDCLkMax#2#168#false#false#223#16#0.1#0.0#Max DC Link voltage during driving cycle\n驾驶循环内直流母线电压最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotUDCLkMin#2#168#false#false#239#16#0.1#0.0#Min DC Link voltage during driving cycle\n驾驶循环内直流母线电压最小值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrCANCtrlrFltMax#2#169#false#false#7#8#1#0#Max Fault counter of CAN controller\nCAN控制器误计数器最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrRollgDeFltMax#2#169#false#false#15#8#1#0#Max deviation of rolling counter of E2E frames\nE2E报文Rolling Counter偏差最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrRollgFlt#2#169#false#false#23#8#1#0#Fault counter of rolling counter of E2E frames\nE2E报文Rolling Counter错误计数器#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrTqDeCmdL2Flt#2#169#false#false#31#8#1#0#Counter of over threshold of deviation between request torque and L2 torque\n转矩监控偏差 请求 VS 实际 超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrTqDeCmdL2OppstFlt#2#169#false#false#39#8#1#0#Counter of over threshold of opposite torque deviation between request torque and L2 torque\n转矩反向偏差 请求 VS 实际 超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotCntrTqDeL1L2Flt#2#169#false#false#47#8#1#0#Counter regarding over upper threshold of torque monitoring\n转矩估算偏差 L1 VS L2 超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTqDeCmdL2Max#2#169#false#false#55#16#0.1#-3276.8#Max torque deviation between request torque and L2 torque\n转矩监控偏差 请求 VS 实际 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTqDeCmdL2OppstMax#2#169#false#false#71#16#0.1#-3276.8#Max opposite torque deviation between request torque and L2 torque\n转矩反向偏差 请求 VS 实际 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTqDeL1L2Max#2#169#false#false#87#16#0.1#-3276.8#Max deviation between torque calculation between L1 and L2 software\n转矩估算偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotURslvrSqurSumMax#2#169#false#false#103#16#0.01#0.0#Max sum of squares of resolver voltage\n旋转变压器平方和最大值#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotURslvrSqurSumMin#2#169#false#false#119#16#0.01#0.0#Min sum of squares of resolver voltage\n旋转变压器平方和最小值#0.0#0.0#0.0#null#MS11-U#SM3
+REDSPtFusionNodeAddress#2#1300#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11-U#SM3
+REDSPtFusionActiveWakeup#2#1300#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11-U#SM3
+REDSPtFusionRepeatMsgReq#2#1300#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11-U#SM3
+REDSPtFusionRepeatMsgSt#2#1300#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11-U#SM3
+NMKeepAwkRsnREDS#2#1300#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+RLMotIndHeatgActPwrBkp#2#474#false#false#6#7#50#0#Rear left motor indirect heating actual power backup#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotIndHeatgMaxPwrCpBkp#2#474#false#false#14#7#50#0#Rear left motor indirect heating maximum power capacity backup#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotIndHeatgStsBkp#2#628#false#false#15#1#1#0#Rear left motor indirect heating status backup#0.0#0.0#0.0#{"0": "Not_available", "1": "Available"}#MS11-U#SM3
+RLMotOverSpdTimeoutBkp#2#628#false#false#14#1#1#0#Rear left motor Over speed timeout backup#0.0#0.0#0.0#{"0": "no_timeout", "1": "timeout"}#MS11-U#SM3
+RLMotCooltFlowReqBkp#2#628#false#false#13#6#0.25#0.0#Rear left motor coolant flow request backup#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotFltInfoActv1Bkp#2#628#false#false#23#9#1#0#fault information singal group  1  Rear left motor fault information active backup#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotFltInfoActv2Bkp#2#628#false#false#39#9#1#0#fault information singal group  2  Rear left motor fault information active backup#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotFltInfoActv3Bkp#2#628#false#false#55#9#1#0#fault information singal group  3  Rear left motor fault information active backup#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotFltInfoHist1Bkp#2#628#false#false#79#9#1#0#fault information singal group  1  Rear left motor fault information history backup#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotFltInfoHist2Bkp#2#628#false#false#95#9#1#0#fault information singal group  2  Rear left motor fault information history backup#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotFltInfoHist3Bkp#2#628#false#false#111#9#1#0#fault information singal group  3  Rear left motor fault information history backup#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTCoolOilBkp#2#628#false#false#127#8#1#-40#Cooling temperature Oil \nbackup\n冷却液温度 油温#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCooltTBkp#2#628#false#false#175#8#1#-40#Rear left motor coolant temperature backup#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotIvtTBkp#2#628#false#false#183#8#1#-40#Rear left motor inverter temperature backup#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotMotTBkp#2#628#false#false#191#8#1#-40#Rear left motor motor temperature backup#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotPtChVldBkpSigGrpChks#2#628#false#false#215#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotPtChVldBkp#2#628#false#false#220#1#1#0#Rear left motor Powertrains valid Channel backup#0.0#0.0#0.0#{"0": "PT_fusion_CANFD_valid", "1": "PT_CANFD_valid"}#MS11-U#SM3
+RLMotPtChVldBkpSigGrpCntr#2#628#false#false#219#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotOverBoostTimesLeBkp#2#949#false#false#7#13#1#0#Rear left motor Over boost times left backup#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotOverSpdTimesLeBkp#2#949#false#false#23#13#1#0#Rear left motor Over speed times left backup#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotLftRemaDCLk#2#971#false#false#7#16#0.002#0.0#DC Link capacitor remaining lifetime\n电容剩余寿命#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotLftRemaPwrModl#2#971#false#false#23#16#0.002#0.0#Power module remaining lifetime\n功率模块剩余寿命#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTAvrgDiodeMin#2#971#false#false#39#8#1#-40#Min average temperature of mosfet during driving cycle\n驾驶循环内二极管平均温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTAvrgMosMax#2#971#false#false#47#8#1#-40#Max average temperature of mosfet during driving cycle\n驾驶循环内晶体管平均温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTAvrgMosMin#2#971#false#false#55#8#1#-40#Min average temperature of mosfet during driving cycle\n驾驶循环内晶体管平均温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTCoolOilMax#2#971#false#false#63#8#1#-40#Max temperature of cooling water during driving cycle\n驾驶循环内冷却油温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTCoolOilMin#2#971#false#false#71#8#1#-40#Min temperature of cooling wator during driving cycle\n驾驶循环内冷却油温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTCoolWtrMax#2#971#false#false#79#8#1#-40#Max temperature of cooling water during driving cycle\n驾驶循环内冷却水温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTCoolWtrMin#2#971#false#false#87#8#1#-40#Min temperature of cooling wator during driving cycle\n驾驶循环内冷却水温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTDCLkCapMax#2#971#false#false#95#8#1#-40#Max temperature of DC Link capacitor during driving cycle\n驾驶循环内电容温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTDCLkCapMin#2#971#false#false#103#8#1#-40#Min temperature of DC Link capacitor during driving cycle\n驾驶循环内电容温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTGbxMax#2#971#false#false#111#8#1#-40#Max temperature of gear box during driving cycle\n驾驶循环内齿轮箱温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTGbxMin#2#971#false#false#119#8#1#-40#Min temperature of gear box during driving cycle\n驾驶循环内齿轮箱温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTAvrgDiodeMax#2#971#false#false#127#8#1#-40#Max average temperature of diode during driving cycle\n驾驶循环内二极管平均温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTqCalcdMax#2#971#false#false#135#16#0.1#-3276.8#Max calculated torque during driving cycle\n驾驶循环内电磁扭矩最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTqCalcdMin#2#971#false#false#151#16#0.1#-3276.8#Min calculated torque during driving cycle\n驾驶循环内电磁扭矩最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTRiseDiodeMax#2#971#false#false#167#8#1#-40#Max temperature rise of diode during diriving cycle\n驾驶循环内二极管最大温升#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTRiseMosMax#2#971#false#false#175#8#1#-40#Max temperature rise of mosfet during driving cycle\n驾驶循环内晶体管最大温升#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTRtrMax#2#971#false#false#183#8#1#-40#Max temperature of rator during driving cycle\n驾驶循环内电机转子温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTRtrMin#2#971#false#false#191#8#1#-40#Min temperature of rator during driving cycle\n驾驶循环内电机转子温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTStatMax#2#971#false#false#199#8#1#-40#Max temperature of stator during driving cycle\n驾驶循环内电机定子温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTStatMin#2#971#false#false#207#8#1#-40#Min temperature of stator during driving cycle\n驾驶循环内电机定子温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTStatIni#2#971#false#false#215#8#1#-40#Initial stator temperature when HV is setup\n电机定子初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotAglDeMax#2#973#false#false#7#16#0.1#0.0#Max deviation of angle monitoring between L1 and L2 software\n角度监控偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrAglDeFlt#2#973#false#false#23#8#1#0#Counter regarding over upper threshold of Angle mornitoring\n角度监控偏差超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrCurThrPhaSumFlt#2#973#false#false#31#8#1#0#Counter of fault regarding sumary of three phase current\n三相电流和超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrMosSnsrOverFlt#2#973#false#false#39#8#1#0#Counter regarding over upper threshold of mosfet sensor temperature\nMosfet温度传感器超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrMosSnsrUnderFlt#2#973#false#false#47#8#1#0#Counter regarding over lower threshold of mosfet sensor temperature\nMosfet温度传感器超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrStatSnsrOverFlt#2#973#false#false#55#8#1#0#Counter regarding over upper threshold of stator sensor temperature\n电机温度传感器超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrStatSnsrUnderFlt#2#973#false#false#63#8#1#0#Counter regarding over lower threshold of stator sensor temperature\n电机温度传感器超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrThrPhaCurZeroShift#2#973#false#false#71#8#1#0#三相电流零飘超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrUDCLkDe#2#973#false#false#79#8#1#0#电压偏差超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrUKl30OverFlt#2#973#false#false#87#8#1#0#Counter regarding over upper threshold of KL30 voltage\nKL30电压超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrUKl30UnderFlt#2#973#false#false#95#8#1#0#Counter regarding over lower threshold of KL30 voltage\nKL30电压超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrURslvrSqurSumOverFlt#2#973#false#false#103#8#1#0#Counter regarding over max sum of squares of resolver voltage \n旋转变压器平方和超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrURslvrSqurSumUnderFlt#2#973#false#false#111#8#1#0#Counter regarding under min sum of squares of resolver voltage \n旋转变压器平方和超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCurThrPhaSumDeMax#2#973#false#false#119#16#0.1#-3276.8#Max deviation of summary of three phase current\n三相电流和最大偏差值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCurThrPhaZeroShiftMax#2#973#false#false#135#16#0.1#-3276.8#Max zero shift of three phase current\n三相电流零飘最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTMosSnsrMax#2#973#false#false#151#8#1#-40#Max Mosfet sensor temperature\nMosfet温度传感器最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTMosSnsrMin#2#973#false#false#159#8#1#-40#Min Mosfet sensor temperature\nMosfet温度传感器最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTStatSnsrMax#2#973#false#false#167#8#1#-40#Max stator sensor temerature\n电机温度传感器最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTStatSnsrMin#2#973#false#false#175#8#1#-40#Min stator sensor temerature\n机温度传感器最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotUDCLkDeMax#2#973#false#false#183#16#0.1#0.0#Max deviation between DC link voltage in L1 and L2 software\n电压偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotUKl30Max#2#973#false#false#199#16#0.1#0.0#Max KL30 voltage\nKL30电压最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotUKl30Min#2#973#false#false#215#16#0.1#0.0#Min KL30 voltage\nKL30电压最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTCoolWtrIni#2#973#false#false#231#8#1#-40#Initial cooling water temperature when HV is setup\n冷却液初始温度 水温 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotAglOffsRslvr#2#987#false#false#7#12#0.1#0.0#Resolver offset angle\n旋变offset角度#0.0#0.0#0.0#null#MS11-U#SM3
+RLstAglOffsSlipTst#2#987#false#false#11#1#1#0#resolver offset angle in slip mode state\n旋变滑行角标角度状态#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11-U#SM3
+RLMotAglOffsSlipTst#2#987#false#false#23#12#0.1#0.0#resolver offset angle in slip mode\n旋变滑行角标角度#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrGateDrvrFltHwRaw#2#987#false#false#39#8#1#0#Gate driver fault counter Raw fault counter without debounce \nGate Driver芯片驱动故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrMCURstUFltHwRaw#2#987#false#false#47#8#1#0#MCU Reset counter\nMCU Reset累计计数器#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrOverCurFltHwRaw#2#987#false#false#55#8#1#0#Hardware over current fault counter Raw fault counter without debounce \n硬件过流故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrOverUFltHwRaw#2#987#false#false#63#8#1#0#Hardware over voltage fault counter Raw fault counter without debounce \n硬件过压故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrSOPFltHwRaw#2#987#false#false#71#8#1#0#Shut off path fault counter Raw fault counter withour debounce \n关断路径检测故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrWdgFltHwRaw#2#987#false#false#79#8#1#0#MCU Wdg fault counter Raw fault counter without debounce \nMCU Wdg故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCurDCLkMax#2#987#false#false#87#16#0.1#-3276.8#Max DC Link current during driving cycle\n驾驶循环内直流母线电流最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCurDCLkMin#2#987#false#false#103#16#0.1#-3276.8#Min DC Link current during driving cycle\n驾驶循环内直流母线电流最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCurOffsSelfLrn1#2#987#false#false#119#8#1#-128#self learned offset value for current sensor ph1\n第一相电流传感器自学习值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCurOffsSelfLrn2#2#987#false#false#127#8#1#-128#self learned offset value for current sensor ph2\n第二相电流传感器自学习值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCurOffsSelfLrn3#2#987#false#false#135#8#1#-128#self learned offset value for current sensor ph3\n第三相电流传感器自学习值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotMotSpdMax#2#987#false#false#143#16#1#-32768#Max e motor speed during driving cycle\n驾驶循环内电机转速最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotPwrGenMax#2#987#false#false#159#16#0.1#-1000.0#Max calculated generating power during driving cycle\n驾驶循环内发电功率最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotPwrMotMax#2#987#false#false#175#16#0.1#0.0#Min Electric power during driving cycle\n驾驶循环内电动功率最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTCoolOilIni#2#987#false#false#191#8#1#-40#Initial cooling oil temperature when HV is setup\n冷却液初始温度 油温 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTIvtDBCIni1#2#987#false#false#199#8#1#-40#1st Phase DBC initial itemperature of Inverter when HV is setup\n控制器第1相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTIvtDBCIni2#2#987#false#false#207#8#1#-40#2nd Phase DBC initial itemperature of Inverter when HV is setup\n控制器第2相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTIvtDBCIni3#2#987#false#false#215#8#1#-40#3rd Phase DBC initial itemperature of Inverter when HV is setup\n控制器第3相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotUDCLkMax#2#987#false#false#223#16#0.1#0.0#Max DC Link voltage during driving cycle\n驾驶循环内直流母线电压最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotUDCLkMin#2#987#false#false#239#16#0.1#0.0#Min DC Link voltage during driving cycle\n驾驶循环内直流母线电压最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrCANCtrlrFltMax#2#989#false#false#7#8#1#0#Max Fault counter of CAN controller\nCAN控制器误计数器最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrRollgDeFltMax#2#989#false#false#15#8#1#0#Max deviation of rolling counter of E2E frames\nE2E报文Rolling Counter偏差最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrRollgFlt#2#989#false#false#23#8#1#0#Fault counter of rolling counter of E2E frames\nE2E报文Rolling Counter错误计数器#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrTqDeCmdL2Flt#2#989#false#false#31#8#1#0#Counter of over threshold of deviation between request torque and L2 torque\n转矩监控偏差 请求 VS 实际 超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrTqDeCmdL2OppstFlt#2#989#false#false#39#8#1#0#Counter of over threshold of opposite torque deviation between request torque and L2 torque\n转矩反向偏差 请求 VS 实际 超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCntrTqDeL1L2Flt#2#989#false#false#47#8#1#0#Counter regarding over upper threshold of torque monitoring\n转矩估算偏差 L1 VS L2 超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTqDeCmdL2Max#2#989#false#false#55#16#0.1#-3276.8#Max torque deviation between request torque and L2 torque\n转矩监控偏差 请求 VS 实际 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTqDeCmdL2OppstMax#2#989#false#false#71#16#0.1#-3276.8#Max opposite torque deviation between request torque and L2 torque\n转矩反向偏差 请求 VS 实际 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTqDeL1L2Max#2#989#false#false#87#16#0.1#-3276.8#Max deviation between torque calculation between L1 and L2 software\n转矩估算偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotURslvrSqurSumMax#2#989#false#false#103#16#0.01#0.0#Max sum of squares of resolver voltage\n旋转变压器平方和最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotURslvrSqurSumMin#2#989#false#false#119#16#0.01#0.0#Min sum of squares of resolver voltage\n旋转变压器平方和最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotSigGrpChks#2#118#false#false#7#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotSigGrpCntr#2#118#false#false#11#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotActTq#2#118#false#false#23#15#0.1#-1638.3#Rear left motor actual torque  at motor output axle .#0.0#0.0#0.0#{"32767": "Invalid"}#MS11-U#SM3
+RLMotActSpd#2#118#false#false#39#16#1.0#-32768.0#Rear left motor actual speed#0.0#0.0#0.0#{"65535": "Invalid"}#MS11-U#SM3
+RLMotMaxDynTqCp#2#118#false#false#55#10#1#0#Rear left motor maximum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotMinDynTqCp#2#118#false#false#71#10#1#-1023#Rear left motor minimum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotFltLvlIndcn#2#118#false#false#87#3#1#0#Rear left motor fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0_DTCOnly", "2": "Fault_Lv1_PowerLimited", "3": "Fault_Lv2_Recoverable", "4": "Fault_Lv3_Not_Recoverable", "5": "Fault_Lv4_Crash"}#MS11-U#SM3
+RLMotAglRslvr#2#118#false#false#95#12#0.1#0.0#Rear left Motor stator angle#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotActSfSt#2#118#false#false#111#3#1#0#Rear left Motor actual safe state#0.0#0.0#0.0#{"0": "normal", "1": "0N.m", "2": "VDSS", "3": "SDSS", "4": "permanent ASC", "5": "permanent FW", "6": "Reserve", "7": "Invalid"}#MS11-U#SM3
+RLMotActCur#2#174#false#false#7#14#0.1#-819.1#Rear left motor actual current on DC bus  \nNegative means current flow from Rear left motor to HV battery  positive means current flow from HV battery to Rear left motor.#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotBoostModAvl#2#174#false#false#9#1#1#0#Rear left motor boost mode available#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MS11-U#SM3
+RLMotActDampgSts#2#174#false#false#8#1#1#0#Rear left motor active damping status.#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11-U#SM3
+RLMotOffsCalSts#2#174#false#false#34#2#1#0#Rear left motor Offset calibration status#0.0#0.0#0.0#{"0": "Normal", "1": "Still_Offset_Normal", "2": "Invalid"}#MS11-U#SM3
+RLMotDrtSts#2#174#false#false#32#1#1#0#Rear left motor derating Status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MS11-U#SM3
+RLMotStSigGrpChks#2#174#false#false#47#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotStSigGrpCntr#2#174#false#false#51#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotSfSpdMax#2#174#false#false#63#16#1.0#-32768.0#Rear left motor safe speed maximum#0.0#0.0#0.0#{"65535": "Invalid"}#MS11-U#SM3
+RLMotBoostModNotAvlRsnBkp#2#174#false#false#79#4#1#0#Rear left motor boost mode not available reasons backup#0.0#0.0#0.0#{"0": "Available", "1": "Not_available_for_times"}#MS11-U#SM3
+RLMotModStsSigGrpChks#2#174#false#false#87#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotModStsSigGrpCntr#2#174#false#false#91#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotModSts#2#174#false#false#103#5#1#0#Rear left motor mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Booster_discharge_finished", "12": "OffsetCal", "13": "Failure", "14": "After_Run", "15": "Buck_Control"}#MS11-U#SM3
+RLMotIdCmdIvt#2#174#false#false#111#16#0.1#-3276.8#Iq output command of Inverter\n控制器输出d轴电流#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotIqCmdIvt#2#174#false#false#127#16#0.1#-3276.8#Iq output command of Inverter\n控制器输出q轴电流#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotModDiffT#2#174#false#false#143#8#1#-40#Temperature difference motor ntc 电机NTC域温度模型观测差值#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotOilFlowEstimdBkp#2#174#false#false#151#10#0.05#0.0#Estimated oil flowrate for Rear left motor oil pump circuit.#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTCoolWtr#2#174#false#false#175#8#1#-40#Cooling temperature Water \n冷却液温度 水温#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTDcCapIvt#2#174#false#false#183#8#1#-40#Temperature of DC Link capacitor\n控制器电容温度#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTGbx#2#174#false#false#191#8#1#-40#Temperature of EDS Gear Box\n齿轮箱温度#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTIvtDBC1#2#174#false#false#199#8#1#-40#1st Phase DBC temperature of Inverter\n控制器第1相dbc温度#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTIvtDBC2#2#174#false#false#207#8#1#-40#2nd Phase DBC temperature of Inverter\n控制器第2相dbc温度#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTIvtDBC3#2#174#false#false#215#8#1#-40#3rd Phase DBC temperature of Inverter\n控制器第3相dbc温度#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotTRtr#2#174#false#false#223#8#1#-40#Rotor temperature\n电机转子温度#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotUdCmdIvt#2#174#false#false#231#16#0.1#-3276.8#Ud output command of Inverter\n控制器输出d轴电压#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotUqCmdIvt#2#174#false#false#247#16#0.1#-3276.8#Ud output command of Inverter\n控制器输出q轴电压#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotActUSigGrpChks#2#174#false#false#263#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotActUSigGrpCntr#2#174#false#false#267#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotActU#2#174#false#false#279#14#0.1#0.0#Rear left motor actual voltage#0.0#0.0#0.0#{"16383": "Invalid"}#MS11-U#SM3
+RLEDSPtFusionNodeAddress#2#1298#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11-U#SM3
+RLEDSPtFusionActiveWakeup#2#1298#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11-U#SM3
+RLEDSPtFusionRepeatMsgReq#2#1298#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11-U#SM3
+RLEDSPtFusionRepeatMsgSt#2#1298#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11-U#SM3
+NMKeepAwkRsnRLEDS#2#1298#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+RRMotIndHeatgActPwrBkp#2#475#false#false#6#7#50#0#Rear right motor indirect heating actual power backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotIndHeatgMaxPwrCpBkp#2#475#false#false#14#7#50#0#Rear right motor indirect heating maximum power capacity backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoosterCntctStsBkpSigGrpChks#2#475#false#false#23#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoosterCntctStsBkpSigGrpCntr#2#475#false#false#27#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoosterS7CntctStsBkp#2#475#false#false#39#2#1#0#booster S7 positive  contactor status backup#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11-U#SM3
+RRMotBoosterS6CntctStsBkp#2#475#false#false#37#2#1#0#booster S6 negative  contactor status backup#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11-U#SM3
+RRMotBoosterS1CntctStsBkp#2#475#false#false#35#2#1#0#booster  output  S1 contactor status backup#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11-U#SM3
+RRMotBoosterInducerTBkp#2#644#false#false#7#8#1#-40#Booster Inducer temperature backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotIndHeatgStsBkp#2#644#false#false#15#1#1#0#Rear right motor indirect heating status backup#0.0#0.0#0.0#{"0": "Not_available", "1": "Available"}#MS11-U#SM3
+RRMotOverSpdTimeoutBkp#2#644#false#false#14#1#1#0#Rear right motor Over speed timeout backup#0.0#0.0#0.0#{"0": "no_timeout", "1": "timeout"}#MS11-U#SM3
+RRMotCooltFlowReqBkp#2#644#false#false#13#6#0.25#0.0#Rear right motor coolant flow request backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotFltInfoActv1Bkp#2#644#false#false#23#9#1#0#fault information singal group  1  Rear right motor fault information active backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotFltInfoActv2Bkp#2#644#false#false#39#9#1#0#fault information singal group  2  Rear right motor fault information active backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotFltInfoActv3Bkp#2#644#false#false#55#9#1#0#fault information singal group  3  Rear right motor fault information active backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoosterS1CntctFltBkp#2#644#false#false#71#2#1#0#Booster S1 contactor fault backup#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11-U#SM3
+RRMotBoosterS6CntctFltBkp#2#644#false#false#69#2#1#0#Booster S6 contactor fault backup#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11-U#SM3
+RRMotBoosterS7CntctFltBkp#2#644#false#false#67#2#1#0#Booster S7 contactor fault backup#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11-U#SM3
+RRMotFltInfoHist1Bkp#2#644#false#false#79#9#1#0#fault information singal group  1  Rear right motor fault information history backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotFltInfoHist2Bkp#2#644#false#false#95#9#1#0#fault information singal group  2  Rear right motor fault information history backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotFltInfoHist3Bkp#2#644#false#false#111#9#1#0#fault information singal group  3  Rear right motor fault information history backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoostChrgnOutpBkpSigGrpChks#2#644#false#false#127#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoostChrgnOutpBkpSigGrpCntr#2#644#false#false#131#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoostChrgnOutpCurBkp#2#644#false#false#143#14#0.1#0.0#Boost charging output current 电池端  backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoostChrgnOutpUBkp#2#644#false#false#159#14#0.1#0.0#Boost charging output voltage 电池端  backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCooltTBkp#2#644#false#false#175#8#1#-40#Rear right motor coolant temperature backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotIvtTBkp#2#644#false#false#183#8#1#-40#Rear right motor inverter temperature backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotMotTBkp#2#644#false#false#191#8#1#-40#Rear right motor motor temperature backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoostHVILStsBkpSigGrpChks#2#644#false#false#199#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoostHVILStsBkp#2#644#false#false#207#2#1#0#Booster inter lock loop status backup#0.0#0.0#0.0#{"0": "Close", "1": "Open", "2": "Not_determined", "3": "Invalid"}#MS11-U#SM3
+RRMotBoostHVILStsBkpSigGrpCntr#2#644#false#false#203#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotPtChVldBkpSigGrpChks#2#644#false#false#215#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotPtChVldBkp#2#644#false#false#220#1#1#0#Rear right motor Powertrains valid Channel backup#0.0#0.0#0.0#{"0": "PT_fusion_CANFD_valid", "1": "PT_CANFD_valid"}#MS11-U#SM3
+RRMotPtChVldBkpSigGrpCntr#2#644#false#false#219#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTCoolOilBkp#2#644#false#false#231#8#1#-40#Cooling temperature Oil \n冷却液温度 油温#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotOverBoostTimesLeBkp#2#950#false#false#7#13#1#0#Rear right motor Over boost times left backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotOverSpdTimesLeBkp#2#950#false#false#23#13#1#0#Rear right motor Over speed times left backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotLftRemaDCLk#2#972#false#false#7#16#0.002#0.0#DC Link capacitor remaining lifetime\n电容剩余寿命#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotLftRemaPwrModl#2#972#false#false#23#16#0.002#0.0#Power module remaining lifetime\n功率模块剩余寿命#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTAvrgDiodeMin#2#972#false#false#39#8#1#-40#Min average temperature of mosfet during driving cycle\n驾驶循环内二极管平均温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTAvrgMosMax#2#972#false#false#47#8#1#-40#Max average temperature of mosfet during driving cycle\n驾驶循环内晶体管平均温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTAvrgMosMin#2#972#false#false#55#8#1#-40#Min average temperature of mosfet during driving cycle\n驾驶循环内晶体管平均温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTCoolOilMax#2#972#false#false#63#8#1#-40#Max temperature of cooling water during driving cycle\n驾驶循环内冷却油温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTCoolOilMin#2#972#false#false#71#8#1#-40#Min temperature of cooling wator during driving cycle\n驾驶循环内冷却油温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTCoolWtrMax#2#972#false#false#79#8#1#-40#Max temperature of cooling water during driving cycle\n驾驶循环内冷却水温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTCoolWtrMin#2#972#false#false#87#8#1#-40#Min temperature of cooling wator during driving cycle\n驾驶循环内冷却水温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTDCLkCapMax#2#972#false#false#95#8#1#-40#Max temperature of DC Link capacitor during driving cycle\n驾驶循环内电容温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTDCLkCapMin#2#972#false#false#103#8#1#-40#Min temperature of DC Link capacitor during driving cycle\n驾驶循环内电容温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTGbxMax#2#972#false#false#111#8#1#-40#Max temperature of gear box during driving cycle\n驾驶循环内齿轮箱温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTGbxMin#2#972#false#false#119#8#1#-40#Min temperature of gear box during driving cycle\n驾驶循环内齿轮箱温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTAvrgDiodeMax#2#972#false#false#127#8#1#-40#Max average temperature of diode during driving cycle\n驾驶循环内二极管平均温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTqCalcdMax#2#972#false#false#135#16#0.1#-3276.8#Max calculated torque during driving cycle\n驾驶循环内电磁扭矩最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTqCalcdMin#2#972#false#false#151#16#0.1#-3276.8#Min calculated torque during driving cycle\n驾驶循环内电磁扭矩最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTRiseDiodeMax#2#972#false#false#167#8#1#-40#Max temperature rise of diode during diriving cycle\n驾驶循环内二极管最大温升#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTRiseMosMax#2#972#false#false#175#8#1#-40#Max temperature rise of mosfet during driving cycle\n驾驶循环内晶体管最大温升#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTRtrMax#2#972#false#false#183#8#1#-40#Max temperature of rator during driving cycle\n驾驶循环内电机转子温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTRtrMin#2#972#false#false#191#8#1#-40#Min temperature of rator during driving cycle\n驾驶循环内电机转子温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTStatMax#2#972#false#false#199#8#1#-40#Max temperature of stator during driving cycle\n驾驶循环内电机定子温度最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTStatMin#2#972#false#false#207#8#1#-40#Min temperature of stator during driving cycle\n驾驶循环内电机定子温度最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTStatIni#2#972#false#false#215#8#1#-40#Initial stator temperature when HV is setup\n电机定子初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotAglDeMax#2#974#false#false#7#16#0.1#0.0#Max deviation of angle monitoring between L1 and L2 software\n角度监控偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrAglDeFlt#2#974#false#false#23#8#1#0#Counter regarding over upper threshold of Angle mornitoring\n角度监控偏差超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrCurThrPhaSumFlt#2#974#false#false#31#8#1#0#Counter of fault regarding sumary of three phase current\n三相电流和超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrMosSnsrOverFlt#2#974#false#false#39#8#1#0#Counter regarding over upper threshold of mosfet sensor temperature\nMosfet温度传感器超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrMosSnsrUnderFlt#2#974#false#false#47#8#1#0#Counter regarding over lower threshold of mosfet sensor temperature\nMosfet温度传感器超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrStatSnsrOverFlt#2#974#false#false#55#8#1#0#Counter regarding over upper threshold of stator sensor temperature\n电机温度传感器超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrStatSnsrUnderFlt#2#974#false#false#63#8#1#0#Counter regarding over lower threshold of stator sensor temperature\n电机温度传感器超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrThrPhaCurZeroShift#2#974#false#false#71#8#1#0#三相电流零飘超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrUDCLkDe#2#974#false#false#79#8#1#0#电压偏差超阈值次数 Debounce之前 本操作循环周期内累计值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrUKl30OverFlt#2#974#false#false#87#8#1#0#Counter regarding over upper threshold of KL30 voltage\nKL30电压超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrUKl30UnderFlt#2#974#false#false#95#8#1#0#Counter regarding over lower threshold of KL30 voltage\nKL30电压超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrURslvrSqurSumOverFlt#2#974#false#false#103#8#1#0#Counter regarding over max sum of squares of resolver voltage \n旋转变压器平方和超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrURslvrSqurSumUnderFlt#2#974#false#false#111#8#1#0#Counter regarding under min sum of squares of resolver voltage \n旋转变压器平方和超下限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCurThrPhaSumDeMax#2#974#false#false#119#16#0.1#-3276.8#Max deviation of summary of three phase current\n三相电流和最大偏差值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCurThrPhaZeroShiftMax#2#974#false#false#135#16#0.1#-3276.8#Max zero shift of three phase current\n三相电流零飘最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTMosSnsrMax#2#974#false#false#151#8#1#-40#Max Mosfet sensor temperature\nMosfet温度传感器最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTMosSnsrMin#2#974#false#false#159#8#1#-40#Min Mosfet sensor temperature\nMosfet温度传感器最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTStatSnsrMax#2#974#false#false#167#8#1#-40#Max stator sensor temerature\n电机温度传感器最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTStatSnsrMin#2#974#false#false#175#8#1#-40#Min stator sensor temerature\n机温度传感器最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotUDCLkDeMax#2#974#false#false#183#16#0.1#0.0#Max deviation between DC link voltage in L1 and L2 software\n电压偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotUKl30Max#2#974#false#false#199#16#0.1#0.0#Max KL30 voltage\nKL30电压最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotUKl30Min#2#974#false#false#215#16#0.1#0.0#Min KL30 voltage\nKL30电压最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTCoolWtrIni#2#974#false#false#231#8#1#-40#Initial cooling water temperature when HV is setup\n冷却液初始温度 水温 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotAglOffsRslvr#2#988#false#false#7#12#0.1#0.0#Resolver offset angle\n旋变offset角度#0.0#0.0#0.0#null#MS11-U#SM3
+RRstAglOffsSlipTst#2#988#false#false#11#1#1#0#resolver offset angle in slip mode state\n旋变滑行角标角度状态#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11-U#SM3
+RRMotAglOffsSlipTst#2#988#false#false#23#12#0.1#0.0#resolver offset angle in slip mode\n旋变滑行角标角度#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrGateDrvrFltHwRaw#2#988#false#false#39#8#1#0#Gate driver fault counter Raw fault counter without debounce \nGate Driver芯片驱动故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrMCURstUFltHwRaw#2#988#false#false#47#8#1#0#MCU Reset counter\nMCU Reset累计计数器#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrOverCurFltHwRaw#2#988#false#false#55#8#1#0#Hardware over current fault counter Raw fault counter without debounce \n硬件过流故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrOverUFltHwRaw#2#988#false#false#63#8#1#0#Hardware over voltage fault counter Raw fault counter without debounce \n硬件过压故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrSOPFltHwRaw#2#988#false#false#71#8#1#0#Shut off path fault counter Raw fault counter withour debounce \n关断路径检测故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrWdgFltHwRaw#2#988#false#false#79#8#1#0#MCU Wdg fault counter Raw fault counter without debounce \nMCU Wdg故障累计计数器 诊断原始触发事件 不带诊断debounce#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCurDCLkMax#2#988#false#false#87#16#0.1#-3276.8#Max DC Link current during driving cycle\n驾驶循环内直流母线电流最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCurDCLkMin#2#988#false#false#103#16#0.1#-3276.8#Min DC Link current during driving cycle\n驾驶循环内直流母线电流最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCurOffsSelfLrn1#2#988#false#false#119#8#1#-128#self learned offset value for current sensor ph1\n第一相电流传感器自学习值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCurOffsSelfLrn2#2#988#false#false#127#8#1#-128#self learned offset value for current sensor ph2\n第二相电流传感器自学习值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCurOffsSelfLrn3#2#988#false#false#135#8#1#-128#self learned offset value for current sensor ph3\n第三相电流传感器自学习值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotMotSpdMax#2#988#false#false#143#16#1#-32768#Max e motor speed during driving cycle\n驾驶循环内电机转速最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotPwrGenMax#2#988#false#false#159#16#0.1#-1000.0#Max calculated generating power during driving cycle\n驾驶循环内发电功率最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotPwrMotMax#2#988#false#false#175#16#0.1#0.0#Min Electric power during driving cycle\n驾驶循环内电动功率最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTCoolOilIni#2#988#false#false#191#8#1#-40#Initial cooling oil temperature when HV is setup\n冷却液初始温度 油温 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTIvtDBCIni1#2#988#false#false#199#8#1#-40#1st Phase DBC initial itemperature of Inverter when HV is setup\n控制器第1相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTIvtDBCIni2#2#988#false#false#207#8#1#-40#2nd Phase DBC initial itemperature of Inverter when HV is setup\n控制器第2相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTIvtDBCIni3#2#988#false#false#215#8#1#-40#3rd Phase DBC initial itemperature of Inverter when HV is setup\n控制器第3相dbc初始温度 高压上电完成时刻#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotUDCLkMax#2#988#false#false#223#16#0.1#0.0#Max DC Link voltage during driving cycle\n驾驶循环内直流母线电压最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotUDCLkMin#2#988#false#false#239#16#0.1#0.0#Min DC Link voltage during driving cycle\n驾驶循环内直流母线电压最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrCANCtrlrFltMax#2#990#false#false#7#8#1#0#Max Fault counter of CAN controller\nCAN控制器误计数器最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrRollgDeFltMax#2#990#false#false#15#8#1#0#Max deviation of rolling counter of E2E frames\nE2E报文Rolling Counter偏差最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrRollgFlt#2#990#false#false#23#8#1#0#Fault counter of rolling counter of E2E frames\nE2E报文Rolling Counter错误计数器#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrTqDeCmdL2Flt#2#990#false#false#31#8#1#0#Counter of over threshold of deviation between request torque and L2 torque\n转矩监控偏差 请求 VS 实际 超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrTqDeCmdL2OppstFlt#2#990#false#false#39#8#1#0#Counter of over threshold of opposite torque deviation between request torque and L2 torque\n转矩反向偏差 请求 VS 实际 超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCntrTqDeL1L2Flt#2#990#false#false#47#8#1#0#Counter regarding over upper threshold of torque monitoring\n转矩估算偏差 L1 VS L2 超上限阈值次数#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTqDeCmdL2Max#2#990#false#false#55#16#0.1#-3276.8#Max torque deviation between request torque and L2 torque\n转矩监控偏差 请求 VS 实际 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTqDeCmdL2OppstMax#2#990#false#false#71#16#0.1#-3276.8#Max opposite torque deviation between request torque and L2 torque\n转矩反向偏差 请求 VS 实际 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTqDeL1L2Max#2#990#false#false#87#16#0.1#-3276.8#Max deviation between torque calculation between L1 and L2 software\n转矩估算偏差 L1 VS L2 最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotURslvrSqurSumMax#2#990#false#false#103#16#0.01#0.0#Max sum of squares of resolver voltage\n旋转变压器平方和最大值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotURslvrSqurSumMin#2#990#false#false#119#16#0.01#0.0#Min sum of squares of resolver voltage\n旋转变压器平方和最小值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotSigGrpChks#2#117#false#false#7#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotSigGrpCntr#2#117#false#false#11#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotActTq#2#117#false#false#23#15#0.1#-1638.3#Rear right motor actual torque  at motor output axle .#0.0#0.0#0.0#{"32767": "Invalid"}#MS11-U#SM3
+RRMotActSpd#2#117#false#false#39#16#1.0#-32768.0#Rear right motor actual speed#0.0#0.0#0.0#{"65535": "Invalid"}#MS11-U#SM3
+RRMotMaxDynTqCp#2#117#false#false#55#10#1#0#Rear right motor maximum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotMinDynTqCp#2#117#false#false#71#10#1#-1023#Rear right motor minimum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotFltLvlIndcn#2#117#false#false#87#3#1#0#Rear right motor fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0_DTCOnly", "2": "Fault_Lv1_PowerLimited", "3": "Fault_Lv2_Recoverable", "4": "Fault_Lv3_Not_Recoverable", "5": "Fault_Lv4_Crash"}#MS11-U#SM3
+RRMotAglRslvr#2#117#false#false#95#12#0.1#0.0#Rear right motor stator angle#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotActSfSt#2#117#false#false#111#3#1#0#Rear right motor actual safe state#0.0#0.0#0.0#{"0": "normal", "1": "0N.m", "2": "VDSS", "3": "SDSS", "4": "permanent ASC", "5": "permanent FW", "6": "Reserve", "7": "Invalid"}#MS11-U#SM3
+RRMotActCur#2#175#false#false#7#14#0.1#-819.1#Rear right motor actual current on DC bus  \nNegative means current flow from Rear right motor to HV battery  positive means current flow from HV battery to Rear right motor.#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoostModAvl#2#175#false#false#9#1#1#0#Rear right motor boost mode available#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MS11-U#SM3
+RRMotActDampgSts#2#175#false#false#8#1#1#0#Rear right motor active damping status.#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11-U#SM3
+RRMotOffsCalSts#2#175#false#false#34#2#1#0#Rear right motor Offset calibration status#0.0#0.0#0.0#{"0": "Normal", "1": "Still_Offset_Normal", "2": "Invalid"}#MS11-U#SM3
+RRMotDrtSts#2#175#false#false#32#1#1#0#Rear right motor derating Status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MS11-U#SM3
+RRMotStSigGrpChks#2#175#false#false#47#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotStSigGrpCntr#2#175#false#false#51#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotSfSpdMax#2#175#false#false#63#16#1.0#-32768.0#Rear right motor safe speed maximum#0.0#0.0#0.0#{"65535": "Invalid"}#MS11-U#SM3
+RRMotOilFlowEstimdBkp#2#175#false#false#79#10#0.05#0.0#Estimated oil flowrate for Rear right motor oil pump circuit.#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoostChrgnInpBkpSigGrpChks#2#175#false#false#103#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoostChrgnInpBkpSigGrpCntr#2#175#false#false#107#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoostChrgnInpCurBkp#2#175#false#false#119#14#0.1#0.0#Boost Charging Input current 桩端  backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoostChrgnInpUBkp#2#175#false#false#135#14#0.1#0.0#Boost Charging Input voltage 桩端  backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoostChrgnOutpPwrMaxBkp#2#175#false#false#151#11#0.1#0.0#Boost Charging output power max backup#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoostModNotAvlRsnBkp#2#175#false#false#167#4#1#0#Rear right motor boost mode not available reasons backup#0.0#0.0#0.0#{"0": "Available", "1": "Not_available_for_times"}#MS11-U#SM3
+RRMotBoosterFltLvlBkpSigGrpChks#2#175#false#false#175#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoosterFltLvlBkpSigGrpCntr#2#175#false#false#179#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotBoosterFltLvlIndcnBkp#2#175#false#false#191#3#1#0#Booster fault level indication#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0", "2": "Fault_Lv1", "3": "Fault_Lv2", "4": "Fault_Lv3", "5": "Fault_Lv4"}#MS11-U#SM3
+RRMotModStsSigGrpChks#2#175#false#false#207#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotModStsSigGrpCntr#2#175#false#false#211#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotModSts#2#175#false#false#223#5#1#0#Rear right motor mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Booster_discharge_finished", "12": "OffsetCal", "13": "Failure", "14": "After_Run", "15": "Buck_Control"}#MS11-U#SM3
+RRMotIdCmdIvt#2#175#false#false#231#16#0.1#-3276.8#Iq output command of Inverter\n控制器输出d轴电流#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotIqCmdIvt#2#175#false#false#247#16#0.1#-3276.8#Iq output command of Inverter\n控制器输出q轴电流#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotModDiffT#2#175#false#false#263#8#1#-40#Temperature difference motor ntc 电机NTC域温度模型观测差值#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTCoolWtr#2#175#false#false#271#8#1#-40#Cooling temperature Water \n冷却液温度 水温#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTDcCapIvt#2#175#false#false#279#8#1#-40#Temperature of DC Link capacitor\n控制器电容温度#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTGbx#2#175#false#false#287#8#1#-40#Temperature of EDS Gear Box\n齿轮箱温度#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTIvtDBC1#2#175#false#false#295#8#1#-40#1st Phase DBC temperature of Inverter\n控制器第1相dbc温度#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTIvtDBC2#2#175#false#false#303#8#1#-40#2nd Phase DBC temperature of Inverter\n控制器第2相dbc温度#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTIvtDBC3#2#175#false#false#311#8#1#-40#3rd Phase DBC temperature of Inverter\n控制器第3相dbc温度#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotTRtr#2#175#false#false#319#8#1#-40#Rotor temperature\n电机转子温度#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotUdCmdIvt#2#175#false#false#327#16#0.1#-3276.8#Ud output command of Inverter\n控制器输出d轴电压#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotUqCmdIvt#2#175#false#false#343#16#0.1#-3276.8#Ud output command of Inverter\n控制器输出q轴电压#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotActUSigGrpChks#2#175#false#false#359#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotActUSigGrpCntr#2#175#false#false#363#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotActU#2#175#false#false#375#14#0.1#0.0#Rear right motor actual voltage#0.0#0.0#0.0#{"16383": "Invalid"}#MS11-U#SM3
+RREDSPtFusionNodeAddress#2#1308#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11-U#SM3
+RREDSPtFusionActiveWakeup#2#1308#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11-U#SM3
+RREDSPtFusionRepeatMsgReq#2#1308#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11-U#SM3
+RREDSPtFusionRepeatMsgSt#2#1308#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11-U#SM3
+NMKeepAwkRsnRREDS#2#1308#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+VCUHvBattHeatCurLimbkp#2#484#false#false#7#14#0.1#0.0#Hv battery pulse heating current limit#0.0#0.0#0.0#{"16383": "Invalid"}#MS11-U#SM3
+RLMotIndHeatgBkpSigGrpChks#2#622#false#false#7#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotIndHeatgReqBkp#2#622#false#false#15#1#1#0#Rear left motor indirect heating request backup on PT fusion CAN.#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11-U#SM3
+RLMotIndHeatgBkpSigGrpCntr#2#622#false#false#11#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotIndHeatgPwrReqBkp#2#622#false#false#23#8#50#0#Rear left motor indirect heating power request backup on PT fusion CAN.#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotIndHeatgBkpSigGrpChks#2#622#false#false#31#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotIndHeatgReqBkp#2#622#false#false#39#1#1#0#Rear right motor indirect heating request backup on PT fusion CAN.#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11-U#SM3
+RRMotIndHeatgBkpSigGrpCntr#2#622#false#false#35#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotIndHeatgPwrReqBkp#2#622#false#false#47#8#50#0#Rear right motor indirect heating power request backup on PT fusion CAN.#0.0#0.0#0.0#null#MS11-U#SM3
+RLMotCooltCircFlowEstimdBkp#2#622#false#false#55#10#0.05#0.0#Estimated coolant flowrate for Rear left motor coolant circuit backup on PT fusion CAN.#0.0#0.0#0.0#null#MS11-U#SM3
+RRMotCooltCircFlowEstimdBkp#2#622#false#false#71#10#0.05#0.0#Estimated coolant flowrate for Rear right motor coolant circuit backup on PT fusion CAN.#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotIndHeatgBkpSigGrpChks#2#676#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotIndHeatgBkpSigGrpCntr#2#676#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotIndHeatgPwrReqBkp#2#676#false#false#23#8#50#0#Front motor indirect heating power request backup on PT fusion CAN.#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotIndHeatgReqBkp#2#676#false#false#31#1#1#0#Front motor indirect heating request backup on PT fusion CAN.#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11-U#SM3
+VCUBoosterCntctReqBkpSigGrpChks#2#676#false#false#39#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+VCUBoosterCntctReqBkp#2#676#false#false#47#1#1#0#Booster S7 Positive   S6 Negative   Request backup#0.0#0.0#0.0#{"0": "Open", "1": "Close"}#MS11-U#SM3
+VCUBoosterCntctReqBkpSigGrpCntr#2#676#false#false#43#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotCooltCircFlowEstimdBkp#2#676#false#false#55#10#0.05#0.0#Estimated coolant flowrate for front motor coolant circuit backup on PT fusion CAN.#0.0#0.0#0.0#null#MS11-U#SM3
+VCUBoosterOutpCntctReqBkp#2#676#false#false#61#1#1#0#Booster  S1  output contactor Request backup#0.0#0.0#0.0#{"0": "Open", "1": "Close"}#MS11-U#SM3
+VCUTrigEmRecordEvent#2#676#false#false#60#1#1#0#Drive condition for EM data upload is enable\nVCU判断电机数据上传工况满足#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#MS11-U#SM3
+ReMotIndHeatgBkpSigGrpChks#2#676#false#false#71#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotIndHeatgBkpSigGrpCntr#2#676#false#false#75#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotIndHeatgPwrReqBkp#2#676#false#false#87#8#50#0#Rear motor indirect heating power request backup on PT fusion CAN.#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotIndHeatgReqBkp#2#676#false#false#95#1#1#0#Rear motor indirect heating request backup on PT fusion CAN.#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11-U#SM3
+ReMotCooltCircFlowEstimdBkp#2#676#false#false#111#10#0.05#0.0#Estimated coolant flowrate for rear motor coolant circuit backup on PT fusion CAN.#0.0#0.0#0.0#null#MS11-U#SM3
+VCUReMotReqSigGrpChks#2#112#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+VCUReMotModReq#2#112#false#false#15#4#1#0#Rear motor mode request#0.0#0.0#0.0#{"0": "Standby", "1": "Offset_Calibration_Mode_1", "2": "Offset_Calibration_Mode_2", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_Discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Buck_Control"}#MS11-U#SM3
+VCUReMotReqSigGrpCntr#2#112#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+VCUReMotOverBoostEna#2#112#false#false#24#1#1#0#Rear motor over boost enable#0.0#0.0#0.0#{"0": "off", "1": "on"}#MS11-U#SM3
+VCUReMotSpdReq#2#112#false#false#39#16#1#-32767#Rear motor speed request  at motor output shaft#0.0#0.0#0.0#null#MS11-U#SM3
+VCUFrntMotReqSigGrpChks#2#112#false#false#79#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+VCUFrntMotModReq#2#112#false#false#87#4#1#0#Front motor mode request#0.0#0.0#0.0#{"0": "Standby", "1": "Offset_Calibration_Mode_1", "2": "Offset_Calibration_Mode_2", "3": "Torque_Control", "4": "Speed_Control", "5": "Reserved", "6": "Reserved", "7": "Reserved", "8": "Reserved", "9": "Active_Discharge"}#MS11-U#SM3
+VCUFrntMotReqSigGrpCntr#2#112#false#false#83#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+VCUFrntMotOverBoostEna#2#112#false#false#96#1#1#0#Front motor over boost enable#0.0#0.0#0.0#{"0": "off", "1": "on"}#MS11-U#SM3
+VCUFrntMotSpdReq#2#112#false#false#111#16#1#-32767#Front motor speed request  at motor output shaft#0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTqReqSigGrpChks#2#112#false#false#127#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+FrntMotTqReqSigGrpCntr#2#112#false#false#131#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+VCUFrntMotTqReq#2#112#false#false#143#15#0.1#-1638.3#Front motor torque request#0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTqReqSigGrpChks#2#112#false#false#159#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+ReMotTqReqSigGrpCntr#2#112#false#false#163#4#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+VCUReMotTqReq#2#112#false#false#175#15#0.1#-1638.3#Rear motor torque request#0.0#0.0#0.0#null#MS11-U#SM3
+VCUFrntMotDampgModReq#2#112#false#false#191#2#1#0#Front motor damping mode request#0.0#0.0#0.0#{"0": "No_req", "1": "Low_damping", "2": "Medium_damping", "3": "High_damping"}#MS11-U#SM3
+VCUReMotDampgModReq#2#112#false#false#189#2#1#0#Rear motor damping mode request#0.0#0.0#0.0#{"0": "No_req", "1": "Low_damping", "2": "Medium_damping", "3": "High_damping"}#MS11-U#SM3
+VCURLMotTqReqSigGrpChks#2#119#false#false#7#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+VCURLMotTqReqSigGrpCntr#2#119#false#false#11#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+VCURLMotTqReq#2#119#false#false#23#15#0.1#-1638.3#Rear left motor torque request#0.0#0.0#0.0#null#MS11-U#SM3
+VCURRMotTqReqSigGrpChks#2#119#false#false#39#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+VCURRMotTqReqSigGrpCntr#2#119#false#false#43#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+VCURRMotTqReq#2#119#false#false#55#15#0.1#-1638.3#Rear right motor torque request#0.0#0.0#0.0#null#MS11-U#SM3
+VCURLMotReqSigGrpChks#2#119#false#false#71#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+VCURLMotModReq#2#119#false#false#79#4#1#0#Rear left motor mode request#0.0#0.0#0.0#{"0": "Standby", "1": "Offset_Calibration_Mode_1", "2": "Offset_Calibration_Mode_2", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_Discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Buck_Control"}#MS11-U#SM3
+VCURLMotReqSigGrpCntr#2#119#false#false#75#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+VCURLMotSpdReq#2#119#false#false#87#16#1#-32767#Rear left motor speed request  at motor output shaft#0.0#0.0#0.0#null#MS11-U#SM3
+VCURLMotOverBoostEna#2#119#false#false#103#1#1#0#Rear left motor over boost enable#0.0#0.0#0.0#{"0": "off", "1": "on"}#MS11-U#SM3
+VCURLMotSftyStReq#2#119#false#false#102#3#1#0#Rear left Motor Safety State Requst#0.0#0.0#0.0#{"0": "normal", "1": "0N.m", "2": "VDSS", "3": "SDSS", "4": "permanent ASC", "5": "permanent FW", "6": "Reserve", "7": "Invalid"}#MS11-U#SM3
+VCURRMotReqSigGrpChks#2#119#false#false#111#8#1#0#Signal group Checksum for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+VCURRMotModReq#2#119#false#false#119#4#1#0#Rear right motor mode request#0.0#0.0#0.0#{"0": "Standby", "1": "Offset_Calibration_Mode_1", "2": "Offset_Calibration_Mode_2", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_Discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Buck_Control"}#MS11-U#SM3
+VCURRMotReqSigGrpCntr#2#119#false#false#115#4#1#0#Signal group Counter for E2E#0.0#0.0#0.0#null#MS11-U#SM3
+VCURRMotSpdReq#2#119#false#false#127#16#1#-32767#Rear right motor speed request  at motor output shaft#0.0#0.0#0.0#null#MS11-U#SM3
+VCURRMotOverBoostEna#2#119#false#false#143#1#1#0#Rear right motor over boost enable#0.0#0.0#0.0#{"0": "off", "1": "on"}#MS11-U#SM3
+VCURRMotSftyStReq#2#119#false#false#142#3#1#0#Rear Right Motor Safety State Requst#0.0#0.0#0.0#{"0": "normal", "1": "0N.m", "2": "VDSS", "3": "SDSS", "4": "permanent ASC", "5": "permanent FW", "6": "Reserve", "7": "Invalid"}#MS11-U#SM3
+VCURLMotDampgModReq#2#119#false#false#151#2#1#0#Rear left motor damping mode request#0.0#0.0#0.0#{"0": "No_req", "1": "Low_damping", "2": "Medium_damping", "3": "High_damping"}#MS11-U#SM3
+VCURRMotDampgModReq#2#119#false#false#149#2#1#0#Rear right motor damping mode request#0.0#0.0#0.0#{"0": "No_req", "1": "Low_damping", "2": "Medium_damping", "3": "High_damping"}#MS11-U#SM3
+VCCDPtFusionNodeAddress#2#1306#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+VCCDPTFusionActiveWakeup#2#1306#false#false#12#1#1#0##0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11-U#SM3
+VCCDPTFusionRepeatMsgReq#2#1306#false#false#8#1#1#0##0.0#0.0#0.0#{"0": "not_requested", "1": "requested"}#MS11-U#SM3
+UDB23VCCD#2#1306#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB22VCCD#2#1306#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB21VCCD#2#1306#false#false#21#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB20VCCD#2#1306#false#false#20#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB19VCCD#2#1306#false#false#19#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB18VCCD#2#1306#false#false#18#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB17VCCD#2#1306#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+VCCDPtFusionRepeatMsgSt#2#1306#false#false#16#1#1#0##0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11-U#SM3
+UDB31VCCD#2#1306#false#false#31#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB30VCCD#2#1306#false#false#30#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB29VCCD#2#1306#false#false#29#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB28VCCD#2#1306#false#false#28#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB27VCCD#2#1306#false#false#27#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB26VCCD#2#1306#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB25VCCD#2#1306#false#false#25#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB24VCCD#2#1306#false#false#24#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB39VCCD#2#1306#false#false#39#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB38VCCD#2#1306#false#false#38#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB37VCCD#2#1306#false#false#37#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB36VCCD#2#1306#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB35VCCD#2#1306#false#false#35#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB34VCCD#2#1306#false#false#34#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB33VCCD#2#1306#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB32VCCD#2#1306#false#false#32#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB47VCCD#2#1306#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB46VCCD#2#1306#false#false#46#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB45VCCD#2#1306#false#false#45#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB44VCCD#2#1306#false#false#44#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB43VCCD#2#1306#false#false#43#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB42VCCD#2#1306#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB41VCCD#2#1306#false#false#41#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB40VCCD#2#1306#false#false#40#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB53VCCD#2#1306#false#false#53#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB52VCCD#2#1306#false#false#52#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB51VCCD#2#1306#false#false#51#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB50VCCD#2#1306#false#false#50#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+UDB49VCCD#2#1306#false#false#49#1#1#0##0.0#0.0#0.0#null#MS11-U#SM3
+NMKeepAwkRsnVCCD#2#1306#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11-U#SM3

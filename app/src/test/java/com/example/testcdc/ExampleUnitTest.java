@@ -24,4 +24,9 @@ public class ExampleUnitTest {
         System.out.println(signal);
     }
 
+    public void msgInfTest(){
+
+
+
+    }
 }

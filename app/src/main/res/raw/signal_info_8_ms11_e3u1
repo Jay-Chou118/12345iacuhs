@@ -1,0 +1,374 @@
+FrntMotHVILStsBkpSigGrpChks#8#323#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotHVILStsBkp#8#323#false#false#13#2#1#0#Front Motor inter lock loop status backup#0.0#0.0#0.0#{"0": "Close", "1": "Open", "2": "Not_determined"}#MS11#E3U1
+FrntMotHVILStsBkpSigGrpCntr#8#323#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotPtChVldBkpSigGrpChks#8#323#false#false#39#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotPtChVldBkpSigGrpCntr#8#323#false#false#43#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotPtChVldBkp#8#323#false#false#48#1#1#0#Front Motor Powertrains valid Channel backup#0.0#0.0#0.0#{"0": "PT_fusion_CANFD_valid", "1": "PT_CANFD_valid"}#MS11#E3U1
+FrntMotIndHeatgActPwrBkp#8#466#false#false#7#7#50#0#Front motor indirect heating actual power backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotIndHeatgMaxPwrCpBkp#8#466#false#false#15#7#50#0#Front motor indirect heating maximum power capacity backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltInfoActv1Bkp#8#672#false#false#7#9#1#0#fault information singal group  1  front motor fault information active backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltInfoActv2Bkp#8#672#false#false#23#9#1#0#fault information singal group  2  front motor fault information active backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltInfoActv3Bkp#8#672#false#false#39#9#1#0#fault information singal group  3  front motor fault information active backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltInfoHist1Bkp#8#672#false#false#55#9#1#0#fault information singal group  1  front motor fault information history backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltInfoHist2Bkp#8#672#false#false#71#9#1#0#fault information singal group  2  front motor fault information history backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltInfoHist3Bkp#8#672#false#false#87#9#1#0#fault information singal group  3  front motor fault information history backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotOverSpdTimeoutBkp#8#672#false#false#103#1#1#0#Front Motor Over speed timeout backup#0.0#0.0#0.0#{"0": "no_timeout", "1": "timeout"}#MS11#E3U1
+FrntMotIndHeatgStsBkp#8#673#false#false#0#1#1#0#Front motor indirect heating status backup#0.0#0.0#0.0#{"0": "off", "1": "on"}#MS11#E3U1
+FrntMotIvtTBkp#8#673#false#false#15#8#1#-40#Front motor inverter temperature backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotMotTBkp#8#673#false#false#23#8#1#-40#Front motor motor temperature backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCooltFlowReqBkp#8#673#false#false#39#6#0.25#0.0#Front motor coolant flow request backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCooltTBkp#8#673#false#false#41#8#1#-40#Front motor coolant temperature backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotOverSpdTimesLeBkp#8#1017#false#false#7#13#1#0#Front Motor Over Speed times left backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotOverBoostTimesLeBkp#8#1017#false#false#23#13#1#0#Front Motor Over boost times left backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotSigGrpChks#8#113#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotSigGrpCntr#8#113#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotActTq#8#113#false#false#23#15#0.1#-1638.3#Front motor actual torque  at motor output axle .#0.0#0.0#0.0#{"32767": "Invalid"}#MS11#E3U1
+FrntMotActSpd#8#113#false#false#39#16#1.0#-32768.0#Front motor actual speed#0.0#0.0#0.0#{"65535": "Invalid"}#MS11#E3U1
+FrntMotMaxDynTqCp#8#113#false#false#55#10#1#0#Front motor maximum dynamic torque capacity at motor output axle .#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotMinDynTqCp#8#113#false#false#71#10#1#-1023#Front motor minimum dynamic torque capacity at motor output axle .#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotLftRemaPwrModl#8#154#false#false#7#16#0.002#0.0#Power module remaining lifetime\n������妯″����╀��瀵垮��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotMotSpdMax#8#154#false#false#23#16#1#-32768#Max e motor speed during driving cycle\n椹鹃┒寰���������垫�鸿浆������澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotPwrGenMax#8#154#false#false#39#16#0.1#-1000.0#Max calculated generating power during driving cycle\n椹鹃┒寰������������靛��������澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotPwrMotMax#8#154#false#false#55#16#0.1#0.0#Min Electric power during driving cycle\n椹鹃┒寰���������靛�ㄥ��������澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTAvrgDiodeMax#8#154#false#false#71#8#1#-40#Max average temperature of diode during driving cycle\n椹鹃┒寰�������浜����绠″钩���娓╁害���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTAvrgDiodeMin#8#154#false#false#79#8#1#-40#Min average temperature of mosfet during driving cycle\n椹鹃┒寰�������浜����绠″钩���娓╁害���灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTAvrgMosMax#8#154#false#false#87#8#1#-40#Max average temperature of mosfet during driving cycle\n椹鹃┒寰���������朵��绠″钩���娓╁害���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTAvrgMosMin#8#154#false#false#95#8#1#-40#Min average temperature of mosfet during driving cycle\n椹鹃┒寰���������朵��绠″钩���娓╁害���灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTDCLkCapMax#8#154#false#false#103#8#1#-40#Max temperature of DC Link capacitor during driving cycle\n椹鹃┒寰���������靛�规俯搴����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTDCLkCapMin#8#154#false#false#111#8#1#-40#Min temperature of DC Link capacitor during driving cycle\n椹鹃┒寰���������靛�规俯搴����灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTGbxMax#8#154#false#false#119#8#1#-40#Max temperature of gear box during driving cycle\n椹鹃┒寰�������榻胯疆绠辨俯搴����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTGbxMin#8#154#false#false#127#8#1#-40#Min temperature of gear box during driving cycle\n椹鹃┒寰�������榻胯疆绠辨俯搴����灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTqCalcdMax#8#154#false#false#135#16#0.1#-3276.8#Max calculated torque during driving cycle\n椹鹃┒寰���������电�������╂��澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTqCalcdMin#8#154#false#false#151#16#0.1#-3276.8#Min calculated torque during driving cycle\n椹鹃┒寰���������电�������╂��灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTRiseDiodeMax#8#154#false#false#167#8#1#-40#Max temperature rise of diode during diriving cycle\n椹鹃┒寰�������浜����绠℃��澶ф俯���#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTRiseMosMax#8#154#false#false#175#8#1#-40#Max temperature rise of mosfet during driving cycle\n椹鹃┒寰���������朵��绠℃��澶ф俯���#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotUDCLkMax#8#154#false#false#183#16#0.1#0.0#Max DC Link voltage during driving cycle\n椹鹃┒寰���������存��姣�绾跨�靛�����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotUDCLkMin#8#154#false#false#199#16#0.1#0.0#Min DC Link voltage during driving cycle\n椹鹃┒寰���������存��姣�绾跨�靛�����灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrAglDeFlt#8#155#false#false#7#8#1#0#Counter regarding over upper threshold of Angle mornitoring\n瑙�搴������у��宸�瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrStatSnsrOverFlt#8#155#false#false#31#8#1#0#Counter regarding over upper threshold of stator sensor temperature\n��垫�烘俯搴�浼������ㄨ��涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrTqDeL1L2Flt#8#155#false#false#39#8#1#0#Counter regarding over upper threshold of torque monitoring\n杞���╀及绠����宸� L1 VS L2 瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCurDCLkMax#8#155#false#false#55#16#0.1#-3276.8#Max DC Link current during driving cycle\n椹鹃┒寰���������存��姣�绾跨�垫�����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCurDCLkMin#8#155#false#false#71#16#0.1#-3276.8#Min DC Link current during driving cycle\n椹鹃┒寰���������存��姣�绾跨�垫�����灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotLftRemaDCLk#8#155#false#false#95#16#0.002#0.0#DC Link capacitor remaining lifetime\n��靛�瑰�╀��瀵垮��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTCoolOilMax#8#155#false#false#119#8#1#-40#Max temperature of cooling water during driving cycle\n椹鹃┒寰���������峰�存补娓╁害���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTCoolOilMin#8#155#false#false#127#8#1#-40#Min temperature of cooling wator during driving cycle\n椹鹃┒寰���������峰�存补娓╁害���灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTCoolWtrMax#8#155#false#false#143#8#1#-40#Max temperature of cooling water during driving cycle\n椹鹃┒寰���������峰�存按娓╁害���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTCoolWtrMin#8#155#false#false#151#8#1#-40#Min temperature of cooling wator during driving cycle\n椹鹃┒寰���������峰�存按娓╁害���灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTqDeCmdL2Max#8#155#false#false#159#16#0.1#-3276.8#Max torque deviation between request torque and L2 torque\n杞���╃����у��宸� 璇锋�� VS 瀹���� ���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTqDeCmdL2OppstMax#8#155#false#false#175#16#0.1#-3276.8#Max opposite torque deviation between request torque and L2 torque\n杞���╁��������宸� 璇锋�� VS 瀹���� ���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTqDeL1L2Max#8#155#false#false#191#16#0.1#-3276.8#Max deviation between torque calculation between L1 and L2 software\n杞���╀及绠����宸� L1 VS L2 ���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTRtrMax#8#155#false#false#207#8#1#-40#Max temperature of rator during driving cycle\n椹鹃┒寰���������垫�鸿浆瀛�娓╁害���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTRtrMin#8#155#false#false#215#8#1#-40#Min temperature of rator during driving cycle\n椹鹃┒寰���������垫�鸿浆瀛�娓╁害���灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTStatMax#8#155#false#false#223#8#1#-40#Max temperature of stator during driving cycle\n椹鹃┒寰���������垫�哄��瀛�娓╁害���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTStatMin#8#155#false#false#231#8#1#-40#Min temperature of stator during driving cycle\n椹鹃┒寰���������垫�哄��瀛�娓╁害���灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTStatSnsrMax#8#155#false#false#239#8#1#-40#Max stator sensor temerature\n��垫�烘俯搴�浼������ㄦ��澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotActCur#8#161#false#false#7#14#0.1#-819.1#Front motor actual current on DC bus  \nNegative means current flow from front motor to HV battery  positive means current flow from HV battery to front motor.#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotBoostModAvl#8#161#false#false#9#1#1#0#Front motor boost mode available#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MS11#E3U1
+FrntMotActDampgSts#8#161#false#false#8#1#1#0#Front motor active damping status.#0.0#0.0#0.0#{"0": "off", "1": "on"}#MS11#E3U1
+FrntMotActU#8#161#false#false#23#14#0.1#0.0#Front motor actual voltage#0.0#0.0#0.0#{"16383": "Invalid"}#MS11#E3U1
+FrntMotDrtSts#8#161#false#false#32#1#1#0#Front motor derating status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MS11#E3U1
+FrntMotFltLvlIndcnSigGrpChks#8#161#false#false#55#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltLvlIndcnSigGrpCntr#8#161#false#false#59#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotSfSpdMax#8#161#false#false#71#16#1#-32768#Front motor safe speed maximum#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltLvlIndcn#8#161#false#false#87#3#1#0#Front motor fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0_DTCOnly", "2": "Fault_Lv1_PowerLimited", "3": "Fault_Lv2_Recoverable", "4": "Fault_Lv3_Not_recoverable", "5": "Fault_Lv4_Crash"}#MS11#E3U1
+FrntMotModStsSigGrpChks#8#161#false#false#103#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotModStsSigGrpCntr#8#161#false#false#107#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotModSts#8#161#false#false#119#5#1#0#Front motor mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "9": "activeDischarge", "12": "OffsetCal", "13": "Failure", "14": "After_Run"}#MS11#E3U1
+FrntMotBoostModNotAvlRsnBkp#8#161#false#false#127#4#1#0#Front motor boost mode not available reasons backup#0.0#0.0#0.0#{"0": "Available", "1": "Not_available_for_times"}#MS11#E3U1
+FrntMotIdCmdIvt#8#165#false#false#7#16#0.1#-3276.8#Iq output command of Inverter\n��у�跺�ㄨ�����d杞寸�垫��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotIqCmdIvt#8#165#false#false#23#16#0.1#-3276.8#Iq output command of Inverter\n��у�跺�ㄨ�����q杞寸�垫��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotModDiffT#8#165#false#false#39#8#1#-40#Temperature difference motor ntc ��垫��NTC涓�娓╁害妯″��瑙�娴�宸����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTCoolOil#8#165#false#false#47#8#1#-40#Cooling temperature Oil \n��峰�存恫娓╁害 娌规俯#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTCoolWtr#8#165#false#false#55#8#1#-40#Cooling temperature Water \n��峰�存恫娓╁害 姘存俯#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTDcCapIvt#8#165#false#false#63#8#1#-40#Temperature of DC Link capacitor\n��у�跺�ㄧ�靛�规俯搴�#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTGbx#8#165#false#false#71#8#1#-40#Temperature of EDS Gear Box\n榻胯疆绠辨俯搴�#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTIvtDBC1#8#165#false#false#79#8#1#-40#1st Phase DBC temperature of Inverter\n��у�跺�ㄧ��1���dbc娓╁害#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTIvtDBC2#8#165#false#false#87#8#1#-40#2nd Phase DBC temperature of Inverter\n��у�跺�ㄧ��2���dbc娓╁害#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTIvtDBC3#8#165#false#false#95#8#1#-40#3rd Phase DBC temperature of Inverter\n��у�跺�ㄧ��3���dbc娓╁害#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTRtr#8#165#false#false#103#8#1#-40#Rotor temperature\n��垫�鸿浆瀛�娓╁害#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotUdCmdIvt#8#165#false#false#111#16#0.1#-3276.8#Ud output command of Inverter\n��у�跺�ㄨ�����d杞寸�靛��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotUqCmdIvt#8#165#false#false#127#16#0.1#-3276.8#Ud output command of Inverter\n��у�跺�ㄨ�����q杞寸�靛��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotAglDeMax#8#170#false#false#7#16#0.1#0.0#Max deviation of angle monitoring between L1 and L2 software\n瑙�搴������у��宸� L1 VS L2 ���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrCANCtrlrFltMax#8#170#false#false#31#8#1#0#Max Fault counter of CAN controller\nCAN��у�跺�ㄨ��璁℃�板�ㄦ��澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrMosSnsrOverFlt#8#170#false#false#39#8#1#0#Counter regarding over upper threshold of mosfet sensor temperature\nMosfet娓╁害浼������ㄨ��涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrMosSnsrUnderFlt#8#170#false#false#47#8#1#0#Counter regarding over lower threshold of mosfet sensor temperature\nMosfet娓╁害浼������ㄨ��涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrStatSnsrUnderFlt#8#170#false#false#55#8#1#0#Counter regarding over lower threshold of stator sensor temperature\n��垫�烘俯搴�浼������ㄨ��涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrUDCLkDe#8#170#false#false#63#8#1#0#��靛�����宸�瓒������兼�℃�� Debounce涔���� ������浣�寰������ㄦ�����绱�璁″��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrUKl30OverFlt#8#170#false#false#71#8#1#0#Counter regarding over upper threshold of KL30 voltage\nKL30��靛��瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrUKl30UnderFlt#8#170#false#false#79#8#1#0#Counter regarding over lower threshold of KL30 voltage\nKL30��靛��瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrURslvrSqurSumOverFlt#8#170#false#false#87#8#1#0#Counter regarding over max sum of squares of resolver voltage \n���杞���������ㄥ钩��瑰��瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrURslvrSqurSumUnderFlt#8#170#false#false#95#8#1#0#Counter regarding under min sum of squares of resolver voltage \n���杞���������ㄥ钩��瑰��瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTMosSnsrMax#8#170#false#false#103#8#1#-40#Max Mosfet sensor temperature\nMosfet娓╁害浼������ㄦ��澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTMosSnsrMin#8#170#false#false#111#8#1#-40#Min Mosfet sensor temperature\nMosfet娓╁害浼������ㄦ��灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTStatSnsrMin#8#170#false#false#119#8#1#-40#Min stator sensor temerature\n��烘俯搴�浼������ㄦ��灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotUDCLkDeMax#8#170#false#false#127#16#0.1#0.0#Max deviation between DC link voltage in L1 and L2 software\n��靛�����宸� L1 VS L2 ���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotUKl30Max#8#170#false#false#143#16#0.1#0.0#Max KL30 voltage\nKL30��靛�����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotURslvrSqurSumMax#8#170#false#false#159#16#0.01#0.0#Max sum of squares of resolver voltage\n���杞���������ㄥ钩��瑰�����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotURslvrSqurSumMin#8#170#false#false#175#16#0.01#0.0#Min sum of squares of resolver voltage\n���杞���������ㄥ钩��瑰�����灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrRollgDeFltMax#8#170#false#false#191#8#1#0#Max deviation of rolling counter of E2E frames\nE2E��ユ��Rolling Counter���宸����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrRollgFlt#8#170#false#false#199#8#1#0#Fault counter of rolling counter of E2E frames\nE2E��ユ��Rolling Counter���璇�璁℃�板��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrTqDeCmdL2Flt#8#170#false#false#207#8#1#0#Counter of over threshold of deviation between request torque and L2 torque\n杞���╃����у��宸� 璇锋�� VS 瀹���� 瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrTqDeCmdL2OppstFlt#8#170#false#false#215#8#1#0#Counter of over threshold of opposite torque deviation between request torque and L2 torque\n杞���╁��������宸� 璇锋�� VS 瀹���� 瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotUKl30Min#8#170#false#false#223#16#0.1#0.0#Min KL30 voltage\nKL30��靛�����灏����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotAglOffsRslvr#8#171#false#false#7#12#0.1#0.0#Resolver offset angle\n������offset瑙�搴�#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotAglOffsSlipTst#8#171#false#false#23#12#0.1#0.0#resolver offset angle in slip mode\n������婊�琛�瑙����瑙�搴�#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrCurThrPhaSumFlt#8#171#false#false#39#8#1#0#Counter of fault regarding sumary of three phase current\n涓���哥�垫�����瓒������兼�℃�� Debounce涔���� ������浣�寰������ㄦ�����绱�璁″��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrGateDrvrFltHwRaw#8#171#false#false#47#8#1#0#Gate driver fault counter Raw fault counter without debounce \nGate Driver������椹卞�ㄦ�����绱�璁¤�℃�板�� 璇�������濮�瑙����浜�浠� 涓�甯�璇����debounce#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrMCURstUFltHwRaw#8#171#false#false#55#8#1#0#MCU Reset counter\nMCU Reset绱�璁¤�℃�板��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrOverCurFltHwRaw#8#171#false#false#63#8#1#0#Hardware over current fault counter Raw fault counter without debounce \n纭�浠惰��娴�������绱�璁¤�℃�板�� 璇�������濮�瑙����浜�浠� 涓�甯�璇����debounce#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrOverUFltHwRaw#8#171#false#false#71#8#1#0#Hardware over voltage fault counter Raw fault counter without debounce \n纭�浠惰�����������绱�璁¤�℃�板�� 璇�������濮�瑙����浜�浠� 涓�甯�璇����debounce#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrSOPFltHwRaw#8#171#false#false#79#8#1#0#Shut off path fault counter Raw fault counter withour debounce \n��虫��璺�寰�妫�娴�������绱�璁¤�℃�板�� 璇�������濮�瑙����浜�浠� 涓�甯�璇����debounce#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrThrPhaCurZeroShift#8#171#false#false#87#8#1#0#涓���哥�垫����堕��瓒������兼�℃�� Debounce涔���� ������浣�寰������ㄦ�����绱�璁″��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCntrWdgFltHwRaw#8#171#false#false#95#8#1#0#MCU Wdg fault counter Raw fault counter without debounce \nMCU Wdg������绱�璁¤�℃�板�� 璇�������濮�瑙����浜�浠� 涓�甯�璇����debounce#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCurOffsSelfLrn1#8#171#false#false#103#8#1#-128#self learned offset value for current sensor ph1\n绗�涓���哥�垫��浼������ㄨ��瀛�涔����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCurOffsSelfLrn2#8#171#false#false#111#8#1#-128#self learned offset value for current sensor ph2\n绗�浜���哥�垫��浼������ㄨ��瀛�涔����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCurOffsSelfLrn3#8#171#false#false#119#8#1#-128#self learned offset value for current sensor ph3\n绗�涓���哥�垫��浼������ㄨ��瀛�涔����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCurThrPhaSumDeMax#8#171#false#false#127#16#0.1#-3276.8#Max deviation of summary of three phase current\n涓���哥�垫��������澶у��宸����#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotCurThrPhaZeroShiftMax#8#171#false#false#143#16#0.1#-3276.8#Max zero shift of three phase current\n涓���哥�垫����堕�����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTCoolOilIni#8#171#false#false#159#8#1#-40#Initial cooling oil temperature when HV is setup\n��峰�存恫���濮�娓╁害 娌规俯 楂����涓���靛�������跺��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTCoolWtrIni#8#171#false#false#167#8#1#-40#Initial cooling water temperature when HV is setup\n��峰�存恫���濮�娓╁害 姘存俯 楂����涓���靛�������跺��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTIvtDBCIni1#8#171#false#false#175#8#1#-40#1st Phase DBC initial itemperature of Inverter when HV is setup\n��у�跺�ㄧ��1���dbc���濮�娓╁害 楂����涓���靛�������跺��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTIvtDBCIni2#8#171#false#false#183#8#1#-40#2nd Phase DBC initial itemperature of Inverter when HV is setup\n��у�跺�ㄧ��2���dbc���濮�娓╁害 楂����涓���靛�������跺��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTIvtDBCIni3#8#171#false#false#191#8#1#-40#3rd Phase DBC initial itemperature of Inverter when HV is setup\n��у�跺�ㄧ��3���dbc���濮�娓╁害 楂����涓���靛�������跺��#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTStatIni#8#171#false#false#199#8#1#-40#Initial stator temperature when HV is setup\n��垫�哄��瀛����濮�娓╁害 楂����涓���靛�������跺��#0.0#0.0#0.0#null#MS11#E3U1
+FrntstAglOffsSlipTst#8#171#false#false#207#1#1#0#resolver offset angle in slip mode state\n������婊�琛�瑙����瑙�搴���舵��#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+FEDSPtFusionCanfdNodeAddress#8#1303#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#E3U1
+FEDSPtFusionCanfdActiveWakeup#8#1303#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3U1
+FEDSPtFusionCanfdRepeatMsgReq#8#1303#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3U1
+FEDSPtFusionCanfdRepeatMsgSt#8#1303#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3U1
+BoostHVILStsBkpSigGrpChks#8#307#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoostHVILStsBkp#8#307#false#false#13#2#1#0#Booster inter lock loop status backup#0.0#0.0#0.0#{"0": "Close", "1": "Open", "2": "Not_determined"}#MS11#E3U1
+BoostHVILStsBkpSigGrpCntr#8#307#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotPtChVldBkpSigGrpChks#8#307#false#false#39#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotPtChVldBkpSigGrpCntr#8#307#false#false#43#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotPtChVldBkp#8#307#false#false#48#1#1#0#Rear Motor Powertrains valid Channel backup#0.0#0.0#0.0#{"0": "PT_fusion_CANFD_valid", "1": "PT_CANFD_valid"}#MS11#E3U1
+ReMotIndHeatgActPwrBkp#8#467#false#false#6#7#50#0#Rear motor indirect heating actual power backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotIndHeatgMaxPwrCpBkp#8#467#false#false#14#7#50#0#Rear motor indirect heating maximum power capacity backup#0.0#0.0#0.0#null#MS11#E3U1
+BoosterCntctStsBkpSigGrpChks#8#467#false#false#23#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoosterCntctStsBkpSigGrpCntr#8#467#false#false#27#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoosterS7CntctStsBkp#8#467#false#false#39#2#1#0#booster S7 positive  contactor status backup#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3U1
+BoosterS6CntctStsBkp#8#467#false#false#37#2#1#0#booster S6 negative  contactor status backup#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3U1
+BoosterS1CntctStsBkp#8#467#false#false#35#2#1#0#booster  output  S1 contactor status backup#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3U1
+BoostChrgnOutpBkpSigGrpChks#8#674#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnOutpBkpSigGrpCntr#8#674#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnOutpCurBkp#8#674#false#false#23#14#0.1#0.0#Boost charging output current ��垫��绔�  backup#0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnOutpUBkp#8#674#false#false#39#14#0.1#0.0#Boost charging output voltage ��垫��绔�  backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotIvtTBkp#8#674#false#false#55#8#1#-40#Rear motor inverter temperature backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotMotTBkp#8#674#false#false#63#8#1#-40#Rear motor motor temperature backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCooltTBkp#8#674#false#false#71#8#1#-40#Rear motor coolant temperature backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCooltFlowReqBkp#8#674#false#false#79#6#0.25#0.0#Rear motor coolant flow request backup#0.0#0.0#0.0#null#MS11#E3U1
+BoosterInducerTBkp#8#674#false#false#119#8#1#-40#Booster Inducer temperature backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotIndHeatgStsBkp#8#674#false#false#127#1#1#0#Rear motor indirect heating status backup#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#E3U1
+ReMotOverSpdTimeoutBkp#8#675#false#false#14#1#1#0#Rear Motor Over speed timeout backup#0.0#0.0#0.0#{"0": "no_timeout", "1": "timeout"}#MS11#E3U1
+ReMotFltInfoActv1Bkp#8#675#false#false#23#9#1#0#fault information singal group  1  Rear motor fault information active backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotFltInfoActv2Bkp#8#675#false#false#39#9#1#0#fault information singal group  2  Rear motor fault information active backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotFltInfoActv3Bkp#8#675#false#false#55#9#1#0#fault information singal group  3  Rear motor fault information active backup#0.0#0.0#0.0#null#MS11#E3U1
+BoosterS1CntctFltBkp#8#675#false#false#71#2#1#0#Booster S1 contactor fault backup#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11#E3U1
+BoosterS6CntctFltBkp#8#675#false#false#69#2#1#0#Booster S6 contactor fault backup#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11#E3U1
+BoosterS7CntctFltBkp#8#675#false#false#67#2#1#0#Booster S7 contactor fault backup#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11#E3U1
+ReMotFltInfoHist1Bkp#8#675#false#false#79#9#1#0#fault information singal group  1  Rear motor fault information history backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotFltInfoHist2Bkp#8#675#false#false#95#9#1#0#fault information singal group  2  Rear motor fault information history backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotFltInfoHist3Bkp#8#675#false#false#111#9#1#0#fault information singal group  3  Rear motor fault information history backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotOverBoostTimesLeBkp#8#1015#false#false#7#13#1#0#Rear Motor Over boost times left backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotOverSpdTimesLeBkp#8#1015#false#false#23#13#1#0#Rear Motor Over speed times left backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotSigGrpChks#8#114#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotSigGrpCntr#8#114#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotActTq#8#114#false#false#23#15#0.1#-1638.3#Rear motor actual torque  at motor output axle .#0.0#0.0#0.0#{"32767": "Invalid"}#MS11#E3U1
+ReMotActSpd#8#114#false#false#39#16#1#-32768#Rear motor actual speed#0.0#0.0#0.0#null#MS11#E3U1
+ReMotMaxDynTqCp#8#114#false#false#55#10#1#0#Rear motor maximum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MS11#E3U1
+ReMotMinDynTqCp#8#114#false#false#71#10#1#-1023#Rear motor minimum dynamic torque capacity  at motor output axle .#0.0#0.0#0.0#null#MS11#E3U1
+ReMotIdCmdIvt#8#150#false#false#7#16#0.1#-3276.8#Iq output command of Inverter\n��у�跺�ㄨ�����d杞寸�垫��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotIqCmdIvt#8#150#false#false#23#16#0.1#-3276.8#Iq output command of Inverter\n��у�跺�ㄨ�����q杞寸�垫��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotModDiffT#8#150#false#false#39#8#1#-40#Temperature difference motor ntc ��垫��NTC���娓╁害妯″��瑙�娴�宸����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTCoolOil#8#150#false#false#47#8#1#-40#Cooling temperature Oil \n��峰�存恫娓╁害 娌规俯#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTCoolWtr#8#150#false#false#55#8#1#-40#Cooling temperature Water \n��峰�存恫娓╁害 姘存俯#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTDcCapIvt#8#150#false#false#63#8#1#-40#Temperature of DC Link capacitor\n��у�跺�ㄧ�靛�规俯搴�#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTGbx#8#150#false#false#71#8#1#-40#Temperature of EDS Gear Box\n榻胯疆绠辨俯搴�#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTIvtDBC1#8#150#false#false#79#8#1#-40#1st Phase DBC temperature of Inverter\n��у�跺�ㄧ��1���dbc娓╁害#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTIvtDBC2#8#150#false#false#87#8#1#-40#2nd Phase DBC temperature of Inverter\n��у�跺�ㄧ��2���dbc娓╁害#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTIvtDBC3#8#150#false#false#95#8#1#-40#3rd Phase DBC temperature of Inverter\n��у�跺�ㄧ��3���dbc娓╁害#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTRtr#8#150#false#false#103#8#1#-40#Rotor temperature\n��垫�鸿浆瀛�娓╁害#0.0#0.0#0.0#null#MS11#E3U1
+ReMotUdCmdIvt#8#150#false#false#111#16#0.1#-3276.8#Ud output command of Inverter\n��у�跺�ㄨ�����d杞寸�靛��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotUqCmdIvt#8#150#false#false#127#16#0.1#-3276.8#Ud output command of Inverter\n��у�跺�ㄨ�����q杞寸�靛��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotLftRemaDCLk#8#152#false#false#7#16#0.002#0.0#DC Link capacitor remaining lifetime\n��靛�瑰�╀��瀵垮��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotLftRemaPwrModl#8#152#false#false#23#16#0.002#0.0#Power module remaining lifetime\n������妯″����╀��瀵垮��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTAvrgDiodeMin#8#152#false#false#39#8#1#-40#Min average temperature of mosfet during driving cycle\n椹鹃┒寰�������浜����绠″钩���娓╁害���灏����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTAvrgMosMax#8#152#false#false#47#8#1#-40#Max average temperature of mosfet during driving cycle\n椹鹃┒寰���������朵��绠″钩���娓╁害���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTAvrgMosMin#8#152#false#false#55#8#1#-40#Min average temperature of mosfet during driving cycle\n椹鹃┒寰���������朵��绠″钩���娓╁害���灏����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTCoolOilMax#8#152#false#false#63#8#1#-40#Max temperature of cooling water during driving cycle\n椹鹃┒寰���������峰�存补娓╁害���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTCoolOilMin#8#152#false#false#71#8#1#-40#Min temperature of cooling wator during driving cycle\n椹鹃┒寰���������峰�存补娓╁害���灏����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTCoolWtrMax#8#152#false#false#79#8#1#-40#Max temperature of cooling water during driving cycle\n椹鹃┒寰���������峰�存按娓╁害���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTCoolWtrMin#8#152#false#false#87#8#1#-40#Min temperature of cooling wator during driving cycle\n椹鹃┒寰���������峰�存按娓╁害���灏����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTDCLkCapMax#8#152#false#false#95#8#1#-40#Max temperature of DC Link capacitor during driving cycle\n椹鹃┒寰���������靛�规俯搴����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTDCLkCapMin#8#152#false#false#103#8#1#-40#Min temperature of DC Link capacitor during driving cycle\n椹鹃┒寰���������靛�规俯搴����灏����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTGbxMax#8#152#false#false#111#8#1#-40#Max temperature of gear box during driving cycle\n椹鹃┒寰�������榻胯疆绠辨俯搴����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTGbxMin#8#152#false#false#119#8#1#-40#Min temperature of gear box during driving cycle\n椹鹃┒寰�������榻胯疆绠辨俯搴����灏����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTAvrgDiodeMax#8#152#false#false#127#8#1#-40#Max average temperature of diode during driving cycle\n椹鹃┒寰�������浜����绠″钩���娓╁害���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTqCalcdMax#8#152#false#false#135#16#0.1#-3276.8#Max calculated torque during driving cycle\n椹鹃┒寰���������电�������╂��澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTqCalcdMin#8#152#false#false#151#16#0.1#-3276.8#Min calculated torque during driving cycle\n椹鹃┒寰���������电�������╂��灏����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTRiseDiodeMax#8#152#false#false#167#8#1#-40#Max temperature rise of diode during diriving cycle\n椹鹃┒寰�������浜����绠℃��澶ф俯���#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTRiseMosMax#8#152#false#false#175#8#1#-40#Max temperature rise of mosfet during driving cycle\n椹鹃┒寰���������朵��绠℃��澶ф俯���#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTRtrMax#8#152#false#false#183#8#1#-40#Max temperature of rator during driving cycle\n椹鹃┒寰���������垫�鸿浆瀛�娓╁害���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTRtrMin#8#152#false#false#191#8#1#-40#Min temperature of rator during driving cycle\n椹鹃┒寰���������垫�鸿浆瀛�娓╁害���灏����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTStatMax#8#152#false#false#199#8#1#-40#Max temperature of stator during driving cycle\n椹鹃┒寰���������垫�哄��瀛�娓╁害���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTStatMin#8#152#false#false#207#8#1#-40#Min temperature of stator during driving cycle\n椹鹃┒寰���������垫�哄��瀛�娓╁害���灏����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTStatIni#8#152#false#false#215#8#1#-40#Initial stator temperature when HV is setup\n��垫�哄��瀛����濮�娓╁害 楂����涓���靛�������跺��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotAglDeMax#8#153#false#false#7#16#0.1#0.0#Max deviation of angle monitoring between L1 and L2 software\n瑙�搴������у��宸� L1 VS L2 ���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrAglDeFlt#8#153#false#false#23#8#1#0#Counter regarding over upper threshold of Angle mornitoring\n瑙�搴������у��宸�瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrCurThrPhaSumFlt#8#153#false#false#31#8#1#0#Counter of fault regarding sumary of three phase current\n涓���哥�垫�����瓒������兼�℃�� Debounce涔���� ������浣�寰������ㄦ�����绱�璁″��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrMosSnsrOverFlt#8#153#false#false#39#8#1#0#Counter regarding over upper threshold of mosfet sensor temperature\nMosfet娓╁害浼������ㄨ��涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrMosSnsrUnderFlt#8#153#false#false#47#8#1#0#Counter regarding over lower threshold of mosfet sensor temperature\nMosfet娓╁害浼������ㄨ��涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrStatSnsrOverFlt#8#153#false#false#55#8#1#0#Counter regarding over upper threshold of stator sensor temperature\n��垫�烘俯搴�浼������ㄨ��涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrStatSnsrUnderFlt#8#153#false#false#63#8#1#0#Counter regarding over lower threshold of stator sensor temperature\n��垫�烘俯搴�浼������ㄨ��涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrThrPhaCurZeroShift#8#153#false#false#71#8#1#0#涓���哥�垫����堕��瓒������兼�℃�� Debounce涔���� ������浣�寰������ㄦ�����绱�璁″��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrUDCLkDe#8#153#false#false#79#8#1#0#��靛�����宸�瓒������兼�℃�� Debounce涔���� ������浣�寰������ㄦ�����绱�璁″��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrUKl30OverFlt#8#153#false#false#87#8#1#0#Counter regarding over upper threshold of KL30 voltage\nKL30��靛��瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrUKl30UnderFlt#8#153#false#false#95#8#1#0#Counter regarding over lower threshold of KL30 voltage\nKL30��靛��瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrURslvrSqurSumOverFlt#8#153#false#false#103#8#1#0#Counter regarding over max sum of squares of resolver voltage \n���杞���������ㄥ钩��瑰��瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrURslvrSqurSumUnderFlt#8#153#false#false#111#8#1#0#Counter regarding under min sum of squares of resolver voltage \n���杞���������ㄥ钩��瑰��瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCurThrPhaSumDeMax#8#153#false#false#119#16#0.1#-3276.8#Max deviation of summary of three phase current\n涓���哥�垫��������澶у��宸����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCurThrPhaZeroShiftMax#8#153#false#false#135#16#0.1#-3276.8#Max zero shift of three phase current\n涓���哥�垫����堕�����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTMosSnsrMax#8#153#false#false#151#8#1#-40#Max Mosfet sensor temperature\nMosfet娓╁害浼������ㄦ��澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTMosSnsrMin#8#153#false#false#159#8#1#-40#Min Mosfet sensor temperature\nMosfet娓╁害浼������ㄦ��灏����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTStatSnsrMax#8#153#false#false#167#8#1#-40#Max stator sensor temerature\n��垫�烘俯搴�浼������ㄦ��澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTStatSnsrMin#8#153#false#false#175#8#1#-40#Min stator sensor temerature\n��烘俯搴�浼������ㄦ��灏����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotUDCLkDeMax#8#153#false#false#183#16#0.1#0.0#Max deviation between DC link voltage in L1 and L2 software\n��靛�����宸� L1 VS L2 ���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotUKl30Max#8#153#false#false#199#16#0.1#0.0#Max KL30 voltage\nKL30��靛�����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotUKl30Min#8#153#false#false#215#16#0.1#0.0#Min KL30 voltage\nKL30��靛�����灏����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTCoolWtrIni#8#153#false#false#231#8#1#-40#Initial cooling water temperature when HV is setup\n��峰�存恫���濮�娓╁害 姘存俯 楂����涓���靛�������跺��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotActCur#8#163#false#false#7#14#0.1#-819.1#Rear motor actual current on DC bus  \nNegative means current flow from rear motor to HV battery  positive means current flow from HV battery to rear motor.#0.0#0.0#0.0#null#MS11#E3U1
+ReMotBoostModAvl#8#163#false#false#9#1#1#0#Rear motor boost mode available#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MS11#E3U1
+ReMotActDampgSts#8#163#false#false#8#1#1#0#Rear motor active damping status.#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#E3U1
+ReMotActU#8#163#false#false#23#14#0.1#0.0#Rear motor actual voltage#0.0#0.0#0.0#{"16383": "Invalid"}#MS11#E3U1
+ReMotOffsCalSts#8#163#false#false#34#2#1#0#Rear motor Offset calibration status#0.0#0.0#0.0#{"0": "Normal", "1": "Still_Offset_Normal", "2": "Invalid"}#MS11#E3U1
+ReMotDrtSts#8#163#false#false#32#1#1#0#Rear motor derating Status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MS11#E3U1
+ReMotStSigGrpChks#8#163#false#false#47#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotFltLvlIndcn#8#163#false#false#54#3#1#0#Rear motor fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0_DTCOnly", "2": "Fault_Lv1_PowerLimited", "3": "Fault_Lv2_Recoverable", "4": "Fault_Lv3_Not_Recoverable", "5": "Fault_Lv4_Crash"}#MS11#E3U1
+ReMotStSigGrpCntr#8#163#false#false#51#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotSfSpdMax#8#163#false#false#63#16#1.0#-32768.0#Rear motor safe speed maximum#0.0#0.0#0.0#{"65535": "Invalid"}#MS11#E3U1
+ReMotSfStConfig#8#163#false#false#79#2#1#0#Rear Motor safe state configuration#0.0#0.0#0.0#{"1": "ASC", "2": "FreeWheeling"}#MS11#E3U1
+BoostChrgnInpBkpSigGrpChks#8#163#false#false#103#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnInpBkpSigGrpCntr#8#163#false#false#107#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnInpCurBkp#8#163#false#false#119#14#0.1#0.0#Boost Charging Input current 妗╃��  backup#0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnInpUBkp#8#163#false#false#135#14#0.1#0.0#Boost Charging Input voltage 妗╃��  backup#0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnOutpPwrMaxBkp#8#163#false#false#151#11#0.1#0.0#Boost Charging output power max backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotBoostModNotAvlRsnBkp#8#163#false#false#167#4#1#0#Rear motor boost mode not available reasons backup#0.0#0.0#0.0#{"0": "Available", "1": "Not_available_for_times"}#MS11#E3U1
+BoosterFltLvlBkpSigGrpChks#8#163#false#false#175#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoosterFltLvlBkpSigGrpCntr#8#163#false#false#179#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoosterFltLvlIndcnBkp#8#163#false#false#191#3#1#0#Booster fault level indication#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0", "2": "Fault_Lv1", "3": "Fault_Lv2", "4": "Fault_Lv3", "5": "Fault_Lv4"}#MS11#E3U1
+ReMotModStsSigGrpChks#8#163#false#false#207#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotModStsSigGrpCntr#8#163#false#false#211#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotModSts#8#163#false#false#223#5#1#0#Rear motor mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Booster_discharge_finished", "12": "OffsetCal", "13": "Failure", "14": "After_Run", "15": "Buck_Control"}#MS11#E3U1
+ReMotAglOffsRslvr#8#168#false#false#7#12#0.1#0.0#Resolver offset angle\n������offset瑙�搴�#0.0#0.0#0.0#null#MS11#E3U1
+RestAglOffsSlipTst#8#168#false#false#11#1#1#0#resolver offset angle in slip mode state\n������婊�琛�瑙����瑙�搴���舵��#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+ReMotAglOffsSlipTst#8#168#false#false#23#12#0.1#0.0#resolver offset angle in slip mode\n������婊�琛�瑙����瑙�搴�#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrGateDrvrFltHwRaw#8#168#false#false#39#8#1#0#Gate driver fault counter Raw fault counter without debounce \nGate Driver������椹卞�ㄦ�����绱�璁¤�℃�板�� 璇�������濮�瑙����浜�浠� 涓�甯�璇����debounce#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrMCURstUFltHwRaw#8#168#false#false#47#8#1#0#MCU Reset counter\nMCU Reset绱�璁¤�℃�板��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrOverCurFltHwRaw#8#168#false#false#55#8#1#0#Hardware over current fault counter Raw fault counter without debounce \n纭�浠惰��娴�������绱�璁¤�℃�板�� 璇�������濮�瑙����浜�浠� 涓�甯�璇����debounce#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrOverUFltHwRaw#8#168#false#false#63#8#1#0#Hardware over voltage fault counter Raw fault counter without debounce \n纭�浠惰�����������绱�璁¤�℃�板�� 璇�������濮�瑙����浜�浠� 涓�甯�璇����debounce#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrSOPFltHwRaw#8#168#false#false#71#8#1#0#Shut off path fault counter Raw fault counter withour debounce \n��虫��璺�寰�妫�娴�������绱�璁¤�℃�板�� 璇�������濮�瑙����浜�浠� 涓�甯�璇����debounce#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrWdgFltHwRaw#8#168#false#false#79#8#1#0#MCU Wdg fault counter Raw fault counter without debounce \nMCU Wdg������绱�璁¤�℃�板�� 璇�������濮�瑙����浜�浠� 涓�甯�璇����debounce#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCurDCLkMax#8#168#false#false#87#16#0.1#-3276.8#Max DC Link current during driving cycle\n椹鹃┒寰���������存��姣�绾跨�垫�����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCurDCLkMin#8#168#false#false#103#16#0.1#-3276.8#Min DC Link current during driving cycle\n椹鹃┒寰���������存��姣�绾跨�垫�����灏����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCurOffsSelfLrn1#8#168#false#false#119#8#1#-128#self learned offset value for current sensor ph1\n绗�涓���哥�垫��浼������ㄨ��瀛�涔����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCurOffsSelfLrn2#8#168#false#false#127#8#1#-128#self learned offset value for current sensor ph2\n绗�浜���哥�垫��浼������ㄨ��瀛�涔����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCurOffsSelfLrn3#8#168#false#false#135#8#1#-128#self learned offset value for current sensor ph3\n绗�涓���哥�垫��浼������ㄨ��瀛�涔����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotMotSpdMax#8#168#false#false#143#16#1#-32768#Max e motor speed during driving cycle\n椹鹃┒寰���������垫�鸿浆������澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotPwrGenMax#8#168#false#false#159#16#0.1#-1000.0#Max calculated generating power during driving cycle\n椹鹃┒寰������������靛��������澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotPwrMotMax#8#168#false#false#175#16#0.1#0.0#Min Electric power during driving cycle\n椹鹃┒寰���������靛�ㄥ��������澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTCoolOilIni#8#168#false#false#191#8#1#-40#Initial cooling oil temperature when HV is setup\n��峰�存恫���濮�娓╁害 娌规俯 楂����涓���靛�������跺��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTIvtDBCIni1#8#168#false#false#199#8#1#-40#1st Phase DBC initial itemperature of Inverter when HV is setup\n��у�跺�ㄧ��1���dbc���濮�娓╁害 楂����涓���靛�������跺��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTIvtDBCIni2#8#168#false#false#207#8#1#-40#2nd Phase DBC initial itemperature of Inverter when HV is setup\n��у�跺�ㄧ��2���dbc���濮�娓╁害 楂����涓���靛�������跺��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTIvtDBCIni3#8#168#false#false#215#8#1#-40#3rd Phase DBC initial itemperature of Inverter when HV is setup\n��у�跺�ㄧ��3���dbc���濮�娓╁害 楂����涓���靛�������跺��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotUDCLkMax#8#168#false#false#223#16#0.1#0.0#Max DC Link voltage during driving cycle\n椹鹃┒寰���������存��姣�绾跨�靛�����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotUDCLkMin#8#168#false#false#239#16#0.1#0.0#Min DC Link voltage during driving cycle\n椹鹃┒寰���������存��姣�绾跨�靛�����灏����#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrCANCtrlrFltMax#8#169#false#false#7#8#1#0#Max Fault counter of CAN controller\nCAN��у�跺�ㄨ��璁℃�板�ㄦ��澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrRollgDeFltMax#8#169#false#false#15#8#1#0#Max deviation of rolling counter of E2E frames\nE2E��ユ��Rolling Counter���宸����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrRollgFlt#8#169#false#false#23#8#1#0#Fault counter of rolling counter of E2E frames\nE2E��ユ��Rolling Counter���璇�璁℃�板��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrTqDeCmdL2Flt#8#169#false#false#31#8#1#0#Counter of over threshold of deviation between request torque and L2 torque\n杞���╃����у��宸� 璇锋�� VS 瀹���� 瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrTqDeCmdL2OppstFlt#8#169#false#false#39#8#1#0#Counter of over threshold of opposite torque deviation between request torque and L2 torque\n杞���╁��������宸� 璇锋�� VS 瀹���� 瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCntrTqDeL1L2Flt#8#169#false#false#47#8#1#0#Counter regarding over upper threshold of torque monitoring\n杞���╀及绠����宸� L1 VS L2 瓒�涓���������兼�℃��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTqDeCmdL2Max#8#169#false#false#55#16#0.1#-3276.8#Max torque deviation between request torque and L2 torque\n杞���╃����у��宸� 璇锋�� VS 瀹���� ���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTqDeCmdL2OppstMax#8#169#false#false#71#16#0.1#-3276.8#Max opposite torque deviation between request torque and L2 torque\n杞���╁��������宸� 璇锋�� VS 瀹���� ���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTqDeL1L2Max#8#169#false#false#87#16#0.1#-3276.8#Max deviation between torque calculation between L1 and L2 software\n杞���╀及绠����宸� L1 VS L2 ���澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotURslvrSqurSumMax#8#169#false#false#103#16#0.01#0.0#Max sum of squares of resolver voltage\n���杞���������ㄥ钩��瑰�����澶у��#0.0#0.0#0.0#null#MS11#E3U1
+ReMotURslvrSqurSumMin#8#169#false#false#119#16#0.01#0.0#Min sum of squares of resolver voltage\n���杞���������ㄥ钩��瑰�����灏����#0.0#0.0#0.0#null#MS11#E3U1
+REDSPtFusionNodeAddress#8#1300#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#E3U1
+REDSPtFusionActiveWakeup#8#1300#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3U1
+REDSPtFusionRepeatMsgReq#8#1300#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3U1
+REDSPtFusionRepeatMsgSt#8#1300#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3U1
+FrntMotIndHeatgBkpSigGrpChks#8#676#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotIndHeatgBkpSigGrpCntr#8#676#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotIndHeatgPwrReqBkp#8#676#false#false#23#8#50#0#Front motor indirect heating power request backup on PT fusion CAN.#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotIndHeatgReqBkp#8#676#false#false#31#1#1#0#Front motor indirect heating request backup on PT fusion CAN.#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+FrntMotCooltCircFlowEstimdBkp#8#676#false#false#55#10#0.05#0.0#Estimated coolant flowrate for front motor coolant circuit backup on PT fusion CAN.#0.0#0.0#0.0#null#MS11#E3U1
+ReMotIndHeatgBkpSigGrpChks#8#676#false#false#71#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotIndHeatgBkpSigGrpCntr#8#676#false#false#75#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotIndHeatgPwrReqBkp#8#676#false#false#87#8#50#0#Rear motor indirect heating power request backup on PT fusion CAN.#0.0#0.0#0.0#null#MS11#E3U1
+ReMotIndHeatgReqBkp#8#676#false#false#95#1#1#0#Rear motor indirect heating request backup on PT fusion CAN.#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+ReMotCooltCircFlowEstimdBkp#8#676#false#false#111#10#0.05#0.0#Estimated coolant flowrate for rear motor coolant circuit backup on PT fusion CAN.#0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotReqSigGrpChks#8#112#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotModReq#8#112#false#false#15#4#1#0#Rear motor mode request#0.0#0.0#0.0#{"0": "Standby", "1": "Offset_Calibration_Mode_1", "2": "Offset_Calibration_Mode_2", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_Discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Buck_Control"}#MS11#E3U1
+VCUReMotReqSigGrpCntr#8#112#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotTqReq#8#112#false#false#23#15#0.1#-1638.3#Rear motor torque request#0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotOverBoostEna#8#112#false#false#24#1#1#0#Rear motor over boost enable#0.0#0.0#0.0#{"0": "off", "1": "on"}#MS11#E3U1
+VCUReMotSpdReq#8#112#false#false#39#16#1#-32767#Rear motor speed request  at motor output shaft#0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotMaxPosTqGradient#8#112#false#false#55#10#10#0#Rear motor maximum positive torque gradient#0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotMinNegTqGradient#8#112#false#false#57#10#10#-10230#Rear motor minimum negative torque gradient#0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotReqSigGrpChks#8#112#false#false#79#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotModReq#8#112#false#false#87#4#1#0#Front motor mode request#0.0#0.0#0.0#{"0": "Standby", "1": "Offset_Calibration_Mode_1", "2": "Offset_Calibration_Mode_2", "3": "Torque_Control", "4": "Speed_Control", "5": "Reserved", "6": "Reserved", "7": "Reserved", "8": "Reserved", "9": "Active_Discharge"}#MS11#E3U1
+VCUFrntMotReqSigGrpCntr#8#112#false#false#83#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotTqReq#8#112#false#false#95#15#0.1#-1638.3#Front motor torque request#0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotOverBoostEna#8#112#false#false#96#1#1#0#Front motor over boost enable#0.0#0.0#0.0#{"0": "off", "1": "on"}#MS11#E3U1
+VCUFrntMotSpdReq#8#112#false#false#111#16#1#-32767#Front motor speed request  at motor output shaft#0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotMaxPosTqGradient#8#112#false#false#127#10#10#0#Front motor maximum positive torque gradient#0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotMinNegTqGradient#8#112#false#false#129#10#10#-10230#Front motor minimum negative torque gradient#0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotSpdGrdtMaxLim#8#112#false#false#151#15#1#0#Front motor maximum limit of speed gradient#0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotSpdGrdtMinLim#8#112#false#false#167#15#1#-32767#Front motor minimum limit of speed gradient#0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotSpdGrdtMaxLim#8#112#false#false#183#15#1#0#Rear motor maximum limit of speed gradient#0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotSpdGrdtMinLim#8#112#false#false#199#15#1#-32767#Rear motor minimum limit of speed gradient#0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotDampgModReq#8#112#false#false#215#2#1#0#Front motor damping mode request#0.0#0.0#0.0#{"0": "No_req", "1": "Low_damping", "2": "Medium_damping", "3": "High_damping"}#MS11#E3U1
+VCUReMotDampgModReq#8#112#false#false#211#2#1#0#Rear motor damping mode request#0.0#0.0#0.0#{"0": "No_req", "1": "Low_damping", "2": "Medium_damping", "3": "High_damping"}#MS11#E3U1
+VCUBoosterCntctReqBkpSigGrpChks#8#167#false#false#79#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUBoosterCntctReqBkpSigGrpCntr#8#167#false#false#83#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUBoosterCntctReqBkp#8#167#false#false#95#1#1#0#Booster S7 Positive    S6 Negative   Request backup#0.0#0.0#0.0#{"0": "Open", "1": "Close"}#MS11#E3U1
+VCUBoosterOutpCntctReqBkp#8#167#false#false#111#1#1#0#Booster  S1  output contactor Request backup#0.0#0.0#0.0#{"0": "Open", "1": "Close"}#MS11#E3U1
+VCUTrigEmRecordEvent#8#167#false#false#110#1#1#0#Drive condition for EM data upload is enable\nVCU��ゆ����垫�烘�版��涓�浼�宸ュ�垫弧瓒�#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#MS11#E3U1
+VCCDPtFusionNodeAddress#8#1306#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCDPTFusionActiveWakeup#8#1306#false#false#12#1#1#0##0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3U1
+VCCDPTFusionRepeatMsgReq#8#1306#false#false#8#1#1#0##0.0#0.0#0.0#{"0": "not_requested", "1": "requested"}#MS11#E3U1
+UDB23VCCD#8#1306#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB22VCCD#8#1306#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB21VCCD#8#1306#false#false#21#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB19VCCD#8#1306#false#false#19#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB18VCCD#8#1306#false#false#18#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB17VCCD#8#1306#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCDPtFusionRepeatMsgSt#8#1306#false#false#16#1#1#0##0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3U1
+UDB31VCCD#8#1306#false#false#31#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB30VCCD#8#1306#false#false#30#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB29VCCD#8#1306#false#false#29#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB28VCCD#8#1306#false#false#28#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB27VCCD#8#1306#false#false#27#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB26VCCD#8#1306#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB25VCCD#8#1306#false#false#25#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB24VCCD#8#1306#false#false#24#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB39VCCD#8#1306#false#false#39#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB38VCCD#8#1306#false#false#38#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB36VCCD#8#1306#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB35VCCD#8#1306#false#false#35#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB34VCCD#8#1306#false#false#34#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB33VCCD#8#1306#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB32VCCD#8#1306#false#false#32#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB47VCCD#8#1306#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB46VCCD#8#1306#false#false#46#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB45VCCD#8#1306#false#false#45#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB44VCCD#8#1306#false#false#44#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB43VCCD#8#1306#false#false#43#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB42VCCD#8#1306#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB40VCCD#8#1306#false#false#40#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB53VCCD#8#1306#false#false#53#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB52VCCD#8#1306#false#false#52#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB51VCCD#8#1306#false#false#51#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB50VCCD#8#1306#false#false#50#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB49VCCD#8#1306#false#false#49#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+NMKeepAwkRsnVCCD#8#1306#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3U1

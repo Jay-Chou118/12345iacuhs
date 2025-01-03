@@ -46,6 +46,30 @@ public class MsgInfoEntity {
         this.name = name;
     }
 
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public String getBUSName() {
+        return BUSName;
+    }
+
+    public void setBUSName(String BUSName) {
+        this.BUSName = BUSName;
+    }
+
+    public int getBUSId() {
+        return BUSId;
+    }
+
+    public void setBUSId(int BUSId) {
+        this.BUSId = BUSId;
+    }
+
     @Override
     public String toString() {
         return "MsgInfoEntity{" +
