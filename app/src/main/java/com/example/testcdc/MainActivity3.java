@@ -113,6 +113,9 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static final String ACTION_USB_PERMISSION = "com.android.usb.USB_PERMISSION";
 
+
+    private boolean MiCANOpenFlag = false;
+
     private ServiceConnection mSC = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName className, IBinder service) {
@@ -443,11 +446,6 @@ public class MainActivity3 extends AppCompatActivity {
                             jsCallResult.setData(result);
                             final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
 
-                            // 打开CANFD设备
-                            mMiCANBinder.CANOnBus();
-                            mMiCANBinder.startSaveBlf(MainActivity3.this);
-
-
                             webView.post(new Runnable() {
                                 @Override
                                 public void run() {
@@ -464,6 +462,16 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("showLoggingMessage", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
+
+                if(!MiCANOpenFlag)
+                {
+                    // 打开CANFD设备
+                    Log.i(TAG,"打开MiCAN设备");
+                    mMiCANBinder.CANOnBus();
+                    mMiCANBinder.startSaveBlf(MainActivity3.this);
+                    MiCANOpenFlag = true;
+                }
+
 
 //                mMiCANBinder.CANOnBus();                mMiCANBinder.CANOnBus();
 //                showLoggingMessageQueue.add(callback);
@@ -491,8 +499,8 @@ public class MainActivity3 extends AppCompatActivity {
                 Log.d(TAG, "stopDevice ");
                 if (mMiCANBinder != null) {
                     Log.d(TAG, "i am called");
-
                     g_send_list.clear();
+                    MiCANOpenFlag = false;
                     mMiCANBinder.CANOffBus();
                     mMiCANBinder.stopSaveBlf();
                     sharedFile(mMiCANBinder.getFilePath());
@@ -606,9 +614,6 @@ public class MainActivity3 extends AppCompatActivity {
 
             }
         });
-
-
-
 
         messageHandlers.put("getDBC", new BridgeHandler() {
             @Override

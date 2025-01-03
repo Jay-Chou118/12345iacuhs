@@ -672,6 +672,7 @@ public class MyService extends Service {
         public void startSaveBlf(Context ctx)
         {
             filePath = getWorkHomeDir(ctx) + "MiCAN_record_" + formatTime() +".blf";
+            Log.e(TAG,"====startSaveBlf====" + filePath);
             startRecord(filePath);
         }
 
