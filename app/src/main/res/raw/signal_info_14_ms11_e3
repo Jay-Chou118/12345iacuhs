@@ -8,11 +8,11 @@ WhlSpdFrntRiVld#14#179#false#false#14#1#1#0#Status of wheel speed front right#0.
 WhlSpdReLeVld#14#179#false#false#13#1#1#0#Status of wheel speed rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 WhlSpdReRiVld#14#179#false#false#12#1#1#0#Status of wheel speed rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 WhlStsSigGrpCntr#14#179#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
-WhlSpdFrntLe#14#179#false#false#23#16#0.05625#0.0#Wheel speed front left#0.0#0.0#0.0#null#MS11#E3
-WhlSpdFrntRi#14#179#false#false#39#16#0.05625#0.0#Wheel speed front right#0.0#0.0#0.0#null#MS11#E3
-WhlSpdReLe#14#179#false#false#55#16#0.05625#0.0#Wheel speed rear left#0.0#0.0#0.0#null#MS11#E3
-WhlSpdReRi#14#179#false#false#71#16#0.05625#0.0#Wheel speed rear right#0.0#0.0#0.0#null#MS11#E3
-VehSpd#14#179#false#false#87#16#0.05625#0.0#Vehicle speed#0.0#0.0#0.0#null#MS11#E3
+WhlSpdFrntLe#14#179#false#false#23#16#0.05625#0#Wheel speed front left#0.0#0.0#0.0#null#MS11#E3
+WhlSpdFrntRi#14#179#false#false#39#16#0.05625#0#Wheel speed front right#0.0#0.0#0.0#null#MS11#E3
+WhlSpdReLe#14#179#false#false#55#16#0.05625#0#Wheel speed rear left#0.0#0.0#0.0#null#MS11#E3
+WhlSpdReRi#14#179#false#false#71#16#0.05625#0#Wheel speed rear right#0.0#0.0#0.0#null#MS11#E3
+VehSpd#14#179#false#false#87#16#0.05625#0#Vehicle speed#0.0#0.0#0.0#null#MS11#E3
 VehSpdVld#14#179#false#false#103#1#1#0#Qualifier for vehicle speed signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 WhlDirFrntLeVld#14#179#false#false#102#1#1#0#Qualifier for wheel moving direction front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3
 WhlDirFrntLe#14#179#false#false#101#2#1#0#Wheel moving direction front left#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#E3
@@ -151,9 +151,9 @@ BLEMRepeatMsgSt#14#1383#false#false#16#1#1#0#Repeat Message State indication\n�
 NMKeepAwkRsnBLEM#14#1383#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3
 BattURawSigGrpChks#14#579#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 BattURawSigGrpCntr#14#579#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
-BattURaw#14#579#false#false#16#9#0.025#5.0#Battery Voltage raw\n电池电压#0.0#0.0#0.0#null#MS11#E3
-BattSocRaw#14#579#false#false#49#10#0.1#0.0#Battery State of charge raw\n电池SOC#0.0#0.0#0.0#null#MS11#E3
-TotOdoAcrt#14#914#false#false#7#24#0.1#0.0#ODO value as accuracy of 0.1 km#0.0#0.0#0.0#null#MS11#E3
+BattURaw#14#579#false#false#16#9#0.025#5#Battery Voltage raw\n电池电压#0.0#0.0#0.0#null#MS11#E3
+BattSocRaw#14#579#false#false#49#10#0.1#0#Battery State of charge raw\n电池SOC#0.0#0.0#0.0#null#MS11#E3
+TotOdoAcrt#14#914#false#false#7#24#0.1#0#ODO value as accuracy of 0.1 km#0.0#0.0#0.0#null#MS11#E3
 TotOdoAcrtVld#14#914#false#false#25#1#1#0#The valid signal of TotOdoAcrt#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3
 TiModCfgSts#14#914#false#false#24#1#1#0#DCD time mode configuration status#0.0#0.0#0.0#{"0": "24h_mode", "1": "12h_mode"}#MS11#E3
 DCDVINMat#14#914#false#false#32#1#1#0#DCD VIN Match\nVIN匹配信号#0.0#0.0#0.0#{"0": "Mismatch", "1": "Match"}#MS11#E3
@@ -207,7 +207,7 @@ ExtrMirrSelnHmiEna#14#929#false#false#95#2#1#0#Exterior mirror selection HMI ena
 ChrgnOnOffSet#14#929#false#false#93#2#1#0#DCD Charging On Off set\n充电控制#0.0#0.0#0.0#{"0": "No_Command", "1": "On", "2": "Pause", "3": "Off"}#MS11#E3
 PassSideAirbClsSet#14#929#false#false#91#2#1#0#passenger side airbag close Set\n副驾安全气囊关闭设定#0.0#0.0#0.0#{"0": "no_command", "1": "enable", "2": "disable"}#MS11#E3
 ReDefrstCmd#14#929#false#false#89#2#1#0#Rear defrost command\n后除霜命令#0.0#0.0#0.0#{"0": "No_Command", "1": "OFF", "2": "ON"}#MS11#E3
-ChrgnSOCLimSet#14#929#false#false#102#7#1.0#-1.0#DCD set charging limit SOC function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
+ChrgnSOCLimSet#14#929#false#false#102#7#1#-1#DCD set charging limit SOC function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
 DCDHVACACMaxSet#14#929#false#false#111#2#1#0#DCD set HVAC AC Max funciton\n空调系统AC MAX设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#E3
 DCDHVACACMaxBtn#14#929#false#false#109#1#1#0#DCD s HVAC AC Max button press status\n空调系统AC MAX按键#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3
 DCDHVACACSet#14#929#false#false#108#2#1#0#DCD set HVAC AC funciton\n空调系统AC设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#E3
@@ -231,29 +231,29 @@ DCDTimedVentSet#14#929#false#false#150#2#1#0#DCD set HVAC timed ventilation func
 DCDOvrHeatProtectSet#14#929#false#false#148#2#1#0#DCD set HVAC over heat protect funciton\n空调过热保护设定#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#E3
 DCDHVACFrntDefrstSet#14#929#false#false#146#2#1#0#DCD set HVAC front defrost defog funciton\n前除霜 除雾设置#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "Defog", "3": "Max_defrost"}#MS11#E3
 DCDHVACFrntDefrstBtn#14#929#false#false#144#1#1#0#DCD s front defrost defog button press status\n前除霜 除雾按键状态#0.0#0.0#0.0#{"0": "Not_Press", "1": "Press"}#MS11#E3
-BookchrgnHeatEndMinSet#14#929#false#false#159#6#1.0#-1.0#passenger room and HV battery book heating end minute time#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
+BookchrgnHeatEndMinSet#14#929#false#false#159#6#1#-1#passenger room and HV battery book heating end minute time#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
 DCDUnlockVentSet#14#929#false#false#153#2#1#0#DCD set HVAC unlock ventilation funciton\n解锁通风设定#0.0#0.0#0.0#{"0": "No_command", "1": "Off", "2": "On", "3": "Not_used"}#MS11#E3
-BookchrgnHeatEndHrSet#14#929#false#false#167#5#1.0#-1.0#opassenger room and HV battery book heating end hour time#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
+BookchrgnHeatEndHrSet#14#929#false#false#167#5#1#-1#opassenger room and HV battery book heating end hour time#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
 BookDefdTiHvBattHeatgSet#14#929#false#false#162#2#1#0#Book defined time charging HV battery book heating control#0.0#0.0#0.0#{"0": "No_Command", "1": "ON", "2": "OFF"}#MS11#E3
 BookDefdTiPassHeatgSet#14#929#false#false#175#2#1#0#Book defined time charging passenger room book heating control#0.0#0.0#0.0#{"0": "No_Command", "1": "ON", "2": "OFF"}#MS11#E3
 BookDepartrHvBattHeatgSet#14#929#false#false#173#2#1#0#Book departure charging HV battery book heating control#0.0#0.0#0.0#{"0": "No_Command", "1": "ON", "2": "OFF"}#MS11#E3
 BookDepartrPassHeatgSet#14#929#false#false#171#2#1#0#Book departure charging passenger room book heating control#0.0#0.0#0.0#{"0": "No_Command", "1": "ON", "2": "OFF"}#MS11#E3
-DCDRiExtrMirrHozlPerctSet#14#929#false#false#183#8#1.0#-1.0#DCD Right Exterior Mirror Horizontal Percentage Set#0.0#0.0#0.0#{"0": "No_Command", "255": "Stop"}#MS11#E3
-DCDBookDepartrMinSet#14#929#false#false#191#6#1.0#-1.0#DCD set book departure min time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
+DCDRiExtrMirrHozlPerctSet#14#929#false#false#183#8#1#-1#DCD Right Exterior Mirror Horizontal Percentage Set#0.0#0.0#0.0#{"0": "No_Command", "255": "Stop"}#MS11#E3
+DCDBookDepartrMinSet#14#929#false#false#191#6#1#-1#DCD set book departure min time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
 DCDACChrgnCurMaxSet#14#929#false#false#199#10#0.1#-0.1#DCD set AC charging current max value function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
 DCDBookAutoManStopSet#14#929#false#false#205#2#1#0#DCD set book Auto Manual charging stop#0.0#0.0#0.0#{"0": "No_Command", "1": "Manual", "2": "Auto"}#MS11#E3
 DCDBookchrgnModSet#14#929#false#false#203#2#1#0#DCD set book charging mode function#0.0#0.0#0.0#{"0": "No_Command", "1": "Departecture_charging_set", "2": "Defined_time_charging_set"}#MS11#E3
 DCDBookchrgnOnOffSet#14#929#false#false#201#2#1#0#DCD set book charging on off function#0.0#0.0#0.0#{"0": "No_Comamnd", "1": "ON", "2": "OFF"}#MS11#E3
 DCDBookchrgnRepTypSet#14#929#false#false#215#2#1#0#DCD set book charging repeat type function#0.0#0.0#0.0#{"0": "No_Command", "1": "weekday_repeat", "2": "everyday_repeat"}#MS11#E3
-DCDBookchrgnStopHourSet#14#929#false#false#213#5#1.0#-1.0#DCD set book charging stop hour time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
+DCDBookchrgnStopHourSet#14#929#false#false#213#5#1#-1#DCD set book charging stop hour time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
 DCDTouchScrStsForPwrMod#14#929#false#false#208#1#1#0#DCD Touch screen Status For PowerMode#0.0#0.0#0.0#{"0": "Idle", "1": "Touched_for_PowerMode"}#MS11#E3
-DCDBookchrgnStoptMinSet#14#929#false#false#223#6#1.0#-1.0#DCD set book charging stop min time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
+DCDBookchrgnStoptMinSet#14#929#false#false#223#6#1#-1#DCD set book charging stop min time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
 DCDBookDepartrRepTypSet#14#929#false#false#217#2#1#0#DCD set book departure repeat type function#0.0#0.0#0.0#{"0": "No_Command", "1": "Weekday_repeat", "2": "Everyday_repeat"}#MS11#E3
-DCDBookchrgnStrtHourSet#14#929#false#false#231#5#1.0#-1.0#DCD set book charging start hour time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
+DCDBookchrgnStrtHourSet#14#929#false#false#231#5#1#-1#DCD set book charging start hour time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
 DCDHvBattHeatgSet#14#929#false#false#239#2#1#0#High Voltage battery heating set#0.0#0.0#0.0#{"0": "No_Command", "1": "ON", "2": "OFF"}#MS11#E3
-DCDBookchrgnStrtMinSet#14#929#false#false#237#6#1.0#-1.0#DCD set book charging start min time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
-DCDBookDepartrHourSet#14#929#false#false#247#5#1.0#-1.0#DCD set book departure hour time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
-DCDDchrgnSOCMinSet#14#929#false#false#255#7#1.0#-1.0#DCD set discharging min SOC function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
+DCDBookchrgnStrtMinSet#14#929#false#false#237#6#1#-1#DCD set book charging start min time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
+DCDBookDepartrHourSet#14#929#false#false#247#5#1#-1#DCD set book departure hour time function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
+DCDDchrgnSOCMinSet#14#929#false#false#255#7#1#-1#DCD set discharging min SOC function#0.0#0.0#0.0#{"0": "No_Command"}#MS11#E3
 DCD2BLEMForRPA00#14#132#false#false#7#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3
 DCD2BLEMForRPA01#14#132#false#false#71#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3
 DCD2BLEMForRPA02#14#132#false#false#135#64#1#0#RPA路由功能#0.0#0.0#0.0#null#MS11#E3
@@ -334,13 +334,13 @@ UDB22RZCU#14#1354#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#E3
 UDB26RZCU#14#1354#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#E3
 NMKeepAwkRsnRZCU#14#1354#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3
 TiDomn#14#263#false#false#4#5#1#0#time domain#0.0#0.0#0.0#{"0": "UTC_plus_0", "1": "UTC_plus_1", "2": "UTC_plus_2", "3": "UTC_plus_3", "4": "UTC_plus_4", "5": "UTC_plus_5", "6": "UTC_plus_6", "7": "UTC_plus_7", "8": "UTC_plus_8", "9": "UTC_plus_9", "10": "UTC_plus_10", "11": "UTC_plus_11", "12": "UTC_plus_12", "13": "UTC_plus_13", "14": "UTC_plus_14", "15": "UTC_plus_15", "16": "UTC_plus_16", "17": "UTC_plus_17", "18": "UTC_plus_18", "19": "UTC_plus_19", "20": "UTC_plus_20", "21": "UTC_plus_21", "22": "UTC_plus_22", "23": "UTC_plus_23", "24": "Invalid"}#MS11#E3
-DateTiYr#14#263#false#false#15#8#1.0#2000.0#date time year#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
-DateTiMth#14#263#false#false#19#4#1.0#0.0#date time month#0.0#0.0#0.0#{"0": "Invalid"}#MS11#E3
+DateTiYr#14#263#false#false#15#8#1#2000#date time year#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3
+DateTiMth#14#263#false#false#19#4#1#0#date time month#0.0#0.0#0.0#{"0": "Invalid"}#MS11#E3
 DateTiDay#14#263#false#false#28#5#1#0#date time day#0.0#0.0#0.0#{"0": "init"}#MS11#E3
-DateTiHr#14#263#false#false#36#5#1.0#0.0#date time hour#0.0#0.0#0.0#{"24": "Invalid"}#MS11#E3
-DateTiMins#14#263#false#false#45#6#1.0#0.0#date time minute#0.0#0.0#0.0#{"60": "Invalid"}#MS11#E3
-DateTiSec#14#263#false#false#55#6#1.0#0.0#date time second#0.0#0.0#0.0#{"60": "Invalid"}#MS11#E3
-DateTiMilsec#14#263#false#false#49#10#1.0#0.0#date time millisecond#0.0#0.0#0.0#{"1000": "invalid"}#MS11#E3
+DateTiHr#14#263#false#false#36#5#1#0#date time hour#0.0#0.0#0.0#{"24": "Invalid"}#MS11#E3
+DateTiMins#14#263#false#false#45#6#1#0#date time minute#0.0#0.0#0.0#{"60": "Invalid"}#MS11#E3
+DateTiSec#14#263#false#false#55#6#1#0#date time second#0.0#0.0#0.0#{"60": "Invalid"}#MS11#E3
+DateTiMilsec#14#263#false#false#49#10#1#0#date time millisecond#0.0#0.0#0.0#{"1000": "invalid"}#MS11#E3
 TZCU2VCCDRsvByte0#14#282#false#false#7#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3
 TZCU2VCCDRsvByte1#14#282#false#false#15#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3
 TZCU2VCCDRsvByte2#14#282#false#false#23#8#1#0#标定信号#0.0#0.0#0.0#null#MS11#E3
@@ -456,7 +456,6 @@ WPC2BLEMReq06#14#795#false#false#391#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#E3
 WPC2BLEMReq07#14#795#false#false#455#64#1#0#WPC请求#0.0#0.0#0.0#null#MS11#E3
 WPCMobilPhnRmn#14#830#false#false#7#1#1#0#Mobile phone Reminder\n手机遗忘提醒#0.0#0.0#0.0#{"0": "\u6b63\u5e38", "1": "\u9057\u5fd8"}#MS11#E3
 WPCwpcChrgSt#14#830#false#false#6#1#1#0#Phone charging status\n手机充电状态#0.0#0.0#0.0#{"0": "OFF", "1": "ON"}#MS11#E3
-WPCReservedforTSP#14#1428#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3
 WPCNodeAddress#14#1384#false#false#7#8#1#0#Node source address\n节点源地址#0.0#0.0#0.0#null#MS11#E3
 WPCActiveWakeup#14#1384#false#false#12#1#1#0#Active Wakeup Bit\n主动唤醒指示位#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3
 WPCRepeatMsgReq#14#1384#false#false#8#1#1#0#Repeat Message Request Bit\n重复报文请求位#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3

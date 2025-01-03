@@ -1,0 +1,73 @@
+SyncMsgTypeADD2Sensor#33#944#false#false#7#8#1#0#Time synchronization message type#0.0#0.0#0.0#null#MS11#E4U1
+ChecksumADD2Sensor#33#944#false#false#15#8#1#0#Time synchronization messageCRC\n Cyclic Redundancy Check#0.0#0.0#0.0#null#MS11#E4U1
+SyncMsgTimeDomainADD2Sensor#33#944#false#false#23#4#1#0#Time synchronization messagetime domain#0.0#0.0#0.0#null#MS11#E4U1
+SyncMsgSequenceCounterADD2Sensor#33#944#false#false#19#4#1#0#Time synchronization message \nsequence counter#0.0#0.0#0.0#null#MS11#E4U1
+SyncMsgSgwADD2Sensor#33#944#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#E4U1
+SyncMsgOvsADD2Sensor#33#944#false#false#25#2#1#0#Time synchronization message overflow of second#0.0#0.0#0.0#null#MS11#E4U1
+SyncMsgSyncTimeADD2Sensor#33#944#false#false#39#32#1#0#Time synchronization message\nsynchronization time#0.0#0.0#0.0#null#MS11#E4U1
+OfsTimeSecADD2Sensor#33#944#false#false#71#32#1#0#Offset time value in seconds#0.0#0.0#0.0#null#MS11#E4U1
+OfsTimeNSecADD2Sensor#33#944#false#false#103#32#1#0#Offset time value in nanoseconds#0.0#0.0#0.0#null#MS11#E4U1
+IMUStaSwtFrmADD#33#1018#false#false#17#2#1#0#IMU state switch command from ADD#0.0#0.0#0.0#{"0": "default", "1": "activate", "2": "standby", "3": "reserved"}#MS11#E4U1
+IMUSerNr1HiNibble#33#948#false#false#7#4#1#0#IMU series number 1 high nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr1LoNibble#33#948#false#false#3#4#1#0#IMU series number 1 low nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr2HiNibble#33#948#false#false#15#4#1#0#IMU series number 2 high nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr2LoNibble#33#948#false#false#11#4#1#0#IMU series number 2 low nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr3HiNibble#33#948#false#false#23#4#1#0#IMU series number 3 high nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr3LoNibble#33#948#false#false#19#4#1#0#IMU series number 3 low nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr4HiNibble#33#948#false#false#31#4#1#0#IMU series number 4 high nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr4LoNibble#33#948#false#false#27#4#1#0#IMU series number 4 low nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr5HiNibble#33#948#false#false#39#4#1#0#IMU series number 5 high nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr5LoNibble#33#948#false#false#35#4#1#0#IMU series number 5 low nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr6HiNibble#33#948#false#false#47#4#1#0#IMU series number 6 high nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr6LoNibble#33#948#false#false#43#4#1#0#IMU series number 6 low nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr7HiNibble#33#948#false#false#55#4#1#0#IMU series number 7 high nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr7LoNibble#33#948#false#false#51#4#1#0#IMU series number 7 low nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr8HiNibble#33#948#false#false#63#4#1#0#IMU series number 8 high nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUSerNr8LoNibble#33#948#false#false#59#4#1#0#IMU series number 8 low nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUPartTyp#33#948#false#false#71#8#1#0#IMU part number(ASCII value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUPartSeqNr1HiNibble#33#948#false#false#79#4#1#0#IMU part sequence number 1 high nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUPartSeqNr1LoNibble#33#948#false#false#75#4#1#0#IMU part sequence number 1 low nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUPartSeqNr2HiNibble#33#948#false#false#87#4#1#0#IMU part sequence number 2 high nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUPartSeqNr2LoNibble#33#948#false#false#83#4#1#0#IMU part sequence number 2 low nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUPartSeqNr3HiNibble#33#948#false#false#95#4#1#0#IMU part sequence number 3 high nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUPartSeqNr3LoNibble#33#948#false#false#91#4#1#0#IMU part sequence number 3 low nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUPartSeqNr4HiNibble#33#948#false#false#103#4#1#0#IMU part sequence number 4 high nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUPartSeqNr4LoNibble#33#948#false#false#99#4#1#0#IMU part sequence number 4 low nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUPartSeqNr5HiNibble#33#948#false#false#111#4#1#0#IMU part sequence number 5 high nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUPartSeqNr5LoNibble#33#948#false#false#107#4#1#0#IMU part sequence number 5 low nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUPartSeqNr6HiNibble#33#948#false#false#119#4#1#0#IMU part sequence number 6 high nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUPartSeqNr6LoNibble#33#948#false#false#115#4#1#0#IMU part sequence number 6 low nibble(BCD value)#0.0#0.0#0.0#null#MS11#E4U1
+IMUWrkStsSigGrpChks#33#999#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E4U1
+IMUWrkStsSigGrpCntr#33#999#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E4U1
+WrkStsFrmIMU#33#999#false#false#17#2#1#0#Working Status from IMU#0.0#0.0#0.0#{"0": "Off", "1": "Standby", "2": "Normal", "3": "Pre-Normal"}#MS11#E4U1
+IMUStsSigGrpChks#33#221#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E4U1
+IMUStsSigGrpCntr#33#221#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E4U1
+IMULvlSts#33#221#false#false#23#2#1#0#IMU功能安全状态位 0正常 1传感器功能安全降级 2传感器功能安全异常 3IMU系统功能安全异常#0.0#0.0#0.0#{"0": "normal", "1": "partial_failure", "2": "all_the_failure", "3": "exception_safety"}#MS11#E4U1
+ComSts#33#221#false#false#21#1#1#0#CAN通信状态位 0正常 1异常#0.0#0.0#0.0#{"0": "success", "1": "fail"}#MS11#E4U1
+VolWarnSts#33#221#false#false#20#2#1#0#电压监测状态位 0正常 1过压 2欠压#0.0#0.0#0.0#{"0": "normal_range", "1": "Above_the_rated_value", "2": "below_the_rated_value"}#MS11#E4U1
+IMUSelfChkSts#33#221#false#false#18#1#1#0#IMU传感器自检状态位 0正常 1异常 \n放到IMUsts#0.0#0.0#0.0#{"0": "success", "1": "fail"}#MS11#E4U1
+IMUInitSts#33#221#false#false#17#1#1#0#IMU传感器初始化状态位 0正常 1异常#0.0#0.0#0.0#{"0": "normal", "1": "abnormal"}#MS11#E4U1
+MCUSts#33#221#false#false#16#1#1#0#MCU异常状态标志 0正常 1异常#0.0#0.0#0.0#{"0": "normal", "1": "abnormal"}#MS11#E4U1
+IMUtemp#33#221#false#false#31#16#0.01#-50.0#IMU温度 C#0.0#0.0#0.0#null#MS11#E4U1
+IMUTempSta#33#221#false#false#41#2#1#0#温度输出状态位 0正常 1超量程 2无效值#0.0#0.0#0.0#{"0": "available", "1": "outrange", "2": "CRC_check_failed"}#MS11#E4U1
+IMUAnaly#33#221#false#false#55#64#1#0#IMU异常诊断数据+预留#0.0#0.0#0.0#null#MS11#E4U1
+DiagData#33#221#false#false#119#16#1#0#传感器数据异常\nAbnormal sensor data#0.0#0.0#0.0#null#MS11#E4U1
+DiagHw#33#221#false#false#135#16#1#0#传感器硬件异常\nThe sensor hardware is abnormal.#0.0#0.0#0.0#null#MS11#E4U1
+IMUSigGrpChks#33#222#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E4U1
+IMUSigGrpCntr#33#222#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E4U1
+SyncTimeSts#33#222#false#false#22#1#1#0#同步状态 0同步成功 1同步失败#0.0#0.0#0.0#{"0": "success", "1": "fail"}#MS11#E4U1
+XAccelSta#33#222#false#false#21#2#1#0#IMUx轴加速度状态位 0正常 1功能安全异常 2超量程 3无效数值#0.0#0.0#0.0#{"0": "available", "1": "abnormal", "2": "outrange", "3": "CRC_check_failed"}#MS11#E4U1
+XAccelVal#33#222#false#false#19#20#0.001#-98.1#IMUx轴加速度，m/s^2\n[-10g，10g]， g:9.81#0.0#0.0#0.0#null#MS11#E4U1
+XAngRateSta#33#222#false#false#47#2#1#0#IMUx轴角速度状态位 0正常 1功能安全异常 2超量程 3无效数值#0.0#0.0#0.0#{"0": "available", "1": "abnormal", "2": "outrange", "3": "CRC_check_failed"}#MS11#E4U1
+XAngRateVal#33#222#false#false#45#22#1e-05#-8.72665#'IMUx轴角速率，rad/s\n[-500°/s，500°/s]，pi:3.1415926'\n#0.0#0.0#0.0#null#MS11#E4U1
+YAccelSta#33#222#false#false#69#2#1#0#IMUy轴加速度状态位 0正常 1功能安全异常 2超量程 3无效数值#0.0#0.0#0.0#{"0": "available", "1": "abnormal", "2": "outrange", "3": "CRC_check_failed"}#MS11#E4U1
+YAccelVal#33#222#false#false#67#20#0.001#-98.1#IMUy轴加速度 m s^2\n  10g 10g  g 9.81#0.0#0.0#0.0#null#MS11#E4U1
+YAngRateSta#33#222#false#false#95#2#1#0#IMUy轴角速度状态位 0正常 1功能安全异常 2超量程 3无效数值#0.0#0.0#0.0#{"0": "available", "1": "abnormal", "2": "outrange", "3": "CRC_check_failed"}#MS11#E4U1
+YAngRateVal#33#222#false#false#93#22#1e-05#-8.72665#IMUy轴角速率 rad s\n  500 s 500 s  pi 3.1415926#0.0#0.0#0.0#null#MS11#E4U1
+ZAccelSta#33#222#false#false#117#2#1#0#IMUz轴加速度状态位 0正常 1功能安全异常 2超量程 3无效数值#0.0#0.0#0.0#{"0": "available", "1": "abnormal", "2": "outrange", "3": "CRC_check_failed"}#MS11#E4U1
+ZAccelVal#33#222#false#false#115#20#0.001#-98.1#IMUz轴加速度 m s^2\n  10g 10g  g 9.81#0.0#0.0#0.0#null#MS11#E4U1
+ZAngRateSta#33#222#false#false#143#2#1#0#IMUz轴角速度状态位 0正常 1功能安全异常 2超量程 3无效数值#0.0#0.0#0.0#{"0": "available", "1": "abnormal", "2": "outrange", "3": "CRC_check_failed"}#MS11#E4U1
+ZAngRateVal#33#222#false#false#141#22#1e-05#-8.72665#IMUz轴角速率 rad s\n  500 s 500 s  pi 3.1415926#0.0#0.0#0.0#null#MS11#E4U1
+IMUTimeStamp#33#222#false#false#167#42#1#0#传感器采样时间戳#0.0#0.0#0.0#null#MS11#E4U1
+IMUTimeStampSts#33#222#false#false#205#1#1#0#传感器采样时间戳状态 0正常 1异常#0.0#0.0#0.0#{"0": "normal", "1": "abnormal"}#MS11#E4U1
+SyncTime#33#222#false#false#215#64#1#0#同步时间#0.0#0.0#0.0#null#MS11#E4U1

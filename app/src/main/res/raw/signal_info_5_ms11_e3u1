@@ -1,0 +1,1220 @@
+ImpctEvntStsSigGrpChks#5#849#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ImpctEvntStsSigGrpCntr#5#849#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ImpctEvntSts#5#849#false#false#16#1#1#0#Impact Event Status\n 碰撞事件状态#0.0#0.0#0.0#{"0": "Normal", "1": "Crash"}#MS11#E3U1
+WhlStsSigGrpChks#5#179#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdFrntLeVld#5#179#false#false#15#1#1#0#Status of wheel speed front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlSpdFrntRiVld#5#179#false#false#14#1#1#0#Status of wheel speed front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlSpdReLeVld#5#179#false#false#13#1#1#0#Status of wheel speed rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlSpdReRiVld#5#179#false#false#12#1#1#0#Status of wheel speed rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlStsSigGrpCntr#5#179#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdFrntLe#5#179#false#false#23#16#0.05625#0.0#Wheel speed front left#0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdFrntRi#5#179#false#false#39#16#0.05625#0.0#Wheel speed front right#0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdReLe#5#179#false#false#55#16#0.05625#0.0#Wheel speed rear left#0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdReRi#5#179#false#false#71#16#0.05625#0.0#Wheel speed rear right#0.0#0.0#0.0#null#MS11#E3U1
+VehSpd#5#179#false#false#87#16#0.05625#0.0#Vehicle speed#0.0#0.0#0.0#null#MS11#E3U1
+VehSpdVld#5#179#false#false#103#1#1#0#Qualifier for vehicle speed signal#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirFrntLeVld#5#179#false#false#102#1#1#0#Qualifier for wheel moving direction front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirFrntLe#5#179#false#false#101#2#1#0#Wheel moving direction front left#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#E3U1
+WhlSpdEdgeFrntLeVld#5#179#false#false#99#1#1#0#Qualifier for wheel speed Edges front left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirFrntRiVld#5#179#false#false#98#1#1#0#Qualifier for wheel moving direction front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirFrntRi#5#179#false#false#97#2#1#0#Wheel moving direction front right#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#E3U1
+WhlSpdEdgeFrntLe#5#179#false#false#111#8#1#0#Wheel speed Edges front left#0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdEdgeFrntRiVld#5#179#false#false#119#1#1#0#Qualifier for wheel speed Edges front right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirReLeVld#5#179#false#false#118#1#1#0#Qualifier for wheel moving direction rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirReLe#5#179#false#false#117#2#1#0#Wheel moving direction rear left#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#E3U1
+WhlSpdEdgeReLeVld#5#179#false#false#115#1#1#0#Qualifier for wheel speed Edges rear left#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirReRiVld#5#179#false#false#114#1#1#0#Qualifier for wheel moving direction rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlDirReRi#5#179#false#false#113#2#1#0#Wheel moving direction rear right#0.0#0.0#0.0#{"0": "Undefined", "1": "Standstill", "2": "Forward", "3": "Backward"}#MS11#E3U1
+WhlSpdEdgeFrntRi#5#179#false#false#127#8#1#0#Wheel speed Edges front right#0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdEdgeReLe#5#179#false#false#135#8#1#0#Wheel speed Edges rear left#0.0#0.0#0.0#null#MS11#E3U1
+WhlSpdEdgeReRiVld#5#179#false#false#143#1#1#0#Qualifier for wheel speed Edges rear right#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+WhlSpdEdgeReRi#5#179#false#false#151#8#1#0#Wheel speed Edges rear right#0.0#0.0#0.0#null#MS11#E3U1
+WhlDstTiStampFrntLe#5#179#false#false#159#16#1#0#Wheel distance time stamp for front left#0.0#0.0#0.0#null#MS11#E3U1
+WhlDstTiStampFrntRi#5#179#false#false#175#16#1#0#Wheel distance time stamp for front right#0.0#0.0#0.0#null#MS11#E3U1
+WhlDstTiStampReLe#5#179#false#false#191#16#1#0#Wheel distance time stamp for rear left#0.0#0.0#0.0#null#MS11#E3U1
+WhlDstTiStampReRi#5#179#false#false#207#16#1#0#Wheel distance time stamp for rear left#0.0#0.0#0.0#null#MS11#E3U1
+BattURawSigGrpChks#5#579#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BattURawSigGrpCntr#5#579#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BattURaw#5#579#false#false#16#9#0.025#5.0#Battery Voltage raw\n电池电压#0.0#0.0#0.0#null#MS11#E3U1
+BattSocRaw#5#579#false#false#49#10#0.1#0.0#Battery State of charge raw\n电池SOC#0.0#0.0#0.0#null#MS11#E3U1
+HvBattHVILStsSigGrpChks#5#305#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattHVIL2Sts#5#305#false#false#15#2#1#0#HV battery inter lock loop 2 status.#0.0#0.0#0.0#{"0": "Close", "1": "Open", "2": "Not_determined", "3": "Invalid"}#MS11#E3U1
+HvBattHVIL1Sts#5#305#false#false#13#2#1#0#HV battery inter lock loop 1 status.#0.0#0.0#0.0#{"0": "Close", "1": "Open", "2": "Not_determined", "3": "Invalid"}#MS11#E3U1
+HvBattHVILStsSigGrpCntr#5#305#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattChrgnModSts#5#305#false#false#23#3#1#0#HV battery charging mode status. 表示可以启动对应充放电流程#0.0#0.0#0.0#{"0": "Not_in_charge", "1": "AC_charging", "2": "DC_charging", "3": "Wireless_charging", "4": "V2L", "5": "V2V"}#MS11#E3U1
+HvBattDCPortU#5#305#false#false#31#14#0.1#0.0#High voltage battery DC port voltage\n高压电池直流充电口电压#0.0#0.0#0.0#null#MS11#E3U1
+HvBattDevmtGrp01#5#309#false#false#7#32#1#0#High voltage battery development group BMS开发帧01#0.0#0.0#0.0#null#MS11#E3U1
+HvBattDevmtGrp02#5#309#false#false#39#32#1#0#High voltage battery development group BMS开发帧02#0.0#0.0#0.0#null#MS11#E3U1
+HvBattDevmtGrp03#5#309#false#false#71#32#1#0#High voltage battery development group BMS开发帧03#0.0#0.0#0.0#null#MS11#E3U1
+HvBattDevmtGrp04#5#309#false#false#103#32#1#0#High voltage battery development group BMS开发帧04#0.0#0.0#0.0#null#MS11#E3U1
+DCChrgnHvBattSoCSigGrpChks#5#449#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+DCChrgnPosCntctSts#5#449#false#false#15#2#1#0#DC charging positive contactor status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3U1
+DCChrgnCntctSts#5#449#false#false#13#2#1#0#DC charging contactor status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3U1
+DCChrgnHvBattSoCSigGrpCntr#5#449#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattSoCAct#5#449#false#false#23#11#0.05#0.0#HV battery SoC actual#0.0#0.0#0.0#null#MS11#E3U1
+DCChrgnNegCntctSts#5#449#false#false#25#2#1#0#DC charging negative contactor status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3U1
+PrechrgnCntctSts#5#449#false#false#39#2#1#0#Precharging contactor status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3U1
+PrechargnPosCntctSts#5#449#false#false#37#2#1#0#Precharging positive contact status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3U1
+HvBattCoolgLvlReq#5#449#false#false#35#2#1#0#HV battery cooling level request.#0.0#0.0#0.0#{"0": "NoReq", "1": "Low", "2": "Middle", "3": "High"}#MS11#E3U1
+HvBattHeatgLvlReq#5#449#false#false#33#2#1#0#HV battery heating level request.#0.0#0.0#0.0#{"0": "NoReq", "1": "Low", "2": "Middle", "3": "High"}#MS11#E3U1
+HvBattSoCDisp#5#449#false#false#47#11#0.05#0.0#HV battery SoC for Display#0.0#0.0#0.0#null#MS11#E3U1
+HvBattFlgFullChrgnFinish#5#449#false#false#52#1#1#0#HV battery full Charging of HV battery is finished or not flag#0.0#0.0#0.0#null#MS11#E3U1
+HvBattFlgChrgnSoCLimFinish#5#449#false#false#51#1#1#0#HV battery Set SOC charging limit finish flag#0.0#0.0#0.0#{"0": "Not_finish", "1": "Finish"}#MS11#E3U1
+HvBattFlgDchrgnSoCLimFinish#5#449#false#false#50#1#1#0#HV battery Set SOC discharge limit finish flag#0.0#0.0#0.0#{"0": "Not_finish", "1": "Finish"}#MS11#E3U1
+HvBattRmngChrgnTi#5#626#false#false#7#12#1#0#HV battery remaining charging time based on current charging current.#0.0#0.0#0.0#null#MS11#E3U1
+HvBattRmngDchrgnTi#5#626#false#false#11#12#1#0#HV battery The remaining discharging time based on current discharging current V2X .#0.0#0.0#0.0#null#MS11#E3U1
+HvBattOperationReq#5#626#false#false#31#4#1#0#Hv battery operation request 电池操作用户建议信号 包括均衡请求 满充请求 具体充电方法 静置时间要求等#0.0#0.0#0.0#{"0": "No_request", "1": "FullChrg_request", "2": "FullDischrg_request", "3": "SOH_correct", "4": "FullDischrg_request_for_LFP"}#MS11#E3U1
+HvBattFlgPfmn#5#626#false#false#27#1#1#0#HV battery performance assurance event flag HV battery performance assurance event happened or not#0.0#0.0#0.0#{"0": "No_performance_assurance_event", "1": "Performance_assurance_event_detected"}#MS11#E3U1
+HvBattFlgThermRunAway#5#626#false#false#26#2#1#0#HV battery thermal runaway flag HV battery thermal run away happened or not#0.0#0.0#0.0#{"0": "Normal", "1": "Thermal_run_away_warning", "2": "Thermal_run_away_alarm"}#MS11#E3U1
+HvBattFlgSftySigGrpChks#5#626#false#false#39#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattFlgSftySigGrpCntr#5#626#false#false#43#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattFlgSfty#5#626#false#false#55#3#1#0#HV battery safety flag HV battery safety happened or not#0.0#0.0#0.0#{"0": "No_safetyEvent", "1": "Over_TemperatureDetected", "2": "Over_VoltageDetected", "3": "Under_VoltageDetected", "4": "Reserved"}#MS11#E3U1
+HvBattSoCLock#5#626#false#false#71#11#0.05#0.0#HV battery SoC forLock due to Low Temperature#0.0#0.0#0.0#null#MS11#E3U1
+HvBattDchrgnEgyMax#5#626#false#false#87#11#0.1#0.0#HV battery maximum discharging energy  for range calculation display  指当前SoC放到屏显SoC=0%的可用电量 用于车辆续航剩余里程计算#0.0#0.0#0.0#null#MS11#E3U1
+HvBattDchrgnEgyDisp#5#626#false#false#103#11#0.1#0.0#HV battery maximum display discharging  energy to map the SOC display in the 25#0.0#0.0#0.0#null#MS11#E3U1
+HvBattMaxUCellIDRSMS#5#627#false#false#7#8#1#0#The Number of maximum Voltage Cell in HV Battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattMinUCellIDRSMS#5#627#false#false#15#8#1#0#The Number of minimum Voltage Cell in HV Battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellUDifFltRSMS#5#627#false#false#21#2#1#0#HV battery cell voltage difference excessive fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+HvBattTotFltQntyRSMS#5#627#false#false#19#4#1#0#Quantity of faults in HV Battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellUOverFltRSMS#5#627#false#false#31#2#1#0#HV battery cell voltage over voltage fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+HvBattCellUUnderFltRSMS#5#627#false#false#29#2#1#0#HV battery cell voltage under voltage fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+HvBattOverChrgnFltRSMS#5#627#false#false#27#2#1#0#HV battery over charged fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+HvBattPackUOverFltRSMS#5#627#false#false#34#2#1#0#HV battery pack voltage over voltage fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+HvBattPackUUnderFltRSMS#5#627#false#false#47#2#1#0#HV battery pack voltage under voltage fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+HvBattSocHiFltRSMS#5#627#false#false#45#2#1#0#HV battery SOC too high fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+HvBattSocHopFltRSMS#5#627#false#false#43#2#1#0#HV battery SOC hop fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+HvBattSocLoFltRSMS#5#627#false#false#41#2#1#0#HV battery SOC too low fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+HvBattTDifFltRSMS#5#627#false#false#55#2#1#0#HV battery temperature difference excessive fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+HvBattTOverFltRSMS#5#627#false#false#53#2#1#0#HV battery temperature over fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+HvBattCurMaxLimDCChrgn#5#629#false#false#7#14#0.1#0.0#HV battery Maximum current allowed for battery DC charging. negative#0.0#0.0#0.0#null#MS11#E3U1
+HvBattUMaxLimDCChrgn#5#629#false#false#23#12#0.25#0.0#HV battery Maximum voltage allowed for battery DC charging.#0.0#0.0#0.0#null#MS11#E3U1
+DCChrgrCurCp#5#629#false#false#27#12#0.25#0.0#DC charger current capacity.  negative#0.0#0.0#0.0#null#MS11#E3U1
+DCChrgrUCp#5#629#false#false#47#11#1#0#DC charger voltage capacity.#0.0#0.0#0.0#null#MS11#E3U1
+HvBattUCellSigGrpChks#5#630#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattUCellSigGrpCntr#5#630#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattUCellMax#5#630#false#false#23#13#0.001#0.0#HV Battery maximum cell voltage#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattUCellMin#5#630#false#false#39#13#0.001#0.0#HV battery minimum cell voltage#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCurMaxLimACChrgn#5#630#false#false#55#14#0.1#0.0#HV battery Maximum current allowed for battery AC charging.  negative#0.0#0.0#0.0#null#MS11#E3U1
+HvBattUMaxLimACChrgn#5#630#false#false#71#12#0.25#0.0#HV battery Maximum voltage allowed for battery AC charging.#0.0#0.0#0.0#null#MS11#E3U1
+HvBattUCelAvg#5#630#false#false#87#13#0.001#0.0#HV Battery average cell voltage.#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+DCChrgnProtocolVers#5#630#false#false#90#3#1#0#DC Charging Protocol Version#0.0#0.0#0.0#{"0": "Not_available", "1": "GBT_2011", "2": "GBT_2015"}#MS11#E3U1
+DCChrgrActCur#5#630#false#false#103#12#0.25#0.0#DC charger actual current during charging. negative#0.0#0.0#0.0#null#MS11#E3U1
+DCChrgrTypInfo#5#630#false#false#107#4#1#0#DC Charger type Information#0.0#0.0#0.0#{"0": "Not_available", "1": "Error", "2": "MI_Supercharger", "3": "MI_DC", "4": "GBT_DC", "5": "CHAOJI"}#MS11#E3U1
+DCChrgrActU#5#630#false#false#119#11#1#0#DC charger actual voltage during charging.#0.0#0.0#0.0#null#MS11#E3U1
+HvBattColdWarn#5#630#false#false#124#1#1#0#HV battery cold warn#0.0#0.0#0.0#{"0": "Not_Active", "1": "Active"}#MS11#E3U1
+HvBattDCChrgnSts#5#630#false#false#123#4#1#0#HV Battery DC charging status.#0.0#0.0#0.0#{"0": "Standby", "1": "Buck_request", "2": "Boost_Charging", "3": "DC_Charging", "4": "ChargingStopedWithCSTFirst", "5": "Quit_Buck", "6": "Preheating", "7": "Warming"}#MS11#E3U1
+BuckOutpUReq#5#630#false#false#135#13#0.1#0.0#Buck output voltage request#0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnOutpReqSigGrpChks#5#630#false#false#151#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnOutpReqSigGrpCntr#5#630#false#false#155#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnOutpUReq#5#630#false#false#167#14#0.1#0.0#Boost charging output voltage request#0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnOutpCurReq#5#630#false#false#183#14#0.1#0.0#Boost charging output current request#0.0#0.0#0.0#null#MS11#E3U1
+HvBattBkdHeatgTi#5#630#false#false#207#12#1#0#HV battery booked  heating time#0.0#0.0#0.0#null#MS11#E3U1
+HvBattBkdPredChrgnTi#5#630#false#false#211#12#1#0#HV battery booked charging predicted time based on current charging current.#0.0#0.0#0.0#null#MS11#E3U1
+HvBattKeepWrmgTi#5#630#false#false#231#12#1#0#HV battery keep warming time after charging finished#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPreHeatgTi#5#630#false#false#235#12#1#0#High Voltage Battery Remaining heating time  电池先导加热倒计时#0.0#0.0#0.0#null#MS11#E3U1
+HvBattDCChrgnfltTyp#5#630#false#false#255#3#1#0#DC Charging fault Type#0.0#0.0#0.0#{"0": "No_fault", "1": "Derating", "2": "Charger_Fault"}#MS11#E3U1
+HvBattDCChrgnTyp#5#630#false#false#252#3#1#0#DC charge type  Direct charge or Boost charge  .#0.0#0.0#0.0#{"0": "No_req", "1": "Direct_Charging", "2": "Boost_Charging"}#MS11#E3U1
+HvBattCorsCur#5#632#false#false#7#16#0.1#-3276.7#电流传感器2电流#0.0#0.0#0.0#null#MS11#E3U1
+HvBattSopMdlLongTiChrgCurr#5#632#false#false#39#11#1#0#模型计算长时充电电流#0.0#0.0#0.0#null#MS11#E3U1
+HvBattSopMdlLongTiDchaCurr#5#632#false#false#55#11#1#0#模型计算长时放电电流#0.0#0.0#0.0#null#MS11#E3U1
+HvBattSopMdlShoTiChrgCurr#5#632#false#false#71#11#1#0#模型计算短时充电电流#0.0#0.0#0.0#null#MS11#E3U1
+HvBattSopMdlShoTiDchaCurr#5#632#false#false#87#11#1#0#模型计算短时放电电流#0.0#0.0#0.0#null#MS11#E3U1
+HvBattUCellEigValue1#5#632#false#false#103#13#0.001#0.0#电芯电压特征值1#0.0#0.0#0.0#null#MS11#E3U1
+HvBattUCellEigValue2#5#632#false#false#119#13#0.001#0.0#电芯电压特征值2#0.0#0.0#0.0#null#MS11#E3U1
+HvBattUkl30C#5#632#false#false#135#8#0.1#0.0#KL30C电压#0.0#0.0#0.0#null#MS11#E3U1
+HvBattV2VSts#5#632#false#false#143#3#1#0#V2V状态#0.0#0.0#0.0#{"0": "Standby", "1": "Buck_request", "2": "Charging", "3": "Charging_stopped"}#MS11#E3U1
+HvBatThrRson#5#632#false#false#159#32#1#0#热失控发生原因#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS1#5#633#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS2#5#633#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS3#5#633#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS4#5#633#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS5#5#633#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS6#5#633#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS7#5#633#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS8#5#633#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS9#5#633#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS10#5#633#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS11#5#633#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS12#5#633#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS13#5#633#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS14#5#633#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS15#5#633#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in current frame#0.0#0.0#0.0#{"8191": "Invalid"}#MS11#E3U1
+HvBattCellURSMS16#5#633#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS17#5#634#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS18#5#634#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS19#5#634#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS20#5#634#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS21#5#634#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS22#5#634#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS23#5#634#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS24#5#634#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS25#5#634#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS26#5#634#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS27#5#634#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS28#5#634#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS29#5#634#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS30#5#634#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS31#5#634#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS32#5#634#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS33#5#635#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS34#5#635#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS35#5#635#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS36#5#635#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS37#5#635#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS38#5#635#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS39#5#635#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS40#5#635#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS41#5#635#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS42#5#635#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS43#5#635#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS44#5#635#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS45#5#635#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS46#5#635#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS47#5#635#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS48#5#635#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS49#5#636#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS50#5#636#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS51#5#636#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS52#5#636#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS53#5#636#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS54#5#636#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS55#5#636#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS56#5#636#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS57#5#636#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS58#5#636#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS59#5#636#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS60#5#636#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS61#5#636#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS62#5#636#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS63#5#636#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS64#5#636#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS65#5#637#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS66#5#637#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS67#5#637#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS68#5#637#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS69#5#637#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS70#5#637#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS71#5#637#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS72#5#637#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS73#5#637#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS74#5#637#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS75#5#637#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS76#5#637#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS77#5#637#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS78#5#637#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS79#5#637#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS80#5#637#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS81#5#638#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS82#5#638#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS83#5#638#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS84#5#638#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS85#5#638#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS86#5#638#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS87#5#638#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS88#5#638#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS89#5#638#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS90#5#638#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS91#5#638#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS92#5#638#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS93#5#638#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS94#5#638#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS95#5#638#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS96#5#638#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS97#5#639#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS98#5#639#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS99#5#639#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS100#5#639#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS101#5#639#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS102#5#639#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS103#5#639#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS104#5#639#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS105#5#639#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS106#5#639#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS107#5#639#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS108#5#639#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS109#5#639#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS110#5#639#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS111#5#639#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS112#5#639#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattInsulChkSigGrpChks#5#646#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattInsulChkSts#5#646#false#false#14#3#1#0#HV battery insulation check status.#0.0#0.0#0.0#{"0": "Not_Determined", "1": "Insulation_error_battery_warning", "2": "Insulation_error_battery_serious_alarm", "3": "Insulation_error_HV_bus_warning", "4": "Insulation_error_HV_bus_serious_alarm", "5": "Insulation_check_OK", "6": "Insulation_check_block_from_Scantool"}#MS11#E3U1
+HvBattInsulChkSigGrpCntr#5#646#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattInsulRP#5#646#false#false#23#16#1#0#HV battery positive electrode insulation resistance.#0.0#0.0#0.0#null#MS11#E3U1
+HvBattInsulRN#5#646#false#false#39#16#1#0#HV battery negative electrode insulation resistance.#0.0#0.0#0.0#null#MS11#E3U1
+HvBusInsulRP#5#646#false#false#55#16#1#0#HV bus positive electrode insulation resistance.#0.0#0.0#0.0#null#MS11#E3U1
+HvBusInsulRN#5#646#false#false#71#16#1#0#HV bus negative electrode insulation resistance.#0.0#0.0#0.0#null#MS11#E3U1
+DCChrgnNegCntctFlt#5#646#false#false#111#2#1#0#DC charging Negative contactor fault#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11#E3U1
+DCChrgnPosCntctFlt#5#646#false#false#109#2#1#0#DC charging Postivie contactor fault#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11#E3U1
+MainNegCntctFlt#5#646#false#false#107#2#1#0#Main Negative contactor fault#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11#E3U1
+MainPosCntctFlt#5#646#false#false#105#2#1#0#Main Postivie contactor fault#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11#E3U1
+PrechargnPosCntctFlt#5#646#false#false#119#2#1#0#Precharge Postivie contactor fault#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11#E3U1
+HvBattCellURSMS113#5#647#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS114#5#647#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS115#5#647#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS116#5#647#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS117#5#647#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS118#5#647#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS119#5#647#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS120#5#647#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS121#5#647#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS122#5#647#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS123#5#647#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS124#5#647#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS125#5#647#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS126#5#647#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS127#5#647#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS128#5#647#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS129#5#648#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS130#5#648#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS131#5#648#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS132#5#648#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS133#5#648#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS134#5#648#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS135#5#648#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS136#5#648#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS137#5#648#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS138#5#648#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS139#5#648#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS140#5#648#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS141#5#648#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS142#5#648#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS143#5#648#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS144#5#648#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS145#5#649#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS146#5#649#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS147#5#649#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS148#5#649#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS149#5#649#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS150#5#649#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS151#5#649#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS152#5#649#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS153#5#649#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS154#5#649#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS155#5#649#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS156#5#649#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS157#5#649#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS158#5#649#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS159#5#649#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS160#5#649#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS161#5#650#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS162#5#650#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS163#5#650#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS164#5#650#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS165#5#650#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS166#5#650#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS167#5#650#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS168#5#650#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS169#5#650#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS170#5#650#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS171#5#650#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS172#5#650#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS173#5#650#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS174#5#650#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS175#5#650#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS176#5#650#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS177#5#651#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS178#5#651#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS179#5#651#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS180#5#651#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS181#5#651#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS182#5#651#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS183#5#651#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS184#5#651#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS185#5#651#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS186#5#651#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS187#5#651#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS188#5#651#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS189#5#651#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS190#5#651#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS191#5#651#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS192#5#651#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS193#5#652#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS194#5#652#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS195#5#652#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS196#5#652#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS197#5#652#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS198#5#652#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS199#5#652#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS200#5#652#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS201#5#652#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS202#5#652#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS203#5#652#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS204#5#652#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS205#5#652#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS206#5#652#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS207#5#652#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS208#5#652#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS209#5#653#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS210#5#653#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS211#5#653#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS212#5#653#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS213#5#653#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS214#5#653#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS215#5#653#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS216#5#653#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS217#5#653#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS218#5#653#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS219#5#653#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS220#5#653#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS221#5#653#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS222#5#653#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS223#5#653#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS224#5#653#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS225#5#654#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS226#5#654#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS227#5#654#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS228#5#654#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS229#5#654#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS230#5#654#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS231#5#654#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS232#5#654#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS233#5#654#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS234#5#654#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS235#5#654#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS236#5#654#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS237#5#654#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS238#5#654#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS239#5#654#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS240#5#654#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattHvRawU2#5#678#false#false#7#15#0.1#-1638.4#高压采样点2电压#0.0#0.0#0.0#null#MS11#E3U1
+HvBattHvRawU3#5#678#false#false#23#15#0.1#-1638.4#高压采样点3电压#0.0#0.0#0.0#null#MS11#E3U1
+HvBattHvRawU4#5#678#false#false#39#15#0.1#-1638.4#高压采样点4电压#0.0#0.0#0.0#null#MS11#E3U1
+HvBattHvRawU5#5#678#false#false#55#15#0.1#-1638.4#高压采样点5电压#0.0#0.0#0.0#null#MS11#E3U1
+HvBattHvRawU6#5#678#false#false#71#15#0.1#-1638.4#高压采样点6电压#0.0#0.0#0.0#null#MS11#E3U1
+HvBattHvRawU7#5#678#false#false#87#15#0.1#-1638.4#高压采样点7电压#0.0#0.0#0.0#null#MS11#E3U1
+HvBattHvRawU8#5#678#false#false#103#15#0.1#-1638.4#高压采样点8电压#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS241#5#679#false#false#7#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS242#5#679#false#false#23#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS243#5#679#false#false#39#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS244#5#679#false#false#55#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS245#5#679#false#false#71#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS246#5#679#false#false#87#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS247#5#679#false#false#103#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS248#5#679#false#false#119#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS249#5#679#false#false#135#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS250#5#679#false#false#151#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS251#5#679#false#false#167#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS252#5#679#false#false#183#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS253#5#679#false#false#199#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS254#5#679#false#false#215#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS255#5#679#false#false#231#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellURSMS256#5#679#false#false#247#13#0.001#0.0#CellU RSMS Signal Group  Detail voltage of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS1#5#832#false#false#7#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS2#5#832#false#false#23#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS3#5#832#false#false#39#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS4#5#832#false#false#55#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS5#5#832#false#false#71#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS6#5#832#false#false#87#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS7#5#832#false#false#103#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS8#5#832#false#false#119#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS9#5#832#false#false#135#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS10#5#832#false#false#151#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS11#5#832#false#false#167#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS12#5#832#false#false#183#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS13#5#832#false#false#199#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS14#5#832#false#false#215#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS15#5#832#false#false#231#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS16#5#832#false#false#247#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattDevmtGrp05#5#901#false#false#7#32#1#0#HV Battery development group 05#0.0#0.0#0.0#null#MS11#E3U1
+HvBattDevmtGrp06#5#901#false#false#39#32#1#0#HV battery development group 06#0.0#0.0#0.0#null#MS11#E3U1
+HvBattDevmtGrp07#5#901#false#false#71#32#1#0#HV Battery development group 07#0.0#0.0#0.0#null#MS11#E3U1
+HvBattDevmtGrp08#5#901#false#false#103#32#1#0#HV Battery development group 08#0.0#0.0#0.0#null#MS11#E3U1
+HvBattSoCLimMax#5#912#false#false#7#11#0.05#0.0#HV battery state of charge limit max  用于说明DOD的上限#0.0#0.0#0.0#null#MS11#E3U1
+HvBattSoCLimMin#5#912#false#false#23#11#0.05#0.0#HV battery state of charge limit min 用于说明DOD的下限#0.0#0.0#0.0#null#MS11#E3U1
+HvBattEgyAvlForDchrgnToTarSoC#5#912#false#false#39#13#20#0#HV battery energy available for discharging to target SoC referring to a user defined discharging target SOC \n用于V2X场景 最小允许放电SoC在20%#0.0#0.0#0.0#null#MS11#E3U1
+HvBattEgyAvlForChrgnToTarSoC#5#912#false#false#55#13#20#0#HV battery energy available for charging to target SoC referring to a user defined charging target SOC \n用于充电场景 最大允许充电SoC在100%#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPressureInsdPack#5#912#false#false#71#12#0.1#0.0#HV battery pressure inside the pack.#0.0#0.0#0.0#{"4095": "Invalid"}#MS11#E3U1
+HvBattCooltTReq#5#912#false#false#87#8#1#-40#HV battery coolant temperature request.#0.0#0.0#0.0#null#MS11#E3U1
+HvBattEgyDispForDchrgnToTarSoC#5#912#false#false#95#13#20#0#HV battery  display energy available for discharging to target SoC referring to a user defined discharging target SOC \n用于V2X场景 最小允许放电SoC在20%#0.0#0.0#0.0#null#MS11#E3U1
+HvBattEgyDispForChrgnToTarSoC#5#912#false#false#111#13#20#0#HV battery  display energy available for charging to target SoC referring to a user defined charging target SOC \n用于充电场景 最大允许充电SoC在100%#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellAvrgSocErr#5#913#false#false#7#11#0.05#0.0#单体平均SOC计算误差#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellMaxSoc#5#913#false#false#23#11#0.05#0.0#单体最大SOC#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellMaxSocErr#5#913#false#false#39#11#0.05#0.0#单体最大SOC计算误差#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellMaxSocErrIdx#5#913#false#false#55#8#1#0#单体最大SOC计算误差 index#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellMaxSocIdx#5#913#false#false#63#8#1#0#单体最大SOC index#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellMinSoc#5#913#false#false#71#11#0.05#0.0#单体最小SOC#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellMinSocIdx#5#913#false#false#87#8#1#0#单体最小SOC index#0.0#0.0#0.0#null#MS11#E3U1
+HvBattDCchrgdEgyThisChrgnCyc#5#916#false#false#7#17#1#0#DC charging energy in this DC charging cycle#0.0#0.0#0.0#null#MS11#E3U1
+HvBattDchaSocThisDischrgnCyc#5#1002#false#false#7#11#0.1#0.0#High Voltage battery Discharging SOC for this discharging cycle#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCapRSMS#5#1005#false#false#7#8#0.5#0.0#BMS估计所有单体容量#0.0#0.0#0.0#null#MS11#E3U1
+HVBattDischargeSoCTargetReq#5#1005#false#false#55#16#0.05#0.0#期望用户的放电目标SOC要求#0.0#0.0#0.0#null#MS11#E3U1
+HvBattResRSMS#5#1005#false#false#71#16#0.01#0.0#BMS估计所有单体内阻#0.0#0.0#0.0#null#MS11#E3U1
+HVBattRestTimeReq#5#1005#false#false#87#8#0.5#0.0#充电电池维护阶段的剩余静置时间#0.0#0.0#0.0#null#MS11#E3U1
+HvBattSOHRSMSCode#5#1005#false#false#95#8#1#0#循环单体容量及内阻序号#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX1#5#1006#false#false#7#8#1#0#Pack Code Signal Group  Pack code X1#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX2#5#1006#false#false#15#8#1#0#Pack Code Signal Group  Pack code X2#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX3#5#1006#false#false#23#8#1#0#Pack Code Signal Group  Pack code X3#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX4#5#1006#false#false#31#8#1#0#Pack Code Signal Group  Pack code X4#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX5#5#1006#false#false#39#8#1#0#Pack Code Signal Group  Pack code X5#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX6#5#1006#false#false#47#8#1#0#Pack Code Signal Group  Pack code X6#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX7#5#1006#false#false#55#8#1#0#Pack Code Signal Group  Pack code X7#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX8#5#1006#false#false#63#8#1#0#Pack Code Signal Group  Pack code X8#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX9#5#1006#false#false#71#8#1#0#Pack Code Signal Group  Pack code X9#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX10#5#1006#false#false#79#8#1#0#Pack Code Signal Group  Pack code X10#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX11#5#1006#false#false#87#8#1#0#Pack Code Signal Group  Pack code X11#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX12#5#1006#false#false#95#8#1#0#Pack Code Signal Group  Pack code X12#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX13#5#1006#false#false#103#8#1#0#Pack Code Signal Group  Pack code X13#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX14#5#1006#false#false#111#8#1#0#Pack Code Signal Group  Pack code X14#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX15#5#1006#false#false#119#8#1#0#Pack Code Signal Group  Pack code X15#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX16#5#1006#false#false#127#8#1#0#Pack Code Signal Group  Pack code X16#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX17#5#1006#false#false#135#8#1#0#Pack Code Signal Group  Pack code X17#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX18#5#1006#false#false#143#8#1#0#Pack Code Signal Group  Pack code X18#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX19#5#1006#false#false#151#8#1#0#Pack Code Signal Group  Pack code X19#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX20#5#1006#false#false#159#8#1#0#Pack Code Signal Group  Pack code X20#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX21#5#1006#false#false#167#8#1#0#Pack Code Signal Group  Pack code X21#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX22#5#1006#false#false#175#8#1#0#Pack Code Signal Group  Pack code X22#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX23#5#1006#false#false#183#8#1#0#Pack Code Signal Group  Pack code X23#0.0#0.0#0.0#null#MS11#E3U1
+HvBattPackCodeX24#5#1006#false#false#191#8#1#0#Pack Code Signal Group  Pack code X24#0.0#0.0#0.0#null#MS11#E3U1
+HvBattSoH#5#1010#false#false#7#8#0.5#0.0#HV battery state of health.#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellBalActvt#5#1010#false#false#20#1#1#0#HV battery cell balance activate or not 仅用于告知BMS所处的状态 不影响其他使用和运行#0.0#0.0#0.0#{"0": "Not_activate", "1": "Activated"}#MS11#E3U1
+HvBattTotDchrgdEgyWh#5#1010#false#false#31#32#1#0#HV battery total discharged energy by Wh   accumulate once current is positive.#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTotDchrgdEgyAh#5#1010#false#false#63#23#1#0#HV battery total discharged energy by Ah   accumulate once current is positive . This information is used for Battery internal SoH calculation#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTotChrgdEgyWh#5#1010#false#false#87#32#1#0#HV battery total charged energy by Wh   accumulate once current is negtive.#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTotChrgdEgyAh#5#1010#false#false#119#23#1#0#HV battery total charged energy by Ah   accumulate once current is negtive.   This information is used for Battery internal SoH calculation#0.0#0.0#0.0#null#MS11#E3U1
+HvBattChrgdEgyThisChrgnCyc#5#1010#false#false#128#17#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellTSigGrpChks#5#1010#false#false#159#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellTSigGrpCntr#5#1010#false#false#163#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellTMax#5#1010#false#false#175#9#0.5#-40.0#HV battery cell maximum temperature.#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattCellTMin#5#1010#false#false#191#9#0.5#-40.0#HV battery cell minimum temperature.#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattCellTAvg#5#1010#false#false#207#9#0.5#-40.0#HV battery average cell temperature of all sensors.#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattCooltFlowReq#5#1010#false#false#223#8#0.2#0.0#HV battery coolant flow request.#0.0#0.0#0.0#null#MS11#E3U1
+DCChrgnPortTNegTerminal#5#1011#false#false#7#8#1.0#-40.0#Temperature of DC charging port negtive terminal.#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+DCChrgnPortTPosTerminal#5#1011#false#false#15#8#1.0#-40.0#Temperature of DC charging port positive terminal.#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+HvBattMaxTProbIDRSMS#5#1011#false#false#22#7#1#0#Number of maximum Temperature Probe in HV Battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattMinTProbIDRSMS#5#1011#false#false#30#7#1#0#Number of minimum Temperature Probe in HV Battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCellQntyRSMS#5#1011#false#false#39#8#1#0#Quantity of cells in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTPrbQntyRSMS#5#1011#false#false#46#7#1#0#Quantity of temperature probes in Hv battery#0.0#0.0#0.0#null#MS11#E3U1
+BalOnCellNumb#5#1011#false#false#55#8#1#0#当前开启均衡单体数目#0.0#0.0#0.0#null#MS11#E3U1
+HvPrechargeTimer#5#1011#false#false#63#13#1#0#最近一次预充时间#0.0#0.0#0.0#null#MS11#E3U1
+HVBattTempRiskLvl#5#1011#false#false#79#4#1#0#HV battery cell  temperaturer risk  level#0.0#0.0#0.0#{"0": "0", "1": "1", "2": "2", "3": "3", "4": "4", "5": "5", "6": "6", "7": "7", "8": "8", "9": "9", "10": "10"}#MS11#E3U1
+HvBattPackQntyRSMS#5#1011#false#false#87#5#1#0#Total number of packs in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattSWVersion#5#1012#false#false#7#24#1#0#HvBatt SW Version#0.0#0.0#0.0#null#MS11#E3U1
+HvBattBSWVersion#5#1012#false#false#31#16#1#0#HvBatt BSW Version#0.0#0.0#0.0#null#MS11#E3U1
+HvBattBMUVersion#5#1012#false#false#47#12#1#0#HvBatt BMU Version#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCMCVersion#5#1012#false#false#51#12#1#0#HvBatt CMC Version#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS17#5#1016#false#false#7#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS18#5#1016#false#false#23#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS19#5#1016#false#false#39#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS20#5#1016#false#false#55#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS21#5#1016#false#false#71#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS22#5#1016#false#false#87#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS23#5#1016#false#false#103#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS24#5#1016#false#false#119#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS25#5#1016#false#false#135#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS26#5#1016#false#false#151#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS27#5#1016#false#false#167#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+HvBattTempRSMS28#5#1016#false#false#183#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS29#5#1016#false#false#199#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS30#5#1016#false#false#215#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS31#5#1016#false#false#231#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS32#5#1016#false#false#247#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS33#5#1019#false#false#7#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS34#5#1019#false#false#23#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS35#5#1019#false#false#39#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS36#5#1019#false#false#55#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS37#5#1019#false#false#71#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS38#5#1019#false#false#87#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS39#5#1019#false#false#103#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS40#5#1019#false#false#119#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS41#5#1019#false#false#135#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS42#5#1019#false#false#151#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS43#5#1019#false#false#167#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS44#5#1019#false#false#183#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS45#5#1019#false#false#199#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS46#5#1019#false#false#215#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS47#5#1019#false#false#231#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS48#5#1019#false#false#247#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS49#5#1020#false#false#7#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS50#5#1020#false#false#23#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS51#5#1020#false#false#39#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS52#5#1020#false#false#55#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS53#5#1020#false#false#71#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS54#5#1020#false#false#87#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS55#5#1020#false#false#103#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS56#5#1020#false#false#119#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS57#5#1020#false#false#135#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS58#5#1020#false#false#151#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS59#5#1020#false#false#167#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS60#5#1020#false#false#183#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS61#5#1020#false#false#199#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS62#5#1020#false#false#215#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS63#5#1020#false#false#231#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS64#5#1020#false#false#247#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS65#5#1021#false#false#7#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS66#5#1021#false#false#23#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS67#5#1021#false#false#39#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS68#5#1021#false#false#55#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS69#5#1021#false#false#71#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS70#5#1021#false#false#87#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS71#5#1021#false#false#103#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS72#5#1021#false#false#119#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS73#5#1021#false#false#135#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS74#5#1021#false#false#151#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS75#5#1021#false#false#167#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS76#5#1021#false#false#183#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS77#5#1021#false#false#199#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS78#5#1021#false#false#215#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS79#5#1021#false#false#231#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS80#5#1021#false#false#247#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS81#5#1022#false#false#7#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS82#5#1022#false#false#23#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS83#5#1022#false#false#39#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS84#5#1022#false#false#55#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS85#5#1022#false#false#71#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS86#5#1022#false#false#87#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS87#5#1022#false#false#103#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS88#5#1022#false#false#119#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS89#5#1022#false#false#135#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS90#5#1022#false#false#151#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS91#5#1022#false#false#167#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS92#5#1022#false#false#183#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS93#5#1022#false#false#199#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS94#5#1022#false#false#215#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS95#5#1022#false#false#231#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattTempRSMS96#5#1022#false#false#247#9#0.5#-40.0#BattTemp RSMS Signal Group  Detail temperature of probes in HV battery#0.0#0.0#0.0#null#MS11#E3U1
+HvBattChargerNumber#5#137#false#false#7#32#1#0#DC充电桩序列号#0.0#0.0#0.0#null#MS11#E3U1
+HvBattChargerRegionalCode#5#137#false#false#39#24#1#0#DC充电桩邮编#0.0#0.0#0.0#null#MS11#E3U1
+HvBattSigGrpChks#5#145#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+MainNegCntctSts#5#145#false#false#15#2#1#0#Main negative contactor status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3U1
+MainPosCntctSts#5#145#false#false#13#2#1#0#Main positive contactor status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3U1
+HvBattSigGrpCntr#5#145#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattMaxPwrDchrgn#5#145#false#false#23#12#0.25#0.0#HV battery maximum discharging power#0.0#0.0#0.0#null#MS11#E3U1
+HvBattMaxPwrChrgn#5#145#false#false#27#12#0.25#0.0#HV battery maximum charging power.#0.0#0.0#0.0#null#MS11#E3U1
+HvBattActPackU#5#145#false#false#47#14#0.1#0.0#High voltage battery actual pack voltage measured before main contactor#0.0#0.0#0.0#{"16383": "Invalid"}#MS11#E3U1
+HVOffReq#5#145#false#false#49#2#1#0#HV Off Request From BMS Current circuit contactors will open in tbd s due to faults or safety reasons.#0.0#0.0#0.0#{"0": "No_request", "1": "Request"}#MS11#E3U1
+HvBattFltLvlIndcn#5#145#false#false#63#3#1#0#HV battery fault level indication.#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault_LV0_DTCOnly", "2": "Fault_LV1_PowerLimited", "3": "Fault_LV2_Limphome", "4": "Fault_LV3_Poweroffwithdelay", "5": "Fault_LV4_Poweroff"}#MS11#E3U1
+HvBattActBusU#5#145#false#false#71#14#0.1#0.0#High voltage battery actual pack voltage measured after main contactor#0.0#0.0#0.0#{"16383": "Invalid"}#MS11#E3U1
+HvBattActCurSigGrpChks#5#145#false#false#87#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattActCurSigGrpCntr#5#145#false#false#91#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattActCur#5#145#false#false#103#16#0.1#-3276.7#HV battery actual current  Discharging battery  positive  charging battery  negative .#0.0#0.0#0.0#{"65535": "Invalid"}#MS11#E3U1
+DCChrgrSigGrpChks#5#145#false#false#119#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+DCChrgrSigGrpCntr#5#145#false#false#123#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+DCChrgrConnectnSts#5#145#false#false#135#3#1#0#DC charger connection status.#0.0#0.0#0.0#{"0": "Disconnected", "1": "ConnectedAActive", "2": "ConnectedANotActive", "3": "Fault"}#MS11#E3U1
+ChrgnNotAvlForT#5#145#false#false#132#1#1#0#Charging not available for temperature#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MS11#E3U1
+ChrgnNotAvlForFault#5#145#false#false#131#2#1#0#Charging not available for Fault#0.0#0.0#0.0#{"0": "Available_No_fault", "1": "AC_Charging_Not_Avl", "2": "DC_Charging_Not_Avl", "3": "Both_ACandDC_Not_Avl"}#MS11#E3U1
+HvBattUkl30#5#145#false#false#143#8#0.1#0.0#Hv battery KL30 voltage Voltage supplied in the pack from vehicle low voltage system#0.0#0.0#0.0#null#MS11#E3U1
+HvBattThermModReq#5#145#false#false#151#4#1#0#HV battery thermal mode request#0.0#0.0#0.0#{"0": "HvBattThermaMod_Idle", "1": "HvBattThermaMod_Balancing", "2": "HvBattThermaMod_Cooling", "3": "HvBattThermaMod_Heating", "4": "Not_Used", "5": "HvBattThermaMod_Passive_Cooling"}#MS11#E3U1
+HvBattModSts#5#145#false#false#147#4#1#0#High voltage battery mode status#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Precharge", "3": "HV_On", "4": "Emergency_Off", "5": "Direct_Heating", "6": "Integrity_test", "7": "Service_mode", "8": "After_Run", "9": "Preheating", "10": "Warming"}#MS11#E3U1
+MainCntctInhbn#5#145#false#false#161#1#1#0#Main contactor inhibition Main contactors closing is inhibited due to Hv System fault or safety issue.#0.0#0.0#0.0#{"0": "Normal", "1": "Inhibited"}#MS11#E3U1
+PyroFuseSts#5#145#false#false#160#1#1#0#PyroFuse status#0.0#0.0#0.0#{"0": "Normal", "1": "Fuse_broken"}#MS11#E3U1
+HvBattMaxPwrDchrgnContns#5#145#false#false#175#12#0.25#0.0#HV battery maximum discharging Continuous power 30min#0.0#0.0#0.0#null#MS11#E3U1
+MainCntctStsSigGrpChks#5#145#false#false#207#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+MainCntctStsSigGrpCntr#5#145#false#false#211#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+MainCntctCtrlFlg#5#145#false#false#223#1#1#0#Main contactor Control Flag#0.0#0.0#0.0#{"0": "Open", "1": "Close"}#MS11#E3U1
+MainCntctSts#5#145#false#false#222#2#1#0#Main contactor status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3U1
+HvBattDrtSts#5#145#false#false#247#1#1#0#HV battery derating Status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MS11#E3U1
+GeBCVVmncGpknOoRFault#5#148#false#false#7#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBCVMainDriveFuseOoRFault#5#148#false#false#6#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBCVBatteryVoltageOoRFault#5#148#false#false#5#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeACCChargeOvercurrentL2Fault#5#148#false#false#4#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GaCMDModltempSamplingOpenWireF#5#148#false#false#3#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GaCMDAfeSamplingChipFault#5#148#false#false#2#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+CrsPwmSts#5#148#false#false#1#2#1#0#碰撞硬线状态#0.0#0.0#0.0#{"0": "No_Crash", "1": "Crash", "2": "Not_determined"}#MS11#E3U1
+GeCVTCellOverVoltL1Fault#5#148#false#false#15#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCTDMPRStuckopenFault#5#148#false#false#14#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCTDDPCStuckcloseFault#5#148#false#false#13#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCMDCellVoltMsgTimeoutFault#5#148#false#false#12#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBMMKL30VoltSrcMaxFault#5#148#false#false#11#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBMMKL30CVoltSrcMinFault#5#148#false#false#10#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBMMKL30CVoltSrcMaxFault#5#148#false#false#9#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBMMKL30CUnderVoltageFault#5#148#false#false#8#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+HvBattaftcoolgReq#5#148#false#false#19#1#1#0#Hv Battery after cooling request from HVOFF to HVON#0.0#0.0#0.0#{"0": "Not_Request", "1": "Request"}#MS11#E3U1
+GeSOFDischargeOverCurrentLv2F#5#148#false#false#18#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeSOFDischargeOverCurrentLv1F#5#148#false#false#17#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCVTCellOverVoltL4Fault#5#148#false#false#16#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+HvBattCntctCtrlSt#5#148#false#false#31#8#1#0#继电器时序状态#0.0#0.0#0.0#null#MS11#E3U1
+HvBattMNCLSDEna#5#148#false#false#39#1#1#0#主负低边#0.0#0.0#0.0#{"0": "Not_enabled", "1": "Enabled"}#MS11#E3U1
+HVISOMeasState#5#148#false#false#38#3#1#0#绝缘采样状态#0.0#0.0#0.0#null#MS11#E3U1
+HvBattDPCLSDEna#5#148#false#false#35#1#1#0#DC正低边#0.0#0.0#0.0#{"0": "Not_enabled", "1": "Enabled"}#MS11#E3U1
+HvBattOverHeatWarnSigGrpChks#5#148#false#false#63#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattOverHeatWarnSigGrpCntr#5#148#false#false#67#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+HvBattOverHeatWarn#5#148#false#false#79#1#1#0#HV battery over heat warn for HMI light and thermal management#0.0#0.0#0.0#{"0": "No_Warn", "1": "Warn"}#MS11#E3U1
+GeCMDAfeVoltMsgCheckFailFault#5#149#false#false#7#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBCVVdpcGpknOoRFault#5#149#false#false#6#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBCVPackVoltageMismatchFault#5#149#false#false#5#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBCVDCFuseOoRFault#5#149#false#false#4#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBCVDCFuseOLFault#5#149#false#false#3#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBCVBatteryOverVoltageFault#5#149#false#false#2#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeACCChargeOvercurrentL1Fault#5#149#false#false#1#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GaCMDAfeComErrFault#5#149#false#false#0#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCTDDNCStuckopenFault#5#149#false#false#15#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCTDDCFuseBlownFault#5#149#false#false#14#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCMDDaisyChainComSuspendFault#5#149#false#false#13#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCMDCellBaltempMsgTimeoutFault#5#149#false#false#12#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCMDAfeVoltMsgTimeoutFault#5#149#false#false#11#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCMDCellBaltempMsgCheckFailF#5#149#false#false#10#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCMDBusbarVoltMsgTimeoutFault#5#149#false#false#9#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCMDBusbarVoltMsgCheckFailFault#5#149#false#false#8#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCVTCellUnderVoltL2Fault#5#149#false#false#23#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCVTCellOverVoltL3Fault#5#149#false#false#22#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCTSPrechargeOverTimesFault#5#149#false#false#21#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCTDPrechargeTimeoutFault#5#149#false#false#20#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCTDPrechargeBusShortFault#5#149#false#false#19#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCTDMNCStuckopenFault#5#149#false#false#18#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCTDMDFuseBlownFault#5#149#false#false#17#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCTDDPCStuckopenFault#5#149#false#false#16#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeSOFRegenChargeOverCurrentLv1F#5#149#false#false#31#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GePFCPyroFuseOpenFault#5#149#false#false#30#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GePFCPyroFuseCloseFault#5#149#false#false#29#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeHVILVIL2CircuitOpenFault#5#149#false#false#28#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeDCCChargeOvercurrentL1Fault#5#149#false#false#27#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeDCCAPlusVoltageOoRFault#5#149#false#false#26#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCVTCellVoltOverDeviationL2F#5#149#false#false#25#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCVTCellVoltOverDeviationL1F#5#149#false#false#24#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+HvBattInsulGndSwtSt#5#149#false#false#39#1#1#0#绝缘Pos开关控制指令#0.0#0.0#0.0#{"0": "Open", "1": "Close"}#MS11#E3U1
+HvBattDNCLSDEna#5#149#false#false#38#1#1#0#DC负低边#0.0#0.0#0.0#{"0": "Not_enabled", "1": "Enabled"}#MS11#E3U1
+GeVRXPTCANBusOffFault#5#149#false#false#37#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeTHMInlettempLowFault#5#149#false#false#36#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeTHMHeatFlowMismatchFault#5#149#false#false#35#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeTHMCoolSysFault#5#149#false#false#34#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeTHMCoolFlowMismatchFault#5#149#false#false#33#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeSOFRegenChargeOverCurrentLv2F#5#149#false#false#32#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+HvBattMPRHSDEna#5#149#false#false#42#1#1#0#预充高边#0.0#0.0#0.0#{"0": "Not_enabled", "1": "Enabled"}#MS11#E3U1
+HvBattMPCLSDEna#5#149#false#false#41#1#1#0#主正低边#0.0#0.0#0.0#{"0": "Not_enabled", "1": "Enabled"}#MS11#E3U1
+HvBattInsulPosSwtSt#5#149#false#false#40#1#1#0#绝缘Neg开关控制指令#0.0#0.0#0.0#{"0": "Open", "1": "Close"}#MS11#E3U1
+HVIsoNegVolt#5#149#false#false#55#15#0.1#-1638.4#绝缘负对地电压#0.0#0.0#0.0#null#MS11#E3U1
+HVIsoPosVolt#5#149#false#false#71#15#0.1#-1638.4#绝缘正对地电压#0.0#0.0#0.0#null#MS11#E3U1
+IsoGndMosDiagVolt#5#149#false#false#87#8#0.1#0.0#绝缘S3驱动电压#0.0#0.0#0.0#null#MS11#E3U1
+HvBattCSR21#5#159#false#false#7#32#1#0#私有报文\nBMS#0.0#0.0#0.0#{"0": "Not_Blocked", "1": "Blocked"}#MS11#E3U1
+HvBattCSR22#5#159#false#false#39#32#1#0#私有报文\nBMS#0.0#0.0#0.0#{"0": "No_Fault", "1": "Fault"}#MS11#E3U1
+HvBattCSR23#5#159#false#false#71#32#1#0#私有报文\nBMS#0.0#0.0#0.0#{"0": "Not_Enable", "1": "Enable"}#MS11#E3U1
+HvBattCSR24#5#159#false#false#103#32#1#0#私有报文\nBMS#0.0#0.0#0.0#{"0": "Not_active", "1": "Active"}#MS11#E3U1
+GeBCVShunttempLowFault#5#164#false#false#7#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBCVShunttempHighFault#5#164#false#false#6#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBCVShuntADCSpiComFault#5#164#false#false#5#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBCVMainDriveFuseOLFault#5#164#false#false#4#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBCVHVADCComDiagFault#5#164#false#false#3#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBCVBatteryUnderVoltageFault#5#164#false#false#2#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GaCVTAfeCellVoltOORFault#5#164#false#false#1#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GaCMDCellVoltSamplingOpenWireF#5#164#false#false#0#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCMDModltempMsgCheckFailFault#5#164#false#false#15#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCMDCellVoltMsgCheckFailFault#5#164#false#false#14#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCMDAfeDietempMsgTimeoutFault#5#164#false#false#13#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCMDAfeDietempMsgCheckFailFault#5#164#false#false#12#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBMMKL30VoltSrcMinFault#5#164#false#false#11#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBMMKL30CLowVoltageFault#5#164#false#false#10#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBCVVmpcGpknOoRFault#5#164#false#false#9#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeBCVVdncGpknOoRFault#5#164#false#false#8#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCVTCellUnderVoltL4Fault#5#164#false#false#23#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCVTCellUnderVoltL3Fault#5#164#false#false#22#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCVTCellUnderVoltL1Fault#5#164#false#false#21#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCVTCellOverVoltL2Fault#5#164#false#false#20#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCTDMPCStuckcloseFault#5#164#false#false#19#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCTDMNCStuckcloseFault#5#164#false#false#18#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCTDDNCStuckcloseFault#5#164#false#false#17#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCMDModltempMsgTimeoutFault#5#164#false#false#16#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeVRXVCCD090TimeOutFault#5#164#false#false#31#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeTHRThermalRunAwayFault#5#164#false#false#30#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeTHMInlettempHighFault#5#164#false#false#29#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GePRXPrivateCANBusOffFault#5#164#false#false#28#1#1#0#内CAN BusOff故障#0.0#0.0#0.0#null#MS11#E3U1
+GeDCCConnectortempHighWarningF#5#164#false#false#27#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeDCCChargeOvercurrentL2Fault#5#164#false#false#26#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeDCCCC2VoltageAbnormalFault#5#164#false#false#25#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+HvBattMNCHSDEna#5#164#false#false#39#1#1#0#主负高边#0.0#0.0#0.0#{"0": "Not_enabled", "1": "Enabled"}#MS11#E3U1
+HvBattInsulNegSwtSt#5#164#false#false#38#1#1#0#绝缘GND开关控制指令#0.0#0.0#0.0#{"0": "Open", "1": "Close"}#MS11#E3U1
+HvBattDPCHSDEna#5#164#false#false#37#1#1#0#DC正高边#0.0#0.0#0.0#{"0": "Not_enabled", "1": "Enabled"}#MS11#E3U1
+HvBattDNCHSDEna#5#164#false#false#36#1#1#0#DC负高边#0.0#0.0#0.0#{"0": "Not_enabled", "1": "Enabled"}#MS11#E3U1
+HvBattBkdheatgReq#5#164#false#false#33#1#1#0#HV battery Booked heating request after booked charging setting#0.0#0.0#0.0#{"0": "Not_Request", "1": "Request"}#MS11#E3U1
+GeVRXVCCD271TimeOutFault#5#164#false#false#32#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeDCCConnectortempHighFault#5#164#false#false#47#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCTDMPCStuckopenFault#5#164#false#false#46#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+GeCRSVehicleCrashFault#5#164#false#false#45#1#1#0#BMS Fault information flag#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+HvBattWrmgReq#5#164#false#false#44#1#1#0#HV battery warming request after charging finished#0.0#0.0#0.0#{"0": "Not_Request", "1": "Request"}#MS11#E3U1
+HvBattUkl30LowWarn#5#164#false#false#42#1#1#0#Hv Battery kl30 Voltage too Low warn#0.0#0.0#0.0#{"0": "Not_Warn", "1": "Warn"}#MS11#E3U1
+HvBattMPRLSDEna#5#164#false#false#41#1#1#0#预充低边#0.0#0.0#0.0#{"0": "Not_enabled", "1": "Enabled"}#MS11#E3U1
+HvBattMPCHSDEna#5#164#false#false#40#1#1#0#主正高边#0.0#0.0#0.0#{"0": "Not_enabled", "1": "Enabled"}#MS11#E3U1
+HvBattWorkSts#5#164#false#false#71#8#1#0#BMM电池包当前状态#0.0#0.0#0.0#null#MS11#E3U1
+BMSPtCanfdNodeAddress#5#1305#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#E3U1
+BMSPtCanfdActiveWakeup#5#1305#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3U1
+BMSPtCanfdRepeatMsgReq#5#1305#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3U1
+BMSPtCanfdRepeatMsgSt#5#1305#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3U1
+UDB47BMS#5#1305#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB40BMS#5#1305#false#false#40#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+NMKeepAwkRsnBMS#5#1305#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3U1
+DCDCSigGrpChks#5#306#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+DCDCSigGrpCntr#5#306#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+DCDCCurAvlMaxLV#5#306#false#false#23#11#0.5#0.0#available maximal current at DCDC Lv side considering DCDC status  positive means current flows from DCDC to LV#0.0#0.0#0.0#null#MS11#E3U1
+DCDCFltLvlIndcn#5#306#false#false#28#3#1#0#DCDC fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_LV0_DTCOnly", "2": "Fault_LV1_Recoverable", "3": "Fault_LV2_Not_Recoverable"}#MS11#E3U1
+DCDCModSts#5#306#false#false#39#4#1#0#DCDC mode status.#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Power_conversion_HV_to_LV_Buck", "4": "Power_conversion_LV_to_HV_Boost", "5": "After_Run", "6": "Failure", "7": "Active_discharge"}#MS11#E3U1
+OBCSigGrpChks#5#320#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+OBCS2Sts#5#320#false#false#15#1#1#0#OBC S2 status#0.0#0.0#0.0#{"0": "Open", "1": "Closed"}#MS11#E3U1
+OBCCcConnectnSts#5#320#false#false#14#3#1#0#OBC Cc connection status.#0.0#0.0#0.0#{"0": "Disconnected", "1": "Half_connected", "2": "Connected_Charging", "3": "Connected_V2L", "4": "Connected_V2V", "5": "Fault"}#MS11#E3U1
+OBCSigGrpCntr#5#320#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+OBCCpSts#5#320#false#false#23#1#1#0#OBC Cp detected status.#0.0#0.0#0.0#{"0": "Cp_state_NOK", "1": "Cp_state_OK"}#MS11#E3U1
+OBCCpU#5#320#false#false#22#7#0.1#0.0#OBC Cp detected high level voltage.#0.0#0.0#0.0#{"127": "Invalid"}#MS11#E3U1
+OBCCpDutyFrq#5#320#false#false#31#14#0.1#0.0#OBC Cp detected Frequency#0.0#0.0#0.0#null#MS11#E3U1
+OBCELockSts#5#320#false#false#33#2#1#0#OBC E lock status.#0.0#0.0#0.0#{"0": "Not_determined", "1": "Unlocked", "2": "Locked"}#MS11#E3U1
+OBCFltLvlIndcn#5#320#false#false#47#3#1#0#OBC fault level indication.#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_LV0_DTCOnly", "2": "Fault_LV1_Recoverable", "3": "Fault_LV2_Not_Recoverable"}#MS11#E3U1
+OBCHvDcSigGrpChks#5#320#false#false#55#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+OBCHvDcSigGrpCntr#5#320#false#false#59#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+OBCChrgnPwrMax#5#320#false#false#71#8#50#0#OBC charging power max OBC available charging power considering derating  cable  charger#0.0#0.0#0.0#null#MS11#E3U1
+OBCHvDcCurAct#5#320#false#false#79#11#0.1#-102.4#OBC HV DC side actual current  positive means current flows from OBC to HV bus.#0.0#0.0#0.0#{"2047": "Invalid"}#MS11#E3U1
+OBCHvDcUAct#5#320#false#false#81#10#1.0#0.0#OBC HV DC side actual voltage.#0.0#0.0#0.0#{"1023": "Invalid"}#MS11#E3U1
+OBCV2xCurAvl#5#320#false#false#103#9#0.1#0.0#AC discharging available current used for V2x.  AC current positive 无论双相还是三相 都指一个相下的电流#0.0#0.0#0.0#null#MS11#E3U1
+OBCModSts#5#320#false#false#110#3#1#0#Mode status of OBC.#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Charging", "4": "Discharging", "5": "Heating", "6": "After_Run", "7": "Failure"}#MS11#E3U1
+OBCCcR#5#320#false#false#105#10#10.0#0.0#OBC Cc resistance#0.0#0.0#0.0#{"1023": "Invalid"}#MS11#E3U1
+OBCElockDrvU#5#320#false#false#127#8#0.1#0.0#OBC E lock drive voltage  充电机电子锁驱动电压#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+OBCCpDutyCyc#5#320#false#false#135#10#0.1#0.0#OBC Cp detected duty cycle.#0.0#0.0#0.0#null#MS11#E3U1
+OBCAcCurActL1#5#320#false#false#138#11#0.1#-102.4#OBC AC side actual current  positive means current flows from station to OBC.#0.0#0.0#0.0#{"2047": "Invalid"}#MS11#E3U1
+OBCAcUActL1#5#320#false#false#159#10#1.0#0.0#OBC AC side actual voltage.#0.0#0.0#0.0#{"1023": "Invalid"}#MS11#E3U1
+OBCAcCurActL2#5#320#false#false#162#11#0.1#-102.4#OBC AC side actual current   positive means current flows from station to OBC.#0.0#0.0#0.0#{"2047": "Invalid"}#MS11#E3U1
+OBCAcUActL2#5#320#false#false#183#10#1.0#0.0#OBC AC side actual voltage.#0.0#0.0#0.0#{"1023": "Invalid"}#MS11#E3U1
+OBCAcCurActL3#5#320#false#false#186#11#0.1#-102.4#OBC AC side actual current   positive means current flows from station to OBC.#0.0#0.0#0.0#{"2047": "Invalid"}#MS11#E3U1
+OBCAcUActL3#5#320#false#false#207#10#1.0#0.0#OBC AC side actual voltage.#0.0#0.0#0.0#{"1023": "Invalid"}#MS11#E3U1
+OBCAcUFrq#5#320#false#false#222#7#1.0#0.0#OBC AC side voltage frequency#0.0#0.0#0.0#{"127": "Invalid"}#MS11#E3U1
+OBCPFCoutCurAct#5#320#false#false#231#11#0.1#-102.4#OBC PFC out current actual 售后故障排查#0.0#0.0#0.0#{"2047": "Invalid"}#MS11#E3U1
+OBCPFCoutVoltAct#5#320#false#false#233#10#1.0#0.0#OBC PFC out voltage actual 售后故障排查#0.0#0.0#0.0#{"1023": "Invalid"}#MS11#E3U1
+DCDCActHVSigGrpChks#5#628#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+DCDCActHVSigGrpCntr#5#628#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+DCDCUActHV#5#628#false#false#23#12#0.25#0.0#Actual voltage measured at DCDC HV side.#0.0#0.0#0.0#{"4095": "Invalid"}#MS11#E3U1
+DCDCCurActHV#5#628#false#false#24#9#0.1#-20.0#Actual current measured at DCDC HV side  negative means current flows from DCDC to HV.#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+DCDCCurActLV#5#628#false#false#47#12#0.5#-1000.0#Actual current measured at DCDC LV side  positive means current flows from DCDC to LV#0.0#0.0#0.0#{"4095": "Invalid"}#MS11#E3U1
+DCDCUActLV#5#628#false#false#63#8#0.1#0.0#Actual voltage measured at DCDC LV side.#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+DCDCActT#5#628#false#false#95#8#1.0#-40.0#Actual temperature of DCDC  if several sensors are used  max temperature shall be sent.#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+DCDCFltQntyRSMS#5#628#false#false#103#4#1#0#Quantity of faults in DCDC#0.0#0.0#0.0#null#MS11#E3U1
+DCDCDrtSts#5#628#false#false#99#1#1#0#DCDC derating Status#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MS11#E3U1
+OBCDrtSts#5#628#false#false#98#1#1#0#OBC derating Status OBC降额信息#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MS11#E3U1
+OBCChrgnPortSigGrpChks#5#640#false#false#39#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+OBCChrgnPortSigGrpCntr#5#640#false#false#43#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+OBCChrgnPortTL1#5#640#false#false#55#8#1.0#-40.0#Actual temperature of AC charging port.#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+OBCChrgnPortTL2#5#640#false#false#63#8#1.0#-40.0#Actual temperature of AC charging port.#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+OBCChrgnPortTL3#5#640#false#false#71#8#1.0#-40.0#Actual temperature of AC charging port.#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+OBCChrgnPortTN#5#640#false#false#79#8#1.0#-40.0#Actual temperature of AC charging port.#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+OBCActT#5#640#false#false#87#8#1.0#-40.0#Actual temperature of OBC if several sensors are used  max temperature shall be sent.#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+OBCPFCMosT#5#640#false#false#95#8#1.0#-40.0#OBC PFC mosfet temperature#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+DCDCSRMosT#5#640#false#false#103#8#1.0#-40.0#DCDC SR mosfet temperature#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+OBCMagMaxT#5#640#false#false#111#8#1.0#-40.0#OBC magnet max temperature#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+CCUTCooltInlet#5#640#false#false#119#8#1.0#-40.0#Temperature of CCU coolant at inlet.#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+CCUCooltFlowReq#5#640#false#false#125#6#0.25#0.0#CCU coolant flow request#0.0#0.0#0.0#null#MS11#E3U1
+OBCInsulR#5#640#false#false#159#20#1#0#OBC V2X insulation resistance value#0.0#0.0#0.0#null#MS11#E3U1
+OBCACVoltSts#5#640#false#false#183#3#1#0#OBC AC charging voltage status#0.0#0.0#0.0#{"0": "Not_available", "1": "single_phase", "2": "three_phase", "3": "three_phase_loss_L1", "4": "three_phase_loss_L2", "5": "three_phase_loss_L3"}#MS11#E3U1
+FltCrashFail#5#655#false#false#7#1#1#0#CCU receive crash signal from VCU#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltCCUKl30UAbnorm#5#655#false#false#6#1#1#0#Fault LV1 CCU KL30 voltage abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+DrtDCDCHvdcAbnorm#5#655#false#false#5#1#1#0#DCDC output derating due to HVDC voltage#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+DrtDCDCCooltAbnorm#5#655#false#false#4#1#1#0#DCDC output derating due to coolant over temperature#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+DCDCTOverFltRSMS#5#655#false#false#3#2#1#0#DCDC over temperature fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+DCDCModFltRSMS#5#655#false#false#1#2#1#0#DCDC mode fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+FltDCDCDspErr#5#655#false#false#15#1#1#0#Fault LV1 DCDC DSP error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltDCDCLvdcSrMosTAbnorm#5#655#false#false#23#1#1#0#Fault LV1 DCDC SR Mosfet Temp abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltDCDCLvdcShort#5#655#false#false#22#1#1#0#Fault LV2 DCDC LVDC short#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltDCDCLvdcCurAbnorm#5#655#false#false#21#1#1#0#Fault LV1 DCDC LVDC current abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltDCDCLvCurSelfChkErr#5#655#false#false#20#1#1#0#Fault LV1 DCDC LV current self check error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltDCDCLvccUAbnorm#5#655#false#false#19#1#1#0#Fault LV1 DCDC LVCC voltage abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltDCDCHvdcUSelfChkErr#5#655#false#false#18#1#1#0#Fault LV1 DCDC HVDC voltage self check error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltDCDCHvdcUAbnorm#5#655#false#false#17#1#1#0#Fault LV1 DCDC HVDC voltage abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltDCDCHvdcCurAbnorm#5#655#false#false#16#1#1#0#Fault LV1 DCDC HVDC current abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltDCDCPrechrgFail#5#655#false#false#26#1#1#0#DCDC precharge fail indication#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+FltDCDCLvUSelfChkErr#5#655#false#false#25#1#1#0#Fault LV1 DCDC LV voltage self check error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltDCDCLvdcUAbnorm#5#655#false#false#24#1#1#0#Fault LV1 DCDC LVDC voltage abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+EVSEFltFlg#5#677#false#false#7#1#1#0#EVSE fault indication#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+DrtOBCHvdcUAbnorm#5#677#false#false#6#1#1#0#OBC output derating due to HVDC voltage#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+DrtOBCCooltTAbnorm#5#677#false#false#5#1#1#0#OBC output derating due to coolant over temperature#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+DrtInletSnsrErr#5#677#false#false#4#1#1#0#OBC output derating due to socket sensor abnormal#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+DrtInletOverT#5#677#false#false#3#1#1#0#OBC output derating due to socket over temperature#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+DrtEVSEAcPhaLoss#5#677#false#false#2#1#1#0#Derating LV0 EVSE AC phase loss#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+DrtElockFbErr#5#677#false#false#1#1#1#0#OBC output derating due to ELOCK status#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+DrtElockDrvErr#5#677#false#false#0#1#1#0#OBC output derating due to ELOCK drive voltage#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+FltEVSECpDutyAbnorm#5#677#false#false#15#1#1#0#Fault LV1 EVSE CP duty abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltEVSEAcUnderU#5#677#false#false#14#1#1#0#Fault LV1 EVSE AC under voltage#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltEVSEAcPhaUUnbal#5#677#false#false#13#1#1#0#Fault LV1 EVSE AC phase voltage unbalanced#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltEVSEAcPhaAglUnbal#5#677#false#false#12#1#1#0#Fault LV1 EVSE AC phase angle unbalanced#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltEVSEAcOverU#5#677#false#false#11#1#1#0#Fault LV1 EVSE AC over voltage#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltEVSEAcFrqAbnorm#5#677#false#false#10#1#1#0#Fault LV1 EVSE AC frequency abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltEVSEAcCurAbnorm#5#677#false#false#9#1#1#0#Fault LV1 EVSE AC current abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltCCUMcuErr#5#677#false#false#8#1#1#0#Fault LV1 CCU MCU error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCHvdcEcapComErr#5#677#false#false#23#1#1#0#Fault LV1 OBC HVDC Ecap Voltage and Current Sampleing communication error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCHvdcCurAbnorm#5#677#false#false#22#1#1#0#Fault LV1 OBC HVDC current abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCDspErr#5#677#false#false#21#1#1#0#Fault LV1 OBC DSP error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCCooltAbnorm#5#677#false#false#20#1#1#0#Fault LV1 OBC Coolant abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltinletOverT#5#677#false#false#19#1#1#0#Fault LV1 Inlet over temperature#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltEVSEUkwnCcR#5#677#false#false#18#1#1#0#Fault LV1 EVSE unknown CC resistance#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltEVSECpUAbnorm#5#677#false#false#17#1#1#0#Fault LV1 EVSE CP volage abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltEVSECpFrqAbnorm#5#677#false#false#16#1#1#0#Fault LV1 EVSE CP frequency abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCPfcUAbnorm#5#677#false#false#31#1#1#0#Fault LV1 OBC PFC Voltage abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCPfcHwErr#5#677#false#false#30#1#1#0#Fault LV2 OBC PFC hardware error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCPfcBusPreChrgFaild#5#677#false#false#29#1#1#0#Fault LV1 OBC PFC Buspre Charge Failed#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCPcbTAbnorm#5#677#false#false#28#1#1#0#Fault LV1 OBC internal tempertature abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCLcOverCur#5#677#false#false#27#1#1#0#Fault LV1 OBC LC over current#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCLcDrvErr#5#677#false#false#26#1#1#0#Fault LV1 OBC LC drive error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCHvdcUAbnorm#5#677#false#false#25#1#1#0#Fault LV1 OBC HVDC voltage abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCHvdcShoCirc#5#677#false#false#24#1#1#0#Fault LV2 OBC HVDC short circuit#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCRealTiSelfChkDcUErr#5#677#false#false#39#1#1#0#Fault LV1 OBC real timeself check DC voltage error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCRealTiSelfChkDcCurErr#5#677#false#false#38#1#1#0#Fault LV1 OBC real timeself check DC current error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCRealTiSelfChkAcUErr#5#677#false#false#37#1#1#0#Fault LV1 OBC real time self check AC voltage error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCRealTiSelfChkAcUCurBiasErr#5#677#false#false#36#1#1#0#Fault LV1 OBC real timeself check AC voltage and current Bias error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCRealTiSelfChkAcFrqErr#5#677#false#false#35#1#1#0#Fault LV1 OBC real timeself check AC frequency error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCRealTiSelfChkAcCurErr#5#677#false#false#34#1#1#0#Fault LV1 OBC real timeself check AC current error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCRealTiSelfChkAcAglLockErr#5#677#false#false#33#1#1#0#Fault LV1 OBC real time self check AC angle lock error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCPvccUAbnorm#5#677#false#false#32#1#1#0#Fault LV1 OBC PVCC volatge abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCV2xOutpIsolnErr#5#677#false#false#47#1#1#0#OBC V2X insulation detection fail indication#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+FltOBCV2xOutpFrqAbnorm#5#677#false#false#46#1#1#0#Fault LV1 OBC V2x output frequency abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCV2xOutpCurAbnorm#5#677#false#false#45#1#1#0#Fault LV1 OBC V2x output current abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCV2xInpUAbnorm#5#677#false#false#44#1#1#0#Fault LV1 OBC V2x input voltage abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCV2xInpCurAbnorm#5#677#false#false#43#1#1#0#Fault LV1 OBC V2x input current abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCV2xHwErrOutpNoResp#5#677#false#false#42#1#1#0#Fault LV2 OBC V2x HW error ouput no response#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCRealTiSelfChkV2LDcUErr#5#677#false#false#41#1#1#0#Fault LV1 OBC real time self check V2L DC voltage error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCRealTiSelfChkV2LAcUErr#5#677#false#false#40#1#1#0#Fault LV1 OBC real time self check V2L AC voltage error#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+OBCFltFlg#5#677#false#false#52#1#1#0#OBC fault indication#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltS2RespFail#5#677#false#false#51#1#1#0#S2 response fail indication#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+FltOBCV2xPfcBusUnderU#5#677#false#false#50#1#1#0#Fault LV1 OBC V2x PFC Bus under voltage#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCV2xOutpUAbnorm#5#677#false#false#49#1#1#0#Fault LV1 OBC V2x output voltage abnormal#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+FltOBCV2xOutpShrCirc#5#677#false#false#48#1#1#0#Fault LV2 OBC V2x output short circuit#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault"}#MS11#E3U1
+OBCV2LOverLoad#5#847#false#false#30#2#1#0#AC V2L over load flag#0.0#0.0#0.0#{"0": "No_warning", "1": "Warning", "2": "Overload"}#MS11#E3U1
+OBCWakeupRsn#5#847#false#false#28#1#1#0#CCU wakeup reason report#0.0#0.0#0.0#{"0": "Passive_wakeup", "1": "Active_wakeup"}#MS11#E3U1
+OBCMaxAvlDchrgnPwr#5#847#false#false#39#14#1#0#maximum avaliable discharging power#0.0#0.0#0.0#null#MS11#E3U1
+OBCACChrgnCurMaxAvlFb#5#847#false#false#55#9#0.1#0.0#AC charging current max value avaliable feedback#0.0#0.0#0.0#null#MS11#E3U1
+CCUDevmtGrp01#5#917#false#false#7#32#1#0#CCU development group 01#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3U1
+CCUDevmtGrp02#5#917#false#false#39#32#1#0#CCU development group 02#0.0#0.0#0.0#null#MS11#E3U1
+CCUDevmtGrp03#5#917#false#false#71#32#1#0#CCU development frame 03#0.0#0.0#0.0#null#MS11#E3U1
+CCUDevmtGrp04#5#917#false#false#103#32#1#0#CCU development group 04#0.0#0.0#0.0#null#MS11#E3U1
+DchrgdEgyThisDchrgnCyc#5#1009#false#false#7#17#1#0#Discharged energy this discharging cycle   V2X discharged energy .#0.0#0.0#0.0#null#MS11#E3U1
+ACchrgdEgyThisChrgnCyc#5#1009#false#false#31#17#1#0#AC charged energy this charging cycle   AC charged energy .#0.0#0.0#0.0#null#MS11#E3U1
+CCUPtCanfdNodeAddress#5#1304#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#E3U1
+CCUPtCanfdActiveWakeup#5#1304#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3U1
+CCUPtCanfdRepeatMsgReq#5#1304#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3U1
+CCUPtCanfdRepeatMsgSt#5#1304#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3U1
+UDB47CCU#5#1304#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+NMKeepAwkRsnCCU#5#1304#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3U1
+TotOdoAcrt#5#914#false#false#7#24#0.1#0.0#ODO value as accuracy of 0.1 km#0.0#0.0#0.0#null#MS11#E3U1
+TotOdoAcrtVld#5#914#false#false#25#1#1#0#The valid signal of TotOdoAcrt#0.0#0.0#0.0#{"0": "Valid", "1": "Invalid"}#MS11#E3U1
+TiModCfgSts#5#914#false#false#24#1#1#0#DCD time mode configuration status#0.0#0.0#0.0#{"0": "24h_mode", "1": "12h_mode"}#MS11#E3U1
+DCDVINMat#5#914#false#false#32#1#1#0#DCD VIN Match\nVIN匹配信号#0.0#0.0#0.0#{"0": "Mismatch", "1": "Match"}#MS11#E3U1
+FrntMotHVILStsSigGrpChks#5#321#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotHVILSts#5#321#false#false#13#2#1#0#Front Motor inter lock loop status.#0.0#0.0#0.0#{"0": "Close", "1": "Open", "2": "Not_determined"}#MS11#E3U1
+FrntMotHVILStsSigGrpCntr#5#321#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ImobFrntMotSts#5#321#false#false#23#2#1#0#Immobilizer Front Motor Status\n前电机控制器发的防盗状态#0.0#0.0#0.0#{"0": "Immobilised", "1": "Mobilised", "2": "RemoteImmobilised"}#MS11#E3U1
+FrntMotPtChVldSigGrpChks#5#321#false#false#39#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotPtChVldSigGrpCntr#5#321#false#false#43#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotPtChVld#5#321#false#false#48#1#1#0#Front Motor Powertrains valid Channel#0.0#0.0#0.0#{"0": "PT_fusion_CANFD_valid", "1": "PT_CANFD_valid"}#MS11#E3U1
+FrntMotIndHeatgActPwr#5#464#false#false#6#7#50#0#Front motor indirect heating actual power.#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotIndHeatgMaxPwrCp#5#464#false#false#14#7#50#0#Front motor indirect heating maximum power capacity.#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltInfoActv1#5#641#false#false#7#9#1#0#fault information singal group  1  front motor fault information active#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltInfoActv2#5#641#false#false#23#9#1#0#fault information singal group  2  front motor fault information active#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltInfoActv3#5#641#false#false#39#9#1#0#fault information singal group  3  front motor fault information active#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltInfoHist1#5#641#false#false#55#9#1#0#fault information singal group  1  front motor fault information history#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltInfoHist2#5#641#false#false#71#9#1#0#fault information singal group  2  front motor fault information history#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltInfoHist3#5#641#false#false#87#9#1#0#fault information singal group  3  front motor fault information history#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotOverSpdTimeout#5#641#false#false#103#1#1#0#Front Motor Over speed timeout#0.0#0.0#0.0#{"0": "no_timeout", "1": "timeout"}#MS11#E3U1
+FrntMotTotFltQntyRSMS#5#642#false#false#7#4#1#0#Quantity of faults in front motor for RSMS#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotModStsRSMS#5#642#false#false#3#3#1#0#Front motor mode status for RSMS#0.0#0.0#0.0#{"0": "Reserved", "1": "Electricity_consuming", "2": "Power_generating", "3": "poweroff", "4": "standby"}#MS11#E3U1
+FrntMotIndHeatgSts#5#642#false#false#0#1#1#0#Front motor indirect heating status.#0.0#0.0#0.0#{"0": "off", "1": "on"}#MS11#E3U1
+FrntMotIvtT#5#642#false#false#15#8#1.0#-40.0#Front motor inverter temperature.#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+FrntMotMotT#5#642#false#false#23#8#1.0#-40.0#Front motor motor temperature.#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+FrntMotCooltT#5#642#false#false#31#8#1.0#-40.0#Front motor coolant temperature.#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+FrntMotCooltFlowReq#5#642#false#false#39#6#0.25#0.0#Front motor coolant flow request.#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotTOverFltRSMS#5#642#false#false#33#2#1#0#Front motor temperature over fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+FrntMotCurOverFltRSMS#5#642#false#false#47#2#1#0#Front motor bus current over fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+FrntMotIvtTOverFltRSMS#5#642#false#false#45#2#1#0#Front motor inverter temperature over fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+FrntMotSpdOverFltRSMS#5#642#false#false#43#2#1#0#Front motor speed over fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+FrntMotOverBoostTimesLe#5#1013#false#false#7#13#1#0#Front Motor Over boost times left#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotOverSpdTimesLe#5#1013#false#false#23#13#1#0#Front Motor Over speed times left#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotBkpSigGrpChks#5#115#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotBkpSigGrpCntr#5#115#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotActTqBkp#5#115#false#false#23#15#0.1#-1638.3#Front motor actual torque  at motor output axle  backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotActSpdBkp#5#115#false#false#39#16#1#-32768#Front motor actual speed backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotMaxDynTqCpBkp#5#115#false#false#55#10#1#0#Front motor maximum dynamic torque capacity at motor output axle  backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotMinDynTqCpBkp#5#115#false#false#71#10#1#-1023#Front motor minimum dynamic torque capacity at motor output axle  backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotChlg#5#136#false#false#7#64#1#0#Challenge sent by FEDS\nFEDS发的Challenge#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotActCurBkp#5#162#false#false#7#14#0.1#-819.1#Front motor actual current on DC bus  backup\nNegative means current flow from front motor to HV battery  positive means current flow from HV battery to front motor.#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotBoostModAvlBkp#5#162#false#false#9#1#1#0#Front motor boost mode available backup#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MS11#E3U1
+FrntMotActDampgStsBkp#5#162#false#false#8#1#1#0#Front motor active damping status backup#0.0#0.0#0.0#{"0": "off", "1": "on"}#MS11#E3U1
+FrntMotActUBkp#5#162#false#false#23#14#0.1#0.0#Front motor actual voltage backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotDrtStsBkp#5#162#false#false#32#1#1#0#Front motor derating status backup#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MS11#E3U1
+FrntMotFltLvlIndcnBkpSigGrpChks#5#162#false#false#55#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltLvlIndcnBkpSigGrpCntr#5#162#false#false#59#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotSfSpdMaxBkp#5#162#false#false#71#16#1#-32768#Front motor safe speed maximum backup#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotFltLvlIndcnBkp#5#162#false#false#87#3#1#0#Front motor fault level indication backup#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0", "2": "Fault_Lv1", "3": "Fault_Lv2", "4": "Fault_Lv3", "5": "Fault_Lv4"}#MS11#E3U1
+FrntMotModStsBkpChks#5#162#false#false#103#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotModStsBkpCntr#5#162#false#false#107#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotModStsBkp#5#162#false#false#119#5#1#0#Front motor mode status backup#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "9": "Active_Discharge", "12": "OffsetCal", "13": "Failure", "14": "After_Run"}#MS11#E3U1
+FrntMotBoostModNotAvlRsn#5#162#false#false#127#4#1#0#Front motor boost mode not available reasons backup#0.0#0.0#0.0#{"0": "Available", "1": "Not_available_for_times"}#MS11#E3U1
+FEDSPtCanfdNodeAddress#5#1302#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#E3U1
+FEDSPtCanfdActiveWakeup#5#1302#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3U1
+FEDSPtCanfdRepeatMsgReq#5#1302#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3U1
+FEDSPtCanfdRepeatMsgSt#5#1302#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3U1
+BoostHVILStsSigGrpChks#5#322#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoostHVILSts#5#322#false#false#13#2#1#0#Booster inter lock loop status.#0.0#0.0#0.0#{"0": "Close", "1": "Open", "2": "Not_determined"}#MS11#E3U1
+BoostHVILStsSigGrpCntr#5#322#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ImobReMotSts#5#322#false#false#23#2#1#0#后电机控制器发的防盗状态\nImmobilizer Rear Motor Status#0.0#0.0#0.0#{"0": "Immobilised", "1": "Mobilised", "2": "RemoteImmobilised"}#MS11#E3U1
+ReMotPtChVldSigGrpChks#5#322#false#false#39#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotPtChVldSigGrpCntr#5#322#false#false#43#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotPtChVld#5#322#false#false#48#1#1#0#Rear Motor Powertrains valid Channel#0.0#0.0#0.0#{"0": "PT_fusion_CANFD_valid", "1": "PT_CANFD_valid"}#MS11#E3U1
+ReMotIndHeatgActPwr#5#465#false#false#6#7#50#0#Rear motor indirect heating actual power.#0.0#0.0#0.0#null#MS11#E3U1
+ReMotIndHeatgMaxPwrCp#5#465#false#false#14#7#50#0#Rear motor indirect heating maximum power capacity.#0.0#0.0#0.0#null#MS11#E3U1
+BoosterCntctStsSigGrpChks#5#465#false#false#23#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoosterCntctStsSigGrpCntr#5#465#false#false#27#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoosterS7CntctSts#5#465#false#false#39#2#1#0#booster S7 positive  contactor status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3U1
+BoosterS6CntctSts#5#465#false#false#37#2#1#0#booster S6 negative  contactor status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3U1
+BoosterS1CntctSts#5#465#false#false#35#2#1#0#booster  output  S1 contactor status#0.0#0.0#0.0#{"0": "Open", "1": "Close", "2": "Not_determined"}#MS11#E3U1
+ReMotModStsRSMS#5#643#false#false#6#3#1#0#Rear motor mode status for RSMS#0.0#0.0#0.0#{"0": "Reserved", "1": "Electricity_consuming", "2": "Power_generating", "3": "Poweroff", "4": "Standby"}#MS11#E3U1
+ReMotTotFltQntyRSMS#5#643#false#false#3#4#1#0#Quantity of faults in rear motor for RSMS#0.0#0.0#0.0#null#MS11#E3U1
+ReMotOverSpdTimeout#5#643#false#false#14#1#1#0#Rear Motor Over speed timeout#0.0#0.0#0.0#{"0": "no_timeout", "1": "timeout"}#MS11#E3U1
+ReMotIvtTOverFltRSMS#5#643#false#false#13#2#1#0#Rear motor inverter temperature over fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+ReMotCurOverFltRSMS#5#643#false#false#11#2#1#0#Rear motor bus current over fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+ReMotFltInfoActv1#5#643#false#false#23#9#1#0#fault information singal group  1  Rear motor fault information active#0.0#0.0#0.0#null#MS11#E3U1
+ReMotTOverFltRSMS#5#643#false#false#30#2#1#0#Rear motor temperature over fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+ReMotSpdOverFltRSMS#5#643#false#false#28#2#1#0#Rear motor speed over fault information#0.0#0.0#0.0#{"0": "no_fault", "1": "level_1_fault", "2": "level_2_fault", "3": "level_3_fault"}#MS11#E3U1
+ReMotFltInfoActv2#5#643#false#false#39#9#1#0#fault information singal group  2  Rear motor fault information active#0.0#0.0#0.0#null#MS11#E3U1
+ReMotFltInfoActv3#5#643#false#false#55#9#1#0#fault information singal group  3  Rear motor fault information active#0.0#0.0#0.0#null#MS11#E3U1
+BoosterS1CntctFlt#5#643#false#false#71#2#1#0#Booster S1 contactor fault#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11#E3U1
+BoosterS6CntctFlt#5#643#false#false#69#2#1#0#Booster S6 contactor fault#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11#E3U1
+BoosterS7CntctFlt#5#643#false#false#67#2#1#0#Booster S7 contactor fault#0.0#0.0#0.0#{"0": "No_fault", "1": "Stuck_close", "2": "Stuck_open", "3": "Contact_control_fault"}#MS11#E3U1
+ReMotFltInfoHist1#5#643#false#false#79#9#1#0#fault information singal group  1  Rear motor fault information history#0.0#0.0#0.0#null#MS11#E3U1
+ReMotFltInfoHist2#5#643#false#false#95#9#1#0#fault information singal group  2  Rear motor fault information history#0.0#0.0#0.0#null#MS11#E3U1
+ReMotFltInfoHist3#5#643#false#false#111#9#1#0#fault information singal group  3  Rear motor fault information history#0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnOutpSigGrpChks#5#644#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnOutpSigGrpCntr#5#644#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnOutpCur#5#644#false#false#23#14#0.1#0.0#Boost charging output current 电池端#0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnOutpU#5#644#false#false#39#14#0.1#0.0#Boost charging output voltage 电池端#0.0#0.0#0.0#null#MS11#E3U1
+ReMotIvtT#5#644#false#false#55#8#1#-40#Rear motor inverter temperature.#0.0#0.0#0.0#null#MS11#E3U1
+ReMotMotT#5#644#false#false#63#8#1.0#-40.0#Rear motor motor temperature.#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+ReMotCooltT#5#644#false#false#71#8#1#-40#Rear motor coolant temperature.#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCooltFlowReq#5#644#false#false#79#6#0.25#0.0#Rear motor coolant flow request.#0.0#0.0#0.0#null#MS11#E3U1
+BoosterInducerT#5#644#false#false#119#8#1.0#-40.0#Booster Inducer temperature#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+ReMotIndHeatgSts#5#644#false#false#127#1#1#0#Rear motor indirect heating status.#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#E3U1
+ReMotOverBoostTimesLe#5#1014#false#false#7#13#1#0#Rear Motor Over boost times left#0.0#0.0#0.0#null#MS11#E3U1
+ReMotOverSpdTimesLe#5#1014#false#false#23#13#1#0#Rear Motor Over speed times left#0.0#0.0#0.0#null#MS11#E3U1
+ReMotBkpSigGrpChks#5#147#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotBkpSigGrpCntr#5#147#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotActTqBkp#5#147#false#false#23#15#0.1#-1638.3#Rear motor actual torque  at motor output axle  backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotActSpdBkp#5#147#false#false#39#16#1#-32768#Rear motor actual speed backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotMaxDynTqCpBkp#5#147#false#false#55#10#1#0#Rear motor maximum dynamic torque capacity  at motor output axle  backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotMinDynTqCpBkp#5#147#false#false#71#10#1#-1023#Rear motor minimum dynamic torque capacity  at motor output axle  backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotActCurBkp#5#166#false#false#7#14#0.1#-819.1#Rear motor actual current on DC bus  backup\nNegative means current flow from rear motor to HV battery  positive means current flow from HV battery to rear motor.#0.0#0.0#0.0#null#MS11#E3U1
+ReMotBoostModAvlBkp#5#166#false#false#9#1#1#0#Rear motor boost mode available backup#0.0#0.0#0.0#{"0": "Available", "1": "Not_Available"}#MS11#E3U1
+ReMotActDampgStsBkp#5#166#false#false#8#1#1#0#Rear motor active damping status backup#0.0#0.0#0.0#{"0": "Off", "1": "On"}#MS11#E3U1
+ReMotActUBkp#5#166#false#false#23#14#0.1#0.0#Rear motor actual voltage backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotOffsCalStsBkp#5#166#false#false#34#2#1#0#Rear motor Offset calibration status backup#0.0#0.0#0.0#{"0": "Normal", "1": "Still_Offset_Normal", "2": "Invalid"}#MS11#E3U1
+ReMotDrtStsBkp#5#166#false#false#32#1#1#0#Rear motor derating Status backup#0.0#0.0#0.0#{"0": "No_derating", "1": "Derating"}#MS11#E3U1
+ReMotStBkpSigGrpChks#5#166#false#false#47#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotFltLvlIndcnBkp#5#166#false#false#54#3#1#0#Rear motor fault level indication backup#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0", "2": "Fault_Lv1", "3": "Fault_Lv2", "4": "Fault_Lv3", "5": "Fault_Lv4"}#MS11#E3U1
+ReMotStBkpSigGrpCntr#5#166#false#false#51#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotSfSpdMaxBkp#5#166#false#false#63#16#1#-32768#Rear motor safe speed maximum backup#0.0#0.0#0.0#null#MS11#E3U1
+ReMotSfStConfigBkp#5#166#false#false#79#2#1#0#Rear Motor safe state configuration backup#0.0#0.0#0.0#{"1": "ASC", "2": "FreeWheeling"}#MS11#E3U1
+BoostChrgnInpSigGrpChks#5#166#false#false#103#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnInpSigGrpCntr#5#166#false#false#107#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnInpCur#5#166#false#false#119#14#0.1#0.0#Boost Charging Input current 桩端#0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnInpU#5#166#false#false#135#14#0.1#0.0#Boost Charging Input voltage 桩端#0.0#0.0#0.0#null#MS11#E3U1
+BoostChrgnOutpPwrMax#5#166#false#false#151#11#0.1#0.0#Boost Charging output power max#0.0#0.0#0.0#null#MS11#E3U1
+ReMotBoostModNotAvlRsn#5#166#false#false#167#4#1#0#Rear motor boost mode not available reasons#0.0#0.0#0.0#{"0": "Available", "1": "Not_available_for_times"}#MS11#E3U1
+BoosterFltLvlSigGrpChks#5#166#false#false#175#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoosterFltLvlSigGrpCntr#5#166#false#false#179#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+BoosterFltLvlIndcn#5#166#false#false#191#3#1#0#Booster fault level indication#0.0#0.0#0.0#{"0": "No_fault", "1": "Fault_Lv0_DTCOnly", "2": "Fault_Lv1_PowerLimited", "3": "Fault_Lv2_Booster_Charging_Recoverable", "4": "Fault_Lv3_Booster_Charging_Not_Recoverable", "5": "Fault_Lv4_All_DCCharging_Failed"}#MS11#E3U1
+ReMotModStsBkpChks#5#166#false#false#207#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotModStsBkpCntr#5#166#false#false#211#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotModStsBkp#5#166#false#false#223#5#1#0#Rear motor mode status backup#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Ready", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Booster_discharge_finished", "12": "OffsetCal", "13": "Failure", "14": "After_Run", "15": "Buck_Control"}#MS11#E3U1
+ReMotChlg#5#172#false#false#7#64#1#0#Challenge sent by REDS\nREDS发送的Challenge#0.0#0.0#0.0#null#MS11#E3U1
+REDSPtCanfdNodeAddress#5#1299#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#E3U1
+REDSPtCanfdActiveWakeup#5#1299#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3U1
+REDSPtCanfdRepeatMsgReq#5#1299#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "Repeat_Message_State_not_requested", "1": "Repeat_Message_State_requested"}#MS11#E3U1
+REDSPtCanfdRepeatMsgSt#5#1299#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3U1
+CurHeiSigGrpChks#5#182#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntLeCurHeiSts#5#182#false#false#15#1#1#0#Front Left Current Height status#0.0#0.0#0.0#{"0": "InValid", "1": "Valid"}#MS11#E3U1
+ReLeCurHeiSts#5#182#false#false#14#1#1#0#Rear Left Current Height status#0.0#0.0#0.0#{"0": "InValid", "1": "Valid"}#MS11#E3U1
+FrntRiCurHeiSts#5#182#false#false#13#1#1#0#Front Right Current Height status#0.0#0.0#0.0#{"0": "InValid", "1": "Valid"}#MS11#E3U1
+ReRiCurHeiSts#5#182#false#false#12#1#1#0#Rear Right Current Height status#0.0#0.0#0.0#{"0": "InValid", "1": "Valid"}#MS11#E3U1
+CurHeiSigGrpCntr#5#182#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntLeCurHei#5#182#false#false#23#8#1#-120#Front Left Current Height#0.0#0.0#0.0#null#MS11#E3U1
+ReLeCurHei#5#182#false#false#31#8#1#-120#Rear Left Current Height#0.0#0.0#0.0#null#MS11#E3U1
+FrntRiCurHei#5#182#false#false#39#8#1#-120#Front Right Current Height#0.0#0.0#0.0#null#MS11#E3U1
+ReRiCurHei#5#182#false#false#47#8#1#-120#Rear Right Current Height#0.0#0.0#0.0#null#MS11#E3U1
+SCUAccrSnsrChks#5#182#false#false#71#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+SCUAccrSnsrCntr#5#182#false#false#75#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+AccrSnsrAzFrntLe#5#182#false#false#87#10#0.01#-1.6#Front left sensor vertical acceleration#0.0#0.0#0.0#null#MS11#E3U1
+AccrSnsrAzFrntRi#5#182#false#false#103#10#0.01#-1.6#Front right sensor vertical acceleration#0.0#0.0#0.0#null#MS11#E3U1
+AccrSnsrAzRe#5#182#false#false#119#10#0.01#-1.6#Rear sensor vertical acceleration#0.0#0.0#0.0#null#MS11#E3U1
+BodyVertVFL#5#182#false#false#175#13#0.001#-4.0#Body vertical velocity front left corner\n左前车身垂向速度#0.0#0.0#0.0#null#MS11#E3U1
+BodyVertVFR#5#182#false#false#191#13#0.001#-4.0#Body vertical velocity front right corner\n左前车身垂向速度#0.0#0.0#0.0#null#MS11#E3U1
+BodyVertVRL#5#182#false#false#207#13#0.001#-4.0#Body vertical velocity rear left corner\n左后车身垂向速度#0.0#0.0#0.0#null#MS11#E3U1
+BodyVertVRR#5#182#false#false#223#13#0.001#-4.0#Body vertical velocity rear right corner\n右后车身垂向速度#0.0#0.0#0.0#null#MS11#E3U1
+TiDomn#5#263#false#false#4#5#1#0#time domain#0.0#0.0#0.0#{"0": "UTC_plus_0", "1": "UTC_plus_1", "2": "UTC_plus_2", "3": "UTC_plus_3", "4": "UTC_plus_4", "5": "UTC_plus_5", "6": "UTC_plus_6", "7": "UTC_plus_7", "8": "UTC_plus_8", "9": "UTC_plus_9", "10": "UTC_plus_10", "11": "UTC_plus_11", "12": "UTC_plus_12", "13": "UTC_plus_13", "14": "UTC_plus_14", "15": "UTC_plus_15", "16": "UTC_plus_16", "17": "UTC_plus_17", "18": "UTC_plus_18", "19": "UTC_plus_19", "20": "UTC_plus_20", "21": "UTC_plus_21", "22": "UTC_plus_22", "23": "UTC_plus_23", "24": "Invalid"}#MS11#E3U1
+DateTiYr#5#263#false#false#15#8#1.0#2000.0#date time year#0.0#0.0#0.0#{"255": "Invalid"}#MS11#E3U1
+DateTiMth#5#263#false#false#19#4#1.0#0.0#date time month#0.0#0.0#0.0#{"0": "Invalid"}#MS11#E3U1
+DateTiDay#5#263#false#false#28#5#1#0#date time day#0.0#0.0#0.0#{"0": "init"}#MS11#E3U1
+DateTiHr#5#263#false#false#36#5#1.0#0.0#date time hour#0.0#0.0#0.0#{"24": "Invalid"}#MS11#E3U1
+DateTiMins#5#263#false#false#45#6#1.0#0.0#date time minute#0.0#0.0#0.0#{"60": "Invalid"}#MS11#E3U1
+DateTiSec#5#263#false#false#55#6#1.0#0.0#date time second#0.0#0.0#0.0#{"60": "Invalid"}#MS11#E3U1
+DateTiMilsec#5#263#false#false#49#10#1.0#0.0#date time millisecond#0.0#0.0#0.0#{"1000": "invalid"}#MS11#E3U1
+VCUDCDCReqSigGrpChks#5#304#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUDCDCReqSigGrpCntr#5#304#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUDCDCHVCurLim#5#304#false#false#23#9#0.1#0.0#DCDC HV current limitation under buck mode too prevent HV battery energy too low#0.0#0.0#0.0#null#MS11#E3U1
+VCUDCDCModReq#5#304#false#false#30#3#1#0#DCDC mode request from VCU#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Active_Discharge", "3": "Buck_mode_request", "4": "Boost_mode_request"}#MS11#E3U1
+VCUDCDCLVCurLim#5#304#false#false#39#11#0.5#0.0#Current limitation request at DCDC Lv side. positive means current flows from DCDC to LV#0.0#0.0#0.0#null#MS11#E3U1
+VCUDCDCULVSp#5#304#false#false#55#14#0.001#0.0#DCDC conversion setpoint at DCDC LV side.#0.0#0.0#0.0#null#MS11#E3U1
+VCUOBCReqSigGrpChks#5#304#false#false#175#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUOBCReqSigGrpCntr#5#304#false#false#179#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUOBCS2Req#5#304#false#false#189#1#1#0#Request for S2 switch.#0.0#0.0#0.0#{"0": "Open", "1": "Close"}#MS11#E3U1
+VCUOBCModReq#5#304#false#false#188#3#1#0#OBC mode request.#0.0#0.0#0.0#{"1": "Standby", "3": "Charging", "4": "Discharging", "5": "Heating"}#MS11#E3U1
+VCUOBCELockReq#5#304#false#false#185#2#1#0#request for E lock.#0.0#0.0#0.0#{"0": "No_request", "1": "Unlock", "2": "Lock"}#MS11#E3U1
+ChrgLidSts#5#304#false#false#231#2#1#0#充电口盖打开状态显示#0.0#0.0#0.0#{"0": "Ukwn", "1": "Open", "2": "Clsd"}#MS11#E3U1
+VCUDischrgnProcFlg#5#304#false#false#228#1#1#0#AC Discharging control is set#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+VCUDCDCUHVSp#5#304#false#false#239#10#1#0#DCDC conversion setpoint at DCDC HV side.#0.0#0.0#0.0#null#MS11#E3U1
+VCUVSR11#5#325#false#false#7#32#1#0#私有报文\nVCU#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCUVSR12#5#325#false#false#39#32#1#0#私有报文\nVCU#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCUVSR13#5#325#false#false#71#32#1#0#私有报文\nVCU#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCUVSR14#5#325#false#false#103#32#1#0#私有报文\nVCU#0.0#0.0#0.0#null#MS11#E3U1
+VCUVSR15#5#325#false#false#135#32#1#0#私有报文\nVCU#0.0#0.0#0.0#null#MS11#E3U1
+VCUVSR16#5#326#false#false#7#32#1#0#私有报文\nVCU#0.0#0.0#0.0#null#MS11#E3U1
+VCUVSR17#5#326#false#false#39#32#1#0#私有报文\nVCU#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCUVSR18#5#326#false#false#71#32#1#0#私有报文\nVCU#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCUVSR19#5#326#false#false#103#32#1#0#私有报文\nVCU#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCUVSR21#5#327#false#false#7#32#1#0#私有报文\nVCU#0.0#0.0#0.0#null#MS11#E3U1
+VCUVSR22#5#327#false#false#39#32#1#0#私有报文\nVCU#0.0#0.0#0.0#null#MS11#E3U1
+VCUVSR23#5#327#false#false#71#32#1#0#私有报文\nVCU#0.0#0.0#0.0#null#MS11#E3U1
+VCUVSR24#5#327#false#false#103#32#1#0#私有报文\nVCU#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCUVSR25#5#327#false#false#135#32#1#0#私有报文\nVCU#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCUVSR26#5#328#false#false#7#32#1#0#私有报文\nVCU#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCUVSR27#5#328#false#false#39#32#1#0#私有报文\nVCU#0.0#0.0#0.0#null#MS11#E3U1
+VCUVSR28#5#328#false#false#71#32#1#0#私有报文\nVCU#0.0#0.0#0.0#null#MS11#E3U1
+VCUVSR29#5#328#false#false#103#32#1#0#私有报文\nVCU#0.0#0.0#0.0#null#MS11#E3U1
+VCUCalcdActAuxPwrSigGrpChks#5#448#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUCalcdActAuxPwrSigGrpCntr#5#448#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUCalcdActAuxPwr#5#448#false#false#23#11#10#0#VCU calculated actual HV auxiliary consumed power#0.0#0.0#0.0#null#MS11#E3U1
+ImobMgrReq#5#448#false#false#63#2#1#0#Immobiliser key status\n防盗钥匙状态#0.0#0.0#0.0#{"0": "Immobilised", "1": "NormalStart", "2": "RemoteImmobilised"}#MS11#E3U1
+VCUActDrvMod#5#448#false#false#71#4#1#0#VCU actual drive mode \nVCU实际驾驶模式#0.0#0.0#0.0#{"0": "Comfort_Mode", "1": "Sport_Mode", "2": "Individual_Mode1", "3": "Individual_Mode2", "4": "Individual_Mode3", "5": "Snow_Mode", "6": "Mountain_Mode", "7": "Battle_Mode", "8": "Extreme_Eco_mode"}#MS11#E3U1
+FrntMotIndHeatgSigGrpChks#5#624#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotIndHeatgSigGrpCntr#5#624#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+FrntMotIndHeatgPwrReq#5#624#false#false#23#8#50#0#Front motor indirect heating power request#0.0#0.0#0.0#null#MS11#E3U1
+FrntMotIndHeatgReq#5#624#false#false#31#1#1#0#Front motor indirect heating request.#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+FrntMotCooltCircFlowEstimd#5#624#false#false#63#10#0.05#0.0#Estimated coolant flowrate for front motor coolant circuit.#0.0#0.0#0.0#null#MS11#E3U1
+ReMotIndHeatgSigGrpChks#5#624#false#false#87#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotIndHeatgSigGrpCntr#5#624#false#false#91#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+ReMotIndHeatgPwrReq#5#624#false#false#103#8#50#0#Rear motor indirect heating power request.#0.0#0.0#0.0#null#MS11#E3U1
+ReMotIndHeatgReq#5#624#false#false#111#1#1#0#Rear motor indirect heating request.#0.0#0.0#0.0#{"0": "False", "1": "True"}#MS11#E3U1
+HvBattThermReqFb#5#624#false#false#167#4#1#0#Battery thermal request feedback.#0.0#0.0#0.0#{"0": "Idle", "1": "Balance", "2": "Cooling", "3": "Heating", "4": "Fault", "5": "Passive_Cooling"}#MS11#E3U1
+HvBattCooltCircFlowEstimd#5#624#false#false#175#10#0.05#0.0#Estimated coolant flowrate for Battery coolant circuit.#0.0#0.0#0.0#null#MS11#E3U1
+ReMotCooltCircFlowEstimd#5#624#false#false#191#10#0.05#0.0#Estimated coolant flowrate for rear motor coolant circuit.#0.0#0.0#0.0#null#MS11#E3U1
+VCUChrgnSoCLimSp#5#624#false#false#207#7#1#0#Charging SOC limit setpoint  of HV battery.#0.0#0.0#0.0#null#MS11#E3U1
+VCUDchrgnSoCLimSp#5#624#false#false#215#7#1#0#Discharging SOC limit setpoint  of HV battery.#0.0#0.0#0.0#null#MS11#E3U1
+VCUBookDepartrMinSts#5#624#false#false#223#6#1#0#book departure min time status#0.0#0.0#0.0#null#MS11#E3U1
+VCCDHvBattSOCRSMS#5#624#false#false#247#11#0.05#0.0#VCCDBattSOCRSMSSignalGroupDetailSOC#0.0#0.0#0.0#null#MS11#E3U1
+VCUBookDepartrHourSts#5#624#false#false#252#5#1#0#book departure hour time status#0.0#0.0#0.0#null#MS11#E3U1
+HvBattInletCooltT#5#625#false#false#7#16#0.01#-80.0#Battery inlet coolant temperature#0.0#0.0#0.0#null#MS11#E3U1
+HvBattOutletCooltT#5#625#false#false#23#16#0.01#-80.0#Battery outlet coolant temperature#0.0#0.0#0.0#null#MS11#E3U1
+AmbTEstimd#5#625#false#false#39#16#0.01#-80.0#Estimated ambient temperature.#0.0#0.0#0.0#null#MS11#E3U1
+LockgCenLockSts#5#625#false#false#55#2#1#0#中控锁状态#0.0#0.0#0.0#{"0": "Not_defined", "1": "Unlocked", "2": "Locked", "3": "Partially_unlocked"}#MS11#E3U1
+VCCDHvBattChrgnCurrVld#5#625#false#false#53#1#1#0#VCCDMaxCharg CurrentEstValidflg#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+AmbTEstimdVld#5#625#false#false#52#1#1#0#Estimated ambient temperature valid value.#0.0#0.0#0.0#{"0": "Not_Valid", "1": "Valid"}#MS11#E3U1
+VCCDHvBattCurMaxLimChrgn#5#625#false#false#63#14#0.1#0.0#VCCDHV batteryMaximumcurrentallowedforbatterycharging#0.0#0.0#0.0#null#MS11#E3U1
+VCCDHvBattPulseTiCurrVld#5#625#false#false#65#1#1#0#VCCDPuls CurrentEstValidflg#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCCDHvBattSOCVldRSMS#5#625#false#false#64#1#1#0#VCCDBattSOCRSMSSignalGroupDetailSOCValid Flag#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCCDHvBattDchaEndSoC#5#625#false#false#79#10#0.1#0.0#VCCDHVbatteryDischarg EndSoCactual#0.0#0.0#0.0#null#MS11#E3U1
+VCCDHvBattMaxPulseTiChrgCurr#5#625#false#false#85#11#1#0#VCCDPulsecharge current#0.0#0.0#0.0#null#MS11#E3U1
+VCCDHvBattMaxPulseTiDChaCurr#5#625#false#false#103#11#1#0#VCCDPulseDischarge current.#0.0#0.0#0.0#null#MS11#E3U1
+VCCDHvBattModelVld#5#625#false#false#108#1#1#0#VCCDHVBatteryModelValidflg#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCCDHvBattSoCAct#5#625#false#false#106#11#0.05#0.0#VCCDHVbatterySoCactual#0.0#0.0#0.0#null#MS11#E3U1
+VCCDHvBattSOCRSMSCode#5#625#false#false#127#8#1#0#VCCD BattSOCRSMSSignalGroupFirstSOCnumbeincurrentframe#0.0#0.0#0.0#null#MS11#E3U1
+VCUOBCChrgnReqSigGrpChks#5#631#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUOBCChrgnReqSigGrpCntr#5#631#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUOBCChrgnCurReq#5#631#false#false#23#10#0.1#0.0#HV battery AC Charging DC current request to OBC.  DC current negative#0.0#0.0#0.0#null#MS11#E3U1
+VCUOBCChrgnUReq#5#631#false#false#39#14#0.1#0.0#HV battery AC Charging HV side voltage request to OBC.#0.0#0.0#0.0#null#MS11#E3U1
+CCUCooltCircFlowEstimd#5#631#false#false#55#10#0.05#0.0#Estimated coolant flowrate for CCU coolant circuit.#0.0#0.0#0.0#null#MS11#E3U1
+VCUBookDepartrHvBattHeatgSts#5#846#false#false#7#2#1#0#Book departure charging HV battery book heating control  status#0.0#0.0#0.0#{"0": "ON", "1": "OFF", "2": "Not_avaliable"}#MS11#E3U1
+VCUBookDefdTiHvBattHeatgSts#5#846#false#false#5#2#1#0#Book defined time charging HV battery book heating status#0.0#0.0#0.0#{"0": "OFF", "1": "ON", "2": "Not_avaliable"}#MS11#E3U1
+VCUBookchrgnOnOffSts#5#846#false#false#3#2#1#0#Book charging on off status#0.0#0.0#0.0#{"0": "OFF", "1": "ON", "2": "Not_available"}#MS11#E3U1
+VCUBookchrgnModSts#5#846#false#false#1#2#1#0#book charging mode status#0.0#0.0#0.0#{"0": "Defined_time_charging_set", "1": "Departure_charging_set", "2": "Not_available"}#MS11#E3U1
+VCUHVExtPortConnectnTypInfo#5#846#false#false#13#4#1#0##0.0#0.0#0.0#{"0": "Non_connected", "1": "AC_Half_connected", "2": "AC_charger_conneccted", "3": "DC_charger_connected", "4": "Wireless_charger_connected", "5": "V2L_connected", "6": "V2V_connected", "7": "Multi_connection", "8": "Charger_connected_with_fault"}#MS11#E3U1
+VCUHvBattWrmSts#5#846#false#false#9#2#1#0#HV battery warming  status#0.0#0.0#0.0#{"0": "OFF", "1": "ON", "2": "Not_avaliable"}#MS11#E3U1
+VCUPwrForbkTiPred#5#846#false#false#23#15#1#0#Charging power for BMS to predict the charging time under booked departure charging mode#0.0#0.0#0.0#null#MS11#E3U1
+VCUBookChrgnStsSigGrpChks#5#896#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUBookChrgnSts#5#896#false#false#14#3#1#0#VCU indicate Book charging status#0.0#0.0#0.0#{"0": "StartCharging", "1": "BookCharging", "2": "StopCharging"}#MS11#E3U1
+VCUBookChrgnStsSigGrpCntr#5#896#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUBookchrgnHeatEndHourSts#5#896#false#false#39#5#1#0#passenger room and HV battery book heating end time  hour status#0.0#0.0#0.0#null#MS11#E3U1
+VCUBookchrgnHeatEndMinSts#5#896#false#false#47#6#1#0#passenger room and HV battery book heating end time hour status#0.0#0.0#0.0#null#MS11#E3U1
+VCCDHvBattCapRSMS#5#1008#false#false#7#8#0.5#0.0#VCCDBattSOHRSMSSignalGroupDetail Capacity#0.0#0.0#0.0#null#MS11#E3U1
+VCCDHvBattNextPeriodTempRSMS#5#1008#false#false#15#9#0.5#-40.0#VCCDHvBattTempRSMS GroupDetail Next 10 Minute Battery Temp#0.0#0.0#0.0#null#MS11#E3U1
+VCCDHvBattResVldRSMS#5#1008#false#false#22#1#1#0#VCCDBattSOH RSMS ignalGroupDetail ResistanceValid Flag#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCCDHvBattResRSMS#5#1008#false#false#31#16#0.01#0.0#VCCDBattSOH RSMSSignalGroupDetail Resistance#0.0#0.0#0.0#null#MS11#E3U1
+VCCDHvBattTempRSMSCode#5#1008#false#false#47#8#1#0#VCCD BattTemp RSMS Signal GroupFirst Temp number in current frame#0.0#0.0#0.0#null#MS11#E3U1
+VCCDHvBattCapVldRSMS#5#1008#false#false#55#1#1#0#VCCDBattSOH RSMS Signal GroupDetail Capacity Valid Flag#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCCDHvBattTempVldRSMS#5#1008#false#false#54#1#1#0#VCCDHvBattTempRSMS GroupDetail Temp Valid flg#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCCDHvBattSOHRSMSCode#5#1008#false#false#63#8#1#0#VCCDBattSOHRSMSSignalGroupFirst SOH number in current frame#0.0#0.0#0.0#null#MS11#E3U1
+VCCDHvBattDchaEndTempRSMS#5#1008#false#false#71#9#0.5#-40.0#VCCDHvBattTempRSMS GroupDetail Discharge End Battery Temp#0.0#0.0#0.0#null#MS11#E3U1
+VehCfgPrmBlkIDBytePosn1#5#139#false#false#7#8#1#0#Block ID for specific Car Configuration parameter sequence#0.0#0.0#0.0#null#MS11#E3U1
+VehCfgPrmCCPBytePosn2#5#139#false#false#15#8#1#0#1st position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MS11#E3U1
+VehCfgPrmCCPBytePosn3#5#139#false#false#23#8#1#0#2nd position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MS11#E3U1
+VehCfgPrmCCPBytePosn4#5#139#false#false#31#8#1#0#3rd position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MS11#E3U1
+VehCfgPrmCCPBytePosn5#5#139#false#false#39#8#1#0#4th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MS11#E3U1
+VehCfgPrmCCPBytePosn6#5#139#false#false#47#8#1#0#5th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MS11#E3U1
+VehCfgPrmCCPBytePosn7#5#139#false#false#55#8#1#0#6th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MS11#E3U1
+VehCfgPrmCCPBytePosn8#5#139#false#false#63#8#1#0#7th position in specific CCP number sequence   Block ID dependant#0.0#0.0#0.0#null#MS11#E3U1
+ImobFrntMotResp#5#140#false#false#7#64#1#0#Immobiliser s Response received by FEDS\nFEDS接收的防盗应答#0.0#0.0#0.0#null#MS11#E3U1
+ImobReMotResp#5#141#false#false#7#64#1#0#Immobiliser s response received by REDS\nREDS接收的防盗应答#0.0#0.0#0.0#null#MS11#E3U1
+PwrModSigGrpChks#5#144#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+PwrModSigGrpCntr#5#144#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+PwrModSts#5#144#false#false#23#3#1#0#PowerMode Status#0.0#0.0#0.0#{"0": "OFF", "1": "Awake", "2": "ACC", "3": "RUN"}#MS11#E3U1
+PwrModVld#5#144#false#false#20#1#1#0#PowerMode Validty#0.0#0.0#0.0#{"0": "Valid", "1": "NotValid"}#MS11#E3U1
+VCUActGearSigGrpChks#5#144#false#false#39#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUActGearSigGrpCntr#5#144#false#false#43#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUActGearLvr#5#144#false#false#55#3#1#0#Actual gear level 车辆实际档位\nP R N D挡位#0.0#0.0#0.0#{"0": "P_Park_gear", "1": "R_Reverse_gear", "2": "N_Neutral_gear", "3": "D_Drive_gear"}#MS11#E3U1
+VCUActGearLvrVld#5#144#false#false#52#1#1#0#车辆实际档位有效位#0.0#0.0#0.0#{"0": "Invalid", "1": "Valid"}#MS11#E3U1
+VCUBoosterCntctReqSigGrpChks#5#144#false#false#79#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUBoosterCntctReqSigGrpCntr#5#144#false#false#83#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUBoosterCntctReq#5#144#false#false#95#1#1#0#Booster S7 Positive    S6 Negative    S1 contactor Request#0.0#0.0#0.0#{"0": "Open", "1": "Close"}#MS11#E3U1
+VCUBoosterOutpCntctReq#5#144#false#false#111#1#1#0#Booster  S1  output contactor Request#0.0#0.0#0.0#{"0": "Open", "1": "Close"}#MS11#E3U1
+VCUPtRdyFlg#5#144#false#false#127#1#1#0#驾驶使能#0.0#0.0#0.0#{"0": "not_active", "1": "active"}#MS11#E3U1
+CarModSts#5#144#false#false#135#3#1#0#CarMode状态信号#0.0#0.0#0.0#{"0": "Normal", "1": "Fcy", "2": "Trsnp", "3": "Showroom", "4": "Dyno", "5": "OTAInstall", "6": "Service", "7": "Spare"}#MS11#E3U1
+VCUReMotReqBkpSigGrpChks#5#151#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotModReqBkp#5#151#false#false#15#4#1#0#Rear motor mode request Backup signal#0.0#0.0#0.0#{"0": "Standby", "1": "Offset_Calibration_Mode_1", "2": "Offset_Calibration_Mode_2", "3": "Torque_Control", "4": "Speed_Control", "5": "Buck_mode", "6": "Booster_Charge", "7": "Booster_Voltage_Control", "8": "Booster_Discharge", "9": "Active_Discharge", "10": "Direct_Heating", "11": "Buck_Control"}#MS11#E3U1
+VCUReMotReqBkpSigGrpCntr#5#151#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotTqReqBkp#5#151#false#false#23#15#0.1#-1638.3#Rear motor torque request Backup signal#0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotOverBoostEnaBkp#5#151#false#false#24#1#1#0#Rear motor over boost enable Backup signal#0.0#0.0#0.0#{"0": "off", "1": "on"}#MS11#E3U1
+VCUReMotSpdReqBkp#5#151#false#false#39#16#1#-32767#Rear motor speed request  at motor output shaft  Backup signal#0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotMaxPosTqGradientBkp#5#151#false#false#55#10#10#0#Rear motor maximum positive torque gradient Backup signal#0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotMinNegTqGradientBkp#5#151#false#false#57#10#10#-10230#Rear motor minimum negative torque gradient Backup signal#0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotReqBkpSigGrpChks#5#151#false#false#79#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotModReqBkp#5#151#false#false#87#4#1#0#Front motor mode request Backup signal#0.0#0.0#0.0#{"0": "Standby", "1": "Offset_Calibration_Mode_1", "2": "Offset_Calibration_Mode_2", "3": "Torque_Control", "4": "Speed_Control", "5": "Reserved", "6": "Reserved", "7": "Reserved", "8": "Reserved", "9": "Active_Discharge"}#MS11#E3U1
+VCUFrntMotReqBkpSigGrpCntr#5#151#false#false#83#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotTqReqBkp#5#151#false#false#95#15#0.1#-1638.3#Front motor torque request Backup signal#0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotOverBoostEnaBkp#5#151#false#false#96#1#1#0#Front motor over boost enable Backup signal#0.0#0.0#0.0#{"0": "off", "1": "on"}#MS11#E3U1
+VCUFrntMotSpdReqBkp#5#151#false#false#111#16#1#-32767#Front motor speed request  at motor output shaft  Backup signal#0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotMaxPosTqGradientBkp#5#151#false#false#127#10#10#0#Front motor maximum positive torque gradient Backup signal#0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotMinNegTqGradientBkp#5#151#false#false#129#10#10#-10230#Front motor minimum negative torque gradient Backup signal#0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotSpdGrdtMaxLimBkp#5#151#false#false#151#15#1#0#Front motor maximum limit of speed gradient Backup signal#0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotSpdGrdtMinLimBkp#5#151#false#false#167#15#1#-32767#Front motor minimum limit of speed gradient Backup signal#0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotSpdGrdtMaxLimBkp#5#151#false#false#183#15#1#0#Rear motor maximum limit of speed gradient Backup signal#0.0#0.0#0.0#null#MS11#E3U1
+VCUReMotSpdGrdtMinLimBkp#5#151#false#false#199#15#1#-32767#Rear motor minimum limit of speed gradient Backup signal#0.0#0.0#0.0#null#MS11#E3U1
+VCUFrntMotDampgModReqBkp#5#151#false#false#215#2#1#0#Front motor damping mode request Backup signal#0.0#0.0#0.0#{"0": "No_req", "1": "Low_damping", "2": "Medium_damping", "3": "High_damping"}#MS11#E3U1
+VCUReMotDampgModReqBkp#5#151#false#false#211#2#1#0#Rear motor damping mode request Backup signal#0.0#0.0#0.0#{"0": "No_req", "1": "Low_damping", "2": "Medium_damping", "3": "High_damping"}#MS11#E3U1
+VCUReqToHvBattSigGrpChks#5#158#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUReqToHvBattSigGrpCntr#5#158#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCUChrgnModReqToHvBatt#5#158#false#false#23#3#1#0#VCU Hv battery charging mode request#0.0#0.0#0.0#{"0": "No_Charge_Req", "1": "AC_Charging", "2": "DC_Charging", "3": "Wireless_Charging", "4": "V2L", "5": "V2V"}#MS11#E3U1
+VCUModReqToHvBatt#5#158#false#false#20#3#1#0#VCU HV battery mode request#0.0#0.0#0.0#{"0": "No_Req", "1": "HV_Off", "3": "HV_On", "4": "Emergency_off", "5": "Direct_Heating", "6": "Preheating_Req", "7": "Warming_Req"}#MS11#E3U1
+VCCDPtCanfdNodeAddress#5#1296#false#false#7#8#1#0#Node source address#0.0#0.0#0.0#null#MS11#E3U1
+VCCDPtCanfdActiveWakeup#5#1296#false#false#12#1#1#0#Active Wakeup Bit#0.0#0.0#0.0#{"0": "passive_wakeup", "1": "active_Wakeup"}#MS11#E3U1
+VCCDPtCanfdRepeatMsgReq#5#1296#false#false#8#1#1#0#Repeat Message Request Bit#0.0#0.0#0.0#{"0": "not_requested", "1": "requested"}#MS11#E3U1
+UDB23VCCD#5#1296#false#false#23#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB22VCCD#5#1296#false#false#22#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB21VCCD#5#1296#false#false#21#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB19VCCD#5#1296#false#false#19#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB18VCCD#5#1296#false#false#18#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB17VCCD#5#1296#false#false#17#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+VCCDPtCanfdRepeatMsgSt#5#1296#false#false#16#1#1#0#Repeat Message State indication#0.0#0.0#0.0#{"0": "Not_in_Repeat_Message_State", "1": "In_Repeat_Message_State"}#MS11#E3U1
+UDB31VCCD#5#1296#false#false#31#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB30VCCD#5#1296#false#false#30#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB29VCCD#5#1296#false#false#29#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB28VCCD#5#1296#false#false#28#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB27VCCD#5#1296#false#false#27#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB26VCCD#5#1296#false#false#26#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB25VCCD#5#1296#false#false#25#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB24VCCD#5#1296#false#false#24#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB39VCCD#5#1296#false#false#39#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB38VCCD#5#1296#false#false#38#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB36VCCD#5#1296#false#false#36#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB35VCCD#5#1296#false#false#35#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB34VCCD#5#1296#false#false#34#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB33VCCD#5#1296#false#false#33#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB32VCCD#5#1296#false#false#32#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB47VCCD#5#1296#false#false#47#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB46VCCD#5#1296#false#false#46#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB45VCCD#5#1296#false#false#45#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB44VCCD#5#1296#false#false#44#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB43VCCD#5#1296#false#false#43#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB42VCCD#5#1296#false#false#42#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB40VCCD#5#1296#false#false#40#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB53VCCD#5#1296#false#false#53#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB52VCCD#5#1296#false#false#52#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB51VCCD#5#1296#false#false#51#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB50VCCD#5#1296#false#false#50#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+UDB49VCCD#5#1296#false#false#49#1#1#0##0.0#0.0#0.0#null#MS11#E3U1
+NMKeepAwkRsnVCCD#5#1296#false#false#48#9#1#0##0.0#0.0#0.0#null#MS11#E3U1

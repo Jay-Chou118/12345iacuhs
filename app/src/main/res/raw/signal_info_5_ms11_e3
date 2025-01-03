@@ -471,7 +471,7 @@ HvBattTotDchrgdEgyWh#5#1010#false#false#31#32#1#0#HV battery total discharged en
 HvBattTotDchrgdEgyAh#5#1010#false#false#63#23#1#0#HV battery total discharged energy by Ah   accumulate once current is positive . This information is used for Battery internal SoH calculation#0.0#0.0#0.0#null#MS11#E3
 HvBattTotChrgdEgyWh#5#1010#false#false#87#32#1#0#HV battery total charged energy by Wh   accumulate once current is negtive.#0.0#0.0#0.0#null#MS11#E3
 HvBattTotChrgdEgyAh#5#1010#false#false#119#23#1#0#HV battery total charged energy by Ah   accumulate once current is negtive.   This information is used for Battery internal SoH calculation#0.0#0.0#0.0#null#MS11#E3
-HvBattChrgdEgyThisChrgnCyc#5#1010#false#false#128#17#1#0##0.0#0.0#0.0#null#MS11#E3
+HvBattChrgdEgyThisChrgnCyc#5#1010#false#false#128#17#1#0#HV battery charged energy this charging cycle AC DC Wireless charging  used for added range km  calculation by this charging cycle .#0.0#0.0#0.0#null#MS11#E3
 HvBattCellTSigGrpChks#5#1010#false#false#159#8#1#0##0.0#0.0#0.0#null#MS11#E3
 HvBattCellTSigGrpCntr#5#1010#false#false#163#4#1#0##0.0#0.0#0.0#null#MS11#E3
 HvBattCellTMax#5#1010#false#false#175#9#0.5#-40.0#HV battery cell maximum temperature.#0.0#0.0#0.0#{"511": "Invalid"}#MS11#E3
@@ -1040,7 +1040,7 @@ VCUDCDCReqSigGrpCntr#5#304#false#false#11#4#1#0##0.0#0.0#0.0#null#MS11#E3
 VCUDCDCHVCurLim#5#304#false#false#23#9#0.1#0.0#DCDC HV current limitation under buck mode too prevent HV battery energy too low#0.0#0.0#0.0#null#MS11#E3
 VCUDCDCModReq#5#304#false#false#30#3#1#0#DCDC mode request from VCU#0.0#0.0#0.0#{"0": "Init", "1": "Standby", "2": "Active_Discharge", "3": "Buck_mode_request", "4": "Boost_mode_request"}#MS11#E3
 VCUDCDCLVCurLim#5#304#false#false#39#11#0.5#0.0#Current limitation request at DCDC Lv side. positive means current flows from DCDC to LV#0.0#0.0#0.0#null#MS11#E3
-VCUDCDCULVSp#5#304#false#false#55#14#0.001#0.0#DCDC conversion setpoint at DCDC LV side.#0.0#0.0#0.0#null#MS11#E3
+VCUDCDCULVSp#5#304#false#false#55#8#0.1#0.0#DCDC conversion setpoint at DCDC LV side.#0.0#0.0#0.0#null#MS11#E3
 VCUOBCReqSigGrpChks#5#304#false#false#175#8#1#0##0.0#0.0#0.0#null#MS11#E3
 VCUOBCReqSigGrpCntr#5#304#false#false#179#4#1#0##0.0#0.0#0.0#null#MS11#E3
 VCUOBCS2Req#5#304#false#false#189#1#1#0#Request for S2 switch.#0.0#0.0#0.0#{"0": "Open", "1": "Close"}#MS11#E3
@@ -1086,9 +1086,7 @@ HvBattCooltCircFlowEstimd#5#624#false#false#175#10#0.05#0.0#Estimated coolant fl
 ReMotCooltCircFlowEstimd#5#624#false#false#191#10#0.05#0.0#Estimated coolant flowrate for rear motor coolant circuit.#0.0#0.0#0.0#null#MS11#E3
 VCUChrgnSoCLimSp#5#624#false#false#207#7#1#0#Charging SOC limit setpoint  of HV battery.#0.0#0.0#0.0#null#MS11#E3
 VCUDchrgnSoCLimSp#5#624#false#false#215#7#1#0#Discharging SOC limit setpoint  of HV battery.#0.0#0.0#0.0#null#MS11#E3
-VCUBookDepartrMinSts#5#624#false#false#223#6#1#0#book departure min time status#0.0#0.0#0.0#null#MS11#E3
 VCCDHvBattSOCRSMS#5#624#false#false#247#11#0.05#0.0#VCCDBattSOCRSMSSignalGroupDetailSOC#0.0#0.0#0.0#null#MS11#E3
-VCUBookDepartrHourSts#5#624#false#false#252#5#1#0#book departure hour time status#0.0#0.0#0.0#null#MS11#E3
 HvBattInletCooltT#5#625#false#false#7#16#0.01#-80.0#Battery inlet coolant temperature#0.0#0.0#0.0#null#MS11#E3
 HvBattOutletCooltT#5#625#false#false#23#16#0.01#-80.0#Battery outlet coolant temperature#0.0#0.0#0.0#null#MS11#E3
 AmbTEstimd#5#625#false#false#39#16#0.01#-80.0#Estimated ambient temperature.#0.0#0.0#0.0#null#MS11#E3
@@ -1113,7 +1111,7 @@ VCUBookDepartrHvBattHeatgSts#5#846#false#false#7#2#1#0#Book departure charging H
 VCUBookDefdTiHvBattHeatgSts#5#846#false#false#5#2#1#0#Book defined time charging HV battery book heating status#0.0#0.0#0.0#{"0": "OFF", "1": "ON", "2": "Not_avaliable"}#MS11#E3
 VCUBookchrgnOnOffSts#5#846#false#false#3#2#1#0#Book charging on off status#0.0#0.0#0.0#{"0": "OFF", "1": "ON", "2": "Not_available"}#MS11#E3
 VCUBookchrgnModSts#5#846#false#false#1#2#1#0#book charging mode status#0.0#0.0#0.0#{"0": "Defined_time_charging_set", "1": "Departure_charging_set", "2": "Not_available"}#MS11#E3
-VCUHVExtPortConnectnTypInfo#5#846#false#false#13#4#1#0##0.0#0.0#0.0#{"0": "Non_connected", "1": "AC_Half_connected", "2": "AC_charger_conneccted", "3": "DC_charger_connected", "4": "Wireless_charger_connected", "5": "V2L_connected", "6": "V2V_connected", "7": "Multi_connection", "8": "Charger_connected_with_fault"}#MS11#E3
+VCUHVExtPortConnectnTypInfo#5#846#false#false#13#4#1#0#HV External Port Connection Type Information 重新定义 原来叫chrgnPortConnectnStsInfo 重新map#0.0#0.0#0.0#{"0": "Non_connected", "1": "AC_Half_connected", "2": "AC_charger_conneccted", "3": "DC_charger_connected", "4": "Wireless_charger_connected", "5": "V2L_connected", "6": "V2V_connected", "7": "Multi_connection", "8": "Charger_connected_with_fault"}#MS11#E3
 VCUHvBattWrmSts#5#846#false#false#9#2#1#0#HV battery warming  status#0.0#0.0#0.0#{"0": "OFF", "1": "ON", "2": "Not_avaliable"}#MS11#E3
 VCUPwrForbkTiPred#5#846#false#false#23#15#1#0#Charging power for BMS to predict the charging time under booked departure charging mode#0.0#0.0#0.0#null#MS11#E3
 VCUBookChrgnStsSigGrpChks#5#896#false#false#7#8#1#0##0.0#0.0#0.0#null#MS11#E3

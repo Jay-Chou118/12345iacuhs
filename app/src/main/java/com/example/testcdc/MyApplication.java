@@ -12,7 +12,6 @@ import androidx.room.Room;
 
 import com.example.testcdc.Utils.DataBaseUtil;
 import com.example.testcdc.database.Basic_DataBase;
-import com.example.testcdc.entity.SignalInfo;
 import com.xiaomi.xms.wearable.Wearable;
 import com.xiaomi.xms.wearable.auth.AuthApi;
 import com.xiaomi.xms.wearable.auth.Permission;
@@ -168,11 +167,22 @@ public class MyApplication extends Application {
 //            Basic_DataBase db = Basic_DataBase.getDatabase(getApplicationContext());
 //            Log.e(TAG,"111111111111111" );
             new Thread(()->{
+
+                //TODO
+                //数据库中暂时缺少中文后缀的车辆DBC种类
+                //MS11 E3-昆易
+                //MS11 E3U1-昆易
+                //MS11 E4-昆易
+
+                ////////////////////////////////////////////////////////////
+                ///制作数据库使用///////////
 //                DataBaseUtil.init_carType();
-////                //Log.e(TAG, "222222222222222222222222222  数据库不存在  remake " );
 //                DataBaseUtil.initDataFromCsv(this);
 //                DataBaseUtil.initMsgFromCsv(this);
+                /////////////////////////////////////////////////////////////
+                ///copy数据库使用///////////
                 copyDataBase(this, "basic_database");
+                ////////////////////////////////////////////////////////////
             }).start();
 
 
