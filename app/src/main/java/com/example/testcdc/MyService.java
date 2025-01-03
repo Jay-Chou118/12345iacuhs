@@ -286,8 +286,8 @@ public class MyService extends Service {
                             checkIfMonitor(poll);
                         }
                         /**************************************************************************************/
-//                        record(poll.timestamp,poll.BUS_ID,poll.dataLength,poll.CAN_ID,poll.CAN_TYPE,
-//                                poll.data);
+                        record(poll.timestamp,poll.BUS_ID,poll.dataLength,poll.CAN_ID,poll.CAN_TYPE,
+                                poll.data);
                     }
                 }
             },"CostMsg");
@@ -669,9 +669,9 @@ public class MyService extends Service {
             });
         }
 
-        public void startSaveBlf()
+        public void startSaveBlf(Context ctx)
         {
-            filePath = getWorkHomeDir() + "MiCAN_record_" + formatTime() +".blf";
+            filePath = getWorkHomeDir(ctx) + "MiCAN_record_" + formatTime() +".blf";
             startRecord(filePath);
         }
 
@@ -911,9 +911,11 @@ public class MyService extends Service {
 
     public native void sayHello();
 
-    private String getWorkHomeDir()
+    private String getWorkHomeDir(Context ctx)
     {
-        return Environment.getExternalStorageDirectory()+"/MICAN/";
+//        return Environment.getExternalStorageDirectory()+"/MICAN/";
+        Log.e(TAG,"====getWorkHomeDir===" + ctx.getFilesDir().getAbsolutePath()) ;
+        return ctx.getFilesDir().getAbsolutePath() + "/MICAN/";
     }
 
 
