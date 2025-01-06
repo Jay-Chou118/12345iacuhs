@@ -3,6 +3,8 @@ package com.example.testcdc;
 import static com.chaquo.python.Python.start;
 import static com.example.testcdc.Utils.Utils.parseDBCByPython;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
+import static com.example.testcdc.Utils.Utils.wait1000ms;
+import static com.example.testcdc.Utils.Utils.wait10ms;
 import static com.google.gson.JsonParser.parseString;
 
 import android.app.PendingIntent;
@@ -243,7 +245,7 @@ public class MainActivity3 extends AppCompatActivity {
             start(new AndroidPlatform(this));
         }
 
-        startHttpServer();
+//        startHttpServer();
         Runtime rt=Runtime.getRuntime();
         long maxMemory=rt.maxMemory();
         Log.e("maxMemory:",Long.toString(maxMemory/(1024*1024)));
@@ -254,11 +256,6 @@ public class MainActivity3 extends AppCompatActivity {
 
         EventBus.builder().installDefaultEventBus();
 
-        try {
-            initCursor();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
         Thread m = new Thread(new Runnable() {
             @Override
@@ -341,19 +338,6 @@ public class MainActivity3 extends AppCompatActivity {
     }
 
 
-    private void initCursor() {
-        Cursor cursor = getContentResolver().query(null, null, null, null, null);
-        if (cursor != null && cursor.moveToFirst()) {
-            // 处理 Cursor 数据
-            while (!cursor.isAfterLast()) {
-                // 处理每一行数据
-                cursor.moveToNext();
-            }
-            cursor.close();
-        } else {
-            throw new IllegalStateException("Cursor is not initialized correctly.");
-        }
-    }
 
 
     private void startHttpServer() {
@@ -1250,7 +1234,7 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
+        Log.e(TAG,"===============onActivityResult==============");
         if (requestCode == READ_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
 
             Uri uri = data.getData();

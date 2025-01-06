@@ -133,7 +133,6 @@ public class MyApplication extends Application {
     public void initDatabase_Basic()
     {
         boolean ret = DataBaseUtil.checkDataBase(this,"basic_database");
-        Log.e(TAG, "FFFFFF " + ret );
         if(ret)
         {
             Log.i(TAG,"数据库存在");
