@@ -26,6 +26,7 @@ import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -308,6 +309,14 @@ public class MainActivity3 extends AppCompatActivity {
         Intent intent = getIntent();
         String action = intent.getAction();
         Uri data = intent.getData();
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                Log.e(TAG,"--------------shouldOverrideUrlLoading-------------" + request.getUrl());
+//                return true;
+                return super.shouldOverrideUrlLoading(view, request);
+            }
+        });
         if (Intent.ACTION_VIEW.equals(action) && data != null) {
             // 处理文件
             String larkFile = getPathFromUri(this, data);
@@ -320,19 +329,27 @@ public class MainActivity3 extends AppCompatActivity {
             }
             Log.i("20241017", jsonObject.toString());
 
-            webView.setWebViewClient(new WebViewClient() {
-                @Override
-                public void onPageFinished(WebView view, String url) {
-                    super.onPageFinished(view, url);
-                    webView.postDelayed(() -> {
-                        webView.evaluateJavascript("getandroiddata();", null);
-                    }, 1000);
-
-                    webView.postDelayed(() -> {
-                        webView.evaluateJavascript("larkFile('" + larkFile + "');", null);
-                    }, 2000);
-                }
-            });
+//            webView.setWebViewClient(new WebViewClient() {
+//                @Override
+//                public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+//                    Log.e(TAG,"--------------shouldOverrideUrlLoading-------------");
+//                    return super.shouldOverrideUrlLoading(view, request);
+//                }
+//
+//                @Override
+//                public void onPageFinished(WebView view, String url) {
+//                    super.onPageFinished(view, url);
+//                    webView.postDelayed(() -> {
+//                        webView.evaluateJavascript("getandroiddata();", null);
+//                    }, 1000);
+//
+//                    webView.postDelayed(() -> {
+//                        webView.evaluateJavascript("larkFile('" + larkFile + "');", null);
+//                    }, 2000);
+//
+//
+//                }
+//            });
 
         }
     }
