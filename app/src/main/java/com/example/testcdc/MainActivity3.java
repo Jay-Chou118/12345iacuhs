@@ -1,10 +1,9 @@
 package com.example.testcdc;
 
 import static com.chaquo.python.Python.start;
+import static com.example.testcdc.Utils.Utils.MicanFileList;
 import static com.example.testcdc.Utils.Utils.parseDBCByPython;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
-import static com.example.testcdc.Utils.Utils.wait1000ms;
-import static com.example.testcdc.Utils.Utils.wait10ms;
 import static com.google.gson.JsonParser.parseString;
 
 import android.app.PendingIntent;
@@ -60,6 +59,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 import org.greenrobot.eventbus.EventBus;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -519,6 +519,17 @@ public class MainActivity3 extends AppCompatActivity {
 //                    });
 
                 }
+
+
+
+                List<String> micanFileList = MicanFileList(MainActivity3.this);
+                Log.d(TAG, "getMicanFileList" + micanFileList);
+
+                JSONArray jsonArray = new JSONArray(micanFileList);
+                JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
+                Result<Object> success = ResponseData.success(jsonArray);
+                jsCallResult.setData(success);
+                callJs(jsCallResult);
             }
         });
 
@@ -880,7 +891,6 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
-
         //getPeriodicSend
         messageHandlers.put("getPeriodicSend", new BridgeHandler() {
             @Override
@@ -1071,7 +1081,6 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
-
         messageHandlers.put("getRawValueToPhysValue", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) throws IOException {
@@ -1083,7 +1092,37 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
+        messageHandlers.put("getMICANFileList", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+                List<String> micanFileList = MicanFileList(MainActivity3.this);
+                Log.d(TAG, "getMicanFileList" + micanFileList);
 
+                JSONArray jsonArray = new JSONArray(micanFileList);
+                JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
+                Result<Object> success = ResponseData.success(jsonArray);
+                jsCallResult.setData(success);
+                callJs(jsCallResult);
+            }
+        });
+
+        messageHandlers.put("sendMICANFileList", new BridgeHandler() {
+                    @Override
+                    public void handle(JsonElement data, String callback) {
+                        try {
+                            Gson gson = new Gson();
+                            JsonArray jsonArray = data.getAsJsonArray();
+                            JSONArray fileList = new JSONArray(gson.toJson(jsonArray));
+                            Log.d(TAG, "sendMICANFileList" + fileList);
+                            for (int i = 0; i < fileList.length(); i++) {
+                                String filePath = fileList.getString(i);
+                                upLoadFile(filePath);
+                            }
+                        } catch (JSONException e) {
+                            Log.e(TAG, "Error parsing JSONArray", e);
+                        }
+                    }
+                });
     }
 
 
@@ -1251,7 +1290,7 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.e(TAG,"===============onActivityResult==============");
+
         if (requestCode == READ_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
 
             Uri uri = data.getData();

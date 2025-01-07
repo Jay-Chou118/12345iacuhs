@@ -3,6 +3,7 @@ package com.example.testcdc.Utils;
 
 import static com.example.testcdc.MainActivity3.chooseDBC;
 
+import android.content.Context;
 import android.text.SpannableStringBuilder;
 import android.util.Log;
 
@@ -20,6 +21,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -283,6 +285,25 @@ public class Utils {
         String usermsg = String.valueOf(pyObject.callAttr("blfthaveDataSignal", data));
 
         return usermsg;
+    }
+
+    static public List<String> MicanFileList(Context ctx){
+        String micanPath  = ctx.getFilesDir().getAbsolutePath() + "/MICAN/";
+        File micanFile = new File(micanPath);
+        List<String> filePaths = new ArrayList<>();
+
+        if (micanFile.exists() && micanFile.isDirectory()) {
+            File [] files = micanFile.listFiles();
+            if (files != null) {
+                for (File file : files) {
+                    if (file.isFile()) {
+                        filePaths.add(file.getPath());
+                    }
+                }
+            }
+        }
+        Log.e(TAG, "====FileList==== " + filePaths );
+        return filePaths;
     }
 
 }
