@@ -65,7 +65,9 @@ import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -79,6 +81,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipOutputStream;
 
 
 public class MainActivity3 extends AppCompatActivity {
@@ -1113,11 +1117,32 @@ public class MainActivity3 extends AppCompatActivity {
                             Gson gson = new Gson();
                             JsonArray jsonArray = data.getAsJsonArray();
                             JSONArray fileList = new JSONArray(gson.toJson(jsonArray));
+                            File zipFile = new File(getExternalCacheDir(), "mican_files.zip");
                             Log.d(TAG, "sendMICANFileList" + fileList);
-                            for (int i = 0; i < fileList.length(); i++) {
-                                String filePath = fileList.getString(i);
-                                upLoadFile(filePath);
+                            try (ZipOutputStream zipOut = new ZipOutputStream(new FileOutputStream(zipFile))) {
+                                for (int i = 0; i < fileList.length(); i++) {
+                                    String filePath = fileList.getString(i);
+                                    File file = new File(filePath);
+                                    upLoadFile(filePath);
+                                    if (file.exists()) {
+                                        try (FileInputStream fis = new FileInputStream(file)) {
+                                            ZipEntry zipEntry = new ZipEntry(file.getName());
+                                            zipOut.putNextEntry(zipEntry);
+
+                                            byte[] bytes = new byte[1024];
+                                            int length;
+                                            while ((length = fis.read(bytes)) >= 0) {
+                                                zipOut.write(bytes, 0, length);
+                                            }
+                                        }
+                                    }
+                                }
+                            } catch (FileNotFoundException e) {
+                                throw new RuntimeException(e);
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
                             }
+                            sharedFile(zipFile.getAbsolutePath());
                         } catch (JSONException e) {
                             Log.e(TAG, "Error parsing JSONArray", e);
                         }
