@@ -287,23 +287,25 @@ public class Utils {
         return usermsg;
     }
 
-    static public List<String> MicanFileList(Context ctx){
-        String micanPath  = ctx.getFilesDir().getAbsolutePath() + "/MICAN/";
+    static public List<Map<String, Object>> MicanFileList(Context ctx) {
+        String micanPath = ctx.getFilesDir().getAbsolutePath() + "/MICAN/";
         File micanFile = new File(micanPath);
-        List<String> filePaths = new ArrayList<>();
+        List<Map<String, Object>> fileInfoList = new ArrayList<>();
 
         if (micanFile.exists() && micanFile.isDirectory()) {
-            File [] files = micanFile.listFiles();
+            File[] files = micanFile.listFiles();
             if (files != null) {
                 for (File file : files) {
                     if (file.isFile()) {
-                        filePaths.add(file.getPath());
+                        Map<String, Object> fileInfo = new HashMap<>();
+                        fileInfo.put("filePath", file.getPath());
+                        fileInfo.put("lastModified", file.lastModified());
+                        fileInfoList.add(fileInfo);
                     }
                 }
             }
         }
-        Log.e(TAG, "====FileList==== " + filePaths );
-        return filePaths;
+        Log.e(TAG, "====FileList==== " + fileInfoList);
+        return fileInfoList;
     }
-
 }
