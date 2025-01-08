@@ -1,13 +1,13 @@
 package com.example.testcdc;
 
 import static com.chaquo.python.Python.start;
+import static com.example.testcdc.Utils.Utils.MicanFileList;
 import static com.example.testcdc.Utils.Utils.parseDBCByPython;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
-import static com.example.testcdc.Utils.Utils.wait1000ms;
-import static com.example.testcdc.Utils.Utils.wait10ms;
 import static com.google.gson.JsonParser.parseString;
 
-import android.app.PendingIntent;
+import static org.apache.commons.net.telnet.TelnetCommand.IP;
+
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -30,7 +30,6 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -40,14 +39,12 @@ import androidx.documentfile.provider.DocumentFile;
 
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
-
 import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
 import com.example.testcdc.Utils.FTPClientFunctions;
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
 import com.example.testcdc.database.Basic_DataBase;
-import com.example.testcdc.entity.CarTypeEntity;
 import com.example.testcdc.entity.ChannelInf;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
@@ -60,6 +57,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 import org.greenrobot.eventbus.EventBus;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -71,6 +69,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -116,6 +115,8 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static final String ACTION_USB_PERMISSION = "com.android.usb.USB_PERMISSION";
 
+    private FTPClientFunctions mFtpClint;
+
 
     private boolean MiCANOpenFlag = false;
 
@@ -142,25 +143,23 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static List<SendCanMessage> g_send_list = new ArrayList<>();
 
-    public static Map<Integer,Integer> BUSRedirectMap = new HashMap<>();
+    public static Map<Integer, Integer> BUSRedirectMap = new HashMap<>();
 
 
-    public void test()
-    {
+    public void test() {
         UsbManager usbManager = (UsbManager) getSystemService(Context.USB_SERVICE);
         HashMap<String, UsbDevice> usbDevices = usbManager.getDeviceList();
-        Log.e(TAG,"=================================================");
+        Log.e(TAG, "=================================================");
         for (UsbDevice device : usbDevices.values()) {
             // 检查设备的VID和PID是否匹配你的USB设备
-            Log.e(TAG,device.toString());
+            Log.e(TAG, device.toString());
             if (device.getVendorId() == 1155 || device.getVendorId() == 4236) {
 //                PendingIntent permissionIntent = PendingIntent.getBroadcast(this, 0, new Intent(ACTION_USB_PERMISSION), PendingIntent.FLAG_IMMUTABLE);
 //                usbManager.requestPermission(device, permissionIntent);
                 UsbDeviceConnection connection = usbManager.openDevice(device);
-                Log.e(TAG,"open ok");
+                Log.e(TAG, "open ok");
                 UsbInterface usbInterface = device.getInterface(1);
                 connection.claimInterface(usbInterface, true);
-
 
 
                 UsbEndpoint endpointIn = usbInterface.getEndpoint(0); // 假设第一个是OUT端点
@@ -169,11 +168,11 @@ public class MainActivity3 extends AppCompatActivity {
                 Log.e(TAG, "start send data");
                 byte[] buffer = new byte[63];
                 int bytesRead = connection.bulkTransfer(endpointIn, buffer, buffer.length, 100);
-                Log.e(TAG,"send bytes " + bytesRead);
+                Log.e(TAG, "send bytes " + bytesRead);
                 if (bytesRead != 0) {
                     String result = new String(buffer, 0, bytesRead);
                     Log.e(TAG, "Received Data: " + result);
-                }else {
+                } else {
                     Log.e(TAG, "not read data");
                 }
 //                Log.e(TAG, "not read data");
@@ -190,51 +189,47 @@ public class MainActivity3 extends AppCompatActivity {
                 connection.close();
             }
         }
-        Log.e(TAG,"=================================================");
+        Log.e(TAG, "=================================================");
     }
 
-    public void upLoadFile(String filePath)
-    {
-        File file = new File(filePath);
-        String FTP_SERVER = "172.31.2.252";
+    public boolean connectToFTP(String IP) {
         int FTP_PORT = 21;
         String FTP_USERNAME = "MICAN";
         String FTP_PASSWORD = "MICAN";
-        String descFileName = file.getName();
-
-        // 网络操作，但开一个线程进行处理
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                // TODO 可以首先去判断一下网络
-                FTPClientFunctions ftpClient = new FTPClientFunctions();
-                boolean connectResult = ftpClient.ftpConnect(FTP_SERVER, FTP_USERNAME, FTP_PASSWORD, FTP_PORT);
-                if (connectResult) {
-                    Log.e(TAG,"====connectResult====");
-                    boolean changeDirResult = ftpClient.ftpChangeDir("/");
-                    if (changeDirResult) {
-                        boolean uploadResult = ftpClient.ftpUpload(filePath, descFileName, "");
-                        if (uploadResult) {
-                            Log.w(TAG, "上传成功");
-                            boolean disConnectResult = ftpClient.ftpDisconnect();
-                            if(disConnectResult) {
-                                Log.e(TAG, "关闭ftp连接成功");
-                            } else {
-                                Log.e(TAG, "关闭ftp连接失败");
-                            }
-                        } else {
-                            Log.w(TAG, "上传失败");
-                        }
-                    } else {
-                        Log.w(TAG, "切换ftp目录失败");
-                    }
-
-                } else {
-                    Log.w(TAG, "连接ftp服务器失败");
-                }
-            }
-        }).start();
+        mFtpClint = new FTPClientFunctions();
+        return mFtpClint.ftpConnect(IP,FTP_USERNAME, FTP_PASSWORD, FTP_PORT);
     }
+
+    public boolean uploadToFTP(String filePath, String descFileName) {
+        if(mFtpClint == null)
+        {
+            return false;
+        }
+        boolean changeDirResult = mFtpClint.ftpChangeDir("/");
+        if (changeDirResult) {
+            boolean uploadResult = mFtpClint.ftpUpload(filePath, descFileName, "");
+            if (uploadResult) {
+                Log.i(TAG, "上传成功");
+                return true;
+            } else {
+                Log.e(TAG, "上传失败");
+                return false;
+            }
+        } else {
+            Log.w(TAG, "切换ftp目录失败");
+            return false;
+        }
+    }
+
+    public void disconnectFTP() {
+
+        if(mFtpClint != null)
+        {
+            mFtpClint.ftpDisconnect();
+        }
+        Log.i(TAG,"==========mFtpClint disconnectFTP==========");
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -247,9 +242,9 @@ public class MainActivity3 extends AppCompatActivity {
         }
 
 //        startHttpServer();
-        Runtime rt=Runtime.getRuntime();
-        long maxMemory=rt.maxMemory();
-        Log.e("maxMemory:",Long.toString(maxMemory/(1024*1024)));
+        Runtime rt = Runtime.getRuntime();
+        long maxMemory = rt.maxMemory();
+        Log.e("maxMemory:", Long.toString(maxMemory / (1024 * 1024)));
 
         //pyObject.callAttr("main");
 
@@ -269,7 +264,7 @@ public class MainActivity3 extends AppCompatActivity {
                         throw new RuntimeException(e);
 
                     }
-                    Log.e(TAG,"------------------------------");
+                    Log.e(TAG, "------------------------------");
                     if (mMiCANBinder != null) {
                         mMiCANBinder.printInfo();
                     }
@@ -312,7 +307,7 @@ public class MainActivity3 extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-                Log.e(TAG,"--------------shouldOverrideUrlLoading-------------" + request.getUrl());
+                Log.e(TAG, "--------------shouldOverrideUrlLoading-------------" + request.getUrl());
 //                return true;
                 return super.shouldOverrideUrlLoading(view, request);
             }
@@ -353,8 +348,6 @@ public class MainActivity3 extends AppCompatActivity {
 
         }
     }
-
-
 
 
     private void startHttpServer() {
@@ -464,10 +457,9 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void handle(JsonElement data, String callback) {
 
-                if(!MiCANOpenFlag)
-                {
+                if (!MiCANOpenFlag) {
                     // 打开CANFD设备
-                    Log.i(TAG,"打开MiCAN设备");
+                    Log.i(TAG, "打开MiCAN设备");
                     mMiCANBinder.CANOnBus();
                     mMiCANBinder.startSaveBlf(MainActivity3.this);
                     MiCANOpenFlag = true;
@@ -479,8 +471,8 @@ public class MainActivity3 extends AppCompatActivity {
                 if (mMiCANBinder != null) {
                     JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
                     Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
-                    Log.w(TAG,new Gson().toJson(result.getData().getSignal_data()));
-                    Log.w(TAG,"frame_data: " + result.getData().getFrame_data().size() + " signal: " + result.getData().getSignal_data().size());
+                    Log.w(TAG, new Gson().toJson(result.getData().getSignal_data()));
+                    Log.w(TAG, "frame_data: " + result.getData().getFrame_data().size() + " signal: " + result.getData().getSignal_data().size());
                     jsCallResult.setData(result);
                     final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
 //                    mMiCANBinder.printInfo();
@@ -504,9 +496,9 @@ public class MainActivity3 extends AppCompatActivity {
                     MiCANOpenFlag = false;
                     mMiCANBinder.CANOffBus();
                     mMiCANBinder.stopSaveBlf();
-                    sharedFile(mMiCANBinder.getFilePath());
+//                    sharedFile(mMiCANBinder.getFilePath());
                     // 测试上传文件
-                    upLoadFile(mMiCANBinder.getFilePath());
+//                    upLoadFile(mMiCANBinder.getFilePath());
 
 //                    JsCallResult<Result<String>> jsCallResult = new JsCallResult<>(callback);
 //                    final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
@@ -547,7 +539,7 @@ public class MainActivity3 extends AppCompatActivity {
                         JsonArray childrenArray = new JsonArray();
 
                         List<String> sdbNames = database.carTypeDao().getSDBNames(carTypeName);
-                        if (sdbNames!= null) {
+                        if (sdbNames != null) {
                             for (String sdbName : sdbNames) {
                                 JsonObject child = new JsonObject();
                                 child.addProperty("label", sdbName);
@@ -672,7 +664,7 @@ public class MainActivity3 extends AppCompatActivity {
                                     int value = element.getAsInt();
                                     BUSIdList.add(value);
                                     //
-                                    BUSRedirectMap.put(curBoardCANChannel,value);
+                                    BUSRedirectMap.put(curBoardCANChannel, value);
                                     curBoardCANChannel++;
                                 }
 
@@ -717,7 +709,7 @@ public class MainActivity3 extends AppCompatActivity {
                             }
                             Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
                             jsCallResult.setData(result);
-                            Log.e(TAG,"---------:" + new Gson().toJson(result));
+                            Log.e(TAG, "---------:" + new Gson().toJson(result));
                             callJs(jsCallResult);
 //                            Log.w(TAG, "DBC " + jsCallResult.getData().toString() );
 
@@ -748,14 +740,14 @@ public class MainActivity3 extends AppCompatActivity {
                 Log.d(TAG, "selectShowSignals data : " + data);
                 List<Long> ids = new ArrayList<>();
 
-                long cid = database.carTypeDao().getCidByName(carType,sdb);
+                long cid = database.carTypeDao().getCidByName(carType, sdb);
 
                 JsonArray array = data.getAsJsonArray();
                 array.forEach(item -> {
                     int busId = item.getAsJsonObject().get("busId").getAsInt();//busId是通道
                     String name = item.getAsJsonObject().get("name").getAsString();
-                    Log.d(TAG, "selectShowSignals busId = " + busId +" selectShowSignals cid = " + cid);
-                    SignalInfo signalInfo = database.signalInfoDao().getSignal_idBynamecidbusId(name,cid,busId);
+                    Log.d(TAG, "selectShowSignals busId = " + busId + " selectShowSignals cid = " + cid);
+                    SignalInfo signalInfo = database.signalInfoDao().getSignal_idBynamecidbusId(name, cid, busId);
                     ids.add(signalInfo.id);
                 });
 
@@ -880,7 +872,6 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
-
         //getPeriodicSend
         messageHandlers.put("getPeriodicSend", new BridgeHandler() {
             @Override
@@ -899,11 +890,11 @@ public class MainActivity3 extends AppCompatActivity {
                 JsonArray Sendcan = new JsonArray();
 
 
-                switch(behaviour){
+                switch (behaviour) {
                     case "add":
 
 
-                        Log.d(TAG, "BBBBBB Final g_send_list after delete operation: add" + data );
+                        Log.d(TAG, "BBBBBB Final g_send_list after delete operation: add" + data);
 
                         byte maxSlot = 0; // 确定当前最大slot值
                         boolean isFirstOperation = g_send_list.isEmpty(); // 检查是否是第一次操作
@@ -947,15 +938,15 @@ public class MainActivity3 extends AppCompatActivity {
                                 g_send_list.add(null);
                             }
 
-                            g_send_list.set(tmp.slot ,tmp);
+                            g_send_list.set(tmp.slot, tmp);
                             // 更新当前最大slot值，以备下一次添加使用
                             if (tmp.slot > maxSlot) {
                                 maxSlot = tmp.slot;
                             }
 
-                            Log.d(TAG, "BBBBB current g_sent_list " + g_send_list.toString() );
+                            Log.d(TAG, "BBBBB current g_sent_list " + g_send_list.toString());
                         }
-                        Log.w(TAG, "BBBBB current g_sent_list " + g_send_list.toString() );
+                        Log.w(TAG, "BBBBB current g_sent_list " + g_send_list.toString());
 //                        for (int i = 0; i < g_send_list.size(); i++) {
 //                            SendCanMessage message = g_send_list.get(i);
 //                            if (message != null) {
@@ -975,12 +966,12 @@ public class MainActivity3 extends AppCompatActivity {
 //                        }
                         break;
                     case "modify":
-                        Log.d(TAG, "BBBBBB Final g_send_list after delete operation: modify" );
+                        Log.d(TAG, "BBBBBB Final g_send_list after delete operation: modify");
 
                         for (JsonElement jsonElement : dataJsonArray) {
                             JsonObject configObject = jsonElement.getAsJsonObject();
 //                            int slot = configObject.get("row").getAsInt() - 1; // Java中索引从0开始
-                            int slot = configObject.get("row").getAsInt() ;
+                            int slot = configObject.get("row").getAsInt();
                             SendCanMessage toModify = g_send_list.get(slot);
                             Log.d(TAG, "BBBB SendCanMessage toModify: " + toModify.toString());
                             if (toModify != null) {
@@ -1000,7 +991,7 @@ public class MainActivity3 extends AppCompatActivity {
                                     toModify.data[i] = (byte) rawDataJsonArray.get(i).getAsInt();
                                 }
 
-                                Log.d(TAG, "BBBBB g_send_list modify " + g_send_list.toString()  );
+                                Log.d(TAG, "BBBBB g_send_list modify " + g_send_list.toString());
                             }
                         }
 //                        for (SendCanMessage message : g_send_list) {
@@ -1011,7 +1002,7 @@ public class MainActivity3 extends AppCompatActivity {
 //                        }
                         break;
                     case "delete":
-                        Log.d(TAG, "BBBBBB Final g_send_list after delete operation: delete" );
+                        Log.d(TAG, "BBBBBB Final g_send_list after delete operation: delete");
 
                         JsonArray deleteIndexJsonArray = jsonObject.getAsJsonArray("data");
                         List<Integer> deleteIndexList = new ArrayList<>();
@@ -1071,7 +1062,6 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
-
         messageHandlers.put("getRawValueToPhysValue", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) throws IOException {
@@ -1083,7 +1073,134 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
+        messageHandlers.put("getMICANFileList", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+                List<Map<String, Object>> micanFileList = MicanFileList(MainActivity3.this);
 
+                Calendar today = Calendar.getInstance();
+                today.set(Calendar.HOUR_OF_DAY, 0);
+                today.set(Calendar.MINUTE, 0);
+                today.set(Calendar.SECOND, 0);
+                today.set(Calendar.MILLISECOND, 0);
+
+                int todayFileCount = 0;
+
+                // 记录日志
+                for (Map<String, Object> fileInfo : micanFileList) {
+                    String filePath = (String) fileInfo.get("filePath");
+                    long lastModified = (long) fileInfo.get("lastModified");
+                    Calendar fileDate = Calendar.getInstance();
+                    fileDate.setTimeInMillis(lastModified);
+
+                    // 判断是否是今天的文件
+                    if (fileDate.get(Calendar.YEAR) == today.get(Calendar.YEAR) &&
+                            fileDate.get(Calendar.DAY_OF_YEAR) == today.get(Calendar.DAY_OF_YEAR)) {
+                        todayFileCount++;
+                    }
+                }
+
+                JSONArray jsonArray = new JSONArray();
+                for (Map<String, Object> fileInfo : micanFileList) {
+                    String showItem = String.format("%s (%.2fM)",fileInfo.get("filePath").toString(), (double)fileInfo.get("fileSize"));
+                    jsonArray.put(showItem);
+                }
+
+                JSONObject resultJson = new JSONObject();
+                try {
+                    resultJson.put("today", todayFileCount);
+                    resultJson.put("item", jsonArray);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+                JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
+                Result<Object> success = ResponseData.success(resultJson);
+                jsCallResult.setData(success);
+                callJs(jsCallResult);
+
+            }
+        });
+
+        messageHandlers.put("sendMICANFileList", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
+
+                        JsonObject jsonObject = data.getAsJsonObject();
+                        String hostIP = jsonObject.get("hostIP").getAsString();
+                        int flag = jsonObject.get("flag").getAsInt();
+
+                        String micanPath = MainActivity3.this.getFilesDir().getAbsolutePath() + "/MICAN/";
+                        File micanDir = new File(micanPath);
+
+                        Calendar today = Calendar.getInstance();
+                        today.set(Calendar.HOUR_OF_DAY, 0);
+                        today.set(Calendar.MINUTE, 0);
+                        today.set(Calendar.SECOND, 0);
+                        today.set(Calendar.MILLISECOND, 0);
+
+                        // 获取文件列表
+                        List<File> fileList = new ArrayList<>();
+                        if (micanDir.exists() && micanDir.isDirectory()) {
+                            File[] files = micanDir.listFiles();
+                            if (files != null) {
+                                for (File file : files) {
+                                    if (file.isFile()) {
+                                        if (flag == 0) {
+                                            // 如果 flag 为 0，发送所有文件
+                                            fileList.add(file);
+                                        } else if (flag == 1) {
+                                            // 如果 flag 为 1，只发送今天的文件
+                                            Calendar fileDate = Calendar.getInstance();
+                                            fileDate.setTimeInMillis(file.lastModified());
+                                            if (fileDate.get(Calendar.YEAR) == today.get(Calendar.YEAR) &&
+                                                    fileDate.get(Calendar.DAY_OF_YEAR) == today.get(Calendar.DAY_OF_YEAR)) {
+                                                fileList.add(file);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        boolean retCode = false;
+                        //连接FTP
+                        boolean conFlag = connectToFTP(hostIP);
+                        if (conFlag){
+                            Log.i(TAG,"=========tftp connect ok=========");
+                            // 发送文件
+                            boolean uploadFlag = false;
+                            for (File file : fileList) {
+                                Log.i(TAG, file.getName());
+                                uploadFlag = uploadToFTP(file.getAbsolutePath(), file.getName());
+                            }
+                            if (uploadFlag) {
+                                retCode = true;
+                            }
+                        } else {
+                            Log.e(TAG,"=========tftp connect failed=========");
+                        }
+
+                        disconnectFTP();
+
+                        if(retCode)
+                        {
+                            Result<Object> success = ResponseData.success(null);
+                            jsCallResult.setData(success);
+                            callJs(jsCallResult);
+                        }else {
+                            Result<Object> failed = ResponseData.fail(null);
+                            jsCallResult.setData(failed);
+                            callJs(jsCallResult);
+                        }
+                    }
+                }).start();
+            }
+        });
     }
 
 
@@ -1145,7 +1262,7 @@ public class MainActivity3 extends AppCompatActivity {
 
     private void sharedFile(String filePath) {
         // 获取要分享的文件
-        Log.e(TAG,"============sharedFile============");
+        Log.e(TAG, "============sharedFile============");
         File file = new File(filePath);
         Uri uri = FileProvider.getUriForFile(this, "fileprovider", file);
         Intent intent = new Intent();
@@ -1251,7 +1368,7 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.e(TAG,"===============onActivityResult==============");
+
         if (requestCode == READ_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
 
             Uri uri = data.getData();
@@ -1365,7 +1482,7 @@ public class MainActivity3 extends AppCompatActivity {
 //                Log.d("HTTP", canIds.toString());
 //                Log.d("HTTP","开始");
                 List<List<String>> subList = new ArrayList<>();
-                List<SignalInfo_getdbc> signalInfos = database.signalInfoDao().getSignalBy3col(cid,busId,msgInfoEntity.CANId);
+                List<SignalInfo_getdbc> signalInfos = database.signalInfoDao().getSignalBy3col(cid, busId, msgInfoEntity.CANId);
 //                Log.d("HTTP", signalInfos.toString());
                 for (SignalInfo_getdbc signalInfo : signalInfos) {
                     List<String> subListItem = new ArrayList<>();
@@ -1390,14 +1507,12 @@ public class MainActivity3 extends AppCompatActivity {
 //        Log.d("HTTP","INDEX= "+index);
 
 
-
         Log.d("HTTP", "结束" + maps);
 
         Gson gson = new Gson();
         JsonElement jsonElement = JsonParser.parseString(gson.toJson(maps));
         return jsonElement.toString();
     }
-
 
 
 }

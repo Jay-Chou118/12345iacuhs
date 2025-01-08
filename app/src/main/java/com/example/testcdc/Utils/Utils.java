@@ -3,6 +3,7 @@ package com.example.testcdc.Utils;
 
 import static com.example.testcdc.MainActivity3.chooseDBC;
 
+import android.content.Context;
 import android.text.SpannableStringBuilder;
 import android.util.Log;
 
@@ -20,6 +21,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -285,4 +287,26 @@ public class Utils {
         return usermsg;
     }
 
+    static public List<Map<String, Object>> MicanFileList(Context ctx) {
+        String micanPath = ctx.getFilesDir().getAbsolutePath() + "/MICAN/";
+        File micanFile = new File(micanPath);
+        List<Map<String, Object>> fileInfoList = new ArrayList<>();
+
+        if (micanFile.exists() && micanFile.isDirectory()) {
+            File[] files = micanFile.listFiles();
+            if (files != null) {
+                for (File file : files) {
+                    if (file.isFile()) {
+                        Map<String, Object> fileInfo = new HashMap<>();
+                        fileInfo.put("filePath", file.getPath());
+                        fileInfo.put("fileSize", file.length()*1.0 / (1024 * 1024));
+                        fileInfo.put("lastModified", file.lastModified());
+                        fileInfoList.add(fileInfo);
+                    }
+                }
+            }
+        }
+        Log.e(TAG, "====FileList==== " + fileInfoList);
+        return fileInfoList;
+    }
 }

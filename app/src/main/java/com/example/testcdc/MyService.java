@@ -40,6 +40,7 @@ import com.hoho.android.usbserial.driver.UsbSerialDriver;
 import com.hoho.android.usbserial.driver.UsbSerialPort;
 import com.hoho.android.usbserial.driver.UsbSerialProber;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -914,10 +915,19 @@ public class MyService extends Service {
 
     private String getWorkHomeDir(Context ctx)
     {
+        String micanPath  = ctx.getFilesDir().getAbsolutePath() + "/MICAN/";
+        File micanFile = new File(micanPath);
+        if (!micanFile.exists()) {
+            boolean created = micanFile.mkdir();
+            if (created) {
+                Log.i(TAG, "====getWorkHomeDir===创建成功");
+            } else {
+                Log.e(TAG, "====getWorkHomeDir===创建失败");
+                micanPath = ctx.getFilesDir().getAbsolutePath();
+            }
+        }
 //        return Environment.getExternalStorageDirectory()+"/MICAN/";
-        Log.e(TAG,"====getWorkHomeDir===" + ctx.getFilesDir().getAbsolutePath()) ;
-        return ctx.getFilesDir().getAbsolutePath() + "/MICAN/";
+        Log.e(TAG,"====getWorkHomeDir===" + micanPath) ;
+        return micanPath;
     }
-
-
 }
