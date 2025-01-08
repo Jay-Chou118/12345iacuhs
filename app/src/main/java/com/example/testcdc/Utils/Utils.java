@@ -299,6 +299,7 @@ public class Utils {
                     if (file.isFile()) {
                         Map<String, Object> fileInfo = new HashMap<>();
                         fileInfo.put("filePath", file.getPath());
+                        fileInfo.put("fileSize", file.length()*1.0 / (1024 * 1024));
                         fileInfo.put("lastModified", file.lastModified());
                         fileInfoList.add(fileInfo);
                     }

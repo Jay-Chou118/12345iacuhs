@@ -115,6 +115,8 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static final String ACTION_USB_PERMISSION = "com.android.usb.USB_PERMISSION";
 
+    private FTPClientFunctions mFtpClint;
+
 
     private boolean MiCANOpenFlag = false;
 
@@ -194,22 +196,18 @@ public class MainActivity3 extends AppCompatActivity {
         int FTP_PORT = 21;
         String FTP_USERNAME = "MICAN";
         String FTP_PASSWORD = "MICAN";
-        FTPClientFunctions ftpClint = new FTPClientFunctions();
-        boolean conResult = ftpClint.ftpConnect(IP,FTP_USERNAME, FTP_PASSWORD, FTP_PORT);
-        if (conResult) {
-            Log.i(TAG, "====connect to FTP====");
-            return true;
-        } else {
-            Log.e(TAG, "====disconnect to FTP====");
-            return false;
-        }
+        mFtpClint = new FTPClientFunctions();
+        return mFtpClint.ftpConnect(IP,FTP_USERNAME, FTP_PASSWORD, FTP_PORT);
     }
 
     public boolean uploadToFTP(String filePath, String descFileName) {
-        FTPClientFunctions ftpClient = new FTPClientFunctions();
-        boolean changeDirResult = ftpClient.ftpChangeDir("/");
+        if(mFtpClint == null)
+        {
+            return false;
+        }
+        boolean changeDirResult = mFtpClint.ftpChangeDir("/");
         if (changeDirResult) {
-            boolean uploadResult = ftpClient.ftpUpload(filePath, descFileName, "");
+            boolean uploadResult = mFtpClint.ftpUpload(filePath, descFileName, "");
             if (uploadResult) {
                 Log.i(TAG, "上传成功");
                 return true;
@@ -223,59 +221,15 @@ public class MainActivity3 extends AppCompatActivity {
         }
     }
 
-    public boolean disconnectFTP() {
-        FTPClientFunctions ftpClient = new FTPClientFunctions();
-        boolean disConnectResult = ftpClient.ftpDisconnect();
-        if (disConnectResult) {
-            Log.i(TAG, "关闭ftp连接成功");
-            return true;
-        } else {
-            Log.e(TAG, "关闭ftp连接失败");
-            return false;
+    public void disconnectFTP() {
+
+        if(mFtpClint != null)
+        {
+            mFtpClint.ftpDisconnect();
         }
+        Log.i(TAG,"==========mFtpClint disconnectFTP==========");
     }
 
-    public void upLoadFile(String filePath, String IP) {
-        File file = new File(filePath);
-        String FTP_SERVER = IP;
-        int FTP_PORT = 21;
-        String FTP_USERNAME = "MICAN";
-        String FTP_PASSWORD = "MICAN";
-        String descFileName = file.getName();
-
-        // 网络操作，但开一个线程进行处理
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                // TODO 可以首先去判断一下网络
-                FTPClientFunctions ftpClient = new FTPClientFunctions();
-                boolean connectResult = ftpClient.ftpConnect(FTP_SERVER, FTP_USERNAME, FTP_PASSWORD, FTP_PORT);
-                if (connectResult) {
-                    Log.e(TAG, "====connectResult====");
-                    boolean changeDirResult = ftpClient.ftpChangeDir("/");
-                    if (changeDirResult) {
-                        boolean uploadResult = ftpClient.ftpUpload(filePath, descFileName, "");
-                        if (uploadResult) {
-                            Log.w(TAG, "上传成功");
-                            boolean disConnectResult = ftpClient.ftpDisconnect();
-                            if (disConnectResult) {
-                                Log.e(TAG, "关闭ftp连接成功");
-                            } else {
-                                Log.e(TAG, "关闭ftp连接失败");
-                            }
-                        } else {
-                            Log.w(TAG, "上传失败");
-                        }
-                    } else {
-                        Log.w(TAG, "切换ftp目录失败");
-                    }
-
-                } else {
-                    Log.w(TAG, "连接ftp服务器失败");
-                }
-            }
-        }).start();
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -1148,7 +1102,8 @@ public class MainActivity3 extends AppCompatActivity {
 
                 JSONArray jsonArray = new JSONArray();
                 for (Map<String, Object> fileInfo : micanFileList) {
-                    jsonArray.put(fileInfo.get("filePath"));
+                    String showItem = String.format("%s (%.2fM)",fileInfo.get("filePath").toString(), (double)fileInfo.get("fileSize"));
+                    jsonArray.put(showItem);
                 }
 
                 JSONObject resultJson = new JSONObject();
@@ -1170,67 +1125,80 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("sendMICANFileList", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
-                boolean loadFlag = false;
-                JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
 
-                JsonObject jsonObject = data.getAsJsonObject();
-                String hostIP = jsonObject.get("hostIP").getAsString();
-                int flag = jsonObject.get("flag").getAsInt();
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
 
-                String micanPath = MainActivity3.this.getFilesDir().getAbsolutePath() + "/MICAN/";
-                File micanDir = new File(micanPath);
+                        JsonObject jsonObject = data.getAsJsonObject();
+                        String hostIP = jsonObject.get("hostIP").getAsString();
+                        int flag = jsonObject.get("flag").getAsInt();
 
-                Calendar today = Calendar.getInstance();
-                today.set(Calendar.HOUR_OF_DAY, 0);
-                today.set(Calendar.MINUTE, 0);
-                today.set(Calendar.SECOND, 0);
-                today.set(Calendar.MILLISECOND, 0);
+                        String micanPath = MainActivity3.this.getFilesDir().getAbsolutePath() + "/MICAN/";
+                        File micanDir = new File(micanPath);
 
-                // 获取文件列表
-                List<File> fileList = new ArrayList<>();
-                if (micanDir.exists() && micanDir.isDirectory()) {
-                    File[] files = micanDir.listFiles();
-                    if (files != null) {
-                        for (File file : files) {
-                            if (file.isFile()) {
-                                if (flag == 0) {
-                                    // 如果 flag 为 0，发送所有文件
-                                    fileList.add(file);
-                                } else if (flag == 1) {
-                                    // 如果 flag 为 1，只发送今天的文件
-                                    Calendar fileDate = Calendar.getInstance();
-                                    fileDate.setTimeInMillis(file.lastModified());
-                                    if (fileDate.get(Calendar.YEAR) == today.get(Calendar.YEAR) &&
-                                            fileDate.get(Calendar.DAY_OF_YEAR) == today.get(Calendar.DAY_OF_YEAR)) {
-                                        fileList.add(file);
+                        Calendar today = Calendar.getInstance();
+                        today.set(Calendar.HOUR_OF_DAY, 0);
+                        today.set(Calendar.MINUTE, 0);
+                        today.set(Calendar.SECOND, 0);
+                        today.set(Calendar.MILLISECOND, 0);
+
+                        // 获取文件列表
+                        List<File> fileList = new ArrayList<>();
+                        if (micanDir.exists() && micanDir.isDirectory()) {
+                            File[] files = micanDir.listFiles();
+                            if (files != null) {
+                                for (File file : files) {
+                                    if (file.isFile()) {
+                                        if (flag == 0) {
+                                            // 如果 flag 为 0，发送所有文件
+                                            fileList.add(file);
+                                        } else if (flag == 1) {
+                                            // 如果 flag 为 1，只发送今天的文件
+                                            Calendar fileDate = Calendar.getInstance();
+                                            fileDate.setTimeInMillis(file.lastModified());
+                                            if (fileDate.get(Calendar.YEAR) == today.get(Calendar.YEAR) &&
+                                                    fileDate.get(Calendar.DAY_OF_YEAR) == today.get(Calendar.DAY_OF_YEAR)) {
+                                                fileList.add(file);
+                                            }
+                                        }
                                     }
                                 }
                             }
                         }
-                    }
-                }
-                //连接FTP
-                Boolean conFlag = connectToFTP(hostIP);
-                if (conFlag){
-                    // 发送文件
-                    for (File file : fileList) {
-                        Log.d(TAG, file.getName());
-                        loadFlag = uploadToFTP(file.getAbsolutePath(), file.getName());
-                    }
-                    if (loadFlag) {
-                        Result<Object> success = ResponseData.success(null);
-                        jsCallResult.setData(success);
-                        callJs(jsCallResult);
-                        //断开FTP
-                        disconnectFTP();
-                    }
-                } else {
-                    disconnectFTP();
-                    Result<Object> fail = ResponseData.fail(null);
-                    jsCallResult.setData(fail);
-                    callJs(jsCallResult);
-                }
+                        boolean retCode = false;
+                        //连接FTP
+                        boolean conFlag = connectToFTP(hostIP);
+                        if (conFlag){
+                            Log.i(TAG,"=========tftp connect ok=========");
+                            // 发送文件
+                            boolean uploadFlag = false;
+                            for (File file : fileList) {
+                                Log.i(TAG, file.getName());
+                                uploadFlag = uploadToFTP(file.getAbsolutePath(), file.getName());
+                            }
+                            if (uploadFlag) {
+                                retCode = true;
+                            }
+                        } else {
+                            Log.e(TAG,"=========tftp connect failed=========");
+                        }
 
+                        disconnectFTP();
+
+                        if(retCode)
+                        {
+                            Result<Object> success = ResponseData.success(null);
+                            jsCallResult.setData(success);
+                            callJs(jsCallResult);
+                        }else {
+                            Result<Object> failed = ResponseData.fail(null);
+                            jsCallResult.setData(failed);
+                            callJs(jsCallResult);
+                        }
+                    }
+                }).start();
             }
         });
     }
