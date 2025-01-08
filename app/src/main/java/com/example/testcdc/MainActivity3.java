@@ -1171,6 +1171,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void handle(JsonElement data, String callback) {
                 boolean loadFlag = false;
+                JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
 
                 JsonObject jsonObject = data.getAsJsonObject();
                 String hostIP = jsonObject.get("hostIP").getAsString();
@@ -1209,20 +1210,27 @@ public class MainActivity3 extends AppCompatActivity {
                     }
                 }
                 //连接FTP
-                connectToFTP(hostIP);
-                // 发送文件
-                for (File file : fileList) {
-                    Log.d(TAG, file.getName());
-                    loadFlag = uploadToFTP(file.getAbsolutePath(), file.getName());
-                }
-                if (loadFlag) {
-                    JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
-                    Result<Object> success = ResponseData.success(null);
-                    jsCallResult.setData(success);
-                    callJs(jsCallResult);
-                    //断开FTP
+                Boolean conFlag = connectToFTP(hostIP);
+                if (conFlag){
+                    // 发送文件
+                    for (File file : fileList) {
+                        Log.d(TAG, file.getName());
+                        loadFlag = uploadToFTP(file.getAbsolutePath(), file.getName());
+                    }
+                    if (loadFlag) {
+                        Result<Object> success = ResponseData.success(null);
+                        jsCallResult.setData(success);
+                        callJs(jsCallResult);
+                        //断开FTP
+                        disconnectFTP();
+                    }
+                } else {
                     disconnectFTP();
+                    Result<Object> fail = ResponseData.fail(null);
+                    jsCallResult.setData(fail);
+                    callJs(jsCallResult);
                 }
+
             }
         });
     }
