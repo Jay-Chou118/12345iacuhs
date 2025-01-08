@@ -188,9 +188,9 @@ public class MainActivity3 extends AppCompatActivity {
         Log.e(TAG, "=================================================");
     }
 
-    public void upLoadFile(String filePath) {
+    public void upLoadFile(String filePath, String IP) {
         File file = new File(filePath);
-        String FTP_SERVER = "172.31.2.252";
+        String FTP_SERVER = IP;
         int FTP_PORT = 21;
         String FTP_USERNAME = "MICAN";
         String FTP_PASSWORD = "MICAN";
@@ -495,9 +495,9 @@ public class MainActivity3 extends AppCompatActivity {
                     MiCANOpenFlag = false;
                     mMiCANBinder.CANOffBus();
                     mMiCANBinder.stopSaveBlf();
-                    sharedFile(mMiCANBinder.getFilePath());
+//                    sharedFile(mMiCANBinder.getFilePath());
                     // 测试上传文件
-                    upLoadFile(mMiCANBinder.getFilePath());
+//                    upLoadFile(mMiCANBinder.getFilePath());
 
 //                    JsCallResult<Result<String>> jsCallResult = new JsCallResult<>(callback);
 //                    final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
@@ -1162,7 +1162,8 @@ public class MainActivity3 extends AppCompatActivity {
 
                 // 发送文件
                 for (File file : fileList) {
-                    upLoadFile(file.getAbsolutePath());
+                    Log.d(TAG, file.getName());
+                    upLoadFile(file.getAbsolutePath(), hostIP);
                 }
             }
         });
