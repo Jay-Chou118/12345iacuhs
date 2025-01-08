@@ -6,6 +6,8 @@ import static com.example.testcdc.Utils.Utils.parseDBCByPython;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
 import static com.google.gson.JsonParser.parseString;
 
+import static org.apache.commons.net.telnet.TelnetCommand.IP;
+
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -186,6 +188,51 @@ public class MainActivity3 extends AppCompatActivity {
             }
         }
         Log.e(TAG, "=================================================");
+    }
+
+    public boolean connectToFTP(String IP) {
+        int FTP_PORT = 21;
+        String FTP_USERNAME = "MICAN";
+        String FTP_PASSWORD = "MICAN";
+        FTPClientFunctions ftpClint = new FTPClientFunctions();
+        boolean conResult = ftpClint.ftpConnect(IP,FTP_USERNAME, FTP_PASSWORD, FTP_PORT);
+        if (conResult) {
+            Log.i(TAG, "====connect to FTP====");
+            return true;
+        } else {
+            Log.e(TAG, "====disconnect to FTP====");
+            return false;
+        }
+    }
+
+    public boolean uploadToFTP(String filePath, String descFileName) {
+        FTPClientFunctions ftpClient = new FTPClientFunctions();
+        boolean changeDirResult = ftpClient.ftpChangeDir("/");
+        if (changeDirResult) {
+            boolean uploadResult = ftpClient.ftpUpload(filePath, descFileName, "");
+            if (uploadResult) {
+                Log.i(TAG, "上传成功");
+                return true;
+            } else {
+                Log.e(TAG, "上传失败");
+                return false;
+            }
+        } else {
+            Log.w(TAG, "切换ftp目录失败");
+            return false;
+        }
+    }
+
+    public boolean disconnectFTP() {
+        FTPClientFunctions ftpClient = new FTPClientFunctions();
+        boolean disConnectResult = ftpClient.ftpDisconnect();
+        if (disConnectResult) {
+            Log.i(TAG, "关闭ftp连接成功");
+            return true;
+        } else {
+            Log.e(TAG, "关闭ftp连接失败");
+            return false;
+        }
     }
 
     public void upLoadFile(String filePath, String IP) {
@@ -1123,6 +1170,8 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("sendMICANFileList", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
+                boolean loadFlag = false;
+
                 JsonObject jsonObject = data.getAsJsonObject();
                 String hostIP = jsonObject.get("hostIP").getAsString();
                 int flag = jsonObject.get("flag").getAsInt();
@@ -1159,11 +1208,20 @@ public class MainActivity3 extends AppCompatActivity {
                         }
                     }
                 }
-
+                //连接FTP
+                connectToFTP(hostIP);
                 // 发送文件
                 for (File file : fileList) {
                     Log.d(TAG, file.getName());
-                    upLoadFile(file.getAbsolutePath(), hostIP);
+                    loadFlag = uploadToFTP(file.getAbsolutePath(), file.getName());
+                }
+                if (loadFlag) {
+                    JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
+                    Result<Object> success = ResponseData.success(null);
+                    jsCallResult.setData(success);
+                    callJs(jsCallResult);
+                    //断开FTP
+                    disconnectFTP();
                 }
             }
         });
