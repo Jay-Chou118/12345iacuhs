@@ -13,6 +13,24 @@ public class DataWrapper {
 
     List<ShowSignal> signal_data;
 
+    long startSqlId;
+    long endSqlId;
+
+    public long getStartSqlId() {
+        return startSqlId;
+    }
+
+    public void setStartSqlId(long startSqlId) {
+        this.startSqlId = startSqlId;
+    }
+
+    public long getEndSqlId() {
+        return endSqlId;
+    }
+
+    public void setEndSqlId(long endSqlId) {
+        this.endSqlId = endSqlId;
+    }
 
     public double getStart_time() {
         return start_time;
