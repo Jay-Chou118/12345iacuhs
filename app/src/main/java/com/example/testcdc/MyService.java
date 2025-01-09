@@ -24,6 +24,7 @@ import android.os.Binder;
 import android.os.Environment;
 import android.os.IBinder;
 import android.util.Log;
+import android.util.Pair;
 
 import androidx.core.app.NotificationCompat;
 
@@ -34,6 +35,7 @@ import com.example.testcdc.MiCAN.ShowSignal;
 import com.example.testcdc.database.Basic_DataBase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
+import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.hoho.android.usbserial.driver.UsbSerialDriver;
@@ -91,7 +93,6 @@ public class MyService extends Service {
 
 
         private Map<Long,List<SignalInfo>> monitorSignalMap = new HashMap<>();
-        private Map<Long,List<SignalInfo>> monitorSignalMapShadow = new HashMap<>();
 
 
         Map<Integer, Integer> BUSRedirectMap = MainActivity3.BUSRedirectMap;
@@ -278,7 +279,7 @@ public class MyService extends Service {
                         showCANMsg.setDlc(String.valueOf(poll.getDataLength()));
                         showCANMsg.setData(Arrays.copyOf(poll.getData(),poll.getDataLength()));
 //                        showCANMsg.setParsedData(tmp);
-                        ret = gDealQueue.write_deepcopy(showCANMsg);
+                        ret = gDealQueue.write_deepcopy(showCANMsg,true);
 
                         /***************************************************************************************/
                         synchronized (MiCANBinder.this)
@@ -461,7 +462,7 @@ public class MyService extends Service {
                         showCANMsg.setDlc(String.valueOf(poll.getDataLength()));
                         showCANMsg.setData(Arrays.copyOf(poll.getData(),poll.getDataLength()));
 //                        showCANMsg.setParsedData(tmp);
-                        ret = gDealQueue.write_deepcopy(showCANMsg);
+                        ret = gDealQueue.write_deepcopy(showCANMsg,true);
 
                         /***************************************************************************************/
                         synchronized (MiCANBinder.this)
@@ -577,6 +578,9 @@ public class MyService extends Service {
 
         public boolean CANOnBus()
         {
+            gCanQueue1.clear();
+            gDealQueue.clear();
+            gRecvMsgNum.set(0);
             if(mMcuHelperList.isEmpty())
             {
                 return false;
@@ -694,7 +698,8 @@ public class MyService extends Service {
         {
 
             // 获取最新的100条数据
-            List<ShowCANMsg> showCANMsgs = gDealQueue.readAll();
+//            List<ShowCANMsg> showCANMsgs = gDealQueue.readAll();
+            List<ShowCANMsg> showCANMsgs = gDealQueue.readLast(100);
             int num = showCANMsgs.size();
             Log.d(TAG,"showCANMsgs is " + num);
             if(num > 100)
@@ -703,15 +708,6 @@ public class MyService extends Service {
             }
             // 将 monitorSignal 里面的数据都返回出来，这里要设计为线程安全
             List<ShowSignal> showSignals = new ArrayList<>();
-//            synchronized (MiCANBinder.this)
-//            {
-//                Map<Long, List<SignalInfo>> tmp = monitorSignalMap;
-//                // step 1 将 monitorSignalMap 指向shadow
-//                monitorSignalMap = monitorSignalMapShadow;
-//                monitorSignalMapShadow = tmp;
-//
-//            }
-//
             synchronized (MiCANBinder.this) {
                 monitorSignalMap.values().forEach(value -> {
                     value.forEach(signalInfo -> {
@@ -738,6 +734,21 @@ public class MyService extends Service {
             return dataWrapper;
         }
 
+        public DataWrapper getHistoryMsgs(long sqlId, int num)
+        {
+            Log.e(TAG,"============start to call readBySqlId");
+            Pair<List<ShowCANMsg>,Long> pair = gDealQueue.readBySqlId(sqlId, num);
+            List<ShowCANMsg> showCANMsgs = pair.first;
+            Long startSqlIndex = pair.second;
+            Log.e(TAG,"getHistoryMsgs: " + showCANMsgs.size());
+            Log.e(TAG,new Gson().toJson(showCANMsgs));
+            DataWrapper dataWrapper = new DataWrapper();
+            dataWrapper.setStartSqlId(startSqlIndex);
+            dataWrapper.setEndSqlId(sqlId-1);
+            dataWrapper.setFrame_data(showCANMsgs);
+            return dataWrapper;
+        }
+
         public DeviceInfo getDeviceInfo()
         {
             DeviceInfo deviceInfo = new DeviceInfo();
@@ -749,6 +760,16 @@ public class MyService extends Service {
             Log.d(TAG,deviceInfo.toString());
             return deviceInfo;
         }
+
+
+        private boolean containsSignalWithId(List<SignalInfo> list, Long targetId) {
+            for (SignalInfo signalInfo : list) {
+                if (signalInfo.getId() == targetId) {
+                    return true;
+                }
+            }
+            return false;
+        }
         /**
          * @param ids 用于监控信号
          */
@@ -756,51 +777,32 @@ public class MyService extends Service {
         {
             // 获取canid 映射表
             // 初始化监控
-            monitorSignalMap = new HashMap<>();
-            ids.forEach(id->{
-                SignalInfo signalInfo = database.signalInfoDao().getSignalById(id);
-                long key = getKey(signalInfo.BUSId, signalInfo.CANId);
-                if(monitorSignalMap.containsKey(key))
-                {
-                    List<SignalInfo> signalInfos = monitorSignalMap.get(key);
-                    if(signalInfos == null)
-                    {
-                        signalInfos = new ArrayList<>();
+            synchronized (MiCANBinder.this) {
+                ids.forEach(id -> {
+                    SignalInfo signalInfo = database.signalInfoDao().getSignalById(id);
+                    long key = getKey(signalInfo.BUSId, signalInfo.CANId);
+                    if (monitorSignalMap.containsKey(key)) {
+                        List<SignalInfo> signalInfos = monitorSignalMap.get(key);
+                        if (signalInfos == null) {
+                            signalInfos = new ArrayList<>();
+                        }
+                        // 会不会有两个相同的信号被添加进来？
+                        if (!containsSignalWithId(signalInfos, id)) {
+                            // 该信号中不包含该元素
+                            Log.i(TAG, "该信号组中不包含该signal，进行添加");
+                            signalInfos.add(signalInfo);
+                        } else {
+                            Log.w(TAG, "该信号组中已经包含该signal，勿重复添加");
+                        }
+                    } else {
+                        List<SignalInfo> signalInfos = new ArrayList<>();
+                        signalInfos.add(signalInfo);
+                        monitorSignalMap.put(key, signalInfos);
                     }
-                    signalInfos.add(signalInfo);
-                }else {
-                    List<SignalInfo> signalInfos = new ArrayList<>();
-                    signalInfos.add(signalInfo);
-                    monitorSignalMap.put(key,signalInfos);
-                }
-                Log.e(TAG,"添加 " + signalInfo.name + " 成功");
-            });
+                });
+            }
         }
 
-        public void monitorSignalShadow(List<Long> ids)
-        {
-            // 获取canid 映射表
-            // 初始化监控
-            monitorSignalMapShadow = new HashMap<>();
-            ids.forEach(id->{
-                SignalInfo signalInfo = database.signalInfoDao().getSignalById(id);
-                long key = getKey(signalInfo.BUSId, signalInfo.CANId);
-                if(monitorSignalMapShadow.containsKey(key))
-                {
-                    List<SignalInfo> signalInfos = monitorSignalMapShadow.get(key);
-                    if(signalInfos == null)
-                    {
-                        signalInfos = new ArrayList<>();
-                    }
-                    signalInfos.add(signalInfo);
-                }else {
-                    List<SignalInfo> signalInfos = new ArrayList<>();
-                    signalInfos.add(signalInfo);
-                    monitorSignalMapShadow.put(key,signalInfos);
-                }
-                Log.e(TAG,"添加 " + signalInfo.name + " 成功");
-            });
-        }
 
         public  List<Map<String, Object>> parseMsgData(int BUSId, int CANId, long cid, byte[] data)
         {

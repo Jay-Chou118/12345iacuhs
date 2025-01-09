@@ -118,7 +118,6 @@ public class MainActivity3 extends AppCompatActivity {
     private FTPClientFunctions mFtpClint;
 
 
-    private boolean MiCANOpenFlag = false;
 
     private ServiceConnection mSC = new ServiceConnection() {
         @Override
@@ -457,15 +456,6 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void handle(JsonElement data, String callback) {
 
-                if (!MiCANOpenFlag) {
-                    // 打开CANFD设备
-                    Log.i(TAG, "打开MiCAN设备");
-                    mMiCANBinder.CANOnBus();
-                    mMiCANBinder.startSaveBlf(MainActivity3.this);
-                    MiCANOpenFlag = true;
-                }
-
-
 //                mMiCANBinder.CANOnBus();                mMiCANBinder.CANOnBus();
 //                showLoggingMessageQueue.add(callback);
                 if (mMiCANBinder != null) {
@@ -486,6 +476,17 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
+        messageHandlers.put("startDevice", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+                Log.i(TAG, "startDevice ");
+                if (mMiCANBinder != null) {
+                    mMiCANBinder.CANOnBus();
+                    mMiCANBinder.startSaveBlf(MainActivity3.this);
+                }
+            }
+        });
+
         messageHandlers.put("stopDevice", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
@@ -493,7 +494,6 @@ public class MainActivity3 extends AppCompatActivity {
                 if (mMiCANBinder != null) {
                     Log.d(TAG, "i am called");
                     g_send_list.clear();
-                    MiCANOpenFlag = false;
                     mMiCANBinder.CANOffBus();
                     mMiCANBinder.stopSaveBlf();
 //                    sharedFile(mMiCANBinder.getFilePath());
@@ -737,7 +737,7 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("selectShowSignals", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
-                Log.d(TAG, "selectShowSignals data : " + data);
+                Log.i(TAG, "selectShowSignals data : " + data);
                 List<Long> ids = new ArrayList<>();
 
                 long cid = database.carTypeDao().getCidByName(carType, sdb);
@@ -746,15 +746,14 @@ public class MainActivity3 extends AppCompatActivity {
                 array.forEach(item -> {
                     int busId = item.getAsJsonObject().get("busId").getAsInt();//busId是通道
                     String name = item.getAsJsonObject().get("name").getAsString();
-                    Log.d(TAG, "selectShowSignals busId = " + busId + " selectShowSignals cid = " + cid);
+                    Log.i(TAG, "selectShowSignals busId = " + busId + " selectShowSignals cid = " + cid);
                     SignalInfo signalInfo = database.signalInfoDao().getSignal_idBynamecidbusId(name, cid, busId);
                     ids.add(signalInfo.id);
                 });
 
-                Log.d(TAG, "selectShowSignals ids before monitorSignal: " + ids);
+                Log.i(TAG, "selectShowSignals ids before monitorSignal: " + ids);
 
                 mMiCANBinder.monitorSignal(ids);
-                mMiCANBinder.monitorSignalShadow(ids);
 
                 JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
                 Result<Object> success = ResponseData.success();
@@ -1199,6 +1198,36 @@ public class MainActivity3 extends AppCompatActivity {
                         }
                     }
                 }).start();
+            }
+        });
+
+
+        messageHandlers.put("selectData", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+
+                // 解析参数
+                JsonObject jsonObject = data.getAsJsonObject();
+                long lessThanSqlID = jsonObject.get("lessThanSqlID").getAsLong();
+                int numbers = jsonObject.get("numbers").getAsInt();
+
+                if (mMiCANBinder != null) {
+                    JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
+                    Result<DataWrapper> result = ResponseData.success( mMiCANBinder.getHistoryMsgs(lessThanSqlID,numbers));
+                    Log.w(TAG, new Gson().toJson(result.getData().getSignal_data()));
+                    Log.w(TAG, "frame_data: " + result.getData().getFrame_data().size());
+                    jsCallResult.setData(result);
+                    final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
+                    Log.e(TAG,callbackJs);
+                    webView.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            webView.loadUrl(callbackJs);
+                        }
+                    });
+                }
+
+
             }
         });
     }
