@@ -664,12 +664,12 @@ public class MyService extends Service {
             {
                 mcuHelper.monitor();
             }
-            Log.e(TAG,String.format("已录制 %d 报文 gCanQueue1 %d gDealQueue %d",gRecvMsgNum.get(),
+            Log.i(TAG,String.format("已录制 %d 报文 gCanQueue1 %d gDealQueue %d",gRecvMsgNum.get(),
                     gCanQueue1.size(),gDealQueue.size()
                     ));
             monitorSignalMap.values().forEach(signalInfos -> {
                 signalInfos.forEach(signalInfo -> {
-                    Log.e(TAG,String.format("collect CANID: %d,name: %s, count: %d",signalInfo.CANId,signalInfo.name,signalInfo.times.size()));
+                    Log.i(TAG,String.format("collect CANID: %d,name: %s, count: %d",signalInfo.CANId,signalInfo.name,signalInfo.times.size()));
                 });
             });
         }
