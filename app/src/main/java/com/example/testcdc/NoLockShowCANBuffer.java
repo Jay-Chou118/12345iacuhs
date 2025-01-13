@@ -8,6 +8,8 @@ import com.example.testcdc.MiCAN.ShowCANMsg;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -259,6 +261,31 @@ public class NoLockShowCANBuffer {
         }
         return t;
     }
+
+    public List<ShowCANMsg> readLast2(int num) {
+        // 不偏移读指针
+        if(isEmpty())
+        {
+            Log.w(TAG,"current buffer is empty, no data");
+            return  new ArrayList<>();
+        }
+        int curNum = size();
+        List<ShowCANMsg> t = new ArrayList<>(num);
+
+        for(int i = 0 ;i< curNum ;i++)
+        {
+            // 进行msg判断，是否在用户过滤的列表中
+
+            t.add(buffer[modifyIndex(writeIndex-1-i)]);
+            if(t.size()>=num)
+            {
+                break;
+            }
+        }
+        Collections.reverse(t);
+        return t;
+    }
+
 
     public Pair<List<ShowCANMsg>, Long> readBySqlId(long sqlId, int num) {
 

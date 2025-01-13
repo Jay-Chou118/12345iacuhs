@@ -93,6 +93,7 @@ public class MyService extends Service {
 
 
         private Map<Long,List<SignalInfo>> monitorSignalMap = new HashMap<>();
+        private Map<String,List<Object>> mFilterItem = new HashMap<>();
 
 
         Map<Integer, Integer> BUSRedirectMap = MainActivity3.BUSRedirectMap;
@@ -103,6 +104,13 @@ public class MyService extends Service {
 
         private void resetModuleMem()
         {
+            // 初始化
+            mFilterItem.clear();
+            //
+            mFilterItem.put("channel",new ArrayList<>());
+
+
+
             gRecvMsgNum.set(0);
             gCanQueue1.clear();
             gDealQueue.clear();
@@ -128,6 +136,27 @@ public class MyService extends Service {
 
         public void sayHello() {
             Log.i(TAG, "sayHello");
+        }
+
+
+        private void addFilterItem(CanMessage poll)
+        {
+            Log.e(TAG,"addFilterItem" + mFilterItem.toString());
+            if(!mFilterItem.get("channel").contains(poll.BUS_ID))
+            {
+                Log.w(TAG,"add channel filter item " + poll.BUS_ID);
+                mFilterItem.get("channel").add(poll.BUS_ID);
+            }
+        }
+
+        public List<Object> getFilterItem(String item)
+        {
+            if (mFilterItem.get(item) != null )
+            {
+                Log.w(TAG,"filter item: " + item + " values: " + mFilterItem.get(item));
+                return mFilterItem.get(item);
+            }
+            return new ArrayList<>();
         }
 
         public boolean InitModule()
@@ -251,16 +280,15 @@ public class MyService extends Service {
                         // 从队列中获取一条数据
                         CanMessage poll = gCanQueue1.read();
 
+
                         if(poll == null)
                         {
 //                            Log.d(TAG,"poll is null");
                             wait100ms();
                             continue;
                         }
+                        addFilterItem(poll);
 
-                        ShowSignal[] tmp = new ShowSignal[1];
-                        tmp[0] = new ShowSignal();
-                        tmp[0].setName("111");
                         showCANMsg.setTimestamp((double) (poll.timestamp + startCANTime) /1000000);
                         showCANMsg.setSqlId(poll.getIndex());
 
@@ -699,13 +727,9 @@ public class MyService extends Service {
 
             // 获取最新的100条数据
 //            List<ShowCANMsg> showCANMsgs = gDealQueue.readAll();
-            List<ShowCANMsg> showCANMsgs = gDealQueue.readLast(100);
+            List<ShowCANMsg> showCANMsgs = gDealQueue.readLast2(100);
             int num = showCANMsgs.size();
-            Log.d(TAG,"showCANMsgs is " + num);
-            if(num > 100)
-            {
-                showCANMsgs = showCANMsgs.subList(num-100,num);
-            }
+            Log.w(TAG,"showCANMsgs is " + num);
             // 将 monitorSignal 里面的数据都返回出来，这里要设计为线程安全
             List<ShowSignal> showSignals = new ArrayList<>();
             synchronized (MiCANBinder.this) {
