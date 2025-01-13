@@ -86,9 +86,6 @@ public class MainActivity3 extends AppCompatActivity {
 
     private static final String BRIDGE_NAME = "Android";
 
-
-    public static final LinkedBlockingQueue<String> showLoggingMessageQueue = new LinkedBlockingQueue<>(10);
-
     private final Map<String, BridgeHandler> messageHandlers = new HashMap<>();
 
     private MyService.MiCANBinder mMiCANBinder;
@@ -272,32 +269,6 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
         m.start();
-//        showLoggingMessage = new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                while (true) {
-//                    String callback = showLoggingMessageQueue.poll();
-//                    if (callback == null) {
-//                        Utils.wait10ms();
-//                        continue;
-//                    }
-//                    if (mMiCANBinder != null) {
-//                        JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
-//                        Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
-//                        jsCallResult.setData(result);
-//                        final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-//                        webView.post(new Runnable() {
-//                            @Override
-//                            public void run() {
-//                                webView.loadUrl(callbackJs);
-//                            }
-//                        });
-//                    }
-//                }
-//
-//            }
-//        });
-//        showLoggingMessage.start();
         checkPermission();
 
         Intent intent = getIntent();
@@ -483,6 +454,24 @@ public class MainActivity3 extends AppCompatActivity {
                 if (mMiCANBinder != null) {
                     mMiCANBinder.CANOnBus();
                     mMiCANBinder.startSaveBlf(MainActivity3.this);
+                }
+            }
+        });
+
+        messageHandlers.put("getFiltItems", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+                Log.i(TAG, "getFiltItems ");
+                if (mMiCANBinder != null) {
+                   // step 0 获取参数
+                    String selectItem = data.getAsJsonObject().get("selectItem").getAsString();
+                    Log.w(TAG,"selectItem: " + selectItem);
+                    List<Object> filterItem = mMiCANBinder.getFilterItem(selectItem);
+                    // 返回类型,目前为空的list
+                    JsCallResult<Result<List<Object>>> jsCallResult = new JsCallResult<>(callback);
+                    Result<List<Object>> success = ResponseData.success(filterItem);
+                    jsCallResult.setData(success);
+                    callJs(jsCallResult);
                 }
             }
         });
@@ -1237,7 +1226,7 @@ public class MainActivity3 extends AppCompatActivity {
 
     private <T> void callJs(T result) {
         final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(result));
-        Log.d(TAG, "callbackJs 5" + callbackJs);
+        Log.i(TAG, "callbackJs 5" + callbackJs);
         webView.post(new Runnable() {
             @Override
             public void run() {
@@ -1259,7 +1248,6 @@ public class MainActivity3 extends AppCompatActivity {
     public static Basic_DataBase database;
 
 
-    private Thread showLoggingMessage;
 
     private void handleNativeResponse(String responseData) {
         try {
