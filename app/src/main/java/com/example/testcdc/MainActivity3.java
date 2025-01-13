@@ -1205,10 +1205,12 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("selectData", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
-
+                long lessThanSqlID = 0;
                 // 解析参数
                 JsonObject jsonObject = data.getAsJsonObject();
-                long lessThanSqlID = jsonObject.get("lessThanSqlID").getAsLong();
+                if(!jsonObject.get("lessThanSqlID").getAsString().isEmpty()){
+                    lessThanSqlID = jsonObject.get("lessThanSqlID").getAsLong();
+                }
                 int numbers = jsonObject.get("numbers").getAsInt();
 
                 if (mMiCANBinder != null) {
