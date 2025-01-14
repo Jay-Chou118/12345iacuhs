@@ -511,6 +511,7 @@ public class MainActivity3 extends AppCompatActivity {
 
                 // 获取所有的车类型
                 List<String> carTypes = database.carTypeDao().getDistinctCarTypeNames();
+                carTypes.removeIf(carType -> "custom".equals(carType));
                 if (carTypes != null) {
 
                     for (String carTypeName : carTypes) {
