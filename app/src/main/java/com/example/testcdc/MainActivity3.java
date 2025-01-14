@@ -427,16 +427,12 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void handle(JsonElement data, String callback) {
 
-//                mMiCANBinder.CANOnBus();                mMiCANBinder.CANOnBus();
-//                showLoggingMessageQueue.add(callback);
                 if (mMiCANBinder != null) {
                     JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
                     Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
-                    Log.w(TAG, new Gson().toJson(result.getData().getSignal_data()));
                     Log.w(TAG, "frame_data: " + result.getData().getFrame_data().size() + " signal: " + result.getData().getSignal_data().size());
                     jsCallResult.setData(result);
                     final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-//                    mMiCANBinder.printInfo();
                     webView.post(new Runnable() {
                         @Override
                         public void run() {
@@ -475,6 +471,7 @@ public class MainActivity3 extends AppCompatActivity {
                 }
             }
         });
+
 
         messageHandlers.put("stopDevice", new BridgeHandler() {
             @Override
