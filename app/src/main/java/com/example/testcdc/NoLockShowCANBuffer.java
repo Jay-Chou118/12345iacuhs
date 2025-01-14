@@ -262,7 +262,56 @@ public class NoLockShowCANBuffer {
         return t;
     }
 
-    public List<ShowCANMsg> readLast2(int num) {
+    private boolean checkFilter(String element,List<String> items)
+    {
+        if(items != null && !items.isEmpty())
+        {
+            if(!items.contains(element))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean checkFilter(ShowCANMsg msg,Map<String,List<String>> filters)
+    {
+        //  {"channel","canId","name","canType","dir","dlc"};
+        // 判断各个是否在该内
+        List<String> items = filters.get("channel");
+        String element =  String.valueOf(msg.getChannel());
+        boolean ret = checkFilter(element,items);
+        if(! ret) return false;
+
+        items = filters.get("canId");
+        element = String.valueOf(msg.getArbitrationId());
+        ret = checkFilter(element,items);
+        if(! ret) return false;
+
+        items = filters.get("name");
+        element = msg.getName();
+        ret = checkFilter(element,items);
+        if(! ret) return false;
+
+        items = filters.get("canType");
+        element = String.valueOf(msg.getCanType());
+        ret = checkFilter(element,items);
+        if(! ret) return false;
+
+        items = filters.get("dir");
+        element = String.valueOf(msg.getDir());
+        ret = checkFilter(element,items);
+        if(! ret) return false;
+
+        items = filters.get("dlc");
+        element = String.valueOf(msg.getDlc());
+        ret = checkFilter(element,items);
+        if(! ret) return false;
+
+        return true;
+    }
+
+    public List<ShowCANMsg> readLast2(int num,Map<String,List<String>> filters) {
         // 不偏移读指针
         if(isEmpty())
         {
@@ -275,8 +324,12 @@ public class NoLockShowCANBuffer {
         for(int i = 0 ;i< curNum ;i++)
         {
             // 进行msg判断，是否在用户过滤的列表中
-
-            t.add(buffer[modifyIndex(writeIndex-1-i)]);
+            ShowCANMsg msg = buffer[modifyIndex(writeIndex - 1 - i)];
+            boolean ret = checkFilter(msg, filters);
+            if(ret )
+            {
+                t.add(msg);
+            }
             if(t.size()>=num)
             {
                 break;

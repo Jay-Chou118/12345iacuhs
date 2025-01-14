@@ -426,10 +426,23 @@ public class MainActivity3 extends AppCompatActivity {
         messageHandlers.put("showLoggingMessage", new BridgeHandler() {
             @Override
             public void handle(JsonElement data, String callback) {
-
+                // 解析参数
+                Map<String,List<String>> filters = new HashMap<>();
+                String[] filterItems = {"channel","canId","name","canType","dir","dlc"};
+                for(int i = 0;i< filterItems.length;i++)
+                {
+                    String filterItem = filterItems[i];
+                    List<String> subLists = new ArrayList<>();
+                    JsonArray items = data.getAsJsonObject().get(filterItem).getAsJsonArray();
+                    items.forEach(item->{
+                        subLists.add(item.getAsString());
+                    });
+                    filters.put(filterItem,subLists);
+                }
+                Log.e(TAG,"filters: " + filters.toString());
                 if (mMiCANBinder != null) {
                     JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
-                    Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
+                    Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs(filters));
                     Log.w(TAG, "frame_data: " + result.getData().getFrame_data().size() + " signal: " + result.getData().getSignal_data().size());
                     jsCallResult.setData(result);
                     final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));

@@ -277,26 +277,26 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
-        messageHandlers.put("showLoggingMessage", new BridgeHandler() {
-            @Override
-            public void handle(JsonObject data, String callback) {
-                Log.d(TAG,"showLoggingMessage ");
-                if(mMiCANBinder != null)
-                {
-                    JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
-                    Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
-                    jsCallResult.setData(result);
-                    final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
-                    Log.d(TAG,"callbackJs "+ callbackJs );
-                    webView.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            webView.loadUrl(callbackJs);
-                        }
-                    });
-                }
-            }
-        });
+//        messageHandlers.put("showLoggingMessage", new BridgeHandler() {
+//            @Override
+//            public void handle(JsonObject data, String callback) {
+//                Log.d(TAG,"showLoggingMessage ");
+//                if(mMiCANBinder != null)
+//                {
+//                    JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
+//                    Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs());
+//                    jsCallResult.setData(result);
+//                    final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
+//                    Log.d(TAG,"callbackJs "+ callbackJs );
+//                    webView.post(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            webView.loadUrl(callbackJs);
+//                        }
+//                    });
+//                }
+//            }
+//        });
 
     }
 

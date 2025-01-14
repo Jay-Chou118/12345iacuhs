@@ -773,12 +773,12 @@ public class MyService extends Service {
          * @brief 获取最后的100条数据
          * @return 封装的数据包
          */
-        public DataWrapper getCurrentMsgs()
+        public DataWrapper getCurrentMsgs(Map<String,List<String>> filters)
         {
 
             // 获取最新的100条数据
 //            List<ShowCANMsg> showCANMsgs = gDealQueue.readAll();
-            List<ShowCANMsg> showCANMsgs = gDealQueue.readLast2(100);
+            List<ShowCANMsg> showCANMsgs = gDealQueue.readLast2(100,filters);
             int num = showCANMsgs.size();
             Log.w(TAG,"showCANMsgs is " + num);
             // 将 monitorSignal 里面的数据都返回出来，这里要设计为线程安全
