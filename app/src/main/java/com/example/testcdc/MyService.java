@@ -69,7 +69,7 @@ public class MyService extends Service {
 
     public static final NoLockCANBuffer gCanQueue1 = new NoLockCANBuffer(100000);
 
-    public static final NoLockShowCANBuffer gDealQueue = new NoLockShowCANBuffer(100000);
+    public static final NoLockShowCANBuffer gDealQueue = new NoLockShowCANBuffer(1000*1000);
 
     public static AtomicLong gRecvMsgNum = new AtomicLong(0);
 
@@ -108,6 +108,15 @@ public class MyService extends Service {
             mFilterItem.clear();
             //
             mFilterItem.put("channel",new ArrayList<>());
+            mFilterItem.put("canId",new ArrayList<>());
+            mFilterItem.put("dir",new ArrayList<>());
+            mFilterItem.put("dlc",new ArrayList<>());
+            mFilterItem.put("name",new ArrayList<>());
+            mFilterItem.put("canType",new ArrayList<>());
+
+
+
+
 
 
 
@@ -139,14 +148,55 @@ public class MyService extends Service {
         }
 
 
-        private void addFilterItem(CanMessage poll)
+        private void addFilterItem(ShowCANMsg msg)
         {
-            Log.e(TAG,"addFilterItem" + mFilterItem.toString());
-            if(!mFilterItem.get("channel").contains(poll.BUS_ID))
+            List<Object> checkItem = mFilterItem.get("channel");
+            String element =  String.valueOf(msg.getChannel());
+            if(!checkItem.contains(element))
             {
-                Log.w(TAG,"add channel filter item " + poll.BUS_ID);
-                mFilterItem.get("channel").add(poll.BUS_ID);
+                Log.w(TAG,"add channel filter item " +element);
+                checkItem.add(element);
             }
+            checkItem = mFilterItem.get("canId");
+            element = String.valueOf(msg.getArbitrationId());
+            if(!checkItem.contains(element))
+            {
+                Log.w(TAG,"add canId filter item " + element);
+                checkItem.add(element);
+            }
+
+            checkItem = mFilterItem.get("name");
+            element = String.valueOf(msg.getName());
+            if(!checkItem.contains(element))
+            {
+                Log.w(TAG,"add canId filter item " + element);
+                checkItem.add(element);
+            }
+
+            checkItem = mFilterItem.get("canType");
+            element = msg.getCanType();
+            if(!checkItem.contains(element))
+            {
+                Log.w(TAG,"add canType filter item " + element);
+                checkItem.add(element);
+            }
+
+            checkItem = mFilterItem.get("dir");
+            element = msg.getDir();
+            if(!checkItem.contains(element))
+            {
+                Log.w(TAG,"add dir filter item " + element);
+                checkItem.add(element);
+            }
+
+            checkItem = mFilterItem.get("dlc");
+            element = msg.getDlc();
+            if(!checkItem.contains(element))
+            {
+                Log.w(TAG,"add dlc filter item " + element);
+                checkItem.add(element);
+            }
+
         }
 
         public List<Object> getFilterItem(String item)
@@ -287,7 +337,7 @@ public class MyService extends Service {
                             wait100ms();
                             continue;
                         }
-                        addFilterItem(poll);
+
 
                         showCANMsg.setTimestamp((double) (poll.timestamp + startCANTime) /1000000);
                         showCANMsg.setSqlId(poll.getIndex());
@@ -307,6 +357,7 @@ public class MyService extends Service {
                         showCANMsg.setDlc(String.valueOf(poll.getDataLength()));
                         showCANMsg.setData(Arrays.copyOf(poll.getData(),poll.getDataLength()));
 //                        showCANMsg.setParsedData(tmp);
+                        addFilterItem(showCANMsg);
                         ret = gDealQueue.write_deepcopy(showCANMsg,true);
 
                         /***************************************************************************************/

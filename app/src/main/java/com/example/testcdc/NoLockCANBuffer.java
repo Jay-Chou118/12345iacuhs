@@ -16,6 +16,10 @@ public class NoLockCANBuffer {
     public NoLockCANBuffer(int size) {
         capacity = size;
         buffer = new CanMessage[size];
+        for(int i=0;i< size;i++)
+        {
+            buffer[i] = new CanMessage();
+        }
     }
 
     public void clear()
