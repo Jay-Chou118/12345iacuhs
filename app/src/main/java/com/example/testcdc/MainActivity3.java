@@ -260,7 +260,7 @@ public class MainActivity3 extends AppCompatActivity {
                         throw new RuntimeException(e);
 
                     }
-                    Log.e(TAG, "------------------------------");
+                    Log.i(TAG, "------------------------------");
                     if (mMiCANBinder != null) {
                         mMiCANBinder.printInfo();
                     }
@@ -439,7 +439,6 @@ public class MainActivity3 extends AppCompatActivity {
                     });
                     filters.put(filterItem,subLists);
                 }
-                Log.e(TAG,"filters: " + filters.toString());
                 if (mMiCANBinder != null) {
                     JsCallResult<Result<DataWrapper>> jsCallResult = new JsCallResult<>(callback);
                     Result<DataWrapper> result = ResponseData.success(mMiCANBinder.getCurrentMsgs(filters));

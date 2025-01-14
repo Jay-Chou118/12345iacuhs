@@ -16,6 +16,16 @@ public class DataWrapper {
     long startSqlId;
     long endSqlId;
 
+    public long getTotalNum() {
+        return totalNum;
+    }
+
+    public void setTotalNum(long totalNum) {
+        this.totalNum = totalNum;
+    }
+
+    long totalNum;
+
     public long getStartSqlId() {
         return startSqlId;
     }

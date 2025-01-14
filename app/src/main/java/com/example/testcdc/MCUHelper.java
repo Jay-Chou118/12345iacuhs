@@ -251,7 +251,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
                     long timeElapsed = endTime - startTime;
                     if(timeElapsed > 50)
                     {
-                        Log.e(TAG,"代码执行耗时: " + timeElapsed + " 毫秒" );
+                        Log.d(TAG,"代码执行耗时: " + timeElapsed + " 毫秒" );
                     }
                 }
                 Log.w(TAG,"ReadPort thread is exit");
@@ -486,7 +486,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
     public void monitor()
     {
-        Log.e(TAG,String.format("mMcuIndex: %d, mSerialBuffer: %d mErrorNum: %d recv: %d",mMcuIndex,mSerialBuffer.size(),mErrorNum,mTotalNum));
+        Log.i(TAG,String.format("mMcuIndex: %d, mSerialBuffer: %d mErrorNum: %d recv: %d",mMcuIndex,mSerialBuffer.size(),mErrorNum,mTotalNum));
     }
 
     private void getAppVersion() {

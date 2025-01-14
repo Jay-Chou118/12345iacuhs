@@ -158,11 +158,10 @@ public class MyService extends Service {
                 checkItem.add(element);
             }
             checkItem = mFilterItem.get("canId");
-            element = String.valueOf(msg.getArbitrationId());
-            if(!checkItem.contains(element))
+            if(!checkItem.contains(msg.getArbitrationId()))
             {
-                Log.w(TAG,"add canId filter item " + element);
-                checkItem.add(element);
+                Log.w(TAG,"add canId filter item " + msg.getArbitrationId());
+                checkItem.add(msg.getArbitrationId());
             }
 
             checkItem = mFilterItem.get("name");
@@ -739,10 +738,7 @@ public class MyService extends Service {
 
         public void printInfo()
         {
-            for(MCUHelper mcuHelper: mMcuHelperList)
-            {
-                mcuHelper.monitor();
-            }
+
             Log.i(TAG,String.format("已录制 %d 报文 gCanQueue1 %d gDealQueue %d",gRecvMsgNum.get(),
                     gCanQueue1.size(),gDealQueue.size()
                     ));
@@ -751,6 +747,10 @@ public class MyService extends Service {
                     Log.i(TAG,String.format("collect CANID: %d,name: %s, count: %d",signalInfo.CANId,signalInfo.name,signalInfo.times.size()));
                 });
             });
+            for(MCUHelper mcuHelper: mMcuHelperList)
+            {
+                mcuHelper.monitor();
+            }
         }
 
         public void startSaveBlf(Context ctx)
@@ -806,6 +806,7 @@ public class MyService extends Service {
             dataWrapper.setStart_time((double) startCANTime /1000000);
             dataWrapper.setFrame_data(showCANMsgs);
             dataWrapper.setSignal_data(showSignals);
+            dataWrapper.setTotalNum(gRecvMsgNum.get());
             return dataWrapper;
         }
 
