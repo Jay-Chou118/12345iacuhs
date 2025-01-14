@@ -392,7 +392,6 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void handle(JsonElement data, String callback) {
 
-                Log.d(TAG, "TTTTTTTTTTTTTT: " + data);
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
@@ -401,12 +400,17 @@ public class MainActivity3 extends AppCompatActivity {
                             JsCallResult<Result<DeviceInfo>> jsCallResult = new JsCallResult<>(callback);
 //                            boolean ret = mMiCANBinder.InitModule2();
                             boolean ret = mMiCANBinder.InitModule();
+                            Log.e(TAG,"InitModule: " + ret);
                             if (ret) {
                                 instance.say("恭喜,初始化设备成功啦");
                             } else {
                                 instance.say("抱歉,未能找到MiCAN设备,请重新插拔下设备试试看");
                             }
                             Result<DeviceInfo> result = ResponseData.ret(mMiCANBinder.getDeviceInfo(), ret);
+                            if(result.code == 200)
+                            {
+                                result.setMsg("初始化设备成功");
+                            }
                             jsCallResult.setData(result);
                             final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
 
@@ -420,6 +424,25 @@ public class MainActivity3 extends AppCompatActivity {
 
                     }
                 }).start();
+            }
+        });
+
+        messageHandlers.put("disconnect", new BridgeHandler() {
+            @Override
+            public void handle(JsonElement data, String callback) {
+                // 解析参数
+                if (mMiCANBinder != null) {
+                    JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
+                    Result<Object> result = ResponseData.success();
+                    jsCallResult.setData(result);
+                    final String callbackJs = String.format(CALLBACK_JS_FORMAT, new Gson().toJson(jsCallResult));
+                    webView.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            webView.loadUrl(callbackJs);
+                        }
+                    });
+                }
             }
         });
 
@@ -707,6 +730,7 @@ public class MainActivity3 extends AppCompatActivity {
                                 maps.put(busId, subMap);
                             }
                             Result<Map<Integer, Map<String, List<List<Object>>>>> result = ResponseData.success(maps);
+                            result.setMsg("初始化设备成功");
                             jsCallResult.setData(result);
                             Log.e(TAG, "---------:" + new Gson().toJson(result));
                             callJs(jsCallResult);

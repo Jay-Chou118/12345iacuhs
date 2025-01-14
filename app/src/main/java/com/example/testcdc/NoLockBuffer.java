@@ -10,7 +10,6 @@ public class NoLockBuffer {
     private volatile int writeIndex = 0;
 
     public NoLockBuffer(int size) {
-        Log.e("MICAN_BUFFER","============");
         capacity = size;
         buffer = new byte[size];
     }

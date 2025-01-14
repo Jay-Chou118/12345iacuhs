@@ -10,6 +10,7 @@ import static com.example.testcdc.Utils.Utils.convert_u32;
 import static com.example.testcdc.Utils.Utils.convert_u64;
 import static com.example.testcdc.Utils.Utils.myCrc32;
 import static com.example.testcdc.Utils.Utils.wait100ms;
+import static com.example.testcdc.Utils.Utils.wait10ms;
 
 import android.content.Context;
 import android.hardware.usb.UsbDevice;
@@ -157,13 +158,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
     private long mUsbPackageIndex = 0;
 
-    private Thread m_parseThread = null;
-
     private Thread m_readPortThread = null;
-
-    private Thread m_sendThread = null;
-
-
 
     private String mAppVersion;
 
@@ -277,7 +272,8 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             }
         } catch (Exception e) {
             Log.e(TAG,"readPort error!!" + e.toString());
-            g_notExitFlag.set(false);
+//            g_notExitFlag.set(false);
+            wait10ms();
         }
         return false;
     }
@@ -302,7 +298,8 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
         } catch (Exception e) {
             Log.e(TAG,"readPort error!!" + e.toString());
-            g_notExitFlag.set(false);
+//            g_notExitFlag.set(false);
+            wait10ms();
         }
         finally {
 //            mUsbLock.unlock();
@@ -495,7 +492,6 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
 
 
     private void getAppLevel() {
-        Log.e(TAG,"============getAppLevel:getAppLevel");
         sendCmd(COMMAND_TYPE.GET_APP_LEVEL,null);
     }
 
@@ -831,7 +827,7 @@ public class MCUHelper implements SerialInputOutputManager.Listener{
             try {
                 mSerial.write(mCmdData,2000);
             } catch (IOException e) {
-                Log.e(TAG,"writeSerial failed!");
+                Log.e(TAG,"writeSerial failed!" +e.toString());
             }
             return true;
         }

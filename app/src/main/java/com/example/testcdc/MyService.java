@@ -4,6 +4,7 @@ import static com.example.testcdc.Utils.Utils.formatTime;
 import static com.example.testcdc.Utils.Utils.getCurTime;
 import static com.example.testcdc.Utils.Utils.getKey;
 import static com.example.testcdc.Utils.Utils.getSignal;
+import static com.example.testcdc.Utils.Utils.wait1000ms;
 import static com.example.testcdc.Utils.Utils.wait100ms;
 import static com.example.testcdc.Utils.Utils.wait10ms;
 import static com.example.testcdc.Utils.Utils.wait200ms;
@@ -104,25 +105,7 @@ public class MyService extends Service {
 
         private void resetModuleMem()
         {
-            // 初始化
-            mFilterItem.clear();
-            //
-            mFilterItem.put("channel",new ArrayList<>());
-            mFilterItem.put("canId",new ArrayList<>());
-            mFilterItem.put("dir",new ArrayList<>());
-            mFilterItem.put("dlc",new ArrayList<>());
-            mFilterItem.put("name",new ArrayList<>());
-            mFilterItem.put("canType",new ArrayList<>());
-
-
-
-
-
-
-
-            gRecvMsgNum.set(0);
-            gCanQueue1.clear();
-            gDealQueue.clear();
+            resetResource();
 
 
             // 让线程退出
@@ -135,8 +118,7 @@ public class MyService extends Service {
             }
             mMcuHelperList.clear();
             System.gc();
-
-
+            wait200ms();
             g_notExitFlag.set(true);
         }
 
@@ -237,8 +219,8 @@ public class MyService extends Service {
                                 Log.i(TAG,"clear history buffer before start");
                             }
                             mMcuHelperList.add(new MCUHelper(port,null,null));
-                        } catch (IOException e) {
-                            throw new RuntimeException(e);
+                        } catch (Exception e) {
+                            e.printStackTrace();
                         }
                     }
                 }
@@ -269,7 +251,7 @@ public class MyService extends Service {
                             wait10ms();
                         }
                     }
-                    Log.w(TAG,"ParseSerial thread is exit");
+                    Log.w(TAG,"ParseSerial thread is exit :" + g_notExitFlag.toString());
                 }
             },"ParseSerial");
             mParseThread.start();
@@ -653,12 +635,25 @@ public class MyService extends Service {
             }
         }
 
-
-        public boolean CANOnBus()
+        private void resetResource()
         {
             gCanQueue1.clear();
             gDealQueue.clear();
             gRecvMsgNum.set(0);
+            // 初始化
+            mFilterItem.clear();
+            //
+            mFilterItem.put("channel",new ArrayList<>());
+            mFilterItem.put("canId",new ArrayList<>());
+            mFilterItem.put("dir",new ArrayList<>());
+            mFilterItem.put("dlc",new ArrayList<>());
+            mFilterItem.put("name",new ArrayList<>());
+            mFilterItem.put("canType",new ArrayList<>());
+        }
+
+        public boolean CANOnBus()
+        {
+            resetResource();
             if(mMcuHelperList.isEmpty())
             {
                 return false;
