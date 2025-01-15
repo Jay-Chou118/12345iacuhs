@@ -432,6 +432,7 @@ public class MainActivity3 extends AppCompatActivity {
             public void handle(JsonElement data, String callback) {
                 // 解析参数
                 if (mMiCANBinder != null) {
+                    mMiCANBinder.DeInitModule();
                     JsCallResult<Result<Object>> jsCallResult = new JsCallResult<>(callback);
                     Result<Object> result = ResponseData.success();
                     jsCallResult.setData(result);

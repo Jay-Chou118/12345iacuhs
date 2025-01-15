@@ -190,6 +190,12 @@ public class MyService extends Service {
             return new ArrayList<>();
         }
 
+
+        public void DeInitModule()
+        {
+            resetModuleMem();
+        }
+
         public boolean InitModule()
         {
             resetModuleMem();

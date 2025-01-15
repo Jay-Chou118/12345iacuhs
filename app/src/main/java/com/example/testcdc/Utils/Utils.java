@@ -25,6 +25,7 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -306,6 +307,7 @@ public class Utils {
                 }
             }
         }
+        Collections.reverse(fileInfoList);
         Log.e(TAG, "====FileList==== " + fileInfoList);
         return fileInfoList;
     }
