@@ -1,9 +1,9 @@
 package com.example.testcdc;
 
 import static com.example.testcdc.Utils.DataBaseUtil.copyDataBase;
+import static com.example.testcdc.database.BasicDataBase.getDatabase;
 
 import android.app.Application;
-import android.provider.ContactsContract;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 
@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.room.Room;
 
 import com.example.testcdc.Utils.DataBaseUtil;
-import com.example.testcdc.database.Basic_DataBase;
+import com.example.testcdc.database.BasicDataBase;
 import com.xiaomi.xms.wearable.Wearable;
 import com.xiaomi.xms.wearable.auth.AuthApi;
 import com.xiaomi.xms.wearable.auth.Permission;
@@ -29,8 +29,6 @@ import com.xiaomi.xms.wearable.tasks.OnSuccessListener;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
@@ -38,7 +36,7 @@ public class MyApplication extends Application {
 
     private static final String TAG = "MICAN_application";
 
-    private Basic_DataBase Database = null;
+    private BasicDataBase Database = null;
 
     private static MyApplication sInstance;
 
@@ -61,9 +59,7 @@ public class MyApplication extends Application {
         super.onCreate();
         sInstance = this;
         Log.d(TAG, "i am on create");
-        Database = Room.databaseBuilder(this, Basic_DataBase.class, "basic_database")
-                .addMigrations()
-                .build();
+        Database = getDatabase(this);
 
 //        Database.clearAllTables();
 //        Log.d(TAG, "PPPPPPPPPP: ");
@@ -111,12 +107,6 @@ public class MyApplication extends Application {
 
     }
 
-    public Basic_DataBase getDatabase()
-    {
-
-        return Database;
-    }
-
 
     public void say(String content)
     {
@@ -151,7 +141,7 @@ public class MyApplication extends Application {
 ////                Log.i(TAG, element.toString());
 //            }
 
-            boolean open = MyApplication.getInstance().getDatabase().isOpen();
+            boolean open = Database.isOpen();
             if(open)
             {
                 Log.i(TAG,"database is open");
@@ -180,7 +170,17 @@ public class MyApplication extends Application {
 //                DataBaseUtil.initMsgFromCsv(this);
                 /////////////////////////////////////////////////////////////
                 ///copy数据库使用///////////
-                copyDataBase(this, "basic_database");
+                if(false)
+                {
+                    Log.e(TAG,"====================start init database=======================");
+                    DataBaseUtil.init_carType(this);
+                    DataBaseUtil.initDataFromCsv(this);
+                    DataBaseUtil.initMsgFromCsv(this);
+                    Log.e(TAG,"====================end init database=======================");
+                }
+                else{
+                    copyDataBase(this, "basic_database");
+                }
                 ////////////////////////////////////////////////////////////
             }).start();
 

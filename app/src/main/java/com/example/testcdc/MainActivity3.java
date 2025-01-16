@@ -4,9 +4,8 @@ import static com.chaquo.python.Python.start;
 import static com.example.testcdc.Utils.Utils.MicanFileList;
 import static com.example.testcdc.Utils.Utils.parseDBCByPython;
 import static com.example.testcdc.Utils.Utils.updateCustomData;
+import static com.example.testcdc.database.BasicDataBase.getDatabase;
 import static com.google.gson.JsonParser.parseString;
-
-import static org.apache.commons.net.telnet.TelnetCommand.IP;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -44,7 +43,7 @@ import com.example.testcdc.MiCAN.DeviceInfo;
 import com.example.testcdc.Utils.FTPClientFunctions;
 import com.example.testcdc.Utils.ResponseData;
 import com.example.testcdc.Utils.Result;
-import com.example.testcdc.database.Basic_DataBase;
+import com.example.testcdc.database.BasicDataBase;
 import com.example.testcdc.entity.ChannelInf;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
@@ -76,7 +75,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 
 
@@ -335,7 +333,7 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        database = MyApplication.getInstance().getDatabase();
+        database = getDatabase(this);
     }
 
 
@@ -1280,7 +1278,7 @@ public class MainActivity3 extends AppCompatActivity {
         }
     }
 
-    public static Basic_DataBase database;
+    public static BasicDataBase database;
 
 
 

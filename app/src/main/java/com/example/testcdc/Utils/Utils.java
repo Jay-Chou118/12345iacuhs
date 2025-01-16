@@ -9,10 +9,11 @@ import android.util.Log;
 
 import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
+import com.example.testcdc.MainActivity3;
 import com.example.testcdc.MyApplication;
 import com.example.testcdc.dao.MsgInfoDao;
 import com.example.testcdc.dao.SignalInfoDao;
-import com.example.testcdc.database.Basic_DataBase;
+import com.example.testcdc.database.BasicDataBase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
 import com.hoho.android.usbserial.util.HexDump;
@@ -36,7 +37,7 @@ public class Utils {
     private static final String TAG = "MICAN_UTILS";
 
 
-    public static Basic_DataBase database;
+    public static BasicDataBase database;
 
     static public int convert_u16(byte[] data) {
         return ((data[1] & 0xff) << 8) | (data[0] & 0xff);
@@ -178,8 +179,8 @@ public class Utils {
 
     static public void updateCustomData(String content, long cid, int BUSId) {
 
-        MsgInfoDao msgInfoDao = MyApplication.getInstance().getDatabase().msgInfoDao();
-        SignalInfoDao signalInfoDao = MyApplication.getInstance().getDatabase().signalInfoDao();
+        MsgInfoDao msgInfoDao = MainActivity3.database.msgInfoDao();
+        SignalInfoDao signalInfoDao = MainActivity3.database.signalInfoDao();
         List<MsgInfoEntity> msgInfoEntities = new ArrayList<>();
         List<SignalInfo> signalInfos = new ArrayList<>();
         try {
