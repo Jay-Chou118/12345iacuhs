@@ -6,6 +6,7 @@ import android.util.Log;
 
 import com.example.testcdc.MyApplication;
 import com.example.testcdc.R;
+import com.example.testcdc.database.BasicDataBase;
 import com.example.testcdc.entity.CarTypeEntity;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
@@ -557,11 +558,11 @@ public class DataBaseUtil {
                     signalInfo.setInitial(Double.parseDouble(data[12]));
                     signalInfo.choices = data[13].equals("null") ? null : data[13];
 
-                    CarTypeEntity carTypeEntity = MyApplication.getInstance().getDatabase().carTypeDao().getByName(data[14], data[15]);
+                    CarTypeEntity carTypeEntity = BasicDataBase.getDatabase(context).carTypeDao().getByName(data[14], data[15]);
                     signalInfo.cid = carTypeEntity.id;
 
 //                    Log.d(TAG, "setCarTypeId: " +data[14] + " setSdbId: " + data[15] + " CCCCCCCC "+ signalInfo.cid);
-                    MyApplication.getInstance().getDatabase().signalInfoDao().insert(signalInfo);
+                    BasicDataBase.getDatabase(context).signalInfoDao().insert(signalInfo);
 //                    signalInfos.add(signalInfo);
 //                    Log.e(TAG,"插入signal成功");
                 }
@@ -1046,10 +1047,10 @@ public class DataBaseUtil {
                     msgInfo.receivers = data[8];
                     msgInfo.CANType = data[9];
 
-                    msgInfo.cid = MyApplication.getInstance().getDatabase().msgInfoDao().getCidByName(data[10], data[11]);
+                    msgInfo.cid = BasicDataBase.getDatabase(ctx).msgInfoDao().getCidByName(data[10], data[11]);
 //                    msgInfoEntities.add(msgInfo);
 //                    Log.e(TAG, "msgInfo  :   ZZZZZZZZ" + msgInfo);
-                    MyApplication.getInstance().getDatabase().msgInfoDao().insert(msgInfo);
+                    BasicDataBase.getDatabase(ctx).msgInfoDao().insert(msgInfo);
 //                    Log.e(TAG,"插入msg成功");
                 }
                 is.close();
@@ -1068,7 +1069,7 @@ public class DataBaseUtil {
     }
 
 
-    public static void init_carType() {
+    public static void init_carType(Context ctx) {
         /**********************************************************************************************/
         // 初始化 车型数据库
         List<CarTypeEntity> carTypeEntities = new ArrayList<>();
@@ -1295,7 +1296,8 @@ public class DataBaseUtil {
         carTypeEntities.forEach(carTypeEntity -> {
 //            carTypeEntity.carTypeName = "MX11";
 //            carTypeEntity.SDBName = "E4";
-            MyApplication.getInstance().getDatabase().carTypeDao().insert(carTypeEntity);
+            BasicDataBase.getDatabase(ctx).carTypeDao().insert(carTypeEntity);
+            Log.e(TAG,"====insert cartype ==== " + carTypeEntity.toString());
         });
     }
 

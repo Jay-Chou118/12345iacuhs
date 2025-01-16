@@ -4,7 +4,6 @@ import static com.example.testcdc.Utils.Utils.formatTime;
 import static com.example.testcdc.Utils.Utils.getCurTime;
 import static com.example.testcdc.Utils.Utils.getKey;
 import static com.example.testcdc.Utils.Utils.getSignal;
-import static com.example.testcdc.Utils.Utils.wait1000ms;
 import static com.example.testcdc.Utils.Utils.wait100ms;
 import static com.example.testcdc.Utils.Utils.wait10ms;
 import static com.example.testcdc.Utils.Utils.wait200ms;
@@ -18,11 +17,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbDeviceConnection;
-import android.hardware.usb.UsbEndpoint;
-import android.hardware.usb.UsbInterface;
 import android.hardware.usb.UsbManager;
 import android.os.Binder;
-import android.os.Environment;
 import android.os.IBinder;
 import android.util.Log;
 import android.util.Pair;
@@ -33,7 +29,7 @@ import com.example.testcdc.MiCAN.DataWrapper;
 import com.example.testcdc.MiCAN.DeviceInfo;
 import com.example.testcdc.MiCAN.ShowCANMsg;
 import com.example.testcdc.MiCAN.ShowSignal;
-import com.example.testcdc.database.Basic_DataBase;
+import com.example.testcdc.database.BasicDataBase;
 import com.example.testcdc.entity.MsgInfoEntity;
 import com.example.testcdc.entity.SignalInfo;
 import com.google.gson.Gson;
@@ -44,7 +40,6 @@ import com.hoho.android.usbserial.driver.UsbSerialPort;
 import com.hoho.android.usbserial.driver.UsbSerialProber;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -77,7 +72,7 @@ public class MyService extends Service {
     public static AtomicBoolean g_notExitFlag = new AtomicBoolean(true);
     private final IBinder m_binder = new MiCANBinder();
 
-    private Basic_DataBase database;
+    private BasicDataBase database;
     public class MiCANBinder extends Binder {
 
         private Thread mReadPortThread = null;
@@ -933,7 +928,7 @@ public class MyService extends Service {
     @Override
     public IBinder onBind(Intent intent) {
         Log.i(TAG, "onBind");
-        database = MyApplication.getInstance().getDatabase();
+        database = BasicDataBase.getDatabase(this);
         return m_binder;
     }
 

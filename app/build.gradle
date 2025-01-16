@@ -94,6 +94,7 @@ android {  // 注意这里多了一个开括号
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
+    implementation 'net.zetetic:sqlcipher-android:4.6.1@aar'
     implementation 'androidx.room:room-runtime:2.6.1'
     annotationProcessor 'androidx.room:room-compiler:2.6.1'
     implementation 'com.google.code.gson:gson:2.11.0'
